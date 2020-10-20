@@ -1,0 +1,187 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>internet-explorer on Roy Tang</title>
+      <link>https://roytang.net/tags/internet-explorer/</link>
+      <description>Recent content in internet-explorer on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 12 Feb 2014 14:32:10 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/02/21730829/</link>
+            <pubDate>Wed, 12 Feb 2014 14:32:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/02/21730829/</guid>
+            <description>
+            
+
+            &lt;p&gt;IE8 is giving me the slow-running script message on load of a page:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stop running this script? A script on this page is causing your web
+browser to run slowly. If it continues to run, your computer might
+become unresponsive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, the webapp I&amp;rsquo;m debugging is fairly old and has a whole lot of scripts. Is there an easy way for me to find out which of those scripts is causing the problem?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/07/17855992/</link>
+            <pubDate>Thu, 25 Jul 2013 10:52:41 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/07/17855992/</guid>
+            <description>
+            
+
+            &lt;p&gt;Since I found out that we can&amp;rsquo;t force IE 8 Browser Mode for intranet sites if &amp;ldquo;Display intranet sites in Compatibility View&amp;rdquo; mode is ticked (regardless of X-UA-COMPATIBLE headers or metatags), I&amp;rsquo;m trying to assess the impact of just running with IE 8 Compatibility View Browser Mode. (With IE 8 Standards as the Document Mode)&lt;/p&gt;
+&lt;p&gt;Can anyone advice or is there any resource somewhere that can tell me what differences there are between these 2 browser modes?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/10/1547415/</link>
+            <pubDate>Sat, 10 Oct 2009 08:46:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/10/1547415/</guid>
+            <description>
+            
+
+            &lt;p&gt;Let&amp;rsquo;s say I attach a javascript &amp;ldquo;change&amp;rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.&lt;/p&gt;
+&lt;p&gt;This is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there&amp;rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.&lt;/p&gt;
+&lt;p&gt;Now, our previous workaround was that we would introduce a timeout to the change handler, such that it would wait a fraction of a second before actually dispatching the request. If in that short time, another change event comes in, we cancel the previous timeout and start a new one, thus preventing spamming multiple requests.&lt;/p&gt;
+&lt;p&gt;Now, while this seems to be working, it&amp;rsquo;s a bit hackish and I&amp;rsquo;m wondering if there&amp;rsquo;s any better approach. Is there a different event we can hook to so that it doesn&amp;rsquo;t fire repeatedly when scrolling with the mouse? Or should we just disable mouse-wheeling altogether (onmousewheel=&amp;quot;return false;&amp;quot;)? Firefox does not seem to support mouse-wheeling thru combo boxes, but I&amp;rsquo;m not sure if disabling mouse wheeling is a serious usability no-no or something.&lt;/p&gt;
+&lt;p&gt;Can anyone recommend other solutions?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/07/1123415/</link>
+            <pubDate>Tue, 14 Jul 2009 04:23:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/07/1123415/</guid>
+            <description>
+            
+
+            &lt;p&gt;Say I had the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;select disabled=&amp;quot;disabled&amp;quot; style=&amp;quot;border: 1px red solid; color: black;&amp;quot;&amp;gt;
+&amp;lt;option&amp;gt;ABC&amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Firefox renders the above with a red border and black text as I expect; but IE does not, it seems to be using native colors for the border and the disabled text. Is there any way for me to be able to style it?&lt;/p&gt;
+&lt;p&gt;For edit boxes my workaround was to use readOnly instead of disabled so that I can style it, but it seems for combo boxes the readOnly attribute has no effect.&lt;/p&gt;
+&lt;p&gt;Note: I only need this to work in IE (it&amp;rsquo;s for an intranet webapp where users must use IE), so IE-specific solutions are fine.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/07/1090202/</link>
+            <pubDate>Tue, 07 Jul 2009 03:13:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/07/1090202/</guid>
+            <description>
+            
+
+            &lt;p&gt;Any idea for this?&lt;/p&gt;
+&lt;p&gt;Problems encountered: Using screen.availHeight and screen.availWidth as the height and width params in window.open causes the browser size to include the taskbar, and positioning at (0, 0) ignores the possibility of the taskbar being up there.&lt;/p&gt;
+&lt;p&gt;What I want is to open a new window with the size as if it was &amp;ldquo;maximized&amp;rdquo; by the user, i.e. it shouldn&amp;rsquo;t cover the windows taskbar.&lt;/p&gt;
+&lt;p&gt;(Oh, and no need to remind me that users don&amp;rsquo;t like Javascript interfering with their browser windows, etc. This is for an internal intranet webapp&amp;hellip;)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/06/1047137/</link>
+            <pubDate>Fri, 26 Jun 2009 03:07:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/06/1047137/</guid>
+            <description>
+            
+
+            &lt;p&gt;Specifically, say I have a string like ABC-123-NNN. I would like the paragraph to have line breaks, but &lt;b&gt;not&lt;/b&gt; to break at the dashes.&lt;/p&gt;
+&lt;p&gt;i.e. if my text is &amp;ldquo;The serial number ABC-123-NNN is not valid&amp;rdquo;, I would like to keep together the entire serial number if it exceeds the container width.&lt;/p&gt;
+&lt;p&gt;So the following is ok:&lt;/p&gt;
+&lt;pre&gt;
+  The serial number 
+  ABC-123-NNN is not 
+  valid
+&lt;/pre&gt;
+&lt;p&gt;But the following (which is the behavior of IE6) is not:&lt;/p&gt;
+&lt;pre&gt;
+  The serial number ABC-
+  123-NNN is not valid
+&lt;/pre&gt;
+&lt;p&gt;Currently IE seems to break at dashes. Is there any applicable CSS or whatever I can apply to avoid it?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/06/1000028/</link>
+            <pubDate>Tue, 16 Jun 2009 07:38:33 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/06/1000028/</guid>
+            <description>
+            
+
+            &lt;p&gt;Given the code below:&lt;/p&gt;
+&lt;!-- begin snippet: js hide: false console: true babel: false --&gt;
+&lt;!-- language: lang-js --&gt;
+&lt;pre&gt;&lt;code&gt;function test() {
+    document.forms[0].TEST[0].focus();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- language: lang-html --&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+    &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;Test&amp;quot; onclick=&amp;quot;test()&amp;quot; /&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;TEST&amp;quot; value=&amp;quot;A&amp;quot;&amp;gt;A
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;TEST&amp;quot; value=&amp;quot;B&amp;quot;&amp;gt;B
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- end snippet --&gt;
+&lt;p&gt;In IE6, clicking the button doesn&amp;rsquo;t focus the control, unless I&amp;rsquo;ve already tabbed through the radio at least once, in which case it works. =/&lt;/p&gt;
+&lt;p&gt;Any idea how I should be focusing the control? The above works perfectly fine in FF of course.&lt;/p&gt;
+&lt;p&gt;Edit: I found that the control is being focused, except the highlight box around the radio button is not being rendered. (I can hit space to activate the radio button, and also use arrow keys to change the active button). So the question becomes: how can I force the focus highlighting box to render?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

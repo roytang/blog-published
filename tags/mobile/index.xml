@@ -1,0 +1,99 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>mobile on Roy Tang</title>
+      <link>https://roytang.net/tags/mobile/</link>
+      <description>Recent content in mobile on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Sat, 20 Jul 2019 05:56:56 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Upgrading a React Native Project
+</title>
+            <link>https://roytang.net/2019/07/upgrading-a-react-native-project/</link>
+            <pubDate>Sat, 20 Jul 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/07/upgrading-a-react-native-project/</guid>
+            <description>
+            
+            &lt;p&gt;I have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By August 1, 2019, all apps that use native code must provide a 64-bit version in addition to the 32-bit version in order to publish an update. This past January, we reiterated that this is required in order to make way for innovation and in anticipation of future Android devices that only support 64-bit code.&lt;/p&gt;
+&lt;p&gt;As the deadline approaches, we wanted to remind you that at least one of your apps* uses native code but does not currently offer a 64-bit variant&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This illustrates for me one of the big problems with mobile development: that app was perfectly fine when I last deployed it in 2018 and now even though I haven&amp;rsquo;t changed anything, there&amp;rsquo;s additional work that needs to be done. I guess I&amp;rsquo;m too used to web development where we just deploy the app on a server and the server architecture doesn&amp;rsquo;t suddenly change for no reason. With mobile apps, the platforms and APIs and frameworks change quickly, leading to situations where even if your app doesn&amp;rsquo;t have any pending changes, you need to do some work on it anyway. (Granted, this can also happen with webservers due to security patches and such, but with managed hosting, that&amp;rsquo;s not something you worry about as often, and the resolution is often straightforward!)&lt;/p&gt;
+&lt;p&gt;As I was about to be out of the country on vacation for more than a month, I put this off and only started looking at it when I got back. Luckily, I did actually also have some minor revisions to do on the app, so I would do all the work in one go.&lt;/p&gt;
+&lt;p&gt;As it turns out, the version of RN I was using was too old and did not support providing the 64-bit version. I had to upgrade to a later version of RN, and after reviewing the process, it seemed like a nontrivial amount of work. There was an upgrade tool, but because I was so many versions behind, it couldn&amp;rsquo;t work directly. The problem seems to be in the initial boilerplate created by &lt;code&gt;react-native init&lt;/code&gt; for the ios and android subprojects; the older boilerplate was out of date and needed to be updated, which was not straightforward given that you may have modified that boilerplate afterwards. I had to use some kind of diff tool to manually find the differences in the boilerplate and merge the changes manually.&lt;/p&gt;
+&lt;p&gt;That seemed like a lot of work, and the app wasn&amp;rsquo;t that large and didn&amp;rsquo;t have that much code, so I figured it was more straightforward to just create a new RN project from scratch, which would be using the latest version of RN (0.60.3, from 0.50.4). Afterwards, I port over the project code into the new project, them swap the new project back into the old project&amp;rsquo;s repo. That way I only had to update the few dependencies I was using in the project itself.&lt;/p&gt;
+&lt;p&gt;It was still a nontrivial amount of work, but I eventually got everything working through many iterations of trial-and-error.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I went ahead and upgraded the dependencies to the latest versions as well, to make sure there was no conflict with the new RN version&lt;/li&gt;
+&lt;li&gt;ReactNavigation had some backward incompatible changes:
+&lt;ul&gt;
+&lt;li&gt;needed to &lt;a href=&#34;https://reactnavigation.org/docs/en/getting-started.html#installation&#34;&gt;initialize the gesture handler&lt;/a&gt; in the java class&lt;/li&gt;
+&lt;li&gt;new function &lt;code&gt;createStackNavigator&lt;/code&gt; instead of just &lt;code&gt;StackNavigator&lt;/code&gt; constructor&lt;/li&gt;
+&lt;li&gt;needed to use &lt;code&gt;createAppContainer&lt;/code&gt; to initialize the navigator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;some components such as WebView and AsyncStorage were no longer part of RN core and had to be imported accordingly&lt;/li&gt;
+&lt;li&gt;Android now requires that I explicitly prompt for the &lt;code&gt;READ_EXTERNAL_STORAGE&lt;/code&gt; permission when trying to access the camera roll&lt;/li&gt;
+&lt;li&gt;Google now recommends that I provide an upload key for encryption, but since I reset the project, I also accidentally deleted the signing key I was using before. Oops! Momentary panic until I have the sense to do a search and realize that past me was wise enough to backup the file elsewhere.&lt;/li&gt;
+&lt;li&gt;Test that I can create the app bundle successfully.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By this point I more or less had a working Android build, then shifted over to iOS. Since I only &lt;a href=&#34;https://roytang.net/2018/12/macbook-air-2017-model/&#34;&gt;recently got a Macbook Air&lt;/a&gt;, I actually hadn&amp;rsquo;t tried creating and publishing the iOS build, someone was helping me with that part before. Because of reasons, I wanted/had to do it myself this time around, so a bit of a learning curve and trial-and-error again.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clone the project from repo, &lt;code&gt;npm install&lt;/code&gt;, try &lt;code&gt;react-native run-ios&lt;/code&gt;, oops missing dependencies&lt;/li&gt;
+&lt;li&gt;find out about CocoaPods. Clone a fresh copy of the project, &lt;code&gt;npm install&lt;/code&gt; then &lt;code&gt;pod install&lt;/code&gt; (took a while), then try &lt;code&gt;react-native run-ios&lt;/code&gt; again&lt;/li&gt;
+&lt;li&gt;needed to fix some dependencies I was using by manual linking and updating&lt;/li&gt;
+&lt;li&gt;camera roll also needed to be added to the podfile (a config I possibly lost when I reset the project)&lt;/li&gt;
+&lt;li&gt;fix a bunch of configs before I can actually run and test the app in the simulator&lt;/li&gt;
+&lt;li&gt;Success!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At this point, I make my other app changes and test on both my Android phone and the iOS simulator. The changes are easy, so now to try publishing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Try to publish and upload to iTunesConnect. Takes me a few tries to figure out that I need to be updating stuff like bundle identifier, version number, etc.&lt;/li&gt;
+&lt;li&gt;iTunesConnect has some new requirements too (like the iPad version needs to support all orientations) which causes a couple more iterations&lt;/li&gt;
+&lt;li&gt;more screenshots are now required when submitting the app!&lt;/li&gt;
+&lt;li&gt;I set up TestFlight and verify everything is ok with the published app. (I only tested using the simulator before)&lt;/li&gt;
+&lt;li&gt;iOS app now submitted and &amp;ldquo;Waiting for Review&amp;rdquo;. I anticipate they will have some ridiculous request and it might take me a couple more submission rounds before I can publish&lt;/li&gt;
+&lt;li&gt;Google Play is more straightforward. &lt;code&gt;gradlew releaseBundle&lt;/code&gt; is already working after my previous effort, so I just upload the bundle and distribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I see no indication that I have satisfied Google&amp;rsquo;s action item, but it let me publish the update without complaints, so I&amp;rsquo;m done!&lt;/p&gt;
+&lt;p&gt;My initial estimate that the work was nontrivial ends up correct, I spent way more manhours than I expected on the upgrade. Part of it was learning how to do the iOS deployment, so hopefully that ends up easier in the future.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/12/kp4tikvtz_q/</link>
+            <pubDate>Wed, 12 Dec 2012 12:10:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/12/kp4tikvtz_q/</guid>
+            <description>
+            
+
+            &lt;p&gt;Vidcard troubles =(
+This video was uploaded from an Android phone.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KP4tIKvtZ_Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

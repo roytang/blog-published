@@ -1,0 +1,890 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://roytang.net/",
+    "feed_url": "https://roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://roytang.net/2009/12/6993626606/",
+            "url": "https://roytang.net/2009/12/6993626606/",
+            "path": "/2009/12/6993626606/",
+            "title": "",
+            "content_html": "\u003cp\u003eI think I\u0026rsquo;m going to avoid network congestion tonight. #IWillNotTextAtMidnight\u003c/p\u003e\n",
+            "summary": "I think I\u0026rsquo;m going to avoid network congestion tonight. #IWillNotTextAtMidnight",
+            "date_published": "2009-12-24T08:01:09+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6993626606.md"
+            , "tags": ["IWillNotTextAtMidnight"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6993626606/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/221247053570"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6993610253/",
+            "url": "https://roytang.net/2009/12/6993610253/",
+            "path": "/2009/12/6993610253/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/LaTtEX/\"\u003e@LaTtEX\u003c/a\u003e facebook should have some sort of facial recognition api to make tagging easier!\u003c/p\u003e\n",
+            "summary": "@LaTtEX facebook should have some sort of facial recognition api to make tagging easier!",
+            "date_published": "2009-12-24T08:00:21+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6993610253.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6993610253/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6969449982/",
+            "url": "https://roytang.net/2009/12/6969449982/",
+            "path": "/2009/12/6969449982/",
+            "title": "",
+            "content_html": "\u003cp\u003emy planechase win rate is now down to 50%\u003c/p\u003e\n",
+            "summary": "my planechase win rate is now down to 50%",
+            "date_published": "2009-12-23T16:40:58+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6969449982.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6969449982/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6969245797/",
+            "url": "https://roytang.net/2009/12/6969245797/",
+            "path": "/2009/12/6969245797/",
+            "title": "",
+            "content_html": "\u003cp\u003eplayed consume spirit so that i could play foul imp and draw 7 from academy at tolaria\u003c/p\u003e\n",
+            "summary": "played consume spirit so that i could play foul imp and draw 7 from academy at tolaria",
+            "date_published": "2009-12-23T16:33:51+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6969245797.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6969245797/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6969034072/",
+            "url": "https://roytang.net/2009/12/6969034072/",
+            "path": "/2009/12/6969034072/",
+            "title": "",
+            "content_html": "\u003cp\u003e#mtg currently planechasing! We didn\u0026rsquo;t have all 4 decks, i had to use demonic from dvd\u003c/p\u003e\n",
+            "summary": "#mtg currently planechasing! We didn\u0026rsquo;t have all 4 decks, i had to use demonic from dvd",
+            "date_published": "2009-12-23T16:26:35+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6969034072.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6969034072/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/1951373/",
+            "url": "https://roytang.net/2009/12/1951373/",
+            "path": "/2009/12/1951373/",
+            "title": "Automated regression tests for java applets?",
+            "content_html": "\u003cp\u003eWe\u0026rsquo;re working on a project with a number of applets that has to work across a large range of OS (WIndows, Mac, Linux), browsers (IE, FF, Safari, etc) and Java versions (1.5+), and it often happens that a fix we apply will cause some sort of security exception an another platform or some other error.\u003c/p\u003e\n\u003cp\u003eIs there any way for us to prepare automated tests to immediately catch those problems in different platforms? I think it\u0026rsquo;s not necessary to check that the gui parts are appearing as intended, but just to detect whether unexpected exceptions are occuring.\u003c/p\u003e\n",
+            "summary": "We\u0026rsquo;re working on a project with a number of applets that has to work across a large range of OS (WIndows, Mac, Linux), browsers (IE, FF, Safari, etc) and Java versions (1.5+), and it often happens that a fix we apply will cause some sort of security exception an another platform or some other error.\nIs there any way for us to prepare automated tests to immediately catch those problems in different platforms?",
+            "date_published": "2009-12-23T08:20:52+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/1951373/index.md"
+            , "tags": ["applet","automated-tests","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1951373/automated-regression-tests-for-java-applets"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1951373/automated-regression-tests-for-java-applets",
+                    "source_file": "comment-20131011T174930-28624125.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6950333653/",
+            "url": "https://roytang.net/2009/12/6950333653/",
+            "path": "/2009/12/6950333653/",
+            "title": "",
+            "content_html": "\u003cp\u003eis it ok if i just sleep all day?\u003c/p\u003e\n",
+            "summary": "is it ok if i just sleep all day?",
+            "date_published": "2009-12-23T02:24:59+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6950333653.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6950333653/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/249923721275"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6933407766/",
+            "url": "https://roytang.net/2009/12/6933407766/",
+            "path": "/2009/12/6933407766/",
+            "title": "",
+            "content_html": "\u003cp\u003eEvery day the same dream: \u003ca href=\"http://www.molleindustria.org/everydaythesamedream/everydaythesamedream.html\"\u003ehttp://www.molleindustria.org/everydaythesamedream/everydaythesamedream.html\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Every day the same dream: http://www.molleindustria.org/everydaythesamedream/everydaythesamedream.html",
+            "date_published": "2009-12-22T16:22:27+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6933407766.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6933407766/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/216648389559"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6932963482/",
+            "url": "https://roytang.net/2009/12/6932963482/",
+            "path": "/2009/12/6932963482/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/JeromeGotangco/\"\u003e@JeromeGotangco\u003c/a\u003e Learn to Let Go: How Success Killed Duke Nukem: \u003ca href=\"https://www.wired.com/2009/12/fail-duke-nukem/\"\u003ehttps://www.wired.com/2009/12/fail-duke-nukem/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @JeromeGotangco Learn to Let Go: How Success Killed Duke Nukem: https://www.wired.com/2009/12/fail-duke-nukem/",
+            "date_published": "2009-12-22T16:07:34+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6932963482.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6932963482/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/211172433340"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6910895311/",
+            "url": "https://roytang.net/2009/12/6910895311/",
+            "path": "/2009/12/6910895311/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e: A Visual Tour of Blizzard HQ: \u003ca href=\"http://leenks.com/gallery1021.htm\"\u003ehttp://leenks.com/gallery1021.htm\u003c/a\u003e Too cool.\u003c/p\u003e\n",
+            "summary": "RT @misterorange: A Visual Tour of Blizzard HQ: http://leenks.com/gallery1021.htm Too cool.",
+            "date_published": "2009-12-22T00:27:29+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6910895311.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6910895311/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/210115603478"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6897510451/",
+            "url": "https://roytang.net/2009/12/6897510451/",
+            "path": "/2009/12/6897510451/",
+            "title": "",
+            "content_html": "\u003cp\u003e2 days to go!\u003c/p\u003e\n",
+            "summary": "2 days to go!",
+            "date_published": "2009-12-21T16:16:30+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6897510451.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6897510451/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/212640057098"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6885729107/",
+            "url": "https://roytang.net/2009/12/6885729107/",
+            "path": "/2009/12/6885729107/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e isn\u0026rsquo;t it cheaper to just buy the baneslayers? Well, at least by grinding you\u0026rsquo;re getting a lot of other cards as well.\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback isn\u0026rsquo;t it cheaper to just buy the baneslayers? Well, at least by grinding you\u0026rsquo;re getting a lot of other cards as well.",
+            "date_published": "2009-12-21T06:26:33+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6885729107.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6885729107/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6864405897/",
+            "url": "https://roytang.net/2009/12/6864405897/",
+            "path": "/2009/12/6864405897/",
+            "title": "",
+            "content_html": "\u003cp\u003egah papasok pa bukas!\u003c/p\u003e\n",
+            "summary": "gah papasok pa bukas!",
+            "date_published": "2009-12-20T16:44:20+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6864405897.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6864405897/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/209347978194"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6864401680/",
+            "url": "https://roytang.net/2009/12/6864401680/",
+            "path": "/2009/12/6864401680/",
+            "title": "",
+            "content_html": "\u003cp\u003eCommon laptop positions to avoid: \u003ca href=\"http://bit.ly/4ZlbXh\"\u003ehttp://bit.ly/4ZlbXh\u003c/a\u003e)\u003c/p\u003e\n",
+            "summary": "Common laptop positions to avoid: http://bit.ly/4ZlbXh)",
+            "date_published": "2009-12-20T16:44:09+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6864401680.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6864401680/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/215138178463"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6864269821/",
+            "url": "https://roytang.net/2009/12/6864269821/",
+            "path": "/2009/12/6864269821/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/porteneuve/\"\u003e@porteneuve\u003c/a\u003e: JS reigns supreme. Utterly amazing stuff at \u003ca href=\"http://www.effectgames.com/effect/\"\u003ehttp://www.effectgames.com/effect/\u003c/a\u003e. Esp. love the Super Mario Bros demo.\u003c/p\u003e\n",
+            "summary": "RT @porteneuve: JS reigns supreme. Utterly amazing stuff at http://www.effectgames.com/effect/. Esp. love the Super Mario Bros demo.",
+            "date_published": "2009-12-20T16:38:38+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6864269821.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6864269821/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6863275675/",
+            "url": "https://roytang.net/2009/12/6863275675/",
+            "path": "/2009/12/6863275675/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Avatar You know a movie is good when you have to pee, but you don\u0026rsquo;t. I held it in for 3 hours.\u003c/p\u003e\n",
+            "summary": "#Avatar You know a movie is good when you have to pee, but you don\u0026rsquo;t. I held it in for 3 hours.",
+            "date_published": "2009-12-20T15:57:20+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6863275675.md"
+            , "tags": ["Avatar"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6863275675/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/215316931147"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6858714322/",
+            "url": "https://roytang.net/2009/12/6858714322/",
+            "path": "/2009/12/6858714322/",
+            "title": "",
+            "content_html": "\u003cp\u003emay kasabay na premiere ng panday. Some random celebrities i don\u0026rsquo;t know are here -Update via SMS for FREE using \u003ca href=\"http://isip.ph\"\u003ehttp://isip.ph\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "may kasabay na premiere ng panday. Some random celebrities i don\u0026rsquo;t know are here -Update via SMS for FREE using http://isip.ph",
+            "date_published": "2009-12-20T11:59:37+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6858714322.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6858714322/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/391761100536"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6857688232/",
+            "url": "https://roytang.net/2009/12/6857688232/",
+            "path": "/2009/12/6857688232/",
+            "title": "",
+            "content_html": "\u003cp\u003eabout to head out to watch avatar (imax) at sm north\u003c/p\u003e\n",
+            "summary": "about to head out to watch avatar (imax) at sm north",
+            "date_published": "2009-12-20T10:53:54+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6857688232.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6857688232/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/206562128729"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6800792098/",
+            "url": "https://roytang.net/2009/12/6800792098/",
+            "path": "/2009/12/6800792098/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/GatheringMagic/\"\u003e@GatheringMagic\u003c/a\u003e it really depends on how much of m10 would be retained in m11. hope they handle the transition well\u003c/p\u003e\n",
+            "summary": "@GatheringMagic it really depends on how much of m10 would be retained in m11. hope they handle the transition well",
+            "date_published": "2009-12-18T16:27:15+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6800792098.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6800792098/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6800080768/",
+            "url": "https://roytang.net/2009/12/6800080768/",
+            "path": "/2009/12/6800080768/",
+            "title": "",
+            "content_html": "\u003cp\u003estill took the bus home. Can\u0026rsquo;t let the bad guys win!\u003c/p\u003e\n",
+            "summary": "still took the bus home. Can\u0026rsquo;t let the bad guys win!",
+            "date_published": "2009-12-18T16:03:05+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6800080768.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6800080768/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/207552761009"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/1927273/",
+            "url": "https://roytang.net/2009/12/1927273/",
+            "path": "/2009/12/1927273/",
+            "title": "Applet freezes page on initial load (Mac Firefox)",
+            "content_html": "\u003cp\u003eWe have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\u003c/p\u003e\n\u003cp\u003eThe problem is encountered on the user site.\nOn initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets.\nAfter refreshing the page, it loads normally.\nIf the cache is cleared, same problem happens again.\u003c/p\u003e\n\u003cp\u003eUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)\u003c/p\u003e\n\u003cp\u003eWe were able to get a jstack thread dump, see below:\n\u003ca href=\"http://pastebin.com/m527e05dd\"\u003ehttp://pastebin.com/m527e05dd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eHowever, we\u0026rsquo;re not sure how to interpret it. Any suggestions or advice?\u003c/p\u003e\n\u003cp\u003eEdit:\nWe were able to replicate in our testing machine by creating a new user (clean Firefox profile). If we clear the java cache then visit the problematic pages, the edit controls are disabled (we can\u0026rsquo;t click them to focus them), the Firefox address bar and search box have the same behavior. The edit box controls only \u0026ldquo;unfreeze\u0026rdquo; when we access the \u0026ldquo;Help\u0026rdquo; menu entry, which has a Search edit box that \u003cem\u003eis\u003c/em\u003e active.\u003c/p\u003e\n",
+            "summary": "We have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\nThe problem is encountered on the user site. On initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets. After refreshing the page, it loads normally. If the cache is cleared, same problem happens again.\nUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)",
+            "date_published": "2009-12-18T09:48:12+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/1927273/index.md"
+            , "tags": ["firefox","macos","applet","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox",
+                    "source_file": "comment-20091228T192007-1971063.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6779222709/",
+            "url": "https://roytang.net/2009/12/6779222709/",
+            "path": "/2009/12/6779222709/",
+            "title": "",
+            "content_html": "\u003cp\u003ewoke up still angry. Result: At the office early.\u003c/p\u003e\n",
+            "summary": "woke up still angry. Result: At the office early.",
+            "date_published": "2009-12-18T00:08:48+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6779222709.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6779222709/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/208779742934"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6768122908/",
+            "url": "https://roytang.net/2009/12/6768122908/",
+            "path": "/2009/12/6768122908/",
+            "title": "",
+            "content_html": "\u003cp\u003ewith Jace\u0026rsquo;s +0 Brainstorm, I\u0026rsquo;m now speculating on Misty Rainforests on MTGO\u003c/p\u003e\n",
+            "summary": "with Jace\u0026rsquo;s +0 Brainstorm, I\u0026rsquo;m now speculating on Misty Rainforests on MTGO",
+            "date_published": "2009-12-17T16:45:49+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6768122908.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6768122908/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6766634318/",
+            "url": "https://roytang.net/2009/12/6766634318/",
+            "path": "/2009/12/6766634318/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/tintinperez/\"\u003e@tintinperez\u003c/a\u003e I don\u0026rsquo;t really carry much cash. Hassle lang ung magpapacancel and replace ng ATM, credit card, etc\u003c/p\u003e\n",
+            "summary": "@tintinperez I don\u0026rsquo;t really carry much cash. Hassle lang ung magpapacancel and replace ng ATM, credit card, etc",
+            "date_published": "2009-12-17T15:42:17+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6766634318.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6766634318/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6763370009/",
+            "url": "https://roytang.net/2009/12/6763370009/",
+            "path": "/2009/12/6763370009/",
+            "title": "",
+            "content_html": "\u003cp\u003e@NameCheap  #81 boughs of holly\u003c/p\u003e\n",
+            "summary": "@NameCheap #81 boughs of holly",
+            "date_published": "2009-12-17T13:15:19+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6763370009.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6763370009/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6762849175/",
+            "url": "https://roytang.net/2009/12/6762849175/",
+            "path": "/2009/12/6762849175/",
+            "title": "",
+            "content_html": "\u003cp\u003eMy wallet got pickpocketed as I was getting off the bus.\u003c/p\u003e\n",
+            "summary": "My wallet got pickpocketed as I was getting off the bus.",
+            "date_published": "2009-12-17T12:49:03+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6762849175.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6762849175/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/206528471686"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6756283672/",
+            "url": "https://roytang.net/2009/12/6756283672/",
+            "path": "/2009/12/6756283672/",
+            "title": "",
+            "content_html": "\u003cp\u003e@NameCheap #74 Austria\u003c/p\u003e\n",
+            "summary": "@NameCheap #74 Austria",
+            "date_published": "2009-12-17T06:04:56+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6756283672.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6756283672/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6750684159/",
+            "url": "https://roytang.net/2009/12/6750684159/",
+            "path": "/2009/12/6750684159/",
+            "title": "",
+            "content_html": "\u003cp\u003eI wouldn\u0026rsquo;t mind if someone pre-ordered me one of these for Christmas: \u003ca href=\"http://www.entourageedge.com/\"\u003ehttp://www.entourageedge.com/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I wouldn\u0026rsquo;t mind if someone pre-ordered me one of these for Christmas: http://www.entourageedge.com/",
+            "date_published": "2009-12-17T02:15:16+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6750684159.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6750684159/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/205979910679"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6746945154/",
+            "url": "https://roytang.net/2009/12/6746945154/",
+            "path": "/2009/12/6746945154/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e millions may be too much. I don\u0026rsquo;t think there are that many mtg players worldwide. Yet :p\u003c/p\u003e\n",
+            "summary": "@mtgsalivanth millions may be too much. I don\u0026rsquo;t think there are that many mtg players worldwide. Yet :p",
+            "date_published": "2009-12-17T00:05:07+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6746945154.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6746945154/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6729586346/",
+            "url": "https://roytang.net/2009/12/6729586346/",
+            "path": "/2009/12/6729586346/",
+            "title": "",
+            "content_html": "\u003cp\u003e@NameCheap  #56 Christmas past, Christmas present, Christmas future\u003c/p\u003e\n",
+            "summary": "@NameCheap #56 Christmas past, Christmas present, Christmas future",
+            "date_published": "2009-12-16T13:12:42+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6729586346.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6729586346/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6720928648/",
+            "url": "https://roytang.net/2009/12/6720928648/",
+            "path": "/2009/12/6720928648/",
+            "title": "",
+            "content_html": "\u003cp\u003e@NameCheap frosty\u003c/p\u003e\n",
+            "summary": "@NameCheap frosty",
+            "date_published": "2009-12-16T05:02:42+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6720928648.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6720928648/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6720704412/",
+            "url": "https://roytang.net/2009/12/6720704412/",
+            "path": "/2009/12/6720704412/",
+            "title": "",
+            "content_html": "\u003cp\u003e@NameCheap Bad Santa\u003c/p\u003e\n",
+            "summary": "@NameCheap Bad Santa",
+            "date_published": "2009-12-16T04:53:12+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6720704412.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6720704412/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6720648215/",
+            "url": "https://roytang.net/2009/12/6720648215/",
+            "path": "/2009/12/6720648215/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e: #MtG: Blog post - The Top Hits and Misses of Magic the Gathering for 2009 -\u0026gt; \u003ca href=\"http://wrongwaygoback.com/infernalcombustion/\"\u003ehttp://wrongwaygoback.com/infernalcombustion/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @wrongwaygoback: #MtG: Blog post - The Top Hits and Misses of Magic the Gathering for 2009 -\u0026gt; http://wrongwaygoback.com/infernalcombustion/",
+            "date_published": "2009-12-16T04:50:46+00:00",
+            "date_modified": "2019-09-13T04:51:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6720648215.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6720648215/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6720621093/",
+            "url": "https://roytang.net/2009/12/6720621093/",
+            "path": "/2009/12/6720621093/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/maro254/\"\u003e@maro254\u003c/a\u003e FtV:Exile was this year right? I\u0026rsquo;d want that!\u003c/p\u003e\n",
+            "summary": "@maro254 FtV:Exile was this year right? I\u0026rsquo;d want that!",
+            "date_published": "2009-12-16T04:49:38+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6720621093.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6720621093/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6720555586/",
+            "url": "https://roytang.net/2009/12/6720555586/",
+            "path": "/2009/12/6720555586/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alex/\"\u003e@alex\u003c/a\u003e what was your FB app idea?\u003c/p\u003e\n",
+            "summary": "@alex what was your FB app idea?",
+            "date_published": "2009-12-16T04:46:45+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6720555586.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6720555586/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6696893130/",
+            "url": "https://roytang.net/2009/12/6696893130/",
+            "path": "/2009/12/6696893130/",
+            "title": "",
+            "content_html": "\u003cp\u003eTrying to go to sleep early\u003c/p\u003e\n",
+            "summary": "Trying to go to sleep early",
+            "date_published": "2009-12-15T14:13:54+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6696893130.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6696893130/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/205073039510"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6696447388/",
+            "url": "https://roytang.net/2009/12/6696447388/",
+            "path": "/2009/12/6696447388/",
+            "title": "",
+            "content_html": "\u003cp\u003eFull Text: Supreme Court decision extending voter registration until 9 January 2010 \u003ca href=\"https://tonyocruz.com/?p=2726\"\u003ehttps://tonyocruz.com/?p=2726\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Full Text: Supreme Court decision extending voter registration until 9 January 2010 https://tonyocruz.com/?p=2726",
+            "date_published": "2009-12-15T13:56:17+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6696447388.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6696447388/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/202769679031"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6691324922/",
+            "url": "https://roytang.net/2009/12/6691324922/",
+            "path": "/2009/12/6691324922/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e is it the size of a tiny corner of a regular card with a magic card back? It might be standard legal once WWK is released!\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback is it the size of a tiny corner of a regular card with a magic card back? It might be standard legal once WWK is released!",
+            "date_published": "2009-12-15T09:14:36+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6691324922.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6691324922/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6678518017/",
+            "url": "https://roytang.net/2009/12/6678518017/",
+            "path": "/2009/12/6678518017/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TagoFabic/\"\u003e@TagoFabic\u003c/a\u003e I\u0026rsquo;m not actually using it currently :p\u003c/p\u003e\n",
+            "summary": "@TagoFabic I\u0026rsquo;m not actually using it currently :p",
+            "date_published": "2009-12-15T00:16:21+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6678518017.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6678518017/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6665304196/",
+            "url": "https://roytang.net/2009/12/6665304196/",
+            "path": "/2009/12/6665304196/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhat matters now:  \u003ca href=\"https://seths.blog/2009/12/what-matters-now-get-the-free-ebook/\"\u003ehttps://seths.blog/2009/12/what-matters-now-get-the-free-ebook/\u003c/a\u003e Free ebook, good read\u003c/p\u003e\n",
+            "summary": "What matters now: https://seths.blog/2009/12/what-matters-now-get-the-free-ebook/ Free ebook, good read",
+            "date_published": "2009-12-14T16:00:51+00:00",
+            "date_modified": "2020-09-11T22:48:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6665304196.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6665304196/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/236008101419"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/6665316829/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6662952662/",
+            "url": "https://roytang.net/2009/12/6662952662/",
+            "path": "/2009/12/6662952662/",
+            "title": "",
+            "content_html": "\u003cp\u003eHaving multiple twitter accounts is confusing\u003c/p\u003e\n",
+            "summary": "Having multiple twitter accounts is confusing",
+            "date_published": "2009-12-14T14:34:04+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6662952662.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6662952662/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/202334628612"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6662831994/",
+            "url": "https://roytang.net/2009/12/6662831994/",
+            "path": "/2009/12/6662831994/",
+            "title": "",
+            "content_html": "\u003cp\u003e#mtg what do you guys with all your old commons/crap cards?\u003c/p\u003e\n",
+            "summary": "#mtg what do you guys with all your old commons/crap cards?",
+            "date_published": "2009-12-14T14:29:26+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6662831994.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6662831994/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/206097059242"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6661572949/",
+            "url": "https://roytang.net/2009/12/6661572949/",
+            "path": "/2009/12/6661572949/",
+            "title": "",
+            "content_html": "\u003cp\u003eI wouldn\u0026rsquo;t mind somebody getting me this for xmas: \u003ca href=\"http://bit.ly/19XfHO\"\u003ehttp://bit.ly/19XfHO\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I wouldn\u0026rsquo;t mind somebody getting me this for xmas: http://bit.ly/19XfHO",
+            "date_published": "2009-12-14T13:37:36+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6661572949.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6661572949/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/208160327578"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/learning-inkscape-an-order-of-the-stick-avatar-guide/",
+            "url": "https://roytang.net/2009/12/learning-inkscape-an-order-of-the-stick-avatar-guide/",
+            "path": "/2009/12/learning-inkscape-an-order-of-the-stick-avatar-guide/",
+            "title": "Learning Inkscape - An Order of the Stick Avatar Guide",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2009-12-14T13:31:03+00:00",
+            "date_modified": "2020-01-29T00:26:29+08:00",
+            "section": "links",
+            "source_path": "links/2009/12/learning-inkscape-an-order-of-the-stick-avatar-guide/index.md"
+            , "tags": ["howto","comics","art","tutorials","graphics"]
+            
+            ,"link": "http://www.trazoi.net/tutorials/inkscape/oots/index.html"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6660818418/",
+            "url": "https://roytang.net/2009/12/6660818418/",
+            "path": "/2009/12/6660818418/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TagoFabic/\"\u003e@TagoFabic\u003c/a\u003e meron ako, why?\u003c/p\u003e\n",
+            "summary": "@TagoFabic meron ako, why?",
+            "date_published": "2009-12-14T13:03:25+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6660818418.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6660818418/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/1899374/",
+            "url": "https://roytang.net/2009/12/1899374/",
+            "path": "/2009/12/1899374/",
+            "title": "How to stop further request execution from inside a taglib?",
+            "content_html": "\u003cp\u003eBasically, we want to create a taglib that can possibly forward request execution to another page, similar to \u003ccode\u003e\u0026lt;jsp:forward /\u0026gt;\u003c/code\u003e. How can we prevent the rest of the JSP page from executing from within the taglib?\u003c/p\u003e\n",
+            "summary": "Basically, we want to create a taglib that can possibly forward request execution to another page, similar to \u0026lt;jsp:forward /\u0026gt;. How can we prevent the rest of the JSP page from executing from within the taglib?",
+            "date_published": "2009-12-14T07:05:01+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/1899374/index.md"
+            , "tags": ["jsp","java-ee","jsp-tags","taglib","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1899374/how-to-stop-further-request-execution-from-inside-a-taglib"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1899374/how-to-stop-further-request-execution-from-inside-a-taglib",
+                    "source_file": "comment-20091214T072145-1802307.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1899374/how-to-stop-further-request-execution-from-inside-a-taglib",
+                    "source_file": "comment-20091214T100902-1900039.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1899374/how-to-stop-further-request-execution-from-inside-a-taglib",
+                    "source_file": "comment-20091214T110523-1900251.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1899374/how-to-stop-further-request-execution-from-inside-a-taglib",
+                    "source_file": "comment-20160218T152123-35485444.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6650012111/",
+            "url": "https://roytang.net/2009/12/6650012111/",
+            "path": "/2009/12/6650012111/",
+            "title": "",
+            "content_html": "\u003cp\u003ewants to play more Blazblue\u003c/p\u003e\n",
+            "summary": "wants to play more Blazblue",
+            "date_published": "2009-12-14T03:21:03+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6650012111.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6650012111/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/203486838677"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6649925765/",
+            "url": "https://roytang.net/2009/12/6649925765/",
+            "path": "/2009/12/6649925765/",
+            "title": "",
+            "content_html": "\u003cp\u003eJust entered to win a Modu Phone. Quick! Go follow \u003ca href=\"https://twitter.com/abeolandres/\"\u003e@abeolandres\u003c/a\u003e and @talk2globe and retweet: \u003ca href=\"https://www.yugatech.com/contests/yugatech-contest-1-merry-tweetmas/\"\u003ehttps://www.yugatech.com/contests/yugatech-contest-1-merry-tweetmas/\u003c/a\u003e #thanks2yugatech\u003c/p\u003e\n",
+            "summary": "Just entered to win a Modu Phone. Quick! Go follow @abeolandres and @talk2globe and retweet: https://www.yugatech.com/contests/yugatech-contest-1-merry-tweetmas/ #thanks2yugatech",
+            "date_published": "2009-12-14T03:17:57+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6649925765.md"
+            , "tags": ["thanks2yugatech"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6649925765/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/368795225586"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6627717563/",
+            "url": "https://roytang.net/2009/12/6627717563/",
+            "path": "/2009/12/6627717563/",
+            "title": "",
+            "content_html": "\u003cp\u003ePa, Alvin and Brian are currently rocking out on Rock Band: Beatles\u003c/p\u003e\n",
+            "summary": "Pa, Alvin and Brian are currently rocking out on Rock Band: Beatles",
+            "date_published": "2009-12-13T12:27:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6627717563.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6627717563/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/237581138834"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2009/12/6627676598/",
+            "url": "https://roytang.net/2009/12/6627676598/",
+            "path": "/2009/12/6627676598/",
+            "title": "",
+            "content_html": "\u003cp\u003eROTFLMAO! A dude was following our tech guy in the office. Our tech guy turns around n says: \u0026ldquo;Stop following me, I\u0026rsquo;m not Twitter!\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "ROTFLMAO! A dude was following our tech guy in the office. Our tech guy turns around n says: \u0026ldquo;Stop following me, I\u0026rsquo;m not Twitter!\u0026rdquo;",
+            "date_published": "2009-12-13T12:25:09+00:00",
+            "date_modified": "2020-09-11T22:48:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6627676598/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6627676598/"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/331/feed.json" 
+     , "next": "/p/333/feed.json" 
+}

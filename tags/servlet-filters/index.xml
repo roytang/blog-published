@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>servlet-filters on Roy Tang</title>
+      <link>https://roytang.net/tags/servlet-filters/</link>
+      <description>Recent content in servlet-filters on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Tue, 03 Jul 2012 07:00:24 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/servlet-filters/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/07/11305956/</link>
+            <pubDate>Tue, 03 Jul 2012 07:00:24 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/07/11305956/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I&amp;rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain. However, I&amp;rsquo;m getting an &amp;ldquo;IllegalStateException: getOutputStream() has already been called for this response.&amp;rdquo; It seems to happen whenever one of our taglibs tries to write using the writer returned by &amp;ldquo;this.pageContext.getOut()&amp;rdquo;, so I guess the response/writer/outputstream being used by Tomcat isn&amp;rsquo;t using the wrapper classes I passed via the filter.&lt;/p&gt;
+&lt;p&gt;Any suggestions? Or is there a better way to accomplish what I&amp;rsquo;m trying to do?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

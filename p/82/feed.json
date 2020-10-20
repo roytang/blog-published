@@ -1,0 +1,884 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://roytang.net/",
+    "feed_url": "https://roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://roytang.net/2017/11/931259516254953473/",
+            "url": "https://roytang.net/2017/11/931259516254953473/",
+            "path": "/2017/11/931259516254953473/",
+            "title": "",
+            "content_html": "\u003cp\u003eMe: \u0026ldquo;Life is short, no egrets!\u0026rdquo;\nEgret who just wanted to be loved: (sad face)\u003c/p\u003e\n",
+            "summary": "Me: \u0026ldquo;Life is short, no egrets!\u0026rdquo; Egret who just wanted to be loved: (sad face)",
+            "date_published": "2017-11-16T20:35:45+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931259516254953473.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931259516254953473/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/931258520493744128/",
+            "url": "https://roytang.net/2017/11/931258520493744128/",
+            "path": "/2017/11/931258520493744128/",
+            "title": "",
+            "content_html": "\u003cp\u003eEnter password:\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;ScoobyDoo\u0026rdquo;\u003c/p\u003e\n\u003cp\u003esorry password must contain a special character\u003c/p\u003e\n\u003cp\u003eScoobydooFeaturingBatman\u003c/p\u003e\n",
+            "summary": "Enter password:\n\u0026ldquo;ScoobyDoo\u0026rdquo;\nsorry password must contain a special character\nScoobydooFeaturingBatman",
+            "date_published": "2017-11-16T20:31:47+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931258520493744128/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931258520493744128/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/931235878889861120/",
+            "url": "https://roytang.net/2017/11/931235878889861120/",
+            "path": "/2017/11/931235878889861120/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT if you\u0026rsquo;re awake at a stupid time\u003c/p\u003e\n",
+            "summary": "RT if you\u0026rsquo;re awake at a stupid time",
+            "date_published": "2017-11-16T19:01:49+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931235878889861120.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931235878889861120/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/47336545/",
+            "url": "https://roytang.net/2017/11/47336545/",
+            "path": "/2017/11/47336545/",
+            "title": "Marklogic Optic API",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.\u003c/p\u003e\n\u003cp\u003eOne of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar results = op.fromView('test', 'claims')\n  .groupBy(['member_id', 'member_name'], [\n         op.count('num_claims', 'claim_no'),\n         op.sum('total_amount', 'claim_amount')\n         ])\n  .orderBy(op.desc('total_amount'))\n  .limit(200)\n  .result()\n  .toArray();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAbove works fine. The results are of the form\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e[\n  { \n    member_id: 1, \n    member_name: 'Bob', \n    num_claims: 10, \n    total_amount: 500\n  }, \n  ...\n]\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, we also have a field \u0026ldquo;company\u0026rdquo;, where each claim is filed under a different company. Basically the relevant view columns are claim_no, member_id, member_name, company, claim_amount\u003c/p\u003e\n\u003cp\u003eI would like to be able to show a column that list the different companies for which the member_id/member_name has filed claims, and how many claims for each company.\u003c/p\u003e\n\u003cp\u003ei.e. I want my results to be something like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e[\n  { \n    member_id: 1, \n    member_name: 'Bob', \n    num_claims: 10, \n    total_amount: 500,\n    companies: [\n      {\n        company: 'Ajax Co',\n        num_claims: 8\n      },\n      {\n        company: 'Side Gig',\n        num_claims: 2\n      }\n    ]\n  }, \n  ...\n]\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI tried something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eresults = results.map((member, index, array) =\u0026gt; {\n  var companies = op.fromView('test', 'claims')\n    .where(op.eq(op.col('member_id'), member.member_id))\n    .groupBy('company', [\n      op.count('num_claims', 'claim_no')      \n    ])\n    .result()\n    .toArray();\n  member.companies = companies;\n  return member;\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd the output seems correct, but it also executes quite slowly - almost a minute (total number of claim documents is around 120k)\u003c/p\u003e\n\u003cp\u003eIn our previous ML8 implementation, we were pre-generating summary documents for each member - so retrieval was reasonably fast with the downside that whenever we got a bunch of new data, all of the summary documents had to be re-generated. I was hoping that ML9\u0026rsquo;s optic API would make it easier to do the retrieval/grouping/aggregates on the fly so we wouldn\u0026rsquo;t have to do that.\u003c/p\u003e\n\u003cp\u003eIn theory, I could just add company to the groupBy fields, then merge the rows in the result query as needed. But the problem with that approach is that I can\u0026rsquo;t guarantee I\u0026rsquo;ll get the top 200 by total amount (as was my original query)\u003c/p\u003e\n\u003cp\u003eSo, the question is: Is there a better way of doing this with a reasonable execution time? Or should I just stick to pre-generating the summary documents?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.\nOne of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:\nvar results = op.fromView('test', 'claims') .groupBy(['member_id', 'member_name'], [ op.count('num_claims', 'claim_no'), op.sum('total_amount', 'claim_amount') ]) .orderBy(op.desc('total_amount')) .limit(200) .result() .toArray();  Above works fine. The results are of the form\n[ { member_id: 1, member_name: 'Bob', num_claims: 10, total_amount: 500 }, .",
+            "date_published": "2017-11-16T18:15:35+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47336545/index.md"
+            , "tags": ["marklogic","marklogic-9","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47336545/marklogic-optic-api"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47336545/marklogic-optic-api",
+                    "source_file": "comment-20171116T182412-81625056.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/47336545/marklogic-optic-api",
+                    "source_file": "comment-20171116T191615-47337454.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/47333503/",
+            "url": "https://roytang.net/2017/11/47333503/",
+            "path": "/2017/11/47333503/",
+            "title": "Marklogic Roxy: Calling a javascript module from app_specific.rb",
+            "content_html": "\u003cp\u003eI have a Marklogic 9 project that I\u0026rsquo;m configuring with Roxy.\nI\u0026rsquo;ve been following these examples: \u003ca href=\"https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\"\u003ehttps://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eBasically, I have a server-side JS function that I want to call after deploy content. I have something like this:\u003c/p\u003e\n\u003ch1 id=\"then-you-would-define-your-new-method\"\u003ethen you would define your new method\u003c/h1\u003e\n\u003cpre\u003e\u003ccode\u003e  def deploy_content\n    # you can optionally call the original\n    original_deploy_content\n\n    # do your stuff here\n    execute_query(%Q{\n      xquery version \u0026quot;1.0-ml\u0026quot;;\n      xdmp:javascript-eval('var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent();')\n    },\n    :db_name =\u0026gt; @properties[\u0026quot;ml.app-name\u0026quot;] + \u0026quot;-content\u0026quot;)\n\n  end\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe xquery being called here evaluates fine when executed via query console. But when I call ml local deploy content, I get the following error:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eERROR: 500 \u0026quot;Internal Server Error\u0026quot;\nERROR: \u0026lt;html xmlns=\u0026quot;http://www.w3.org/1999/xhtml\u0026quot;\u0026gt;\n  \u0026lt;head\u0026gt;\n    \u0026lt;title\u0026gt;500 Internal Server Error\u0026lt;/title\u0026gt;\n    \u0026lt;meta name=\u0026quot;robots\u0026quot; content=\u0026quot;noindex,nofollow\u0026quot;/\u0026gt;\n    \u0026lt;link rel=\u0026quot;stylesheet\u0026quot; href=\u0026quot;/error.css\u0026quot;/\u0026gt;\n  \u0026lt;/head\u0026gt;\n  \u0026lt;body\u0026gt;\n    \u0026lt;span class=\u0026quot;error\u0026quot;\u0026gt;\n      \u0026lt;h1\u0026gt;500 Internal Server Error\u0026lt;/h1\u0026gt;\n      \u0026lt;dl\u0026gt;\n        \u0026lt;dt\u0026gt;XDMP-MODNOTFOUND: var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent(); -- Module /ingestion/process.sjs not found\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;in [anonymous], at 1:14 [javascript]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;at 3:6,\nin xdmp:eval(\u0026quot;var process = require(\u0026amp;amp;quot;/ingestion/process.sjs\u0026amp;amp;quot;); proce...\u0026quot;) [javascript]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;in /eval, at 3:6 [1.0-ml]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n      \u0026lt;/dl\u0026gt;\n    \u0026lt;/span\u0026gt;\n  \u0026lt;/body\u0026gt;\n\u0026lt;/html\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWhy is the module not found when running via xquery from app_specific.rb?\u003c/p\u003e\n\u003cp\u003eOr\u0026hellip; is there a better way to call a JS module function from here. Sorry, I\u0026rsquo;m not too familiar with the xquery side, so I just called a JS function instead.\u003c/p\u003e\n",
+            "summary": "I have a Marklogic 9 project that I\u0026rsquo;m configuring with Roxy. I\u0026rsquo;ve been following these examples: https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\nBasically, I have a server-side JS function that I want to call after deploy content. I have something like this:\nthen you would define your new method  def deploy_content # you can optionally call the original original_deploy_content # do your stuff here execute_query(%Q{ xquery version \u0026quot;1.0-ml\u0026quot;; xdmp:javascript-eval('var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent();') }, :db_name =\u0026gt; @properties[\u0026quot;ml.",
+            "date_published": "2017-11-16T15:31:08+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47333503/index.md"
+            , "tags": ["marklogic","roxy","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47333503/marklogic-roxy-calling-a-javascript-module-from-app-specific-rb"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47333503/marklogic-roxy-calling-a-javascript-module-from-app-specific-rb",
+                    "source_file": "comment-20171116T160107-47334114.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/931139413672783872/",
+            "url": "https://roytang.net/2017/11/931139413672783872/",
+            "path": "/2017/11/931139413672783872/",
+            "title": "",
+            "content_html": "\u003cp\u003eWAS told BBM has hired Russian \u0026amp; Indonesian trolls; they\u0026rsquo;re cheaper. Unfortunately, their Tagalog is crooked. Test them by talking in Tagalog. Incidentally, Pinoy trolls have quit. Kapag kausap ninyo ang mga bagong trolls, laliman ninyo ang Tagalog para mabuking. They\u0026rsquo;re here.\u003c/p\u003e\n",
+            "summary": "WAS told BBM has hired Russian \u0026amp; Indonesian trolls; they\u0026rsquo;re cheaper. Unfortunately, their Tagalog is crooked. Test them by talking in Tagalog. Incidentally, Pinoy trolls have quit. Kapag kausap ninyo ang mga bagong trolls, laliman ninyo ang Tagalog para mabuking. They\u0026rsquo;re here.",
+            "date_published": "2017-11-16T12:38:30+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931139413672783872/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931139413672783872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/931138992572997637/",
+            "url": "https://roytang.net/2017/11/931138992572997637/",
+            "path": "/2017/11/931138992572997637/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis honey is A COMPUTER SIMULATION\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/tweet_video/DOwK5kAUMAAX8s5.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
+            "summary": "This honey is A COMPUTER SIMULATION\nYour browser does not support the video tag.  ",
+            "date_published": "2017-11-16T12:36:50+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931138992572997637/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931138992572997637/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/931059702510731266/",
+            "url": "https://roytang.net/2017/11/931059702510731266/",
+            "path": "/2017/11/931059702510731266/",
+            "title": "",
+            "content_html": "\u003cp\u003eOur president’s rate is probably way lower since he doesnt tweet. Still, sana someone does that analysis haha\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/cnn/status/930520761131061253'\u003eCNN\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    President Trump says something that isn\u0026rsquo;t true 5.5 times a day. Every day. | Analysis by \u003ca href=\"https://twitter.com/CillizzaCNN/\"\u003e@CillizzaCNN\u003c/a\u003e \u003ca href=\"http://cnn.it/2AFkOUr\"\u003ehttp://cnn.it/2AFkOUr\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Our president’s rate is probably way lower since he doesnt tweet. Still, sana someone does that analysis haha\nQuoted CNN\u0026#39;s tweet:   President Trump says something that isn\u0026rsquo;t true 5.5 times a day. Every day. | Analysis by @CillizzaCNN http://cnn.it/2AFkOUr  ",
+            "date_published": "2017-11-16T07:21:45+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931059702510731266/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931059702510731266/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930495482119340032/",
+            "url": "https://roytang.net/2017/11/930495482119340032/",
+            "path": "/2017/11/930495482119340032/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TolarianCollege/\"\u003e@TolarianCollege\u003c/a\u003e \u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later\u003c/p\u003e\n",
+            "summary": "@TolarianCollege @mtgaaron Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later",
+            "date_published": "2017-11-14T17:59:45+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930495482119340032.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495482119340032/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930495180070830080/",
+            "url": "https://roytang.net/2017/11/930495180070830080/",
+            "path": "/2017/11/930495180070830080/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Nintendo_Legend/\"\u003e@Nintendo_Legend\u003c/a\u003e: Super Nintendo Chalmers! 😂😂\u003c/p\u003e\n",
+            "summary": "RT @Nintendo_Legend: Super Nintendo Chalmers! 😂😂",
+            "date_published": "2017-11-14T17:58:33+00:00",
+            "date_modified": "2020-10-13T15:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930495180070830080/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495180070830080/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930494881432088577/",
+            "url": "https://roytang.net/2017/11/930494881432088577/",
+            "path": "/2017/11/930494881432088577/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhile I\u0026rsquo;m complaining about Tweetdeck, how come it doesn\u0026rsquo;t support pasting screen captures from the keyboard? (I have to open regular \u003ca href=\"https://twitter.com/Twitter/\"\u003e@Twitter\u003c/a\u003e to do it)\u003c/p\u003e\n",
+            "summary": "While I\u0026rsquo;m complaining about Tweetdeck, how come it doesn\u0026rsquo;t support pasting screen captures from the keyboard? (I have to open regular @Twitter to do it)",
+            "date_published": "2017-11-14T17:57:22+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930494881432088577.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494881432088577/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930494399707934720/",
+            "url": "https://roytang.net/2017/11/930494399707934720/",
+            "path": "/2017/11/930494399707934720/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/FogCreek/\"\u003e@FogCreek\u003c/a\u003e \u003ca href=\"https://twitter.com/anildash/\"\u003e@anildash\u003c/a\u003e Tweetdeck preview image wasn\u0026rsquo;t good for you guys\u003c/p\u003e\n",
+            "summary": "@FogCreek @anildash Tweetdeck preview image wasn\u0026rsquo;t good for you guys",
+            "date_published": "2017-11-14T17:55:27+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930494399707934720/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494399707934720/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930494149647667200/",
+            "url": "https://roytang.net/2017/11/930494149647667200/",
+            "path": "/2017/11/930494149647667200/",
+            "title": "",
+            "content_html": "\u003cp\u003eNow I have three browsers pinned to my taskbar! (I don\u0026rsquo;t really use Edge but I keep him around for some weird kind of sentimental reason)\u003c/p\u003e\n",
+            "summary": "Now I have three browsers pinned to my taskbar! (I don\u0026rsquo;t really use Edge but I keep him around for some weird kind of sentimental reason)",
+            "date_published": "2017-11-14T17:54:27+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/930494149647667200/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494149647667200/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930493317279727616/",
+            "url": "https://roytang.net/2017/11/930493317279727616/",
+            "path": "/2017/11/930493317279727616/",
+            "title": "",
+            "content_html": "\u003cp\u003eWith the recent release of Firefox Quantum, I decided to use it as my main browser for a while. My first complaint: Tweetdeck scrollbars are horrible in FF vs Chrome.\u003c/p\u003e\n",
+            "summary": "With the recent release of Firefox Quantum, I decided to use it as my main browser for a while. My first complaint: Tweetdeck scrollbars are horrible in FF vs Chrome.",
+            "date_published": "2017-11-14T17:51:09+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/930493317279727616/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930493317279727616/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930463897689010177/",
+            "url": "https://roytang.net/2017/11/930463897689010177/",
+            "path": "/2017/11/930463897689010177/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis is perfectly legal in non-Silver border land! And why isn\u0026rsquo;t it mythic?!? #MTGUN3\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/misterorange/status/930463197009797121'\u003emisterorange\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    OMG they did it. We\u0026rsquo;re all done here, let\u0026rsquo;s pack it up. #MTGUn3\n\u003c/blockquote\u003e\n",
+            "summary": "This is perfectly legal in non-Silver border land! And why isn\u0026rsquo;t it mythic?!? #MTGUN3\nQuoted misterorange\u0026#39;s tweet:   OMG they did it. We\u0026rsquo;re all done here, let\u0026rsquo;s pack it up. #MTGUn3  ",
+            "date_published": "2017-11-14T15:54:15+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930463897689010177/index.md"
+            , "tags": ["MTGUN3","mtgun3"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930463897689010177/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930463597838327808/",
+            "url": "https://roytang.net/2017/11/930463597838327808/",
+            "path": "/2017/11/930463597838327808/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e I giggled uncontrollably for like half a minute\u003c/p\u003e\n",
+            "summary": "@misterorange I giggled uncontrollably for like half a minute",
+            "date_published": "2017-11-14T15:53:03+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930463597838327808.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930463597838327808/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930463147583926272/",
+            "url": "https://roytang.net/2017/11/930463147583926272/",
+            "path": "/2017/11/930463147583926272/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e yes. btw yung green car mo andito pa sa bahay\u003c/p\u003e\n",
+            "summary": "@alvinjtang yes. btw yung green car mo andito pa sa bahay",
+            "date_published": "2017-11-14T15:51:16+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930463147583926272.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930463147583926272/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930416354540142592/",
+            "url": "https://roytang.net/2017/11/930416354540142592/",
+            "path": "/2017/11/930416354540142592/",
+            "title": "",
+            "content_html": "\u003cp\u003eHere it is, True Believers, my Mom\u0026rsquo;s review of THOR: RAGNAROK!\u003c/p\u003e\n\u003cp\u003e#MomMovieReview\u003c/p\u003e\n\u003cp\u003eEnjoy and share.\u003c/p\u003e\n",
+            "summary": "Here it is, True Believers, my Mom\u0026rsquo;s review of THOR: RAGNAROK!\n#MomMovieReview\nEnjoy and share.",
+            "date_published": "2017-11-14T12:45:19+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930416354540142592/index.md"
+            , "tags": ["MomMovieReview"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930416354540142592/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/10156183607868912/",
+            "url": "https://roytang.net/2017/11/10156183607868912/",
+            "path": "/2017/11/10156183607868912/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhat if someday is today\u003c/p\u003e\n",
+            "summary": "What if someday is today",
+            "date_published": "2017-11-14T11:08:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/10156183607868912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156183607868912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930377489200791553/",
+            "url": "https://roytang.net/2017/11/930377489200791553/",
+            "path": "/2017/11/930377489200791553/",
+            "title": "",
+            "content_html": "\u003cp\u003eWar on drugs? We can\u0026rsquo;t even win the war against wrong grammar!\u003c/p\u003e\n",
+            "summary": "War on drugs? We can\u0026rsquo;t even win the war against wrong grammar!",
+            "date_published": "2017-11-14T10:10:53+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930377489200791553.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930377489200791553/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930374893073457152/",
+            "url": "https://roytang.net/2017/11/930374893073457152/",
+            "path": "/2017/11/930374893073457152/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT if you don\u0026rsquo;t support the war on drugs \u003ca href=\"https://twitter.com/Fbdevera/status/930328847366553601\"\u003ehttps://twitter.com/Fbdevera/status/930328847366553601\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT if you don\u0026rsquo;t support the war on drugs https://twitter.com/Fbdevera/status/930328847366553601",
+            "date_published": "2017-11-14T10:00:34+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930374893073457152/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930374893073457152/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930271248470327296/",
+            "url": "https://roytang.net/2017/11/930271248470327296/",
+            "path": "/2017/11/930271248470327296/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026lt;hunter\u0026gt; what if someday is today :p\u003c/p\u003e\n",
+            "summary": "\u0026lt;hunter\u0026gt; what if someday is today :p",
+            "date_published": "2017-11-14T03:08:43+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930271248470327296/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930271248470327296/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930104501528227841/",
+            "url": "https://roytang.net/2017/11/930104501528227841/",
+            "path": "/2017/11/930104501528227841/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe idea behind non-official channels, like Sass, RJ, Bruce, and other D D S bloggers, is ensure there will be attack dogs for issues that official channels can’t tackle head on. This strategy achieves a common goal with the benefit of deniability.\u003c/p\u003e\n",
+            "summary": "The idea behind non-official channels, like Sass, RJ, Bruce, and other D D S bloggers, is ensure there will be attack dogs for issues that official channels can’t tackle head on. This strategy achieves a common goal with the benefit of deniability.",
+            "date_published": "2017-11-13T16:06:08+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930104501528227841/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930104501528227841/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/930049251781910530/",
+            "url": "https://roytang.net/2017/11/930049251781910530/",
+            "path": "/2017/11/930049251781910530/",
+            "title": "",
+            "content_html": "\u003cp\u003eI may be a scrubby #SFV Bronze, but at least I\u0026rsquo;m ready for season 3\u003c/p\u003e\n",
+            "summary": "I may be a scrubby #SFV Bronze, but at least I\u0026rsquo;m ready for season 3",
+            "date_published": "2017-11-13T12:26:35+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/930049251781910530/index.md"
+            , "tags": ["SFV"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930049251781910530/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/bbca1dzfhuw/",
+            "url": "https://roytang.net/2017/11/bbca1dzfhuw/",
+            "path": "/2017/11/bbca1dzfhuw/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe niece is staying over so I had her assemble some #Legos to keep her busy\u003c/p\u003e\n",
+            "summary": "The niece is staying over so I had her assemble some #Legos to keep her busy",
+            "date_published": "2017-11-13T06:49:55+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/BbcA1dZFHuw/index.md"
+            , "tags": ["Legos"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BbcA1dZFHuw/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/167449395540/the-niece-is-staying-over-so-i-had-her-assemble"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/930152682383388673/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/930070284702449664/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156182000983912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929912103225384960/",
+            "url": "https://roytang.net/2017/11/929912103225384960/",
+            "path": "/2017/11/929912103225384960/",
+            "title": "",
+            "content_html": "\u003cp\u003eAstrophysicist and science communicator Carl Sagan was born #OTD in 1934. Here is what he feared we might become, from “The Demon Haunted World.”\u003c/p\u003e\n",
+            "summary": "Astrophysicist and science communicator Carl Sagan was born #OTD in 1934. Here is what he feared we might become, from “The Demon Haunted World.”",
+            "date_published": "2017-11-13T03:21:36+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929912103225384960/index.md"
+            , "tags": ["OTD"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929912103225384960/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929880278792728576/",
+            "url": "https://roytang.net/2017/11/929880278792728576/",
+            "path": "/2017/11/929880278792728576/",
+            "title": "",
+            "content_html": "\u003cp\u003eThere should be a term for this. Maybe “algorithmic radicalization.”\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html\"\u003ehttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html\u003c/a\u003e \u003ca href=\"https://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news\"\u003ehttps://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "There should be a term for this. Maybe “algorithmic radicalization.”\nhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html https://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news",
+            "date_published": "2017-11-13T01:15:09+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929880278792728576/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929880278792728576/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/dppnzwm/",
+            "url": "https://roytang.net/2017/11/dppnzwm/",
+            "path": "/2017/11/dppnzwm/",
+            "title": "",
+            "content_html": "\u003cp\u003eAMA Request: A Jollibee customer na nakipagkwentuhan kay Trudeau\u003c/p\u003e\n",
+            "summary": "AMA Request: A Jollibee customer na nakipagkwentuhan kay Trudeau",
+            "date_published": "2017-11-12T17:08:13+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/dppnzwm/index.md"
+            , "tags": ["Philippines"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/7cesx1/gma_news_on_twitter_matapos_bumisita_sa_womens/dppnzwm/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929744705226653696/",
+            "url": "https://roytang.net/2017/11/929744705226653696/",
+            "path": "/2017/11/929744705226653696/",
+            "title": "",
+            "content_html": "\u003cp\u003eMore respect now for Krysten\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/nytimesbooks/status/929733788485279745'\u003enytimesbooks\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    The actress Krysten RItter has written a debut thriller, \u0026ldquo;Bonfire.\u0026rdquo; But you won\u0026rsquo;t catch her reading books on set. \u003ca href=\"http://nyti.ms/2AzVf7Y\"\u003ehttp://nyti.ms/2AzVf7Y\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "More respect now for Krysten\nQuoted nytimesbooks\u0026#39;s tweet:   The actress Krysten RItter has written a debut thriller, \u0026ldquo;Bonfire.\u0026rdquo; But you won\u0026rsquo;t catch her reading books on set. http://nyti.ms/2AzVf7Y  ",
+            "date_published": "2017-11-12T16:16:26+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929744705226653696/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929744705226653696/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929673995527401478/",
+            "url": "https://roytang.net/2017/11/929673995527401478/",
+            "path": "/2017/11/929673995527401478/",
+            "title": "",
+            "content_html": "\u003cp\u003eI wouldnt mind an all-female reboot of the PH govt either.\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/conanobrien/status/929414716446986245'\u003eConanOBrien\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    I\u0026rsquo;m ready for the all-female reboot of America.\n\u003c/blockquote\u003e\n",
+            "summary": "I wouldnt mind an all-female reboot of the PH govt either.\nQuoted ConanOBrien\u0026#39;s tweet:   I\u0026rsquo;m ready for the all-female reboot of America.  ",
+            "date_published": "2017-11-12T11:35:27+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929673995527401478/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929673995527401478/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929673103604461568/",
+            "url": "https://roytang.net/2017/11/929673103604461568/",
+            "path": "/2017/11/929673103604461568/",
+            "title": "",
+            "content_html": "\u003cp\u003eThread\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/tonyocruz/status/929665661126590466'\u003etonyocruz\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThe weakest link in the broad anti-Duterte opposition are the Yellows (not all, just the diehard and rabid ones).\u003c/p\u003e\n\u003cp\u003eThey think their votes are more important than others.\u003c/p\u003e\n\u003cp\u003eThey think Duterte’s sins absolve PNoy’s record of ineptitude, cruelty, corruption and puppetry.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Thread\nQuoted tonyocruz\u0026#39;s tweet:   The weakest link in the broad anti-Duterte opposition are the Yellows (not all, just the diehard and rabid ones).\nThey think their votes are more important than others.\nThey think Duterte’s sins absolve PNoy’s record of ineptitude, cruelty, corruption and puppetry.\n ",
+            "date_published": "2017-11-12T11:31:55+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929673103604461568/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929673103604461568/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929670808879865856/",
+            "url": "https://roytang.net/2017/11/929670808879865856/",
+            "path": "/2017/11/929670808879865856/",
+            "title": "",
+            "content_html": "\u003cp\u003eI kind of want a Spider-Man movie where the bad guy is Kraven the Hunter. He has no complicated background sob story, it\u0026rsquo;s literally just a movie where he hunts Spider-Man\u003c/p\u003e\n\u003cp\u003eif you\u0026rsquo;re not familiar with Kraven, here\u0026rsquo;s a quick primer c/o Hark a Vagrant: \u003ca href=\"http://www.harkavagrant.com/index.php?id=324\"\u003ehttp://www.harkavagrant.com/index.php?id=324\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I kind of want a Spider-Man movie where the bad guy is Kraven the Hunter. He has no complicated background sob story, it\u0026rsquo;s literally just a movie where he hunts Spider-Man\nif you\u0026rsquo;re not familiar with Kraven, here\u0026rsquo;s a quick primer c/o Hark a Vagrant: http://www.harkavagrant.com/index.php?id=324",
+            "date_published": "2017-11-12T11:22:47+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929670808879865856/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929670808879865856/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156179336503912"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/929671530631462913/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/8s743u2bkz8/",
+            "url": "https://roytang.net/2017/11/8s743u2bkz8/",
+            "path": "/2017/11/8s743u2bkz8/",
+            "title": "",
+            "content_html": "\u003cp\u003e[Bronze] Kolin vs Juli\nHelp me improve!\u003c/p\u003e\n\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/8S743U2bkZ8\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\n",
+            "summary": "[Bronze] Kolin vs Juli Help me improve!\n  ",
+            "date_published": "2017-11-12T07:51:24+00:00",
+            "date_modified": "2019-11-12T00:09:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/8S743U2bkZ8/index.md"
+            , "tags": ["StreetFighterV"]
+            , "syndicated": [{"type":"youtube","url":"https://www.youtube.com/watch?v=8S743U2bkZ8"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/929617853023625216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929574624895033344/",
+            "url": "https://roytang.net/2017/11/929574624895033344/",
+            "path": "/2017/11/929574624895033344/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/momblogger/\"\u003e@momblogger\u003c/a\u003e to be fair even our own government has trouble spelling the country name\u003c/p\u003e\n",
+            "summary": "@momblogger to be fair even our own government has trouble spelling the country name",
+            "date_published": "2017-11-12T05:00:35+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929574624895033344.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929574624895033344/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929567846991982593/",
+            "url": "https://roytang.net/2017/11/929567846991982593/",
+            "path": "/2017/11/929567846991982593/",
+            "title": "",
+            "content_html": "\u003cp\u003eMehn, it takes me 2-3 hours to upload a 3 min video to youtube\u003c/p\u003e\n",
+            "summary": "Mehn, it takes me 2-3 hours to upload a 3 min video to youtube",
+            "date_published": "2017-11-12T04:33:39+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929567846991982593.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929567846991982593/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/zgcgzr8eps4/",
+            "url": "https://roytang.net/2017/11/zgcgzr8eps4/",
+            "path": "/2017/11/zgcgzr8eps4/",
+            "title": "",
+            "content_html": "\u003cp\u003e[Bronze] Ryu vs Kolin\nPlease help me improve!\u003c/p\u003e\n\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/ZgCgZr8ePs4\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\n",
+            "summary": "[Bronze] Ryu vs Kolin Please help me improve!\n  ",
+            "date_published": "2017-11-12T04:27:42+00:00",
+            "date_modified": "2019-11-12T00:09:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/ZgCgZr8ePs4/index.md"
+            , "tags": ["StreetFighterV"]
+            , "syndicated": [{"type":"youtube","url":"https://www.youtube.com/watch?v=ZgCgZr8ePs4"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/929566385188913153/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929546367545962497/",
+            "url": "https://roytang.net/2017/11/929546367545962497/",
+            "path": "/2017/11/929546367545962497/",
+            "title": "",
+            "content_html": "\u003cp\u003eSeeing some folks I follow circulating a point that\u0026rsquo;s worth drawing a bit of attention to. One of the oldest canards in low-denominator comedy is that women are inscrutable and men can\u0026rsquo;t understand them. There\u0026rsquo;s a reason for this and it ain\u0026rsquo;t funny.\u003c/p\u003e\n",
+            "summary": "Seeing some folks I follow circulating a point that\u0026rsquo;s worth drawing a bit of attention to. One of the oldest canards in low-denominator comedy is that women are inscrutable and men can\u0026rsquo;t understand them. There\u0026rsquo;s a reason for this and it ain\u0026rsquo;t funny.",
+            "date_published": "2017-11-12T03:08:18+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929546367545962497/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929546367545962497/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929545582254759936/",
+            "url": "https://roytang.net/2017/11/929545582254759936/",
+            "path": "/2017/11/929545582254759936/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe ASEAN traffic gridlock is typical of the Philippine solution to problems. Give privileges to a select few and everyone else can suck it.\u003c/p\u003e\n",
+            "summary": "The ASEAN traffic gridlock is typical of the Philippine solution to problems. Give privileges to a select few and everyone else can suck it.",
+            "date_published": "2017-11-12T03:05:11+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929545582254759936/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929545582254759936/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929512201953480704/",
+            "url": "https://roytang.net/2017/11/929512201953480704/",
+            "path": "/2017/11/929512201953480704/",
+            "title": "",
+            "content_html": "\u003cp\u003eRetweet for your chance to win a \u003ca href=\"https://twitter.com/LEGOIdeas/\"\u003e@LEGOIdeas\u003c/a\u003e #WomenOfNASA set signed by Nancy Grace Roman and Margaret Hamilton. We\u0026rsquo;ll randomly choose 1 winner a day over the next 3 days, Nov 10th-12th. \u003ca href=\"http://lego.build/WoNGiveaway\"\u003ehttp://lego.build/WoNGiveaway\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Retweet for your chance to win a @LEGOIdeas #WomenOfNASA set signed by Nancy Grace Roman and Margaret Hamilton. We\u0026rsquo;ll randomly choose 1 winner a day over the next 3 days, Nov 10th-12th. http://lego.build/WoNGiveaway",
+            "date_published": "2017-11-12T00:52:33+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929512201953480704/index.md"
+            , "tags": ["WomenOfNASA"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929512201953480704/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929510439091712001/",
+            "url": "https://roytang.net/2017/11/929510439091712001/",
+            "path": "/2017/11/929510439091712001/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/kinucakes/\"\u003e@kinucakes\u003c/a\u003e I would appreciate it if you could post more like this :)\u003c/p\u003e\n",
+            "summary": "@kinucakes I would appreciate it if you could post more like this :)",
+            "date_published": "2017-11-12T00:45:32+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929510439091712001.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929510439091712001/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929263496218284032/",
+            "url": "https://roytang.net/2017/11/929263496218284032/",
+            "path": "/2017/11/929263496218284032/",
+            "title": "",
+            "content_html": "\u003cp\u003eOn the left: the 2nd and 3rd editions of “CSS: The Definitive Guide”.  On the right, a single copy of the fourth edition.\u003c/p\u003e\n\u003cp\u003e😳\u003c/p\u003e\n",
+            "summary": "On the left: the 2nd and 3rd editions of “CSS: The Definitive Guide”. On the right, a single copy of the fourth edition.\n😳",
+            "date_published": "2017-11-11T08:24:17+00:00",
+            "date_modified": "2020-09-08T00:33:30+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929263496218284032/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929263496218284032/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/929181126261858306/",
+            "url": "https://roytang.net/2017/11/929181126261858306/",
+            "path": "/2017/11/929181126261858306/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/SteveBlogs1/\"\u003e@SteveBlogs1\u003c/a\u003e: This is the best thing you\u0026rsquo;ll see today\u003c/p\u003e\n",
+            "summary": "RT @SteveBlogs1: This is the best thing you\u0026rsquo;ll see today",
+            "date_published": "2017-11-11T02:56:58+00:00",
+            "date_modified": "2020-10-13T15:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/929181126261858306/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929181126261858306/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/47216649/",
+            "url": "https://roytang.net/2017/11/47216649/",
+            "path": "/2017/11/47216649/",
+            "title": "vis.js network - is there a setting to make the node labels stay the same size on zoom?",
+            "content_html": "\u003cp\u003eBasically the title. The client is complaining that when he zooms in, the text labels for the nodes are quite large. Is there a way to keep the node labels at a fixed font size even when zooming in or out?\u003c/p\u003e\n\u003cp\u003eFrom the nodes documentation (\u003ca href=\"http://visjs.org/docs/network/nodes.html),\"\u003ehttp://visjs.org/docs/network/nodes.html),\u003c/a\u003e there\u0026rsquo;s a scaling.label option, but it doesn\u0026rsquo;t seem to work. I think this is only relevant if I\u0026rsquo;m using values to scale the nodes.\u003c/p\u003e\n",
+            "summary": "Basically the title. The client is complaining that when he zooms in, the text labels for the nodes are quite large. Is there a way to keep the node labels at a fixed font size even when zooming in or out?\nFrom the nodes documentation (http://visjs.org/docs/network/nodes.html), there\u0026rsquo;s a scaling.label option, but it doesn\u0026rsquo;t seem to work. I think this is only relevant if I\u0026rsquo;m using values to scale the nodes.",
+            "date_published": "2017-11-10T06:11:10+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47216649/index.md"
+            , "tags": ["javascript","vis.js","vis.js-network","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47216649/vis-js-network-is-there-a-setting-to-make-the-node-labels-stay-the-same-size-o"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47216649/vis-js-network-is-there-a-setting-to-make-the-node-labels-stay-the-same-size-o",
+                    "source_file": "comment-20171227T103940-47990703.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/928856978587238400/",
+            "url": "https://roytang.net/2017/11/928856978587238400/",
+            "path": "/2017/11/928856978587238400/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/AljoDolores/\"\u003e@AljoDolores\u003c/a\u003e: \u003ca href=\"https://twitter.com/EspinaNonoy/\"\u003e@EspinaNonoy\u003c/a\u003e \u003ca href=\"https://twitter.com/HeuyGeungGong/\"\u003e@HeuyGeungGong\u003c/a\u003e Saan kaya napunta yung nawawalang \u0026lsquo;I\u0026rsquo;?\u003c/p\u003e\n",
+            "summary": "RT @AljoDolores: @EspinaNonoy @HeuyGeungGong Saan kaya napunta yung nawawalang \u0026lsquo;I\u0026rsquo;?",
+            "date_published": "2017-11-10T05:28:55+00:00",
+            "date_modified": "2020-10-13T15:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/928856978587238400/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/928856978587238400/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/928664899089088512/",
+            "url": "https://roytang.net/2017/11/928664899089088512/",
+            "path": "/2017/11/928664899089088512/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis reminds me of how Xander from Buffy only appears in the news nowadays when he gets arrested for domestic abuse or something \u003ca href=\"https://www.dailymail.co.uk/news/article-5063683/amp/Former-Smallville-actress-second-command-sex-cult.html\"\u003ehttps://www.dailymail.co.uk/news/article-5063683/amp/Former-Smallville-actress-second-command-sex-cult.html\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "This reminds me of how Xander from Buffy only appears in the news nowadays when he gets arrested for domestic abuse or something https://www.dailymail.co.uk/news/article-5063683/amp/Former-Smallville-actress-second-command-sex-cult.html",
+            "date_published": "2017-11-09T16:45:40+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/928664899089088512.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/928664899089088512/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156172326988912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/928555553671933952/",
+            "url": "https://roytang.net/2017/11/928555553671933952/",
+            "path": "/2017/11/928555553671933952/",
+            "title": "",
+            "content_html": "\u003cp\u003eMaybe browsing these Lazada flash sales isn\u0026rsquo;t a good idea\u003c/p\u003e\n",
+            "summary": "Maybe browsing these Lazada flash sales isn\u0026rsquo;t a good idea",
+            "date_published": "2017-11-09T09:31:10+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/928555553671933952.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/928555553671933952/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/928506718052499456/",
+            "url": "https://roytang.net/2017/11/928506718052499456/",
+            "path": "/2017/11/928506718052499456/",
+            "title": "",
+            "content_html": "\u003cp\u003eimma just ignore this #280characters thing and be pleasantly surprised when i can fit the apostrophe in my contractions\u003c/p\u003e\n",
+            "summary": "imma just ignore this #280characters thing and be pleasantly surprised when i can fit the apostrophe in my contractions",
+            "date_published": "2017-11-09T06:17:07+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/928506718052499456.md"
+            , "tags": ["280characters"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/928506718052499456/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/bbrrxjsfthj/",
+            "url": "https://roytang.net/2017/11/bbrrxjsfthj/",
+            "path": "/2017/11/bbrrxjsfthj/",
+            "title": "",
+            "content_html": "\u003cp\u003eD:\u003c/p\u003e\n",
+            "summary": "D:",
+            "date_published": "2017-11-09T02:46:14+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/BbRRxJsFthJ/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BbRRxJsFthJ/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/928559398930341889/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156171671078912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/928305261336584192/",
+            "url": "https://roytang.net/2017/11/928305261336584192/",
+            "path": "/2017/11/928305261336584192/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e \u003ca href=\"https://twitter.com/goodgamery/\"\u003e@goodgamery\u003c/a\u003e The first card he saw beside Magmaw literally had Ursula from the little mermaid on it, how could anyone believe this could possibly be real\u003c/p\u003e\n",
+            "summary": "@misterorange @goodgamery The first card he saw beside Magmaw literally had Ursula from the little mermaid on it, how could anyone believe this could possibly be real",
+            "date_published": "2017-11-08T16:56:36+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/928305261336584192.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/928305261336584192/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2017/11/10156167338153912/",
+            "url": "https://roytang.net/2017/11/10156167338153912/",
+            "path": "/2017/11/10156167338153912/",
+            "title": "",
+            "content_html": "\u003cp\u003e“I’m bored’ is a useless thing to say. You live in a great, big, vast world that you’ve seen none percent of. Even the inside of your own mind is endless. It goes on forever, inwardly - you understand? The fact the you’re alive is amazing. So you don’t get to be bored.” - LOUIS C.K.\u003c/p\u003e\n",
+            "summary": "“I’m bored’ is a useless thing to say. You live in a great, big, vast world that you’ve seen none percent of. Even the inside of your own mind is endless. It goes on forever, inwardly - you understand? The fact the you’re alive is amazing. So you don’t get to be bored.” - LOUIS C.K.",
+            "date_published": "2017-11-07T21:55:00+00:00",
+            "date_modified": "2019-09-28T21:45:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/10156167338153912/index.md"
+            , "tags": ["quotes"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156167338153912"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/81/feed.json" 
+     , "next": "/p/83/feed.json" 
+}

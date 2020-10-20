@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Trying out 3d Modelling with Blender  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+    
+    <link rel="webmention" href="https://webmention.io/roytang.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/roytang.net/xmlrpc" />  
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="Learning Things, Self-Improvement, ">
+
+
+<meta property="og:title" content="Trying out 3d Modelling with Blender  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-02-01T01:00:54Z" />
+<meta property="og:article:modified_time" content="2018-02-01T01:00:54Z" />
+
+  
+    
+<meta property="og:article:tag" content="Learning Things">
+    
+<meta property="og:article:tag" content="Self-Improvement">
+    
+  
+
+
+
+
+
+
+
+<meta property="og:image" content='https://roytang.net/img/profile.jpg'>
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roytang" />
+<meta name="twitter:creator" content="@roytang" />
+<meta name="twitter:title" content="Trying out 3d Modelling with Blender" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/" />
+<meta name="twitter:domain" content="https://roytang.net">
+<meta name="twitter:image" content='https://roytang.net/img/profile.jpg'>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Trying out 3d Modelling with Blender",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2018-02-01",
+    "description": "",
+    "wordCount":  406 
+  }
+</script>
+
+
+
+<link href='https://roytang.net/index.xml' rel="alternate" type="application/rss+xml" title="Trying out 3d Modelling with Blender" />
+
+<link rel="canonical" href="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/" />
+
+<link href="https://roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://roytang.net/blog/">Blog</a>
+    
+    <a href="https://roytang.net/notes/">Notes</a>
+    
+    <a href="https://roytang.net/photos/">Photos</a>
+    
+    <a href="https://roytang.net/links/">Links</a>
+    
+    <a href="https://roytang.net/archives/">Archives</a>
+    
+    <a href="https://roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+<article class="list_item post h-entry">
+<div class="title">
+
+    <a class="u-url post-title" href="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/"><h3 class="p-name">Trying out 3d Modelling with Blender</h3></a>
+    <time class="dt-published" datetime="2018-02-01 01:00:54">1 Feb 2018 1:00am</time>
+
+</div>
+
+<div class="e-content">
+
+<p>I decided to try learning some 3d modeling. For the past couple of weeks I&rsquo;ve been following this beginner <a href="https://www.blender.org/">Blender</a> tutorial where I had to make donuts. (<a href="https://www.youtube.com/watch?v=JYj6e-72RDs&amp;index=2&amp;list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P">Link to the tutorial series on Youtube</a>.) Here&rsquo;s my output!</p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="#e122ce97c5258e307e77a24c36181c12-lightbox">
+    <figure>
+      <img src="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/donut4_hu6e8b1665346fb560094f645dbbdad573_3005276_300x0_resize_box_2.png" alt="" title="" class="tn" />
+      <figcaption> (Click to view full-size)</figcaption>
+    </figure>
+</a>
+<div class="lightbox" id="e122ce97c5258e307e77a24c36181c12-lightbox" style="display: none;">
+  <a href="#_">
+    <img src="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/donut4.png" />
+  </a>
+  <div class="lightbox_overlay">
+    <p></p>
+    <time class="dt-published" datetime="1 Feb 2018 1:00am">1 Feb 2018 1:00am</time><a href="#_">Close</a>
+  </div>
+</div>
+
+<p>This image took around 40 minutes to render. I had to do 2000 samples per tile which is why it was so slow. I was getting too much noise/graininess at lower sampling rates.</p>
+<p>I didn&rsquo;t follow the tutorial exactly. My plate is square and made of glass for one thing. The chocobutternut donut wasn&rsquo;t part of the tutorial, I just wanted to try it (obviously did not turn out too well and all those orange particles on the donut probably really slowed down the render lol). I also didn&rsquo;t bother too much with the stuff in the last two videos of the series which involved adjusting the lighting and other stuff to make the image prettier (wasn&rsquo;t really interested). I actually also tried to model a fork (not in the tutorial), but I couldn&rsquo;t get the tines right and gave up.</p>
+<p>A long time ago I read an interview in an old PC gaming mag about how they implemented Age of Empires and there was an image of a 3d mesh of a knight on horseback and I remember thinking &ldquo;That looks really complicated, I&rsquo;ll probably never be able to do something like that.&rdquo;</p>
+<p>And now that I&rsquo;ve tried this tutorial, I have to agree with that initial assessment &ndash; any complex modelling would surely try my patience. But I was also pleasantly surprised with how advanced Blender is &ndash; I sort of imagined that you had to position and adjust all the mesh nodes/vertices/faces by hand a lot, but actually there&rsquo;s a ton of functions to make some common operations simpler (but it&rsquo;s still a lot of work).</p>
+<p>One complaint is that Blender&rsquo;s user interface is very obtuse and daunting though &ndash; I don&rsquo;t usually do video tutorials but I doubt I could have figured this stuff out on my own. Though I suppose it can&rsquo;t be helped given the sheer complexity of the task involved.</p>
+<p>I&rsquo;m probably not going into any sort of significant 3d modelling or 3d artwork soon (like I said, not enough patience), but it was good to give it a try so at least I have a passing knowledge of some of the concepts involved.</p>
+<p> </p>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://roytang.net/post">post</a> at 
+    <a href="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/"><time class="dt-published" datetime="2018-02-01 01:00:54">1 Feb 2018 1:00am</time></a>
+
+    
+
+<a class="tag p-category" href="https://roytang.net/tags/learning-things">#Learning Things</a>
+
+<a class="tag p-category" href="https://roytang.net/tags/self-improvement">#Self-Improvement</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on tumblr" class='u-syndication' href="https://tumblr.roytang.net/post/170364110450/trying-out-3d-modelling-with-blender" title="View on tumblr">tumblr</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/958868554547449857/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 406 words
+    
+</div>
+
+<div class="comments">
+
+
+
+
+<h3>See Also</h3>
+<ul>
+    
+    <li><a href="https://roytang.net/2018/01/new-years-resolution-do-at-least-one-personally-productive-thing-per-day/">New Year&#39;s Resolution: Do at least one personally productive thing per day</a></li>
+    
+    <li><a href="https://roytang.net/2017/08/compartmentalization/">Compartmentalization</a></li>
+    
+    <li><a href="https://roytang.net/2017/01/new-years-checklist/">New Year&#39;s Checklist</a></li>
+    
+    <li><a href="https://roytang.net/2016/12/learning-new-skills/">Learning New Skills</a></li>
+    
+    <li><a href="https://roytang.net/2016/11/are-you-willing-to-accept-criticism/">Are you willing to accept criticism?</a></li>
+    
+</ul>
+
+
+
+
+
+    
+
+
+
+
+<div class="feedback">If you enjoyed my content for some reason, I'd love to hear from you! Here are some options:
+<ul>
+    <li>You can <a href="https://ko-fi.com/roytang">buy me a coffee!</a></li>
+
+
+    
+
+    
+    <li>You can <a href="https://twitter.com/roytang/statuses/958868554547449857/">share or reply to this post on Twitter</a>. </li>
+    
+    
+
+
+
+    
+
+    
+
+ 
+
+
+  
+<li>You can write a reply on your own site and submit the URL as a <a href="https://indieweb.org/webmention">webmention</a> via the form below.
+    <form id="webmention-form" action="https://webmention.io/roytang.net/webmention" method="POST">
+        <input name="target" value="https://roytang.net/2018/02/trying-out-3d-modelling-with-blender/" type="hidden" />
+        <input name="source" placeholder="Your reply URL" style="width:90%" required />
+        <button type="submit" >Submit</button>
+    </form>
+</li>
+
+<li>Or you can just <a href="https://roytang.net/about/contact">contact me</a>!</li>
+</ul>
+</div>
+
+
+
+
+<div class="navigation">
+  
+
+    
+    <a class="prev" href="https://roytang.net/2018/01/new-years-resolution-do-at-least-one-personally-productive-thing-per-day/" title="New Year&#39;s Resolution: Do at least one personally productive thing per day">
+        Previous: New Year&#39;s Resolution: Do at least one personally productive thing per day
+    </a>
+    
+    
+    <a class="next" href="https://roytang.net/2018/02/globes-fair-use-policy-and-the-rotten-bananas-four-years-after/" title="Globe&#39;s Fair Use Policy and the &#34;Rotten Bananas&#34;, four years later">
+        Next: Globe&#39;s Fair Use Policy and the &#34;Rotten Bananas&#34;, four years later 
+    </a>
+    
+  
+</div>  
+
+
+
+
+</article>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://apps.roytang.net/blog/search">Search</a></li>
+
+    <li><a href="https://apps.roytang.net/blog/random">Random</a></li>
+
+    <li><a href="https://roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://roytang.net/page/lists/2020/movies/">2020 Movies List</a></li>
+
+    <li><a href="https://roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2020 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2020 09 26 18:15:08.
+        
+        <a href='https://github.com/roytang/blog/tree/master/content/post/2018/02/trying-out-3d-modelling-with-blender/index.md' title='source file'>Source file</a>
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

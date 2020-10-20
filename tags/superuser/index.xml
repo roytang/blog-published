@@ -1,0 +1,353 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>superuser on Roy Tang</title>
+      <link>https://roytang.net/tags/superuser/</link>
+      <description>Recent content in superuser on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Mon, 23 Sep 2019 10:43:35 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/superuser/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2019/09/1485349/</link>
+            <pubDate>Mon, 23 Sep 2019 10:43:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/09/1485349/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a GeForce 970, it&amp;rsquo;s a bit old, I got it in 2015. I&amp;rsquo;ve been having an issue where sometimes in some games, my displays (I have two monitors) will die (go completely black), but the game goes on running for a while (I can hear the audio), then after a couple of minutes or so the audio also stops so I can&amp;rsquo;t really do anything except do a hard reboot. I&amp;rsquo;ve tried VNCing into the PC to see what&amp;rsquo;s going on after this time, but it&amp;rsquo;s not accessible over the network so I assume it&amp;rsquo;s dead.&lt;/p&gt;
+&lt;p&gt;The crashes happen most often while playing Magic Arena (says a lot about the game!), but I&amp;rsquo;ve also had it happen once or twice on Starcraft 2 and Borderlands 2. I don&amp;rsquo;t play very demanding games graphically. I can&amp;rsquo;t identify any specific action that causes the crashes.&lt;/p&gt;
+&lt;p&gt;Some other things I&amp;rsquo;ve tried:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;attach my 2nd monitor to onboard graphics, keeping the main monitor connected to the vidcard. In this case when the crash happens, the main monitor goes black, while the 2nd monitor still has a display, but is frozen&lt;/li&gt;
+&lt;li&gt;remove my 2nd monitor (I thought I might be overtaxing the graphics card by having two of them??)&lt;/li&gt;
+&lt;li&gt;checking for memory (RAM) issues. I did have some RAM issues a couple of months ago, but that turned up to be due to a dirty connector, and it was causing crashes not just in games but in general Windows usage, so I think this is a different issue now&lt;/li&gt;
+&lt;li&gt;checking for disk issues. I actually found some bad sectors on my secondary drive and ended up replacing it. But even if I ran everything from my primary (SSD) drive, the graphics crashes still occur&lt;/li&gt;
+&lt;li&gt;reinstalling/updating device drivers&lt;/li&gt;
+&lt;li&gt;resetting Windows 10 (yup, I went that far)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After all of these, I&amp;rsquo;m still encountering these crashes so I&amp;rsquo;m seriously considering replacing the graphics card now, but I&amp;rsquo;d like the be sure that it&amp;rsquo;s a graphics card issue and not something wonky with the motherboard, as my purchasing decisions will be different if the motherboard was the problem (I might as well get a new PC then). I&amp;rsquo;m looking for any advice to help me diagnose or confirm the problem.&lt;/p&gt;
+&lt;p&gt;For reference, my current PC specs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Case	Silverstone Precision 10SST-PS10B&lt;/li&gt;
+&lt;li&gt;Fan	120mm internal aux fan&lt;/li&gt;
+&lt;li&gt;PSU	Cooler Master B600 V2 600W&lt;/li&gt;
+&lt;li&gt;CPU	Intel Core i5-4460&lt;/li&gt;
+&lt;li&gt;MB	ASUS H97ME&lt;/li&gt;
+&lt;li&gt;RAM	2x DDR3 Kingston HyperX Fury 8gb 1600&lt;/li&gt;
+&lt;li&gt;VC	Asus GTX970 STRIX OC 4gb&lt;/li&gt;
+&lt;li&gt;SSD	Samsung 850Evo 250gb&lt;/li&gt;
+&lt;li&gt;SSHD  Seagate Firecuda 2tb&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/1242765/</link>
+            <pubDate>Sun, 20 Aug 2017 17:28:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/1242765/</guid>
+            <description>
+            
+
+            &lt;p&gt;For the past 2 weeks or so now, I&amp;rsquo;ve been having issues with my ISP (I&amp;rsquo;m not in the US, so it&amp;rsquo;s not Comcast or whatever).&lt;/p&gt;
+&lt;p&gt;Specifically, I often lose access to Google-related sites/services: the search engine itself, Gmail, Google Docs/Drive, Youtube, Google Keep are the ones I use most often. I&amp;rsquo;ve restarted my router multiple times already over the past couple of weeks. Same issue is encountered on my desktop (wired), laptop, iPad, phone (when connected over wifi) etc.&lt;/p&gt;
+&lt;p&gt;I know it&amp;rsquo;s related to my ISP because (a) I&amp;rsquo;ve read some other users experiencing similar issues on social media; (b) if I tether to my phone&amp;rsquo;s data connection, the problem isn&amp;rsquo;t encountered.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a proxy server configured. I used to be using Google DNS but I&amp;rsquo;ve also tried switching back to my ISP&amp;rsquo;s default DNS with no luck.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the best way for me to figure out what the issue is? (Preferably in a way that I can bring it up to my ISP so that they know specifically what they need to fix - talking to their customer service is a tedious experience so I&amp;rsquo;ve decided to figure out as much as possible before going back to them)&lt;/p&gt;
+&lt;p&gt;Screenshot of the error from the browser:
+&lt;a href=&#34;https://i.stack.imgur.com/cin58.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/cin58.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample tracert:
+&lt;a href=&#34;https://i.stack.imgur.com/PB5zP.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/PB5zP.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pings seem ok right now (although if I leave ping -t running for a while, there&amp;rsquo;s an occasional &amp;ldquo;Request timed out&amp;rdquo;):
+&lt;a href=&#34;https://i.stack.imgur.com/VxB92.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/VxB92.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/03/1049085/</link>
+            <pubDate>Sat, 05 Mar 2016 15:54:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/03/1049085/</guid>
+            <description>
+            
+
+            &lt;p&gt;I basically never want to use the feature. How to? There&amp;rsquo;s another question here that answers how to disable it in Linux via a command-line option in .bashrc, but I don&amp;rsquo;t think that can be done in Windows?&lt;/p&gt;
+&lt;p&gt;Edit: Additional information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I am on Windows 10&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No Recovery.xcu anywhere on my C drive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;even if I discard recovery data, then the next time I open the same file there is no recovery prompt. But when I shutdown Windows without shutting down LibreOffice first, then I get the prompt the next time I open the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/12/518306/</link>
+            <pubDate>Wed, 12 Dec 2012 12:29:11 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/12/518306/</guid>
+            <description>
+            
+
+            &lt;p&gt;When I came home today, my video card started displaying graphic artifacts, and logging in to windows 7 would cause the computer to reboot. The computer was working fine when i last shut it down last night.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;amp;feature=g-crec-u&#34;&gt;a video of what&amp;rsquo;s happening&lt;/a&gt;. I have two monitors, in the middle of the video I pan to the second monitor. At about 0:24, I attempt to login and the machine reboots. My video card is an NVidia GeForce GTX 460.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;amp;feature=g-crec-u&#34;&gt;&lt;img src=&#34;http://i.stack.imgur.com/yWYGp.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some more symptoms I&amp;rsquo;ve encountered and stuff I&amp;rsquo;ve tried over the course of several reboots:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;was able to login normally once, but after launching a few apps (chrome, tweetdeck), graphic artifacts started appearing again and the machine eventually froze&lt;/li&gt;
+&lt;li&gt;am able to login successfully in safe mode&lt;/li&gt;
+&lt;li&gt;sometimes the display is fine during the start up, and only starts getting wonky a few seconds after I go to the login screen by selecting a user to login with&lt;/li&gt;
+&lt;li&gt;have encountered Windows failing to start up at all a couple of times (blue screen during startup)&lt;/li&gt;
+&lt;li&gt;have tried System restore/repair a few times. i&amp;rsquo;ve already tried all the restore points available&lt;/li&gt;
+&lt;li&gt;have tried uninstalling the vid card driver; machine boots and lets me login and use apps as normal but of course i&amp;rsquo;m at a low resolution (and won&amp;rsquo;t be able to play games). tried to reinstall the vid card driver using automatic update; after the reinstall, same problem occurred&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now I&amp;rsquo;m not sure how to proceed; all signs point to the video card being damaged and probably in need of replacement; my question is are there any other things I can try first?&lt;/p&gt;
+&lt;p&gt;Like, is it possible there&amp;rsquo;s just something loose in the connections internally and I can try to remove and reconnect the card first? Or some alternative video driver to try? Or would a shop tech be able to do something to save the card?&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have time to take apart the computer at the moment, probably I&amp;rsquo;ll do it this weekend, but I&amp;rsquo;d like to know my options ahead of time.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/11/503769/</link>
+            <pubDate>Sat, 10 Nov 2012 11:03:05 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/11/503769/</guid>
+            <description>
+            
+
+            &lt;p&gt;It&amp;rsquo;s happened a few times, I&amp;rsquo;m not sure how to diagnose/debug, so any advise would be appreciated.&lt;/p&gt;
+&lt;p&gt;Symptons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sometimes the router will randomly disconnect; the connection icon on my desktop (wired to the router) gets that yellow &amp;ldquo;!&amp;rdquo; symbol that tells me my connection just went down. At this point I&amp;rsquo;m unable to ping the router.&lt;/li&gt;
+&lt;li&gt;afterwards I try to reset the router by removing then reconnecting the power jack on the router side (this is the fastest way as I can&amp;rsquo;t reset the power strip it&amp;rsquo;s connected to without rebooting my desktop. the router has a reset thingy, but it&amp;rsquo;s one of those things where i have to find a pin to stick into the hole, and when I get disconnected I usually need to get reconnected immediately so I just pull and put back the power jack), but even after that the connection has the same state.&lt;/li&gt;
+&lt;li&gt;after the router reboots, if I try to connect to it using a wifi device like my ipad, the ipad prompts me for the wifi password even though it had already &amp;ldquo;remembered&amp;rdquo; all the settings for this router forever&lt;/li&gt;
+&lt;li&gt;after i finally decide to reboot the power strip, and my desktop and the router boot up again, the connection returns to its normal state somewhat and i&amp;rsquo;m able to connect to it as normal using the desktop and wifi devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What do I need to check the next time this happens so I can figure out the problem? Is it possibly because we&amp;rsquo;ve been using the power jack on the router as an easier way to reboot it? Should I be shopping around for a new router?&lt;/p&gt;
+&lt;p&gt;If it helps, the router is a DLink DIR-300&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2011/05/286528/</link>
+            <pubDate>Sat, 21 May 2011 04:10:51 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2011/05/286528/</guid>
+            <description>
+            
+
+            &lt;p&gt;We have a wifi router set up at home connected to our DSL router. And a lot of computers using it&amp;hellip;there&amp;rsquo;s a desktop (connected to the router via a wired connection), 6 laptops, an ipad and a few internet-capable cellphones (yeah, there are a lot of us at home)&lt;/p&gt;
+&lt;p&gt;Sometimes our internet will &amp;ldquo;act up&amp;rdquo;, meaning some of the wireless devices will register as being connected to the access point but unable to access any sites. In such a case the other devices seem to be access the internet just fine.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m wondering if there&amp;rsquo;s some sort of limit or anything to the number of wireless devices we should be allowing to access the router that causes this problem? What things do I need to check?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2011/01/233276/</link>
+            <pubDate>Fri, 14 Jan 2011 16:17:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2011/01/233276/</guid>
+            <description>
+            
+
+            &lt;p&gt;So I came home and stumbled upon a bit of a mystery. When I got home my brother was using my desktop PC that was running Windows 7 (I have accounts for my 2 brothers and my mom on the machine, but mine is the only admin account). After he finished his game he logged out and I logged in to my account, but found only strangeness.&lt;/p&gt;
+&lt;p&gt;My windows account seems to have been somewhat &amp;ldquo;reset&amp;rdquo;, meaning:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;my quick launch shortcuts were gone&lt;/li&gt;
+&lt;li&gt;my dropbox account did not automatically login&lt;/li&gt;
+&lt;li&gt;my pidgin accounts were no longer there&lt;/li&gt;
+&lt;li&gt;I had to relogin Steam&lt;/li&gt;
+&lt;li&gt;iTunes could not launch (I had hooked up my iDevice before logging in)&lt;/li&gt;
+&lt;li&gt;The Documents/Pictures/Music shortcuts in the start menu no longer work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, despite that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;my desktop wallpaper was still correct&lt;/li&gt;
+&lt;li&gt;my documents folder was still there in c:\Users\my account name\My Documents as expected&lt;/li&gt;
+&lt;li&gt;Google Chrome settings seem to have been retained&lt;/li&gt;
+&lt;li&gt;other accounts on the same machine seem to be fine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I asked my brother if he had installed anything strange during the day, he only installed Yahoo Messenger. I last used the machine around 24 hours ago and it was fine then.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what else has been affected. I&amp;rsquo;m inclined to just create a new admin user for me to use, but I&amp;rsquo;d like to have some idea of what actually happened.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/11/212994/</link>
+            <pubDate>Sat, 20 Nov 2010 03:15:46 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/11/212994/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using Google Chrome, is there a way (extension or whatever) to set a separate download folder according to file type? i.e. exe files into one folder, image files into a different one, etc.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/07/165946/</link>
+            <pubDate>Wed, 21 Jul 2010 03:02:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/07/165946/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an Acer Aspire 4920G that I&amp;rsquo;ve had for a couple of years, running Windows/Ubuntu.&lt;/p&gt;
+&lt;p&gt;I have temperature monitors set up so i can see that with time my CPU temps go as high as 85C, sometimes even spiking to 90C. On startup, the temps are around 65C-75C.&lt;/p&gt;
+&lt;p&gt;How bad is this, and anything I can do to avoid it/reduce the temp? I&amp;rsquo;ve already tried to open up the laptop to clean away any dust, but unfortunately some of the screws are really hard to remove. I don&amp;rsquo;t want to take it to a shop before trying stuff out myself as I&amp;rsquo;m no longer under warranty.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/04/129821/</link>
+            <pubDate>Sun, 11 Apr 2010 14:55:45 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/04/129821/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a laptop dual booting to Windows 7 and Opensuse 11.2. However, I&amp;rsquo;d like to switch to a different Linux distro (probably Ubuntu, that&amp;rsquo;s what I&amp;rsquo;m used to)&lt;/p&gt;
+&lt;p&gt;Is there a way for me to do it without losing the Windows 7 setup/data?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/80761/</link>
+            <pubDate>Wed, 09 Dec 2009 04:47:22 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/80761/</guid>
+            <description>
+            
+
+            &lt;p&gt;Is there any way to have my Yahoo Mail forwarded to another email address, without getting Yahoo Mail plus?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/11/76254/</link>
+            <pubDate>Sat, 28 Nov 2009 04:41:09 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/11/76254/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a 320GB western digital external HDD that was working fine a couple of days ago.&lt;/p&gt;
+&lt;p&gt;I plugged it into my Windows XP machine at work, and it detects the USB device (it is listed in the Safely Remove Hardware dialog), but it doesn&amp;rsquo;t detect the disk, not even under Disk Management in Control Panel. I&amp;rsquo;ve successfully used this ext HD on this machine before, so I suspect it is busted. I tried it on a couple of other machines none of them could detect the disk.&lt;/p&gt;
+&lt;p&gt;The only possible reason I could think of is that the bag I was carrying it in fell to the floor off a table a couple of days ago, it might have been damaged then.&lt;/p&gt;
+&lt;p&gt;Obviously I would like to have the device working again, but failing that I would like to be able tor recover all the data on the disk.&lt;/p&gt;
+&lt;p&gt;What are my options?&lt;/p&gt;
+&lt;p&gt;Edit: In case it&amp;rsquo;s relevant, the product page for the ext HD is &lt;a href=&#34;http://www.wdc.com/en/products/products.asp?driveid=698&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/10/63436/</link>
+            <pubDate>Sat, 31 Oct 2009 04:00:14 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/10/63436/</guid>
+            <description>
+            
+
+            &lt;p&gt;Can anyone make recommendations? I used to use Launchy back in the XP days, but I don&amp;rsquo;t know if there are better alternatives now.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/09/36263/</link>
+            <pubDate>Sat, 05 Sep 2009 14:31:49 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/09/36263/</guid>
+            <description>
+            
+
+            &lt;p&gt;Here&amp;rsquo;s our home setup: we have a wireless router, connected are 2 desktop PCs (let&amp;rsquo;s call them A and B), plus we also have a laptop that connects to the router via wi-fi. Desktops A and B are connected via LAN wires.&lt;/p&gt;
+&lt;p&gt;Given that, the problem is that every time desktop A starts up or shuts down (it seems to be simply on power up or power down, the OS it&amp;rsquo;s booting into doesn&amp;rsquo;t matter), the wireless connection is reset, i.e. the laptop literally loses the connection and has to reconnect. No such problem happens when restarting desktop B. It&amp;rsquo;s a bit of a pain when I&amp;rsquo;m playing online games or something over the laptop and desktop A reboots.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what to check for here&amp;hellip;would it be a problem with the router, with the way the network is set up, or something else?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

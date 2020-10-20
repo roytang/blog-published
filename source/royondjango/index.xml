@@ -1,0 +1,200 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>RoyOnDjango on Roy Tang</title>
+      <link>https://roytang.net/source/royondjango/</link>
+      <description>Recent content in RoyOnDjango on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      
+          <atom:link href="https://roytang.net/source/royondjango/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Fixing up the comments
+</title>
+            <link>https://roytang.net/2008/12/fixing-up-the-comments/</link>
+            <pubDate>Mon, 01 Dec 2008 04:58:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/fixing-up-the-comments/</guid>
+            <description>
+            
+            &lt;p&gt;I played around with the built-in comments app today, trying to clean it up.&lt;/p&gt;
+&lt;p&gt;Some findings:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Some of the moderation views, such as flagging a post or deleting a post, accept a next parameter that determines where the view will redirect to after the operation. However, the way the url&amp;rsquo;s are set up, there&amp;rsquo;s no easy way to pass this parameter normally, even through query strings. This lovely bug is documented in &lt;a href=&#34;http://code.djangoproject.com/ticket/8968&#34;&gt;http://code.djangoproject.com/ticket/8968&lt;/a&gt;. I wasn&amp;rsquo;t confident enough to try patching it, so as a temporary workaround, I overrode the flag and delete templates and placed the following inside the form:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;next&amp;quot; value=&amp;quot;{{ comment.get\_content\_object_url }}&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Edit: Wow that was stupid. Blogger didn&amp;rsquo;t want to render the HTML code above!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I also replaced the URL in the &amp;ldquo;cancel&amp;rdquo; links for both pages. For some reason, {{ comment.permalink }} wasn&amp;rsquo;t giving me anything useful.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Took me a bit of work to figure out how the moderation part works. Apparently I have to hook on some of the signals to add my moderation logic. I&amp;rsquo;m not sure yet how to handle this, or whether I should try customizing the comment form with something like a captcha to prevent comment spam.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have a pending problem now that submitting comments from the preview or error page does not redirect to the correct place. (i.e. the post page). I tried adding the next parameter to the form, but apparently comment.get_content_object_url returns an empty string here because the comment has not yet been saved to the database. I think the content object should be provided in the context for the preview page. This would be handled by &lt;a href=&#34;http://code.djangoproject.com/ticket/9268&#34;&gt;http://code.djangoproject.com/ticket/9268&lt;/a&gt;, except apparently no one&amp;rsquo;s paying attention to it yet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some random features I added: Gravatar support (the Gravatar for the email address used to post the comment will be shown), and Markdown support in the comment body. Easy stuff.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cleaned up an refactored the templates that render the comments, separating them from the parts that render the blog posts. This makes it easier if I want to have comments for other non-Blog post objects later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Non-comment related:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Added simple search!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The script to import from WordPress has some problems. Since I&amp;rsquo;m storing the post body in markdown format, I use &lt;a href=&#34;http://www.aaronsw.com/2002/html2text/&#34;&gt;html2text&lt;/a&gt; to convert the HTML body from old posts into markdown, but nice stuff like image alignments and tables are lost. I think I have to make do with editing straight HTML for old posts imported from WordPress, and just clean them up later as needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My code is rather messy now (especially from the HTML side). I should clean it up sometime soon.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>django-tagging
+</title>
+            <link>https://roytang.net/2008/10/django-tagging/</link>
+            <pubDate>Sun, 26 Oct 2008 04:22:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/django-tagging/</guid>
+            <description>
+            
+            &lt;p&gt;I wanted to add some basic tagging to my blog app so I tried out &lt;a href=&#34;http://code.google.com/p/django-tagging/&#34;&gt;django-tagging&lt;/a&gt;. Unfortunately, the featured downloads on the Google Code site are quite out-of-date and would not work with Django 1.0, so I did a subversion checkout instead. If you&amp;rsquo;re getting an error like &amp;ldquo;ImportError: cannot import name parse_lookup&amp;rdquo;, then you need to get the source code from SVN.&lt;/p&gt;
+&lt;p&gt;Adding the tagging to the blog was pretty easy:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add the tagging app to settings.py&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a tagging.fields.TagField to the Post model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a &amp;ldquo;tags&amp;rdquo; text field to the post form used.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modify templates to display the tags.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I used something like &amp;ldquo;/tag/&amp;rdquo; url mapping to get all posts associated with a tag. Then you just need to write a wrapper around the object_list generic view:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from tagging.models import Tag, TaggedItem&lt;/p&gt;
+&lt;p&gt;from django.views.generic.list_detail import object_list&lt;/p&gt;
+&lt;p&gt;def posts_by_tag(request, tag):&lt;/p&gt;
+&lt;p&gt;o_tag = Tag.objects.get(name=tag)&lt;/p&gt;
+&lt;p&gt;queryset = TaggedItem.objects.get_by_model(Post, o_tag)&lt;/p&gt;
+&lt;p&gt;return object_list(request, queryset)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This view will use the same template used to list out posts normally.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>I left it for a while
+</title>
+            <link>https://roytang.net/2008/10/i-left-it-for-a-while/</link>
+            <pubDate>Fri, 24 Oct 2008 06:54:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/i-left-it-for-a-while/</guid>
+            <description>
+            
+            &lt;p&gt;&amp;hellip; and now it works!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.randomencounters.bells-n-whistles.net/blog/&#34;&gt;http://www.randomencounters.bells-n-whistles.net/blog/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I think the apache service needed to restart mod_python or something&amp;hellip; (I don&amp;rsquo;t have SSH access so&amp;hellip; )&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Deployment Problems
+</title>
+            <link>https://roytang.net/2008/10/deployment-problems/</link>
+            <pubDate>Tue, 21 Oct 2008 06:52:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/deployment-problems/</guid>
+            <description>
+            
+            &lt;p&gt;So I got a basic blog app up and running.&lt;/p&gt;
+&lt;p&gt;Posting, paged archives, etc.&lt;/p&gt;
+&lt;p&gt;Comments implemented using the django.contrib.comments. No problems here, the only caveat being most of the current documentation found by Google searches refer to the pre-1.0 version. Need to peruse the official docs for 1.0 stuff.&lt;/p&gt;
+&lt;p&gt;RSS feeds implemented using django.contrib.syndication, this one seems fine.&lt;/p&gt;
+&lt;p&gt;I tested it and it&amp;rsquo;s running fine on localhost. I also have a free django hosting account at &lt;a href=&#34;http://bells-n-whistles.net&#34;&gt;http://bells-n-whistles.net&lt;/a&gt;, so I try to upload it there. However, when I access the website there (&lt;a href=&#34;http://www.randomencounters.bells-n-whistles.net/blog/&#34;&gt;http://www.randomencounters.bells-n-whistles.net/blog/&lt;/a&gt;), I get the following error:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;comments&#39; is not a valid tag library: Could not load template library from django.templatetags.comments, No module named comments&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I think the settings.py is not being reloaded - I tried to set Debug = False and I&amp;rsquo;m still getting the stacktraces.&lt;/p&gt;
+&lt;p&gt;Bah, I&amp;rsquo;ll figure it out tomorrow.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Playing with Generic Views and URLs
+</title>
+            <link>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</link>
+            <pubDate>Mon, 20 Oct 2008 13:44:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</guid>
+            <description>
+            
+            &lt;p&gt;&amp;ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;-&amp;gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;return HttpResponseRedirect(&amp;quot;../&amp;quot; + str(post.id) + &amp;quot;/&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I got the basic posting structure up.&lt;/p&gt;
+&lt;p&gt;/post/new/ -&amp;gt; To make new posts&lt;/p&gt;
+&lt;p&gt;/post// -&amp;gt; To view a single post&lt;/p&gt;
+&lt;p&gt;/post/all/ -&amp;gt; To view all posts&lt;/p&gt;
+&lt;p&gt;I should probably start thinking of a better url scheme. Ideally, I&amp;rsquo;d want the @login_required views to be indicated as such in the urls. Something like &amp;ldquo;/admin/post/&amp;rdquo; for new posts &amp;ldquo;/admin/manage/&amp;rdquo; for a screen to manage posts to differentiate it from a screen just to list them out.&lt;/p&gt;
+&lt;p&gt;Next I think I&amp;rsquo;ll try to CSS-ify the blog; I&amp;rsquo;ll probably just reuse stuff from one of the blogger templates as I&amp;rsquo;m still not very good with the HTML/CSS.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll also look into using some of the date-based generic views to get an archive view. I&amp;rsquo;ll need more data though. Will consider importing from the WordPress blog.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Starting out
+</title>
+            <link>https://roytang.net/2008/10/starting-out/</link>
+            <pubDate>Sun, 19 Oct 2008 07:33:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/starting-out/</guid>
+            <description>
+            
+            &lt;p&gt;The quintessential app to learn from is of course a blog.&lt;/p&gt;
+&lt;p&gt;Started using a simple Post model. Added the new post form and view. Can now successfully insert posts into the DB.&lt;/p&gt;
+&lt;p&gt;Next:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; create the detail page that will show the post after saving&lt;/p&gt;
+&lt;p&gt;Figure out:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?&lt;/p&gt;
+&lt;p&gt;i.e. if the parent app has the following mapping:&lt;/p&gt;
+&lt;p&gt;‘^blog/&amp;rsquo; -&amp;gt; pass to blog.urls.urlpatterns&lt;/p&gt;
+&lt;p&gt;the blog app has mappings for&lt;/p&gt;
+&lt;p&gt;‘^post/new/&amp;rsquo; -&amp;gt; new post&lt;/p&gt;
+&lt;p&gt;‘^post/([A-Za-z-])/&amp;rsquo; -&amp;gt; post detail&lt;/p&gt;
+&lt;p&gt;inside the view, I want to redirect to &amp;ldquo;post/&amp;rdquo;, but with respect to the app, it should be &amp;ldquo;blog/post/&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I should subscribe to one of the Django mailing lists to ask stuff like this.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

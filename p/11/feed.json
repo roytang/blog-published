@@ -1,0 +1,935 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://roytang.net/",
+    "feed_url": "https://roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://roytang.net/2020/04/1249918784921427968/",
+            "url": "https://roytang.net/2020/04/1249918784921427968/",
+            "path": "/2020/04/1249918784921427968/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomething isn’t adding up with COVID19 and SE Asia. There’s dozens of leading indicators that should make you think hospitals are overwhelmed (if not bodies piling up in the streets like Ecuador) in Malaysia, Thailand, \u0026amp; Indonesia. Maybe Vietnam and the Philippines outside Luzon\u003c/p\u003e\n",
+            "summary": "Something isn’t adding up with COVID19 and SE Asia. There’s dozens of leading indicators that should make you think hospitals are overwhelmed (if not bodies piling up in the streets like Ecuador) in Malaysia, Thailand, \u0026amp; Indonesia. Maybe Vietnam and the Philippines outside Luzon",
+            "date_published": "2020-04-14T04:33:55+00:00",
+            "date_modified": "2020-04-14T04:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1249918784921427968/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249918784921427968/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/bespoke-vs-product-development/",
+            "url": "https://roytang.net/2020/04/bespoke-vs-product-development/",
+            "path": "/2020/04/bespoke-vs-product-development/",
+            "title": "Bespoke vs Product Development",
+            "content_html": "\u003cp\u003eFor most of my time working on software projects, it has always been for bespoke projects. Bespoke basically means a software program or package tailor-made for a specific client. The client provides all the requirements, the team fleshes out more details and specifications, some prototyping may or may not ensure, and implementation proceeds thusly. It’s relatively straightforward compared to product development.\u003c/p\u003e\n\u003cp\u003eI only started getting involved with “product”-like projects over the in the latter half of my career as a software developer. A \u0026ldquo;product\u0026rdquo; is a more general use software program or package, perhaps sold to the mass market or as a service. My experience is mostly with products that are targeted towards the public sector (government agencies and such) and not for general consumer use. Though I imagine many similar issues and pitfalls as I discuss here can occur in other types of product development as well. These are largely issues of \u0026ldquo;building for multiple clients\u0026rdquo; as opposed to \u0026ldquo;building for a specific client\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eThe project lifecycle is markedly different: you start with an idea for a product, perhaps based on something you’ve already built before, and shop it around to potential clients who could use such a system. A number of clients put out tenders for projects where they specify it has to be a pre-built product instead of a bespoke solution. Typically you use the requirements from these tenders to direct your development while you don’t have clients signed up yet. That’s right, you start development work ahead of time even when you don’t have clients signed up yet. These tenders typically have significant lead time before the actual implementation, so you kind of hope that if you somehow magically win with your proposal, you have everything (or at least most of it) done and in place and ready for the client.\u003c/p\u003e\n\u003cp\u003eTenders can also sometimes have a requirement to have a demonstration during the tendering process. Therein lies the first problem - since you probably don’t have the product ready yet, there’s probably some crunch time needed in preparing and setting up the demo. Some iffy code will need to be written, sacrificing code quality and maintainability in order to meet the timescales for the demo.\u003c/p\u003e\n\u003cp\u003eOf course, since you want to gain traction as quickly as possible, you try to shop around to as many clients as you can. That means you try to bid for as many tenders as you can, and different clients can have different requirements. This of course creates more problems for the development team in the form of conflicting requirements and even worse, possibly conflicting demo schedules. It’s something that management has to be cognizant of and the company will need to pick and choose its battles. Poorly handled, it could put a lot of pressure on the development team.\u003c/p\u003e\n\u003cp\u003eI was discussing this the other day with a younger developer working in another company. They were working on a project that was headed in this direction and he was asking whether things would get better once they have more things, and I kind of laughed a little bit before telling him there’s a good chance it would get worse.\u003c/p\u003e\n\u003cp\u003eThe problem of conflicting requirements gets even more complicated when the clients are actually paying for your product because now you have even more responsibility to fulfill their custom requirements. One would think that if you were making an off the shelf product you’re not really subject to the whims of the clients too much, but when you’re trying to gain traction in an existing market you will sometimes need to make compromises to get clients to choose you over more established products, which probably means catering more to their whims.\u003c/p\u003e\n\u003cp\u003eAnd really, even clients in the same space needing the same product will have their own requirements, idiosyncrasies and ways of doing things. Sometimes even when there are statutes in place dictating standards (like what data should be recorded and so on), different clients will still have different ways of meeting those standards such that your system may not be able to cater for all of the differences.\u003c/p\u003e\n\u003cp\u003eIdeally, your product has been planned with such variations in requirements in mind. This means making your system flexible and/or configurable enough to handle any differences between clients, or at least changes can be kept small and manageable between clients. This assumes of course that you had the foresight to predict ahead of time what the differences would be and planned your system architecture accordingly, and that you didn’t have a lot of poor and hard-to-maintain code littered throughout your system because of needing to meet conflicting demo requirements! The more customizable your system needs to be, the more well-structured, modular and lightly coupled the code has to be.\u003c/p\u003e\n\u003cp\u003eIf you don’t have the above, well then likely you’re looking at introducing even more bad code and stretching your code base with code smells everywhere in order to accommodate tight deadlines and conflicting requirements.\u003c/p\u003e\n\u003cp\u003eThere’s also a lot more that would need to be customizable than you might expect. Some things that clients want tailored for their needs are: UI theme or individual UI elements; menu structures; field names and error messages; message/email/notification templates; access control rights; form layouts, what fields are included in each form, field validation logic; reports, what fields are included, and even retrieval logic. These are just some examples, there are many more that are difficult to foresee just how the clients might want them customized, so most likely even with the best-designed system there will still need to be some level of customization done for each client.\u003c/p\u003e\n\u003cp\u003eHow to avoid such pitfalls? It helps if your product has a strong identity and design from the very start, but that means having a strong product manager or management team with a good understanding of the domain required for your system. The product manager will need to manage the clients’ requirements and the direction of future development. The product manager has to be able to assess the client requests and say “no, that’s not how our product works,” when faced with requests that will make things more complicated for the development team.\u003c/p\u003e\n\u003cp\u003eThe above are drawn from my personal experience and from a few other developers’. I’m sure there are ways to handle product development to avoid these problems of course, but I believe that far more projects encounter these difficulties than do not, but it mostly comes down to management understanding the concerns and making adjustments to resources and schedules accordingly.\u003c/p\u003e\n",
+            "summary": "For most of my time working on software projects, it has always been for bespoke projects. Bespoke basically means a software program or package tailor-made for a specific client. The client provides all the requirements, the team fleshes out more details and specifications, some prototyping may or may not ensure, and implementation proceeds thusly. It’s relatively straightforward compared to product development.\nI only started getting involved with “product”-like projects over the in the latter half of my career as a software developer.",
+            "date_published": "2020-04-14T00:00:00+00:00",
+            "date_modified": "2020-04-14T03:30:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/04/bespoke-vs-product/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103994779577322470"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249900205387857921/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://chaos.social/@Xjs",
+                    "source_file": "like-20200414-230639-44d26cc2-cd69-432c-b035-58a0a2f9f978.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200414-035212-cda8b143-239a-45b5-9745-eea77556676c.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/six-fanarts/",
+            "url": "https://roytang.net/2020/04/six-fanarts/",
+            "path": "/2020/04/six-fanarts/",
+            "title": "Six Fanarts",
+            "content_html": "\u003cp\u003eI \u003ca href=\"/2020/04/1249033881690357761/\"\u003eposted yesterday\u003c/a\u003e asking for suggestions for this #SixFanarts thing that\u0026rsquo;s been going around. I actually got more than six, so I decided to do twelve! (I had to reject like 4 other suggestions, sorry!)\u003c/p\u003e\n\u003cp\u003eFirst set:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAce the Bathound (requested by Brian on Facebook)\u003c/li\u003e\n\u003cli\u003eJim Raynor riding a Vulture (requested by Jaime on Facebook)\u003c/li\u003e\n\u003cli\u003eAn updated Captain Planet (requested by Joy on Facebook). I didn\u0026rsquo;t know how to update him, so I just made him evil!\u003c/li\u003e\n\u003cli\u003eCaptain Caveman (requested by Sherwin on Facebook)\u003c/li\u003e\n\u003cli\u003eAuron (FFX) (requested by Brian on Facebook)\u003c/li\u003e\n\u003cli\u003eRafa Nadal (requested by Joy on Facebook). Real people are tough, so I was thinking of skipping this one. Instead I decided to give it a try. I\u0026rsquo;m not sure the output looks anything like Nadal, so he might as well be random tennis player.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSecond set:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eInuyasha (requested by Jesse on Instagram)\u003c/li\u003e\n\u003cli\u003eBender becoming a planeswalker (requested by Alex on Twitter). The spark is purple because Bender is obviously black. (Note: In MTG Lore, constructs cannot actually become planeswalkers)\u003c/li\u003e\n\u003cli\u003eBuffy (requested by Maui on Facebook)\u003c/li\u003e\n\u003cli\u003eSakuragi doing a kamehameha (requested by David on Facebook).\u003c/li\u003e\n\u003cli\u003eLogan (requested by Art on Facebook)\u003c/li\u003e\n\u003cli\u003ePong Pagong (requested by Aldo on Facebook)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhile I was doing the Sakuragi one, I made a boo-boo where I put the rough sketch on the same layer as the Buffy one and messed it up and later I couldn\u0026rsquo;t recover it. I didn\u0026rsquo;t want to redo the thing, so what I did was ran the timelapse, got a screenshot of Buffy from there and pasted it back into the image lol. It\u0026rsquo;s not cheating, I mean, I really did do the drawing! You can see these shenanigans and more in the timelapses below!\u003c/p\u003e\n",
+            "summary": "I posted yesterday asking for suggestions for this #SixFanarts thing that\u0026rsquo;s been going around. I actually got more than six, so I decided to do twelve! (I had to reject like 4 other suggestions, sorry!)\nFirst set:\n Ace the Bathound (requested by Brian on Facebook) Jim Raynor riding a Vulture (requested by Jaime on Facebook) An updated Captain Planet (requested by Joy on Facebook). I didn\u0026rsquo;t know how to update him, so I just made him evil!",
+            "date_published": "2020-04-13T12:28:41+00:00",
+            "date_modified": "2020-04-14T02:02:52+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/six-fanarts/index.md"
+            , "tags": ["SixFanarts"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249707143822864385/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10158362576173912"},{"type":"instagram","url":"https://www.instagram.com/p/B-7LfzLh7MB/"},{"type":"mastodon","url":"https://mastodon.technology/@roytang/103991799614466363"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://mastodon.technology/@AskChip",
+                    "source_file": "comment-20200413-154028-6188ecfc-9cdd-43d1-bbba-ce03f0e294e6.json"
+                }, { 
+                    "url": "https://mastodon.technology/@roytang",
+                    "source_file": "comment-20200413-154029-987f20f0-b904-4dfb-ab65-648ca9afcbb7.json"
+                }, { 
+                    "url": "https://www.instagram.com/picturepeng/",
+                    "source_file": "comment-20200415-130026-d0ca75ee-1a55-4b8f-b8f1-257670bf8bf6.json"
+                }, { 
+                    "url": "https://mastodon.technology/@AskChip",
+                    "source_file": "like-20200413-154030-4290eaaa-3ede-4a67-98a0-484d81afaad6.json"
+                }, { 
+                    "url": "https://twitter.com/ChrisBielefeld1",
+                    "source_file": "like-20200413-183724-4519b6c6-afc1-4d29-82e1-0bf3e8eb9570.json"
+                }, { 
+                    "url": "https://twitter.com/Woerlan",
+                    "source_file": "like-20200413-183725-9a188a75-a088-462a-87c0-9f9b1e41c8cc.json"
+                }, { 
+                    "url": "https://www.instagram.com/romancoat/",
+                    "source_file": "like-20200415-130026-0ff14d09-8775-4f76-9d7f-3a36ccd2d423.json"
+                }, { 
+                    "url": "https://www.instagram.com/tooniceeeeeee/",
+                    "source_file": "like-20200415-130028-ac2e0f71-a56c-4b8e-b9d9-68ad094d4c28.json"
+                }, { 
+                    "url": "https://www.instagram.com/cheryleighanne/",
+                    "source_file": "like-20200415-130029-b4f77741-4dd0-4edb-bddd-1f0aaad279ed.json"
+                }, { 
+                    "url": "https://www.instagram.com/swertesatrese/",
+                    "source_file": "like-20200415-130032-77a8bc92-07aa-4691-b221-d076c84a106b.json"
+                }, { 
+                    "url": "https://www.instagram.com/tagofabic/",
+                    "source_file": "like-20200415-130032-9e7353ea-f3c1-4149-b7a2-0835994dd855.json"
+                }, { 
+                    "url": "https://www.instagram.com/myjoysweet/",
+                    "source_file": "like-20200415-130036-1e2469ce-0fb7-4033-9ec7-82b56fb41124.json"
+                }, { 
+                    "url": "https://www.instagram.com/pamlesleylu/",
+                    "source_file": "like-20200415-130036-56073391-a099-4f3e-a224-0af2cf56843f.json"
+                }, { 
+                    "url": "https://www.instagram.com/lizbeth_baliw/",
+                    "source_file": "like-20200415-130040-25dbe4f9-0ccd-49ab-8d1c-2d3870bbbf7b.json"
+                }, { 
+                    "url": "https://www.instagram.com/faithartandletters/",
+                    "source_file": "like-20200415-130041-bbd38954-b1ce-46f2-b218-92751cedd03e.json"
+                }, { 
+                    "url": "https://www.instagram.com/subzdraws/",
+                    "source_file": "like-20200415-130044-b0a6c6d1-6ad9-4c09-aedf-1680d7a3dd54.json"
+                }, { 
+                    "url": "https://www.instagram.com/ti_ea_ya/",
+                    "source_file": "like-20200415-130045-ab5d2dd7-ba87-45b4-b7e4-efc646ca6712.json"
+                }, { 
+                    "url": "https://twitter.com/aleksfelipe",
+                    "source_file": "like-20200416-135503-59a87344-2b16-4806-8099-55971487663b.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1249619162491543552/",
+            "url": "https://roytang.net/2020/04/1249619162491543552/",
+            "path": "/2020/04/1249619162491543552/",
+            "title": "",
+            "content_html": "\u003cp\u003eGamer quarantine woes\u003c/p\u003e\n",
+            "summary": "Gamer quarantine woes",
+            "date_published": "2020-04-13T08:43:19+00:00",
+            "date_modified": "2020-04-13T09:00:04+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/1249619162491543552/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249619162491543552/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/the-simpsons-social-distancing-intro/",
+            "url": "https://roytang.net/2020/04/the-simpsons-social-distancing-intro/",
+            "path": "/2020/04/the-simpsons-social-distancing-intro/",
+            "title": "The Simpsons Social Distancing Intro",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-04-12T12:38:03+00:00",
+            "date_modified": "2020-04-12T12:45:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/04/the-simpsons-social-distancing-intro/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://www.youtube.com/watch?v=gfR3esYfx6s\u0026feature=youtu.be"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103985657408147601"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249316386305765378/"}]
+            ,"link": "https://www.youtube.com/watch?v=gfR3esYfx6s\u0026feature=youtu.be"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1249201813376700416/",
+            "url": "https://roytang.net/2020/04/1249201813376700416/",
+            "path": "/2020/04/1249201813376700416/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis was the longest Lent\u003c/p\u003e\n",
+            "summary": "This was the longest Lent",
+            "date_published": "2020-04-12T05:04:56+00:00",
+            "date_modified": "2020-04-12T05:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1249201813376700416/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249201813376700416/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/weeknotes-2020-04-12/",
+            "url": "https://roytang.net/2020/04/weeknotes-2020-04-12/",
+            "path": "/2020/04/weeknotes-2020-04-12/",
+            "title": "Weeknotes 2020-04-12 Easter Sunday Edition",
+            "content_html": "\u003cp\u003eI stopped updating the \u003ca href=\"/2020/03/covid19/\"\u003eCOVID19 Diary\u003c/a\u003e for a few days (last update was on Maunday Thursday), and I feel like that was a healthier choice overall. It helped that nothing significantly newsworthy happened over the long weekend. (Well, there\u0026rsquo;s still thousands of deaths worldwide, but somehow our bar for \u0026ldquo;significant\u0026rdquo; has shifted quite a bit.)\u003c/p\u003e\n\u003cp\u003eOur lockdown has of course been extended to the end of April. I expect it will go beyond that though, likely the earliest chance for things to start going back to normal might be by June.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eGot some consulting work done in the first half of the week, mostly setting up some automation for a client. Looks like they\u0026rsquo;ll have more to do for me next week so at least I\u0026rsquo;m keeping busy.\u003c/p\u003e\n\u003cp\u003eAlso managed to do two online quiz nights again, doing more poorly this time, but still pretty fun. The second one was held last night (Black Saturday), and it was a team effort, so it involved our trivia team on an FB Messenger call while watching the quiz via FB live. FB Live sucks for this kind of thing due to lag, but we had fun (but still did not do well.)\u003c/p\u003e\n\u003cp\u003eSince it\u0026rsquo;s Easter Sunday and the folks haven\u0026rsquo;t seen their grandkids for a while, me and the bros set up a Zoom call so all the grandkids could see the grandparents, everyone all together at once. As could be expected, it was kind of chaotic, but also all kinds of fun.\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"watching-lately\"\u003eWatching lately\u003c/h3\u003e\n\u003cp\u003eI took the weekend to watch a few movies, notably completing the Hobbit trilogy. This trilogy wasn\u0026rsquo;t as good as the LotR one (talk about high bar to meet right?), but pretty watchable in its own right.\u003c/p\u003e\n\u003cp\u003eI also watched The Departed, pretty intense movie. Gradually building up to watching the Irishman on Netflix.\u003c/p\u003e\n\u003cp\u003eFinally, I watched this fantastic collaborative fan-made shot-by-shot remake of Back to the Future II put together during quarantine, featuring all kinds of ridiculousness: \u003ca href=\"https://www.youtube.com/watch?v=GcUUjWbVc4I\"\u003ehttps://www.youtube.com/watch?v=GcUUjWbVc4I\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eCheck the \u003ca href=\"/page/lists/2020/movies/\"\u003e2020 movies page\u003c/a\u003e for my commentary.\u003c/p\u003e\n\u003cp\u003eOh, I also rewatched the last two seasons of Community (now surprisingly available on both Netflix and Prime Video at the same time!), mostly to prep for a trivia round, but also because it\u0026rsquo;s a fun underrated show and more people should watch it.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eSome things of interest:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://ai-art.tokyo/en#/\"\u003eAl Gahaku\u003c/a\u003e, an AI \u0026ldquo;artist\u0026rdquo; that takes an existing photograph and modifies it to look like a renaissance-style painting. Pretty fun.\u003c/li\u003e\n\u003cli\u003eThere\u0026rsquo;s this \u003ca href=\"https://ncase.me/contact-tracing/\"\u003egreat comic\u003c/a\u003e summarizing a privacy-respecting bluetooth-based contact tracing protocol. Nice way to present information for easier consumption by the general public.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"gaming\"\u003eGaming\u003c/h3\u003e\n\u003cp\u003eBeen playing mostly Magic Arena (wasting my gold on \u003ca href=\"/2020/04/1248178769275256832/\"\u003ecube sealed\u003c/a\u003e, really fun), Divinity: Original Sin 2 (kind of a slow burn) and a bit of Megaman Legacy Collection (currently about halfway through Megaman 3).\u003c/p\u003e\n\u003cp\u003eFinal Fantasy VII Remake is out this week. I had a Deluxe edition preorder with our local game store, but given they\u0026rsquo;re all closed IDK how that\u0026rsquo;s going to work now. The store collected information from everyone who preordered so that they can give out info, but no updates yet. I suspect they\u0026rsquo;re going to try to set up some kind of delivery service, but don\u0026rsquo;t want to promise too much.\u003c/p\u003e\n\u003cp\u003eAlas even if I could get my FF7R copy, I don\u0026rsquo;t even have my PS4 at home as it was borrowed by my brother in February. I was planning to get it back right before the FF7R release, but eh, life in quarantine.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eI dug up some old draft blog posts that I never published, so I polished them up and we should have some new content for the coming week (other than these weeknotes).\u003c/p\u003e\n\u003cp\u003eOther than that, I\u0026rsquo;ve been considering re-organizing how this blog/site is organized. I was recently reading Kev Quirk\u0026rsquo;s \u003ca href=\"https://kevq.uk/why-i-dont-use-a-static-site-generator/\"\u003epost about why he doesn\u0026rsquo;t use a static site generator\u003c/a\u003e, it kind of tempted me to consider switching back to Wordpress. The main problem with Hugo running this site at the moment is that the build time is quite long, so feedback can take a while. (Still the same issue I \u003ca href=\"/2019/11/one-year-with-hugo/\"\u003ereported in November\u003c/a\u003e.) Anyway, I considered going back to Wordpress, and while that\u0026rsquo;s certainly a viable solution, there are some things that I\u0026rsquo;m thinking of doing that would be complicated to do in Wordpress\u0026rsquo;s data structure. Also, my gut doesn\u0026rsquo;t like the idea, although there are certainly some pros. I\u0026rsquo;ll need to think about this a bit more.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eSomeday, we\u0026rsquo;ll find our way back to the world we once knew, but it will have moved beyond us.\u003c/p\u003e\n",
+            "summary": "I stopped updating the COVID19 Diary for a few days (last update was on Maunday Thursday), and I feel like that was a healthier choice overall. It helped that nothing significantly newsworthy happened over the long weekend. (Well, there\u0026rsquo;s still thousands of deaths worldwide, but somehow our bar for \u0026ldquo;significant\u0026rdquo; has shifted quite a bit.)\nOur lockdown has of course been extended to the end of April. I expect it will go beyond that though, likely the earliest chance for things to start going back to normal might be by June.",
+            "date_published": "2020-04-12T00:00:00+00:00",
+            "date_modified": "2020-04-12T23:01:03+08:00",
+            "section": "post",
+            "source_path": "post/2020/04/weeknotes-04-12/index.md"
+            , "tags": ["weeknotes"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103984949113781523"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249271055329312774/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/protecting-lives-liberty-how-contact-tracing-can-foil-covid-19-big-brother/",
+            "url": "https://roytang.net/2020/04/protecting-lives-liberty-how-contact-tracing-can-foil-covid-19-big-brother/",
+            "path": "/2020/04/protecting-lives-liberty-how-contact-tracing-can-foil-covid-19-big-brother/",
+            "title": "Protecting Lives \u0026amp; Liberty : How Contact Tracing Can Foil COVID-19 \u0026amp; Big Brother",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-04-11T18:22:35+00:00",
+            "date_modified": "2020-04-11T18:30:12+00:00",
+            "section": "links",
+            "source_path": "links/2020/04/protecting-lives-liberty-how-contact-tracing-can-foil-covid-19-big-brother/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://ncase.me/contact-tracing/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103981371197889527"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249042069164658688/"}]
+            ,"link": "https://ncase.me/contact-tracing/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1249033881690357761/",
+            "url": "https://roytang.net/2020/04/1249033881690357761/",
+            "path": "/2020/04/1249033881690357761/",
+            "title": "",
+            "content_html": "\u003cp\u003eOkay, I’ll do this #SixFanarts thing as well. Drop your suggestions!\u003c/p\u003e\n",
+            "summary": "Okay, I’ll do this #SixFanarts thing as well. Drop your suggestions!",
+            "date_published": "2020-04-11T17:57:37+00:00",
+            "date_modified": "2020-04-13T20:40:54+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/1249033881690357761/index.md"
+            , "tags": ["SixFanarts"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249033881690357761/"},{"type":"instagram","url":"https://www.instagram.com/p/B-2YxuyhuYD/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10158356758918912"},{"type":"mastodon","url":"https://mastodon.technology/@roytang/103981249249831442"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248947157207408642/",
+            "url": "https://roytang.net/2020/04/1248947157207408642/",
+            "path": "/2020/04/1248947157207408642/",
+            "title": "",
+            "content_html": "\u003cp\u003eI saw this meme where hulu burned some guy who was dissing Parasite because it wasnt in english and had subs. I looked at the guy\u0026rsquo;s twitter profile and he retweeted a claim that covid was a govt created bioweapon \u0026ldquo;like ebola\u0026rdquo;, and i was like \u0026ldquo;figures\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "I saw this meme where hulu burned some guy who was dissing Parasite because it wasnt in english and had subs. I looked at the guy\u0026rsquo;s twitter profile and he retweeted a claim that covid was a govt created bioweapon \u0026ldquo;like ebola\u0026rdquo;, and i was like \u0026ldquo;figures\u0026rdquo;",
+            "date_published": "2020-04-11T12:13:01+00:00",
+            "date_modified": "2020-04-11T12:30:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248947157207408642/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248947157207408642/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248929957784375297/",
+            "url": "https://roytang.net/2020/04/1248929957784375297/",
+            "path": "/2020/04/1248929957784375297/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e This is the only Tiger King I recognize\u003c/p\u003e\n",
+            "summary": "@Woerlan This is the only Tiger King I recognize",
+            "date_published": "2020-04-11T11:04:40+00:00",
+            "date_modified": "2020-04-11T11:15:11+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248929957784375297/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248929957784375297/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248928545893568514/",
+            "url": "https://roytang.net/2020/04/1248928545893568514/",
+            "path": "/2020/04/1248928545893568514/",
+            "title": "",
+            "content_html": "\u003cp\u003eI had my portrait with AI Gahaku!\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://ai-art.tokyo/links/tftNs35x7ZnFbeG29\"\u003ehttps://ai-art.tokyo/links/tftNs35x7ZnFbeG29\u003c/a\u003e #AI画伯\u003c/p\u003e\n",
+            "summary": "I had my portrait with AI Gahaku!\nhttps://ai-art.tokyo/links/tftNs35x7ZnFbeG29 #AI画伯",
+            "date_published": "2020-04-11T10:59:03+00:00",
+            "date_modified": "2020-04-11T11:00:20+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248928545893568514/index.md"
+            , "tags": ["AI画伯"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248928545893568514/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248921271733108736/",
+            "url": "https://roytang.net/2020/04/1248921271733108736/",
+            "path": "/2020/04/1248921271733108736/",
+            "title": "",
+            "content_html": "\u003cp\u003eI have no idea when I’ll be able to get my FF7R preorder or my PS4 so I decided to mute “FF7” on twitter lol\u003c/p\u003e\n",
+            "summary": "I have no idea when I’ll be able to get my FF7R preorder or my PS4 so I decided to mute “FF7” on twitter lol",
+            "date_published": "2020-04-11T10:30:09+00:00",
+            "date_modified": "2020-04-11T10:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248921271733108736/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248921271733108736/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248677986187874304/",
+            "url": "https://roytang.net/2020/04/1248677986187874304/",
+            "path": "/2020/04/1248677986187874304/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhile cleaning up some files I found some old blog post drafts from maybe like 2015-2016ish that I never published apparently, so i guess imma have some new posts for the next couple of weeks\u003c/p\u003e\n",
+            "summary": "While cleaning up some files I found some old blog post drafts from maybe like 2015-2016ish that I never published apparently, so i guess imma have some new posts for the next couple of weeks",
+            "date_published": "2020-04-10T18:23:25+00:00",
+            "date_modified": "2020-04-10T18:30:17+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248677986187874304/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248677986187874304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248557587089379331/",
+            "url": "https://roytang.net/2020/04/1248557587089379331/",
+            "path": "/2020/04/1248557587089379331/",
+            "title": "",
+            "content_html": "\u003cp\u003eOh no, Xi Jinping banned #AnimalCrossing in China (apparently because I play it), and these angry gamers are blaming me everywhere instead of blaming their own government lol 🤨🎮🎮\u003c/p\u003e\n",
+            "summary": "Oh no, Xi Jinping banned #AnimalCrossing in China (apparently because I play it), and these angry gamers are blaming me everywhere instead of blaming their own government lol 🤨🎮🎮",
+            "date_published": "2020-04-10T10:25:00+00:00",
+            "date_modified": "2020-04-10T10:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248557587089379331/index.md"
+            , "tags": ["AnimalCrossing"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248557587089379331/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248384300241715201/",
+            "url": "https://roytang.net/2020/04/1248384300241715201/",
+            "path": "/2020/04/1248384300241715201/",
+            "title": "",
+            "content_html": "\u003cp\u003eFantastic fan-made shot-by-shot recreation of Back to the Future II, put together during quarantine, w/ stop motion, kids, sock puppets, bananas, potatoes and much more! Youtube: \u003ca href=\"https://www.youtube.com/watch?v=GcUUjWbVc4I\"\u003ehttps://www.youtube.com/watch?v=GcUUjWbVc4I\u003c/a\u003e I enjoyed this so much I\u0026rsquo;ll add it to my 2020 movies list!\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/roytang/status/1248382727524454403'\u003eroytang\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Shared via pocket: About | Project 88 \u003ca href=\"https://www.bttftoo.com/\"\u003ehttps://www.bttftoo.com/\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Fantastic fan-made shot-by-shot recreation of Back to the Future II, put together during quarantine, w/ stop motion, kids, sock puppets, bananas, potatoes and much more! Youtube: https://www.youtube.com/watch?v=GcUUjWbVc4I I enjoyed this so much I\u0026rsquo;ll add it to my 2020 movies list!\nQuoted roytang\u0026#39;s tweet:   Shared via pocket: About | Project 88 https://www.bttftoo.com/  ",
+            "date_published": "2020-04-09T22:56:25+00:00",
+            "date_modified": "2020-04-09T23:15:08+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248384300241715201/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248384300241715201/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/about-project-88/",
+            "url": "https://roytang.net/2020/04/about-project-88/",
+            "path": "/2020/04/about-project-88/",
+            "title": "About | Project 88",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-04-09T22:42:30+00:00",
+            "date_modified": "2020-04-09T23:00:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/04/about-project-88/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://www.bttftoo.com/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103971068992745831"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248382727524454403/"}]
+            ,"link": "https://www.bttftoo.com/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/naked-css-day/",
+            "url": "https://roytang.net/2020/04/naked-css-day/",
+            "path": "/2020/04/naked-css-day/",
+            "title": "Naked CSS Day",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s \u003ca href=\"https://css-naked-day.github.io/\"\u003enaked CSS day\u003c/a\u003e, so the site looks super bare-bones today! Inspired by \u003ca href=\"https://laurakalbag.com/css-naked-day-2020/\"\u003eLaura Kalbag\u003c/a\u003e and \u003ca href=\"https://meyerweb.com/\"\u003eEric Meyer\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eTrying out the site without the CSS made me realize how I wasn\u0026rsquo;t setting width and height for the svg icons I was using, so they became huge when the CSS was removed. I also rearranged the templates so the footer is at the end of the document (previously it was being put there by CSS). So at the very least this did lead to some fixes!\u003c/p\u003e\n\u003cp\u003e(Hopefully I don\u0026rsquo;t forget to restore the CSS tomorrow!)\u003c/p\u003e\n\u003cp\u003eScreenshot of the Naked CSS version for posterity:\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s naked CSS day, so the site looks super bare-bones today! Inspired by Laura Kalbag and Eric Meyer.\nTrying out the site without the CSS made me realize how I wasn\u0026rsquo;t setting width and height for the svg icons I was using, so they became huge when the CSS was removed. I also rearranged the templates so the footer is at the end of the document (previously it was being put there by CSS).",
+            "date_published": "2020-04-09T11:44:35+00:00",
+            "date_modified": "2020-04-09T12:30:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/04/naked-css-day/index.md"
+            , "tags": ["tech life","software development","website"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103968591445237197"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248224165850525701/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200410-004145-8785a4c5-8178-4dc3-8f5a-63989d2f8f2e.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248178769275256832/",
+            "url": "https://roytang.net/2020/04/1248178769275256832/",
+            "path": "/2020/04/1248178769275256832/",
+            "title": "",
+            "content_html": "\u003cp\u003eStreaming some more Arena Cube Sealed \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #twitch\u003c/p\u003e\n\u003cp\u003ePool wasn\u0026rsquo;t as good as the last one! Here\u0026rsquo;s the Youtube export: \u003ca href=\"https://www.youtube.com/watch?v=Un38dApAYHg\"\u003ehttps://www.youtube.com/watch?v=Un38dApAYHg\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Streaming some more Arena Cube Sealed https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch\nPool wasn\u0026rsquo;t as good as the last one! Here\u0026rsquo;s the Youtube export: https://www.youtube.com/watch?v=Un38dApAYHg",
+            "date_published": "2020-04-09T09:19:43+00:00",
+            "date_modified": "2020-04-09T11:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248178769275256832/index.md"
+            , "tags": ["twitch","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248178769275256832/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248207178629935104/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1248120860323401731/",
+            "url": "https://roytang.net/2020/04/1248120860323401731/",
+            "path": "/2020/04/1248120860323401731/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mikong/\"\u003e@mikong\u003c/a\u003e dami nang nagcorrect sakin lol. i guess the problem is those arent the ones i use heavily haha\u003c/p\u003e\n",
+            "summary": "@mikong dami nang nagcorrect sakin lol. i guess the problem is those arent the ones i use heavily haha",
+            "date_published": "2020-04-09T05:29:36+00:00",
+            "date_modified": "2020-04-09T05:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1248120860323401731/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1248120860323401731/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/b1b6f7e8d68ca5ef8aa7c77a8cf79596/",
+            "url": "https://roytang.net/2020/04/b1b6f7e8d68ca5ef8aa7c77a8cf79596/",
+            "path": "/2020/04/b1b6f7e8d68ca5ef8aa7c77a8cf79596/",
+            "title": "I miss being able to set my status",
+            "content_html": "\u003cp\u003eI miss being able to set a custom status message in my messaging app. Company I worked at for the longest time used jabber/xmpp for internal messaging, which supported setting a status message. I often used it to put short messages, jokes or PSAs, and I like to think I was one of the first at the company to practice this and it spread later. Just a fun thing to scroll through your contact list and see the random status messages people put. I suppose in the modern age no one really scrolls through their contact lists though.\u003c/p\u003e\n\u003cp\u003eModern messaging apps like Messenger, Signal, Viber, WhatsApp etc dont have this. Discord does though, and so does Google Hangouts, since it is xmpp based I believe. Tweets are supposedly status updates. Hmm, maybe I should make a Twitter app where it just lists out all your contacts and shows the last status message from each one.\u003c/p\u003e\n",
+            "summary": "I miss being able to set a custom status message in my messaging app. Company I worked at for the longest time used jabber/xmpp for internal messaging, which supported setting a status message. I often used it to put short messages, jokes or PSAs, and I like to think I was one of the first at the company to practice this and it spread later. Just a fun thing to scroll through your contact list and see the random status messages people put.",
+            "date_published": "2020-04-09T02:11:21+08:00",
+            "date_modified": "2020-05-05T22:30:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/b1b6f7e8d68ca5ef8aa7c77a8cf79596/index.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1247848510365618181/",
+            "url": "https://roytang.net/2020/04/1247848510365618181/",
+            "path": "/2020/04/1247848510365618181/",
+            "title": "",
+            "content_html": "\u003cp\u003eStreaming some Magic Arena Cube Sealed \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eYoutube export: \u003ca href=\"https://www.youtube.com/watch?v=t22Ugw7IJSE\"\u003ehttps://www.youtube.com/watch?v=t22Ugw7IJSE\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eHighlight (Elspeth\u0026rsquo;s Nightmare!): \u003ca href=\"https://www.twitch.tv/videos/586399783\"\u003ehttps://www.twitch.tv/videos/586399783\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e#mtg #magicarena #twitch\u003c/p\u003e\n",
+            "summary": "Streaming some Magic Arena Cube Sealed https://www.twitch.tv/twitchyroy\nYoutube export: https://www.youtube.com/watch?v=t22Ugw7IJSE\nHighlight (Elspeth\u0026rsquo;s Nightmare!): https://www.twitch.tv/videos/586399783\n#mtg #magicarena #twitch",
+            "date_published": "2020-04-08T11:27:23+00:00",
+            "date_modified": "2020-04-09T03:11:04+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1247848510365618181/index.md"
+            , "tags": ["mtg","magicarena","twitch"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247848510365618181/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247885909749411844/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1247757475152977924/",
+            "url": "https://roytang.net/2020/04/1247757475152977924/",
+            "path": "/2020/04/1247757475152977924/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhenever I see people complaining about negativity or criticism (which is ironically criticism in itself), I assume these are the same people who stay quiet when someone cuts in line.\u003c/p\u003e\n",
+            "summary": "Whenever I see people complaining about negativity or criticism (which is ironically criticism in itself), I assume these are the same people who stay quiet when someone cuts in line.",
+            "date_published": "2020-04-08T05:25:38+00:00",
+            "date_modified": "2020-04-08T05:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1247757475152977924/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247757475152977924/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1247610288272076800/",
+            "url": "https://roytang.net/2020/04/1247610288272076800/",
+            "path": "/2020/04/1247610288272076800/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis thread = goosebumps!\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ScottGustin/status/1247364405597220865'\u003eScottGustin\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eJust stop what you’re doing and enjoy listening to the #AvengersEndgame opening night crowd react to Captain America wielding Thor\u0026rsquo;s hammer.\u003c/p\u003e\n\u003cp\u003eCHILLS.\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1247363995750760448/pu/vid/1280x720/fgU7QOoyLR45-x5B.mp4?tag=10' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "This thread = goosebumps!\nQuoted ScottGustin\u0026#39;s tweet:   Just stop what you’re doing and enjoy listening to the #AvengersEndgame opening night crowd react to Captain America wielding Thor\u0026rsquo;s hammer.\nCHILLS.\nYour browser does not support the video tag.   ",
+            "date_published": "2020-04-07T19:40:46+00:00",
+            "date_modified": "2020-04-07T20:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1247610288272076800/index.md"
+            , "tags": ["avengersendgame"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247610288272076800/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1247480688456024064/",
+            "url": "https://roytang.net/2020/04/1247480688456024064/",
+            "path": "/2020/04/1247480688456024064/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e that brazen borrower did a lot more work than the lyra i never saw lol\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback that brazen borrower did a lot more work than the lyra i never saw lol",
+            "date_published": "2020-04-07T11:05:47+00:00",
+            "date_modified": "2020-04-07T11:15:12+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1247480688456024064/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247480688456024064/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1247474614931828736/",
+            "url": "https://roytang.net/2020/04/1247474614931828736/",
+            "path": "/2020/04/1247474614931828736/",
+            "title": "",
+            "content_html": "\u003cp\u003eFinally managed to get to 5 wins in #MagicArena cube sealed with this pile #mtg\u003c/p\u003e\n",
+            "summary": "Finally managed to get to 5 wins in #MagicArena cube sealed with this pile #mtg",
+            "date_published": "2020-04-07T10:41:39+00:00",
+            "date_modified": "2020-04-07T11:00:04+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/1247474614931828736/index.md"
+            , "tags": ["mtg","MagicArena"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1247474614931828736/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/fmkm2t3/",
+            "url": "https://roytang.net/2020/04/fmkm2t3/",
+            "path": "/2020/04/fmkm2t3/",
+            "title": "",
+            "content_html": "\u003cp\u003eHooray!\u003c/p\u003e\n",
+            "summary": "Hooray!",
+            "date_published": "2020-04-06T07:55:40+00:00",
+            "date_modified": "2020-04-06T08:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/fmkm2t3/index.md"
+            , "tags": ["PS4"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS4/comments/fvlspr/giveaway_50_psn_credit/fmkm2t3/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/weeknotes-2020-04-05/",
+            "url": "https://roytang.net/2020/04/weeknotes-2020-04-05/",
+            "path": "/2020/04/weeknotes-2020-04-05/",
+            "title": "Weeknotes 2020-04-05",
+            "content_html": "\u003cp\u003eMy \u003ca href=\"/2020/03/covid19/\"\u003eCOVID19 Diary\u003c/a\u003e is still ongoing, and I have yet to find a solution for the TOC.\u003c/p\u003e\n\u003cp\u003eToday is Palm Sunday. I\u0026rsquo;m writing this early in the morning, so IDK yet how the church will adapt the usual fanfare to this whole pandemic thing.\u003c/p\u003e\n\u003cp\u003eThe summer heat has begun to settle in during the last few weeks of quarantine. I can\u0026rsquo;t sit without a shirt or rest or my arms anywhere without sweat threatening to accumulate on the contact surface. Coincidentally around the first week of the lockdown, our aircon in the only airconditioned room in the house started making funny noises so we\u0026rsquo;ve stopped using it. At least we get to save electricty?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eOverall this week much less productive than the last. I felt a stronger tendency to \u0026ldquo;veg out\u0026rdquo; as it were.\u003c/p\u003e\n\u003cp\u003eI didn\u0026rsquo;t get to write any new blog posts this week (other than the weeknotes). It seems kind of difficult to get your thoughts together when your brain is constantly distracted by the state of the world. I mean, how could I ever finish a post titled \u0026ldquo;Things learned from a crisis\u0026rdquo; when things are moving so quickly?\u003c/p\u003e\n\u003cp\u003eWork has gotten a bit busier this week, as there are some things a client is asking me to do that he says are urgent, but really is little more than just saving them a bit of effort by automating stuff. I will say however that I\u0026rsquo;m amazed how strong his business still seems to be going, given they\u0026rsquo;re an industry that I don\u0026rsquo;t really consider essential. Still, more work is fine, as it helps distract me from the prevailing mood.\u003c/p\u003e\n\u003cp\u003eWe did two online quiz nights again. I even managed to win one of them! These are a fun distraction (even though there are no prizes!).\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"watching-lately\"\u003eWatching lately\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eSeason 4 of Kim\u0026rsquo;s Convenience came out on Netflix. It continues to be an light, enjoyable and easy to binge show, though the season was only 13 eps long so it was over quickly.\u003c/li\u003e\n\u003cli\u003eI also finished watching Star Trek: Picard S1, via Prime Video.\n\u003cul\u003e\n\u003cli\u003eIt started off slow, and I was worried it would be one of those conspiracy theory shows where the conspiracy part dragged on forever (X-Files may have traumatized me a bit).\u003c/li\u003e\n\u003cli\u003eBut it wasn\u0026rsquo;t! It started picking up the pace around episode 5 or 6, as the elements behind the conspiracy came back into view.\u003c/li\u003e\n\u003cli\u003eAnd while Picard\u0026rsquo;s new crew seemed so motely and largely unnecessary during the first half, they each ended up with satisfying character arcs and backstories\u003c/li\u003e\n\u003cli\u003e\n\u003cdetails class=\"spoiler\"\u003e\n    \u003csummary\u003e(Spoilers)\u003c/summary\u003e\n    although the reveal Rios\u0026rsquo; history that ties in to the whole synth issue seems awfully convenient.\n\u003c/details\u003e\n\u003cp /\u003e\n\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;m glad we got to revisit old friends like Seven of Nine, Data, Riker and Troi, and even Hugh, just to see what they\u0026rsquo;ve been up to.\u003c/li\u003e\n\u003cli\u003eI must admit I felt a great deal of satisfaction when \n\u003cdetails class=\"spoiler\"\u003e\n    \u003csummary\u003e(Spoilers)\u003c/summary\u003e\n    Riker shows up near the end with a whole armada (although realistically it seems logistically impossible for Starfleet to have put such a large number of top-of-the-line ships together so quickly)\n\u003c/details\u003e\n\u003cp /\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eonly 1 new movie watched this week, the first of the Hobbit trilogy. I meant to watch all three, but you know, distractions happened.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003cp\u003eNot many links to share today, but I will say that a new update to \u003ca href=\"https://www.kickscondor.com/hrefhunt/\"\u003eKicks Condor\u0026rsquo;s Href Hunt\u003c/a\u003e is out, and I\u0026rsquo;m still in the process of going through all the featured sites. If you like perusing people\u0026rsquo;s personal sites, this one is always fun to check out, and the current release has a ton of sites!\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"gaming\"\u003eGaming\u003c/h3\u003e\n\u003cp\u003eNew Humble\u0026rsquo;s Choice is kind of meh for me. I may pause again.\u003c/p\u003e\n\u003cp\u003eLots of multiplayer gaming again this week. SC2 with my usual gaming group. Armello with my other gaming group. And now even my brothers are asking around if we all have Left 4 Dead 2 installed (but we haven\u0026rsquo;t gotten around to a session yet.)\u003c/p\u003e\n\u003cp\u003eNo progress on Megaman LC this week.\u003c/p\u003e\n\u003cp\u003eI purchased Divinity: Original Sin 2 a couple of weeks ago in anticipation of an extended lockdown and finally started it up this week. I played a premade character first to get a feel of things.\u003c/p\u003e\n\u003cp\u003eAlso, this week was the start of spoiler season for the next MTG set, Ikoria. And it\u0026rsquo;s kind of crazy; they\u0026rsquo;re doing a crossover with Toho to feature Godzilla-themed alters for certain cards. There was a leak before that Godzilla would be in the set, which seemed ridiculous, but here we are! I think the set comes out in a week, and it looks pretty sweet, looking forward to playing it on Arena.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003ePersonal projects: Thinking of finally adding a set of new trivia questions to the \u003ca href=\"https://triviastorm.net/\"\u003etrivia app\u003c/a\u003e. Mostly because our quizzing activity has kind of gone up while in quarantine (including random friends sharing quizzes etc.) A lot of the older questions/answers are kind of low quality too, so I want to implement some kind of weighted random selection so that newer questions are more likely to be picked. But first I need to cobble together a decent data set. Most of it will be movie and TV related I think.\u003c/p\u003e\n\u003cp\u003eRecent site changes: Not much.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eIt\u0026rsquo;s highly probably that our lockdown is going to be extended by at least a month. Sigh.\u003c/p\u003e\n",
+            "summary": "My COVID19 Diary is still ongoing, and I have yet to find a solution for the TOC.\nToday is Palm Sunday. I\u0026rsquo;m writing this early in the morning, so IDK yet how the church will adapt the usual fanfare to this whole pandemic thing.\nThe summer heat has begun to settle in during the last few weeks of quarantine. I can\u0026rsquo;t sit without a shirt or rest or my arms anywhere without sweat threatening to accumulate on the contact surface.",
+            "date_published": "2020-04-05T00:00:00+00:00",
+            "date_modified": "2020-04-05T03:30:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/04/weeknotes-04-05/index.md"
+            , "tags": ["weeknotes"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103943818771480451"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1246638714177990656/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1246095247446175750/",
+            "url": "https://roytang.net/2020/04/1246095247446175750/",
+            "path": "/2020/04/1246095247446175750/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/cnnphilippines/\"\u003e@cnnphilippines\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@cnnphilippines",
+            "date_published": "2020-04-03T15:20:32+00:00",
+            "date_modified": "2020-04-03T15:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1246095247446175750/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1246095247446175750/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1246081153850699776/",
+            "url": "https://roytang.net/2020/04/1246081153850699776/",
+            "path": "/2020/04/1246081153850699776/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e nasa Prime Video\u003c/p\u003e\n",
+            "summary": "@rocketkeis nasa Prime Video",
+            "date_published": "2020-04-03T14:24:32+00:00",
+            "date_modified": "2020-04-03T14:30:12+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1246081153850699776/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1246081153850699776/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1246034687723593728/",
+            "url": "https://roytang.net/2020/04/1246034687723593728/",
+            "path": "/2020/04/1246034687723593728/",
+            "title": "",
+            "content_html": "\u003cp\u003eOkay, Star Trek: Picard started out a bit slow, but it was great!\u003c/p\u003e\n",
+            "summary": "Okay, Star Trek: Picard started out a bit slow, but it was great!",
+            "date_published": "2020-04-03T11:19:54+00:00",
+            "date_modified": "2020-04-03T11:30:04+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/1246034687723593728/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1246034687723593728/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1245621811452080129/",
+            "url": "https://roytang.net/2020/04/1245621811452080129/",
+            "path": "/2020/04/1245621811452080129/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe kids are alright lol\u003c/p\u003e\n",
+            "summary": "The kids are alright lol",
+            "date_published": "2020-04-02T07:59:17+00:00",
+            "date_modified": "2020-04-02T08:00:27+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/1245621811452080129/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1245621811452080129/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1245615852579217414/",
+            "url": "https://roytang.net/2020/04/1245615852579217414/",
+            "path": "/2020/04/1245615852579217414/",
+            "title": "",
+            "content_html": "\u003cp\u003eday 18 of quarantine: marunong na po siya magattach ng GIF \u003ca href=\"https://twitter.com/lenirobredo/status/1245609818900971521\"\u003ehttps://twitter.com/lenirobredo/status/1245609818900971521\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "day 18 of quarantine: marunong na po siya magattach ng GIF https://twitter.com/lenirobredo/status/1245609818900971521",
+            "date_published": "2020-04-02T07:35:36+00:00",
+            "date_modified": "2020-04-02T07:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1245615852579217414/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1245615852579217414/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1245600219279974402/",
+            "url": "https://roytang.net/2020/04/1245600219279974402/",
+            "path": "/2020/04/1245600219279974402/",
+            "title": "",
+            "content_html": "\u003cp\u003eisnt the term “face masks” redundant? i mean, is anyone wearing these on their elbows?\u003c/p\u003e\n",
+            "summary": "isnt the term “face masks” redundant? i mean, is anyone wearing these on their elbows?",
+            "date_published": "2020-04-02T06:33:29+00:00",
+            "date_modified": "2020-04-02T06:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1245600219279974402/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1245600219279974402/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1245302448555614208/",
+            "url": "https://roytang.net/2020/04/1245302448555614208/",
+            "path": "/2020/04/1245302448555614208/",
+            "title": "",
+            "content_html": "\u003cp\u003eSumunod ka na lang.\u003c/p\u003e\n\u003cp\u003eWala namang mamamatay sa gutom in one month.\u003c/p\u003e\n\u003cp\u003eIt would be an honor to die for your country.\u003c/p\u003e\n",
+            "summary": "Sumunod ka na lang.\nWala namang mamamatay sa gutom in one month.\nIt would be an honor to die for your country.",
+            "date_published": "2020-04-01T10:50:14+00:00",
+            "date_modified": "2020-04-01T11:00:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1245302448555614208/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1245302448555614208/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/1245200727464534017/",
+            "url": "https://roytang.net/2020/04/1245200727464534017/",
+            "path": "/2020/04/1245200727464534017/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/momblogger/\"\u003e@momblogger\u003c/a\u003e this would be a good time to \u0026ldquo;temper the law with compassion\u0026rdquo; as the DOJ sec says\u003c/p\u003e\n",
+            "summary": "@momblogger this would be a good time to \u0026ldquo;temper the law with compassion\u0026rdquo; as the DOJ sec says",
+            "date_published": "2020-04-01T04:06:02+00:00",
+            "date_modified": "2020-04-01T04:15:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1245200727464534017/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1245200727464534017/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/04/",
+            "url": "https://roytang.net/2020/04/",
+            "path": "/2020/04/",
+            "title": "Monthly Archives for 04 2020",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-04-01T00:00:00+00:00",
+            "date_modified": "2020-04-01T04:30:25+00:00",
+            "section": "archm",
+            "source_path": "archm/2020-04.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244664444803616769/",
+            "url": "https://roytang.net/2020/03/1244664444803616769/",
+            "path": "/2020/03/1244664444803616769/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/paulcatiang/\"\u003e@paulcatiang\u003c/a\u003e \u003ca href=\"https://twitter.com/pcoogov/\"\u003e@pcoogov\u003c/a\u003e lol to be clear, above was just haka haka. although might not be far from the truth:\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/altabscbn/status/1244660277313929218'\u003eAltABSCBN\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Okay from a verified MPC voklohh. The message was filmed mga 12pm onwards. Nagwarla daw sila which take/s should be shown or removed. Buti na lang talaga tanga silang lahat sa PCOO at PTV4.\n\u003c/blockquote\u003e\n",
+            "summary": "@paulcatiang @pcoogov lol to be clear, above was just haka haka. although might not be far from the truth:\nQuoted AltABSCBN\u0026#39;s tweet:   Okay from a verified MPC voklohh. The message was filmed mga 12pm onwards. Nagwarla daw sila which take/s should be shown or removed. Buti na lang talaga tanga silang lahat sa PCOO at PTV4.  ",
+            "date_published": "2020-03-30T16:35:03+00:00",
+            "date_modified": "2020-03-30T16:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1244664444803616769/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244664444803616769/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244663813930008588/",
+            "url": "https://roytang.net/2020/03/1244663813930008588/",
+            "path": "/2020/03/1244663813930008588/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/paulcatiang/\"\u003e@paulcatiang\u003c/a\u003e \u003ca href=\"https://twitter.com/pcoogov/\"\u003e@pcoogov\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@paulcatiang @pcoogov",
+            "date_published": "2020-03-30T16:32:32+00:00",
+            "date_modified": "2020-03-30T16:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1244663813930008588/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244663813930008588/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244612322330415105/",
+            "url": "https://roytang.net/2020/03/1244612322330415105/",
+            "path": "/2020/03/1244612322330415105/",
+            "title": "",
+            "content_html": "\u003cp\u003eIm told that people are using local area chat groups in messenger and viber to get info. Are there any such groups for bgy tandang sora?\u003c/p\u003e\n",
+            "summary": "Im told that people are using local area chat groups in messenger and viber to get info. Are there any such groups for bgy tandang sora?",
+            "date_published": "2020-03-30T13:07:56+00:00",
+            "date_modified": "2020-03-30T13:15:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1244612322330415105/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244612322330415105/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244569147901538304/",
+            "url": "https://roytang.net/2020/03/1244569147901538304/",
+            "path": "/2020/03/1244569147901538304/",
+            "title": "",
+            "content_html": "\u003cp\u003ePeople: The president\u0026rsquo;s presscon is over two hours late!\u003c/p\u003e\n\u003cp\u003eMe:\u003c/p\u003e\n",
+            "summary": "People: The president\u0026rsquo;s presscon is over two hours late!\nMe:",
+            "date_published": "2020-03-30T10:16:22+00:00",
+            "date_modified": "2020-03-30T10:30:09+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/03/1244569147901538304/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244569147901538304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244568499193647104/",
+            "url": "https://roytang.net/2020/03/1244568499193647104/",
+            "path": "/2020/03/1244568499193647104/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e why are you in a group chat with strangers\u003c/p\u003e\n",
+            "summary": "@rocketkeis why are you in a group chat with strangers",
+            "date_published": "2020-03-30T10:13:47+00:00",
+            "date_modified": "2020-03-30T10:30:09+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1244568499193647104/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244568499193647104/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/the-global-haiku-project/",
+            "url": "https://roytang.net/2020/03/the-global-haiku-project/",
+            "path": "/2020/03/the-global-haiku-project/",
+            "title": "The Global Haiku Project",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-03-29T18:19:13+00:00",
+            "date_modified": "2020-03-29T18:30:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/03/the-global-haiku-project/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://haiku.baronfig.com/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103907721887420032"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244328513756225536/"}]
+            ,"link": "https://haiku.baronfig.com/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1244153079072727041/",
+            "url": "https://roytang.net/2020/03/1244153079072727041/",
+            "path": "/2020/03/1244153079072727041/",
+            "title": "",
+            "content_html": "\u003cp\u003eWatch me struggle in Megaman Legacy Collection / Megaman 2 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eVOD: \u003ca href=\"https://www.youtube.com/watch?v=bQwbZAZW8uc\"\u003ehttps://www.youtube.com/watch?v=bQwbZAZW8uc\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Watch me struggle in Megaman Legacy Collection / Megaman 2 https://www.twitch.tv/twitchyroy\nVOD: https://www.youtube.com/watch?v=bQwbZAZW8uc",
+            "date_published": "2020-03-29T06:43:03+00:00",
+            "date_modified": "2020-03-29T10:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1244153079072727041/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244153079072727041/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244198432715075586/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/weeknotes-2020-03-29/",
+            "url": "https://roytang.net/2020/03/weeknotes-2020-03-29/",
+            "path": "/2020/03/weeknotes-2020-03-29/",
+            "title": "Weeknotes 2020-03-29 Time Is Meaningless",
+            "content_html": "\u003cp\u003eMy \u003ca href=\"/2020/03/covid19/\"\u003eCOVID19 Diary\u003c/a\u003e is still ongoing, although that TOC is starting to get unwieldy. Need to think of a better UX solution for that.\u003c/p\u003e\n\n\n\n\n\n\n\n\n    \n    \n        \n    \n    \n    \n        \n            \n            \n            \n            \n              \n            \n            \n            \u003ca href=\"#ebaca044327af45cfc02b507f864565e-lightbox\"\u003e\n                \u003cfigure\u003e\n                  \u003cimg src=\"/2020/03/1242953238497751040/ET_bYDoUMAA8vty_hu61559ea2fb5b54ac6f28ab0474d68098_8100_300x0_resize_box_2.png\" alt=\"\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\" title=\"\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\" class=\"tn\" /\u003e\n                  \u003cfigcaption\u003e“Time is meaningless under extreme enhanced community quarantine” (Click to view full-size)\u003c/figcaption\u003e\n                \u003c/figure\u003e\n            \u003c/a\u003e\n            \u003cdiv  class=\"lightbox\" id=\"ebaca044327af45cfc02b507f864565e-lightbox\" style=\"display: none;\"\u003e\n              \u003ca href=\"#_\"\u003e\n                \u003cimg src=\"/2020/03/1242953238497751040/ET_bYDoUMAA8vty.png\" /\u003e\n              \u003c/a\u003e\n              \u003cdiv class=\"lightbox_overlay\"\u003e\n                \u003cp\u003e\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\u003c/p\u003e\n                \u003ctime class=\"dt-published\" datetime=\"29 Mar 2020 12:00am\"\u003e29 Mar 2020 12:00am\u003c/time\u003e\u003ca href=\"/2020/03/1242953238497751040/\"\u003eView post\u003c/a\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n              \u003c/div\u003e\n            \u003c/div\u003e            \n        \n    \n\n\u003cp\u003eI know it\u0026rsquo;s probably unrealistic, but I\u0026rsquo;m hoping the lockdown somehow gets lifted sooner rather than later. It\u0026rsquo;s not that I crave social interaction (I don\u0026rsquo;t), but I miss going out for food. I miss pizza. And japanese curry. And fancy sandwiches with sesame seeds and such. The food at the house is fine and all, but tends to get repetitive. And during the last grocery run, the only mayonnaise they had was Best Foods Mayo Magic. Bleah. I\u0026rsquo;m so gonna eat at so many places after all of this is over.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eOn the upside, I did get to do much more stuff this work compared to last week, among other things:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003epublished a \u003ca href=\"/blog/\"\u003efew posts\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eparticipated in 2 online quiz nights!\u003c/li\u003e\n\u003cli\u003ea bit more consulting work\u003c/li\u003e\n\u003cli\u003esome room cleanup\u003c/li\u003e\n\u003cli\u003esome cleanup/sorting of old files and stuff\u003c/li\u003e\n\u003cli\u003edid the groceries\u003c/li\u003e\n\u003cli\u003epaid my dad\u0026rsquo;s credit card bills online (he was actually planning to go to the bank to pay them!)\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"watching-lately\"\u003eWatching lately\u003c/h3\u003e\n\u003cp\u003eI think I\u0026rsquo;ll retire the \u003ca href=\"/tags/watching-lately/\"\u003ewatching lately tag\u003c/a\u003e and just include my media notes here in the weeknotes. More convenient, and more fine-tuned. Let\u0026rsquo;s see how it works out.\u003c/p\u003e\n\u003cp\u003eFor this week:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ewatched \u003ca href=\"/page/lists/2020/movies/\"\u003e4 new movies\u003c/a\u003e. Rate has slowed down a lot, but I figure I could get to a 100 for the year still. Princess Mononoke and Logan Lucky were particularly good\u003c/li\u003e\n\u003cli\u003ealso started watching Picard (via Amazon Prime Video), since all the episodes have aired. I\u0026rsquo;m only a couple of episodes in, but I can already tell it has a completely different feel than TNG (or any of the TV series pre-Discovery for that matter)\u003c/li\u003e\n\u003cli\u003egreatly enjoyed Brooklyn Nine-Nine this week with JK Simmons!\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"gaming\"\u003eGaming\u003c/h3\u003e\n\u003cp\u003eSince everyone\u0026rsquo;s at home, I\u0026rsquo;m getting a lot of multiplayer gaming done. This week our gaming group got into team Starcraft 2 vs AI battles. (We find ladder too stressful!). Since we have discord these days for voice, there is much more coordination in the team battles. And we even have some post-match analysis going on in our discord channel!\u003c/p\u003e\n\u003cp\u003eOn the singleplayer side, I managed to finished Megaman 1 in the Legacy Collection! Easily the toughest of the early Megaman games. Here\u0026rsquo;s \u003ca href=\"https://www.youtube.com/watch?v=MiWhBlrGiK8\"\u003ea video of me struggling to beat the yellow devil/cyclops\u003c/a\u003e. I\u0026rsquo;m hoping to be able to beat all 6 of the games in the collection. I\u0026rsquo;m old and rusty and don\u0026rsquo;t have the reflexes of 1990s Roy, but at least I have savescumming.\u003c/p\u003e\n\u003cp\u003eI passed on this month\u0026rsquo;s Humble Choice. I kind of wanted Fell Seal, but not that badly.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003ePersonal projects: Minor bug fixes mostly.\u003c/p\u003e\n\u003cp\u003eRecent site changes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI added the \u003ca href=\"/albums\"\u003ealbums\u003c/a\u003e section under photos (similar to how FB has albums I guess?)\u003c/li\u003e\n\u003cli\u003emass formatting cleanup of \u003ca href=\"/source/quora\"\u003eold posts imported from quora\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eminor CSS changes in various places\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003cp\u003eI don\u0026rsquo;t have anything specific to look forward to in the coming week. Time under the lockdown moves at a different scale, we just take everything one day at a time.\u003c/p\u003e\n",
+            "summary": "My COVID19 Diary is still ongoing, although that TOC is starting to get unwieldy. Need to think of a better UX solution for that.\n “Time is meaningless under extreme enhanced community quarantine” (Click to view full-size)    \u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\n29 Mar 2020 12:00amView postClose   I know it\u0026rsquo;s probably unrealistic, but I\u0026rsquo;m hoping the lockdown somehow gets lifted sooner rather than later.",
+            "date_published": "2020-03-29T00:00:00+00:00",
+            "date_modified": "2020-03-29T03:30:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/03/weeknotes-03-29/index.md"
+            , "tags": ["weeknotes","watching-lately"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103904182530128602"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244101994492473344/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1243803632912359424/",
+            "url": "https://roytang.net/2020/03/1243803632912359424/",
+            "path": "/2020/03/1243803632912359424/",
+            "title": "",
+            "content_html": "\u003cp\u003eI recorded myself struggling to beat the Cyclops boss from Megaman 1: \u003ca href=\"https://www.youtube.com/watch?v=MiWhBlrGiK8\"\u003ehttps://www.youtube.com/watch?v=MiWhBlrGiK8\u003c/a\u003e #gaming\u003c/p\u003e\n",
+            "summary": "I recorded myself struggling to beat the Cyclops boss from Megaman 1: https://www.youtube.com/watch?v=MiWhBlrGiK8 #gaming",
+            "date_published": "2020-03-28T07:34:29+00:00",
+            "date_modified": "2020-03-28T07:45:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1243803632912359424/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243803632912359424/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1243454963709173761/",
+            "url": "https://roytang.net/2020/03/1243454963709173761/",
+            "path": "/2020/03/1243454963709173761/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/momblogger/\"\u003e@momblogger\u003c/a\u003e Our death stats may already be very inaccurate\u003c/p\u003e\n",
+            "summary": "@momblogger Our death stats may already be very inaccurate",
+            "date_published": "2020-03-27T08:29:00+00:00",
+            "date_modified": "2020-03-27T08:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1243454963709173761/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243454963709173761/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1243390590680592384/",
+            "url": "https://roytang.net/2020/03/1243390590680592384/",
+            "path": "/2020/03/1243390590680592384/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/bfintal/\"\u003e@bfintal\u003c/a\u003e \u003ca href=\"https://twitter.com/jutsine_/\"\u003e@jutsine_\u003c/a\u003e engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!\u003c/p\u003e\n",
+            "summary": "@bfintal @jutsine_ engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!",
+            "date_published": "2020-03-27T04:13:12+00:00",
+            "date_modified": "2020-03-27T04:30:04+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1243390590680592384/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243390590680592384/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1243114369921122304/",
+            "url": "https://roytang.net/2020/03/1243114369921122304/",
+            "path": "/2020/03/1243114369921122304/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt is  totally racist to call it to the China/Chinese/Wuhan virus, but I wouldn\u0026rsquo;t object to the terms \u0026ldquo;CCP virus\u0026rdquo; or \u0026ldquo;Xi Jinping virus\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "It is totally racist to call it to the China/Chinese/Wuhan virus, but I wouldn\u0026rsquo;t object to the terms \u0026ldquo;CCP virus\u0026rdquo; or \u0026ldquo;Xi Jinping virus\u0026rdquo;",
+            "date_published": "2020-03-26T09:55:36+00:00",
+            "date_modified": "2020-03-26T10:00:19+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1243114369921122304/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243114369921122304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/03/1243076451601022976/",
+            "url": "https://roytang.net/2020/03/1243076451601022976/",
+            "path": "/2020/03/1243076451601022976/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn this time, remember the wisdom of Kahless the Unforgettable.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Long ago, a storm was heading for the city of Quin\u0026rsquo;lat. Everyone took protection within the walls except one man who remained outside. Kahless went to him and asked what he was doing.\u0026rdquo; /\u003c/p\u003e\n",
+            "summary": "In this time, remember the wisdom of Kahless the Unforgettable.\n\u0026ldquo;Long ago, a storm was heading for the city of Quin\u0026rsquo;lat. Everyone took protection within the walls except one man who remained outside. Kahless went to him and asked what he was doing.\u0026rdquo; /",
+            "date_published": "2020-03-26T07:24:55+00:00",
+            "date_modified": "2020-03-26T07:30:15+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1243076451601022976/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243076451601022976/"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/10/feed.json" 
+     , "next": "/p/12/feed.json" 
+}

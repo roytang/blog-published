@@ -1,0 +1,914 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://roytang.net/",
+    "feed_url": "https://roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://roytang.net/2020/07/websites-that-spark-joy/",
+            "url": "https://roytang.net/2020/07/websites-that-spark-joy/",
+            "path": "/2020/07/websites-that-spark-joy/",
+            "title": "Websites that spark joy.",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-07-01T19:30:41+00:00",
+            "date_modified": "2020-07-02T13:00:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/07/websites-that-spark-joy/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://whimsical.club"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104444344087651915"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1278672333889126401/"}]
+            ,"link": "https://whimsical.club"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/07/1278270138463268865/",
+            "url": "https://roytang.net/2020/07/1278270138463268865/",
+            "path": "/2020/07/1278270138463268865/",
+            "title": "",
+            "content_html": "\u003cp\u003eM21 draft Episode 4 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #twitch #m21\u003c/p\u003e\n\u003cp\u003eDraft was mediocre, but I had fun so that\u0026rsquo;s what\u0026rsquo;s important right? Right?\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=p0o9At_aEmg\"\u003ehttps://www.youtube.com/watch?v=p0o9At_aEmg\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "M21 draft Episode 4 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #m21\nDraft was mediocre, but I had fun so that\u0026rsquo;s what\u0026rsquo;s important right? Right?\nYT: https://www.youtube.com/watch?v=p0o9At_aEmg",
+            "date_published": "2020-07-01T10:12:04+00:00",
+            "date_modified": "2020-07-01T17:00:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/07/1278270138463268865/index.md"
+            , "tags": ["m21","twitch","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1278270138463268865/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1278372376749588480/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/07/image-lightboxes-using-html/css/",
+            "url": "https://roytang.net/2020/07/image-lightboxes-using-html/css/",
+            "path": "/2020/07/image-lightboxes-using-html/css/",
+            "title": "Image Lightboxes using HTML/CSS",
+            "content_html": "\u003cp\u003eIn several places on this site (like if you click \u003ca href=\"/photos/\"\u003ePhotos\u003c/a\u003e in the menu up top), I have a grid-like view of a list of photos/images:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#faccc892f8e2cf4a4264858849ce5ae2-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"faccc892f8e2cf4a4264858849ce5ae2-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2020/07/image-lightboxes-using-html/css/photos.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"1 Jul 2020 12:00am\"\u003e1 Jul 2020 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI used to just have each thumbnail open the post permalink on click, with the anchor set to the image itself. The image would be shown in full size inline of the post. This was a bit clunky and not so modern, so I decided to implement it so that the image lists instead will show a \u003ca href=\"https://en.wikipedia.org/wiki/Lightbox_%28JavaScript%29\"\u003eLightbox\u003c/a\u003e-style overlay with the full image and some details and an option to click through to the post. That looks a little something like this:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#69db43a1058dcdddf90179b43e7ecf6d-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"69db43a1058dcdddf90179b43e7ecf6d-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2020/07/image-lightboxes-using-html/css/lightbox.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"1 Jul 2020 12:00am\"\u003e1 Jul 2020 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eNow, in the olden days doing this sort of thing required JavaScript (as described in the wikipedia link above to Lightbox). But for the modern web, this can be achieved using HTML and CSS only. The method is described in \u003ca href=\"https://jlelse.blog/dev/css-lightbox-hugo/\"\u003ethis blog post by jlelse\u003c/a\u003e, specifically for use in Hugo themes. The CSS technique is relatively straightforward: you generate two images, a thumbnail, and a hidden full-size one in an overlay. The thumbnail is wrapped in an anchor pointing to the id of the hidden overlay, and the overlay gets displayed via the \u003ccode\u003e:target\u003c/code\u003e CSS pseudo-selector.\u003c/p\u003e\n\u003cp\u003eHere\u0026rsquo;s how that looks in this site\u0026rsquo;s current Hugo templates:\u003c/p\u003e\n\u003cp\u003e( \u003ccode\u003e.context\u003c/code\u003e is the original image resource, and \u003ccode\u003e$thumb\u003c/code\u003e is the generated thumbnail)\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-go-html-template\" data-lang=\"go-html-template\"\u003e\u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;#\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.context.RelPermalink\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e|\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003emd5\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e-lightbox\u0026#34;\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003efigure\u003c/span\u003e\u0026gt;\n      \u0026lt;\u003cspan style=\"color:#f92672\"\u003eimg\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esrc\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$thumb\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003e.RelPermalink\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ealt\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$figcaption\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e \n        \u003cspan style=\"color:#a6e22e\"\u003etitle\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$figcaption\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;tn\u0026#34;\u003c/span\u003e /\u0026gt;\n    \u0026lt;/\u003cspan style=\"color:#f92672\"\u003efigure\u003c/span\u003e\u0026gt;\n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e  \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;lightbox\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eid\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.context.RelPermalink\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e|\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003emd5\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e-lightbox\u0026#34;\u003c/span\u003e\u0026gt;\n  \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;#_\u0026#34;\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003eimg\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esrc\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.context.RelPermalink\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e|\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esafeURL\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e /\u0026gt;\n  \u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\n  \u0026lt;\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;lightbox_overlay\u0026#34;\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ep\u003c/span\u003e\u0026gt;\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$figcaption\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ep\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003etime\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;dt-published\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003edatetime\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.postDate\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u0026gt;\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.postDate\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u0026lt;/\u003cspan style=\"color:#f92672\"\u003etime\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.mainPermalink\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;\u003c/span\u003e\u0026gt;View post\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;#_\u0026#34;\u003c/span\u003e\u0026gt;Close\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\n  \u0026lt;/\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e\u0026gt;\n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eAnd the relevant CSS (I don\u0026rsquo;t use SASS):\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-css\" data-lang=\"css\"\u003e.\u003cspan style=\"color:#a6e22e\"\u003elightbox\u003c/span\u003e {\n\t\u003cspan style=\"color:#66d9ef\"\u003edisplay\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003enone\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003eposition\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003efixed\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003etop\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003eleft\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003eright\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003ebottom\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003ez-index\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e999\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003ewidth\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e100\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003evw\u003c/span\u003e;\n\t\u003cspan style=\"color:#66d9ef\"\u003eheight\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e100\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003evh\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ebackground\u003c/span\u003e: rgba(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0.8\u003c/span\u003e);\n}\n.\u003cspan style=\"color:#a6e22e\"\u003elightbox_overlay\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003eposition\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003efixed\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ez-index\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e1000\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ebottom\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ewidth\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e100\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003e%\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ebackground\u003c/span\u003e: rgba(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e,\u003cspan style=\"color:#ae81ff\"\u003e0.6\u003c/span\u003e);\n    \u003cspan style=\"color:#66d9ef\"\u003epadding-bottom\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e1\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003erem\u003c/span\u003e;\n}\n.\u003cspan style=\"color:#a6e22e\"\u003elightbox_overlay\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e*\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003epadding\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e1\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003erem\u003c/span\u003e;\n}\n.\u003cspan style=\"color:#a6e22e\"\u003elightbox\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003eimg\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003eposition\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003eabsolute\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003etop\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003eleft\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003eright\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003ebottom\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003emargin\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003eauto\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003emax-width\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e100\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003e%\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003emax-height\u003c/span\u003e: \u003cspan style=\"color:#ae81ff\"\u003e100\u003c/span\u003e\u003cspan style=\"color:#66d9ef\"\u003e%\u003c/span\u003e;\n}\n.\u003cspan style=\"color:#a6e22e\"\u003elightbox\u003c/span\u003e:\u003cspan style=\"color:#a6e22e\"\u003etarget\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003eoutline\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003enone\u003c/span\u003e;\n    \u003cspan style=\"color:#66d9ef\"\u003edisplay\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003eblock\u003c/span\u003e;\n}\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eMy only changes on top of the jlelse\u0026rsquo;s blog post linked above was to add a second overlay for a caption and date to be shown, and a link to the original post, and a close button. Clicking the post itself also dismisses the overlay (by replacing the URL fragment), but I thought it was more usable to also add an obvious Close button. I also initially wanted to put \u0026ldquo;Previous\u0026rdquo; and \u0026ldquo;Next\u0026rdquo; buttons so that you can easily cycle through the images in a post, but this was a bit more effort. I didn\u0026rsquo;t have a way to \u0026ldquo;look ahead\u0026rdquo; in the loop to get the \u0026ldquo;next\u0026rdquo; image, if any, so I think I would have needed to loop through the images twice? And since I use this image list in a number of places on the site, that was a bit troublesome, so maybe it\u0026rsquo;s something I\u0026rsquo;ll attempt later on?\u003c/p\u003e\n\u003cp\u003eIn any case, I think the new lightboxes are neat!\u003c/p\u003e\n",
+            "summary": "In several places on this site (like if you click Photos in the menu up top), I have a grid-like view of a list of photos/images:\n  (Click to view full-size)    \n1 Jul 2020 12:00amClose   I used to just have each thumbnail open the post permalink on click, with the anchor set to the image itself. The image would be shown in full size inline of the post.",
+            "date_published": "2020-07-01T00:00:00+00:00",
+            "date_modified": "2020-09-16T14:57:40+08:00",
+            "section": "post",
+            "source_path": "post/2020/07/hugo-lightbox/index.md"
+            , "tags": ["software development","hugo","meta","css"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104436636291409979"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1278179035168649216/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://trunk.mad-scientist.club/@algernon",
+                    "source_file": "like-20200701-095734-3fb25bae-50d1-4ac6-9c44-02efdf99d9d3.json"
+                }, { 
+                    "url": "https://mastodon.social/@ryandaniels",
+                    "source_file": "repost-20200701-095715-76cd0ed8-3916-4356-8ff3-2e597537451d.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200701-095716-042fb66d-2d96-4c39-aa0e-7fe1ef5e4fbc.json"
+                }, { 
+                    "url": "https://floss.social/@wschenk",
+                    "source_file": "repost-20200701-101635-5941114f-8196-478d-92a0-060062af0567.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/07/",
+            "url": "https://roytang.net/2020/07/",
+            "path": "/2020/07/",
+            "title": "Monthly Archives for 07 2020",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-07-01T00:00:00+00:00",
+            "date_modified": "2020-07-01T04:00:36+00:00",
+            "section": "archm",
+            "source_path": "archm/2020-07.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/fwhtsdx/",
+            "url": "https://roytang.net/2020/06/fwhtsdx/",
+            "path": "/2020/06/fwhtsdx/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn the Philippines, a lot of people like having the so-called \u0026ldquo;silog\u0026rdquo; meals - \u0026ldquo;silog\u0026rdquo; stands for \u0026ldquo;sinangag\u0026rdquo; (garlic fried rice) + \u0026ldquo;itlog\u0026rdquo; (egg). Basically rice meals usually with a meat viand. Examples are:\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;tapsilog\u0026rdquo; - \u0026ldquo;tapa\u0026rdquo; (dried or cured thinly-sliced beef or similar meat) + silog\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;tocilog\u0026rdquo; - \u0026ldquo;tocino\u0026rdquo; (sweetened and cured pork belly) + silog\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;longsilog\u0026rdquo; - \u0026ldquo;longganiza\u0026rdquo; (sausages flavoured with indigenous spices) + silog\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;hotsilog\u0026rdquo; - hotdogs + silog\u003c/p\u003e\n\u003cp\u003eetc\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://en.wikipedia.org/wiki/Silog\"\u003ehttps://en.wikipedia.org/wiki/Silog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThere\u0026rsquo;s also a bread roll called \u0026ldquo;pandesal\u0026rdquo; (literally salted bread from Spanish), commonly consumed for breakfast, usually with some spread or some meat filling, sometimes you dip it in coffee.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://en.wikipedia.org/wiki/Pandesal\"\u003ehttps://en.wikipedia.org/wiki/Pandesal\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "In the Philippines, a lot of people like having the so-called \u0026ldquo;silog\u0026rdquo; meals - \u0026ldquo;silog\u0026rdquo; stands for \u0026ldquo;sinangag\u0026rdquo; (garlic fried rice) + \u0026ldquo;itlog\u0026rdquo; (egg). Basically rice meals usually with a meat viand. Examples are:\n\u0026ldquo;tapsilog\u0026rdquo; - \u0026ldquo;tapa\u0026rdquo; (dried or cured thinly-sliced beef or similar meat) + silog\n\u0026ldquo;tocilog\u0026rdquo; - \u0026ldquo;tocino\u0026rdquo; (sweetened and cured pork belly) + silog\n\u0026ldquo;longsilog\u0026rdquo; - \u0026ldquo;longganiza\u0026rdquo; (sausages flavoured with indigenous spices) + silog\n\u0026ldquo;hotsilog\u0026rdquo; - hotdogs + silog",
+            "date_published": "2020-06-30T17:26:26+00:00",
+            "date_modified": "2020-06-30T18:15:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/fwhtsdx/index.md"
+            , "tags": ["GlobalTalk"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GlobalTalk/comments/hinb26/question_what_do_you_like_to_eat_for_breakfast/fwhtsdx/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277929580083331073/",
+            "url": "https://roytang.net/2020/06/1277929580083331073/",
+            "path": "/2020/06/1277929580083331073/",
+            "title": "",
+            "content_html": "\u003cp\u003eWala ba tayong AntiErrorBill?\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/MaoiArroyo/status/1277924656603738112'\u003eMaoiArroyo\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Pwede ba kayong nga ERRORISTA, less focus on those who protest. Suggestion ko lang, why not do a better job because then people won\u0026rsquo;t complain. Mahirap ba intindihin yon? We need large scale testing. Our scientists have already made a more affordable rapid test kit. FUND TESTING.\n\u003c/blockquote\u003e\n",
+            "summary": "Wala ba tayong AntiErrorBill?\nQuoted MaoiArroyo\u0026#39;s tweet:   Pwede ba kayong nga ERRORISTA, less focus on those who protest. Suggestion ko lang, why not do a better job because then people won\u0026rsquo;t complain. Mahirap ba intindihin yon? We need large scale testing. Our scientists have already made a more affordable rapid test kit. FUND TESTING.  ",
+            "date_published": "2020-06-30T11:38:49+00:00",
+            "date_modified": "2020-06-30T11:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277929580083331073/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277929580083331073/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277843201064386560/",
+            "url": "https://roytang.net/2020/06/1277843201064386560/",
+            "path": "/2020/06/1277843201064386560/",
+            "title": "",
+            "content_html": "\u003cp\u003eM21 draft Episode 3 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #m21 #twitch\u003c/p\u003e\n\u003cp\u003eHad to do 3 drafts just to jump from Gold 1 to Platinum lol. 1 draft was terrible, 2 were mediocre. 3rd draft was a WG deck (no screenshot here). At least I finally got to try some archetypes other than WB!\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=q5Q6LfipbRo\"\u003ehttps://www.youtube.com/watch?v=q5Q6LfipbRo\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "M21 draft Episode 3 https://www.twitch.tv/twitchyroy #mtg #magicarena #m21 #twitch\nHad to do 3 drafts just to jump from Gold 1 to Platinum lol. 1 draft was terrible, 2 were mediocre. 3rd draft was a WG deck (no screenshot here). At least I finally got to try some archetypes other than WB!\nYT: https://www.youtube.com/watch?v=q5Q6LfipbRo",
+            "date_published": "2020-06-30T05:55:34+00:00",
+            "date_modified": "2020-06-30T11:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277843201064386560/index.md"
+            , "tags": ["twitch","m21","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277843201064386560/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277928896470515712/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/2006vs2020/",
+            "url": "https://roytang.net/2020/06/2006vs2020/",
+            "path": "/2020/06/2006vs2020/",
+            "title": "2006 vs 2020",
+            "content_html": "\u003cp\u003eShelves: 2006 vs 2020\u003c/p\u003e\n",
+            "summary": "Shelves: 2006 vs 2020",
+            "date_published": "2020-06-30T00:00:00+00:00",
+            "date_modified": "2020-06-30T05:30:12+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/2006vs2020/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277836735389421568/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/paulcatiang",
+                    "source_file": "comment-20200630-104643-f8171f6b-a7f4-428b-bfe0-33bd7463eb3f.json"
+                }, { 
+                    "url": "https://www.instagram.com/_bigboybrian/",
+                    "source_file": "comment-20200630-113501-d689736d-19ac-4fdd-81e3-0180eaa745ac.json"
+                }, { 
+                    "url": "https://twitter.com/paulcatiang",
+                    "source_file": "like-20200630-104644-ed1eaf37-2439-4508-a86c-e22a2a142534.json"
+                }, { 
+                    "url": "https://www.instagram.com/romancoat/",
+                    "source_file": "like-20200630-113502-549db9aa-d0bf-43ac-aa72-da04bec91938.json"
+                }, { 
+                    "url": "https://www.instagram.com/densdensrevo/",
+                    "source_file": "like-20200630-113504-405980ed-3adc-48e2-aa8b-ba94ccbce5b3.json"
+                }, { 
+                    "url": "https://www.instagram.com/lizbeth_baliw/",
+                    "source_file": "like-20200630-113504-98b5b45e-6b45-431e-8db6-12fa37366d5e.json"
+                }, { 
+                    "url": "https://www.instagram.com/tagofabic/",
+                    "source_file": "like-20200630-113506-e9ec971b-96de-498f-a2c4-6d3f7fd46312.json"
+                }, { 
+                    "url": "https://www.instagram.com/swertesatrese/",
+                    "source_file": "like-20200630-113507-b42a2244-da41-4019-8932-e6f3f234df2c.json"
+                }, { 
+                    "url": "https://www.instagram.com/suarezjessiejames/",
+                    "source_file": "like-20200701-070605-8908caa8-d7f3-4e4b-ade2-80cea30c9de2.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/8ec9f2fb55acb4df093684962f1819fc/",
+            "url": "https://roytang.net/2020/06/8ec9f2fb55acb4df093684962f1819fc/",
+            "path": "/2020/06/8ec9f2fb55acb4df093684962f1819fc/",
+            "title": "Git",
+            "content_html": "\u003cp\u003eGit needs a shortcut for \u0026ldquo;pull, then if no merge conflicts, push\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "Git needs a shortcut for \u0026ldquo;pull, then if no merge conflicts, push\u0026rdquo;",
+            "date_published": "2020-06-29T15:18:41+00:00",
+            "date_modified": "2020-06-29T15:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/8ec9f2fb55acb4df093684962f1819fc/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104427946957002198"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277622917321199616/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277531211666198529/",
+            "url": "https://roytang.net/2020/06/1277531211666198529/",
+            "path": "/2020/06/1277531211666198529/",
+            "title": "",
+            "content_html": "\u003cp\u003eM21 draft Episode 2 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #m21\u003c/p\u003e\n\u003cp\u003eDraft deck was fine, games were terrible; lots of misplays. Last chance tomorrow to rank up before rollover!\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=clajhTE3Q-M\"\u003ehttps://www.youtube.com/watch?v=clajhTE3Q-M\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "M21 draft Episode 2 https://www.twitch.tv/twitchyroy #mtg #magicarena #m21\nDraft deck was fine, games were terrible; lots of misplays. Last chance tomorrow to rank up before rollover!\nYT: https://www.youtube.com/watch?v=clajhTE3Q-M",
+            "date_published": "2020-06-29T09:15:50+00:00",
+            "date_modified": "2020-06-29T13:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277531211666198529/index.md"
+            , "tags": ["m21","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277531211666198529/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277583098180337666/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277249348716212225/",
+            "url": "https://roytang.net/2020/06/1277249348716212225/",
+            "path": "/2020/06/1277249348716212225/",
+            "title": "",
+            "content_html": "\u003cp\u003eI have deactivated my Facebook account. Join me!\u003c/p\u003e\n",
+            "summary": "I have deactivated my Facebook account. Join me!",
+            "date_published": "2020-06-28T14:35:49+00:00",
+            "date_modified": "2020-06-28T14:45:07+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277249348716212225/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277249348716212225/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277238175526576129/",
+            "url": "https://roytang.net/2020/06/1277238175526576129/",
+            "path": "/2020/06/1277238175526576129/",
+            "title": "",
+            "content_html": "\u003cp\u003eI like how all the PH 90s kids in my feeds are enjoying their Ghost Fighter rewatch on Netflix. People still refer to the characters by their Filipino dub names, because those were the best! #JusticeForJeremiah\u003c/p\u003e\n",
+            "summary": "I like how all the PH 90s kids in my feeds are enjoying their Ghost Fighter rewatch on Netflix. People still refer to the characters by their Filipino dub names, because those were the best! #JusticeForJeremiah",
+            "date_published": "2020-06-28T13:51:25+00:00",
+            "date_modified": "2020-06-28T14:00:15+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277238175526576129/index.md"
+            , "tags": ["JusticeForJeremiah"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277238175526576129/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277206902431244289/",
+            "url": "https://roytang.net/2020/06/1277206902431244289/",
+            "path": "/2020/06/1277206902431244289/",
+            "title": "",
+            "content_html": "\u003cp\u003eCasual M21 draft \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #twitch #mtgarena #mtg\u003c/p\u003e\n\u003cp\u003eDraft went reasonably well, all things considered. Lost 2 games to mana flood/screw, but that\u0026rsquo;s fine.\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=kXZO7Ukg5Xk\"\u003ehttps://www.youtube.com/watch?v=kXZO7Ukg5Xk\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Casual M21 draft https://www.twitch.tv/twitchyroy #twitch #mtgarena #mtg\nDraft went reasonably well, all things considered. Lost 2 games to mana flood/screw, but that\u0026rsquo;s fine.\nYT: https://www.youtube.com/watch?v=kXZO7Ukg5Xk",
+            "date_published": "2020-06-28T11:47:09+00:00",
+            "date_modified": "2020-06-28T14:30:18+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277206902431244289/index.md"
+            , "tags": ["mtg","mtgarena","twitch"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277206902431244289/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277247649255583744/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277205372357373952/",
+            "url": "https://roytang.net/2020/06/1277205372357373952/",
+            "path": "/2020/06/1277205372357373952/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/visakanv/\"\u003e@visakanv\u003c/a\u003e \u003ca href=\"https://searchengineland.com/search-google-by-date-with-new-before-and-after-search-commands-315184\"\u003ehttps://searchengineland.com/search-google-by-date-with-new-before-and-after-search-commands-315184\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e(Such things aren\u0026rsquo;t super accurate, in the sample image, one of the hits is from 2012)\u003c/p\u003e\n",
+            "summary": "@visakanv https://searchengineland.com/search-google-by-date-with-new-before-and-after-search-commands-315184\n(Such things aren\u0026rsquo;t super accurate, in the sample image, one of the hits is from 2012)",
+            "date_published": "2020-06-28T11:41:04+00:00",
+            "date_modified": "2020-06-28T12:00:04+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277205372357373952/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277205372357373952/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277124834497970176/",
+            "url": "https://roytang.net/2020/06/1277124834497970176/",
+            "path": "/2020/06/1277124834497970176/",
+            "title": "",
+            "content_html": "\u003cp\u003eGot my internet back and immediately did an #m21 draft. 5-3 isn\u0026rsquo;t great, but I guess it\u0026rsquo;s not bad for a first foray? #mtg #magicarena\u003c/p\u003e\n",
+            "summary": "Got my internet back and immediately did an #m21 draft. 5-3 isn\u0026rsquo;t great, but I guess it\u0026rsquo;s not bad for a first foray? #mtg #magicarena",
+            "date_published": "2020-06-28T06:21:03+00:00",
+            "date_modified": "2020-06-28T06:30:13+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/1277124834497970176/index.md"
+            , "tags": ["magicarena","mtg","m21"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277124834497970176/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1277089936093536256/",
+            "url": "https://roytang.net/2020/06/1277089936093536256/",
+            "path": "/2020/06/1277089936093536256/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e followup on my dms please\u003c/p\u003e\n",
+            "summary": "@talk2GLOBE followup on my dms please",
+            "date_published": "2020-06-28T04:02:22+00:00",
+            "date_modified": "2020-06-28T04:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1277089936093536256/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277089936093536256/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/covid19-06-28/",
+            "url": "https://roytang.net/2020/06/covid19-06-28/",
+            "path": "/2020/06/covid19-06-28/",
+            "title": "Covid19 2020-06-28",
+            "content_html": "\u003cp\u003eCovid19 thoughts and updates, June 28 edition:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWew, it\u0026rsquo;s almost July! It\u0026rsquo;s unlikely that the Metro Manila GCQ gets further loosened though.\u003c/li\u003e\n\u003cli\u003eA lot of new cases recently have been reported in Cebu/Region VII. Some dumbass things coming out of their local officials too.\u003c/li\u003e\n\u003cli\u003eHaven\u0026rsquo;t had a haircut for 6 months now. People keep asking me when I\u0026rsquo;m getting one, but it doesn\u0026rsquo;t really seem essential?\u003c/li\u003e\n\u003cli\u003eDid a grocery run Saturday afternoon. Surprisingly, fewer people than I expected. Still unable to find Choc-Nut in the grocery.\u003c/li\u003e\n\u003cli\u003eWe had internet service people coming in this week, and a friend working in UK said to give them masks to wear and I was like \u0026ldquo;That\u0026rsquo;s ridiculous, of course they\u0026rsquo;ll bring their own.\u0026rdquo; Apparently the expectation is a lot different in the UK, unsurprisingly.\u003c/li\u003e\n\u003cli\u003e(That doesn\u0026rsquo;t mean I wasn\u0026rsquo;t worried about having the masked strangers from the outside in our home\u0026hellip;)\u003c/li\u003e\n\u003cli\u003eDespite all of these precautions, I can\u0026rsquo;t help but feel quite a bit of anxiety visiting these medical facilities.\u003c/li\u003e\n\u003cli\u003eWatched mass via Facebook again today, after our internet came back.\u003c/li\u003e\n\u003cli\u003eAs of last night, we are at 34803 cases (+738 from the day before, +5403 from last week), 1236 deaths (+12 from the day before, +86 from last week), 9430 recoveries (+249 from the day before, +1780 from last week). New cases still accelerating week-on-week. I read somewhere that they\u0026rsquo;re planning to tweak how they report recoveries, presumably to make it look like we have less active cases? \u003ca href=\"https://covid19ph.com/\"\u003eReference.\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eWorldwide, we are at 10,087,840 cases and around 501k deaths. Ten million! Once again roughly a million new cases during the week. USA still number one, but Brazil racing to catch up. Caveat: these numbers are from \u003ca href=\"https://edition.cnn.com/interactive/2020/05/world/worldometer-coronavirus-mystery/index.html\"\u003eWorldometer\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Covid19 thoughts and updates, June 28 edition:\n Wew, it\u0026rsquo;s almost July! It\u0026rsquo;s unlikely that the Metro Manila GCQ gets further loosened though. A lot of new cases recently have been reported in Cebu/Region VII. Some dumbass things coming out of their local officials too. Haven\u0026rsquo;t had a haircut for 6 months now. People keep asking me when I\u0026rsquo;m getting one, but it doesn\u0026rsquo;t really seem essential? Did a grocery run Saturday afternoon.",
+            "date_published": "2020-06-28T00:00:00+00:00",
+            "date_modified": "2020-06-28T16:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/covid19-06-28/index.md"
+            , "tags": ["covid19"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/weeknotes-06-28/",
+            "url": "https://roytang.net/2020/06/weeknotes-06-28/",
+            "path": "/2020/06/weeknotes-06-28/",
+            "title": "Weeknotes 2020-06-28: Internet Outage Edition",
+            "content_html": "\u003cp\u003eMy stuff:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/2020/06/covid19-06-28/\"\u003eThis week\u0026rsquo;s pandemic notes\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eEasily the most annoying thing this week: our broadband modem conked out Wednesday night. Customer support isn\u0026rsquo;t super responsive for local telcos: I called their support line the next day (support line is not even available 24/7!), got put on hold for 45 minutes TWICE before they agreed to send a repair crew over the next day (Friday). Friday morning I got a text that the technician visit was actually scheduled for SATURDAY morning. They arrive Saturday AFTERNOON, due to traffic apparently. And unluckily, they are out of spare modems for the replacement. They promise to come back first thing in the morning SUNDAY. They come back Sunday LUNCHTIME. And I finally have internet back. An annoying experience, and I\u0026rsquo;m also worried that my mobile plan might be charged for the two one-hour calls I had to do to their support line (hopefully I can clear that up), and I\u0026rsquo;m told I can also call them up to ask for a rebate for their days we had no service, but eh, I\u0026rsquo;d have to sit through another long on-hold period!\u003c/li\u003e\n\u003cli\u003eOne would think that being offline for half a week would lead to some kind of gigantic productivity boost, but no such luck. I still had my mobile internet for my doomscrolling after all. I did manage to read/write/watch a few more things than usual I guess?\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGaming:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eI finished Final Fantasy VII Remake (before the internet outage)! So I spent a lot of the outage (including my time on hold with tech support) playing through hard mode, already about half-way through. Still not sure I\u0026rsquo;m going to do achievement completion, but we\u0026rsquo;ll see. Hard mode is actually an enjoyable challenge, nothing too insane.\u003c/li\u003e\n\u003cli\u003eDivinity OS2 inched along slightly as well\u003c/li\u003e\n\u003cli\u003ewon my \u003ca href=\"/2020/06/1274581114628108289/\"\u003efirst Trivia Royale\u003c/a\u003e, I can quit now lol.\u003c/li\u003e\n\u003cli\u003ethe internet outage coincided with the start of this week\u0026rsquo;s Steam Summer Sale. There\u0026rsquo;s some games/DLC I\u0026rsquo;m considering buying, but realistically in terms of backlog I shouldn\u0026rsquo;t lol. Let\u0026rsquo;s see if willpower holds out.\u003c/li\u003e\n\u003cli\u003ethe new MTG core set also came out on Magic Arena during the outage. Maybe I\u0026rsquo;ll get back into regular streaming for M21 limited.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eQuiz:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eI still tried to join the Zoom and voice chats for the online quizzes with only my tethered mobile internet, but that was kind of a miserable experience. Still, I was able to contribute a bit, though we didn\u0026rsquo;t actually do too well.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWatching lately:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eI finished watching season 2 of Harley Quinn. I don\u0026rsquo;t think I\u0026rsquo;ve written about the show before. The whole Harley/Poison Ivy dynamic isn\u0026rsquo;t really for me, but I like the show\u0026rsquo;s take on Gotham and the wider DC universe and there\u0026rsquo;s a lot of fun characters like King Shark and Clayface. Also, Riddler was recognizably voiced by Dean Pelton from Community, and that was fun lol.\u003c/li\u003e\n\u003cli\u003eI also did a rewatch of Spider-Man Far From Home on Netflix, before the internet problems and all. Still a pretty good movie, and watching it made me eager to get back to the MCU.\u003c/li\u003e\n\u003cli\u003eI also watched the Sonic the Hedgehog movie while things were offline. The best thing about this is Sonic being recognizably voiced by Ben Schwartz, who apparently \u003ca href=\"https://thesuperheroesnetwork.tumblr.com/post/622121477003739136/supernova-swirls-gothammite-he-really\"\u003evoices everyone blue\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eAs soon as my internet came back, I started watching Ghost Fighter/Yu Yu Hakusho, which came out on Netflix (as you guessed it, during the outage)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eI also tried reading a book. It was a Discworld book. \u0026ldquo;Tried\u0026rdquo; being the operative word. I\u0026rsquo;ll write about it if I manage to get to the end.\u003c/li\u003e\n\u003cli\u003eSide projects:\n\u003cul\u003e\n\u003cli\u003eUh, proceeding apace I guess?\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAgain: I should probably write more.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRecent links:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe \u003ca href=\"https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/\"\u003eNYT threatened to doxx Scott Alexander of Slate Star Codex\u003c/a\u003e. I don\u0026rsquo;t really follow SSC too strictly, but that seemed like a bad thing. I also read up some more on \u003ca href=\"https://rationalwiki.org/wiki/Scott_Alexander\"\u003eScott Alexander / SSC\u003c/a\u003e because of this, and it looks like he had a lot of problematic views, so I don\u0026rsquo;t really think I want to support him lol.\u003c/li\u003e\n\u003cli\u003eGreat essay from Ankit Shah about \u003ca href=\"https://www.ankit.fyi/being-alone\"\u003eBeing Alone\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://gomakethings.com/always-bet-on-html/\"\u003eAlways Bet on HTML\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "My stuff:\n This week\u0026rsquo;s pandemic notes. Easily the most annoying thing this week: our broadband modem conked out Wednesday night. Customer support isn\u0026rsquo;t super responsive for local telcos: I called their support line the next day (support line is not even available 24/7!), got put on hold for 45 minutes TWICE before they agreed to send a repair crew over the next day (Friday). Friday morning I got a text that the technician visit was actually scheduled for SATURDAY morning.",
+            "date_published": "2020-06-28T00:00:00+00:00",
+            "date_modified": "2020-06-28T08:45:05+00:00",
+            "section": "post",
+            "source_path": "post/2020/06/weeknotes-06-28/index.md"
+            , "tags": ["weeknotes","current events","philippines"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104420711066955531"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1277159822022963200/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1276567770855993345/",
+            "url": "https://roytang.net/2020/06/1276567770855993345/",
+            "path": "/2020/06/1276567770855993345/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e i sent another inquiry via dm please check\u003c/p\u003e\n",
+            "summary": "@talk2GLOBE i sent another inquiry via dm please check",
+            "date_published": "2020-06-26T17:27:28+00:00",
+            "date_modified": "2020-06-26T17:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1276567770855993345/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1276567770855993345/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/ba9408bd418c2a159d7b55ead508a03c/",
+            "url": "https://roytang.net/2020/06/ba9408bd418c2a159d7b55ead508a03c/",
+            "path": "/2020/06/ba9408bd418c2a159d7b55ead508a03c/",
+            "title": "",
+            "content_html": "\u003cp\u003eMy broadband has been unavailable for two days now and this mobile internet\nreally gets in the way of my doomscrolling\u003c/p\u003e\n",
+            "summary": "My broadband has been unavailable for two days now and this mobile internet really gets in the way of my doomscrolling",
+            "date_published": "2020-06-26T06:39:53+00:00",
+            "date_modified": "2020-06-26T06:45:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/ba9408bd418c2a159d7b55ead508a03c/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104408915314284190"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1276404892488220672/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1276286605259497472/",
+            "url": "https://roytang.net/2020/06/1276286605259497472/",
+            "path": "/2020/06/1276286605259497472/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e have sent you a DM, please check\u003c/p\u003e\n",
+            "summary": "@talk2GLOBE have sent you a DM, please check",
+            "date_published": "2020-06-25T22:50:13+00:00",
+            "date_modified": "2020-06-25T23:00:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1276286605259497472/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1276286605259497472/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275907442186940416/",
+            "url": "https://roytang.net/2020/06/1275907442186940416/",
+            "path": "/2020/06/1275907442186940416/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e any update? If youre just gonna ignore my dm at least give me a support number i can call\u003c/p\u003e\n",
+            "summary": "@talk2GLOBE any update? If youre just gonna ignore my dm at least give me a support number i can call",
+            "date_published": "2020-06-24T21:43:34+00:00",
+            "date_modified": "2020-06-24T22:00:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275907442186940416/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275907442186940416/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275830505372438529/",
+            "url": "https://roytang.net/2020/06/1275830505372438529/",
+            "path": "/2020/06/1275830505372438529/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e is there a phone numbet i can call for globe fiber tech support rn\u003c/p\u003e\n\u003cp\u003eAny update? Did you slide into my dms then ghost me?\u003c/p\u003e\n",
+            "summary": "@talk2GLOBE is there a phone numbet i can call for globe fiber tech support rn\nAny update? Did you slide into my dms then ghost me?",
+            "date_published": "2020-06-24T16:37:50+00:00",
+            "date_modified": "2020-06-24T18:00:15+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275830505372438529/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275830505372438529/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275849098139176962/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/always-bet-on-html/",
+            "url": "https://roytang.net/2020/06/always-bet-on-html/",
+            "path": "/2020/06/always-bet-on-html/",
+            "title": "Always bet on HTML",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-24T05:29:04+00:00",
+            "date_modified": "2020-06-24T05:30:13+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/always-bet-on-html/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://gomakethings.com/always-bet-on-html/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104397315156270142"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275662482179309568/"}]
+            ,"link": "https://gomakethings.com/always-bet-on-html/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/scraping-facebook/",
+            "url": "https://roytang.net/2020/06/scraping-facebook/",
+            "path": "/2020/06/scraping-facebook/",
+            "title": "Scraping Facebook",
+            "content_html": "\u003cp\u003eI had been meaning to \u003ca href=\"/2020/06/quitting-facebook/\"\u003equit Facebook\u003c/a\u003e for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a \u003ca href=\"/2007/12/pack-rat-mentality/\"\u003epack rat\u003c/a\u003e), and Facebook\u0026rsquo;s \u003ca href=\"/2019/03/export-your-social-media-data/\"\u003esocial media export\u003c/a\u003e is less than ideal, for me at least.\u003c/p\u003e\n\u003cp\u003eLess than ideal why? It doesn\u0026rsquo;t include a lot of content I would like backed up, including:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ecomments on my posts (there have been some good conversations with friends over the years I would prefer to preserve)\u003c/li\u003e\n\u003cli\u003ethings I\u0026rsquo;ve reposted from other people\u003c/li\u003e\n\u003cli\u003econtent of certain groups I\u0026rsquo;m members of (again, mostly for some interesting discussions over the years)\u003c/li\u003e\n\u003cli\u003epictures posted by other people that I\u0026rsquo;ve been tagged in\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eFor a while I looked around for scraper programs/scripts to this for me, but none really did what I wanted. Early this month I finally wrote my own scraper scripts to pull that data out of Facebook, as a supplement to the actual FB export. It seems unlikely that these will be helpful to anyone else, especially since web scraping is an inherently brittle activity; any slight change in the FB HTML generation will break the scripts. In spite of that, I thought I\u0026rsquo;d share them publicly anyway, via Github gists.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://gist.github.com/roytang/a5b4a8e4d511e97b9d25cb190f9dfb5d\"\u003eScript to export FB timeline\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://gist.github.com/roytang/1cb3a682a2c223e569e3009aceb0e319\"\u003eScript to export FB group\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThese are basically the same file, with minor changes between configuration and some scraping details. I wasn\u0026rsquo;t expecting to need these scripts again in the future so I didn\u0026rsquo;t bother with any kind of reusability.\u003c/p\u003e\n\u003cp\u003eSome other notes about these scripts:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003emade with Python! Using my favorite HTML parsing library, BeautifulSoup\u003c/li\u003e\n\u003cli\u003ethe scripts run against the mobile web version m.facebook.com. The main web version is troublesome because it executes JS to do its infinite scroll and I didn\u0026rsquo;t want to waste time reverse engineering that\u003c/li\u003e\n\u003cli\u003ethere are some variables near the start that you should probably set. Most of it is output folders and group details, but the main one is the FB login cookie - basically you need to login to FB, then use dev tools or whatever to copy your cookie string\u003c/li\u003e\n\u003cli\u003ethe main output file is a gigantic JSON. There is no specified schema, basically I made things up as I went along. I\u0026rsquo;ll figure out how to process this at a later date lol.\u003c/li\u003e\n\u003cli\u003eAs a secondary output, there is also a cache folder that should contain the raw HTML parsed for each page. These aren\u0026rsquo;t necessary to retain, as all the information they have should also be in the JSON. Images from posts are also downloaded into a \u003ccode\u003edls\u003c/code\u003e folder. (The JSON will include the download path for the images from each post.)\u003c/li\u003e\n\u003cli\u003erunning the timeline export on my machine took the better part of 2-3 hours, for roughly 13 years worth of FB content. The output JSON was around 22 MB.\u003c/li\u003e\n\u003cli\u003erunning this might be considered spammy behavior by Facebook (understandably, but it\u0026rsquo;s their fault they won\u0026rsquo;t me do this via API), but the only consequence I\u0026rsquo;ve seen was that I wasn\u0026rsquo;t able to view other people\u0026rsquo;s profiles for some minutes after running the script\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAs for what I\u0026rsquo;m going to do with this data, that\u0026rsquo;s still to be determined. The nonpublic content can be imported into the archive on this blog (if it isn\u0026rsquo;t there yet), but that\u0026rsquo;s a lot of manual work. As for the scripts, hopefully I won\u0026rsquo;t have to use them again in the future, but maybe they can be useful to someone else!\u003c/p\u003e\n",
+            "summary": "I had been meaning to quit Facebook for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a pack rat), and Facebook\u0026rsquo;s social media export is less than ideal, for me at least.\nLess than ideal why? It doesn\u0026rsquo;t include a lot of content I would like backed up, including:\n comments on my posts (there have been some good conversations with friends over the years I would prefer to preserve) things I\u0026rsquo;ve reposted from other people content of certain groups I\u0026rsquo;m members of (again, mostly for some interesting discussions over the years) pictures posted by other people that I\u0026rsquo;ve been tagged in  For a while I looked around for scraper programs/scripts to this for me, but none really did what I wanted.",
+            "date_published": "2020-06-24T00:00:00+00:00",
+            "date_modified": "2020-06-24T04:15:02+00:00",
+            "section": "post",
+            "source_path": "post/2020/06/scraping-fb/index.md"
+            , "tags": ["tech life","software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104397000139419911"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275642321334394882/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275559325944012800/",
+            "url": "https://roytang.net/2020/06/1275559325944012800/",
+            "path": "/2020/06/1275559325944012800/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e !report\u003c/p\u003e\n",
+            "summary": "@triviastorm !report",
+            "date_published": "2020-06-23T22:40:16+00:00",
+            "date_modified": "2020-06-23T23:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275559325944012800/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275559325944012800/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275442460794089478/",
+            "url": "https://roytang.net/2020/06/1275442460794089478/",
+            "path": "/2020/06/1275442460794089478/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@switchfollows",
+            "date_published": "2020-06-23T14:55:53+00:00",
+            "date_modified": "2020-06-23T15:00:16+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275442460794089478/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275442460794089478/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275435604382105603/",
+            "url": "https://roytang.net/2020/06/1275435604382105603/",
+            "path": "/2020/06/1275435604382105603/",
+            "title": "",
+            "content_html": "\u003cp\u003eCube draft is about to rotate out, let\u0026rsquo;s waste some gold #mtg #magicarena\u003c/p\u003e\n",
+            "summary": "Cube draft is about to rotate out, let\u0026rsquo;s waste some gold #mtg #magicarena",
+            "date_published": "2020-06-23T14:28:39+00:00",
+            "date_modified": "2020-06-23T14:30:15+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/1275435604382105603/index.md"
+            , "tags": ["magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275435604382105603/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/",
+            "url": "https://roytang.net/2020/06/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/",
+            "path": "/2020/06/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/",
+            "title": "NYT Is Threatening My Safety By Revealing My Real Name, So I Am Deleting The Blog",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-23T06:49:59+00:00",
+            "date_modified": "2020-06-23T07:00:09+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104391967539792613"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275320234841214978/"}]
+            ,"link": "https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275315661539950597/",
+            "url": "https://roytang.net/2020/06/1275315661539950597/",
+            "path": "/2020/06/1275315661539950597/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rovietoosin/\"\u003e@rovietoosin\u003c/a\u003e hindi confident sa ability nila magsulat or magexplain via writing\u003c/p\u003e\n",
+            "summary": "@rovietoosin hindi confident sa ability nila magsulat or magexplain via writing",
+            "date_published": "2020-06-23T06:32:02+00:00",
+            "date_modified": "2020-06-23T06:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275315661539950597/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275315661539950597/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/being-alone/",
+            "url": "https://roytang.net/2020/06/being-alone/",
+            "path": "/2020/06/being-alone/",
+            "title": "Being Alone",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-22T12:29:00+00:00",
+            "date_modified": "2020-06-22T12:30:13+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/being-alone/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://www.ankit.fyi/being-alone"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104387642176893367"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275043411658067970/"}]
+            ,"link": "https://www.ankit.fyi/being-alone"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1275022468214714368/",
+            "url": "https://roytang.net/2020/06/1275022468214714368/",
+            "path": "/2020/06/1275022468214714368/",
+            "title": "",
+            "content_html": "\u003cp\u003eAfter some back and forth from Diamond 1, this filthy casual finally hit Mythic with some weird totally unoptimized Gruul thing. #magicarena #mtg\u003c/p\u003e\n",
+            "summary": "After some back and forth from Diamond 1, this filthy casual finally hit Mythic with some weird totally unoptimized Gruul thing. #magicarena #mtg",
+            "date_published": "2020-06-22T11:06:59+00:00",
+            "date_modified": "2020-06-23T06:32:25+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/1275022468214714368/index.md"
+            , "tags": ["magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275022468214714368/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274745864964190208/",
+            "url": "https://roytang.net/2020/06/1274745864964190208/",
+            "path": "/2020/06/1274745864964190208/",
+            "title": "",
+            "content_html": "\u003cp\u003eThat grind from Diamond 1 to Mythic is always the worst =/ #mtg #magicarena\u003c/p\u003e\n",
+            "summary": "That grind from Diamond 1 to Mythic is always the worst =/ #mtg #magicarena",
+            "date_published": "2020-06-21T16:47:52+00:00",
+            "date_modified": "2020-06-21T17:00:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274745864964190208/index.md"
+            , "tags": ["magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274745864964190208/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274581114628108289/",
+            "url": "https://roytang.net/2020/06/1274581114628108289/",
+            "path": "/2020/06/1274581114628108289/",
+            "title": "",
+            "content_html": "\u003cp\u003eFinally managed to win at Trivia Royale, now I can quit playing it lol\u003c/p\u003e\n\u003cvideo width='320' height='568' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1274581075004538880/pu/vid/720x1280/GYj59NBRSVGKIwfc.mp4?tag=10' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
+            "summary": "Finally managed to win at Trivia Royale, now I can quit playing it lol\nYour browser does not support the video tag.  ",
+            "date_published": "2020-06-21T05:53:12+00:00",
+            "date_modified": "2020-06-21T06:00:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274581114628108289/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274581114628108289/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/foot-dispenser/",
+            "url": "https://roytang.net/2020/06/foot-dispenser/",
+            "path": "/2020/06/foot-dispenser/",
+            "title": "Foot Dispenser",
+            "content_html": "\u003cp\u003eA foot-powered alcohol/hand sanitizer dispenser. You step on the bottom part and the tubes push down on the dispenser so it can\u0026hellip; dispense.\u003c/p\u003e\n",
+            "summary": "A foot-powered alcohol/hand sanitizer dispenser. You step on the bottom part and the tubes push down on the dispenser so it can\u0026hellip; dispense.",
+            "date_published": "2020-06-21T10:08:19+08:00",
+            "date_modified": "2020-06-21T10:15:42+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/foot-dispenser/index.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/covid19-06-21/",
+            "url": "https://roytang.net/2020/06/covid19-06-21/",
+            "path": "/2020/06/covid19-06-21/",
+            "title": "Covid19 2020-06-21",
+            "content_html": "\u003cp\u003eCovid19 thoughts and updates, June 21 edition:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe other day, a friend who doesn\u0026rsquo;t keep up with the news much said that it feels like the pandemic is no longer an urgent thing, and I think that says a lot about the general atmosphere in these parts. This in spite of the fact that our case counts continue to go up, accelerating even.\u003c/li\u003e\n\u003cli\u003eThe president\u0026rsquo;s spokesman bravely says that at least we are doing better than the US; what standards, to be compared against the country with the worst response in the world. Maybe try comparing to New Zealand?\u003c/li\u003e\n\u003cli\u003eThis past week I had to take my mom to the hospital and some clinics a couple more times. Again, nothing major, just regular tests and consults that had been pushed back due to quarantine. I wrote about \u003ca href=\"/2020/06/covid19-06-14/\"\u003eour first hospital visit last week\u003c/a\u003e. The smaller clinic we went to for blood tests had less screenings at the entrance, but all the med techs were in full PPE. Their building also had these \u003ca href=\"/2020/06/foot-dispenser/\"\u003enice foot-powered alcohol/hand sanitizer dispensers\u003c/a\u003e, pretty neat.\u003c/li\u003e\n\u003cli\u003eDespite all of these precautions, I can\u0026rsquo;t help but feel quite a bit of anxiety visiting these medical facilities.\u003c/li\u003e\n\u003cli\u003eWatched mass via Facebook again today.\u003c/li\u003e\n\u003cli\u003eGCQ in Metro Manila extended until Jun 30th. Probably the minimum right decision, but it also feels like we\u0026rsquo;re just pushing back because we don\u0026rsquo;t know what else to do (because no mass testing, poor data management etc)\u003c/li\u003e\n\u003cli\u003eAs of last night, we are at 29400 cases (+943 from the day before, +4107 from last week), 1150 deaths (+20 from the day before, +76 from last week), 7650 recoveries (+272 from the day before, +1265 last week). Thankfully a lot more recoveries this week. \u003ca href=\"https://covid19ph.com/\"\u003eReference.\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eWorldwide, we are at almost 9 million cases and around 466,000 deaths. Looks like we aren\u0026rsquo;t slowing down with roughly a million new active cases per week? Caveat: these numbers are from \u003ca href=\"https://edition.cnn.com/interactive/2020/05/world/worldometer-coronavirus-mystery/index.html\"\u003eWorldometer\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Covid19 thoughts and updates, June 21 edition:\n The other day, a friend who doesn\u0026rsquo;t keep up with the news much said that it feels like the pandemic is no longer an urgent thing, and I think that says a lot about the general atmosphere in these parts. This in spite of the fact that our case counts continue to go up, accelerating even. The president\u0026rsquo;s spokesman bravely says that at least we are doing better than the US; what standards, to be compared against the country with the worst response in the world.",
+            "date_published": "2020-06-21T00:00:00+00:00",
+            "date_modified": "2020-06-21T10:15:42+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/covid19-06-21/index.md"
+            , "tags": ["covid19"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/weeknotes-06-21/",
+            "url": "https://roytang.net/2020/06/weeknotes-06-21/",
+            "path": "/2020/06/weeknotes-06-21/",
+            "title": "Weeknotes 2020-06-21: There's no gettin' off this train we're on",
+            "content_html": "\u003cp\u003eMy stuff:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/2020/06/covid19-06-21/\"\u003eThis week\u0026rsquo;s pandemic notes\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eSome days still hot, but weather beginning to turn for the better. Sleep kind of better and a bit more regular too.\u003c/li\u003e\n\u003cli\u003eDid my quarterly medical checkup this past week (slightly delayed). No issues, but I need to do an FBS test for next time.\u003c/li\u003e\n\u003cli\u003eSleep schedule kind of settling back into my usual biphasic sleep. Although the second phase seems to move around a lot\u0026hellip;\u003c/li\u003e\n\u003cli\u003eNot much work-wise the past week, and a bit more family-related expenses. Medical and government stuff.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGaming:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003estill playing a lot of Final Fantasy VII Remake. I think I\u0026rsquo;m already in the final chapter. I am quite happy with the adaptiation, bit I\u0026rsquo;m not sure if I\u0026rsquo;m going to bother with achievement completion for this one; it requires hard mode completion, but that\u0026rsquo;s not the issue. The problem is the abundance of these dexterity-based minigames! I thought everything was fine when I did the squats thing, but then later there\u0026rsquo;s a harder pull-ups thing! And I haven\u0026rsquo;t even cracked the bottom of that darts leaderboard\u0026hellip;\u003c/li\u003e\n\u003cli\u003eDivinity OS2 inching along slightly. But probably will be finished after FF7R at this rate.\u003c/li\u003e\n\u003cli\u003ethere\u0026rsquo;s a new trivia app by the makers of the QuizUp, which we used to play a lot back in the day. The name is Trivia Royale, it\u0026rsquo;s currently iOS only and it\u0026rsquo;s basically battle royale quizup: you join a game with 1000 players, and you play 10 head-to-head matches until you get a winner. Took me most of the wook to actually win my first one.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eQuiz:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003edid poorly in the AboutQuiz and PopQuiz games this week. Actually, we\u0026rsquo;ve been doing poorly for a while now lol.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWatching lately:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eNothing to log. Maybe a good thing?\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSide projects:\n\u003cul\u003e\n\u003cli\u003eMore work on \u003ca href=\"https://triviastorm.net/\"\u003etriviastorm\u003c/a\u003e stuff this week. Most of it are some backend fixes to make later planned new features easier to build. Planning to clear/reset leaderboards at the end of the month. Some roadmap things:\n\u003cul\u003e\n\u003cli\u003eallowing users to submit their own questions\u003c/li\u003e\n\u003cli\u003emake the discord bot usable for public usage, i.e. let other people add it to their discord\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eI should probably write more.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRecent links:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;ve been reading a lot of posts off \u003ca href=\"https://lobste.rs\"\u003elobste.rs\u003c/a\u003e lately, so I finally pulled the trigger and asked around for an invite to the site. A \u003ca href=\"https://mastodon.gamedev.place/@ignaloidas\"\u003ehelpful person\u003c/a\u003e provided me one via Mastodon. It\u0026rsquo;s an interesting site, basically an invite-only reddit-like site, mostly focused on tech stuff, so in theory the discussion quality should be fairly high. The chain of invites is public too, each user\u0026rsquo;s profile shows you who invited him, so in that way it\u0026rsquo;s kind of similar to a certificate chain of trust? We\u0026rsquo;ll see if this scales up well.\u003c/li\u003e\n\u003cli\u003eI enjoyed this \u003ca href=\"https://mxb.dev/blog/the-return-of-the-90s-web/\"\u003erecent article about the 90s web\u003c/a\u003e. I will easily admit that I am an easy sucker for any post that appeals to my nostalgia for how the web was better \u0026ldquo;back in the doy\u0026rdquo;, rose-tinted glasses or no.\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;ve always enjoyed the song Fast Car, so it was interesting to read about \u003ca href=\"https://www.rollingstone.com/music/music-features/tracy-chapman-fast-car-revival-luke-combs-khalid-1014843/\"\u003eits origins and its surprising popularity\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eThe founders of BaseCamp recently released \u003ca href=\"https://hey.com\"\u003eHey\u003c/a\u003e, a new email service that has \u003ca href=\"https://hey.com/features/\"\u003esome interesting ideas about new features\u003c/a\u003e to support the typical email workflow. I don\u0026rsquo;t nearly use email enough on a personal basis to pay for it (though I do have an invite!), but I\u0026rsquo;m glad someone is innovating in this space, although they don\u0026rsquo;t seem to be using open standards. They promptly \u003ca href=\"https://www.theverge.com/2020/6/18/21296180/apple-hey-email-app-basecamp-rejection-response-controversy-antitrust-regulation\"\u003egot into a fight with Apple over App Store policies\u003c/a\u003e which has sparked some debate in the tech community on the value of curated app stores. So maybe they\u0026rsquo;re actually going to push for innovation in two different areas?\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "My stuff:\n This week\u0026rsquo;s pandemic notes. Some days still hot, but weather beginning to turn for the better. Sleep kind of better and a bit more regular too. Did my quarterly medical checkup this past week (slightly delayed). No issues, but I need to do an FBS test for next time. Sleep schedule kind of settling back into my usual biphasic sleep. Although the second phase seems to move around a lot\u0026hellip; Not much work-wise the past week, and a bit more family-related expenses.",
+            "date_published": "2020-06-21T00:00:00+00:00",
+            "date_modified": "2020-06-21T09:45:02+00:00",
+            "section": "post",
+            "source_path": "post/2020/06/weeknotes-06-21/index.md"
+            , "tags": ["weeknotes","current events","philippines"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104381310843338289"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274638206026174464/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200622-005702-e83adcf6-5b16-4956-875e-86c2878fd341.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274376857874399237/",
+            "url": "https://roytang.net/2020/06/1274376857874399237/",
+            "path": "/2020/06/1274376857874399237/",
+            "title": "",
+            "content_html": "\u003cp\u003eUpdate: YES\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/roytang/status/612482409594904576'\u003eroytang\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    I wonder if the FF7 remake will have that enemy who\u0026rsquo;s like an animated house\n\u003c/blockquote\u003e\n",
+            "summary": "Update: YES\nQuoted roytang\u0026#39;s tweet:   I wonder if the FF7 remake will have that enemy who\u0026rsquo;s like an animated house  ",
+            "date_published": "2020-06-20T16:21:34+00:00",
+            "date_modified": "2020-06-20T16:30:15+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274376857874399237/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274376857874399237/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/55eafe2c6a6f701e0a96d1f5d62b2177/",
+            "url": "https://roytang.net/2020/06/55eafe2c6a6f701e0a96d1f5d62b2177/",
+            "path": "/2020/06/55eafe2c6a6f701e0a96d1f5d62b2177/",
+            "title": "lobsters",
+            "content_html": "\u003cp\u003eHey, would any current users of \u003ca href=\"https://lobste.rs/\"\u003ehttps://lobste.rs/\u003c/a\u003e be willing to give me an\ninvite? Thanks!\u003c/p\u003e\n",
+            "summary": "Hey, would any current users of https://lobste.rs/ be willing to give me an invite? Thanks!",
+            "date_published": "2020-06-20T11:46:07+00:00",
+            "date_modified": "2020-06-20T12:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/55eafe2c6a6f701e0a96d1f5d62b2177/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104376160378702509"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274308576228433921/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274274234303315970/",
+            "url": "https://roytang.net/2020/06/1274274234303315970/",
+            "path": "/2020/06/1274274234303315970/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/joyarmadamba/\"\u003e@joyarmadamba\u003c/a\u003e PH, like many other Asian countries, has a high-context culture \u003ca href=\"https://en.wikipedia.org/wiki/High-context_and_low-context_cultures\"\u003ehttps://en.wikipedia.org/wiki/High-context_and_low-context_cultures\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@joyarmadamba PH, like many other Asian countries, has a high-context culture https://en.wikipedia.org/wiki/High-context_and_low-context_cultures",
+            "date_published": "2020-06-20T09:33:46+00:00",
+            "date_modified": "2020-06-20T09:45:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274274234303315970/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274274234303315970/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274272129677029376/",
+            "url": "https://roytang.net/2020/06/1274272129677029376/",
+            "path": "/2020/06/1274272129677029376/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e I get that. I still have my PS3 in my room that I boot up from time to time lol\u003c/p\u003e\n",
+            "summary": "@Westraid I get that. I still have my PS3 in my room that I boot up from time to time lol",
+            "date_published": "2020-06-20T09:25:25+00:00",
+            "date_modified": "2020-06-20T09:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274272129677029376/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274272129677029376/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1274271841704570880/",
+            "url": "https://roytang.net/2020/06/1274271841704570880/",
+            "path": "/2020/06/1274271841704570880/",
+            "title": "",
+            "content_html": "\u003cp\u003eReminder: You don\u0026rsquo;t have to buy the PS5 (or any other new console) immediately at launch, unless there\u0026rsquo;s a game there you really, really want to play immediately.\u003c/p\u003e\n",
+            "summary": "Reminder: You don\u0026rsquo;t have to buy the PS5 (or any other new console) immediately at launch, unless there\u0026rsquo;s a game there you really, really want to play immediately.",
+            "date_published": "2020-06-20T09:24:16+00:00",
+            "date_modified": "2020-06-20T09:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1274271841704570880/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1274271841704570880/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/the-return-of-the-90s-web/",
+            "url": "https://roytang.net/2020/06/the-return-of-the-90s-web/",
+            "path": "/2020/06/the-return-of-the-90s-web/",
+            "title": "The Return of the 90s Web",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-19T10:09:34+00:00",
+            "date_modified": "2020-06-19T10:15:02+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/the-return-of-the-90s-web/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://mxb.dev/blog/the-return-of-the-90s-web/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104370104600513996"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1273921006642462726/"}]
+            ,"link": "https://mxb.dev/blog/the-return-of-the-90s-web/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/the-poetics-of-cli-command-names/",
+            "url": "https://roytang.net/2020/06/the-poetics-of-cli-command-names/",
+            "path": "/2020/06/the-poetics-of-cli-command-names/",
+            "title": "The Poetics of CLI Command Names",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-18T15:27:13+00:00",
+            "date_modified": "2020-06-18T15:30:15+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/the-poetics-of-cli-command-names/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://smallstep.com/blog/the-poetics-of-cli-command-names/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104365700491477054"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1273639143747121152/"}]
+            ,"link": "https://smallstep.com/blog/the-poetics-of-cli-command-names/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/fast-car-the-rebirth-of-tracy-chapmans-hard-luck-anthem/",
+            "url": "https://roytang.net/2020/06/fast-car-the-rebirth-of-tracy-chapmans-hard-luck-anthem/",
+            "path": "/2020/06/fast-car-the-rebirth-of-tracy-chapmans-hard-luck-anthem/",
+            "title": "‘Fast Car’: The Rebirth of Tracy Chapman’s Hard-Luck Anthem",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-06-18T13:06:20+00:00",
+            "date_modified": "2020-06-18T13:15:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/06/fast-car-the-rebirth-of-tracy-chapmans-hard-luck-anthem/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://www.rollingstone.com/music/music-features/tracy-chapman-fast-car-revival-luke-combs-khalid-1014843/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104365150005067566"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1273603912621162496/"}]
+            ,"link": "https://www.rollingstone.com/music/music-features/tracy-chapman-fast-car-revival-luke-combs-khalid-1014843/"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/hb5jfo/",
+            "url": "https://roytang.net/2020/06/hb5jfo/",
+            "path": "/2020/06/hb5jfo/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rcomicbooks-what-is-miles-new-history-after-they-got-merged-into-the-616httpsredditcomrcomicbookscommentshb5jfowhat_is_miles_new_history_after_they_got_merged\"\u003ePosted on r/comicbooks: \u003ca href=\"https://reddit.com/r/comicbooks/comments/hb5jfo/what_is_miles_new_history_after_they_got_merged/\"\u003eWhat is Miles\u0026rsquo; \u0026ldquo;new history\u0026rdquo; after they got merged into the 616?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eDo Miles, Ganke, Miles\u0026rsquo; family etc remember the Ultimate universe? Or Ultimate Peter Parker dying? Or were their histories \u0026ldquo;re-written\u0026rdquo; and merged into the main universe?\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m not up-to-date with the Miles comics, but I don\u0026rsquo;t remember this being explained after Secret Wars\u003c/p\u003e\n",
+            "summary": "Posted on r/comicbooks: What is Miles\u0026rsquo; \u0026ldquo;new history\u0026rdquo; after they got merged into the 616? Do Miles, Ganke, Miles\u0026rsquo; family etc remember the Ultimate universe? Or Ultimate Peter Parker dying? Or were their histories \u0026ldquo;re-written\u0026rdquo; and merged into the main universe?\nI\u0026rsquo;m not up-to-date with the Miles comics, but I don\u0026rsquo;t remember this being explained after Secret Wars",
+            "date_published": "2020-06-18T02:08:09+00:00",
+            "date_modified": "2020-06-18T03:15:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/hb5jfo/index.md"
+            , "tags": ["comicbooks","reddit_submission"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/hb5jfo/what_is_miles_new_history_after_they_got_merged/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/7e554e29dd98e7b3b63be542c91a49c2/",
+            "url": "https://roytang.net/2020/06/7e554e29dd98e7b3b63be542c91a49c2/",
+            "path": "/2020/06/7e554e29dd98e7b3b63be542c91a49c2/",
+            "title": "hey.com",
+            "content_html": "\u003cp\u003eI don\u0026rsquo;t use email heavily enough to justify paying $99/year for it, but the\nnew hey.com email service has some interesting ideas\n\u003ca href=\"https://hey.com/features/,\"\u003ehttps://hey.com/features/,\u003c/a\u003e especially on the workflow side (Their service\ndoes not seem to use standard protocols though)\u003c/p\u003e\n",
+            "summary": "I don\u0026rsquo;t use email heavily enough to justify paying $99/year for it, but the new hey.com email service has some interesting ideas https://hey.com/features/, especially on the workflow side (Their service does not seem to use standard protocols though)",
+            "date_published": "2020-06-17T16:28:34+00:00",
+            "date_modified": "2020-06-18T02:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/7e554e29dd98e7b3b63be542c91a49c2/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104362497329813717"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1273434141594288128/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1273200084264472576/",
+            "url": "https://roytang.net/2020/06/1273200084264472576/",
+            "path": "/2020/06/1273200084264472576/",
+            "title": "",
+            "content_html": "\u003cp\u003eI might played TLOU2, but I can\u0026rsquo;t help but think that releasing an intense zombie apocalypse game in the middle of \u003cem\u003e2020\u003c/em\u003e is some kind of power move\u003c/p\u003e\n",
+            "summary": "I might played TLOU2, but I can\u0026rsquo;t help but think that releasing an intense zombie apocalypse game in the middle of 2020 is some kind of power move",
+            "date_published": "2020-06-17T10:25:29+00:00",
+            "date_modified": "2020-06-17T10:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1273200084264472576/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1273200084264472576/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1272491184670126080/",
+            "url": "https://roytang.net/2020/06/1272491184670126080/",
+            "path": "/2020/06/1272491184670126080/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s 2020 and govt services here still don\u0026rsquo;t use modern payment gateways and instead use the popular-among-online-sellers interface \u0026ldquo;deposit the money in my account and send me a picture of proof\u0026rdquo; =/\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s 2020 and govt services here still don\u0026rsquo;t use modern payment gateways and instead use the popular-among-online-sellers interface \u0026ldquo;deposit the money in my account and send me a picture of proof\u0026rdquo; =/",
+            "date_published": "2020-06-15T11:28:34+00:00",
+            "date_modified": "2020-06-15T11:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1272491184670126080/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1272491184670126080/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2020/06/1272117961990352897/",
+            "url": "https://roytang.net/2020/06/1272117961990352897/",
+            "path": "/2020/06/1272117961990352897/",
+            "title": "",
+            "content_html": "\u003cp\u003eTook me a few tries, but I finally managed to get to 7 wins in Arena Cube draft (with a control deck no less!) #mtg #magicarena\u003c/p\u003e\n",
+            "summary": "Took me a few tries, but I finally managed to get to 7 wins in Arena Cube draft (with a control deck no less!) #mtg #magicarena",
+            "date_published": "2020-06-14T10:45:31+00:00",
+            "date_modified": "2020-06-23T06:32:25+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/06/1272117961990352897/index.md"
+            , "tags": ["mtg","magicarena"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1272117961990352897/"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/5/feed.json" 
+     , "next": "/p/7/feed.json" 
+}

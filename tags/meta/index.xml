@@ -1,0 +1,1524 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>meta on Roy Tang</title>
+      <link>https://roytang.net/tags/meta/</link>
+      <description>Recent content in meta on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Using Hugo to Automatically Update Your Github Profile
+</title>
+            <link>https://roytang.net/2020/07/hugo-update-github-profile/</link>
+            <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2020/07/hugo-update-github-profile/</guid>
+            <description>
+            
+            &lt;p&gt;So recently Github secretly rolled out a new feature where you can create a file named &lt;code&gt;README.md&lt;/code&gt; in a repo named &lt;code&gt;github.com/&amp;lt;your github username&amp;gt;/&amp;lt;your github username&amp;gt;&lt;/code&gt;, and that markdown file would be rendered on your Github profile page. It means, you can now put basically anything you want on your Github profile!&lt;/p&gt;
+&lt;p&gt;I just read this &lt;a href=&#34;https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/&#34;&gt;post from Simon Willson&lt;/a&gt; about using this new feature + Github actions and a Python script to automatically generate and update his Github profile. That seemed neat so I thought about how I would do it.&lt;/p&gt;
+&lt;p&gt;My blog is already setup to publish using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and &lt;a href=&#34;https://travis-ci.org/&#34;&gt;Travis-CI&lt;/a&gt; whenever I push a commit, so I figured I could just ride on that framework. You can already see this in action on &lt;a href=&#34;https://github.com/roytang&#34;&gt;my Github profile page&lt;/a&gt;! Basically, I publish the &lt;code&gt;README.md&lt;/code&gt; using my regular Hugo build, then my Travis script will deploy it to the appropriate repo.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to Hugo, the trickiest part of this might be using a custom output format to generate the README.md. This is basically just a bunch of settings in your Hugo config file:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Define a new Markdown media type under &lt;code&gt;mediaTypes&lt;/code&gt; in your config file. For a TOML config file, that looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;    [&lt;span style=&#34;color:#a6e22e&#34;&gt;mediaTypes&lt;/span&gt;]
+        [&lt;span style=&#34;color:#a6e22e&#34;&gt;mediaTypes&lt;/span&gt;.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/markdown&amp;#34;&lt;/span&gt;]
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;suffixes&lt;/span&gt; = [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;md&amp;#34;&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Define a &amp;ldquo;readme&amp;rdquo; output format (or whatever you want to name it) under &lt;code&gt;outputFormats&lt;/code&gt; in your config file. For a TOML config file, that looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;outputFormats&lt;/span&gt;]
+  [&lt;span style=&#34;color:#a6e22e&#34;&gt;outputFormats&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;readme&lt;/span&gt;]
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;baseName&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;README&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;mediaType&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/markdown&amp;#34;&lt;/span&gt;    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;baseName&lt;/code&gt; here controls the output file name, while the extension is controlled by the suffixes in step 1. The &lt;code&gt;mediaType&lt;/code&gt; you use here should match the one in step&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next is to specify which pages should have this custom output format. I used my home page for this, so under &lt;code&gt;outputs&lt;/code&gt; in the config file I added the name of the output format (&amp;ldquo;readme&amp;rdquo;) in my case under &amp;ldquo;home&amp;rdquo;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;outputs&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;home&lt;/span&gt; = [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTML&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RSS&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jsonfeed&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hfeed&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;readme&amp;#34;&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Last step, in your theme or your layouts folder, create a file named &lt;code&gt;index.README.md&lt;/code&gt;. This will be the template used to generate the README file. Remember that this is a template to generate markdown. You can use all the normal Hugo template functions, but your output should be markdown. Here&amp;rsquo;s part of what I put in my template, which generates a list of my most recent blog posts:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;Latest blog posts:
+&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$pages&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;first&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.RegularPages&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;post&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;    
+&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$pages&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+- [&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Title&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;](&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Permalink&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;)&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+
+[View all posts](&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Permalink&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;blog)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re not yet too familiar with Hugo templates, you can maybe just use the above example directly first to see what it outputs. (You might need to replace &lt;code&gt;post&lt;/code&gt; with &lt;code&gt;posts&lt;/code&gt; or whatever your main post type is).&lt;/p&gt;
+&lt;p&gt;Once you have these setup, just run your usual hugo build and check the output folder to see if the README.md file was generated correctly. It should be in the root of the output folder, same place as the &lt;code&gt;index.html&lt;/code&gt; for your home page. One problem I encountered with Hugo is that it insists on lowercasing all the output files, so the output file in my case is always &lt;code&gt;readme.md&lt;/code&gt; and not &lt;code&gt;README.md&lt;/code&gt;. I just solved this by renaming it during the Travis build.&lt;/p&gt;
+&lt;p&gt;I won&amp;rsquo;t discuss the travis deployment process anymore here; if you&amp;rsquo;ve done CI with Travis and Github integration before, it&amp;rsquo;s relatively straightforward to add a step to copy the readme file from the Hugo build output to the appropriate repository.&lt;/p&gt;
+&lt;p&gt;After setting this up, my Github profile page now automatically updates with my latest blog posts/notes/shared links! (I didn&amp;rsquo;t include photos to keep things simple). The update happens every time my site itself gets a new build, so that&amp;rsquo;s pretty neat. I&amp;rsquo;ve attached an image of the new Github profile page for reference!&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2020/07/hugo-update-github-profile/sample_hucb5e7c9f1f7a14a92d223160e1fe09f1_359089_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Image Lightboxes using HTML/CSS
+</title>
+            <link>https://roytang.net/2020/07/image-lightboxes-using-html/css/</link>
+            <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2020/07/image-lightboxes-using-html/css/</guid>
+            <description>
+            
+            &lt;p&gt;In several places on this site (like if you click &lt;a href=&#34;https://roytang.net/photos/&#34;&gt;Photos&lt;/a&gt; in the menu up top), I have a grid-like view of a list of photos/images:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#faccc892f8e2cf4a4264858849ce5ae2-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;faccc892f8e2cf4a4264858849ce5ae2-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;1 Jul 2020 12:00am&#34;&gt;1 Jul 2020 12:00am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I used to just have each thumbnail open the post permalink on click, with the anchor set to the image itself. The image would be shown in full size inline of the post. This was a bit clunky and not so modern, so I decided to implement it so that the image lists instead will show a &lt;a href=&#34;https://en.wikipedia.org/wiki/Lightbox_%28JavaScript%29&#34;&gt;Lightbox&lt;/a&gt;-style overlay with the full image and some details and an option to click through to the post. That looks a little something like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#69db43a1058dcdddf90179b43e7ecf6d-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;69db43a1058dcdddf90179b43e7ecf6d-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;1 Jul 2020 12:00am&#34;&gt;1 Jul 2020 12:00am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, in the olden days doing this sort of thing required JavaScript (as described in the wikipedia link above to Lightbox). But for the modern web, this can be achieved using HTML and CSS only. The method is described in &lt;a href=&#34;https://jlelse.blog/dev/css-lightbox-hugo/&#34;&gt;this blog post by jlelse&lt;/a&gt;, specifically for use in Hugo themes. The CSS technique is relatively straightforward: you generate two images, a thumbnail, and a hidden full-size one in an overlay. The thumbnail is wrapped in an anchor pointing to the id of the hidden overlay, and the overlay gets displayed via the &lt;code&gt;:target&lt;/code&gt; CSS pseudo-selector.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how that looks in this site&amp;rsquo;s current Hugo templates:&lt;/p&gt;
+&lt;p&gt;( &lt;code&gt;.context&lt;/code&gt; is the original image resource, and &lt;code&gt;$thumb&lt;/code&gt; is the generated thumbnail)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.context.RelPermalink&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;md5&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-lightbox&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;figure&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$thumb&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.RelPermalink&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$figcaption&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; 
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$figcaption&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tn&amp;#34;&lt;/span&gt; /&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;figure&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lightbox&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.context.RelPermalink&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;md5&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-lightbox&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#_&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.context.RelPermalink&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;safeURL&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; /&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lightbox_overlay&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$figcaption&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;time&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dt-published&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;datetime&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.postDate&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.postDate&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;time&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.mainPermalink&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&amp;gt;View post&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#_&amp;#34;&lt;/span&gt;&amp;gt;Close&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And the relevant CSS (I don&amp;rsquo;t use SASS):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;lightbox&lt;/span&gt; {
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;fixed&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;left&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;z-index&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;999&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;vw&lt;/span&gt;;
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;vh&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;: rgba(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0.8&lt;/span&gt;);
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;lightbox_overlay&lt;/span&gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;fixed&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;z-index&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;: rgba(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0.6&lt;/span&gt;);
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;padding-bottom&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;rem&lt;/span&gt;;
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;lightbox_overlay&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;rem&lt;/span&gt;;
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;lightbox&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;left&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;margin&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;max-width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;max-height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;lightbox&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;outline&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;block&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;My only changes on top of the jlelse&amp;rsquo;s blog post linked above was to add a second overlay for a caption and date to be shown, and a link to the original post, and a close button. Clicking the post itself also dismisses the overlay (by replacing the URL fragment), but I thought it was more usable to also add an obvious Close button. I also initially wanted to put &amp;ldquo;Previous&amp;rdquo; and &amp;ldquo;Next&amp;rdquo; buttons so that you can easily cycle through the images in a post, but this was a bit more effort. I didn&amp;rsquo;t have a way to &amp;ldquo;look ahead&amp;rdquo; in the loop to get the &amp;ldquo;next&amp;rdquo; image, if any, so I think I would have needed to loop through the images twice? And since I use this image list in a number of places on the site, that was a bit troublesome, so maybe it&amp;rsquo;s something I&amp;rsquo;ll attempt later on?&lt;/p&gt;
+&lt;p&gt;In any case, I think the new lightboxes are neat!&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Location, Location, Location
+</title>
+            <link>https://roytang.net/2020/05/location-location-location/</link>
+            <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2020/05/location-location-location/</guid>
+            <description>
+            
+            &lt;p&gt;A while back I got an export of my Foursquare/Swarm data. If you&amp;rsquo;re not familiar, these were a pair of apps that were used for &amp;ldquo;checking-in&amp;rdquo; to particular locations, with a sort of gamification system where if you checked in at a place often enough, you would earn points and eventually become &amp;ldquo;Mayor&amp;rdquo; of the venue. The idea being that owners of those venues might give some benefits to those who check-in often at those locations (AFAIK, this never really caught on in the Philippines). I wasn&amp;rsquo;t a super active user of Foursquare/Swarm, I had maybe 500ish check-ins from 2010-2017 when I stopped using it. Some people are still using it up to now and have thousands of check-ins, although as far as I can tell it&amp;rsquo;s no longer very popular in the Philippines.&lt;/p&gt;
+&lt;p&gt;Anyway, I thought having this data would be handy so I put it up as location data on this site. It also gave me an excuse to figure out how to render OpenStreetMap. (The location pages are one of the few pages that have JavaScript on this site.) The &lt;a href=&#34;https://roytang.net/locations/&#34;&gt;locations page&lt;/a&gt; shows a map of all the visited locations and a listing of the locations grouped by country, and for the Philippines, by city (where available). You can click through to individual locations to see how often I&amp;rsquo;ve checked in there.&lt;/p&gt;
+&lt;p&gt;For example, one of the venues with the most number of check-ins for me is &lt;a href=&#34;https://roytang.net/locations/4d27f36c8292236a41e814bb/&#34;&gt;BBQ Chicken&lt;/a&gt;, a now-closed Korean-themed BBQ chicken place in Ortigas near where I used to work. Another one with a lot of check-ins would be &lt;a href=&#34;https://roytang.net/locations/4bbbfea5ed7776b032413f51/&#34;&gt;Murphy&amp;rsquo;s in Makati&lt;/a&gt; where we did a lot of quiz nights from 2011-2013. Obviously, the location data isn&amp;rsquo;t complete and doesn&amp;rsquo;t capture all my visits, since I didn&amp;rsquo;t use Foursquare/Swarm that religiously anyway. I&amp;rsquo;m certain I&amp;rsquo;ve eaten at BBQ Chicken more than the 18 times I checked in!&lt;/p&gt;
+&lt;h3 id=&#34;what-about-privacy&#34;&gt;What about privacy?&lt;/h3&gt;
+&lt;p&gt;Actually telling the internet where you are all the time might seem a bit anathema to the more privacy-conscious modern world, but I do like having a history of where I&amp;rsquo;ve been. I even have location tracking enabled on my phone via Google Maps so that I can have a timeline of where I am on a day-by-day basis. I&amp;rsquo;ve used it more than once to answer queries like &amp;ldquo;do you know if we went to &lt;place&gt; in &lt;month&gt; of last year?&amp;rdquo; or &amp;ldquo;When did you last go to &lt;store&gt; ?&amp;rdquo; Obviously it&amp;rsquo;s not for everyone and I fully understand the privacy ramifications of Google having all my location data and feeding the mightly global surveillance capitalism machine, but for me right now it&amp;rsquo;s an acceptable tradeoff. As for the foursquare data, I was using foursquare back when I was less privacy-conscious that I am now, so I my attitude is like, that particular dataset has been out in the world for years, I can&amp;rsquo;t put the toothpaste back in the bottle.&lt;/p&gt;
+&lt;p&gt;That being said, I did scrub some old check-ins from this data (and the corresponding data on Swarm and on Twitter if it was cross-posted)) that was a bit too close to home. I know this data potentially allows bad guys or assassins or whatnot to figure out where I live, so I thought I&amp;rsquo;d at least make it a tiny bit more difficult.&lt;/p&gt;
+&lt;h3 id=&#34;what-now&#34;&gt;What now?&lt;/h3&gt;
+&lt;p&gt;This is just a neat little thing that probably only I will care about, as it lets me see some of the places I&amp;rsquo;ve been to. And I probably won&amp;rsquo;t be using 4sq/Swarm again, so the dataset probably won&amp;rsquo;t be growing. That being said, I do want to add some future features like grouping the check-ins according to trips, so I can see all the particular places where I went to on particular trips. Many of my trips are missing data though; for example, my only check-in in France was in the airport, and not at any of the touristy places we went to. I may try to supplement this data with selected extracts from my Google Maps location history (hopefully it&amp;rsquo;s easy to figure out!).&lt;/p&gt;
+&lt;p&gt;I also don&amp;rsquo;t know where to put the locations page in the menus lol. I&amp;rsquo;ll figure it out sooner or later!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>What Am I Doing Now
+</title>
+            <link>https://roytang.net/2019/12/what-am-i-doing-now/</link>
+            <pubDate>Mon, 16 Dec 2019 23:24:27 +0800</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/12/what-am-i-doing-now/</guid>
+            <description>
+            
+            &lt;p&gt;A few days ago, a friend from a company I used to work for said to me something along the lines of &amp;ldquo;{Company Executive} asked me how you are doing&amp;rdquo;, and I couldn&amp;rsquo;t give anything other than a pithy &amp;ldquo;I&amp;rsquo;m alive&amp;rdquo; answer.&lt;/p&gt;
+&lt;p&gt;I find that since I generally live an unconventional life, it&amp;rsquo;s a pain to describe how I&amp;rsquo;m doing. It&amp;rsquo;s not a straightforward &amp;ldquo;Oh, you know, still working as a freelance developer/consultant/solutions architect&amp;rdquo; for me, because I don&amp;rsquo;t really identify that much anymore with what work I&amp;rsquo;m doing or who I&amp;rsquo;m employed by. For this reason, I rarely talk about my work situation, even with my closest friends. On more than one occassion, I&amp;rsquo;ve had a friend that I talk to (online) almost every day be surprised to find out I was no longer working with {This company they knew I was working with}, and had not been working with them for months now.&lt;/p&gt;
+&lt;p&gt;It gets worse because of my &amp;ldquo;unconventional&amp;rdquo; situation where things that are normally a priority for other folk - like having regular full-time work - are not a priority for me, so people won&amp;rsquo;t easily understand my siutation.&lt;/p&gt;
+&lt;p&gt;Slight tangent: I&amp;rsquo;m not surprised to find that this wasn&amp;rsquo;t the first time I tried to write a &lt;a href=&#34;https://roytang.net/2010/07/what-am-i-doing-now/&#34;&gt;post with this title&lt;/a&gt;, nor that the older post was also an attempt to summarize my current status because it&amp;rsquo;s often hard for people to grok.&lt;/p&gt;
+&lt;p&gt;Anyway, I kind of wanted to answer the previous query with &amp;ldquo;Just follow my blog or my twitter so you know what I&amp;rsquo;m up to&amp;rdquo;, but (a) I don&amp;rsquo;t think that&amp;rsquo;s very effective; and (b) even my blog isn&amp;rsquo;t an indication of my high-level situation (it does let you know things like &lt;a href=&#34;https://roytang.net/2019/12/b6fbeoybs8s/&#34;&gt;what boardgames I was playing last week&lt;/a&gt; or &lt;a href=&#34;https://roytang.net/2019/12/1202524286784696320/&#34;&gt;what my top tracks on Spotify for the year were&lt;/a&gt; though, if that helps.)&lt;/p&gt;
+&lt;p&gt;Instead, I followed the &lt;a href=&#34;https://nownownow.com/about&#34;&gt;advice&lt;/a&gt; given by &lt;a href=&#34;https://sivers.org/&#34;&gt;Derek Sivers&lt;/a&gt;: I created a &lt;a href=&#34;https://roytang.net/now/&#34;&gt;now page&lt;/a&gt;. Basically it&amp;rsquo;s a fixed page that I can point to at any time that gives a summary of what&amp;rsquo;s up with my life. I&amp;rsquo;ll just update it when something major changes I guess. I&amp;rsquo;ll also add it to the site menus somewhere.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Indieweb Updates and Thoughts
+</title>
+            <link>https://roytang.net/2019/11/indieweb/</link>
+            <pubDate>Sun, 10 Nov 2019 15:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/11/indieweb/</guid>
+            <description>
+            
+            &lt;p&gt;I &lt;a href=&#34;https://roytang.net/2019/07/move-fast-break-things/&#34;&gt;mentioned before&lt;/a&gt; that I was looking into indieweb stuff. There&amp;rsquo;s a &lt;a href=&#34;https://indieweb.org/&#34;&gt;whole wiki of information&lt;/a&gt; about it if you&amp;rsquo;re into that sort of thing, but also &lt;a href=&#34;https://www.jvt.me/posts/2019/10/20/indieweb-talk/&#34;&gt;here&amp;rsquo;s a recent post&lt;/a&gt; which kind of serves as an overview. I have some comments on the content of this post, more on that &lt;a href=&#34;#later&#34;&gt;later&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Indieweb things I&amp;rsquo;ve already implemented on this site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;have a personal domain (&lt;a href=&#34;https://roytang.net/2006/02/welcome-to-roytang-net/&#34;&gt;since 2006&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microformats.io/&#34;&gt;microformats&lt;/a&gt; (h-card and h-feeds and h-entrys), though I would have to be using some sort of microformats reader to make sure everything there is hunky-dory (no concrete plans for this yet)&lt;/li&gt;
+&lt;li&gt;webmention support, via &lt;a href=&#34;https://webmention.io/&#34;&gt;webmention.io&lt;/a&gt;. Of course, I&amp;rsquo;m not actually interacting with anyone else on the indieweb yet, so this is mostly experimental and untested.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://indieweb.org/POSSE&#34;&gt;POSSE&lt;/a&gt; (partially): blog posts are syndicated to Twitter and Mastodon, but I&amp;rsquo;m also still posting content on those platforms (and to Instagram)&lt;/li&gt;
+&lt;li&gt;owning my content: (almost) all posts I make to other social media channels now get backfed into the &lt;a href=&#34;https://roytang.net/2019/10/archive-of-my-own/&#34;&gt;archive on this site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Things I hope to be able to implement (no timetable):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;POSSE (full) - currently for notes and photos I still mostly post using Twitter and Instagram because their native posting features are more convenient (especially on mobile) compared to my current workflow of &amp;ldquo;push a markdown file to git&amp;rdquo;. This is largely contingent on me implementing the next item:&lt;/li&gt;
+&lt;li&gt;A web interface for posting to the site. A web interface should be sufficient convenient for mobile use. Optionally using the next item:&lt;/li&gt;
+&lt;li&gt;Micropub. I&amp;rsquo;m still iffy whether I really need the protocol. It could be handy in certain situations.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve also been &lt;a href=&#34;https://mastodon.technology/@roytang/102954512082445097&#34;&gt;digging into ActivityPub&lt;/a&gt; lately. My hope is to eventually have this site itself serve as an ActivityPub server, such that one would be able to follow me on Mastodon via something like &lt;a href=&#34;mailto:roy@roytang.net&#34;&gt;roy@roytang.net&lt;/a&gt;. Similar to how &lt;a href=&#34;https://aaronparecki.com/aaronpk&#34;&gt;Aaron Parecki has done it&lt;/a&gt;. I&amp;rsquo;ve already done some exploratory work on this but it might be a ways off (low priority I guess.)&lt;/li&gt;
+&lt;li&gt;Archive Mastodon posts into this site (this is kinda ironic for some reason)&lt;/li&gt;
+&lt;li&gt;Automatic sending out of webmentions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;later&#34;&gt;#&lt;/a&gt; Anyway, back to the post I linked above. My main criticism for the indieweb movement at the moment is that I don&amp;rsquo;t see a path to mass adoption, especially for the purposes of moving people away from silos like Facebook. Maybe that&amp;rsquo;s not really one of the goals. My main issue is with two of the principles outlined in the post above (read the post again for more details):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Make What You Need / Scratch Your Itch&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Use What You Make / Dogfood&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The thing about these concepts is that there is a lot of work involved and there are significant barriers to entry for getting involved. I mean, most people aren&amp;rsquo;t going to (won&amp;rsquo;t be able to) bother with the first step (getting your own domain), much more be able to &amp;ldquo;make what you need&amp;rdquo;. It&amp;rsquo;s ok for people like me who are comfortable with the highly technical and have a bunch of free time, but for the average person it seems unlikely.&lt;/p&gt;
+&lt;p&gt;I can imagine there might be created a service that supports most of the Indieweb features and can easily be adopted by the mass market, although that has a lot of its own challenges as well, and it&amp;rsquo;s kind of like replacing one kind of silo with another? At least it would be a more open silo I guess? I think &lt;a href=&#34;https://micro.blog/&#34;&gt;micro.blog&lt;/a&gt; already supports the indieweb stuff, but I haven&amp;rsquo;t yet looked too closely into that.&lt;/p&gt;
+&lt;p&gt;I am still moving forward with the indieweb stuff, and I am hopeful that it manages to coalesce into something that can challenge the way the modern internet works, but that may be a long way off. As far as I can tell, adoption is not yet very widespread, and AFAICT the main people driving the effort with their &lt;a href=&#34;https://indieweb.org/events/2019-11-13-homebrew-website-club&#34;&gt;Homebrew Website Clubs&lt;/a&gt; are in Western countries. It&amp;rsquo;s even possible that I&amp;rsquo;m the first in the Philippines looking into this Indieweb stuff. :)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2019/11/removed-webfont/</link>
+            <pubDate>Fri, 08 Nov 2019 23:18:49 +0800</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/11/removed-webfont/</guid>
+            <description>
+            
+
+            &lt;p&gt;FontAwesome has been fun and all, but in the interest of reducing load time and external dependencies, I removed the FA dependency on this blog and switched to SVG icons instead. Icons are from &lt;a href=&#34;http://svgicons.sparkk.fr/&#34;&gt;here&lt;/a&gt;, specifically the &lt;a href=&#34;https://dribbble.com/shots/1934932-77-Essential-Icons-Free-Download&#34;&gt;set by Bryn Taylor&lt;/a&gt; and the Special Social Icon Set #9. Not all the icons carried over, especially some of the social ones (Mastodon, etc). Workarounds had to be made. Hopefully nothing breaks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2019/10/switch-stream-to-frontend/</link>
+            <pubDate>Fri, 18 Oct 2019 20:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/10/switch-stream-to-frontend/</guid>
+            <description>
+            
+
+            &lt;p&gt;I made a 3AM decision to switch over the site&amp;rsquo;s front page to show what was previously under &amp;ldquo;Stream&amp;rdquo; and now the &amp;ldquo;Posts&amp;rdquo; section is listed in the menu as &amp;ldquo;Blog&amp;rdquo;. We&amp;rsquo;ll see if I like this better. Also, the &lt;a href=&#34;https://roytang.net/index.xml&#34;&gt;root RSS feed&lt;/a&gt; now includes everything from &amp;ldquo;Stream&amp;rdquo; as well. IDK how many people were following this site via an RSS reader (I would like it if you guys told me!), but for those of you who do: surprise, you are in for a firehose! If you only want the longer-form traditional blog posts, an &lt;a href=&#34;https://roytang.net/post/index.xml&#34;&gt;RSS feed for that is still available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also moved the fanfics from before into a &lt;a href=&#34;https://roytang.net/fiction&#34;&gt;new &amp;ldquo;Fiction&amp;rdquo; section&lt;/a&gt;. I had previously tried moving them under posts but it felt weird that the archive said I had posts from before 2002 since technically the blog hadn&amp;rsquo;t existed yet. So that this section isn&amp;rsquo;t made up entirely of old fanfiction, I also put up a short story I had written a couple of years ago. I probably have some more fiction hidden somewhere. If not, I&amp;rsquo;ll make some!&lt;/p&gt;
+&lt;p&gt;Smaller site updates like this will probably just be under &amp;ldquo;Notes&amp;rdquo; in the future, instead of full-length blog posts. All changes can still be followed using the changelog tag.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Perpetually under renovation
+</title>
+            <link>https://roytang.net/2019/08/perpetually-under-renovation/</link>
+            <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/08/perpetually-under-renovation/</guid>
+            <description>
+            
+            &lt;p&gt;Perhaps unsurprisingly, I&amp;rsquo;m enjoying tinkering with the site layout at the moment. I give up on expecting a &amp;ldquo;stable version&amp;rdquo; of the site anytime soon and readers can expect incremental updates unannounced going forward. This site is now perpetually under renovation.&lt;/p&gt;
+&lt;p&gt;Current layout image (this image is recursive):&lt;/p&gt;
+&lt;a href=&#34;#f2e3e1914830725e83fb5b79348d924f-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2019/08/perpetually-under-renovation/roytangnet_201908_hu40fd9de379095d1e23664d7bd47e40cd_106634_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;f2e3e1914830725e83fb5b79348d924f-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2019/08/perpetually-under-renovation/roytangnet_201908.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Aug 2019 12:00am&#34;&gt;14 Aug 2019 12:00am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Recent changes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Someone called me out for not using a dark theme, so now here we are with a garish gray and green and orange theme, you&amp;rsquo;re welcome.&lt;/li&gt;
+&lt;li&gt;Generally moving around of content and UI and adding of navigation items and such&lt;/li&gt;
+&lt;li&gt;Comment system revamp! I&amp;rsquo;ve removed Disqus, since that was a bit of a loading problem. Comments are now saved in the repo as static files; it took me a bit to figure that out, &lt;a href=&#34;https://discourse.gohugo.io/t/static-comment-for-hugo/1944/17?u=roytang&#34;&gt;I described my approach on the Hugo forums&lt;/a&gt;. Unfortunately this means that for now there is no way to comment directly on posts. I will be adding that back later, hopefully in a matter of days. Having the comments be a separate post type means you can now &lt;a href=&#34;https://roytang.net/comment/&#34;&gt;browse them directly&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Webmentions! I set up &lt;a href=&#34;https://webmentions.io&#34;&gt;webmentions.io&lt;/a&gt; and &lt;a href=&#34;https://brid.gy&#34;&gt;brid.gy&lt;/a&gt; so this site now accepts webmentions. Currently only Twitter webmentions are enabled on brid.gy (see the samples in the screenshots above).&lt;/li&gt;
+&lt;li&gt;Search! Previously the search widget was only sending you to a &lt;code&gt;&amp;quot;site:roytang.net&amp;quot;&lt;/code&gt; search on DuckDuckGo. I changed it to perform indexing on the server, via the &lt;a href=&#34;https://whoosh.readthedocs.io/en/latest/intro.html&#34;&gt;Python Whoosh library&lt;/a&gt;. Then any search request is sent via Javascript to a Flask server I have running, which queries the index and returns the relevant results.&lt;/li&gt;
+&lt;li&gt;I also joined a webring! So 1990s lol. It&amp;rsquo;s a webring for Indieweb people, I&amp;rsquo;ve been enjoying browsing other people&amp;rsquo;s sites. Brings me back to the early 2000s internet. Links are in the footer!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are almost certainly broken things still around, but I wanted to push the initial changes for now.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2019/08/perpetually-under-renovation/roytangnet_201908_hu40fd9de379095d1e23664d7bd47e40cd_106634_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>A Look Back At This Site&#39;s Ancient History
+</title>
+            <link>https://roytang.net/2019/08/a-look-back-at-this-sites-ancient-history/</link>
+            <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/08/a-look-back-at-this-sites-ancient-history/</guid>
+            <description>
+            
+            &lt;p&gt;I thought about making a tag &amp;ldquo;things that would only interest me&amp;rdquo; for this one lol.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve uploaded some old web archives of the oldest versions of my site - back when I still had free sites hosted on the likes of Geocities, Tripod and the lesser-known TopCities. &lt;a href=&#34;https://roytang.net/archives/ancient/&#34;&gt;Click here for the index&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had these archives for a while and only now decided to put them up on the site. It&amp;rsquo;s fun browsing through the older versions, basically relics of a bygone era. It was a time of hand-made HTML, CSS and JS, something that appealed to the tinkerer in me. I remember a disdain for things like Dreamweaver&amp;rsquo;s WYSIWYG site building, or the site-builder tools that came with these free webhosts. Real men build their HTML by hand! It was a lot of effort to maintain websites back then, but I had a lot of fun.&lt;/p&gt;
+&lt;p&gt;Some highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;my obvious love for green-text-on-black-background color schemes (and unnecessarily small fonts apparently), harkening back to the computer terminals of old&lt;/li&gt;
+&lt;li&gt;many, many broken links and missing files&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roytang.net/archives/ancient/htmldoc/&#34;&gt;HTML documentation of my undergraduate thesis&lt;/a&gt;. There&amp;rsquo;s more documents from my EEE days buried in these archives somewhere if you feel like digging for them. Maybe someday I&amp;rsquo;ll go through them in detail.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roytang.net/archives/ancient/tripod/ffmagic/index.html&#34;&gt;Final Fantasy meets Magic the Gathering&lt;/a&gt; - a custom card set I made in 2001 (!) which shows both how much I loved the FF series and how bad I was at balancing MTG cards. (TBF to me, balancing in MTG overall wasn&amp;rsquo;t that good back in those days)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roytang.net/archives/ancient/geocities/rk/&#34;&gt;a half-assed attempt at an rk (rurouni kenshin) fansite&lt;/a&gt; - that&amp;rsquo;s literally the title in the pages&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roytang.net/archives/ancient/topcities2002/works/prog/index.html&#34;&gt;running documentary of me trying to learn Win32 programming for gamedev purposes&lt;/a&gt; (largely unfinished)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I thought about including all of this stuff in the &lt;a href=&#34;https://roytang.net/archives/ancient/geocities/rk/&#34;&gt;blog&amp;rsquo;s git repo&lt;/a&gt;, but decided against it because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;there&amp;rsquo;s a LOT of files, it would unnecessarily increase the size of the repo&lt;/li&gt;
+&lt;li&gt;I don&amp;rsquo;t expect to be making updates to this content often once I&amp;rsquo;ve uploaded them&lt;/li&gt;
+&lt;li&gt;I haven&amp;rsquo;t vetted all the files, just the pages; there might be some stuff floating around in there that&amp;rsquo;s not exactly legal (read: piracy). I&amp;rsquo;ve cleaned up what I can, but we don&amp;rsquo;t want to run afoul of Github&amp;rsquo;s policies or whatever so better safe than sorry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most of the blog-like content had already been absorbed into this blog previously. It&amp;rsquo;s fun to go through some of the other stuff too, like looking at a snapshot of the sort of things or sites or files I was interested in almost 20 years ago (unsurprisingly, mostly the same things as today!)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Move Fast, Break Things
+</title>
+            <link>https://roytang.net/2019/07/move-fast-break-things/</link>
+            <pubDate>Tue, 30 Jul 2019 03:06:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/07/move-fast-break-things/</guid>
+            <description>
+            
+            &lt;p&gt;As is my wont, I&amp;rsquo;m almost never satisfied with a website&amp;rsquo;s layout, so I&amp;rsquo;ve been tinkering with this blog&amp;rsquo;s layout on the backend. To make a long story short, I decided to start working on &lt;a href=&#34;https://github.com/roytang/hugo-theme-exhale&#34;&gt;a Hugo theme&lt;/a&gt;. It&amp;rsquo;s still largely a work in progress, as there&amp;rsquo;s a bunch of things I wanted to implement. But it was good enough to replace the old one so I went ahead and deployed it, so maybe some bugs here and there on some pages. And I&amp;rsquo;m still tinkering, so probably some minor/major changes as we go along in the next few weeks. Or months. Who knows how long it will take? There were some conflicts with the old theme and the new theme which meant I had to modify some of my main blog files to support the new theme and the amount of uncommitted changes I had was getting unwieldy, so I figured I&amp;rsquo;d just &amp;ldquo;move fast and break things&amp;rdquo;, as it were. (I realize that a more sensible programmer would have done the theme work on a branch to avoid this nonsense, but we are who we are.)&lt;/p&gt;
+&lt;p&gt;Anyway, here&amp;rsquo;s a snapshot of the current appearance, for posterity:&lt;/p&gt;
+&lt;a href=&#34;#9dfb00422375d1175176707e45e020c3-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2019/07/move-fast-break-things/hugo-theme-2019_hu680d47cc17b9018b3f8d4884f72b4e8d_70639_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;9dfb00422375d1175176707e45e020c3-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2019/07/move-fast-break-things/hugo-theme-2019.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;30 Jul 2019 3:06am&#34;&gt;30 Jul 2019 3:06am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I&amp;rsquo;ve also back-updated some of the older posts where I updated the site theme/layout with a tag &lt;a href=&#34;https://roytang.net/tags/changelog/&#34;&gt;changelog&lt;/a&gt;, so that I can reference them when I update the about page sometime soonish.&lt;/p&gt;
+&lt;p&gt;Aside from my general finnickiness about wanting a new theme approximately every 17 days, another reason I wanted to change the layout was I wanted to try out CSS grid layouting, as it seemed neat and boy I wish this existed back in the IE6 days. Would&amp;rsquo;ve made things a lot easier.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also kind of gone down the rabbit hole of &lt;a href=&#34;https://indieweb.org/&#34;&gt;Indieweb&lt;/a&gt; stuff. The core message of having your own website that contains all your content appeals to me and also aligns with some things I&amp;rsquo;ve been thinking about implementing like importing all of my off-site content into this site as a central repository. Those things are yet to come but with the theme change I&amp;rsquo;ve also started looking into stuff like microformats (should be supported as of now), webmentions, POSSE, and so on. Might be a while before those other things get done though.&lt;/p&gt;
+&lt;p&gt;I full technical breakdown of the theme features belongs in &lt;a href=&#34;https://github.com/roytang/hugo-theme-exhale/blob/master/README.md&#34;&gt;the theme&amp;rsquo;s README&lt;/a&gt; and probably in a separate colophon post later on, but we&amp;rsquo;re not there yet and we&amp;rsquo;ll get there when we get there.&lt;/p&gt;
+&lt;p&gt;For now, enjoy if you will my obsession with the color green.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2019/07/move-fast-break-things/hugo-theme-2019_hu680d47cc17b9018b3f8d4884f72b4e8d_70639_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Initial Page Load
+</title>
+            <link>https://roytang.net/2019/04/initial-page-load/</link>
+            <pubDate>Wed, 10 Apr 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/04/initial-page-load/</guid>
+            <description>
+            
+            &lt;p&gt;I read a recent &lt;a href=&#34;https://testkeis.wordpress.com/2019/03/21/wondering-how-much-it-matters-initial-load-of-page/&#34;&gt;blog post from a friend&lt;/a&gt; about the large page sizes on initial load of a web page. From there, I got to a link which said that the &lt;a href=&#34;https://speedcurve.com/blog/web-performance-page-bloat/&#34;&gt;average page size nowadays is at least 3MB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since &lt;a href=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/&#34;&gt;I migrated to a static site using Hugo&lt;/a&gt;. The homepage of the old Wordpress version of the blog comes with 44 requests totalling a bit over 500KB. And the new homepage lists way more posts too.&lt;/p&gt;
+&lt;p&gt;The page for individual posts leaves some room for improvement however, coming at 62 requests totalling more than 2MB. The main culprit is Disqus which I use for commenting. At least Disqus uses delayed loading, so the content renders immediately, but that&amp;rsquo;s still a lot of bandwidth that could be saved. Leaving aside the question of &amp;ldquo;Do I really need comments?&amp;rdquo;, I did a quick search if there were pre-existing solutions for optimizing Disqus loading on static sites.&lt;/p&gt;
+&lt;p&gt;The best hit so far was &lt;a href=&#34;https://css-tricks.com/lazy-loading-disqus-comments/&#34;&gt;disqusLoader&lt;/a&gt;, which avoids loading Disqus until the comment area actually scrolls into view. It&amp;rsquo;s a neat idea, but I encountered some JS errors when I did a quick test with it. I&amp;rsquo;ll revisit this again later when I have more time.&lt;/p&gt;
+&lt;p&gt;An alternative of course would be to write my own JS-based commenting engine to rival Disqus, which seems to have no competition in its particular niche. I like building things so this option naturally came to mind, but in all likelihood I don&amp;rsquo;t have time to do that, and there&amp;rsquo;s a good chance it may end up as heavy as Disqus anyway.&lt;/p&gt;
+&lt;p&gt;Need to think about this some more.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>RIP Webfaction?
+</title>
+            <link>https://roytang.net/2019/03/rip-webfaction/</link>
+            <pubDate>Fri, 15 Mar 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/03/rip-webfaction/</guid>
+            <description>
+            
+            &lt;p&gt;A few months back, my current web host &lt;a href=&#34;https://www.webfaction.com/&#34;&gt;WebFaction&lt;/a&gt; announced they had been purchased by &lt;a href=&#34;https://godaddy.com&#34;&gt;GoDaddy&lt;/a&gt;, which was worrying. Back then they hadn&amp;rsquo;t announced any details other than there would be some account migrations and single sign on, so it wasn&amp;rsquo;t a big deal yet.&lt;/p&gt;
+&lt;p&gt;I initially joined WebFaction &lt;a href=&#34;https://roytang.net/roytang-net-site-update/&#34;&gt;back in 2008&lt;/a&gt; because they were a Python-friendly and developer-friendly host that had some reasonable budget options, allowing me some space to host this blog and any side projects I wanted to deploy. At that time I was learning Django, so I needed the Python support that normal hosts don&amp;rsquo;t provide. I didn&amp;rsquo;t know much about cloud servers back then and the WebFaction account let me try out so much stuff despite it being shared hosting. The news above is worrying because GoDaddy does not have a good reputation and is not especially known for being developer-friendly. They are a mass-market, &amp;ldquo;lowest common denominator&amp;rdquo; kind of host, so I would prefer not to have them as my web host.&lt;/p&gt;
+&lt;p&gt;This week, they said in an announcement that they were moving forward with a technical evaluation of migrating everyone to GoDaddy, which kind of spells doom for the WebFaction services I&amp;rsquo;m using. Even though their email promised that &amp;ldquo;you won&amp;rsquo;t lose any of your current features or services&amp;rdquo;, but according to a &lt;a href=&#34;https://community.webfaction.com/questions/22148/webfaction-migration-6-months-later-and-still-no-answers&#34;&gt;recent thread&lt;/a&gt; on their support forums:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;One again, zero information about exactly when WebFaction services will be completely shut down.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The exact date hasn&amp;rsquo;t been defined yet but it is estimated to be on August 2019.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Does this mean that WebFaction&#39;s current features and services will remain the same AFTER the migration?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;No, WebFaction&amp;rsquo;s control panel, servers and other features and services will shut down after the migration is done. The plan is to stay up and running until then.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While they say the technical evaluation is still ongoing, in all likelihood that&amp;rsquo;s it for WebFaction. For me, at least. And I&amp;rsquo;m not interested in migrating to GoDaddy. I still have a few months before I need to transition, but I guess I need to start prepping by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;looking for a new host. Any recommendations? I have a bit more experience this time with managing servers, so I&amp;rsquo;m open to a VPS instead of shared hosting, might be fun to try out for a while. Currently looking at just getting a cheap ($5/mo) droplet over at Digital Ocean. Alternatively, I could just move this blog over to netlify and any other apps I have (like &lt;a href=&#34;https://triviastorm.net/&#34;&gt;TriviaStorm&lt;/a&gt;) over to something like Heroku, but that seems like it would cost me more money.&lt;/li&gt;
+&lt;li&gt;see if I can refund my current balance with them, since I prepaid a bit last year. I already asked on the forums and they say we&amp;rsquo;ll have more info on refund options later after their technical evaluation, maybe around Mayish.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In any case, I had a good run with WebFaction, a bit over 10 years now. But time moves on and things change and small businesses get eaten up by large businesses, such is the way of capitalism. They were very developer-friendly and had pretty good customer support in my opinion, so they will be missed. Hopefully I&amp;rsquo;m able to find a good alternative.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>roytang.net 10 Year Challenge
+</title>
+            <link>https://roytang.net/2019/01/roytang.net-10-year-challenge/</link>
+            <pubDate>Sun, 27 Jan 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/01/roytang.net-10-year-challenge/</guid>
+            <description>
+            
+            &lt;p&gt;I always wish I had kept screenshots of what my blog looked like back during each of the myriad theme changes I&amp;rsquo;ve done over the years, as a kind of timeline of how my website aesthetic has evolved (or gotten worse, whatever). I recently found the stylesheets and such for my old django-powered blog from circa 2008-2009, and recently there&amp;rsquo;s been this &amp;ldquo;10-year challenge&amp;rdquo; meme where people show how they&amp;rsquo;ve changed over the past 10 years. Tt felt like a pefect opportunity to reconstruct that old version and also capture an image of the current version for posterity&amp;rsquo;s sake. I got the HTML for the old version from &lt;a href=&#34;https://web.archive.org/web/20090105212726/http://roytang.net&#34;&gt;the Wayback Machine&lt;/a&gt;, cleaned it up a bit and had the static files point to the right place. The top menu probably shouldn&amp;rsquo;t look like that, but IDK how to fix it and didn&amp;rsquo;t bother. For developer nostalgia/archive purposes I also uploaded the old Django 1.1.3-powered source code for the site back then &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;over at Github&lt;/a&gt;, without the static files unfortunately.&lt;/p&gt;
+&lt;p&gt;Anyway, here&amp;rsquo;s the screenshots!&lt;/p&gt;
+&lt;p&gt;2009:&lt;/p&gt;
+&lt;a href=&#34;#4a7d8929294cc656cd93923edc154eef-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2009_hu64204c7af09f6cbc767070ae62c29162_245629_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;4a7d8929294cc656cd93923edc154eef-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2009.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;27 Jan 2019 5:56am&#34;&gt;27 Jan 2019 5:56am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;2019:&lt;/p&gt;
+&lt;a href=&#34;#489d1a1a090f10b06dcafea9dbe90ffd-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2019_hu075dc56ab548cb17daecd0a76abbe285_270585_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;489d1a1a090f10b06dcafea9dbe90ffd-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2019.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;27 Jan 2019 5:56am&#34;&gt;27 Jan 2019 5:56am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This post was partially inspired by &lt;a href=&#34;https://www.arun.is/blog/10-year-challenge/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2009_hu64204c7af09f6cbc767070ae62c29162_245629_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2019/01/roytang.net-10-year-challenge/roytangnet_2019_hu075dc56ab548cb17daecd0a76abbe285_270585_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Site Migration from Wordpress to Hugo
+</title>
+            <link>https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</link>
+            <pubDate>Wed, 14 Nov 2018 03:06:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;leaving-wordpress&#34;&gt;Leaving Wordpress&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been using Wordpress for this blog since circa 2006 I believe, but as I mentioned in an &lt;a href=&#34;https://roytang.net/2018/10/django-blog-application/&#34;&gt;earlier blog post&lt;/a&gt; that I was not 100% happy with using Wordpress for this blog. I have a few issues with Wordpress, none of them a major dealbreaker, but collectively enough to make me consider something else:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the new &lt;a href=&#34;https://wordpress.org/gutenberg/&#34;&gt;Gutenberg editor&lt;/a&gt; set to become standard in 5.0 was in my experience, very clunky and kinda annoying&lt;/li&gt;
+&lt;li&gt;the code structure of Wordpress is very deep and complex, sometimes making it difficult for me to make changes I want. I can usually figure it out, but it feels like things are unnecessarily more complicated than they need to be&lt;/li&gt;
+&lt;li&gt;Wordpress&amp;rsquo;s rich plugin library is a plus, but it also means having to figure out how to have multiple plugins interoperate with each other. An easy example is that I was using a queueing plugin that didn&amp;rsquo;t work great with the Gutenberg editor&lt;/li&gt;
+&lt;li&gt;Wordpress requires a lot of maintenance, including needing to regularly update plugins for security purposes, and comment moderation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;static-site-generators&#34;&gt;Static Site Generators&lt;/h3&gt;
+&lt;p&gt;At the same time, while reading across some blogs over the past few months, I had ran into the idea of static site generators, which intrigued me as a Wordpress alternative. SSGs offered several advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I could compose my posts offline and using any &lt;a href=&#34;https://roytang.net/2018/11/my-history-in-text-editors/&#34;&gt;text editor&lt;/a&gt; I wanted, using a simple format like Markdown&lt;/li&gt;
+&lt;li&gt;Page load performance is better since Apache will simply serve up the static files, no processing or database hits of any kind&lt;/li&gt;
+&lt;li&gt;Static sites don&amp;rsquo;t require security updates of any sort - there&amp;rsquo;s no database or admin backend to be hacked&lt;/li&gt;
+&lt;li&gt;Easy backups. In WP I was using a custom plugin for backups. With an SSG, I can simply have the raw content stored in Github, then the static content &amp;ldquo;built&amp;rdquo; from there. The content always exists in at least three places - the actual site, Github, and my local computer I use for posting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-hugo&#34;&gt;Why Hugo&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s quite a lot of static site generators available right now actually. The most popular one seems to be &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; which is ruby-based. I first decided to try &lt;a href=&#34;https://blog.getpelican.com/&#34;&gt;Pelican&lt;/a&gt; because I preferred Python over Ruby. However, it turned out problematic on my Windows machine, I encountered some interoperability problems with pandoc for the WP migration. I didn&amp;rsquo;t want to have too many dependencies and issues with dependencies because I would later want to deploy the generator itself to my hosting on Webfaction for automated deployments, so I wanted the setup to be as easy as possible.&lt;/p&gt;
+&lt;p&gt;Then I stumbled upon &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, which offered two main advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the MSP was performance. I wanted to migrate over the entire history of the blog, which was almost 900 posts at this point.&lt;/li&gt;
+&lt;li&gt;no external dependencies - all I needed was to download the hugo executable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After reading up and testing a bit of Hugo, I had a fit of &amp;ldquo;I couldn&amp;rsquo;t sleep, I&amp;rsquo;ll just go ahead and do the site migration now&amp;rdquo; that I would later regret since it completely screwed up my sleep schedule.&lt;/p&gt;
+&lt;h3 id=&#34;wordpress-export&#34;&gt;Wordpress Export&lt;/h3&gt;
+&lt;p&gt;I used the &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;Wordpress to Hugo plugin&lt;/a&gt; to convert my Wordpress content for Hugo. Many posts had reported problems with this plugin, but I didn&amp;rsquo;t have any issues with its basic operation. I had a two problems with it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when exporting existing Wordpress comments, it didn&amp;rsquo;t include the commenter&amp;rsquo;s URL, which I felt I should include&lt;/li&gt;
+&lt;li&gt;all the posts were exported into a single &lt;code&gt;posts&lt;/code&gt; folder. While this didn&amp;rsquo;t create any permalinks issues due to each post having the &lt;code&gt;url&lt;/code&gt; attribute in the frontmatter, it made the entire folder look very unorganized since I had almost 900+ posts. I preferred that the posts be grouped by year and month, matching the &lt;code&gt;/yyyy/mm/slug/&lt;/code&gt; format of the permalink&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I had the source for the plugin, it was straightforward to fix both issues myself.&lt;/p&gt;
+&lt;p&gt;After getting the export from the plugin, I still had a bit of post-processing and cleaning up of the posts to do.&lt;/p&gt;
+&lt;p&gt;For one thing, all the single-quotes in the exported posts seem to have been converted to HTML entities for that smart quote thing, so I had to reverse that. Luckily, it was a simple find and replace across text files. The format for embedding posts such as Twitter, Youtube, etc was different as well, I had to correct those files one by one.&lt;/p&gt;
+&lt;h3 id=&#34;cleaning-up-the-taxanomies&#34;&gt;Cleaning up the taxanomies&lt;/h3&gt;
+&lt;p&gt;I had always wanted to clean up the categories in the blog, but I never got around to it with Wordpress because I didn&amp;rsquo;t feel like figuring out the SQL I would have needed to do it. (I&amp;rsquo;ve never liked Wordpress&amp;rsquo;s table structure.). With Hugo, all I had to do was update a bunch of text files, which I was much more comfortable with. This involved simply importing a Python library to &lt;a href=&#34;https://elbauldelprogramador.com/en/how-to-parse-frontmatter-with-python/&#34;&gt;parse frontmatter&lt;/a&gt;, and a &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/clean_categories.py&#34;&gt;script&lt;/a&gt; to do the conversion.&lt;/p&gt;
+&lt;h3 id=&#34;generating-the-archive-pages&#34;&gt;Generating the archive pages&lt;/h3&gt;
+&lt;p&gt;Hugo doesn&amp;rsquo;t have built-in support for archive pages, so I had to create them myself. I followed the setup described in &lt;a href=&#34;https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/&#34;&gt;this blog post&lt;/a&gt; and wrote a python &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/create-archives.py&#34;&gt;script&lt;/a&gt; to generate the individual year/month archive pages.&lt;/p&gt;
+&lt;p&gt;A bigger problem was the archive listing (the page that would link to the individual archive pages). Because the blog has been running for 15 years, there&amp;rsquo;s a whole lot, so I preferred to organize them in a table like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Nov 2018 3:06am&#34;&gt;14 Nov 2018 3:06am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I actually couldn&amp;rsquo;t find a decent Wordpress plugin that did this for me exactly, so I wrote my &lt;a href=&#34;https://github.com/roytang/wp_grid_archive/&#34;&gt;own plugin&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;For Hugo, I struggled with this a while and was close to figure out when I finally got the approach right. CHeck &lt;a href=&#34;https://roytang.net/archives&#34;&gt;my archives page&lt;/a&gt; for how it turned out. The upside is I got to become a bit familiar with &lt;a href=&#34;https://golang.org/,&#34;&gt;https://golang.org/,&lt;/a&gt; particularly the way content is parsed and processed in Hugo templates.&lt;/p&gt;
+&lt;h3 id=&#34;custom-shortcodes&#34;&gt;Custom shortcodes&lt;/h3&gt;
+&lt;p&gt;I had some custom-formatted code in Wordpress that wasn&amp;rsquo;t exported properly by the plugin. This required I create some new shortcodes for Hugo and replace the corresponding calls.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spoilers. I had only recently added this WP plugin, and only one post was using it so this was straightforward. I created the spoiler shortcode and added some simple jQuery-backed code to toggle the spoiler content. I would have preferred doing this with vanilla JS so as to avoid the jQuery dependency, but I decided to put off learning how to do that for another day.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roytang.net/categories/magic-the-gathering&#34;&gt;MTG&lt;/a&gt; Decklists and card links. Individual card links wasn&amp;rsquo;t an issue - I just generated an anchor as needed, and had to clean up some of the pages that used it. The decklist part was more challenging, as it involved a lot of text parsing. I managed to get it working to a point where the decklists were formatted correctly, but individual cards weren&amp;rsquo;t linked, before deciding to give up. The main issue is I haven&amp;rsquo;t figured out how to parse each line to split the card count and the card name, if the card count exists, i.e. &amp;ldquo;3 Lightning Bolt&amp;rdquo;. I considered just adding JavaScript to format the contents post-load, but the current behavior will do for now. Maybe I&amp;rsquo;ll even revisit the Hugo parsing issue later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;redirects&#34;&gt;Redirects&lt;/h3&gt;
+&lt;p&gt;I wanted to minimize changes in the URLs of older content, so the permalinks for the old posts were kept in place. Another issue was the RSS feed, generated at &lt;code&gt;/index.xml&lt;/code&gt; by Hugo, which I wanted at &lt;code&gt;/feed/&lt;/code&gt; so that feed readers don&amp;rsquo;t need to be updated. A simple redirect in .htaccess was enough to get this done. I&amp;rsquo;m not much good at regexes, so I had to reference another &lt;a href=&#34;https://blog.philipphauer.de/moving-wordpress-hugo/&#34;&gt;blog post&lt;/a&gt; for this one. The RSS feeds for categories/tags has changed, I think that&amp;rsquo;s fine.&lt;/p&gt;
+&lt;h3 id=&#34;automatic-deployment&#34;&gt;Automatic Deployment&lt;/h3&gt;
+&lt;p&gt;I referenced another &lt;a href=&#34;https://gomakethings.com/automating-the-deployment-of-your-static-site-with-hugo-and-github/&#34;&gt;blog post&lt;/a&gt; for setting up automatic deployment. The main difference was my host was Webfaction while his was Digital Ocean, which did cause me a bit of trouble when I was trying to set up a Github webhook to automatically deploy on every push. It turns out Webfaction doesn&amp;rsquo;t allow me to set an env variable in .htaccess to be read by the PHP script (as was in the blog post linked above). It took me a while to figure out this was the issue, so I just gave up on the Github webhook for now and just set a cron job to periodically pull and redeploy the site. I needed the cron job anyway, if I wanted to support future publishing and possibly some form of queueing later on.&lt;/p&gt;
+&lt;h3 id=&#34;comments&#34;&gt;Comments&lt;/h3&gt;
+&lt;p&gt;Legacy comments from WP are imported directly into the markdown of each page. Future comments are now handled using Disqus. I already had a Disqus account before, I forgot why I stopped using it. That being said, outsourcing the comments makes a lot of sense.&lt;/p&gt;
+&lt;h3 id=&#34;limitations&#34;&gt;Limitations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;we lose the site search for now. There are some workarounds, including Google SiteSearch (I believe it has ads) or building a JSON index and searching on the client-side (seems impractical given the number of posts). I believe I&amp;rsquo;m the only one using the site search anyway, I&amp;rsquo;ll revisit this at another time.&lt;/li&gt;
+&lt;li&gt;the markdown engine allows raw HTML in the content, but if you have any line breaks in between, your structure breaks, so that required some cleanup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;theme&#34;&gt;Theme&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m not much of a CSS/site design guy, I&amp;rsquo;m more a &amp;ldquo;find an existing theme and tweak it to your liking&amp;rdquo; guy, so I browsed Hugo&amp;rsquo;s available themes for a while and settled on &lt;a href=&#34;https://github.com/enten/hyde-y&#34;&gt;Hyde-Y&lt;/a&gt;, which I proceeded to modify a bit, adding a picture to the sidebar and so on. It&amp;rsquo;s simple and clean and straightforward, nothing too fancy. Maybe I&amp;rsquo;ll revisit the theme later.&lt;/p&gt;
+&lt;p&gt;For posterity&amp;rsquo;s sake, a screenshot of the new layout/theme:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#860b271077bc60f75bc0ebe8bec296c9-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;860b271077bc60f75bc0ebe8bec296c9-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Nov 2018 3:06am&#34;&gt;14 Nov 2018 3:06am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;At the end of it, it turned out a bit more effort than I expected. I&amp;rsquo;ll probably be cleaning up the exported older posts every so often because I&amp;rsquo;m OC that well. The theming/templating turned out to be a bit more complicated than I expected, but I think it was easier to manage than Wordpress. The last time I tried to use a custom blog engine, I got tired of maintaining and upating it so I switched back to Wordpress, hopefully that doesn&amp;rsquo;t happen here. Not having to maintain a web interface is a pretty good indicator.&lt;/p&gt;
+&lt;p&gt;Despite the effort, the great thing is that I did learn a few things, so at the minimum it&amp;rsquo;s already a win:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a bit of GoLang&lt;/li&gt;
+&lt;li&gt;how to create Github Webhooks&lt;/li&gt;
+&lt;li&gt;more .htaccess stuff&lt;/li&gt;
+&lt;li&gt;usage of pathlib.Path in Python3 (no more os.glob for me!)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Let&#39;s Encrypt!
+</title>
+            <link>https://roytang.net/2018/03/lets-encrypt/</link>
+            <pubDate>Thu, 01 Mar 2018 01:00:07 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/03/lets-encrypt/</guid>
+            <description>
+            
+            &lt;figure style=&#34;width: 559px&#34; class=&#34;wp-caption alignnone&#34;&gt;&lt;img src=&#34;https://i.redd.it/hfd9ok7bstf01.png&#34; alt=&#34;&#34; width=&#34;559&#34; height=&#34;235&#34; /&gt;&lt;figcaption class=&#34;wp-caption-text&#34;&gt;(Image credit: r/ProgrammerHumor)&lt;/figcaption&gt;&lt;/figure&gt; 
+&lt;p&gt;I&amp;rsquo;ve been meaning to add SSL to this blog ever since I first heard of &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; last year. Unfortunately, support on my otherwise awesome webhost was not yet first-class and seemed complicated at the time, so I kept putting it off. But recently I was testing something unrelated and found out that I &lt;a href=&#34;https://github.com/requests/requests-oauthlib/issues/287&#34;&gt;needed to have SSL on my server in order for OAuth2 to work&lt;/a&gt;, so I grudgingly got to it.&lt;/p&gt;
+&lt;p&gt;Luckily I found out about a handy utility written in Ruby that does most of the stuff for me: &lt;a href=&#34;https://github.com/will-in-wi/letsencrypt-webfaction&#34;&gt;letsencrypt-webfaction&lt;/a&gt;. It was surprisingly easy to setup, with only a &lt;a href=&#34;https://github.com/will-in-wi/letsencrypt-webfaction/issues/116#issuecomment-368930373&#34;&gt;single false start because I had a silly typo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So now this site has SSL! Hooray!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Test Post
+</title>
+            <link>https://roytang.net/2016/05/test-post/</link>
+            <pubDate>Wed, 18 May 2016 04:39:04 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/05/test-post/</guid>
+            <description>
+            
+            &lt;p&gt;&amp;ldquo;The price for being the best is always having to be the best&amp;rdquo;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Posting from my PSP
+</title>
+            <link>https://roytang.net/2009/01/posting-from-my-psp/</link>
+            <pubDate>Wed, 21 Jan 2009 12:12:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/01/posting-from-my-psp/</guid>
+            <description>
+            
+            &lt;p&gt;Django admin works! I would write more but this input method is tedious.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Speed Reading
+</title>
+            <link>https://roytang.net/2008/12/speed-reading/</link>
+            <pubDate>Mon, 29 Dec 2008 08:51:06 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/speed-reading/</guid>
+            <description>
+            
+            &lt;p&gt;I came across a website that provided an &lt;a href=&#34;http://www.readingsoft.com/&#34;&gt;online Speed Reading Test&lt;/a&gt;. Most people I know generally know me to be a fast reader so I decided to take the test.&lt;/p&gt;
+&lt;p&gt;My results: 472 words per minute screen reading, at 82% comprehension, which the website says classifies me as a &amp;ldquo;good reader&amp;rdquo;. Apparently the best readers can read at 700wpm at 85% comprehension, sounds tough =/&lt;/p&gt;
+&lt;p&gt;Try the quiz and post your results here.&lt;/p&gt;
+&lt;div class=&#34;flockcredit&#34; style=&#34;text-align: right; color: #ccc; font-size: x-small;&#34;&gt;
+  Blogged with the &lt;a style=&#34;color: #999; font-weight: bold;&#34; title=&#34;Flock Browser&#34; href=&#34;http://www.flock.com/blogged-with-flock&#34; target=&#34;_new&#34;&gt;Flock Browser&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- technorati tags begin --&gt;
+&lt;p style=&#34;font-size: 10px; text-align: right;&#34;&gt;
+  Tags: &lt;a href=&#34;http://technorati.com/tag/internet-quiz&#34; rel=&#34;tag&#34;&gt;internet-quiz&lt;/a&gt;
+&lt;/p&gt;
+&lt;!-- technorati tags end --&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>roytang.net site update
+</title>
+            <link>https://roytang.net/2008/12/roytang-net-site-update/</link>
+            <pubDate>Fri, 26 Dec 2008 16:26:24 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/roytang-net-site-update/</guid>
+            <description>
+            
+            &lt;p&gt;Previously I hosted two separate WordPress blogs on roytang.net, the old one I&amp;rsquo;ve had since forever, and a separate one that discussed only magic related articles. It was a bit bothersome to have two WordPress installs though. Now that I&amp;rsquo;ve migrated to a Django backend, I decided to merge the blogs back into one.&lt;/p&gt;
+&lt;p&gt;The blog now has the following sections/categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://roytang.net/magic/&#34;&gt;Magic the Gathering&lt;/a&gt; &amp;ndash; for posts related to MTG&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roytang.net/dev/&#34;&gt;Software Development&lt;/a&gt; &amp;ndash; for posts related to Software Development (hopefully I can write more about this topic)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roytang.net/games/&#34;&gt;Gaming&lt;/a&gt; &amp;ndash; originally I didn&amp;rsquo;t have this category, but looking at previous contents of the blog and my delicious links, this is one of the things I write about the most, so I made it a separate category&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roytang.net/blog/&#34;&gt;Weblog&lt;/a&gt; &amp;ndash; everything else I can think of&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each category has a separate RSS feed you can subscribe to &amp;ndash; so that if you&amp;rsquo;re only interested in MTG posts you can subscribe to the MTG category feed, etc. There&amp;rsquo;s also a master feed that syndicates all the posts in all categories, available at the top of the page.&lt;/p&gt;
+&lt;div class=&#34;flockcredit&#34; style=&#34;text-align: right; color: #ccc; font-size: x-small;&#34;&gt;
+  Blogged with the &lt;a style=&#34;color: #999; font-weight: bold;&#34; title=&#34;Flock Browser&#34; href=&#34;http://www.flock.com/blogged-with-flock&#34; target=&#34;_new&#34;&gt;Flock Browser&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- technorati tags begin --&gt;
+&lt;p style=&#34;font-size: 10px; text-align: right;&#34;&gt;
+  Tags: &lt;a href=&#34;http://technorati.com/tag/meta&#34; rel=&#34;tag&#34;&gt;meta&lt;/a&gt;
+&lt;/p&gt;
+&lt;!-- technorati tags end --&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Transition to 2009
+</title>
+            <link>https://roytang.net/2008/12/transition-to-2009/</link>
+            <pubDate>Thu, 25 Dec 2008 15:29:14 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/transition-to-2009/</guid>
+            <description>
+            
+            &lt;p&gt;Well, it&amp;rsquo;s a bit early. But if you&amp;rsquo;re reading this then I&amp;rsquo;ve successfully migrated the roytang.net website to a new host. See you after the jump!&lt;/p&gt;
+&lt;p&gt;Merry Christmas!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Every Wednesday is Hotdog Day!
+</title>
+            <link>https://roytang.net/2008/10/every-wednesday-is-hotdog-day/</link>
+            <pubDate>Wed, 15 Oct 2008 05:05:14 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/every-wednesday-is-hotdog-day/</guid>
+            <description>
+            
+            &lt;p&gt;Actually, I&amp;rsquo;m writing this post to test comments on the blog, which someone has reported to be currently borken. See ya in the comments.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>I Claim My Name
+</title>
+            <link>https://roytang.net/2008/09/i-claim-my-name/</link>
+            <pubDate>Fri, 26 Sep 2008 07:07:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/09/i-claim-my-name/</guid>
+            <description>
+            
+            &lt;p&gt;After trying out &lt;a href=&#34;http://usernamecheck.com&#34;&gt;usernamecheck.com&lt;/a&gt;, I decided to try claiming my username &amp;ldquo;roytang&amp;rdquo; at various websites. Here&amp;rsquo;s a list of various websites where I have this username.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://friendfeed.com/roytang&#34;&gt;http://friendfeed.com/roytang&lt;/a&gt;&amp;ndash; This one actually seems useful.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/roytang&#34;&gt;http://twitter.com/roytang&lt;/a&gt;&amp;ndash; Okay, I admit it. I&amp;rsquo;ve actually had this for a few weeks now.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pownce.com/roytang/&#34;&gt;http://pownce.com/roytang/&lt;/a&gt;&amp;ndash; I&amp;rsquo;m not yet too clear on what it&amp;rsquo;s used for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://roytang.posterous.com/&#34;&gt;http://roytang.posterous.com/&lt;/a&gt;&amp;ndash; would be useful if I didn&amp;rsquo;t already have a blog&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://roytang.livejournal.com/&#34;&gt;http://roytang.livejournal.com/&lt;/a&gt;&amp;ndash; now I can be emo!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://roytang.pbwiki.com/&#34;&gt;http://roytang.pbwiki.com/&lt;/a&gt;&amp;ndash; I created this a long time ago. Recently I had to use pbwiki again so I revived the account.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.last.fm/user/roytang&#34;&gt;http://www.last.fm/user/roytang&lt;/a&gt;&amp;ndash; music I listen to.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://roytang.wordpress.com/&#34;&gt;http://roytang.wordpress.com/&lt;/a&gt;&amp;ndash; As mentioned, I only got this account so I could activate Akismet&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s probably more. Sometimes when I see a random website I try out my username to see if I&amp;rsquo;ve registered before and this is successful more often than I expect.&lt;/p&gt;
+&lt;p&gt;Some &amp;ldquo;roytang&amp;quot;s on the web that are not me:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://roytang.blogspot.com&#34;&gt;http://roytang.blogspot.com&lt;/a&gt; &amp;ndash; _obviously _not me&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.myspace.com/roytang&#34;&gt;http://www.myspace.com/roytang&lt;/a&gt; &amp;ndash; some guy from Singapore&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Blast From The Past -- 2004 Desktop
+</title>
+            <link>https://roytang.net/2008/09/blast-from-the-past-2004-desktop/</link>
+            <pubDate>Mon, 08 Sep 2008 00:00:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/09/blast-from-the-past-2004-desktop/</guid>
+            <description>
+            
+            &lt;p&gt;I was going through some old files today, I found this screenshot of my desktop from 2004:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#4d66476b8a20fb5fb260ca0a5f20f149-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/desktop_hu85db8eb633842f5be02d46087c8a8292_116248_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;4d66476b8a20fb5fb260ca0a5f20f149-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/desktop.jpg&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;8 Sep 2008 12:00am&#34;&gt;8 Sep 2008 12:00am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Actually, I still like that wallpaper. It&amp;rsquo;s well-drawn. It&amp;rsquo;s from&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.rpgamer.com/mc/012302.html&#34;&gt;RPGamer Theme Central.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Items I had in the quick-launch toolbar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mIRC (for downloading comics)&lt;/li&gt;
+&lt;li&gt;Thunderbird&lt;/li&gt;
+&lt;li&gt;IE&lt;/li&gt;
+&lt;li&gt;IE again (?!)&lt;/li&gt;
+&lt;li&gt;I believe this is EditPad, a notepad replacement&lt;/li&gt;
+&lt;li&gt;Chami.com HTML-Kit&lt;/li&gt;
+&lt;li&gt;WinAmp&lt;/li&gt;
+&lt;li&gt;Windows Media Player&lt;/li&gt;
+&lt;li&gt;DivX Player&lt;/li&gt;
+&lt;li&gt;No idea&lt;/li&gt;
+&lt;li&gt;Shortcut to some folder&lt;/li&gt;
+&lt;li&gt;Kazaa (pirate!)&lt;/li&gt;
+&lt;li&gt;No idea&lt;/li&gt;
+&lt;li&gt;2xExplorer (Windows explorer alternative)&lt;/li&gt;
+&lt;li&gt;Crimson Editor (so far there are at least 3 different text editors)&lt;/li&gt;
+&lt;li&gt;Show Desktop&lt;/li&gt;
+&lt;li&gt;Terminal&lt;/li&gt;
+&lt;li&gt;Outlook (I never used this)&lt;/li&gt;
+&lt;li&gt;Excel&lt;/li&gt;
+&lt;li&gt;No idea&lt;/li&gt;
+&lt;li&gt;Thunderbird again&amp;hellip; apparently I never cleaned up this taskbar.&lt;/li&gt;
+&lt;li&gt;Visualboy Advance&lt;/li&gt;
+&lt;li&gt;Firefox&lt;/li&gt;
+&lt;li&gt;Quicktime (3 different media players too!)&lt;/li&gt;
+&lt;li&gt;Warcraft III&lt;/li&gt;
+&lt;li&gt;Yahoo Messenger&lt;/li&gt;
+&lt;li&gt;No idea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For reference, here&amp;rsquo;s today&amp;rsquo;s desktop, same wallpaper:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#8fd4b3af53890ac3a3bc40b0c6ee51f6-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/screenshot001_hu1f7cce91e8dbbf97efbd4bff3fc70687_820739_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;8fd4b3af53890ac3a3bc40b0c6ee51f6-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/screenshot001.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;8 Sep 2008 12:00am&#34;&gt;8 Sep 2008 12:00am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/desktop_hu85db8eb633842f5be02d46087c8a8292_116248_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2008/09/blast-from-the-past-2004-desktop/screenshot001_hu1f7cce91e8dbbf97efbd4bff3fc70687_820739_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New WordPress Theme -- Thematic
+</title>
+            <link>https://roytang.net/2008/07/new-wordpress-theme-thematic/</link>
+            <pubDate>Sun, 06 Jul 2008 04:55:46 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/07/new-wordpress-theme-thematic/</guid>
+            <description>
+            
+            &lt;p&gt;Changed to &lt;a href=&#34;http://themeshaper.com/thematic/&#34;&gt;Thematic &lt;/a&gt;&lt;/p&gt;
+&lt;!-- [if gte mso 9]&gt;&lt;xml&gt; &lt;w:LatentStyles DefLockedState=&#34;false&#34; DefUnhideWhenUsed=&#34;true&#34; DefSemiHidden=&#34;true&#34; DefQFormat=&#34;false&#34; DefPriority=&#34;99&#34; LatentStyleCount=&#34;267&#34;&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;0&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Normal&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;heading 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 7&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 8&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 9&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 7&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 8&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 9&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;35&#34; QFormat=&#34;true&#34; Name=&#34;caption&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;10&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Title&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;1&#34; Name=&#34;Default Paragraph Font&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;11&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtitle&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;22&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Strong&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;20&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;59&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Table Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Placeholder Text&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;1&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;No Spacing&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Revision&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;34&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;List Paragraph&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;29&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Quote&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;30&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Quote&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;19&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtle Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;21&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;31&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtle Reference&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;32&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Reference&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;33&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Book Title&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;37&#34; Name=&#34;Bibliography&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; QFormat=&#34;true&#34; Name=&#34;TOC Heading&#34; /&gt; &lt;/w:LatentStyles&gt; &lt;/xml&gt;&lt;![endif]--&gt;
+&lt;!-- [if gte mso 10]&gt;
+
+
+
+
+
+ &lt;![endif]--&gt;
+&lt;p class=&#34;MsoNormal&#34;&gt;
+  &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: yung current na wordpress theme ko parang ang crowded&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: baka it&#39;s the font...  or less ugn spacing&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: papagalitan mo ko pag pinalitan ko e&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: haha&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: haha hindi naman a&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: sabihin ko lang na you&#39;re fickle like a girl&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: haha&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: tsk!&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: it&#39;s nice to be female.. if magpaka-fickle ako, i&#39;ve an excuse&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: if magsungit ako, i&#39;ve an excuse din&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: if i get irrational, meron ulit excuse&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: and you can make sexist remarks freely!&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: yup&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: cool nuh&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: and pag ako sabihan ng sexist remarks...  i can freely take offense din bigla&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: women :p
+&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;flockcredit&#34; style=&#34;text-align: right; color: #ccc; font-size: x-small;&#34;&gt;
+  Blogged with the&lt;br /&gt; &lt;a style=&#34;color: #999; font-weight: bold;&#34; title=&#34;Flock Browser&#34; href=&#34;http://www.flock.com/blogged-with-flock&#34; target=&#34;_new&#34;&gt;&lt;br /&gt; Flock Browser&lt;br /&gt; &lt;/a&gt;
+&lt;/div&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Posting from an iGoogle Gadget
+</title>
+            <link>https://roytang.net/2008/06/posting-from-an-igoogle-gadget/</link>
+            <pubDate>Mon, 02 Jun 2008 18:03:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/06/posting-from-an-igoogle-gadget/</guid>
+            <description>
+            
+            &lt;p&gt;I added an iGoogle Gadget that allows me to post from iGoogle. Neat huh?&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m not sure if it&amp;rsquo;s okay to trust the gadget with my blog account details&amp;hellip;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Bear With Me
+</title>
+            <link>https://roytang.net/2008/05/bear-with-me/</link>
+            <pubDate>Sat, 24 May 2008 16:58:27 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/05/bear-with-me/</guid>
+            <description>
+            
+            &lt;p&gt;Someday I will find a WordPress theme that I could bear with for more than 2-4 weeks.&lt;/p&gt;
+&lt;p&gt;Or I will make one.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Anti Comment Spam
+</title>
+            <link>https://roytang.net/2008/05/anti-comment-spam/</link>
+            <pubDate>Tue, 20 May 2008 04:49:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/05/anti-comment-spam/</guid>
+            <description>
+            
+            &lt;p&gt;In an attempt to reduce comment spam, I&amp;rsquo;ve renamed the comments submission page. This post is to test with comments.&lt;/p&gt;
+&lt;p&gt;[Edit 21-May 10PM] That didn&amp;rsquo;t work at all! Need to look for a good anti-spam plugin.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>I&#39;m Lawful Good
+</title>
+            <link>https://roytang.net/2008/02/i39m-lawful-good/</link>
+            <pubDate>Mon, 25 Feb 2008 05:39:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/02/i39m-lawful-good/</guid>
+            <description>
+            
+            &lt;p&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;color: #cc0000; font-family: Arial, Helvetica, sans-serif; font-size: medium;&#34;&gt;&lt;br /&gt; &lt;strong&gt;&lt;br /&gt; Your Character’s Alignment&lt;br /&gt; &lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif; font-size: small;&#34;&gt;&lt;br /&gt; Based on your answers to the quiz, your character’s most likely alignment is &lt;strong&gt;Lawful Good&lt;br /&gt; &lt;/strong&gt;&lt;br /&gt; .&lt;/span&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif; font-size: small;&#34;&gt;&lt;strong&gt;Lawful Good&lt;br /&gt; &lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif; font-size: small;&#34;&gt;A lawful good character acts as a good person is expected or required to act. She combines a commitment to oppose evil with the discipline to fight relentlessly. She tells the truth, keeps her word, helps those in need, and speaks out against injustice. A lawful good character hates to see the guilty go unpunished. Lawful good is the best alignment you can be because it combines honor and compassion.&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;right&#34;&gt;
+  &lt;span style=&#34;font-family: Arial, Helvetica, sans-serif; font-size: small;&#34;&gt;&lt;br /&gt; &lt;em&gt;&lt;br /&gt; --excerpted from the&lt;br /&gt; &lt;/em&gt;&lt;br /&gt; Player’s Handbook&lt;br /&gt; &lt;em&gt;&lt;br /&gt; , Chapter 6&lt;br /&gt; &lt;/em&gt;&lt;br /&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p align=&#34;left&#34;&gt;
+  I&#39;ve taken online alignment quizzes several times over the years. I&#39;ve &lt;strong&gt;always &lt;/strong&gt;turned out Lawful Good. I&#39;m just not as Chaotic as I think I am.
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.wizards.com/default.asp?x=dnd/dnd/20001222b&#34;&gt;The D&amp;amp;D Online Alignment Test&lt;/a&gt;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>roytang on magic
+</title>
+            <link>https://roytang.net/2007/09/roytang-on-magic/</link>
+            <pubDate>Sat, 22 Sep 2007 06:55:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2007/09/roytang-on-magic/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m planning to write more about Magic, so I created a &lt;a href=&#34;http://roytang.net/magic&#34;&gt;separate space &lt;/a&gt;for that. All MtG-related posts are moved there.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>What Kind of Enterpreneur Am I?
+</title>
+            <link>https://roytang.net/2007/02/what-kind-of-enterpreneur-am-i/</link>
+            <pubDate>Wed, 28 Feb 2007 18:06:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2007/02/what-kind-of-enterpreneur-am-i/</guid>
+            <description>
+            
+            &lt;p&gt;Your Entrepreneur Type:&lt;/p&gt;
+&lt;p&gt;The Geek&lt;/p&gt;
+&lt;p&gt;You are smart and insightful and you enjoy solving interesting problems and technology for their own sakes.&lt;/p&gt;
+&lt;p&gt;Entrepreneurial strengths:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;academic and / or technical brilliance&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;comfortable with the abstract&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;obsession with new technology&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entrepreneurial weaknesses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;expertise tends to be quite narrow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;difficulty with people&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;personality may not be forceful enough to lead&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;problems you may want to solve may not have a significant market&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From &lt;a href=&#34;http://idiotstartup.com/what-entrepreneur-are-you-test&#34;&gt;Idiot Startup&lt;/a&gt;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Modified MistyLook
+</title>
+            <link>https://roytang.net/2007/01/modified-mistylook/</link>
+            <pubDate>Mon, 15 Jan 2007 22:45:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2007/01/modified-mistylook/</guid>
+            <description>
+            
+            &lt;p&gt;The original is &lt;a href=&#34;http://wpthemes.info/misty-look/&#34;&gt;here&lt;/a&gt;. Yeah, I didn&amp;rsquo;t like the header image so I removed it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m tired of moving themes around, so I&amp;rsquo;ll settle on this for a while. Simple and clean. I&amp;rsquo;ll just fuss around with the plugins later.&lt;/p&gt;
+&lt;p&gt;And yeah, I&amp;rsquo;m also changing the categories around. There should be a plugin to search posts and assign multiple posts to new categories at the same time.&lt;/p&gt;
+&lt;p&gt;My vacation time is almost up&amp;hellip; I still have too many things to watch&amp;hellip;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Ok Go!
+</title>
+            <link>https://roytang.net/2007/01/ok-go/</link>
+            <pubDate>Sat, 13 Jan 2007 22:08:30 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2007/01/ok-go/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m testing the &lt;a href=&#34;http://www.rossgerbasi.com/2006/01/21/extreme-video-plugin-20/#more-151&#34;&gt;Extreme Video Plugin&lt;/a&gt; for WordPress, and I thought, what better way to do so than to further propagate the extreme music videos of &lt;a href=&#34;http://okgo.net&#34;&gt;Ok Go&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RbdbVhBGETQ&#34;&gt;https://www.youtube.com/watch?v=RbdbVhBGETQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some of the new guys at the office performed the above dance as their Christmas initiation&amp;hellip; er, presentation, and let me tell you, the audience was on its&amp;rsquo; feet. Ok Go is an American band that is known for outrageous live performances like the above. The above video is their own song, &amp;ldquo;A Million Ways.&amp;rdquo; They have another video for another song, &lt;a href=&#34;http://www.youtube.com/watch?v=NINJQ5LRh-0&#34;&gt;involving treadmills&lt;/a&gt;. It&amp;rsquo;s said that they did that treadmill thing &lt;em&gt;in one take&lt;/em&gt;. That sounds too awesome to be true&amp;hellip;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>A New Look Again?
+</title>
+            <link>https://roytang.net/2007/01/a-new-look-again/</link>
+            <pubDate>Wed, 03 Jan 2007 07:52:24 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2007/01/a-new-look-again/</guid>
+            <description>
+            
+            &lt;p&gt;Yeah, I still have quite a bit of vacation to go. Might as well spruce up this website a bit. Move things around here and there, you know the drill.&lt;/p&gt;
+&lt;p&gt;A work in progress of course, as always. I hope I don&amp;rsquo;t screw things up too badly. Better backup WordPress&amp;hellip;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Failed to Post Every Day
+</title>
+            <link>https://roytang.net/2006/10/failed-to-post-every-day/</link>
+            <pubDate>Tue, 31 Oct 2006 17:40:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/10/failed-to-post-every-day/</guid>
+            <description>
+            
+            &lt;p&gt;As far as I can tell, I only hit 21 posts in October. Well, that&amp;rsquo;s not too bad.&lt;/p&gt;
+&lt;p&gt;This month: NaNoWriMo!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>I Will Blog Every Day
+</title>
+            <link>https://roytang.net/2006/10/i-will-blog-every-day/</link>
+            <pubDate>Sun, 01 Oct 2006 08:28:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/10/i-will-blog-every-day/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m bored, let&amp;rsquo;s do this.&lt;/p&gt;
+&lt;p&gt;I will blog every day of October.&lt;/p&gt;
+&lt;p&gt;And no posting inane stuff either. Every post will have meaning.&lt;/p&gt;
+&lt;p&gt;Or at least as much meaning as my previous posts have had.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Personal DNA -- Faithful Inventor
+</title>
+            <link>https://roytang.net/2006/03/personal-dna-faithful-inventor/</link>
+            <pubDate>Wed, 08 Mar 2006 07:09:27 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/03/personal-dna-faithful-inventor/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;http://www.personaldna.com/report.php?k=wvKjwjuOqBuIBXU-GH-DADBA-bf98&amp;amp;u=13b776555b2e&#34;&gt;Full description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit 2018: The old link was broken because the site in question changed their format. Here&amp;rsquo;s a &lt;a href=&#34;https://www.pdna.com/report/wvKjwjuOqBuIBXU-GH-DADBA-bf98&#34;&gt;fixed link&lt;/a&gt;.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Comment Spam!
+</title>
+            <link>https://roytang.net/2006/02/comment-spam/</link>
+            <pubDate>Wed, 22 Feb 2006 05:42:38 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/02/comment-spam/</guid>
+            <description>
+            
+            &lt;p&gt;I am honored, I am now worthy of being comment-spammed.&lt;/p&gt;
+&lt;p&gt;Made me sign up for a &lt;a href=&#34;http://roytang.wordpress.com/&#34;&gt;WordPress.com account&lt;/a&gt; so I could activate Akismet.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Welcome to roytang.net
+</title>
+            <link>https://roytang.net/2006/02/welcome-to-roytang-net/</link>
+            <pubDate>Sat, 04 Feb 2006 18:45:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/02/welcome-to-roytang-net/</guid>
+            <description>
+            
+            &lt;p&gt;Yeah, so I was bored and went ahead and got a domain name. ^_^I&amp;rsquo;m wondering if I&amp;rsquo;ve wasted money, but webhosting is really cheap nowadays anyway. Thanks to the nice folks at &lt;a href=&#34;http://pinoywebhosting.com&#34; title=&#34;pinoywebhosting.com&#34;&gt;pinoywebhosting.com&lt;/a&gt; for their quick service!&lt;/p&gt;
+&lt;p&gt;Anyway, I hope you&amp;rsquo;ll pardon me if some parts of the site aren&amp;rsquo;t fully up-and-running (the about page is still the wordpress template for one), I haven&amp;rsquo;t had much time to play around with wordpress yet.&lt;/p&gt;
+&lt;p&gt;Farewell, Blogger. You have served me well, but it&amp;rsquo;s time to try something new.&lt;/p&gt;
+&lt;p&gt;Done so far:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Imported posts and comments from Blogger&lt;/li&gt;
+&lt;li&gt;Go through every single post and assign categories (that took a while =p)&lt;/li&gt;
+&lt;li&gt;Updated many links / images in the posts to point to this server (There should be no more broken links&amp;hellip; I hope)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m still gonna play around with WordPress, PHP and MySQL a bit later, see if I can get something nice going.&lt;/p&gt;
+&lt;p&gt;Cheers ^_^&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Moving Things Around A Bit
+</title>
+            <link>https://roytang.net/2005/12/moving-things-around-a-bit/</link>
+            <pubDate>Sun, 11 Dec 2005 16:08:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/12/moving-things-around-a-bit/</guid>
+            <description>
+            
+            &lt;p&gt;I was getting a bit bored with the place, so I spruced it up a bit, switched some colors, moved stuff around. You know, just to pretend something&amp;rsquo;s happening. And to showcase my sorely lacking UI design skills. :p&lt;/p&gt;
+&lt;p&gt;Screenshot captured for posterity:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://roytang.net/uploads/2005/layout20051211.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also cleaned up some of the global files that were being accessed from fateback, since I will eventually drop that host completely. Right now, the external files used by this site are hsoted on my geocities account (which I should also organize/clean up in some way.)&lt;/p&gt;
+&lt;p&gt;For the curious, this site is maintained in several layers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the blogger template &amp;ndash; ideally, I shouldn&amp;rsquo;t have to change this too often&lt;/li&gt;
+&lt;li&gt;an external javascript file &amp;ndash; ideally, if I want to do small changes to the site, I&amp;rsquo;ll just modify this and use DHTML to do it&lt;/li&gt;
+&lt;li&gt;an external stylesheet &amp;ndash; ideally, if I want to make changes to layout, I just adjust this one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A while back I was also wondering if it was viable to use XSL transformations for a blogger blog&amp;hellip; but I&amp;rsquo;m too lazy to try to figure it out now.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Webhosting?
+</title>
+            <link>https://roytang.net/2005/08/webhosting/</link>
+            <pubDate>Sun, 14 Aug 2005 15:47:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/08/webhosting/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m thinking of getting some webhosting. Not that I&amp;rsquo;m unsatisfied with my free webhosting and Blogger mind you, but sometimes I just get the urge to do some server-side chicanery.&lt;/p&gt;
+&lt;p&gt;Mandatory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP/mySQL&lt;/li&gt;
+&lt;li&gt;Good service, tech support, fast response time&lt;/li&gt;
+&lt;li&gt;No-hassle payments (which means I prefer local, I don&amp;rsquo;t want to have to pay through credit cards or anything)&lt;/li&gt;
+&lt;li&gt;Of course, a good deal on space, bandwidth, reliability, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Optional:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tomcat/JSP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Not ploghost though. :(&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Free WordPress Hosting
+</title>
+            <link>https://roytang.net/2005/04/free-wordpress-hosting/</link>
+            <pubDate>Mon, 11 Apr 2005 14:31:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/04/free-wordpress-hosting/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;http://www.blogsome.com/&#34;&gt;Wordpress host &amp;ndash; free blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve wanted to try WordPress for a while now, but not having easy access to a PHP-enabled server of my own, I haven&amp;rsquo;t had the chance.&lt;/p&gt;
+&lt;p&gt;Blogsome is a new, free service that provides WordPress for blogging. I signed up, and roy.blogsome.com was still available (nothing there, don&amp;rsquo;t bother looking)&lt;/p&gt;
+&lt;p&gt;Am I going to leave blogger? I don&amp;rsquo;t know, really, I&amp;rsquo;m already pretty comfortable with it already, and moving to WordPress means learning a while new templating language (I know it would take all of an hour to get it down, but still&amp;hellip; inertia).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m definitely not moving to Blogsome right now though, as there is currently no way to use WordPress&amp;rsquo; import from Blogger feature with Blogsome since they do not provide FTP uploads for you. My other issue is that since everything would be hosted on Blogsome servers, there&amp;rsquo;s a lot less control than with Blogger.&lt;/p&gt;
+&lt;p&gt;As far as I&amp;rsquo;m concerned, WordPress has only one thing which Blogger still does not have: categories. If you&amp;rsquo;re anything like me and you like to pretend to be organized, categories are a big step towards that. I have no doubt that Blogger will eventually have categories sometime in the feature, but right now they&amp;rsquo;re having trouble keeping their existing features from the hiccups.&lt;/p&gt;
+&lt;p&gt;Ah, if only I got could get some free/cheap webhosting with a significant amount of space and JSP/Tomcat support. Since I use mostly JSP/Java at work, this is best for me&amp;hellip; PHP means having to learn a whole new language, and we&amp;rsquo;ve been over that.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>In Progress, But Sleepy
+</title>
+            <link>https://roytang.net/2005/03/in-progress-but-sleepy/</link>
+            <pubDate>Fri, 25 Mar 2005 11:35:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/03/in-progress-but-sleepy/</guid>
+            <description>
+            
+            &lt;p&gt;As it may mention in the page title, I&amp;rsquo;m currently screwing around with the blogger template, so this blog may look a bit&amp;hellip; um&amp;hellip; screwy for a while.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been wanting to toy around with Javascript hacks to extend the Blogger template functionality. The first thing I did was add some Javascript that allows you to show/hide individual posts on the page. But actually, I don&amp;rsquo;t really like it, I&amp;rsquo;ll remove it later.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also wondering whether it&amp;rsquo;s possible to have a Javascript hack that allows Blogger to have categories? The Category names would have to be included in maybe the post title text or the post body text, then we&amp;rsquo;d have a Javascript parser that determines the correct categories for each post. Then we could append category names to the URL to allow viewing by category, using javascript again to parse the URL to find which categories need to be displayed.&lt;/p&gt;
+&lt;p&gt;Seems like a lot of work though. My Javascript is not as strong as I want it to be — although I have a pretty good idea of how it works, I&amp;rsquo;m no expert. So I guess working on these hacks would be good practice, but maybe the time would be better spent learning PHP and preparing to move to a paid webhost? (If wasting time is a consideration, it&amp;rsquo;s too late &amp;ndash; I&amp;rsquo;ve already spent some two hours fooling around with the current template.)&lt;/p&gt;
+&lt;p&gt;A bit sleepy. After all, it is almost 4 AM. I&amp;rsquo;ll try to fix this thing later.&lt;/p&gt;
+&lt;p&gt;On hindsight, I should&amp;rsquo;ve set up a test blog and toyed around with that instead of modifying this one directly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>The Past Comes Back to Haunt Us
+</title>
+            <link>https://roytang.net/2005/01/the-past-comes-back-to-haunt-us/</link>
+            <pubDate>Tue, 11 Jan 2005 15:45:33 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/01/the-past-comes-back-to-haunt-us/</guid>
+            <description>
+            
+            &lt;p&gt;If you&amp;rsquo;ve been paying attention to this blog (yeah, you, both of you), you&amp;rsquo;ll notice that the archives now go all the way back to January of 2002. That&amp;rsquo;s when I started the site on &lt;a href=&#34;http://topcities.com&#34;&gt;topcities &lt;/a&gt;some time back. I moved some of the &amp;ldquo;journal&amp;rdquo; posts I had from there into blogger, using a very detailed process I shall refer to as &amp;ldquo;manual copy-and-paste and editing of links&amp;rdquo;. I still had some backup copies of most of the old site around, and &lt;a href=&#34;http://www.archive.org&#34;&gt;archive.org &lt;/a&gt;was a big help. There wasn&amp;rsquo;t much editing actually, I just went through most of the links and marked those which were broken. I didn&amp;rsquo;t transfer (yet) any posts which needed additional files to exist on my own server, those are a bit more troublesome, so later. All in all, the content of the posts are presented as they are, or were, typos and all, making these archives a genuine representation of my frame of mind circa 2002.&lt;/p&gt;
+&lt;p&gt;The purpose of this exercise is of course for posterity. Putting all these posts in one place makes it easy for me to export them in some method in the future. (And even if blogger goes down for some reason, these posts are now also hosted on my fateback account, and you know there&amp;rsquo;s safety in redundancy.) So, past memories safely preserved.&lt;/p&gt;
+&lt;p&gt;After all, that&amp;rsquo;s what a journal should be about right? Something that lets you look back into the past, to see what B*S you were trying to put out back then. Online journals are roughly ten thousand times more exciting than private ones; if you&amp;rsquo;re honest enough (i.e., you don&amp;rsquo;t edit out any embarassing stuff from old posts), there&amp;rsquo;s always the tendency for something from the past to come back and bite you in the ass.&lt;/p&gt;
+&lt;p&gt;As an example, in the last post I made a comment about how I may have pissed my dentist off. It&amp;rsquo;s a funny story actually. I wanted to post, but was in too much tooth-pain to think clearly; so after the tooth-pain cleared, I decided to &lt;a href=&#34;http://roytang.net/blog/?p=93&#34;&gt;post about it&lt;/a&gt;. (Note to future self: even if you move to a different server, keep the fateback account, so these permalinks would still actually work.) About a week after that, I sent an email to my dentist, (wow, I exchange email with my dentist, I&amp;rsquo;m like, so cutting edge, for 1999) and she read the blog entry. She mailed me back saying the post &amp;ldquo;knocked her off her chair&amp;rdquo;, or something. I emailed back, saying it was just an exaggeration, hoping I didn&amp;rsquo;t piss her off. She hasn&amp;rsquo;t responded yet though (and I haven&amp;rsquo;t needed any dentist-time lately), so I conclude that there&amp;rsquo;s a distinct possibility I may actually have pissed her off. I&amp;rsquo;ll found out when I need to get this impacted molar removed, I suppose.&lt;/p&gt;
+&lt;p&gt;So, anyway, yeah. Coming back to bite you in the ass. And for this reason, I&amp;rsquo;m hesitant to let anyone at work know about this blog. (At least one person at work knows it exists, but does not know the location) My long-term memory is a bit stupid, I may have inadvertently said something here that may be bad for me professionally, I&amp;rsquo;m not really sure. And of course I have no idea how a certain someone would react to me publishing on the internet my feelings about her.&lt;/p&gt;
+&lt;p&gt;What am I saying? Am I going to be more circumspect in the future, and avoid anything that may get me in trouble? Hell, no. Although I did breifly consider taking down the &lt;a href=&#34;http://roytang.net/blog/?p=64&#34;&gt;Unrequited&lt;/a&gt; post, I&amp;rsquo;m pretty sure I should stand for what I&amp;rsquo;ve written. No matter how bad, sappy, or stupid it was, it&amp;rsquo;s my work, I should just take it for what it is. Hence bringing back the old posts.&lt;/p&gt;
+&lt;p&gt;Hmm&amp;hellip; I really only wanted to post that I was bringing back the old posts. I talk a lot.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>The Waste Lands -- Found
+</title>
+            <link>https://roytang.net/2004/11/the-waste-lands-found/</link>
+            <pubDate>Wed, 24 Nov 2004 22:23:59 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2004/11/the-waste-lands-found/</guid>
+            <description>
+            
+            &lt;p&gt;I went to the dentist yesterday (irrelevant), and at National Bookstore Shangri-la, I found a copy of &lt;em&gt;The Waste Lands&lt;/em&gt;, a day after I blogged about looking for it! They also had a copy of the fourth book &lt;em&gt;Wizard and Glass&lt;/em&gt;, but I only had enough cash for one.&lt;/p&gt;
+&lt;p&gt;On a website note, if you&amp;rsquo;ll notice, I added entries from my &lt;a href=&#34;http://del.icio.us/roytang&#34;&gt;del.icio.us account &lt;/a&gt;to the blog. It&amp;rsquo;s done using the excellent &lt;a href=&#34;http://jade.mcli.dist.maricopa.edu/feed/index.php?s=about&#34;&gt;Feed2JS tool&lt;/a&gt;. It&amp;rsquo;s cool. Check it out.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>What to do with this website?
+</title>
+            <link>https://roytang.net/2004/04/what-to-do-with-this-website/</link>
+            <pubDate>Sun, 18 Apr 2004 07:07:44 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2004/04/what-to-do-with-this-website/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m not sure yet. I obviously don&amp;rsquo;t have much time to maintain it. I&amp;rsquo;d like pretty much to have a &amp;ldquo;professional&amp;rdquo; website, with the domain name and everything, but I&amp;rsquo;m afraid it would fall into misuse as well. Arrr&amp;hellip; .I&amp;rsquo;ll figure something out.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New Beginning
+</title>
+            <link>https://roytang.net/2003/10/new-beginning/</link>
+            <pubDate>Mon, 27 Oct 2003 14:39:38 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2003/10/new-beginning/</guid>
+            <description>
+            
+            &lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;If history is to change, let it change!&lt;/p&gt;
+&lt;p&gt;If the world is to be destroyed, so be it!&lt;/p&gt;
+&lt;p&gt;If my fate is to die, I must simply laugh.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ndash; Magus, Chrono Trigger&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For as long as I have known about it, I have always liked this quote. It speaks of a certain ferocity, a certain stubbornness, a firm, unbending belief that whatever life throws at you, you will be able to not only handle it, but laugh in the face of its absurdity. This is how I would want my life to be; to be able to face any kind of adversity and address it without pause.&lt;/p&gt;
+&lt;p&gt;Enough rambling, allow me to introduce myself. My name is Roy, and this is my blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. I always thought I would find it preferable to code my own version of a blog, but time constraints have made me look for a simple, easy-to-use alternative. For now, I guess this blog becomes my main outlet to the internet. (Aside from email of course)&lt;/p&gt;
+&lt;p&gt;Hmmm&amp;hellip; maybe I&amp;rsquo;ll have more to say later. Until then, may the fates be kind to you.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>rant.07.12.2002: personal websites
+</title>
+            <link>https://roytang.net/2002/07/rant-07-12-2002-personal-websites/</link>
+            <pubDate>Fri, 12 Jul 2002 01:30:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2002/07/rant-07-12-2002-personal-websites/</guid>
+            <description>
+            
+            &lt;p&gt;I originally wasn&amp;rsquo;t going to have a rant today, but while surfing the web I thought about one of the things I like about it: personal websites.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s right, personal pages. Some people might argue that personal pages are like the dregs of the internet. And they&amp;rsquo;re probably right. Given that any random joe-on-the-street can get on Geocities and build his own website, (like &lt;a href=&#34;http://royness.vze.com&#34;&gt;royness.vze.com&lt;/a&gt; for instance) we&amp;rsquo;re certainly bound to see all sorts of stuff (and accordingly, all sorts of crap) on the internet.&lt;/p&gt;
+&lt;p&gt;See, that&amp;rsquo;s the thing: &amp;ldquo;All sorts of stuff.&amp;rdquo; It&amp;rsquo;s pretty much the same way Forrest Gump describes a box of choc&amp;rsquo;lates: You never know what you&amp;rsquo;re going to get. And occasionally, you get some good stuff. And for people like me, who are obsessed with the trivial, stuff is good. The same way that people browse through bargain bins looking for good deals, I like to browse through personal pages looking for something read-worthy (or even better, download-worthy.)&lt;/p&gt;
+&lt;p&gt;The problem with most personal pages on the ‘net however, is that they are crap. Don&amp;rsquo;t get me wrong there are a lot of good ones out there. (Try &lt;a href=&#34;http://www.toastyfrog.com&#34; target=&#34;_top&#34;&gt;Toastyfrog&lt;/a&gt; or maybe &lt;a href=&#34;http://www.seanbaby.com&#34;&gt;Seanbaby&lt;/a&gt;) But the fact is that a whole lot of websites are done by people just learning to do HTML or trying it out. Not that being a newbie is a bad thing; the bad thing is when you make a website just for the sake of having one, just so you can say you know how. Websites built in this manner typically end up the sort that&amp;rsquo;s filled with all sorts of tricks like animated GIFs, scrolling marquees or a ton of Javascript. Lots of flash but not much content really.&lt;/p&gt;
+&lt;p&gt;Here are some tips for people who want to make their own website:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Have something to offer.&lt;/strong&gt; Many people build personal sites with the attitude of &amp;ldquo;It&amp;rsquo;s my website, what do you care what I put on it, anyway!&amp;rdquo; Yeah well, if you don&amp;rsquo;t care what people think about it, why are you putting it up on the net? Leave it on your computer if that&amp;rsquo;s your attitude. Websites are put up for public consumption, so there has to be something there for people to consume. If you&amp;rsquo;re going to put up a website, make sure you have something to offer the public other than an &amp;ldquo;under construction&amp;rdquo; page. Otherwise, you&amp;rsquo;re just wasting people&amp;rsquo;s bandwidths aren&amp;rsquo;t ya? When you&amp;rsquo;re just starting out with the idea of &amp;ldquo;I want to have my own webpage&amp;rdquo;, it might be hard to think of what your webpage can offer the world. It doesn&amp;rsquo;t have to be anything big or extra popular, you can start small. I originally put this website up just to host some fanfiction. (And then I put up more and more stuff&amp;hellip; ) You can put up your writings, reviews of things you like, links to interesting places, info about yourself, announcements about events you&amp;rsquo;re involved with, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Be original.&lt;/strong&gt; This is hard to do in today&amp;rsquo;s web. Most of the things people put up on their websites can undoubtedly be found elsewhere on the web. What can you do to set yourself apart from the crowd? Use more original content, or if you&amp;rsquo;re lacking in that department, look for different ways to present your content. An example would be when I was first learning HTML, I tried to make a Rurouni Kenshin web site. At first I was going to put in info about the characters, story etc. But after looking around a bit, I saw that there were already many websites around for this popular anime series. So instead, I put up info about the fighting styles and techniques of the RK characters, something that I couldn&amp;rsquo;t find at that time. (Don&amp;rsquo;t try looking for this so-called RK site of mine, I took it down a long time ago. I still have the files and may revive it someday though.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Know what contrast is.&lt;/strong&gt; Look at &lt;a href=&#34;http://www.geocities.com/i_am_obsessive/&#34;&gt;this site&lt;/a&gt; and you&amp;rsquo;ll know what I mean.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t try to do everything at once&lt;/strong&gt; There are people who make websites with the idea that their site will be &amp;ldquo;next big thing&amp;rdquo; of the internet. It won&amp;rsquo;t, trust me. Not anytime soon at least. Although there are a lot of crap sites, there are also a lot of good sites, and the best ones have developed from small sites with a limited following to being read by millions. You, with your meager resources and staff of (probably) one can&amp;rsquo;t hope to achieve that overnight. Start small, focus on what your site can provide to your viewers right now instead of trying to be a really big thing. See that site I linked to above? The front page says &amp;ldquo;Your number one sorce for your anime needs.&amp;rdquo; Not only is that misspelled, but it&amp;rsquo;s so far from the truth.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Know how to spell and know how to write proper English (or whatever language is your choice).&lt;/strong&gt; I&amp;rsquo;ll cite the above link as an example again. How do you expect your readers to take your website seriously if you can&amp;rsquo;t even spell &amp;ldquo;sorce&amp;rdquo; properly? Go back to school first, then make a website. Additionally, you may want to leave the l33t sp33k for mIRC, unless that&amp;rsquo;s what your audience expects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Write for your audience&lt;/strong&gt; That way, they can come back later. Don&amp;rsquo;t do things like writing in l33t when your viewers will probably hate it. For a personal site, your initial audience is probably going to be mostly you, and maybe some friends and family. When you want to start attracting more people to your site, you may also consider writing for people who think like you. This are the best kind of viewers, as they will like what they see and will usually come back for more.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Know how to take criticism&lt;/strong&gt; Actually, this is advice for being on the internet in general. Remember that the internet is a public medium, and anything you offer on the internet can be criticized by anyone. A lot of stupidity on the internet comes from people not knowing how to take criticism. Study the criticism and correct your mistakes. Accordingly, I want to apologize in advance to the owner of the site I&amp;rsquo;ve been using as a bad example — I have nothing against you, yours was just the website I had open at the time of this writing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Have links.&lt;/strong&gt; Links are always good because if the rest of the website is bad, at least there&amp;rsquo;s a chance of finding something better to read. If your website could have only one thing, have links.&lt;/p&gt;
+&lt;p&gt;Dang, this turned out longer than I thought it would. I have a lot more to say on this topic, I&amp;rsquo;ll say them next week. Later!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

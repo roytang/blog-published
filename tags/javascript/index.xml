@@ -1,0 +1,1082 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>javascript on Roy Tang</title>
+      <link>https://roytang.net/tags/javascript/</link>
+      <description>Recent content in javascript on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 17 Jan 2019 05:56:56 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>I still Google the most basic things
+</title>
+            <link>https://roytang.net/2019/01/i-still-google-the-most-basic-things/</link>
+            <pubDate>Thu, 17 Jan 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/01/i-still-google-the-most-basic-things/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve been working with Javascript for more than a decade. Last week while helping another developer debug a problem, I had to Google how to check if an element exists in a Javascript array, something superbasic, that one would expect most newbies to know. I&amp;rsquo;m sure I Google some superbasic thing at least once a week. It&amp;rsquo;s not embarassing or anything, it&amp;rsquo;s a common occurrence. I&amp;rsquo;m surely not alone. Just last night a tweet about this crossed my TL:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;In C++ we don&amp;#39;t say &amp;quot;Missing asterisk&amp;quot; we say &amp;quot;error C2664: &amp;#39;void std::vector&amp;lt;block,std::allocator&amp;lt;_Ty&amp;gt;&amp;gt;::push_back(const block &amp;amp;)&amp;#39;: cannot convert argument 1 from &amp;#39;std::_Vector_iterator&amp;lt;std::_Vector_val&amp;lt;std::_Simple_types&amp;lt;block&amp;gt;&amp;gt;&amp;gt;&amp;#39; to &amp;#39;block &amp;amp;&amp;amp;&amp;#39;&amp;quot; and i think that&amp;#39;s beautiful&lt;/p&gt;&amp;mdash; mcc (@mcclure111) &lt;a href=&#34;https://twitter.com/mcclure111/status/1002648636516282368?ref_src=twsrc%5Etfw&#34;&gt;June 1, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt; 
+&lt;p&gt;People joke about how developers wouldn&amp;rsquo;t know what to do if Stackoverflow wasn&amp;rsquo;t around, but it&amp;rsquo;s a fact of modern software development that most developers will have access to a ton of easily searchable reference material available online. That&amp;rsquo;s why things like phone interviews where people ask you to explain what the &lt;code&gt;volatile&lt;/code&gt; keyword means in order to test whether you&amp;rsquo;re really a Java expert are BS. (I have a Java certification and while I&amp;rsquo;m sure I knew the answer to that at some point, if I needed it today, it would certainly come in the form of a search result.).&lt;/p&gt;
+&lt;p&gt;Software development is a difficult field, and it can sometimes be intimidating to work with more senior developers or ask them questions or show them your code. But it gets easier when you realize not everyone knows everything all the time, and that not even the most senior people know everything. And that this ability to seek out advice and yes, even stackoverflow results, is part of the skillset you need to be developing.&lt;/p&gt;
+&lt;p&gt;The nature of the field is that we are almost always encountering new situations and new problems and new challenges (well, either that or be bored doing something irrelevant). That means a lot of the time when we are working on something worthwhile, we are figuring out things as we go.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/12/47880549/</link>
+            <pubDate>Tue, 19 Dec 2017 05:31:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/12/47880549/</guid>
+            <description>
+            
+
+            &lt;p&gt;How to specify that a column in the schema should be nullable?&lt;/p&gt;
+&lt;p&gt;I tried adding a nullable attribute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var myFirstTDE = xdmp.toJSON(
+  {
+    &amp;quot;template&amp;quot;: {
+      &amp;quot;context&amp;quot;: &amp;quot;/match&amp;quot;,
+      &amp;quot;collections&amp;quot;: [&amp;quot;source1&amp;quot;],
+      &amp;quot;rows&amp;quot;: [
+        {
+          &amp;quot;schemaName&amp;quot;: &amp;quot;soccer&amp;quot;,
+          &amp;quot;viewName&amp;quot;: &amp;quot;matches&amp;quot;,
+          &amp;quot;columns&amp;quot;: [
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;id&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;long&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;id&amp;quot;,
+              &amp;quot;nullable&amp;quot;: 0
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;document&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;string&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;docUri&amp;quot;
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;date&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;date&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;match-date&amp;quot;
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;league&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;string&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;league&amp;quot;
+            }
+          ]
+        }
+      ]
+    }
+  }
+);
+
+tde.validate( 
+  [myFirstTDE]
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But this gave me a template error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;message&amp;quot;: &amp;quot;TDE-INVALIDTEMPLATENODE: Invalid extraction template node: fn:doc(&#39;&#39;)/template/array-node(&#39;rows&#39;)/object-node()/array-node(&#39;columns&#39;)/object-node()[1]/number-node(&#39;nullable&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a template defined using XQuery, adding nullable to the column works:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;column&amp;gt;
+  &amp;lt;name&amp;gt;ISSN&amp;lt;/name&amp;gt;
+  &amp;lt;scalar-type&amp;gt;string&amp;lt;/scalar-type&amp;gt;
+  &amp;lt;val&amp;gt;Journal/ISSN&amp;lt;/val&amp;gt;
+  &amp;lt;nullable&amp;gt;true&amp;lt;/nullable&amp;gt;
+&amp;lt;/column&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to do the same thing using JS/Json?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47216649/</link>
+            <pubDate>Fri, 10 Nov 2017 06:11:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47216649/</guid>
+            <description>
+            
+
+            &lt;p&gt;Basically the title. The client is complaining that when he zooms in, the text labels for the nodes are quite large. Is there a way to keep the node labels at a fixed font size even when zooming in or out?&lt;/p&gt;
+&lt;p&gt;From the nodes documentation (&lt;a href=&#34;http://visjs.org/docs/network/nodes.html),&#34;&gt;http://visjs.org/docs/network/nodes.html),&lt;/a&gt; there&amp;rsquo;s a scaling.label option, but it doesn&amp;rsquo;t seem to work. I think this is only relevant if I&amp;rsquo;m using values to scale the nodes.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/10/46579945/</link>
+            <pubDate>Thu, 05 Oct 2017 07:15:44 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/10/46579945/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out vis.js for generating graph visualization. For every edge in my graph, I have a number that describes the strength of the connection between two nodes. I&amp;rsquo;d like to render the vis.js graph such that the nodes that have stronger relationships (higher edge values) are closer together (edge length is shorter).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve set the relationship strength (an integer) as the &amp;ldquo;value&amp;rdquo; attribute for each edge, but this only seems to make the edge lines slightly thicker for higher values.&lt;/p&gt;
+&lt;p&gt;What options should I be looking at? I&amp;rsquo;m not sure if this is supposed to be a function of vis&amp;rsquo;s physics-based stabilization.&lt;/p&gt;
+&lt;p&gt;Thanks for advice!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/09/46264021/</link>
+            <pubDate>Sun, 17 Sep 2017 12:22:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/09/46264021/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an HTML page with around 10 charts generated by chart.js (so these are canvas elements). I want to be able to export the page content into a PDF file.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve tried using jsPDF&amp;rsquo;s .fromHTML function, but it doesn&amp;rsquo;t seem to support exporting the canvas contents. (Either that or I&amp;rsquo;m doing it wrong). I just did something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    $(&amp;quot;.test&amp;quot;).click(function() {
+  var doc = new jsPDF()
+
+  doc.fromHTML(document.getElementById(&amp;quot;testExport&amp;quot;));
+  doc.save(&#39;a4.pdf&#39;)
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any alternative approaches would be appreciated.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/09/46263980/</link>
+            <pubDate>Sun, 17 Sep 2017 12:17:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/09/46263980/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property &amp;ldquo;summaryData&amp;rdquo;, something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+...(other stuff)...
+  summaryData: {
+    count: 100,
+    total: 10000,
+    summaryDate: (date value)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, not all documents have this property. I&amp;rsquo;d like to construct an SJS query to retrieve those documents that don&amp;rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like &amp;ldquo;WHERE summaryData IS NULL&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I wasn&amp;rsquo;t sure what to search for in the docs. Any advise would be helpful.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/07/45113954/</link>
+            <pubDate>Sat, 15 Jul 2017 02:40:41 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/07/45113954/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using the &lt;a href=&#34;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&#34;&gt;demo of jsPlumb here:&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this demo, there&amp;rsquo;s no way to move an existing connection to a different target node. Any idea how to do it?&lt;/p&gt;
+&lt;p&gt;Some of the other examples have movable connections, but they also use specific endpoints on the nodes. I like this particular example where I can drag the connection endpoint to any point of the target node.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/07/45113755/</link>
+            <pubDate>Sat, 15 Jul 2017 02:04:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/07/45113755/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out jsplumb. I have a copy of this demo: &lt;a href=&#34;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&#34;&gt;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.&lt;/p&gt;
+&lt;p&gt;I would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area. Any advice on how to do this?&lt;/p&gt;
+&lt;p&gt;Secondary question: In the demo above the scrollbars appear as expected when I drag elements off the right or bottom of the canvas, but not when I drag them off the left edge or off the top edge. That is, if I drag a node upward off the canvas and drop it there, I no longer have any way of viewing that node or dragging it back down. Is there a way around this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/06/44804960/</link>
+            <pubDate>Wed, 28 Jun 2017 14:11:34 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/06/44804960/</guid>
+            <description>
+            
+
+            &lt;p&gt;The scenario is: the user can input a URL for an image file, then on form submit I want to download the file and submit it to the server. As if they had selected the file using an &lt;code&gt;&amp;lt;input type=&#39;file&#39; /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Of course I can just do it on the server-side. But my question: how can I do this on the browser side via JavaScript? Is it possible?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Javascript: References to out-of-scope variables.
+</title>
+            <link>https://roytang.net/2016/12/javascript-references-to-out-of-scope-variables/</link>
+            <pubDate>Thu, 01 Dec 2016 01:30:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/12/javascript-references-to-out-of-scope-variables/</guid>
+            <description>
+            
+            &lt;p&gt;In JavaScript, referencing variables that are declared outside of a function&amp;rsquo;s scope can be tricky. If you have code like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;btn&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN&amp;#34;&lt;/span&gt;);
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;btn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;onclick&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;);
+  }
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The click handler above retains a reference to the test variable even though it falls out of scope as soon as the script block finishes execution. When you actually click the button, the alert will show the last value of the variable when the block finished execution (2) instead of the value at the time the function was initialized (1).&lt;/p&gt;
+&lt;p&gt;I thought about this because another developer raised a similar problem to me a few days ago. He had a loop that was initializing click handlers for an array of elements. Of course I can&amp;rsquo;t replicate his example here, but let&amp;rsquo;s say we wanted to add click handlers to an array of buttons that would show the result of multiplying an input value by different integers.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [];
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN1&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN2&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN3&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN4&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;IN&amp;#34;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;onclick&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
+      }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is kind of an analogous example for the problem. In this case, the expected behavior is that the first button outputs the input value times 2, while the second button outputs the input value times 3, and so on. But because each of the click handlers retains a reference to the loop counter i, what they will remember on execution is the last value of i after the loop exits, that is, i==4. All the buttons will show the same output.&lt;/p&gt;
+&lt;p&gt;There are several ways to correct the behavior. One way would be to build the click handlers using a utility function, like so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [];
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN1&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN2&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN3&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BTN4&amp;#34;&lt;/span&gt;));
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;IN&amp;#34;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getClickHandler&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;counter&lt;/span&gt;) {
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;counter&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
+      }
+    }
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;btns&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;onclick&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getClickHandler&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;);
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This way, the value for the local function variable &amp;ldquo;counter&amp;rdquo; is locked in once getClickHandler exits execution, and each returned function now has a reference to a different &amp;ldquo;counter&amp;rdquo;, and the buttons will behave as expected.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/02/21730829/</link>
+            <pubDate>Wed, 12 Feb 2014 14:32:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/02/21730829/</guid>
+            <description>
+            
+
+            &lt;p&gt;IE8 is giving me the slow-running script message on load of a page:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stop running this script? A script on this page is causing your web
+browser to run slowly. If it continues to run, your computer might
+become unresponsive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, the webapp I&amp;rsquo;m debugging is fairly old and has a whole lot of scripts. Is there an easy way for me to find out which of those scripts is causing the problem?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/03/15474727/</link>
+            <pubDate>Mon, 18 Mar 2013 10:35:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/03/15474727/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to trace a slowdown on load of a web page in our application and there&amp;rsquo;s a ton of JavaScript to go through so I&amp;rsquo;d rather not process them individually.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m trying to see if there&amp;rsquo;s a way to list out all the event handlers added to &lt;code&gt;$(document).ready()&lt;/code&gt; so that I would just look through those handlers to see what might be causing the problem.&lt;/p&gt;
+&lt;p&gt;Is there a way to do this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Loop through string of dropdown options and select&#39; on stackoverflow at https://stackoverflow.com/questions/11465807/loop-through-string-of-dropdown-options-and-select:
+</title>
+            <link>https://roytang.net/2012/07/11465882/</link>
+            <pubDate>Fri, 13 Jul 2012 07:20:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/07/11465882/</guid>
+            <description>
+            Reply to &amp;#39;Loop through string of dropdown options and select&amp;#39; on stackoverflow at https://stackoverflow.com/questions/11465807/loop-through-string-of-dropdown-options-and-select:
+
+            &lt;p&gt;Is this in an HTML page? If yes, why not just use something like $(&amp;ldquo;option&amp;rdquo;).each()?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to add dynamic data in source of html using Javascript&#39; on stackoverflow at https://stackoverflow.com/questions/11465306/how-to-add-dynamic-data-in-source-of-html-using-javascript:
+</title>
+            <link>https://roytang.net/2012/07/11465333/</link>
+            <pubDate>Fri, 13 Jul 2012 06:36:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/07/11465333/</guid>
+            <description>
+            Reply to &amp;#39;How to add dynamic data in source of html using Javascript&amp;#39; on stackoverflow at https://stackoverflow.com/questions/11465306/how-to-add-dynamic-data-in-source-of-html-using-javascript:
+
+            &lt;p&gt;Check the value of the control on document ready and adjust the div visibility accordingly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2011/12/8383151/</link>
+            <pubDate>Mon, 05 Dec 2011 09:23:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2011/12/8383151/</guid>
+            <description>
+            
+
+            &lt;p&gt;Does compliance to WCAG 2.0 AA prevent the use of JavaScript?&lt;/p&gt;
+&lt;p&gt;My understanding based on &lt;em&gt;&lt;a href=&#34;http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html&#34;&gt;Understanding Conformance&lt;/a&gt;&lt;/em&gt; is that we can still use JavaScript as long as we don&amp;rsquo;t generate any content that is noncompliant and that we explicitly state we support JavaScript. Is that correct?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How many times can I have jQuery&amp;#39;s document ready function declared on a page?&#39; on stackoverflow at https://stackoverflow.com/questions/4471349/how-many-times-can-i-have-jquerys-document-ready-function-declared-on-a-page:
+</title>
+            <link>https://roytang.net/2010/12/4471375/</link>
+            <pubDate>Fri, 17 Dec 2010 14:25:54 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/12/4471375/</guid>
+            <description>
+            Reply to &amp;#39;How many times can I have jQuery&amp;amp;#39;s document ready function declared on a page?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/4471349/how-many-times-can-i-have-jquerys-document-ready-function-declared-on-a-page:
+
+            &lt;p&gt;As many times as you like. They fire in order of declaration.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$(document).ready()&lt;/code&gt; will fire when the document is ready (when it&amp;rsquo;s all loaded by the browser). The other one will fire as soon as that part of the script executes.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;how to use jquery UI autocomplete 1.8.4?&#39; on stackoverflow at https://stackoverflow.com/questions/3695414/how-to-use-jquery-ui-autocomplete-1-8-4:
+</title>
+            <link>https://roytang.net/2010/09/3695558/</link>
+            <pubDate>Sun, 12 Sep 2010 16:14:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/09/3695558/</guid>
+            <description>
+            Reply to &amp;#39;how to use jquery UI autocomplete 1.8.4?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3695414/how-to-use-jquery-ui-autocomplete-1-8-4:
+
+            &lt;p&gt;If you want to use jquery ui autocomplete, your data must be &amp;ldquo;a simple Array of Strings, or it contains Objects for each item in the array, with either a label or value property or both&amp;rdquo;. This is from the documentation at &lt;a href=&#34;http://jqueryui.com/demos/autocomplete/&#34;&gt;http://jqueryui.com/demos/autocomplete/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Your server response does not follow the expected data type, you should modify suggest.php to post-process the data into label-value pairs.&lt;/p&gt;
+&lt;p&gt;As I understand it, you also want to perform a custom action when an item is selected from the autocomplete, so you should also add a handler for the &amp;lsquo;select&amp;rsquo; event.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;jQuery - split() arrays with only one match = undefined&#39; on stackoverflow at https://stackoverflow.com/questions/3599620/jquery-split-arrays-with-only-one-match-undefined:
+</title>
+            <link>https://roytang.net/2010/08/3599669/</link>
+            <pubDate>Mon, 30 Aug 2010 10:50:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/08/3599669/</guid>
+            <description>
+            Reply to &amp;#39;jQuery - split() arrays with only one match = undefined&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3599620/jquery-split-arrays-with-only-one-match-undefined:
+
+            &lt;p&gt;You already have the lines logging your values array, was it so hard to add lines logging the other vars?&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;c1_arr = c1.split(&#39;;&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The array created here is [&amp;lsquo;font-color:#ff0000&amp;rsquo;, &amp;lsquo;&#39;] - there is a blank second element since there&amp;rsquo;s nothing after the &amp;lsquo;;&amp;rsquo; in the input string.&lt;/p&gt;
+&lt;p&gt;Then when you call:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;values[1][i]= c1_arr[i].split(&#39;:&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c1_arr[1] is empty string, so values[1][1] is an array with only one element, empty string.&lt;/p&gt;
+&lt;p&gt;values[1][1][0] -&amp;gt; empty string
+values[1][1][1] -&amp;gt; undefined (no second element)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;how i can i change the content of a page without refreshing&#39; on stackoverflow at https://stackoverflow.com/questions/3432273/how-i-can-i-change-the-content-of-a-page-without-refreshing:
+</title>
+            <link>https://roytang.net/2010/08/3432287/</link>
+            <pubDate>Sat, 07 Aug 2010 22:28:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/08/3432287/</guid>
+            <description>
+            Reply to &amp;#39;how i can i change the content of a page without refreshing&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3432273/how-i-can-i-change-the-content-of-a-page-without-refreshing:
+
+            &lt;p&gt;If you use a hidden frame, the content won&amp;rsquo;t be displayed (hence &amp;ldquo;hidden&amp;rdquo;), I think you just mean to use an iframe. But this doesn&amp;rsquo;t fit your description of &amp;ldquo;without refreshing&amp;rdquo;, since you have to refresh the frame.&lt;/p&gt;
+&lt;p&gt;When loading the PHP file inside the frame, your PHP file just needs to generate HTML the same way you would generate a normal page. It&amp;rsquo;s the same whether the PHP file is loaded inside a frame or not.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/07/3356868/</link>
+            <pubDate>Wed, 28 Jul 2010 19:51:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/07/3356868/</guid>
+            <description>
+            
+
+            &lt;p&gt;Back story: I&amp;rsquo;m planning to implement a casual game to be deployed in a webapp, but I don&amp;rsquo;t want to use Flash, instead just plain Javascript. One benefit of Flash that I would want though is that it distributes a binary and not the source code so it&amp;rsquo;s easier to protect your code from being reused/stolen by somebody else, or to prevent the client from modifying the code to &amp;ldquo;cheat&amp;rdquo; in the game?&lt;/p&gt;
+&lt;p&gt;So my question is: what are the ways to similarly protect a Javascript application? Am I limited to the usual methods of using a code obfuscator? Will that be enough?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Diggy: open source JavaScript game engine (with example game) - Lost ...
+</title>
+            <link>https://roytang.net/2010/07/diggy-open-source-javascript-game-engine-with-example-game-lost/</link>
+            <pubDate>Thu, 08 Jul 2010 11:02:57 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/07/diggy-open-source-javascript-game-engine-with-example-game-lost/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://blog.lostdecadegames.com/diggy-open-source-javascript-game-engine-with&#34;&gt;Diggy: open source JavaScript game engine (with example game) - Lost ...&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Javascript Table Select&#39; on stackoverflow at https://stackoverflow.com/questions/2063935/javascript-table-select:
+</title>
+            <link>https://roytang.net/2010/01/2063983/</link>
+            <pubDate>Thu, 14 Jan 2010 12:26:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2063983/</guid>
+            <description>
+            Reply to &amp;#39;Javascript Table Select&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2063935/javascript-table-select:
+
+            &lt;p&gt;Should you be calling document.getElementById(selectedEventId) instead? (without quotes)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;submitting dynamically created form with javascript&#39; on stackoverflow at https://stackoverflow.com/questions/2053970/submitting-dynamically-created-form-with-javascript:
+</title>
+            <link>https://roytang.net/2010/01/2053987/</link>
+            <pubDate>Wed, 13 Jan 2010 02:30:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2053987/</guid>
+            <description>
+            Reply to &amp;#39;submitting dynamically created form with javascript&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2053970/submitting-dynamically-created-form-with-javascript:
+
+            &lt;p&gt;It&amp;rsquo;s been a while, but I think browser security settings normally will not allow you to set the contents of &amp;lt;input type=&amp;quot;file&amp;rdquo; /&amp;gt; programmatically, resulting in some security exception when you submit.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How can I make JavaScript make (produce) new page?&#39; on stackoverflow at https://stackoverflow.com/questions/2004555/how-can-i-make-javascript-make-produce-new-page:
+</title>
+            <link>https://roytang.net/2010/01/2004568/</link>
+            <pubDate>Tue, 05 Jan 2010 06:39:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2004568/</guid>
+            <description>
+            Reply to &amp;#39;How can I make JavaScript make (produce) new page?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2004555/how-can-i-make-javascript-make-produce-new-page:
+
+            &lt;pre&gt;&lt;code&gt;var w = window.open(&amp;quot;&amp;quot;);
+w.document.writeln(&amp;quot;&amp;lt;the html you wanted to write&amp;gt;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to stop &amp;quot;setInterval&amp;quot;&#39; on stackoverflow at https://stackoverflow.com/questions/1831152/how-to-stop-setinterval:
+</title>
+            <link>https://roytang.net/2009/12/1831172/</link>
+            <pubDate>Wed, 02 Dec 2009 07:17:58 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1831172/</guid>
+            <description>
+            Reply to &amp;#39;How to stop &amp;amp;quot;setInterval&amp;amp;quot;&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1831152/how-to-stop-setinterval:
+
+            &lt;p&gt;setInterval returns an id that you can use to cancel the interval with clearInterval()&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>node.js
+</title>
+            <link>https://roytang.net/2009/11/node-js/</link>
+            <pubDate>Tue, 24 Nov 2009 05:13:04 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/11/node-js/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;
+
+            &lt;p&gt;&amp;ldquo;Node&amp;rsquo;s goal is to provide an easy way to build scalable network programs. &amp;quot;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/10/1550532/</link>
+            <pubDate>Sun, 11 Oct 2009 11:58:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/10/1550532/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous &amp;amp;nbsp; and &amp;lt;br&amp;gt; and such from the beginning and end of the HTML string.&lt;/p&gt;
+&lt;p&gt;I can opt to either do it on the client side (using Javascript) or on the server side (using Java) Is there an easy way to do this, using regular expressions or something? I&amp;rsquo;m not sure how complex it needs to be, I need to be able to remove stuff like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;br /&amp;gt; &amp;amp;nbsp;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;yet retain it if there&amp;rsquo;s any kind of meaningful text in between. (Above snippet is from actual HTML data saved by the tester)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/10/1547415/</link>
+            <pubDate>Sat, 10 Oct 2009 08:46:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/10/1547415/</guid>
+            <description>
+            
+
+            &lt;p&gt;Let&amp;rsquo;s say I attach a javascript &amp;ldquo;change&amp;rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.&lt;/p&gt;
+&lt;p&gt;This is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there&amp;rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.&lt;/p&gt;
+&lt;p&gt;Now, our previous workaround was that we would introduce a timeout to the change handler, such that it would wait a fraction of a second before actually dispatching the request. If in that short time, another change event comes in, we cancel the previous timeout and start a new one, thus preventing spamming multiple requests.&lt;/p&gt;
+&lt;p&gt;Now, while this seems to be working, it&amp;rsquo;s a bit hackish and I&amp;rsquo;m wondering if there&amp;rsquo;s any better approach. Is there a different event we can hook to so that it doesn&amp;rsquo;t fire repeatedly when scrolling with the mouse? Or should we just disable mouse-wheeling altogether (onmousewheel=&amp;quot;return false;&amp;quot;)? Firefox does not seem to support mouse-wheeling thru combo boxes, but I&amp;rsquo;m not sure if disabling mouse wheeling is a serious usability no-no or something.&lt;/p&gt;
+&lt;p&gt;Can anyone recommend other solutions?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/09/1491562/</link>
+            <pubDate>Tue, 29 Sep 2009 09:43:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/09/1491562/</guid>
+            <description>
+            
+
+            &lt;p&gt;HTML/Javascript - I want to load images dynamically, and the images I&amp;rsquo;m going to load can be of varying aspect ratios.&lt;/p&gt;
+&lt;p&gt;I want the images to fit into a specific area of the containing div - an area 40% of the containing div&amp;rsquo;s width and 80% of its height. Since they have varying aspect ratios, of course they will not always use up this entire area, but I want to resize them such that they don&amp;rsquo;t exceed the bounds. But I don&amp;rsquo;t know ahead of time whether I should specify the width or the height (and the partner attribute to auto) since I don&amp;rsquo;t know what the aspect ratio of the images will be ahead of time.&lt;/p&gt;
+&lt;p&gt;Is there a CSS way to do this? Or I need to compute the required widths using javascript?&lt;/p&gt;
+&lt;p&gt;PS I only need to do this in Firefox 3.5!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/08/1225798/</link>
+            <pubDate>Tue, 04 Aug 2009 05:27:59 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/08/1225798/</guid>
+            <description>
+            
+
+            &lt;p&gt;Say I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?&lt;/p&gt;
+&lt;p&gt;The events handlers are added/removed using an object like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var Event = {
+    add: function(obj,type,fn) {
+        if (obj.attachEvent) {
+            obj.attachEvent(&#39;on&#39;+type,fn);
+        } else {
+            obj.addEventListener(type,fn,false);
+        }
+    },
+    remove: function(obj,type,fn) {
+        if (obj.detachEvent) {
+            obj.detachEvent(&#39;on&#39;+type,fn);
+        } else {
+            obj.removeEventListener(type,fn,false);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or do I need to store copies of each handler and just add an Event.invoke(&amp;hellip;) function?&lt;/p&gt;
+&lt;p&gt;Edit: Also, jQuery is not an option :D&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/07/1090202/</link>
+            <pubDate>Tue, 07 Jul 2009 03:13:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/07/1090202/</guid>
+            <description>
+            
+
+            &lt;p&gt;Any idea for this?&lt;/p&gt;
+&lt;p&gt;Problems encountered: Using screen.availHeight and screen.availWidth as the height and width params in window.open causes the browser size to include the taskbar, and positioning at (0, 0) ignores the possibility of the taskbar being up there.&lt;/p&gt;
+&lt;p&gt;What I want is to open a new window with the size as if it was &amp;ldquo;maximized&amp;rdquo; by the user, i.e. it shouldn&amp;rsquo;t cover the windows taskbar.&lt;/p&gt;
+&lt;p&gt;(Oh, and no need to remind me that users don&amp;rsquo;t like Javascript interfering with their browser windows, etc. This is for an internal intranet webapp&amp;hellip;)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/06/1000028/</link>
+            <pubDate>Tue, 16 Jun 2009 07:38:33 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/06/1000028/</guid>
+            <description>
+            
+
+            &lt;p&gt;Given the code below:&lt;/p&gt;
+&lt;!-- begin snippet: js hide: false console: true babel: false --&gt;
+&lt;!-- language: lang-js --&gt;
+&lt;pre&gt;&lt;code&gt;function test() {
+    document.forms[0].TEST[0].focus();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- language: lang-html --&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+    &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;Test&amp;quot; onclick=&amp;quot;test()&amp;quot; /&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;TEST&amp;quot; value=&amp;quot;A&amp;quot;&amp;gt;A
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;TEST&amp;quot; value=&amp;quot;B&amp;quot;&amp;gt;B
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- end snippet --&gt;
+&lt;p&gt;In IE6, clicking the button doesn&amp;rsquo;t focus the control, unless I&amp;rsquo;ve already tabbed through the radio at least once, in which case it works. =/&lt;/p&gt;
+&lt;p&gt;Any idea how I should be focusing the control? The above works perfectly fine in FF of course.&lt;/p&gt;
+&lt;p&gt;Edit: I found that the control is being focused, except the highlight box around the radio button is not being rendered. (I can hit space to activate the radio button, and also use arrow keys to change the active button). So the question becomes: how can I force the focus highlighting box to render?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Mega Drop-Down Navigation Menus Work Well (Jakob Nielsen&#39;s Alertbox)
+</title>
+            <link>https://roytang.net/2009/03/mega-drop-down-navigation-menus-work-well-jakob-nielsen-s-alertbox/</link>
+            <pubDate>Mon, 23 Mar 2009 22:20:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/03/mega-drop-down-navigation-menus-work-well-jakob-nielsen-s-alertbox/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.useit.com/alertbox/mega-dropdown-menus.html&#34;&gt;Mega Drop-Down Navigation Menus Work Well (Jakob Nielsen&amp;#39;s Alertbox)&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>NicEdit - WYSIWYG Content Editor, Inline Rich Text Application
+</title>
+            <link>https://roytang.net/2009/03/nicedit-wysiwyg-content-editor-inline-rich-text-application/</link>
+            <pubDate>Sun, 22 Mar 2009 16:44:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/03/nicedit-wysiwyg-content-editor-inline-rich-text-application/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.nicedit.com/&#34;&gt;NicEdit - WYSIWYG Content Editor, Inline Rich Text Application&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/01/441755/</link>
+            <pubDate>Wed, 14 Jan 2009 02:51:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/01/441755/</guid>
+            <description>
+            
+
+            &lt;p&gt;I need to write some javascript to strip the hostname:port part from a url, meaning I want to extract the path part only.&lt;/p&gt;
+&lt;p&gt;i.e. I want to write a function getPath(url) such that getPath(&amp;ldquo;http://host:8081/path/to/something&amp;rdquo;) returns &amp;ldquo;/path/to/something&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Can this be done using regular expressions?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Jannis Leidel - An autocomplete widget for django-tagging form fields
+</title>
+            <link>https://roytang.net/2008/12/jannis-leidel-an-autocomplete-widget-for-django-tagging-form-fields/</link>
+            <pubDate>Wed, 31 Dec 2008 06:40:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/jannis-leidel-an-autocomplete-widget-for-django-tagging-form-fields/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://jannisleidel.com/2008/11/autocomplete-widget-for-django-tagging-form-fields/&#34;&gt;Jannis Leidel - An autocomplete widget for django-tagging form fields&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>BrowserPlus™
+</title>
+            <link>https://roytang.net/2008/11/browserplustm/</link>
+            <pubDate>Wed, 12 Nov 2008 04:05:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/11/browserplustm/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://browserplus.yahoo.com/&#34;&gt;BrowserPlus™&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Firebug Lite
+</title>
+            <link>https://roytang.net/2008/08/firebug-lite/</link>
+            <pubDate>Sat, 02 Aug 2008 00:06:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/08/firebug-lite/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://getfirebug.com/lite.html&#34;&gt;Firebug Lite&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Exceptional Performance - Yahoo Web Performance Team
+</title>
+            <link>https://roytang.net/2008/07/exceptional-performance-yahoo-web-performance-team/</link>
+            <pubDate>Sun, 20 Jul 2008 12:53:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/07/exceptional-performance-yahoo-web-performance-team/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://developer.yahoo.com/performance/&#34;&gt;Exceptional Performance - Yahoo Web Performance Team&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Yahoo UI Library
+</title>
+            <link>https://roytang.net/2008/06/yahoo-ui-library/</link>
+            <pubDate>Mon, 02 Jun 2008 13:43:45 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/06/yahoo-ui-library/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://developer.yahoo.com/yui/&#34;&gt;Yahoo UI Library&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>JavaScript, We Hardly new Ya » Yahoo! User Interface Blog
+</title>
+            <link>https://roytang.net/2006/11/javascript-we-hardly-new-ya-yahoo-user-interface-blog/</link>
+            <pubDate>Thu, 16 Nov 2006 03:09:46 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/11/javascript-we-hardly-new-ya-yahoo-user-interface-blog/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://yuiblog.com/blog/2006/11/13/javascript-we-hardly-new-ya/&#34;&gt;JavaScript, We Hardly new Ya » Yahoo! User Interface Blog&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>JavaScript RegExp Example: Regular Expression Tester
+</title>
+            <link>https://roytang.net/2006/04/javascript-regexp-example-regular-expression-tester/</link>
+            <pubDate>Wed, 19 Apr 2006 14:53:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/04/javascript-regexp-example-regular-expression-tester/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.regular-expressions.info/javascriptexample.html&#34;&gt;JavaScript RegExp Example: Regular Expression Tester&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Escapa!
+</title>
+            <link>https://roytang.net/2006/03/escapa/</link>
+            <pubDate>Thu, 09 Mar 2006 02:05:19 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/03/escapa/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://members.iinet.net.au/~pontipak/redsquare.html&#34;&gt;Escapa!&lt;/a&gt;
+
+            &lt;p&gt;&amp;ldquo;Click and hold the red square.
+Now, move it so that you neither touch the walls nor get hit by any of the blue blocks
+If you make it to 18 seconds, you are doing brilliantly!&amp;rdquo;
+Mindless! After a few tries I made it to 21 secs running on evasive instinc&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Yahoo! UI Library
+</title>
+            <link>https://roytang.net/2006/02/yahoo-ui-library/</link>
+            <pubDate>Wed, 15 Feb 2006 12:20:42 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/02/yahoo-ui-library/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://developer.yahoo.net/yui/index.html&#34;&gt;Yahoo! UI Library&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>jQuery: New Wave Javascript
+</title>
+            <link>https://roytang.net/2006/01/jquery-new-wave-javascript/</link>
+            <pubDate>Sun, 22 Jan 2006 15:00:42 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/01/jquery-new-wave-javascript/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery: New Wave Javascript&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Dojo - DojoToolkit.org (javascript library)
+</title>
+            <link>https://roytang.net/2006/01/dojo-dojotoolkit-org-javascript-library/</link>
+            <pubDate>Sun, 22 Jan 2006 04:49:02 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2006/01/dojo-dojotoolkit-org-javascript-library/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://dojotoolkit.org/&#34;&gt;Dojo - DojoToolkit.org (javascript library)&lt;/a&gt;
+
+            &lt;p&gt;javascript library&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Selenium
+</title>
+            <link>https://roytang.net/2005/09/selenium/</link>
+            <pubDate>Fri, 23 Sep 2005 15:45:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/09/selenium/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://selenium.thoughtworks.com/index.html&#34;&gt;Selenium&lt;/a&gt;
+
+            &lt;p&gt;Browser-based webapp test suite&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Test stuff
+</title>
+            <link>https://roytang.net/2005/05/test-stuff/</link>
+            <pubDate>Wed, 11 May 2005 15:58:42 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/05/test-stuff/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://ktk.xs4all.nl/stuff/&#34;&gt;Test stuff&lt;/a&gt;
+
+            &lt;p&gt;HTML, CSS, Javascript, etc.  tricks&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Simon Willison: Executing JavaScript on page load
+</title>
+            <link>https://roytang.net/2005/04/simon-willison-executing-javascript-on-page-load/</link>
+            <pubDate>Wed, 20 Apr 2005 16:30:42 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/04/simon-willison-executing-javascript-on-page-load/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://simon.incutio.com/archive/2004/05/26/addLoadEvent&#34;&gt;Simon Willison: Executing JavaScript on page load&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>In Progress, But Sleepy
+</title>
+            <link>https://roytang.net/2005/03/in-progress-but-sleepy/</link>
+            <pubDate>Fri, 25 Mar 2005 11:35:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2005/03/in-progress-but-sleepy/</guid>
+            <description>
+            
+            &lt;p&gt;As it may mention in the page title, I&amp;rsquo;m currently screwing around with the blogger template, so this blog may look a bit&amp;hellip; um&amp;hellip; screwy for a while.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been wanting to toy around with Javascript hacks to extend the Blogger template functionality. The first thing I did was add some Javascript that allows you to show/hide individual posts on the page. But actually, I don&amp;rsquo;t really like it, I&amp;rsquo;ll remove it later.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also wondering whether it&amp;rsquo;s possible to have a Javascript hack that allows Blogger to have categories? The Category names would have to be included in maybe the post title text or the post body text, then we&amp;rsquo;d have a Javascript parser that determines the correct categories for each post. Then we could append category names to the URL to allow viewing by category, using javascript again to parse the URL to find which categories need to be displayed.&lt;/p&gt;
+&lt;p&gt;Seems like a lot of work though. My Javascript is not as strong as I want it to be — although I have a pretty good idea of how it works, I&amp;rsquo;m no expert. So I guess working on these hacks would be good practice, but maybe the time would be better spent learning PHP and preparing to move to a paid webhost? (If wasting time is a consideration, it&amp;rsquo;s too late &amp;ndash; I&amp;rsquo;ve already spent some two hours fooling around with the current template.)&lt;/p&gt;
+&lt;p&gt;A bit sleepy. After all, it is almost 4 AM. I&amp;rsquo;ll try to fix this thing later.&lt;/p&gt;
+&lt;p&gt;On hindsight, I should&amp;rsquo;ve set up a test blog and toyed around with that instead of modifying this one directly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

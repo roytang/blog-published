@@ -1,0 +1,60 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>version-control on Roy Tang</title>
+      <link>https://roytang.net/tags/version-control/</link>
+      <description>Recent content in version-control on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 13 Jul 2011 10:36:38 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2011/07/6677574/</link>
+            <pubDate>Wed, 13 Jul 2011 10:36:38 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2011/07/6677574/</guid>
+            <description>
+            
+
+            &lt;p&gt;Some background: We&amp;rsquo;re working on projects that involve projects across 2 different countries, and we&amp;rsquo;ve been using CVS. Developers in the country not hosting the CVS server will take forever to connect to the remote server, so we&amp;rsquo;ve set up this system to have 2 separate CVS servers in each country and have a sync job that keeps them in sync every hour or so.&lt;/p&gt;
+&lt;p&gt;Given this, we&amp;rsquo;re looking at migrating to a distributed version control system, mostly because we&amp;rsquo;ve been having problems with the sync job failing and the limitation that for a given set of files only one side can have the writelock for it at a time.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re currently looking at Mercurial for this purpose, so can anyone help tell us if:&lt;/p&gt;
+&lt;p&gt;a. Will Mercurial be a good fit for our use case above? How easy will it be for devs to make the transition, i.e. will they still be able to work the same way? etc&lt;/p&gt;
+&lt;p&gt;b. Can Mercurial support branching a specific folder only?&lt;/p&gt;
+&lt;p&gt;c. We also hold a lot of binary docs in version control, will they be suitable for Mercurial?&lt;/p&gt;
+&lt;p&gt;d. Is there support for getting the &amp;ldquo;writelock&amp;rdquo; of particular files? i.e. I want no other people to update these particular files while I&amp;rsquo;m working on them&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2011/03/5306112/</link>
+            <pubDate>Tue, 15 Mar 2011 00:10:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2011/03/5306112/</guid>
+            <description>
+            
+
+            &lt;p&gt;Not really a programming question per se, so pls advice if I should move it to some other stackexchange&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Is there a recommended Version Control solution running on a local (Windows XP/Vista/7) machine for the use of a single person only? I may not have internet access on the box so online repos like Github or Mercurial are out of the question.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

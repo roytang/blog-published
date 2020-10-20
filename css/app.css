@@ -1,0 +1,58 @@
+table.grid_archive td.arc {
+    text-align: center;
+}
+table.grid_archive a {
+    text-decoration: none;
+}
+.spoiler {
+    display: none;
+}
+.mtgdecklist {
+    width:100%;margin:0px auto;
+    padding: 10px;
+}
+.mtgdecklist .header h4 {
+    font-size:150%;font-weight:bold;text-align:center;
+}
+.mtgdecklist .wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    border: 1px black solid;
+    background-color: #f0f0f0;
+}
+.mtgdecklist .box {
+    padding: 10px;
+}
+.mtgdecklist .section_header {
+    font-size:100%;font-weight:bold; 
+}
+.feed_container small {
+    font-size: 75%; color: gray;
+}
+
+.list_archive { display: none; }
+.topline img { border-radius: 50% }  
+
+@media screen and (max-width: 640px) { 
+    .topline { display: none; }  
+    .grid_archive { display: none; }
+    .list_archive { display: initial; }
+    .main_header {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6, a, li {
+    font-family: Helvetica !important;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.about img {
+    float: left;
+}

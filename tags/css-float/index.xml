@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>css-float on Roy Tang</title>
+      <link>https://roytang.net/tags/css-float/</link>
+      <description>Recent content in css-float on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 02 Dec 2009 05:52:26 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/css-float/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/1830908/</link>
+            <pubDate>Wed, 02 Dec 2009 05:52:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1830908/</guid>
+            <description>
+            
+
+            &lt;p&gt;Let&amp;rsquo;s say I have a series of &lt;li&gt; elements designed to render via float:left inside a fixed-width container as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Item 1 | Item 2 | Item 3 | Item 4
+| Item 5 | Item 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is fine, Item 5 and Item 6 are pushed to the second row because the container has a fixed width.&lt;/p&gt;
+&lt;p&gt;Now, is it possible to have something similar to above, except that majority of the items will render in the second row? Something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Item 1 | Item 2 
+| Item 3 | Item 4| Item 5 | Item 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Basically, I want to render a list of items horizontally, wrapping to the second row as needed, but with majority of the items on the second row if it exists. The number of items to be generated may vary, but will not exceed 2 rows&amp;rsquo; worth of items.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

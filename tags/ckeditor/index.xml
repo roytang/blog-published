@@ -1,0 +1,127 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>ckeditor on Roy Tang</title>
+      <link>https://roytang.net/tags/ckeditor/</link>
+      <description>Recent content in ckeditor on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 06 Nov 2013 06:14:31 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/ckeditor/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/11/19805338/</link>
+            <pubDate>Wed, 06 Nov 2013 06:14:31 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/11/19805338/</guid>
+            <description>
+            
+
+            &lt;p&gt;I want to add focus and blur handlers to all CKEditor instances in our web application. I would like to add the handlers in one place, instead of hunting down every part where we instantiate a CKEditor. Can this be done, like maybe in the config.js editorConfig setup?&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t do something like &amp;ldquo;on document ready, add handlers to all CKEditor instances on the page&amp;rdquo; either, since additional editor instances may be created dynamically.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/10/19397197/</link>
+            <pubDate>Wed, 16 Oct 2013 07:08:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/10/19397197/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a CKEditor instance with inline editing enabled. It works fine, but I also have an [Edit] button which I want to trigger inline editing (and focus on the text) when the button is clicked.&lt;/p&gt;
+&lt;p&gt;Is this possible?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16184236/</link>
+            <pubDate>Wed, 24 Apr 2013 05:45:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16184236/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a config.toolbarGroups setting in config.js but I don&amp;rsquo;t know what name to use for the groups to add font family/font size controls. (It seems the documentation is lacking in this regard). I&amp;rsquo;ve found some suggestion that I should use CKBuilder to create a package that already includes it, but I can&amp;rsquo;t redeploy the entire ckeditor just to add a couple of buttons.&lt;/p&gt;
+&lt;p&gt;Edit: My CKEditor is version 4&lt;/p&gt;
+&lt;p&gt;Any advise?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16011483/</link>
+            <pubDate>Mon, 15 Apr 2013 09:10:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16011483/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using the inline editing feature of CKEditor, but I want to add some hint text to the initial state of the control, i.e. something like &amp;ldquo;Click here to edit&amp;hellip;&amp;rdquo;, but I would like that hint text to be removed automatically when the user clicks the control to start typing. Is this feasible, or is there any alternative?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16009411/</link>
+            <pubDate>Mon, 15 Apr 2013 07:01:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16009411/</guid>
+            <description>
+            
+
+            &lt;p&gt;I downloaded the latest CKEditor and tried the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;script src=&amp;quot;ckeditor/ckeditor.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;editor&amp;quot;&amp;gt;
+Some test text
+&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+CKEDITOR.disableAutoInline = true;
+
+var editor = CKEDITOR.inline( &#39;editor&#39; );
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It worked in the sense that I can click the div to make the editor toolbar appear, but aside from that I can&amp;rsquo;t seem to edit the content! Most of the toolbar buttons are disabled, and typing into the field does nothing. (See screenshot below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.stack.imgur.com/koQbY.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;http://nightly.ckeditor.com/13-04-14-07-42/standard/samples/inlinebycode.html&#34;&gt;http://nightly.ckeditor.com/13-04-14-07-42/standard/samples/inlinebycode.html&lt;/a&gt; this should be all the JS I need. Is there some other config setting I need to be doing?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

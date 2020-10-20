@@ -1,0 +1,42 @@
+
+- [fitbit band dumbness](/2020/09/c11f9f76ed1a85539df66f3b898c45fc/)
+
+- [git merge](/2020/09/04b1428fe35c94f8157dc2178209b6a7/)
+
+- [thank god for backups](/2020/09/81f2a56837f67d1702af671036373a3c/)
+
+- [Ios14](/2020/08/2d7fcd44f8a65f2078142cce92aa6b9a/)
+
+- [Agents of SHIELD](/2020/08/8de9468cf4538aa076962780946b5066/)
+
+- [testing something](/2020/08/438c67100e2f5d99412ecb63e6eb9bca/)
+
+- [arena](/2020/08/4aab780a936cbcca72d043f98cdd53ec/)
+
+- [xcode](/2020/08/a7e178343be582801775b6ee89e7a6b3/)
+
+- [](/2020/07/b74a3432dfd7293ec59730ff16e66151/)
+
+- [](/2020/07/0f0e7126893e7fc999f53de315f79249/)
+
+- [Git](/2020/06/8ec9f2fb55acb4df093684962f1819fc/)
+
+- [](/2020/06/ba9408bd418c2a159d7b55ead508a03c/)
+
+- [lobsters](/2020/06/55eafe2c6a6f701e0a96d1f5d62b2177/)
+
+- [hey.com](/2020/06/7e554e29dd98e7b3b63be542c91a49c2/)
+
+- [](/2020/05/99d3b3910baeab147ee4ae35286d8082/)
+
+- [](/2020/04/1f7892621a82198d8501913f1690a254/)
+
+- [](/2020/04/2dd7011c13ce8353647f07f57e292bf8/)
+
+- [Indieweb search](/2020/04/fe45adb8c24e654605b9906dea2df749/)
+
+- [I miss being able to set my status](/2020/04/b1b6f7e8d68ca5ef8aa7c77a8cf79596/)
+
+- [Test2](/2020/03/12034d0fedf398582afed377596c5ef7/)
+
+- [Test](/2020/03/e27383be3ca09a1a6403ebd4ca165af0/)

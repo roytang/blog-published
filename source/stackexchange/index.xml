@@ -1,0 +1,1893 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>StackExchange on Roy Tang</title>
+      <link>https://roytang.net/source/stackexchange/</link>
+      <description>Recent content in StackExchange on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      
+          <atom:link href="https://roytang.net/source/stackexchange/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2019/09/1485349/</link>
+            <pubDate>Mon, 23 Sep 2019 10:43:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/09/1485349/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a GeForce 970, it&amp;rsquo;s a bit old, I got it in 2015. I&amp;rsquo;ve been having an issue where sometimes in some games, my displays (I have two monitors) will die (go completely black), but the game goes on running for a while (I can hear the audio), then after a couple of minutes or so the audio also stops so I can&amp;rsquo;t really do anything except do a hard reboot. I&amp;rsquo;ve tried VNCing into the PC to see what&amp;rsquo;s going on after this time, but it&amp;rsquo;s not accessible over the network so I assume it&amp;rsquo;s dead.&lt;/p&gt;
+&lt;p&gt;The crashes happen most often while playing Magic Arena (says a lot about the game!), but I&amp;rsquo;ve also had it happen once or twice on Starcraft 2 and Borderlands 2. I don&amp;rsquo;t play very demanding games graphically. I can&amp;rsquo;t identify any specific action that causes the crashes.&lt;/p&gt;
+&lt;p&gt;Some other things I&amp;rsquo;ve tried:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;attach my 2nd monitor to onboard graphics, keeping the main monitor connected to the vidcard. In this case when the crash happens, the main monitor goes black, while the 2nd monitor still has a display, but is frozen&lt;/li&gt;
+&lt;li&gt;remove my 2nd monitor (I thought I might be overtaxing the graphics card by having two of them??)&lt;/li&gt;
+&lt;li&gt;checking for memory (RAM) issues. I did have some RAM issues a couple of months ago, but that turned up to be due to a dirty connector, and it was causing crashes not just in games but in general Windows usage, so I think this is a different issue now&lt;/li&gt;
+&lt;li&gt;checking for disk issues. I actually found some bad sectors on my secondary drive and ended up replacing it. But even if I ran everything from my primary (SSD) drive, the graphics crashes still occur&lt;/li&gt;
+&lt;li&gt;reinstalling/updating device drivers&lt;/li&gt;
+&lt;li&gt;resetting Windows 10 (yup, I went that far)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After all of these, I&amp;rsquo;m still encountering these crashes so I&amp;rsquo;m seriously considering replacing the graphics card now, but I&amp;rsquo;d like the be sure that it&amp;rsquo;s a graphics card issue and not something wonky with the motherboard, as my purchasing decisions will be different if the motherboard was the problem (I might as well get a new PC then). I&amp;rsquo;m looking for any advice to help me diagnose or confirm the problem.&lt;/p&gt;
+&lt;p&gt;For reference, my current PC specs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Case	Silverstone Precision 10SST-PS10B&lt;/li&gt;
+&lt;li&gt;Fan	120mm internal aux fan&lt;/li&gt;
+&lt;li&gt;PSU	Cooler Master B600 V2 600W&lt;/li&gt;
+&lt;li&gt;CPU	Intel Core i5-4460&lt;/li&gt;
+&lt;li&gt;MB	ASUS H97ME&lt;/li&gt;
+&lt;li&gt;RAM	2x DDR3 Kingston HyperX Fury 8gb 1600&lt;/li&gt;
+&lt;li&gt;VC	Asus GTX970 STRIX OC 4gb&lt;/li&gt;
+&lt;li&gt;SSD	Samsung 850Evo 250gb&lt;/li&gt;
+&lt;li&gt;SSHD  Seagate Firecuda 2tb&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2018/02/48557175/</link>
+            <pubDate>Thu, 01 Feb 2018 07:11:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/02/48557175/</guid>
+            <description>
+            
+
+            &lt;p&gt;According to the documentation here: &lt;a href=&#34;https://djangobook.com/syndication-feed-framework/&#34;&gt;https://djangobook.com/syndication-feed-framework/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If link doesn’t return the domain, the syndication framework will
+insert the domain of the current site, according to your SITE_ID
+setting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, I&amp;rsquo;m trying to generate a feed of magnet: links. The framework doesn&amp;rsquo;t recognize this and attempts to append the SITE_ID, such that the links end up like this (on localhost):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link&amp;gt;http://localhost:8000magnet:?xt=...&amp;lt;/link&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Is there a way to bypass this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2018/01/415767/</link>
+            <pubDate>Tue, 09 Jan 2018 09:23:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/01/415767/</guid>
+            <description>
+            
+
+            &lt;p&gt;A client updated their EC2 CentOS 6.4 instance to 6.9 using yum update. After the update and a reboot, the instance wouldn&amp;rsquo;t start up anymore (became unreachable)&lt;/p&gt;
+&lt;p&gt;The system log (recovered from the AWS console) goes something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Xen Minimal OS!
+
+  start_info: 0x10d3000(VA)
+
+    nr_pages: 0xe4f53
+
+  shared_inf: 0xeea31000(MA)
+
+     pt_base: 0x10d6000(VA)
+
+nr_pt_frames: 0xd
+
+    mfn_list: 0x9ab000(VA)
+
+   mod_start: 0x0(VA)
+
+     mod_len: 0
+
+       flags: 0x300
+
+    cmd_line: root=/dev/sda1 ro console=hvc0 4
+
+  stack:      0x96a100-0x98a100
+
+MM: Init
+
+      _text: 0x0(VA)
+
+     _etext: 0x7b824(VA)
+
+   _erodata: 0x97000(VA)
+
+     _edata: 0x9cce0(VA)
+
+stack start: 0x96a100(VA)
+
+       _end: 0x9aa700(VA)
+
+  start_pfn: 10e6
+
+    max_pfn: e4f53
+
+Mapping memory range 0x1400000 - 0xe4f53000
+
+setting 0x0-0x97000 readonly
+
+skipped 0x1000
+
+MM: Initialise page allocator for 1807000(1807000)-e4f53000(e4f53000)
+
+MM: done
+
+Demand map pfns at e4f54000-20e4f54000.
+
+Heap resides at 20e4f55000-40e4f55000.
+
+Initialising timer interface
+
+Initialising console ... done.
+
+gnttab_table mapped at 0xe4f54000.
+
+Initialising scheduler
+
+Thread &amp;quot;Idle&amp;quot;: pointer: 0x20e4f55050, stack: 0xe4810000
+
+Thread &amp;quot;xenstore&amp;quot;: pointer: 0x20e4f55800, stack: 0xe4820000
+
+xenbus initialised on irq 3 mfn 0xfeffc
+
+Thread &amp;quot;shutdown&amp;quot;: pointer: 0x20e4f55fb0, stack: 0xe4830000
+
+Dummy main: start_info=0x98a200
+
+Thread &amp;quot;main&amp;quot;: pointer: 0x20e4f56760, stack: 0xe4840000
+
+&amp;quot;main&amp;quot; &amp;quot;root=/dev/sda1&amp;quot; &amp;quot;ro&amp;quot; &amp;quot;console=hvc0&amp;quot; &amp;quot;4&amp;quot; 
+
+vbd 2048 is hd0
+
+******************* BLKFRONT for device/vbd/2048 **********
+
+
+
+
+
+backend at /local/domain/0/backend/vbd/2334/2048
+
+629145600 sectors of 512 bytes
+
+**************************
+
+vbd 2128 is hd1
+
+******************* BLKFRONT for device/vbd/2128 **********
+
+
+
+
+
+backend at /local/domain/0/backend/vbd/2334/2128
+
+314572800 sectors of 512 bytes
+
+**************************
+
+[H[J
+
+
+    GNU GRUB  version 0.97  (3751244K lower / 0K upper memory)
+
+
+
+
+
+[m[4;2H+-------------------------------------------------------------------------+[5;2H|[5;76H|[6;2H|[6;76H|[7;2H|[7;76H|[8;2H|[8;76H|[9;2H|[9;76H|[10;2H|[10;76H|[11;2H|[11;76H|[12;2H|[12;76H|[13;2H|[13;76H|[14;2H|[14;76H|[15;2H|[15;76H|[16;2H|[16;76H|[17;2H+-------------------------------------------------------------------------+[m
+
+
+    Use the ^ and v keys to select which entry is highlighted.
+
+
+    Press enter to boot the selected OS, &#39;e&#39; to edit the
+
+
+    commands before booting, or &#39;c&#39; for a command-line.[5;78H [m[7m[5;3H CentOS (2.6.32-696.18.7.el6.x86_64)                                     [5;75H[m[m[6;3H CentOS (2.6.32-573.el6.x86_64)                                          [6;75H[m[m[7;3H CentOS (2.6.32-358.18.1.el6.x86_64)                                     [7;75H[m[m[8;3H CentOS-6.4-x86_64-GA-03 2.6.32-358.el6.x86_64                           [8;75H[m[m[9;3H                                                                         [9;75H[m[m[10;3H                                                                         [10;75H[m[m[11;3H                                                                         [11;75H[m[m[12;3H                                                                         [12;75H[m[m[13;3H                                                                         [13;75H[m[m[14;3H                                                                         [14;75H[m[m[15;3H                                                                         [15;75H[m[m[16;3H                                                                         [16;75H[m[16;78H [5;75H[23;4H The highlighted entry will be booted automatically in 1 seconds.   [5;75H[H[J  Booting &#39;CentOS (2.6.32-696.18.7.el6.x86_64)&#39;
+
+
+
+
+
+root (hd0)
+
+
+ Filesystem type is ext2fs, using whole disk
+
+
+kernel /boot/vmlinuz-2.6.32-696.18.7.el6.x86_64 root=/dev/xvde ro crashkernel=a
+
+
+uto LANG=en_US.UTF-8 KEYTABLE=us
+
+
+initrd /boot/initramfs-2.6.32-696.18.7.el6.x86_64.img
+
+
+
+
+
+============= Init TPM Front ================
+
+Tpmfront:Error Unable to read device/vtpm/0/backend-id during tpmfront initialization! error = ENOENT
+
+Tpmfront:Info Shutting down tpmfront
+
+close blk: backend=/local/domain/0/backend/vbd/2334/2048 node=device/vbd/2048
+
+close blk: backend=/local/domain/0/backend/vbd/2334/2128 node=device/vbd/2128
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&amp;rsquo;re all not too experienced with AWS so we don&amp;rsquo;t have much clue what to do. Any idea what we should be looking at or anything to point us in the right direction? The instance was actually a clone of production that we tested the upgrade on before doing it on actual production, so we have a chance to try it again and adjust any settings or whatever before or after the update.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/12/48011448/</link>
+            <pubDate>Thu, 28 Dec 2017 17:04:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/12/48011448/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a query using MarkLogic node.js that basically boils down to something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;db.documents.query(qb.where(qb.collection(&#39;test&#39;))).stream()
+.on(&#39;data&#39;, function(row) {
+    console.log(&amp;quot;Stream on data&amp;quot;);
+})
+.on(&#39;end&#39;, function() {
+    console.log(&amp;quot;Stream on end&amp;quot;);
+})
+.on(&#39;error&#39;, function(error) {
+    console.log(error);
+})
+;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, for a certain collection we have in our database, the &amp;lsquo;end&amp;rsquo; function doesn&amp;rsquo;t fire, i.e. I never see &amp;ldquo;Stream on end&amp;rdquo; appear in the log. There&amp;rsquo;s no error or anything, processing just stops. It&amp;rsquo;s only for this particular collection, other collections seem fine.&lt;/p&gt;
+&lt;p&gt;If I query documents in that collection directly using other methods such as qb.value() without using qb.collection(), the end event fires correctly. But once I add qb.collection() into the mix (using qb.and), the end event doesn&amp;rsquo;t fire.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m unsure how to debug this, as this is my first time trying to use streams in the nodejs client library. Any advice as to what I can check?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/12/47880549/</link>
+            <pubDate>Tue, 19 Dec 2017 05:31:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/12/47880549/</guid>
+            <description>
+            
+
+            &lt;p&gt;How to specify that a column in the schema should be nullable?&lt;/p&gt;
+&lt;p&gt;I tried adding a nullable attribute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var myFirstTDE = xdmp.toJSON(
+  {
+    &amp;quot;template&amp;quot;: {
+      &amp;quot;context&amp;quot;: &amp;quot;/match&amp;quot;,
+      &amp;quot;collections&amp;quot;: [&amp;quot;source1&amp;quot;],
+      &amp;quot;rows&amp;quot;: [
+        {
+          &amp;quot;schemaName&amp;quot;: &amp;quot;soccer&amp;quot;,
+          &amp;quot;viewName&amp;quot;: &amp;quot;matches&amp;quot;,
+          &amp;quot;columns&amp;quot;: [
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;id&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;long&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;id&amp;quot;,
+              &amp;quot;nullable&amp;quot;: 0
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;document&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;string&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;docUri&amp;quot;
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;date&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;date&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;match-date&amp;quot;
+            },
+            {
+              &amp;quot;name&amp;quot;: &amp;quot;league&amp;quot;,
+              &amp;quot;scalarType&amp;quot;: &amp;quot;string&amp;quot;,
+              &amp;quot;val&amp;quot;: &amp;quot;league&amp;quot;
+            }
+          ]
+        }
+      ]
+    }
+  }
+);
+
+tde.validate( 
+  [myFirstTDE]
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But this gave me a template error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;message&amp;quot;: &amp;quot;TDE-INVALIDTEMPLATENODE: Invalid extraction template node: fn:doc(&#39;&#39;)/template/array-node(&#39;rows&#39;)/object-node()/array-node(&#39;columns&#39;)/object-node()[1]/number-node(&#39;nullable&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a template defined using XQuery, adding nullable to the column works:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;column&amp;gt;
+  &amp;lt;name&amp;gt;ISSN&amp;lt;/name&amp;gt;
+  &amp;lt;scalar-type&amp;gt;string&amp;lt;/scalar-type&amp;gt;
+  &amp;lt;val&amp;gt;Journal/ISSN&amp;lt;/val&amp;gt;
+  &amp;lt;nullable&amp;gt;true&amp;lt;/nullable&amp;gt;
+&amp;lt;/column&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to do the same thing using JS/Json?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47513579/</link>
+            <pubDate>Mon, 27 Nov 2017 14:42:48 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47513579/</guid>
+            <description>
+            
+
+            &lt;p&gt;This is a follow-up to my question here: &lt;a href=&#34;https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250&#34;&gt;https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So let&amp;rsquo;s say I have a number of documents structured like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;declareUpdate();
+
+xdmp.documentInsert(
+       &#39;/test/tde.json&#39;,
+       {
+         content: {
+           name:&#39;Joe Parent&#39;,
+           children: [
+             {
+               name: &#39;Bob Child&#39;
+             },
+             {
+               name: &#39;Sue Child&#39;
+             },
+             {
+               name: &#39;Guy Child&#39;
+             }
+           ]
+         }
+       },
+       {permissions : xdmp.defaultPermissions(),
+        collections : [&#39;test&#39;]})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I want to define a template that would extract triples from these documents defining sibling relationships between the children. For the above example, I would want to extract the following triples (the relationship is two-way):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Bob Child sibling-of Sue Child
+Bob Child sibling-of Guy Child
+Sue Child sibling-of Bob Child
+Sue Child sibling-of Guy Child
+Guy Child sibling-of Bob Child
+Guy Child sibling-of Sue Child
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How can i set up my template to accomplish this?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47449002/</link>
+            <pubDate>Thu, 23 Nov 2017 06:32:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47449002/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;ve been studying the examples here: &lt;a href=&#34;https://docs.marklogic.com/guide/semantics/tde#id_25531&#34;&gt;https://docs.marklogic.com/guide/semantics/tde#id_25531&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form &amp;ldquo;name1 is-a-parent-of name2&amp;rdquo;. Here&amp;rsquo;s a test I tried, with a sample of the document structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;declareUpdate();
+
+xdmp.documentInsert(
+       &#39;/test/tde.json&#39;,
+       {
+         content: {
+           name:&#39;Joe Parent&#39;,
+           children: [
+             {
+               name: &#39;Bob Child&#39;
+             },
+             {
+               name: &#39;Sue Child&#39;
+             }
+           ]
+         }
+       },
+       {permissions : xdmp.defaultPermissions(),
+        collections : [&#39;test&#39;]})
+
+cts.doc(&#39;/test/tde.json&#39;)
+
+var tde = require(&amp;quot;/MarkLogic/tde.xqy&amp;quot;);
+// Load the user template for user profile rows
+var template = xdmp.toJSON(
+{
+  &amp;quot;template&amp;quot;:{
+    &amp;quot;context&amp;quot;:&amp;quot;content&amp;quot;,
+    &amp;quot;collections&amp;quot;: [
+      &amp;quot;test&amp;quot;
+    ],
+      &amp;quot;triples&amp;quot;:[
+      {
+        &amp;quot;subject&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;xs:string(name)&amp;quot;
+        },
+        &amp;quot;predicate&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;sem:iri(&#39;is-parent-of&#39;)&amp;quot;
+        },
+        &amp;quot;object&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;xs:string(children/name)&amp;quot;
+        }     
+      }
+    ]   
+  }
+}
+);
+//tde.validate([template]),
+tde.templateInsert(&amp;quot;/templates/test.tde&amp;quot;, template);
+tde.nodeDataExtract( 
+  [cts.doc( &#39;/test/tde.json&#39; )]
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, the above throws an Exception:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[javascript] TDE-EVALFAILED: tde.nodeDataExtract([cts.doc(&amp;quot;/test/tde.json&amp;rdquo;)]) &amp;ndash; Eval for Object=&#39;xs:string(children/name)&amp;rsquo; returns TDE-BADVALEXPRESSION: Invalid val expression: XDMP-CAST: (err:FORG0001) Invalid cast: (fn:doc(&amp;quot;/test/tde.json&amp;rdquo;)/content/array-node(&amp;ldquo;children&amp;rdquo;)/object-node()[1]/text(&amp;ldquo;name&amp;rdquo;), fn:doc(&amp;quot;/test/tde.json&amp;rdquo;)/content/array-node(&amp;ldquo;children&amp;rdquo;)/object-node()[2]/text(&amp;ldquo;name&amp;rdquo;)) cast as xs:string?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What is the proper syntax for extracting array nodes into a triple?&lt;/p&gt;
+&lt;p&gt;2nd somewhat related question: say I also wanted to have triples of the form &amp;ldquo;child1 is-sibling-of child2&amp;rdquo;. For the example above it would be &amp;ldquo;Bob Child is-sibling-of Sue Child&amp;rdquo;. What would be the proper syntax for this? I&amp;rsquo;m not even sure how to begin with this one.&lt;/p&gt;
+&lt;p&gt;Is TDE even the way to go here? Or is it better to do this programmatically? i.e. on document ingestion, generate those triples inside the document directly?&lt;/p&gt;
+&lt;p&gt;(If it&amp;rsquo;s relevant, the ML version being used is 9.)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47336545/</link>
+            <pubDate>Thu, 16 Nov 2017 18:15:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47336545/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.&lt;/p&gt;
+&lt;p&gt;One of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var results = op.fromView(&#39;test&#39;, &#39;claims&#39;)
+  .groupBy([&#39;member_id&#39;, &#39;member_name&#39;], [
+         op.count(&#39;num_claims&#39;, &#39;claim_no&#39;),
+         op.sum(&#39;total_amount&#39;, &#39;claim_amount&#39;)
+         ])
+  .orderBy(op.desc(&#39;total_amount&#39;))
+  .limit(200)
+  .result()
+  .toArray();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above works fine. The results are of the form&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  { 
+    member_id: 1, 
+    member_name: &#39;Bob&#39;, 
+    num_claims: 10, 
+    total_amount: 500
+  }, 
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, we also have a field &amp;ldquo;company&amp;rdquo;, where each claim is filed under a different company. Basically the relevant view columns are claim_no, member_id, member_name, company, claim_amount&lt;/p&gt;
+&lt;p&gt;I would like to be able to show a column that list the different companies for which the member_id/member_name has filed claims, and how many claims for each company.&lt;/p&gt;
+&lt;p&gt;i.e. I want my results to be something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  { 
+    member_id: 1, 
+    member_name: &#39;Bob&#39;, 
+    num_claims: 10, 
+    total_amount: 500,
+    companies: [
+      {
+        company: &#39;Ajax Co&#39;,
+        num_claims: 8
+      },
+      {
+        company: &#39;Side Gig&#39;,
+        num_claims: 2
+      }
+    ]
+  }, 
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I tried something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;results = results.map((member, index, array) =&amp;gt; {
+  var companies = op.fromView(&#39;test&#39;, &#39;claims&#39;)
+    .where(op.eq(op.col(&#39;member_id&#39;), member.member_id))
+    .groupBy(&#39;company&#39;, [
+      op.count(&#39;num_claims&#39;, &#39;claim_no&#39;)      
+    ])
+    .result()
+    .toArray();
+  member.companies = companies;
+  return member;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the output seems correct, but it also executes quite slowly - almost a minute (total number of claim documents is around 120k)&lt;/p&gt;
+&lt;p&gt;In our previous ML8 implementation, we were pre-generating summary documents for each member - so retrieval was reasonably fast with the downside that whenever we got a bunch of new data, all of the summary documents had to be re-generated. I was hoping that ML9&amp;rsquo;s optic API would make it easier to do the retrieval/grouping/aggregates on the fly so we wouldn&amp;rsquo;t have to do that.&lt;/p&gt;
+&lt;p&gt;In theory, I could just add company to the groupBy fields, then merge the rows in the result query as needed. But the problem with that approach is that I can&amp;rsquo;t guarantee I&amp;rsquo;ll get the top 200 by total amount (as was my original query)&lt;/p&gt;
+&lt;p&gt;So, the question is: Is there a better way of doing this with a reasonable execution time? Or should I just stick to pre-generating the summary documents?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47333503/</link>
+            <pubDate>Thu, 16 Nov 2017 15:31:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47333503/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a Marklogic 9 project that I&amp;rsquo;m configuring with Roxy.
+I&amp;rsquo;ve been following these examples: &lt;a href=&#34;https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps&#34;&gt;https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Basically, I have a server-side JS function that I want to call after deploy content. I have something like this:&lt;/p&gt;
+&lt;h1 id=&#34;then-you-would-define-your-new-method&#34;&gt;then you would define your new method&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;  def deploy_content
+    # you can optionally call the original
+    original_deploy_content
+
+    # do your stuff here
+    execute_query(%Q{
+      xquery version &amp;quot;1.0-ml&amp;quot;;
+      xdmp:javascript-eval(&#39;var process = require(&amp;quot;/ingestion/process.sjs&amp;quot;); process.postDeployContent();&#39;)
+    },
+    :db_name =&amp;gt; @properties[&amp;quot;ml.app-name&amp;quot;] + &amp;quot;-content&amp;quot;)
+
+  end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The xquery being called here evaluates fine when executed via query console. But when I call ml local deploy content, I get the following error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ERROR: 500 &amp;quot;Internal Server Error&amp;quot;
+ERROR: &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;500 Internal Server Error&amp;lt;/title&amp;gt;
+    &amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex,nofollow&amp;quot;/&amp;gt;
+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/error.css&amp;quot;/&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;span class=&amp;quot;error&amp;quot;&amp;gt;
+      &amp;lt;h1&amp;gt;500 Internal Server Error&amp;lt;/h1&amp;gt;
+      &amp;lt;dl&amp;gt;
+        &amp;lt;dt&amp;gt;XDMP-MODNOTFOUND: var process = require(&amp;quot;/ingestion/process.sjs&amp;quot;); process.postDeployContent(); -- Module /ingestion/process.sjs not found&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;in [anonymous], at 1:14 [javascript]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;at 3:6,
+in xdmp:eval(&amp;quot;var process = require(&amp;amp;amp;quot;/ingestion/process.sjs&amp;amp;amp;quot;); proce...&amp;quot;) [javascript]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;in /eval, at 3:6 [1.0-ml]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+      &amp;lt;/dl&amp;gt;
+    &amp;lt;/span&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why is the module not found when running via xquery from app_specific.rb?&lt;/p&gt;
+&lt;p&gt;Or&amp;hellip; is there a better way to call a JS module function from here. Sorry, I&amp;rsquo;m not too familiar with the xquery side, so I just called a JS function instead.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47216649/</link>
+            <pubDate>Fri, 10 Nov 2017 06:11:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47216649/</guid>
+            <description>
+            
+
+            &lt;p&gt;Basically the title. The client is complaining that when he zooms in, the text labels for the nodes are quite large. Is there a way to keep the node labels at a fixed font size even when zooming in or out?&lt;/p&gt;
+&lt;p&gt;From the nodes documentation (&lt;a href=&#34;http://visjs.org/docs/network/nodes.html),&#34;&gt;http://visjs.org/docs/network/nodes.html),&lt;/a&gt; there&amp;rsquo;s a scaling.label option, but it doesn&amp;rsquo;t seem to work. I think this is only relevant if I&amp;rsquo;m using values to scale the nodes.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/11/47129470/</link>
+            <pubDate>Mon, 06 Nov 2017 03:48:06 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/11/47129470/</guid>
+            <description>
+            
+
+            &lt;p&gt;Does Roxy have support for deploying templates for use with Marklogic 9&amp;rsquo;s Template Driven Extraction?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/10/47018820/</link>
+            <pubDate>Mon, 30 Oct 2017 15:22:49 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/10/47018820/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out the Roxy deployer. The Roxy app was created using the default app-type. I setup a new ML 9 database, and I ran &amp;ldquo;ml local bootstrap&amp;rdquo; using the default ports (8040 and 8041)&lt;/p&gt;
+&lt;p&gt;Then I setup a node application. I tried the following (sample code from &lt;a href=&#34;https://docs.marklogic.com/jsdoc/index.html&#34;&gt;https://docs.marklogic.com/jsdoc/index.html&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var marklogic = require(&#39;marklogic&#39;);
+var conn = {
+    host: &#39;192.168.33.10&#39;,  
+    port: 8040,
+    user: &#39;admin&#39;,
+    password: &#39;admin&#39;,
+    authType: &#39;DIGEST&#39;
+}
+
+var db = marklogic.createDatabaseClient(conn);
+
+db.createCollection(
+  &#39;/books&#39;,
+  {author: &#39;Beryl Markham&#39;},
+  {author: &#39;WG Sebald&#39;}
+  )
+.result(function(response) {
+    console.log(JSON.stringify(response, null, 2));
+  }, function (error) {
+    console.log(JSON.stringify(error, null, 2));
+  });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Running the script gave me an error like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ node test.js
+{
+  &amp;quot;message&amp;quot;: &amp;quot;write document list: cannot process response with 500 status&amp;quot;,
+  &amp;quot;statusCode&amp;quot;: 500,
+  &amp;quot;body&amp;quot;: &amp;quot;&amp;lt;error:error xsi:schemaLocation=\&amp;quot;http://marklogic.com/xdmp/error error.xsd\&amp;quot; xmlns:error=\&amp;quot;http://marklogic.com/xdmp/error\&amp;quot; xmlns:xsi=\&amp;quot;http://www.w3.org/2001/XMLSchema-instance\&amp;quot;&amp;gt;\n  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;\n  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;\n  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;\n  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;\n  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;\n  &amp;lt;error:expr/&amp;gt;\n  &amp;lt;error:data&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;\n  &amp;lt;/error:data&amp;gt;\n  &amp;lt;error:stack&amp;gt;\n    &amp;lt;error:frame&amp;gt;\n      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;\n      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;\n      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;\n      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n    &amp;lt;/error:frame&amp;gt;\n  &amp;lt;/error:stack&amp;gt;\n&amp;lt;/error:error&amp;gt;\n&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If I change the port to 8000 (the default appserver that inserts into Documents), the node function executes correctly as expected. I&amp;rsquo;m not sure if I need to configure anything else with the Roxy-created appserver so that it works with the node.js application.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure where the &amp;ldquo;DELETE_IF_UNUSED&amp;rdquo; part in the error message is coming from either. There doesn&amp;rsquo;t seem to be any such text in the configuration files generated by Roxy.&lt;/p&gt;
+&lt;p&gt;Edit: When accessing 192.168.33.10:8040 via the browser, I get a an xml with a similar error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;error:error xsi:schemaLocation=&amp;quot;http://marklogic.com/xdmp/error error.xsd&amp;quot; xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;
+  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;
+  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;
+  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;
+  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;
+  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;
+  &amp;lt;error:expr/&amp;gt;
+  &amp;lt;error:data&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;
+  &amp;lt;/error:data&amp;gt;
+  &amp;lt;error:stack&amp;gt;
+    &amp;lt;error:frame&amp;gt;
+      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;
+      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;
+      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;
+      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+    &amp;lt;/error:frame&amp;gt;
+  &amp;lt;/error:stack&amp;gt;
+&amp;lt;/error:error&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If it matters, MarkLogic version is 9.0-3.1. It&amp;rsquo;s a fresh install too.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/10/47009063/</link>
+            <pubDate>Mon, 30 Oct 2017 06:15:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/10/47009063/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there&amp;rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3&lt;/p&gt;
+&lt;p&gt;My MLCP options file is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import
+-host 
+192.168.33.10
+-port 
+8041
+-username 
+admin
+-password
+admin
+-input_file_path 
+d:\maroon\data\mbastest.csv 
+-mode 
+local 
+-input_file_type 
+delimited_text 
+-uri_id 
+ClientId 
+-output_uri_prefix
+/test/records/
+-output_uri_suffix 
+.json 
+-document_type 
+json 
+-transform_module 
+/ingestion/transform.js
+-transform_function 
+testTransform
+-transform_param
+test
+-content_encoding 
+windows-1252 
+-thread_count
+1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s the output of a test run with only 2 records in the test CSV file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON
+17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1
+17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &amp;lt;error:format-string xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&amp;lt;/error:format-string&amp;gt;
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &amp;lt;error:format-string xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&amp;lt;/error:format-string&amp;gt;
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If I remove the transform params, the import works fine.&lt;/p&gt;
+&lt;p&gt;I thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Add a property named &amp;quot;NEWPROP&amp;quot; to any JSON input document.
+// Otherwise, input passes through unchanged.
+
+function addProp(content, context)
+{
+  const propVal = (context.transform_param == undefined)
+                 ? &amp;quot;UNDEFINED&amp;quot; : context.transform_param;
+
+  if (xdmp.nodeKind(content.value) == &#39;document&#39; &amp;amp;&amp;amp;
+      content.value.documentFormat == &#39;JSON&#39;) {
+    // Convert input to mutable object and add new property
+    const newDoc = content.value.toObject();
+    newDoc.NEWPROP = propVal;
+
+    // Convert result back into a document
+    content.value = xdmp.unquote(xdmp.quote(newDoc));
+  }
+  return content;
+};
+
+exports.addProp = addProp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Of course I changed the params in the MLCP options file accordingly)&lt;/p&gt;
+&lt;p&gt;The issue still persists even with just this test function.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/10/46729939/</link>
+            <pubDate>Fri, 13 Oct 2017 12:26:57 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/10/46729939/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;ve been testing out the WebView component, but I can&amp;rsquo;t seem to get it to render things.&lt;/p&gt;
+&lt;p&gt;Sample here: &lt;a href=&#34;https://snack.expo.io/r1oje4C3-&#34;&gt;https://snack.expo.io/r1oje4C3-&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export default class App extends Component {
+  render() {
+    return (
+      &amp;lt;View style={styles.container}&amp;gt;
+        &amp;lt;Text style={styles.paragraph}&amp;gt;
+          Change code in the editor and watch it change on your phone!
+          Save to get a shareable url. You get a new url each time you save.
+        &amp;lt;/Text&amp;gt;
+        &amp;lt;WebView source={{html: &#39;&amp;lt;p&amp;gt;Here I am&amp;lt;/p&amp;gt;&#39;}} /&amp;gt;        
+        &amp;lt;WebView source={{ uri: &#39;http://www.google.com&#39;}} /&amp;gt;
+      &amp;lt;/View&amp;gt;
+    );
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When running the above example in Expo, neither of the two WebView components seem to render. What am I doing wrong?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/10/46579945/</link>
+            <pubDate>Thu, 05 Oct 2017 07:15:44 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/10/46579945/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out vis.js for generating graph visualization. For every edge in my graph, I have a number that describes the strength of the connection between two nodes. I&amp;rsquo;d like to render the vis.js graph such that the nodes that have stronger relationships (higher edge values) are closer together (edge length is shorter).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve set the relationship strength (an integer) as the &amp;ldquo;value&amp;rdquo; attribute for each edge, but this only seems to make the edge lines slightly thicker for higher values.&lt;/p&gt;
+&lt;p&gt;What options should I be looking at? I&amp;rsquo;m not sure if this is supposed to be a function of vis&amp;rsquo;s physics-based stabilization.&lt;/p&gt;
+&lt;p&gt;Thanks for advice!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/09/46264021/</link>
+            <pubDate>Sun, 17 Sep 2017 12:22:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/09/46264021/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an HTML page with around 10 charts generated by chart.js (so these are canvas elements). I want to be able to export the page content into a PDF file.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve tried using jsPDF&amp;rsquo;s .fromHTML function, but it doesn&amp;rsquo;t seem to support exporting the canvas contents. (Either that or I&amp;rsquo;m doing it wrong). I just did something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    $(&amp;quot;.test&amp;quot;).click(function() {
+  var doc = new jsPDF()
+
+  doc.fromHTML(document.getElementById(&amp;quot;testExport&amp;quot;));
+  doc.save(&#39;a4.pdf&#39;)
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any alternative approaches would be appreciated.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/09/46263980/</link>
+            <pubDate>Sun, 17 Sep 2017 12:17:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/09/46263980/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property &amp;ldquo;summaryData&amp;rdquo;, something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+...(other stuff)...
+  summaryData: {
+    count: 100,
+    total: 10000,
+    summaryDate: (date value)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, not all documents have this property. I&amp;rsquo;d like to construct an SJS query to retrieve those documents that don&amp;rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like &amp;ldquo;WHERE summaryData IS NULL&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I wasn&amp;rsquo;t sure what to search for in the docs. Any advise would be helpful.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/09/46112486/</link>
+            <pubDate>Fri, 08 Sep 2017 08:53:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/09/46112486/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using ML8 and Node.js. The documentation here: &lt;a href=&#34;http://docs.marklogic.com/guide/node-dev/documents#id_68765&#34;&gt;http://docs.marklogic.com/guide/node-dev/documents#id_68765&lt;/a&gt; describes how to do conditional updates in ML using the versionId field.&lt;/p&gt;
+&lt;p&gt;But for example if I want to do a conditional update on a different field, is it possible?&lt;/p&gt;
+&lt;p&gt;My scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)&lt;/p&gt;
+&lt;p&gt;Now, for my &amp;ldquo;Assign&amp;rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update. I don&amp;rsquo;t care if other fields in the same document have been updated or not - if other fields have been updated, I can still proceed with the Assign operation (hence I cannot use the versionId approach, since that covers the whole document)&lt;/p&gt;
+&lt;p&gt;How can this be done?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/45901868/</link>
+            <pubDate>Sun, 27 Aug 2017 05:09:50 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/45901868/</guid>
+            <description>
+            
+
+            &lt;p&gt;Sorry if the title is unclear, but I&amp;rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &amp;quot;count&amp;quot;: 100,
+  &amp;quot;groups&amp;quot;: [
+    {
+    &amp;quot;name&amp;quot;: &amp;quot;group A&amp;quot;,
+    &amp;quot;count&amp;quot;: 12
+    },
+    {
+    &amp;quot;name&amp;quot;: &amp;quot;group B&amp;quot;,
+    &amp;quot;count&amp;quot;: 22
+    },
+    {
+    &amp;quot;name&amp;quot;: &amp;quot;group C&amp;quot;,
+    &amp;quot;count&amp;quot;: 7
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Basically, the document has an item count plus a breakdown of that count into smaller groups. So this record represents a collection of 100 items, of which 12 are from group A, 22 are from group B, 7 are from group C.&lt;/p&gt;
+&lt;p&gt;Now, I have an element range index on &amp;ldquo;count&amp;rdquo; and a bunch of such documents. I&amp;rsquo;d like to be able to sort by any of the options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sort by total count (descending or ascending)&lt;/li&gt;
+&lt;li&gt;sort by group A count (descending or ascending)&lt;/li&gt;
+&lt;li&gt;sort by group B count (descending or ascending)&lt;/li&gt;
+&lt;li&gt;sort by group C count (descending or ascending)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;ve tried&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.orderBy(qb.sort(&amp;quot;count&amp;quot;, &amp;quot;descending&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This seems to be sort by the total cost (the one in the document root), but I&amp;rsquo;m not sure if that&amp;rsquo;s always true or I need to specify something else to guarantee it always gets that particular one.&lt;/p&gt;
+&lt;p&gt;For sorting by a specific group, I have no idea how to specify it.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/1242765/</link>
+            <pubDate>Sun, 20 Aug 2017 17:28:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/1242765/</guid>
+            <description>
+            
+
+            &lt;p&gt;For the past 2 weeks or so now, I&amp;rsquo;ve been having issues with my ISP (I&amp;rsquo;m not in the US, so it&amp;rsquo;s not Comcast or whatever).&lt;/p&gt;
+&lt;p&gt;Specifically, I often lose access to Google-related sites/services: the search engine itself, Gmail, Google Docs/Drive, Youtube, Google Keep are the ones I use most often. I&amp;rsquo;ve restarted my router multiple times already over the past couple of weeks. Same issue is encountered on my desktop (wired), laptop, iPad, phone (when connected over wifi) etc.&lt;/p&gt;
+&lt;p&gt;I know it&amp;rsquo;s related to my ISP because (a) I&amp;rsquo;ve read some other users experiencing similar issues on social media; (b) if I tether to my phone&amp;rsquo;s data connection, the problem isn&amp;rsquo;t encountered.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a proxy server configured. I used to be using Google DNS but I&amp;rsquo;ve also tried switching back to my ISP&amp;rsquo;s default DNS with no luck.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the best way for me to figure out what the issue is? (Preferably in a way that I can bring it up to my ISP so that they know specifically what they need to fix - talking to their customer service is a tedious experience so I&amp;rsquo;ve decided to figure out as much as possible before going back to them)&lt;/p&gt;
+&lt;p&gt;Screenshot of the error from the browser:
+&lt;a href=&#34;https://i.stack.imgur.com/cin58.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/cin58.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample tracert:
+&lt;a href=&#34;https://i.stack.imgur.com/PB5zP.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/PB5zP.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pings seem ok right now (although if I leave ping -t running for a while, there&amp;rsquo;s an occasional &amp;ldquo;Request timed out&amp;rdquo;):
+&lt;a href=&#34;https://i.stack.imgur.com/VxB92.png&#34;&gt;&lt;img src=&#34;https://i.stack.imgur.com/VxB92.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/45623599/</link>
+            <pubDate>Thu, 10 Aug 2017 21:19:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/45623599/</guid>
+            <description>
+            
+
+            &lt;p&gt;We&amp;rsquo;ve been trying to set up flexible replication in our system which uses a MarkLogic database.
+We followed the instructions from &lt;a href=&#34;https://docs.marklogic.com/8.0/guide/flexrep/quick_start&#34;&gt;https://docs.marklogic.com/8.0/guide/flexrep/quick_start&lt;/a&gt; and have been able to set up flexible replication between two MarkLogic servers. We have verified that new documents created in the master are copied over to the replica. However, the master database currently has more than 47 million records that were there before we configured the replication. Once the replication process was triggered, we observed that the documents are being replicated to the replica very slowly. Roughly 20,000 documents were replicated within the first two hours. The rate is very slow, it would take months for the old records to be fully replicated.&lt;/p&gt;
+&lt;p&gt;Our questions are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We are looking into increasing the hardware specs of the two servers, but aside from that would anyone have any advice or documentation as to how we could speed up the replication? I couldn&amp;rsquo;t find any existing documentation regarding this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Failing that, would it be possible to set up flexible replication without needing to replicate the initial data set? FYI, we also tried to clone the master database and use the clone as the replica. (We thought this might mean that the older records don&amp;rsquo;t have to be replicated.) However, in this case we encountered XDMP-NEWSTAMP and XDMP-EXTIME errors on the replica server, so we gave up on this approach. A sample of the errors encountered on the replica is below:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2017-08-03 18:45:04.376 Notice: exp-rest-content-flexrep:
+XDMP-NEWSTAMP: Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.376 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml] 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-EXTIME: try { let
+$raw-module-name := module-path($action-to-execute/p:module) let
+$module-kind := module-kind($raw-module-name) let $module-name := if
+($module-kind = &amp;ldquo;xquery&amp;rdquo; or $module-kind = &amp;ldquo;javascript&amp;rdquo;) then
+$raw-module-name else $cpfi:xslt-action return if ($module-name = &amp;ldquo;&amp;quot;)
+then fn:error((), &amp;ldquo;CPF-ACTIONNOTFOUND&amp;rdquo;, &amp;ldquo;Default success&amp;rdquo;) else if
+($module-kind = &amp;ldquo;javascript&amp;rdquo;) then (xdmp:trace(&amp;ldquo;CPF Action Invoke&amp;rdquo;,
+fn:string-join(($caller, xdmp:get-current-user(), $uri,
+$state-or-status, $raw-module-name), &amp;quot; &amp;ldquo;)), xdmp:invoke($module-name,
+(fn:QName(&amp;quot;&amp;rdquo;,&amp;ldquo;uri&amp;rdquo;), $uri, xs:QName(&amp;ldquo;cpf:document-uri&amp;rdquo;), $uri,
+fn:QName(&amp;quot;&amp;rdquo;,&amp;ldquo;transition&amp;rdquo;), $chosen-transition,
+options-var-js($action-to-execute)), $invoke-options)) else
+(xdmp:trace(&amp;ldquo;CPF Action Invoke&amp;rdquo;, fn:string-join(($caller,
+xdmp:get-current-user(), $uri, $state-or-status, $raw-module-name), &amp;quot;
+&amp;ldquo;)), xdmp:invoke($module-name, ($vars, xs:QName(&amp;ldquo;cpf:transition&amp;rdquo;),
+$chosen-transition, options-var($action-to-execute), if ($module-kind
+= &amp;ldquo;xslt&amp;rdquo;) then (xs:QName(&amp;ldquo;cpf:stylesheet-uri&amp;rdquo;), $raw-module-name) else ()), $invoke-options)) } catch ($e) { let $trace := let $context :=
+fn:concat($caller, &amp;quot; &amp;ldquo;, $uri, &amp;quot; action failed&amp;rdquo;) return
+(cpf:log(fn:string-join(($context, $e/err:format-string), &amp;quot; &amp;ldquo;),
+&amp;ldquo;error&amp;rdquo;), cpf:log(($context, $e), &amp;ldquo;fine&amp;rdquo;)) let $failure-action :=
+($pipelines/p:failure-action)[1] let $raw-failure-module :=
+module-path($failure-action/p:module) let $failure-kind :=
+module-kind($raw-failure-module) let $failure-module := if
+($failure-kind = &amp;ldquo;xquery&amp;rdquo; or $failure-kind = &amp;ldquo;javascript&amp;rdquo;) then
+$raw-failure-module else $cpfi:xslt-action return if ($failure-module
+= &amp;ldquo;&amp;quot;) then fn:error((), &amp;ldquo;CPF-ACTIONNOTFOUND&amp;rdquo;, &amp;ldquo;Default failure action&amp;rdquo;) else xdmp:invoke($failure-module, ($vars,
+xs:QName(&amp;ldquo;cpf:transition&amp;rdquo;), $chosen-transition,
+options-var($failure-action), xs:QName(&amp;ldquo;cpf:exception&amp;rdquo;), $e, if
+($failure-kind = &amp;ldquo;xslt&amp;rdquo;) then (xs:QName(&amp;ldquo;cpf:stylesheet-uri&amp;rdquo;),
+$raw-failure-module) else ()), $invoke-options) } &amp;ndash; Time limit
+exceeded 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 213:4, 2017-08-03
+18:45:04.379 Notice: TaskServer: in execute-action(&amp;ldquo;on-state-enter&amp;rdquo;,
+&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22,&#34;&gt;http://marklogic.com/states/initial&amp;quot;,&lt;/a&gt; &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;,
+(xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;), &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;,
+xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;), &lt;options
+xmlns=&#34;xdmp:eval&#34;&gt;&lt;isolation&gt;different-transaction&lt;/isolation&gt;&lt;prevent-deadlocks&gt;t&amp;hellip;&lt;/options&gt;,
+(fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/12349495875628658916.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/13179541037342910978.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+&amp;hellip;),
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action,&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline/p:state-transition[3]/p:default-action,&lt;/a&gt; fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline/p:state-transition[3&lt;/a&gt;])
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+&amp;ldquo;on-state-enter&amp;rdquo; 2017-08-03 18:45:04.379 Notice: TaskServer:&lt;br&gt;
+$state-or-status = &amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22&#34;&gt;http://marklogic.com/states/initial&amp;quot;&lt;/a&gt; 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;
+2017-08-03 18:45:04.379 Notice: TaskServer:   $vars =
+(xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;), &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;,
+xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;) 2017-08-03 18:45:04.379 Notice:
+TaskServer:   $invoke-options = &lt;options
+xmlns=&#34;xdmp:eval&#34;&gt;&lt;isolation&gt;different-transaction&lt;/isolation&gt;&lt;prevent-deadlocks&gt;t&amp;hellip;&lt;/options&gt;
+2017-08-03 18:45:04.379 Notice: TaskServer:   $pipelines =
+(fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/12349495875628658916.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/13179541037342910978.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+&amp;hellip;) 2017-08-03 18:45:04.379 Notice: TaskServer:   $action-to-execute
+= fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline/p:state-transition[3]/p:default-action&lt;/a&gt; 2017-08-03 18:45:04.379 Notice: TaskServer:   $chosen-transition =
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline/p:state-transition[3]&lt;/a&gt;
+2017-08-03 18:45:04.379 Notice: TaskServer:   $e = &amp;lt;error:error
+xsi:schemaLocation=&amp;quot;http://marklogic.com/xdmp/error error.xsd&amp;rdquo;
+xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;rdquo;
+xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot;&amp;gt;&lt;a href=&#34;error:code&#34;&gt;error:code&lt;/a&gt;XDMP-NEWSTAMP&amp;lt;/error:code&amp;gt;&lt;a href=&#34;error:name/&#34;&gt;error:name/&lt;/a&gt;&amp;lt;error:xquery&amp;hellip;&amp;lt;/error:error&amp;gt; 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 342:6, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+execute-transition(&amp;ldquo;on-state-enter&amp;rdquo;,
+&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22,&#34;&gt;http://marklogic.com/states/initial&amp;quot;,&lt;/a&gt; &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;,
+(xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;), &amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;,
+xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;), &amp;lt;trgr:trigger
+xmlns:trgr=&amp;quot;http://marklogic.com/xdmp/triggers&amp;quot;&amp;gt;&lt;a href=&#34;trgr:trigger-id&#34;&gt;trgr:trigger-id&lt;/a&gt;6551367241994447650&amp;lt;/trgr:trigger-id&amp;gt;&amp;lt;trgr:trig&amp;hellip;&amp;lt;/trgr:trigger&amp;gt;, (fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/12349495875628658916.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,&#34;&gt;http://marklogic.com/cpf/pipelines/13179541037342910978.xml&amp;quot;)/p:pipeline,&lt;/a&gt;
+&amp;hellip;),
+(fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline/p:state-transition%5B2%5D,&#34;&gt;http://marklogic.com/cpf/pipelines/12349495875628658916.xml&amp;quot;)/p:pipeline/p:state-transition[2],&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D,&#34;&gt;http://marklogic.com/cpf/pipelines/3358424510998587926.xml&amp;quot;)/p:pipeline/p:state-transition[3],&lt;/a&gt;
+fn:doc(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline/p:state-transition%5B1%5D,&#34;&gt;http://marklogic.com/cpf/pipelines/13179541037342910978.xml&amp;quot;)/p:pipeline/p:state-transition[1],&lt;/a&gt;
+&amp;hellip;), &amp;lt;p:null-transition
+xmlns:p=&amp;quot;http://marklogic.com/cpf/pipelines&amp;quot;&amp;gt;&amp;lt;p:state&amp;gt;http://marklogic.com/states/initial&amp;lt;/p:state&amp;gt;&amp;lt;/p:null-transition&amp;gt;)
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22&#34;&gt;http://marklogic.com/states/initial&amp;quot;&lt;/a&gt;) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state-or-status = () 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = (xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;),
+&amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;, xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 358:3, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+int:execute-state-transition(&amp;ldquo;on-state-enter&amp;rdquo;,
+cpf:state(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22),&#34;&gt;http://marklogic.com/states/initial&amp;quot;),&lt;/a&gt;
+&amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;, (xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;),
+&amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;, xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;), &amp;lt;trgr:trigger
+xmlns:trgr=&amp;quot;http://marklogic.com/xdmp/triggers&amp;quot;&amp;gt;&lt;a href=&#34;trgr:trigger-id&#34;&gt;trgr:trigger-id&lt;/a&gt;6551367241994447650&amp;lt;/trgr:trigger-id&amp;gt;&amp;lt;trgr:trig&amp;hellip;&amp;lt;/trgr:trigger&amp;gt;) [1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22&#34;&gt;http://marklogic.com/states/initial&amp;quot;&lt;/a&gt;) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $uri = (xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;),
+&amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;, xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/on-state-enter.xqy, at 41:6 [1.0-ml]
+2017-08-03 18:45:04.379 Notice: TaskServer:   $state =
+cpf:state(&amp;ldquo;&lt;a href=&#34;http://marklogic.com/states/initial%22&#34;&gt;http://marklogic.com/states/initial&amp;quot;&lt;/a&gt;) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $trace = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $vars = (xs:QName(&amp;ldquo;trgr:uri&amp;rdquo;),
+&amp;ldquo;/_smslogs/5849823.xml&amp;rdquo;, xs:QName(&amp;ldquo;trgr:trigger&amp;rdquo;), &amp;hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-NEWSTAMP: Timestamp too new for
+forest exp-rest-content-001-1 (15017569242290900) 2017-08-03
+18:45:04.379 Notice: exp-rest-content-flexrep: XDMP-NEWSTAMP:
+Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.379 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/45507423/</link>
+            <pubDate>Fri, 04 Aug 2017 12:55:30 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/45507423/</guid>
+            <description>
+            
+
+            &lt;p&gt;We have a search application using MarkLogic node.js. We use parsedQuery like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;            qb.parsedFrom(prop.search, 
+            qb.parseBindings(
+                qb.word(&#39;name&#39;, qb.bind(&#39;name&#39;)),
+                qb.word(&#39;birthdate&#39;, qb.bind(&#39;birthdate&#39;)),
+                qb.range(&#39;count&#39;, qb.datatype(&#39;float&#39;), qb.bind(&#39;count&#39;))
+            )
+        )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above currently supports search syntax like &amp;ldquo;count GT 50&amp;rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like &amp;ldquo;age GT 10&amp;rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly. We can&amp;rsquo;t store the age in the documents since the age changes depending on the current date.&lt;/p&gt;
+&lt;p&gt;Is this possible and if so, how? If it matters, we are using ML8&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/08/45463003/</link>
+            <pubDate>Wed, 02 Aug 2017 13:58:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/08/45463003/</guid>
+            <description>
+            
+
+            &lt;p&gt;Is there an easy way to delete all the element range indexes on a given database?&lt;/p&gt;
+&lt;p&gt;Thanks&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/07/45113954/</link>
+            <pubDate>Sat, 15 Jul 2017 02:40:41 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/07/45113954/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using the &lt;a href=&#34;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&#34;&gt;demo of jsPlumb here:&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this demo, there&amp;rsquo;s no way to move an existing connection to a different target node. Any idea how to do it?&lt;/p&gt;
+&lt;p&gt;Some of the other examples have movable connections, but they also use specific endpoints on the nodes. I like this particular example where I can drag the connection endpoint to any point of the target node.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/07/45113755/</link>
+            <pubDate>Sat, 15 Jul 2017 02:04:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/07/45113755/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out jsplumb. I have a copy of this demo: &lt;a href=&#34;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&#34;&gt;https://jsplumbtoolkit.com/community/demo/statemachine/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.&lt;/p&gt;
+&lt;p&gt;I would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area. Any advice on how to do this?&lt;/p&gt;
+&lt;p&gt;Secondary question: In the demo above the scrollbars appear as expected when I drag elements off the right or bottom of the canvas, but not when I drag them off the left edge or off the top edge. That is, if I drag a node upward off the canvas and drop it there, I no longer have any way of viewing that node or dragging it back down. Is there a way around this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/07/45093664/</link>
+            <pubDate>Fri, 14 Jul 2017 02:27:11 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/07/45093664/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a number of documents from different sources. Many of them reference a company name, but may have stored the information slightly differently. The name is a field in the documents.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to be able to detect variations on the same name, something like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ajax Company Incorporated&lt;/li&gt;
+&lt;li&gt;Ajax Co. Inc.&lt;/li&gt;
+&lt;li&gt;Ajax Company Inc.&lt;/li&gt;
+&lt;li&gt;Ajax Company&lt;/li&gt;
+&lt;li&gt;Ajax Company (formerly Ajax Unlimited)&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Does MarkLogic have any facility to query documents that have &amp;ldquo;similar&amp;rdquo; name as above? I&amp;rsquo;m not sure if there&amp;rsquo;s a more technical term that I should be searching for. Preferably for either the node client API or server-side js.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/06/44804960/</link>
+            <pubDate>Wed, 28 Jun 2017 14:11:34 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/06/44804960/</guid>
+            <description>
+            
+
+            &lt;p&gt;The scenario is: the user can input a URL for an image file, then on form submit I want to download the file and submit it to the server. As if they had selected the file using an &lt;code&gt;&amp;lt;input type=&#39;file&#39; /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Of course I can just do it on the server-side. But my question: how can I do this on the browser side via JavaScript? Is it possible?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2017/06/44621849/</link>
+            <pubDate>Mon, 19 Jun 2017 03:27:09 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/06/44621849/</guid>
+            <description>
+            
+
+            &lt;p&gt;Something similar to my question here: &lt;a href=&#34;https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count&#34;&gt;https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have documents in Marklogic with fields &lt;em&gt;name&lt;/em&gt; and &lt;em&gt;amount&lt;/em&gt;. I want to get the total amount for each name. Basically in SQL it would be&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select name, sum(amount) from table group by name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I have &lt;strong&gt;range indexes&lt;/strong&gt; for both &lt;em&gt;name&lt;/em&gt; and &lt;em&gt;amount&lt;/em&gt;.
+For getting sum aggregates, the documentation suggests something like &lt;strong&gt;valuesBuilder.fromIndexes(&amp;lsquo;amount&amp;rsquo;).aggregates(&amp;lsquo;sum&amp;rsquo;)&lt;/strong&gt;, but this only gets the sum for all records, instead of per name like I want.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Extending a long-lived (60 day) user access token&#39; on stackoverflow at https://stackoverflow.com/questions/39882930/extending-a-long-lived-60-day-user-access-token:
+</title>
+            <link>https://roytang.net/2017/05/44246624/</link>
+            <pubDate>Mon, 29 May 2017 16:07:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2017/05/44246624/</guid>
+            <description>
+            Reply to &amp;#39;Extending a long-lived (60 day) user access token&amp;#39; on stackoverflow at https://stackoverflow.com/questions/39882930/extending-a-long-lived-60-day-user-access-token:
+
+            &lt;p&gt;From &lt;a href=&#34;https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension:&#34;&gt;https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension:&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Refreshing Long-Lived Tokens&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even the long-lived access token will eventually expire. At any point, you can generate a new long-lived token by sending the person back to the login flow used by your web app - note that the person will not actually need to login again, they have already authorized your app, so they will immediately redirect back to your app from the login flow with a refreshed token - how this appears to the person will vary based on the type of login flow that you are using, for example if you are using the JavaScript SDK, this will take place in the background, if you are using a server-side flow, the browser will quickly redirect to the Login Dialog and then automatically and immediately back to your app again.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After doing the above you will obtain a new short-lived token and then you need to perform the same exchange for a long-lived token as above.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So it looks like it&amp;rsquo;s not possible to renew the long-lived token without getting a new short-lived one (which requires user interaction)&lt;/p&gt;
+&lt;p&gt;Auto-renewal on request is only available for native mobile apps (Android/iOS):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Native mobile apps using Facebook&amp;rsquo;s SDKs will get long-lived access tokens, good for about 60 days. These tokens will be refreshed once per day when the person using your app makes a request to Facebook&amp;rsquo;s servers. If no requests are made, the token will expire after about 60 days and the person will have to go through the login flow again to get a new token.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/12/40968519/</link>
+            <pubDate>Mon, 05 Dec 2016 06:44:52 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/12/40968519/</guid>
+            <description>
+            
+
+            &lt;p&gt;I tried to insert the following test document:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;db.documents.write(
+    {
+        uri: &amp;quot;/test/doc1.json&amp;quot;,
+        contentType: &amp;quot;application/json&amp;quot;,
+        collections: &amp;quot;test&amp;quot;,
+        content: {
+            name : &amp;quot;Peter&amp;quot;,
+            hobby: &amp;quot;Sleeping&amp;quot;,
+            other: &amp;quot;Some other info&amp;quot;,
+            &amp;quot;triple&amp;quot;: {
+                &amp;quot;subject&amp;quot;: {   
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/name/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Peter&amp;quot;   
+                },   
+                &amp;quot;predicate&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/relation/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;livesin&amp;quot;   
+                },   
+                &amp;quot;object&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/location/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Paris&amp;quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&amp;quot;Done loading&amp;quot;);
+  }); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I queried as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var query = [
+  &#39;SELECT ?s ?p ?o&#39; ,
+  &#39;WHERE { ?s ?p ?o }&#39; ,
+];
+db.graphs.sparql(&#39;application/sparql-results+json&#39;, query.join(&#39;\n&#39;)
+).result(function (result) {
+  console.log(JSON.stringify(result, null, 2));
+}, function(error) {
+  console.log(JSON.stringify(error, null, 2));
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/12/40968002/</link>
+            <pubDate>Mon, 05 Dec 2016 06:02:58 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/12/40968002/</guid>
+            <description>
+            
+
+            &lt;p&gt;I inserted a test document using the Node.js API:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  db.documents.write(
+    {
+        uri: &amp;quot;/test/doc1.json&amp;quot;,
+        contentType: &amp;quot;application/json&amp;quot;,
+        collections: &amp;quot;test&amp;quot;,
+        content: {
+            name : &amp;quot;Peter&amp;quot;,
+            &amp;quot;triple&amp;quot;: {
+                &amp;quot;subject&amp;quot;: {   
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/name/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Peter&amp;quot;   
+                },   
+                &amp;quot;predicate&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/relation/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;livesin&amp;quot;   
+                },   
+                &amp;quot;object&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/location/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Paris&amp;quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&amp;quot;Done loading&amp;quot;);
+  }); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I tried querying it via SPARQL on the Marklogic console webapp:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT ?s ?p ?o
+  WHERE { ?s ?p ?o }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The query above works fine, it retrieves the test triple I inserted above&lt;/p&gt;
+&lt;p&gt;However, if I want to filter by the literal value &amp;ldquo;Paris&amp;rdquo;, I tried the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PREFIX loc: &amp;lt;http://example.com/location/&amp;gt;
+
+SELECT ?s ?p 
+  WHERE { ?s ?p loc:Paris }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But in this case I got zero results. Is this syntax incorrect? I was just following how the queries looked in &lt;a href=&#34;https://docs.marklogic.com/guide/semantics/semantic-searches&#34;&gt;https://docs.marklogic.com/guide/semantics/semantic-searches&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What is the proper way to do it?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/11/40720684/</link>
+            <pubDate>Mon, 21 Nov 2016 12:52:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/11/40720684/</guid>
+            <description>
+            
+
+            &lt;p&gt;I want to retrieve all documents in my MarkLogic db that have month=November and also group them by name, and get the count of records per name. I know I can get the frequency per name by using valuesBuilder with a range index on the name field, but how can I filter this result so that I only get the count of records for the month of November?&lt;/p&gt;
+&lt;p&gt;Supposedly valuesBuilder.fromIndexes().where() can do the filtering, but I don&amp;rsquo;t know what to pass here and examples online seem to be sparse.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/11/40715822/</link>
+            <pubDate>Mon, 21 Nov 2016 08:37:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/11/40715822/</guid>
+            <description>
+            
+
+            &lt;p&gt;In a relational db you&amp;rsquo;d have something like &amp;ldquo;select name, count(1) as c from mytable group by name order by c desc&amp;rdquo;. Basically I want to count how many records contain each name value and get the ones with highest counts first.&lt;/p&gt;
+&lt;p&gt;Is there a way to do a similar thing in Marklogic using the Node.js API?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/03/1049085/</link>
+            <pubDate>Sat, 05 Mar 2016 15:54:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/03/1049085/</guid>
+            <description>
+            
+
+            &lt;p&gt;I basically never want to use the feature. How to? There&amp;rsquo;s another question here that answers how to disable it in Linux via a command-line option in .bashrc, but I don&amp;rsquo;t think that can be done in Windows?&lt;/p&gt;
+&lt;p&gt;Edit: Additional information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I am on Windows 10&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No Recovery.xcu anywhere on my C drive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;even if I discard recovery data, then the next time I open the same file there is no recovery prompt. But when I shutdown Windows without shutting down LibreOffice first, then I get the prompt the next time I open the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2015/09/32558234/</link>
+            <pubDate>Mon, 14 Sep 2015 06:06:45 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2015/09/32558234/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have installed an SSL certificate on my Apache server, but when I access the site via URL from a different machine, an HTTPS error is shown and viewing the certificate details says &amp;ldquo;this certificate has an invalid digital signature&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;If I view the same URL from within the server itself, the certificate is fine and there is no HTTPS error.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what to look for in httpd.conf. Any advice?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/06/24115461/</link>
+            <pubDate>Mon, 09 Jun 2014 07:18:34 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/06/24115461/</guid>
+            <description>
+            
+
+            &lt;p&gt;As it says in the title, I have a Java app that runs on Windows (using SWT). How can the java app detect if the machine has touch screen capability?&lt;/p&gt;
+&lt;p&gt;The purpose is to present different UI elements if touch screen is available.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/06/23992330/</link>
+            <pubDate>Mon, 02 Jun 2014 10:24:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/06/23992330/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have two inputs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a date value&lt;/li&gt;
+&lt;li&gt;an integer (+8 or -3 or such) that represents the offset from GMT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Java, how can I convert the given date value into the corresponding date/time in the local timezone? There doesn&amp;rsquo;t seem to be any timezone offset function in the Date class.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/05/23645265/</link>
+            <pubDate>Wed, 14 May 2014 03:44:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/05/23645265/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an existing AWT Java desktop application. Is there a library or something I can use to have it respond to multitouch gestures (in Windows 7/8)? I see there&amp;rsquo;s frameworks like MT4J or JavaFX that have multitouch support, but it seems these are separate UI frameworks that I can&amp;rsquo;t use with my existing app?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/05/23622915/</link>
+            <pubDate>Tue, 13 May 2014 04:39:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/05/23622915/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a working Java SWING-based desktop application, and I&amp;rsquo;m being asked if it can be run on the Microsoft Surface Pro or Pro 2. As I understand it, these are using stock Windows 8/8.1 and will be able to run any Windows app normally, is this correct?&lt;/p&gt;
+&lt;p&gt;Are there any caveats or special considerations when running my app on these devices?&lt;/p&gt;
+&lt;p&gt;Edit: If it matters, the JRE would be distributed together with the application, so installing Java isnt an issue.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2014/02/21730829/</link>
+            <pubDate>Wed, 12 Feb 2014 14:32:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2014/02/21730829/</guid>
+            <description>
+            
+
+            &lt;p&gt;IE8 is giving me the slow-running script message on load of a page:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stop running this script? A script on this page is causing your web
+browser to run slowly. If it continues to run, your computer might
+become unresponsive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, the webapp I&amp;rsquo;m debugging is fairly old and has a whole lot of scripts. Is there an easy way for me to find out which of those scripts is causing the problem?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/11/19805338/</link>
+            <pubDate>Wed, 06 Nov 2013 06:14:31 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/11/19805338/</guid>
+            <description>
+            
+
+            &lt;p&gt;I want to add focus and blur handlers to all CKEditor instances in our web application. I would like to add the handlers in one place, instead of hunting down every part where we instantiate a CKEditor. Can this be done, like maybe in the config.js editorConfig setup?&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t do something like &amp;ldquo;on document ready, add handlers to all CKEditor instances on the page&amp;rdquo; either, since additional editor instances may be created dynamically.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/10/19397197/</link>
+            <pubDate>Wed, 16 Oct 2013 07:08:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/10/19397197/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a CKEditor instance with inline editing enabled. It works fine, but I also have an [Edit] button which I want to trigger inline editing (and focus on the text) when the button is clicked.&lt;/p&gt;
+&lt;p&gt;Is this possible?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/07/17855992/</link>
+            <pubDate>Thu, 25 Jul 2013 10:52:41 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/07/17855992/</guid>
+            <description>
+            
+
+            &lt;p&gt;Since I found out that we can&amp;rsquo;t force IE 8 Browser Mode for intranet sites if &amp;ldquo;Display intranet sites in Compatibility View&amp;rdquo; mode is ticked (regardless of X-UA-COMPATIBLE headers or metatags), I&amp;rsquo;m trying to assess the impact of just running with IE 8 Compatibility View Browser Mode. (With IE 8 Standards as the Document Mode)&lt;/p&gt;
+&lt;p&gt;Can anyone advice or is there any resource somewhere that can tell me what differences there are between these 2 browser modes?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16184236/</link>
+            <pubDate>Wed, 24 Apr 2013 05:45:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16184236/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a config.toolbarGroups setting in config.js but I don&amp;rsquo;t know what name to use for the groups to add font family/font size controls. (It seems the documentation is lacking in this regard). I&amp;rsquo;ve found some suggestion that I should use CKBuilder to create a package that already includes it, but I can&amp;rsquo;t redeploy the entire ckeditor just to add a couple of buttons.&lt;/p&gt;
+&lt;p&gt;Edit: My CKEditor is version 4&lt;/p&gt;
+&lt;p&gt;Any advise?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16011483/</link>
+            <pubDate>Mon, 15 Apr 2013 09:10:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16011483/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using the inline editing feature of CKEditor, but I want to add some hint text to the initial state of the control, i.e. something like &amp;ldquo;Click here to edit&amp;hellip;&amp;rdquo;, but I would like that hint text to be removed automatically when the user clicks the control to start typing. Is this feasible, or is there any alternative?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/04/16009411/</link>
+            <pubDate>Mon, 15 Apr 2013 07:01:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/04/16009411/</guid>
+            <description>
+            
+
+            &lt;p&gt;I downloaded the latest CKEditor and tried the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;script src=&amp;quot;ckeditor/ckeditor.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;editor&amp;quot;&amp;gt;
+Some test text
+&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+CKEDITOR.disableAutoInline = true;
+
+var editor = CKEDITOR.inline( &#39;editor&#39; );
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It worked in the sense that I can click the div to make the editor toolbar appear, but aside from that I can&amp;rsquo;t seem to edit the content! Most of the toolbar buttons are disabled, and typing into the field does nothing. (See screenshot below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.stack.imgur.com/koQbY.png&#34; alt=&#34;enter image description here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;http://nightly.ckeditor.com/13-04-14-07-42/standard/samples/inlinebycode.html&#34;&gt;http://nightly.ckeditor.com/13-04-14-07-42/standard/samples/inlinebycode.html&lt;/a&gt; this should be all the JS I need. Is there some other config setting I need to be doing?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/03/15611653/</link>
+            <pubDate>Mon, 25 Mar 2013 09:37:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/03/15611653/</guid>
+            <description>
+            
+
+            &lt;p&gt;I want to write a servlet that wraps around a set of resources and needs to protect them with basic HTTP auth; the submitted username/pass will be checked against the backend database before serving the file.&lt;/p&gt;
+&lt;p&gt;Does anyone have any working examples of this? I tried the sample at &lt;a href=&#34;http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications&#34;&gt;http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications&lt;/a&gt; but it kept returning an &lt;code&gt;IllegalStateException&lt;/code&gt; in the &lt;code&gt;sendError&lt;/code&gt; call.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2013/03/15474727/</link>
+            <pubDate>Mon, 18 Mar 2013 10:35:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2013/03/15474727/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to trace a slowdown on load of a web page in our application and there&amp;rsquo;s a ton of JavaScript to go through so I&amp;rsquo;d rather not process them individually.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m trying to see if there&amp;rsquo;s a way to list out all the event handlers added to &lt;code&gt;$(document).ready()&lt;/code&gt; so that I would just look through those handlers to see what might be causing the problem.&lt;/p&gt;
+&lt;p&gt;Is there a way to do this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/12/518306/</link>
+            <pubDate>Wed, 12 Dec 2012 12:29:11 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/12/518306/</guid>
+            <description>
+            
+
+            &lt;p&gt;When I came home today, my video card started displaying graphic artifacts, and logging in to windows 7 would cause the computer to reboot. The computer was working fine when i last shut it down last night.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;amp;feature=g-crec-u&#34;&gt;a video of what&amp;rsquo;s happening&lt;/a&gt;. I have two monitors, in the middle of the video I pan to the second monitor. At about 0:24, I attempt to login and the machine reboots. My video card is an NVidia GeForce GTX 460.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;amp;feature=g-crec-u&#34;&gt;&lt;img src=&#34;http://i.stack.imgur.com/yWYGp.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some more symptoms I&amp;rsquo;ve encountered and stuff I&amp;rsquo;ve tried over the course of several reboots:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;was able to login normally once, but after launching a few apps (chrome, tweetdeck), graphic artifacts started appearing again and the machine eventually froze&lt;/li&gt;
+&lt;li&gt;am able to login successfully in safe mode&lt;/li&gt;
+&lt;li&gt;sometimes the display is fine during the start up, and only starts getting wonky a few seconds after I go to the login screen by selecting a user to login with&lt;/li&gt;
+&lt;li&gt;have encountered Windows failing to start up at all a couple of times (blue screen during startup)&lt;/li&gt;
+&lt;li&gt;have tried System restore/repair a few times. i&amp;rsquo;ve already tried all the restore points available&lt;/li&gt;
+&lt;li&gt;have tried uninstalling the vid card driver; machine boots and lets me login and use apps as normal but of course i&amp;rsquo;m at a low resolution (and won&amp;rsquo;t be able to play games). tried to reinstall the vid card driver using automatic update; after the reinstall, same problem occurred&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now I&amp;rsquo;m not sure how to proceed; all signs point to the video card being damaged and probably in need of replacement; my question is are there any other things I can try first?&lt;/p&gt;
+&lt;p&gt;Like, is it possible there&amp;rsquo;s just something loose in the connections internally and I can try to remove and reconnect the card first? Or some alternative video driver to try? Or would a shop tech be able to do something to save the card?&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have time to take apart the computer at the moment, probably I&amp;rsquo;ll do it this weekend, but I&amp;rsquo;d like to know my options ahead of time.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2012/11/503769/</link>
+            <pubDate>Sat, 10 Nov 2012 11:03:05 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/11/503769/</guid>
+            <description>
+            
+
+            &lt;p&gt;It&amp;rsquo;s happened a few times, I&amp;rsquo;m not sure how to diagnose/debug, so any advise would be appreciated.&lt;/p&gt;
+&lt;p&gt;Symptons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sometimes the router will randomly disconnect; the connection icon on my desktop (wired to the router) gets that yellow &amp;ldquo;!&amp;rdquo; symbol that tells me my connection just went down. At this point I&amp;rsquo;m unable to ping the router.&lt;/li&gt;
+&lt;li&gt;afterwards I try to reset the router by removing then reconnecting the power jack on the router side (this is the fastest way as I can&amp;rsquo;t reset the power strip it&amp;rsquo;s connected to without rebooting my desktop. the router has a reset thingy, but it&amp;rsquo;s one of those things where i have to find a pin to stick into the hole, and when I get disconnected I usually need to get reconnected immediately so I just pull and put back the power jack), but even after that the connection has the same state.&lt;/li&gt;
+&lt;li&gt;after the router reboots, if I try to connect to it using a wifi device like my ipad, the ipad prompts me for the wifi password even though it had already &amp;ldquo;remembered&amp;rdquo; all the settings for this router forever&lt;/li&gt;
+&lt;li&gt;after i finally decide to reboot the power strip, and my desktop and the router boot up again, the connection returns to its normal state somewhat and i&amp;rsquo;m able to connect to it as normal using the desktop and wifi devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What do I need to check the next time this happens so I can figure out the problem? Is it possibly because we&amp;rsquo;ve been using the power jack on the router as an easier way to reboot it? Should I be shopping around for a new router?&lt;/p&gt;
+&lt;p&gt;If it helps, the router is a DLink DIR-300&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

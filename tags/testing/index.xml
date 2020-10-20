@@ -1,0 +1,60 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>testing on Roy Tang</title>
+      <link>https://roytang.net/tags/testing/</link>
+      <description>Recent content in testing on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Sun, 03 Feb 2019 05:56:56 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>TriviaStorm: Text and Answer parsing
+</title>
+            <link>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
+            <pubDate>Sun, 03 Feb 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
+            <description>
+            
+            &lt;p&gt;A while back I started a &lt;a href=&#34;https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
+&lt;p&gt;But today, I thought I&amp;rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for &lt;a href=&#34;https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/&#34;&gt;Django&amp;rsquo;s unit testing framework&lt;/a&gt;. I&amp;rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the bot had to be able to handle a wide variety of answers&lt;/li&gt;
+&lt;li&gt;there were a lot of test cases to check and a single checking function handling everything - I couldn&amp;rsquo;t risk breaking previous working tests&lt;/li&gt;
+&lt;li&gt;inputs were discrete and outputs were easily checkable&lt;/li&gt;
+&lt;li&gt;I needed to be able to add new test scenarios all the time as more problematic answers were provided&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The project currently isn&amp;rsquo;t open source, but I did make a gist of the &lt;code&gt;tests.py&lt;/code&gt; I used &lt;a href=&#34;https://gist.github.com/roytang/9199962097bdf3ca2aa8ec9c43bd7ef8&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;check&lt;/code&gt; function basically accepts three parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a checking mode (currently only supports EXACT and ALL_ANYORDER)&lt;/li&gt;
+&lt;li&gt;the answer phrase provided by the player&lt;/li&gt;
+&lt;li&gt;a set of valid answers accepted for the question&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;rsquo;s a number of test cases already handled:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;checking should be case-insensitive&lt;/li&gt;
+&lt;li&gt;articles should be ignored if they&amp;rsquo;re at the start of the answer phrase&lt;/li&gt;
+&lt;li&gt;numbers should be acceptable for the spelled-out versions i.e. &amp;ldquo;7&amp;rdquo; should be accepted for &amp;ldquo;seven&amp;rdquo;, and vice versa&lt;/li&gt;
+&lt;li&gt;some minor soundex (phonetic matching) support (via &lt;a href=&#34;https://github.com/jamesturk/jellyfish&#34;&gt;Python Jellyfish&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;handling of questions that support multiple answers. This is what ALL_ANYORDER is for - it means that all the given answers must be provided, but they can be in any order. i.e. if the valid answer set is &lt;code&gt;&amp;quot;Huey&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;Dewey&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;Louie&amp;quot;&lt;/code&gt;, then &lt;code&gt;&amp;quot;Louie Huey Dewey&amp;quot;&lt;/code&gt; should be accepted as an answer&lt;/li&gt;
+&lt;li&gt;nonalphanumeric characters should be treated as whitespace, except in some special cases&lt;/li&gt;
+&lt;li&gt;special case: abbreviations like &lt;code&gt;&amp;quot;don&#39;t&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;can&#39;t&amp;quot;&lt;/code&gt; should be treated as if they were a single term like &lt;code&gt;&amp;quot;dont&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;cant&amp;quot;&lt;/code&gt; instead of &lt;code&gt;&amp;quot;don t&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;can t&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The answer checking definitely still isn&amp;rsquo;t perfect, but I&amp;rsquo;m pretty happy with where it&amp;rsquo;s at right now. There is also definitely an element of subjectivity as to which answers should be accepted. One time a player complained that his answer &lt;code&gt;&amp;quot;Batman vs Superman Dawn of Justice&amp;quot;&lt;/code&gt; should count for &lt;code&gt;&amp;quot;Batman v Superman: Dawn of Justice&amp;quot;&lt;/code&gt;, but for this particular question I had chosen not to allow &amp;ldquo;vs&amp;rdquo; for &amp;ldquo;v&amp;rdquo; because that was the actual movie title, which might be unreasonable now that I think about it!&lt;/p&gt;
+&lt;p&gt;I do know that I need to implement a better &amp;ldquo;synonym&amp;rdquo; handling, i.e. mapping of &lt;code&gt;&amp;quot;v&amp;quot;&amp;lt;-&amp;gt;&amp;quot;vs&amp;quot;&lt;/code&gt; and other terms like &lt;code&gt;&amp;quot;mr&amp;quot;&amp;lt;-&amp;gt;&amp;quot;mister&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;natl&amp;quot;&amp;lt;-&amp;gt;&amp;quot;national&amp;quot;&lt;/code&gt;. The problem with handling things like that is that is the possible combinations of phrases expands when multiple such terms are found in the same answer, so it can&amp;rsquo;t scale too well. I suppose I need to normalize the answer sets at the time the question is defined. What do you know, I figured out how to do something just by writing a blog post!&lt;/p&gt;
+&lt;p&gt;I do have a bunch of other enhancements planned for the trivia bot, including support for slack and discord, and a longer time frame roadmap, but I&amp;rsquo;m not sure when I can commit more time to it. Still, it&amp;rsquo;s turned out to be a pretty fun endeavor, I&amp;rsquo;m hoping it leads to something cool!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,135 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>sparql on Roy Tang</title>
+      <link>https://roytang.net/tags/sparql/</link>
+      <description>Recent content in sparql on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Mon, 05 Dec 2016 06:44:52 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/sparql/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/12/40968519/</link>
+            <pubDate>Mon, 05 Dec 2016 06:44:52 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/12/40968519/</guid>
+            <description>
+            
+
+            &lt;p&gt;I tried to insert the following test document:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;db.documents.write(
+    {
+        uri: &amp;quot;/test/doc1.json&amp;quot;,
+        contentType: &amp;quot;application/json&amp;quot;,
+        collections: &amp;quot;test&amp;quot;,
+        content: {
+            name : &amp;quot;Peter&amp;quot;,
+            hobby: &amp;quot;Sleeping&amp;quot;,
+            other: &amp;quot;Some other info&amp;quot;,
+            &amp;quot;triple&amp;quot;: {
+                &amp;quot;subject&amp;quot;: {   
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/name/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Peter&amp;quot;   
+                },   
+                &amp;quot;predicate&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/relation/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;livesin&amp;quot;   
+                },   
+                &amp;quot;object&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/location/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Paris&amp;quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&amp;quot;Done loading&amp;quot;);
+  }); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I queried as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var query = [
+  &#39;SELECT ?s ?p ?o&#39; ,
+  &#39;WHERE { ?s ?p ?o }&#39; ,
+];
+db.graphs.sparql(&#39;application/sparql-results+json&#39;, query.join(&#39;\n&#39;)
+).result(function (result) {
+  console.log(JSON.stringify(result, null, 2));
+}, function(error) {
+  console.log(JSON.stringify(error, null, 2));
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2016/12/40968002/</link>
+            <pubDate>Mon, 05 Dec 2016 06:02:58 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2016/12/40968002/</guid>
+            <description>
+            
+
+            &lt;p&gt;I inserted a test document using the Node.js API:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  db.documents.write(
+    {
+        uri: &amp;quot;/test/doc1.json&amp;quot;,
+        contentType: &amp;quot;application/json&amp;quot;,
+        collections: &amp;quot;test&amp;quot;,
+        content: {
+            name : &amp;quot;Peter&amp;quot;,
+            &amp;quot;triple&amp;quot;: {
+                &amp;quot;subject&amp;quot;: {   
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/name/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Peter&amp;quot;   
+                },   
+                &amp;quot;predicate&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/relation/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;livesin&amp;quot;   
+                },   
+                &amp;quot;object&amp;quot;: {     
+                    &amp;quot;datatype&amp;quot;: &amp;quot;http://example.com/location/&amp;quot;,  
+                    &amp;quot;value&amp;quot;: &amp;quot;Paris&amp;quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&amp;quot;Done loading&amp;quot;);
+  }); 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I tried querying it via SPARQL on the Marklogic console webapp:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT ?s ?p ?o
+  WHERE { ?s ?p ?o }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The query above works fine, it retrieves the test triple I inserted above&lt;/p&gt;
+&lt;p&gt;However, if I want to filter by the literal value &amp;ldquo;Paris&amp;rdquo;, I tried the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PREFIX loc: &amp;lt;http://example.com/location/&amp;gt;
+
+SELECT ?s ?p 
+  WHERE { ?s ?p loc:Paris }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But in this case I got zero results. Is this syntax incorrect? I was just following how the queries looked in &lt;a href=&#34;https://docs.marklogic.com/guide/semantics/semantic-searches&#34;&gt;https://docs.marklogic.com/guide/semantics/semantic-searches&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What is the proper way to do it?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

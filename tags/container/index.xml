@@ -1,0 +1,69 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>container on Roy Tang</title>
+      <link>https://roytang.net/tags/container/</link>
+      <description>Recent content in container on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 22 Jul 2010 12:06:37 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/container/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/07/3308615/</link>
+            <pubDate>Thu, 22 Jul 2010 12:06:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/07/3308615/</guid>
+            <description>
+            
+
+            &lt;p&gt;Say I have the following HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+    &amp;lt;style&amp;gt;
+        #container {
+            border: 1px red solid;
+        }
+        .floaty {
+            width: 200px;
+            float: left;
+            border: 1px green solid;
+        }
+    &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&#39;container&#39;&amp;gt;
+    Text inside the container
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This renders as: &lt;img src=&#34;http://i.stack.imgur.com/Ci22u.png&#34; alt=&#34;floaty divs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the proper CSS way to have the container (red-bordered box) completely surround the floaty green-bordered boxes?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

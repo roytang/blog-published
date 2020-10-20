@@ -1,0 +1,253 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>html on Roy Tang</title>
+      <link>https://roytang.net/tags/html/</link>
+      <description>Recent content in html on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/html/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Pure HTML Toggles
+</title>
+            <link>https://roytang.net/2020/04/pure-html-toggles/</link>
+            <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2020/04/pure-html-toggles/</guid>
+            <description>
+            
+            &lt;p&gt;Just last month, I wrote a method of implementing &lt;a href=&#34;https://roytang.net/2020/03/pure-css-spoilers/&#34;&gt;element toggles using a pure CSS approach&lt;/a&gt;. While that post was educational for me, it turns out there was an even simpler way of doing things. I found out about it when I read this &lt;a href=&#34;https://www.jvt.me/posts/2019/05/19/html-toggle/&#34;&gt;post by Jamie Tanna&lt;/a&gt;. Apparently the &lt;code&gt;details&lt;/code&gt; and &lt;code&gt;summary&lt;/code&gt; tags already support HTML toggles, so we can do this with neither CSS or JS!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve updated the spoiler tags on this site to use this new method. I also used this method for the Table of Contents on certain posts (currently only the &lt;a href=&#34;https://roytang.net/2020/03/covid19/&#34;&gt;Covid19 diary&lt;/a&gt;). Sample here:&lt;/p&gt;
+&lt;details class=&#34;spoiler&#34;&gt;
+    &lt;summary&gt;(Spoilers)&lt;/summary&gt;
+    This is some text!
+&lt;/details&gt;
+&lt;p /&gt;
+&lt;p&gt;The post I linked above covers most of the technical details. My only issue with this is that&amp;rsquo;s a relatively new feature. Even though browser support is near universal (minus the much-maligned and quite ancient Internet Explorer), I&amp;rsquo;m not sure if there will be issues or how it renders when viewed in an older browsers or in other contexts such as in a feed reader or a screen reader. I don&amp;rsquo;t want to accidentally show spoilers! I suppose that&amp;rsquo;s a minor concern at this point, and maybe I should just be confident that people who make those tools have taken the visibility toggle into account.&lt;/p&gt;
+&lt;p&gt;(I&amp;rsquo;ve also edited the CSS post to point to this one so anyone who sees it has better information!)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to add dynamic data in source of html using Javascript&#39; on stackoverflow at https://stackoverflow.com/questions/11465306/how-to-add-dynamic-data-in-source-of-html-using-javascript:
+</title>
+            <link>https://roytang.net/2012/07/11465333/</link>
+            <pubDate>Fri, 13 Jul 2012 06:36:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2012/07/11465333/</guid>
+            <description>
+            Reply to &amp;#39;How to add dynamic data in source of html using Javascript&amp;#39; on stackoverflow at https://stackoverflow.com/questions/11465306/how-to-add-dynamic-data-in-source-of-html-using-javascript:
+
+            &lt;p&gt;Check the value of the control on document ready and adjust the div visibility accordingly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/07/3308615/</link>
+            <pubDate>Thu, 22 Jul 2010 12:06:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/07/3308615/</guid>
+            <description>
+            
+
+            &lt;p&gt;Say I have the following HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+    &amp;lt;style&amp;gt;
+        #container {
+            border: 1px red solid;
+        }
+        .floaty {
+            width: 200px;
+            float: left;
+            border: 1px green solid;
+        }
+    &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&#39;container&#39;&amp;gt;
+    Text inside the container
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    Floaty block 1&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    Floaty block 2&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&#39;floaty&#39;&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    Floaty block 3&amp;lt;br/&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This renders as: &lt;img src=&#34;http://i.stack.imgur.com/Ci22u.png&#34; alt=&#34;floaty divs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the proper CSS way to have the container (red-bordered box) completely surround the floaty green-bordered boxes?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;submitting dynamically created form with javascript&#39; on stackoverflow at https://stackoverflow.com/questions/2053970/submitting-dynamically-created-form-with-javascript:
+</title>
+            <link>https://roytang.net/2010/01/2053987/</link>
+            <pubDate>Wed, 13 Jan 2010 02:30:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2053987/</guid>
+            <description>
+            Reply to &amp;#39;submitting dynamically created form with javascript&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2053970/submitting-dynamically-created-form-with-javascript:
+
+            &lt;p&gt;It&amp;rsquo;s been a while, but I think browser security settings normally will not allow you to set the contents of &amp;lt;input type=&amp;quot;file&amp;rdquo; /&amp;gt; programmatically, resulting in some security exception when you submit.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;position:fixed in IE&#39; on stackoverflow at https://stackoverflow.com/questions/2013072/positionfixed-in-ie:
+</title>
+            <link>https://roytang.net/2010/01/2013117/</link>
+            <pubDate>Wed, 06 Jan 2010 13:17:25 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2013117/</guid>
+            <description>
+            Reply to &amp;#39;position:fixed in IE&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2013072/positionfixed-in-ie:
+
+            &lt;p&gt;position: fixed is not supported by IE before version 7. There are workarounds, easily &lt;a href=&#34;http://www.google.com.ph/search?rlz=1C1CHMP_enPH291PH303&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&amp;amp;q=internet+explorer+position:+fixed+css&#34;&gt;googlable&lt;/a&gt;:&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How can I make JavaScript make (produce) new page?&#39; on stackoverflow at https://stackoverflow.com/questions/2004555/how-can-i-make-javascript-make-produce-new-page:
+</title>
+            <link>https://roytang.net/2010/01/2004568/</link>
+            <pubDate>Tue, 05 Jan 2010 06:39:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2004568/</guid>
+            <description>
+            Reply to &amp;#39;How can I make JavaScript make (produce) new page?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2004555/how-can-i-make-javascript-make-produce-new-page:
+
+            &lt;pre&gt;&lt;code&gt;var w = window.open(&amp;quot;&amp;quot;);
+w.document.writeln(&amp;quot;&amp;lt;the html you wanted to write&amp;gt;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/1830908/</link>
+            <pubDate>Wed, 02 Dec 2009 05:52:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1830908/</guid>
+            <description>
+            
+
+            &lt;p&gt;Let&amp;rsquo;s say I have a series of &lt;li&gt; elements designed to render via float:left inside a fixed-width container as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Item 1 | Item 2 | Item 3 | Item 4
+| Item 5 | Item 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is fine, Item 5 and Item 6 are pushed to the second row because the container has a fixed width.&lt;/p&gt;
+&lt;p&gt;Now, is it possible to have something similar to above, except that majority of the items will render in the second row? Something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Item 1 | Item 2 
+| Item 3 | Item 4| Item 5 | Item 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Basically, I want to render a list of items horizontally, wrapping to the second row as needed, but with majority of the items on the second row if it exists. The number of items to be generated may vary, but will not exceed 2 rows&amp;rsquo; worth of items.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/10/1550532/</link>
+            <pubDate>Sun, 11 Oct 2009 11:58:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/10/1550532/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous &amp;amp;nbsp; and &amp;lt;br&amp;gt; and such from the beginning and end of the HTML string.&lt;/p&gt;
+&lt;p&gt;I can opt to either do it on the client side (using Javascript) or on the server side (using Java) Is there an easy way to do this, using regular expressions or something? I&amp;rsquo;m not sure how complex it needs to be, I need to be able to remove stuff like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;br /&amp;gt; &amp;amp;nbsp;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;yet retain it if there&amp;rsquo;s any kind of meaningful text in between. (Above snippet is from actual HTML data saved by the tester)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/09/1491562/</link>
+            <pubDate>Tue, 29 Sep 2009 09:43:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/09/1491562/</guid>
+            <description>
+            
+
+            &lt;p&gt;HTML/Javascript - I want to load images dynamically, and the images I&amp;rsquo;m going to load can be of varying aspect ratios.&lt;/p&gt;
+&lt;p&gt;I want the images to fit into a specific area of the containing div - an area 40% of the containing div&amp;rsquo;s width and 80% of its height. Since they have varying aspect ratios, of course they will not always use up this entire area, but I want to resize them such that they don&amp;rsquo;t exceed the bounds. But I don&amp;rsquo;t know ahead of time whether I should specify the width or the height (and the partner attribute to auto) since I don&amp;rsquo;t know what the aspect ratio of the images will be ahead of time.&lt;/p&gt;
+&lt;p&gt;Is there a CSS way to do this? Or I need to compute the required widths using javascript?&lt;/p&gt;
+&lt;p&gt;PS I only need to do this in Firefox 3.5!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/07/1123415/</link>
+            <pubDate>Tue, 14 Jul 2009 04:23:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/07/1123415/</guid>
+            <description>
+            
+
+            &lt;p&gt;Say I had the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;select disabled=&amp;quot;disabled&amp;quot; style=&amp;quot;border: 1px red solid; color: black;&amp;quot;&amp;gt;
+&amp;lt;option&amp;gt;ABC&amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Firefox renders the above with a red border and black text as I expect; but IE does not, it seems to be using native colors for the border and the disabled text. Is there any way for me to be able to style it?&lt;/p&gt;
+&lt;p&gt;For edit boxes my workaround was to use readOnly instead of disabled so that I can style it, but it seems for combo boxes the readOnly attribute has no effect.&lt;/p&gt;
+&lt;p&gt;Note: I only need this to work in IE (it&amp;rsquo;s for an intranet webapp where users must use IE), so IE-specific solutions are fine.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

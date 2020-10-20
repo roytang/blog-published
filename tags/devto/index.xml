@@ -1,0 +1,57 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>devto on Roy Tang</title>
+      <link>https://roytang.net/tags/devto/</link>
+      <description>Recent content in devto on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 13 Dec 2018 01:56:56 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/devto/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Adding Developers to a Late Project
+</title>
+            <link>https://roytang.net/2018/12/adding-developers-to-a-late-project/</link>
+            <pubDate>Thu, 13 Dec 2018 01:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/12/adding-developers-to-a-late-project/</guid>
+            <description>
+            
+            &lt;p&gt;For any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.&lt;/p&gt;
+&lt;p&gt;The most signifiant cost is of course the communication overhead as described in &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Mythical_Man-Month&#34;&gt;the Mythical Man Month&lt;/a&gt;. Fun story, the CEO of a company once told me they would add more developers to a delayed project to meet the deadline and when I pointed out the increased overhead he said to me that it wasn&amp;rsquo;t a problem because they would just assign modules to those devs that have minimal dependencies so they don&amp;rsquo;t have to communicate so much. Ha! I just shrugged and let him think it was a good idea.&lt;/p&gt;
+&lt;p&gt;In my experience, it&amp;rsquo;s never a good idea, especially late in the game. Even if you are somehow able to minimize any domain overhead (which I seriously doubt), there is also the nontrivial matter of technical overhead that any new developer intake needs to go through. I&amp;rsquo;m not just talking about learning the programming language or the technical stack - presumably if you are adding someone to the team, he is either already familiar with the stack or you have factored in his being a newbie and needing training time.&lt;/p&gt;
+&lt;p&gt;No, I&amp;rsquo;m talking about things like templates, UI standards, coding standards, devops processes, configuration, libraries in use, data dictionaries, and so on. Most projects will have &amp;ldquo;preferred ways of doing things&amp;rdquo;, and the more work that has been done on the project, the more such &amp;ldquo;tribal knowledge&amp;rdquo; is often undocumented and you will need to bother someone to figure the stuff out. And if the project is behind schedule and everyone is trying to catch up, it&amp;rsquo;s more likely people are going to forget to tell you stuff.&lt;/p&gt;
+&lt;p&gt;Slightly related side note: If there is very little in the way of standards or tribal knowledge global to the project, that might be a warning sign. I once worked with a client who had several subcontractors to work on the different modules in their system. Each module/subcontractor worked more or less independently from the others, with very little documentation or standards in place. The result was a weird hodgepodge system where one module did things one way, and the next module did things a completely different way, and so on.&lt;/p&gt;
+&lt;p&gt;As an example, I was once asked to help in a project with a relatively large codebase and significant deadline pressure and I was coming in hot with no knowledge of the domain and minimal experience with the framework in use. I told them I wasn&amp;rsquo;t sure I could hit the target given I had to learn a bunch of stuff, but they were in desperate need and so ok we proceeded anyway. Now, I&amp;rsquo;m an experienced developer, so pulling me in was a better option than pulling in some newbie since there&amp;rsquo;s a lot of stuff I can figure out myself, but off the top of my head, I had to explicitly bother other people about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;proper access rights to the repo&lt;/li&gt;
+&lt;li&gt;proper access rights to the google drive with all the documents&lt;/li&gt;
+&lt;li&gt;CRLF problems when I use windows to clone the repo&lt;/li&gt;
+&lt;li&gt;database credentials for the provided dev VM&lt;/li&gt;
+&lt;li&gt;errors encountered due to undocumented steps missing from the setup document&lt;/li&gt;
+&lt;li&gt;where should I put new configuration options&lt;/li&gt;
+&lt;li&gt;where should I put my new module in the menu&lt;/li&gt;
+&lt;li&gt;how to map data in other tables to my new tables&lt;/li&gt;
+&lt;li&gt;the proper HTML markup and CSS classes needed to conform to the way they layouted pages&lt;/li&gt;
+&lt;li&gt;how to implement form validations the same way as other screens&lt;/li&gt;
+&lt;li&gt;standard methods for displaying messages/errors&lt;/li&gt;
+&lt;li&gt;how to setup role permissions for my new screens&lt;/li&gt;
+&lt;li&gt;preferred library for making third party API calls&lt;/li&gt;
+&lt;li&gt;JS errors encountered when using a particular component&lt;/li&gt;
+&lt;li&gt;problems with dynamically created reccords not behaving properly when the page redirects on error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;hellip; and probably a lot more I&amp;rsquo;m unable to recall anymore, and that&amp;rsquo;s not accounting for any comments that would be later logged by QA because I was unfamiliar with how other screens usually behaved.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re adding developers to a late project, you have to account for these onboarding costs, in addition to the increased communication overhead. That means sounding the alarm and asking for help earlier. If there&amp;rsquo;s a module that&amp;rsquo;s estimated by your devs to take say, one sprint, you can&amp;rsquo;t ask for help one sprint before the needed delivery - you need to look for help maybe one or two sprints earlier. (Of course, the best approach would be to avoid painting your project into this corner at all, but as we all know in this industry, sometimes things just happen!)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,866 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://roytang.net/",
+    "feed_url": "https://roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://roytang.net/2019/01/1081625861437063168/",
+            "url": "https://roytang.net/2019/01/1081625861437063168/",
+            "path": "/2019/01/1081625861437063168/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://www.youtube.com/watch?v=C-Naa1HXeDQ\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=C-Naa1HXeDQ\u0026amp;feature=youtu.be\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "https://www.youtube.com/watch?v=C-Naa1HXeDQ\u0026amp;feature=youtu.be",
+            "date_published": "2019-01-05T18:57:55+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081625861437063168.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081625861437063168/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1081488933807042560/",
+            "url": "https://roytang.net/2019/01/1081488933807042560/",
+            "path": "/2019/01/1081488933807042560/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/atlasobscura/\"\u003e@atlasobscura\u003c/a\u003e what was the justification for avoiding digitisation?\u003c/p\u003e\n",
+            "summary": "@atlasobscura what was the justification for avoiding digitisation?",
+            "date_published": "2019-01-05T09:53:49+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081488933807042560.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081488933807042560/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1081450493551890432/",
+            "url": "https://roytang.net/2019/01/1081450493551890432/",
+            "path": "/2019/01/1081450493551890432/",
+            "title": "",
+            "content_html": "\u003cp\u003eSecond day: i’ve violated this so many times already \u003ca href=\"https://twitter.com/roytang/status/1081210289947734016\"\u003ehttps://twitter.com/roytang/status/1081210289947734016\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Second day: i’ve violated this so many times already https://twitter.com/roytang/status/1081210289947734016",
+            "date_published": "2019-01-05T07:21:04+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081450493551890432.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081450493551890432/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/revisiting-c-after-a-decade/",
+            "url": "https://roytang.net/2019/01/revisiting-c-after-a-decade/",
+            "path": "/2019/01/revisiting-c-after-a-decade/",
+            "title": "Revisiting C++ after a decade",
+            "content_html": "\u003cp\u003eThis year I had the dubious privilege of having to work with a C++ project again. Although my college education was in C, that was a completely different animal. I did self-study C++ for a bit back even before I was working, mostly because I was interested in game development even back then. I remember trying some OpenGL and/or DirectX stuff back with good old Borland Turbo-C++ during the DOS days and using the \u003ca href=\"https://www.bloodshed.net/dev/devcpp.html\"\u003eDev-C++ IDE\u003c/a\u003e when I shifted to Windows. Professionally, I think there was at least one project where I had to work on a Windows-based application using C++ on Visual Studio 6 (before all this .NET nonsense), but for the life of me I can\u0026rsquo;t even remember which project it was anymore. I do remember struggling more with the compiler and the IDE and the layouting of Windows components more than the language itself. And even then, I mostly used the language as an extension of C and not really taking advantage of the more advanced features.\u003c/p\u003e\n\u003cp\u003eAlthough I knew about the language features in theory, I didn\u0026rsquo;t have much experience back then with using features like templates, generic types, or the STL. That was remedied this year when we had a project that required us to adapt an existing open source C++ project and modify it for our needs. This was a full blown project, somewhere in the neighborhood of 175 kloc, and it involved complex stuff like cryptography, encryption, signing, networking, and so on. I didn\u0026rsquo;t even know about the Boost library back then. A huge challenge for me at that time, given my little to no C++ experience. Luckily it was a service process that we planned to compile and deploy on Linux, so at least we didn\u0026rsquo;t need to worry about Windows and UI shenanigans.\u003c/p\u003e\n\u003cp\u003eOne of our senior developers (who was not available full-time for the project) \u003cem\u003edid\u003c/em\u003e have C++ experience though, and he used to train new hires in C++ at his old company. So he dug out some of his old training slides and gave us a C++ refresher/crash course in the span of an afternoon. A bit too much info crammed into too little time, but still informative. Especially for me, since it\u0026rsquo;s been so long since I touched the language, the slides reminded me of a few things I had already forgotten.\u003c/p\u003e\n\n\n    On \n    \u003ca href=\"/2018/08/1035019095287189504/\"\u003e\u003ctime datetime=\"2018-08-30 04:19:16\"\u003e30 Aug 2018 4:19am\u003c/time\u003e\u003c/a\u003e\n    I wrote:\n    \u003cblockquote\u003e\n        \u003cp\u003epython expert: my code ran correctly on my first try! lucky!\u003c/p\u003e\n\u003cp\u003ec++ expert: my code compiled on my first try! lucky!\u003c/p\u003e\n\n        \n\n\n\n\n\n\n    \u003c/blockquote\u003e\n\n\u003cp\u003eSome notes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ehaving worked almost exclusively with dynamic languages the past few years, I haven\u0026rsquo;t had the chance of use the \u003ca href=\"https://xkcd.com/303/\"\u003eold XKCD \u0026ldquo;compiling\u0026rdquo; excuse\u003c/a\u003e in a while. When we first tried compiling the project, we were seeing build times in the 10-15 minutes range, which was worrying for our coding cycles. And since we were \u0026ldquo;relearning\u0026rdquo; C++, as it were, we were bound to have more iterations than normal. Luckily we found that the build process tended to be a bit faster on succeeding builds, I guess it does some kind of incremental build? Later on, compiling would take around 2-3 minutes.\u003c/li\u003e\n\u003cli\u003emakefiles are something I\u0026rsquo;ve never had to deal with before (that sort of thing used to be handled by an IDE during my last go-around with C++). But I had to figure them out early on in this project, otherwise we couldn\u0026rsquo;t add our own new files to the codebase!\u003c/li\u003e\n\u003cli\u003eI still don\u0026rsquo;t fully understand linking, but we eventually figured out where to correctly place our files so that we wouldn\u0026rsquo;t have any referential errors during linking. (Figuring this out also sped up the build process a bit.)\u003c/li\u003e\n\u003cli\u003eAs I mentioned, I didn\u0026rsquo;t have much experience with C++ features like templates and generic types, so one of the challenges we faced early on was making heads or tails of the usage of this third party library called \u003ca href=\"https://www.codeproject.com/Articles/20027/JSON-Spirit-A-C-JSON-Parser-Generator-Implemented\"\u003eJSON Spirit\u003c/a\u003e, which was used for representing JSON objects. The library uses a lot of generics and templates and typedefs, so it took a bunch of code tracing and a bit of trial and error for us to get the hang of it.\u003c/li\u003e\n\u003cli\u003eone thing we discovered early on was that the use of deeply-nested templates and generic types led to a lot of quite obtuse error messages, a bit of a challenge for us who didn\u0026rsquo;t have much C++ experience. This problem is succinctly described in the following tweet:\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote class=\"twitter-tweet\"\u003e\u003cp lang=\"en\" dir=\"ltr\"\u003eIn C++ we don\u0026#39;t say \u0026quot;Missing asterisk\u0026quot; we say \u0026quot;error C2664: \u0026#39;void std::vector\u0026lt;block,std::allocator\u0026lt;_Ty\u0026gt;\u0026gt;::push_back(const block \u0026amp;)\u0026#39;: cannot convert argument 1 from \u0026#39;std::_Vector_iterator\u0026lt;std::_Vector_val\u0026lt;std::_Simple_types\u0026lt;block\u0026gt;\u0026gt;\u0026gt;\u0026#39; to \u0026#39;block \u0026amp;\u0026amp;\u0026#39;\u0026quot; and i think that\u0026#39;s beautiful\u003c/p\u003e\u0026mdash; mcc (@mcclure111) \u003ca href=\"https://twitter.com/mcclure111/status/1002648636516282368?ref_src=twsrc%5Etfw\"\u003eJune 1, 2018\u003c/a\u003e\u003c/blockquote\u003e \u003cscript async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"\u003e\u003c/script\u003e \n\u003cp\u003eSo there were a lot of challenges along the way, but this is fairly typical for developers coming into a project with an existing large codebase. And on the upside (my usual upside), I learned a lot, and I felt like a C++ genius a few weeks in. When you climb a learning curve quickly, it can make you feel amazing:\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/uploads/hohohoidiit.jpg\" alt=\"HOHOHO I DID IT\"\u003e\u003c/p\u003e\n\u003cp\u003eIn the end I think we did pull it off and were able to implement and integrate the needed changes well, without any major issues. Given C\u0026rsquo;s challenges with memory management and so on, I was kind of expecting we would encounter things like crashes, memory leaks, and such, but it turns out using the STL and Boost largely alleviates that problem. The project is still ongoing and has a bunch of requirements-related issues, but I think the C++ side turned out relatively well. Unfortunately, I don\u0026rsquo;t think I\u0026rsquo;ll have much use for C++ knowledge outside of this project, the language isn\u0026rsquo;t really appropriate for the sort of personal projects I like to take on.\u003c/p\u003e\n",
+            "summary": "This year I had the dubious privilege of having to work with a C++ project again. Although my college education was in C, that was a completely different animal. I did self-study C++ for a bit back even before I was working, mostly because I was interested in game development even back then. I remember trying some OpenGL and/or DirectX stuff back with good old Borland Turbo-C++ during the DOS days and using the Dev-C++ IDE when I shifted to Windows.",
+            "date_published": "2019-01-05T05:58:22+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/revisiting-c++/index.md"
+            , "tags": ["c++","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081599258204213249/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181725307993/",
+            "url": "https://roytang.net/2019/01/181725307993/",
+            "path": "/2019/01/181725307993/",
+            "title": "",
+            "content_html": "\u003cp\u003eSpider-Men #1 cover by Jim Cheung\u003c/p\u003e\n",
+            "summary": "Spider-Men #1 cover by Jim Cheung",
+            "date_published": "2019-01-05T02:00:36+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/01/181725307993/index.md"
+            , "tags": ["marvel","comics","spider-man","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181725307993/spider-men-1-cover-by-jim-cheung"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081369846858817541/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/how-to-change-without-willpower/",
+            "url": "https://roytang.net/2019/01/how-to-change-without-willpower/",
+            "path": "/2019/01/how-to-change-without-willpower/",
+            "title": "How to Change Without Willpower",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-04T09:34:44-06:00",
+            "date_modified": "2020-01-04T00:10:36+08:00",
+            "section": "links",
+            "source_path": "links/2019/01/how-to-change-without-willpower.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081212797529325569/"}]
+            ,"link": "https://thecut.com/2019/01/how-to-change-without-willpower.html"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/secrets-of-happiness-from-the-oldest-of-the-old/",
+            "url": "https://roytang.net/2019/01/secrets-of-happiness-from-the-oldest-of-the-old/",
+            "path": "/2019/01/secrets-of-happiness-from-the-oldest-of-the-old/",
+            "title": "Secrets of Happiness from the Oldest of the Old",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-04T09:34:40-06:00",
+            "date_modified": "2020-01-04T00:10:36+08:00",
+            "section": "links",
+            "source_path": "links/2019/01/secrets-of-happiness-from-the-oldest-of-the-old.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081212795742535683/"}]
+            ,"link": "https://kiplinger.com/article/retirement/T037-C000-S004-secrets-of-happiness-from-the-oldest-of-the-old.html"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/dont-have-10000-hours-to-learn-something-new-thats-fine-all-you-need-is-20-hours/",
+            "url": "https://roytang.net/2019/01/dont-have-10000-hours-to-learn-something-new-thats-fine-all-you-need-is-20-hours/",
+            "path": "/2019/01/dont-have-10000-hours-to-learn-something-new-thats-fine-all-you-need-is-20-hours/",
+            "title": "Don't have 10,000 hours to learn something new? That's fine - all you need is 20 hours",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-04T09:34:29-06:00",
+            "date_modified": "2020-01-04T00:10:36+08:00",
+            "section": "links",
+            "source_path": "links/2019/01/dont-have-10000-hours-to-learn-something-new-thats-fine-all-you-need-is-20-hours.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081212792173154304/"}]
+            ,"link": "https://ideas.ted.com/dont-have-10000-hours-to-learn-something-new-thats-fine-all-you-need-is-20-hours"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1081210289947734016/",
+            "url": "https://roytang.net/2019/01/1081210289947734016/",
+            "path": "/2019/01/1081210289947734016/",
+            "title": "",
+            "content_html": "\u003cp\u003eNew rule: maximum one Slay the Spire run per day. Too easy to get sucked in!\u003c/p\u003e\n",
+            "summary": "New rule: maximum one Slay the Spire run per day. Too easy to get sucked in!",
+            "date_published": "2019-01-04T15:26:35+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081210289947734016.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081210289947734016/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1081124004063137792/",
+            "url": "https://roytang.net/2019/01/1081124004063137792/",
+            "path": "/2019/01/1081124004063137792/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e Resign na~\u003c/p\u003e\n",
+            "summary": "@jaymelynilao Resign na~",
+            "date_published": "2019-01-04T09:43:43+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081124004063137792.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081124004063137792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181702615103/",
+            "url": "https://roytang.net/2019/01/181702615103/",
+            "path": "/2019/01/181702615103/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://bear1na.tumblr.com/post/180221575219/spider-man-and-gwen-stacy-spider-gwen-iron-fist\" class=\"tumblr_blog\"\u003ebear1na\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003eSpider-Man and Gwen Stacy, Spider-Gwen, Iron Fist vs. Luke Cage, Scarlet Witch and Vision, Black Panther by Khoi Pham *\u003c/p\u003e\u003c/blockquote\u003e",
+            "summary": "bear1na:\nSpider-Man and Gwen Stacy, Spider-Gwen, Iron Fist vs. Luke Cage, Scarlet Witch and Vision, Black Panther by Khoi Pham *",
+            "date_published": "2019-01-04T08:00:15+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/181702615103/index.md"
+            
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/181702615103/bear1na-spider-man-and-gwen-stacy-spider-gwen"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081097969221468161/"},{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181938660700/bear1na-spider-man-and-gwen-stacy-spider-gwen"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1083906647855112194/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/my-2018-in-review/",
+            "url": "https://roytang.net/2019/01/my-2018-in-review/",
+            "path": "/2019/01/my-2018-in-review/",
+            "title": "My 2018 in review",
+            "content_html": "\u003cp\u003eHappy new year! Last year I \u003ca href=\"/2018/01/my-2017-in-numbers/\"\u003eposted some year-end statistics\u003c/a\u003e. That seems like a good way to recap the year, so let\u0026rsquo;s do it again. Random statistics from 2018:\u003c/p\u003e\n\u003cp\u003eWork, Learning and Self Improvement:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eHours worked: 1,163 (up around 50% from last year)\u003c/li\u003e\n\u003cli\u003eProgramming languages/frameworks learned: I\u0026rsquo;ll say 4. I\u0026rsquo;m counting:\n\u003cul\u003e\n\u003cli\u003eC++ which I revisited this year after more than a decade of not using it\u003c/li\u003e\n\u003cli\u003eGo, which I used for the templating in the Hugo blog\u003c/li\u003e\n\u003cli\u003eFlask, which I had dabbled in before but only used in a full-scale project this year\u003c/li\u003e\n\u003cli\u003eLaravel, which I also used in a couple of projects this year\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eBooks read: 4. Sad. Down 5 from last year. Must finish more books in 2019.\u003c/li\u003e\n\u003cli\u003eDuolingo streak: 92 days (Hooray!)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWriting and Social media:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFacebook status updates: 1093, down from 1463 last year, that\u0026rsquo;s a good sign I think. Last year I measured my FB activity using the \u0026ldquo;facebook report\u0026rdquo; on Wolfram Alpha, but this seems to no longer work, probably due to the recent FB API changes. This time I instead downloaded an archive of my FB activity and counted the \u0026ldquo;status_updates\u0026rdquo; from your_posts.json using a python script.\u003c/li\u003e\n\u003cli\u003eInstagram posts: 21 (Down 100 from last year. I\u0026rsquo;m not sure if I\u0026rsquo;ll continue using it too much\u0026hellip;)\u003c/li\u003e\n\u003cli\u003eTweets: 1566 (up from 1484 last year)\u003c/li\u003e\n\u003cli\u003eAnswers written on Quora: 3. Down by 14. I may be \u003ca href=\"/2018/12/quora/\"\u003ewinding down my Quora participation anyway\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003e104 blog posts (including this one; total of 818 up 59 from last year)\u003c/li\u003e\n\u003cli\u003e0 words written for [Nanowrimo][2] (hopefully I can have another go next year)\u003c/li\u003e\n\u003cli\u003e0 sketches submitted to [r/sketchdaily][3] (I might try to pick this up again this year)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eGaming:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGames purchased (not including any I got for free for some reason): 37, not including DLC, most of it from my three-month experiment with Humble Montly. This is a huge improvement from last year\u0026rsquo;s 67. In fact, my gaming spend for 2018 was 1/3 what it was in 2017, so huge props to me lol. Breakdown: 4 steam, 34 humble, 3 dlc)\u003c/li\u003e\n\u003cli\u003eGames \u0026ldquo;finished\u0026rdquo; (story/campaign completed OR achievement complete): 10, up 2 from 2017! The list:\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://twitter.com/roytang/status/974999316036136960\"\u003eTwilight Princess HD\u003c/a\u003e (WiiU)\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/2018/11/review-eternal-or-eternal-primer-for-mtg-players/\"\u003eEternal\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/2018/11/late-game-review-the-elder-scrolls-v-skyrim/\"\u003eSkyrim\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/2018/10/late-game-review-ni-no-kuni-wrath-of-the-white-witch-2013/\"\u003eNi No Kuni (PS3)\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/11/game-review-marvels-spider-man-for-ps4/\"\u003eSpider-man (PS4)\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eInvisible Inc\u003c/li\u003e\n\u003cli\u003eOrwell\u003c/li\u003e\n\u003cli\u003eTomb Raider\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://twitter.com/roytang/status/949318192073121792\"\u003eLife is Strange\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003ePapers Please (not yet achievement complete, but close)\u003c/li\u003e\n\u003cli\u003eFinal Fantasy XII: Zodiac Age (I had this on last year\u0026rsquo;s list as 95% done, I decided to finish it a few hours before 2019 lol)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eBest Eternal Rank: Ranked Master (363), Draft Master\u003c/li\u003e\n\u003cli\u003eBest MTGA Rank: Gold 4\u003c/li\u003e\n\u003cli\u003eAverage points per turn in Words with Friends: 26 (down from 27)\u003c/li\u003e\n\u003cli\u003eMTG GPs attended: 0, but I did \u003ca href=\"/2018/06/kuala-lumpur-and-the-mtg25a-rptq/\"\u003edo an RTPQ in KL\u003c/a\u003e this year. Most likely 0 again for 2019.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOthers:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFitbit activity: 1,820,053 steps, 1,419.64 km walked\u003c/li\u003e\n\u003cli\u003eDonuts eaten: 4 (down from 12 last year!)\u003c/li\u003e\n\u003cli\u003eOther countries visited: 0, as predicted. Likely 0 in 2019 as well.\u003c/li\u003e\n\u003cli\u003eBaptisms attended: 1 (same as last year)\u003c/li\u003e\n\u003cli\u003eWeddings attended: 0 (down 1)\u003c/li\u003e\n\u003cli\u003eWakes attended: 0 (thankfully)\u003c/li\u003e\n\u003cli\u003eThings watched on Netflix: 789 (Up 69 from last year)\u003c/li\u003e\n\u003cli\u003eQuiz nights attended: 8 (we won once) - down from 3/19 in 2017\u003c/li\u003e\n\u003cli\u003eUber trips: 18 (down from 64 in 2017, RIP uber)\u003c/li\u003e\n\u003cli\u003eGrab trips: 101 (!)\u003c/li\u003e\n\u003cli\u003eTimes I won the lotto: 0 (I kind of regret putting this number two years ago, as now I can\u0026rsquo;t remove it without looking suspicious)\u003c/li\u003e\n\u003cli\u003eBears defeated in single combat: 0\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOverall, the year was a lot busier than 2017, since I took on a lot more work, especially in the middle half of the year. I\u0026rsquo;m looking to lighten the load a bit in 2019, we\u0026rsquo;ll see.\u003c/p\u003e\n",
+            "summary": "Happy new year! Last year I posted some year-end statistics. That seems like a good way to recap the year, so let\u0026rsquo;s do it again. Random statistics from 2018:\nWork, Learning and Self Improvement:\n Hours worked: 1,163 (up around 50% from last year) Programming languages/frameworks learned: I\u0026rsquo;ll say 4. I\u0026rsquo;m counting:  C++ which I revisited this year after more than a decade of not using it Go, which I used for the templating in the Hugo blog Flask, which I had dabbled in before but only used in a full-scale project this year Laravel, which I also used in a couple of projects this year   Books read: 4.",
+            "date_published": "2019-01-04T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/my-2018-in-numbers/index.md"
+            , "tags": ["Self Improvement","yearnotes"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081068498057682944/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181694765105/",
+            "url": "https://roytang.net/2019/01/181694765105/",
+            "path": "/2019/01/181694765105/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://mikaeled.tumblr.com/post/181442791729/that-person-who-helps-others-simply-because-it\" class=\"tumblr_blog\"\u003emikaeled\u003c/a\u003e:\u003c/p\u003e\u003cblockquote\u003e\u003cp\u003e\u003csmall\u003eThat person who helps others simply because it should or must be done, and because it is the right thing to do, is indeed without a doubt, a real superhero. - Stan Lee\u003cbr/\u003e\u003cb\u003eSpider-Man: Into the Spider-Verse\u003c/b\u003e (2018)\u003c/small\u003e\u003c/p\u003e\u003c/blockquote\u003e",
+            "summary": "mikaeled:\nThat person who helps others simply because it should or must be done, and because it is the right thing to do, is indeed without a doubt, a real superhero. - Stan LeeSpider-Man: Into the Spider-Verse (2018)",
+            "date_published": "2019-01-04T02:00:44+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/181694765105/index.md"
+            , "tags": ["ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181694765105/mikaeled-that-person-who-helps-others-simply"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081007492392513537/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/form-good-habits-and-become-their-slave/",
+            "url": "https://roytang.net/2019/01/form-good-habits-and-become-their-slave/",
+            "path": "/2019/01/form-good-habits-and-become-their-slave/",
+            "title": "Form good habits and become their slave",
+            "content_html": "\u003cp\u003e\u003ca href=\"/2018/12/suggested-new-years-resolutions/\"\u003eNew year\u0026rsquo;s resolutions\u003c/a\u003e are hard to maintain, so much so that people will make jokes about opening a gym that only runs during January, since most gym NYRs run out of steam by then.\u003c/p\u003e\n\u003cp\u003eOne of the best pieces of advice I\u0026rsquo;ve found regarding acquiring new behaviors comes from the first motivational books I ever read - \u003cem\u003eThe Greatest Salesman in the World\u003c/em\u003e by Og Mandino, which for some reason we had a copy of in our house when I was young.\u003c/p\u003e\n\u003cp\u003eThe book tells us that:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ehumans are slaves to habit\u003c/li\u003e\n\u003cli\u003ebad habits can only be replaced by good habits\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTherefore, in order to improve your life, you should form good habits and become their slave. So if you have a NYR like \u0026ldquo;quit smoking\u0026rdquo;, you should choose a \u0026ldquo;good habit\u0026rdquo; to replace the \u0026ldquo;bad habit\u0026rdquo; of smoking with. Maybe every time you get an urge to smoke, you pick up a book instead and start reading? Just a suggestion.\u003c/p\u003e\n\u003cp\u003e(The rest of Mandino\u0026rsquo;s book consists mostly of recommended self-affirmations, which is the \u0026ldquo;good habit\u0026rdquo; he recommends to improve your life.)\u003c/p\u003e\n",
+            "summary": "New year\u0026rsquo;s resolutions are hard to maintain, so much so that people will make jokes about opening a gym that only runs during January, since most gym NYRs run out of steam by then.\nOne of the best pieces of advice I\u0026rsquo;ve found regarding acquiring new behaviors comes from the first motivational books I ever read - The Greatest Salesman in the World by Og Mandino, which for some reason we had a copy of in our house when I was young.",
+            "date_published": "2019-01-03T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/form-good-habits/index.md"
+            , "tags": ["Books","Self-Improvement"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080706008656347144/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080700183124426753/",
+            "url": "https://roytang.net/2019/01/1080700183124426753/",
+            "path": "/2019/01/1080700183124426753/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/AndrewNadeau0/\"\u003e@AndrewNadeau0\u003c/a\u003e What was the other one\u003c/p\u003e\n",
+            "summary": "@AndrewNadeau0 What was the other one",
+            "date_published": "2019-01-03T05:39:36+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080700183124426753.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080700183124426753/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181662995678/",
+            "url": "https://roytang.net/2019/01/181662995678/",
+            "path": "/2019/01/181662995678/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://artverso.tumblr.com/post/179995449502/gary-frank-doomsday-clock\" class=\"tumblr_blog\"\u003eartverso\u003c/a\u003e:\u003c/p\u003e\u003cblockquote\u003e\u003cp\u003eGary Frank - Doomsday Clock \u003c/p\u003e\u003c/blockquote\u003e",
+            "summary": "artverso:\nGary Frank - Doomsday Clock ",
+            "date_published": "2019-01-03T02:00:50+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/181662995678/index.md"
+            , "tags": ["ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181662995678/artverso-gary-frank-doomsday-clock"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080645129634041856/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/dont-break-the-chain/",
+            "url": "https://roytang.net/2019/01/dont-break-the-chain/",
+            "path": "/2019/01/dont-break-the-chain/",
+            "title": "Don't Break the Chain",
+            "content_html": "\u003cp\u003e\u003ca href=\"/2018/12/suggested-new-years-resolutions/\"\u003eNew year\u0026rsquo;s resolutions\u003c/a\u003e are hard to maintain, so much so that people will make jokes about opening a gym that only runs during January, since most gym NYRs run out of steam by then.\u003c/p\u003e\n\u003cp\u003eOne of the best pieces of advise I\u0026rsquo;ve read on this is \u0026ldquo;Don\u0026rsquo;t break the chain\u0026rdquo;, most often anecdotally attributed to Jerry Seinfeld. This advice means that for a recurring activity, once you get a streak or chain going, as much as possible you should avoid breaking the chain. So if your NYR is to exercise daily, you should try to avoid breaking that chain for as long as possible.\u003c/p\u003e\n\u003cp\u003eIt helps if you\u0026rsquo;re tracking how long your current streak is, either via a calendar or an app, or some other method. The longer the streak gets, the more incentivized you are not to drop the ball by breaking the chain. I mentioned this in \u003ca href=\"/2018/12/duolingo/\"\u003emy Duolingo post\u003c/a\u003e - I feel quite bad when I break a months-long streak in Duolingo.\u003c/p\u003e\n\u003cp\u003eOf course, at some point you\u0026rsquo;re going to fail, and the streak will break. We\u0026rsquo;re only human after all, and \u003ca href=\"/2018/10/you-dont-have-to-be-on-all-the-time/\"\u003ewe don\u0026rsquo;t have to be on all the time\u003c/a\u003e. Failures happen, and that\u0026rsquo;s okay. If the activity is important to you, it should be a simple matter to simply try again and start the chain over. This is of course, a point of weakness: at the time you break the chain, this is when you are most vulnerable to quitting. That\u0026rsquo;s why you have to minimize breaking the chain.\u003c/p\u003e\n\u003cp\u003eNot all NYRs or recurring activities have to go on forever though. Sometimes you just want to do 30-day challenges. Or maybe you want to try this activity for a while to see if it works out for you. No need to push yourself to continue with a chain that you find isn\u0026rsquo;t worthwhile.\u003c/p\u003e\n",
+            "summary": "New year\u0026rsquo;s resolutions are hard to maintain, so much so that people will make jokes about opening a gym that only runs during January, since most gym NYRs run out of steam by then.\nOne of the best pieces of advise I\u0026rsquo;ve read on this is \u0026ldquo;Don\u0026rsquo;t break the chain\u0026rdquo;, most often anecdotally attributed to Jerry Seinfeld. This advice means that for a recurring activity, once you get a streak or chain going, as much as possible you should avoid breaking the chain.",
+            "date_published": "2019-01-02T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/dont-break-the-chain/index.md"
+            , "tags": ["Self-Improvement"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080343396487700480/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181629981614/",
+            "url": "https://roytang.net/2019/01/181629981614/",
+            "path": "/2019/01/181629981614/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://artverso.tumblr.com/post/179244742957/leinil-francis-yu-x-force\" class=\"tumblr_blog\"\u003eartverso\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003eLeinil Francis Yu - X-Force \u003c/p\u003e\u003c/blockquote\u003e",
+            "summary": "artverso:\nLeinil Francis Yu - X-Force ",
+            "date_published": "2019-01-02T02:00:45+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/181629981614/index.md"
+            , "tags": ["ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181629981614/artverso-leinil-francis-yu-x-force"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080282722684293120/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080162916790403073/",
+            "url": "https://roytang.net/2019/01/1080162916790403073/",
+            "path": "/2019/01/1080162916790403073/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/newsycombinator/\"\u003e@newsycombinator\u003c/a\u003e: Show HN: Software Architecture, all you need to know [pdf] \u003ca href=\"https://share.composieux.fr/white-book-software-architecture.pdf\"\u003ehttps://share.composieux.fr/white-book-software-architecture.pdf\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @newsycombinator: Show HN: Software Architecture, all you need to know [pdf] https://share.composieux.fr/white-book-software-architecture.pdf",
+            "date_published": "2019-01-01T18:04:42+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080162916790403073.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080162916790403073/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/the-fundamental-rule-of-traffic-building-new-roads-just-makes-people-drive-more/",
+            "url": "https://roytang.net/2019/01/the-fundamental-rule-of-traffic-building-new-roads-just-makes-people-drive-more/",
+            "path": "/2019/01/the-fundamental-rule-of-traffic-building-new-roads-just-makes-people-drive-more/",
+            "title": "The \"fundamental rule\" of traffic: building new roads just makes people drive more",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-01T11:49:58-06:00",
+            "date_modified": "2020-01-01T00:55:23+08:00",
+            "section": "links",
+            "source_path": "links/2019/01/the-fundamental-rule-of-traffic-building-new-roads-just-makes-people-drive-more.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080168645286903808/"}]
+            ,"link": "https://vox.com/2014/10/23/6994159/traffic-roads-induced-demand"
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080045595820060672/",
+            "url": "https://roytang.net/2019/01/1080045595820060672/",
+            "path": "/2019/01/1080045595820060672/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/HeaneyDaily/\"\u003e@HeaneyDaily\u003c/a\u003e: History says, Don’t hope\nOn this side of the grave,\nBut then, once in a lifetime\nThe longed-for tidal wave\nOf justice can…\u003c/p\u003e\n",
+            "summary": "RT @HeaneyDaily: History says, Don’t hope On this side of the grave, But then, once in a lifetime The longed-for tidal wave Of justice can…",
+            "date_published": "2019-01-01T10:18:30+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080045595820060672.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080045595820060672/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080044381158092800/",
+            "url": "https://roytang.net/2019/01/1080044381158092800/",
+            "path": "/2019/01/1080044381158092800/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/voxkev/\"\u003e@voxkev\u003c/a\u003e [\u003ca href=\"https://twitter.com/Yahoo/\"\u003e@Yahoo\u003c/a\u003e](\u003ca href=\"https://twitter.com/Yahoo/\"\u003ehttps://twitter.com/Yahoo/\u003c/a\u003e) [\u003ca href=\"https://twitter.com/Yahoo/\"\u003e@Yahoo\u003c/a\u003e](\u003ca href=\"https://twitter.com/Yahoo/)Care\"\u003ehttps://twitter.com/Yahoo/)Care\u003c/a\u003e I read somewhere (forgot where) that apparently they no longer had archives from before a certain year in the 2010s due to some kind of system migration. I dont think anyone at @yahoo actually cares\u003c/p\u003e\n",
+            "summary": "@voxkev [@Yahoo](https://twitter.com/Yahoo/) [@Yahoo](https://twitter.com/Yahoo/)Care I read somewhere (forgot where) that apparently they no longer had archives from before a certain year in the 2010s due to some kind of system migration. I dont think anyone at @yahoo actually cares",
+            "date_published": "2019-01-01T10:13:41+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080044381158092800.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080044381158092800/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080015320125853701/",
+            "url": "https://roytang.net/2019/01/1080015320125853701/",
+            "path": "/2019/01/1080015320125853701/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/brigidkeely/\"\u003e@brigidkeely\u003c/a\u003e: So if you are a guy who is anti-rape and wants to change things, start speaking up when you hear rape jokes! Say that\u0026rsquo;s no…\u003c/p\u003e\n",
+            "summary": "RT @brigidkeely: So if you are a guy who is anti-rape and wants to change things, start speaking up when you hear rape jokes! Say that\u0026rsquo;s no…",
+            "date_published": "2019-01-01T08:18:12+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080015320125853701.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080015320125853701/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1080015298634215424/",
+            "url": "https://roytang.net/2019/01/1080015298634215424/",
+            "path": "/2019/01/1080015298634215424/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/brigidkeely/\"\u003e@brigidkeely\u003c/a\u003e: It\u0026rsquo;s why some men are comfortable making rape jokes in public: they assume everyone else is chill with rape and joking abo…\u003c/p\u003e\n",
+            "summary": "RT @brigidkeely: It\u0026rsquo;s why some men are comfortable making rape jokes in public: they assume everyone else is chill with rape and joking abo…",
+            "date_published": "2019-01-01T08:18:07+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1080015298634215424.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1080015298634215424/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/abcwjr/",
+            "url": "https://roytang.net/2019/01/abcwjr/",
+            "path": "/2019/01/abcwjr/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rstreetfighter-do-arcadesurvivalversus-count-for-the-go-out-with-a-bang-300-ex-finishes-and-critical-beauty-300-super-finishes-achievementshttpsredditcomrstreetfightercommentsabcwjrdo_arcadesurvivalversus_count_for_the_go_out_with\"\u003ePosted on r/StreetFighter: \u003ca href=\"https://reddit.com/r/StreetFighter/comments/abcwjr/do_arcadesurvivalversus_count_for_the_go_out_with/\"\u003eDo Arcade/Survival/Versus count for the \u0026ldquo;Go Out With a Bang\u0026rdquo; (300 EX finishes) and \u0026ldquo;Critical Beauty\u0026rdquo; (300 Super finishes) achievements?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eOr it needs to be online matches?\u003c/p\u003e\n",
+            "summary": "Posted on r/StreetFighter: Do Arcade/Survival/Versus count for the \u0026ldquo;Go Out With a Bang\u0026rdquo; (300 EX finishes) and \u0026ldquo;Critical Beauty\u0026rdquo; (300 Super finishes) achievements? Or it needs to be online matches?",
+            "date_published": "2019-01-01T08:06:06+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/abcwjr/index.md"
+            , "tags": ["streetfighter"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/StreetFighter/comments/abcwjr/do_arcadesurvivalversus_count_for_the_go_out_with/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/10157164198743912/",
+            "url": "https://roytang.net/2019/01/10157164198743912/",
+            "path": "/2019/01/10157164198743912/",
+            "title": "",
+            "content_html": "\u003cp\u003e2019 Movies/TV/Games calendar:\u003c/p\u003e\n\u003cp\u003eMovies:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e08 Jan Bumblebee\u003c/li\u003e\n\u003cli\u003e06 Mar Captain Marvel\u003c/li\u003e\n\u003cli\u003e05 Apr Shazam\u003c/li\u003e\n\u003cli\u003e26 Apr Avengers Endgame\u003c/li\u003e\n\u003cli\u003e07 Jun X-Men Dark Phoenix\u003c/li\u003e\n\u003cli\u003e05 Jul Spider-Man From From Home\u003c/li\u003e\n\u003cli\u003e02 Aug New Mutants\u003c/li\u003e\n\u003cli\u003e04 Oct Joker\u003c/li\u003e\n\u003cli\u003e20 Dec Star Wars Episode IX\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eGames:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e11 Jan Tales of Vesperia Definitive Edition\u003c/li\u003e\n\u003cli\u003e25 Jan Kingdom Hearts III\u003c/li\u003e\n\u003cli\u003e15 Feb Civ6 Gathering Storm\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTV:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eJan Punisher S2\u003c/li\u003e\n\u003cli\u003eApr Game of Thrones S8\u003c/li\u003e\n\u003cli\u003eFall Crisis on Infinite Earths Arrowverse crossover\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "2019 Movies/TV/Games calendar:\nMovies:\n 08 Jan Bumblebee 06 Mar Captain Marvel 05 Apr Shazam 26 Apr Avengers Endgame 07 Jun X-Men Dark Phoenix 05 Jul Spider-Man From From Home 02 Aug New Mutants 04 Oct Joker 20 Dec Star Wars Episode IX  Games:\n 11 Jan Tales of Vesperia Definitive Edition 25 Jan Kingdom Hearts III 15 Feb Civ6 Gathering Storm  TV:\n Jan Punisher S2 Apr Game of Thrones S8 Fall Crisis on Infinite Earths Arrowverse crossover  ",
+            "date_published": "2019-01-01T07:35:00+00:00",
+            "date_modified": "2019-09-28T21:45:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/10157164198743912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10157164198743912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/1079972216412942337/",
+            "url": "https://roytang.net/2019/01/1079972216412942337/",
+            "path": "/2019/01/1079972216412942337/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e well, to be fair\u0026hellip; i think i\u0026rsquo;m still playing games from 10 years ago so that\u0026rsquo;s not too far off lol\u003c/p\u003e\n",
+            "summary": "@Westraid well, to be fair\u0026hellip; i think i\u0026rsquo;m still playing games from 10 years ago so that\u0026rsquo;s not too far off lol",
+            "date_published": "2019-01-01T05:26:55+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1079972216412942337.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079972216412942337/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/181598908240/",
+            "url": "https://roytang.net/2019/01/181598908240/",
+            "path": "/2019/01/181598908240/",
+            "title": "",
+            "content_html": "\u003cp\u003eJustice League (2018) #14 variant cover by Jae Lee\u003c/p\u003e\n",
+            "summary": "Justice League (2018) #14 variant cover by Jae Lee",
+            "date_published": "2019-01-01T02:00:36+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/01/181598908240/index.md"
+            , "tags": ["dc","comics","justice league","superman","batman","wonder woman","jae lee","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181598908240/justice-league-2018-14-variant-cover-by-jae-lee"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079920294838628353/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/new-years-checklist-2019/",
+            "url": "https://roytang.net/2019/01/new-years-checklist-2019/",
+            "path": "/2019/01/new-years-checklist-2019/",
+            "title": "New Year's Checklist 2019",
+            "content_html": "\u003cp\u003eMost of these are carried over from the \u003ca href=\"/2017/01/new-years-checklist/\"\u003e2017 checklist\u003c/a\u003e. Maybe an annual thing, eh?\u003c/p\u003e\n\u003cp\u003eIn no particular order:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGreet your loved ones and friends and anyone else you hold dear. Maybe even those you disagree with\u003c/li\u003e\n\u003cli\u003ePonder why people give so much significance to the transition between an arbitrarily-chosen pair of 24 hour periods\u003c/li\u003e\n\u003cli\u003eTake stock and reflect on the past year\u003c/li\u003e\n\u003cli\u003eThink about what you\u0026rsquo;d like to learn this year or how you want to improve\u003c/li\u003e\n\u003cli\u003eCount your blessings for the past year and be grateful\u003c/li\u003e\n\u003cli\u003eChange your passwords\u003c/li\u003e\n\u003cli\u003eBuy a new toothbrush\u003c/li\u003e\n\u003cli\u003eMake a New Year\u0026rsquo;s joke (\u0026ldquo;If you must use fireworks of any kind tonight, at least try to limit your injuries to the left leg only. That way you can start the new year on the right foot.\u0026quot;)\u003c/li\u003e\n\u003cli\u003eSet a target of how many books you\u0026rsquo;ll read in 2019\u003c/li\u003e\n\u003cli\u003eChoose the first book to read\u003c/li\u003e\n\u003cli\u003eThrow away a few things you no longer need\u003c/li\u003e\n\u003cli\u003eMake a list of where you will travel to in 2019\u003c/li\u003e\n\u003cli\u003eCheck out what movies are coming out this year and which ones you want to watch (see below)\u003c/li\u003e\n\u003cli\u003eAudit your financials \u0026ndash; where is your money going, how much do you owe, how much are you earning, where should you invest, etc\u003c/li\u003e\n\u003cli\u003eMake another New Year\u0026rsquo;s joke (\u0026ldquo;If you go to the toilet at 11:59PM, you won\u0026rsquo;t get out til next year!\u0026quot;)\u003c/li\u003e\n\u003cli\u003ePick up your keyboard and shake out all the grime that\u0026rsquo;s gathered there over the past year\u003c/li\u003e\n\u003cli\u003eMake a list of projects you want to do in 2019\u003c/li\u003e\n\u003cli\u003eChoose something from the past year that you\u0026rsquo;re going to stop watching or doing\u003c/li\u003e\n\u003cli\u003eEat your favorite food. Or ice cream. Ice cream is great.\u003c/li\u003e\n\u003cli\u003eRemember that there\u0026rsquo;s a new Doctor Who special today (well January 1 in the UK)\u003c/li\u003e\n\u003cli\u003eGet rid of 2018 calendars\u003c/li\u003e\n\u003cli\u003eMake a list for the new year!\u003c/li\u003e\n\u003cli\u003eClean up the photos on your phone, tablet and computer\u003c/li\u003e\n\u003cli\u003eDelete all files downloaded 2017 or earlier\u003c/li\u003e\n\u003cli\u003eFollow up on the people who owe you money or things\u003c/li\u003e\n\u003cli\u003eReview your recurring luxury costs (Netflix, etc) and evaluate whether you still really need them\u003c/li\u003e\n\u003cli\u003eExport your FB, Instagram and Twitter data\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e2019 Movies/TV/Games calendar:\u003c/p\u003e\n\u003cp\u003eMovies:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e08 Jan Bumblebee\u003c/li\u003e\n\u003cli\u003e06 Mar Captain Marvel\u003c/li\u003e\n\u003cli\u003e05 Apr Shazam\u003c/li\u003e\n\u003cli\u003e26 Apr Avengers Endgame\u003c/li\u003e\n\u003cli\u003e07 Jun X-Men Dark Phoenix\u003c/li\u003e\n\u003cli\u003e05 Jul Spider-Man From From Home\u003c/li\u003e\n\u003cli\u003e02 Aug New Mutants\u003c/li\u003e\n\u003cli\u003e04 Oct Joker\u003c/li\u003e\n\u003cli\u003e20 Dec Star Wars Episode IX\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eGames:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e11 Jan Tales of Vesperia Definitive Edition\u003c/li\u003e\n\u003cli\u003e25 Jan Kingdom Hearts III\u003c/li\u003e\n\u003cli\u003e15 Feb Civ6 Gathering Storm\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTV:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eJan Punisher S2\u003c/li\u003e\n\u003cli\u003eApr Game of Thrones S8\u003c/li\u003e\n\u003cli\u003eFall Crisis on Infinite Earths Arrowverse crossover\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Most of these are carried over from the 2017 checklist. Maybe an annual thing, eh?\nIn no particular order:\n Greet your loved ones and friends and anyone else you hold dear. Maybe even those you disagree with Ponder why people give so much significance to the transition between an arbitrarily-chosen pair of 24 hour periods Take stock and reflect on the past year Think about what you\u0026rsquo;d like to learn this year or how you want to improve Count your blessings for the past year and be grateful Change your passwords Buy a new toothbrush Make a New Year\u0026rsquo;s joke (\u0026ldquo;If you must use fireworks of any kind tonight, at least try to limit your injuries to the left leg only.",
+            "date_published": "2019-01-01T01:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/new-years-checklist/index.md"
+            , "tags": ["Self-Improvement","new-years-checklist"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079939358118031361/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/01/",
+            "url": "https://roytang.net/2019/01/",
+            "path": "/2019/01/",
+            "title": "Monthly Archives for 01 2019",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-01T00:00:00+00:00",
+            "date_modified": "2019-08-09T01:14:44+08:00",
+            "section": "archm",
+            "source_path": "archm/2019-01.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2019/",
+            "url": "https://roytang.net/2019/",
+            "path": "/2019/",
+            "title": "Yearly Archives for 2019",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-01-01T00:00:00+00:00",
+            "date_modified": "2019-08-09T01:14:44+08:00",
+            "section": "archy",
+            "source_path": "archy/2019.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079858335891902464/",
+            "url": "https://roytang.net/2018/12/1079858335891902464/",
+            "path": "/2018/12/1079858335891902464/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e I think the 19 in 2019 is gonna feel weirder\u003c/p\u003e\n",
+            "summary": "@Westraid I think the 19 in 2019 is gonna feel weirder",
+            "date_published": "2018-12-31T21:54:24+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079858335891902464.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079858335891902464/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/10157162818018912/",
+            "url": "https://roytang.net/2018/12/10157162818018912/",
+            "path": "/2018/12/10157162818018912/",
+            "title": "",
+            "content_html": "\u003cp\u003eNext year na ko magpost ulit\u003c/p\u003e\n",
+            "summary": "Next year na ko magpost ulit",
+            "date_published": "2018-12-31T21:10:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/10157162818018912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10157162818018912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/ab6gxl/",
+            "url": "https://roytang.net/2018/12/ab6gxl/",
+            "path": "/2018/12/ab6gxl/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-raskreddit-reddit-what-was-the-best-thing-about-your-2018httpsredditcomraskredditcommentsab6gxlreddit_what_was_the_best_thing_about_your_2018\"\u003ePosted on r/AskReddit: \u003ca href=\"https://reddit.com/r/AskReddit/comments/ab6gxl/reddit_what_was_the_best_thing_about_your_2018/\"\u003eReddit, what was the best thing about your 2018?\u003c/a\u003e\u003c/h4\u003e\n",
+            "summary": "Posted on r/AskReddit: Reddit, what was the best thing about your 2018? ",
+            "date_published": "2018-12-31T19:51:00+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/ab6gxl/index.md"
+            , "tags": ["askreddit"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/AskReddit/comments/ab6gxl/reddit_what_was_the_best_thing_about_your_2018/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079796091954946054/",
+            "url": "https://roytang.net/2018/12/1079796091954946054/",
+            "path": "/2018/12/1079796091954946054/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2018-12-31T17:47:04+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079796091954946054/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079796091954946054/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079705485165551617/",
+            "url": "https://roytang.net/2018/12/1079705485165551617/",
+            "path": "/2018/12/1079705485165551617/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e edit for gender\u003c/p\u003e\n",
+            "summary": "@triviastorm edit for gender",
+            "date_published": "2018-12-31T11:47:02+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079705485165551617.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079705485165551617/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079679918449946625/",
+            "url": "https://roytang.net/2018/12/1079679918449946625/",
+            "path": "/2018/12/1079679918449946625/",
+            "title": "",
+            "content_html": "\u003cp\u003eThought I\u0026rsquo;d finish a game from last year\u0026rsquo;s backlog before the new year lol #PS4share\u003c/p\u003e\n",
+            "summary": "Thought I\u0026rsquo;d finish a game from last year\u0026rsquo;s backlog before the new year lol #PS4share",
+            "date_published": "2018-12-31T10:05:26+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/1079679918449946625/index.md"
+            , "tags": ["PS4share"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079679918449946625/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/bsdkztjb3nm/",
+            "url": "https://roytang.net/2018/12/bsdkztjb3nm/",
+            "path": "/2018/12/bsdkztjb3nm/",
+            "title": "",
+            "content_html": "\u003cp\u003eHappy new year! #medianoche\u003c/p\u003e\n",
+            "summary": "Happy new year! #medianoche",
+            "date_published": "2018-12-31T07:53:23+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/BsDkZtjB3nm/index.md"
+            , "tags": ["medianoche"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BsDkZtjB3nm/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/181584630090/happy-new-year-medianoche-httpbitly2s1djli"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079783104464801794/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079758557191593986/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/suggested-new-years-resolutions/",
+            "url": "https://roytang.net/2018/12/suggested-new-years-resolutions/",
+            "path": "/2018/12/suggested-new-years-resolutions/",
+            "title": "Suggested New Year's Resolutions",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m not a big believer in New Year\u0026rsquo;s resolutions, but here\u0026rsquo;s some suggestions if you\u0026rsquo;re into that sort of thing:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/2018/12/duolingo/\"\u003elearn a new language\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003etalk to strangers more often\u003c/li\u003e\n\u003cli\u003evisit 12 museums (one per month)\u003c/li\u003e\n\u003cli\u003estep away from your devices once a week (increase the duration every time)\u003c/li\u003e\n\u003cli\u003eread at least 12 non-fiction books\u003c/li\u003e\n\u003cli\u003eread at least 12 physical books\u003c/li\u003e\n\u003cli\u003ewrite a poem; maybe write 12 poems\u003c/li\u003e\n\u003cli\u003ewalk in the rain\u003c/li\u003e\n\u003cli\u003etravel somewhere alone\u003c/li\u003e\n\u003cli\u003elearn to draw\u003c/li\u003e\n\u003cli\u003estop a fight\u003c/li\u003e\n\u003cli\u003ewalk two thousand kilometers\u003c/li\u003e\n\u003cli\u003emake more puns\u003c/li\u003e\n\u003cli\u003efind something you can change in your local community and try to change it\u003c/li\u003e\n\u003cli\u003efigure out what it means to be happy\u003c/li\u003e\n\u003cli\u003estart twelve new side projects\u003c/li\u003e\n\u003cli\u003efinish one side project\u003c/li\u003e\n\u003cli\u003eonce a week, throw out a few things you no longer need\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThese aren\u0026rsquo;t things I\u0026rsquo;m committing to, but they are examples of the sort of NYRs I\u0026rsquo;d be likely to take on.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m also not a fan of big lifestyle changes like going to the gym or quitting smoking as NYRs, I feel like those things need a completely different approach and level of discipline/commitment than just deciding to arbitrarily switch over on a certain date. I prefer incremental life improvements as NYRs, similar in scale to the above. Also consider: Instead of one resolution for the entire year, try 12 30-day challenges instead. The smaller scale makes the goal less daunting and a bit more achievable. Sticking to something for 30 days is way easier than a whole year.\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m not a big believer in New Year\u0026rsquo;s resolutions, but here\u0026rsquo;s some suggestions if you\u0026rsquo;re into that sort of thing:\n learn a new language talk to strangers more often visit 12 museums (one per month) step away from your devices once a week (increase the duration every time) read at least 12 non-fiction books read at least 12 physical books write a poem; maybe write 12 poems walk in the rain travel somewhere alone learn to draw stop a fight walk two thousand kilometers make more puns find something you can change in your local community and try to change it figure out what it means to be happy start twelve new side projects finish one side project once a week, throw out a few things you no longer need  These aren\u0026rsquo;t things I\u0026rsquo;m committing to, but they are examples of the sort of NYRs I\u0026rsquo;d be likely to take on.",
+            "date_published": "2018-12-31T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2018/12/ny-resolution-suggestions/index.md"
+            , "tags": ["Self Improvement"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079618734866776064/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/181567817410/",
+            "url": "https://roytang.net/2018/12/181567817410/",
+            "path": "/2018/12/181567817410/",
+            "title": "",
+            "content_html": "\u003cp\u003eThor (2018) #8 by Jason Aaron and Mike del Mundo. Thori is great lol\u003c/p\u003e\n",
+            "summary": "Thor (2018) #8 by Jason Aaron and Mike del Mundo. Thori is great lol",
+            "date_published": "2018-12-31T02:00:45+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/181567817410/index.md"
+            , "tags": ["marvel","comics","thor","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181567817410/thor-2018-8-by-jason-aaron-and-mike-del-mundo"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079557945564823552/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079383290275016705/",
+            "url": "https://roytang.net/2018/12/1079383290275016705/",
+            "path": "/2018/12/1079383290275016705/",
+            "title": "",
+            "content_html": "\u003cp\u003eTake notes PH. Hopefully they dont squander it like we did edsa\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/qz/status/1079351310728785920'\u003eqz\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    How Armenia went from a corrupt autocracy to country of the year in six months \u003ca href=\"http://bit.ly/2CEM2hw\"\u003ehttp://bit.ly/2CEM2hw\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Take notes PH. Hopefully they dont squander it like we did edsa\nQuoted qz\u0026#39;s tweet:   How Armenia went from a corrupt autocracy to country of the year in six months http://bit.ly/2CEM2hw  ",
+            "date_published": "2018-12-30T14:26:45+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079383290275016705/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079383290275016705/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/noone-reads-linkedin-profiles/",
+            "url": "https://roytang.net/2018/12/noone-reads-linkedin-profiles/",
+            "path": "/2018/12/noone-reads-linkedin-profiles/",
+            "title": "Noone reads LinkedIn profiles",
+            "content_html": "\u003cp\u003eI mentioned before how \u003ca href=\"/2017/06/blogging-and-social-media/\"\u003eI\u0026rsquo;m not a fan of LinkedIn\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eI’m not a fan of LinkedIn, as it seems to be mainly a way to get harassed by recruiters who didn’t even bother reading my profile.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eSome number of years back, I added the following clause to my LinkedIn profile:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eRecruiters: if you contact me, please specify the position you are recruiting for, what city it is in, and whether you can meet the above asking salary. Please include the word PINEAPPLE (all caps) in your communication.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eIn the five or so years since I placed this clause, none of the dozens of recruiters who have contacted me via email or phone call or even via just sending a connection request on LinkedIn itself has ever complied with this clause in any way.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve seen people using LinkedIn from the other side - looking for candidates to fill positions - and most of them will just quickly skim your profile to see if you tick all the checkboxes of what they\u0026rsquo;re looking for. Recruiters and other people looking to hire have to sift through lots of resumes and profiles and very few will bother to go through your entire history.\u003c/p\u003e\n\u003cp\u003eOverall, I am not convinced that LinkedIn is at all useful or that it has been a net positive for me personally, but I still have \u003ca href=\"https://www.linkedin.com/in/roytang/\"\u003ea profile\u003c/a\u003e and sometimes post my blog entries there. Also, given that I want to reduce Facebook usage, it\u0026rsquo;s probably a good idea to have work-related contacts on LinkedIn instead of Facebook moving forward.\u003c/p\u003e\n",
+            "summary": "I mentioned before how I\u0026rsquo;m not a fan of LinkedIn:\n I’m not a fan of LinkedIn, as it seems to be mainly a way to get harassed by recruiters who didn’t even bother reading my profile.\n Some number of years back, I added the following clause to my LinkedIn profile:\n Recruiters: if you contact me, please specify the position you are recruiting for, what city it is in, and whether you can meet the above asking salary.",
+            "date_published": "2018-12-30T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2018/12/noone-reads-linkedin-profile/index.md"
+            , "tags": ["linkedin","Tech Life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079256113361678336/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079213223583215616/",
+            "url": "https://roytang.net/2018/12/1079213223583215616/",
+            "path": "/2018/12/1079213223583215616/",
+            "title": "",
+            "content_html": "\u003cp\u003eRestaurant Order Preferences in Africa\u003c/p\u003e\n",
+            "summary": "Restaurant Order Preferences in Africa",
+            "date_published": "2018-12-30T03:10:57+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079213223583215616/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079213223583215616/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/181535822735/",
+            "url": "https://roytang.net/2018/12/181535822735/",
+            "path": "/2018/12/181535822735/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe Green Lantern (2018) #1 cover by Liam Sharp\u003c/p\u003e\n",
+            "summary": "The Green Lantern (2018) #1 cover by Liam Sharp",
+            "date_published": "2018-12-30T02:00:31+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/181535822735/index.md"
+            , "tags": ["dc","comics","green lantern","hal jordan","grant morrison","liam sharp","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181535822735/the-green-lantern-2018-1-cover-by-liam-sharp"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079195499557765121/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079157136578342912/",
+            "url": "https://roytang.net/2018/12/1079157136578342912/",
+            "path": "/2018/12/1079157136578342912/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://myaccount.google.com/purchases\"\u003ehttps://myaccount.google.com/purchases\u003c/a\u003e lists all purchases that Google is aware of you making. Amazon orders. iPhone apps. Steam games. Random items/gifts. I had no clue Google had this level of knowledge about my spending habits. It is kind of scary :/\u003c/p\u003e\n",
+            "summary": "https://myaccount.google.com/purchases lists all purchases that Google is aware of you making. Amazon orders. iPhone apps. Steam games. Random items/gifts. I had no clue Google had this level of knowledge about my spending habits. It is kind of scary :/",
+            "date_published": "2018-12-29T23:28:05+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079157136578342912/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079157136578342912/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079157000129241089/",
+            "url": "https://roytang.net/2018/12/1079157000129241089/",
+            "path": "/2018/12/1079157000129241089/",
+            "title": "",
+            "content_html": "\u003cp\u003eInstead of resolutions, try 30 day challenges:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ethey\u0026rsquo;re more achievable\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ebase each challenge on how busy the month looks or what you need/want\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eyou get to try 12 experiments instead of one!\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHere\u0026rsquo;s the three minute video: \u003ca href=\"https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days\"\u003ehttps://www.ted.com/talks/matt_cutts_try_something_new_for_30_days\u003c/a\u003e \u003ca href=\"https://twitter.com/b_satnan/status/1079022474040410113\"\u003ehttps://twitter.com/b_satnan/status/1079022474040410113\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Instead of resolutions, try 30 day challenges:\n  they\u0026rsquo;re more achievable\n  base each challenge on how busy the month looks or what you need/want\n  you get to try 12 experiments instead of one!\n  Here\u0026rsquo;s the three minute video: https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days https://twitter.com/b_satnan/status/1079022474040410113",
+            "date_published": "2018-12-29T23:27:33+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079157000129241089/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079157000129241089/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1079063990091673600/",
+            "url": "https://roytang.net/2018/12/1079063990091673600/",
+            "path": "/2018/12/1079063990091673600/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m only halfway thru the season, but Titans is turning out to be a better (and darker) adaptation than I expected\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m only halfway thru the season, but Titans is turning out to be a better (and darker) adaptation than I expected",
+            "date_published": "2018-12-29T17:17:57+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1079063990091673600.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1079063990091673600/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/duolingo/",
+            "url": "https://roytang.net/2018/12/duolingo/",
+            "path": "/2018/12/duolingo/",
+            "title": "Duolingo",
+            "content_html": "\u003cp\u003eIf you\u0026rsquo;re looking for a New Year\u0026rsquo;s Resolution, why not try learning a new language? Since late 2014, I\u0026rsquo;ve been using \u003ca href=\"https://www.duolingo.com/\"\u003eDuolingo\u003c/a\u003e to teach myself new languages. Learning a new language not only helps when you\u0026rsquo;re travelling, but it unlocks different ways of forming thoughts in your brain, helping cognitive development (I may have made up that last part with absolutely no basis except my own speculation.)\u003c/p\u003e\n\u003cp\u003eThe first language I tried to study using Duolingo was Spanish, mainly because back then we had an \u003ca href=\"/2015/04/europe-2015-barcelona-part-1/\"\u003eupcoming trip to Europe (including Barcelona)\u003c/a\u003e planned in 2015 so the Spanish would have helped. The Philippines also has a lot of history with the Spanish, so there\u0026rsquo;s a lot of words I could pick up easily. I figured there\u0026rsquo;s no reason to make things too difficult right?\u003c/p\u003e\n\u003cp\u003eI didn\u0026rsquo;t finish the course before our trip, there was far too much content! At some point during the following year (2016), I did manage to complete all of the available Spanish courses though, so yay! The most challenging part was understanding the use of reflexive pronouns like \u003ccode\u003ete\u003c/code\u003e or \u003ccode\u003eme\u003c/code\u003e, since using them changed the structure of sentences. I also had to adjust to male/female words, and the vast number of verb tenses. But otherwise, Spanish wasn\u0026rsquo;t too tough. At some point, Duolingo claimed that I was \u0026ldquo;50% fluent\u0026rdquo; in Spanish, but that seems ridiculous lol. This statistic no longer appears after a recent revamp, so they probably realised that too. I don\u0026rsquo;t consider myself anywhere near fluent, but I know enough Spanish to recognize a few words here and there when watching the Spanish scenes in \u003cem\u003eBetter Call Saul\u003c/em\u003e, so that\u0026rsquo;s a thing. Listening to spoken Spanish is much tougher than reading words off a screen. I suppose if I want to further my mastery of the language, I would need to listen to more Spanish convos or read more Spanish prose or such, but for now I\u0026rsquo;m happy with continuing the Duolingo lessons. They have since revamped the course and introduced more exercises, so there\u0026rsquo;s still quite a bit to learn.\u003c/p\u003e\n\u003cp\u003eSometime in 2017, I also decided to add a second language to my daily Duolingo exercises. Hard mode this time, I chose Japanese. The main reason being I\u0026rsquo;m a bit of a weeb lol. Japanese is a lot more challenging than Spanish because in addition to learning a whole new vocabulary and sentence structure, I have to learn new characters as well! I actually gave studying hiragana/katakana a go back in high school, when a friend and I tried learning Japanese to decipher some Japanese RPGs (maybe I\u0026rsquo;ll write about that someday). Whatever I learned there has largely faded though, but I did retain some minimum vocabulary from all those years of exposure to anime. It\u0026rsquo;s still very challenging - even up to now I\u0026rsquo;m still in the introductory sections learning hiragana and simple sentences, I find myself having to repeat lessons and exercises often and even up to now I\u0026rsquo;m still not super familiar with many of the hiragana characters. I should probably be doing some writing exercises as well (which Duolingo doesn\u0026rsquo;t provide) - the mechanical act of drawing the characters should help with recall - but I\u0026rsquo;ve been too lazy to get into that.\u003c/p\u003e\n\u003cp\u003eDuolingo is free to use. That of course means there\u0026rsquo;s stuff like ads and in-app purchases, which might annoy you if you dislike that kind of thing. I dislike them too, but I can kind of tolerate them I guess. The in-app purchases don\u0026rsquo;t really have any effect on what I want to be doing with the app anyway. Completing the lessons also earns you some in-game currency which you can use to unlock some extra lessons/exercises. I\u0026rsquo;ve never had to use them though, so I still have a ton of the in-app currency.\u003c/p\u003e\n\u003cp\u003eDuolingo has that nice feature where it tracks when you\u0026rsquo;re doing the exercises on a regular daily basis and tracks your \u0026ldquo;streak\u0026rdquo;, which is psychologically very effective on me. I often hold the streaks for months and then I accidentally break the streak for some silly reason like being too busy with work, then I\u0026rsquo;m sad and annoyed and I leave Duolingo alone for a couple of weeks so I can move on. Then I start over. I\u0026rsquo;m currently at an 86-day streak again. Duolingo is a rare example of a new thing I\u0026rsquo;ve managed to stick with for a long time.\u003c/p\u003e\n\u003cp\u003eOne weird thing about Duolingo is that although it offers lessons/exercises on different platforms - web, mobile, tablet - the method of delivery is not consistent across all platforms. Web is more limited obviously, since they often won\u0026rsquo;t have access to a microphone. But I don\u0026rsquo;t understand why their mobile and tablet (IPad) versions aren\u0026rsquo;t consistent. The main inconsistency is the way they track in-app \u0026ldquo;experience\u0026rdquo;. The mobile version gives a \u0026ldquo;streak bonus\u0026rdquo; for maintaining a streak, while the IPad and web versions do not, so you can earn more experience when using the mobile version. It doesn\u0026rsquo;t really matter to me - my daily targets are set such that I always need to do two sets per day (one Spanish and one Japanese), but I find it mildly annoying.\u003c/p\u003e\n\u003cp\u003eAll in all Duolingo provides a positive experience, and I\u0026rsquo;ll probably be using it for yearrs to come. I don\u0026rsquo;t really have any specific goals for why I\u0026rsquo;m learning Spanish and Japanese, both just seem like really good languages to know, or at least be able to partially understand. Who knows, maybe I\u0026rsquo;ll even try to add a third language some day lol.\u003c/p\u003e\n",
+            "summary": "If you\u0026rsquo;re looking for a New Year\u0026rsquo;s Resolution, why not try learning a new language? Since late 2014, I\u0026rsquo;ve been using Duolingo to teach myself new languages. Learning a new language not only helps when you\u0026rsquo;re travelling, but it unlocks different ways of forming thoughts in your brain, helping cognitive development (I may have made up that last part with absolutely no basis except my own speculation.)\nThe first language I tried to study using Duolingo was Spanish, mainly because back then we had an upcoming trip to Europe (including Barcelona) planned in 2015 so the Spanish would have helped.",
+            "date_published": "2018-12-29T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2018/12/duolingo/index.md"
+            , "tags": ["Self Improvement","Tech Life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078893695682920448/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/181504879143/",
+            "url": "https://roytang.net/2018/12/181504879143/",
+            "path": "/2018/12/181504879143/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://travisellisor.tumblr.com/post/181374416960/page-20-from-aquaman-2011-9-by-ivan-reis-joe\" class=\"tumblr_blog\"\u003etravisellisor\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003epage 20 from\n\u003cp\u003e\u003ca href=\"http://www.comixology.com/Aquaman-2011-2016-9/digital-comic/25252\"\u003eAquaman (2011) #9\u003c/a\u003e by Ivan Reis, Joe Prado, Rod Reis, Geoff Johns and Nick J. Napolitano\u003c/p\u003e\u003c/blockquote\u003e\u003c/p\u003e\n",
+            "summary": "travisellisor:\npage 20 from Aquaman (2011) #9 by Ivan Reis, Joe Prado, Rod Reis, Geoff Johns and Nick J. Napolitano",
+            "date_published": "2018-12-29T02:00:32+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/181504879143/index.md"
+            , "tags": ["comics","aquaman","black manta","ivan reis","joe prado","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181504879143/travisellisor-page-20-from-aquaman-2011-9"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078833116104572929/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://roytang.net/2018/12/1078639604691922944/",
+            "url": "https://roytang.net/2018/12/1078639604691922944/",
+            "path": "/2018/12/1078639604691922944/",
+            "title": "",
+            "content_html": "\u003cp\u003enicolas cage was the perfect choice for spider-man noir.\u003c/p\u003e\n",
+            "summary": "nicolas cage was the perfect choice for spider-man noir.",
+            "date_published": "2018-12-28T13:11:36+00:00",
+            "date_modified": "2020-06-25T23:40:26+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/12/1078639604691922944/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078639604691922944/"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/42/feed.json" 
+     , "next": "/p/44/feed.json" 
+}

@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>ms-office on Roy Tang</title>
+      <link>https://roytang.net/tags/ms-office/</link>
+      <description>Recent content in ms-office on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Fri, 19 Sep 2008 03:24:15 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/ms-office/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2008/09/99271/</link>
+            <pubDate>Fri, 19 Sep 2008 03:24:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/09/99271/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m writing a C# program that acts as a PowerPoint 2007 plugin. On some machines, some calls to the PowerPoint object model throw a &lt;code&gt;COMException&lt;/code&gt; with the message &lt;code&gt;RPC_E_SYS_CALL_FAILED&lt;/code&gt;. I couldn&amp;rsquo;t find any specific advice on what to do regarding this error, or how to avoid it. From Googling it looks like something to do with the message queue or Single-Threaded Apartments. Or am I way off?&lt;/p&gt;
+&lt;p&gt;Example of the error message is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED))&lt;br&gt;
+at Microsoft.Office.Interop.PowerPoint._Presentation.get_FullName()&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Unfortunately, the problem is occurring on a client&amp;rsquo;s machine, so I have no easy way to debug it! Should I just retry the calls whenever I get this error?&lt;/p&gt;
+&lt;p&gt;Any advice to help me resolve this problem would be greatly appreciated!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

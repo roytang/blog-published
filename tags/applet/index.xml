@@ -1,0 +1,181 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>applet on Roy Tang</title>
+      <link>https://roytang.net/tags/applet/</link>
+      <description>Recent content in applet on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 23 Dec 2009 08:20:52 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/applet/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/1951373/</link>
+            <pubDate>Wed, 23 Dec 2009 08:20:52 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1951373/</guid>
+            <description>
+            
+
+            &lt;p&gt;We&amp;rsquo;re working on a project with a number of applets that has to work across a large range of OS (WIndows, Mac, Linux), browsers (IE, FF, Safari, etc) and Java versions (1.5+), and it often happens that a fix we apply will cause some sort of security exception an another platform or some other error.&lt;/p&gt;
+&lt;p&gt;Is there any way for us to prepare automated tests to immediately catch those problems in different platforms? I think it&amp;rsquo;s not necessary to check that the gui parts are appearing as intended, but just to detect whether unexpected exceptions are occuring.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/1927273/</link>
+            <pubDate>Fri, 18 Dec 2009 09:48:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1927273/</guid>
+            <description>
+            
+
+            &lt;p&gt;We have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.&lt;/p&gt;
+&lt;p&gt;The problem is encountered on the user site.
+On initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets.
+After refreshing the page, it loads normally.
+If the cache is cleared, same problem happens again.&lt;/p&gt;
+&lt;p&gt;Unfortunately, we&amp;rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)&lt;/p&gt;
+&lt;p&gt;We were able to get a jstack thread dump, see below:
+&lt;a href=&#34;http://pastebin.com/m527e05dd&#34;&gt;http://pastebin.com/m527e05dd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However, we&amp;rsquo;re not sure how to interpret it. Any suggestions or advice?&lt;/p&gt;
+&lt;p&gt;Edit:
+We were able to replicate in our testing machine by creating a new user (clean Firefox profile). If we clear the java cache then visit the problematic pages, the edit controls are disabled (we can&amp;rsquo;t click them to focus them), the Firefox address bar and search box have the same behavior. The edit box controls only &amp;ldquo;unfreeze&amp;rdquo; when we access the &amp;ldquo;Help&amp;rdquo; menu entry, which has a Search edit box that &lt;em&gt;is&lt;/em&gt; active.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/12/1845277/</link>
+            <pubDate>Fri, 04 Dec 2009 06:49:54 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/12/1845277/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an applet that is crashing Firefox on Linux.&lt;/p&gt;
+&lt;p&gt;Can anyone tell me how I can enable the java core dump log file for this applet and where the file would be generated?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/11/1801804/</link>
+            <pubDate>Thu, 26 Nov 2009 06:01:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/11/1801804/</guid>
+            <description>
+            
+
+            &lt;p&gt;While testing our setup for user acceptance testing, we got some reports that java applets in our web application would occasionally fail to load. The envt where it was reported was WinXP/IE6, and there were no errors found in the java console.&lt;/p&gt;
+&lt;p&gt;Obviously we&amp;rsquo;d like to avoid it. What sort of things should we be checking for here? On our local servers, everything seems fine. There&amp;rsquo;s some turnaround time when sending questions to the on-site guy, so I&amp;rsquo;d look to cover as many possible causes as possible.&lt;/p&gt;
+&lt;p&gt;Some more info:
+We have multiple applets, in the instance that they fail loading, all of them fail loading. The applet jar files vary in size from 2MB to 8MB. I&amp;rsquo;m told it seems more likely to happen if the applet isn&amp;rsquo;t cached yet, i.e. if they&amp;rsquo;ve been able to load the applets once on a given machine, further runs on that machine go smoothly. I&amp;rsquo;m wondering if there&amp;rsquo;s some sort of network transfer error when downloading the applets, but I don&amp;rsquo;t know how to verify that.&lt;/p&gt;
+&lt;p&gt;Any advise is welcome!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/11/1754697/</link>
+            <pubDate>Wed, 18 Nov 2009 09:21:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/11/1754697/</guid>
+            <description>
+            
+
+            &lt;p&gt;We have an Applet that can possibly display Chinese text. We are specifying a font for it (Arial), it works fine under both Windows and Mac OSX.&lt;/p&gt;
+&lt;p&gt;But in Firefox on Linux the Chinese characters are rendered as squares. Is there a way to work around this? Note that we can&amp;rsquo;t assume the existence of a particular font file on the client.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2009/11/1754135/</link>
+            <pubDate>Wed, 18 Nov 2009 06:58:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/11/1754135/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an applet that calls a JDialog that contains a JProgressBar component. I subclass the JDialog to expose a method to update the JProgressBar, something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class ProgressDialog extends javax.swing.JDialog {
+    public void setProgress(double progress) {
+        jProgressBar1.setValue(jProgressBar1.getMinimum() + (int) (progress * jProgressBar1.getMaximum()));
+    }
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use this dialog in the following manner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public void test() throws Exception {
+    progressDialog = new ProgressDialog(null, true);
+
+    try {
+        progressDialog.setLocationRelativeTo(null);
+
+        // show the dialog
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                progressDialog.setVisible(true);
+            }
+        });
+
+        // business logic code that calls progressDialog.setProgress along the way
+        doStuff();
+        
+    } finally {
+        progressDialog.setVisible(false);
+        progressDialog.dispose();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It works fine on Windows/any browser. However, when invoking the above function on Firefox 2/3/3.5 on a Mac, the progressDialog is displayed indefinitely, i.e. it doesn&amp;rsquo;t close.&lt;/p&gt;
+&lt;p&gt;I suspected that calling setVisible(true) inside the EventQueue was causing the problem, since it&amp;rsquo;s a blocking call and might block the queue completely, so I tried changing it to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        // show the dialog
+        new Thread() {
+            public void run() {
+                progressDialog.setVisible(true);
+            }
+        }.start();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With this change, the progressDialog now closes correctly, but a new problem emerged - the contents of the dialog (which included the progressbar, an icon and a JLabel used to show a message string) were no longer shown inside the dialog. It was still a problem only on Mac Firefox.&lt;/p&gt;
+&lt;p&gt;Any ideas? I realize it&amp;rsquo;s probably some AWT threading issue, but I&amp;rsquo;ve been at this for a couple of days and can&amp;rsquo;t find a good solution. Wrapping the doStuff() business logic in a separate new Thread seems to work, but it&amp;rsquo;s not easy to refactor the actual business logic code into a separate thread, so I&amp;rsquo;m hoping there&amp;rsquo;s a simpler solution.&lt;/p&gt;
+&lt;p&gt;The envt is:
+Mac OSX 10.5
+Java 1.5
+Firefox 2/3/3.5&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

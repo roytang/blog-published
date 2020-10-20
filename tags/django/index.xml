@@ -1,0 +1,574 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>django on Roy Tang</title>
+      <link>https://roytang.net/tags/django/</link>
+      <description>Recent content in django on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
+      
+          <atom:link href="https://roytang.net/tags/django/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Flask vs Django
+</title>
+            <link>https://roytang.net/2020/01/flask-vs-django/</link>
+            <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2020/01/flask-vs-django/</guid>
+            <description>
+            
+            &lt;p&gt;In a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.&lt;/p&gt;
+&lt;p&gt;It got me thinking, why did I build this using Flask in the first place? And that led to the more general question: when do I prefer using Flask over Django?&lt;/p&gt;
+&lt;p&gt;Personal experience: I&amp;rsquo;m much more familiar with Django than Flask, having started using it back in 2008. Professionally, I&amp;rsquo;ve also worked on more Django projects, compared to only one Flask project that actually made it to production.&lt;/p&gt;
+&lt;p&gt;The usual quick comparison is that Flask is the more lightweight web framework, suitable to smaller apps like microservices perhaps; while Django is the big monolithic web framework with all the bells and whistles already available. In practice this means Django already provides a lot of functionalities out of the box, while with Flask you have to install and figure out extensions for even the most common tasks like database management. A negative for Flask, but partly due to my inexperience: if you were already well-versed in the use of those extensions, I imagine getting everything together and setting them up will be easier.&lt;/p&gt;
+&lt;p&gt;If there is need for a traditional RDBMS, I will probably use Django. I&amp;rsquo;m not super familiar with SQLAlchemy, the usual recommended ORM for Flask, so that&amp;rsquo;s a big factor. That being said, if I needed to work with something like a NoSQL database or some other nontraditional backend, it might be better to consider Flask since Django isn&amp;rsquo;t super flexible in that record - most of the pluses are oriented towards RDBMS-backed models.&lt;/p&gt;
+&lt;p&gt;Admin: The built-in Django admin is a big plus for me; it means that for things like simple record CRUD, if usability and presentation isn&amp;rsquo;t a big concern, I can just use the Django admin as my backend without needing to write maintenance screens. There is an equivalent &lt;a href=&#34;https://flask-admin.readthedocs.io/en/latest/&#34;&gt;Flask Admin plugin&lt;/a&gt;, but I&amp;rsquo;ve not tried that either.&lt;/p&gt;
+&lt;p&gt;API building: I&amp;rsquo;m already familiar with the Django REST framework, I&amp;rsquo;m not sure if there&amp;rsquo;s an equivalent for Flask. The one Flask project we did, we rolled our own API backend.&lt;/p&gt;
+&lt;p&gt;I find that I tend to favor Flask when building quick proof-of-concept apps that don&amp;rsquo;t need a database. An example that was part of the app I migrated recently would be this quick &lt;a href=&#34;https://apps.roytang.net/twitter/&#34;&gt;Twitter app I wrote about a year ago&lt;/a&gt;, to find intersections between follows/followers. It didn&amp;rsquo;t need a database, only twitter API calls. (I have since merged it into the Django app, so the current version is using Django now.)&lt;/p&gt;
+&lt;p&gt;In general I prefer Django, but that is probably due to familiarity and experience. I would love to have a full-scale project that uses Flask though! Perhaps in the future, for now all my personal projects are running on Django.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://roytang.net/2020/01/flask-vs-django/code_hu9effae59deb16cf77937c315ce614999_79312_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Django Blog Application
+</title>
+            <link>https://roytang.net/2018/10/django-blog-application/</link>
+            <pubDate>Sun, 28 Oct 2018 05:02:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/10/django-blog-application/</guid>
+            <description>
+            
+            &lt;p&gt;Ten years ago this month, I started studying &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; by trying to build my own blog application. I found the code lying around while I was going through some backups lately. It&amp;rsquo;s way out of date, it uses an early version of django. I thought of bringing it up to speed, but that didn&amp;rsquo;t seem practical. Instead, for archival purposes, I cleaned it up a bit and &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;uploaded the code to a github repo&lt;/a&gt;. (Helpful github immediately warned me that having a very old version of Django was a security risk lol). There&amp;rsquo;s a lot more information in the README.md of that repo. I actually used this as my main blog engine for a while before I decided the maintenance effort wasn&amp;rsquo;t worth it and switched to WordPress.&lt;/p&gt;
+&lt;p&gt;Tangent: I&amp;rsquo;m not actually 100% happy with WordPress, and when I found this old code I was tempted to maybe trying building Yet Another Blog Application (TM), except maybe using the opportunity to learn some other framework. My 2018 personal to-do list is already way too long though.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2018/02/48557175/</link>
+            <pubDate>Thu, 01 Feb 2018 07:11:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2018/02/48557175/</guid>
+            <description>
+            
+
+            &lt;p&gt;According to the documentation here: &lt;a href=&#34;https://djangobook.com/syndication-feed-framework/&#34;&gt;https://djangobook.com/syndication-feed-framework/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If link doesn’t return the domain, the syndication framework will
+insert the domain of the current site, according to your SITE_ID
+setting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, I&amp;rsquo;m trying to generate a feed of magnet: links. The framework doesn&amp;rsquo;t recognize this and attempts to append the SITE_ID, such that the links end up like this (on localhost):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link&amp;gt;http://localhost:8000magnet:?xt=...&amp;lt;/link&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Is there a way to bypass this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://roytang.net/2010/09/3727551/</link>
+            <pubDate>Thu, 16 Sep 2010 14:16:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/09/3727551/</guid>
+            <description>
+            
+
+            &lt;p&gt;Like, have them logged to the console?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;ValueError in Django&#39; on stackoverflow at https://stackoverflow.com/questions/2032360/valueerror-in-django:
+</title>
+            <link>https://roytang.net/2010/01/2032378/</link>
+            <pubDate>Sat, 09 Jan 2010 04:47:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2010/01/2032378/</guid>
+            <description>
+            Reply to &amp;#39;ValueError in Django&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2032360/valueerror-in-django:
+
+            &lt;pre&gt;&lt;code&gt;urlpatterns = patterns(&#39;&#39;,     
+    (r&#39;^salaries/employee/$&#39;, list_detail.object_list, &#39;employee_info&#39;),
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The third item in the tuple needs to be a dictionary, not a string. Try removing the single quotes around employee_info:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;urlpatterns = patterns(&#39;&#39;,     
+    (r&#39;^salaries/employee/$&#39;, list_detail.object_list, employee_info),
+)&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Andy McKay&#39;s blog
+</title>
+            <link>https://roytang.net/2009/09/andy-mckay-s-blog/</link>
+            <pubDate>Sun, 06 Sep 2009 04:53:07 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/09/andy-mckay-s-blog/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.agmweb.ca/blog/andy/2222/&#34;&gt;Andy McKay&amp;#39;s blog&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Django snippets: Facebook shell
+</title>
+            <link>https://roytang.net/2009/09/django-snippets-facebook-shell/</link>
+            <pubDate>Sun, 06 Sep 2009 04:52:51 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/09/django-snippets-facebook-shell/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.djangosnippets.org/snippets/1716/&#34;&gt;Django snippets: Facebook shell&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>djangozen | find stuff for django
+</title>
+            <link>https://roytang.net/2009/03/djangozen-find-stuff-for-django/</link>
+            <pubDate>Tue, 31 Mar 2009 21:53:48 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/03/djangozen-find-stuff-for-django/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://djangozen.com/&#34;&gt;djangozen | find stuff for django&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Stylesheet Switcher using Django
+</title>
+            <link>https://roytang.net/2009/02/stylesheet-switcher-using-django/</link>
+            <pubDate>Sat, 14 Feb 2009 14:17:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/02/stylesheet-switcher-using-django/</guid>
+            <description>
+            
+            &lt;p&gt;You may have noticed the new color scheme and new &amp;ldquo;Theme Switcher&amp;rdquo; widget in the sidebar. I had done some CSS work during the past month in the office and it made me want to tweak the stylesheets on this site a bit. I figured I might as well make it easy to switch stylesheets, so I wrote a small Theme Switcher django app. (Well, it&amp;rsquo;s more of a stylesheet switcher I guess)&lt;/p&gt;
+&lt;p&gt;The model is simple:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Theme&lt;/span&gt;(models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Model):
+    slug &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;SlugField()
+    title &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;CharField(max_length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;250&lt;/span&gt;)
+    css_path &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; models&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;CharField(max_length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;)
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; __str__(self):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I only needed one view &amp;ndash; to switch the current theme.&lt;/p&gt;
+&lt;p&gt;Added the ff to urls.py:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^theme/([a-zA-Z0-9\-]+)/&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;themer.views.switch&amp;#39;&lt;/span&gt;),
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The view code simply stores the selected theme as a cookie:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;switch&lt;/span&gt;(request, theme_slug):
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34; Sets a cookie to specify the new theme, then redirects to the referer or root url &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+  theme &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; get_object_or_404(Theme, slug&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;theme_slug)
+  referer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTP_REFERER&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;META:
+    referer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;META[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTTP_REFERER&amp;#34;&lt;/span&gt;]
+  resp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; HttpResponseRedirect(referer)
+  resp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_cookie(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;theme&amp;#34;&lt;/span&gt;, theme_slug, &lt;span style=&#34;color:#ae81ff&#34;&gt;100000&lt;/span&gt;)
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; resp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To load the stylesheet, I set up a &lt;a href=&#34;http://www.b-list.org/weblog/2006/jun/14/django-tips-template-context-processors/&#34; title=&#34;Django tips: Template context processors by James Bennet&#34;&gt;context processor&lt;/a&gt; to pass both the current theme and the list of themes to the context. I wanted to do this using template tags, but I couldn&amp;rsquo;t figure out how to extract a cookie from within a template tag.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; themer.models &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Theme
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context_processor&lt;/span&gt;(request):
+    theme_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Theme&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;objects&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;all()
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;theme&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;COOKIES:
+        slug &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;COOKIES[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;theme&amp;#34;&lt;/span&gt;]
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+            theme &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Theme&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;objects&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(slug&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;slug)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; Theme&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DoesNotExist:
+            theme &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; None
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; theme_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;count() &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+            theme &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; theme_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+            theme &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; None
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;current_theme&amp;#34;&lt;/span&gt; : theme, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;theme_list&amp;#34;&lt;/span&gt; : theme_list}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then in my base template file, I add the following to the head section:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ current_theme.css_path }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And add the list of themes into the sidebar.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;Theme Switcher&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+            {% for theme in theme_list %}
+            &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+            {% ifequal theme.slug current_theme.slug %}
+            {{ theme.title }} &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;note&amp;#34;&lt;/span&gt;&amp;gt;(current)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
+            {% else %}
+            &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{% url themer.views.switch theme.slug %}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Switch to {{ theme.title }} theme&amp;#34;&lt;/span&gt;&amp;gt;{{ theme.title }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+            {% endifequal %}
+            &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+            {% endfor %}
+            &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And we&amp;rsquo;re done!&lt;/p&gt;
+&lt;p&gt;Of course, I&amp;rsquo;m still not particularly strong in web design, so the two current &amp;ldquo;themes&amp;rdquo; really just switch around the color scheme. The light blue theme is named Azorius, while the old black and green theme is named Golgari, both named after the respective color guilds in Magic: The Gathering&amp;rsquo;s Ravnica block.&lt;/p&gt;
+&lt;p&gt;Hopefully this gives me a chance to whip up more interesting themes and polish the old CSS skills some more. Enjoy!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Using Django Pingback
+</title>
+            <link>https://roytang.net/2009/01/using-django-pingback/</link>
+            <pubDate>Sun, 04 Jan 2009 07:22:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2009/01/using-django-pingback/</guid>
+            <description>
+            
+            &lt;p&gt;I actually had some trouble using &lt;a href=&#34;http://code.google.com/p/django-pingback/&#34;&gt;django-pingback&lt;/a&gt; on my custom blog engine; the &lt;a href=&#34;http://hg.piranha.org.ua/django-pingback/file/6ca8eadcd22d/README.md#l1&#34;&gt;django-pingback documentation&lt;/a&gt; is mostly fine, but there were some caveats that I had to discover myself through a bit of debugging:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The URL specified for the XML-RPC endpoint in the HTML head needs to be a full absolute url including domain, i.e. &lt;a href=&#34;http://roytang.net/xmlrpc/,&#34;&gt;http://roytang.net/xmlrpc/,&lt;/a&gt; which gave me trouble when I was trying to test using localhost pinging to an online server. I eventually just decided to set it up, deploy on webfaction and test it online before I redirected the domain name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The documentation mentioned that the pingback handler needs to have the same arguments as the detail view for the post, so I wrote it as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# exactly same arguments as &amp;#39;details&amp;#39; view.&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pingback_blog_handler&lt;/span&gt;(catslug, year, month, slug, &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;kwargs):
+    cat &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Category&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;objects&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(slug&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;catslug)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; Post&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pub_objects&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(date__year&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;year, date__month&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;month, slug&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;slug, category&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;cat, published&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But it wasn&amp;rsquo;t exactly working for me, for some reason the function wasn&amp;rsquo;t being called. After some debugging I found that I needed to use named parameters for catslug, year, month, slug in the URLConf for the post permalink in order for this to work. I&amp;rsquo;m not sure if this was because I was doing it wrong or it&amp;rsquo;s some sort of undocumented requirement.&lt;/li&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The pingback client was throwing a KeyError whenever a post I made would have anchor tags without an href attribute. Granted that there isn&amp;rsquo;t much point in having an &lt;a&gt;anchor tag without the href&lt;/a&gt;, but the code shouldn&amp;rsquo;t just choke on it. I modified the following line in client.py:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  links &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [a[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;href&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; soup&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;findAll(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; is_external(a[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;href&amp;#39;&lt;/span&gt;], url)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Adding the check for the href attribute:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  links &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [a[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;href&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; soup&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;findAll(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;has_key(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;href&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; is_external(a[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;href&amp;#39;&lt;/span&gt;], url)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Those are all the changes I made to get pingbacks working. I hope they&amp;rsquo;re still working now, as I haven&amp;rsquo;t received any pingbacks since the django version of this blog went live &amp;gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Jannis Leidel - An autocomplete widget for django-tagging form fields
+</title>
+            <link>https://roytang.net/2008/12/jannis-leidel-an-autocomplete-widget-for-django-tagging-form-fields/</link>
+            <pubDate>Wed, 31 Dec 2008 06:40:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/jannis-leidel-an-autocomplete-widget-for-django-tagging-form-fields/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://jannisleidel.com/2008/11/autocomplete-widget-for-django-tagging-form-fields/&#34;&gt;Jannis Leidel - An autocomplete widget for django-tagging form fields&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Colophon 2008
+</title>
+            <link>https://roytang.net/2008/12/colophon-2008/</link>
+            <pubDate>Sat, 27 Dec 2008 02:08:22 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/colophon-2008/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;strong&gt;Frontend&lt;/strong&gt;: All page templates are valid (X)HTML. However, I choose not to claim valid XHTML (and no doc type declaration) since I can&amp;rsquo;t guarantee that blog posts I write are compliant! The site uses standard CSS and uses the &lt;a href=&#34;http://blueprintcss.org&#34; title=&#34;Blueprint CSS Framework&#34;&gt;Blueprint CSS Framework&lt;/a&gt; for the grid layout of the page. The site design is entirely original (if not simple and bland &amp;ndash; I&amp;rsquo;m not very good with website design yet!). The site has minor usage of &lt;a href=&#34;http://jquery.com/,&#34; title=&#34;JQuery&#34;&gt;JQuery Javascript library&lt;/a&gt; in some parts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Backend&lt;/strong&gt;: The server side uses &lt;a href=&#34;http://python.org&#34;&gt;Python&lt;/a&gt; and &lt;a href=&#34;http://djangoproject.com&#34;&gt;Django&lt;/a&gt; behind mod_python on Apache, with a MySQL database. The following Django apps and Python libraries are used:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;custom made blog application by myself&lt;/li&gt;
+&lt;li&gt;built-in (contrib) apps: admin, comments, sitemaps, flatpages&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-tagging/&#34;&gt;django-tagging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://launchpad.net/django-xmlrpc&#34;&gt;django-xmlrpc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-comment-utils/&#34;&gt;comment_utils&lt;/a&gt; for advanced comment moderation features&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-template-utils/&#34;&gt;template_utils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-pingback/&#34;&gt;django-pingback&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;Beautiful Soup&lt;/a&gt; for XML/HTML parsing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt; for syntax highlighting. See the &lt;a href=&#34;https://roytang.net/pygments/&#34;&gt;Pygments Demo!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.feedparser.org/&#34;&gt;Feedparser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/python-markdown2/&#34;&gt;Markdown2&lt;/a&gt; so that I can post using Markdown.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As is typical for hobbyist software development, I started working on this site with only a minimal set of features considered, but as I kept working I kept wanting to add more stuff. Some notable custom-made features:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;XMLRPC server, supporting &lt;a href=&#34;http://www.xmlrpc.com/metaWeblogApi&#34;&gt;Metaweblog API&lt;/a&gt; and Pingbacks. I actually only added the metaweblog support so I could post from &lt;a href=&#34;http://www.flock.com/&#34;&gt;Flock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Autocard support (same as &lt;a href=&#34;http://roytang.net/games/2008/02/mtg-autocard-wordpress-plugin/&#34;&gt;my previous Autocard plugin for WP&lt;/a&gt;) and syntax highlighting of code.&lt;/li&gt;
+&lt;li&gt;Automatic extraction of twitter and delicious entries into the sidebar&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gravatar.com&#34;&gt;Gravatar&lt;/a&gt; support for comments&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All entries from the previous &amp;ldquo;roytang / weblog&amp;rdquo;, &amp;ldquo;Roy on Magic&amp;rdquo; and &amp;ldquo;Roy on Django&amp;rdquo; have been imported using a custom data conversion script, but nothing is perfect so some of the older posts may be badly formatted. (Comment on those posts!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: Provided by &lt;a href=&#34;http://www.webfaction.com/?affiliate=roytang&#34;&gt;Webfaction&lt;/a&gt;.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Fixing up the comments
+</title>
+            <link>https://roytang.net/2008/12/fixing-up-the-comments/</link>
+            <pubDate>Mon, 01 Dec 2008 04:58:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/12/fixing-up-the-comments/</guid>
+            <description>
+            
+            &lt;p&gt;I played around with the built-in comments app today, trying to clean it up.&lt;/p&gt;
+&lt;p&gt;Some findings:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Some of the moderation views, such as flagging a post or deleting a post, accept a next parameter that determines where the view will redirect to after the operation. However, the way the url&amp;rsquo;s are set up, there&amp;rsquo;s no easy way to pass this parameter normally, even through query strings. This lovely bug is documented in &lt;a href=&#34;http://code.djangoproject.com/ticket/8968&#34;&gt;http://code.djangoproject.com/ticket/8968&lt;/a&gt;. I wasn&amp;rsquo;t confident enough to try patching it, so as a temporary workaround, I overrode the flag and delete templates and placed the following inside the form:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;next&amp;quot; value=&amp;quot;{{ comment.get\_content\_object_url }}&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Edit: Wow that was stupid. Blogger didn&amp;rsquo;t want to render the HTML code above!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I also replaced the URL in the &amp;ldquo;cancel&amp;rdquo; links for both pages. For some reason, {{ comment.permalink }} wasn&amp;rsquo;t giving me anything useful.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Took me a bit of work to figure out how the moderation part works. Apparently I have to hook on some of the signals to add my moderation logic. I&amp;rsquo;m not sure yet how to handle this, or whether I should try customizing the comment form with something like a captcha to prevent comment spam.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have a pending problem now that submitting comments from the preview or error page does not redirect to the correct place. (i.e. the post page). I tried adding the next parameter to the form, but apparently comment.get_content_object_url returns an empty string here because the comment has not yet been saved to the database. I think the content object should be provided in the context for the preview page. This would be handled by &lt;a href=&#34;http://code.djangoproject.com/ticket/9268&#34;&gt;http://code.djangoproject.com/ticket/9268&lt;/a&gt;, except apparently no one&amp;rsquo;s paying attention to it yet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some random features I added: Gravatar support (the Gravatar for the email address used to post the comment will be shown), and Markdown support in the comment body. Easy stuff.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cleaned up an refactored the templates that render the comments, separating them from the parts that render the blog posts. This makes it easier if I want to have comments for other non-Blog post objects later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Non-comment related:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Added simple search!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The script to import from WordPress has some problems. Since I&amp;rsquo;m storing the post body in markdown format, I use &lt;a href=&#34;http://www.aaronsw.com/2002/html2text/&#34;&gt;html2text&lt;/a&gt; to convert the HTML body from old posts into markdown, but nice stuff like image alignments and tables are lost. I think I have to make do with editing straight HTML for old posts imported from WordPress, and just clean them up later as needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My code is rather messy now (especially from the HTML side). I should clean it up sometime soon.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Fictitious Nonsense » Overriding a Widget in the Django Admin Site
+</title>
+            <link>https://roytang.net/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/</link>
+            <pubDate>Tue, 25 Nov 2008 16:00:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.fictitiousnonsense.com/archives/22&#34;&gt;Fictitious Nonsense » Overriding a Widget in the Django Admin Site&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Django Update -- WordPress Import and More
+</title>
+            <link>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
+            <pubDate>Sun, 23 Nov 2008 00:04:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I&amp;rsquo;m coding. I&amp;rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.&lt;/p&gt;
+&lt;p&gt;Since I was running the script repeatedly, I had to figure out how to easily run it from the command line, without having to run it from inside manage.py shell. After some searching, I found that what I needed to do was set an environment variable DJANGO_SETTINGS_FILE to point to my settings file. After that, the importer script could be run repeatedly.&lt;/p&gt;
+&lt;p&gt;Also made a few tweaks to my dev copy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Modified URL mapping to follow the permalinks of the old blog (so that people linking to me don&amp;rsquo;t suddenly have broken links)&lt;/li&gt;
+&lt;li&gt;Added a tag cloud (Still using django-tagging)&lt;/li&gt;
+&lt;li&gt;Added markdown support to the admin maintenance screen. I used to think I would need to code my own form for posting, but I think I can live with just using the admin-provided one (initially at least)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I plan to migrate my main blog over once I take my Christmas break (hopefully 2nd week of December)&lt;/p&gt;
+&lt;p&gt;Stuff to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use clean, non-hardcoded urls (url template tag and reverse())&lt;/li&gt;
+&lt;li&gt;Customize the admin screen for posting&lt;/li&gt;
+&lt;li&gt;Clean up the layout and templates&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>django-tagging
+</title>
+            <link>https://roytang.net/2008/10/django-tagging/</link>
+            <pubDate>Sun, 26 Oct 2008 04:22:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/django-tagging/</guid>
+            <description>
+            
+            &lt;p&gt;I wanted to add some basic tagging to my blog app so I tried out &lt;a href=&#34;http://code.google.com/p/django-tagging/&#34;&gt;django-tagging&lt;/a&gt;. Unfortunately, the featured downloads on the Google Code site are quite out-of-date and would not work with Django 1.0, so I did a subversion checkout instead. If you&amp;rsquo;re getting an error like &amp;ldquo;ImportError: cannot import name parse_lookup&amp;rdquo;, then you need to get the source code from SVN.&lt;/p&gt;
+&lt;p&gt;Adding the tagging to the blog was pretty easy:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add the tagging app to settings.py&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a tagging.fields.TagField to the Post model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a &amp;ldquo;tags&amp;rdquo; text field to the post form used.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modify templates to display the tags.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I used something like &amp;ldquo;/tag/&amp;rdquo; url mapping to get all posts associated with a tag. Then you just need to write a wrapper around the object_list generic view:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from tagging.models import Tag, TaggedItem&lt;/p&gt;
+&lt;p&gt;from django.views.generic.list_detail import object_list&lt;/p&gt;
+&lt;p&gt;def posts_by_tag(request, tag):&lt;/p&gt;
+&lt;p&gt;o_tag = Tag.objects.get(name=tag)&lt;/p&gt;
+&lt;p&gt;queryset = TaggedItem.objects.get_by_model(Post, o_tag)&lt;/p&gt;
+&lt;p&gt;return object_list(request, queryset)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This view will use the same template used to list out posts normally.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>I left it for a while
+</title>
+            <link>https://roytang.net/2008/10/i-left-it-for-a-while/</link>
+            <pubDate>Fri, 24 Oct 2008 06:54:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/i-left-it-for-a-while/</guid>
+            <description>
+            
+            &lt;p&gt;&amp;hellip; and now it works!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.randomencounters.bells-n-whistles.net/blog/&#34;&gt;http://www.randomencounters.bells-n-whistles.net/blog/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I think the apache service needed to restart mod_python or something&amp;hellip; (I don&amp;rsquo;t have SSH access so&amp;hellip; )&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Deployment Problems
+</title>
+            <link>https://roytang.net/2008/10/deployment-problems/</link>
+            <pubDate>Tue, 21 Oct 2008 06:52:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/deployment-problems/</guid>
+            <description>
+            
+            &lt;p&gt;So I got a basic blog app up and running.&lt;/p&gt;
+&lt;p&gt;Posting, paged archives, etc.&lt;/p&gt;
+&lt;p&gt;Comments implemented using the django.contrib.comments. No problems here, the only caveat being most of the current documentation found by Google searches refer to the pre-1.0 version. Need to peruse the official docs for 1.0 stuff.&lt;/p&gt;
+&lt;p&gt;RSS feeds implemented using django.contrib.syndication, this one seems fine.&lt;/p&gt;
+&lt;p&gt;I tested it and it&amp;rsquo;s running fine on localhost. I also have a free django hosting account at &lt;a href=&#34;http://bells-n-whistles.net&#34;&gt;http://bells-n-whistles.net&lt;/a&gt;, so I try to upload it there. However, when I access the website there (&lt;a href=&#34;http://www.randomencounters.bells-n-whistles.net/blog/&#34;&gt;http://www.randomencounters.bells-n-whistles.net/blog/&lt;/a&gt;), I get the following error:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;comments&#39; is not a valid tag library: Could not load template library from django.templatetags.comments, No module named comments&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I think the settings.py is not being reloaded - I tried to set Debug = False and I&amp;rsquo;m still getting the stacktraces.&lt;/p&gt;
+&lt;p&gt;Bah, I&amp;rsquo;ll figure it out tomorrow.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Playing with Generic Views and URLs
+</title>
+            <link>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</link>
+            <pubDate>Mon, 20 Oct 2008 13:44:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</guid>
+            <description>
+            
+            &lt;p&gt;&amp;ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;-&amp;gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;return HttpResponseRedirect(&amp;quot;../&amp;quot; + str(post.id) + &amp;quot;/&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I got the basic posting structure up.&lt;/p&gt;
+&lt;p&gt;/post/new/ -&amp;gt; To make new posts&lt;/p&gt;
+&lt;p&gt;/post// -&amp;gt; To view a single post&lt;/p&gt;
+&lt;p&gt;/post/all/ -&amp;gt; To view all posts&lt;/p&gt;
+&lt;p&gt;I should probably start thinking of a better url scheme. Ideally, I&amp;rsquo;d want the @login_required views to be indicated as such in the urls. Something like &amp;ldquo;/admin/post/&amp;rdquo; for new posts &amp;ldquo;/admin/manage/&amp;rdquo; for a screen to manage posts to differentiate it from a screen just to list them out.&lt;/p&gt;
+&lt;p&gt;Next I think I&amp;rsquo;ll try to CSS-ify the blog; I&amp;rsquo;ll probably just reuse stuff from one of the blogger templates as I&amp;rsquo;m still not very good with the HTML/CSS.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll also look into using some of the date-based generic views to get an archive view. I&amp;rsquo;ll need more data though. Will consider importing from the WordPress blog.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Starting out
+</title>
+            <link>https://roytang.net/2008/10/starting-out/</link>
+            <pubDate>Sun, 19 Oct 2008 07:33:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://roytang.net/2008/10/starting-out/</guid>
+            <description>
+            
+            &lt;p&gt;The quintessential app to learn from is of course a blog.&lt;/p&gt;
+&lt;p&gt;Started using a simple Post model. Added the new post form and view. Can now successfully insert posts into the DB.&lt;/p&gt;
+&lt;p&gt;Next:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; create the detail page that will show the post after saving&lt;/p&gt;
+&lt;p&gt;Figure out:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?&lt;/p&gt;
+&lt;p&gt;i.e. if the parent app has the following mapping:&lt;/p&gt;
+&lt;p&gt;‘^blog/&amp;rsquo; -&amp;gt; pass to blog.urls.urlpatterns&lt;/p&gt;
+&lt;p&gt;the blog app has mappings for&lt;/p&gt;
+&lt;p&gt;‘^post/new/&amp;rsquo; -&amp;gt; new post&lt;/p&gt;
+&lt;p&gt;‘^post/([A-Za-z-])/&amp;rsquo; -&amp;gt; post detail&lt;/p&gt;
+&lt;p&gt;inside the view, I want to redirect to &amp;ldquo;post/&amp;rdquo;, but with respect to the app, it should be &amp;ldquo;blog/post/&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I should subscribe to one of the Django mailing lists to ask stuff like this.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>
