@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://roytang.net/2005/10/i-am-selling-an-old-monitor/",
+            "url": "https://roytang.net/2005/10/i-am-selling-an-old-monitor/",
+            "path": "/2005/10/i-am-selling-an-old-monitor/",
+            "title": "I Am Selling An Old Monitor",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://ebili.com/product.asp?itemId=107167\"\u003eHere\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eUpdate: Sold for the low, low price of P1500!\u003c/p\u003e\n",
+            "summary": "Here\nUpdate: Sold for the low, low price of P1500!",
+            "date_published": "2005-10-27T00:17:00+00:00",
+            "date_modified": "2019-09-21T19:59:59+08:00",
+            "section": "post",
+            "source_path": "post/2005/10/i-am-selling-an-old-monitor/index.md"
+            , "tags": ["Hardware","Tech Life"]
+            , "syndicated": [{"type":"blogger","url":"https://roywantsmeat.blogspot.com/2005/10/i-am-selling-old-monitor.html"}]
+            
+            , "comments": [
+                { 
+                    "url": "http://jungledirector.com/",
+                    "source_file": "comment-20090114015541-wp-JungleDirector.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://roytang.net/2005/10/sessionsaver-firefox-extension-and-page-state/",
             "url": "https://roytang.net/2005/10/sessionsaver-firefox-extension-and-page-state/",
             "path": "/2005/10/sessionsaver-firefox-extension-and-page-state/",
@@ -870,31 +892,6 @@
                 { 
                     "url": "http://www.blogger.com/profile/2001080",
                     "source_file": "comment-20050625055000-wp-btflpenguin.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://roytang.net/2005/06/yahoo/",
-            "url": "https://roytang.net/2005/06/yahoo/",
-            "path": "/2005/06/yahoo/",
-            "title": "Yahoo!",
-            "content_html": "\u003cp\u003eSome comments on the Yahoo webapps.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe next/previous links on top of Yahoo mail messages are confusing. I\u0026rsquo;m not sure if they take me up or down the mail-list. Gmail is better, since it explicitly says \u0026ldquo;older\u0026rdquo; and \u0026ldquo;newer\u0026rdquo;; With Yahoo, I\u0026rsquo;m always wrong when I guess. After some experimenting, I figure it out. \u0026ldquo;Next\u0026rdquo; and \u0026ldquo;Previous\u0026rdquo; are based on the sort order in the list of messages. Since the default is sorted by date descending (newest first), \u0026ldquo;Next\u0026rdquo; corresponds to Yahoo\u0026rsquo;s \u0026ldquo;older\u0026rdquo; by default. Which is kind of hard to figure intuitively.\u003c/li\u003e\n\u003cli\u003eIn the grid that lists mail messages, I wanted to test if the columns would wrap any words that were too long. Multiple observations here:\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eAs part of this experiment, I wanted to create an email address with a very long name. Apparently, the Yahoo ID \u0026ldquo;abcdefghijklmnopqrstuvwxyz012345\u0026rdquo; was already taken. I settled on \u0026ldquo;\u003ca href=\"mailto:solongandthanksforallthefish2005@yahoo.com\"\u003esolongandthanksforallthefish2005@yahoo.com\u003c/a\u003e\u0026rdquo;. You can send the account mail if you like.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThere\u0026rsquo;s a UI bug in the password verification screen if the Yahoo ID is too long. The gray box on the left has its right border broken.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eBummer. I didn\u0026rsquo;t realize the value in the sender column was the name in the Yahoo profile instead of the actual email address. I update the account name to \u003ccode\u003eAllTheThingsSheKeepsInsideAreTheThingsThatReallyMatterTheFacePutsOnItsBestDisguiseAndAllIsWellUntilT heHeartBetraysLordBringOutTheLightWrapItAllAroundMeLetItHoldMeTightSoakUpAllThatIBleedLordBringOutTh eLightWrapItAllAroundMeLetItHoldMeTightSoakUpAllThatIBleedIBleedWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWX\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003ewhich breaks even more layouts, including this one (mental note: fix that tomorrow).\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eDoh! I actually had to change the Outgoing name, which was set to the original account name. Why doesn\u0026rsquo;t it update the mail setting when I change the (global) Yahoo account setting? Updated it to \u0026ldquo;AllTheThingsSheKeepsInsideAreT\u0026rdquo;\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eI sent some mail messages with the long name and a long subject line. As I suspected\u0026hellip; Yahoo compensates for the unwrappable words by expanding the grid cell, breaking the layout. This was a problem I encountered before in the webapps at workand I still don\u0026rsquo;t have a solution that would work in all browsers.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;m also interested in how popular webapps handle timestamping, so I try this out as well. For the uninformed, timestamping means handling the case where two people both try to edit the same record at roughly the same time. If there\u0026rsquo;s no handling, the person who updates first usually has his changes lost, without any notification.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI try it out first with Yahoo Address Book and Notepad. Both experiments fail\u0026hellip; there\u0026rsquo;s no timestamping. I tested it by opening a record (Address Book entry/Notepad note) for updating in two separate Firefox tabs. I update one tab and save, then update the second tab and save. Changes made in the first tab are lost.\u003c/li\u003e\n\u003cli\u003eWell, I guess that\u0026rsquo;s okay, since technically, only one person at a time is expected to access these webapps. So I do something else. I create \u003ca href=\"http://groups.yahoo.com/group/roytang/\"\u003ea Yahoo Group\u003c/a\u003e . I get two moderators, me and a dummy email account. I login with both accounts, using Firefox for one and IE for the other. I try to update the group description with one account, then the other. Bam! First guy\u0026rsquo;s changes are lost, without notification! If this were some sort of mission-critical webapp, that would be a dangerous bug.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI\u0026rsquo;m sleepy. More later.\u003c/p\u003e\n",
-            "summary": "Some comments on the Yahoo webapps.\n The next/previous links on top of Yahoo mail messages are confusing. I\u0026rsquo;m not sure if they take me up or down the mail-list. Gmail is better, since it explicitly says \u0026ldquo;older\u0026rdquo; and \u0026ldquo;newer\u0026rdquo;; With Yahoo, I\u0026rsquo;m always wrong when I guess. After some experimenting, I figure it out. \u0026ldquo;Next\u0026rdquo; and \u0026ldquo;Previous\u0026rdquo; are based on the sort order in the list of messages. Since the default is sorted by date descending (newest first), \u0026ldquo;Next\u0026rdquo; corresponds to Yahoo\u0026rsquo;s \u0026ldquo;older\u0026rdquo; by default.",
-            "date_published": "2005-06-16T16:21:00+00:00",
-            "date_modified": "2020-04-30T22:30:48+08:00",
-            "section": "post",
-            "source_path": "post/2005/06/yahoo/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"blogger","url":"https://roywantsmeat.blogspot.com/2005/06/yahoo.html"}]
-            
-            , "comments": [
-                { 
-                    "url": "http://www.blogger.com/profile/3338893",
-                    "source_file": "comment-20050617145500-wp-eClair.json"
-                }, { 
-                    "url": "http://www.blogger.com/profile/1694272",
-                    "source_file": "comment-20050619164800-wp-Roy.json"
                 }
             ]
             }
