@@ -1,4 +1,6 @@
 
+- [Game Review: Super Mario 3d All-stars](/2020/10/mario-3d-all-stars/)
+
 - [Late Game Review: Uncharted 4: A Thief&#39;s End](/2020/09/uncharted4/)
 
 - [The PS3 Collection](/2020/08/ps3-collection/)
