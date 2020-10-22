@@ -1,6 +1,4 @@
 
-- [](/2020/10/1319205938520158208/)
-
 - [Inktober 2020 Day 22: Chef](/2020/10/inktober-22-chef/)
 
 - [Inktober 2020 Day 21: Sleep](/2020/10/inktober-21-sleep/)
