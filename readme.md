@@ -29,11 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [23 Oct 2020 1:14pm](https://roytang.net/2020/10/1319628147726270467/): Unlikely, as long as their fanbase remains rabid. Here in the Philippines, Marcos&rsquo; children have risen the ranks in local politics unrepentant of and despite their father&rsquo;s infamy, on the back of patronage and propaganda
+Quoted JessicaValenti&#39;s tweet:   One day Ivanka will try to separate herself from her father in an attempt to reenter polite society. There will be a tearful confession, a book deal, or a glossy PR campaign.
 - [23 Oct 2020 10:44am](https://roytang.net/2020/10/g9qvnxs/): The only bug I encountered was that I lost the first game and it awarded me the prize for the win anyway lol. I won the second game, so I only needed to play twice.
 - [23 Oct 2020 9:24am](https://roytang.net/2020/10/1319570275986452480/): 10/23 Friday afternoon Zendikar Rising draft! ep9 https://www.twitch.tv/twitchyroy #mtg #magicarena #mtgznr #twitch
+Draft no. 11 went reasonably well, although I realized later that I didn&rsquo;t get a full art land for this one, apparently the promo had already ended. Will still play one more draft next week in this series to wrap it up, I guess.
+YT: https://www.youtube.com/watch?v=xyVM_lf2Vlo&amp;feature=youtu.be
 - [23 Oct 2020 6:59am](https://roytang.net/2020/10/4d61f87d13cb070725f8e993d517ee40/): This is a test. It has no beavers.
 - [23 Oct 2020 4:16am](https://roytang.net/2020/10/1319492782478639104/): @rovietoosin hindi pa tayo level 99 huhu
-- [22 Oct 2020 8:08pm](https://roytang.net/2020/10/1319370069479018496/): @rovietoosin ano reddit username mo?
 
 [View all notes](https://roytang.net/notes)
 

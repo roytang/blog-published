@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://roytang.net/2019/08/1165182644650299394/",
+            "url": "https://roytang.net/2019/08/1165182644650299394/",
+            "path": "/2019/08/1165182644650299394/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e no you can\u0026rsquo;t\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback no you can\u0026rsquo;t",
+            "date_published": "2019-08-24T08:42:45+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1165182644650299394/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1165182644650299394/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://roytang.net/2019/08/b1ijzohhnux/",
             "url": "https://roytang.net/2019/08/b1ijzohhnux/",
             "path": "/2019/08/b1ijzohhnux/",
@@ -862,23 +879,6 @@
             "source_path": "notes/2019/08/ewaqetp/index.md"
             , "tags": ["gaming"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/gaming/comments/cndi17/no_one_messes_with_the_nords/ewaqetp/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/",
-            "url": "https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/",
-            "path": "/2019/08/devnotes-postgresql-on-the-command-line/",
-            "title": "Devnotes: PostgreSQL on the command line",
-            "content_html": "\u003cp\u003eI decided to start doing small \u0026ldquo;devnotes\u0026rdquo; on developer stuff I\u0026rsquo;m doing so I can refer to them later (and also because I feel like I could use more technical content on this blog)\u003c/p\u003e\n\u003cp\u003eToday is about PostgreSQL. I haven\u0026rsquo;t used it much beyond standard ANSI sql stuff. You won\u0026rsquo;t always have a graphical interface to access your database, sometimes you need to ssh to prod and query the database from the shell.\u003c/p\u003e\n\u003cp\u003eThe command line for PostgreSQL is \u003ccode\u003epsql\u003c/code\u003e. You can do:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003epsql [database-user-name] -d [database-name]\u003c/code\u003e and it should prompt you for your password.\u003c/p\u003e\n\u003cp\u003eBut when I tried this today, I got:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003epsql: FATAL:  Peer authentication failed for user \u0026quot;[database-user-name]\u0026quot;\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eThe problem had something to do with the permissions available to my ssh user. The workaround was to tell psql I was doing this from the local machine:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003epsql: FATAL:  Peer authentication failed for user \u0026quot;[database-user-name]\u0026quot; -h 127.0.0.1\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eWorked fine.\u003c/p\u003e\n\u003cp\u003eAfter connecting, you get a prompt that looks like this:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e[database-name]=# \u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eNow, when I connected today, I had to do some queries, but I wasn\u0026rsquo;t superfamiliar with the project\u0026rsquo;s schema, and would have to muck around to find table names and field names. The psql shell provides some handy shortcuts for that:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e\\dt\u003c/code\u003e - outputs a list of tables\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e\\d [table-name]\u003c/code\u003e - describes a specific table, showing field names\u003c/p\u003e\n\u003cp\u003eYou can also just directly run an SQL query, just make sure to end it with a semicolon.\u003c/p\u003e\n\u003cp\u003eIf the command outputs a lot of records, it will show them to you in a page-able vim-like format. You can recognize it when it stops with a \u003ccode\u003e:\u003c/code\u003e after each page and you can hit spacebar to proceed, and at the end it shows \u003ccode\u003e(END)\u003c/code\u003e. And like vim, you might not know how to get out of this view. I had to google it myself, you just have to hit \u003ccode\u003eq\u003c/code\u003e to go back to the psql shell.\u003c/p\u003e\n",
-            "summary": "I decided to start doing small \u0026ldquo;devnotes\u0026rdquo; on developer stuff I\u0026rsquo;m doing so I can refer to them later (and also because I feel like I could use more technical content on this blog)\nToday is about PostgreSQL. I haven\u0026rsquo;t used it much beyond standard ANSI sql stuff. You won\u0026rsquo;t always have a graphical interface to access your database, sometimes you need to ssh to prod and query the database from the shell.",
-            "date_published": "2019-08-08T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/08/devnotes-psql/index.md"
-            , "tags": ["devnotes","software development"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159256063729963009/"}]
             
             
             }
