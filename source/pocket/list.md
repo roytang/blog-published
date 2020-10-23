@@ -1,4 +1,6 @@
 
+- [The story behind Markdown.](/2020/10/the-story-behind-markdown/)
+
 - [How Discord Won](/2020/10/how-discord-won/)
 
 - [6 Ways to Build a Better Normal (If and When We Ever Get There)](/2020/10/6-ways-to-build-a-better-normal-if-and-when-we-ever-get-there/)

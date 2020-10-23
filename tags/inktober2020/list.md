@@ -1,4 +1,6 @@
 
+- [Inktober 2020 Day 23: Rip](/2020/10/inktober-23-rip/)
+
 - [Inktober 2020 Day 22: Chef](/2020/10/inktober-22-chef/)
 
 - [Inktober 2020 Day 21: Sleep](/2020/10/inktober-21-sleep/)
