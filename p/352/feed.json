@@ -11,6 +11,55 @@
     "items": [
         
         {
+            "id": "https://roytang.net/2008/12/349997/",
+            "url": "https://roytang.net/2008/12/349997/",
+            "path": "/2008/12/349997/",
+            "title": "What does this Regular Expression do",
+            "content_html": "\u003cpre\u003e\u003ccode\u003e$pee = preg_replace( '|\u0026lt;p\u0026gt;|', \u0026quot;$1\u0026lt;p\u0026gt;\u0026quot;, $pee );\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis regular expression is from the Wordpress source code (formatting.php, wpautop function); I\u0026rsquo;m not sure what it does, can anyone help?\u003c/p\u003e\n\u003cp\u003eActually I\u0026rsquo;m trying to port this function to Python\u0026hellip;if anyone knows of an existing port already, that would be much better as I\u0026rsquo;m really bad with regex.\u003c/p\u003e\n",
+            "summary": "$pee = preg_replace( '|\u0026lt;p\u0026gt;|', \u0026quot;$1\u0026lt;p\u0026gt;\u0026quot;, $pee );  This regular expression is from the Wordpress source code (formatting.php, wpautop function); I\u0026rsquo;m not sure what it does, can anyone help?\nActually I\u0026rsquo;m trying to port this function to Python\u0026hellip;if anyone knows of an existing port already, that would be much better as I\u0026rsquo;m really bad with regex.",
+            "date_published": "2008-12-08T16:08:43+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/12/349997/index.md"
+            , "tags": ["php","regex","wordpress","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T161507-350026.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T161544-350031.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T161604-350033.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T163125-350087.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T163406-182853.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T163449-350097.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T170547-350182.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T171656-350212.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081208T203956-350806.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/349997/what-does-this-regular-expression-do",
+                    "source_file": "comment-20081213T133701-365221.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://roytang.net/2008/12/standard-06-dec-2008-blightning-beatdown/",
             "url": "https://roytang.net/2008/12/standard-06-dec-2008-blightning-beatdown/",
             "path": "/2008/12/standard-06-dec-2008-blightning-beatdown/",
@@ -985,28 +1034,6 @@
             , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/10/i-left-it-for-while.html"}]
             
             
-            }
-        
-        , {
-            "id": "https://roytang.net/2008/10/228386/",
-            "url": "https://roytang.net/2008/10/228386/",
-            "path": "/2008/10/228386/",
-            "title": "How to get command line arguments for a running process",
-            "content_html": "\u003cp\u003eIn my program, I have been receiving an error when I use a\ncommand-line compile command for mxmlc. The error is related to an\nembedded font name not being correctly identified by flex in the\nsystem fonts list.\u003c/p\u003e\n\u003cp\u003eHowever, on a whim, I decided to copy the code to Flex Builder and\ncompile it there. To my surprise, it worked, and it found the proper\nfont using the same system name I had given (PMingLiU).\u003c/p\u003e\n\u003cp\u003eI suspected my problem may be a locale one, and that my system cannot\ncorrectly identify the font name because of locale considerations.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve tried setting the locale of the compile code to en_US, to no\navail. So I would like to ask if anyone here knows how exactly Flex Builder invokes the MXML compiler and what differences there are compared to running mxmlc directly? We know it\u0026rsquo;s not using the mxmlc.exe directly, since we tried replacing mxmlc with our own executable to capture the command line parameters.\u003c/p\u003e\n\u003cp\u003eIf it matters, the OS used is Windows XP.\u003c/p\u003e\n",
-            "summary": "In my program, I have been receiving an error when I use a command-line compile command for mxmlc. The error is related to an embedded font name not being correctly identified by flex in the system fonts list.\nHowever, on a whim, I decided to copy the code to Flex Builder and compile it there. To my surprise, it worked, and it found the proper font using the same system name I had given (PMingLiU).",
-            "date_published": "2008-10-23T02:57:06+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/10/228386/index.md"
-            , "tags": ["apache-flex","flexbuilder","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process",
-                    "source_file": "comment-20081023T060511-228694.json"
-                }
-            ]
             }
         
     ]

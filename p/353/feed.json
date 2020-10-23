@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://roytang.net/2008/10/228386/",
+            "url": "https://roytang.net/2008/10/228386/",
+            "path": "/2008/10/228386/",
+            "title": "How to get command line arguments for a running process",
+            "content_html": "\u003cp\u003eIn my program, I have been receiving an error when I use a\ncommand-line compile command for mxmlc. The error is related to an\nembedded font name not being correctly identified by flex in the\nsystem fonts list.\u003c/p\u003e\n\u003cp\u003eHowever, on a whim, I decided to copy the code to Flex Builder and\ncompile it there. To my surprise, it worked, and it found the proper\nfont using the same system name I had given (PMingLiU).\u003c/p\u003e\n\u003cp\u003eI suspected my problem may be a locale one, and that my system cannot\ncorrectly identify the font name because of locale considerations.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve tried setting the locale of the compile code to en_US, to no\navail. So I would like to ask if anyone here knows how exactly Flex Builder invokes the MXML compiler and what differences there are compared to running mxmlc directly? We know it\u0026rsquo;s not using the mxmlc.exe directly, since we tried replacing mxmlc with our own executable to capture the command line parameters.\u003c/p\u003e\n\u003cp\u003eIf it matters, the OS used is Windows XP.\u003c/p\u003e\n",
+            "summary": "In my program, I have been receiving an error when I use a command-line compile command for mxmlc. The error is related to an embedded font name not being correctly identified by flex in the system fonts list.\nHowever, on a whim, I decided to copy the code to Flex Builder and compile it there. To my surprise, it worked, and it found the proper font using the same system name I had given (PMingLiU).",
+            "date_published": "2008-10-23T02:57:06+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/10/228386/index.md"
+            , "tags": ["apache-flex","flexbuilder","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process",
+                    "source_file": "comment-20081023T060511-228694.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://roytang.net/2008/10/228382/",
             "url": "https://roytang.net/2008/10/228382/",
             "path": "/2008/10/228382/",
@@ -960,23 +982,6 @@
             "source_path": "post/2008/09/grand-prix-manila-grinders-and-day-one-decks/index.md"
             , "tags": ["mtg"]
             
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2008/09/906767530/",
-            "url": "https://roytang.net/2008/09/906767530/",
-            "path": "/2008/09/906767530/",
-            "title": "",
-            "content_html": "\u003cp\u003eNow following some people.\u003c/p\u003e\n",
-            "summary": "Now following some people.",
-            "date_published": "2008-09-02T13:15:21+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/09/906767530.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/906767530/"}]
             
             
             }
