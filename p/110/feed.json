@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://roytang.net/2017/01/bpfjlsgltyx/",
+            "url": "https://roytang.net/2017/01/bpfjlsgltyx/",
+            "path": "/2017/01/bpfjlsgltyx/",
+            "title": "",
+            "content_html": "\u003cp\u003eMy first published artwork, in Funny Komiks circa 1985. The printer butchered my coloring!\u003c/p\u003e\n",
+            "summary": "My first published artwork, in Funny Komiks circa 1985. The printer butchered my coloring!",
+            "date_published": "2017-01-20T05:43:48+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPfJLSglTyX/index.md"
+            , "tags": ["timeline-photos"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPfJLSglTyX/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/156121793975/my-first-published-artwork-in-pilipino-funny"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/822424414553784320/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155292746808912"}]
+            
+            
+            }
+        
+        , {
             "id": "https://roytang.net/2017/01/822304957692973057/",
             "url": "https://roytang.net/2017/01/822304957692973057/",
             "path": "/2017/01/822304957692973057/",
@@ -847,23 +864,6 @@
             "source_path": "photos/2017/01/BPH-gkFlfmU/index.md"
             , "tags": ["sketchdaily"]
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPH-gkFlfmU/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155716068680/some-sort-of-dragon-shaped-bottle-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/819163999963148289/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155264726033912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2017/01/the-simplest-code-that-can-do-the-job/",
-            "url": "https://roytang.net/2017/01/the-simplest-code-that-can-do-the-job/",
-            "path": "/2017/01/the-simplest-code-that-can-do-the-job/",
-            "title": "The Simplest Code That Can Do The Job",
-            "content_html": "\u003cp\u003eSo the other day I was reworking a Python script that I had been using for years on my home PC to manage and categorize some downloaded files for me. This time I wanted to add some smarter behavior to make it more able to figure out when to group files into folders without constantly needing manual intervention from me. To do this, I needed to persist some data between runs \u0026ndash; so that the script remembers how it categorized previous files and is able to group similar files together.\u003c/p\u003e\n\u003cp\u003eNow since my software development career has largely been as an enterprise-y kind of developer, my first thought was to just use a database to store the data. I already had a MySql installation on my machine so that was fine, I just needed Python to interface with it. After looking up how to do it, I balked at having to install a new Python library just to connect to MySql and reconsidered.\u003c/p\u003e\n\u003cp\u003eAs programmers, we have a tendency sometimes to over-engineer solutions because that\u0026rsquo;s what we\u0026rsquo;re used to doing. Did I really need a database for this? The data won\u0026rsquo;t be very big, and I won\u0026rsquo;t need to do any sort of maintenance on it, so maybe a simpler solution was in order.\u003c/p\u003e\n\u003cp\u003eI ended up just using pickle, which was already built-in to Python:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eload_db\u003c/span\u003e():\n\tall_series \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e {}\n\t\u003cspan style=\"color:#66d9ef\"\u003ewith\u003c/span\u003e open(DATABASE_FILE, \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;rb\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eas\u003c/span\u003e handle:\n\t\tall_series \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e pickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eload(handle)\n\t\u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e all_series\n\n\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esave_db\u003c/span\u003e(all_series):\n\t\u003cspan style=\"color:#66d9ef\"\u003ewith\u003c/span\u003e open(DATABASE_FILE, \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;wb\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eas\u003c/span\u003e handle:\n\t\tpickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003edump(all_series, handle, protocol\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003epickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eHIGHEST_PROTOCOL)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e(Above code \u003cem\u003eprobably\u003c/em\u003e gives you an idea what kind of files I\u0026rsquo;m sorting\u0026hellip; )\u003c/p\u003e\n\u003cp\u003eAs an added benefit, I didn\u0026rsquo;t need to design any database schemas or tables or whatnot, pickle just lets me serialize the map as-is and reload it later from disk without any hassle.\u003c/p\u003e\n\u003cp\u003eI guess my lesson here was: don\u0026rsquo;t over-complicate things when something simple will work fine. Write the simplest code that can do the job.\u003c/p\u003e\n",
-            "summary": "So the other day I was reworking a Python script that I had been using for years on my home PC to manage and categorize some downloaded files for me. This time I wanted to add some smarter behavior to make it more able to figure out when to group files into folders without constantly needing manual intervention from me. To do this, I needed to persist some data between runs \u0026ndash; so that the script remembers how it categorized previous files and is able to group similar files together.",
-            "date_published": "2017-01-11T01:30:06+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/01/the-simplest-code-that-can-do-the-job/index.md"
-            , "tags": ["python","Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/155696317600/the-simplest-code-that-can-do-the-job"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/818995252224790529/"}]
             
             
             }

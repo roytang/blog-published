@@ -29,12 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [23 Oct 2020 4:16am](https://roytang.net/2020/10/1319492782478639104/): @rovietoosin hindi pa tayo level 99 huhu
 - [22 Oct 2020 8:08pm](https://roytang.net/2020/10/1319370069479018496/): @rovietoosin ano reddit username mo?
 - [22 Oct 2020 4:03pm](https://roytang.net/2020/10/1319308503903731712/): Survey: Do you enjoy horror stories/movies?
 - [19 Oct 2020 5:11am](https://roytang.net/2020/10/1318057267246198784/): This is a test. Well, maybe all of life is a test.
 - [18 Oct 2020 12:32pm](https://roytang.net/2020/10/1317805734554259456/): Let’s ask @MMDA
 Quoted roytang&#39;s tweet:   @paulcatiang &hellip; why does an mmda asec need 70 admins? are we paying for those?  
-- [18 Oct 2020 12:25pm](https://roytang.net/2020/10/1317803889601564672/): @paulcatiang &hellip; why does an mmda asec need 70 admins? are we paying for those?
 
 [View all notes](https://roytang.net/notes)
 
