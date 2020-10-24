@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Roy Tang",
 	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
-    "home_page_url": "https://roytang.net/",
-    "feed_url": "https://roytang.net/feed.json",
+    "home_page_url": "https://mirror.roytang.net/",
+    "feed_url": "https://mirror.roytang.net/feed.json",
 	"author": {
 		"name": "Roy Tang",
 		"url": "https://roytang.net"
@@ -11,8 +11,82 @@
     "items": [
         
         {
-            "id": "https://roytang.net/2012/08/240454324378013696/",
-            "url": "https://roytang.net/2012/08/240454324378013696/",
+            "id": "https://mirror.roytang.net/2012/08/12170462/",
+            "url": "https://mirror.roytang.net/2012/08/12170462/",
+            "path": "/2012/08/12170462/",
+            "title": "How to assess the risk of a java version upgrade?",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.\u003c/p\u003e\n\u003cp\u003eThe current suggested approach is to do a source compare of the JDK sources for each version and assess those changes to see which ones might have impact, but it seems there\u0026rsquo;s a lot of changes to go through (and as mentioned the codebase is kinda large). Is it safe and easier to just review the java version changes for each version? Or is there an easier way to conduct this assessment?\u003c/p\u003e\n\u003cp\u003eEdit: I forgot to mention the version upgrade being considered is a minor version upgrade, i.e. 1.6.10 to 1.6.33\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.",
+            "date_published": "2012-08-29T03:24:13+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/12170462/index.md"
+            , "tags": ["java","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032701-16289981.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032750-16289987.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032929-12170491.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T033007-16290007.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034524-16290156.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034722-12170597.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T035906-16290285.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/08/c60g3ez/",
+            "url": "https://mirror.roytang.net/2012/08/c60g3ez/",
+            "path": "/2012/08/c60g3ez/",
+            "title": "",
+            "content_html": "\u003cp\u003eI have this random daydream/fantasy where a bear gets loose and goes wild somewhere in town and I save a bunch of people by defeating it in single unarmed combat.\u003c/p\u003e\n\u003cp\u003eSo yeah, this thread is relevant to my interests.\u003c/p\u003e\n",
+            "summary": "I have this random daydream/fantasy where a bear gets loose and goes wild somewhere in town and I save a bunch of people by defeating it in single unarmed combat.\nSo yeah, this thread is relevant to my interests.",
+            "date_published": "2012-08-29T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/c60g3ez/index.md"
+            , "tags": ["AskReddit"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/AskReddit/comments/z0ijt/what_would_be_the_best_tactic_for_fighting_an/c60g3ez/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/08/240571677438787584/",
+            "url": "https://mirror.roytang.net/2012/08/240571677438787584/",
+            "path": "/2012/08/240571677438787584/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhat qualities do really bad programmers share? \u003ca href=\"http://qr.ae/8UW38\"\u003ehttp://qr.ae/8UW38\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "What qualities do really bad programmers share? http://qr.ae/8UW38",
+            "date_published": "2012-08-28T22:08:52+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/240571677438787584.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/240571677438787584/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/08/240454324378013696/",
+            "url": "https://mirror.roytang.net/2012/08/240454324378013696/",
             "path": "/2012/08/240454324378013696/",
             "title": "",
             "content_html": "\u003cp\u003eThat feel when you\u0026rsquo;re able to plug in a usb device on the first try\u003c/p\u003e\n",
@@ -28,8 +102,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/240450718916558848/",
-            "url": "https://roytang.net/2012/08/240450718916558848/",
+            "id": "https://mirror.roytang.net/2012/08/240450718916558848/",
+            "url": "https://mirror.roytang.net/2012/08/240450718916558848/",
             "path": "/2012/08/240450718916558848/",
             "title": "",
             "content_html": "\u003cp\u003eCelebrate Street Fighter\u0026rsquo;s 25th anniversary by using a Street Fighter animated gif as your twitter avatar! \u003ca href=\"http://www.capcom-unity.com/xantista/go/gallery/view/3559513?pref_tab=photos\u0026amp;no_redir=1\"\u003ehttp://www.capcom-unity.com/xantista/go/gallery/view/3559513?pref_tab=photos\u0026amp;no_redir=1\u003c/a\u003e\u003c/p\u003e\n",
@@ -45,8 +119,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/240450500540129280/",
-            "url": "https://roytang.net/2012/08/240450500540129280/",
+            "id": "https://mirror.roytang.net/2012/08/240450500540129280/",
+            "url": "https://mirror.roytang.net/2012/08/240450500540129280/",
             "path": "/2012/08/240450500540129280/",
             "title": "",
             "content_html": "\u003cp\u003eTIL your twitter avatar can be an animated gif. This changes everything!\u003c/p\u003e\n",
@@ -62,8 +136,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/240446312250748929/",
-            "url": "https://roytang.net/2012/08/240446312250748929/",
+            "id": "https://mirror.roytang.net/2012/08/240446312250748929/",
+            "url": "https://mirror.roytang.net/2012/08/240446312250748929/",
             "path": "/2012/08/240446312250748929/",
             "title": "",
             "content_html": "\u003cp\u003eWoah there\u0026rsquo;s a Rurouni Kenshin reboot already being serialized!\u003c/p\u003e\n",
@@ -79,8 +153,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/240103459146305537/",
-            "url": "https://roytang.net/2012/08/240103459146305537/",
+            "id": "https://mirror.roytang.net/2012/08/240103459146305537/",
+            "url": "https://mirror.roytang.net/2012/08/240103459146305537/",
             "path": "/2012/08/240103459146305537/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e does landing mean simply casting it? Or getting to untap with it?\u003c/p\u003e\n",
@@ -96,8 +170,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/30312221042/",
-            "url": "https://roytang.net/2012/08/30312221042/",
+            "id": "https://mirror.roytang.net/2012/08/30312221042/",
+            "url": "https://mirror.roytang.net/2012/08/30312221042/",
             "path": "/2012/08/30312221042/",
             "title": "",
             "content_html": "\u003cp\u003eNo idea if All New X-Men is going to be any good, but I really like the currently available preview cover.\u003c/p\u003e",
@@ -113,8 +187,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239892026122981376/",
-            "url": "https://roytang.net/2012/08/239892026122981376/",
+            "id": "https://mirror.roytang.net/2012/08/239892026122981376/",
+            "url": "https://mirror.roytang.net/2012/08/239892026122981376/",
             "path": "/2012/08/239892026122981376/",
             "title": "",
             "content_html": "\u003cp\u003eNothing like a walk through the rain to start off the day\u003c/p\u003e\n",
@@ -130,8 +204,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239732855352213504/",
-            "url": "https://roytang.net/2012/08/239732855352213504/",
+            "id": "https://mirror.roytang.net/2012/08/239732855352213504/",
+            "url": "https://mirror.roytang.net/2012/08/239732855352213504/",
             "path": "/2012/08/239732855352213504/",
             "title": "",
             "content_html": "\u003cp\u003eTop 5 surprises when starting out as a software developer: \u003ca href=\"https://henrikwarne.com/2012/08/22/top-5-surprises-when-starting-out-as-a-software-developer/\"\u003ehttps://henrikwarne.com/2012/08/22/top-5-surprises-when-starting-out-as-a-software-developer/\u003c/a\u003e My favorite has to be #1\u003c/p\u003e\n",
@@ -147,8 +221,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239572870966165505/",
-            "url": "https://roytang.net/2012/08/239572870966165505/",
+            "id": "https://mirror.roytang.net/2012/08/239572870966165505/",
+            "url": "https://mirror.roytang.net/2012/08/239572870966165505/",
             "path": "/2012/08/239572870966165505/",
             "title": "",
             "content_html": "\u003cp\u003eIn the middle of a Community Season 1 marathon, lolling liberally\u003c/p\u003e\n",
@@ -164,8 +238,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239508152192753665/",
-            "url": "https://roytang.net/2012/08/239508152192753665/",
+            "id": "https://mirror.roytang.net/2012/08/239508152192753665/",
+            "url": "https://mirror.roytang.net/2012/08/239508152192753665/",
             "path": "/2012/08/239508152192753665/",
             "title": "",
             "content_html": "\u003cp\u003eWill the Apple patent victory have the unintentional consequence of consumers switching to Samsung? \u003ca href=\"https://plus.google.com/114476892281222708332/posts/246srfbqg6G\u0026amp;followup=https://plus.google.com/114476892281222708332/posts/246srfbqg6G\"\u003ehttps://plus.google.com/114476892281222708332/posts/246srfbqg6G\u0026amp;followup=https://plus.google.com/114476892281222708332/posts/246srfbqg6G\u003c/a\u003e\u003c/p\u003e\n",
@@ -181,8 +255,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239401449803628544/",
-            "url": "https://roytang.net/2012/08/239401449803628544/",
+            "id": "https://mirror.roytang.net/2012/08/239401449803628544/",
+            "url": "https://mirror.roytang.net/2012/08/239401449803628544/",
             "path": "/2012/08/239401449803628544/",
             "title": "",
             "content_html": "\u003cp\u003eAmused by the Twitter drama between \u003ca href=\"https://twitter.com/Ssnyder1835/\"\u003e@Ssnyder1835\u003c/a\u003e and \u003ca href=\"https://twitter.com/robertliefeld/\"\u003e@robertliefeld\u003c/a\u003e . I wouldn\u0026rsquo;t mind Snyder taking over Hawkman :D\u003c/p\u003e\n",
@@ -198,8 +272,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239054011272151040/",
-            "url": "https://roytang.net/2012/08/239054011272151040/",
+            "id": "https://mirror.roytang.net/2012/08/239054011272151040/",
+            "url": "https://mirror.roytang.net/2012/08/239054011272151040/",
             "path": "/2012/08/239054011272151040/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e anong oras ka uuwi? haha\u003c/p\u003e\n",
@@ -215,8 +289,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/239052711406997504/",
-            "url": "https://roytang.net/2012/08/239052711406997504/",
+            "id": "https://mirror.roytang.net/2012/08/239052711406997504/",
+            "url": "https://mirror.roytang.net/2012/08/239052711406997504/",
             "path": "/2012/08/239052711406997504/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e nadownload mo na ung ep? uwi mo na lang bukas lol\u003c/p\u003e\n",
@@ -232,8 +306,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238767136636538881/",
-            "url": "https://roytang.net/2012/08/238767136636538881/",
+            "id": "https://mirror.roytang.net/2012/08/238767136636538881/",
+            "url": "https://mirror.roytang.net/2012/08/238767136636538881/",
             "path": "/2012/08/238767136636538881/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane that sounds racist\u003c/p\u003e\n",
@@ -249,8 +323,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238646209743552512/",
-            "url": "https://roytang.net/2012/08/238646209743552512/",
+            "id": "https://mirror.roytang.net/2012/08/238646209743552512/",
+            "url": "https://mirror.roytang.net/2012/08/238646209743552512/",
             "path": "/2012/08/238646209743552512/",
             "title": "",
             "content_html": "\u003cp\u003eMark Millar enjoyed his Manila visit so much, a couple of pages of the last issue of Supercrooks takes place in Manila: \u003ca href=\"https://i.imgur.com/removed.png\"\u003ehttps://i.imgur.com/removed.png\u003c/a\u003e\u003c/p\u003e\n",
@@ -266,8 +340,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238645354839539712/",
-            "url": "https://roytang.net/2012/08/238645354839539712/",
+            "id": "https://mirror.roytang.net/2012/08/238645354839539712/",
+            "url": "https://mirror.roytang.net/2012/08/238645354839539712/",
             "path": "/2012/08/238645354839539712/",
             "title": "",
             "content_html": "\u003cp\u003ePeople of Manila, I loved my signing there so much I shoe-horned 2 pages of Supercrooks #4 into your country. Check it out!\u003c/p\u003e\n",
@@ -283,8 +357,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238625172935045120/",
-            "url": "https://roytang.net/2012/08/238625172935045120/",
+            "id": "https://mirror.roytang.net/2012/08/238625172935045120/",
+            "url": "https://mirror.roytang.net/2012/08/238625172935045120/",
             "path": "/2012/08/238625172935045120/",
             "title": "",
             "content_html": "\u003cp\u003eAnnoyed by torrents that don\u0026rsquo;t use the proper filenames #firstworldpirateproblems\u003c/p\u003e\n",
@@ -300,8 +374,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/yn2ke/",
-            "url": "https://roytang.net/2012/08/yn2ke/",
+            "id": "https://mirror.roytang.net/2012/08/yn2ke/",
+            "url": "https://mirror.roytang.net/2012/08/yn2ke/",
             "path": "/2012/08/yn2ke/",
             "title": "",
             "content_html": "",
@@ -317,8 +391,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/ymwny/",
-            "url": "https://roytang.net/2012/08/ymwny/",
+            "id": "https://mirror.roytang.net/2012/08/ymwny/",
+            "url": "https://mirror.roytang.net/2012/08/ymwny/",
             "path": "/2012/08/ymwny/",
             "title": "",
             "content_html": "",
@@ -334,8 +408,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238302547113304065/",
-            "url": "https://roytang.net/2012/08/238302547113304065/",
+            "id": "https://mirror.roytang.net/2012/08/238302547113304065/",
+            "url": "https://mirror.roytang.net/2012/08/238302547113304065/",
             "path": "/2012/08/238302547113304065/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e we don\u0026rsquo;t know that it\u0026rsquo;s a mature relationship. For all we know they\u0026rsquo;re under mind control or something ridiculous like that :p\u003c/p\u003e\n",
@@ -351,8 +425,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/238276907395842048/",
-            "url": "https://roytang.net/2012/08/238276907395842048/",
+            "id": "https://mirror.roytang.net/2012/08/238276907395842048/",
+            "url": "https://mirror.roytang.net/2012/08/238276907395842048/",
             "path": "/2012/08/238276907395842048/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e It feels really gimmicky, but I\u0026rsquo;ll wait til I read the issue before passing judgment. New52 JL isnt that great though =/\u003c/p\u003e\n",
@@ -368,8 +442,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237915172574998529/",
-            "url": "https://roytang.net/2012/08/237915172574998529/",
+            "id": "https://mirror.roytang.net/2012/08/237915172574998529/",
+            "url": "https://mirror.roytang.net/2012/08/237915172574998529/",
             "path": "/2012/08/237915172574998529/",
             "title": "",
             "content_html": "\u003cp\u003eThe final boss in Fallout New Vegas The Lonesome Road was Bane from TDKR!\u003c/p\u003e\n",
@@ -385,8 +459,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237904909436067840/",
-            "url": "https://roytang.net/2012/08/237904909436067840/",
+            "id": "https://mirror.roytang.net/2012/08/237904909436067840/",
+            "url": "https://mirror.roytang.net/2012/08/237904909436067840/",
             "path": "/2012/08/237904909436067840/",
             "title": "",
             "content_html": "\u003cp\u003eSo, the most important question: should we expect Monday-level traffic tomorrow?\u003c/p\u003e\n",
@@ -402,8 +476,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237802012115365889/",
-            "url": "https://roytang.net/2012/08/237802012115365889/",
+            "id": "https://mirror.roytang.net/2012/08/237802012115365889/",
+            "url": "https://mirror.roytang.net/2012/08/237802012115365889/",
             "path": "/2012/08/237802012115365889/",
             "title": "",
             "content_html": "\u003cp\u003eWhile long weekends are relaxing, they might be bad for health. I eat a lot more when I\u0026rsquo;m at home =/\u003c/p\u003e\n",
@@ -419,8 +493,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237755231390281728/",
-            "url": "https://roytang.net/2012/08/237755231390281728/",
+            "id": "https://mirror.roytang.net/2012/08/237755231390281728/",
+            "url": "https://mirror.roytang.net/2012/08/237755231390281728/",
             "path": "/2012/08/237755231390281728/",
             "title": "",
             "content_html": "\u003cp\u003eSad that we lose the good ones too soon. RIP Sec. Jesse Robredo\u003c/p\u003e\n",
@@ -436,8 +510,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237738183692001282/",
-            "url": "https://roytang.net/2012/08/237738183692001282/",
+            "id": "https://mirror.roytang.net/2012/08/237738183692001282/",
+            "url": "https://mirror.roytang.net/2012/08/237738183692001282/",
             "path": "/2012/08/237738183692001282/",
             "title": "",
             "content_html": "\u003cp\u003eRIP Sec. Rebredo. One of the best one we have.\u003c/p\u003e\n",
@@ -453,8 +527,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237581848887316480/",
-            "url": "https://roytang.net/2012/08/237581848887316480/",
+            "id": "https://mirror.roytang.net/2012/08/237581848887316480/",
+            "url": "https://mirror.roytang.net/2012/08/237581848887316480/",
             "path": "/2012/08/237581848887316480/",
             "title": "",
             "content_html": "\u003cp\u003eSummer slam on studio 23!\u003c/p\u003e\n",
@@ -470,8 +544,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/10151804510958912/",
-            "url": "https://roytang.net/2012/08/10151804510958912/",
+            "id": "https://mirror.roytang.net/2012/08/10151804510958912/",
+            "url": "https://mirror.roytang.net/2012/08/10151804510958912/",
             "path": "/2012/08/10151804510958912/",
             "title": "",
             "content_html": "\u003cp\u003eBoo! Rich Hagon paasa lol\u003c/p\u003e\n",
@@ -487,8 +561,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237195404754694144/",
-            "url": "https://roytang.net/2012/08/237195404754694144/",
+            "id": "https://mirror.roytang.net/2012/08/237195404754694144/",
+            "url": "https://mirror.roytang.net/2012/08/237195404754694144/",
             "path": "/2012/08/237195404754694144/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e wala na! :p\u003c/p\u003e\n",
@@ -504,8 +578,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237195263339556864/",
-            "url": "https://roytang.net/2012/08/237195263339556864/",
+            "id": "https://mirror.roytang.net/2012/08/237195263339556864/",
+            "url": "https://mirror.roytang.net/2012/08/237195263339556864/",
             "path": "/2012/08/237195263339556864/",
             "title": "",
             "content_html": "\u003cp\u003eTeam Philippines eliminated in the #mtgwmc quarterfinals!  Boo to @mtgrich for the false hope :p\u003c/p\u003e\n",
@@ -521,8 +595,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237121208414515200/",
-            "url": "https://roytang.net/2012/08/237121208414515200/",
+            "id": "https://mirror.roytang.net/2012/08/237121208414515200/",
+            "url": "https://mirror.roytang.net/2012/08/237121208414515200/",
             "path": "/2012/08/237121208414515200/",
             "title": "",
             "content_html": "\u003cp\u003eMTGO seems to have crashed when I tried to save a 5,000+ card deck. I wonder if I should file a bug report.\u003c/p\u003e\n",
@@ -538,8 +612,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237116722224713729/",
-            "url": "https://roytang.net/2012/08/237116722224713729/",
+            "id": "https://mirror.roytang.net/2012/08/237116722224713729/",
+            "url": "https://mirror.roytang.net/2012/08/237116722224713729/",
             "path": "/2012/08/237116722224713729/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Yoshi_OnoChin/\"\u003e@Yoshi_OnoChin\u003c/a\u003e how come Street Fighter doesn\u0026rsquo;t have a dedicated story mode as good as Mortal Kombat\u0026rsquo;s? (Or any kind of story mode at all)\u003c/p\u003e\n",
@@ -555,8 +629,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237095825350733824/",
-            "url": "https://roytang.net/2012/08/237095825350733824/",
+            "id": "https://mirror.roytang.net/2012/08/237095825350733824/",
+            "url": "https://mirror.roytang.net/2012/08/237095825350733824/",
             "path": "/2012/08/237095825350733824/",
             "title": "",
             "content_html": "\u003cp\u003eOkay, i suck at mtgo today so i guess i should stop\u003c/p\u003e\n",
@@ -572,8 +646,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/237053246248714240/",
-            "url": "https://roytang.net/2012/08/237053246248714240/",
+            "id": "https://mirror.roytang.net/2012/08/237053246248714240/",
+            "url": "https://mirror.roytang.net/2012/08/237053246248714240/",
             "path": "/2012/08/237053246248714240/",
             "title": "",
             "content_html": "\u003cp\u003eI treat shopping excursions like RPG quests. I just beeline to wherever the targets are and take them out one at a time. No browsing at all.\u003c/p\u003e\n",
@@ -589,8 +663,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236985034597359616/",
-            "url": "https://roytang.net/2012/08/236985034597359616/",
+            "id": "https://mirror.roytang.net/2012/08/236985034597359616/",
+            "url": "https://mirror.roytang.net/2012/08/236985034597359616/",
             "path": "/2012/08/236985034597359616/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Dr_Jeebus/\"\u003e@Dr_Jeebus\u003c/a\u003e first time i\u0026rsquo;ve seen you stream. you sound nothing like that crazy old man on your avatar\u003c/p\u003e\n",
@@ -606,8 +680,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236972612520132608/",
-            "url": "https://roytang.net/2012/08/236972612520132608/",
+            "id": "https://mirror.roytang.net/2012/08/236972612520132608/",
+            "url": "https://mirror.roytang.net/2012/08/236972612520132608/",
             "path": "/2012/08/236972612520132608/",
             "title": "",
             "content_html": "\u003cp\u003eTeam Philippines in the World Magic Cup Top 8! Go Philippines! #mtgwmc\u003c/p\u003e\n",
@@ -623,8 +697,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236837291300118529/",
-            "url": "https://roytang.net/2012/08/236837291300118529/",
+            "id": "https://mirror.roytang.net/2012/08/236837291300118529/",
+            "url": "https://mirror.roytang.net/2012/08/236837291300118529/",
             "path": "/2012/08/236837291300118529/",
             "title": "",
             "content_html": "\u003cp\u003eWatching Batman (1989). In an alternate world Burton and Keaton continued the series after Batman Returns. Perhaps a better world.\u003c/p\u003e\n",
@@ -640,8 +714,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236825380655353857/",
-            "url": "https://roytang.net/2012/08/236825380655353857/",
+            "id": "https://mirror.roytang.net/2012/08/236825380655353857/",
+            "url": "https://mirror.roytang.net/2012/08/236825380655353857/",
             "path": "/2012/08/236825380655353857/",
             "title": "",
             "content_html": "\u003cp\u003eOkay, the PS3 youtube app is pretty sweet, seems a lot better than youtubing on the pc\u003c/p\u003e\n",
@@ -657,8 +731,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236815222147514368/",
-            "url": "https://roytang.net/2012/08/236815222147514368/",
+            "id": "https://mirror.roytang.net/2012/08/236815222147514368/",
+            "url": "https://mirror.roytang.net/2012/08/236815222147514368/",
             "path": "/2012/08/236815222147514368/",
             "title": "",
             "content_html": "\u003cp\u003eQuora is good reading, but it seems difficult to navigate and chance upon the really well-written answers. Or maybe I dunno what i\u0026rsquo;m doing\u003c/p\u003e\n",
@@ -674,8 +748,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236807478568968192/",
-            "url": "https://roytang.net/2012/08/236807478568968192/",
+            "id": "https://mirror.roytang.net/2012/08/236807478568968192/",
+            "url": "https://mirror.roytang.net/2012/08/236807478568968192/",
             "path": "/2012/08/236807478568968192/",
             "title": "",
             "content_html": "\u003cp\u003eI don\u0026rsquo;t understand why a modern day banking website would restrict your password to 12 alphanumeric characters only\u003c/p\u003e\n",
@@ -691,8 +765,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236783859432300544/",
-            "url": "https://roytang.net/2012/08/236783859432300544/",
+            "id": "https://mirror.roytang.net/2012/08/236783859432300544/",
+            "url": "https://mirror.roytang.net/2012/08/236783859432300544/",
             "path": "/2012/08/236783859432300544/",
             "title": "",
             "content_html": "\u003cp\u003eRT @nhkcharm: Palace: \u0026ldquo;we ask the Filipino people to join the President and the cabinet in prayer for his successful rescue.\u0026rdquo;\u003c/p\u003e\n",
@@ -708,8 +782,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236781523230138369/",
-            "url": "https://roytang.net/2012/08/236781523230138369/",
+            "id": "https://mirror.roytang.net/2012/08/236781523230138369/",
+            "url": "https://mirror.roytang.net/2012/08/236781523230138369/",
             "path": "/2012/08/236781523230138369/",
             "title": "",
             "content_html": "\u003cp\u003eDILG Sec. Robredo\u0026rsquo;s plane crashed near the Masbate airport. =(\u003c/p\u003e\n",
@@ -725,8 +799,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236669041333383168/",
-            "url": "https://roytang.net/2012/08/236669041333383168/",
+            "id": "https://mirror.roytang.net/2012/08/236669041333383168/",
+            "url": "https://mirror.roytang.net/2012/08/236669041333383168/",
             "path": "/2012/08/236669041333383168/",
             "title": "",
             "content_html": "\u003cp\u003eWoah, Team Philippines finished Day 1 of the World Magic Cup at 7th place, advancing to Day 2. Good job! #inggit\u003c/p\u003e\n",
@@ -742,8 +816,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236524347022536704/",
-            "url": "https://roytang.net/2012/08/236524347022536704/",
+            "id": "https://mirror.roytang.net/2012/08/236524347022536704/",
+            "url": "https://mirror.roytang.net/2012/08/236524347022536704/",
             "path": "/2012/08/236524347022536704/",
             "title": "",
             "content_html": "\u003cp\u003eSup spelldashers.\u003c/p\u003e\n",
@@ -759,8 +833,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236241079085703168/",
-            "url": "https://roytang.net/2012/08/236241079085703168/",
+            "id": "https://mirror.roytang.net/2012/08/236241079085703168/",
+            "url": "https://mirror.roytang.net/2012/08/236241079085703168/",
             "path": "/2012/08/236241079085703168/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e aw miss mo na si \u003ca href=\"https://twitter.com/densdensdens/\"\u003e@densdensdens\u003c/a\u003e\u003c/p\u003e\n",
@@ -776,8 +850,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236111220606914561/",
-            "url": "https://roytang.net/2012/08/236111220606914561/",
+            "id": "https://mirror.roytang.net/2012/08/236111220606914561/",
+            "url": "https://mirror.roytang.net/2012/08/236111220606914561/",
             "path": "/2012/08/236111220606914561/",
             "title": "",
             "content_html": "\u003cp\u003e\u0026ldquo;Manila is the most densely populated city in the world\u0026rdquo; \u003ca href=\"http://1.usa.gov/Q3ex5c\"\u003ehttp://1.usa.gov/Q3ex5c\u003c/a\u003e\u003c/p\u003e\n",
@@ -793,8 +867,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/08/236107838181756928/",
-            "url": "https://roytang.net/2012/08/236107838181756928/",
+            "id": "https://mirror.roytang.net/2012/08/236107838181756928/",
+            "url": "https://mirror.roytang.net/2012/08/236107838181756928/",
             "path": "/2012/08/236107838181756928/",
             "title": "",
             "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/DCComics/\"\u003e@DCComics\u003c/a\u003e: Retweet for your chance to win a free digital download of Legends of the Dark Knight. #dcdigital \u003ca href=\"https://www.dccomics.com/blog/2012/08/16/digital-first-spotlight-legends-of-the-dark-knight\"\u003ehttps://www.dccomics.com/blog/2012/08/16/digital-first-spotlight-legends-of-the-dark-knight\u003c/a\u003e\u003c/p\u003e\n",
@@ -805,57 +879,6 @@
             "source_path": "notes/2012/08/236107838181756928.md"
             , "tags": ["dcdigital"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236107838181756928/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/08/236105359218057216/",
-            "url": "https://roytang.net/2012/08/236105359218057216/",
-            "path": "/2012/08/236105359218057216/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e :p\u003c/p\u003e\n",
-            "summary": "@aleksfelipe :p",
-            "date_published": "2012-08-16T14:21:18+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/236105359218057216.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236105359218057216/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/08/236081722872168448/",
-            "url": "https://roytang.net/2012/08/236081722872168448/",
-            "path": "/2012/08/236081722872168448/",
-            "title": "",
-            "content_html": "\u003cp\u003eWoohoo my GP manila prize check came in\u003c/p\u003e\n",
-            "summary": "Woohoo my GP manila prize check came in",
-            "date_published": "2012-08-16T12:47:23+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/236081722872168448.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236081722872168448/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/08/235881867008692225/",
-            "url": "https://roytang.net/2012/08/235881867008692225/",
-            "path": "/2012/08/235881867008692225/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/leya12/\"\u003e@leya12\u003c/a\u003e waiting shed :p\u003c/p\u003e\n",
-            "summary": "@leya12 waiting shed :p",
-            "date_published": "2012-08-15T23:33:14+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/235881867008692225.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/235881867008692225/"}]
             
             
             }

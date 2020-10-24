@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Roy Tang",
 	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
-    "home_page_url": "https://roytang.net/",
-    "feed_url": "https://roytang.net/feed.json",
+    "home_page_url": "https://mirror.roytang.net/",
+    "feed_url": "https://mirror.roytang.net/feed.json",
 	"author": {
 		"name": "Roy Tang",
 		"url": "https://roytang.net"
@@ -11,8 +11,67 @@
     "items": [
         
         {
-            "id": "https://roytang.net/2018/12/10157118256658912/",
-            "url": "https://roytang.net/2018/12/10157118256658912/",
+            "id": "https://mirror.roytang.net/2018/12/181063915155/",
+            "url": "https://mirror.roytang.net/2018/12/181063915155/",
+            "path": "/2018/12/181063915155/",
+            "title": "",
+            "content_html": "\u003cp\u003eAvengers: The Children’s Crusade #1 cover by Jim Cheung\u003c/p\u003e\n",
+            "summary": "Avengers: The Children’s Crusade #1 cover by Jim Cheung",
+            "date_published": "2018-12-13T02:01:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/181063915155/index.md"
+            , "tags": ["marvel","comics","avengers","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181063915155/avengers-the-childrens-crusade-1-cover-by-jim"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1073035026051272710/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/12/181063917003/",
+            "url": "https://mirror.roytang.net/2018/12/181063917003/",
+            "path": "/2018/12/181063917003/",
+            "title": "",
+            "content_html": "\u003cp\u003eSpider-Verse (2014) #1 cover by Antonio Fabela\u003c/p\u003e\n",
+            "summary": "Spider-Verse (2014) #1 cover by Antonio Fabela",
+            "date_published": "2018-12-13T02:01:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/181063917003/index.md"
+            , "tags": ["marvel","comics","spider-man","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181063917003/spider-verse-2014-1-cover-by-antonio-fabela"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1073035025824780290/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/",
+            "url": "https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/",
+            "path": "/2018/12/adding-developers-to-a-late-project/",
+            "title": "Adding Developers to a Late Project",
+            "content_html": "\u003cp\u003eFor any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.\u003c/p\u003e\n\u003cp\u003eThe most signifiant cost is of course the communication overhead as described in \u003ca href=\"https://en.wikipedia.org/wiki/The_Mythical_Man-Month\"\u003ethe Mythical Man Month\u003c/a\u003e. Fun story, the CEO of a company once told me they would add more developers to a delayed project to meet the deadline and when I pointed out the increased overhead he said to me that it wasn\u0026rsquo;t a problem because they would just assign modules to those devs that have minimal dependencies so they don\u0026rsquo;t have to communicate so much. Ha! I just shrugged and let him think it was a good idea.\u003c/p\u003e\n\u003cp\u003eIn my experience, it\u0026rsquo;s never a good idea, especially late in the game. Even if you are somehow able to minimize any domain overhead (which I seriously doubt), there is also the nontrivial matter of technical overhead that any new developer intake needs to go through. I\u0026rsquo;m not just talking about learning the programming language or the technical stack - presumably if you are adding someone to the team, he is either already familiar with the stack or you have factored in his being a newbie and needing training time.\u003c/p\u003e\n\u003cp\u003eNo, I\u0026rsquo;m talking about things like templates, UI standards, coding standards, devops processes, configuration, libraries in use, data dictionaries, and so on. Most projects will have \u0026ldquo;preferred ways of doing things\u0026rdquo;, and the more work that has been done on the project, the more such \u0026ldquo;tribal knowledge\u0026rdquo; is often undocumented and you will need to bother someone to figure the stuff out. And if the project is behind schedule and everyone is trying to catch up, it\u0026rsquo;s more likely people are going to forget to tell you stuff.\u003c/p\u003e\n\u003cp\u003eSlightly related side note: If there is very little in the way of standards or tribal knowledge global to the project, that might be a warning sign. I once worked with a client who had several subcontractors to work on the different modules in their system. Each module/subcontractor worked more or less independently from the others, with very little documentation or standards in place. The result was a weird hodgepodge system where one module did things one way, and the next module did things a completely different way, and so on.\u003c/p\u003e\n\u003cp\u003eAs an example, I was once asked to help in a project with a relatively large codebase and significant deadline pressure and I was coming in hot with no knowledge of the domain and minimal experience with the framework in use. I told them I wasn\u0026rsquo;t sure I could hit the target given I had to learn a bunch of stuff, but they were in desperate need and so ok we proceeded anyway. Now, I\u0026rsquo;m an experienced developer, so pulling me in was a better option than pulling in some newbie since there\u0026rsquo;s a lot of stuff I can figure out myself, but off the top of my head, I had to explicitly bother other people about:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eproper access rights to the repo\u003c/li\u003e\n\u003cli\u003eproper access rights to the google drive with all the documents\u003c/li\u003e\n\u003cli\u003eCRLF problems when I use windows to clone the repo\u003c/li\u003e\n\u003cli\u003edatabase credentials for the provided dev VM\u003c/li\u003e\n\u003cli\u003eerrors encountered due to undocumented steps missing from the setup document\u003c/li\u003e\n\u003cli\u003ewhere should I put new configuration options\u003c/li\u003e\n\u003cli\u003ewhere should I put my new module in the menu\u003c/li\u003e\n\u003cli\u003ehow to map data in other tables to my new tables\u003c/li\u003e\n\u003cli\u003ethe proper HTML markup and CSS classes needed to conform to the way they layouted pages\u003c/li\u003e\n\u003cli\u003ehow to implement form validations the same way as other screens\u003c/li\u003e\n\u003cli\u003estandard methods for displaying messages/errors\u003c/li\u003e\n\u003cli\u003ehow to setup role permissions for my new screens\u003c/li\u003e\n\u003cli\u003epreferred library for making third party API calls\u003c/li\u003e\n\u003cli\u003eJS errors encountered when using a particular component\u003c/li\u003e\n\u003cli\u003eproblems with dynamically created reccords not behaving properly when the page redirects on error\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u0026hellip; and probably a lot more I\u0026rsquo;m unable to recall anymore, and that\u0026rsquo;s not accounting for any comments that would be later logged by QA because I was unfamiliar with how other screens usually behaved.\u003c/p\u003e\n\u003cp\u003eIf you\u0026rsquo;re adding developers to a late project, you have to account for these onboarding costs, in addition to the increased communication overhead. That means sounding the alarm and asking for help earlier. If there\u0026rsquo;s a module that\u0026rsquo;s estimated by your devs to take say, one sprint, you can\u0026rsquo;t ask for help one sprint before the needed delivery - you need to look for help maybe one or two sprints earlier. (Of course, the best approach would be to avoid painting your project into this corner at all, but as we all know in this industry, sometimes things just happen!)\u003c/p\u003e\n",
+            "summary": "For any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.\nThe most signifiant cost is of course the communication overhead as described in the Mythical Man Month. Fun story, the CEO of a company once told me they would add more developers to a delayed project to meet the deadline and when I pointed out the increased overhead he said to me that it wasn\u0026rsquo;t a problem because they would just assign modules to those devs that have minimal dependencies so they don\u0026rsquo;t have to communicate so much.",
+            "date_published": "2018-12-13T01:56:56+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2018/12/adding-devs/index.md"
+            , "tags": ["devto","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1073035117860454400/"}]
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-disqus-4242382225.json"
+                }, { 
+                    "url": "",
+                    "source_file": "comment-disqus-4242430508.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/12/10157118256658912/",
+            "url": "https://mirror.roytang.net/2018/12/10157118256658912/",
             "path": "/2018/12/10157118256658912/",
             "title": "",
             "content_html": "\u003cp\u003eAquaman Spoiler-Free review!\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI came in with low expectations (given DC\u0026rsquo;s history), but the movie turned out pretty good, even though it wasn\u0026rsquo;t the best comic book related thing I\u0026rsquo;ve seen this week (see previous post)\u003c/li\u003e\n\u003cli\u003eit\u0026rsquo;s fun and action-packed, some fun set pieces and action sequences. Lots of CGI (as can be expected)\u003c/li\u003e\n\u003cli\u003ethe plot is fairly predictable, I\u0026rsquo;ve seen similar story arcs for this character more than once, things pretty much happen as you expect\u003c/li\u003e\n\u003cli\u003ealso the plot kinda feels a bit like black panther, except in reverse? does that make sense?\u003c/li\u003e\n\u003cli\u003ethe first act felt a bit longish, but not really draggy or anything, it\u0026rsquo;s just that there\u0026rsquo;s a lot of set up to be done\u003c/li\u003e\n\u003cli\u003ethe director\u0026rsquo;s horror movie background shines through a bit in one of the sequences around the second act\u003c/li\u003e\n\u003cli\u003eI had the urge to pee about 1 hour in, but I had to hold it in until the end of the movie, I didn\u0026rsquo;t want to miss stuff. So much water didn\u0026rsquo;t help!\u003c/li\u003e\n\u003cli\u003eArthur\u0026rsquo;s dad looks like a Pinoy lol\u003c/li\u003e\n\u003cli\u003eI didn\u0026rsquo;t watch in IMAX3D, but I suspect there\u0026rsquo;s a lot of 3d given the volume of CGI\u003c/li\u003e\n\u003cli\u003ethere is one mid-credits scene\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;d say it\u0026rsquo;s family-friendly even though there is quite a bit of bloodshed\u003c/li\u003e\n\u003cli\u003emagugustuhan ba ni Mama. Eh, maybe? Not really her type of movie, but maybe if I explain it a bit?\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSpider-verse this weekend!\u003c/p\u003e\n",
@@ -28,8 +87,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072877672513003521/",
-            "url": "https://roytang.net/2018/12/1072877672513003521/",
+            "id": "https://mirror.roytang.net/2018/12/1072877672513003521/",
+            "url": "https://mirror.roytang.net/2018/12/1072877672513003521/",
             "path": "/2018/12/1072877672513003521/",
             "title": "",
             "content_html": "\u003cp\u003eStellaris on climate change\u003c/p\u003e\n",
@@ -45,8 +104,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072864936706027520/",
-            "url": "https://roytang.net/2018/12/1072864936706027520/",
+            "id": "https://mirror.roytang.net/2018/12/1072864936706027520/",
+            "url": "https://mirror.roytang.net/2018/12/1072864936706027520/",
             "path": "/2018/12/1072864936706027520/",
             "title": "",
             "content_html": "\u003cp\u003eDon\u0026rsquo;t get me wrong, the Arrowverse has its faults, but after #Elseworlds I\u0026rsquo;m seriously about as excited for next year\u0026rsquo;s crossover as Avengers: Endgame, and that\u0026rsquo;s something!\u003c/p\u003e\n",
@@ -62,8 +121,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/181046069605/",
-            "url": "https://roytang.net/2018/12/181046069605/",
+            "id": "https://mirror.roytang.net/2018/12/181046069605/",
+            "url": "https://mirror.roytang.net/2018/12/181046069605/",
             "path": "/2018/12/181046069605/",
             "title": "",
             "content_html": "\u003cp\u003eArrowverse Elseworlds crossover spoiler-free review!\u003c/p\u003e\u003cp\u003e- if you\u0026rsquo;re not aware, episode 1 - Flash S05E09, episode 2 - Arrow S07E09, episode 3 - Supergirl S04E09\u003cbr/\u003e- I don\u0026rsquo;t usually review TV show crossovers but TBH I can\u0026rsquo;t recall any other any TV show crossovers and I just really, really enjoyed this one\u003cbr/\u003e- basically a love letter to DC comics fans, a celebration of dc comics/TV/movies from the past four decades, and apparently a prelude of things to come. Non-comicbook fans might not be as happy as me lol\u003cbr/\u003e- all three episodes were great (middle episode slightly worse because Arrow lol), I was smiling all the time and apploauding all the references\u003c/p\u003e\u003cp\u003e\n- frankly not everything made sense, but I\u0026rsquo;ll forgive it (I mean, have you *read* crisis on infinite earths? lol\u003c/p\u003e\u003cp\u003e- bonus: for more zaniness, also watch this week\u0026rsquo;s Legend\u0026rsquo;s of Tomorrow, they didn\u0026rsquo;t want to be outdone! \u003cbr/\u003e\u003c/p\u003e\u003cp\u003e- I also watched Aquaman today, and that was fine (review later) but I decided to write a review of this crossover first!\u003cbr/\u003e- tonight\u0026rsquo;s reading list (image attached)\u003c/p\u003e",
@@ -79,8 +138,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072699723021115393/",
-            "url": "https://roytang.net/2018/12/1072699723021115393/",
+            "id": "https://mirror.roytang.net/2018/12/1072699723021115393/",
+            "url": "https://mirror.roytang.net/2018/12/1072699723021115393/",
             "path": "/2018/12/1072699723021115393/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e I actually checked the wayback machine if the old site was accessible there no such luck lol\u003c/p\u003e\n",
@@ -96,8 +155,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/181033326099/",
-            "url": "https://roytang.net/2018/12/181033326099/",
+            "id": "https://mirror.roytang.net/2018/12/181033326099/",
+            "url": "https://mirror.roytang.net/2018/12/181033326099/",
             "path": "/2018/12/181033326099/",
             "title": "",
             "content_html": "\u003cp\u003eSuperior Spider-man #1 cover by Ryan Stegman\u003c/p\u003e\n",
@@ -113,8 +172,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/fanfiction/",
-            "url": "https://roytang.net/2018/12/fanfiction/",
+            "id": "https://mirror.roytang.net/2018/12/fanfiction/",
+            "url": "https://mirror.roytang.net/2018/12/fanfiction/",
             "path": "/2018/12/fanfiction/",
             "title": "Fanfiction",
             "content_html": "\u003cp\u003eThis might surprise you, but I tried my hand at writing fanfiction back in the day. Most of it was Final Fantasy-related (as that was what I was really into back then) and the odd Ranma 1/2 one (mainly because I was a member of an anime-focused fanfic collective, called the \u0026ldquo;Nikholas F Toledo Zu\u0026rdquo; for inside joke reasons, writing under the name \u0026ldquo;Vector\u0026rdquo;).\u003c/p\u003e\n\u003cp\u003eAnyway, I\u0026rsquo;m not exceptionally proud of the writings, but I like having all my work available on this blog/website/whatever, so I\u0026rsquo;ve added them at this link: \u003ca href=\"/tags/fanfiction/\"\u003eFanfiction\u003c/a\u003e. Give them a read, if you\u0026rsquo;d like. The Final Fantasy ones are also available at \u003ca href=\"https://www.fanfiction.net/u/107111/roytang\"\u003emy user page on Fanfiction.net\u003c/a\u003e. The Ranma one I can\u0026rsquo;t find anywhere else on the web, for some reason.\u003c/p\u003e\n\u003cp\u003eIt was kind of fun going through these again. Hmm, since I\u0026rsquo;ve been having trouble finishing original fiction projects, maybe I should try my hand at Fanfiction again, might be easier? I\u0026rsquo;ll think about it.\u003c/p\u003e\n",
@@ -130,8 +189,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072382722063171584/",
-            "url": "https://roytang.net/2018/12/1072382722063171584/",
+            "id": "https://mirror.roytang.net/2018/12/1072382722063171584/",
+            "url": "https://mirror.roytang.net/2018/12/1072382722063171584/",
             "path": "/2018/12/1072382722063171584/",
             "title": "",
             "content_html": "\u003cp\u003eLol the #Elseworlds crossover is great but \u003ca href=\"https://twitter.com/TheCW_Legends/\"\u003e@TheCW_Legends\u003c/a\u003e sure had their own fun!\u003c/p\u003e\n",
@@ -147,8 +206,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072364833868275713/",
-            "url": "https://roytang.net/2018/12/1072364833868275713/",
+            "id": "https://mirror.roytang.net/2018/12/1072364833868275713/",
+            "url": "https://mirror.roytang.net/2018/12/1072364833868275713/",
             "path": "/2018/12/1072364833868275713/",
             "title": "",
             "content_html": "\u003cp\u003e@okstephenbye yeah, I said it was great! But Iris/Barry-Oliver was handled a bit better than Felicity/Oliver-Barry, and parts of the Gotham sequence didn\u0026rsquo;t really make sense, but it was great\u003c/p\u003e\n",
@@ -164,8 +223,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072363051331018752/",
-            "url": "https://roytang.net/2018/12/1072363051331018752/",
+            "id": "https://mirror.roytang.net/2018/12/1072363051331018752/",
+            "url": "https://mirror.roytang.net/2018/12/1072363051331018752/",
             "path": "/2018/12/1072363051331018752/",
             "title": "",
             "content_html": "\u003cp\u003e#Elseworlds episode 2 slightly worse because it\u0026rsquo;s Arrow lol. But still pretty great, lots of Easter Eggs for DC fans\u003c/p\u003e\n",
@@ -181,8 +240,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/181003080256/",
-            "url": "https://roytang.net/2018/12/181003080256/",
+            "id": "https://mirror.roytang.net/2018/12/181003080256/",
+            "url": "https://mirror.roytang.net/2018/12/181003080256/",
             "path": "/2018/12/181003080256/",
             "title": "",
             "content_html": "\u003cp\u003eTeen Titans (DC Rebirth) #13\u003c/p\u003e\n",
@@ -198,8 +257,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/github-pages/",
-            "url": "https://roytang.net/2018/12/github-pages/",
+            "id": "https://mirror.roytang.net/2018/12/github-pages/",
+            "url": "https://mirror.roytang.net/2018/12/github-pages/",
             "path": "/2018/12/github-pages/",
             "title": "Github Pages",
             "content_html": "\u003cp\u003eI only recently found out about Github pages, which allows you to serve static content out of a Github repository, with a \u003ccode\u003egithub.io\u003c/code\u003e subdomain. You can also point a domain name to it if you want (I haven\u0026rsquo;t tried that yet). It\u0026rsquo;s a quick and easy way to host a static site for free.\u003c/p\u003e\n\u003cp\u003eHere\u0026rsquo;s mine: \u003ca href=\"https://roytang.github.io\"\u003eroytang.github.io\u003c/a\u003e and \u003ca href=\"https://github.com/roytang/roytang.github.io/\"\u003ethe corresponding repo\u003c/a\u003e. There isn\u0026rsquo;t really anything there right now, I just put up some links so I\u0026rsquo;d have something. In theory since this blog is using static content now, I could host it on there. I\u0026rsquo;m running a few other apps on my current webhost (\u003ca href=\"https://www.webfaction.com/?aid=7808\"\u003eWebfaction - affiliate link\u003c/a\u003e) though so I don\u0026rsquo;t think I\u0026rsquo;ll be moving soon. (and I besides, I kinda just prepaid for the next year.)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve seen some people put a second blog there. Or maybe I could host my resume there. IDK. Any ideas?\u003c/p\u003e\n",
@@ -215,8 +274,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072280907292131328/",
-            "url": "https://roytang.net/2018/12/1072280907292131328/",
+            "id": "https://mirror.roytang.net/2018/12/1072280907292131328/",
+            "url": "https://mirror.roytang.net/2018/12/1072280907292131328/",
             "path": "/2018/12/1072280907292131328/",
             "title": "",
             "content_html": "\u003cp\u003eI feel like Batwoman\u0026rsquo;s hair should be more RED THE BLOOD OF ANGRY MEN\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/DCComics/status/1072279854043803648'\u003eDCComics\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Batwoman leaps into action TONIGHT on \u003ca href=\"https://twitter.com/CW_Arrow/\"\u003e@CW_Arrow\u003c/a\u003e! Here\u0026rsquo;s everything you need to know about the hero ahead of #Elseworlds Part 2: \u003ca href=\"http://bit.ly/2rsY9I2\"\u003ehttp://bit.ly/2rsY9I2\u003c/a\u003e #DCTV\n\u003c/blockquote\u003e\n",
@@ -232,8 +291,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072187599392030722/",
-            "url": "https://roytang.net/2018/12/1072187599392030722/",
+            "id": "https://mirror.roytang.net/2018/12/1072187599392030722/",
+            "url": "https://mirror.roytang.net/2018/12/1072187599392030722/",
             "path": "/2018/12/1072187599392030722/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e update this\u003c/p\u003e\n",
@@ -249,8 +308,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072024203207929856/",
-            "url": "https://roytang.net/2018/12/1072024203207929856/",
+            "id": "https://mirror.roytang.net/2018/12/1072024203207929856/",
+            "url": "https://mirror.roytang.net/2018/12/1072024203207929856/",
             "path": "/2018/12/1072024203207929856/",
             "title": "",
             "content_html": "\u003cp\u003eMaybe I should just give up on getting anything productive done this week lol\u003c/p\u003e\n",
@@ -266,8 +325,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1072012779169542144/",
-            "url": "https://roytang.net/2018/12/1072012779169542144/",
+            "id": "https://mirror.roytang.net/2018/12/1072012779169542144/",
+            "url": "https://mirror.roytang.net/2018/12/1072012779169542144/",
             "path": "/2018/12/1072012779169542144/",
             "title": "",
             "content_html": "\u003cp\u003e#brexit\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/BeardedGenius/status/1071872450789601281'\u003eBeardedGenius\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    HO. LY. FUCK. \u003ca href=\"https://twitter.com/GHNeale/status/1071808320149876736/video/1\"\u003ehttps://twitter.com/GHNeale/status/1071808320149876736/video/1\u003c/a\u003e\n\u003c/blockquote\u003e\n",
@@ -283,8 +342,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071991286192721920/",
-            "url": "https://roytang.net/2018/12/1071991286192721920/",
+            "id": "https://mirror.roytang.net/2018/12/1071991286192721920/",
+            "url": "https://mirror.roytang.net/2018/12/1071991286192721920/",
             "path": "/2018/12/1071991286192721920/",
             "title": "",
             "content_html": "\u003cp\u003eCurrent mood #Elseworlds \u003ca href=\"https://www.youtube.com/watch?v=LYdCzs5uPrI\"\u003ehttps://www.youtube.com/watch?v=LYdCzs5uPrI\u003c/a\u003e\u003c/p\u003e\n",
@@ -300,8 +359,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071978733488168960/",
-            "url": "https://roytang.net/2018/12/1071978733488168960/",
+            "id": "https://mirror.roytang.net/2018/12/1071978733488168960/",
+            "url": "https://mirror.roytang.net/2018/12/1071978733488168960/",
             "path": "/2018/12/1071978733488168960/",
             "title": "",
             "content_html": "\u003cp\u003eOMG this crossover is amazing #Elsewords\u003c/p\u003e\n",
@@ -317,8 +376,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/180970935572/",
-            "url": "https://roytang.net/2018/12/180970935572/",
+            "id": "https://mirror.roytang.net/2018/12/180970935572/",
+            "url": "https://mirror.roytang.net/2018/12/180970935572/",
             "path": "/2018/12/180970935572/",
             "title": "",
             "content_html": "\u003cp\u003eJLA v3 #44 Tower of Babel part 2 of 4 by Mark Waid and Howard Porter\u003c/p\u003e\n",
@@ -334,8 +393,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/macbook-air-2017-model/",
-            "url": "https://roytang.net/2018/12/macbook-air-2017-model/",
+            "id": "https://mirror.roytang.net/2018/12/macbook-air-2017-model/",
+            "url": "https://mirror.roytang.net/2018/12/macbook-air-2017-model/",
             "path": "/2018/12/macbook-air-2017-model/",
             "title": "Macbook Air (2017 Model)",
             "content_html": "\u003cp\u003eFriends will know I\u0026rsquo;ve been wanting to get a Macbook for quite a while now. I have chat messages as far back as 2016 musing about buying a Macbook Pro. I haven\u0026rsquo;t had a serious \u003ca href=\"/2008/06/new-laptop/\"\u003epersonal laptop purchase since 2008\u003c/a\u003e. (Side note: Qualifier \u0026ldquo;serious\u0026rdquo; because I do have a low-spec MSI laptop I think I bought for cheap some years ago that I\u0026rsquo;m not really happy with. It\u0026rsquo;s got a dead battery now, I should probably install it with a more lightweight Linux or something and maybe use it as a torrent device or such?)\u003c/p\u003e\n\u003cp\u003eMy main motivation for getting a Macbook might seem a bit shallow: I want to be able to publish apps on Apple\u0026rsquo;s app store. Not having a Mac, this particular avenue of software development is closed off to me, so it limits my future freelance work possibilities a bit. Secondary reason being that I am fond of \u003ca href=\"/2006/01/adventures-in-linux-land-part-1/\"\u003eexploring alternative OSes\u003c/a\u003e even though I grew up on Windows.\u003c/p\u003e\n\u003cp\u003eUnfortunately, dropping hints to friends and relatives that I would appreciate being gifted with a Macbook Pro didn\u0026rsquo;t work. The main thing holding me back from buying a Mac is that they\u0026rsquo;re really very expensive devices. I eventually decided to bite the bullet myself and I purchased a Macbook Air (2017 model, 256gb SSD) last October. Macbook Air instead of Pro so I could save a little bit of money (it helped to convince myself to buy). Also, I\u0026rsquo;m a bit of a Mac newbie anyway, so maybe it was better to start with a slightly cheaper model before going all hardcode? I wanted to avoid the more recent MBPs anyway due to reported issues with the new keyboard. The MBA2017 had a bit of a better hardware spec than the newer Macbooks available at the time as well, so went ahead with the purchase. (It so happened that about a month later, Apple announced a 2018 line of Macbook Airs, but you know, \u003ca href=\"/2018/11/choose-without-regret-and-the-fear-of-missing-out/\"\u003echoose without regret\u003c/a\u003e).\u003c/p\u003e\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\u003ca href=\"#74dfd6287af42d7b4187a0a1cd8b2573-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2018/12/macbook-air-2017-model/macbookair_hu8a9e433e3e166639d0aab6421c6203d6_523722_300x0_resize_q75_box.jpg\" alt=\"Chocnut for scale\" title=\"Chocnut for scale\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003eChocnut for scale (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"74dfd6287af42d7b4187a0a1cd8b2573-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2018/12/macbook-air-2017-model/macbookair.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003eChocnut for scale\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"10 Dec 2018 1:56am\"\u003e10 Dec 2018 1:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI do have a bit of experience using a Mac, since I was on an iOS dev team for a short while back at my old job (where my contribution to the project mainly consisted of proposing ways to clean up the very messy Objective-C code base). Back then I had a Mac Mini assigned to me, and I found myself warming up to Mac OS X easily. I can\u0026rsquo;t fully articulate why, but it seems like a very nice piece of software. There\u0026rsquo;s a lot of minor UI things that I appreciate and while Windows 10 already has something close to it, Spotlight still feels special, especially since it\u0026rsquo;s been around longer. And I really appreciate the sleek aluminum build; unlike many Windows laptops it doesn\u0026rsquo;t feel shoddily put together. It\u0026rsquo;s also quite a bit lighter than the work-issued laptop I was previously using.\u003c/p\u003e\n\u003cp\u003eI think I am generally happy with the purchase, although to be honest I haven\u0026rsquo;t used it too much because I\u0026rsquo;ve been cutting back on my work hours since October (which means less computing time is on the move), but it has come in handy on occasion when I\u0026rsquo;d like to work on things away from my desk. There is a tiny bit of friction when switching between devices with different OSes, mainly that keyboard shortcuts are often completely different - things often don\u0026rsquo;t map cleanly between Windows\u0026rsquo; Ctrl and Alt and Mac\u0026rsquo;s Cmd, Option and Ctrl. That being said, it is decent enough for programming work - VS Code and XCode both run smoothly, and it allowed me to finally update an iOS app I\u0026rsquo;ve supposedly  been maintaining.\u003c/p\u003e\n\u003cp\u003eThe Macbook Air 2017 is a nice, handy little machine, and I hope to be using it for years to come.\u003c/p\u003e\n",
@@ -359,8 +418,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/why-bill-gates-gave-up-music-and-tv-for-5-years-in-his-20s/",
-            "url": "https://roytang.net/2018/12/why-bill-gates-gave-up-music-and-tv-for-5-years-in-his-20s/",
+            "id": "https://mirror.roytang.net/2018/12/why-bill-gates-gave-up-music-and-tv-for-5-years-in-his-20s/",
+            "url": "https://mirror.roytang.net/2018/12/why-bill-gates-gave-up-music-and-tv-for-5-years-in-his-20s/",
             "path": "/2018/12/why-bill-gates-gave-up-music-and-tv-for-5-years-in-his-20s/",
             "title": "Why Bill Gates gave up music and TV for 5 years in his 20s",
             "content_html": "",
@@ -376,8 +435,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071786459210833920/",
-            "url": "https://roytang.net/2018/12/1071786459210833920/",
+            "id": "https://mirror.roytang.net/2018/12/1071786459210833920/",
+            "url": "https://mirror.roytang.net/2018/12/1071786459210833920/",
             "path": "/2018/12/1071786459210833920/",
             "title": "",
             "content_html": "\u003cp\u003eIt\u0026rsquo;s a great week to be a comic book fan - we have the Arrowverse Elseworlds crossover, and Aquaman and Spider-Verse movies coming out too\u003c/p\u003e\n",
@@ -393,8 +452,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071772597279322112/",
-            "url": "https://roytang.net/2018/12/1071772597279322112/",
+            "id": "https://mirror.roytang.net/2018/12/1071772597279322112/",
+            "url": "https://mirror.roytang.net/2018/12/1071772597279322112/",
             "path": "/2018/12/1071772597279322112/",
             "title": "",
             "content_html": "\u003cp\u003eHm, of the shows on this list I\u0026rsquo;ve only watched The Good Place, Daredevil, and S1 of Better Call Saul. I should remedy that\u0026hellip;\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/GSUniverse/status/1071770104944312321'\u003eGSUniverse\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    2018 was an insanely good year for television. Here are our 10 favorite series of the year. \u003ca href=\"http://l.gamespot.com/6015EGvCt\"\u003ehttp://l.gamespot.com/6015EGvCt\u003c/a\u003e\n\u003c/blockquote\u003e\n",
@@ -410,8 +469,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071770531009941505/",
-            "url": "https://roytang.net/2018/12/1071770531009941505/",
+            "id": "https://mirror.roytang.net/2018/12/1071770531009941505/",
+            "url": "https://mirror.roytang.net/2018/12/1071770531009941505/",
             "path": "/2018/12/1071770531009941505/",
             "title": "",
             "content_html": "\u003cp\u003eA surprisingly large part of having expertise in a topic is not so much knowing everything about it but learning the language and sources well enough to be extremely efficient in google searches.\u003c/p\u003e\n",
@@ -427,8 +486,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/how-do-you-decide-what-to-work-on-julia-evans/",
-            "url": "https://roytang.net/2018/12/how-do-you-decide-what-to-work-on-julia-evans/",
+            "id": "https://mirror.roytang.net/2018/12/how-do-you-decide-what-to-work-on-julia-evans/",
+            "url": "https://mirror.roytang.net/2018/12/how-do-you-decide-what-to-work-on-julia-evans/",
             "path": "/2018/12/how-do-you-decide-what-to-work-on-julia-evans/",
             "title": "How do you decide what to work on? - Julia Evans",
             "content_html": "",
@@ -444,8 +503,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071733512904949761/",
-            "url": "https://roytang.net/2018/12/1071733512904949761/",
+            "id": "https://mirror.roytang.net/2018/12/1071733512904949761/",
+            "url": "https://mirror.roytang.net/2018/12/1071733512904949761/",
             "path": "/2018/12/1071733512904949761/",
             "title": "",
             "content_html": "\u003cp\u003eSeriously need better time management\u003c/p\u003e\n",
@@ -461,8 +520,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/180938352307/",
-            "url": "https://roytang.net/2018/12/180938352307/",
+            "id": "https://mirror.roytang.net/2018/12/180938352307/",
+            "url": "https://mirror.roytang.net/2018/12/180938352307/",
             "path": "/2018/12/180938352307/",
             "title": "",
             "content_html": "\u003cp\u003eI was disappointed when Age of Ultron did not have this line. \nAvengers vol. 3 #22\n\u003cp\u003e\u003cbr/\u003e\u003c/p\u003e\u003c/p\u003e\n",
@@ -478,8 +537,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/ancient-pc-gaming/",
-            "url": "https://roytang.net/2018/12/ancient-pc-gaming/",
+            "id": "https://mirror.roytang.net/2018/12/ancient-pc-gaming/",
+            "url": "https://mirror.roytang.net/2018/12/ancient-pc-gaming/",
             "path": "/2018/12/ancient-pc-gaming/",
             "title": "Ancient PC Gaming",
             "content_html": "\u003cp\u003eI recently found a stash of old DOS games we used to play, so I thought I\u0026rsquo;d write about the early days of PC gaming. My PC gaming career (such as it is) started way back in the MS-DOS era. It was an interesting time to be a gamer, to say the least. It was a time when you had to make bootdisks and fiddle around with files like \u003ccode\u003eautoexec.bat\u003c/code\u003e and \u003ccode\u003ehimem.sys\u003c/code\u003e to make sure your PC booted with the correct configuration required to run your game. I got to become familiar with things like VGA drivers and sound drivers and so on.\u003c/p\u003e\n\u003cp\u003eI think we had our first PC in the household around \u0026lsquo;92 or \u0026lsquo;93, while I was in high school. I have this vague recollection of using some text from the \u003ca href=\"https://en.wikipedia.org/wiki/Civilization_(video_game)\"\u003efirst \u003cstrong\u003eCivilization\u003c/strong\u003e game\u003c/a\u003e in one of my Social Science reports. Pretty sure Civ 1, as I\u0026rsquo;m still playing the series to this day. I played a \u003cem\u003elot\u003c/em\u003e of the first Civ game, enough to be able to master the highest difficulty level and (with sufficient save scumming), conquer the world with Chariots before Christ is born. The first Civ game was also my first experience at \u0026ldquo;hacking\u0026rdquo; a game so to speak, since many of the configuration options were read from plain text files on the disk. Even the Civilopedia entries came from text files, so I was able to copy them out to use in my report as mentioned above.\u003c/p\u003e\n\u003cp\u003eAnother mainstay of my early PC gaming years was LucasArts-style adventure games. I think my first exposure to these games was during a high school party back in maybe \u0026lsquo;93 or \u0026lsquo;94. The host had a copy of \u003cstrong\u003eManiac Mansion\u003c/strong\u003e on his PC, and I spent some time playing that before getting stuck at the big door at the top of the stairs because the host had lost the copy protection disk. Within the next year, I had played the sequel game \u003cstrong\u003eDay of the Tentacle\u003c/strong\u003e (to this day I am unsure if I ever finished the first Maniac Mansion though) and the similar Monkey Island games. I must admit that I had a lot more patience then, as these days I haven\u0026rsquo;t gotten far with the current crop of Telltale-led adventure games and the endless trial and error that inevitably arises when you get stuck. (I\u0026rsquo;ve been stuck on Broken Age on PS4 for maybe a year now, I should get that done).\u003c/p\u003e\n\u003cp\u003eOne of the earlist dungeon crawlers my brother and I played was \u003ca href=\"https://en.wikipedia.org/wiki/Waxworks_(1992_video_game)\"\u003ethe horror game \u003cstrong\u003eWaxworks\u003c/strong\u003e\u003c/a\u003e. This was a single player game, but I say \u0026ldquo;my brother and I\u0026rdquo; because we were often too scared to play the game alone. The sharp 90 degree turns meant enemies could jump out of nowhere. I\u0026rsquo;m sure if I played it now I would feel silly, but back then I remember we had tried playing the game at night while the parentals were out, and some baddie jumped out at us in the pyramid level and we went afk at the jump scare and ran out to the nearby sari-sari store. After typing this paragraph, I decided to try running the old copy of Waxworks I still had (you can run old games using \u003ca href=\"https://www.dosbox.com/\"\u003eDOSBox\u003c/a\u003e) and it reminded me that the game had very creepy midi music! Probably contributed a lot to the atmosphere. I don\u0026rsquo;t play horror games anymore nowadays lol.\u003c/p\u003e\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\u003ca href=\"#49520fc5ad2d4c8ed479cc83eb6e37e8-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2018/12/ancient-pc-gaming/waxworks_hufa0f7d0295fe0441123f40579799f0de_56604_300x0_resize_box_2.png\" alt=\"Waxworks: The pyramid level was the one we were most familiar with, since it was the first one available.\" title=\"Waxworks: The pyramid level was the one we were most familiar with, since it was the first one available.\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003eWaxworks: The pyramid level was the one we were most familiar with, since it was the first one available. (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"49520fc5ad2d4c8ed479cc83eb6e37e8-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2018/12/ancient-pc-gaming/waxworks.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003eWaxworks: The pyramid level was the one we were most familiar with, since it was the first one available.\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"9 Dec 2018 1:56am\"\u003e9 Dec 2018 1:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eAnother early favorite were the \u003ca href=\"https://en.wikipedia.org/wiki/Romance_of_the_Three_Kingdoms_(video_game_series)#List_of_games_in_the_series\"\u003eRomance of the Three Kingdoms games\u003c/a\u003e by Koei. I remember playing RTK2 a little bit, but it was RTK3 that we generally spent a lot of time in (we = me and my brothers and some HS friends). I spent so much time on this game, I could finish the game from a single province in the final scenario (where your opponents were 3 large empires). One of our favorite features in RTK3 was the fact that there was a custom character creator. We had a copy of the game that we passed around with a whole bunch of custom characters named after our HS friends. My brother was a big fan of this feature too, he added a bunch of high-stat custom characters named after himself. Sadly, my only remaining copy of this game only has my brother\u0026rsquo;s custom characters and not the ones me and my HS friends made.\u003c/p\u003e\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\u003ca href=\"#d67f359f83486dfd410f8d65d9de5ea1-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2018/12/ancient-pc-gaming/rtk3kerwins_hua9d2390344281f4b0116187418d79546_81263_300x0_resize_q75_box.jpg\" alt=\"RTK3: He really liked naming characters after himself. Also I only noticed now the poor grammar i.e. \u0026#39;a officer\u0026#39;\" title=\"RTK3: He really liked naming characters after himself. Also I only noticed now the poor grammar i.e. \u0026#39;a officer\u0026#39;\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003eRTK3: He really liked naming characters after himself. Also I only noticed now the poor grammar i.e. \u0026lsquo;a officer\u0026rsquo; (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"d67f359f83486dfd410f8d65d9de5ea1-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2018/12/ancient-pc-gaming/rtk3kerwins.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003eRTK3: He really liked naming characters after himself. Also I only noticed now the poor grammar i.e. \u0026#39;a officer\u0026#39;\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"9 Dec 2018 1:56am\"\u003e9 Dec 2018 1:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003ePrior to getting a PC, my video game exposure had been on the Atari and the Nintendo, which meant primarily real-time action-based games. My exposure to PC gaming introduced me to slower, more cerebral and more strategic games, a lifelong hobby that I\u0026rsquo;ve enjoyed ever since. What were your early days of PC gaming like?\u003c/p\u003e\n",
@@ -495,8 +554,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/a486gv/",
-            "url": "https://roytang.net/2018/12/a486gv/",
+            "id": "https://mirror.roytang.net/2018/12/a486gv/",
+            "url": "https://mirror.roytang.net/2018/12/a486gv/",
             "path": "/2018/12/a486gv/",
             "title": "",
             "content_html": "\u003ch4 id=\"posted-on-rphilippines-survey-where-is-the-best-place-for-software-developers-to-work-in-the-philippineshttpsredditcomrphilippinescommentsa486gvsurvey_where_is_the_best_place_for_software\"\u003ePosted on r/Philippines: \u003ca href=\"https://reddit.com/r/Philippines/comments/a486gv/survey_where_is_the_best_place_for_software/\"\u003eSurvey: Where is the best place for software developers to work in the Philippines?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eNot just in terms of salary, but also work culture, learning, career progression, environment, work/life balance, and so on.\u003c/p\u003e\n\u003cp\u003eEdit: Sorry, I meant a company.\u003c/p\u003e\n",
@@ -512,8 +571,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/180907993497/",
-            "url": "https://roytang.net/2018/12/180907993497/",
+            "id": "https://mirror.roytang.net/2018/12/180907993497/",
+            "url": "https://mirror.roytang.net/2018/12/180907993497/",
             "path": "/2018/12/180907993497/",
             "title": "",
             "content_html": "\u003cp\u003eYoung Avengers #12, art by Jim Cheung\u003c/p\u003e\n",
@@ -529,8 +588,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/quora/",
-            "url": "https://roytang.net/2018/12/quora/",
+            "id": "https://mirror.roytang.net/2018/12/quora/",
+            "url": "https://mirror.roytang.net/2018/12/quora/",
             "path": "/2018/12/quora/",
             "title": "Quora",
             "content_html": "\u003cp\u003eRecently, Q\u0026amp;A site Quora announced that they got hacked.\u003c/p\u003e\n\n\n    On \n    \u003ca href=\"/2012/08/236815222147514368/\"\u003e\u003ctime datetime=\"2012-08-18 13:22:03\"\u003e18 Aug 2012 1:22pm\u003c/time\u003e\u003c/a\u003e\n    I wrote:\n    \u003cblockquote\u003e\n        \u003cp\u003eQuora is good reading, but it seems difficult to navigate and chance upon the really well-written answers. Or maybe I dunno what i\u0026rsquo;m doing\u003c/p\u003e\n\n        \n\n\n\n\n\n\n    \u003c/blockquote\u003e\n\n\u003cp\u003eI started reading Quora back around 2012. My impression then of the site is that it encouraged insightful, well-written, story-like answers. This was opposed to other Q\u0026amp;A sites like Stackoverflow which encourared concise and clinical answers. This impression was amplified by the 2013 release of a Best of Quora EBook which I thoroughly enjoyed.\u003c/p\u003e\n\u003cp\u003eIn 2016, during a work hiatus, I started trying to write on Quora as well. \u003ca href=\"https://www.quora.com/profile/Roy-Tang\"\u003eYou can follow me there if you like.\u003c/a\u003e. I found writing on Quora useful as an exercise, it helped me improve on my own writing and to expound my thoughts. I often sought out more open-ended questions so that I could write more, although I wasn\u0026rsquo;t particularly successful in that regard. I managed to post quite a few answers back in 2016, and my Quora stats page tells me my answers have collectively gotten 168k views and 608 upvotes as of this writing. Not sure if that\u0026rsquo;s anything to brag about, but I guess it\u0026rsquo;s something?\u003c/p\u003e\n\u003cp\u003eI was tempted to write about Quora because of two things:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eThey\u0026rsquo;ve recently \u003ca href=\"https://www.theverge.com/2018/12/3/18124849/quora-100-million-user-hack-name-email-messages\"\u003ebeen hacked\u003c/a\u003e. They immediately notified their users, which is good.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cblockquote\u003e\n\u003cp\u003eThe following information of yours may have been compromised:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eAccount and user information, e.g. name, email, IP, user ID, encrypted password, user account settings, personalization data\n\nPublic actions and content including drafts, e.g. questions, answers, comments, blog posts, upvotes\n\nData imported from linked networks when authorized by you, e.g. contacts, demographic information, interests, access tokens (now invalidated)\n\nNon-public actions, e.g. answer requests, downvotes, thanks\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eQuestions and answers that were written anonymously are not affected by this breach as we do not store the identities of people who post anonymous content.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eNone of the above particularly concerns me, though I understand it might concern other people.\u003c/p\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003eAndy Baio of waxy.org writes about \u003ca href=\"https://waxy.org/2018/12/why-you-should-never-ever-use-quora/\"\u003eWhy You Should Never, Ever Use Quora\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAll of Quora’s value is derived from the answers provided by its users, and they go to great lengths to make a well-designed platform for finding and replying to questions.\u003c/p\u003e\n\u003cp\u003eBut they do everything they can to make sure you can’t get those contributions back out.\u003c/p\u003e\n\u003cp\u003eQuora has:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eNo public API.\nNo backup or export tools.\nRestricted access to answers without an account.\nBlocked scrapers and unofficial APIs, and deleted questions related to scraping on their site.\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe \u0026ldquo;no backup\u0026rdquo; is something I only noticed after reading his post and is particularly glaring to me, since I\u0026rsquo;ve recently had a policy of wanting to have offline access to all content I\u0026rsquo;ve ever written on the internet.\u003c/p\u003e\n\u003cp\u003eI stopped answering questions regularly on Quora around 2017, although I still read it every so often. There are still a lot of well-written answers, and I still find my Quora Daily Digest emails useful, but given the above two points I will have to re-evaluate how I use Quora in the future. The first thing will probably be to look for a way to export my content!\u003c/p\u003e\n",
@@ -546,8 +605,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071181727068958720/",
-            "url": "https://roytang.net/2018/12/1071181727068958720/",
+            "id": "https://mirror.roytang.net/2018/12/1071181727068958720/",
+            "url": "https://mirror.roytang.net/2018/12/1071181727068958720/",
             "path": "/2018/12/1071181727068958720/",
             "title": "",
             "content_html": "\u003cp\u003eI’m looking forward to Scott Lang having to explain the quantum realm to Steve Rogers in Endgame\u003c/p\u003e\n",
@@ -563,8 +622,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071160627144445953/",
-            "url": "https://roytang.net/2018/12/1071160627144445953/",
+            "id": "https://mirror.roytang.net/2018/12/1071160627144445953/",
+            "url": "https://mirror.roytang.net/2018/12/1071160627144445953/",
             "path": "/2018/12/1071160627144445953/",
             "title": "",
             "content_html": "\u003cp\u003eUMEHARA～\u003c/p\u003e\n\u003cp\u003e#SSBU_KEN\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1070989493266636801/pu/vid/1280x720/lIAZ1y6AS3iu3t2F.mp4?tag=6' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
@@ -580,8 +639,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1071033315979915265/",
-            "url": "https://roytang.net/2018/12/1071033315979915265/",
+            "id": "https://mirror.roytang.net/2018/12/1071033315979915265/",
+            "url": "https://mirror.roytang.net/2018/12/1071033315979915265/",
             "path": "/2018/12/1071033315979915265/",
             "title": "",
             "content_html": "\u003cp\u003eYEEEEEEESSSSS\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/GameSpot/status/1071029179972378625'\u003eGameSpot\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eAvengers Endgame trailer is here!\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/amplify_video/1071028192410882048/vid/1280x720/fMxkmV82TmH_sCXy.mp4?tag=9' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eI hope they release nothing else between this trailer and the movie lol\u003c/p\u003e\n",
@@ -597,8 +656,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070935828921241600/",
-            "url": "https://roytang.net/2018/12/1070935828921241600/",
+            "id": "https://mirror.roytang.net/2018/12/1070935828921241600/",
+            "url": "https://mirror.roytang.net/2018/12/1070935828921241600/",
             "path": "/2018/12/1070935828921241600/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e well, parang wala namang sinabing time limit or expiry\u003c/p\u003e\n",
@@ -614,8 +673,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070907995830304768/",
-            "url": "https://roytang.net/2018/12/1070907995830304768/",
+            "id": "https://mirror.roytang.net/2018/12/1070907995830304768/",
+            "url": "https://mirror.roytang.net/2018/12/1070907995830304768/",
             "path": "/2018/12/1070907995830304768/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e \u003ca href=\"https://www.reddit.com/r/MagicArena/comments/a3w0kr/new_game_code_game_awards/\"\u003ehttps://www.reddit.com/r/MagicArena/comments/a3w0kr/new_game_code_game_awards/\u003c/a\u003e\u003c/p\u003e\n",
@@ -631,8 +690,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070907080532508672/",
-            "url": "https://roytang.net/2018/12/1070907080532508672/",
+            "id": "https://mirror.roytang.net/2018/12/1070907080532508672/",
+            "url": "https://mirror.roytang.net/2018/12/1070907080532508672/",
             "path": "/2018/12/1070907080532508672/",
             "title": "",
             "content_html": "\u003cp\u003eI never saw it coming \u003ca href=\"https://twitter.com/rpgfancom/status/1070901851908919296\"\u003ehttps://twitter.com/rpgfancom/status/1070901851908919296\u003c/a\u003e\u003c/p\u003e\n",
@@ -648,8 +707,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/180877144230/",
-            "url": "https://roytang.net/2018/12/180877144230/",
+            "id": "https://mirror.roytang.net/2018/12/180877144230/",
+            "url": "https://mirror.roytang.net/2018/12/180877144230/",
             "path": "/2018/12/180877144230/",
             "title": "",
             "content_html": "\u003cp\u003eSuperman asks Batman to help mug a reporter (she had kryptonite). Action Comics #1003 by Brian Michael Bendis and Yannick Paquette\u003c/p\u003e\n",
@@ -665,8 +724,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/online-privacy/",
-            "url": "https://roytang.net/2018/12/online-privacy/",
+            "id": "https://mirror.roytang.net/2018/12/online-privacy/",
+            "url": "https://mirror.roytang.net/2018/12/online-privacy/",
             "path": "/2018/12/online-privacy/",
             "title": "Online Privacy",
             "content_html": "\u003cp\u003eI must admit being a bit unconcerned with online privacy tracking by the large vendoers (Google, Facebook, etc). I mean, I do tend to use \u003ca href=\"/2008/09/i-claim-my-name/\"\u003emy real name as username\u003c/a\u003e after all, so most everything I do online can be traced back to me. I assume that anything I do on the internet can be figured out by other parties, so if something is important enough to me that it should be kept private, it shouldn\u0026rsquo;t go on the internet at all.\u003c/p\u003e\n\u003cp\u003eFor the services provided by Facebook and Google, I accept that they require tracking my data in order to provide those services. For example, a few months ago I made a Protonmail account so I\u0026rsquo;d have a secure email that I can use in place of GMail. But it turns out, I haven\u0026rsquo;t found a good use case for it yet. I use Gmail\u0026rsquo;s search a lot, and ProtonMail is nowhere that robust. Maybe if I were a spy or something, I would consider using ProtonMail, but for now I think for everyday usage the GMail features are an acceptable tradeoff for the fact that they are reading your email data and using it for targetted advertising.\u003c/p\u003e\n\u003cp\u003eI also tried using the alternative, privacy-focused search engine DuckDuckGo, but I was not too happy with the search results I was getting, and I occasionally find it useful to be able to check my search history for stuff I remember finding but could no longer find. Having my search results tailored for me turned out kind of useful too.\u003c/p\u003e\n\u003cp\u003eReading some forum discussions, there are a lot of people who are vehemently against being tracked for the purposes of targetted advertising. I can understand the sentiment, but personally I don\u0026rsquo;t mind targetted advertising because (a) it\u0026rsquo;s marginally better than being bombarded with ads for things you don\u0026rsquo;t actually care about; and (b) I am not easily susceptible to impulse purchases, at least not due to internet ads. I grew up with the free internet, so even if I wasn\u0026rsquo;t using adblock, my brain automatically ignores ads on its own.\u003c/p\u003e\n\u003cp\u003eTo be honest, I accept that these companies are tracking my data because I would track my own data if I could. I find it useful to have my own history. An example is location history; I have my phone GPS on all the time, so Google Maps is able to keep a history of where I\u0026rsquo;ve gone everyday. I reference this every so often, because I\u0026rsquo;m forgetful. \u0026ldquo;Where did I go last Wednesday?\u0026rdquo; is a trivial question to answer when the cloud has the data. As a software developer, I could build my own systems to track this myself, but why bother? I use the cloud as an extension of my own memory, which is often fallible.\u003c/p\u003e\n\u003cp\u003eI have been starting \u003ca href=\"/2018/03/rethinking-facebook/\"\u003eto wean myself off Facebook\u003c/a\u003e, though that proves difficult due to network effects. But it would probably be more difficult for me to cease usage of my Google account, since I use it for a bunch of cloud stuff. Well, I did get it started by making Firefox my main browser.\u003c/p\u003e\n\u003cp\u003eI do understand the use case for privacy. If you\u0026rsquo;re handling any sort of sensitive information or anything dangerous, say as an investigative journalist in a fascist regime, then maybe an extra level of protection is required. So I appreciate the existence of secure alternatives. I recently found \u003ca href=\"https://np.reddit.com/r/pcmasterrace/comments/8sffn7/pc_users_guide_to_privacy/\"\u003ea reddit thread\u003c/a\u003e that had a good summary of the modern online privacy options available. If you want or need online privacy, you have to understand that there\u0026rsquo;s a tradeoff in terms of convenience. You can give up Google or Facebook services or use Tor and VPNs and all those other stuff, but you lose some features too. And maybe that\u0026rsquo;s fine, it\u0026rsquo;s up to you to determine that\u0026rsquo;s acceptable for you.\u003c/p\u003e\n",
@@ -682,8 +741,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070719287994736641/",
-            "url": "https://roytang.net/2018/12/1070719287994736641/",
+            "id": "https://mirror.roytang.net/2018/12/1070719287994736641/",
+            "url": "https://mirror.roytang.net/2018/12/1070719287994736641/",
             "path": "/2018/12/1070719287994736641/",
             "title": "",
             "content_html": "\u003cp\u003eNotes to self:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eSlow down (as much as you can)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eLet go (of whatever you can)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eBe kind (to everyone you can \u0026hellip; including yourself)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eBreathe deeply (as often as you can)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eForgive yourself when you forget any of the above and begin again.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
@@ -699,8 +758,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070705644368388097/",
-            "url": "https://roytang.net/2018/12/1070705644368388097/",
+            "id": "https://mirror.roytang.net/2018/12/1070705644368388097/",
+            "url": "https://mirror.roytang.net/2018/12/1070705644368388097/",
             "path": "/2018/12/1070705644368388097/",
             "title": "",
             "content_html": "\u003cp\u003eFinding old stuff/files I didn\u0026rsquo;t know I still had brings me such joy\u003c/p\u003e\n",
@@ -716,8 +775,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070684447245185025/",
-            "url": "https://roytang.net/2018/12/1070684447245185025/",
+            "id": "https://mirror.roytang.net/2018/12/1070684447245185025/",
+            "url": "https://mirror.roytang.net/2018/12/1070684447245185025/",
             "path": "/2018/12/1070684447245185025/",
             "title": "",
             "content_html": "\u003cp\u003eSpotify gave me my 2018 playlist, it\u0026rsquo;s largely the same as every year, my tastes don\u0026rsquo;t really change lol \u003ca href=\"https://open.spotify.com/playlist/37i9dQZF1EjtehmWdbWH4C\"\u003ehttps://open.spotify.com/playlist/37i9dQZF1EjtehmWdbWH4C\u003c/a\u003e\u003c/p\u003e\n",
@@ -733,8 +792,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/how-to-write-a-game-in-under-13-kb-while-taking-care-of-a-baby-barbarian-meets-coding/",
-            "url": "https://roytang.net/2018/12/how-to-write-a-game-in-under-13-kb-while-taking-care-of-a-baby-barbarian-meets-coding/",
+            "id": "https://mirror.roytang.net/2018/12/how-to-write-a-game-in-under-13-kb-while-taking-care-of-a-baby-barbarian-meets-coding/",
+            "url": "https://mirror.roytang.net/2018/12/how-to-write-a-game-in-under-13-kb-while-taking-care-of-a-baby-barbarian-meets-coding/",
             "path": "/2018/12/how-to-write-a-game-in-under-13-kb-while-taking-care-of-a-baby-barbarian-meets-coding/",
             "title": "How to Write a Game in Under 13 Kb While Taking Care of a Baby | Barbarian Meets Coding",
             "content_html": "",
@@ -750,8 +809,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/1070674751205597184/",
-            "url": "https://roytang.net/2018/12/1070674751205597184/",
+            "id": "https://mirror.roytang.net/2018/12/1070674751205597184/",
+            "url": "https://mirror.roytang.net/2018/12/1070674751205597184/",
             "path": "/2018/12/1070674751205597184/",
             "title": "",
             "content_html": "\u003cp\u003eSeven tough lessons from ten years in bootstrapped business \u003ca href=\"https://likewise.am/2018/12/01/seven-tough-lessons-from-ten-years-in-bootstrapped-business/\"\u003ehttps://likewise.am/2018/12/01/seven-tough-lessons-from-ten-years-in-bootstrapped-business/\u003c/a\u003e\u003c/p\u003e\n",
@@ -767,8 +826,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/seven-tough-lessons-from-ten-years-in-bootstrapped-business-likewise-a-blog/",
-            "url": "https://roytang.net/2018/12/seven-tough-lessons-from-ten-years-in-bootstrapped-business-likewise-a-blog/",
+            "id": "https://mirror.roytang.net/2018/12/seven-tough-lessons-from-ten-years-in-bootstrapped-business-likewise-a-blog/",
+            "url": "https://mirror.roytang.net/2018/12/seven-tough-lessons-from-ten-years-in-bootstrapped-business-likewise-a-blog/",
             "path": "/2018/12/seven-tough-lessons-from-ten-years-in-bootstrapped-business-likewise-a-blog/",
             "title": "Seven tough lessons from ten years in bootstrapped business | Likewise a Blog",
             "content_html": "",
@@ -784,8 +843,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/180845238333/",
-            "url": "https://roytang.net/2018/12/180845238333/",
+            "id": "https://mirror.roytang.net/2018/12/180845238333/",
+            "url": "https://mirror.roytang.net/2018/12/180845238333/",
             "path": "/2018/12/180845238333/",
             "title": "",
             "content_html": "\u003cp\u003eThe X-Traitor mystery was introduced in Uncanny X-Men #287 (1992) and was left unresolved until Onslaught: X-Men and Uncanny X-Men #335 (1996)\u003c/p\u003e\n",
@@ -801,8 +860,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2018/12/easily-distracted/",
-            "url": "https://roytang.net/2018/12/easily-distracted/",
+            "id": "https://mirror.roytang.net/2018/12/easily-distracted/",
+            "url": "https://mirror.roytang.net/2018/12/easily-distracted/",
             "path": "/2018/12/easily-distracted/",
             "title": "Easily Distracted",
             "content_html": "\u003cp\u003eVia \u003ca href=\"http://davemart.in/resistance/\"\u003ea blog post by Dave Martin\u003c/a\u003e, I read about Steven Pressfield\u0026rsquo;s quotes on \u0026ldquo;The Resistance\u0026rdquo; that keeps us from doing our work:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eThe danger is greatest when the finish line is in sight. At this point, Resistance knows that we’re about to beat it. It hits the panic button. It marshals one last assault and slams us with everything it’s got.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e(Side note: I\u0026rsquo;ve put his books on an Amazon wishlist. I should remind myself to do this whenever I find books that sound interesting)\u003c/p\u003e\n\u003cp\u003eI think about new projects all the time: game dev ideas, app ideas, programming projects, plot ideas for a novel, and so on. Very few of them go on to completion or at least some version of production. Some reasons I\u0026rsquo;ve had difficulty finishing side projects:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI tend to start losing interest when I come across the boring parts of a project or parts I don\u0026rsquo;t want to do. Some examples are UI/design, or promo work/sales/marketing\u003c/li\u003e\n\u003cli\u003eI might also be overwhelmed by how much work there is that needs to be done. I understand making breaking down the work into a list and then just choosing one task at a time until you get something done. Hmm, I guess sometimes doing the work breakdown is one of the things that falls under the first bullet\u003c/li\u003e\n\u003cli\u003esometimes I might also be frustrated by a lack of technical skill in implementation. I\u0026rsquo;m thinking this applies mostly to stuff like writing or drawing, where I feel like my execution or creativity isn\u0026rsquo;t good enough. This frustration can be overcome by practice, but practice risks the first bullet again\u003c/li\u003e\n\u003cli\u003esometimes I\u0026rsquo;ll also lose motivation if the project turns out too difficult or too time-consuming, as if it\u0026rsquo;s not worth the effort. This can be a legitimate reason for dropping a project, as long as I make sure my assessment is rational.\u003c/li\u003e\n\u003cli\u003eOne of my main problems seems to be that I\u0026rsquo;m easily distracted by new, shiny ideas that come along. That\u0026rsquo;s why reading this comic felt a bit like a personal attack:\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg src=\"https://i.redd.it/48lvp1vv4p121.jpg\" alt=\"\"\u003e via \u003ca href=\"https://reddit.com/r/ProgrammerHumor\"\u003e/r/ProgrammerHumor\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI do have the ability to go into hyperfocus and gain the flow, enough to immerse myself in what I\u0026rsquo;m doing, but it doesn\u0026rsquo;t always last, and it\u0026rsquo;s a bit of a double-edged sword, because if something else grabs my attention, there\u0026rsquo;s a good chance I\u0026rsquo;ll hyperfocus on that. (Another edge being of course, I can be so hyperfocused in burns me out).\u003c/p\u003e\n\u003cp\u003e(Slight tangent: When I\u0026rsquo;m in a team project, I\u0026rsquo;m pretty good at getting things done, because (a) there\u0026rsquo;s usually someone else holding me to account and making sure stuff gets done; and (b) there\u0026rsquo;s usually team mates to help take up those parts that I find uninteresting.)\u003c/p\u003e\n\u003cp\u003eI didn\u0026rsquo;t list plain old laziness among the reasons above, though I\u0026rsquo;m surely guilty of that. But I think usually laziness is a symptom of one of these other reasons and me making excuses for not getting stuff done.\u003c/p\u003e\n\u003cp\u003eAll of these are some demons I need to tame if I really want to become more independent; I guess at least recognizing them is key and compensating for them where necessary, and making sure I only drop projects if I\u0026rsquo;m convinced they\u0026rsquo;re not worth it.\u003c/p\u003e\n\u003cp\u003eCoincidentally relevant webcomic:\u003c/p\u003e\n\u003cblockquote class=\"twitter-tweet\"\u003e\u003cp lang=\"en\" dir=\"ltr\"\u003einspiration strikes \u003ca href=\"https://t.co/qihgd0Q8to\"\u003epic.twitter.com/qihgd0Q8to\u003c/a\u003e\u003c/p\u003e\u0026mdash; the Awkward Yeti (Nick Seluk) (@theawkwardyeti) \u003ca href=\"https://twitter.com/theawkwardyeti/status/1070082567402110977?ref_src=twsrc%5Etfw\"\u003eDecember 4, 2018\u003c/a\u003e\u003c/blockquote\u003e \u003cscript async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"\u003e\u003c/script\u003e ",
@@ -813,57 +872,6 @@
             "source_path": "post/2018/12/easily-distracted/index.md"
             , "tags": ["Self-improvement"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070498661086445568/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2018/12/must-be-willing-to-work-under-pressure-is-a-warning-sign/",
-            "url": "https://roytang.net/2018/12/must-be-willing-to-work-under-pressure-is-a-warning-sign/",
-            "path": "/2018/12/must-be-willing-to-work-under-pressure-is-a-warning-sign/",
-            "title": "‘Must be willing to work under pressure’ is a warning sign",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2018-12-05T21:54:17+00:00",
-            "date_modified": "2019-12-05T06:56:28+08:00",
-            "section": "links",
-            "source_path": "links/2018/12/must-be-willing-to-work-under-pressure-is-a-warning-sign.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070445790169100288/"}]
-            ,"link": "https://codewithoutrules.com/2018/12/03/work-under-pressure/"
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2018/12/why-you-should-never-ever-use-quora-waxy-org/",
-            "url": "https://roytang.net/2018/12/why-you-should-never-ever-use-quora-waxy-org/",
-            "path": "/2018/12/why-you-should-never-ever-use-quora-waxy-org/",
-            "title": "Why You Should Never, Ever Use Quora – Waxy.org",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2018-12-05T07:54:27+00:00",
-            "date_modified": "2019-12-05T06:56:28+08:00",
-            "section": "links",
-            "source_path": "links/2018/12/why-you-should-never-ever-use-quora-waxy-org.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070226872452165632/"}]
-            ,"link": "https://waxy.org/2018/12/why-you-should-never-ever-use-quora/"
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2018/12/1070201446446944256/",
-            "url": "https://roytang.net/2018/12/1070201446446944256/",
-            "path": "/2018/12/1070201446446944256/",
-            "title": "",
-            "content_html": "\u003cp\u003eI know myself so well I have an everday alarm set for 2PM to stop myself from napping after lunch\u003c/p\u003e\n",
-            "summary": "I know myself so well I have an everday alarm set for 2PM to stop myself from napping after lunch",
-            "date_published": "2018-12-05T06:21:22+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/12/1070201446446944256.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070201446446944256/"}]
             
             
             }

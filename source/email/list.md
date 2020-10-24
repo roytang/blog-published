@@ -1,4 +1,6 @@
 
+- [facebook masks](/2020/10/a38e76d18c18ef7048cd755f7374f753/)
+
 - [beaver test](/2020/10/4d61f87d13cb070725f8e993d517ee40/)
 
 - [fitbit band dumbness](/2020/09/c11f9f76ed1a85539df66f3b898c45fc/)

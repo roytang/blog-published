@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>triviastorm on Roy Tang</title>
-      <link>https://roytang.net/tags/triviastorm/</link>
+      <link>https://mirror.roytang.net/tags/triviastorm/</link>
       <description>Recent content in triviastorm on Roy Tang</description>
       <generator>Hugo -- gohugo.io</generator>
       <language>en-us</language>
@@ -9,20 +9,20 @@
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
       <lastBuildDate>Sun, 03 Feb 2019 05:56:56 +0000</lastBuildDate>
       
-          <atom:link href="https://roytang.net/tags/triviastorm/index.xml" rel="self" type="application/rss+xml" />
+          <atom:link href="https://mirror.roytang.net/tags/triviastorm/index.xml" rel="self" type="application/rss+xml" />
       
           
       
         <item>
             <title>TriviaStorm: Text and Answer parsing
 </title>
-            <link>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
+            <link>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
             <pubDate>Sun, 03 Feb 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
+            <guid>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
             <description>
             
-            &lt;p&gt;A while back I started a &lt;a href=&#34;https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
+            &lt;p&gt;A while back I started a &lt;a href=&#34;https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
 &lt;p&gt;But today, I thought I&amp;rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for &lt;a href=&#34;https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/&#34;&gt;Django&amp;rsquo;s unit testing framework&lt;/a&gt;. I&amp;rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the bot had to be able to handle a wide variety of answers&lt;/li&gt;
@@ -59,10 +59,10 @@
         <item>
             <title>Weekend Project: Twitter Trivia Bot
 </title>
-            <link>https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/</link>
+            <link>https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/</link>
             <pubDate>Thu, 23 Feb 2017 01:30:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/</guid>
+            <guid>https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/</guid>
             <description>
             
             &lt;p&gt;I had been meaning to try writing a Twitter bot for a while now. I figured a trivia bot would be pretty easy to implement, so I spent some time a couple of weekends to rig one together.&lt;/p&gt;

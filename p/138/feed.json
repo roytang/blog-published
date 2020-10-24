@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Roy Tang",
 	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
-    "home_page_url": "https://roytang.net/",
-    "feed_url": "https://roytang.net/feed.json",
+    "home_page_url": "https://mirror.roytang.net/",
+    "feed_url": "https://mirror.roytang.net/feed.json",
 	"author": {
 		"name": "Roy Tang",
 		"url": "https://roytang.net"
@@ -11,8 +11,59 @@
     "items": [
         
         {
-            "id": "https://roytang.net/2016/06/fragile-things/",
-            "url": "https://roytang.net/2016/06/fragile-things/",
+            "id": "https://mirror.roytang.net/2016/06/bhrucilhjrg/",
+            "url": "https://mirror.roytang.net/2016/06/bhrucilhjrg/",
+            "path": "/2016/06/bhrucilhjrg/",
+            "title": "",
+            "content_html": "\u003cp\u003eShouldnt have walked into kfc #sketchdaily\u003c/p\u003e\n",
+            "summary": "Shouldnt have walked into kfc #sketchdaily",
+            "date_published": "2016-06-30T04:28:53+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BHRucIlhjrG/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHRucIlhjrG/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/146700321405/shouldnt-have-walked-into-kfc-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/748478416597323776/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154710562383912:1"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4qkjnq/june_30th_mashed_potatoes/d4ttmp2/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
+            "url": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
+            "path": "/2016/06/bhrs9-dbtpc/",
+            "title": "",
+            "content_html": "\u003cp\u003eHomemade chicken alfredo\u003c/p\u003e\n",
+            "summary": "Homemade chicken alfredo",
+            "date_published": "2016-06-30T04:16:02+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BHRs9-dBtPC/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHRs9-dBtPC/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154710562383912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
+            "url": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
+            "path": "/2016/06/performance-optimization-for-wordpress-blogs/",
+            "title": "Performance Optimization for WordPress Blogs",
+            "content_html": "\u003cp\u003eSome time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this \u003ca href=\"https://testmysite.thinkwithgoogle.com/\"\u003eSpeed Testing Tool\u003c/a\u003e. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#0c6ac79b772c7e82c9d4b481ecd82269-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"0c6ac79b772c7e82c9d4b481ecd82269-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI also ran the site through \u003ca href=\"https://developers.google.com/speed/pagespeed/insights\"\u003eGoogle PageSpeed Insights\u003c/a\u003e. The results were mostly the same, but the Google site gave me results faster, so this was the one I referenced for subsequent testing. The most important problems to address were:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOptimizing image sizes\u003c/li\u003e\n\u003cli\u003eRemoving render-blocking JS and CSS in above-the fold content\u003c/li\u003e\n\u003cli\u003eLeverage browser caching (through the use of HTTP headers)\u003c/li\u003e\n\u003cli\u003eMinify CSS and Javascript\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAll of these are familiar to me since they are very common performance optimizations done in web applications. However, this blog is running on WordPress, which means I should try to look for existing WordPress-based solutions instead of hacking the code myself. (I used to run a custom-built Django-based blog system here, but I got tired of maintaining it myself so I went for tried-and-true WordPress). Here are the optimizations I ended up doing:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eUpgraded to the default WordPress Twenty-Sixteen Theme. Not strictly necessary for optimization, but I was previously using the Twenty-Twelve Theme, and the problem with using older themes is that they may not be using newer web development techniques to improve performance. Also, Twenty-Sixteen looked better haha. And yes, I do use the default WordPress themes. Too lazy (as of yet) to look for a nice custom theme, and I don\u0026rsquo;t have the design chops myself to build it, so it will do for now.\u003c/li\u003e\n\u003cli\u003eFor the image size problem, I found that the biggest offender was the \u003ca href=\"http://roytang.net/2016/03/sketching-daily/\"\u003eSketching Daily post\u003c/a\u003e where I broke down how I do my daily sketches. The problem was that I was uploading full-size images of the drawings and they were being inlined into the post \u0026ndash; which meant the browser was loading the full-size image even though it was shown in a smaller size on the post itself. Instead, I manually changed the settings of each image in the post to use one of the smaller-size images generated by WordPress on upload. \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#5e6f8afbe11d06811d33a26b4c215b02-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"5e6f8afbe11d06811d33a26b4c215b02-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n Choosing \u0026ldquo;Large\u0026rdquo; here meant the Large one would be inlined, while I could still set the image to link to the full-size one on click. The full size image is a whole fifteen times larger than the \u0026ldquo;large\u0026rdquo; image! It\u0026rsquo;s something I need to remember in the future if I ever upload huge images again. I also found a link that described how to set the \u003ca href=\"https://made4wp.com/changing-default-attachment-display-setting-insert-image-post/\"\u003edefault image size\u003c/a\u003e (so that it doesn\u0026rsquo;t default to full size all the time), but I don\u0026rsquo;t think it\u0026rsquo;s necessary for now.\u003c/li\u003e\n\u003cli\u003eTo further help with image optimization, I installed the \u003ca href=\"https://wordpress.org/plugins/wp-smushit/\"\u003eWP Smush plugin\u003c/a\u003e, which automatically optimizes (\u0026ldquo;smushes\u0026rdquo;) uploaded images. I found that WP Smush reduces the uploaded image sizes by around 10-15% on average, it\u0026rsquo;s not too bad.\u003c/li\u003e\n\u003cli\u003eNext was render-blocking JavaScript. If you\u0026rsquo;re not familiar, any \u003ccode\u003e\u0026lt;script include=\u0026quot;... \u0026quot; /\u0026gt;\u003c/code\u003e tag in your HTML blocks the rendering of any content below the tag itself until the content of the JS has finished executing. The typical solutions are either to (a) move the script tags to below the content (\u0026ldquo;below the fold\u0026rdquo;) or (b) add an \u0026ldquo;async\u0026rdquo; or \u0026ldquo;defer\u0026rdquo; attribute to the script tag. It turns out that there was already a plugin that did (b), \u003ca href=\"https://wordpress.org/plugins/async-javascript/\"\u003eAsync Javascript\u003c/a\u003e. So I gave it a go, but for some reason it wasn\u0026rsquo;t working. After a bit of debugging, I found that there was an \u0026ldquo;aj_enabled\u0026rdquo; option that wasn\u0026rsquo;t being set. I couldn\u0026rsquo;t figure out any settings page to update it, so I went ahead and edited the plugin directly to set the value: \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n It\u0026rsquo;s generally a bad idea to hack the local copy of your WordPress plugins, since you have to check the impact every time the plugin has a new version, but I decided to live with it for now. After the update, sure enough the JS no longer blocked page rendering.\u003c/li\u003e\n\u003cli\u003eLastly, I installed the \u003ca href=\"https://wordpress.org/plugins/w3-total-cache/\"\u003eW3 Total Cache plugin\u003c/a\u003e. I disabled the WP Super Cache plugin I was using before since they would probably have some sort of conflict. In addition to page caching, this plugin addresses a couple of other issues: it supports HTML/JS/CSS minification (reduces file sizes and HTTP requests) and it allows adding the expiry headers to static content (to leverage browser caching). If you\u0026rsquo;ve done any work on website performance, the settings for the plugin are straightforward to understand, but I also referenced the guide at \u003ca href=\"https://gtmetrix.com/wordpress-optimization-guide.html\"\u003ethis link\u003c/a\u003e. The plugin looks okay, but there\u0026rsquo;s an unfortunate side effect: the minified JS created by the plugin does not respect Async Javascript, so it blocks above the fold content from rendering. It\u0026rsquo;s a problem I\u0026rsquo;ll have to try to resolve in the future.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eAfter the above changes, I retest the site:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#21b8bf5fee6eb583237d7c9920559f3b-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"21b8bf5fee6eb583237d7c9920559f3b-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eMuch improvement indeed! There\u0026rsquo;s still a few issues to iron out, but for the most part I\u0026rsquo;m happy with the results (and my pride has been satisfied :p). I may revisit this issue at a future date to see if there\u0026rsquo;s anything else I can improve on.\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n",
+            "summary": "Some time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this Speed Testing Tool. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p",
+            "date_published": "2016-06-30T01:30:32+00:00",
+            "date_modified": "2020-09-26T21:13:50+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/performance-optimization-for-wordpress-blogs/index.md"
+            , "tags": ["wordpress","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/748331247005499392/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/fragile-things/",
+            "url": "https://mirror.roytang.net/2016/06/fragile-things/",
             "path": "/2016/06/fragile-things/",
             "title": "Book Review: Fragile Things: Short Fictions and Wonders by Gaiman, Neil",
             "content_html": "\u003cp\u003e\u003ca href=\"https://www.goodreads.com/book/show/16788.Fragile_Things\" style=\"float: left; padding-right: 20px\"\u003e\u003cimg border=\"0\" alt=\"Fragile Things: Short Fictions and Wonders\" src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386924550l/16788._SX98_.jpg\" /\u003e\u003c/a\u003e\u003ca href=\"https://www.goodreads.com/book/show/16788.Fragile_Things\"\u003eFragile Things: Short Fictions and Wonders\u003c/a\u003e by \u003ca href=\"https://www.goodreads.com/author/show/1221698.Neil_Gaiman\"\u003eNeil Gaiman\u003c/a\u003e\u003cbr/\u003e\nMy rating: \u003ca href=\"https://www.goodreads.com/review/show/1672855718\"\u003e5 of 5 stars\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e\nSome good stuff by Gaiman. Generally what you\u0026rsquo;d expect: ghosts and aliens and magic creatures and strange stories and such. There\u0026rsquo;s an American Gods-related novella at the end.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href=\"https://www.goodreads.com/review/list/18436248-roy-tang\"\u003eView all my reviews\u003c/a\u003e\u003c/p\u003e\n",
@@ -28,8 +79,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/10154707831253912/",
-            "url": "https://roytang.net/2016/06/10154707831253912/",
+            "id": "https://mirror.roytang.net/2016/06/10154707831253912/",
+            "url": "https://mirror.roytang.net/2016/06/10154707831253912/",
             "path": "/2016/06/10154707831253912/",
             "title": "",
             "content_html": "\u003cp\u003eI managed to clear up the print quality by repeatedly running the HP cleaning tool. Wasted a bunch of ink and paper, but yay!\u003c/p\u003e\n",
@@ -45,8 +96,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bho1fi8boad/",
-            "url": "https://roytang.net/2016/06/bho1fi8boad/",
+            "id": "https://mirror.roytang.net/2016/06/bho1fi8boad/",
+            "url": "https://mirror.roytang.net/2016/06/bho1fi8boad/",
             "path": "/2016/06/bho1fi8boad/",
             "title": "",
             "content_html": "\u003cp\u003eArche from Tales of Phantasia #sketchdaily\u003c/p\u003e\n",
@@ -62,8 +113,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747942885400580096/",
-            "url": "https://roytang.net/2016/06/747942885400580096/",
+            "id": "https://mirror.roytang.net/2016/06/747942885400580096/",
+            "url": "https://mirror.roytang.net/2016/06/747942885400580096/",
             "path": "/2016/06/747942885400580096/",
             "title": "",
             "content_html": "\u003cp\u003e\u0026ldquo;Success is not final, failure is not fatal: it is the courage to continue that counts\u0026rdquo; - W. Churchill\u003c/p\u003e\n",
@@ -79,8 +130,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/how-do-i-deal-with-the-fact-th/",
-            "url": "https://roytang.net/2016/06/how-do-i-deal-with-the-fact-th/",
+            "id": "https://mirror.roytang.net/2016/06/how-do-i-deal-with-the-fact-th/",
+            "url": "https://mirror.roytang.net/2016/06/how-do-i-deal-with-the-fact-th/",
             "path": "/2016/06/how-do-i-deal-with-the-fact-th/",
             "title": "",
             "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-do-I-deal-with-the-fact-that-I-failed-my-year/answer/Roy-Tang\"\u003eHow do I deal with the fact that I failed my year?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eDuring my the first semester of my second year in University, I failed four out of five classes I was taking due to slacking off a lot. Those same classes were only available during the first semester of each year, which meant I could not retake them during the second semester or over the summer to catch up. So effectively, I had fallen one year behind everyone I knew.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eWhen I got the news, it was devastating. Up until that time I had always been a pretty good student and I felt like I had always made my parents proud and happy. I did not know how I would tell them about it, I felt that I had failed them utterly. I knew I only had myself to blame as I had let most of these classes go by without paying much attention to them. Sometimes when you’re used to doing well academically all the time you might get lax and feel complacent and then you’re surprised to find out there’s a lot you haven’t picked up but it’s too late to catch up.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eMy parents were very understanding. My friends did not make fun of me or anything like that. I decided to take the failure for what it was - a failure - and simply learn from my mistakes and move on. I had to toughen up. I accepted that I would not be graduating on time, and that it was my own fault. I spent a semester under academic probation, but from that point onwards I did not fail any other classes, and I successfully graduated some years later, got a good job and so on.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eFailure is a setback yes, but it’s a setback you can learn from and that you can recover from. Failure is not fatal (most of the time), and as long as you can find a way to move forward there is no reason you would not be able to surpass it. In time you will look back on your failures as struggles that you learned from and made you stronger and more resilient\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
@@ -96,8 +147,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4rckyy/",
-            "url": "https://roytang.net/2016/06/d4rckyy/",
+            "id": "https://mirror.roytang.net/2016/06/d4rckyy/",
+            "url": "https://mirror.roytang.net/2016/06/d4rckyy/",
             "path": "/2016/06/d4rckyy/",
             "title": "",
             "content_html": "\u003cp\u003eAlright, thanks! :D\u003c/p\u003e\n",
@@ -113,8 +164,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4r1mwa/",
-            "url": "https://roytang.net/2016/06/d4r1mwa/",
+            "id": "https://mirror.roytang.net/2016/06/d4r1mwa/",
+            "url": "https://mirror.roytang.net/2016/06/d4r1mwa/",
             "path": "/2016/06/d4r1mwa/",
             "title": "",
             "content_html": "\u003cp\u003eSo, this probably makes me totally self-serving but I might as well ask: am I allowed to vote for myself? Lol, so that I don\u0026rsquo;t get zero votes! :D\u003c/p\u003e\n",
@@ -130,8 +181,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747637700447002624/",
-            "url": "https://roytang.net/2016/06/747637700447002624/",
+            "id": "https://mirror.roytang.net/2016/06/747637700447002624/",
+            "url": "https://mirror.roytang.net/2016/06/747637700447002624/",
             "path": "/2016/06/747637700447002624/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e \u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e no Nahiri means my plucky ragtag band of planeswalkers are gonna wmcq lol\u003c/p\u003e\n",
@@ -147,8 +198,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/ice-candy/",
-            "url": "https://roytang.net/2016/06/ice-candy/",
+            "id": "https://mirror.roytang.net/2016/06/ice-candy/",
+            "url": "https://mirror.roytang.net/2016/06/ice-candy/",
             "path": "/2016/06/ice-candy/",
             "title": "Ice Candy",
             "content_html": "\u003cp\u003eI read an article recently about how we should encourage entrepreneurial spirit in kids from a very young age. It made think of a time when we were kids and we tried running a business\u003c/p\u003e\n\u003cp\u003eIt was a summer from years ago. Perhaps 1988 or 1989, or maybe a year or two earlier, I can\u0026rsquo;t be sure. I was young, my brother was younger by a few years, my female cousin older by a few years. Back then our families live under the same roof, my grandfather\u0026rsquo;s house\u003c/p\u003e\n\u003cp\u003eWe needed something to keep us occupied during the summer. We probably already had a Nintendo around this time, but my brother and I were only allowed one hour of video games a day, so we needed something else to fill the time. I think it was my mother who suggested we run a small business over the summer, sell some food things to people\u003c/p\u003e\n\u003cp\u003eOur house had a \u003cem\u003esari-sari store.\u003c/em\u003e \u003cem\u003eSari-sari\u003c/em\u003e stores are like small family-owned convenience stores in the Philippines, often run out of the house directly, with the storefront little more than holes in the wall that make up the house\u0026rsquo;s facade. The one in our house had one small window and one large window, each covered by rusty metal bars half a foot apart. It sold soft drinks (cokes and sprites and whatnot), beer to the local tambays, small bags of chips (Chippy, Clover Chips, Tortillos, etc), small chocolates and packs of nuts and such. As kids we spent a lot of free time at the store, especially when the parents were away. After my grandfather died, the store was taken over by a beloved family friend who had been living with us forever. She often indulged us kids our whimsies, which often meant our parents came home to find out they now owed a bunch more pesos to the store. That summer, we had decided to sell ice candy to the people in the neighborhood through the store\u003c/p\u003e\n\u003cp\u003eYou could be forgiven for not knowing what ice candy was, at least if you didn\u0026rsquo;t live in the Philippines. It\u0026rsquo;s a treat made out of frozen flavored water, usually in a long plastic bag that gives it an elongated shape. In the US, they might be called \u0026ldquo;freeze pops\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eMy parents gave us some \u0026ldquo;seed money\u0026rdquo; (and I suppose my uncle gave my cousin some as well). I think my brother and I would have a separate stock from our cousin, but we would both be selling in the same store. We went to the nearby grocery store and bought the materials we\u0026rsquo;d need: some powdered flavoring and packs of small plastic tubes. When we got home, our mother showed us how to prepare the ice candy. We would mix the flavoring (I think we used orange flavoring. I liked orange back then) in some water, then pour the flavored water into the plastic tubes and tie a knot in the end to seal them. Then we would leave the tubes in the freezer overnight, and we would sell them the next day\u003c/p\u003e\n\u003cp\u003eI remember them being a hit, especially with the neighborhood kids. We sold them for I think a peso each, or maybe a peso and fifty centavos. (Things were simple and cheap back then.) I think my cousin used slightly larger plastic tubes and sold her ice candies for a bit more. In theory, we would then reinvest the day\u0026rsquo;s income into more flavoring and plastic tubes for the next day, but I think it turned out that our parents just gave us more money for the next day\u0026rsquo;s materials. So perhaps it was less of capitalism and more of \u0026ldquo;here\u0026rsquo;s a fun way to earn allowance during the summer\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eI specifically remember my younger brother enjoying the business and dreaming of making it big as a businessman. His imagined future business was still ice candy. He imagined having an ice candy empire well-known throughout the land, with rich and famous personalities such as the president coming to his stores to buy ice candy. So maybe the exercise did manage to impart a little bit of entrepreneurial spirit to us after all\u003c/p\u003e\n\u003cp\u003eI remember at the end of that summer, we were happy with the amount of money we had earned, and we talked about doing it again the next summer. But we never did\u003c/p\u003e\n",
@@ -164,8 +215,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747586742627119105/",
-            "url": "https://roytang.net/2016/06/747586742627119105/",
+            "id": "https://mirror.roytang.net/2016/06/747586742627119105/",
+            "url": "https://mirror.roytang.net/2016/06/747586742627119105/",
             "path": "/2016/06/747586742627119105/",
             "title": "",
             "content_html": "\u003cp\u003eThe internet is too enamored with Lyanna Mormont. She seems like the perfect character to kill off in S07E01 :p #GameofThrones\u003c/p\u003e\n",
@@ -181,8 +232,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/can-i-create-a-moderately-simp/",
-            "url": "https://roytang.net/2016/06/can-i-create-a-moderately-simp/",
+            "id": "https://mirror.roytang.net/2016/06/can-i-create-a-moderately-simp/",
+            "url": "https://mirror.roytang.net/2016/06/can-i-create-a-moderately-simp/",
             "path": "/2016/06/can-i-create-a-moderately-simp/",
             "title": "",
             "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Can-I-create-a-moderately-simple-back-end-for-the-application-web-site-without-knowing-programming/answer/Roy-Tang\"\u003eCan I create a moderately simple back-end for the application / web site without knowing programming?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eIt depends on what you mean by “moderately simple” and “without knowing programming”. If you only need to be build a simple CRUD website with no special logic of any sort, some frameworks such as RoR or Django have code generators that can automate all of that for you, but you have to provide the data structure first, which you’ll need to write in code, so it involves a “little” programming. If even that is too much for you, you can build some simple forms using online tools similar to Google Forms to capture input from users.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eAnything more complicated than simple forms to capture data will probably require programming\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
@@ -198,8 +249,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/if-you-lost-everything-and-had/",
-            "url": "https://roytang.net/2016/06/if-you-lost-everything-and-had/",
+            "id": "https://mirror.roytang.net/2016/06/if-you-lost-everything-and-had/",
+            "url": "https://mirror.roytang.net/2016/06/if-you-lost-everything-and-had/",
             "path": "/2016/06/if-you-lost-everything-and-had/",
             "title": "",
             "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/If-you-lost-everything-and-had-to-start-over-from-scratch-how-would-you-do-it/answer/Roy-Tang\"\u003eIf you lost everything and had to start over from scratch, how would you do it?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eEven if I lost everything today, I’d still have my own confidence and skill sets to fall back on. So I’d probably still be able to find a job, maybe even freelance or something. If I need housing, I’d probably look for a friend to put me up temporarily while I look for a place. I’m very low maintenance so I can survive on a small amount of resources until I can save up\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
@@ -215,8 +266,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhlk_asbwxw/",
-            "url": "https://roytang.net/2016/06/bhlk_asbwxw/",
+            "id": "https://mirror.roytang.net/2016/06/bhlk_asbwxw/",
+            "url": "https://mirror.roytang.net/2016/06/bhlk_asbwxw/",
             "path": "/2016/06/bhlk_asbwxw/",
             "title": "",
             "content_html": "\u003cp\u003eSome old lady #sketchdaily\u003c/p\u003e\n",
@@ -232,8 +283,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4q15g5/",
-            "url": "https://roytang.net/2016/06/d4q15g5/",
+            "id": "https://mirror.roytang.net/2016/06/d4q15g5/",
+            "url": "https://mirror.roytang.net/2016/06/d4q15g5/",
             "path": "/2016/06/d4q15g5/",
             "title": "",
             "content_html": "\u003cp\u003eThalia\u0026rsquo;s Lancers: \u003ca href=\"https://twitter.com/ElaineChase/status/747467986324193280\"\u003ehttps://twitter.com/ElaineChase/status/747467986324193280\u003c/a\u003e\u003c/p\u003e\n",
@@ -249,8 +300,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/10154702579708912/",
-            "url": "https://roytang.net/2016/06/10154702579708912/",
+            "id": "https://mirror.roytang.net/2016/06/10154702579708912/",
+            "url": "https://mirror.roytang.net/2016/06/10154702579708912/",
             "path": "/2016/06/10154702579708912/",
             "title": "",
             "content_html": "\u003cp\u003ePeople with HP printers: I need some advice. There\u0026rsquo;s a problem with the black ink cartridge (see image), color seems fine. Madami pa naman ung ink. I tried align and also clean ink cartridges from the HP software ganun pa din. I also tried taking out the cartridge and manually cleaning near the nozzle (may instructions sa support page) What else can I do? Kaka two months pa lang nun printer :(\u003c/p\u003e\n\u003cp\u003eEdit: Daming typo :p\u003c/p\u003e\n",
@@ -266,8 +317,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/10154702525583912/",
-            "url": "https://roytang.net/2016/06/10154702525583912/",
+            "id": "https://mirror.roytang.net/2016/06/10154702525583912/",
+            "url": "https://mirror.roytang.net/2016/06/10154702525583912/",
             "path": "/2016/06/10154702525583912/",
             "title": "",
             "content_html": "\u003cp\u003eI was re-watching the GOT finale\u0026hellip;  \u0026hellip;and near the end of the episode, Jon Snow had assembled an army, then he did something evil to summon an ancient dragon god. And Bran was shouting at him \u0026ldquo;JON WHAT HAVE YOU DONE\u0026rdquo; but Jon was shaking his head \u0026ldquo;It\u0026rsquo;s done!\u0026rdquo; And it was really loud, with lightning and thunder all over (it turns out I was hearing the rain in real life), and the dragon god was huge, like a building, it descended from the split heavens and it looked like Bahamut from Final Fantasy. As it descended it was chanting YOU HAVE LOST TO YOUR DOOM\u0026hellip;  \u0026hellip;then I woke up!\u003c/p\u003e\n",
@@ -283,8 +334,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/10154702251248912/",
-            "url": "https://roytang.net/2016/06/10154702251248912/",
+            "id": "https://mirror.roytang.net/2016/06/10154702251248912/",
+            "url": "https://mirror.roytang.net/2016/06/10154702251248912/",
             "path": "/2016/06/10154702251248912/",
             "title": "",
             "content_html": "\u003cp\u003eGame of Thrones season finale very satisfying, cleanly sets up for season 7 with no annoying cliffhangers. Well done!\u003c/p\u003e\n",
@@ -300,8 +351,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhkf42nhp2x/",
-            "url": "https://roytang.net/2016/06/bhkf42nhp2x/",
+            "id": "https://mirror.roytang.net/2016/06/bhkf42nhp2x/",
+            "url": "https://mirror.roytang.net/2016/06/bhkf42nhp2x/",
             "path": "/2016/06/bhkf42nhp2x/",
             "title": "",
             "content_html": "\u003cp\u003eDaisies I guess? #sketchdaily\u003c/p\u003e\n",
@@ -317,8 +368,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747332915760009216/",
-            "url": "https://roytang.net/2016/06/747332915760009216/",
+            "id": "https://mirror.roytang.net/2016/06/747332915760009216/",
+            "url": "https://mirror.roytang.net/2016/06/747332915760009216/",
             "path": "/2016/06/747332915760009216/",
             "title": "",
             "content_html": "\u003cp\u003e\u0026ldquo;Yes well, I suppose that life is irregular\u0026rdquo;\u003c/p\u003e\n",
@@ -334,8 +385,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747314650736320513/",
-            "url": "https://roytang.net/2016/06/747314650736320513/",
+            "id": "https://mirror.roytang.net/2016/06/747314650736320513/",
+            "url": "https://mirror.roytang.net/2016/06/747314650736320513/",
             "path": "/2016/06/747314650736320513/",
             "title": "",
             "content_html": "\u003cp\u003e@cardboard_crack I lost a bet today because I thought old Emrakul didnt have flying because of this strip \u003ca href=\"https://cardboard-crack.com/post/79521250941/emrakul#_=_\"\u003ehttps://cardboard-crack.com/post/79521250941/emrakul#_=_\u003c/a\u003e :p\u003c/p\u003e\n",
@@ -351,8 +402,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747255665572208640/",
-            "url": "https://roytang.net/2016/06/747255665572208640/",
+            "id": "https://mirror.roytang.net/2016/06/747255665572208640/",
+            "url": "https://mirror.roytang.net/2016/06/747255665572208640/",
             "path": "/2016/06/747255665572208640/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e bakit ka \u0026ldquo;Crush the Cheons\u0026rdquo;? :p \u003ca href=\"http://mtgtop8.com/event?e=12828\u0026amp;d=274472\u0026amp;f=MO\"\u003ehttp://mtgtop8.com/event?e=12828\u0026amp;d=274472\u0026amp;f=MO\u003c/a\u003e \u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e\u003c/p\u003e\n",
@@ -368,8 +419,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/747249486724882432/",
-            "url": "https://roytang.net/2016/06/747249486724882432/",
+            "id": "https://mirror.roytang.net/2016/06/747249486724882432/",
+            "url": "https://mirror.roytang.net/2016/06/747249486724882432/",
             "path": "/2016/06/747249486724882432/",
             "title": "",
             "content_html": "\u003cp\u003ejust because other people are assholes doesnt mean you have to be an asshole too\u003c/p\u003e\n",
@@ -385,8 +436,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhjevkebsra/",
-            "url": "https://roytang.net/2016/06/bhjevkebsra/",
+            "id": "https://mirror.roytang.net/2016/06/bhjevkebsra/",
+            "url": "https://mirror.roytang.net/2016/06/bhjevkebsra/",
             "path": "/2016/06/bhjevkebsra/",
             "title": "",
             "content_html": "\u003cp\u003eRed shirts #sketchdaily\u003c/p\u003e\n",
@@ -402,8 +453,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746865554435121152/",
-            "url": "https://roytang.net/2016/06/746865554435121152/",
+            "id": "https://mirror.roytang.net/2016/06/746865554435121152/",
+            "url": "https://mirror.roytang.net/2016/06/746865554435121152/",
             "path": "/2016/06/746865554435121152/",
             "title": "",
             "content_html": "\u003cp\u003eIf you have your credit card details committed to memory, you might be making too many online purchases\u003c/p\u003e\n",
@@ -419,8 +470,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4o0bi0/",
-            "url": "https://roytang.net/2016/06/d4o0bi0/",
+            "id": "https://mirror.roytang.net/2016/06/d4o0bi0/",
+            "url": "https://mirror.roytang.net/2016/06/d4o0bi0/",
             "path": "/2016/06/d4o0bi0/",
             "title": "",
             "content_html": "\u003cp\u003eIt sounds like it would be a \u0026ldquo;feel bad\u0026rdquo; mechanic for many people and thus would have difficulty being mass-market successful\u003c/p\u003e\n",
@@ -436,8 +487,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/10154698218193912/",
-            "url": "https://roytang.net/2016/06/10154698218193912/",
+            "id": "https://mirror.roytang.net/2016/06/10154698218193912/",
+            "url": "https://mirror.roytang.net/2016/06/10154698218193912/",
             "path": "/2016/06/10154698218193912/",
             "title": "",
             "content_html": "\u003cp\u003eIf Scotland voted to stay in the UK so they could be in the EU, then England and Wales voted to leave the EU, the logical solution should be to have England and Wales leave the UK :p\u003c/p\u003e\n",
@@ -453,8 +504,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhgvqikhg3j/",
-            "url": "https://roytang.net/2016/06/bhgvqikhg3j/",
+            "id": "https://mirror.roytang.net/2016/06/bhgvqikhg3j/",
+            "url": "https://mirror.roytang.net/2016/06/bhgvqikhg3j/",
             "path": "/2016/06/bhgvqikhg3j/",
             "title": "",
             "content_html": "\u003cp\u003eFarmer\u0026rsquo;s market #sketchdaily\u003c/p\u003e\n",
@@ -470,8 +521,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746711038456799236/",
-            "url": "https://roytang.net/2016/06/746711038456799236/",
+            "id": "https://mirror.roytang.net/2016/06/746711038456799236/",
+            "url": "https://mirror.roytang.net/2016/06/746711038456799236/",
             "path": "/2016/06/746711038456799236/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e \u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e some dragonwar thing\u003c/p\u003e\n",
@@ -487,8 +538,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746698048269520896/",
-            "url": "https://roytang.net/2016/06/746698048269520896/",
+            "id": "https://mirror.roytang.net/2016/06/746698048269520896/",
+            "url": "https://mirror.roytang.net/2016/06/746698048269520896/",
             "path": "/2016/06/746698048269520896/",
             "title": "",
             "content_html": "\u003cp\u003e\u0026ldquo;The best argument against Democracy is a five-minute conversation with the average voter.\u0026rdquo; - often attributed to W.Churchill\u003c/p\u003e\n",
@@ -504,8 +555,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746691290545283074/",
-            "url": "https://roytang.net/2016/06/746691290545283074/",
+            "id": "https://mirror.roytang.net/2016/06/746691290545283074/",
+            "url": "https://mirror.roytang.net/2016/06/746691290545283074/",
             "path": "/2016/06/746691290545283074/",
             "title": "",
             "content_html": "\u003cp\u003eIf Scotland voted to stay in UK to be in EU, and England/Wales voted to leave EU, the logical solution should be England/Wales leave UK\u003c/p\u003e\n",
@@ -521,8 +572,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746690727887810560/",
-            "url": "https://roytang.net/2016/06/746690727887810560/",
+            "id": "https://mirror.roytang.net/2016/06/746690727887810560/",
+            "url": "https://mirror.roytang.net/2016/06/746690727887810560/",
             "path": "/2016/06/746690727887810560/",
             "title": "",
             "content_html": "\u003cp\u003ePrize pack rares from 4-1 a modern GPT today \u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e \u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e\u003c/p\u003e\n",
@@ -538,8 +589,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746475214628806656/",
-            "url": "https://roytang.net/2016/06/746475214628806656/",
+            "id": "https://mirror.roytang.net/2016/06/746475214628806656/",
+            "url": "https://mirror.roytang.net/2016/06/746475214628806656/",
             "path": "/2016/06/746475214628806656/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e lol what are you planning to import from the UK?\u003c/p\u003e\n",
@@ -555,8 +606,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4mv9pz/",
-            "url": "https://roytang.net/2016/06/d4mv9pz/",
+            "id": "https://mirror.roytang.net/2016/06/d4mv9pz/",
+            "url": "https://mirror.roytang.net/2016/06/d4mv9pz/",
             "path": "/2016/06/d4mv9pz/",
             "title": "",
             "content_html": "\u003cp\u003eWhy does the rule change happen during Eldritch Moon on paper, but during Aether Revolt on MTGO?\u003c/p\u003e\n",
@@ -572,8 +623,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746473598987046912/",
-            "url": "https://roytang.net/2016/06/746473598987046912/",
+            "id": "https://mirror.roytang.net/2016/06/746473598987046912/",
+            "url": "https://mirror.roytang.net/2016/06/746473598987046912/",
             "path": "/2016/06/746473598987046912/",
             "title": "",
             "content_html": "\u003cp\u003eOmg!!\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve been cursing wrong my entire life!!! 📝\u003c/p\u003e\n",
@@ -589,8 +640,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4mgzhp/",
-            "url": "https://roytang.net/2016/06/d4mgzhp/",
+            "id": "https://mirror.roytang.net/2016/06/d4mgzhp/",
+            "url": "https://mirror.roytang.net/2016/06/d4mgzhp/",
             "path": "/2016/06/d4mgzhp/",
             "title": "",
             "content_html": "\u003cp\u003eThank you for the kind words!\u003c/p\u003e\n\u003cp\u003eThere are still places in the world even today where villagers bringing vegetables to market happens on a regular basis, mostly in rural areas in less developed countries. I do however agree that I might have chosen some other activity to better represent the period :)\u003c/p\u003e\n",
@@ -606,8 +657,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746377724734803973/",
-            "url": "https://roytang.net/2016/06/746377724734803973/",
+            "id": "https://mirror.roytang.net/2016/06/746377724734803973/",
+            "url": "https://mirror.roytang.net/2016/06/746377724734803973/",
             "path": "/2016/06/746377724734803973/",
             "title": "",
             "content_html": "\u003cp\u003eBrexit just took us one step away from the United Federation Of Planets\u003c/p\u003e\n",
@@ -623,8 +674,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746364597083344896/",
-            "url": "https://roytang.net/2016/06/746364597083344896/",
+            "id": "https://mirror.roytang.net/2016/06/746364597083344896/",
+            "url": "https://mirror.roytang.net/2016/06/746364597083344896/",
             "path": "/2016/06/746364597083344896/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/ohhhace/\"\u003e@ohhhace\u003c/a\u003e di man lang pang cable!\u003c/p\u003e\n",
@@ -640,8 +691,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746352714435616769/",
-            "url": "https://roytang.net/2016/06/746352714435616769/",
+            "id": "https://mirror.roytang.net/2016/06/746352714435616769/",
+            "url": "https://mirror.roytang.net/2016/06/746352714435616769/",
             "path": "/2016/06/746352714435616769/",
             "title": "",
             "content_html": "\u003cp\u003eSince they obviously don\u0026rsquo;t want to be in Europe, we should just invite UK to join ASEAN. We already know they\u0026rsquo;ll side with us against China\u003c/p\u003e\n",
@@ -657,8 +708,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/746227823392657408/",
-            "url": "https://roytang.net/2016/06/746227823392657408/",
+            "id": "https://mirror.roytang.net/2016/06/746227823392657408/",
+            "url": "https://mirror.roytang.net/2016/06/746227823392657408/",
             "path": "/2016/06/746227823392657408/",
             "title": "",
             "content_html": "\u003cp\u003eWhat will I do with my life now that Britain is leaving the EU?\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://twitter.com/roytang/\"\u003e@roytang\u003c/a\u003e Take advantage of the all-time low value of the currency and import cool stuff.\u003c/p\u003e\n",
@@ -674,8 +725,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhb5vpdhrfc/",
-            "url": "https://roytang.net/2016/06/bhb5vpdhrfc/",
+            "id": "https://mirror.roytang.net/2016/06/bhb5vpdhrfc/",
+            "url": "https://mirror.roytang.net/2016/06/bhb5vpdhrfc/",
             "path": "/2016/06/bhb5vpdhrfc/",
             "title": "",
             "content_html": "\u003cp\u003eEmperor Thaurissan #sketchdaily #hearthstone\u003c/p\u003e\n",
@@ -691,8 +742,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4l27mh/",
-            "url": "https://roytang.net/2016/06/d4l27mh/",
+            "id": "https://mirror.roytang.net/2016/06/d4l27mh/",
+            "url": "https://mirror.roytang.net/2016/06/d4l27mh/",
             "path": "/2016/06/d4l27mh/",
             "title": "",
             "content_html": "\u003cp\u003eThank you!\u003c/p\u003e\n",
@@ -708,8 +759,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/4peydm/",
-            "url": "https://roytang.net/2016/06/4peydm/",
+            "id": "https://mirror.roytang.net/2016/06/4peydm/",
+            "url": "https://mirror.roytang.net/2016/06/4peydm/",
             "path": "/2016/06/4peydm/",
             "title": "",
             "content_html": "\u003ch4 id=\"posted-on-rtalesof-tales-of-hearts-r-can-anyone-tell-me-whats-in-that-box-over-there-and-maybe-how-to-get-to-it-sorc-ring-cant-hit-the-crystal-from-herehttpsredditcomrtalesofcomments4peydmtales_of_hearts_r_can_anyone_tell_me_whats_in\"\u003ePosted on r/Talesof: \u003ca href=\"https://reddit.com/r/Talesof/comments/4peydm/tales_of_hearts_r_can_anyone_tell_me_whats_in/\"\u003e[Tales of Hearts R] Can anyone tell me what\u0026rsquo;s in that box over there? And maybe how to get to it? Sorc ring can\u0026rsquo;t hit the crystal from here\u003c/a\u003e\u003c/h4\u003e\n",
@@ -725,8 +776,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/bhaxwljsodd/",
-            "url": "https://roytang.net/2016/06/bhaxwljsodd/",
+            "id": "https://mirror.roytang.net/2016/06/bhaxwljsodd/",
+            "url": "https://mirror.roytang.net/2016/06/bhaxwljsodd/",
             "path": "/2016/06/bhaxwljsodd/",
             "title": "",
             "content_html": "\u003cp\u003ePomegranate #sketchdaily doesnt look like something I\u0026rsquo;d want to eat\u003c/p\u003e\n",
@@ -742,8 +793,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/d4kes55/",
-            "url": "https://roytang.net/2016/06/d4kes55/",
+            "id": "https://mirror.roytang.net/2016/06/d4kes55/",
+            "url": "https://mirror.roytang.net/2016/06/d4kes55/",
             "path": "/2016/06/d4kes55/",
             "title": "",
             "content_html": "\u003cp\u003eThis is already on the second visit to Lignatore. I had already defeated the boss and there was the cutscene and everything, then I realized I didn\u0026rsquo;t get this box and I probably won\u0026rsquo;t be able to get it. I still have this save game that\u0026rsquo;s right before the boss before I go to Mysticete, wondering if whatever is in there is worth re-loading to try to get it :p\u003c/p\u003e\n",
@@ -759,8 +810,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/working-with-testers/",
-            "url": "https://roytang.net/2016/06/working-with-testers/",
+            "id": "https://mirror.roytang.net/2016/06/working-with-testers/",
+            "url": "https://mirror.roytang.net/2016/06/working-with-testers/",
             "path": "/2016/06/working-with-testers/",
             "title": "Working with Testers",
             "content_html": "\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI had my first taste with working with software testers during my first project where I was involved with porting an old system to a new version of the software. My first task involved porting reports which were to be generated by the users then printed out. The task wasn’t too difficult: basically you took the source code of the report (it was some weird binary format recognized only by the particular reporting tool \u0026ndash; that was how it was done back in the day) and open it using the newer version of the tool, and the tool did some sort of migration magic to adapt it to the new format, then you just save it back again. You compile and run the report using the new format and verify that it’s getting the correct output (needs to be the same output as the old format), and that should be it. Most of the time, at least. Sometimes there were some things that the new format couldn’t handle, or maybe there were some minor compile errors after migration, but such problems were easily fixed, so it was pretty straightforward\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eOr so I thought. All the reports I was porting were being tested by one of my team members, who was also a newbie like me. Coincidentally, both of the testers I had on the project were also ECE graduates same as me; I was the unusual one who took the developer role. They had their own training focused on tester concepts, so initially I had no idea what to expect. When you’re fresh out of school you don’t have any idea yet how much iteration and rework goes into software development, so there’s this attitude of, \u0026ldquo;Hey it’s working. Looks good!\u0026rdquo; without being too thorough\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI soon found out that the testers were trained to be very thorough, so I would get a bunch of bug reports. One of my testers would print out the reports, both the new format and the old format, and hold both reports up against the light, overlaid on each other. And they had to match, pixel-perfect! If the new report generated in a slightly different manner, that was a bug! (Of course, this made no sense to me, since logically the users wouldn’t care or notice if some column in the report was 1 pixel over to the right compared to the old format, but those were the instructions so whatever). And then they would use like really long nonsense strings in the data, and in some cases it would make the text wrapping in the report work differently, so I had to fix those too. Then one of the testers would print out reports with a lot of data, generating like 30 to 40 pages or more (we wasted a lot of paper in those days), and the pagination had to match exactly between the old format and the new format. And if it didn’t, I had to spend some time poring over the printout to find the exact point at which the pagination changed and what caused it. Eventually I learned a set of tricks and knew what to look out for when porting the reports\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eWhen you’re starting out as a software developer and you’re first introduced to the idea of QA or software testers, there’s a slight tendency to be offended or defensive about bug reports and to be a bit annoyed at the testers. After all, these are people whose job is specifically to find your errors! It’s a problem especially if you have a sense of pride about your work, but once you let go of that pride and recognize that you are not your code, you get to realize that you and the testers are working as a team. The testers are the shield that make sure that stupid stuff you missed or overlooked doesn’t get sent to the users. It’s like how in a buddy cop movie you need to have a partner to watch your back or to cover the other exit so that the bad guy doesn’t get away\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAfter working with the same testers for some time you get used to their individual quirks and figure out which bugs they are more likely to find, so you start focusing on those areas more. You also learn some tricks to sometimes troll around with them especially when you get annoyed with too many bug reports\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eOne of my favorite things early on in the same project was when I would send one of programs over for testing. In addition to the reports, often we would also be doing forms running using the same tool. In those days, we didn’t yet have Hudson or Maven or Ant any sort of automated build system. We would commit our source to version control and generate the binary file manually and copy the binary file over into a shared network drive. And there was no versioning on the network drive, just one folder where all the binaries were. Then we can tell the tester, hey you can test so-and-so program now\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe tester would copy the binaries from the network drive to their own machines for testing, and after a while he would come back with some bug reports. The bug reports would be logged in an Excel file (we didn’t have any bug tracking software then either), and I would do a quick skim, and if the changes were easy enough (minor UI stuff), I’d do some quick edits, rebuild the binary, and copy it to the network drive. Then I would message the tester, pretending I’d just seen the bug reports, \u0026ldquo;Hey, these bug reports don’t seem right. I think you forgot to get the latest files from the drive.\u0026rdquo; And sure enough, they get the latest files and check again and the bugs would already be fixed. I managed to do this a couple of times before my tester caught on\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003eWith the advent of dedicated test servers and modern build scripts, of course this was something I couldn\u0026rsquo;t regularly do anymore \u0026ndash; although once or twice I did have the opportunity to do a live edit on a test server (to verify my fix works) and troll the tester a bit by telling her it worked fine!\u003c/p\u003e\n\u003cp\u003eAfter a few months of working with testers, you quickly get used to working with them and get into a good rhythm. You\u0026rsquo;re kind of partners in crime, except instead of crime it\u0026rsquo;s quality in software programs. Even with modern developer unit-testing and automated testing practices, having a second set of eyes looking at your program and attacking it from different angles helps improve the quality of the system. A good tester is the shield to the developer\u0026rsquo;s sword, they make sure the developer keeps his guard up and doesn\u0026rsquo;t lose to his own mistakes\u003c/p\u003e\n",
@@ -776,8 +827,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/have-you-ever-made-something-t/",
-            "url": "https://roytang.net/2016/06/have-you-ever-made-something-t/",
+            "id": "https://mirror.roytang.net/2016/06/have-you-ever-made-something-t/",
+            "url": "https://mirror.roytang.net/2016/06/have-you-ever-made-something-t/",
             "path": "/2016/06/have-you-ever-made-something-t/",
             "title": "",
             "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Have-you-ever-made-something-that-you-ultimately-regret-making-Why/answer/Roy-Tang\"\u003eHave you ever made something that you ultimately regret making? Why?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eI thought about answering this with some of the products I helped develop in the past, but as I was writing it I realized that “regret” was the wrong word to choose. There were a lot of mistakes made during design and implementation that ultimately led to the failure of those products, and I suppose the company might regret spending time and effort and money on those products, but for me personally I learned a lot from them, especially on what kind of mistakes to avoid in the future\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eI think the only way I could say I regret making a product would be if it were something that ultimately turned out to be harmful to other people, i.e. something that might have caused injury or harm\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
@@ -793,8 +844,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2016/06/i-can-t-seem-to-focus-and-rema/",
-            "url": "https://roytang.net/2016/06/i-can-t-seem-to-focus-and-rema/",
+            "id": "https://mirror.roytang.net/2016/06/i-can-t-seem-to-focus-and-rema/",
+            "url": "https://mirror.roytang.net/2016/06/i-can-t-seem-to-focus-and-rema/",
             "path": "/2016/06/i-can-t-seem-to-focus-and-rema/",
             "title": "",
             "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/I-cant-seem-to-focus-and-remain-passionate-and-stick-to-a-single-career-or-field-How-do-I-find-my-passion-in-terms-of-work-and-live-a-happy-life/answer/Roy-Tang\"\u003eI can\u0026rsquo;t seem to focus and remain passionate and stick to a single career or field.How do I find my passion in terms of work and live a happy life?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eDespite what many might say, people can change. That is, people’s interests and passions can change. It’s not right or wrong, it’s just being human. The key is to keep living your life proactively. If you feel like the passion in your work is waning, think of what used to excite you about it and see if you can recapture that excitement. Or try to identify whether the problem is with the work you’re doing or the company you’re working for. Perhaps working for a different company or in a different environment might reingite the spark. Explore your options.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eAt the same time, explore your options in other areas as well. It’s good that you tried taking courses about something, but if you find it doesn’t hold your interest very well, don’t be afraid to try other things. Be open to new opportunities or new areas to expand your character or your interests.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eLiving life is pretty much a game of exploration. You try things out and see if they make you happy, then you keep doing those that make you happy until they don’t. Then either you try to make it better or you search for other things to make you happy.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eGood luck!\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
@@ -805,57 +856,6 @@
             "source_path": "notes/2016/06/i-can-t-seem-to-focus-and-rema.md"
             , "tags": ["answers"]
             , "syndicated": [{"type":"quora","url":"https://www.quora.com/I-cant-seem-to-focus-and-remain-passionate-and-stick-to-a-single-career-or-field-How-do-I-find-my-passion-in-terms-of-work-and-live-a-happy-life/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2016/06/why-don-t-computer-programs-de/",
-            "url": "https://roytang.net/2016/06/why-don-t-computer-programs-de/",
-            "path": "/2016/06/why-don-t-computer-programs-de/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Why-dont-computer-programs-determine-whether-a-potential-criminal-is-guilty-or-not/answer/Roy-Tang\"\u003eWhy don\u0026rsquo;t computer programs determine whether a potential criminal is guilty or not?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eSeriously? Determination of guilt or innocence isn’t a purely computational matter. There are no algorithms that can compute guilt. Adding to the complication are varying intricacies of law in different jurisdictions. If humans don’t know how to get it right, then we can’t program computers to do so either.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eArguably, we could build programs that learn to make such judgments, but in order for such programs to work we would need more data to train them. A lot of data, given the impossibly large number of possible ways that a crime can be committed. Way, way more data than we have criminal cases worldwide. We are probably two or three generations away from such a thing being even conceivably possible.\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n Why don\u0026rsquo;t computer programs determine whether a potential criminal is guilty or not?\n Seriously? Determination of guilt or innocence isn’t a purely computational matter. There are no algorithms that can compute guilt. Adding to the complication are varying intricacies of law in different jurisdictions. If humans don’t know how to get it right, then we can’t program computers to do so either.\nArguably, we could build programs that learn to make such judgments, but in order for such programs to work we would need more data to train them.",
-            "date_published": "2016-06-23T00:00:00+00:00",
-            "date_modified": "2020-03-26T15:19:51+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/why-don-t-computer-programs-de.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Why-dont-computer-programs-determine-whether-a-potential-criminal-is-guilty-or-not/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2016/06/d4jlg94/",
-            "url": "https://roytang.net/2016/06/d4jlg94/",
-            "path": "/2016/06/d4jlg94/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;What? Where?\u0026rdquo; Steve muttered over the cackle of his walkie-talkie. He dropped his fork on the plateful of bacon and started packing up. \u0026ldquo;I’m nearest, I’ll be there ASAP. Have Glen and Lynn follow me as soon as possible.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHis companion was looking at him quizzically from across the table. \u0026ldquo;Relax, John. You didn’t screw up this time. In fact, I guess it’s time for your trial by fire.\u0026rdquo; He got up and tossed him the keys. \u0026ldquo;Come on, you’re driving.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eJohn just nodded and followed as Steve got up and stepped out of the supply depot. John had been on this internship for three days now and he still had that feeling of awe and majesty whenever he gazed upon the vast expanse. The green grassy fields were bounded to the north by a heavily wooded area and to the southwest by a small mountain range. The sun was on the way down by the mountains; it would be dark soon.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Where we going?\u0026rdquo; John asked as he stepped into the driver’s seat of the open-air off-road jeep they had been using for patrols.\u003c/p\u003e\n\u003cp\u003eSteve jumped into the passenger seat and gestured. \u0026ldquo;North by northeast. Floor it, we need to be there fast.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eJohn nodded and soon they were speeding down the grassy plains.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Are we headed into the forest?\u0026rdquo; John asked.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Yup,\u0026rdquo; Steve was rummaging around in the supplies in the back of the jeep. To John’s surprise, Steve pulled out a scoped hunting rifle.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;What’s going on? There’s going to be trouble?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;I hope not,\u0026rdquo; Steve said, loading and readying the rifle. \u0026ldquo;But best be ready.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eBefore John could ask any more questions, they both heard a loud thunderous roar ring through the air.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Is that\u0026ndash;?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Yup,\u0026rdquo; Steve nodded. \u0026ldquo;It’s Amethyst.\u0026rdquo; Steve pointed to the edge of the forest. \u0026ldquo;There! Look!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eThey were still some distance away, but the dragon was large enough for John to see. Amethyst was on the ground, her amber-yellow scales glistening in the receding sunlight. Her large wings were pinned to the ground somehow and she seemed to be struggling with some sort of ropes. It was starting to get dark, but John could still see a number of small figures milling around the dragon. \u0026ldquo;What are they doing\u0026ndash;?\u0026rdquo; John wondered aloud as they got closer.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Poachers.\u0026rdquo; A grim look took over Steve’s face as he aimed the rifle and took a shot. It was a warning shot, there was no way he would hit anything at this distance. \u0026ldquo;Hang on Amy!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eThe poachers turned at the sound of the warning shot. John saw that there were six of them in all, and they had a large truck nearby, barely large enough to carry a small dragon. Two had trapped Amy in a net of ropes weighted down by what looked like metal drums. One of them, a stocky man with a dark tan and wearing army fatigues was shouting instructions to the others. Three were holding rifles.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Shit, \u0026quot; John said, recognizing the threat. He quickly braked and turned, sending the jeep into a spinning drift. \u0026ldquo;Get down Steve!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eThe two of them ducked as shots rang overhead. The jeep skidded to a stop and John and Steve quickly spilled out the passenger side and crouched down, using the vehicle as a cover.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Great instincts kid! Here!\u0026rdquo; Steve tossed the rifle to John as he pulled out the walkie-talkie from his belt. \u0026ldquo;Keep ‘em busy!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eNodding, John picked up the rifle. Now he understood why weapons training had been a requirement for this internship. He took a peek over the jeep’s side. The poachers were still firing, but keeping their distance. Amethyst struggled uselessly against the weighted ropes and her roars kept echoing. John fired a shot, then sat back to reload. \u0026ldquo;I think the dragon’s wounded Steve! Her left wing looked like it was bleeding!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eSteve nodded. \u0026ldquo;Bastards! They probably clipped her wings to force her to land.\u0026rdquo; He spoke into the walkie-talkie again. \u0026ldquo;Glen, Lynn, where are you? These guys are heavily-armed!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Ten minutes out!\u0026rdquo; a voice cackled back.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Not nearly quick enough,\u0026rdquo; Steve grunted as more shots rang overhead and John managed to fire back a few times. \u0026ldquo;You got any of them yet kid?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;They’re too far, I can’t get a good shot,\u0026rdquo; John shook his head, \u0026ldquo;I don’t understand, why doesn’t the dragon breathe on them?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Amy’s too young kid, just like you,\u0026rdquo; Steve replied, \u0026ldquo;You saw her snort out a couple of small fireballs outta her nostrils the other day right? That’s all she can do without getting exhausted.\u0026rdquo; A few more shots rang over their heads. \u0026ldquo;Well, we only got one shot now. Cover me.\u0026rdquo; He reached over back into the jeep again, being careful not to expose his head.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;I don’t suppose you have a rocket launcher in there,\u0026rdquo; John said as he fired off a couple more shots.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Better,\u0026rdquo; Steve said, finally pulling out a weapon only slightly larger than a pistol.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;A flare gun? How is that going to help?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;It doesn’t fire flares kid,\u0026rdquo; Steve aimed the gun upwards. \u0026ldquo;Watch and learn.\u0026rdquo; He pulled the trigger. What shot out certainly looked like a flare to John, as it slowly arced upwards into the sky. At the peak of the shot, where a flare would have exploded into bright light, instead a loud roar pierced the heavens. \u0026ldquo;Gotta hope she’s nearby…\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eJohn saw the poachers look up at the sound in alarm. \u0026ldquo;What the heck was that?\u0026rdquo; John asked, \u0026ldquo;Who is nearby…?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHe was cut off by another roar, seemingly a short distance away, from beyond the woods. He looked to the sky.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;There we go,\u0026rdquo; Steve grinned. \u0026ldquo;You’re in for a treat kid.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eA large winged figure was descending towards them quickly. \u0026ldquo;Another dragon!\u0026rdquo; John exclaimed, \u0026ldquo;And she’s a lot bigger too!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Not just any dragon, kid,\u0026rdquo; Steve said, \u0026ldquo;That’s Amy’s mom!\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHer shadow was almost fifty-feet long as she flew over the two of them and circled back towards the poachers. She flew so close to the ground that her scales glistened with the reflections of the fading sunlight, and every flap of her enormous wings sent a strong gust towards John and Steve. John was pretty sure his mouth was agape.\u003c/p\u003e\n\u003cp\u003eThe larger dragon roared again in fury. John looked behind the jeep just in time to see the poachers in a panic, dropping their ropes and guns and making a mad dash for their truck. He looked up and saw the larger dragon take a deep breath and then what seemed like pure hot boiling rage burst forward from her open jaws. The grass seemingly parted way to burnt leaves as the fiery breath scorched the ground, heading straight for the poachers.\u003c/p\u003e\n\u003cp\u003eThe leader of the poachers was already in the truck’s driver seat, willing the engine to start. The others were scrambling into the back of the truck. But it was too late for them. The dragon caught up with them and in a matter of seconds the truck was completely wrapped in flames. With another roar, she swooped back upwards and around for another go, but it wasn’t necessary. As she turned away from the truck, it exploded into a violent ball of fire.\u003c/p\u003e\n\u003cp\u003eAmy cried out to the skies as her mother circled around and finally landed next to her. The mother’s majestic wings spread out as she landed and she let out another roar.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Come on kid,\u0026rdquo; Steve said, finally getting up, \u0026ldquo;Just stick close to me, they know who I am.\u0026rdquo; He started jogging towards the dragons. John shook himself out of his stupor and followed.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;We’re gonna need the water choppers over here,\u0026rdquo; Steve was talking into the walkie-talkie again as they jogged past the burnt grass.\u003c/p\u003e\n\u003cp\u003eAmy and her mother let out quiet wails as they approached. Not quite roars, but more like cries of… recognition? That’s what it seemed like to John.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Easy there, girls,\u0026rdquo; Steve said in a soothing voice as he slowed down and walked towards the ropes holding Amy to the ground. He kicked one of the barrels the ropes was tied. \u0026ldquo;Must be fifty pounds of rocks in there,\u0026rdquo; he muttered as he pulled out a knife and started cutting off the ropes as the two dragons quietly looked on.\u003c/p\u003e\n\u003cp\u003eFinally, Amy had been cut loose. She loosed another cry again, perhaps in gratitude. \u0026ldquo;She looks tiny in the shadow of her mother,\u0026rdquo; was all John could say as Amy tried flapping her wings. The left wing was useless, she wouldn’t be able to fly.\u003c/p\u003e\n\u003cp\u003eThe mother let out a subtle roar, and started flapping her wings. Steve held on to his hat as the gusts blew over them. She hovered over the two of them and Amy for a bit, before she finally grabbed the smaller dragon with her hind claws and lifted her up. The two of them took altitude and flew off towards the mountains, into the sunset.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Wow.\u0026rdquo; John said. Then after a while he said it again. \u0026ldquo;Wow. That was… intense. What happens now?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eSteve nodded towards the mountains. \u0026ldquo;She has a nest there somewhere. She’ll nurse Amy for a few weeks until the wing heals. Dragons have naturally good healing, so she’ll probably make a full recovery.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eJohn looked back at the charred remains of the poachers’ truck. \u0026ldquo;Does this happen a lot?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Not really,\u0026rdquo; Steve shook his head. \u0026ldquo;They don’t often go for the dragons themselves. Couple of times a year, they’ll try raiding the nests for eggs or scales or leavings, that kind of thing. You’ll be surprised what they can get on the black market.\u0026rdquo; He mused. \u0026ldquo;The last time they got a live one must’ve been something like seven or eight years ago. It’s why we only have eight dragons here in the preserve. Used to be nine.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;No new ones have been born since then?\u0026rdquo; John said.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Nope. Dragon births have been getting rarer and rarer. Not enough males. We haven’t seen our male in a few months,\u0026rdquo; Steve nodded towards the mountains again. \u0026ldquo;Amy’s the most recent birth we know of. No one knows if there’re any in the wild. The older ones are starting to die off too, so there’s a good chance the eight we got might be the last ones ever.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eJohn shook his head. \u0026ldquo;It’s sad isn’t it, in a few generations, kids might think they’re fairy tales.\u0026rdquo; Steve had no response, so they stood there in silence staring at the charred grass until the sounds of a helicopter started coming in from the east.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Well, took ‘em long enough,\u0026rdquo; Steve muttered before gesturing John back to the jeep. \u0026ldquo;Cheer up kid, you did good today. Who knows, maybe we make a difference. Maybe soon, dragons will be all over the world again.\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;What? Where?\u0026rdquo; Steve muttered over the cackle of his walkie-talkie. He dropped his fork on the plateful of bacon and started packing up. \u0026ldquo;I’m nearest, I’ll be there ASAP. Have Glen and Lynn follow me as soon as possible.\u0026rdquo;\nHis companion was looking at him quizzically from across the table. \u0026ldquo;Relax, John. You didn’t screw up this time. In fact, I guess it’s time for your trial by fire.\u0026rdquo; He got up and tossed him the keys.",
-            "date_published": "2016-06-22T17:06:31+00:00",
-            "date_modified": "2020-06-22T00:33:20+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4jlg94/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4p9rzg/wp_dragons_exist_on_earth_but_humans_are_still/d4jlg94/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2016/06/d4jgzs6/",
-            "url": "https://roytang.net/2016/06/d4jgzs6/",
-            "path": "/2016/06/d4jgzs6/",
-            "title": "",
-            "content_html": "\u003cp\u003eThank you! Happy you enjoyed the story :D\u003c/p\u003e\n",
-            "summary": "Thank you! Happy you enjoyed the story :D",
-            "date_published": "2016-06-22T15:32:30+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4jgzs6/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4opxyf/modpost_6_million_flashback_contest_round_1_voting/d4jgzs6/"}]
             
             
             }

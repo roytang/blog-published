@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>python on Roy Tang</title>
-      <link>https://roytang.net/tags/python/</link>
+      <link>https://mirror.roytang.net/tags/python/</link>
       <description>Recent content in python on Roy Tang</description>
       <generator>Hugo -- gohugo.io</generator>
       <language>en-us</language>
@@ -9,17 +9,17 @@
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
       <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
       
-          <atom:link href="https://roytang.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+          <atom:link href="https://mirror.roytang.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
       
           
       
         <item>
             <title>Flask vs Django
 </title>
-            <link>https://roytang.net/2020/01/flask-vs-django/</link>
+            <link>https://mirror.roytang.net/2020/01/flask-vs-django/</link>
             <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/01/flask-vs-django/</guid>
+            <guid>https://mirror.roytang.net/2020/01/flask-vs-django/</guid>
             <description>
             
             &lt;p&gt;In a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.&lt;/p&gt;
@@ -34,7 +34,7 @@
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/01/flask-vs-django/code_hu9effae59deb16cf77937c315ce614999_79312_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/01/flask-vs-django/code_hu9effae59deb16cf77937c315ce614999_79312_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -44,15 +44,15 @@
         <item>
             <title>Python: Markov Chains
 </title>
-            <link>https://roytang.net/2019/08/python-markov-chains/</link>
+            <link>https://mirror.roytang.net/2019/08/python-markov-chains/</link>
             <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/python-markov-chains/</guid>
+            <guid>https://mirror.roytang.net/2019/08/python-markov-chains/</guid>
             <description>
             
             &lt;p&gt;Back when I was still learning Python in 2008, one of the first &amp;ldquo;fun&amp;rdquo; scripts I wrote was a text generator using &lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_chain&#34;&gt;Markov chains&lt;/a&gt;. I&amp;rsquo;d run it against all the chat logs I had with people at work and serve the results from a webserver on my computer. THe results were often amusing and sometimes hilarious.&lt;/p&gt;
-&lt;p&gt;Since I&amp;rsquo;ve been going through my old scripts lately, I thought I&amp;rsquo;d update that script to Python 3 (read: add parentheses around print params and use &lt;a href=&#34;https://roytang.net/2019/08/devnotes-python-pathlib/&#34;&gt;pathlib&lt;/a&gt;) and run it against all the posts on this here site. I added the script to my deploy script for this site (thus further worsening my build times), so it should generate a new page every hour or so. I also added the generated markdown file to gitignore so it never gets saved to the repo. Every output of this script will be fleeting and ephemeral!&lt;/p&gt;
-&lt;p&gt;You can view the output &lt;a href=&#34;https://roytang.net/demos/markov&#34;&gt;here&lt;/a&gt;. You can view the script source &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/markov.py&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;ve been going through my old scripts lately, I thought I&amp;rsquo;d update that script to Python 3 (read: add parentheses around print params and use &lt;a href=&#34;https://mirror.roytang.net/2019/08/devnotes-python-pathlib/&#34;&gt;pathlib&lt;/a&gt;) and run it against all the posts on this here site. I added the script to my deploy script for this site (thus further worsening my build times), so it should generate a new page every hour or so. I also added the generated markdown file to gitignore so it never gets saved to the repo. Every output of this script will be fleeting and ephemeral!&lt;/p&gt;
+&lt;p&gt;You can view the output &lt;a href=&#34;https://mirror.roytang.net/demos/markov&#34;&gt;here&lt;/a&gt;. You can view the script source &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/markov.py&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -62,10 +62,10 @@
         <item>
             <title>Devnotes: Python Pathlib
 </title>
-            <link>https://roytang.net/2019/08/devnotes-python-pathlib/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</link>
             <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-python-pathlib/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</guid>
             <description>
             
             &lt;p&gt;Ever since I started learning Python back in 2008ish, I&amp;rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like &lt;code&gt;os&lt;/code&gt;, &lt;code&gt;shutil&lt;/code&gt; and &lt;code&gt;glob&lt;/code&gt;. It can become a bit messy with so many imports, and I often can&amp;rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let&amp;rsquo;s not kid ourselves here).&lt;/p&gt;
@@ -106,13 +106,13 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>TriviaStorm: Text and Answer parsing
 </title>
-            <link>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
+            <link>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
             <pubDate>Sun, 03 Feb 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
+            <guid>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
             <description>
             
-            &lt;p&gt;A while back I started a &lt;a href=&#34;https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
+            &lt;p&gt;A while back I started a &lt;a href=&#34;https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
 &lt;p&gt;But today, I thought I&amp;rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for &lt;a href=&#34;https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/&#34;&gt;Django&amp;rsquo;s unit testing framework&lt;/a&gt;. I&amp;rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the bot had to be able to handle a wide variety of answers&lt;/li&gt;
@@ -149,10 +149,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Django Blog Application
 </title>
-            <link>https://roytang.net/2018/10/django-blog-application/</link>
+            <link>https://mirror.roytang.net/2018/10/django-blog-application/</link>
             <pubDate>Sun, 28 Oct 2018 05:02:37 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/10/django-blog-application/</guid>
+            <guid>https://mirror.roytang.net/2018/10/django-blog-application/</guid>
             <description>
             
             &lt;p&gt;Ten years ago this month, I started studying &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; by trying to build my own blog application. I found the code lying around while I was going through some backups lately. It&amp;rsquo;s way out of date, it uses an early version of django. I thought of bringing it up to speed, but that didn&amp;rsquo;t seem practical. Instead, for archival purposes, I cleaned it up a bit and &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;uploaded the code to a github repo&lt;/a&gt;. (Helpful github immediately warned me that having a very old version of Django was a security risk lol). There&amp;rsquo;s a lot more information in the README.md of that repo. I actually used this as my main blog engine for a while before I decided the maintenance effort wasn&amp;rsquo;t worth it and switched to WordPress.&lt;/p&gt;
@@ -166,10 +166,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Running Python 2.x and 3.x on Windows
 </title>
-            <link>https://roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/</link>
+            <link>https://mirror.roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/</link>
             <pubDate>Thu, 02 Mar 2017 01:30:38 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/</guid>
+            <guid>https://mirror.roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been hesitant to try Python 3.x because it&amp;rsquo;s not backward compatible with Python 2.x which I&amp;rsquo;ve been using for scripting since forever. But recently I found out that since Python 3.3, they&amp;rsquo;ve included a launcher in the Windows version that supports having both versions installed.&lt;/p&gt;
@@ -187,13 +187,13 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
 
 &lt;a href=&#34;#245f649da64bdf242059b3bc2b8467dd-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py_hu39b80b4493d6a22d9e54b62321f525d1_13537_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py_hu39b80b4493d6a22d9e54b62321f525d1_13537_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;245f649da64bdf242059b3bc2b8467dd-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -209,7 +209,7 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
 
 
 
-&lt;img src=&#34;https://roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py_hu39b80b4493d6a22d9e54b62321f525d1_13537_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2017/03/running-python-2-x-and-3-x-on-windows/py_hu39b80b4493d6a22d9e54b62321f525d1_13537_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -219,10 +219,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Weekend Project: Twitter Trivia Bot
 </title>
-            <link>https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/</link>
+            <link>https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/</link>
             <pubDate>Thu, 23 Feb 2017 01:30:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/</guid>
+            <guid>https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/</guid>
             <description>
             
             &lt;p&gt;I had been meaning to try writing a Twitter bot for a while now. I figured a trivia bot would be pretty easy to implement, so I spent some time a couple of weekends to rig one together.&lt;/p&gt;
@@ -240,10 +240,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>The Simplest Code That Can Do The Job
 </title>
-            <link>https://roytang.net/2017/01/the-simplest-code-that-can-do-the-job/</link>
+            <link>https://mirror.roytang.net/2017/01/the-simplest-code-that-can-do-the-job/</link>
             <pubDate>Wed, 11 Jan 2017 01:30:06 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2017/01/the-simplest-code-that-can-do-the-job/</guid>
+            <guid>https://mirror.roytang.net/2017/01/the-simplest-code-that-can-do-the-job/</guid>
             <description>
             
             &lt;p&gt;So the other day I was reworking a Python script that I had been using for years on my home PC to manage and categorize some downloaded files for me. This time I wanted to add some smarter behavior to make it more able to figure out when to group files into folders without constantly needing manual intervention from me. To do this, I needed to persist some data between runs &amp;ndash; so that the script remembers how it categorized previous files and is able to group similar files together.&lt;/p&gt;
@@ -271,10 +271,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Reply to &#39;I&#39;ll be your python slave. Looking a py project to work at to become better.&#39; on /r/Python at https://reddit.com/r/Python/comments/jw5lx/ill_be_your_python_slave_looking_a_py_project_to/:
 </title>
-            <link>https://roytang.net/2011/08/c2flc8v/</link>
+            <link>https://mirror.roytang.net/2011/08/c2flc8v/</link>
             <pubDate>Sat, 27 Aug 2011 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2011/08/c2flc8v/</guid>
+            <guid>https://mirror.roytang.net/2011/08/c2flc8v/</guid>
             <description>
             Reply to &amp;#39;I&amp;#39;ll be your python slave. Looking a py project to work at to become better.&amp;#39; on /r/Python at https://reddit.com/r/Python/comments/jw5lx/ill_be_your_python_slave_looking_a_py_project_to/:
 
@@ -288,10 +288,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>New note
 </title>
-            <link>https://roytang.net/2010/10/3951840/</link>
+            <link>https://mirror.roytang.net/2010/10/3951840/</link>
             <pubDate>Sun, 17 Oct 2010 03:01:52 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/10/3951840/</guid>
+            <guid>https://mirror.roytang.net/2010/10/3951840/</guid>
             <description>
             
 
@@ -309,10 +309,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Reply to &#39;Python execution speed: laptop vs desktop&#39; on stackoverflow at https://stackoverflow.com/questions/3939912/python-execution-speed-laptop-vs-desktop:
 </title>
-            <link>https://roytang.net/2010/10/3939957/</link>
+            <link>https://mirror.roytang.net/2010/10/3939957/</link>
             <pubDate>Fri, 15 Oct 2010 06:27:52 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/10/3939957/</guid>
+            <guid>https://mirror.roytang.net/2010/10/3939957/</guid>
             <description>
             Reply to &amp;#39;Python execution speed: laptop vs desktop&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3939912/python-execution-speed-laptop-vs-desktop:
 
@@ -326,10 +326,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Ask HN: How will it impact my webapp if it is written in Python instead of PHP.
 </title>
-            <link>https://roytang.net/2010/07/ask-hn-how-will-it-impact-my-webapp-if-it-is-written-in-python-instead-of-php/</link>
+            <link>https://mirror.roytang.net/2010/07/ask-hn-how-will-it-impact-my-webapp-if-it-is-written-in-python-instead-of-php/</link>
             <pubDate>Tue, 06 Jul 2010 12:19:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/07/ask-hn-how-will-it-impact-my-webapp-if-it-is-written-in-python-instead-of-php/</guid>
+            <guid>https://mirror.roytang.net/2010/07/ask-hn-how-will-it-impact-my-webapp-if-it-is-written-in-python-instead-of-php/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://news.ycombinator.com/item?id=1490142&#34;&gt;Ask HN: How will it impact my webapp if it is written in Python instead of PHP.&lt;/a&gt;
@@ -344,10 +344,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>New note
 </title>
-            <link>https://roytang.net/2010/06/3051295/</link>
+            <link>https://mirror.roytang.net/2010/06/3051295/</link>
             <pubDate>Wed, 16 Jun 2010 07:12:12 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/06/3051295/</guid>
+            <guid>https://mirror.roytang.net/2010/06/3051295/</guid>
             <description>
             
 
@@ -363,10 +363,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Anyone care to share neat python tricks? : programming
 </title>
-            <link>https://roytang.net/2010/01/anyone-care-to-share-neat-python-tricks-programming/</link>
+            <link>https://mirror.roytang.net/2010/01/anyone-care-to-share-neat-python-tricks-programming/</link>
             <pubDate>Wed, 13 Jan 2010 00:46:28 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/01/anyone-care-to-share-neat-python-tricks-programming/</guid>
+            <guid>https://mirror.roytang.net/2010/01/anyone-care-to-share-neat-python-tricks-programming/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://www.reddit.com/r/programming/comments/akdpr/anyone_care_to_share_neat_python_tricks/&#34;&gt;Anyone care to share neat python tricks? : programming&lt;/a&gt;
@@ -380,10 +380,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Reply to &#39;ValueError in Django&#39; on stackoverflow at https://stackoverflow.com/questions/2032360/valueerror-in-django:
 </title>
-            <link>https://roytang.net/2010/01/2032378/</link>
+            <link>https://mirror.roytang.net/2010/01/2032378/</link>
             <pubDate>Sat, 09 Jan 2010 04:47:32 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2010/01/2032378/</guid>
+            <guid>https://mirror.roytang.net/2010/01/2032378/</guid>
             <description>
             Reply to &amp;#39;ValueError in Django&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2032360/valueerror-in-django:
 
@@ -404,10 +404,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Reply to &#39;How to create a .py file for Google App Engine?&#39; on stackoverflow at https://stackoverflow.com/questions/1866147/how-to-create-a-py-file-for-google-app-engine:
 </title>
-            <link>https://roytang.net/2009/12/1866186/</link>
+            <link>https://mirror.roytang.net/2009/12/1866186/</link>
             <pubDate>Tue, 08 Dec 2009 10:52:08 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/12/1866186/</guid>
+            <guid>https://mirror.roytang.net/2009/12/1866186/</guid>
             <description>
             Reply to &amp;#39;How to create a .py file for Google App Engine?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1866147/how-to-create-a-py-file-for-google-app-engine:
 
@@ -421,10 +421,10 @@ func = &amp;quot;doStuff&amp;quot;
         <item>
             <title>Reply to &#39;Is there a tuple data structure in Python&#39; on stackoverflow at https://stackoverflow.com/questions/1831218/is-there-a-tuple-data-structure-in-python:
 </title>
-            <link>https://roytang.net/2009/12/1831230/</link>
+            <link>https://mirror.roytang.net/2009/12/1831230/</link>
             <pubDate>Wed, 02 Dec 2009 07:37:51 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/12/1831230/</guid>
+            <guid>https://mirror.roytang.net/2009/12/1831230/</guid>
             <description>
             Reply to &amp;#39;Is there a tuple data structure in Python&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1831218/is-there-a-tuple-data-structure-in-python:
 
@@ -441,10 +441,10 @@ for (k, v, x) in arr:
         <item>
             <title>Andy McKay&#39;s blog
 </title>
-            <link>https://roytang.net/2009/09/andy-mckay-s-blog/</link>
+            <link>https://mirror.roytang.net/2009/09/andy-mckay-s-blog/</link>
             <pubDate>Sun, 06 Sep 2009 04:53:07 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/09/andy-mckay-s-blog/</guid>
+            <guid>https://mirror.roytang.net/2009/09/andy-mckay-s-blog/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://www.agmweb.ca/blog/andy/2222/&#34;&gt;Andy McKay&amp;#39;s blog&lt;/a&gt;
@@ -458,10 +458,10 @@ for (k, v, x) in arr:
         <item>
             <title>Django snippets: Facebook shell
 </title>
-            <link>https://roytang.net/2009/09/django-snippets-facebook-shell/</link>
+            <link>https://mirror.roytang.net/2009/09/django-snippets-facebook-shell/</link>
             <pubDate>Sun, 06 Sep 2009 04:52:51 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/09/django-snippets-facebook-shell/</guid>
+            <guid>https://mirror.roytang.net/2009/09/django-snippets-facebook-shell/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://www.djangosnippets.org/snippets/1716/&#34;&gt;Django snippets: Facebook shell&lt;/a&gt;
@@ -475,10 +475,10 @@ for (k, v, x) in arr:
         <item>
             <title>Getting Started - wxPyWiki
 </title>
-            <link>https://roytang.net/2009/04/getting-started-wxpywiki/</link>
+            <link>https://mirror.roytang.net/2009/04/getting-started-wxpywiki/</link>
             <pubDate>Mon, 13 Apr 2009 15:04:33 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/04/getting-started-wxpywiki/</guid>
+            <guid>https://mirror.roytang.net/2009/04/getting-started-wxpywiki/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://wiki.wxpython.org/Getting%20Started&#34;&gt;Getting Started - wxPyWiki&lt;/a&gt;
@@ -492,10 +492,10 @@ for (k, v, x) in arr:
         <item>
             <title>Stylesheet Switcher using Django
 </title>
-            <link>https://roytang.net/2009/02/stylesheet-switcher-using-django/</link>
+            <link>https://mirror.roytang.net/2009/02/stylesheet-switcher-using-django/</link>
             <pubDate>Sat, 14 Feb 2009 14:17:32 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/02/stylesheet-switcher-using-django/</guid>
+            <guid>https://mirror.roytang.net/2009/02/stylesheet-switcher-using-django/</guid>
             <description>
             
             &lt;p&gt;You may have noticed the new color scheme and new &amp;ldquo;Theme Switcher&amp;rdquo; widget in the sidebar. I had done some CSS work during the past month in the office and it made me want to tweak the stylesheets on this site a bit. I figured I might as well make it easy to switch stylesheets, so I wrote a small Theme Switcher django app. (Well, it&amp;rsquo;s more of a stylesheet switcher I guess)&lt;/p&gt;
@@ -563,10 +563,10 @@ for (k, v, x) in arr:
         <item>
             <title>Using Django Pingback
 </title>
-            <link>https://roytang.net/2009/01/using-django-pingback/</link>
+            <link>https://mirror.roytang.net/2009/01/using-django-pingback/</link>
             <pubDate>Sun, 04 Jan 2009 07:22:20 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2009/01/using-django-pingback/</guid>
+            <guid>https://mirror.roytang.net/2009/01/using-django-pingback/</guid>
             <description>
             
             &lt;p&gt;I actually had some trouble using &lt;a href=&#34;http://code.google.com/p/django-pingback/&#34;&gt;django-pingback&lt;/a&gt; on my custom blog engine; the &lt;a href=&#34;http://hg.piranha.org.ua/django-pingback/file/6ca8eadcd22d/README.md#l1&#34;&gt;django-pingback documentation&lt;/a&gt; is mostly fine, but there were some caveats that I had to discover myself through a bit of debugging:&lt;/p&gt;
@@ -599,10 +599,10 @@ for (k, v, x) in arr:
         <item>
             <title>Colophon 2008
 </title>
-            <link>https://roytang.net/2008/12/colophon-2008/</link>
+            <link>https://mirror.roytang.net/2008/12/colophon-2008/</link>
             <pubDate>Sat, 27 Dec 2008 02:08:22 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/12/colophon-2008/</guid>
+            <guid>https://mirror.roytang.net/2008/12/colophon-2008/</guid>
             <description>
             
             &lt;p&gt;&lt;strong&gt;Frontend&lt;/strong&gt;: All page templates are valid (X)HTML. However, I choose not to claim valid XHTML (and no doc type declaration) since I can&amp;rsquo;t guarantee that blog posts I write are compliant! The site uses standard CSS and uses the &lt;a href=&#34;http://blueprintcss.org&#34; title=&#34;Blueprint CSS Framework&#34;&gt;Blueprint CSS Framework&lt;/a&gt; for the grid layout of the page. The site design is entirely original (if not simple and bland &amp;ndash; I&amp;rsquo;m not very good with website design yet!). The site has minor usage of &lt;a href=&#34;http://jquery.com/,&#34; title=&#34;JQuery&#34;&gt;JQuery Javascript library&lt;/a&gt; in some parts.&lt;/p&gt;
@@ -616,7 +616,7 @@ for (k, v, x) in arr:
 &lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-template-utils/&#34;&gt;template_utils&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://code.google.com/p/django-pingback/&#34;&gt;django-pingback&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;Beautiful Soup&lt;/a&gt; for XML/HTML parsing&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt; for syntax highlighting. See the &lt;a href=&#34;https://roytang.net/pygments/&#34;&gt;Pygments Demo!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt; for syntax highlighting. See the &lt;a href=&#34;https://mirror.roytang.net/pygments/&#34;&gt;Pygments Demo!&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.feedparser.org/&#34;&gt;Feedparser&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://code.google.com/p/python-markdown2/&#34;&gt;Markdown2&lt;/a&gt; so that I can post using Markdown.&lt;/li&gt;
 &lt;/ol&gt;
@@ -638,10 +638,10 @@ for (k, v, x) in arr:
         <item>
             <title>Fixing up the comments
 </title>
-            <link>https://roytang.net/2008/12/fixing-up-the-comments/</link>
+            <link>https://mirror.roytang.net/2008/12/fixing-up-the-comments/</link>
             <pubDate>Mon, 01 Dec 2008 04:58:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/12/fixing-up-the-comments/</guid>
+            <guid>https://mirror.roytang.net/2008/12/fixing-up-the-comments/</guid>
             <description>
             
             &lt;p&gt;I played around with the built-in comments app today, trying to clean it up.&lt;/p&gt;
@@ -685,10 +685,10 @@ for (k, v, x) in arr:
         <item>
             <title>Django Update -- WordPress Import and More
 </title>
-            <link>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
+            <link>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
             <pubDate>Sun, 23 Nov 2008 00:04:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
+            <guid>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I&amp;rsquo;m coding. I&amp;rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.&lt;/p&gt;
@@ -715,10 +715,10 @@ for (k, v, x) in arr:
         <item>
             <title>django-tagging
 </title>
-            <link>https://roytang.net/2008/10/django-tagging/</link>
+            <link>https://mirror.roytang.net/2008/10/django-tagging/</link>
             <pubDate>Sun, 26 Oct 2008 04:22:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/10/django-tagging/</guid>
+            <guid>https://mirror.roytang.net/2008/10/django-tagging/</guid>
             <description>
             
             &lt;p&gt;I wanted to add some basic tagging to my blog app so I tried out &lt;a href=&#34;http://code.google.com/p/django-tagging/&#34;&gt;django-tagging&lt;/a&gt;. Unfortunately, the featured downloads on the Google Code site are quite out-of-date and would not work with Django 1.0, so I did a subversion checkout instead. If you&amp;rsquo;re getting an error like &amp;ldquo;ImportError: cannot import name parse_lookup&amp;rdquo;, then you need to get the source code from SVN.&lt;/p&gt;
@@ -758,10 +758,10 @@ for (k, v, x) in arr:
         <item>
             <title>I left it for a while
 </title>
-            <link>https://roytang.net/2008/10/i-left-it-for-a-while/</link>
+            <link>https://mirror.roytang.net/2008/10/i-left-it-for-a-while/</link>
             <pubDate>Fri, 24 Oct 2008 06:54:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/10/i-left-it-for-a-while/</guid>
+            <guid>https://mirror.roytang.net/2008/10/i-left-it-for-a-while/</guid>
             <description>
             
             &lt;p&gt;&amp;hellip; and now it works!&lt;/p&gt;
@@ -776,10 +776,10 @@ for (k, v, x) in arr:
         <item>
             <title>Deployment Problems
 </title>
-            <link>https://roytang.net/2008/10/deployment-problems/</link>
+            <link>https://mirror.roytang.net/2008/10/deployment-problems/</link>
             <pubDate>Tue, 21 Oct 2008 06:52:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/10/deployment-problems/</guid>
+            <guid>https://mirror.roytang.net/2008/10/deployment-problems/</guid>
             <description>
             
             &lt;p&gt;So I got a basic blog app up and running.&lt;/p&gt;
@@ -799,10 +799,10 @@ for (k, v, x) in arr:
         <item>
             <title>Playing with Generic Views and URLs
 </title>
-            <link>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</link>
+            <link>https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/</link>
             <pubDate>Mon, 20 Oct 2008 13:44:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/10/playing-with-generic-views-and-urls/</guid>
+            <guid>https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/</guid>
             <description>
             
             &lt;p&gt;&amp;ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?&amp;rdquo;&lt;/p&gt;
@@ -824,10 +824,10 @@ for (k, v, x) in arr:
         <item>
             <title>Starting out
 </title>
-            <link>https://roytang.net/2008/10/starting-out/</link>
+            <link>https://mirror.roytang.net/2008/10/starting-out/</link>
             <pubDate>Sun, 19 Oct 2008 07:33:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/10/starting-out/</guid>
+            <guid>https://mirror.roytang.net/2008/10/starting-out/</guid>
             <description>
             
             &lt;p&gt;The quintessential app to learn from is of course a blog.&lt;/p&gt;
@@ -852,10 +852,10 @@ for (k, v, x) in arr:
         <item>
             <title>Write Facebook apps using Google AppEngine -- Patrick Crosby
 </title>
-            <link>https://roytang.net/2008/07/write-facebook-apps-using-google-appengine-patrick-crosby/</link>
+            <link>https://mirror.roytang.net/2008/07/write-facebook-apps-using-google-appengine-patrick-crosby/</link>
             <pubDate>Sun, 06 Jul 2008 15:21:24 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/07/write-facebook-apps-using-google-appengine-patrick-crosby/</guid>
+            <guid>https://mirror.roytang.net/2008/07/write-facebook-apps-using-google-appengine-patrick-crosby/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://blog.patrickcrosby.com/posts/35-Write-Facebook-apps-using-Google-AppEngine&#34;&gt;Write Facebook apps using Google AppEngine -- Patrick Crosby&lt;/a&gt;

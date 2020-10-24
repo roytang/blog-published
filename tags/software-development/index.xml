@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>software-development on Roy Tang</title>
-      <link>https://roytang.net/tags/software-development/</link>
+      <link>https://mirror.roytang.net/tags/software-development/</link>
       <description>Recent content in software-development on Roy Tang</description>
       <generator>Hugo -- gohugo.io</generator>
       <language>en-us</language>
@@ -9,24 +9,24 @@
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
       <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
       
-          <atom:link href="https://roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+          <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
         <item>
             <title>On Mobile App Development
 </title>
-            <link>https://roytang.net/2020/09/mobile-app-dev/</link>
+            <link>https://mirror.roytang.net/2020/09/mobile-app-dev/</link>
             <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/09/mobile-app-dev/</guid>
+            <guid>https://mirror.roytang.net/2020/09/mobile-app-dev/</guid>
             <description>
             
             &lt;p&gt;This post is just quite a few thoughts on mobile apps and mobile app development, all mishmashed together. I don&amp;rsquo;t claim to be a mobile app specialist, at best I&amp;rsquo;ve &lt;em&gt;dabbled&lt;/em&gt; in them, but enough to form some opinions I guess?&lt;/p&gt;
 &lt;h3 id=&#34;a-bit-of-history&#34;&gt;A Bit of History&lt;/h3&gt;
 &lt;p&gt;My first exposure to mobile app development when I got pulled to help my then-company&amp;rsquo;s then-fledgling mobile team with cleaning up the codebase for their iOS app. This was back in maybe 2011? It was one of those projects where some devs built a quick proof-of-concept demo using new technology, then management liked it and asked for new features and they kept adding new features haphazardly until there was just this huge unmaintainable mess of code. This isn&amp;rsquo;t a knock against Objective-C or iOS development specifically or the dev team; the fact is they were new to the stack and were learning as they went while still trying to meet deadlines. I also spent some time reviewing the corresponding Android team&amp;rsquo;s code as well. This was the bulk of my exposure to native mobile dev on iOS/Android. (This was before Swift, so I never got to experience that. Language looks neat though.)&lt;/p&gt;
 &lt;p&gt;Coming from a web dev background, I&amp;rsquo;ve always found the fragmentation of platforms annoying. Basically your effort gets multiplied by the number of platforms you have to support, and what would work well on iOS may not work well on Android and vice versa.&lt;/p&gt;
-&lt;p&gt;Later on, this concern was alleviated a bit with the rise of common frameworks that could publish to both iOS and Android. The first one I tried of these was React Native. I tried it for a small mobile project I did around 3-ish years ago. I wasn&amp;rsquo;t tremendously happy with the experience. My mistake was probably diving head-first into React Native, when this was my first experience with React and front-end frameworks in general (something new to someone with &lt;a href=&#34;https://roytang.net/2020/02/old-web/&#34;&gt;my jQuery background&lt;/a&gt;!), so a lot of concepts were new to me.&lt;/p&gt;
+&lt;p&gt;Later on, this concern was alleviated a bit with the rise of common frameworks that could publish to both iOS and Android. The first one I tried of these was React Native. I tried it for a small mobile project I did around 3-ish years ago. I wasn&amp;rsquo;t tremendously happy with the experience. My mistake was probably diving head-first into React Native, when this was my first experience with React and front-end frameworks in general (something new to someone with &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;my jQuery background&lt;/a&gt;!), so a lot of concepts were new to me.&lt;/p&gt;
 &lt;p&gt;To make matters worse, the React Native docs at that time seemed to assume some familiarity already with React, or at least similar frameworks like Angular. I had a bit of confusion with whether I should be using Expo or not, and how to eject, and it resulted in having to restart the project a couple of times. It was also my first encounter with NPM&amp;rsquo;s dependency management, and that annoyed me a lot. A lot of the third-party dependencies I used back then were still immature too, so I often had problems with things like accessing the camera roll and so on.&lt;/p&gt;
 &lt;p&gt;Nevertheless, it was experience, and the ability to publish cross-platform to iOS and Android was invaluable. I went on to use React Native as my go-to mobile framework I would recommend for other projects afterwards.&lt;/p&gt;
 &lt;p&gt;Recently, I had to do a UI revamp for that small mobile app I wrote three years ago, and I hadn&amp;rsquo;t touched it for a while so I had some trouble with NPM trying to get it to run. In frustration, I gave up on it and decided to rewrite it in Flutter, of which I&amp;rsquo;ve heard good things. Flutter turned out to be great, and it took me just a little over two weeks, part-time to rewrite the app, probably slightly less effort than it took me to write it in the first place. I don&amp;rsquo;t have enough experience yet to have a detailed review of Flutter, but I was generally much happier with the experience compared to React. Part of that may be I&amp;rsquo;m much more familiar with the mobile landscape now and have a better idea of what I&amp;rsquo;m doing, but I really did encounter much fewer points of friction and Flutter seems to have much better documentation. I believe it will be my first choice of frameworks moving forward.&lt;/p&gt;
@@ -36,7 +36,7 @@
 &lt;h3 id=&#34;different-platforms&#34;&gt;Different Platforms&lt;/h3&gt;
 &lt;p&gt;The differences in iOS and Android are particularly annoying to me as a developer, especially since I&amp;rsquo;m used to web development. With web, everything is open and standards-based, so you generally write everything using a single stack, and any reasonably standards-compliant web browser will work with the web app in a reasonably consistent way. (Granted, there will be browser-specific issues, but nowadays those aren&amp;rsquo;t too common.) With iOS and Android, you have to test on both platforms extensively, and the build processes and distribution methods are different for each. Frameworks like React Native and Flutter lighten this load considerably, but you still really have to devote more time and resources to testing on the different platforms.&lt;/p&gt;
 &lt;h3 id=&#34;backward-compatibility&#34;&gt;Backward Compatibility&lt;/h3&gt;
-&lt;p&gt;Okay, this one may be an unfounded concern of mine since I don&amp;rsquo;t have much experience in the matter, but I have this worry that native mobile apps tend to &lt;em&gt;rot&lt;/em&gt; more easily, and by &lt;em&gt;rot&lt;/em&gt; I mean, get worse with time, as the mobile OSes upgrade themselves very rapidly. Unlike, say, Windows, which gets a new major version every few years, iOS and Android are constantly getting new versions and more importantly, deprecating APIs and adding new ones! Hence my worry that unmaintained, a perfectly functional app may become unworkable a few years down the line and no longer work on the latest mobile OSes. It&amp;rsquo;s my totally unfounded belief that this is a significant reason why &lt;a href=&#34;https://roytang.net/2020/07/itunes-purchases/&#34;&gt;more than 50% of my lifetime App Store purchases are no longer listed on the App Store&lt;/a&gt;. (And also why I&amp;rsquo;ve pretty much disavowed making mobile purchases again.) Say what you will about Windows, but at least they have a pretty good record of backward compatibility when software I&amp;rsquo;ve written for Windows in the early 2000s is still very likely to run on Windows today.&lt;/p&gt;
+&lt;p&gt;Okay, this one may be an unfounded concern of mine since I don&amp;rsquo;t have much experience in the matter, but I have this worry that native mobile apps tend to &lt;em&gt;rot&lt;/em&gt; more easily, and by &lt;em&gt;rot&lt;/em&gt; I mean, get worse with time, as the mobile OSes upgrade themselves very rapidly. Unlike, say, Windows, which gets a new major version every few years, iOS and Android are constantly getting new versions and more importantly, deprecating APIs and adding new ones! Hence my worry that unmaintained, a perfectly functional app may become unworkable a few years down the line and no longer work on the latest mobile OSes. It&amp;rsquo;s my totally unfounded belief that this is a significant reason why &lt;a href=&#34;https://mirror.roytang.net/2020/07/itunes-purchases/&#34;&gt;more than 50% of my lifetime App Store purchases are no longer listed on the App Store&lt;/a&gt;. (And also why I&amp;rsquo;ve pretty much disavowed making mobile purchases again.) Say what you will about Windows, but at least they have a pretty good record of backward compatibility when software I&amp;rsquo;ve written for Windows in the early 2000s is still very likely to run on Windows today.&lt;/p&gt;
 &lt;h3 id=&#34;closed-platforms&#34;&gt;Closed Platforms&lt;/h3&gt;
 &lt;p&gt;Another issue I have with native apps is that I have been used to working on open platforms. Windows, for all its faults, is still an open platform, and anyone can write software for it and distribute it using whatever method they desire. And the web is even more open and standards-based (for now at least). For mobile, Android is mostly open, but iOS is mostly a closed platform.&lt;/p&gt;
 &lt;p&gt;Apple&amp;rsquo;s tight control over the iOS platform has been in the tech news recently. First was &lt;a href=&#34;https://www.theverge.com/2020/6/18/21296180/apple-hey-email-app-basecamp-rejection-response-controversy-antitrust-regulation&#34;&gt;the kerfuffle with hey.com&lt;/a&gt; a few months ago, and more recently, &lt;a href=&#34;https://www.macrumors.com/guide/epic-games-vs-apple/&#34;&gt;their removal of Fortnite and battle with Epic&lt;/a&gt; due to Epic&amp;rsquo;s objection to Apple taking a cut of all purchases on iOS.&lt;/p&gt;
@@ -58,20 +58,20 @@
         <item>
             <title>On Mozilla and Firefox
 </title>
-            <link>https://roytang.net/2020/08/on-mozilla-and-firefox/</link>
+            <link>https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/</link>
             <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/08/on-mozilla-and-firefox/</guid>
+            <guid>https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/</guid>
             <description>
             
             &lt;p&gt;Mozilla made the tech news recently for laying off a whole lot of people. (&lt;a href=&#34;https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/&#34;&gt;Official statement&lt;/a&gt;). People were alarmed and worried about the future of what is the last major independent browser and the open web, bit it looks like it isn&amp;rsquo;t that bleak. Most of the layoffs were to teams other than those working on Firefox, things like the experimental browser engine Servo, devtools, and MDN. The core Gecko team seems to be unaffected.&lt;/p&gt;
 &lt;p&gt;Not that these things aren&amp;rsquo;t important. MDN, if you&amp;rsquo;re not familiar, is a set of documentation of web standards and browser support, &lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;available online&lt;/a&gt;, that is one of the best resources for web developers working on cross-platform things. Mozilla no longer funding it&amp;rsquo;s maintenance is a big deal, it means it&amp;rsquo;s less likely to be kept up-to-date, even though community work can still continue. Peter-Paul Koch, writer of &lt;a href=&#34;https://quirksmode.org&#34;&gt;quirksmode.org&lt;/a&gt;, which was the original resource for cross-browser compatibility back in the heyday of the browser wars, wrote an article about Mozilla&amp;rsquo;s problems titled &lt;a href=&#34;https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html&#34;&gt;&amp;ldquo;The Cult of the Free&amp;rdquo;&lt;/a&gt; where he argues that it&amp;rsquo;s time to step out of this mentality that all these resources must be maintained for free by &amp;ldquo;the community&amp;rdquo;, but that we as consumers must get used to the idea of paying or donating to support these resources. Expecting &amp;ldquo;the community&amp;rdquo; to step in and maintain these resources &lt;a href=&#34;https://www.quirksmode.org/blog/archives/2020/08/i_love_mdn_or_t.html&#34;&gt;also devalues the work of technical writers.&lt;/a&gt; Trying to get more people to support these &amp;ldquo;free&amp;rdquo; resources is a good idea, but I worry it goes against the grain of years of internet culture which has conditioned people to expect online content for free.&lt;/p&gt;
-&lt;p&gt;Speaking of contributing, a while back I had considered looking for open source projects I could contribute to, and preferred projects that I actively use. Given that I&amp;rsquo;d been using Firefox &lt;a href=&#34;https://roytang.net/2004/10/firefox-1-0-on-november-9/&#34;&gt;since before version 1.0&lt;/a&gt;, one of the projects I considered was Firefox. I went through the whole rigmarole of &lt;a href=&#34;https://firefox-source-docs.mozilla.org/setup/windows_build.html&#34;&gt;their instructions to set up my machine for the Windows build&lt;/a&gt;, and just the setup process, which involved setting up and checking out code took more than an hour. That was fine for initial setup, but actually building and running Firefox itself took an additional hour or so. Might have been more than that even, it was a while back so I don&amp;rsquo;t clearly remember, but I do remember thinking that I didn&amp;rsquo;t have time for these hour-long build times. The whole set up also took up a nontrivial amount of my SSD disk space (imagine how much worse the build time would have been if I had used my non-SSD drive!), which I am always dangerously low on. These 2 factors led me to shelve the idea for the time being; perhaps I could revisit the idea of contributing to Firefox when I upgraded my computer or had more SSD space available. (TBF, I kind of gave up real quick after the first build, maybe the builds get faster on succeeding runs?). So that&amp;rsquo;s my personal &amp;ldquo;contributing-to-Firefox&amp;rdquo; story, for now.&lt;/p&gt;
+&lt;p&gt;Speaking of contributing, a while back I had considered looking for open source projects I could contribute to, and preferred projects that I actively use. Given that I&amp;rsquo;d been using Firefox &lt;a href=&#34;https://mirror.roytang.net/2004/10/firefox-1-0-on-november-9/&#34;&gt;since before version 1.0&lt;/a&gt;, one of the projects I considered was Firefox. I went through the whole rigmarole of &lt;a href=&#34;https://firefox-source-docs.mozilla.org/setup/windows_build.html&#34;&gt;their instructions to set up my machine for the Windows build&lt;/a&gt;, and just the setup process, which involved setting up and checking out code took more than an hour. That was fine for initial setup, but actually building and running Firefox itself took an additional hour or so. Might have been more than that even, it was a while back so I don&amp;rsquo;t clearly remember, but I do remember thinking that I didn&amp;rsquo;t have time for these hour-long build times. The whole set up also took up a nontrivial amount of my SSD disk space (imagine how much worse the build time would have been if I had used my non-SSD drive!), which I am always dangerously low on. These 2 factors led me to shelve the idea for the time being; perhaps I could revisit the idea of contributing to Firefox when I upgraded my computer or had more SSD space available. (TBF, I kind of gave up real quick after the first build, maybe the builds get faster on succeeding runs?). So that&amp;rsquo;s my personal &amp;ldquo;contributing-to-Firefox&amp;rdquo; story, for now.&lt;/p&gt;
 &lt;p&gt;The sheer size of the codebase and the long build times just drive home the point of how much modern browsers are these large complex beasts that are doing so much. They are pretty much an OS of their own since they host a ton of features and web applications and JIT JS and all of that. This means it&amp;rsquo;s really difficult for independent browser efforts to hit feature parity with modern web browsers - even just working with JS and CSS standards, there are so many to implement.&lt;/p&gt;
 &lt;p&gt;Drew DeVault laments that &lt;a href=&#34;https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html&#34;&gt;Web browsers need to stop&lt;/a&gt; with all these new functionalities and APIs that add scope and complexity, and maybe focus more on performance, efficiency, etc. I do agree - if I was contributing to Firefox, I would want to find a way to reduce the massive memory footprint it always has. I don&amp;rsquo;t even use that many tabs, and I already feel burdened by Firefox&amp;rsquo;s memory footprint. (Pretty sure Chrome is pretty bad in this regard as well.)&lt;/p&gt;
 &lt;p&gt;Why care about Mozilla/Firefox at all? Why not just use Chrome, it&amp;rsquo;s pretty good right?&lt;/p&gt;
 &lt;p&gt;First of all, no, Chrome is not necessarily &amp;ldquo;pretty good&amp;rdquo;, given how it props up a surveillance capitalsm engine.&lt;/p&gt;
-&lt;p&gt;Secondly, even if you didn&amp;rsquo;t dislike Google, having a browser (engine) monoculture is not a good thing. I &lt;a href=&#34;https://roytang.net/2020/02/old-web/&#34;&gt;got my start in web development&lt;/a&gt; at around the height of Internet Explorer 6&amp;rsquo;s dominance, and I&amp;rsquo;d rather not find my way back there. Granted, one of the issues back then was that IE6 was a stagnant platform that upstarts Firefox and eventually Chrome left behind. No such problem exists now, since Chrome is still in active development and still pushing new web standards forward. And the fact that Chrome is an open-source platform means in theory someone could just fork it if ever Google goes off the rails or such. (And people have already built indie browsers on top of Chrome of course!) But it&amp;rsquo;s still dangerous for a single company and/or codebase to be the sole major implementer of web standards. A single company dictating the future of the web isn&amp;rsquo;t a good thing, and is the very opposite of the idea of an &amp;ldquo;open&amp;rdquo; web.&lt;/p&gt;
+&lt;p&gt;Secondly, even if you didn&amp;rsquo;t dislike Google, having a browser (engine) monoculture is not a good thing. I &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;got my start in web development&lt;/a&gt; at around the height of Internet Explorer 6&amp;rsquo;s dominance, and I&amp;rsquo;d rather not find my way back there. Granted, one of the issues back then was that IE6 was a stagnant platform that upstarts Firefox and eventually Chrome left behind. No such problem exists now, since Chrome is still in active development and still pushing new web standards forward. And the fact that Chrome is an open-source platform means in theory someone could just fork it if ever Google goes off the rails or such. (And people have already built indie browsers on top of Chrome of course!) But it&amp;rsquo;s still dangerous for a single company and/or codebase to be the sole major implementer of web standards. A single company dictating the future of the web isn&amp;rsquo;t a good thing, and is the very opposite of the idea of an &amp;ldquo;open&amp;rdquo; web.&lt;/p&gt;
 &lt;p&gt;Side note: Maybe I should try building Chromium too, just for comparison.&lt;/p&gt;
 &lt;p&gt;Anyway, that&amp;rsquo;s all my ranting for today. In conclusion: reduce your surveillance capitalism footprint and support the open web, use Firefox.&lt;/p&gt;
 
@@ -83,10 +83,10 @@
         <item>
             <title>Using Hugo to Automatically Update Your Github Profile
 </title>
-            <link>https://roytang.net/2020/07/hugo-update-github-profile/</link>
+            <link>https://mirror.roytang.net/2020/07/hugo-update-github-profile/</link>
             <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/07/hugo-update-github-profile/</guid>
+            <guid>https://mirror.roytang.net/2020/07/hugo-update-github-profile/</guid>
             <description>
             
             &lt;p&gt;So recently Github secretly rolled out a new feature where you can create a file named &lt;code&gt;README.md&lt;/code&gt; in a repo named &lt;code&gt;github.com/&amp;lt;your github username&amp;gt;/&amp;lt;your github username&amp;gt;&lt;/code&gt;, and that markdown file would be rendered on your Github profile page. It means, you can now put basically anything you want on your Github profile!&lt;/p&gt;
@@ -130,7 +130,7 @@
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/07/hugo-update-github-profile/sample_hucb5e7c9f1f7a14a92d223160e1fe09f1_359089_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/07/hugo-update-github-profile/sample_hucb5e7c9f1f7a14a92d223160e1fe09f1_359089_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -140,13 +140,13 @@
         <item>
             <title>Image Lightboxes using HTML/CSS
 </title>
-            <link>https://roytang.net/2020/07/image-lightboxes-using-html/css/</link>
+            <link>https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/</link>
             <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/07/image-lightboxes-using-html/css/</guid>
+            <guid>https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/</guid>
             <description>
             
-            &lt;p&gt;In several places on this site (like if you click &lt;a href=&#34;https://roytang.net/photos/&#34;&gt;Photos&lt;/a&gt; in the menu up top), I have a grid-like view of a list of photos/images:&lt;/p&gt;
+            &lt;p&gt;In several places on this site (like if you click &lt;a href=&#34;https://mirror.roytang.net/photos/&#34;&gt;Photos&lt;/a&gt; in the menu up top), I have a grid-like view of a list of photos/images:&lt;/p&gt;
 
 
 
@@ -160,13 +160,13 @@
 
 &lt;a href=&#34;#faccc892f8e2cf4a4264858849ce5ae2-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;faccc892f8e2cf4a4264858849ce5ae2-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/photos.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -188,13 +188,13 @@
 
 &lt;a href=&#34;#69db43a1058dcdddf90179b43e7ecf6d-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;69db43a1058dcdddf90179b43e7ecf6d-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/lightbox.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -265,11 +265,11 @@
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/lightbox_hu396d03ff45b11c54616c22d72e1875ca_532641_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/07/image-lightboxes-using-html/css/photos_hua697e57b9c5f61f8be116df80d63f53b_922940_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -279,13 +279,13 @@
         <item>
             <title>Scraping Facebook
 </title>
-            <link>https://roytang.net/2020/06/scraping-facebook/</link>
+            <link>https://mirror.roytang.net/2020/06/scraping-facebook/</link>
             <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/06/scraping-facebook/</guid>
+            <guid>https://mirror.roytang.net/2020/06/scraping-facebook/</guid>
             <description>
             
-            &lt;p&gt;I had been meaning to &lt;a href=&#34;https://roytang.net/2020/06/quitting-facebook/&#34;&gt;quit Facebook&lt;/a&gt; for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a &lt;a href=&#34;https://roytang.net/2007/12/pack-rat-mentality/&#34;&gt;pack rat&lt;/a&gt;), and Facebook&amp;rsquo;s &lt;a href=&#34;https://roytang.net/2019/03/export-your-social-media-data/&#34;&gt;social media export&lt;/a&gt; is less than ideal, for me at least.&lt;/p&gt;
+            &lt;p&gt;I had been meaning to &lt;a href=&#34;https://mirror.roytang.net/2020/06/quitting-facebook/&#34;&gt;quit Facebook&lt;/a&gt; for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a &lt;a href=&#34;https://mirror.roytang.net/2007/12/pack-rat-mentality/&#34;&gt;pack rat&lt;/a&gt;), and Facebook&amp;rsquo;s &lt;a href=&#34;https://mirror.roytang.net/2019/03/export-your-social-media-data/&#34;&gt;social media export&lt;/a&gt; is less than ideal, for me at least.&lt;/p&gt;
 &lt;p&gt;Less than ideal why? It doesn&amp;rsquo;t include a lot of content I would like backed up, including:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;comments on my posts (there have been some good conversations with friends over the years I would prefer to preserve)&lt;/li&gt;
@@ -319,15 +319,15 @@
         <item>
             <title>Technical Interview Notes
 </title>
-            <link>https://roytang.net/2020/04/technical-interview/</link>
+            <link>https://mirror.roytang.net/2020/04/technical-interview/</link>
             <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/technical-interview/</guid>
+            <guid>https://mirror.roytang.net/2020/04/technical-interview/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve had the good fortune to be on the interviewer side of technical interviews much more often than I&amp;rsquo;ve been the interviewee. I&amp;rsquo;ve been doing a few more of these over the past couple of years and made some notes, so I thought I&amp;rsquo;d talk about technical interviews for a bit. Caveat: these are largely based on my own experiences, in the local environment here in the PH.&lt;/p&gt;
 &lt;h3 id=&#34;technical-exam--screening&#34;&gt;Technical Exam / Screening&lt;/h3&gt;
-&lt;p&gt;Many companies will ask applicants to undertake a technical exam before letting them advance to further stages of the recruitment process. This kind of screening is most useful if your applicants are mostly fresh graduates or junior programmers. The primary purpose of such a screening is to make sure that the candidate is actually a programmer, and not just someone who graduated CS while letting all his groupmates handle the programming work. This is especially useful for companies that get a lot of applicants who are fresh graduates - it lets them filter the candidate pool without using up the valuable time of their senior technical staff. I talked about these kinds of technical screenings in &lt;a href=&#34;https://roytang.net/2016/06/the-programming-application-process/&#34;&gt;a previous post&lt;/a&gt; about my own experiences as an interviewee.&lt;/p&gt;
+&lt;p&gt;Many companies will ask applicants to undertake a technical exam before letting them advance to further stages of the recruitment process. This kind of screening is most useful if your applicants are mostly fresh graduates or junior programmers. The primary purpose of such a screening is to make sure that the candidate is actually a programmer, and not just someone who graduated CS while letting all his groupmates handle the programming work. This is especially useful for companies that get a lot of applicants who are fresh graduates - it lets them filter the candidate pool without using up the valuable time of their senior technical staff. I talked about these kinds of technical screenings in &lt;a href=&#34;https://mirror.roytang.net/2016/06/the-programming-application-process/&#34;&gt;a previous post&lt;/a&gt; about my own experiences as an interviewee.&lt;/p&gt;
 &lt;p&gt;As a sample statistic, I used to handle checking of technical exams for a company that had a few dozen applicants per week. The screening was a straightforward ten-question written exam, none of the questions required writing a lot of code. The questions were along the lines of &amp;ldquo;where is the problem in the loop?&amp;rdquo;, or &amp;ldquo;what is the output of this program?&amp;rdquo;, essentially confirming the applicant&amp;rsquo;s ability to understand how code is written. Even for this simple screening, roughly 8-9 out of 10 applicants would regularly fail the screening. (I am not sure if this speaks to the general low quality of graduates in my area instead of a general trend.) There is a reason &lt;a href=&#34;https://en.wikipedia.org/wiki/Fizz_buzz&#34;&gt;FizzBuzz&lt;/a&gt; has become known as screening tool.&lt;/p&gt;
 &lt;p&gt;The screening can take different forms. It may be written, requiring you to come into their office, sit at a table and answer some number of programming-related questions on paper (as described in the paragraph above). This is the most common I have encountered, especially in larger companies here.&lt;/p&gt;
 &lt;p&gt;Some may be done remotely/online, via services such as &lt;a href=&#34;https://www.codility.com/&#34;&gt;Codility&lt;/a&gt;. This may be the best option, as it allows the candidate to take the exam on their own time, in the comfort of their own environment. Such environments will also automatically check the results, which means the effort for the recruiting company is at a minimum and the candidate gets feedback quickly. The downside is that not all companies may be able to afford such services.&lt;/p&gt;
@@ -368,7 +368,7 @@
 &lt;p&gt;For the Q&amp;amp;A part, in general you just need to be honest. But you also need to be able to communicate well, which is something not many people will be able to do. Good communication skill is an essential skill as a developer though, you may want to look for ways to practice and gain confidence in it. I recommend posting on a blog (like this one) to sharpen your communication skills! (Verbal is harder to practice, you need to find someone willing to listen and give you feedback.)&lt;/p&gt;
 &lt;p&gt;I would also recommend becoming familiar with the requirements for the position you are interviewing for, understanding which parts of your background are most relevant, and highlighting them during any Q&amp;amp;A. In fact, I would prepare a short pitch describing why you think you are a good fit for the role. Often during Q&amp;amp;A I like to start off with asking the candidate to give a short overview of their background, and very few actually give a good response (a lot don&amp;rsquo;t even have a short response), so being prepared in this manner would be very impressive.&lt;/p&gt;
 &lt;p&gt;It would also help to ask around about the specific recruitment process for the company you&amp;rsquo;re interviewing for, if you have any contacts, or sometimes there&amp;rsquo;s information on the internet. (Good internet searching is an essential developer skill as well!) Just knowing what to expect can boost your confidence.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve also given some other advice in a &lt;a href=&#34;https://roytang.net/2019/02/reddit-ph-software-dev-qa/&#34;&gt;Q&amp;amp;A last year on reddit&lt;/a&gt;. Good luck!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also given some other advice in a &lt;a href=&#34;https://mirror.roytang.net/2019/02/reddit-ph-software-dev-qa/&#34;&gt;Q&amp;amp;A last year on reddit&lt;/a&gt;. Good luck!&lt;/p&gt;
 
 
 
@@ -378,10 +378,10 @@
         <item>
             <title>Working with people from other cultures
 </title>
-            <link>https://roytang.net/2020/04/working-with-people-from-other-cultures/</link>
+            <link>https://mirror.roytang.net/2020/04/working-with-people-from-other-cultures/</link>
             <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/working-with-people-from-other-cultures/</guid>
+            <guid>https://mirror.roytang.net/2020/04/working-with-people-from-other-cultures/</guid>
             <description>
             
             &lt;p&gt;Unless you’re working at a small shop that only serves local clients, software development these days is often an international endeavor. That means the aspiring software developer needs to be able to work with and get along with people of different cultures.&lt;/p&gt;
@@ -403,14 +403,14 @@
         <item>
             <title>Pure HTML Toggles
 </title>
-            <link>https://roytang.net/2020/04/pure-html-toggles/</link>
+            <link>https://mirror.roytang.net/2020/04/pure-html-toggles/</link>
             <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/pure-html-toggles/</guid>
+            <guid>https://mirror.roytang.net/2020/04/pure-html-toggles/</guid>
             <description>
             
-            &lt;p&gt;Just last month, I wrote a method of implementing &lt;a href=&#34;https://roytang.net/2020/03/pure-css-spoilers/&#34;&gt;element toggles using a pure CSS approach&lt;/a&gt;. While that post was educational for me, it turns out there was an even simpler way of doing things. I found out about it when I read this &lt;a href=&#34;https://www.jvt.me/posts/2019/05/19/html-toggle/&#34;&gt;post by Jamie Tanna&lt;/a&gt;. Apparently the &lt;code&gt;details&lt;/code&gt; and &lt;code&gt;summary&lt;/code&gt; tags already support HTML toggles, so we can do this with neither CSS or JS!&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve updated the spoiler tags on this site to use this new method. I also used this method for the Table of Contents on certain posts (currently only the &lt;a href=&#34;https://roytang.net/2020/03/covid19/&#34;&gt;Covid19 diary&lt;/a&gt;). Sample here:&lt;/p&gt;
+            &lt;p&gt;Just last month, I wrote a method of implementing &lt;a href=&#34;https://mirror.roytang.net/2020/03/pure-css-spoilers/&#34;&gt;element toggles using a pure CSS approach&lt;/a&gt;. While that post was educational for me, it turns out there was an even simpler way of doing things. I found out about it when I read this &lt;a href=&#34;https://www.jvt.me/posts/2019/05/19/html-toggle/&#34;&gt;post by Jamie Tanna&lt;/a&gt;. Apparently the &lt;code&gt;details&lt;/code&gt; and &lt;code&gt;summary&lt;/code&gt; tags already support HTML toggles, so we can do this with neither CSS or JS!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve updated the spoiler tags on this site to use this new method. I also used this method for the Table of Contents on certain posts (currently only the &lt;a href=&#34;https://mirror.roytang.net/2020/03/covid19/&#34;&gt;Covid19 diary&lt;/a&gt;). Sample here:&lt;/p&gt;
 &lt;details class=&#34;spoiler&#34;&gt;
     &lt;summary&gt;(Spoilers)&lt;/summary&gt;
     This is some text!
@@ -427,10 +427,10 @@
         <item>
             <title>Web Application Security
 </title>
-            <link>https://roytang.net/2020/04/web-application-security/</link>
+            <link>https://mirror.roytang.net/2020/04/web-application-security/</link>
             <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/web-application-security/</guid>
+            <guid>https://mirror.roytang.net/2020/04/web-application-security/</guid>
             <description>
             
             &lt;p&gt;A while back one of the biggest leaks of personal information in history was made by hackers accessing the Commission on Elections database here in the Philippines. More than 50 million voter registration records, including information such as full names, date of birth, address, among others. A small percentage of the data leaked also included email addresses and even passport numbers. The hack exposed more than half of the country’s population to the possibility of social engineering and other exploits.
@@ -465,10 +465,10 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Bespoke vs Product Development
 </title>
-            <link>https://roytang.net/2020/04/bespoke-vs-product-development/</link>
+            <link>https://mirror.roytang.net/2020/04/bespoke-vs-product-development/</link>
             <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/bespoke-vs-product-development/</guid>
+            <guid>https://mirror.roytang.net/2020/04/bespoke-vs-product-development/</guid>
             <description>
             
             &lt;p&gt;For most of my time working on software projects, it has always been for bespoke projects. Bespoke basically means a software program or package tailor-made for a specific client. The client provides all the requirements, the team fleshes out more details and specifications, some prototyping may or may not ensure, and implementation proceeds thusly. It’s relatively straightforward compared to product development.&lt;/p&gt;
@@ -493,10 +493,10 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Naked CSS Day
 </title>
-            <link>https://roytang.net/2020/04/naked-css-day/</link>
+            <link>https://mirror.roytang.net/2020/04/naked-css-day/</link>
             <pubDate>Thu, 09 Apr 2020 11:44:35 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/04/naked-css-day/</guid>
+            <guid>https://mirror.roytang.net/2020/04/naked-css-day/</guid>
             <description>
             
             &lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://css-naked-day.github.io/&#34;&gt;naked CSS day&lt;/a&gt;, so the site looks super bare-bones today! Inspired by &lt;a href=&#34;https://laurakalbag.com/css-naked-day-2020/&#34;&gt;Laura Kalbag&lt;/a&gt; and &lt;a href=&#34;https://meyerweb.com/&#34;&gt;Eric Meyer&lt;/a&gt;.&lt;/p&gt;
@@ -506,7 +506,7 @@ It was certainly a national embarrassment, especially for those of us working in
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/04/naked-css-day/Screenshot_2020-04-09_hu76b8207d4381c4fec09ce7f0226e0ad9_1545365_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/04/naked-css-day/Screenshot_2020-04-09_hu76b8207d4381c4fec09ce7f0226e0ad9_1545365_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
@@ -516,10 +516,10 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Browsers and HTTP
 </title>
-            <link>https://roytang.net/2020/03/browsers-and-http/</link>
+            <link>https://mirror.roytang.net/2020/03/browsers-and-http/</link>
             <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/03/browsers-and-http/</guid>
+            <guid>https://mirror.roytang.net/2020/03/browsers-and-http/</guid>
             <description>
             
             &lt;p&gt;Drew Devault wrote a great post/rant about &lt;a href=&#34;https://drewdevault.com/2020/03/18/Reckless-limitless-scope.html&#34;&gt;the reckless limitless scope of modern web browsers&lt;/a&gt;:&lt;/p&gt;
@@ -552,14 +552,14 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Pure CSS Spoilers
 </title>
-            <link>https://roytang.net/2020/03/pure-css-spoilers/</link>
+            <link>https://mirror.roytang.net/2020/03/pure-css-spoilers/</link>
             <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/03/pure-css-spoilers/</guid>
+            <guid>https://mirror.roytang.net/2020/03/pure-css-spoilers/</guid>
             <description>
             
-            &lt;p&gt;Edit 2020/04/17: A month and a half later, I found &lt;a href=&#34;https://roytang.net/2020/04/pure-html-toggles/&#34;&gt;a better way to do this&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;I previously had some post that had some &lt;a href=&#34;https://roytang.net/2018/10/october-2018-watching-lately&#34;&gt;content hidden via spoiler tags&lt;/a&gt;, using a custom Hugo shortcode. Since I&amp;rsquo;m an &lt;a href=&#34;https://roytang.net/2020/02/old-web/&#34;&gt;old-school developer&lt;/a&gt; I was previously doing this using some Javascript run on load:&lt;/p&gt;
+            &lt;p&gt;Edit 2020/04/17: A month and a half later, I found &lt;a href=&#34;https://mirror.roytang.net/2020/04/pure-html-toggles/&#34;&gt;a better way to do this&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I previously had some post that had some &lt;a href=&#34;https://mirror.roytang.net/2018/10/october-2018-watching-lately&#34;&gt;content hidden via spoiler tags&lt;/a&gt;, using a custom Hugo shortcode. Since I&amp;rsquo;m an &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;old-school developer&lt;/a&gt; I was previously doing this using some Javascript run on load:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;elements&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelectorAll&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.spoiler_header&amp;#34;&lt;/span&gt;);
     Array.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;forEach&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;elements&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;el&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;) {
         &lt;span style=&#34;color:#a6e22e&#34;&gt;el&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;( &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;event&lt;/span&gt; ) {
@@ -605,17 +605,17 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Burnout
 </title>
-            <link>https://roytang.net/2020/02/burnout/</link>
+            <link>https://mirror.roytang.net/2020/02/burnout/</link>
             <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/02/burnout/</guid>
+            <guid>https://mirror.roytang.net/2020/02/burnout/</guid>
             <description>
             
             &lt;p&gt;In the middle of 2015, after 12ish years of working at the same company, I said to myself &amp;ldquo;I think I&amp;rsquo;m burnt out.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;I remember that after a few days of ruminating over it I finally decided and said out loud to myself &amp;ldquo;That&amp;rsquo;s it, I&amp;rsquo;m done.&amp;rdquo; By the end of the year I had left the company. I didn&amp;rsquo;t write about the burnout then, out of respect for my former employer. But it&amp;rsquo;s been a while, I think the time has come to write about it.&lt;/p&gt;
 &lt;p&gt;How do I know I was burnt out? I don&amp;rsquo;t believe there is any generally accepted consensus of symptoms for burnout, but I had a good set of indicators:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;exhaustion, both physical and mental. More and more often I found myself simply &lt;a href=&#34;https://roytang.net/2016/08/some-days-you-are-tired/&#34;&gt;tired&lt;/a&gt; of everything.&lt;/li&gt;
+&lt;li&gt;exhaustion, both physical and mental. More and more often I found myself simply &lt;a href=&#34;https://mirror.roytang.net/2016/08/some-days-you-are-tired/&#34;&gt;tired&lt;/a&gt; of everything.&lt;/li&gt;
 &lt;li&gt;frustration with all the problems at work and the projects I was assigned to, frustration that we kept running into the same issues again and again (mostly relating to scheduling and deadlines and resources), and frustration that any concerns I raised were not being addressed&lt;/li&gt;
 &lt;li&gt;thinking about work all the time, even on my off hours I would be mentally considered the open Jira tickets, etc&lt;/li&gt;
 &lt;li&gt;a feeling of helplessness in the face of overwhelming and seemingly never-ending project issues, re:scheduling, resources, quality, and so on&lt;/li&gt;
@@ -634,13 +634,13 @@ It was certainly a national embarrassment, especially for those of us working in
 &lt;p&gt;Personal challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;I have a very strong sense of duty and responsibility. I realize this doesn&amp;rsquo;t sound like a negative, but it&amp;rsquo;d kind of a double-edged sword in that I take my duties as an employee very seriously and will sometimes sacrifice my own well-being if I think it is needed. For the longest time, one of &lt;a href=&#34;https://roytang.net/2012/08/232395423602573312/&#34;&gt;my favorite quotes has been&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;I have a very strong sense of duty and responsibility. I realize this doesn&amp;rsquo;t sound like a negative, but it&amp;rsquo;d kind of a double-edged sword in that I take my duties as an employee very seriously and will sometimes sacrifice my own well-being if I think it is needed. For the longest time, one of &lt;a href=&#34;https://mirror.roytang.net/2012/08/232395423602573312/&#34;&gt;my favorite quotes has been&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Death is lighter than a feather, but Duty is heavier than a mountain” - Japanese proverb&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I find this quote symptomatic of the &amp;ldquo;hustle culture&amp;rdquo; that tends to lead to burnout. That&amp;rsquo;s probably a topic for another time, but the gist of it is that most companies and projects are a never-ending well of work that needs to be done, so much so that oftentimes the reward for good work is often more work. i.e.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://roytang.net/2019/10/1185221831990464513/&#34;&gt;&amp;ldquo;The price for being the best is always having to be the best&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mirror.roytang.net/2019/10/1185221831990464513/&#34;&gt;&amp;ldquo;The price for being the best is always having to be the best&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This &amp;ldquo;sense of duty&amp;rdquo; was so strong that even when I realized I was burning out, I still gave half a year&amp;rsquo;s notice for resignation, because I at least wanted to make sure everything was fine before I left. (Spoilers: it would take them a couple more years to actually finish the project). Someone reminded me recently that I expressed regret at leaving &amp;ldquo;in wartime&amp;rdquo; since the project got even further delayed and many of the issues were unresolved at that time.&lt;/p&gt;
 &lt;/li&gt;
@@ -679,10 +679,10 @@ It was certainly a national embarrassment, especially for those of us working in
         <item>
             <title>Tales from the Old Web (Development)
 </title>
-            <link>https://roytang.net/2020/02/old-web/</link>
+            <link>https://mirror.roytang.net/2020/02/old-web/</link>
             <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/02/old-web/</guid>
+            <guid>https://mirror.roytang.net/2020/02/old-web/</guid>
             <description>
             
             &lt;p&gt;There was this great (and long!) &lt;a href=&#34;https://eev.ee/blog/2020/02/01/old-css-new-css/&#34;&gt;article that came out recently about the history of CSS&lt;/a&gt;. It reminded me a lot of the old days when I started out in web development. So join me in a walk down memory lane as I reminisce about the trials and tribulations of early web development. (This one isn&amp;rsquo;t about CSS as much as that linked article.)&lt;/p&gt;
@@ -703,13 +703,13 @@ It was certainly a national embarrassment, especially for those of us working in
 
 &lt;a href=&#34;#f47a745a95a668a6f94a9b0ba34a768e-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2020/02/old-web/Combo_hu3c773b5aac8489cf2c66b31c0ac0d078_147716_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2020/02/old-web/Combo_hu3c773b5aac8489cf2c66b31c0ac0d078_147716_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;f47a745a95a668a6f94a9b0ba34a768e-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2020/02/old-web/Combo.jpg&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2020/02/old-web/Combo.jpg&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -740,7 +740,7 @@ page. It is easier for us to meet the performance reqt.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve used Gmail.  AJas is client side library??? Seems they process very
 fast.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;(I would later kind of &lt;a href=&#34;https://roytang.net/2006/05/gmail-raises-the-bar-for-everyone/&#34;&gt;regret using Gmail as a comparison&lt;/a&gt;!)&lt;/p&gt;
+&lt;p&gt;(I would later kind of &lt;a href=&#34;https://mirror.roytang.net/2006/05/gmail-raises-the-bar-for-everyone/&#34;&gt;regret using Gmail as a comparison&lt;/a&gt;!)&lt;/p&gt;
 &lt;h3 id=&#34;cross-browser-development&#34;&gt;Cross-browser development&lt;/h3&gt;
 &lt;p&gt;Most of our projects were for internal systems where the workstations had controlled environments so we were free to target a single browser only (usually IE). Some projects also had a public-facing portal though, and that required we do some cross-browser frontend stuff. Early on, the typical targets other than IE where Netscape and Firefox. This is where the IE6 compatibility headaches come in. It was usually a game of write the code for IE first, then let the testers find any NS/FF issues, then quash accordingly.&lt;/p&gt;
 &lt;p&gt;We started checking in Firefox around the quirks mode era, as described in the article linked at the start of this post. The biggest challenge really was getting everything pixel-perfectly the same between browsers. The typical problems were:&lt;/p&gt;
@@ -768,7 +768,7 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
 &lt;p&gt;Side story: while looking up old files for this post, I came upon a thread where we were discussing printing issues across browsers, and there was a problem in printing some pages from the browser because of limitations in IE6, and some management higher-up chimed in with a suggestion to &amp;ldquo;just tell the client to use IE7&amp;rdquo; as if the client will magically upgrade all their workstations for that one problem. :shrug:&lt;/p&gt;
 &lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
 &lt;p&gt;As the linked article mentioned, jQuery raised the bar when it came out, allowing developers to easily paper over cross-browser JavaScript concerns and providing an API that became so prevalent, years later parts of it would become built-in to modern browsers (i.e. &lt;code&gt;document.querySelector&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;I shared the link to &lt;a href=&#34;https://roytang.net/2006/01/jquery-new-wave-javascript/&#34;&gt;jQuery via delicious&lt;/a&gt; in 2006, but for sure we weren&amp;rsquo;t using it yet in our projects at that time. Based on my own CV, the first time I used it in a project was in 2009. It quickly became part of our standard libraries. I still remember in one particular project I spent some time thrashing out a bunch of issues because we needed to upgrade from like jQuery 1.3 to 1.4? Or something like that. Normally we&amp;rsquo;d fix to a certain version, but I think we needed to upgrade because of a jQuery plugin we needed. This was before the modern frontend development frameworks where you already have dependency management tools, so we had to make sure none of our other third-party JS components would break with the upgrade. The company ended up using jQuery as a standard in projects up to the time I left in 2015. (I&amp;rsquo;m told they later on switched to Vue.js, so more power to them.)&lt;/p&gt;
+&lt;p&gt;I shared the link to &lt;a href=&#34;https://mirror.roytang.net/2006/01/jquery-new-wave-javascript/&#34;&gt;jQuery via delicious&lt;/a&gt; in 2006, but for sure we weren&amp;rsquo;t using it yet in our projects at that time. Based on my own CV, the first time I used it in a project was in 2009. It quickly became part of our standard libraries. I still remember in one particular project I spent some time thrashing out a bunch of issues because we needed to upgrade from like jQuery 1.3 to 1.4? Or something like that. Normally we&amp;rsquo;d fix to a certain version, but I think we needed to upgrade because of a jQuery plugin we needed. This was before the modern frontend development frameworks where you already have dependency management tools, so we had to make sure none of our other third-party JS components would break with the upgrade. The company ended up using jQuery as a standard in projects up to the time I left in 2015. (I&amp;rsquo;m told they later on switched to Vue.js, so more power to them.)&lt;/p&gt;
 &lt;p&gt;I identify as a &amp;ldquo;full stack developer&amp;rdquo;, but these days the &amp;ldquo;frontend&amp;rdquo; half of that usually implies usage of one of the modern frontend frameworks: Angular, React, or Vue. While I am cognizant of those frameworks and have tried them all in some form or another over the past few years, my frontend development experience is still largely defined by the jQuery era. So when setting up personal projects or quick prototypes that&amp;rsquo;s still what I default to.&lt;/p&gt;
 &lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
 &lt;p&gt;The linked article was about CSS, so I figured I should have some CSS stories too, but I find that I don&amp;rsquo;t have much, other than the cross-browser compat above. My main issue with CSS back then was that in a large project with a nontrivial amount of developers each working on separate screens, the CSS style sheets tended to get longer and denser with time. And with bug fixes and whatnot, it would tend to be full of hacks and workarounds like randomly placing &lt;code&gt;!important&lt;/code&gt; in so many places. I just assumed we had a whole bunch of CSS selectors that were no longer necessary but no one would bother cleaning up the style sheets because who knows what you&amp;rsquo;ll break? Basically a whole chaotic mess. IDK if modern tooling handles this because I haven&amp;rsquo;t been on larger projects since leaving the company, but I suppose the stronger delineation/specialization between frontend and backend dev work means less people to mess up the stylesheets, and those who do handle the styles are more aware of such pitfalls.&lt;/p&gt;
@@ -776,7 +776,7 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
 &lt;p&gt;Well, this was a fun trip down memory lane. This post is already longer than I thought it would be, but those are all the old-timey stories I can recall right now. There&amp;rsquo;s a good chance there&amp;rsquo;s some more of them lodged in my brain somewhere that will come out sooner or later, so maybe there&amp;rsquo;s a part 2 sometime in the future.&lt;/p&gt;
 
 
-&lt;img src=&#34;https://roytang.net/2020/02/old-web/Combo_hu3c773b5aac8489cf2c66b31c0ac0d078_147716_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/02/old-web/Combo_hu3c773b5aac8489cf2c66b31c0ac0d078_147716_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
@@ -786,10 +786,10 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>Flask vs Django
 </title>
-            <link>https://roytang.net/2020/01/flask-vs-django/</link>
+            <link>https://mirror.roytang.net/2020/01/flask-vs-django/</link>
             <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2020/01/flask-vs-django/</guid>
+            <guid>https://mirror.roytang.net/2020/01/flask-vs-django/</guid>
             <description>
             
             &lt;p&gt;In a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.&lt;/p&gt;
@@ -804,7 +804,7 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2020/01/flask-vs-django/code_hu9effae59deb16cf77937c315ce614999_79312_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2020/01/flask-vs-django/code_hu9effae59deb16cf77937c315ce614999_79312_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -814,10 +814,10 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>Is SQL a dying art?
 </title>
-            <link>https://roytang.net/2019/11/sql-dying-art/</link>
+            <link>https://mirror.roytang.net/2019/11/sql-dying-art/</link>
             <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/11/sql-dying-art/</guid>
+            <guid>https://mirror.roytang.net/2019/11/sql-dying-art/</guid>
             <description>
             
             &lt;p&gt;I was helping my brother check some database issues the other week, and he mentioned how impressed he was with how quickly I was able to come up with SQL queries on the fly. I told him that SQL was one of the skills I considered myself to have mastery over. This shouldn&amp;rsquo;t be surprising given my early career path:&lt;/p&gt;
@@ -843,16 +843,16 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>What to do in a production crisis
 </title>
-            <link>https://roytang.net/2019/11/prod-crisis/</link>
+            <link>https://mirror.roytang.net/2019/11/prod-crisis/</link>
             <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/11/prod-crisis/</guid>
+            <guid>https://mirror.roytang.net/2019/11/prod-crisis/</guid>
             <description>
             
             &lt;p&gt;Despite our best efforts as software developers, it can still happen: production goes down. Or some sort of bug introduces catastrophic data error. Hopefully you have a support/DevOps team to handle the response. If not, the dev team themselves have to step in. This usual means a mad rush to figure out what happened and how to fix it, sometimes during off hours and maybe even into the early morning, all while facing pressure from clients and higher-ups. I was advising another developer in such a situation a while back, and it was his first stint as technical lead so he was extra worried. I gave him a few tips to see him through the time of crisis.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Keep calm. In Tagalog, &lt;a href=&#34;https://roytang.net/2019/04/project-management-tip-kalma-lang/&#34;&gt;kalma lang&lt;/a&gt;. In a crisis, there can be a lot of stress and pressure to fix things immediately. It&amp;rsquo;s best to keep a level head and make sure the team is keeping it together. Don&amp;rsquo;t let your emotions carry you away, and try to avoid panic.&lt;/li&gt;
-&lt;li&gt;Solve one problem at a time until you can go home. This is a lesson from the movie &lt;a href=&#34;https://roytang.net/2015/10/10154142633048912/&#34;&gt;The Martian&lt;/a&gt;. In a crisis it can be difficult to focus on the task at hand and if you&amp;rsquo;re not thinking straight you might just charge in there blindly and move things around until things get better. Follow step #1, then figure out what are the most pressing problems that need to be solved immediately, then address them one at a time. It can also help your team morale to identify which issues can be left until the next day. This gives them a concrete sense of what is set of problems to focus on, and motivates them to solve those so they can go home.&lt;/li&gt;
+&lt;li&gt;Keep calm. In Tagalog, &lt;a href=&#34;https://mirror.roytang.net/2019/04/project-management-tip-kalma-lang/&#34;&gt;kalma lang&lt;/a&gt;. In a crisis, there can be a lot of stress and pressure to fix things immediately. It&amp;rsquo;s best to keep a level head and make sure the team is keeping it together. Don&amp;rsquo;t let your emotions carry you away, and try to avoid panic.&lt;/li&gt;
+&lt;li&gt;Solve one problem at a time until you can go home. This is a lesson from the movie &lt;a href=&#34;https://mirror.roytang.net/2015/10/10154142633048912/&#34;&gt;The Martian&lt;/a&gt;. In a crisis it can be difficult to focus on the task at hand and if you&amp;rsquo;re not thinking straight you might just charge in there blindly and move things around until things get better. Follow step #1, then figure out what are the most pressing problems that need to be solved immediately, then address them one at a time. It can also help your team morale to identify which issues can be left until the next day. This gives them a concrete sense of what is set of problems to focus on, and motivates them to solve those so they can go home.&lt;/li&gt;
 &lt;li&gt;Be extra careful. In times like these, you may find yourself needing to deploy hotfixes directly to production or maybe even update data directly in the production database, in the interest of expediency. It&amp;rsquo;s also during times like these that you are more likely to make a mistake, especially if your team is under stress and working overtime/during off hours. So it would pay to be extra careful, maybe add an additional layer of review before deploying things directly to production. You&amp;rsquo;re already in a crisis, don&amp;rsquo;t make things worse by making a sloppy mistake.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Having to provide tech support during such a crisis is something you shouldn&amp;rsquo;t wish on any developer, but sometimes it can&amp;rsquo;t be avoided. (Some might even consider it a kind of rite of passage so to speak). Make sure to have the right mindset to be able to operate well under such stressful conditions.&lt;/p&gt;
@@ -865,10 +865,10 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>DevNotes: Python&#39;s yield
 </title>
-            <link>https://roytang.net/2019/11/python-yield/</link>
+            <link>https://mirror.roytang.net/2019/11/python-yield/</link>
             <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/11/python-yield/</guid>
+            <guid>https://mirror.roytang.net/2019/11/python-yield/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been using Python for well over 10 years, and I still don&amp;rsquo;t have an intuitive mastery of one of its keywords: &lt;code&gt;yield&lt;/code&gt;. Everytime I see it in someone&amp;rsquo;s code I need to stop and mentally remind myself what it does. I figured I&amp;rsquo;d write a devnote to help improve my recall.&lt;/p&gt;
@@ -896,10 +896,10 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>The Perils of Handover Documentation
 </title>
-            <link>https://roytang.net/2019/11/handover-documentation/</link>
+            <link>https://mirror.roytang.net/2019/11/handover-documentation/</link>
             <pubDate>Wed, 06 Nov 2019 12:07:37 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/11/handover-documentation/</guid>
+            <guid>https://mirror.roytang.net/2019/11/handover-documentation/</guid>
             <description>
             
             &lt;p&gt;A while back I found myself having to figure out how to compile/build/run a mobile application. The developers previously assigned to the project were no longer available to consult with, but they did leave behind some documentation. However, their documentation quality left a lot to be desired. The instructions they left basically amounted to:&lt;/p&gt;
@@ -914,7 +914,7 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
 &lt;li&gt;Second problem: &lt;code&gt;ionic serve&lt;/code&gt; throws an error from one of the dependencies. A bit more digging around. Reading ionic docs. Stackoverflow. Turns out there was some extra configuration needed to be added if you&amp;rsquo;re doing this stuff on Windows. (I later found out the previous developers had used Ubuntu.)&lt;/li&gt;
 &lt;li&gt;Third problem: &lt;code&gt;ionic serve&lt;/code&gt; throws a whole bunch of typescript errors. Why? After facepalming for a bit, I dig around again. And dig some more. Looks like dependency issues. But the &lt;code&gt;package.json&lt;/code&gt; has dozens of dependencies, it would take me forever to figure out the problem. I find myself digging through the repository&amp;rsquo;s commit history trying to figure out if there was a recent change to the &lt;code&gt;package.json&lt;/code&gt; that would cause the issue. What I notice instead is that a couple of weeks before the handover, someone deleted &lt;code&gt;package-lock.json&lt;/code&gt; from the repository for some unknown reason. Deciding to try it out, I restore the old version of &lt;code&gt;package-lock.json&lt;/code&gt;, do the whole &lt;code&gt;npm install&lt;/code&gt; dance again, and sure enough the typescript errors vanish. But we&amp;rsquo;re not yet done.&lt;/li&gt;
 &lt;li&gt;Fourth problem: &lt;code&gt;ionic serve&lt;/code&gt; no longer throws an error, but when it launches the browser, there&amp;rsquo;s a cyclic error stacktrace shown. Some stackoverflow answers tells me this is because something can&amp;rsquo;t be serialize it, and I trace the problem to a generic error handler that just calls &lt;code&gt;console.log&lt;/code&gt;. I comment this out so that I can see the actual error, which is &amp;ldquo;cordova doesn&amp;rsquo;t exist&amp;rdquo; (or something to that effect). I realize this means that the mobile app uses some native-specific things, so Cordova is required and it&amp;rsquo;s not going to work when served via web, so why did they include this step?&lt;/li&gt;
-&lt;li&gt;So instead I do &lt;code&gt;ionic cordova run android&lt;/code&gt; (after installing the necessary Android Studio/SDK things&amp;hellip;this was after my &lt;a href=&#34;https://roytang.net/2019/09/two-backups/&#34;&gt;recent computer troubles&lt;/a&gt;, so I had a fresh OS install.) And yes, long story short, I am finally able to get the Android app running in an emulator (and eventually in a device, and then the iOS version as well).&lt;/li&gt;
+&lt;li&gt;So instead I do &lt;code&gt;ionic cordova run android&lt;/code&gt; (after installing the necessary Android Studio/SDK things&amp;hellip;this was after my &lt;a href=&#34;https://mirror.roytang.net/2019/09/two-backups/&#34;&gt;recent computer troubles&lt;/a&gt;, so I had a fresh OS install.) And yes, long story short, I am finally able to get the Android app running in an emulator (and eventually in a device, and then the iOS version as well).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I recounted this because I could use it as lesson to note that even when you do have documentation, there are so many ways the documentation can be insufficient. In this case:&lt;/p&gt;
 &lt;ul&gt;
@@ -932,15 +932,15 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>Python: Markov Chains
 </title>
-            <link>https://roytang.net/2019/08/python-markov-chains/</link>
+            <link>https://mirror.roytang.net/2019/08/python-markov-chains/</link>
             <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/python-markov-chains/</guid>
+            <guid>https://mirror.roytang.net/2019/08/python-markov-chains/</guid>
             <description>
             
             &lt;p&gt;Back when I was still learning Python in 2008, one of the first &amp;ldquo;fun&amp;rdquo; scripts I wrote was a text generator using &lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_chain&#34;&gt;Markov chains&lt;/a&gt;. I&amp;rsquo;d run it against all the chat logs I had with people at work and serve the results from a webserver on my computer. THe results were often amusing and sometimes hilarious.&lt;/p&gt;
-&lt;p&gt;Since I&amp;rsquo;ve been going through my old scripts lately, I thought I&amp;rsquo;d update that script to Python 3 (read: add parentheses around print params and use &lt;a href=&#34;https://roytang.net/2019/08/devnotes-python-pathlib/&#34;&gt;pathlib&lt;/a&gt;) and run it against all the posts on this here site. I added the script to my deploy script for this site (thus further worsening my build times), so it should generate a new page every hour or so. I also added the generated markdown file to gitignore so it never gets saved to the repo. Every output of this script will be fleeting and ephemeral!&lt;/p&gt;
-&lt;p&gt;You can view the output &lt;a href=&#34;https://roytang.net/demos/markov&#34;&gt;here&lt;/a&gt;. You can view the script source &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/markov.py&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;ve been going through my old scripts lately, I thought I&amp;rsquo;d update that script to Python 3 (read: add parentheses around print params and use &lt;a href=&#34;https://mirror.roytang.net/2019/08/devnotes-python-pathlib/&#34;&gt;pathlib&lt;/a&gt;) and run it against all the posts on this here site. I added the script to my deploy script for this site (thus further worsening my build times), so it should generate a new page every hour or so. I also added the generated markdown file to gitignore so it never gets saved to the repo. Every output of this script will be fleeting and ephemeral!&lt;/p&gt;
+&lt;p&gt;You can view the output &lt;a href=&#34;https://mirror.roytang.net/demos/markov&#34;&gt;here&lt;/a&gt;. You can view the script source &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/markov.py&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -950,10 +950,10 @@ the memory consumption. (Remains around the same as previous one)&lt;/p&gt;
         <item>
             <title>Devnotes: Python Pathlib
 </title>
-            <link>https://roytang.net/2019/08/devnotes-python-pathlib/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</link>
             <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-python-pathlib/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</guid>
             <description>
             
             &lt;p&gt;Ever since I started learning Python back in 2008ish, I&amp;rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like &lt;code&gt;os&lt;/code&gt;, &lt;code&gt;shutil&lt;/code&gt; and &lt;code&gt;glob&lt;/code&gt;. It can become a bit messy with so many imports, and I often can&amp;rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let&amp;rsquo;s not kid ourselves here).&lt;/p&gt;
@@ -994,10 +994,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Devnotes: Migrating Mercurial to Git
 </title>
-            <link>https://roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
             <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
             <description>
             
             &lt;p&gt;Big news in online repositories this week is that &lt;a href=&#34;https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket&#34;&gt;Bitbucket is sunsetting support for Mercurial&lt;/a&gt;! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git). Now that Gitlab and Github both offer unlimited private repos, there&amp;rsquo;s no reason to stick with Bitbucket either. I had already migrated most of my private Git repos to Gitlab before, but hadn&amp;rsquo;t realized until now that I also had a couple of Mercurial repos there that needed to be migrated as well. I hadn&amp;rsquo;t touched those repos in so long that I didn&amp;rsquo;t even have Mercurial installed locally anymore! (Although I&amp;rsquo;m still using the code locally!)&lt;/p&gt;
@@ -1021,17 +1021,17 @@ git checkout HEAD
         <item>
             <title>Devnotes: TT Miniproject (Django Rest Framework, Unit Testing, VueJS, Geocoding, Nightwatch e2e Testing)
 </title>
-            <link>https://roytang.net/2019/08/devnotes-tt-miniproject/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</link>
             <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-tt-miniproject/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</guid>
             <description>
             
             &lt;p&gt;I recently found myself doing a really small project as sort of a proof of concept/demo for a potential client. It often seems that it might be a waste of time to do something like this since you don&amp;rsquo;t know if the project will actually push through or maybe the client will want something else. To kind of hedge my bets a bit, I decided to take the opportunity to try out some new technologies so that no matter what I at least learned something from all of this. (What is life if not learning?)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Django Rest Framework&lt;/strong&gt;. I&amp;rsquo;ve been on projects using DRF before, but it&amp;rsquo;s my first time building a full CRUD-style API from scratch using it. There is a little bit of a learning curve when it comes to views and serializers, but for the most part it&amp;rsquo;s straightforward. I did enjoy how the framework has out of the box support for the most common REST API scenarios, and there are available backends for different authentication methods. I used JWT Authentication, which isn&amp;rsquo;t part of the library by default, but already had a pretty good implementation available elsewhere.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Python Unit Testing&lt;/strong&gt;. I have dabbled &lt;a href=&#34;https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/&#34;&gt;a little bit with Django&amp;rsquo;s Unit Test framework before&lt;/a&gt;, but not having worked with any company that does TDD I&amp;rsquo;ve never tried doing it the &amp;ldquo;test first&amp;rdquo; way. For reference I used an online book: &lt;a href=&#34;https://www.obeythetestinggoat.com/book/part1.harry.html&#34;&gt;Test Driven Development with DJango&lt;/a&gt;. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python Unit Testing&lt;/strong&gt;. I have dabbled &lt;a href=&#34;https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/&#34;&gt;a little bit with Django&amp;rsquo;s Unit Test framework before&lt;/a&gt;, but not having worked with any company that does TDD I&amp;rsquo;ve never tried doing it the &amp;ldquo;test first&amp;rdquo; way. For reference I used an online book: &lt;a href=&#34;https://www.obeythetestinggoat.com/book/part1.harry.html&#34;&gt;Test Driven Development with DJango&lt;/a&gt;. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Python Social Auth&lt;/strong&gt;. The proof-of-concept needed some social media logins. I used &lt;a href=&#34;https://github.com/python-social-auth/social-core&#34;&gt;Python Social Auth&lt;/a&gt; for this, really straightforward library with good documentation and supports a lot of backends. I ended up using Twitter and Github OAuth as those were the simplest to implement.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VueJS&lt;/strong&gt;. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I&amp;rsquo;m still behind with the latest web frontend frameworks and trends. In my head I&amp;rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out &lt;a href=&#34;https://roytang.net/2019/07/upgrading-a-react-native-project/&#34;&gt;React Native&lt;/a&gt;, but I wasn&amp;rsquo;t fond of it. For this project I decided to use &lt;a href=&#34;https://vuejs.org&#34;&gt;VueJS&lt;/a&gt; since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn&amp;rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was &amp;ldquo;very strange&amp;rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VueJS&lt;/strong&gt;. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I&amp;rsquo;m still behind with the latest web frontend frameworks and trends. In my head I&amp;rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out &lt;a href=&#34;https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/&#34;&gt;React Native&lt;/a&gt;, but I wasn&amp;rsquo;t fond of it. For this project I decided to use &lt;a href=&#34;https://vuejs.org&#34;&gt;VueJS&lt;/a&gt; since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn&amp;rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was &amp;ldquo;very strange&amp;rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Google Maps API and Geocoding&lt;/strong&gt;. The miniproject had some components that required me to show stuff on a map and do some geocoding, so I had to set up the API for that. Google&amp;rsquo;s documentation is fairly good here. One thing I didn&amp;rsquo;t expect is that you need a Google Cloud account with a billing method in order to access the API. My understanding is I wouldn&amp;rsquo;t be charged for anything since I was just using the free tier, I hope that was accurate.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nightwatch e2e Testing&lt;/strong&gt;. I&amp;rsquo;ve had some projects with end to end testing before, mostly via scripts or Selenium, but it&amp;rsquo;s my first time trying out one of these end to end testing frameworks by writing the scripts myself. I chose to go with Nightwatch, it was reasonably strightforward and worked on Mac and Windows. One thing I will note that initially gave me problems during set up is that using the ChromeDriver can be a bit finnicky on Windows. You have to specify the actual location of the executable in your nightwatch.json, like so: &lt;code&gt;&amp;quot;server_path&amp;quot;: &amp;quot;node_modules/chromedriver/lib/chromedriver/chromedriver.exe&amp;quot;,&lt;/code&gt; instead of just the &lt;code&gt;node_modules/.bin/chromedriver&lt;/code&gt; the documentation implies.&lt;/p&gt;
 &lt;p&gt;All in all the mini-project didn&amp;rsquo;t take much work - maybe 2-3 mandays of effort at most, and I did learn a lot from it, so no matter the outcome it was already a win.&lt;/p&gt;
@@ -1044,10 +1044,10 @@ git checkout HEAD
         <item>
             <title>Devnotes: PostgreSQL on the command line
 </title>
-            <link>https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</link>
             <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</guid>
             <description>
             
             &lt;p&gt;I decided to start doing small &amp;ldquo;devnotes&amp;rdquo; on developer stuff I&amp;rsquo;m doing so I can refer to them later (and also because I feel like I could use more technical content on this blog)&lt;/p&gt;
@@ -1075,10 +1075,10 @@ git checkout HEAD
         <item>
             <title>Upgrading a React Native Project
 </title>
-            <link>https://roytang.net/2019/07/upgrading-a-react-native-project/</link>
+            <link>https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/</link>
             <pubDate>Sat, 20 Jul 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/07/upgrading-a-react-native-project/</guid>
+            <guid>https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/</guid>
             <description>
             
             &lt;p&gt;I have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:&lt;/p&gt;
@@ -1105,7 +1105,7 @@ git checkout HEAD
 &lt;li&gt;Google now recommends that I provide an upload key for encryption, but since I reset the project, I also accidentally deleted the signing key I was using before. Oops! Momentary panic until I have the sense to do a search and realize that past me was wise enough to backup the file elsewhere.&lt;/li&gt;
 &lt;li&gt;Test that I can create the app bundle successfully.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;By this point I more or less had a working Android build, then shifted over to iOS. Since I only &lt;a href=&#34;https://roytang.net/2018/12/macbook-air-2017-model/&#34;&gt;recently got a Macbook Air&lt;/a&gt;, I actually hadn&amp;rsquo;t tried creating and publishing the iOS build, someone was helping me with that part before. Because of reasons, I wanted/had to do it myself this time around, so a bit of a learning curve and trial-and-error again.&lt;/p&gt;
+&lt;p&gt;By this point I more or less had a working Android build, then shifted over to iOS. Since I only &lt;a href=&#34;https://mirror.roytang.net/2018/12/macbook-air-2017-model/&#34;&gt;recently got a Macbook Air&lt;/a&gt;, I actually hadn&amp;rsquo;t tried creating and publishing the iOS build, someone was helping me with that part before. Because of reasons, I wanted/had to do it myself this time around, so a bit of a learning curve and trial-and-error again.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;clone the project from repo, &lt;code&gt;npm install&lt;/code&gt;, try &lt;code&gt;react-native run-ios&lt;/code&gt;, oops missing dependencies&lt;/li&gt;
 &lt;li&gt;find out about CocoaPods. Clone a fresh copy of the project, &lt;code&gt;npm install&lt;/code&gt; then &lt;code&gt;pod install&lt;/code&gt; (took a while), then try &lt;code&gt;react-native run-ios&lt;/code&gt; again&lt;/li&gt;
@@ -1134,10 +1134,10 @@ git checkout HEAD
         <item>
             <title>10X Programmers
 </title>
-            <link>https://roytang.net/2019/07/10x-programmers/</link>
+            <link>https://mirror.roytang.net/2019/07/10x-programmers/</link>
             <pubDate>Tue, 16 Jul 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/07/10x-programmers/</guid>
+            <guid>https://mirror.roytang.net/2019/07/10x-programmers/</guid>
             <description>
             
             &lt;p&gt;The topic of the mythical &lt;a href=&#34;https://softwareengineering.stackexchange.com/questions/179616/a-good-programmer-can-be-as-10x-times-more-productive-than-a-mediocre-one&#34;&gt;&amp;ldquo;10x programmer&amp;rdquo;&lt;/a&gt; has been the topic of discussion recently on tech twitter, due to &lt;a href=&#34;https://twitter.com/skirani/status/1149302828420067328?s=19&#34;&gt;a thread&lt;/a&gt; listing out the supposed signs of being such a mythical beast.&lt;/p&gt;
@@ -1179,7 +1179,7 @@ git checkout HEAD
 &lt;li&gt;Most of the 10x engineers are full-stack engineers. For them code is code, they don&amp;rsquo;t care whether it is front-end, back-end, API, database, serverless, etc. I have rarely seen them doing UI work.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;This is still true for me. And just the other day during a call I had to give a disclaimer that my UI work isn&amp;rsquo;t the best lol. I don&amp;rsquo;t think this is indicative of disdain for specialists, there should be room in a team for both &lt;a href=&#34;https://roytang.net/2016/12/generalists-and-specialists-in-dev-teams/&#34;&gt;generalists and specialists&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is still true for me. And just the other day during a call I had to give a disclaimer that my UI work isn&amp;rsquo;t the best lol. I don&amp;rsquo;t think this is indicative of disdain for specialists, there should be room in a team for both &lt;a href=&#34;https://mirror.roytang.net/2016/12/generalists-and-specialists-in-dev-teams/&#34;&gt;generalists and specialists&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;10x engineers can convert &amp;ldquo;thought&amp;rdquo; into &amp;ldquo;code&amp;rdquo; in their mind and write it in an iterative fashion. Given a product feature, they can write that entire feature in one or two sittings of 4 to 6 hours with a caffeinated drink without distraction.&lt;/li&gt;
@@ -1203,7 +1203,7 @@ git checkout HEAD
 &lt;li&gt;10x engineers are poor mentors as they can&amp;rsquo;t teach others on what to do OR parcel the work. They always think &amp;ldquo;It takes too long to teach or discuss with others, I would rather do it myself.&amp;rdquo; They are also poor interviewers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I&amp;rsquo;m sure I have uttered some variation of that quote more than once in my career. The tendency to try to carry all the load yourself is not only a disservice to yourself, it&amp;rsquo;s a disservice to your team as you&amp;rsquo;re not helping them grow. I will admit my mentoring skills in the early years wasn&amp;rsquo;t very good - I&amp;rsquo;m the type of mentor who tends to throw you into the deep end so you can quickly learn to swim. This is because that&amp;rsquo;s my personal learning style as well, I learn more from trying stuff than from a lecture or a book. I understand that not everyone learns the same way, so I do actively try to spot opportunities for me to learn to explain things better (I like to think writing in a blog helps!) and for &lt;a href=&#34;https://roytang.net/2018/10/mentoring-in-software-development/&#34;&gt;better mentoring&lt;/a&gt;. And I think my interviewing skills have improved a bit through the years as well.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure I have uttered some variation of that quote more than once in my career. The tendency to try to carry all the load yourself is not only a disservice to yourself, it&amp;rsquo;s a disservice to your team as you&amp;rsquo;re not helping them grow. I will admit my mentoring skills in the early years wasn&amp;rsquo;t very good - I&amp;rsquo;m the type of mentor who tends to throw you into the deep end so you can quickly learn to swim. This is because that&amp;rsquo;s my personal learning style as well, I learn more from trying stuff than from a lecture or a book. I understand that not everyone learns the same way, so I do actively try to spot opportunities for me to learn to explain things better (I like to think writing in a blog helps!) and for &lt;a href=&#34;https://mirror.roytang.net/2018/10/mentoring-in-software-development/&#34;&gt;better mentoring&lt;/a&gt;. And I think my interviewing skills have improved a bit through the years as well.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;10x engineers don&amp;rsquo;t hack things. They write quality code and know exactly how the code has to evolve, and have a mental model of overall code structure. They write at most one design document, and the rest is in the code.&lt;/li&gt;
@@ -1229,17 +1229,17 @@ git checkout HEAD
         <item>
             <title>Learning from failure
 </title>
-            <link>https://roytang.net/2019/04/learning-from-failure/</link>
+            <link>https://mirror.roytang.net/2019/04/learning-from-failure/</link>
             <pubDate>Wed, 17 Apr 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/04/learning-from-failure/</guid>
+            <guid>https://mirror.roytang.net/2019/04/learning-from-failure/</guid>
             <description>
             
             &lt;blockquote&gt;
 &lt;p&gt;Success is not final, failure is not fatal: it is the courage to continue that counts.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; Winston Churchill&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I already typed the above quote into the post, then realized I had already &lt;a href=&#34;https://roytang.net/2016/07/dealing-with-failure/&#34;&gt;used it before&lt;/a&gt;. Whatever, just goes to show, I&amp;rsquo;m no stranger to failure.&lt;/p&gt;
+&lt;p&gt;I already typed the above quote into the post, then realized I had already &lt;a href=&#34;https://mirror.roytang.net/2016/07/dealing-with-failure/&#34;&gt;used it before&lt;/a&gt;. Whatever, just goes to show, I&amp;rsquo;m no stranger to failure.&lt;/p&gt;
 &lt;p&gt;I was reminded of this quote because recently I prepared a demo for a project that didn&amp;rsquo;t push through. At first I was annoyed at the wasted effort, but I realized that I had wisely taken the demo project as an opportunity to learn/sharpen some skills. Specifically, I used it to study the Django Rest Framework (for the backend API), and a little bit of VueJS (for the frontend), which means that even if the project isn&amp;rsquo;t going anywhere, I was at least able to hone some technical skills. The advantage of always looking to try new things is that your worst case scenario still leads to some self-improvement.&lt;/p&gt;
 
 
@@ -1250,10 +1250,10 @@ git checkout HEAD
         <item>
             <title>A Quick Twitter App I Wrote
 </title>
-            <link>https://roytang.net/2019/03/a-quick-twitter-app-i-wrote/</link>
+            <link>https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/</link>
             <pubDate>Mon, 25 Mar 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/03/a-quick-twitter-app-i-wrote/</guid>
+            <guid>https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/</guid>
             <description>
             
             &lt;p&gt;I wish I had a more concise way to describe it, but I really don&amp;rsquo;t.&lt;/p&gt;
@@ -1270,22 +1270,22 @@ git checkout HEAD
         <item>
             <title>Lies and marketing
 </title>
-            <link>https://roytang.net/2019/03/lies-and-marketing/</link>
+            <link>https://mirror.roytang.net/2019/03/lies-and-marketing/</link>
             <pubDate>Sun, 17 Mar 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/03/lies-and-marketing/</guid>
+            <guid>https://mirror.roytang.net/2019/03/lies-and-marketing/</guid>
             <description>
             
-            &lt;p&gt;I mentioned before &lt;a href=&#34;https://roytang.net/2018/10/why-im-not-an-entrepreneur/&#34;&gt;that as an engineer, I&amp;rsquo;m not fond of marketing&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;I mentioned before &lt;a href=&#34;https://mirror.roytang.net/2018/10/why-im-not-an-entrepreneur/&#34;&gt;that as an engineer, I&amp;rsquo;m not fond of marketing&lt;/a&gt;.&lt;/p&gt;
 &lt;a href=&#34;#81f828351a7fc86eddf3e49ffa420d52-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2019/03/lies-and-marketing/dilbert190312_hu8985074e66017f0ac2c24fec01b6a676_121384_300x0_resize_box.gif&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2019/03/lies-and-marketing/dilbert190312_hu8985074e66017f0ac2c24fec01b6a676_121384_300x0_resize_box.gif&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;81f828351a7fc86eddf3e49ffa420d52-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2019/03/lies-and-marketing/dilbert190312.gif&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2019/03/lies-and-marketing/dilbert190312.gif&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -1300,7 +1300,7 @@ git checkout HEAD
 
 
 
-&lt;img src=&#34;https://roytang.net/2019/03/lies-and-marketing/dilbert190312_hu8985074e66017f0ac2c24fec01b6a676_121384_300x0_resize_box.gif&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2019/03/lies-and-marketing/dilbert190312_hu8985074e66017f0ac2c24fec01b6a676_121384_300x0_resize_box.gif&#34; /&gt;
 
 
 
@@ -1310,16 +1310,16 @@ git checkout HEAD
         <item>
             <title>Don&#39;t stay in the same place too long
 </title>
-            <link>https://roytang.net/2019/03/dont-stay-in-the-same-place-too-long/</link>
+            <link>https://mirror.roytang.net/2019/03/dont-stay-in-the-same-place-too-long/</link>
             <pubDate>Sat, 16 Mar 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/03/dont-stay-in-the-same-place-too-long/</guid>
+            <guid>https://mirror.roytang.net/2019/03/dont-stay-in-the-same-place-too-long/</guid>
             <description>
             
             &lt;p&gt;If I could give some advice to someone starting out in their software development career, it would be this: Don&amp;rsquo;t stay in the same place too long. The first company I worked at, I stayed with them for thirteen years, which I now feel was way too long. I have to admit, the work was hard and challenging, but I was young and had a lot of energy and was willing to work the long hours. I was good at the work and the enjoyed the company of the people I worked with so in a certain sense I got comfortable with the status quo and stayed a bit too long. But given a do-over, I would probably prefer to have left after maybe 4-5 years.&lt;/p&gt;
 &lt;p&gt;Hopping jobs too quickly can be fantastic for your salary growth, but it has some disadvantages - you don&amp;rsquo;t build close enough relationships, and too many hops doesn&amp;rsquo;t look good on your resume. Four to five years seems like a good period to stay, long enough to learn as much as you can and build your network before moving on.&lt;/p&gt;
 &lt;p&gt;The main advantage of not staying too long comes in the form of personal growth. When you stay at a place too long you tend to stagnate. Sure, it&amp;rsquo;s software development so somehow you&amp;rsquo;re always improving, but not improving as quickly as you would be if you were to be thrust into a new environment every few years. Your personal network of like-minded professionals will grow quicker as well when you switch companies. I was thinking about this because I was recently asked if I could refer any senior developers and I realized my personal network of high-level senior technical guys wasn&amp;rsquo;t that deep because of me staying in the same place for so long.&lt;/p&gt;
-&lt;p&gt;I don&amp;rsquo;t consider this a &lt;a href=&#34;https://roytang.net/2018/11/choose-without-regret-and-the-fear-of-missing-out/&#34;&gt;regret&lt;/a&gt;, I&amp;rsquo;m still pretty happy and satisfied with where I am in life. Thinking about this is more of an alternate universe &amp;ldquo;what if&amp;rdquo; scenario. I have to admit that staying that long did have some advantages - I got to work with and meet some good people, younger ones even, who became good friends. But this is not an argument in favor of staying that long, as you would still have the chance to build relationships even if you move on. It&amp;rsquo;s possible in that alternate universe I may have made even better friends or may have even been friends with the same ones I have now somehow.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t consider this a &lt;a href=&#34;https://mirror.roytang.net/2018/11/choose-without-regret-and-the-fear-of-missing-out/&#34;&gt;regret&lt;/a&gt;, I&amp;rsquo;m still pretty happy and satisfied with where I am in life. Thinking about this is more of an alternate universe &amp;ldquo;what if&amp;rdquo; scenario. I have to admit that staying that long did have some advantages - I got to work with and meet some good people, younger ones even, who became good friends. But this is not an argument in favor of staying that long, as you would still have the chance to build relationships even if you move on. It&amp;rsquo;s possible in that alternate universe I may have made even better friends or may have even been friends with the same ones I have now somehow.&lt;/p&gt;
 &lt;p&gt;So, given a chance to give advice to my younger self, I would probably recommend the second path. There is more uncertainty there to be sure, but life is risk, and to live is to explore. Taking the change to move to a new environment optimizes for personal growth, and it&amp;rsquo;s probably better to be doing it when you are young and full of energy.&lt;/p&gt;
 
 
@@ -1330,10 +1330,10 @@ git checkout HEAD
         <item>
             <title>What are the pros and cons of a programming career?
 </title>
-            <link>https://roytang.net/2019/03/what-are-the-pros-and-cons-of-a-programming-career/</link>
+            <link>https://mirror.roytang.net/2019/03/what-are-the-pros-and-cons-of-a-programming-career/</link>
             <pubDate>Tue, 12 Mar 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/03/what-are-the-pros-and-cons-of-a-programming-career/</guid>
+            <guid>https://mirror.roytang.net/2019/03/what-are-the-pros-and-cons-of-a-programming-career/</guid>
             <description>
             
             &lt;p&gt;Another repost from my Quora answers, this time some info for anyone looking to move into programming.&lt;/p&gt;
@@ -1373,13 +1373,13 @@ git checkout HEAD
         <item>
             <title>Studying a large project codebase
 </title>
-            <link>https://roytang.net/2019/03/studying-a-large-project-codebase/</link>
+            <link>https://mirror.roytang.net/2019/03/studying-a-large-project-codebase/</link>
             <pubDate>Sun, 03 Mar 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/03/studying-a-large-project-codebase/</guid>
+            <guid>https://mirror.roytang.net/2019/03/studying-a-large-project-codebase/</guid>
             <description>
             
-            &lt;p&gt;Given my &lt;a href=&#34;https://roytang.net/2018/12/quora/&#34;&gt;recent misgivings about Quora&lt;/a&gt;, I thought it might be a good idea to cross-post some of my answers from there into this blog, with some edits even. So here&amp;rsquo;s the first one! (stuff in &lt;em&gt;italics&lt;/em&gt; were added during the cross-post)&lt;/p&gt;
+            &lt;p&gt;Given my &lt;a href=&#34;https://mirror.roytang.net/2018/12/quora/&#34;&gt;recent misgivings about Quora&lt;/a&gt;, I thought it might be a good idea to cross-post some of my answers from there into this blog, with some edits even. So here&amp;rsquo;s the first one! (stuff in &lt;em&gt;italics&lt;/em&gt; were added during the cross-post)&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;How can you read and study a large software project source code?&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1400,10 +1400,10 @@ git checkout HEAD
         <item>
             <title>Reddit PH: Software Dev Q&amp;A
 </title>
-            <link>https://roytang.net/2019/02/reddit-ph-software-dev-qa/</link>
+            <link>https://mirror.roytang.net/2019/02/reddit-ph-software-dev-qa/</link>
             <pubDate>Wed, 20 Feb 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/02/reddit-ph-software-dev-qa/</guid>
+            <guid>https://mirror.roytang.net/2019/02/reddit-ph-software-dev-qa/</guid>
             <description>
             
             &lt;p&gt;I had some free time the other day so I randomly decided to post in the &lt;a href=&#34;https://www.reddit.com/r/Philippines/&#34;&gt;PH subreddit&lt;/a&gt;&amp;rsquo;s regular afternoon &lt;a href=&#34;https://www.reddit.com/r/Philippines/comments/arsxjg/afternoon_random_discussion_feb_18_2019/&#34;&gt;random discussion thread&lt;/a&gt;, asking for &lt;a href=&#34;https://www.reddit.com/r/Philippines/comments/arsxjg/afternoon_random_discussion_feb_18_2019/egpog87/&#34;&gt;questions about software development&lt;/a&gt;. I ended up typing some longish answers, I thought I&amp;rsquo;d copy them over to the blog in case anyone was interested. TBH I meant more like StackOverflow type questions with specific technical problems, but I ended up answering mostly career-related questions, which is fine, but disclaimer: I don&amp;rsquo;t claim to be an expert, these are just my opinions on things.&lt;/p&gt;
@@ -1453,14 +1453,14 @@ git checkout HEAD
         <item>
             <title>Hacktoberfest
 </title>
-            <link>https://roytang.net/2019/02/hacktoberfest/</link>
+            <link>https://mirror.roytang.net/2019/02/hacktoberfest/</link>
             <pubDate>Thu, 14 Feb 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/02/hacktoberfest/</guid>
+            <guid>https://mirror.roytang.net/2019/02/hacktoberfest/</guid>
             <description>
             
             &lt;p&gt;Last October I participated in #Hacktoberfest, &lt;a href=&#34;https://hacktoberfest.digitalocean.com/&#34;&gt;sponsored by DigitalOcean and Github&lt;/a&gt;. It&amp;rsquo;s a &amp;ldquo;celebration&amp;rdquo; to promote open source activity, and basically you just need to submit 5 pull requests to any github repository, and they give away swag to anyone who completes the activity. Microsoft held a [counterpart celebration] where they only require you to submit 1 pull request to any Microsoft repository.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve always wanted to start participating in Open Source, but it&amp;rsquo;s a bit difficult to find a good place to contribute (other than logging issues of course). So when I heard about this activity, I thought &amp;ldquo;Why not?&amp;rdquo; Anyway, I&amp;rsquo;m not ashamed to admit 4 out of my 5 PRs were to small/minor projects, some of them seemingly created specifically to help farm Hacktoberfest PRs lol. I did manage to get &lt;a href=&#34;https://github.com/Microsoft/vscode/pull/61206&#34;&gt;one pull request accepted&lt;/a&gt; for &lt;a href=&#34;https://roytang.net/2018/11/my-history-in-text-editors/&#34;&gt;my current favorite editor&lt;/a&gt;, VSCode! So that&amp;rsquo;s something! It was just a super minor bug fix, but it feels good to know that some future build of VS Code may have some code I wrote in it. This also qualified me to get swag from Microsoft! I haven&amp;rsquo;t gotten any open source-related swag since the dearly-departed &lt;a href=&#34;https://roytang.net/2008/11/free-flex-shirt-from-adobe/&#34;&gt;Adobe Flex shirt from 2008&lt;/a&gt; (RIP Adobe Flex).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve always wanted to start participating in Open Source, but it&amp;rsquo;s a bit difficult to find a good place to contribute (other than logging issues of course). So when I heard about this activity, I thought &amp;ldquo;Why not?&amp;rdquo; Anyway, I&amp;rsquo;m not ashamed to admit 4 out of my 5 PRs were to small/minor projects, some of them seemingly created specifically to help farm Hacktoberfest PRs lol. I did manage to get &lt;a href=&#34;https://github.com/Microsoft/vscode/pull/61206&#34;&gt;one pull request accepted&lt;/a&gt; for &lt;a href=&#34;https://mirror.roytang.net/2018/11/my-history-in-text-editors/&#34;&gt;my current favorite editor&lt;/a&gt;, VSCode! So that&amp;rsquo;s something! It was just a super minor bug fix, but it feels good to know that some future build of VS Code may have some code I wrote in it. This also qualified me to get swag from Microsoft! I haven&amp;rsquo;t gotten any open source-related swag since the dearly-departed &lt;a href=&#34;https://mirror.roytang.net/2008/11/free-flex-shirt-from-adobe/&#34;&gt;Adobe Flex shirt from 2008&lt;/a&gt; (RIP Adobe Flex).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m only posting about this now, four months after the fact, because my Hacktoberfest swag only came in last week and I had to swing by the post office to pick them up. Here&amp;rsquo;s some pics:&lt;/p&gt;
 
 
@@ -1486,17 +1486,17 @@ git checkout HEAD
             
             &lt;a href=&#34;#1abc78fd66250c45e478e05a73ee6563-lightbox&#34;&gt;
                 &lt;figure&gt;
-                  &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/1c680980eabb587ef1039ca69885ac8f_hu4350d9514153e1db5174154929a7c9dc_91815_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
+                  &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/1c680980eabb587ef1039ca69885ac8f_hu4350d9514153e1db5174154929a7c9dc_91815_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
                   &lt;figcaption&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft! (Click to view full-size)&lt;/figcaption&gt;
                 &lt;/figure&gt;
             &lt;/a&gt;
             &lt;div  class=&#34;lightbox&#34; id=&#34;1abc78fd66250c45e478e05a73ee6563-lightbox&#34; style=&#34;display: none;&#34;&gt;
               &lt;a href=&#34;#_&#34;&gt;
-                &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/1c680980eabb587ef1039ca69885ac8f.jpg&#34; /&gt;
+                &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/1c680980eabb587ef1039ca69885ac8f.jpg&#34; /&gt;
               &lt;/a&gt;
               &lt;div class=&#34;lightbox_overlay&#34;&gt;
                 &lt;p&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&lt;/p&gt;
-                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
               &lt;/div&gt;
             &lt;/div&gt;            
         
@@ -1509,17 +1509,17 @@ git checkout HEAD
             
             &lt;a href=&#34;#b3baecfb685ea3cdb683c2a70ca82fdb-lightbox&#34;&gt;
                 &lt;figure&gt;
-                  &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/398c1e8e920c14aea211821f7894aaee_huf6fd3fc2169926707e7e410b9e8680d7_101173_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
+                  &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/398c1e8e920c14aea211821f7894aaee_huf6fd3fc2169926707e7e410b9e8680d7_101173_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
                   &lt;figcaption&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft! (Click to view full-size)&lt;/figcaption&gt;
                 &lt;/figure&gt;
             &lt;/a&gt;
             &lt;div  class=&#34;lightbox&#34; id=&#34;b3baecfb685ea3cdb683c2a70ca82fdb-lightbox&#34; style=&#34;display: none;&#34;&gt;
               &lt;a href=&#34;#_&#34;&gt;
-                &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/398c1e8e920c14aea211821f7894aaee.jpg&#34; /&gt;
+                &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/398c1e8e920c14aea211821f7894aaee.jpg&#34; /&gt;
               &lt;/a&gt;
               &lt;div class=&#34;lightbox_overlay&#34;&gt;
                 &lt;p&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&lt;/p&gt;
-                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
               &lt;/div&gt;
             &lt;/div&gt;            
         
@@ -1532,17 +1532,17 @@ git checkout HEAD
             
             &lt;a href=&#34;#32abe86d3845a6d6595e617d27d7eb2a-lightbox&#34;&gt;
                 &lt;figure&gt;
-                  &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/b90e15c7e12736caa6de77ae1240e00f_hue534623f8e2a3d3c2e1c4d7fd367f905_164525_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
+                  &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/b90e15c7e12736caa6de77ae1240e00f_hue534623f8e2a3d3c2e1c4d7fd367f905_164525_300x0_resize_q75_box.jpg&#34; alt=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; title=&#34;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&#34; class=&#34;tn&#34; /&gt;
                   &lt;figcaption&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft! (Click to view full-size)&lt;/figcaption&gt;
                 &lt;/figure&gt;
             &lt;/a&gt;
             &lt;div  class=&#34;lightbox&#34; id=&#34;32abe86d3845a6d6595e617d27d7eb2a-lightbox&#34; style=&#34;display: none;&#34;&gt;
               &lt;a href=&#34;#_&#34;&gt;
-                &lt;img src=&#34;https://roytang.net/2019/02/btxn5aybmto/b90e15c7e12736caa6de77ae1240e00f.jpg&#34; /&gt;
+                &lt;img src=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/b90e15c7e12736caa6de77ae1240e00f.jpg&#34; /&gt;
               &lt;/a&gt;
               &lt;div class=&#34;lightbox_overlay&#34;&gt;
                 &lt;p&gt;Passed by the post office today to pick up some parcels, turns out it was the #hacktoberfest swag I got for participating last October. Thanks Digital Ocean/Github/Microsoft!&lt;/p&gt;
-                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+                &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Feb 2019 5:56am&#34;&gt;14 Feb 2019 5:56am&lt;/time&gt;&lt;a href=&#34;https://mirror.roytang.net/2019/02/btxn5aybmto/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
               &lt;/div&gt;
             &lt;/div&gt;            
         
@@ -1559,13 +1559,13 @@ git checkout HEAD
         <item>
             <title>TriviaStorm: Text and Answer parsing
 </title>
-            <link>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
+            <link>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</link>
             <pubDate>Sun, 03 Feb 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
+            <guid>https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/</guid>
             <description>
             
-            &lt;p&gt;A while back I started a &lt;a href=&#34;https://roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
+            &lt;p&gt;A while back I started a &lt;a href=&#34;https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/&#34;&gt;Twitter trivia bot as a weekend project&lt;/a&gt;. That bot is still &lt;a href=&#34;https://twitter.com/triviastorm&#34;&gt;up and running on Twitter&lt;/a&gt;, you can check it out there!&lt;/p&gt;
 &lt;p&gt;But today, I thought I&amp;rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for &lt;a href=&#34;https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/&#34;&gt;Django&amp;rsquo;s unit testing framework&lt;/a&gt;. I&amp;rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the bot had to be able to handle a wide variety of answers&lt;/li&gt;
@@ -1602,10 +1602,10 @@ git checkout HEAD
         <item>
             <title>I still Google the most basic things
 </title>
-            <link>https://roytang.net/2019/01/i-still-google-the-most-basic-things/</link>
+            <link>https://mirror.roytang.net/2019/01/i-still-google-the-most-basic-things/</link>
             <pubDate>Thu, 17 Jan 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/i-still-google-the-most-basic-things/</guid>
+            <guid>https://mirror.roytang.net/2019/01/i-still-google-the-most-basic-things/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been working with Javascript for more than a decade. Last week while helping another developer debug a problem, I had to Google how to check if an element exists in a Javascript array, something superbasic, that one would expect most newbies to know. I&amp;rsquo;m sure I Google some superbasic thing at least once a week. It&amp;rsquo;s not embarassing or anything, it&amp;rsquo;s a common occurrence. I&amp;rsquo;m surely not alone. Just last night a tweet about this crossed my TL:&lt;/p&gt;
@@ -1622,13 +1622,13 @@ git checkout HEAD
         <item>
             <title>Finding Time to Learn new Things
 </title>
-            <link>https://roytang.net/2019/01/finding-time-to-learn-new-things/</link>
+            <link>https://mirror.roytang.net/2019/01/finding-time-to-learn-new-things/</link>
             <pubDate>Mon, 14 Jan 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/finding-time-to-learn-new-things/</guid>
+            <guid>https://mirror.roytang.net/2019/01/finding-time-to-learn-new-things/</guid>
             <description>
             
-            &lt;p&gt;Someone responded to my post on &lt;a href=&#34;https://roytang.net/2019/01/tech-to-learn-in-2019/&#34;&gt;things to learn in 2019&lt;/a&gt; by asking how one finds the inspiration to learn all of the things. Well, my first answer was that those are just things I find interesting and may look into, but that&amp;rsquo;s not really an answer for the inspiration part.&lt;/p&gt;
+            &lt;p&gt;Someone responded to my post on &lt;a href=&#34;https://mirror.roytang.net/2019/01/tech-to-learn-in-2019/&#34;&gt;things to learn in 2019&lt;/a&gt; by asking how one finds the inspiration to learn all of the things. Well, my first answer was that those are just things I find interesting and may look into, but that&amp;rsquo;s not really an answer for the inspiration part.&lt;/p&gt;
 &lt;p&gt;Software development is a very wide field, one where the amount of things you can learn increases daily, so it&amp;rsquo;s almost impossible to keep up with everything. I think that having a natural tendency or curiosity towards learning new things is a distinct advantage in this industry. Having at least some passing familiarity with a wide range of technologies gives you more options in both job hunting and deciding on technical approaches.&lt;/p&gt;
 &lt;p&gt;When interviewing developers, I often viewed it as a distinct advantage when a candidate invested their own time in trying out new tech. However, I realize that spending your own time to learn things on your own is another form of privilege that I have. Not all developers will have the free time or motivation to do that unless it was part of their work tasks. So insisting that developers should do this in their free time is a bit elitist to say the least.&lt;/p&gt;
 &lt;p&gt;I read &lt;a href=&#34;http://coding-is-like-cooking.info/2018/12/who-should-pay-for-upskilling-software-developers-individuals-or-employers/&#34;&gt;a blog post&lt;/a&gt; the other day saying it&amp;rsquo;s actually beneficial for companies to pay for their employees to learn stuff during work time. Quote:&lt;/p&gt;
@@ -1646,10 +1646,10 @@ git checkout HEAD
         <item>
             <title>Git vs CVS
 </title>
-            <link>https://roytang.net/2019/01/git-vs-cvs/</link>
+            <link>https://mirror.roytang.net/2019/01/git-vs-cvs/</link>
             <pubDate>Sat, 12 Jan 2019 02:06:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/git-vs-cvs/</guid>
+            <guid>https://mirror.roytang.net/2019/01/git-vs-cvs/</guid>
             <description>
             
             &lt;p&gt;A while back we were tasked with helping a client&amp;rsquo;s internal dev team to migrate their repositories from Subversion to Git. The distributed VCS seemed ideal for their situation - they had a very small in-house dev team managing contributions from external subcontractors. The main rationale was that their process of merging contributions from the external developers was extremely complicated and often resulted in conflicts that were challenging to merge. Before this, I hadn&amp;rsquo;t actually used Git too deeply myself (aside from cloning stuff from Github), and especially not in a team setting, so the training one of our other engineers gave them was a good opportunity for me to become familiar with Git as well. During the succeeding months we guided them through the first few pull requests and merges; their repository structure and build process was quite complicated so it took us a while to iron out the kinks. There was often some difficulty when merging PRs from old forks and so on. I mostly let our other engineer who had more Git experience handle any merging. Sometimes I wondered about whether the transition was really worth it for the client, but it all seemed to end up okay.&lt;/p&gt;
@@ -1666,16 +1666,16 @@ git checkout HEAD
         <item>
             <title>Tech to Learn in 2019
 </title>
-            <link>https://roytang.net/2019/01/tech-to-learn-in-2019/</link>
+            <link>https://mirror.roytang.net/2019/01/tech-to-learn-in-2019/</link>
             <pubDate>Tue, 08 Jan 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/tech-to-learn-in-2019/</guid>
+            <guid>https://mirror.roytang.net/2019/01/tech-to-learn-in-2019/</guid>
             <description>
             
-            &lt;p&gt;One of the things about self-identifying as a &amp;ldquo;Full Stack Developer&amp;rdquo; or &lt;a href=&#34;https://roytang.net/2019/01/solution-architect/&#34;&gt;&amp;ldquo;Solution Architect&amp;rdquo;&lt;/a&gt; is that there&amp;rsquo;s no shortage of things to learn, and oftentimes it&amp;rsquo;s good for your career-wise to at least have some passing knowledge of a bunch of technologies. It helps that I really like the field as well. I try to make sure I study or learn at least one new programming language or framework every year (though I am willing to stretch that definition as needed). Here&amp;rsquo;s a list of tech I&amp;rsquo;m looking at learning in 2019:&lt;/p&gt;
+            &lt;p&gt;One of the things about self-identifying as a &amp;ldquo;Full Stack Developer&amp;rdquo; or &lt;a href=&#34;https://mirror.roytang.net/2019/01/solution-architect/&#34;&gt;&amp;ldquo;Solution Architect&amp;rdquo;&lt;/a&gt; is that there&amp;rsquo;s no shortage of things to learn, and oftentimes it&amp;rsquo;s good for your career-wise to at least have some passing knowledge of a bunch of technologies. It helps that I really like the field as well. I try to make sure I study or learn at least one new programming language or framework every year (though I am willing to stretch that definition as needed). Here&amp;rsquo;s a list of tech I&amp;rsquo;m looking at learning in 2019:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Rust or Golang.&lt;/strong&gt; Between Python and JS, the last few years for me have been mostly focused on dynamically-typed languages that don&amp;rsquo;t require precompilation. With my recent &lt;a href=&#34;https://roytang.net/2019/01/revisiting-c---after-a-decade/&#34;&gt;revisit of C++&lt;/a&gt;, I&amp;rsquo;m a bit interested in checking out a new statically-typed compiled language. Rust and Golang or the primary candidates here, I&amp;rsquo;ll probably toy around with both to see which one I like better. The problem here is that I typically do web-based programs, so finding a project where it would be worth using one of these might be challenging.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Swift&lt;/strong&gt;. Since I recently bought a &lt;a href=&#34;https://roytang.net/2018/12/macbook-air-2017-model/&#34;&gt;Macbook Air&lt;/a&gt;, that opens up the possibility of trying out Swift. I was involved in a mobile project when Swift came out and found it interesting when I was first going through the documentation - maybe because I thought Objective-C was a hot mess (or at least our codebase was back then). I never did get a chance to try it out, so maybe I will this year - if I find an appropriate mobile app to work on.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rust or Golang.&lt;/strong&gt; Between Python and JS, the last few years for me have been mostly focused on dynamically-typed languages that don&amp;rsquo;t require precompilation. With my recent &lt;a href=&#34;https://mirror.roytang.net/2019/01/revisiting-c---after-a-decade/&#34;&gt;revisit of C++&lt;/a&gt;, I&amp;rsquo;m a bit interested in checking out a new statically-typed compiled language. Rust and Golang or the primary candidates here, I&amp;rsquo;ll probably toy around with both to see which one I like better. The problem here is that I typically do web-based programs, so finding a project where it would be worth using one of these might be challenging.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Swift&lt;/strong&gt;. Since I recently bought a &lt;a href=&#34;https://mirror.roytang.net/2018/12/macbook-air-2017-model/&#34;&gt;Macbook Air&lt;/a&gt;, that opens up the possibility of trying out Swift. I was involved in a mobile project when Swift came out and found it interesting when I was first going through the documentation - maybe because I thought Objective-C was a hot mess (or at least our codebase was back then). I never did get a chance to try it out, so maybe I will this year - if I find an appropriate mobile app to work on.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Kotlin&lt;/strong&gt; is to Java and the JVM as Swift is to Objective-C and iOS. It&amp;rsquo;s young, but as a JVM language it has direct interoperability with Java programs, and it&amp;rsquo;s supposedly a first-class language nowadays for Android development. If I do decide to work on a native mobile app, Kotlin is a prime choice for the Android version. (Assuming I&amp;rsquo;m willing to dive back into the JVM ecosystem&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CSS Grid&lt;/strong&gt;. I&amp;rsquo;ll be the first to admin I&amp;rsquo;m a bit behind on frontend practices; my default layout framework is still &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Twitter&amp;rsquo;s Bootstrap&lt;/a&gt;. If I get the chance, I&amp;rsquo;ll do some of my personal web projects using CSS grid.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Vue.js&lt;/strong&gt;. Speaking of frontends, I never got too deep into the current crop of frontend frameworks. Funny story, we were meeting with a database vendor to discuss solution options for a client and I mentioned I had already built a small prototype web application using their product. They asked me what framework I was using on the frontend and when I told them I wasn&amp;rsquo;t using any, I was told that was &amp;ldquo;hardcore&amp;rdquo;. While I do think it&amp;rsquo;s helpful for full-stack web developers to be familiar with vanilla JS, I am interested in trying out at least one of the three prevalent frontend frameworks - Vue, React, and Angular. I have kind of tried React a bit with React Native, but at this moment, I&amp;rsquo;m leaning more towards Vue.&lt;/li&gt;
@@ -1693,10 +1693,10 @@ git checkout HEAD
         <item>
             <title>Solution Architect
 </title>
-            <link>https://roytang.net/2019/01/solution-architect/</link>
+            <link>https://mirror.roytang.net/2019/01/solution-architect/</link>
             <pubDate>Mon, 07 Jan 2019 05:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/solution-architect/</guid>
+            <guid>https://mirror.roytang.net/2019/01/solution-architect/</guid>
             <description>
             
             &lt;p&gt;Although I still primarily identify as a &amp;ldquo;Full Stack Developer&amp;rdquo;, during the past few years I&amp;rsquo;ve also found myself in a role called &amp;ldquo;Solution Architect&amp;rdquo;. The thing about being a solution architect is that there isn&amp;rsquo;t really a clear definition of the role, what it involves, or the scope of responsibility. I suppose it depends largely on the organization and the project. The role mostly involves making techical decisions on a larger scale, like project-wide or organization-wide, rather than on the micro day-to-day technical decisions involved in a typical software development involves. These decisions can encompass not just coding, but also requirements gathering, application design, database design, modelling, testing methodology, processes, deployment, and so on.&lt;/p&gt;
@@ -1706,13 +1706,13 @@ git checkout HEAD
 &lt;p&gt;Interestingly, the term &amp;ldquo;solution architect&amp;rdquo; has been increasing in usage over the past few years, if Google Trends is any indication:&lt;/p&gt;
 &lt;a href=&#34;#8538e8aa0341cd3eb7a1630f595cac40-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2019/01/solution-architect/solution-architect_hua2140a621f54624710810700693deb41_39199_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2019/01/solution-architect/solution-architect_hua2140a621f54624710810700693deb41_39199_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;8538e8aa0341cd3eb7a1630f595cac40-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2019/01/solution-architect/solution-architect.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2019/01/solution-architect/solution-architect.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -1724,7 +1724,7 @@ git checkout HEAD
 
 
 
-&lt;img src=&#34;https://roytang.net/2019/01/solution-architect/solution-architect_hua2140a621f54624710810700693deb41_39199_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2019/01/solution-architect/solution-architect_hua2140a621f54624710810700693deb41_39199_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -1734,10 +1734,10 @@ git checkout HEAD
         <item>
             <title>Revisiting C&#43;&#43; after a decade
 </title>
-            <link>https://roytang.net/2019/01/revisiting-c-after-a-decade/</link>
+            <link>https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/</link>
             <pubDate>Sat, 05 Jan 2019 05:58:22 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/01/revisiting-c-after-a-decade/</guid>
+            <guid>https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/</guid>
             <description>
             
             &lt;p&gt;This year I had the dubious privilege of having to work with a C++ project again. Although my college education was in C, that was a completely different animal. I did self-study C++ for a bit back even before I was working, mostly because I was interested in game development even back then. I remember trying some OpenGL and/or DirectX stuff back with good old Borland Turbo-C++ during the DOS days and using the &lt;a href=&#34;https://www.bloodshed.net/dev/devcpp.html&#34;&gt;Dev-C++ IDE&lt;/a&gt; when I shifted to Windows. Professionally, I think there was at least one project where I had to work on a Windows-based application using C++ on Visual Studio 6 (before all this .NET nonsense), but for the life of me I can&amp;rsquo;t even remember which project it was anymore. I do remember struggling more with the compiler and the IDE and the layouting of Windows components more than the language itself. And even then, I mostly used the language as an extension of C and not really taking advantage of the more advanced features.&lt;/p&gt;
@@ -1746,7 +1746,7 @@ git checkout HEAD
 
 
     On 
-    &lt;a href=&#34;https://roytang.net/2018/08/1035019095287189504/&#34;&gt;&lt;time datetime=&#34;2018-08-30 04:19:16&#34;&gt;30 Aug 2018 4:19am&lt;/time&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://mirror.roytang.net/2018/08/1035019095287189504/&#34;&gt;&lt;time datetime=&#34;2018-08-30 04:19:16&#34;&gt;30 Aug 2018 4:19am&lt;/time&gt;&lt;/a&gt;
     I wrote:
     &lt;blockquote&gt;
         &lt;p&gt;python expert: my code ran correctly on my first try! lucky!&lt;/p&gt;
@@ -1773,13 +1773,13 @@ git checkout HEAD
 &lt;p&gt;So there were a lot of challenges along the way, but this is fairly typical for developers coming into a project with an existing large codebase. And on the upside (my usual upside), I learned a lot, and I felt like a C++ genius a few weeks in. When you climb a learning curve quickly, it can make you feel amazing:&lt;/p&gt;
 &lt;a href=&#34;#01b435b3e3de1769b5c6064c7173280b-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit_hu10548764201c54e6af8f32553bbadfc8_4362_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit_hu10548764201c54e6af8f32553bbadfc8_4362_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;01b435b3e3de1769b5c6064c7173280b-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit.jpg&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit.jpg&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -1790,7 +1790,7 @@ git checkout HEAD
 
 
 
-&lt;img src=&#34;https://roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit_hu10548764201c54e6af8f32553bbadfc8_4362_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/hohohoidiit_hu10548764201c54e6af8f32553bbadfc8_4362_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
@@ -1800,10 +1800,10 @@ git checkout HEAD
         <item>
             <title>Adding Developers to a Late Project
 </title>
-            <link>https://roytang.net/2018/12/adding-developers-to-a-late-project/</link>
+            <link>https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/</link>
             <pubDate>Thu, 13 Dec 2018 01:56:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/12/adding-developers-to-a-late-project/</guid>
+            <guid>https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/</guid>
             <description>
             
             &lt;p&gt;For any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.&lt;/p&gt;
@@ -1840,10 +1840,10 @@ git checkout HEAD
         <item>
             <title>My history in text editors
 </title>
-            <link>https://roytang.net/2018/11/my-history-in-text-editors/</link>
+            <link>https://mirror.roytang.net/2018/11/my-history-in-text-editors/</link>
             <pubDate>Sat, 10 Nov 2018 05:07:22 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/11/my-history-in-text-editors/</guid>
+            <guid>https://mirror.roytang.net/2018/11/my-history-in-text-editors/</guid>
             <description>
             
             &lt;p&gt;Text editors (and by extension IDEs) are a programmer’s best friend. I thought I’d look back at a number of text editors I’ve used over the years. (I grew up with Windows, so I won’t list vim/emacs/nano here, even though I’m at least a bit proficient with vim by now. That is, I know how to exit vim.)&lt;/p&gt;
@@ -1885,10 +1885,10 @@ git checkout HEAD
         <item>
             <title>168 hours vs 10000 hours
 </title>
-            <link>https://roytang.net/2018/11/168-hours-vs-10000-hours/</link>
+            <link>https://mirror.roytang.net/2018/11/168-hours-vs-10000-hours/</link>
             <pubDate>Fri, 09 Nov 2018 05:07:22 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/11/168-hours-vs-10000-hours/</guid>
+            <guid>https://mirror.roytang.net/2018/11/168-hours-vs-10000-hours/</guid>
             <description>
             
             &lt;p&gt;According to Malcolm Gladwell’s book Outliers, you need 10,000 hours of continuous sustained practice to become an expert.&lt;/p&gt;
@@ -1907,10 +1907,10 @@ git checkout HEAD
         <item>
             <title>Version Issues
 </title>
-            <link>https://roytang.net/2018/11/version-issues/</link>
+            <link>https://mirror.roytang.net/2018/11/version-issues/</link>
             <pubDate>Wed, 07 Nov 2018 05:06:56 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/11/version-issues/</guid>
+            <guid>https://mirror.roytang.net/2018/11/version-issues/</guid>
             <description>
             
             &lt;p&gt;SCM (Software Configuration Management) doesn’t just refer to version control for the software you’re building. It also means controlling the versions of software you depend on. This includes operating system and programming runtimes. Sometimes even minor version differences can cause issues in running your software. I have two example stories to share:&lt;/p&gt;
@@ -1928,10 +1928,10 @@ git checkout HEAD
         <item>
             <title>Change and Risk and Governments
 </title>
-            <link>https://roytang.net/2018/10/change-and-risk-and-governments/</link>
+            <link>https://mirror.roytang.net/2018/10/change-and-risk-and-governments/</link>
             <pubDate>Wed, 31 Oct 2018 05:03:25 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/10/change-and-risk-and-governments/</guid>
+            <guid>https://mirror.roytang.net/2018/10/change-and-risk-and-governments/</guid>
             <description>
             
             &lt;p&gt;Systemic change is difficult. I&amp;rsquo;m talking about software projects/systems, but there are a lot of parallels with societal systems too, like governments or states.&lt;/p&gt;
@@ -1961,10 +1961,10 @@ git checkout HEAD
         <item>
             <title>Django Blog Application
 </title>
-            <link>https://roytang.net/2018/10/django-blog-application/</link>
+            <link>https://mirror.roytang.net/2018/10/django-blog-application/</link>
             <pubDate>Sun, 28 Oct 2018 05:02:37 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/10/django-blog-application/</guid>
+            <guid>https://mirror.roytang.net/2018/10/django-blog-application/</guid>
             <description>
             
             &lt;p&gt;Ten years ago this month, I started studying &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; by trying to build my own blog application. I found the code lying around while I was going through some backups lately. It&amp;rsquo;s way out of date, it uses an early version of django. I thought of bringing it up to speed, but that didn&amp;rsquo;t seem practical. Instead, for archival purposes, I cleaned it up a bit and &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;uploaded the code to a github repo&lt;/a&gt;. (Helpful github immediately warned me that having a very old version of Django was a security risk lol). There&amp;rsquo;s a lot more information in the README.md of that repo. I actually used this as my main blog engine for a while before I decided the maintenance effort wasn&amp;rsquo;t worth it and switched to WordPress.&lt;/p&gt;
@@ -1978,10 +1978,10 @@ git checkout HEAD
         <item>
             <title>Gladwell and Risk Management
 </title>
-            <link>https://roytang.net/2018/10/gladwell-and-risk-management/</link>
+            <link>https://mirror.roytang.net/2018/10/gladwell-and-risk-management/</link>
             <pubDate>Thu, 25 Oct 2018 13:00:02 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/10/gladwell-and-risk-management/</guid>
+            <guid>https://mirror.roytang.net/2018/10/gladwell-and-risk-management/</guid>
             <description>
             
             &lt;p&gt;Malcolm Gladwell, in &lt;a href=&#34;http://gladwell.com/blowup/&#34;&gt;an article from 1996 discussing the Challenger disaster&lt;/a&gt;, tells us:&lt;/p&gt;
@@ -2004,10 +2004,10 @@ git checkout HEAD
         <item>
             <title>Working hours and overtime
 </title>
-            <link>https://roytang.net/2018/10/working-hours-and-overtime/</link>
+            <link>https://mirror.roytang.net/2018/10/working-hours-and-overtime/</link>
             <pubDate>Fri, 19 Oct 2018 01:00:22 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/10/working-hours-and-overtime/</guid>
+            <guid>https://mirror.roytang.net/2018/10/working-hours-and-overtime/</guid>
             <description>
             
             &lt;p&gt;Rockstar was in the gaming news recently because they mentioned that some of them had &lt;a href=&#34;https://sea.ign.com/xbox-one-gaming-hardware/142536/news/rockstar-exec-clarifies-statement-about-red-dead-redemption&#34;&gt;worked 100-hour weeks&lt;/a&gt; on their massive sequel to Red Dead Redemption coming out soon (no idea if I&amp;rsquo;ll play this). The idea of 100 hour weeks seemed insane to me, and it got me thinking: I&amp;rsquo;ve done some serious overtime before, have I ever gotten close to that amount of work in a week?&lt;/p&gt;

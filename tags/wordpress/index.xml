@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>wordpress on Roy Tang</title>
-      <link>https://roytang.net/tags/wordpress/</link>
+      <link>https://mirror.roytang.net/tags/wordpress/</link>
       <description>Recent content in wordpress on Roy Tang</description>
       <generator>Hugo -- gohugo.io</generator>
       <language>en-us</language>
@@ -9,17 +9,17 @@
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
       <lastBuildDate>Wed, 14 Nov 2018 03:06:26 +0000</lastBuildDate>
       
-          <atom:link href="https://roytang.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+          <atom:link href="https://mirror.roytang.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
       
           
       
         <item>
             <title>Site Migration from Wordpress to Hugo
 </title>
-            <link>https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</link>
+            <link>https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</link>
             <pubDate>Wed, 14 Nov 2018 03:06:26 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</guid>
+            <guid>https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</guid>
             <description>
             
             &lt;h3 id=&#34;leaving-wordpress&#34;&gt;Leaving Wordpress&lt;/h3&gt;
@@ -73,13 +73,13 @@
 
 &lt;a href=&#34;#bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -88,12 +88,12 @@
 &lt;/div&gt;
 
 &lt;p&gt;I actually couldn&amp;rsquo;t find a decent Wordpress plugin that did this for me exactly, so I wrote my &lt;a href=&#34;https://github.com/roytang/wp_grid_archive/&#34;&gt;own plugin&lt;/a&gt; for this.&lt;/p&gt;
-&lt;p&gt;For Hugo, I struggled with this a while and was close to figure out when I finally got the approach right. CHeck &lt;a href=&#34;https://roytang.net/archives&#34;&gt;my archives page&lt;/a&gt; for how it turned out. The upside is I got to become a bit familiar with &lt;a href=&#34;https://golang.org/,&#34;&gt;https://golang.org/,&lt;/a&gt; particularly the way content is parsed and processed in Hugo templates.&lt;/p&gt;
+&lt;p&gt;For Hugo, I struggled with this a while and was close to figure out when I finally got the approach right. CHeck &lt;a href=&#34;https://mirror.roytang.net/archives&#34;&gt;my archives page&lt;/a&gt; for how it turned out. The upside is I got to become a bit familiar with &lt;a href=&#34;https://golang.org/,&#34;&gt;https://golang.org/,&lt;/a&gt; particularly the way content is parsed and processed in Hugo templates.&lt;/p&gt;
 &lt;h3 id=&#34;custom-shortcodes&#34;&gt;Custom shortcodes&lt;/h3&gt;
 &lt;p&gt;I had some custom-formatted code in Wordpress that wasn&amp;rsquo;t exported properly by the plugin. This required I create some new shortcodes for Hugo and replace the corresponding calls.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Spoilers. I had only recently added this WP plugin, and only one post was using it so this was straightforward. I created the spoiler shortcode and added some simple jQuery-backed code to toggle the spoiler content. I would have preferred doing this with vanilla JS so as to avoid the jQuery dependency, but I decided to put off learning how to do that for another day.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://roytang.net/categories/magic-the-gathering&#34;&gt;MTG&lt;/a&gt; Decklists and card links. Individual card links wasn&amp;rsquo;t an issue - I just generated an anchor as needed, and had to clean up some of the pages that used it. The decklist part was more challenging, as it involved a lot of text parsing. I managed to get it working to a point where the decklists were formatted correctly, but individual cards weren&amp;rsquo;t linked, before deciding to give up. The main issue is I haven&amp;rsquo;t figured out how to parse each line to split the card count and the card name, if the card count exists, i.e. &amp;ldquo;3 Lightning Bolt&amp;rdquo;. I considered just adding JavaScript to format the contents post-load, but the current behavior will do for now. Maybe I&amp;rsquo;ll even revisit the Hugo parsing issue later.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirror.roytang.net/categories/magic-the-gathering&#34;&gt;MTG&lt;/a&gt; Decklists and card links. Individual card links wasn&amp;rsquo;t an issue - I just generated an anchor as needed, and had to clean up some of the pages that used it. The decklist part was more challenging, as it involved a lot of text parsing. I managed to get it working to a point where the decklists were formatted correctly, but individual cards weren&amp;rsquo;t linked, before deciding to give up. The main issue is I haven&amp;rsquo;t figured out how to parse each line to split the card count and the card name, if the card count exists, i.e. &amp;ldquo;3 Lightning Bolt&amp;rdquo;. I considered just adding JavaScript to format the contents post-load, but the current behavior will do for now. Maybe I&amp;rsquo;ll even revisit the Hugo parsing issue later.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;redirects&#34;&gt;Redirects&lt;/h3&gt;
 &lt;p&gt;I wanted to minimize changes in the URLs of older content, so the permalinks for the old posts were kept in place. Another issue was the RSS feed, generated at &lt;code&gt;/index.xml&lt;/code&gt; by Hugo, which I wanted at &lt;code&gt;/feed/&lt;/code&gt; so that feed readers don&amp;rsquo;t need to be updated. A simple redirect in .htaccess was enough to get this done. I&amp;rsquo;m not much good at regexes, so I had to reference another &lt;a href=&#34;https://blog.philipphauer.de/moving-wordpress-hugo/&#34;&gt;blog post&lt;/a&gt; for this one. The RSS feeds for categories/tags has changed, I think that&amp;rsquo;s fine.&lt;/p&gt;
@@ -122,13 +122,13 @@
 
 &lt;a href=&#34;#860b271077bc60f75bc0ebe8bec296c9-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;860b271077bc60f75bc0ebe8bec296c9-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -148,11 +148,11 @@
 
 
 
-&lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -162,10 +162,10 @@
         <item>
             <title>Performance Optimization for WordPress Blogs
 </title>
-            <link>https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</link>
+            <link>https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</link>
             <pubDate>Thu, 30 Jun 2016 01:30:32 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</guid>
+            <guid>https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</guid>
             <description>
             
             &lt;p&gt;Some time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this &lt;a href=&#34;https://testmysite.thinkwithgoogle.com/&#34;&gt;Speed Testing Tool&lt;/a&gt;. Now, I&amp;rsquo;m of the opinion that for a personal blog such as this, web performance isn&amp;rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p&lt;/p&gt;
@@ -182,13 +182,13 @@
 
 &lt;a href=&#34;#0c6ac79b772c7e82c9d4b481ecd82269-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;0c6ac79b772c7e82c9d4b481ecd82269-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -219,13 +219,13 @@
 
 &lt;a href=&#34;#5e6f8afbe11d06811d33a26b4c215b02-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;5e6f8afbe11d06811d33a26b4c215b02-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -247,13 +247,13 @@
 
 &lt;a href=&#34;#36eed300f8d29100ff8ea1e3c36cd5ca-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;36eed300f8d29100ff8ea1e3c36cd5ca-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -277,13 +277,13 @@
 
 &lt;a href=&#34;#21b8bf5fee6eb583237d7c9920559f3b-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;21b8bf5fee6eb583237d7c9920559f3b-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -296,19 +296,19 @@
 
 
 
-&lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -318,10 +318,10 @@
         <item>
             <title>New note
 </title>
-            <link>https://roytang.net/2008/12/349997/</link>
+            <link>https://mirror.roytang.net/2008/12/349997/</link>
             <pubDate>Mon, 08 Dec 2008 16:08:43 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/12/349997/</guid>
+            <guid>https://mirror.roytang.net/2008/12/349997/</guid>
             <description>
             
 
@@ -338,10 +338,10 @@
         <item>
             <title>Django Update -- WordPress Import and More
 </title>
-            <link>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
+            <link>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
             <pubDate>Sun, 23 Nov 2008 00:04:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
+            <guid>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I&amp;rsquo;m coding. I&amp;rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.&lt;/p&gt;
@@ -368,10 +368,10 @@
         <item>
             <title>New WordPress Theme -- Thematic
 </title>
-            <link>https://roytang.net/2008/07/new-wordpress-theme-thematic/</link>
+            <link>https://mirror.roytang.net/2008/07/new-wordpress-theme-thematic/</link>
             <pubDate>Sun, 06 Jul 2008 04:55:46 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/07/new-wordpress-theme-thematic/</guid>
+            <guid>https://mirror.roytang.net/2008/07/new-wordpress-theme-thematic/</guid>
             <description>
             
             &lt;p&gt;Changed to &lt;a href=&#34;http://themeshaper.com/thematic/&#34;&gt;Thematic &lt;/a&gt;&lt;/p&gt;
@@ -399,10 +399,10 @@
         <item>
             <title>YUI: Rich Text Editor for Wordpress Plugin
 </title>
-            <link>https://roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</link>
+            <link>https://mirror.roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</link>
             <pubDate>Mon, 02 Jun 2008 22:18:09 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</guid>
+            <guid>https://mirror.roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://blog.davglass.com/files/yui/wp-yui-rte/&#34;&gt;YUI: Rich Text Editor for Wordpress Plugin&lt;/a&gt;
@@ -416,13 +416,13 @@
         <item>
             <title>Creating a WordPress Template Part 3
 </title>
-            <link>https://roytang.net/2008/05/creating-a-wordpress-template-part-3/</link>
+            <link>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-3/</link>
             <pubDate>Mon, 12 May 2008 20:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/05/creating-a-wordpress-template-part-3/</guid>
+            <guid>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-3/</guid>
             <description>
             
-            &lt;p&gt;&lt;a href=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;Part 1&lt;/a&gt;. &lt;a href=&#34;https://roytang.net/2008/05/creating-a-wordpress-template-part-2/&#34;&gt;Part 2&lt;/a&gt;. Moonglove Winnower template is currently live on &lt;a href=&#34;http://roytang.net/magic/&#34;&gt;Roy on Magic&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;Part 1&lt;/a&gt;. &lt;a href=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/&#34;&gt;Part 2&lt;/a&gt;. Moonglove Winnower template is currently live on &lt;a href=&#34;http://roytang.net/magic/&#34;&gt;Roy on Magic&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I made several color and formatting changes since the last update. Relatively easy due to the stylesheet. I also had to scrap the CSS hack for implementing equal height columns, it was causing problems with anchors in the URL. I went with a 1-pixel high background image instead.&lt;/p&gt;
 &lt;p&gt;Currently most of the PHP logic/heavy lifting is done in sidebar.php while most of the formatting stuff is handled in the stylesheet. Since I&amp;rsquo;m copying from an existing template and not creating one from scratch, I didn&amp;rsquo;t actually need to learn much PHP. Most of it was moving code around.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m not releasing this source yet because:&lt;/p&gt;
@@ -444,13 +444,13 @@
         <item>
             <title>Creating A WordPress Template Part 2
 </title>
-            <link>https://roytang.net/2008/05/creating-a-wordpress-template-part-2/</link>
+            <link>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/</link>
             <pubDate>Sun, 04 May 2008 08:21:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/05/creating-a-wordpress-template-part-2/</guid>
+            <guid>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/</guid>
             <description>
             
-            &lt;p&gt;Part 1 of this series is &lt;a href=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;Part 1 of this series is &lt;a href=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Creating a WordPress template is harder than I thought. Luckily I&amp;rsquo;m modifying the default template instead of starting from scratch. The one I&amp;rsquo;m creating is rather simple but after spending almost 8 hours on it so far, I&amp;rsquo;m still far away from completing it. I&amp;rsquo;m guessing the more complicated layouts take more than two weeks of full-time work.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my current WIP:&lt;/p&gt;
 
@@ -466,13 +466,13 @@
 
 &lt;a href=&#34;#e41ccc6e936570fd7b1d470acefcdd7d-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;e41ccc6e936570fd7b1d470acefcdd7d-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -536,7 +536,7 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 &lt;p&gt;I&amp;rsquo;ll continue working on this whenever I have time, and hopefully can have the theme live on the Roy on Magic blog soon.&lt;/p&gt;
 
 
-&lt;img src=&#34;https://roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; /&gt;
 
 
 
@@ -546,10 +546,10 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
         <item>
             <title>Creating a WordPress Template (Part 1 of N)
 </title>
-            <link>https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</link>
+            <link>https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</link>
             <pubDate>Tue, 29 Apr 2008 06:58:20 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</guid>
+            <guid>https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</guid>
             <description>
             
             &lt;ol&gt;
@@ -576,13 +576,13 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 
 &lt;a href=&#34;#f8e59ec3f5f89a421a41c8369c8232b0-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;f8e59ec3f5f89a421a41c8369c8232b0-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077.jpg&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077.jpg&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -605,13 +605,13 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 
 &lt;a href=&#34;#8145d625cc6d861741d91c6590043790-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;8145d625cc6d861741d91c6590043790-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078.jpg&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078.jpg&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -634,13 +634,13 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 
 &lt;a href=&#34;#6b79938abd17e975085e53c00c0f5cc8-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;6b79938abd17e975085e53c00c0f5cc8-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076.jpg&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076.jpg&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -664,13 +664,13 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 
 &lt;a href=&#34;#afb67861dbbcb1cc28a8fb4f3240217c-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;afb67861dbbcb1cc28a8fb4f3240217c-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -701,13 +701,13 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 
 &lt;a href=&#34;#48b47e9f06acd8c4260ba016f42c0e4e-lightbox&#34;&gt;
     &lt;figure&gt;
-      &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
       &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/a&gt;
 &lt;div class=&#34;lightbox&#34; id=&#34;48b47e9f06acd8c4260ba016f42c0e4e-lightbox&#34; style=&#34;display: none;&#34;&gt;
   &lt;a href=&#34;#_&#34;&gt;
-    &lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5.png&#34; /&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5.png&#34; /&gt;
   &lt;/a&gt;
   &lt;div class=&#34;lightbox_overlay&#34;&gt;
     &lt;p&gt;&lt;/p&gt;
@@ -718,23 +718,23 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
 &lt;p&gt;It now looks like the layout I planned! (Surprise!) Now I need to cleanup the content so that only the parts I want are displayed in each column. This is going to take a lot more delving into the innards of WordPress and PHP though, so I&amp;rsquo;ll continue this next time.&lt;/p&gt;
 
 
-&lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
-&lt;img src=&#34;https://roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; /&gt;
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; /&gt;
 
 
 
@@ -744,10 +744,10 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
         <item>
             <title>MTG Autocard WordPress Plugin
 </title>
-            <link>https://roytang.net/2008/02/mtg-autocard-wordpress-plugin/</link>
+            <link>https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/</link>
             <pubDate>Sun, 10 Feb 2008 15:18:23 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2008/02/mtg-autocard-wordpress-plugin/</guid>
+            <guid>https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/</guid>
             <description>
             
             &lt;p&gt;I had been planning to do this for a while: it&amp;rsquo;s my first WordPress Plugin! Over at &lt;a href=&#34;http://roytang.net/magic/&#34;&gt;Roy on Magic&lt;/a&gt;, I often have to write out decklists and such, so I wanted to have an autocard feature similar to the one used at MTGSalvation. After a quick five-minute search I couldn&amp;rsquo;t figure out how they did it, so I just wrote the plugin myself. Actual effort was around 3.5 hours, most of it struggling with PHP and Regular Expressions. :p&lt;/p&gt;
@@ -761,10 +761,10 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
         <item>
             <title>001-your-first-wp-plugin.mov (video/quicktime Object)
 </title>
-            <link>https://roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</link>
+            <link>https://mirror.roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</link>
             <pubDate>Sun, 07 May 2006 08:26:35 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</guid>
+            <guid>https://mirror.roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://txfx.net/files/wp-movies/001-your-first-wp-plugin.mov&#34;&gt;001-your-first-wp-plugin.mov (video/quicktime Object)&lt;/a&gt;
@@ -778,10 +778,10 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
         <item>
             <title>WordPress - USB
 </title>
-            <link>https://roytang.net/2006/03/wordpress-usb/</link>
+            <link>https://mirror.roytang.net/2006/03/wordpress-usb/</link>
             <pubDate>Sun, 12 Mar 2006 16:00:27 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2006/03/wordpress-usb/</guid>
+            <guid>https://mirror.roytang.net/2006/03/wordpress-usb/</guid>
             <description>
             Shared via delicious:
     &lt;a href=&#34;http://www.tamba2.org.uk/wordpress/usb/&#34;&gt;WordPress - USB&lt;/a&gt;
@@ -796,10 +796,10 @@ padding-bottom: 20000px; /* Part of equal heights column hack */
         <item>
             <title>Free WordPress Hosting
 </title>
-            <link>https://roytang.net/2005/04/free-wordpress-hosting/</link>
+            <link>https://mirror.roytang.net/2005/04/free-wordpress-hosting/</link>
             <pubDate>Mon, 11 Apr 2005 14:31:13 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2005/04/free-wordpress-hosting/</guid>
+            <guid>https://mirror.roytang.net/2005/04/free-wordpress-hosting/</guid>
             <description>
             
             &lt;p&gt;&lt;a href=&#34;http://www.blogsome.com/&#34;&gt;Wordpress host &amp;ndash; free blog&lt;/a&gt;&lt;/p&gt;

@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Roy Tang",
 	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
-    "home_page_url": "https://roytang.net/",
-    "feed_url": "https://roytang.net/feed.json",
+    "home_page_url": "https://mirror.roytang.net/",
+    "feed_url": "https://mirror.roytang.net/feed.json",
 	"author": {
 		"name": "Roy Tang",
 		"url": "https://roytang.net"
@@ -11,8 +11,64 @@
     "items": [
         
         {
-            "id": "https://roytang.net/2012/07/219773806825320448/",
-            "url": "https://roytang.net/2012/07/219773806825320448/",
+            "id": "https://mirror.roytang.net/2012/07/c59asd7/",
+            "url": "https://mirror.roytang.net/2012/07/c59asd7/",
+            "path": "/2012/07/c59asd7/",
+            "title": "",
+            "content_html": "\u003cp\u003eUpdating it would probably break too many foreign key constraints\u003c/p\u003e\n",
+            "summary": "Updating it would probably break too many foreign key constraints",
+            "date_published": "2012-07-04T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/c59asd7/index.md"
+            , "tags": ["Steam"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Steam/comments/w10g3/we_all_know_the_steam_login_name_cannot_be/c59asd7/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/220305419380326400/",
+            "url": "https://mirror.roytang.net/2012/07/220305419380326400/",
+            "path": "/2012/07/220305419380326400/",
+            "title": "",
+            "content_html": "\u003cp\u003e@lizbethjane WTH pauwi ka pa lang!\u003c/p\u003e\n",
+            "summary": "@lizbethjane WTH pauwi ka pa lang!",
+            "date_published": "2012-07-03T23:57:59+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/220305419380326400.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/220305419380326400/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/11305956/",
+            "url": "https://mirror.roytang.net/2012/07/11305956/",
+            "path": "/2012/07/11305956/",
+            "title": "Capturing and replacing the JSP response in a Filter",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain. However, I\u0026rsquo;m getting an \u0026ldquo;IllegalStateException: getOutputStream() has already been called for this response.\u0026rdquo; It seems to happen whenever one of our taglibs tries to write using the writer returned by \u0026ldquo;this.pageContext.getOut()\u0026rdquo;, so I guess the response/writer/outputstream being used by Tomcat isn\u0026rsquo;t using the wrapper classes I passed via the filter.\u003c/p\u003e\n\u003cp\u003eAny suggestions? Or is there a better way to accomplish what I\u0026rsquo;m trying to do?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\nI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain.",
+            "date_published": "2012-07-03T07:00:24+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/11305956/index.md"
+            , "tags": ["jsp","servlet-filters","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter",
+                    "source_file": "comment-20120703T071412-11306131.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/219773806825320448/",
+            "url": "https://mirror.roytang.net/2012/07/219773806825320448/",
             "path": "/2012/07/219773806825320448/",
             "title": "",
             "content_html": "\u003cp\u003eNo Llanowar, no BoP, no Noble Hierarch in #M13, all we get is\u0026hellip; Arbor Elf? =/\u003c/p\u003e\n",
@@ -28,8 +84,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219768199779074048/",
-            "url": "https://roytang.net/2012/07/219768199779074048/",
+            "id": "https://mirror.roytang.net/2012/07/219768199779074048/",
+            "url": "https://mirror.roytang.net/2012/07/219768199779074048/",
             "path": "/2012/07/219768199779074048/",
             "title": "",
             "content_html": "\u003cp\u003eAre you behaving like a protagonist right now?\u003c/p\u003e\n",
@@ -45,8 +101,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219766981790941184/",
-            "url": "https://roytang.net/2012/07/219766981790941184/",
+            "id": "https://mirror.roytang.net/2012/07/219766981790941184/",
+            "url": "https://mirror.roytang.net/2012/07/219766981790941184/",
             "path": "/2012/07/219766981790941184/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/barayantan/\"\u003e@barayantan\u003c/a\u003e may HD copy ka ng Batman Begins? Padala sa office :D\u003c/p\u003e\n",
@@ -62,8 +118,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219763742882271232/",
-            "url": "https://roytang.net/2012/07/219763742882271232/",
+            "id": "https://mirror.roytang.net/2012/07/219763742882271232/",
+            "url": "https://mirror.roytang.net/2012/07/219763742882271232/",
             "path": "/2012/07/219763742882271232/",
             "title": "",
             "content_html": "\u003cp\u003e\u0026ldquo;Alam mo ung pagod na ham? Ham tired.\u0026rdquo; - kapatid ko\u003c/p\u003e\n",
@@ -79,8 +135,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219758979302178816/",
-            "url": "https://roytang.net/2012/07/219758979302178816/",
+            "id": "https://mirror.roytang.net/2012/07/219758979302178816/",
+            "url": "https://mirror.roytang.net/2012/07/219758979302178816/",
             "path": "/2012/07/219758979302178816/",
             "title": "",
             "content_html": "\u003cp\u003eI don\u0026rsquo;t know how they expect Peter Parker to be taken seriously as a tech guy when his default search engine is Bing\u003c/p\u003e\n",
@@ -96,8 +152,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/c588zmy/",
-            "url": "https://roytang.net/2012/07/c588zmy/",
+            "id": "https://mirror.roytang.net/2012/07/c588zmy/",
+            "url": "https://mirror.roytang.net/2012/07/c588zmy/",
             "path": "/2012/07/c588zmy/",
             "title": "",
             "content_html": "\u003cp\u003ePwede naman kausapin mo na lang kami ng Tagalog para masanay ka. Sigurado namang merong sasagot kahit dito sa Reddit.\u003c/p\u003e\n",
@@ -113,8 +169,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/vvpak/",
-            "url": "https://roytang.net/2012/07/vvpak/",
+            "id": "https://mirror.roytang.net/2012/07/vvpak/",
+            "url": "https://mirror.roytang.net/2012/07/vvpak/",
             "path": "/2012/07/vvpak/",
             "title": "",
             "content_html": "\u003ch4 id=\"posted-on-rexplainlikeimfive-eli5-what-is-the-higgs-bosonhttpsredditcomrexplainlikeimfivecommentsvvpakeli5_what_is_the_higgsboson\"\u003ePosted on r/explainlikeimfive: \u003ca href=\"https://reddit.com/r/explainlikeimfive/comments/vvpak/eli5_what_is_the_higgsboson/\"\u003eELI5: What is the Higgs-Boson?\u003c/a\u003e\u003c/h4\u003e\n",
@@ -130,8 +186,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219440197782347777/",
-            "url": "https://roytang.net/2012/07/219440197782347777/",
+            "id": "https://mirror.roytang.net/2012/07/219440197782347777/",
+            "url": "https://mirror.roytang.net/2012/07/219440197782347777/",
             "path": "/2012/07/219440197782347777/",
             "title": "",
             "content_html": "\u003cp\u003eLeft 4 Dead 2: \u003ca href=\"http://i.imgur.com/Gb6kF.jpg\"\u003ehttp://i.imgur.com/Gb6kF.jpg\u003c/a\u003e\u003c/p\u003e\n",
@@ -147,8 +203,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219436853294669824/",
-            "url": "https://roytang.net/2012/07/219436853294669824/",
+            "id": "https://mirror.roytang.net/2012/07/219436853294669824/",
+            "url": "https://mirror.roytang.net/2012/07/219436853294669824/",
             "path": "/2012/07/219436853294669824/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane pwede naman ako manood ulit :p\u003c/p\u003e\n",
@@ -164,8 +220,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/219385293214728192/",
-            "url": "https://roytang.net/2012/07/219385293214728192/",
+            "id": "https://mirror.roytang.net/2012/07/219385293214728192/",
+            "url": "https://mirror.roytang.net/2012/07/219385293214728192/",
             "path": "/2012/07/219385293214728192/",
             "title": "",
             "content_html": "\u003cp\u003eJust saw Amazing Spider-Man. It\u0026rsquo;s a completely different movie than Sam Raimi\u0026rsquo;s version (and better IMHO), much more serious and drama tho\u003c/p\u003e\n",
@@ -181,8 +237,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/07/",
-            "url": "https://roytang.net/2012/07/",
+            "id": "https://mirror.roytang.net/2012/07/",
+            "url": "https://mirror.roytang.net/2012/07/",
             "path": "/2012/07/",
             "title": "Monthly Archives for 07 2012",
             "content_html": "",
@@ -198,8 +254,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/219116726175006720/",
-            "url": "https://roytang.net/2012/06/219116726175006720/",
+            "id": "https://mirror.roytang.net/2012/06/219116726175006720/",
+            "url": "https://mirror.roytang.net/2012/06/219116726175006720/",
             "path": "/2012/06/219116726175006720/",
             "title": "",
             "content_html": "\u003cp\u003eJimmy Kimmel on the KFC Cheesetop Burger: \u003ca href=\"https://www.youtube.com/watch?v=B1eX_qtJhB0\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=B1eX_qtJhB0\u0026amp;feature=youtu.be\u003c/a\u003e\u003c/p\u003e\n",
@@ -215,8 +271,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/219114954274512897/",
-            "url": "https://roytang.net/2012/06/219114954274512897/",
+            "id": "https://mirror.roytang.net/2012/06/219114954274512897/",
+            "url": "https://mirror.roytang.net/2012/06/219114954274512897/",
             "path": "/2012/06/219114954274512897/",
             "title": "",
             "content_html": "\u003cp\u003eSpent the second half of the day watching the Lord of the Rings trilogy.\u003c/p\u003e\n",
@@ -232,8 +288,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/218868195057078273/",
-            "url": "https://roytang.net/2012/06/218868195057078273/",
+            "id": "https://mirror.roytang.net/2012/06/218868195057078273/",
+            "url": "https://mirror.roytang.net/2012/06/218868195057078273/",
             "path": "/2012/06/218868195057078273/",
             "title": "",
             "content_html": "\u003cp\u003eThe temptation to lie down in bed all morning is strong\u003c/p\u003e\n",
@@ -249,8 +305,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/c57l6sa/",
-            "url": "https://roytang.net/2012/06/c57l6sa/",
+            "id": "https://mirror.roytang.net/2012/06/c57l6sa/",
+            "url": "https://mirror.roytang.net/2012/06/c57l6sa/",
             "path": "/2012/06/c57l6sa/",
             "title": "",
             "content_html": "\u003cp\u003eThe bad thing about being both a Steam and PSN user is that PSN sales look terrible compared to Steam ones =/\u003c/p\u003e\n",
@@ -266,8 +322,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/218353676031504386/",
-            "url": "https://roytang.net/2012/06/218353676031504386/",
+            "id": "https://mirror.roytang.net/2012/06/218353676031504386/",
+            "url": "https://mirror.roytang.net/2012/06/218353676031504386/",
             "path": "/2012/06/218353676031504386/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane kala ko ba matutulog na agad :p\u003c/p\u003e\n",
@@ -283,8 +339,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/217656905420648449/",
-            "url": "https://roytang.net/2012/06/217656905420648449/",
+            "id": "https://mirror.roytang.net/2012/06/217656905420648449/",
+            "url": "https://mirror.roytang.net/2012/06/217656905420648449/",
             "path": "/2012/06/217656905420648449/",
             "title": "",
             "content_html": "\u003cp\u003eTotally unplanned L4D2 session at a computer shop meant unexpectedly running from zombies all night.\u003c/p\u003e\n",
@@ -300,8 +356,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/217639890454724608/",
-            "url": "https://roytang.net/2012/06/217639890454724608/",
+            "id": "https://mirror.roytang.net/2012/06/217639890454724608/",
+            "url": "https://mirror.roytang.net/2012/06/217639890454724608/",
             "path": "/2012/06/217639890454724608/",
             "title": "",
             "content_html": "\u003cp\u003eI\u0026rsquo;m at Jollibee Pearl Drive (Pasig, NCR) \u003ca href=\"http://4sq.com/LdrycF\"\u003ehttp://4sq.com/LdrycF\u003c/a\u003e\u003c/p\u003e\n",
@@ -317,8 +373,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/217410669505556480/",
-            "url": "https://roytang.net/2012/06/217410669505556480/",
+            "id": "https://mirror.roytang.net/2012/06/217410669505556480/",
+            "url": "https://mirror.roytang.net/2012/06/217410669505556480/",
             "path": "/2012/06/217410669505556480/",
             "title": "",
             "content_html": "\u003cp\u003eThe MMDA traffic navigator predicts traffic no matter which route I take =/ Here goes nothing\u003c/p\u003e\n",
@@ -334,8 +390,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/c55a0vq/",
-            "url": "https://roytang.net/2012/06/c55a0vq/",
+            "id": "https://mirror.roytang.net/2012/06/c55a0vq/",
+            "url": "https://mirror.roytang.net/2012/06/c55a0vq/",
             "path": "/2012/06/c55a0vq/",
             "title": "",
             "content_html": "\u003cp\u003eIn such cases, the judge basically has to listen to each player\u0026rsquo;s explanation and make a judgment as to who is more likely to be telling the truth.\u003c/p\u003e\n\u003cp\u003eIn this case, the UW player is clearly caught with the Batterskull in hand which was sent to the bottom of the library just the last turn, with the only shuffle of his deck being the one where he scooped it into his hand. A judge would be easily able to determine it in this case.\u003c/p\u003e\n\u003cp\u003eIt reminds me of something that happened in GP Manila a couple of weekends ago. One guy had accused his opponent of drawing extra cards and the head judge had to intervene to straighten things out. The head judge basically managed to count every single card the guy had drawn since the start of the game and proved conclusively that the other guy had drawn at least one extra card. The onlookers were very impressed.\u003c/p\u003e\n",
@@ -351,8 +407,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216894011942764545/",
-            "url": "https://roytang.net/2012/06/216894011942764545/",
+            "id": "https://mirror.roytang.net/2012/06/216894011942764545/",
+            "url": "https://mirror.roytang.net/2012/06/216894011942764545/",
             "path": "/2012/06/216894011942764545/",
             "title": "",
             "content_html": "\u003cp\u003eI\u0026rsquo;m not sure why my ipad cable is in such terrible condition: \u003ca href=\"https://lh3.googleusercontent.com/-DM-_tVPtJ7g/T-cdm1D0v5I/AAAAAAAAAOs/nh3-56iYIcY/s1024/IMG_20120624_220104.jpg\"\u003ehttps://lh3.googleusercontent.com/-DM-_tVPtJ7g/T-cdm1D0v5I/AAAAAAAAAOs/nh3-56iYIcY/s1024/IMG_20120624_220104.jpg\u003c/a\u003e  If it was a rat I\u0026rsquo;d be seeing other cables being chewed\u003c/p\u003e\n",
@@ -368,8 +424,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216756920462225408/",
-            "url": "https://roytang.net/2012/06/216756920462225408/",
+            "id": "https://mirror.roytang.net/2012/06/216756920462225408/",
+            "url": "https://mirror.roytang.net/2012/06/216756920462225408/",
             "path": "/2012/06/216756920462225408/",
             "title": "",
             "content_html": "\u003cp\u003eConsidering I spent half of it at home, this has been an expensive week =/\u003c/p\u003e\n",
@@ -385,8 +441,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216755586958753794/",
-            "url": "https://roytang.net/2012/06/216755586958753794/",
+            "id": "https://mirror.roytang.net/2012/06/216755586958753794/",
+            "url": "https://mirror.roytang.net/2012/06/216755586958753794/",
             "path": "/2012/06/216755586958753794/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgonline/\"\u003e@mtgonline\u003c/a\u003e why do some soulbond abilities show up as blue reminder text (flying from winggrafter), while some don\u0026rsquo;t (hexproof, pro:zombies)?\u003c/p\u003e\n",
@@ -402,8 +458,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216642156973137921/",
-            "url": "https://roytang.net/2012/06/216642156973137921/",
+            "id": "https://mirror.roytang.net/2012/06/216642156973137921/",
+            "url": "https://mirror.roytang.net/2012/06/216642156973137921/",
             "path": "/2012/06/216642156973137921/",
             "title": "",
             "content_html": "\u003cp\u003eIt\u0026rsquo;s uncanny when I wake up a minute before my alarm fires\u003c/p\u003e\n",
@@ -419,8 +475,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216347099355287552/",
-            "url": "https://roytang.net/2012/06/216347099355287552/",
+            "id": "https://mirror.roytang.net/2012/06/216347099355287552/",
+            "url": "https://mirror.roytang.net/2012/06/216347099355287552/",
             "path": "/2012/06/216347099355287552/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane lol go back to sleep :p\u003c/p\u003e\n",
@@ -436,8 +492,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216346650724151296/",
-            "url": "https://roytang.net/2012/06/216346650724151296/",
+            "id": "https://mirror.roytang.net/2012/06/216346650724151296/",
+            "url": "https://mirror.roytang.net/2012/06/216346650724151296/",
             "path": "/2012/06/216346650724151296/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane check my RT :p\u003c/p\u003e\n",
@@ -453,8 +509,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216346589634113537/",
-            "url": "https://roytang.net/2012/06/216346589634113537/",
+            "id": "https://mirror.roytang.net/2012/06/216346589634113537/",
+            "url": "https://mirror.roytang.net/2012/06/216346589634113537/",
             "path": "/2012/06/216346589634113537/",
             "title": "",
             "content_html": "\u003cp\u003eGuys, season three ended back in May. RERUNS are airing all summer in our NEW Fridays at 8:30pm/7:30c timeslot. Got it? #IsThisThingOn?\u003c/p\u003e\n",
@@ -470,8 +526,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216346361455591424/",
-            "url": "https://roytang.net/2012/06/216346361455591424/",
+            "id": "https://mirror.roytang.net/2012/06/216346361455591424/",
+            "url": "https://mirror.roytang.net/2012/06/216346361455591424/",
             "path": "/2012/06/216346361455591424/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane probably reruns. Let\u0026rsquo;s just ask her\u003c/p\u003e\n",
@@ -487,8 +543,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216343177223876609/",
-            "url": "https://roytang.net/2012/06/216343177223876609/",
+            "id": "https://mirror.roytang.net/2012/06/216343177223876609/",
+            "url": "https://mirror.roytang.net/2012/06/216343177223876609/",
             "path": "/2012/06/216343177223876609/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane anong oras ka ba natulog?\u003c/p\u003e\n",
@@ -504,8 +560,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/c54ahfx/",
-            "url": "https://roytang.net/2012/06/c54ahfx/",
+            "id": "https://mirror.roytang.net/2012/06/c54ahfx/",
+            "url": "https://mirror.roytang.net/2012/06/c54ahfx/",
             "path": "/2012/06/c54ahfx/",
             "title": "",
             "content_html": "\u003cp\u003eI would just get a year of PS+\u003c/p\u003e\n",
@@ -521,8 +577,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216304849233522689/",
-            "url": "https://roytang.net/2012/06/216304849233522689/",
+            "id": "https://mirror.roytang.net/2012/06/216304849233522689/",
+            "url": "https://mirror.roytang.net/2012/06/216304849233522689/",
             "path": "/2012/06/216304849233522689/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e Nice. But isn\u0026rsquo;t it expensive to have things shipped here?\u003c/p\u003e\n",
@@ -538,8 +594,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216298469667770368/",
-            "url": "https://roytang.net/2012/06/216298469667770368/",
+            "id": "https://mirror.roytang.net/2012/06/216298469667770368/",
+            "url": "https://mirror.roytang.net/2012/06/216298469667770368/",
             "path": "/2012/06/216298469667770368/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e where did you order them from?\u003c/p\u003e\n",
@@ -555,8 +611,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216135577408520195/",
-            "url": "https://roytang.net/2012/06/216135577408520195/",
+            "id": "https://mirror.roytang.net/2012/06/216135577408520195/",
+            "url": "https://mirror.roytang.net/2012/06/216135577408520195/",
             "path": "/2012/06/216135577408520195/",
             "title": "",
             "content_html": "\u003cp\u003eStill up around 30 tix, so it\u0026rsquo;s still a good day. #mtg\u003c/p\u003e\n",
@@ -572,8 +628,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216135509947318272/",
-            "url": "https://roytang.net/2012/06/216135509947318272/",
+            "id": "https://mirror.roytang.net/2012/06/216135509947318272/",
+            "url": "https://mirror.roytang.net/2012/06/216135509947318272/",
             "path": "/2012/06/216135509947318272/",
             "title": "",
             "content_html": "\u003cp\u003ePlayed 3 drafts on MTGO today; the only round I lost were due to me watching Superman Returns during a crucial play =/ #mtg\u003c/p\u003e\n",
@@ -589,8 +645,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216081331837345794/",
-            "url": "https://roytang.net/2012/06/216081331837345794/",
+            "id": "https://mirror.roytang.net/2012/06/216081331837345794/",
+            "url": "https://mirror.roytang.net/2012/06/216081331837345794/",
             "path": "/2012/06/216081331837345794/",
             "title": "",
             "content_html": "\u003cp\u003eWatching Superman Returns. I don\u0026rsquo;t think the movie would work without the John Williams soundtrack.\u003c/p\u003e\n",
@@ -606,8 +662,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216005679494856705/",
-            "url": "https://roytang.net/2012/06/216005679494856705/",
+            "id": "https://mirror.roytang.net/2012/06/216005679494856705/",
+            "url": "https://mirror.roytang.net/2012/06/216005679494856705/",
             "path": "/2012/06/216005679494856705/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e ung foil lang\u003c/p\u003e\n",
@@ -623,8 +679,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216001308304474113/",
-            "url": "https://roytang.net/2012/06/216001308304474113/",
+            "id": "https://mirror.roytang.net/2012/06/216001308304474113/",
+            "url": "https://mirror.roytang.net/2012/06/216001308304474113/",
             "path": "/2012/06/216001308304474113/",
             "title": "",
             "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgmedina/\"\u003e@mtgmedina\u003c/a\u003e 2!\u003c/p\u003e\n",
@@ -640,8 +696,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/216000311683325952/",
-            "url": "https://roytang.net/2012/06/216000311683325952/",
+            "id": "https://mirror.roytang.net/2012/06/216000311683325952/",
+            "url": "https://mirror.roytang.net/2012/06/216000311683325952/",
             "path": "/2012/06/216000311683325952/",
             "title": "",
             "content_html": "\u003cp\u003eRaredraft much? \u003ca href=\"http://i.imgur.com/heL77.png\"\u003ehttp://i.imgur.com/heL77.png\u003c/a\u003e Those 2 mythics alone pay back this draft, and more. #mtg\u003c/p\u003e\n",
@@ -657,8 +713,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/the-dc-new-52-review-part-3-everything-else/",
-            "url": "https://roytang.net/2012/06/the-dc-new-52-review-part-3-everything-else/",
+            "id": "https://mirror.roytang.net/2012/06/the-dc-new-52-review-part-3-everything-else/",
+            "url": "https://mirror.roytang.net/2012/06/the-dc-new-52-review-part-3-everything-else/",
             "path": "/2012/06/the-dc-new-52-review-part-3-everything-else/",
             "title": "The DC New 52 Review Part 3: Everything Else",
             "content_html": "\u003cp\u003eThe last two entries (\u003ca href=\"http://roytang.net/2012/05/the-dc-new-52-review-part-1/\"\u003ehere\u003c/a\u003e and \u003ca href=\"http://roytang.net/2012/06/dc-new-52-review-part-2-batman-and-gotham/\"\u003ehere\u003c/a\u003e) took too long to write, and there\u0026rsquo;s a helluva lot of other titles to go through. And many of them don\u0026rsquo;t deserve much comments, so I\u0026rsquo;ll just go through the rest quickly or I might never finish.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eAction Comics\u003c/em\u003e \u0026ndash; the younger Superman stories are interesting, but occasionally Morrison goes off on one of his weird tangent stories. Superman\u0026rsquo;s early years are largely re-written, and that\u0026rsquo;s understandable, he\u0026rsquo;s never had particularly interesting events in his history anyway\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eSuperman\u003c/em\u003e \u0026ndash; meh, needs more spice\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eSuperboy\u003c/em\u003e \u0026ndash; interesting, but the character has yet to find a status quo\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eSupergirl\u003c/em\u003e \u0026ndash; interesting, but the character has yet to find a status quo\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eGreen Lantern\u003c/em\u003e \u0026ndash; interesting, though it implies Hal is currently a GL in the league with a \u0026ldquo;fake\u0026rdquo; power ring. Most of the GL history seems to be intact, and the GL books are all leading towards some sort of \u0026ldquo;third army\u0026rdquo; event, I hope it happens soon.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eGreen Lantern Corps\u003c/em\u003e \u0026ndash; interesting enough for me to want to read it before AvX #6 this week\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eGreen Lantern: New Guardians\u003c/em\u003e \u0026ndash; interesting, but I don\u0026rsquo;t see where this is going. Is it possible for Raynier\u0026rsquo;s \u0026ldquo;Rainbow Guardians\u0026rdquo; to become a real team?\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eRed Lanterns\u003c/em\u003e \u0026ndash; mildly interesting, but I don\u0026rsquo;t see where this is going. I\u0026rsquo;m not convinced the Reds were the best corps to give their own series\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eTeen Titans\u003c/em\u003e \u0026ndash; interesting for me, but only because Red Robin is here. The team\u0026rsquo;s \u0026ldquo;coming together adventure\u0026rdquo; has been going on for far too long and they need to reach some sort of status quo\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eBlue Beetle\u003c/em\u003e \u0026ndash; interesting, but the character has yet to find a status quo\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eLegion of Super-Heroes\u003c/em\u003e \u0026ndash; interesting storylines, but way too many characters, not very accessible\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eLegion Lost\u003c/em\u003e \u0026ndash; interesting, but they can\u0026rsquo;t get back to their own time without changing the book title, so it kinda limits what\u0026rsquo;s going to happen and makes them always on the run\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eAll-Star Western\u003c/em\u003e \u0026ndash; interesting, but weird. Not really a superhero book, though it has ties to Gotham City. I\u0026rsquo;m not particularly interested in the backup stories though\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eDeathstroke\u003c/em\u003e \u0026ndash; not interesting, seems to be mostly just Slade killing a bunch of guys for one reason or another. I\u0026rsquo;m not confident about it with Liefeld coming on, but I\u0026rsquo;ll probably still read it for a while since I can\u0026rsquo;t resist a  train wreck\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eSuicide Squad\u003c/em\u003e \u0026ndash; meh, the squad composition at the moment isn\u0026rsquo;t very interesting, the only real personalities there are Deadshot and Harley (at least they\u0026rsquo;re giving her something to do aside from being a Joker fangirl)\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eStormwatch\u003c/em\u003e \u0026ndash; mildly interesting, if only because they\u0026rsquo;re going to need to be fighting the JL at some point. Some of their science-y explanations are ridiculous though\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eGrifter\u003c/em\u003e \u0026ndash; meh, doesn\u0026rsquo;t seem to be going anywhere serious.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eVoodoo\u003c/em\u003e \u0026ndash; meh, not sure where it\u0026rsquo;s going. Also, with all this Daemonite activity going on, how is it Stormwatch isn\u0026rsquo;t seriously cracking down on them?\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eResurrection Man\u003c/em\u003e \u0026ndash; I like the concept, but the storyline seems to be going nowhere serious\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eMan O War\u003c/em\u003e \u0026ndash; I tried to bear with this, but it just bored me. I only managed to read up to issue 7\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eJustice League Dark\u003c/em\u003e \u0026ndash; interesting, though they\u0026rsquo;re not really a real \u0026ldquo;team\u0026rdquo; at the moment. But the team composition is solid, especially they dropped Shade who wasn\u0026rsquo;t really doing anything for the book. Andrew Bennet seems a better fit\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eSwamp Thing\u003c/em\u003e \u0026ndash; interesting, but might be a bit too weird for some, since a lot of the book feels like Alec Holland being on an acid trip of some sort. Feels very Vertigo.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eAnimal Man\u003c/em\u003e \u0026ndash; see Swamp Thing. Art is pretty good, but still weird.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eFrankenstein, Agent of SHADE\u003c/em\u003e \u0026ndash; interesting enough. Art is\u0026hellip;  unique.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eI, Vampire\u003c/em\u003e \u0026ndash; surprisingly interesting, even if I\u0026rsquo;m already reading another Vampire series (American Vampire). Curious to see where it goes.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eDemon Knights\u003c/em\u003e \u0026ndash; surprisingly interesting, the team composition is nice and varied (Vandal Savage, wut) and the storylines are a fresh reprieve from superhero stuff\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eDC Comics Presents\u003c/em\u003e \u0026ndash; Deadman was ok, Challengers less interesting for me. Good series for them to keep around and showcase lesser-known characters\u003c/p\u003e\n\u003cp\u003eAnd the second wave of the New 52, of which we are only one or two issues in:\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eBatman Incorporated\u003c/em\u003e \u0026ndash; looking good, easily better than both Detective and Dark Knight\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eEarth 2\u003c/em\u003e \u0026ndash; the second issue was a bit slow, but it looks interesting enough\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eWorlds\u0026rsquo; Finest\u003c/em\u003e \u0026ndash; the first issue wasn\u0026rsquo;t the best, but I like the idea of this comic so I\u0026rsquo;ll keep reading it\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eDial H\u003c/em\u003e \u0026ndash; off to a good start, but I can\u0026rsquo;t help but wonder whether they\u0026rsquo;ll be running out of hero ideas at some point. Also, Pelican Army!\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eGI Combat\u003c/em\u003e \u0026ndash; okay, I didn\u0026rsquo;t like the last war book, I\u0026rsquo;m not gonna bother with this one.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThe Ravagers\u003c/em\u003e \u0026ndash; giving this a shot, although at the moment it just seems like another \u0026ldquo;bunch of super teens on the run from evil forces\u0026rdquo; kinda deal, and that\u0026rsquo;s already what Teen Titans is doing at the moment.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m probably going to keep on reading a good 70-80% of the books going forward, I don\u0026rsquo;t feel compelled to read every single one of them any more. It\u0026rsquo;s still a good chunk of books to read, and makes me look forward to the new releases every week.\u003c/p\u003e\n",
@@ -674,8 +730,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/215652541910884353/",
-            "url": "https://roytang.net/2012/06/215652541910884353/",
+            "id": "https://mirror.roytang.net/2012/06/215652541910884353/",
+            "url": "https://mirror.roytang.net/2012/06/215652541910884353/",
             "path": "/2012/06/215652541910884353/",
             "title": "",
             "content_html": "\u003cp\u003eOoh, new Futurama today. A pleasant surprise!\u003c/p\u003e\n",
@@ -691,8 +747,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/215609920832290816/",
-            "url": "https://roytang.net/2012/06/215609920832290816/",
+            "id": "https://mirror.roytang.net/2012/06/215609920832290816/",
+            "url": "https://mirror.roytang.net/2012/06/215609920832290816/",
             "path": "/2012/06/215609920832290816/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane not really, sasakit ulo ko\u003c/p\u003e\n",
@@ -708,8 +764,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/c53kkcc/",
-            "url": "https://roytang.net/2012/06/c53kkcc/",
+            "id": "https://mirror.roytang.net/2012/06/c53kkcc/",
+            "url": "https://mirror.roytang.net/2012/06/c53kkcc/",
             "path": "/2012/06/c53kkcc/",
             "title": "",
             "content_html": "\u003cp\u003eIt\u0026rsquo;s hilarious. They probably have a search setup for \u0026ldquo;MMDA\u0026rdquo;\u003c/p\u003e\n",
@@ -725,8 +781,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/215585088413503489/",
-            "url": "https://roytang.net/2012/06/215585088413503489/",
+            "id": "https://mirror.roytang.net/2012/06/215585088413503489/",
+            "url": "https://mirror.roytang.net/2012/06/215585088413503489/",
             "path": "/2012/06/215585088413503489/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane you just know. Haha not helpful\u003c/p\u003e\n",
@@ -742,8 +798,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/215429654604038146/",
-            "url": "https://roytang.net/2012/06/215429654604038146/",
+            "id": "https://mirror.roytang.net/2012/06/215429654604038146/",
+            "url": "https://mirror.roytang.net/2012/06/215429654604038146/",
             "path": "/2012/06/215429654604038146/",
             "title": "",
             "content_html": "\u003cp\u003eYou gotta know when to step back and take a break\u003c/p\u003e\n",
@@ -759,8 +815,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/grand-prix-manila-2012/",
-            "url": "https://roytang.net/2012/06/grand-prix-manila-2012/",
+            "id": "https://mirror.roytang.net/2012/06/grand-prix-manila-2012/",
+            "url": "https://mirror.roytang.net/2012/06/grand-prix-manila-2012/",
             "path": "/2012/06/grand-prix-manila-2012/",
             "title": "Grand Prix Manila 2012",
             "content_html": "\u003cp\u003eLast weekend was Grand Prix Manila 2012, held at the SMX at Mall of Asia. I don\u0026rsquo;t really consider myself a \u0026ldquo;regular\u0026rdquo; Magic player anymore so I\u0026rsquo;m not going to give a full tournament report, though I will record some details for posterity.\u003c/p\u003e\n\u003cp\u003eLet\u0026rsquo;s start with the deck. I played some version of Naya Pod, limited by what cards were available as usual:\u003c/p\u003e\n\u003cdiv class=\"mtgdecklist\"\u003e\n\u003cdiv class=\"header\"\u003e\n    \u003ch4\u003eA Pile of Naya\u003chr\u003e\u003c/h4\u003e\n\u003c/div\u003e\n\u003cdiv class=\"content\"\u003e\n    \u003cdiv class=\"wrapper\"\u003e\n        \n  \n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eCreatures\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    4\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Birds%20of%20Paradise' \u003eBirds of Paradise\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    3\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Avacyn%20Pilgrim' \u003eAvacyn Pilgrim\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Ulvenwald%20Tracker' \u003eUlvenwald Tracker\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    4\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Strangeleroot%20Geist' \u003eStrangeleroot Geist\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Thalia%2c%20Guardian%20of%20Thraben' \u003eThalia, Guardian of Thraben\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Daybreak%20Ranger' \u003eDaybreak Ranger\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Borderland%20Ranger' \u003eBorderland Ranger\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Blade%20Splicer' \u003eBlade Splicer\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Fiend%20Hunter' \u003eFiend Hunter\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Wolfir%20Avenger' \u003eWolfir Avenger\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Phyrexian%20Metamorph' \u003ePhyrexian Metamorph\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Hero%20of%20Bladehold' \u003eHero of Bladehold\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Huntmaster%20of%20the%20Fells' \u003eHuntmaster of the Fells\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    3\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Restoration%20Angel' \u003eRestoration Angel\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Oxida%20Scrapmelter' \u003eOxida Scrapmelter\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Acidic%20Slime' \u003eAcidic Slime\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n  \n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eSpells\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Birthing%20Pod' \u003eBirthing Pod\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Bonfire%20of%20the%20Damned' \u003eBonfire of the Damned\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n  \n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eLands\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    4\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Copperline%20Gorge' \u003eCopperline Gorge\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    4\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Razorverge%20Thicket' \u003eRazorverge Thicket\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    3\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Sunpetal%20Grove' \u003eSunpetal Grove\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Rootbound%20Crag' \u003eRootbound Crag\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Gavony%20Township' \u003eGavony Township\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Slayer%20Stronghold' \u003eSlayer Stronghold\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Cavern%20of%20Souls' \u003eCavern of Souls\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    4\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Forest' \u003eForest\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Mountain' \u003eMountain\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Plains' \u003ePlains\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n  \n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eSideboard\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Ancient%20Grudge' \u003eAncient Grudge\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Ray%20of%20Revelation' \u003eRay of Revelation\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Zealous%20Conscripts' \u003eZealous Conscripts\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Garruk%20Relentless' \u003eGarruk Relentless\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Celestial%20Purge' \u003eCelestial Purge\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    3\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Thunderbolt' \u003eThunderbolt\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Arc%20Trail' \u003eArc Trail\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Surgical%20Extraction' \u003eSurgical Extraction\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Oblivion%20Ring' \u003eOblivion Ring\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n  \n\n    \u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eIt\u0026rsquo;s a pretty straightforward deck, what with the turning guys sideways and all. And the round by round results:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e1 BR Zombies WIN 2-1\u003c/li\u003e\n\u003cli\u003e2 UW Humans WIN 2-0\u003c/li\u003e\n\u003cli\u003e3 Gb Pod WIN 2-0\u003c/li\u003e\n\u003cli\u003e4 UW Delver LOSS 0-2\u003c/li\u003e\n\u003cli\u003e5 Frites WIN 2-1\u003c/li\u003e\n\u003cli\u003e6 RG Ramp LOSS 1-2\u003c/li\u003e\n\u003cli\u003e7 Wb Tokens WIN 2-0\u003c/li\u003e\n\u003cli\u003e8 UG Infect WIN 2-0\u003c/li\u003e\n\u003cli\u003e9 RG Ramp WIN 2-0\u003c/li\u003e\n\u003cli\u003e10 Pike Delver WIN 2-0\u003c/li\u003e\n\u003cli\u003e11 Delverless Delver LOSS 1-2\u003c/li\u003e\n\u003cli\u003e12 Sun Titan Delver LOSS 1-2\u003c/li\u003e\n\u003cli\u003e13 Some Delver WIN 2-0\u003c/li\u003e\n\u003cli\u003e14 Spectral Flight Delver WIN 2-1\u003c/li\u003e\n\u003cli\u003e15 Solar Flare WIN 2-1\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAs can be seen above, I made day 2 for the first time, and I believe this is already my sixth Grand Prix. I finished 11 and 4, which was good enough for 39th place despite my pretty bad tiebreaks. This means I finished in the money, hooray! Feels good to have a decent finish after playing this game for what, seventeen years now? Playing in Day 2 was great, the tables weren\u0026rsquo;t as crowded as Day One! Hah. I still made a lot of bad plays though, I mostly got lucky with a lot of my wins. With tighter play I might have gone as good as 13-2.\u003cfigure style=\"width: 540px\" class=\"wp-caption aligncenter\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://lh4.googleusercontent.com/-nOZlY4k8DC8/T99O13bdziI/AAAAAAAAAOU/t5RzS6Rhafo/s720/IMG_20120617_155930.jpg\"\u003e\u003cimg title=\"My finish\" src=\"https://lh4.googleusercontent.com/-nOZlY4k8DC8/T99O13bdziI/AAAAAAAAAOU/t5RzS6Rhafo/s720/IMG_20120617_155930.jpg\" alt=\"My finish\" width=\"540\" height=\"720\" /\u003e\u003c/a\u003e\u003cfigcaption class=\"wp-caption-text\"\u003e39th!\u003c/figcaption\u003e\u003c/figure\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003eAside from the main event, another thing I participated in during the second day was the Magic Rules Challenge! This was a fun thing they had where they set up a booth manned by a couple of judges. You could go up to them (no entrance fee) and answer up to three rules questions in a row. If you get questions right, you get foil cards! Well, the foil cards I won weren\u0026rsquo;t very useful or valuable, but I had a lot of fun with the rules questions themselves, I really enjoy that stuff. I\u0026rsquo;d hang out there between rounds not only to join but also to watch other people play. The questions ranged in difficulty from quite easy (\u0026ldquo;You play \u003ca class=\"cardname\" href=\"http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Grim%20Lavamancer\" target=\"_new\"\u003eGrim Lavamancer\u003c/a\u003e\u0026rsquo;s activated ability and your opponent uses \u003ca class=\"cardname\" href=\"http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Tormod%27s%20Crypt\" target=\"_new\"\u003eTormod's Crypt\u003c/a\u003e, how much damage is dealt?\u0026quot;) to an actual layers + \u003ca class=\"cardname\" href=\"http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Humility\" target=\"_new\"\u003eHumility\u003c/a\u003e question! It was a nice relaxing change of pace to play between rounds to take some pressure off.\u003cfigure style=\"width: 540px\" class=\"wp-caption aligncenter\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://lh5.googleusercontent.com/-NEifeaklwiU/T-CgiPLMfHI/AAAAAAAAAOg/MXDnqpjQZyo/s720/IMG_20120619_235315.jpg\"\u003e\u003cimg title=\"My crappy foil winnings from the Magic Rules Challenge\" src=\"https://lh5.googleusercontent.com/-NEifeaklwiU/T-CgiPLMfHI/AAAAAAAAAOg/MXDnqpjQZyo/s720/IMG_20120619_235315.jpg\" alt=\"\" width=\"540\" height=\"720\" /\u003e\u003c/a\u003e\u003cfigcaption class=\"wp-caption-text\"\u003eMy crappy foil winnings from the Magic Rules Challenge\u003c/figcaption\u003e\u003c/figure\u003e\u003c/p\u003e\n\u003cp\u003eThe weekend was exhausting, especially the nine rounds on the first day and the needing to travel back and forth to MOA, but it was a fun experience and definitely worth it (not sure if I\u0026rsquo;d say that if I didn\u0026rsquo;t place haha). Makes me excited about playing Magic again. Looking forward to the next GP Manila in a couple of years!\u003c/p\u003e\n",
@@ -776,8 +832,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/c520vpa/",
-            "url": "https://roytang.net/2012/06/c520vpa/",
+            "id": "https://mirror.roytang.net/2012/06/c520vpa/",
+            "url": "https://mirror.roytang.net/2012/06/c520vpa/",
             "path": "/2012/06/c520vpa/",
             "title": "",
             "content_html": "\u003cp\u003eDisgaea 3/4.\u003c/p\u003e\n\u003cp\u003eOkay, that might not be what you want/expect.\u003c/p\u003e\n",
@@ -793,8 +849,8 @@
             }
         
         , {
-            "id": "https://roytang.net/2012/06/214461700651495426/",
-            "url": "https://roytang.net/2012/06/214461700651495426/",
+            "id": "https://mirror.roytang.net/2012/06/214461700651495426/",
+            "url": "https://mirror.roytang.net/2012/06/214461700651495426/",
             "path": "/2012/06/214461700651495426/",
             "title": "",
             "content_html": "\u003cp\u003e@lizbethjane :no: :p\u003c/p\u003e\n",
@@ -805,57 +861,6 @@
             "source_path": "notes/2012/06/214461700651495426.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214461700651495426/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/06/214458849061638145/",
-            "url": "https://roytang.net/2012/06/214458849061638145/",
-            "path": "/2012/06/214458849061638145/",
-            "title": "",
-            "content_html": "\u003cp\u003eRaining heavily in the Metro this morning, the Monday commute\u0026rsquo;s gonna be worse than usual, and it\u0026rsquo;s usually pretty bad =/\u003c/p\u003e\n",
-            "summary": "Raining heavily in the Metro this morning, the Monday commute\u0026rsquo;s gonna be worse than usual, and it\u0026rsquo;s usually pretty bad =/",
-            "date_published": "2012-06-17T20:45:48+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214458849061638145.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214458849061638145/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/06/214319270623064064/",
-            "url": "https://roytang.net/2012/06/214319270623064064/",
-            "path": "/2012/06/214319270623064064/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy final standing at GP Manila was 39th: \u003ca href=\"http://twitpic.com/9xg2ht\"\u003ehttp://twitpic.com/9xg2ht\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "My final standing at GP Manila was 39th: http://twitpic.com/9xg2ht",
-            "date_published": "2012-06-17T11:31:10+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214319270623064064.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214319270623064064/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://roytang.net/2012/06/214316542056345602/",
-            "url": "https://roytang.net/2012/06/214316542056345602/",
-            "path": "/2012/06/214316542056345602/",
-            "title": "",
-            "content_html": "\u003cp\u003e@magicprotour  what\u0026rsquo;s up with people turning into zombies in the event coverage? \u003ca href=\"http://yfrog.com/ockwiep\"\u003ehttp://yfrog.com/ockwiep\u003c/a\u003e lol #GPManila\u003c/p\u003e\n",
-            "summary": "@magicprotour what\u0026rsquo;s up with people turning into zombies in the event coverage? http://yfrog.com/ockwiep lol #GPManila",
-            "date_published": "2012-06-17T11:20:20+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214316542056345602.md"
-            , "tags": ["GPManila"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214316542056345602/"}]
             
             
             }

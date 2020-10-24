@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>devnotes on Roy Tang</title>
-      <link>https://roytang.net/tags/devnotes/</link>
+      <link>https://mirror.roytang.net/tags/devnotes/</link>
       <description>Recent content in devnotes on Roy Tang</description>
       <generator>Hugo -- gohugo.io</generator>
       <language>en-us</language>
@@ -9,17 +9,17 @@
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
       <lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate>
       
-          <atom:link href="https://roytang.net/tags/devnotes/index.xml" rel="self" type="application/rss+xml" />
+          <atom:link href="https://mirror.roytang.net/tags/devnotes/index.xml" rel="self" type="application/rss+xml" />
       
           
       
         <item>
             <title>DevNotes: Python&#39;s yield
 </title>
-            <link>https://roytang.net/2019/11/python-yield/</link>
+            <link>https://mirror.roytang.net/2019/11/python-yield/</link>
             <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/11/python-yield/</guid>
+            <guid>https://mirror.roytang.net/2019/11/python-yield/</guid>
             <description>
             
             &lt;p&gt;I&amp;rsquo;ve been using Python for well over 10 years, and I still don&amp;rsquo;t have an intuitive mastery of one of its keywords: &lt;code&gt;yield&lt;/code&gt;. Everytime I see it in someone&amp;rsquo;s code I need to stop and mentally remind myself what it does. I figured I&amp;rsquo;d write a devnote to help improve my recall.&lt;/p&gt;
@@ -47,10 +47,10 @@
         <item>
             <title>Devnotes: Python Pathlib
 </title>
-            <link>https://roytang.net/2019/08/devnotes-python-pathlib/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</link>
             <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-python-pathlib/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</guid>
             <description>
             
             &lt;p&gt;Ever since I started learning Python back in 2008ish, I&amp;rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like &lt;code&gt;os&lt;/code&gt;, &lt;code&gt;shutil&lt;/code&gt; and &lt;code&gt;glob&lt;/code&gt;. It can become a bit messy with so many imports, and I often can&amp;rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let&amp;rsquo;s not kid ourselves here).&lt;/p&gt;
@@ -91,10 +91,10 @@ subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style
         <item>
             <title>Devnotes: Migrating Mercurial to Git
 </title>
-            <link>https://roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
             <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
             <description>
             
             &lt;p&gt;Big news in online repositories this week is that &lt;a href=&#34;https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket&#34;&gt;Bitbucket is sunsetting support for Mercurial&lt;/a&gt;! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git). Now that Gitlab and Github both offer unlimited private repos, there&amp;rsquo;s no reason to stick with Bitbucket either. I had already migrated most of my private Git repos to Gitlab before, but hadn&amp;rsquo;t realized until now that I also had a couple of Mercurial repos there that needed to be migrated as well. I hadn&amp;rsquo;t touched those repos in so long that I didn&amp;rsquo;t even have Mercurial installed locally anymore! (Although I&amp;rsquo;m still using the code locally!)&lt;/p&gt;
@@ -118,17 +118,17 @@ git checkout HEAD
         <item>
             <title>Devnotes: TT Miniproject (Django Rest Framework, Unit Testing, VueJS, Geocoding, Nightwatch e2e Testing)
 </title>
-            <link>https://roytang.net/2019/08/devnotes-tt-miniproject/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</link>
             <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-tt-miniproject/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</guid>
             <description>
             
             &lt;p&gt;I recently found myself doing a really small project as sort of a proof of concept/demo for a potential client. It often seems that it might be a waste of time to do something like this since you don&amp;rsquo;t know if the project will actually push through or maybe the client will want something else. To kind of hedge my bets a bit, I decided to take the opportunity to try out some new technologies so that no matter what I at least learned something from all of this. (What is life if not learning?)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Django Rest Framework&lt;/strong&gt;. I&amp;rsquo;ve been on projects using DRF before, but it&amp;rsquo;s my first time building a full CRUD-style API from scratch using it. There is a little bit of a learning curve when it comes to views and serializers, but for the most part it&amp;rsquo;s straightforward. I did enjoy how the framework has out of the box support for the most common REST API scenarios, and there are available backends for different authentication methods. I used JWT Authentication, which isn&amp;rsquo;t part of the library by default, but already had a pretty good implementation available elsewhere.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Python Unit Testing&lt;/strong&gt;. I have dabbled &lt;a href=&#34;https://roytang.net/2019/02/triviastorm-text-and-answer-parsing/&#34;&gt;a little bit with Django&amp;rsquo;s Unit Test framework before&lt;/a&gt;, but not having worked with any company that does TDD I&amp;rsquo;ve never tried doing it the &amp;ldquo;test first&amp;rdquo; way. For reference I used an online book: &lt;a href=&#34;https://www.obeythetestinggoat.com/book/part1.harry.html&#34;&gt;Test Driven Development with DJango&lt;/a&gt;. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python Unit Testing&lt;/strong&gt;. I have dabbled &lt;a href=&#34;https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/&#34;&gt;a little bit with Django&amp;rsquo;s Unit Test framework before&lt;/a&gt;, but not having worked with any company that does TDD I&amp;rsquo;ve never tried doing it the &amp;ldquo;test first&amp;rdquo; way. For reference I used an online book: &lt;a href=&#34;https://www.obeythetestinggoat.com/book/part1.harry.html&#34;&gt;Test Driven Development with DJango&lt;/a&gt;. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Python Social Auth&lt;/strong&gt;. The proof-of-concept needed some social media logins. I used &lt;a href=&#34;https://github.com/python-social-auth/social-core&#34;&gt;Python Social Auth&lt;/a&gt; for this, really straightforward library with good documentation and supports a lot of backends. I ended up using Twitter and Github OAuth as those were the simplest to implement.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VueJS&lt;/strong&gt;. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I&amp;rsquo;m still behind with the latest web frontend frameworks and trends. In my head I&amp;rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out &lt;a href=&#34;https://roytang.net/2019/07/upgrading-a-react-native-project/&#34;&gt;React Native&lt;/a&gt;, but I wasn&amp;rsquo;t fond of it. For this project I decided to use &lt;a href=&#34;https://vuejs.org&#34;&gt;VueJS&lt;/a&gt; since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn&amp;rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was &amp;ldquo;very strange&amp;rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VueJS&lt;/strong&gt;. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I&amp;rsquo;m still behind with the latest web frontend frameworks and trends. In my head I&amp;rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out &lt;a href=&#34;https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/&#34;&gt;React Native&lt;/a&gt;, but I wasn&amp;rsquo;t fond of it. For this project I decided to use &lt;a href=&#34;https://vuejs.org&#34;&gt;VueJS&lt;/a&gt; since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn&amp;rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was &amp;ldquo;very strange&amp;rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Google Maps API and Geocoding&lt;/strong&gt;. The miniproject had some components that required me to show stuff on a map and do some geocoding, so I had to set up the API for that. Google&amp;rsquo;s documentation is fairly good here. One thing I didn&amp;rsquo;t expect is that you need a Google Cloud account with a billing method in order to access the API. My understanding is I wouldn&amp;rsquo;t be charged for anything since I was just using the free tier, I hope that was accurate.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nightwatch e2e Testing&lt;/strong&gt;. I&amp;rsquo;ve had some projects with end to end testing before, mostly via scripts or Selenium, but it&amp;rsquo;s my first time trying out one of these end to end testing frameworks by writing the scripts myself. I chose to go with Nightwatch, it was reasonably strightforward and worked on Mac and Windows. One thing I will note that initially gave me problems during set up is that using the ChromeDriver can be a bit finnicky on Windows. You have to specify the actual location of the executable in your nightwatch.json, like so: &lt;code&gt;&amp;quot;server_path&amp;quot;: &amp;quot;node_modules/chromedriver/lib/chromedriver/chromedriver.exe&amp;quot;,&lt;/code&gt; instead of just the &lt;code&gt;node_modules/.bin/chromedriver&lt;/code&gt; the documentation implies.&lt;/p&gt;
 &lt;p&gt;All in all the mini-project didn&amp;rsquo;t take much work - maybe 2-3 mandays of effort at most, and I did learn a lot from it, so no matter the outcome it was already a win.&lt;/p&gt;
@@ -141,10 +141,10 @@ git checkout HEAD
         <item>
             <title>Devnotes: PostgreSQL on the command line
 </title>
-            <link>https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</link>
+            <link>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</link>
             <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
             <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</guid>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</guid>
             <description>
             
             &lt;p&gt;I decided to start doing small &amp;ldquo;devnotes&amp;rdquo; on developer stuff I&amp;rsquo;m doing so I can refer to them later (and also because I feel like I could use more technical content on this blog)&lt;/p&gt;
