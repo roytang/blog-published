@@ -11,6 +11,68 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/08/2d7fcd44f8a65f2078142cce92aa6b9a/",
+            "url": "https://mirror.roytang.net/2020/08/2d7fcd44f8a65f2078142cce92aa6b9a/",
+            "path": "/2020/08/2d7fcd44f8a65f2078142cce92aa6b9a/",
+            "title": "Ios14",
+            "content_html": "\u003cp\u003eI wont stop upgrading to new beta versions of ios until they figure out how to stop killing my background processes from 10 seconds ago\u003c/p\u003e\n",
+            "summary": "I wont stop upgrading to new beta versions of ios until they figure out how to stop killing my background processes from 10 seconds ago",
+            "date_published": "2020-08-18T08:49:42+00:00",
+            "date_modified": "2020-08-18T09:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/08/2d7fcd44f8a65f2078142cce92aa6b9a/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104709529059849318"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295644171844214785/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/",
+            "url": "https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/",
+            "path": "/2020/08/on-mozilla-and-firefox/",
+            "title": "On Mozilla and Firefox",
+            "content_html": "\u003cp\u003eMozilla made the tech news recently for laying off a whole lot of people. (\u003ca href=\"https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/\"\u003eOfficial statement\u003c/a\u003e). People were alarmed and worried about the future of what is the last major independent browser and the open web, bit it looks like it isn\u0026rsquo;t that bleak. Most of the layoffs were to teams other than those working on Firefox, things like the experimental browser engine Servo, devtools, and MDN. The core Gecko team seems to be unaffected.\u003c/p\u003e\n\u003cp\u003eNot that these things aren\u0026rsquo;t important. MDN, if you\u0026rsquo;re not familiar, is a set of documentation of web standards and browser support, \u003ca href=\"https://developer.mozilla.org/en-US/\"\u003eavailable online\u003c/a\u003e, that is one of the best resources for web developers working on cross-platform things. Mozilla no longer funding it\u0026rsquo;s maintenance is a big deal, it means it\u0026rsquo;s less likely to be kept up-to-date, even though community work can still continue. Peter-Paul Koch, writer of \u003ca href=\"https://quirksmode.org\"\u003equirksmode.org\u003c/a\u003e, which was the original resource for cross-browser compatibility back in the heyday of the browser wars, wrote an article about Mozilla\u0026rsquo;s problems titled \u003ca href=\"https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html\"\u003e\u0026ldquo;The Cult of the Free\u0026rdquo;\u003c/a\u003e where he argues that it\u0026rsquo;s time to step out of this mentality that all these resources must be maintained for free by \u0026ldquo;the community\u0026rdquo;, but that we as consumers must get used to the idea of paying or donating to support these resources. Expecting \u0026ldquo;the community\u0026rdquo; to step in and maintain these resources \u003ca href=\"https://www.quirksmode.org/blog/archives/2020/08/i_love_mdn_or_t.html\"\u003ealso devalues the work of technical writers.\u003c/a\u003e Trying to get more people to support these \u0026ldquo;free\u0026rdquo; resources is a good idea, but I worry it goes against the grain of years of internet culture which has conditioned people to expect online content for free.\u003c/p\u003e\n\u003cp\u003eSpeaking of contributing, a while back I had considered looking for open source projects I could contribute to, and preferred projects that I actively use. Given that I\u0026rsquo;d been using Firefox \u003ca href=\"/2004/10/firefox-1-0-on-november-9/\"\u003esince before version 1.0\u003c/a\u003e, one of the projects I considered was Firefox. I went through the whole rigmarole of \u003ca href=\"https://firefox-source-docs.mozilla.org/setup/windows_build.html\"\u003etheir instructions to set up my machine for the Windows build\u003c/a\u003e, and just the setup process, which involved setting up and checking out code took more than an hour. That was fine for initial setup, but actually building and running Firefox itself took an additional hour or so. Might have been more than that even, it was a while back so I don\u0026rsquo;t clearly remember, but I do remember thinking that I didn\u0026rsquo;t have time for these hour-long build times. The whole set up also took up a nontrivial amount of my SSD disk space (imagine how much worse the build time would have been if I had used my non-SSD drive!), which I am always dangerously low on. These 2 factors led me to shelve the idea for the time being; perhaps I could revisit the idea of contributing to Firefox when I upgraded my computer or had more SSD space available. (TBF, I kind of gave up real quick after the first build, maybe the builds get faster on succeeding runs?). So that\u0026rsquo;s my personal \u0026ldquo;contributing-to-Firefox\u0026rdquo; story, for now.\u003c/p\u003e\n\u003cp\u003eThe sheer size of the codebase and the long build times just drive home the point of how much modern browsers are these large complex beasts that are doing so much. They are pretty much an OS of their own since they host a ton of features and web applications and JIT JS and all of that. This means it\u0026rsquo;s really difficult for independent browser efforts to hit feature parity with modern web browsers - even just working with JS and CSS standards, there are so many to implement.\u003c/p\u003e\n\u003cp\u003eDrew DeVault laments that \u003ca href=\"https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html\"\u003eWeb browsers need to stop\u003c/a\u003e with all these new functionalities and APIs that add scope and complexity, and maybe focus more on performance, efficiency, etc. I do agree - if I was contributing to Firefox, I would want to find a way to reduce the massive memory footprint it always has. I don\u0026rsquo;t even use that many tabs, and I already feel burdened by Firefox\u0026rsquo;s memory footprint. (Pretty sure Chrome is pretty bad in this regard as well.)\u003c/p\u003e\n\u003cp\u003eWhy care about Mozilla/Firefox at all? Why not just use Chrome, it\u0026rsquo;s pretty good right?\u003c/p\u003e\n\u003cp\u003eFirst of all, no, Chrome is not necessarily \u0026ldquo;pretty good\u0026rdquo;, given how it props up a surveillance capitalsm engine.\u003c/p\u003e\n\u003cp\u003eSecondly, even if you didn\u0026rsquo;t dislike Google, having a browser (engine) monoculture is not a good thing. I \u003ca href=\"/2020/02/old-web/\"\u003egot my start in web development\u003c/a\u003e at around the height of Internet Explorer 6\u0026rsquo;s dominance, and I\u0026rsquo;d rather not find my way back there. Granted, one of the issues back then was that IE6 was a stagnant platform that upstarts Firefox and eventually Chrome left behind. No such problem exists now, since Chrome is still in active development and still pushing new web standards forward. And the fact that Chrome is an open-source platform means in theory someone could just fork it if ever Google goes off the rails or such. (And people have already built indie browsers on top of Chrome of course!) But it\u0026rsquo;s still dangerous for a single company and/or codebase to be the sole major implementer of web standards. A single company dictating the future of the web isn\u0026rsquo;t a good thing, and is the very opposite of the idea of an \u0026ldquo;open\u0026rdquo; web.\u003c/p\u003e\n\u003cp\u003eSide note: Maybe I should try building Chromium too, just for comparison.\u003c/p\u003e\n\u003cp\u003eAnyway, that\u0026rsquo;s all my ranting for today. In conclusion: reduce your surveillance capitalism footprint and support the open web, use Firefox.\u003c/p\u003e\n",
+            "summary": "Mozilla made the tech news recently for laying off a whole lot of people. (Official statement). People were alarmed and worried about the future of what is the last major independent browser and the open web, bit it looks like it isn\u0026rsquo;t that bleak. Most of the layoffs were to teams other than those working on Firefox, things like the experimental browser engine Servo, devtools, and MDN. The core Gecko team seems to be unaffected.",
+            "date_published": "2020-08-18T00:00:00+00:00",
+            "date_modified": "2020-08-18T08:00:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/08/mozilla/index.md"
+            , "tags": ["tech life","software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104709292313278002"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295629020504010753/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://radical.town/@fructose_dealer",
+                    "source_file": "like-20200818-080243-ade06749-7c2d-4c99-bda5-e8dfcb67b729.json"
+                }, { 
+                    "url": "https://fosstodon.org/@daniels",
+                    "source_file": "like-20200818-084325-b464fd3e-7b25-4067-a7ba-678bb9eef5b5.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200818-080241-8e696dd8-903d-4cb9-929d-fa06dcdfdd35.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/the-cult-of-the-free-must-die/",
+            "url": "https://mirror.roytang.net/2020/08/the-cult-of-the-free-must-die/",
+            "path": "/2020/08/the-cult-of-the-free-must-die/",
+            "title": "The cult of the free must die",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-08-17T22:01:08+00:00",
+            "date_modified": "2020-08-17T22:15:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/08/the-cult-of-the-free-must-die/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104707012138883635"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295483088860901376/"}]
+            ,"link": "https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/08/1295317142502608897/",
             "url": "https://mirror.roytang.net/2020/08/1295317142502608897/",
             "path": "/2020/08/1295317142502608897/",
@@ -816,57 +878,6 @@
             , "tags": ["covid19"]
             
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/weeknotes-08-02/",
-            "url": "https://mirror.roytang.net/2020/08/weeknotes-08-02/",
-            "path": "/2020/08/weeknotes-08-02/",
-            "title": "Weeknotes 2020-08-02",
-            "content_html": "\u003cp\u003eKind of a busy week for me again, so the week kind of passed me by quickly. It\u0026rsquo;s August! In one month it will be (PH) Christmas season! It feels like July went by more quickly than other quarantine months.\u003c/p\u003e\n\u003cp\u003eMy stuff:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eA bit of consulting work.\u003c/li\u003e\n\u003cli\u003eReworking the old charity side project still ongoing. I was hoping to finish all the changes last week and next week would be testing and deployment, but stuff got in the way (and estimates may have been a bit off), but the spillover is small and we should still be fine for finishing everything next week.\u003c/li\u003e\n\u003cli\u003eGaming:\n\u003cul\u003e\n\u003cli\u003eStarcraft 2 came out with a 10th anniversary patch that had some sweet new features and changes for coop. They added unlockable prestige talents for each of the 18 commanders, each talent alters their gameplay so they play out a bit differently. We had actually been getting a bit bored with SC2 coop and had been playing it less, this patch did a lot to invigorate our enthusiasm for it. We\u0026rsquo;ve been playing it quite a bit to unlock the prestige talents.\u003c/li\u003e\n\u003cli\u003eMTG Arena: Didn\u0026rsquo;t hit mythic last month, but that\u0026rsquo;s fine. I switched my historic deck to Monored for faster games.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eQuiz:\n\u003cul\u003e\n\u003cli\u003eOnly played 1 quiz last week for reasons. Instead, trivia group played some online Codenames (via \u003ca href=\"https://codenames.game/\"\u003ehttps://codenames.game/\u003c/a\u003e) on Saturday night, with voice chat over discord. It was a bunch of fun!\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eWatching lately:\n\u003cul\u003e\n\u003cli\u003eThere\u0026rsquo;s new episodes of Jeopardy on Netflix, so that quickly replaced Family Guy as my background watching.\u003c/li\u003e\n\u003cli\u003eThere\u0026rsquo;s actually a bunch of new stuff to watch too: Umbrella Academy S2 is out, there\u0026rsquo;s a new Transformers series on Netflix etc. Maybe I\u0026rsquo;ll get around to all of these things someday.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSide projects:\n\u003cul\u003e\n\u003cli\u003eSome fixes to the trivia app backend, but I can\u0026rsquo;t really get too much into the (other) side projects until I get past my current busyness.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eInternet seems to be having some DNS issues this past week. Occasionally can\u0026rsquo;t access various URLs, but is fine on refresh. Problem survived multiple router reboots.\u003c/li\u003e\n\u003cli\u003eThe right-click button on this gaming mouse I got last year is starting to get less responsive. I only got for $13 in Walmart, but even then it\u0026rsquo;s one of the more expensive mice I\u0026rsquo;ve bought, so I hope it doesn\u0026rsquo;t die too quickly. Maybe I should clean it out?\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRecent links:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCouple of somewhat related blog posts resonated with me: \u003ca href=\"https://rubenerd.com/why-arent-you-more-serious/\"\u003eWhy aren’t you more serious?\u003c/a\u003e, asserting the personal blog\u0026rsquo;s right to write about whatever the blogger wants, and not just to focus on specific serious or technical topics; and \u003ca href=\"https://om.co/2020/07/30/write-like-a-human/\"\u003eWrite like a human\u003c/a\u003e is kind of self-explanatory.\u003c/li\u003e\n\u003cli\u003eGreat follow-up to a previous survey on \u003ca href=\"https://pudding.cool/2020/07/song-decay/\"\u003eDefining the 90s Music Canon\u003c/a\u003e. Also had an \u003ca href=\"https://twitter.com/roytang/status/1288899712112717824\"\u003einteresting exchange about this with a friend over on Twitter\u003c/a\u003e re:how this might reflect locally.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIDK, maybe I\u0026rsquo;m getting used to the pandemic. Is this what they mean by \u0026ldquo;new normal\u0026rdquo;? I\u0026rsquo;ll move the pandemic notes to the end of these weekly updates.\u003c/p\u003e\n\n\n    On \n    \u003ca href=\"/2020/08/covid19-08-02/\"\u003e\u003ctime datetime=\"2020-08-02 00:00:00\"\u003e2 Aug 2020 12:00am\u003c/time\u003e\u003c/a\u003e\n    I wrote:\n    \u003cblockquote\u003e\n        \u003cp\u003ePandemic thoughts and updates, Aug 2 edition:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWe ended July with around 90k active cases. Despite the threat of sending Metro Manila back to ECQ if we breached the 85k mark, the govt did not push through. Over the weekend, this led to a clamor from doctors and other frontliners to have a \u0026ldquo;time out\u0026rdquo; of 2 weeks for the NCR, a temporary quarantine, to give the healthcare system some breathing room. The knee-jerk response from the palace was to say it wasn\u0026rsquo;t necessary, but they quickly flipped their flops and said the IATF would discuss it. Enraging people and doctors, a certain outspoken-on-social-media doctor tried to shame doctors for not being heroic enough, and a certain senator implied that we can\u0026rsquo;t afford it so frontliners just need to work harder and be more passionate.\u003c/li\u003e\n\u003cli\u003eWatching mass via Facebook again today. Churches have actually been holding limited physical services, but in solidarity with the call for ECQ, they said they will temporarily suspend such services.\u003c/li\u003e\n\u003cli\u003eI went to get some Jollibee takeout last Thursday; apparently they are already allowing limited dine-in customers, that seems unwise, eh. Was anxious the entire time I was waiting for my takeout order.\u003c/li\u003e\n\u003cli\u003eAs of last night, we are at 98232 cases (+4963 from the day before, +19820 from last week, huge jump week-on-week), 2039 deaths (+17 from the day before, +142 from last week, moderate jump), 65265 recoveries (+93 from the day before, +39513 (!) from last week, a miraculous jump). We hit record high daily deaths over the past few days, and the huge spike in recoveries is because the DOH decided to do a \u0026ldquo;mass recovery\u0026rdquo; of mild/asymptomatic cases that are already 14 days or older, supposedly in line with WHO guidelines. I can kind of see some logic behind this, but the communication was not handled very well. \u003ca href=\"https://covid19ph.com/\"\u003eReference.\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eWorldwide, we are at around 18M cases (+1.8M from last week) and almost 690k deaths. Caveat: these numbers are from \u003ca href=\"https://edition.cnn.com/interactive/2020/05/world/worldometer-coronavirus-mystery/index.html\"\u003eWorldometer\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\n        \n\n\n\n\n\n\n    \u003c/blockquote\u003e\n\n",
-            "summary": "Kind of a busy week for me again, so the week kind of passed me by quickly. It\u0026rsquo;s August! In one month it will be (PH) Christmas season! It feels like July went by more quickly than other quarantine months.\nMy stuff:\n A bit of consulting work. Reworking the old charity side project still ongoing. I was hoping to finish all the changes last week and next week would be testing and deployment, but stuff got in the way (and estimates may have been a bit off), but the spillover is small and we should still be fine for finishing everything next week.",
-            "date_published": "2020-08-02T00:00:00+00:00",
-            "date_modified": "2020-08-02T07:15:09+00:00",
-            "section": "post",
-            "source_path": "post/2020/08/weeknotes-08-02/index.md"
-            , "tags": ["weeknotes","current events","philippines"]
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104618538046957752"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1289820747397963778/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/",
-            "url": "https://mirror.roytang.net/2020/08/",
-            "path": "/2020/08/",
-            "title": "Monthly Archives for 08 2020",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-08-01T00:00:00+00:00",
-            "date_modified": "2020-08-02T07:00:25+00:00",
-            "section": "archm",
-            "source_path": "archm/2020-08.md"
-            
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/write-like-a-human/",
-            "url": "https://mirror.roytang.net/2020/07/write-like-a-human/",
-            "path": "/2020/07/write-like-a-human/",
-            "title": "Write like a human",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-07-31T17:20:44+00:00",
-            "date_modified": "2020-07-31T17:30:14+00:00",
-            "section": "links",
-            "source_path": "links/2020/07/write-like-a-human/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://om.co/2020/07/30/write-like-a-human/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104609651797758002"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1289252027093012480/"}]
-            ,"link": "https://om.co/2020/07/30/write-like-a-human/"
             
             }
         

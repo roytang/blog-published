@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-10-25](/2020/10/weeknotes-2020-10-25/)
+
 - [Location, Location, Location](/2020/05/location-location-location/)
 
 - [Redesign](/2020/02/redesign/)
