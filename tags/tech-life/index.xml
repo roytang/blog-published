@@ -7,12 +7,49 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/tech-life/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Site Migration from Hugo to Django
+</title>
+            <link>https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/</link>
+            <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;leaving-hugo&#34;&gt;Leaving Hugo&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s been a bit under two years since &lt;a href=&#34;https://mirror.roytang.net/2018/11/site-migration-to-hugo/&#34;&gt;I migrated the site from Wordpress to Hugo&lt;/a&gt;. As discussed in &lt;a href=&#34;https://mirror.roytang.net/2019/11/one-year-with-hugo/&#34;&gt;this post one year ago&lt;/a&gt;, I was very happy with the general workflow of managing posts through markdown files in git, but had big problems with the Hugo build time, largely a consequence of &lt;a href=&#34;https://mirror.roytang.net/2019/10/archive-of-my-own/&#34;&gt;my social media archiving&lt;/a&gt;. At that time, I didn&amp;rsquo;t want to invest effort into migrating to a different backend, but the problem has only gotten incrementally worse since then, so I decided to take the jump and started working on it last month.&lt;/p&gt;
+&lt;h3 id=&#34;migration-goals&#34;&gt;Migration goals&lt;/h3&gt;
+&lt;p&gt;The main goal is to get rid of the unnecessary build time. I also don&amp;rsquo;t want to have to store all the pre-generated HTML files. It&amp;rsquo;s fine for a small site, but with the large number of posts here, there&amp;rsquo;s a large amount of unnecessary duplication, considering listing pages and such. That means reverting to a system where each page is generated on the fly.&lt;/p&gt;
+&lt;p&gt;I want to retain the current workflow of managing content via markdown files, so that rules out something like Wordpress. Still, I figured I needed some kind of database for indexing, so that things like listing and archive pages work properly. Given that we would be migrating away from a static site, I fully expect a performance hit, at least initially, but ideally it&amp;rsquo;s not too bad.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d also like to retain the current content written for Hugo as much as possible. This means the new system will need to be able to parse the custom Hugo shortcodes I&amp;rsquo;d set up for the site.&lt;/p&gt;
+&lt;p&gt;I would also be migrating to a new server which I would be managing myself, which means I would need to set up the deployment myself.&lt;/p&gt;
+&lt;h3 id=&#34;why-django&#34;&gt;Why Django&lt;/h3&gt;
+&lt;p&gt;I naturally fell back on Django, it&amp;rsquo;s my ORM+backend framework of choice, and the one I&amp;rsquo;m most familiar with. Also, I already had a handful of small Django apps that I needed to migrate to the new server as well, so no matter what I needed to have a Django app on the server anyway. I also had a bunch of Python scripts that were doing already doing support functions for the site like search and ingestion of social media content, so that&amp;rsquo;s something to fold into the new backend as well.&lt;/p&gt;
+&lt;h3 id=&#34;why-bother&#34;&gt;Why Bother?&lt;/h3&gt;
+&lt;p&gt;I will fully admit I spent far too much effort unnecessarily doing this, but the realization is that it&amp;rsquo;s actually work I enjoy. This site is primarily a project for myself, and I enjoy the time working on it and learning stuff and improving things.&lt;/p&gt;
+&lt;p&gt;That being said, the effort wasn&amp;rsquo;t too much. There was a lot of code to reuse and migrate, so most of the effort was testing and making sure things worked. Most of the new code was for parsing the markdown files to render the hugo shortcodes as HTML; I basically wrote Django templates for each Hugo shortcode to be supported.&lt;/p&gt;
+&lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
+&lt;p&gt;The migration was largely done in-place: site design remains mostly the same, post URLs should be more or less retained. I did take the opportunity to make one nontrivial change: Photos are now under &lt;a href=&#34;https://mirror.roytang.net/notes&#34;&gt;Notes&lt;/a&gt; category. I really only had a separate photos category before because in Hugo I didn&amp;rsquo;t have a way to query posts that have attached images. Even with everything under Notes, since I have a database now, I can do silly things like show &lt;a href=&#34;https://mirror.roytang.net/photos/random&#34;&gt;random photos&lt;/a&gt;. Also, now the notes section is closer to a microblog/tumblr-like feed.&lt;/p&gt;
+&lt;p&gt;The source for the site content will still be &lt;a href=&#34;https://github.com/roytang/blog&#34;&gt;available publicly via Github&lt;/a&gt;, as it was before. Unfortunately, I am not ready to make public the source for this site, because (a) a lot of it is old code that I reused so it looks terrible; and (b) some level of security by obscurity I guess?&lt;/p&gt;
+&lt;p&gt;Not that the site needs to be secure; there isn&amp;rsquo;t actually any critical/important data being stored anywhere. But the fact that a database now exists means I need to follow some kind of security practices.&lt;/p&gt;
+&lt;p&gt;The server is now hosted on DigitalOcean. Here&amp;rsquo;s &lt;a href=&#34;https://m.do.co/c/6c2e6b11b260&#34;&gt;my affiliate link&lt;/a&gt;. Since I&amp;rsquo;m on a self-managed VPS now, that means Github webhooks now work, so whenever I push new posts, they take less than a minute to now appear on the site. This is a vast improvement over the old system where it would take anywhere between 30-60 minutes depending on how Travis was feeling.&lt;/p&gt;
+&lt;p&gt;Speaking of Travis, I set up a new mirror, Travis now publishes to &lt;a href=&#34;https://mirror.roytang.net&#34;&gt;https://mirror.roytang.net&lt;/a&gt; once a day, hosted on Netlify. The mirror is still generated using Hugo! I don&amp;rsquo;t know how long I can keep up having the content generate correctly for both builds, but we&amp;rsquo;ll see how it goes.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;All of this actually went out much smoother than I thought it would. Took less effort than expected, deployment was a breeze. The listing pages have slightly worse performance, but individual pages are hitting 100 on Pagespeed, so that&amp;rsquo;s mostly fine.&lt;/p&gt;
+&lt;p&gt;This post was just the overview of the site changes. There&amp;rsquo;s still a bunch of technical notes to be written up, so that&amp;rsquo;s stuff for a future blog post.&lt;/p&gt;
+&lt;p&gt;The last time I used a Django backend for my website was &lt;a href=&#34;https://mirror.roytang.net/2008/12/roytang-net-site-update/&#34;&gt;waaaay back in 2008&lt;/a&gt;, and that didn&amp;rsquo;t last more than a year before I switched to Wordpress. We&amp;rsquo;ll see how long this one holds out!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>On Mobile App Development
 </title>
@@ -2338,32 +2375,6 @@ git checkout HEAD
 &lt;li&gt;see if I can refund my current balance with them, since I prepaid a bit last year. I already asked on the forums and they say we&amp;rsquo;ll have more info on refund options later after their technical evaluation, maybe around Mayish.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In any case, I had a good run with WebFaction, a bit over 10 years now. But time moves on and things change and small businesses get eaten up by large businesses, such is the way of capitalism. They were very developer-friendly and had pretty good customer support in my opinion, so they will be missed. Hopefully I&amp;rsquo;m able to find a good alternative.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Noisy channels
-</title>
-            <link>https://mirror.roytang.net/2019/02/noisy-channels/</link>
-            <pubDate>Tue, 19 Feb 2019 05:56:56 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2019/02/noisy-channels/</guid>
-            <description>
-            
-            &lt;p&gt;There&amp;rsquo;s a significant risk of information overload nowadays. For someone like me who spends a lot of time on the internet, there&amp;rsquo;s a lot of feeds I follow. Not just social media like Facebook and Twitter, I also follow a set of RSS Feeds via Inoreader, I&amp;rsquo;ve signed up for a few newsletters, and on weekends I read through several Flipboard categories. Just another symptom of my tendency to want everything I guess.&lt;/p&gt;
-&lt;p&gt;It is arguably all too much. So I thought about &lt;a href=&#34;https://mirror.roytang.net/2019/01/konmari/&#34;&gt;Marie Kondo&lt;/a&gt;-ing some of that stuff. The main problem right now is my RSS feeds - I follow some feeds that simply have too much content, and this means I accumulate a significantly high unread count in the app, which gives me some anxiety. While those feeds have the occasional interesting post or article I want to read, the sheer number of posts means the signal-to-noise ratio is very low for those channels. So I&amp;rsquo;m going to cut the most prolific offenders and see if the content I would&amp;rsquo;ve gotten from there would surface some other way.&lt;/p&gt;
-&lt;p&gt;I do still like those channels, so I&amp;rsquo;ll also promote them a bit:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; - there is a lot of high quality content here, and many of them won&amp;rsquo;t surface through other channels. But there are &lt;em&gt;a lot&lt;/em&gt; of posts, so the volume is still difficult to keep up with. I&amp;rsquo;ve instead moved them to a Flipboard section, and just check out that section from time to time.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.to/&#34;&gt;Dev.to&lt;/a&gt; - less tech industry and more programming-related posts, many of them beginner-oriented so not really for me. There is the occasional gem, but the S/N ratio is worse than HN by far. It would be great to read all that content if your goal was to know everything in all areas of software development, but anyone who&amp;rsquo;s spent any nontrivial amount of time in the industry knows that&amp;rsquo;s a fool&amp;rsquo;s errand. I also follow them &lt;a href=&#34;https://twitter.com/ThePracticalDev&#34;&gt;on Twitter&lt;/a&gt;, so maybe that&amp;rsquo;s enough instead of the RSS feed. They also have a weekly &amp;ldquo;most popular posts&amp;rdquo; post, I might look into whether I can somehow subscribe to only those posts and see if that&amp;rsquo;s sufficient&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://slashdot.org/&#34;&gt;Slashdot&lt;/a&gt; - one of the oldest tech news blogs around, and I&amp;rsquo;ve been following them on and off for years. The content I get from their feed has a lot of overlap with Hacker News and the tech section on Flipboard, but occasionally they have an interesting post that none of my other sources provide. The volume of posts isn&amp;rsquo;t as high as the previous two, but the S/N ratio is worse. I&amp;rsquo;ll try living without them for a while.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note that a feed having a low S/N ratio is in no way a condemnation of their content. It&amp;rsquo;s just that not all content is good for everybody, and hence some feeds are better for some people than others.&lt;/p&gt;
-&lt;p&gt;All of this applies to social media too of course. I try to unfollow ruthlessly. On Facebook, which I mostly restrict to friends and family, I unfollow anyone who posts content I dislike (conspiracy theories, chain messages, &amp;ldquo;let&amp;rsquo;s see who will read this&amp;rdquo;, inspirational messages, etc) and generally favor anyone who posts puns lol (I find the overlap between those two sets is low). Anyway, they&amp;rsquo;re still &amp;ldquo;friends&amp;rdquo; on Facebook, so they can still message me and stuff. On Twitter, every so often I&amp;rsquo;ll unfollow a bunch and follow some other set, change it up a bit. You need to adjust your feeds when it feels like you&amp;rsquo;re seeing too much of one type of content or too much you dislike.&lt;/p&gt;
-&lt;p&gt;It would be great to have some sort of machine learning that I can teach as to which kinds of posts I prefer and which ones I want to ignore. Supposedly, social media&amp;rsquo;s &amp;ldquo;algorithmic timelines&amp;rdquo; are supposed to improve the S/N ratio of your feeds, but my problem with those is that items aren&amp;rsquo;t being displayed chronologically, which makes a feed work. Maybe I should write my own feed reader! (Not the first time I&amp;rsquo;ve had this thought!)&lt;/p&gt;
 
 
 

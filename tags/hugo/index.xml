@@ -7,12 +7,49 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Site Migration from Hugo to Django
+</title>
+            <link>https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/</link>
+            <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;leaving-hugo&#34;&gt;Leaving Hugo&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s been a bit under two years since &lt;a href=&#34;https://mirror.roytang.net/2018/11/site-migration-to-hugo/&#34;&gt;I migrated the site from Wordpress to Hugo&lt;/a&gt;. As discussed in &lt;a href=&#34;https://mirror.roytang.net/2019/11/one-year-with-hugo/&#34;&gt;this post one year ago&lt;/a&gt;, I was very happy with the general workflow of managing posts through markdown files in git, but had big problems with the Hugo build time, largely a consequence of &lt;a href=&#34;https://mirror.roytang.net/2019/10/archive-of-my-own/&#34;&gt;my social media archiving&lt;/a&gt;. At that time, I didn&amp;rsquo;t want to invest effort into migrating to a different backend, but the problem has only gotten incrementally worse since then, so I decided to take the jump and started working on it last month.&lt;/p&gt;
+&lt;h3 id=&#34;migration-goals&#34;&gt;Migration goals&lt;/h3&gt;
+&lt;p&gt;The main goal is to get rid of the unnecessary build time. I also don&amp;rsquo;t want to have to store all the pre-generated HTML files. It&amp;rsquo;s fine for a small site, but with the large number of posts here, there&amp;rsquo;s a large amount of unnecessary duplication, considering listing pages and such. That means reverting to a system where each page is generated on the fly.&lt;/p&gt;
+&lt;p&gt;I want to retain the current workflow of managing content via markdown files, so that rules out something like Wordpress. Still, I figured I needed some kind of database for indexing, so that things like listing and archive pages work properly. Given that we would be migrating away from a static site, I fully expect a performance hit, at least initially, but ideally it&amp;rsquo;s not too bad.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d also like to retain the current content written for Hugo as much as possible. This means the new system will need to be able to parse the custom Hugo shortcodes I&amp;rsquo;d set up for the site.&lt;/p&gt;
+&lt;p&gt;I would also be migrating to a new server which I would be managing myself, which means I would need to set up the deployment myself.&lt;/p&gt;
+&lt;h3 id=&#34;why-django&#34;&gt;Why Django&lt;/h3&gt;
+&lt;p&gt;I naturally fell back on Django, it&amp;rsquo;s my ORM+backend framework of choice, and the one I&amp;rsquo;m most familiar with. Also, I already had a handful of small Django apps that I needed to migrate to the new server as well, so no matter what I needed to have a Django app on the server anyway. I also had a bunch of Python scripts that were doing already doing support functions for the site like search and ingestion of social media content, so that&amp;rsquo;s something to fold into the new backend as well.&lt;/p&gt;
+&lt;h3 id=&#34;why-bother&#34;&gt;Why Bother?&lt;/h3&gt;
+&lt;p&gt;I will fully admit I spent far too much effort unnecessarily doing this, but the realization is that it&amp;rsquo;s actually work I enjoy. This site is primarily a project for myself, and I enjoy the time working on it and learning stuff and improving things.&lt;/p&gt;
+&lt;p&gt;That being said, the effort wasn&amp;rsquo;t too much. There was a lot of code to reuse and migrate, so most of the effort was testing and making sure things worked. Most of the new code was for parsing the markdown files to render the hugo shortcodes as HTML; I basically wrote Django templates for each Hugo shortcode to be supported.&lt;/p&gt;
+&lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
+&lt;p&gt;The migration was largely done in-place: site design remains mostly the same, post URLs should be more or less retained. I did take the opportunity to make one nontrivial change: Photos are now under &lt;a href=&#34;https://mirror.roytang.net/notes&#34;&gt;Notes&lt;/a&gt; category. I really only had a separate photos category before because in Hugo I didn&amp;rsquo;t have a way to query posts that have attached images. Even with everything under Notes, since I have a database now, I can do silly things like show &lt;a href=&#34;https://mirror.roytang.net/photos/random&#34;&gt;random photos&lt;/a&gt;. Also, now the notes section is closer to a microblog/tumblr-like feed.&lt;/p&gt;
+&lt;p&gt;The source for the site content will still be &lt;a href=&#34;https://github.com/roytang/blog&#34;&gt;available publicly via Github&lt;/a&gt;, as it was before. Unfortunately, I am not ready to make public the source for this site, because (a) a lot of it is old code that I reused so it looks terrible; and (b) some level of security by obscurity I guess?&lt;/p&gt;
+&lt;p&gt;Not that the site needs to be secure; there isn&amp;rsquo;t actually any critical/important data being stored anywhere. But the fact that a database now exists means I need to follow some kind of security practices.&lt;/p&gt;
+&lt;p&gt;The server is now hosted on DigitalOcean. Here&amp;rsquo;s &lt;a href=&#34;https://m.do.co/c/6c2e6b11b260&#34;&gt;my affiliate link&lt;/a&gt;. Since I&amp;rsquo;m on a self-managed VPS now, that means Github webhooks now work, so whenever I push new posts, they take less than a minute to now appear on the site. This is a vast improvement over the old system where it would take anywhere between 30-60 minutes depending on how Travis was feeling.&lt;/p&gt;
+&lt;p&gt;Speaking of Travis, I set up a new mirror, Travis now publishes to &lt;a href=&#34;https://mirror.roytang.net&#34;&gt;https://mirror.roytang.net&lt;/a&gt; once a day, hosted on Netlify. The mirror is still generated using Hugo! I don&amp;rsquo;t know how long I can keep up having the content generate correctly for both builds, but we&amp;rsquo;ll see how it goes.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;All of this actually went out much smoother than I thought it would. Took less effort than expected, deployment was a breeze. The listing pages have slightly worse performance, but individual pages are hitting 100 on Pagespeed, so that&amp;rsquo;s mostly fine.&lt;/p&gt;
+&lt;p&gt;This post was just the overview of the site changes. There&amp;rsquo;s still a bunch of technical notes to be written up, so that&amp;rsquo;s stuff for a future blog post.&lt;/p&gt;
+&lt;p&gt;The last time I used a Django backend for my website was &lt;a href=&#34;https://mirror.roytang.net/2008/12/roytang-net-site-update/&#34;&gt;waaaay back in 2008&lt;/a&gt;, and that didn&amp;rsquo;t last more than a year before I switched to Wordpress. We&amp;rsquo;ll see how long this one holds out!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>Using Hugo to Automatically Update Your Github Profile
 </title>
@@ -321,7 +358,7 @@
 &lt;p&gt;Since I had the source for the plugin, it was straightforward to fix both issues myself.&lt;/p&gt;
 &lt;p&gt;After getting the export from the plugin, I still had a bit of post-processing and cleaning up of the posts to do.&lt;/p&gt;
 &lt;p&gt;For one thing, all the single-quotes in the exported posts seem to have been converted to HTML entities for that smart quote thing, so I had to reverse that. Luckily, it was a simple find and replace across text files. The format for embedding posts such as Twitter, Youtube, etc was different as well, I had to correct those files one by one.&lt;/p&gt;
-&lt;h3 id=&#34;cleaning-up-the-taxanomies&#34;&gt;Cleaning up the taxanomies&lt;/h3&gt;
+&lt;h3 id=&#34;cleaning-up-the-taxonomies&#34;&gt;Cleaning up the taxonomies&lt;/h3&gt;
 &lt;p&gt;I had always wanted to clean up the categories in the blog, but I never got around to it with Wordpress because I didn&amp;rsquo;t feel like figuring out the SQL I would have needed to do it. (I&amp;rsquo;ve never liked Wordpress&amp;rsquo;s table structure.). With Hugo, all I had to do was update a bunch of text files, which I was much more comfortable with. This involved simply importing a Python library to &lt;a href=&#34;https://elbauldelprogramador.com/en/how-to-parse-frontmatter-with-python/&#34;&gt;parse frontmatter&lt;/a&gt;, and a &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/clean_categories.py&#34;&gt;script&lt;/a&gt; to do the conversion.&lt;/p&gt;
 &lt;h3 id=&#34;generating-the-archive-pages&#34;&gt;Generating the archive pages&lt;/h3&gt;
 &lt;p&gt;Hugo doesn&amp;rsquo;t have built-in support for archive pages, so I had to create them myself. I followed the setup described in &lt;a href=&#34;https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/&#34;&gt;this blog post&lt;/a&gt; and wrote a python &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/create-archives.py&#34;&gt;script&lt;/a&gt; to generate the individual year/month archive pages.&lt;/p&gt;

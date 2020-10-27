@@ -1,4 +1,6 @@
 
+- [Site Migration from Hugo to Django](/2020/10/site-migration-from-hugo-to-django/)
+
 - [On Mobile App Development](/2020/09/mobile-app-dev/)
 
 - [On Podcasts, Audiobooks, and Newsletters](/2020/08/on-podcasts-audiobooks-and-newsletters/)

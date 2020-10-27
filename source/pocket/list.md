@@ -1,4 +1,6 @@
 
+- [“Fake COTS” and the one-day rule](/2020/10/fake-cots-and-the-one-day-rule/)
+
 - [An ed-tech specialist spoke out about remote testing software — and now he’s being sued](/2020/10/an-ed-tech-specialist-spoke-out-about-remote-testing-software-and-now-hes-being-sued/)
 
 - [The story behind Markdown.](/2020/10/the-story-behind-markdown/)

@@ -194,7 +194,7 @@
 <p>Since I had the source for the plugin, it was straightforward to fix both issues myself.</p>
 <p>After getting the export from the plugin, I still had a bit of post-processing and cleaning up of the posts to do.</p>
 <p>For one thing, all the single-quotes in the exported posts seem to have been converted to HTML entities for that smart quote thing, so I had to reverse that. Luckily, it was a simple find and replace across text files. The format for embedding posts such as Twitter, Youtube, etc was different as well, I had to correct those files one by one.</p>
-<h3 id="cleaning-up-the-taxanomies">Cleaning up the taxanomies</h3>
+<h3 id="cleaning-up-the-taxonomies">Cleaning up the taxonomies</h3>
 <p>I had always wanted to clean up the categories in the blog, but I never got around to it with Wordpress because I didn&rsquo;t feel like figuring out the SQL I would have needed to do it. (I&rsquo;ve never liked Wordpress&rsquo;s table structure.). With Hugo, all I had to do was update a bunch of text files, which I was much more comfortable with. This involved simply importing a Python library to <a href="https://elbauldelprogramador.com/en/how-to-parse-frontmatter-with-python/">parse frontmatter</a>, and a <a href="https://github.com/roytang/blog/blob/master/utils/clean_categories.py">script</a> to do the conversion.</p>
 <h3 id="generating-the-archive-pages">Generating the archive pages</h3>
 <p>Hugo doesn&rsquo;t have built-in support for archive pages, so I had to create them myself. I followed the setup described in <a href="https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/">this blog post</a> and wrote a python <a href="https://github.com/roytang/blog/blob/master/utils/create-archives.py">script</a> to generate the individual year/month archive pages.</p>
@@ -523,7 +523,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2020 09 26 22:25:13.
+        Last modified at: 2020 10 27 04:23:10.
         
         <a href='https://github.com/roytang/blog/tree/master/content/post/2018/11/site-migration-to-hugo/index.md' title='source file'>Source file</a>
         

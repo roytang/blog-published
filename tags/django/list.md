@@ -1,4 +1,6 @@
 
+- [Site Migration from Hugo to Django](/2020/10/site-migration-from-hugo-to-django/)
+
 - [Flask vs Django](/2020/01/flask-vs-django/)
 
 - [Django Blog Application](/2018/10/django-blog-application/)
