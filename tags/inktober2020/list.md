@@ -1,4 +1,6 @@
 
+- [Inktober 2020 Day 27: Music](/2020/10/inktober-27-music/)
+
 - [Inktober 2020 Day 26: Hide](/2020/10/inktober-26-hide/)
 
 - [Inktober 2020 Day 25: Buddy](/2020/10/inktober-25-buddy/)

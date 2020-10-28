@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/06/scraping-facebook/",
+            "url": "https://mirror.roytang.net/2020/06/scraping-facebook/",
+            "path": "/2020/06/scraping-facebook/",
+            "title": "Scraping Facebook",
+            "content_html": "\u003cp\u003eI had been meaning to \u003ca href=\"/2020/06/quitting-facebook/\"\u003equit Facebook\u003c/a\u003e for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a \u003ca href=\"/2007/12/pack-rat-mentality/\"\u003epack rat\u003c/a\u003e), and Facebook\u0026rsquo;s \u003ca href=\"/2019/03/export-your-social-media-data/\"\u003esocial media export\u003c/a\u003e is less than ideal, for me at least.\u003c/p\u003e\n\u003cp\u003eLess than ideal why? It doesn\u0026rsquo;t include a lot of content I would like backed up, including:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ecomments on my posts (there have been some good conversations with friends over the years I would prefer to preserve)\u003c/li\u003e\n\u003cli\u003ethings I\u0026rsquo;ve reposted from other people\u003c/li\u003e\n\u003cli\u003econtent of certain groups I\u0026rsquo;m members of (again, mostly for some interesting discussions over the years)\u003c/li\u003e\n\u003cli\u003epictures posted by other people that I\u0026rsquo;ve been tagged in\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eFor a while I looked around for scraper programs/scripts to this for me, but none really did what I wanted. Early this month I finally wrote my own scraper scripts to pull that data out of Facebook, as a supplement to the actual FB export. It seems unlikely that these will be helpful to anyone else, especially since web scraping is an inherently brittle activity; any slight change in the FB HTML generation will break the scripts. In spite of that, I thought I\u0026rsquo;d share them publicly anyway, via Github gists.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://gist.github.com/roytang/a5b4a8e4d511e97b9d25cb190f9dfb5d\"\u003eScript to export FB timeline\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://gist.github.com/roytang/1cb3a682a2c223e569e3009aceb0e319\"\u003eScript to export FB group\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThese are basically the same file, with minor changes between configuration and some scraping details. I wasn\u0026rsquo;t expecting to need these scripts again in the future so I didn\u0026rsquo;t bother with any kind of reusability.\u003c/p\u003e\n\u003cp\u003eSome other notes about these scripts:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003emade with Python! Using my favorite HTML parsing library, BeautifulSoup\u003c/li\u003e\n\u003cli\u003ethe scripts run against the mobile web version m.facebook.com. The main web version is troublesome because it executes JS to do its infinite scroll and I didn\u0026rsquo;t want to waste time reverse engineering that\u003c/li\u003e\n\u003cli\u003ethere are some variables near the start that you should probably set. Most of it is output folders and group details, but the main one is the FB login cookie - basically you need to login to FB, then use dev tools or whatever to copy your cookie string\u003c/li\u003e\n\u003cli\u003ethe main output file is a gigantic JSON. There is no specified schema, basically I made things up as I went along. I\u0026rsquo;ll figure out how to process this at a later date lol.\u003c/li\u003e\n\u003cli\u003eAs a secondary output, there is also a cache folder that should contain the raw HTML parsed for each page. These aren\u0026rsquo;t necessary to retain, as all the information they have should also be in the JSON. Images from posts are also downloaded into a \u003ccode\u003edls\u003c/code\u003e folder. (The JSON will include the download path for the images from each post.)\u003c/li\u003e\n\u003cli\u003erunning the timeline export on my machine took the better part of 2-3 hours, for roughly 13 years worth of FB content. The output JSON was around 22 MB.\u003c/li\u003e\n\u003cli\u003erunning this might be considered spammy behavior by Facebook (understandably, but it\u0026rsquo;s their fault they won\u0026rsquo;t me do this via API), but the only consequence I\u0026rsquo;ve seen was that I wasn\u0026rsquo;t able to view other people\u0026rsquo;s profiles for some minutes after running the script\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAs for what I\u0026rsquo;m going to do with this data, that\u0026rsquo;s still to be determined. The nonpublic content can be imported into the archive on this blog (if it isn\u0026rsquo;t there yet), but that\u0026rsquo;s a lot of manual work. As for the scripts, hopefully I won\u0026rsquo;t have to use them again in the future, but maybe they can be useful to someone else!\u003c/p\u003e\n",
+            "summary": "I had been meaning to quit Facebook for more than a year maybe, but I kept putting it off. The main reason being that I like having backups of my own digital data (still very much a pack rat), and Facebook\u0026rsquo;s social media export is less than ideal, for me at least.\nLess than ideal why? It doesn\u0026rsquo;t include a lot of content I would like backed up, including:\n comments on my posts (there have been some good conversations with friends over the years I would prefer to preserve) things I\u0026rsquo;ve reposted from other people content of certain groups I\u0026rsquo;m members of (again, mostly for some interesting discussions over the years) pictures posted by other people that I\u0026rsquo;ve been tagged in  For a while I looked around for scraper programs/scripts to this for me, but none really did what I wanted.",
+            "date_published": "2020-06-24T00:00:00+00:00",
+            "date_modified": "2020-06-24T04:15:02+00:00",
+            "section": "post",
+            "source_path": "post/2020/06/scraping-fb/index.md"
+            , "tags": ["tech life","software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104397000139419911"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275642321334394882/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/06/1275559325944012800/",
+            "url": "https://mirror.roytang.net/2020/06/1275559325944012800/",
+            "path": "/2020/06/1275559325944012800/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e !report\u003c/p\u003e\n",
+            "summary": "@triviastorm !report",
+            "date_published": "2020-06-23T22:40:16+00:00",
+            "date_modified": "2020-06-23T23:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/06/1275559325944012800/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1275559325944012800/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/06/1275442460794089478/",
             "url": "https://mirror.roytang.net/2020/06/1275442460794089478/",
             "path": "/2020/06/1275442460794089478/",
@@ -827,48 +861,6 @@
             "source_path": "notes/2020/06/covid19-06-07/index.md"
             , "tags": ["covid19"]
             
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/06/weeknotes-06-07/",
-            "url": "https://mirror.roytang.net/2020/06/weeknotes-06-07/",
-            "path": "/2020/06/weeknotes-06-07/",
-            "title": "Weeknotes 2020-06-07: Mad World",
-            "content_html": "\u003cp\u003eThe world isn\u0026rsquo;t letting up. The virus is still around, but both the US and my own country have gotten distracted.\u003c/p\u003e\n\u003cp\u003eThe US is in its second week of police brutality/black lives matters protests. Meanwhile, our government took on a sidequest of trying to enact a wide-ranging and easily abusable anti-terror bill, triggering some smaller (by comparison to the US).\u003c/p\u003e\n\u003cp\u003eI haven\u0026rsquo;t written about the terror bill, mainly because I haven\u0026rsquo;t had the opportunity to dig into it too deeply. But my general impression leaves me two points:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ewhat is the justification for asking for increased police/anti-terrorism powers? We don\u0026rsquo;t actually get that many terror attacks pulled off, the last big one was Marawi (which I heard some Congressmen citing, tbf), which was back in 2017. And that was mostly a problem with Islamic militants. I don\u0026rsquo;t hear any of the bill proponents talking about how specifically the limits on govt powers holds them back. How would these added powers prevent another Marawi? Did they actually have intel leading up to the Marawi siege that they couldn\u0026rsquo;t act on due to limited powers? I find this difficult to believe because\u0026hellip;\u003c/li\u003e\n\u003cli\u003ewhat about the authorities\u0026rsquo; history of impunity? It\u0026rsquo;s hard to believe that they are being restricted by the law in anti-terror activities when they don\u0026rsquo;t seem to let the law get in the way for much lesser things. I guess this is the crux of the issue for most people, one of trust. Even if you say there are safeguards in the law, they are still easily abusable. The bill extends the detention period for terror suspects to I think is it 30 days, extendable? But given the speed (or lack thereof) of local courts, even if you challenge any violation of the safeguards, the challenge may take longer to resolve than the detention period. Maybe we should consider cleaning up our justice system first? People wouldn\u0026rsquo;t object if our systems were trustworthy\u0026hellip;\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOh, also China banned mocking their national anthem in HK, or something to that effect. China being China. Better not to lose track of what is probably the greatest threat to democracy in the coming century\u0026hellip;\u003c/p\u003e\n\u003cp\u003eMy stuff:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/2020/06/covid19-06-07/\"\u003eThis week\u0026rsquo;s quarantine notes\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eI was hoping the weather would get much cooler than this. Where\u0026rsquo;s our \u003cem\u003ehanging amihan\u003c/em\u003e?!?\u003c/li\u003e\n\u003cli\u003eTiny bit of consulting work again this week, mostly integration work. And it\u0026rsquo;s in PHP, which means I\u0026rsquo;m once again tempted to write a \u0026ldquo;bad things about PHP\u0026rdquo; post lol. Maybe I\u0026rsquo;ll collect a few more gripes before I do that.\u003c/li\u003e\n\u003cli\u003eSleep schedule slightly better and more regular, but my eyes seem to be heavy a lot more often.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGaming:\u003c/strong\u003e:\n\u003cul\u003e\n\u003cli\u003eI think I\u0026rsquo;m like in the final act for Divinity OS2. Need to finish it soonish because\u0026hellip;\u003c/li\u003e\n\u003cli\u003e\u0026hellip; my PS4 is back! My brother finally passed by the house to pick up some stuff and returned my console. I already hooked it up and did the installation things for FF7R. Will probably start it this week.\u003c/li\u003e\n\u003cli\u003enew Humble choice is up, but it\u0026rsquo;s meh again. Will probably pass.\u003c/li\u003e\n\u003cli\u003eI was looking forward to the PS5 reveal this week, but it got rescheduled due to everything happening\u003c/li\u003e\n\u003cli\u003eAt least previews for the next Magic set have already started. Some cool stuff. Instant planeswalker abilities! Phasing! Prowess! \u003ca href=\"http://mythicspoiler.com/m21/cards/peerintotheabyss.html\"\u003eReally creepy art\u003c/a\u003e! We also got some bans and an actual rule change to address companions, both of which are sure to shake up the formats. I finally caved and paid gems for the Ikoria mythic pass on Arena (I\u0026rsquo;ve saved up a bunch anyway. Still totally F2P!). Hopefully I can max out the levels/rewards before the mastery rotation.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eQuiz:\u003c/strong\u003e Geekfight was fun this week (theme was Marvel comics, right up my alley), although I didn\u0026rsquo;t win. We did poorly in the other two online quizzes\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWatching lately:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eLegends of Tomorrow season finale was weak and didn\u0026rsquo;t really make sense, but still somehow the best of the Arrowverse finales this season. Oh well.\u003c/li\u003e\n\u003cli\u003eBy contrast, I really liked the Rick and Morty season finale\u003c/li\u003e\n\u003cli\u003eI also started watching Space Force; only 3 episodes in, it\u0026rsquo;s a bit meh. Not super funny or anything.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSide projects:\n\u003cul\u003e\n\u003cli\u003eWorked a bit on \u003ca href=\"https://triviastorm.net/\"\u003etriviastorm\u003c/a\u003e stuff this week. I\u0026rsquo;m preparing new questions and cleaning up the old ones, and also some work on a tighter checking algorithm. There\u0026rsquo;s a bunch of features I want to add to this side project, let\u0026rsquo;s see if I manage to get around to them.\u003c/li\u003e\n\u003cli\u003eAlso spent a couple of hours fantasizing about rewriting the site again, maybe back to a dynamic backend, or some kind of hybrid, mostly to address the issues scaling with so many posts. Lol, will probably not do this yet, but it\u0026rsquo;s in the back of my mind.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eNo recent links for now. Maybe I\u0026rsquo;ll be more diligent about this next week.\u003c/p\u003e\n",
-            "summary": "The world isn\u0026rsquo;t letting up. The virus is still around, but both the US and my own country have gotten distracted.\nThe US is in its second week of police brutality/black lives matters protests. Meanwhile, our government took on a sidequest of trying to enact a wide-ranging and easily abusable anti-terror bill, triggering some smaller (by comparison to the US).\nI haven\u0026rsquo;t written about the terror bill, mainly because I haven\u0026rsquo;t had the opportunity to dig into it too deeply.",
-            "date_published": "2020-06-07T00:00:00+00:00",
-            "date_modified": "2020-06-07T06:30:16+00:00",
-            "section": "post",
-            "source_path": "post/2020/06/weeknotes-06-07/index.md"
-            , "tags": ["weeknotes","current events","philippines"]
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104301252097103281"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1269514448072396800/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://functional.cafe/@juliobiason",
-                    "source_file": "like-20200607-094933-d45855a6-6136-4c60-8a5d-63c583684895.json"
-                }, { 
-                    "url": "https://floss.social/@alcinnz",
-                    "source_file": "repost-20200607-070716-d66a7d38-f750-446a-8f45-f3c92dd4caad.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/06/1269233926406471681/",
-            "url": "https://mirror.roytang.net/2020/06/1269233926406471681/",
-            "path": "/2020/06/1269233926406471681/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e !report test report\u003c/p\u003e\n",
-            "summary": "@triviastorm !report test report",
-            "date_published": "2020-06-06T11:45:23+00:00",
-            "date_modified": "2020-06-06T12:00:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/06/1269233926406471681/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1269233926406471681/"}]
             
             
             }
