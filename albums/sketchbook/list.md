@@ -1,4 +1,6 @@
 
+- [Inktober 2020 Day 28: Float](/2020/10/inktober-28-float/)
+
 - [Inktober 2020 Day 27: Music](/2020/10/inktober-27-music/)
 
 - [Inktober 2020 Day 26: Hide](/2020/10/inktober-26-hide/)
