@@ -1,4 +1,6 @@
 
+- [Inktober 2020 Day 31: Crawl](/2020/10/inktober-31-crawl/)
+
 - [Inktober 2020 Day 30: Ominous](/2020/10/inktober-30-ominous/)
 
 - [Inktober 2020 Day 29: Shoes](/2020/10/inktober-29-shoes/)

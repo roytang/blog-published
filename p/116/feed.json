@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/12/40968002/",
+            "url": "https://mirror.roytang.net/2016/12/40968002/",
+            "path": "/2016/12/40968002/",
+            "title": "How to query Marklogic triples using SPARQL?",
+            "content_html": "\u003cp\u003eI inserted a test document using the Node.js API:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e  db.documents.write(\n    {\n        uri: \u0026quot;/test/doc1.json\u0026quot;,\n        contentType: \u0026quot;application/json\u0026quot;,\n        collections: \u0026quot;test\u0026quot;,\n        content: {\n            name : \u0026quot;Peter\u0026quot;,\n            \u0026quot;triple\u0026quot;: {\n                \u0026quot;subject\u0026quot;: {   \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot;   \n                },   \n                \u0026quot;predicate\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot;   \n                },   \n                \u0026quot;object\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot;   \n                }\n          \t}\n        }\n    }\n  ).\n  result(function(response){\n    console.log(\u0026quot;Done loading\u0026quot;);\n  }); \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen I tried querying it via SPARQL on the Marklogic console webapp:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT ?s ?p ?o\n  WHERE { ?s ?p ?o }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe query above works fine, it retrieves the test triple I inserted above\u003c/p\u003e\n\u003cp\u003eHowever, if I want to filter by the literal value \u0026ldquo;Paris\u0026rdquo;, I tried the following:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003ePREFIX loc: \u0026lt;http://example.com/location/\u0026gt;\n\nSELECT ?s ?p \n  WHERE { ?s ?p loc:Paris }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBut in this case I got zero results. Is this syntax incorrect? I was just following how the queries looked in \u003ca href=\"https://docs.marklogic.com/guide/semantics/semantic-searches\"\u003ehttps://docs.marklogic.com/guide/semantics/semantic-searches\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eWhat is the proper way to do it?\u003c/p\u003e\n",
+            "summary": "I inserted a test document using the Node.js API:\n db.documents.write( { uri: \u0026quot;/test/doc1.json\u0026quot;, contentType: \u0026quot;application/json\u0026quot;, collections: \u0026quot;test\u0026quot;, content: { name : \u0026quot;Peter\u0026quot;, \u0026quot;triple\u0026quot;: { \u0026quot;subject\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot; }, \u0026quot;predicate\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot; }, \u0026quot;object\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot; } } } } ). result(function(response){ console.log(\u0026quot;Done loading\u0026quot;); });  Then I tried querying it via SPARQL on the Marklogic console webapp:\nSELECT ?s ?p ?",
+            "date_published": "2016-12-05T06:02:58+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/40968002/index.md"
+            , "tags": ["sparql","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/40968002/how-to-query-marklogic-triples-using-sparql"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/40968002/how-to-query-marklogic-triples-using-sparql",
+                    "source_file": "comment-20161205T081620-40969816.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/12/805643923334889472/",
             "url": "https://mirror.roytang.net/2016/12/805643923334889472/",
             "path": "/2016/12/805643923334889472/",
@@ -839,23 +861,6 @@
             "source_path": "notes/2016/11/803263083074310145/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803263083074310145/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803238137052807168/",
-            "url": "https://mirror.roytang.net/2016/11/803238137052807168/",
-            "path": "/2016/11/803238137052807168/",
-            "title": "",
-            "content_html": "\u003cp\u003eMocha Uson posted more lies about VP Leni. Contreras shared it naman with inputs pa. Mga loko talaga eh.\u003c/p\u003e\n",
-            "summary": "Mocha Uson posted more lies about VP Leni. Contreras shared it naman with inputs pa. Mga loko talaga eh.",
-            "date_published": "2016-11-28T14:04:29+00:00",
-            "date_modified": "2020-09-10T22:04:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803238137052807168/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803238137052807168/"}]
             
             
             }

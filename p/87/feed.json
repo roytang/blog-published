@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/09/46263980/",
+            "url": "https://mirror.roytang.net/2017/09/46263980/",
+            "path": "/2017/09/46263980/",
+            "title": "MarkLogic - query for documents where a specific json property is not defined",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property \u0026ldquo;summaryData\u0026rdquo;, something like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n...(other stuff)...\n  summaryData: {\n    count: 100,\n    total: 10000,\n    summaryDate: (date value)\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, not all documents have this property. I\u0026rsquo;d like to construct an SJS query to retrieve those documents that don\u0026rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like \u0026ldquo;WHERE summaryData IS NULL\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eI wasn\u0026rsquo;t sure what to search for in the docs. Any advise would be helpful.\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property \u0026ldquo;summaryData\u0026rdquo;, something like:\n{ ...(other stuff)... summaryData: { count: 100, total: 10000, summaryDate: (date value) } }  However, not all documents have this property. I\u0026rsquo;d like to construct an SJS query to retrieve those documents that don\u0026rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like \u0026ldquo;WHERE summaryData IS NULL\u0026rdquo;",
+            "date_published": "2017-09-17T12:17:12+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/46263980/index.md"
+            , "tags": ["javascript","json","marklogic","sjs","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/46263980/marklogic-query-for-documents-where-a-specific-json-property-is-not-defined"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/46263980/marklogic-query-for-documents-where-a-specific-json-property-is-not-defined",
+                    "source_file": "comment-20170917T151632-46265653.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/09/909209906045083648/",
             "url": "https://mirror.roytang.net/2017/09/909209906045083648/",
             "path": "/2017/09/909209906045083648/",
@@ -844,23 +866,6 @@
             "source_path": "notes/2017/09/904284997120491520/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/904284997120491520/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/09/904226503218544640/",
-            "url": "https://mirror.roytang.net/2017/09/904226503218544640/",
-            "path": "/2017/09/904226503218544640/",
-            "title": "",
-            "content_html": "\u003cp\u003eI kind of want to laze around and do nothing for a couple of weeks\u003c/p\u003e\n",
-            "summary": "I kind of want to laze around and do nothing for a couple of weeks",
-            "date_published": "2017-09-03T06:16:12+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/09/904226503218544640.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/904226503218544640/"}]
             
             
             }
