@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/08/1161614124788305921/",
+            "url": "https://mirror.roytang.net/2019/08/1161614124788305921/",
+            "path": "/2019/08/1161614124788305921/",
+            "title": "",
+            "content_html": "\u003cp\u003eI watched One Cut of the Dead at Eigasai today (great movie!), it reminded me of this (watch til the end): \u003ca href=\"https://www.youtube.com/watch?v=gocwRvLhDf8\"\u003ehttps://www.youtube.com/watch?v=gocwRvLhDf8\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I watched One Cut of the Dead at Eigasai today (great movie!), it reminded me of this (watch til the end): https://www.youtube.com/watch?v=gocwRvLhDf8",
+            "date_published": "2019-08-14T12:22:43+00:00",
+            "date_modified": "2019-09-07T07:00:25+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1161614124788305921/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1161614124788305921/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/08/1161498867004837889/",
             "url": "https://mirror.roytang.net/2019/08/1161498867004837889/",
             "path": "/2019/08/1161498867004837889/",
@@ -862,23 +879,6 @@
             "source_path": "notes/2019/07/1156062578700722176/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1156062578700722176/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/move-fast-break-things/",
-            "url": "https://mirror.roytang.net/2019/07/move-fast-break-things/",
-            "path": "/2019/07/move-fast-break-things/",
-            "title": "Move Fast, Break Things",
-            "content_html": "\u003cp\u003eAs is my wont, I\u0026rsquo;m almost never satisfied with a website\u0026rsquo;s layout, so I\u0026rsquo;ve been tinkering with this blog\u0026rsquo;s layout on the backend. To make a long story short, I decided to start working on \u003ca href=\"https://github.com/roytang/hugo-theme-exhale\"\u003ea Hugo theme\u003c/a\u003e. It\u0026rsquo;s still largely a work in progress, as there\u0026rsquo;s a bunch of things I wanted to implement. But it was good enough to replace the old one so I went ahead and deployed it, so maybe some bugs here and there on some pages. And I\u0026rsquo;m still tinkering, so probably some minor/major changes as we go along in the next few weeks. Or months. Who knows how long it will take? There were some conflicts with the old theme and the new theme which meant I had to modify some of my main blog files to support the new theme and the amount of uncommitted changes I had was getting unwieldy, so I figured I\u0026rsquo;d just \u0026ldquo;move fast and break things\u0026rdquo;, as it were. (I realize that a more sensible programmer would have done the theme work on a branch to avoid this nonsense, but we are who we are.)\u003c/p\u003e\n\u003cp\u003eAnyway, here\u0026rsquo;s a snapshot of the current appearance, for posterity:\u003c/p\u003e\n\u003ca href=\"#9dfb00422375d1175176707e45e020c3-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/07/move-fast-break-things/hugo-theme-2019_hu680d47cc17b9018b3f8d4884f72b4e8d_70639_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"9dfb00422375d1175176707e45e020c3-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/07/move-fast-break-things/hugo-theme-2019.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jul 2019 3:06am\"\u003e30 Jul 2019 3:06am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eI\u0026rsquo;ve also back-updated some of the older posts where I updated the site theme/layout with a tag \u003ca href=\"/tags/changelog/\"\u003echangelog\u003c/a\u003e, so that I can reference them when I update the about page sometime soonish.\u003c/p\u003e\n\u003cp\u003eAside from my general finnickiness about wanting a new theme approximately every 17 days, another reason I wanted to change the layout was I wanted to try out CSS grid layouting, as it seemed neat and boy I wish this existed back in the IE6 days. Would\u0026rsquo;ve made things a lot easier.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve also kind of gone down the rabbit hole of \u003ca href=\"https://indieweb.org/\"\u003eIndieweb\u003c/a\u003e stuff. The core message of having your own website that contains all your content appeals to me and also aligns with some things I\u0026rsquo;ve been thinking about implementing like importing all of my off-site content into this site as a central repository. Those things are yet to come but with the theme change I\u0026rsquo;ve also started looking into stuff like microformats (should be supported as of now), webmentions, POSSE, and so on. Might be a while before those other things get done though.\u003c/p\u003e\n\u003cp\u003eI full technical breakdown of the theme features belongs in \u003ca href=\"https://github.com/roytang/hugo-theme-exhale/blob/master/README.md\"\u003ethe theme\u0026rsquo;s README\u003c/a\u003e and probably in a separate colophon post later on, but we\u0026rsquo;re not there yet and we\u0026rsquo;ll get there when we get there.\u003c/p\u003e\n\u003cp\u003eFor now, enjoy if you will my obsession with the color green.\u003c/p\u003e\n",
-            "summary": "As is my wont, I\u0026rsquo;m almost never satisfied with a website\u0026rsquo;s layout, so I\u0026rsquo;ve been tinkering with this blog\u0026rsquo;s layout on the backend. To make a long story short, I decided to start working on a Hugo theme. It\u0026rsquo;s still largely a work in progress, as there\u0026rsquo;s a bunch of things I wanted to implement. But it was good enough to replace the old one so I went ahead and deployed it, so maybe some bugs here and there on some pages.",
-            "date_published": "2019-07-30T03:06:26+00:00",
-            "date_modified": "2020-10-20T13:05:18+08:00",
-            "section": "post",
-            "source_path": "post/2019/07/move-fast-break-things/index.md"
-            , "tags": ["hugo","Meta","Tech Life","changelog"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1156241920361938950/"}]
             
             
             }

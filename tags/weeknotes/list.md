@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-11-01 Storm&#39;s comin&#39;](/2020/11/weeknotes-2020-11-01/)
+
 - [Weeknotes 2020-10-25](/2020/10/weeknotes-2020-10-25/)
 
 - [Weeknotes 2020-10-18](/2020/10/weeknotes-2020-10-18/)

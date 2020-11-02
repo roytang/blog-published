@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2020-11-01 Storm&#39;s comin&#39;](https://mirror.roytang.net/2020/11/weeknotes-2020-11-01/)
 - [Site Migration from Hugo to Django](https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/)
 - [Weeknotes 2020-10-25](https://mirror.roytang.net/2020/10/weeknotes-2020-10-25/)
 - [Game Review: Super Mario 3d All-stars](https://mirror.roytang.net/2020/10/mario-3d-all-stars/)
 - [Weeknotes 2020-10-18](https://mirror.roytang.net/2020/10/weeknotes-2020-10-18/)
-- [Weeknotes 2020-10-11](https://mirror.roytang.net/2020/10/weeknotes-2020-10-11/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
