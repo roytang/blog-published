@@ -29,6 +29,10 @@ Latest shared links:
 Latest notes:
     
 
+- [2 Nov 2020 3:57pm](https://mirror.roytang.net/2020/11/1323293273360756736/): @jaymelynilao happy birthday!
+- [2 Nov 2020 9:00am](https://mirror.roytang.net/2020/11/1323188153411424256/): All Saints Day Zendikar Rising draft (final episode) https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgznr
+So I think the draft itself was fine, but spoiler: the outcome was terrible! Bonus: A couple of Eternal matches!
+YT: https://www.youtube.com/watch?v=X-b2d3VkIF0
 - [30 Oct 2020 4:31pm](https://mirror.roytang.net/2020/10/1322214646221205504/): I finished #LinksAwakening ! #NintendoSwitch
 - [30 Oct 2020 4:01pm](https://mirror.roytang.net/2020/10/1322207028756930560/): Managed to hit mythic on #magicarena the day before rollover lol. I was using @karsten_frank &rsquo;s Gruul Adventures list #mtg
 Quoted karsten_frank&#39;s tweet:   I went 20-5 with Gruul Adventures across #RedBullUntapped2020 and the Arena Qualifier this weekend. Deck&rsquo;s great.
@@ -37,8 +41,6 @@ Quoted karsten_frank&#39;s tweet:   I went 20-5 with Gruul Adventures across #Re
 - [29 Oct 2020 4:03pm](https://mirror.roytang.net/2020/10/1321845000108306432/): In honor of our fifth anniversary, we&rsquo;re giving away the first SIXTY games in our Switch collection.
 To enter: simply follow us, like, and retweet this. That&rsquo;s it! We&rsquo;ll draw a winner tomorrow.
 Thanks again for supporting us. 🥰 #LimitedRun5
-- [27 Oct 2020 6:40am](https://mirror.roytang.net/2020/10/1320978632534228994/): @alvinjtang yeap. binili ni godaddy e
-- [27 Oct 2020 12:00am](https://mirror.roytang.net/2020/10/current-status/): Summary:  Like every other sensible person in the pandemic, I am staying hunkered down at home all of the time. Really only going out to get groceries and meds. Work/employment is not a priority.  Current Location:  still living in Quezon City, Philippines.  Work  I still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time. No specific clients I care to mention, though it&rsquo;s easy to find out if you dig around a bit.
 
 [View all notes](https://mirror.roytang.net/notes)
 

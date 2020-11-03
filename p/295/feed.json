@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2011/08/103246086549938176/",
+            "url": "https://mirror.roytang.net/2011/08/103246086549938176/",
+            "path": "/2011/08/103246086549938176/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e kelan daw balik mo?\u003c/p\u003e\n",
+            "summary": "@alvinjtang kelan daw balik mo?",
+            "date_published": "2011-08-15T23:25:59+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2011/08/103246086549938176.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/103246086549938176/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2011/08/103119054570651648/",
+            "url": "https://mirror.roytang.net/2011/08/103119054570651648/",
+            "path": "/2011/08/103119054570651648/",
+            "title": "",
+            "content_html": "\u003cp\u003eWell, maybe a 3 year Standard instead of 4. I don\u0026rsquo;t see the point of the second rotating format other than block.\u003c/p\u003e\n",
+            "summary": "Well, maybe a 3 year Standard instead of 4. I don\u0026rsquo;t see the point of the second rotating format other than block.",
+            "date_published": "2011-08-15T15:01:13+00:00",
+            "date_modified": "2019-09-13T04:44:39+08:00",
+            "section": "notes",
+            "source_path": "notes/2011/08/103119054570651648.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/103119054570651648/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2011/08/103117610048163840/",
             "url": "https://mirror.roytang.net/2011/08/103117610048163840/",
             "path": "/2011/08/103117610048163840/",
@@ -832,48 +866,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/91877210197204993/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2011/07/91877171160817664/",
-            "url": "https://mirror.roytang.net/2011/07/91877171160817664/",
-            "path": "/2011/07/91877171160817664/",
-            "title": "",
-            "content_html": "\u003cp\u003eLet\u0026rsquo;s try to sleep early for a change!\u003c/p\u003e\n",
-            "summary": "Let\u0026rsquo;s try to sleep early for a change!",
-            "date_published": "2011-07-15T14:29:59+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2011/07/91877171160817664.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/91877171160817664/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2011/07/6677574/",
-            "url": "https://mirror.roytang.net/2011/07/6677574/",
-            "path": "/2011/07/6677574/",
-            "title": "Migrating from CVS to distributed version control (Mercurial)",
-            "content_html": "\u003cp\u003eSome background: We\u0026rsquo;re working on projects that involve projects across 2 different countries, and we\u0026rsquo;ve been using CVS. Developers in the country not hosting the CVS server will take forever to connect to the remote server, so we\u0026rsquo;ve set up this system to have 2 separate CVS servers in each country and have a sync job that keeps them in sync every hour or so.\u003c/p\u003e\n\u003cp\u003eGiven this, we\u0026rsquo;re looking at migrating to a distributed version control system, mostly because we\u0026rsquo;ve been having problems with the sync job failing and the limitation that for a given set of files only one side can have the writelock for it at a time.\u003c/p\u003e\n\u003cp\u003eWe\u0026rsquo;re currently looking at Mercurial for this purpose, so can anyone help tell us if:\u003c/p\u003e\n\u003cp\u003ea. Will Mercurial be a good fit for our use case above? How easy will it be for devs to make the transition, i.e. will they still be able to work the same way? etc\u003c/p\u003e\n\u003cp\u003eb. Can Mercurial support branching a specific folder only?\u003c/p\u003e\n\u003cp\u003ec. We also hold a lot of binary docs in version control, will they be suitable for Mercurial?\u003c/p\u003e\n\u003cp\u003ed. Is there support for getting the \u0026ldquo;writelock\u0026rdquo; of particular files? i.e. I want no other people to update these particular files while I\u0026rsquo;m working on them\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
-            "summary": "Some background: We\u0026rsquo;re working on projects that involve projects across 2 different countries, and we\u0026rsquo;ve been using CVS. Developers in the country not hosting the CVS server will take forever to connect to the remote server, so we\u0026rsquo;ve set up this system to have 2 separate CVS servers in each country and have a sync job that keeps them in sync every hour or so.\nGiven this, we\u0026rsquo;re looking at migrating to a distributed version control system, mostly because we\u0026rsquo;ve been having problems with the sync job failing and the limitation that for a given set of files only one side can have the writelock for it at a time.",
-            "date_published": "2011-07-13T10:36:38+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2011/07/6677574/index.md"
-            , "tags": ["version-control","mercurial","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/6677574/migrating-from-cvs-to-distributed-version-control-mercurial"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/6677574/migrating-from-cvs-to-distributed-version-control-mercurial",
-                    "source_file": "comment-20110713T110717-6677901.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/6677574/migrating-from-cvs-to-distributed-version-control-mercurial",
-                    "source_file": "comment-20110713T212702-7909817.json"
-                }
-            ]
             }
         
     ]
