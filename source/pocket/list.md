@@ -1,4 +1,8 @@
 
+- [How To Avoid Spoilers For Everything Forever](/2020/11/how-to-avoid-spoilers-for-everything-forever/)
+
+- [13 Life-Learnings from 13 Years of Brain Pickings](/2020/11/13-life-learnings-from-13-years-of-brain-pickings/)
+
 - [“Fake COTS” and the one-day rule](/2020/10/fake-cots-and-the-one-day-rule/)
 
 - [An ed-tech specialist spoke out about remote testing software — and now he’s being sued](/2020/10/an-ed-tech-specialist-spoke-out-about-remote-testing-software-and-now-hes-being-sued/)
