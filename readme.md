@@ -29,13 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [5 Nov 2020 2:40am](https://mirror.roytang.net/2020/11/1324179840522596353/): He should just migrate here to the Philippines, thats how 90% of our politicians are
+Quoted bmemike&#39;s tweet:   @wrongwaygoback I heard something in coverage earlier today and it&rsquo;s just 100% spot on:
+The only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It&rsquo;s just not part of his brand.
+ 
+- [4 Nov 2020 8:36pm](https://mirror.roytang.net/2020/11/1324088239699816448/): Wow, the new @PlayStation web store is so much worse than the old one
+- [4 Nov 2020 3:25pm](https://mirror.roytang.net/2020/11/1324009839777861632/): I&rsquo;ve been quiet on Twitter but rest assured like the rest of you I&rsquo;ve been gnashing my teeth over these red and blue numbers that may very well decide the future of the planet
 - [4 Nov 2020 1:36am](https://mirror.roytang.net/2020/11/1323801262966534145/): @wrongwaygoback may 2017
-- [3 Nov 2020 4:52pm](https://mirror.roytang.net/2020/11/1323669425216606208/): Okay, this feels a bit crazy. It&rsquo;s a promoted tweet (basically an ad, for what idk), but then the video in the promoted tweet has an ad! Adception!
-- [2 Nov 2020 3:57pm](https://mirror.roytang.net/2020/11/1323293273360756736/): @jaymelynilao happy birthday!
-- [2 Nov 2020 9:00am](https://mirror.roytang.net/2020/11/1323188153411424256/): All Saints Day Zendikar Rising draft (final episode) https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgznr
-So I think the draft itself was fine, but spoiler: the outcome was terrible! Bonus: A couple of Eternal matches!
-YT: https://www.youtube.com/watch?v=X-b2d3VkIF0
-- [30 Oct 2020 4:31pm](https://mirror.roytang.net/2020/10/1322214646221205504/): I finished #LinksAwakening ! #NintendoSwitch
+- [4 Nov 2020 12:50am](https://mirror.roytang.net/2020/11/1323789651421720576/): Shared via pocket: &amp;quot;GO GO MARIO!!&amp;quot; Official Single (3/1986, English Subtitles) - NintendoComplete https://www.youtube.com/watch?feature=youtu.be&amp;v=hYlm_9i5Dgc&amp;app=desktop
 
 [View all notes](https://mirror.roytang.net/notes)
 

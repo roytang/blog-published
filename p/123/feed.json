@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/10/786412197685493760/",
+            "url": "https://mirror.roytang.net/2016/10/786412197685493760/",
+            "path": "/2016/10/786412197685493760/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/lena525/\"\u003e@lena525\u003c/a\u003e \u003ca href=\"https://twitter.com/beckycloonan/\"\u003e@beckycloonan\u003c/a\u003e what book/issue is this from?\u003c/p\u003e\n",
+            "summary": "@lena525 @beckycloonan what book/issue is this from?",
+            "date_published": "2016-10-13T03:44:13+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/10/786412197685493760.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/786412197685493760/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/10/coding-frameworks/",
+            "url": "https://mirror.roytang.net/2016/10/coding-frameworks/",
+            "path": "/2016/10/coding-frameworks/",
+            "title": "Coding Frameworks",
+            "content_html": "\u003cp\u003eFor the better part of my software development career so far, I\u0026rsquo;ve had the doubtful pleasure of being one of the devs using and maintaining our in-house web development framework. Framework coding is a bit different from the actual application development. At the core it\u0026rsquo;s a simple idea: you have a whole bunch of code that helps do programming tasks that you expect will often be necessary in a certain set of projects, so you write that code with the intent of reusing it across multiple projects. For a web development framework, those tasks will be things like handling request parameters, form validation, form to database mapping, and so on. You can have frameworks for a variety of domains too, not just web development. There are mobile development frameworks, and game development frameworks, and so on\u003c/p\u003e\n\u003cp\u003eTypically, a framework is developed alongside a project using that framework (to save on costs), but the framework\u0026rsquo;s objective of code reuse may not always align with the project\u0026rsquo;s objectives of \u0026ldquo;get stuff done already\u0026rdquo;.  Investing in reusable code often means there will be a bit more work done as you start up, to make sure that the code is flexible and reusable enough for future projects, but when your schedules are tight, these concerns may become secondary and you will be tempted to write in some substandard code that you will \u0026ldquo;just refactor later\u0026rdquo;. Technical debt by itself already tends to be a problem, it gets worse when it\u0026rsquo;s technical debt in framework code since you\u0026rsquo;re going to carry that across multiple projects, so be wary when sacrificing the quality of framework code for the sake of one project\u003c/p\u003e\n\u003cp\u003eAnother thing is that you need to be more aware of separation of concerns, especially if the application development team overlaps with the framework development team. The idea of a framework is that it should be handling the most common tasks in a typical project, but when you\u0026rsquo;re embedded in a project there will be a tendency to try to handle even those special cases that are unique to the project. The danger here is that parts of the project domain will start seeping into your framework code because of requests by devs to provide a way to handle so-and-so scenario. And you end up with a situation where a few years later you ask, what the hell is this code doing, and the answer is that it was something needed by a developer three projects ago\u003c/p\u003e\n\u003cp\u003eSpeaking of separation of concerns, I\u0026rsquo;ve also found that devs working on framework code need to be more cognizant of things like that, meaning they have to be able to write good, modular, flexible code that can be easily reused for future projects. That means you need a solid understanding of coupling, separation of concerns, interfaces, and so on\u003c/p\u003e\n\u003cp\u003eFlexibility is particularly important, as I\u0026rsquo;ve found in one of my later projects that was sold to multiple clients. Different clients will have varying needs and wants, so making sure your code is flexible and configurable enough to cater to a wide variety of needs. When you\u0026rsquo;re writing framework code, your clients are other developers, all the more reason to present an API that is consistent and flexible enough for their use. If you expect your framework to be used as the baseline for multiple projects, you will need to make sure it can cater to a wide variety of projects\u003c/p\u003e\n\u003cp\u003eThat flexibility will have limits though. Frameworks will tend to require a \u0026ldquo;certain way of doing things\u0026rdquo;, meaning devs will have to do some adapting to be able to use it. For example, if you post about an out of the box approach on a Ruby on Rails forum, you might get some replies about how \u0026ldquo;that\u0026rsquo;s not how things are done in Rails\u0026rdquo;. In practice, it\u0026rsquo;s impossible for a framework\u0026rsquo;s maintainers to anticipate all possible future needs of different projects, and developers will need to be able to build on top of your framework or even extend it as necessary. Instead of wasting effort trying to anticipate everything, framework developers should provide an easy, default path for the most common things, but be flexible enough to allow divergence for things the framework doesn\u0026rsquo;t support\u003c/p\u003e\n\u003cp\u003eAnother thing to pay attention to is how tightly coupled different components of your framework are. Is the framework still useful if you have to support a third-party component to replace some functionality later on? What if you need to use a different database vendor? What if the client requires a different way of storing resource strings? You don\u0026rsquo;t have to support all the different possible implementations up front, but it would be wise to leave room for a future extension or plug-in to be easily swappable with the framework\u0026rsquo;s components\u003c/p\u003e\n\u003cp\u003eThe most important thing to keep in mind is that the objectives of a framework are two-fold: (a) be reusable across multiple projects; (b) make it easier for developers to do the most common tasks in the chosen domain. Anything else beyond that, tread carefully\u003c/p\u003e\n",
+            "summary": "For the better part of my software development career so far, I\u0026rsquo;ve had the doubtful pleasure of being one of the devs using and maintaining our in-house web development framework. Framework coding is a bit different from the actual application development. At the core it\u0026rsquo;s a simple idea: you have a whole bunch of code that helps do programming tasks that you expect will often be necessary in a certain set of projects, so you write that code with the intent of reusing it across multiple projects.",
+            "date_published": "2016-10-13T01:30:27+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/10/coding-frameworks/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/151729262325/coding-frameworks"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/786380194185617408/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/10/10154988080458912/",
+            "url": "https://mirror.roytang.net/2016/10/10154988080458912/",
+            "path": "/2016/10/10154988080458912/",
+            "title": "",
+            "content_html": "\u003cp\u003eKonting tiis na lang!\u003c/p\u003e\n",
+            "summary": "Konting tiis na lang!",
+            "date_published": "2016-10-12T23:45:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/10/10154988080458912/index.md"
+            , "tags": ["timeline-photos"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154988080458912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/10/786231603047436288/",
+            "url": "https://mirror.roytang.net/2016/10/786231603047436288/",
+            "path": "/2016/10/786231603047436288/",
+            "title": "",
+            "content_html": "\u003cp\u003ePag-ibig nga nya kaya mong intayin, pasko pa kaya? 😢😂 okay lang yan \u003ca href=\"https://twitter.com/gmanews/\"\u003e@gmanews\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Pag-ibig nga nya kaya mong intayin, pasko pa kaya? 😢😂 okay lang yan @gmanews",
+            "date_published": "2016-10-12T15:46:36+00:00",
+            "date_modified": "2020-09-07T03:33:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/10/786231603047436288/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/786231603047436288/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/10/786227227818020865/",
             "url": "https://mirror.roytang.net/2016/10/786227227818020865/",
             "path": "/2016/10/786227227818020865/",
@@ -788,74 +856,6 @@
             "source_path": "photos/2016/10/10154969465443912/index.md"
             , "tags": ["timeline-photos"]
             , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154969465443912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/d8gjyca/",
-            "url": "https://mirror.roytang.net/2016/10/d8gjyca/",
-            "path": "/2016/10/d8gjyca/",
-            "title": "",
-            "content_html": "\u003cp\u003eI don\u0026rsquo;t really have many \u0026ldquo;fanatics\u0026rdquo; who follow me. Maybe someone should make an image version of the monologue part, with the president in the image (implying he said it) and post it to one of the pro-Duterte groups. You know, the ones that believe he\u0026rsquo;s been named the best president in the solar system lol\u003c/p\u003e\n",
-            "summary": "I don\u0026rsquo;t really have many \u0026ldquo;fanatics\u0026rdquo; who follow me. Maybe someone should make an image version of the monologue part, with the president in the image (implying he said it) and post it to one of the pro-Duterte groups. You know, the ones that believe he\u0026rsquo;s been named the best president in the solar system lol",
-            "date_published": "2016-10-06T15:43:38+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/10/d8gjyca/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/5652yg/from_the_local_version_of_a_few_good_men/d8gjyca/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/784005599998513152/",
-            "url": "https://mirror.roytang.net/2016/10/784005599998513152/",
-            "path": "/2016/10/784005599998513152/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/HecklerForever/\"\u003e@HecklerForever\u003c/a\u003e: Let\u0026rsquo;s change the name \u0026ldquo;Metro Manila traffic\u0026rdquo; and call it \u0026ldquo;Leila De Lima.\u0026rdquo; Maybe our President and his men will devote m…\u003c/p\u003e\n",
-            "summary": "RT @HecklerForever: Let\u0026rsquo;s change the name \u0026ldquo;Metro Manila traffic\u0026rdquo; and call it \u0026ldquo;Leila De Lima.\u0026rdquo; Maybe our President and his men will devote m…",
-            "date_published": "2016-10-06T12:21:15+00:00",
-            "date_modified": "2019-09-06T08:13:23+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/10/784005599998513152.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/784005599998513152/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/blohy7zhsd3/",
-            "url": "https://mirror.roytang.net/2016/10/blohy7zhsd3/",
-            "path": "/2016/10/blohy7zhsd3/",
-            "title": "",
-            "content_html": "\u003cp\u003eBanana kaiju #sketchdaily #inktober\u003c/p\u003e\n",
-            "summary": "Banana kaiju #sketchdaily #inktober",
-            "date_published": "2016-10-06T04:55:31+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/10/BLOHY7zhSd3/index.md"
-            , "tags": ["sketchdaily","inktober"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BLOHY7zhSd3/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/151422795115/banana-kaiju-sketchdaily-inktober"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/783999148739719168/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154967012723912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/783877240157196288/",
-            "url": "https://mirror.roytang.net/2016/10/783877240157196288/",
-            "path": "/2016/10/783877240157196288/",
-            "title": "",
-            "content_html": "\u003cp\u003e🙈🙈🙈\u003c/p\u003e\n",
-            "summary": "🙈🙈🙈",
-            "date_published": "2016-10-06T03:51:12+00:00",
-            "date_modified": "2020-09-07T03:06:12+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/10/783877240157196288/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/783877240157196288/"}]
             
             
             }
