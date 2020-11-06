@@ -1,4 +1,6 @@
 
+- [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](/2020/11/server-setup-notes/)
+
 - [Site Migration from Hugo to Django](/2020/10/site-migration-from-hugo-to-django/)
 
 - [On Mobile App Development](/2020/09/mobile-app-dev/)

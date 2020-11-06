@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](https://mirror.roytang.net/2020/11/server-setup-notes/)
 - [Weeknotes 2020-11-01 Storm&#39;s comin&#39;](https://mirror.roytang.net/2020/11/weeknotes-2020-11-01/)
 - [Site Migration from Hugo to Django](https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/)
 - [Weeknotes 2020-10-25](https://mirror.roytang.net/2020/10/weeknotes-2020-10-25/)
 - [Game Review: Super Mario 3d All-stars](https://mirror.roytang.net/2020/10/mario-3d-all-stars/)
-- [Weeknotes 2020-10-18](https://mirror.roytang.net/2020/10/weeknotes-2020-10-18/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,14 +29,17 @@ Latest shared links:
 Latest notes:
     
 
+- [6 Nov 2020 4:38am](https://mirror.roytang.net/2020/11/1324571861670227968/): Pag pinadalhanka ng bill ng meralco sabihan mo sila na mukhang pera
+Quoted PhilippineStar&#39;s tweet:   ‘MUKHANG PERA’
+This was President Duterte’s comment when Health Secretary Francisco Duque III reported during a Cabinet meeting that the Philippine Red Cross has resumed conducting COVID-19 swab tests after the PhilHealth paid its close to P1-B debt. | @xtinamen
+Your browser does not support the video tag.   
+- [5 Nov 2020 5:40pm](https://mirror.roytang.net/2020/11/1324406196514729984/): One upside of this election is that I’ve learned a lot about where US states are on the map
 - [5 Nov 2020 2:40am](https://mirror.roytang.net/2020/11/1324179840522596353/): He should just migrate here to the Philippines, thats how 90% of our politicians are
 Quoted bmemike&#39;s tweet:   @wrongwaygoback I heard something in coverage earlier today and it&rsquo;s just 100% spot on:
 The only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It&rsquo;s just not part of his brand.
  
 - [4 Nov 2020 8:36pm](https://mirror.roytang.net/2020/11/1324088239699816448/): Wow, the new @PlayStation web store is so much worse than the old one
 - [4 Nov 2020 3:25pm](https://mirror.roytang.net/2020/11/1324009839777861632/): I&rsquo;ve been quiet on Twitter but rest assured like the rest of you I&rsquo;ve been gnashing my teeth over these red and blue numbers that may very well decide the future of the planet
-- [4 Nov 2020 1:36am](https://mirror.roytang.net/2020/11/1323801262966534145/): @wrongwaygoback may 2017
-- [4 Nov 2020 12:50am](https://mirror.roytang.net/2020/11/1323789651421720576/): Shared via pocket: &amp;quot;GO GO MARIO!!&amp;quot; Official Single (3/1986, English Subtitles) - NintendoComplete https://www.youtube.com/watch?feature=youtu.be&amp;v=hYlm_9i5Dgc&amp;app=desktop
 
 [View all notes](https://mirror.roytang.net/notes)
 

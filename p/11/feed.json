@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/04/1255067015506690049/",
+            "url": "https://mirror.roytang.net/2020/04/1255067015506690049/",
+            "path": "/2020/04/1255067015506690049/",
+            "title": "",
+            "content_html": "\u003cp\u003eIkoria draft no. 16 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #mtgiko #twitch\u003c/p\u003e\n\u003cp\u003eUgh, did two terrible drafts. Tried two different decks for the first one.\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=HmmwURaTdqI\"\u003ehttps://www.youtube.com/watch?v=HmmwURaTdqI\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Ikoria draft no. 16 https://www.twitch.tv/twitchyroy #mtg #magicarena #mtgiko #twitch\nUgh, did two terrible drafts. Tried two different decks for the first one.\nYT: https://www.youtube.com/watch?v=HmmwURaTdqI",
+            "date_published": "2020-04-28T09:31:09+00:00",
+            "date_modified": "2020-04-28T14:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1255067015506690049/index.md"
+            , "tags": ["twitch","mtgiko","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1255067015506690049/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1255140454661644291/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/04/technical-interview/",
+            "url": "https://mirror.roytang.net/2020/04/technical-interview/",
+            "path": "/2020/04/technical-interview/",
+            "title": "Technical Interview Notes",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve had the good fortune to be on the interviewer side of technical interviews much more often than I\u0026rsquo;ve been the interviewee. I\u0026rsquo;ve been doing a few more of these over the past couple of years and made some notes, so I thought I\u0026rsquo;d talk about technical interviews for a bit. Caveat: these are largely based on my own experiences, in the local environment here in the PH.\u003c/p\u003e\n\u003ch3 id=\"technical-exam--screening\"\u003eTechnical Exam / Screening\u003c/h3\u003e\n\u003cp\u003eMany companies will ask applicants to undertake a technical exam before letting them advance to further stages of the recruitment process. This kind of screening is most useful if your applicants are mostly fresh graduates or junior programmers. The primary purpose of such a screening is to make sure that the candidate is actually a programmer, and not just someone who graduated CS while letting all his groupmates handle the programming work. This is especially useful for companies that get a lot of applicants who are fresh graduates - it lets them filter the candidate pool without using up the valuable time of their senior technical staff. I talked about these kinds of technical screenings in \u003ca href=\"/2016/06/the-programming-application-process/\"\u003ea previous post\u003c/a\u003e about my own experiences as an interviewee.\u003c/p\u003e\n\u003cp\u003eAs a sample statistic, I used to handle checking of technical exams for a company that had a few dozen applicants per week. The screening was a straightforward ten-question written exam, none of the questions required writing a lot of code. The questions were along the lines of \u0026ldquo;where is the problem in the loop?\u0026rdquo;, or \u0026ldquo;what is the output of this program?\u0026rdquo;, essentially confirming the applicant\u0026rsquo;s ability to understand how code is written. Even for this simple screening, roughly 8-9 out of 10 applicants would regularly fail the screening. (I am not sure if this speaks to the general low quality of graduates in my area instead of a general trend.) There is a reason \u003ca href=\"https://en.wikipedia.org/wiki/Fizz_buzz\"\u003eFizzBuzz\u003c/a\u003e has become known as screening tool.\u003c/p\u003e\n\u003cp\u003eThe screening can take different forms. It may be written, requiring you to come into their office, sit at a table and answer some number of programming-related questions on paper (as described in the paragraph above). This is the most common I have encountered, especially in larger companies here.\u003c/p\u003e\n\u003cp\u003eSome may be done remotely/online, via services such as \u003ca href=\"https://www.codility.com/\"\u003eCodility\u003c/a\u003e. This may be the best option, as it allows the candidate to take the exam on their own time, in the comfort of their own environment. Such environments will also automatically check the results, which means the effort for the recruiting company is at a minimum and the candidate gets feedback quickly. The downside is that not all companies may be able to afford such services.\u003c/p\u003e\n\u003cp\u003eThe worst option is when they do a phone screening - someone asking you technical questions over the phone. Phone screening is the worst because there are no real technical questions that can be of any practical use in evaluating a candidate over the phone. Most good technical screening questions will require a lot of text (better on paper than verbally over the phone) or may otherwise have nuance in the possible answers. For the latter case, it\u0026rsquo;s probably fine if they have a senior developer doing the phone screenings, but few companies can afford that, so most likely it will be some HR person who was provided with a fixed set of answers where if you don\u0026rsquo;t have the exact answer they have on their cheat sheet, you won\u0026rsquo;t pass the screening. As much as possible I would suggest to avoid any companies that use phone screening, as it is an organizational smell.\u003c/p\u003e\n\u003ch3 id=\"technical-interview\"\u003eTechnical Interview\u003c/h3\u003e\n\u003cp\u003eThe technical interview is different from a technical screening in that it usually involves face-to-face time with one or more interviewer(s). You will be usually given one or more technical problems, usually of a higher difficulty than would be present in a technical exam/screening. Usually, you will be asked to provide a solution on paper or on a whiteboard, and would be expected to walk the interviewer(s) through your solution. The purpose of this stage is for the interviewer to see personally how you think through the problem and how you devise a solution and (to a lesser extent) how well you can present it.\u003c/p\u003e\n\u003cp\u003eI used to do a lot of these styles of interviews back in the day. At my old company, we had a pool of challenging technical interview questions, many of them requiring some level of algorithm knowledge in order to provide efficient answers. Many would require things like graph traversal, binary trees, that kind of thing. Some level of optimization is expected.\u003c/p\u003e\n\u003cp\u003eThere are several problems with this approach, the main one being it often doesn\u0026rsquo;t really test for how well a person would perform as a software engineer. For one thing, such an environment is not reflective of actual programmer work environments. If you\u0026rsquo;re interviewing for a web developer position, such complicated problems would come up in your day-to-day work maybe 5-10% of the time at best. (The numbers go up the lower level you go, such questions would be a lot more useful for systems programming work for example.) And unless you are hiring someone specifically for a high pressure position, this type of exam is biased against people with anxiety or who otherwise have trouble working with what is akin to a gun to their head. It is also effort-intensive on the part of the interviewer(s), since often you will need to sit through the candidate explaining their solution and maybe pointing out flaws or inefficiencies in the approach. So I\u0026rsquo;ve kind of soured on this approach and haven\u0026rsquo;t done it in a while, but there are specific situations where it would be useful.\u003c/p\u003e\n\u003cp\u003eThese days, what I like to do in technical interviews varies depending on the level of the role I\u0026rsquo;m interviewing for:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efor fresh graduates or junior developer roles, I will generally ask 2-3 comparatively simple programming questions. Something only a bit more difficult than FizzBuzz, maybe along the lines of a fibonacci function or some array processing or such. This is especially useful if I\u0026rsquo;m doing this for a small company that doesn\u0026rsquo;t have the technical screening step, or to verify the results of the technical screening step. Afterwards, I will tend to do a short Q\u0026amp;A, asking some questions about projects they have worked on (maybe at school), what difficulties they have encountered, how they approach a problem etc.\u003c/li\u003e\n\u003cli\u003efor more senior positions, I tend to skip programming questions altogether (I assume that they haven\u0026rsquo;t spent 5 or so years BSing their way through programming tasks) and prefer a more detailed Q\u0026amp;A, usually tailored towards the expectations for the role and their specific background. Typically I will ask questions that will require the candidate to expound on technical issues such as:\n\u003cul\u003e\n\u003cli\u003ewhat was the biggest technical challenge you had to overcome?\u003c/li\u003e\n\u003cli\u003ewhat are the advantages of X over Y and vice versa? (For example, for senior frontend devs, you can ask for the differences between React/Angular/Vue, if they have that experience). If you require specific experience in a particular technology, the interviewer will need to have sufficient experience as well, enough to be able to ask deeper questions while being able to filter out BS\u003c/li\u003e\n\u003cli\u003efor this [past project], why did you choose this tech stack instead of [more common stack]? What are the pros and cons?\u003c/li\u003e\n\u003cli\u003ecan you describe a time when you had to convince upper management to use a risky technical approach?\u003c/li\u003e\n\u003cli\u003ewhat was your worst technical mistake/fuck-up? (Follow-up: what did you learn, how did you recover, etc)\u003c/li\u003e\n\u003cli\u003ehave you ever had a problematic junior developer working with you? How did you handle it? (Such types of questions are good for technical lead roles)\u003c/li\u003e\n\u003cli\u003ehave you ever had to dive into a project with an unfamiliar tech stack without time for learning? How did you cope? What were the challenges? etc.\u003c/li\u003e\n\u003cli\u003ewhat is your preferred approach for estimation? what if you are under schedule pressure?\u003c/li\u003e\n\u003cli\u003ehow do you prefer to onboard a new developer to a large project?\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eMy goal for such questions would be to look for absence of several attributes I consider important for senior developers:\n\u003cul\u003e\n\u003cli\u003eable to communicate technical issues well (useful both when managing upwards and downwards)\u003c/li\u003e\n\u003cli\u003eable to adjust to unfamiliar situations/technologies easily\u003c/li\u003e\n\u003cli\u003eable to admit to mistakes on his part\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"effectiveness-of-technical-interviews\"\u003eEffectiveness of Technical Interviews\u003c/h3\u003e\n\u003cp\u003eUltimately, just doing the technical questions or the Q\u0026amp;A can\u0026rsquo;t guarantee the candidate will be good for the role. Evaluating the performance of individual developers is a notoriously hard problem, even when doing annual performance reviews, what more when limited to a one hour interview? For me, the purpose of a technical interview is to act as a negative screening tool - to filter out candidates who are obviously unfit for the position: candidates who can\u0026rsquo;t program, who can\u0026rsquo;t communicate well, who don\u0026rsquo;t have experience in the specific role or tools you need, and so on. The actual evaluation of effectiveness and fit should happen during a short probationary work period with the company.\u003c/p\u003e\n\u003ch3 id=\"how-to-prepare-for-technical-interviews\"\u003eHow to Prepare for Technical Interviews?\u003c/h3\u003e\n\u003cp\u003eFor candidates, how do you prepare for technical interviews?\u003c/p\u003e\n\u003cp\u003eThe most important question is how confident are you in your own programming skills? If you\u0026rsquo;ve done any nontrivial amount of programming work, generally you won\u0026rsquo;t have an issue. If you\u0026rsquo;re not confident, better to practice until you are, start with simpler questions and work your way up.\u003c/p\u003e\n\u003cp\u003eFor the Q\u0026amp;A part, in general you just need to be honest. But you also need to be able to communicate well, which is something not many people will be able to do. Good communication skill is an essential skill as a developer though, you may want to look for ways to practice and gain confidence in it. I recommend posting on a blog (like this one) to sharpen your communication skills! (Verbal is harder to practice, you need to find someone willing to listen and give you feedback.)\u003c/p\u003e\n\u003cp\u003eI would also recommend becoming familiar with the requirements for the position you are interviewing for, understanding which parts of your background are most relevant, and highlighting them during any Q\u0026amp;A. In fact, I would prepare a short pitch describing why you think you are a good fit for the role. Often during Q\u0026amp;A I like to start off with asking the candidate to give a short overview of their background, and very few actually give a good response (a lot don\u0026rsquo;t even have a short response), so being prepared in this manner would be very impressive.\u003c/p\u003e\n\u003cp\u003eIt would also help to ask around about the specific recruitment process for the company you\u0026rsquo;re interviewing for, if you have any contacts, or sometimes there\u0026rsquo;s information on the internet. (Good internet searching is an essential developer skill as well!) Just knowing what to expect can boost your confidence.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve also given some other advice in a \u003ca href=\"/2019/02/reddit-ph-software-dev-qa/\"\u003eQ\u0026amp;A last year on reddit\u003c/a\u003e. Good luck!\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve had the good fortune to be on the interviewer side of technical interviews much more often than I\u0026rsquo;ve been the interviewee. I\u0026rsquo;ve been doing a few more of these over the past couple of years and made some notes, so I thought I\u0026rsquo;d talk about technical interviews for a bit. Caveat: these are largely based on my own experiences, in the local environment here in the PH.\nTechnical Exam / Screening Many companies will ask applicants to undertake a technical exam before letting them advance to further stages of the recruitment process.",
+            "date_published": "2020-04-28T00:00:00+00:00",
+            "date_modified": "2020-04-28T03:45:02+00:00",
+            "section": "post",
+            "source_path": "post/2020/04/technical-interview/index.md"
+            , "tags": ["software-development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104074130524933256"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1254978666859163650/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200428-035317-e4d1bdec-61b1-43c4-9264-60f2b3cdde41.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/04/forfcu6/",
+            "url": "https://mirror.roytang.net/2020/04/forfcu6/",
+            "path": "/2020/04/forfcu6/",
+            "title": "",
+            "content_html": "\u003cp\u003eThanks man, I had my own script to export everything a while back but it was way messier and had far too many manual steps, yours is a lot cleaner.\u003c/p\u003e\n",
+            "summary": "Thanks man, I had my own script to export everything a while back but it was way messier and had far too many manual steps, yours is a lot cleaner.",
+            "date_published": "2020-04-27T18:14:38+00:00",
+            "date_modified": "2020-04-27T19:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/forfcu6/index.md"
+            , "tags": ["magicTCG"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/g9254n/sunsetting_planeswalker_points_points_going_away/forfcu6/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/04/1254830015717404674/",
             "url": "https://mirror.roytang.net/2020/04/1254830015717404674/",
             "path": "/2020/04/1254830015717404674/",
@@ -903,57 +959,6 @@
                     "source_file": "like-20200416-135503-59a87344-2b16-4806-8099-55971487663b.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/04/1249619162491543552/",
-            "url": "https://mirror.roytang.net/2020/04/1249619162491543552/",
-            "path": "/2020/04/1249619162491543552/",
-            "title": "",
-            "content_html": "\u003cp\u003eGamer quarantine woes\u003c/p\u003e\n",
-            "summary": "Gamer quarantine woes",
-            "date_published": "2020-04-13T08:43:19+00:00",
-            "date_modified": "2020-04-13T09:00:04+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/04/1249619162491543552/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249619162491543552/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/04/the-simpsons-social-distancing-intro/",
-            "url": "https://mirror.roytang.net/2020/04/the-simpsons-social-distancing-intro/",
-            "path": "/2020/04/the-simpsons-social-distancing-intro/",
-            "title": "The Simpsons Social Distancing Intro",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-04-12T12:38:03+00:00",
-            "date_modified": "2020-04-12T12:45:03+00:00",
-            "section": "links",
-            "source_path": "links/2020/04/the-simpsons-social-distancing-intro/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://www.youtube.com/watch?v=gfR3esYfx6s\u0026feature=youtu.be"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103985657408147601"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249316386305765378/"}]
-            ,"link": "https://www.youtube.com/watch?v=gfR3esYfx6s\u0026feature=youtu.be"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/04/1249201813376700416/",
-            "url": "https://mirror.roytang.net/2020/04/1249201813376700416/",
-            "path": "/2020/04/1249201813376700416/",
-            "title": "",
-            "content_html": "\u003cp\u003eThis was the longest Lent\u003c/p\u003e\n",
-            "summary": "This was the longest Lent",
-            "date_published": "2020-04-12T05:04:56+00:00",
-            "date_modified": "2020-04-12T05:15:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/04/1249201813376700416/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1249201813376700416/"}]
-            
-            
             }
         
     ]

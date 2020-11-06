@@ -1,4 +1,6 @@
 
+- [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](/2020/11/server-setup-notes/)
+
 - [On Mobile App Development](/2020/09/mobile-app-dev/)
 
 - [On Mozilla and Firefox](/2020/08/on-mozilla-and-firefox/)

@@ -7,12 +7,63 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 05 Nov 2020 06:59:41 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Server Setup Notes: Ubuntu, Nginx, Django, MySQL
+</title>
+            <link>https://mirror.roytang.net/2020/11/server-setup-notes/</link>
+            <pubDate>Thu, 05 Nov 2020 06:59:41 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/11/server-setup-notes/</guid>
+            <description>
+            
+            &lt;p&gt;I recently did &lt;a href=&#34;https://mirror.roytang.net/2020/10/site-migration-to-django/&#34;&gt;a server migration&lt;/a&gt; since I moved to new hosting, The move was from managed/shared hosting to a VPS, these are some notes I took during the process, which I figure might be helpful if I ever tried to  do this again. (And maybe someone else finds it helpful too). Links and references to helpeful resources are included.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-a-webserver-and-wsgi-container&#34;&gt;Setting up a webserver and WSGI container&lt;/h3&gt;
+&lt;p&gt;I already knew I wanted to use Nginx (managed hosting on the old server always used Apache), that meant needing to choose a WSGI container for the Django apps. The choices were either gunicorn or uwsgi. Readings suggest minimal performance difference between the two. I did try setting up both, and found uwsgi&amp;rsquo;s setup much more straightforward and with more helpful step-by-step documentation: &lt;a href=&#34;https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html&#34;&gt;https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nginx itself was pretty straightforward to set up. This &amp;ldquo;common pitfalls&amp;rdquo; article was helpful in resolving issues: &lt;a href=&#34;https://origin-www.wp.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/&#34;&gt;https://origin-www.wp.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One thing I will note that&amp;rsquo;s not in the article above is that for static files to be served by Nginx, it was easier to just have everything be under /var/www, for permission purposes. I initially had static files in a different folder in my user root, but really there&amp;rsquo;s no reason for that since you&amp;rsquo;re going to serve them statically anyway.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-php-on-nginx&#34;&gt;Setting up PHP on Nginx&lt;/h3&gt;
+&lt;p&gt;I needed PHP since I had a few minor scripts/pages and a Wordpress install that needed PHP. For the setup on Nginx, I found this guide from askubuntu super helpful: &lt;a href=&#34;https://askubuntu.com/questions/134666/what-is-the-easiest-way-to-enable-php-on-nginx&#34;&gt;https://askubuntu.com/questions/134666/what-is-the-easiest-way-to-enable-php-on-nginx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This guide from DigitalOcean was also helpful: &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04&#34;&gt;https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I was encountering some issues with fastcgi not mapping requests to the correct PHP script if the Nginx location block was aliased. This was with me using the default &lt;code&gt;snippets/fastcgi-php.conf&lt;/code&gt; that was provided with the fastcgi install. I resolved the issue by adding an additional fastcgi_param to the php location block like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    location /sample-path {
+        alias /var/www/sample-path;
+        # autoindex on;
+
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+                fastcgi_param  SCRIPT_FILENAME    $request_filename;
+                fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The solution for this came from the Nginx common pitfalls article listed above.&lt;/p&gt;
+&lt;h3 id=&#34;choosing-a-database&#34;&gt;Choosing a database&lt;/h3&gt;
+&lt;p&gt;I initially wanted to use PostgreSQL (since that&amp;rsquo;s what I was using locally) and set that up first. Then I realized I had a Wordpress install I wanted to carry over, and apparently Wordpress needs MySQL, so oops. I didn&amp;rsquo;t want to have two databases running, so that was out. Plan out your database usage boys.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-mysql-for-django&#34;&gt;Setting up MySQL for Django&lt;/h3&gt;
+&lt;p&gt;I created the initial MySQL database with character set &lt;code&gt;utf8&lt;/code&gt;, which apparently had the dumb implementation of only supporting 3 bytes for multibyte characters. This led to errors when I tried importing records into Django that had emojis and the like in text. Apparently the &amp;ldquo;correct&amp;rdquo; character set to use is &lt;code&gt;utf8mb4&lt;/code&gt; (mb4 -&amp;gt; &amp;ldquo;multibyte 4&amp;rdquo; I guess?). It&amp;rsquo;s kinda dumb that they had to invent a &amp;ldquo;more utf8 character set&amp;rdquo; because of their initial dumb implementation. It&amp;rsquo;s also dumb that I didn&amp;rsquo;t realize this when apparently the MySQL databases on the old server were already using &lt;code&gt;utf8mb4&lt;/code&gt;! On the Django side, you need to specify the charset in the database settings. Helpful for resolving this issue was donturner&amp;rsquo;s answer on this SO question: &lt;a href=&#34;https://stackoverflow.com/questions/2108824/&#34;&gt;https://stackoverflow.com/questions/2108824/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After some initial testing, I also encountered a &amp;ldquo;MySQL has gone away&amp;rdquo; every so often. Turns out Django was holding on to connections for too long, so a timeout had to be set in the database settings as well. SO reference: &lt;a href=&#34;https://stackoverflow.com/questions/26958592/&#34;&gt;https://stackoverflow.com/questions/26958592/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit: I just encountered this a few hours after I wrote this post, when I tried to make the site display all times in Manila local time. Apparently, even if I set my Django app to be timezone, aware, additional setup needs to be done on the MySQL side so it knows what the actual timezones are (feels like they should really do this as part of the install!). Basically you need to run &lt;code&gt;mysql_tzinfo_to_sql&lt;/code&gt; to load the OS timezone info into the database. This is in the &lt;a href=&#34;https://django.readthedocs.io/en/stable/ref/databases.html&#34;&gt;Django documentation&lt;/a&gt; and the &lt;a href=&#34;https://dev.mysql.com/doc/refman/5.6/en/mysql-tzinfo-to-sql.html&#34;&gt;MySQL documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;misc-stuff&#34;&gt;Misc stuff&lt;/h3&gt;
+&lt;p&gt;I used cron to set up most of the batch jobs I usually run (like the Twitter bots, etc). Initially I had problems where it seemed like cron wasn&amp;rsquo;t running the jobs, even though syslog showed me the cron daemon was actually running. I don&amp;rsquo;t have notes on how I resolved this, but mentioning it here so that if this happens again in the future, I know to actuall take notes!&lt;/p&gt;
+&lt;p&gt;Setting up log files for my cron jobs: I did it this way: &lt;code&gt;0 * * * * /path-to-batch/hourly.sh &amp;gt;&amp;gt; /var/log/cron/my-log-file.log 2&amp;gt;&amp;amp;1&lt;/code&gt;. The &amp;ldquo;2&amp;gt;&amp;amp;1&amp;rdquo; at the end is necessary so that stderr is redirected to the same file (otherwise you&amp;rsquo;d only get stdout).&lt;/p&gt;
+&lt;p&gt;Log rotation: these is the kind of thing you don&amp;rsquo;t realize you need to do when you&amp;rsquo;re managing your own server. Anyway, I found this guide helpful: &lt;a href=&#34;https://linoxide.com/linux-how-to/setup-log-rotation-logrotate-ubuntu/&#34;&gt;https://linoxide.com/linux-how-to/setup-log-rotation-logrotate-ubuntu/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I needed to set up AWStats on the new server (and migrate data from the old server). This guide was helpful: &lt;a href=&#34;https://larsee.com/blog/2020/06/awstats-on-ubuntu-20-04-with-nginx/&#34;&gt;https://larsee.com/blog/2020/06/awstats-on-ubuntu-20-04-with-nginx/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When migrating the old AWStats data files, the filename format from the oldserver was slightly different (new install needed to end with &lt;code&gt;*.roytang.net.txt&lt;/code&gt;), so I learned a bit of bash scripting to do the batch rename:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;for i in /path-to-tmp/awstats/*.txt ; do cp &amp;quot;$i&amp;quot; &amp;quot;/path-to-tmp/awstats/out/$(basename &amp;quot;$i&amp;quot; .txt).roytang.net.txt&amp;quot; ; done&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Setting up Let&amp;rsquo;s Encrypt SSL on Nginx: &lt;a href=&#34;https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/&#34;&gt;https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lessons-learned&#34;&gt;Lessons learned&lt;/h3&gt;
+&lt;p&gt;One thing I didn&amp;rsquo;t expect from the migration from shared hosting to a VPS is how much memory I&amp;rsquo;d need. My old hosting plan was only on 512MB ram, and the lowest DigitalOcean droplet had 1GB RAM, so I figured that was fine! But MySQL occasionally had out of memory errors on startup even at 1GB ram, so I bumped up to the next level (2GB RAM). I guess the database RAM usage didn&amp;rsquo;t count against my limits on the shared hosting! The next tier isn&amp;rsquo;t much more expensive and is still manageable for my casual/hobby hosting purposes, but I will probably try to look into more detail into the memory situation at some point to see what I can optimize.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>On Mobile App Development
 </title>
@@ -1995,42 +2046,6 @@ git checkout HEAD
 &lt;p&gt;There is another way to look at this problem, and that is from the standpoint of how human beings handle risk. One of the assumptions behind the modern disaster ritual is that when a risk can be identified and eliminated a system can be made safer. The new booster joints on the shuttle, for example, are so much better than the old ones that the over-all chances of a Challenger-style accident’s ever happening again must be lower-right? This is such a straightforward idea that questioning it seems almost impossible. But that is just what another group of scholars has done, under what is called the theory of &amp;ldquo;risk homeostasis.&amp;rdquo; It should be said that within the academic community there are huge debates over how widely the theory of risk homeostasis can and should be applied. But the basic idea, which has been laid out brilliantly by the Canadian psychologist Gerald Wilde in his book &amp;ldquo;Target Risk,&amp;rdquo; is quite simple: under certain circumstances, changes that appear to make a system or an organization safer in fact don’t. Why? Because human beings have a seemingly fundamental tendency to compensate for lower risks in one area by taking greater risks in another.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Risk management is a big part of software development, especially as projects grow larger. We need to be careful that we are evaluating the collective risks on a project accurately and not just trading one set of risks for another.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Working hours and overtime
-</title>
-            <link>https://mirror.roytang.net/2018/10/working-hours-and-overtime/</link>
-            <pubDate>Fri, 19 Oct 2018 01:00:22 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/10/working-hours-and-overtime/</guid>
-            <description>
-            
-            &lt;p&gt;Rockstar was in the gaming news recently because they mentioned that some of them had &lt;a href=&#34;https://sea.ign.com/xbox-one-gaming-hardware/142536/news/rockstar-exec-clarifies-statement-about-red-dead-redemption&#34;&gt;worked 100-hour weeks&lt;/a&gt; on their massive sequel to Red Dead Redemption coming out soon (no idea if I&amp;rsquo;ll play this). The idea of 100 hour weeks seemed insane to me, and it got me thinking: I&amp;rsquo;ve done some serious overtime before, have I ever gotten close to that amount of work in a week?&lt;/p&gt;
-&lt;p&gt;Luckily, I didn&amp;rsquo;t have to speculate too much, because I had data (I love data). My previous employer had us track and log our work hours, and I had kept a copy of my own data after I left. That&amp;rsquo;s working hours from 2003-2015. I crunched the numbers and I found that:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;I had 633 weeks of data in all, from 2003 to 2015&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I had 239 weeks where I worked more than 40 hours&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I had 60 weeks where I worked more than 50 hours&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I had 15 weeks where I worked more than 60 hours.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;My record for number of hours in a single week was week 34 of 2015 where I had a whopping 80.50 hours in a single week. This was when I was deployed on-site to London and was also on call for support at the same time, so basically working all the time.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So luckily I&amp;rsquo;ve not been in the &amp;ldquo;100-hour week&amp;rdquo; situation that the RDR2 team found them in (though I came close). I&amp;rsquo;m not sure if this is an accurate representation of what it&amp;rsquo;s like to work in the software industry in general, though I&amp;rsquo;m sure it&amp;rsquo;s typical of my former workplace. Hopefully, overtime is something I can avoid or minimize in my own career moving forward.&lt;/p&gt;
-&lt;p&gt;Read what I had to say before about overtime &lt;a href=&#34;https://roytang.net/2016/09/overtime/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 
 
