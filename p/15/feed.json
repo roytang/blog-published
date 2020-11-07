@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/02/tumblr-cloudflare/",
+            "url": "https://mirror.roytang.net/2020/02/tumblr-cloudflare/",
+            "path": "/2020/02/tumblr-cloudflare/",
+            "title": "Apparently Tumblr custom domains don't work well with Cloudflare",
+            "content_html": "\u003cp\u003eI used to host my tumblr blog on a custom domain at \u003ca href=\"https://tumblr.roytang.net\"\u003etumblr.roytang.net\u003c/a\u003e. That was working fine for a while.\u003c/p\u003e\n\u003cp\u003eThen recently I decided to play around with having \u003ca href=\"https://www.cloudflare.com/\"\u003eCloudflare\u003c/a\u003e in front of my site (might be helpful on the off-chance I ever manage to go viral somehow). Not yet sure whether Cloudflare was a good idea, but apparently it doesn\u0026rsquo;t play well with Tumblr\u0026rsquo;s custom domains, so the above custom tumblr URL got turned off.\u003c/p\u003e\n\u003cp\u003eNow, I don\u0026rsquo;t actually care about the tumblr blog anymore and have no intention of updating it further. All the content from that blog has already been \u003ca href=\"/source/tumblr\"\u003eimported into this site\u003c/a\u003e anyway. But those imported posts still have a link pointing back to the original URL. I\u0026rsquo;m not a fan of link rot on the web, and I want to minimize it as much as possible, so I was OC\u0026rsquo;ed into fixing it.\u003c/p\u003e\n\u003cp\u003eFirst idea was to just find-and-replace all the old links on this site to point to where the tumblr blog now lives. It would be super straightforward since it\u0026rsquo;s just file updates. But other sources out in the wild may be pointing back to the original URL, and I don\u0026rsquo;t want to give them link rot either.\u003c/p\u003e\n\u003cp\u003eI tried to figure out a solution with the Tumblr and Cloudflare DNS settings for around ten minutes before saying \u0026ldquo;screw it\u0026rdquo; and set up a redirector from \u003ca href=\"https://tumblr.roytang.net\"\u003etumblr.roytang.net\u003c/a\u003e to \u003ca href=\"roytang.tumblr.com\"\u003eroytang.tumblr.com\u003c/a\u003e, which is where the tumblr blog now lives. It was a simple \u003ccode\u003e.htaccess\u003c/code\u003e redirect like so:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eRewriteRule ^(.*)$ https://roytang.tumblr.com/%{REQUEST_URI} [R=301,L]\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e(Someday when I migrate off shared hosting/apache, I will have to live with rewriting all of these .htaccess workarounds to work with Nginx or such.)\u003c/p\u003e\n\u003cp\u003eSo now all the old links just automagically redirect to the appropriate post as expected.\u003c/p\u003e\n\u003cp\u003e(Just for fun, I also changed the tumblr\u0026rsquo;s theme, since I was already logged in to the dashboard anyway.)\u003c/p\u003e\n",
+            "summary": "I used to host my tumblr blog on a custom domain at tumblr.roytang.net. That was working fine for a while.\nThen recently I decided to play around with having Cloudflare in front of my site (might be helpful on the off-chance I ever manage to go viral somehow). Not yet sure whether Cloudflare was a good idea, but apparently it doesn\u0026rsquo;t play well with Tumblr\u0026rsquo;s custom domains, so the above custom tumblr URL got turned off.",
+            "date_published": "2020-02-26T00:00:00+00:00",
+            "date_modified": "2020-02-26T03:15:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/02/tumblr-cloudflare/index.md"
+            , "tags": ["tech life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1232503072217276417/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/02/current-status/",
             "url": "https://mirror.roytang.net/2020/02/current-status/",
             "path": "/2020/02/current-status/",
@@ -861,23 +878,6 @@
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1227026596571205632/"}]
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/02/web-design-the-first-100-years/",
-            "url": "https://mirror.roytang.net/2020/02/web-design-the-first-100-years/",
-            "path": "/2020/02/web-design-the-first-100-years/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-02-10T14:23:53+00:00",
-            "date_modified": "2020-02-10T15:00:14+00:00",
-            "section": "links",
-            "source_path": "links/2020/02/web-design-the-first-100-years/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://idlewords.com/talks/web_design_first_100_years.htm"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1226881287178399745/"}]
-            ,"link": "https://idlewords.com/talks/web_design_first_100_years.htm"
             
             }
         

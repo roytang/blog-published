@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/11/935924556056862720/",
+            "url": "https://mirror.roytang.net/2017/11/935924556056862720/",
+            "path": "/2017/11/935924556056862720/",
+            "title": "",
+            "content_html": "\u003cp\u003eI think today is the perfect day for this pic 🤤\u003c/p\u003e\n",
+            "summary": "I think today is the perfect day for this pic 🤤",
+            "date_published": "2017-11-29T17:32:57+00:00",
+            "date_modified": "2020-09-10T22:04:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/935924556056862720/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/935924556056862720/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/11/935917338615885825/",
             "url": "https://mirror.roytang.net/2017/11/935917338615885825/",
             "path": "/2017/11/935917338615885825/",
@@ -854,31 +871,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931235878889861120/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/47336545/",
-            "url": "https://mirror.roytang.net/2017/11/47336545/",
-            "path": "/2017/11/47336545/",
-            "title": "Marklogic Optic API",
-            "content_html": "\u003cp\u003eI\u0026rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.\u003c/p\u003e\n\u003cp\u003eOne of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar results = op.fromView('test', 'claims')\n  .groupBy(['member_id', 'member_name'], [\n         op.count('num_claims', 'claim_no'),\n         op.sum('total_amount', 'claim_amount')\n         ])\n  .orderBy(op.desc('total_amount'))\n  .limit(200)\n  .result()\n  .toArray();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAbove works fine. The results are of the form\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e[\n  { \n    member_id: 1, \n    member_name: 'Bob', \n    num_claims: 10, \n    total_amount: 500\n  }, \n  ...\n]\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, we also have a field \u0026ldquo;company\u0026rdquo;, where each claim is filed under a different company. Basically the relevant view columns are claim_no, member_id, member_name, company, claim_amount\u003c/p\u003e\n\u003cp\u003eI would like to be able to show a column that list the different companies for which the member_id/member_name has filed claims, and how many claims for each company.\u003c/p\u003e\n\u003cp\u003ei.e. I want my results to be something like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e[\n  { \n    member_id: 1, \n    member_name: 'Bob', \n    num_claims: 10, \n    total_amount: 500,\n    companies: [\n      {\n        company: 'Ajax Co',\n        num_claims: 8\n      },\n      {\n        company: 'Side Gig',\n        num_claims: 2\n      }\n    ]\n  }, \n  ...\n]\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI tried something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eresults = results.map((member, index, array) =\u0026gt; {\n  var companies = op.fromView('test', 'claims')\n    .where(op.eq(op.col('member_id'), member.member_id))\n    .groupBy('company', [\n      op.count('num_claims', 'claim_no')      \n    ])\n    .result()\n    .toArray();\n  member.companies = companies;\n  return member;\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd the output seems correct, but it also executes quite slowly - almost a minute (total number of claim documents is around 120k)\u003c/p\u003e\n\u003cp\u003eIn our previous ML8 implementation, we were pre-generating summary documents for each member - so retrieval was reasonably fast with the downside that whenever we got a bunch of new data, all of the summary documents had to be re-generated. I was hoping that ML9\u0026rsquo;s optic API would make it easier to do the retrieval/grouping/aggregates on the fly so we wouldn\u0026rsquo;t have to do that.\u003c/p\u003e\n\u003cp\u003eIn theory, I could just add company to the groupBy fields, then merge the rows in the result query as needed. But the problem with that approach is that I can\u0026rsquo;t guarantee I\u0026rsquo;ll get the top 200 by total amount (as was my original query)\u003c/p\u003e\n\u003cp\u003eSo, the question is: Is there a better way of doing this with a reasonable execution time? Or should I just stick to pre-generating the summary documents?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.\nOne of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:\nvar results = op.fromView('test', 'claims') .groupBy(['member_id', 'member_name'], [ op.count('num_claims', 'claim_no'), op.sum('total_amount', 'claim_amount') ]) .orderBy(op.desc('total_amount')) .limit(200) .result() .toArray();  Above works fine. The results are of the form\n[ { member_id: 1, member_name: 'Bob', num_claims: 10, total_amount: 500 }, .",
-            "date_published": "2017-11-16T18:15:35+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/47336545/index.md"
-            , "tags": ["marklogic","marklogic-9","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47336545/marklogic-optic-api"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/47336545/marklogic-optic-api",
-                    "source_file": "comment-20171116T182412-81625056.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/47336545/marklogic-optic-api",
-                    "source_file": "comment-20171116T191615-47337454.json"
-                }
-            ]
             }
         
     ]

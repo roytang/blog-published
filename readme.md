@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [6 Nov 2020 6:45am](https://mirror.roytang.net/2020/11/1324603766390206465/): Who&rsquo;d have thought it was actually a muppet that could defeat him
+Quoted CarcinogenSDA&#39;s tweet:    
 - [6 Nov 2020 4:38am](https://mirror.roytang.net/2020/11/1324571861670227968/): Pag pinadalhanka ng bill ng meralco sabihan mo sila na mukhang pera
 Quoted PhilippineStar&#39;s tweet:   ‘MUKHANG PERA’
 This was President Duterte’s comment when Health Secretary Francisco Duque III reported during a Cabinet meeting that the Philippine Red Cross has resumed conducting COVID-19 swab tests after the PhilHealth paid its close to P1-B debt. | @xtinamen
@@ -39,7 +41,6 @@ Quoted bmemike&#39;s tweet:   @wrongwaygoback I heard something in coverage earl
 The only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It&rsquo;s just not part of his brand.
  
 - [4 Nov 2020 8:36pm](https://mirror.roytang.net/2020/11/1324088239699816448/): Wow, the new @PlayStation web store is so much worse than the old one
-- [4 Nov 2020 3:25pm](https://mirror.roytang.net/2020/11/1324009839777861632/): I&rsquo;ve been quiet on Twitter but rest assured like the rest of you I&rsquo;ve been gnashing my teeth over these red and blue numbers that may very well decide the future of the planet
 
 [View all notes](https://mirror.roytang.net/notes)
 
