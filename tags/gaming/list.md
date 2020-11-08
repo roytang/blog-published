@@ -703,6 +703,8 @@
 
 - [Games -- I Give Up On Dragon Quest VIII](/2005/12/games-i-give-up-on-dragon-quest-viii/)
 
+- [Games - GameFAQs Top 100 Games (User Picks)](/2005/11/games-gamefaqs-top-100-games-user-picks/)
+
 - [Games -- Walk of Game](/2005/10/games-walk-of-game/)
 
 - [World of Warcraft -- Gorilla press!](/2005/10/world-of-warcraft-gorilla-press/)

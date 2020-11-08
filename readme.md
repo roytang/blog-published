@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [7 Nov 2020 8:55am](https://mirror.roytang.net/2020/11/1324998925598691339/): The Week in Review.
+Your browser does not support the video tag.  
 - [6 Nov 2020 6:45am](https://mirror.roytang.net/2020/11/1324603766390206465/): Who&rsquo;d have thought it was actually a muppet that could defeat him
 Quoted CarcinogenSDA&#39;s tweet:    
 - [6 Nov 2020 4:38am](https://mirror.roytang.net/2020/11/1324571861670227968/): Pag pinadalhanka ng bill ng meralco sabihan mo sila na mukhang pera
@@ -40,7 +42,6 @@ Your browser does not support the video tag.
 Quoted bmemike&#39;s tweet:   @wrongwaygoback I heard something in coverage earlier today and it&rsquo;s just 100% spot on:
 The only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It&rsquo;s just not part of his brand.
  
-- [4 Nov 2020 8:36pm](https://mirror.roytang.net/2020/11/1324088239699816448/): Wow, the new @PlayStation web store is so much worse than the old one
 
 [View all notes](https://mirror.roytang.net/notes)
 
