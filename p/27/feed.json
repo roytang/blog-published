@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/",
+            "url": "https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/",
+            "path": "/2019/08/the-great-memory-scare-of-2019/",
+            "title": "The Great Memory Scare of 2019",
+            "content_html": "\u003cp\u003eMy current desktop PC has been with me since late 2015, so going on 4 years now. I bought relatively high-end parts for it at the time, hoping to be a bit future-proof so that it would last me longer than previous desktops. So I was a bit worried when I started encountering issues during the recent weeks.\u003c/p\u003e\n\u003cp\u003eHere\u0026rsquo;s the timeline:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMay 2019, before my overseas trip. It happened a few times that the computer would completely shut down while I was playing \u003ca href=\"/2019/04/starcraft-2/\"\u003eStarcraft 2\u003c/a\u003e coop. The displays would go black, but they still had power, and for a little while the OS would keep going. I know this because I could still hear the game sounds for a bit. Eventually the PC would be inaccessible, even via network. Only choice would be to hard reset. It didn\u0026rsquo;t happen regularly enough for me to figure it out before we left for the 5 week trip.\u003c/li\u003e\n\u003cli\u003eJuly 2019. After getting back from the trip, I encountered the Starcraft 2 issue again. Some reading indicated early concerns that SC2 may be killing video cards, but that was from 4 years ago! Besides, after my quick hard reboot, the GPU temp would be quite normal so I didn\u0026rsquo;t think that was the issue. The problem began to happen regularly, until I could not play SC2 at all. Eventually, a friend suggested I tried lowering SC2 graphics settings and surprisingly that worked! Things looked terrible, but I didn\u0026rsquo;t mind, and I could play again.\u003c/li\u003e\n\u003cli\u003eEVO weekend, Aug 3-4 2019. I started playing Dragonball Fighter Z because it had a free weekend promo. I enjoyed the game and eventually bought it before the free weekend finished. The loading times were a bit long on my system, but tolerable.\u003c/li\u003e\n\u003cli\u003eAfter EVO weekend, I tried installing Microsoft Windows update 1903, as my current version was nearing end of life. Update went smoothly.\u003c/li\u003e\n\u003cli\u003eAfter the update, I noticed the performance of DBFZ had drastically worsened. Incredibly long loading times, occasionaly framerate drops during battles.\u003c/li\u003e\n\u003cli\u003eOn Aug 5, first BSOD encountered:\u003c/li\u003e\n\u003c/ul\u003e\n\u003ca href=\"#85c44ca416915055df00fa0efaff0f78-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/bluescreen_hu952dd7ed026f0f96b5127da3081ac276_1135197_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"85c44ca416915055df00fa0efaff0f78-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/bluescreen.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"22 Aug 2019 12:00am\"\u003e22 Aug 2019 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003ebecause of the recent Windows update, I assumed first that was the cause of the problems. So I rolled it back first and observed the behavior.\u003c/li\u003e\n\u003cli\u003eover the next two weeks, additional instances of BSODs were observed, along with occasional crashes where the PC just straight freezes in place (often with annoying beeping sound) and a hard reset is needed. The crashes would happen even during normal usage (browsing etc) and sometimes even while the PC was unattended!\u003c/li\u003e\n\u003cli\u003elast week I got fed up and started doing serious diagnostics:\n\u003cul\u003e\n\u003cli\u003eI re-installed the Windows 10 1903 update\u003c/li\u003e\n\u003cli\u003eI updated my graphics drivers\u003c/li\u003e\n\u003cli\u003eI uninstalled a bunch of unnecessary old stuff\u003c/li\u003e\n\u003cli\u003eI ran \u003ccode\u003echkdsk\u003c/code\u003e and \u003ccode\u003esfc\u003c/code\u003e. System File Checker found some issues and repaired them! Maybe that fixed things? Nope.\u003c/li\u003e\n\u003cli\u003eI tried running the Windows Memory Diagnostic tool. Standard check froze up the first time, but was successful on the second try.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAt this point I was still hoping it was a software issue (since hardware issues generally require cash to fix), but all signs pointed to either video card (due to SC2) or memory (due to memory diagnostic failure) problems. Time to test each component in turn!\u003c/li\u003e\n\u003c/ul\u003e\n\u003ca href=\"#0467e22f95d101d351c8514706ce2ace-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/20190819_080244_hub4ddedb5154cb122abe7c37065511f9d_1316978_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"0467e22f95d101d351c8514706ce2ace-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/20190819_080244.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"22 Aug 2019 12:00am\"\u003e22 Aug 2019 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m no stranger to digging through computer parts, but this is literally my least favorite part of being PC master race: having to figure out which of your hardware components is failing. At least my PC case is a lot more organized and spacious this time; my older PCs had super tight layouts that were hard to manipulate\n\u003cul\u003e\n\u003cli\u003eI started with the easy one: I moved my monitors to the onboard graphics card and enabled it in the BIOS. If the issue is the video card, then I shouldn\u0026rsquo;t encounter it while using the onboard graphics. Nope, had a crash less than an hour in.\u003c/li\u003e\n\u003cli\u003eNext we try the memory. I had two 8gb DDR3 ram sticks installed. I removed one of the sticks (pretty sure I could live on 8gb RAM tbh) and then rebooted and ran the memory diagnostics. Pass! I used the PC for one whole day with this config, even playing some SC2 and DBFZ and no issues were encountered. Things were looking up, it was likely there was a faulty memory stick!\u003c/li\u003e\n\u003cli\u003ethe next day I decided to confirm it by swapping the memory sticks. Oops, now PC wouldn\u0026rsquo;t boot. Displays don\u0026rsquo;t get any signal, USB devices (mouse and keyboard unpowered). Is it because of the faulty memory stick? I swap back the \u0026ldquo;good\u0026rdquo; RAM, but still the same issue. I try a few other combinations, different RAM slots, but no such luck.\u003c/li\u003e\n\u003cli\u003eThis was last Monday (Quezon City holiday!). I concede defeat and acknowledge that this is beyond my power. I call up a nearby EasyPC branch and ask if they can take a look at it for me. I take a quick Grab there and the guy starts taking a look. He starts by pulling out the mem sticks and the vid card and cleaning out the connectors with an eraser. He pops out the CMOS battery to reset the board. He plugs them back in but the PC doesn\u0026rsquo;t boot. He tells me the motherboard is dead. He tries some thing with a jumper, and the MB comes back to life!\u003c/li\u003e\n\u003cli\u003eI have my full 16GB back. He tells me the memory problems were probably due to the dirty connectors and suggests I take the desktop back home to do an extended memory diagnostic. I agree, since I don\u0026rsquo;t want to leave it at the shop. I happily pay the repair fee plus a small tip and take another Grab back home. I was expecting that I would have to shell out for new memory sticks as the best case! The whole process took less than an hour. This is one of those examples where I was wasting too many man-hours trying to do something myself!\u003c/li\u003e\n\u003cli\u003eBack home, I run the standard Memory Diagnostic first and it passes! Hooray. I use the PC for a while, no issues. Before going to sleep, I start the extended Memory Diagnostic and left it running overnight. In the morning, it was still going around 10 hours after it started, at less than 80% of the first pass! I reduce the passes from 2 to 1, because to be honest I wasn\u0026rsquo;t going to wait another 10-12 hours for a second pass! Luckily, the test finished a couple of hours later without issues.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eHooray! All is well! Generally, at least. It\u0026rsquo;s been 48 hours and no crashes or BSODs or such have been encountered. Gaming seems fine. There seems to be a minor problem of Windows Explorer randomly spiking in CPU usage every so often, but that\u0026rsquo;s probably some software issue I\u0026rsquo;ll have to figure out independently. In any case, the Great Memory Scare of 2019 was over, and I get to keep using this desktop, hopefully for a lot longer!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI was a bit amused at how sad I felt when I first realized there might be a hardware problem with the PC, especially since I was hoping it would last me for years down the line. I may be a bit too attached to it lol. Well, my desktop generally does give me joy, so I\u0026rsquo;m not Kondo-ing it anytime soon!\u003c/p\u003e\n",
+            "summary": "My current desktop PC has been with me since late 2015, so going on 4 years now. I bought relatively high-end parts for it at the time, hoping to be a bit future-proof so that it would last me longer than previous desktops. So I was a bit worried when I started encountering issues during the recent weeks.\nHere\u0026rsquo;s the timeline:\n May 2019, before my overseas trip. It happened a few times that the computer would completely shut down while I was playing Starcraft 2 coop.",
+            "date_published": "2019-08-22T00:00:00+00:00",
+            "date_modified": "2020-10-20T15:25:02+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/great-memory-scare/index.md"
+            , "tags": ["tech life","gaming"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164328992012460033/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/b1buw8mhgqb/",
+            "url": "https://mirror.roytang.net/2019/08/b1buw8mhgqb/",
+            "path": "/2019/08/b1buw8mhgqb/",
+            "title": "",
+            "content_html": "\u003cp\u003ePolaris. Back to digital again, and trying out colors. A bit happier with my proportions this time. Now 3 out of 6 of the Peter David era X-Factor #sketch #xmen #polaris\u003c/p\u003e\n",
+            "summary": "Polaris. Back to digital again, and trying out colors. A bit happier with my proportions this time. Now 3 out of 6 of the Peter David era X-Factor #sketch #xmen #polaris",
+            "date_published": "2019-08-21T16:48:16+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/08/B1buw8MhgQB/index.md"
+            , "tags": ["sketch","xmen","polaris"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/B1buw8MhgQB/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164233838765195265/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164185878261981189/",
+            "url": "https://mirror.roytang.net/2019/08/1164185878261981189/",
+            "path": "/2019/08/1164185878261981189/",
+            "title": "",
+            "content_html": "\u003cp\u003eTHIS IS FINE\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/CNN/status/1164174061787856896'\u003eCNN\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    More than one and a half soccer fields of Amazon rainforest are being destroyed every minute of every day, according to Brazil\u0026rsquo;s National Institute for Space Research \u003ca href=\"http://cnn.it/2zeYTV6\"\u003ehttp://cnn.it/2zeYTV6\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "THIS IS FINE\nQuoted CNN\u0026#39;s tweet:   More than one and a half soccer fields of Amazon rainforest are being destroyed every minute of every day, according to Brazil\u0026rsquo;s National Institute for Space Research http://cnn.it/2zeYTV6  ",
+            "date_published": "2019-08-21T14:41:57+00:00",
+            "date_modified": "2020-08-18T15:22:38+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164185878261981189/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164185878261981189/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/b1ba1tvbzo1/",
+            "url": "https://mirror.roytang.net/2019/08/b1ba1tvbzo1/",
+            "path": "/2019/08/b1ba1tvbzo1/",
+            "title": "",
+            "content_html": "\u003cp\u003ePizza rickroll. This is a test.\u003c/p\u003e\n",
+            "summary": "Pizza rickroll. This is a test.",
+            "date_published": "2019-08-21T10:06:58+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/08/B1bA1tvBzO1/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/B1bA1tvBzO1/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164125616674922502/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/08/internet-commercialization/",
             "url": "https://mirror.roytang.net/2019/08/internet-commercialization/",
             "path": "/2019/08/internet-commercialization/",
@@ -816,74 +884,6 @@
             "source_path": "notes/2019/08/ew0qmob/index.md"
             , "tags": ["GameDeals"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GameDeals/comments/cm6omf/steam_fighterz_pass_2_1249_50_off_12_hours_left/ew0qmob/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158309987698896897/",
-            "url": "https://mirror.roytang.net/2019/08/1158309987698896897/",
-            "path": "/2019/08/1158309987698896897/",
-            "title": "",
-            "content_html": "\u003cp\u003eI know it would be weird, but I kind of want \u003ca href=\"https://twitter.com/ArcSystemWorksU/\"\u003e@ArcSystemWorksU\u003c/a\u003e to do the next Marvel vs Capcom because MvC deserves this level of animation \u003ca href=\"https://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I know it would be weird, but I kind of want @ArcSystemWorksU to do the next Marvel vs Capcom because MvC deserves this level of animation https://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be",
-            "date_published": "2019-08-05T09:33:16+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1158309987698896897/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158309987698896897/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/a-look-back-at-this-sites-ancient-history/",
-            "url": "https://mirror.roytang.net/2019/08/a-look-back-at-this-sites-ancient-history/",
-            "path": "/2019/08/a-look-back-at-this-sites-ancient-history/",
-            "title": "A Look Back At This Site's Ancient History",
-            "content_html": "\u003cp\u003eI thought about making a tag \u0026ldquo;things that would only interest me\u0026rdquo; for this one lol.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve uploaded some old web archives of the oldest versions of my site - back when I still had free sites hosted on the likes of Geocities, Tripod and the lesser-known TopCities. \u003ca href=\"/archives/ancient/\"\u003eClick here for the index\u003c/a\u003e!\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve had these archives for a while and only now decided to put them up on the site. It\u0026rsquo;s fun browsing through the older versions, basically relics of a bygone era. It was a time of hand-made HTML, CSS and JS, something that appealed to the tinkerer in me. I remember a disdain for things like Dreamweaver\u0026rsquo;s WYSIWYG site building, or the site-builder tools that came with these free webhosts. Real men build their HTML by hand! It was a lot of effort to maintain websites back then, but I had a lot of fun.\u003c/p\u003e\n\u003cp\u003eSome highlights:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003emy obvious love for green-text-on-black-background color schemes (and unnecessarily small fonts apparently), harkening back to the computer terminals of old\u003c/li\u003e\n\u003cli\u003emany, many broken links and missing files\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://roytang.net/archives/ancient/htmldoc/\"\u003eHTML documentation of my undergraduate thesis\u003c/a\u003e. There\u0026rsquo;s more documents from my EEE days buried in these archives somewhere if you feel like digging for them. Maybe someday I\u0026rsquo;ll go through them in detail.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://roytang.net/archives/ancient/tripod/ffmagic/index.html\"\u003eFinal Fantasy meets Magic the Gathering\u003c/a\u003e - a custom card set I made in 2001 (!) which shows both how much I loved the FF series and how bad I was at balancing MTG cards. (TBF to me, balancing in MTG overall wasn\u0026rsquo;t that good back in those days)\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://roytang.net/archives/ancient/geocities/rk/\"\u003ea half-assed attempt at an rk (rurouni kenshin) fansite\u003c/a\u003e - that\u0026rsquo;s literally the title in the pages\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://roytang.net/archives/ancient/topcities2002/works/prog/index.html\"\u003erunning documentary of me trying to learn Win32 programming for gamedev purposes\u003c/a\u003e (largely unfinished)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI thought about including all of this stuff in the \u003ca href=\"https://roytang.net/archives/ancient/geocities/rk/\"\u003eblog\u0026rsquo;s git repo\u003c/a\u003e, but decided against it because:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethere\u0026rsquo;s a LOT of files, it would unnecessarily increase the size of the repo\u003c/li\u003e\n\u003cli\u003eI don\u0026rsquo;t expect to be making updates to this content often once I\u0026rsquo;ve uploaded them\u003c/li\u003e\n\u003cli\u003eI haven\u0026rsquo;t vetted all the files, just the pages; there might be some stuff floating around in there that\u0026rsquo;s not exactly legal (read: piracy). I\u0026rsquo;ve cleaned up what I can, but we don\u0026rsquo;t want to run afoul of Github\u0026rsquo;s policies or whatever so better safe than sorry\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMost of the blog-like content had already been absorbed into this blog previously. It\u0026rsquo;s fun to go through some of the other stuff too, like looking at a snapshot of the sort of things or sites or files I was interested in almost 20 years ago (unsurprisingly, mostly the same things as today!)\u003c/p\u003e\n",
-            "summary": "I thought about making a tag \u0026ldquo;things that would only interest me\u0026rdquo; for this one lol.\nI\u0026rsquo;ve uploaded some old web archives of the oldest versions of my site - back when I still had free sites hosted on the likes of Geocities, Tripod and the lesser-known TopCities. Click here for the index!\nI\u0026rsquo;ve had these archives for a while and only now decided to put them up on the site.",
-            "date_published": "2019-08-04T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/08/blog-ancient-history/index.md"
-            , "tags": ["meta","nostalgia"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1157821550239846400/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1157731159930892289/",
-            "url": "https://mirror.roytang.net/2019/08/1157731159930892289/",
-            "path": "/2019/08/1157731159930892289/",
-            "title": "",
-            "content_html": "\u003cp\u003eWelp, successfully upgraded to Win 10 1903\u003c/p\u003e\n",
-            "summary": "Welp, successfully upgraded to Win 10 1903",
-            "date_published": "2019-08-03T19:13:12+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1157731159930892289/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1157731159930892289/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1157718756430209024/",
-            "url": "https://mirror.roytang.net/2019/08/1157718756430209024/",
-            "path": "/2019/08/1157718756430209024/",
-            "title": "",
-            "content_html": "\u003cp\u003eI dont think I have it this bad (normally anyway), but I have gone through each of these steps at some point (and on occasion still do), so I find this image highly relatable\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ADHD_Alien/status/1157690943014920192'\u003eADHD_Alien\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eMy totally unscientific explanation of why I quit everything I start and how everything gets too overwhelming. Bigger Version on my homepage!\u003c/p\u003e\n\u003cp\u003e(Close-ups in comments)\u003c/p\u003e\n\u003cp\u003e#adhd #adhs #mentalhealth #comic #tdah\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "I dont think I have it this bad (normally anyway), but I have gone through each of these steps at some point (and on occasion still do), so I find this image highly relatable\nQuoted ADHD_Alien\u0026#39;s tweet:   My totally unscientific explanation of why I quit everything I start and how everything gets too overwhelming. Bigger Version on my homepage!\n(Close-ups in comments)\n#adhd #adhs #mentalhealth #comic #tdah\n ",
-            "date_published": "2019-08-03T18:23:55+00:00",
-            "date_modified": "2020-07-14T05:17:24+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1157718756430209024/index.md"
-            , "tags": ["adhd","adhs","mentalhealth","comic","tdah"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1157718756430209024/"}]
             
             
             }

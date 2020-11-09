@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/02/832101283154714624/",
+            "url": "https://mirror.roytang.net/2017/02/832101283154714624/",
+            "path": "/2017/02/832101283154714624/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Watdahel_Marcel/\"\u003e@Watdahel_Marcel\u003c/a\u003e: Janet Napoles: \u0026ldquo;Pare, Napoles ako.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eDuterte: \u0026ldquo;Ay!\u0026rdquo; 🍅🍅🍅\u003c/p\u003e\n",
+            "summary": "RT @Watdahel_Marcel: Janet Napoles: \u0026ldquo;Pare, Napoles ako.\u0026rdquo;\nDuterte: \u0026ldquo;Ay!\u0026rdquo; 🍅🍅🍅",
+            "date_published": "2017-02-16T05:36:20+00:00",
+            "date_modified": "2019-09-06T08:13:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/02/832101283154714624.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/832101283154714624/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/02/integrating-open-source-libraries/",
+            "url": "https://mirror.roytang.net/2017/02/integrating-open-source-libraries/",
+            "path": "/2017/02/integrating-open-source-libraries/",
+            "title": "Integrating Open Source Libraries",
+            "content_html": "\u003cp\u003eThere are a few things that one should consider when using and integrating an open source library into your application:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cspan data-offset-key=\"668k1-0-0\"\u003eWhat are the licensing terms for the library? There are some liberal licenses that \u003c/span\u003e\u003cspan class=\"adverb\"\u003e\u003cspan data-offset-key=\"668k1-1-0\"\u003emostly\u003c/span\u003e\u003c/span\u003e \u003cspan data-offset-key=\"668k1-2-0\"\u003elet you do anything you want. The MIT license is an example of a very permissive license. Other licenses may provide \u003c/span\u003e\u003cspan class=\"complexword\"\u003e\u003cspan data-offset-key=\"668k1-3-0\"\u003ea number of\u003c/span\u003e\u003c/span\u003e \u003cspan data-offset-key=\"668k1-4-0\"\u003erestrictions. Can you integrate with closed-source software? Can you distribute binaries without the source? Do you need to put some kind of attribution somewhere in your software? Another thing to look our for are the so-called viral licenses. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"668k1-5-0\"\u003eViral licenses specify that if you integrate their code into your system, then the terms of that license apply to your own software as well\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"668k1-6-0\"\u003e. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"668k1-7-0\"\u003e These can be very dangerous from the standpoint of a company developing a commercial product\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"668k1-8-0\"\u003e. The most well-known example of such copyleft licenses is the GPL. Integrating GPL code into your system will often mean your software needs to be open source as well. While more open source is good, it may not be in the best interest of your company, so tread \u003c/span\u003e\u003cspan class=\"adverb\"\u003e\u003cspan data-offset-key=\"668k1-9-0\"\u003elightly\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"668k1-10-0\"\u003e.\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan data-offset-key=\"74amj-0-0\"\u003eWhich version of the library will you use? Many open source libraries will release updates on a regular basis. There may be some compatibility issues depending on the version you use. For example the popular open source CMS WordPress releases regular updates. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"74amj-1-0\"\u003eIf you are integrating with WordPress, you need to decide which version you are supporting\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"74amj-2-0\"\u003e. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"74amj-3-0\"\u003eYou will also need a plan for upgrading to future versions and ensuring compatibility\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"74amj-4-0\"\u003e. (See the next item.)\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan data-offset-key=\"9tfrc-0-0\"\u003eHow will you handle bugs and updates in the version you\u0026rsquo;ve chosen? \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"9tfrc-1-0\"\u003eIt\u0026rsquo;s happened that our system was having problems due to a bug in an open source Javascript rich text control library\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"9tfrc-2-0\"\u003e. After investigating, we found that a fix was available but was only applied in a future version. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"9tfrc-3-0\"\u003eUpgrading to that future version would \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"complexword\"\u003e\u003cspan data-offset-key=\"9tfrc-4-0\"\u003erequire\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"9tfrc-5-0\"\u003e that we test the entire system for compatibility problems\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"9tfrc-6-0\"\u003e. That was out of the question. I ended up having to apply a fix to our local version only. This meant that we now had a different version from the \u0026ldquo;official\u0026rdquo; released version. This may lead to further compatibility problems in the future. You should also be aware of licensing issues here too. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"9tfrc-7-0\"\u003eThe license may \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"complexword\"\u003e\u003cspan data-offset-key=\"9tfrc-8-0\"\u003erequire\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"9tfrc-9-0\"\u003e that you submit any modifications to the community as open source contributions\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"9tfrc-10-0\"\u003e.\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan data-offset-key=\"d3jml-0-0\"\u003eIs there an active help and support system for the software? The demands of enterprise software development often need timely support. There was a time we had to use a certain open source document management system. \u003c/span\u003e\u003cspan class=\"hardreadability\"\u003e\u003cspan data-offset-key=\"d3jml-1-0\"\u003eWe later discovered that it was very hard to get help on any issues encountered, either from official channels or the community\u003c/span\u003e\u003c/span\u003e\u003cspan data-offset-key=\"d3jml-2-0\"\u003e. This led to many difficulties and issues in that project. You might also want to check popular programming forums such as StackOverflow. Check how many questions about that library usually remain unanswered. If the number is low, that\u0026rsquo;s a good indicator that you might have trouble looking for help later on.\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003eWhat dependencies does the library have? You might want to make sure the dependencies don\u0026rsquo;t have any problems with the previous items above.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eThe great thing about modern software development is that we have a large number of open source libraries available to use and draw inspiration from, but that doesn\u0026rsquo;t mean you can just willy-nilly pick up just any library. The above questions provide a good starting point for evaluating open source libraries for your use.\u003c/p\u003e\n",
+            "summary": "There are a few things that one should consider when using and integrating an open source library into your application:\n What are the licensing terms for the library? There are some liberal licenses that mostly let you do anything you want. The MIT license is an example of a very permissive license. Other licenses may provide a number of restrictions. Can you integrate with closed-source software? Can you distribute binaries without the source?",
+            "date_published": "2017-02-16T01:30:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2017/02/integrating-open-source-libraries/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/157295804435/integrating-open-source-libraries"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/832040405126496258/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/02/bqixttble29/",
+            "url": "https://mirror.roytang.net/2017/02/bqixttble29/",
+            "path": "/2017/02/bqixttble29/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;What, no I wasnt pretending the salt shaker was a mic!\u0026rdquo; #sketchdaily\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;What, no I wasnt pretending the salt shaker was a mic!\u0026rdquo; #sketchdaily",
+            "date_published": "2017-02-15T08:19:53+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/02/BQiXtTBlE29/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BQiXtTBlE29/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/157275511135/what-no-i-wasnt-pretending-the-salt-shaker-was-a"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/831885779664240640/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155367100138912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/02/831738207041646592/",
+            "url": "https://mirror.roytang.net/2017/02/831738207041646592/",
+            "path": "/2017/02/831738207041646592/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s less of a \u0026ldquo;news cycle\u0026rdquo; these days and more of that BSG episode where the Cylons attack every 33 minutes.\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s less of a \u0026ldquo;news cycle\u0026rdquo; these days and more of that BSG episode where the Cylons attack every 33 minutes.",
+            "date_published": "2017-02-15T05:33:36+00:00",
+            "date_modified": "2020-02-15T06:24:01+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/02/831738207041646592.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/831738207041646592/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/02/831706366993526784/",
             "url": "https://mirror.roytang.net/2017/02/831706366993526784/",
             "path": "/2017/02/831706366993526784/",
@@ -788,74 +856,6 @@
             "source_path": "notes/2017/02/829729624389152768.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/829729624389152768/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/02/bqtg0qglaso/",
-            "url": "https://mirror.roytang.net/2017/02/bqtg0qglaso/",
-            "path": "/2017/02/bqtg0qglaso/",
-            "title": "",
-            "content_html": "\u003cp\u003eBored #sketchdaily\u003c/p\u003e\n",
-            "summary": "Bored #sketchdaily",
-            "date_published": "2017-02-09T10:03:41+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/02/BQTG0QglaSo/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BQTG0QglaSo/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/829737581512372224/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155350142853912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/02/829611687418343424/",
-            "url": "https://mirror.roytang.net/2017/02/829611687418343424/",
-            "path": "/2017/02/829611687418343424/",
-            "title": "",
-            "content_html": "\u003cp\u003eMaybe maturity is not correcting someone who captions a Street Fighter meme image with \u0026ldquo;finish him!\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "Maybe maturity is not correcting someone who captions a Street Fighter meme image with \u0026ldquo;finish him!\u0026rdquo;",
-            "date_published": "2017-02-09T08:43:34+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/02/829611687418343424.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/829611687418343424/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/02/working-with-client-server-programs/",
-            "url": "https://mirror.roytang.net/2017/02/working-with-client-server-programs/",
-            "path": "/2017/02/working-with-client-server-programs/",
-            "title": "Working with Client-Server Programs",
-            "content_html": "\u003cp\u003eBack when I was starting out as a software developer, webapps weren\u0026rsquo;t really a thing. Not as much as they are now anyway. My company provided training to new hires, but I didn\u0026rsquo;t get any web development training at the time, even though they already had a few web development projects in play at the time.\u003c/p\u003e\n\u003cp\u003eInstead my initial training involved mostly development of so-called client-server software. This was software that was installed and run on the client machine but they would connect to a remote database server. Up until the early 2000s most enterprisey-type systems used these kinds of program.\u003c/p\u003e\n\u003cp\u003eI was trained in using mostly two tools:  Borland Delphi and Oracle Forms and Reports. These were the sort of tools that would have been billed as reducing the need for specialized programmers or developers. They featured drag and drop user interfaces to design forms or report layouts. The Oracle tools featured robust database integration that let you drag and drop to associate form fields to database tables and fields. Supposedly even people with minimal training would be able to do the work of application programmers.\u003c/p\u003e\n\u003cp\u003eIn practice of course, the only people patient enough to work with these tools in-depth were the programmers themselves. And client requirements always eclipsed the capabilities of these tools, such that expert programmers were still needed to push the tools to their limits and beyond.\u003c/p\u003e\n\u003cp\u003eTools like Oracle Forms and Reports had a lot of problems with modern software development practices. For one thing, the \u0026ldquo;source\u0026rdquo; files weren\u0026rsquo;t actually text files. They were mostly binary format files with some PL/SQL interspersed, and could only be opened in the proprietary IDE that only Oracle provided.\u003c/p\u003e\n\u003cp\u003eBinary formats meant that while they could reap some of the benefits of source control (namely version history and such), actually figuring out the differences between revisions involved opening up both versions in the IDE and comparing each item/script/setting in the two files. Doing things like global find and replace were also a pain in the ass, especially in systems that had hundreds of forms. It was so bad I remember spending some time trying to reverse engineer the binary format so that I could attempt to make some of this work easier. No dice.\u003c/p\u003e\n\u003cp\u003eAnother issue was that Oracle\u0026rsquo;s IDEs were notoriously buggy. Their Reports IDE in particular often had me incensed. If you dragged the wrong thing to the other wrong thing, you would crash the IDE entirely. In fact, we had a list of things to avoid doing that would crash the entire IDE entirely. The built-in text editors were so bad, I often had a entirely separate text editor open in a separate window so I could copy-paste PL/SQL code there for any complicated edits. (Back then we were for some reason fond of \u003ca href=\"http://www.crimsoneditor.com/\"\u003eCrimson Editor\u003c/a\u003e although it wasn\u0026rsquo;t as full-featured as \u003ca href=\"http://www.ultraedit.com/\"\u003eUltraEdit\u003c/a\u003e or as reliable with updates as \u003ca href=\"https://notepad-plus-plus.org/\"\u003eNotepad++\u003c/a\u003e) This was actually also sometimes a problem as some versions of the Reports IDE also had a crash on paste.\u003c/p\u003e\n\u003cp\u003eMost of my first two years of work involved maintenance of Oracle Forms-based systems (with some Delphi work thrown in occasionally). I didn\u0026rsquo;t get an introduction to web development until late into the second year of my career. I was so impressed with web development I made a mock-up of one of the really complicated screens from one of our Oracle Forms projects and it seemed so pretty. I secretly hoped we could convince our clients to port them over to a web application. (1) No dice again; and (2) I probably would have regretted such a thing.\u003c/p\u003e\n\u003cp\u003eI know I would have regretted it because some number of years later, we got a project to migrate an existing client-server system to a web application. The original application was written in Powerbuilder. I figured it was a fairly straightforward reverse-engineer and implement as a webapp, but nooooo. One of the higher-ups decided that to save on costs, we should look into attempting to automate the porting process somehow. We were to write translation software that would take the Powerbuilder source and convert it into the appropriate web application screens.\u003c/p\u003e\n\u003cp\u003eThis was ridiculous for a good number of reasons, but as a tech lead, I had to look into it and had to prove it was in fact not viable (Spoiler alert: it was not). The first concern was that Powerbuilder also had a binary format. This was solved when I found that someone had already written a tool to export Powerbuilder binaries into some kind of text format. It was a bit crude, but it was a way forward.\u003c/p\u003e\n\u003cp\u003eThe second concern is that client-server form behaviors do not map well to web applications. My favorite example of this is editable grids. These are some kind of excel-like grids that were commonplace in client-side systems. And when users upgrade their legacy systems to web apps, they inevitably expect that their editable grids should work the exact same way on the web as they did on the client-side forms.\u003c/p\u003e\n\u003cp\u003eBack then Javascript-backed editable grids were still in their infancy, and each one we tried had their own sets of problems and limitations which would lead to some number of client complaints. Some clients even wanted editable grids that could accept copy-pastes from excel! Yeah, we had to develop Google Sheets! I personally had to roll my own editable grid framework from scratch at least once too. I ranted so often against client\u0026rsquo;s editable grid requirements that a few developers often quoted something I said in one of our internal chat rooms:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cjaeger\u003e you say \u0026ldquo;editable grid\u0026rdquo; i hear \u0026ldquo;problems\u0026rdquo;\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eAnyway yeah, porting client-side behavior to a web framework would not have been straightforward. At least not to the way our internal web development framework liked to do things. In order to have any kind of reasonable mapping, I would have needed to build some kind of Javascript rich-client framework (or see which ones of the emerging ones we could use). That also meant rewriting a lot of the backend code to support a bunch of new operations. It was a lot more work than the expected output of \u0026ldquo;a series of steps to easily or automatically migrate PowerBuilder source code to web applications.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eWhen I raised that the idea was not viable, I was asked to give a more detailed explanation. This involved taking one of the more complex Powerbuilder source files, putting it into an Excel, and line-by-line explaining how and why that line could or could not be translated into a web application. As an alternative option to an automated porting program they wanted a guide or process so simple that even junior developers with minimal experience could follow the guide and port the programs quickly. I think they eventually went with this approach. (Which was closer to our normal reverse-engineer-and-reimplement methodology.)\u003c/p\u003e\n\u003cp\u003eThese days web applications are the norm and client-server programs are a thing of the past. They were relics of a different age. The browser is our universal client now, on the desktop at least. On mobile, \u0026ldquo;apps\u0026rdquo; are effectively client-server programs, though they have a different set of advantages and limitations. Maybe in the future mobile apps will converge as well, into a unified browser client \u0026ndash; although probably mobile browsers need to be more feature-rich before this convergence can take place. My historical disdain for client-server programs carries over to mobile apps though \u0026ndash; I don\u0026rsquo;t like to use too many of them, although that is a story for another blog post.\u003c/p\u003e\n",
-            "summary": "Back when I was starting out as a software developer, webapps weren\u0026rsquo;t really a thing. Not as much as they are now anyway. My company provided training to new hires, but I didn\u0026rsquo;t get any web development training at the time, even though they already had a few web development projects in play at the time.\nInstead my initial training involved mostly development of so-called client-server software. This was software that was installed and run on the client machine but they would connect to a remote database server.",
-            "date_published": "2017-02-09T01:30:50+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/02/working-with-client-server-programs/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/156998734395/working-with-client-server-programs"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/829503436433547268/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/02/829422877518680064/",
-            "url": "https://mirror.roytang.net/2017/02/829422877518680064/",
-            "path": "/2017/02/829422877518680064/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Netflix_PH/\"\u003e@Netflix_PH\u003c/a\u003e \u003ca href=\"https://twitter.com/NetflixAsia/\"\u003e@NetflixAsia\u003c/a\u003e when are we getting Voltron Legendary Defender!!\u003c/p\u003e\n",
-            "summary": "@Netflix_PH @NetflixAsia when are we getting Voltron Legendary Defender!!",
-            "date_published": "2017-02-08T20:13:18+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/02/829422877518680064.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/829422877518680064/"}]
             
             
             }

@@ -11,6 +11,85 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/10/4765091343/",
+            "url": "https://mirror.roytang.net/2009/10/4765091343/",
+            "path": "/2009/10/4765091343/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e we should do this: \u003ca href=\"http://bit.ly/2LZ0x\"\u003ehttp://bit.ly/2LZ0x\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@switchfollows we should do this: http://bit.ly/2LZ0x",
+            "date_published": "2009-10-10T17:48:14+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/4765091343.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4765091343/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/4762256501/",
+            "url": "https://mirror.roytang.net/2009/10/4762256501/",
+            "path": "/2009/10/4762256501/",
+            "title": "",
+            "content_html": "\u003cp\u003etrackpads suck\u003c/p\u003e\n",
+            "summary": "trackpads suck",
+            "date_published": "2009-10-10T15:29:14+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/4762256501.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4762256501/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/155106741506"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/4759033596/",
+            "url": "https://mirror.roytang.net/2009/10/4759033596/",
+            "path": "/2009/10/4759033596/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitpic.com/kyf5r\"\u003ehttps://twitpic.com/kyf5r\u003c/a\u003e - Luckily I\u0026rsquo;m not superstitious\u003c/p\u003e\n",
+            "summary": "https://twitpic.com/kyf5r - Luckily I\u0026rsquo;m not superstitious",
+            "date_published": "2009-10-10T12:00:04+00:00",
+            "date_modified": "2020-10-26T13:11:47+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/4759033596/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4759033596/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/163910339032"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/1547415/",
+            "url": "https://mirror.roytang.net/2009/10/1547415/",
+            "path": "/2009/10/1547415/",
+            "title": "how to handle IE select onchange and ajax requests",
+            "content_html": "\u003cp\u003eLet\u0026rsquo;s say I attach a javascript \u0026ldquo;change\u0026rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.\u003c/p\u003e\n\u003cp\u003eThis is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there\u0026rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.\u003c/p\u003e\n\u003cp\u003eNow, our previous workaround was that we would introduce a timeout to the change handler, such that it would wait a fraction of a second before actually dispatching the request. If in that short time, another change event comes in, we cancel the previous timeout and start a new one, thus preventing spamming multiple requests.\u003c/p\u003e\n\u003cp\u003eNow, while this seems to be working, it\u0026rsquo;s a bit hackish and I\u0026rsquo;m wondering if there\u0026rsquo;s any better approach. Is there a different event we can hook to so that it doesn\u0026rsquo;t fire repeatedly when scrolling with the mouse? Or should we just disable mouse-wheeling altogether (onmousewheel=\u0026quot;return false;\u0026quot;)? Firefox does not seem to support mouse-wheeling thru combo boxes, but I\u0026rsquo;m not sure if disabling mouse wheeling is a serious usability no-no or something.\u003c/p\u003e\n\u003cp\u003eCan anyone recommend other solutions?\u003c/p\u003e\n",
+            "summary": "Let\u0026rsquo;s say I attach a javascript \u0026ldquo;change\u0026rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.\nThis is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there\u0026rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.",
+            "date_published": "2009-10-10T08:46:00+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/1547415/index.md"
+            , "tags": ["javascript","internet-explorer","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091010T090513-1547442.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091010T093926-1547501.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091013T161033-1561254.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/10/4749097600/",
             "url": "https://mirror.roytang.net/2009/10/4749097600/",
             "path": "/2009/10/4749097600/",
@@ -804,74 +883,6 @@
             "source_path": "notes/2009/09/4380965691.md"
             , "tags": ["mtg"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4380965691/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/139618989598"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4370516655/",
-            "url": "https://mirror.roytang.net/2009/09/4370516655/",
-            "path": "/2009/09/4370516655/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e I don\u0026rsquo;t think you have to analyze them ALL. I mean, there are like worse versions of Healing Salve in there!\u003c/p\u003e\n",
-            "summary": "@mtgsalivanth I don\u0026rsquo;t think you have to analyze them ALL. I mean, there are like worse versions of Healing Salve in there!",
-            "date_published": "2009-09-25T15:22:29+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4370516655.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4370516655/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4370307880/",
-            "url": "https://mirror.roytang.net/2009/09/4370307880/",
-            "path": "/2009/09/4370307880/",
-            "title": "",
-            "content_html": "\u003cp\u003eSome insanity today in the world of #mtg: \u003ca href=\"https://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/rumor-mill-archive/248426-priceless-treasures-in-zen-packs-confirmed\"\u003ehttps://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/rumor-mill-archive/248426-priceless-treasures-in-zen-packs-confirmed\u003c/a\u003e Power 9 cards found in boosters of upcoming set Zendikar!\u003c/p\u003e\n",
-            "summary": "Some insanity today in the world of #mtg: https://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/rumor-mill-archive/248426-priceless-treasures-in-zen-packs-confirmed Power 9 cards found in boosters of upcoming set Zendikar!",
-            "date_published": "2009-09-25T15:13:21+00:00",
-            "date_modified": "2019-09-25T00:34:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4370307880.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4370307880/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/136384357876"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4360846064/",
-            "url": "https://mirror.roytang.net/2009/09/4360846064/",
-            "path": "/2009/09/4360846064/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e probably sunday at g5\u003c/p\u003e\n",
-            "summary": "@aleksfelipe probably sunday at g5",
-            "date_published": "2009-09-25T04:21:18+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4360846064.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4360846064/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4317707604/",
-            "url": "https://mirror.roytang.net/2009/09/4317707604/",
-            "path": "/2009/09/4317707604/",
-            "title": "",
-            "content_html": "\u003cp\u003ewhat are you waiting for? \u003ca href=\"https://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/\"\u003ehttps://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "what are you waiting for? https://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/",
-            "date_published": "2009-09-23T15:29:01+00:00",
-            "date_modified": "2019-09-23T01:11:31+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4317707604.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4317707604/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/169538087328"}]
             
             
             }
