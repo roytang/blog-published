@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2008/08/django-and-google-app-engine/",
+            "url": "https://mirror.roytang.net/2008/08/django-and-google-app-engine/",
+            "path": "/2008/08/django-and-google-app-engine/",
+            "title": "Django and Google App Engine",
+            "content_html": "\u003cp\u003eIn my continuing quest to become better than everybody else, I spent some time today learning \u003ca href=\"http://www.google.com.ph/url?sa=t\u0026amp;ct=res\u0026amp;cd=1\u0026amp;url=http%3A%2F%2Fwww.djangoproject.com%2F\u0026amp;ei=x6OySMHXJYvQ6gP-t93-Dw\u0026amp;usg=AFQjCNGfxYhHSLrgk6aVrm5Bbc2ozc89rA\u0026amp;sig2=6Zd2UWQL7gEYK7d6SsY2Hg\"\u003eDjango\u003c/a\u003e (a Python webapp framework) and the \u003ca href=\"http://code.google.com/appengine/\"\u003eGoogle App Engine\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eI tried following the tutorials included in the \u003ca href=\"http://www.djangobook.com/en/1.0/\"\u003eDjango Book\u003c/a\u003e for a while, but I\u0026rsquo;ve never taken too well with just typing up examples from a book, so I decided to write something from scratch. I decided to write a simple message board application.\u003c/p\u003e\n\u003cp\u003eI wrote the message board pretty quickly using Django; it took me about 2-3 hours to have a bare-bones message board up and running. (I was watching Speed Racer at the same time.) The UI is horrendous of course, but it\u0026rsquo;s functional, with categories and topics, etc.\u003c/p\u003e\n\u003cp\u003eNow to deploy the message board app somewhere. After a bit of searching around, I couldn\u0026rsquo;t find any suitable free Django webhosting. So I went with the backup plan: I\u0026rsquo;d upload the project to the Google App Engine.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve had a Google App Engine account for a while now, but haven\u0026rsquo;t done anything with it yet. Unfortunately, a Django app can\u0026rsquo;t be ported directly to GAE as Google has their own datastore implementation which won\u0026rsquo;t work with Django\u0026rsquo;s models. So I spent the rest of the day porting/rewriting the message board app for use with GAE. Google has their own guide for this sort of porting here: \u003ca href=\"http://code.google.com/appengine/articles/django.html\"\u003eRunning Django on Google App Engine\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eSome problems encountered when porting:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCan\u0026rsquo;t seem to use the list_detail generic view; I get errors about undefined user attribute on the request\u003c/li\u003e\n\u003cli\u003eSometimes after editing a view, I get random \u0026ldquo;NoneType has no attibute get\u0026rdquo; errors. Restarting the dev_appserver fixes this.\u003c/li\u003e\n\u003cli\u003eUnlike Django, GAE models don\u0026rsquo;t have an \u0026ldquo;id\u0026rdquo; primary key. Instead, you must use object.key() which returns some sort of hash string (making for very inconvenient urls)\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;m having \u003ca href=\"http://random-encounters.appspot.com/forum/cat/CxIIQ2F0ZWdvcnkYAww/\"\u003eerrors raised during 404s\u003c/a\u003e; the problem is mentioned in \u003ca href=\"/forum/cat/CxIIQ2F0ZWdvcnkYAww/\"\u003ethis thread\u003c/a\u003e which should already be fixed but I\u0026rsquo;m still encountering it. I\u0026rsquo;ll investigate it later.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe final product is here: \u003ca href=\"http://random-encounters.appspot.com/forum/home/\"\u003eRandom Encounters Message Boards\u003c/a\u003e . I don\u0026rsquo;t know who would actually use the site, but I think there\u0026rsquo;s some people I know reading this blog who wouldn\u0026rsquo;t be able to resist testing it!\u003c/p\u003e\n\u003cp\u003eThe next step would be to improve the UI of the app!\u003c/p\u003e\n",
+            "summary": "In my continuing quest to become better than everybody else, I spent some time today learning Django (a Python webapp framework) and the Google App Engine.\nI tried following the tutorials included in the Django Book for a while, but I\u0026rsquo;ve never taken too well with just typing up examples from a book, so I decided to write something from scratch. I decided to write a simple message board application.",
+            "date_published": "2008-08-25T04:37:43+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/08/django-and-google-app-engine/index.md"
+            , "tags": ["Software Development"]
+            
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2008/08/ptq-berlin-ii/",
             "url": "https://mirror.roytang.net/2008/08/ptq-berlin-ii/",
             "path": "/2008/08/ptq-berlin-ii/",
@@ -878,23 +895,6 @@
             , "tags": ["Links"]
             
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/06/video-earl-nightingale-the-strangest-secret-creating-a-better-life/",
-            "url": "https://mirror.roytang.net/2008/06/video-earl-nightingale-the-strangest-secret-creating-a-better-life/",
-            "path": "/2008/06/video-earl-nightingale-the-strangest-secret-creating-a-better-life/",
-            "title": "Video - Earl Nightingale: The Strangest Secret | Creating a Better Life",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2008-06-12T00:02:32+00:00",
-            "date_modified": "2020-01-29T00:26:29+08:00",
-            "section": "links",
-            "source_path": "links/2008/06/video-earl-nightingale-the-strangest-secret-creating-a-better-life/index.md"
-            , "tags": ["lifehacks","video"]
-            
-            ,"link": "http://creatingabetterlife.net/2008/05/27/video-earl-nightingale-the-strangest-secret/"
             
             }
         
