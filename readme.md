@@ -29,14 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [12 Nov 2020 4:08pm](https://mirror.roytang.net/2020/11/1326919888472956928/): Past few days I&rsquo;ve been playing around with this thing called Dragonruby Game Toolkit + some Kenney assets I got from the itch Racial Justice bundle. https://www.youtube.com/watch?v=MDRShB4psyU&amp;feature=youtu.be
 - [9 Nov 2020 1:48pm](https://mirror.roytang.net/2020/11/1325797474070523904/): lols
 - [8 Nov 2020 8:28am](https://mirror.roytang.net/2020/11/1325354399493877761/): This is genuinely the funniest piece of media I’ve ever seen in my life and should absolutely be what is shown to explain the 2020 election for generations to come
 Your browser does not support the video tag.  
 - [8 Nov 2020 6:58am](https://mirror.roytang.net/2020/11/1325331804165820416/): Congratulations, USA, on getting a smart, hardworking woman as a VP. We’ve had one since 2016.
 - [8 Nov 2020 6:58am](https://mirror.roytang.net/2020/11/1325331778253414400/): I don&rsquo;t know how to process my joy&hellip;
 so I made Elmo sing A Cruel Angel&rsquo;s Thesis&hellip;
-Your browser does not support the video tag.  
-- [7 Nov 2020 8:55am](https://mirror.roytang.net/2020/11/1324998925598691339/): The Week in Review.
 Your browser does not support the video tag.  
 
 [View all notes](https://mirror.roytang.net/notes)
