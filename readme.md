@@ -29,12 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [14 Nov 2020 5:36am](https://mirror.roytang.net/2020/11/1327606340764766209/): Kaladesh Remastered draft ep 1 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
+Sadly, internet wasn&rsquo;t too good so I just cut the stream short. Too bad, so sad
+Draft didn&rsquo;t feel super good, but I managed to break even in the games. No video because no stream. (In hindsight I could have just recorded locally!) Maybe I&rsquo;ll try streaming a draft again early next week.
 - [13 Nov 2020 4:49am](https://mirror.roytang.net/2020/11/1327111324728393728/): @amirrajan i dont have much other gamedev experience other than playing with unity a bit, but: I like that I can do most of the work in my text editor, and I like that it simplifies a lot of the work by making assumptions (like the 1280x720 resolution etc) so I can just focus on what I want
 - [12 Nov 2020 4:08pm](https://mirror.roytang.net/2020/11/1326919888472956928/): Past few days I&rsquo;ve been playing around with this thing called Dragonruby Game Toolkit + some Kenney assets I got from the itch Racial Justice bundle. https://www.youtube.com/watch?v=MDRShB4psyU&amp;feature=youtu.be
 - [9 Nov 2020 1:48pm](https://mirror.roytang.net/2020/11/1325797474070523904/): lols
 - [8 Nov 2020 8:28am](https://mirror.roytang.net/2020/11/1325354399493877761/): This is genuinely the funniest piece of media I’ve ever seen in my life and should absolutely be what is shown to explain the 2020 election for generations to come
 Your browser does not support the video tag.  
-- [8 Nov 2020 6:58am](https://mirror.roytang.net/2020/11/1325331804165820416/): Congratulations, USA, on getting a smart, hardworking woman as a VP. We’ve had one since 2016.
 
 [View all notes](https://mirror.roytang.net/notes)
 
