@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-11-15 Winds and Rain](/2020/11/weeknotes-2020-11-15/)
+
 - [Weeknotes 2020-11-01 A Collective Sigh of Relief](/2020/11/weeknotes-2020-11-08/)
 
 - [Weeknotes 2020-11-01 Storm&#39;s comin&#39;](/2020/11/weeknotes-2020-11-01/)
