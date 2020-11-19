@@ -29,6 +29,9 @@ Latest shared links:
 Latest notes:
     
 
+- [18 Nov 2020 3:21am](https://mirror.roytang.net/2020/11/1329022017753001988/): Streaming some more Kaladesh Remastered draft (ep 2) https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
+Unfortunately, internet was too poor again tonight for streaming :(
+Ok, I went ahead and did two drafts which was a terrible idea because I did very poorly both times. (Didn&rsquo;t bother getting a screenshot of the second result, they were the same!) Sigh, this format is tough. Hopefully I figure it out by next time.
 - [17 Nov 2020 6:54pm](https://mirror.roytang.net/2020/11/1328773621007876096/): It&rsquo;s a fantasy, but I&rsquo;m kind of hoping @inquirerdotnet or @PhilstarNews manages to put the word &ldquo;Meltdown&rdquo; somewhere on their front page for Nov 18 #DuterteMeltdown
 - [16 Nov 2020 3:24pm](https://mirror.roytang.net/2020/11/1328358247061831680/): Okay I&rsquo;m going to try to explain this, so bear with me. On Tiktok, an entire community has come together to create Ratatouille the Musical. What seemed like a joke has become an incredible undertaking. Or not? Here&rsquo;s how it started, with a call:
 Your browser does not support the video tag.  
@@ -36,7 +39,6 @@ Your browser does not support the video tag.
 - [14 Nov 2020 5:36am](https://mirror.roytang.net/2020/11/1327606340764766209/): Kaladesh Remastered draft ep 1 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
 Sadly, internet wasn&rsquo;t too good so I just cut the stream short. Too bad, so sad
 Draft didn&rsquo;t feel super good, but I managed to break even in the games. No video because no stream. (In hindsight I could have just recorded locally!) Maybe I&rsquo;ll try streaming a draft again early next week.
-- [13 Nov 2020 4:49am](https://mirror.roytang.net/2020/11/1327111324728393728/): @amirrajan i dont have much other gamedev experience other than playing with unity a bit, but: I like that I can do most of the work in my text editor, and I like that it simplifies a lot of the work by making assumptions (like the 1280x720 resolution etc) so I can just focus on what I want
 
 [View all notes](https://mirror.roytang.net/notes)
 
