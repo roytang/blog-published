@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [20 Nov 2020 7:27pm](https://mirror.roytang.net/2020/11/1329868993600004096/): Wasting time wandering through parallel universes
 - [18 Nov 2020 3:21am](https://mirror.roytang.net/2020/11/1329022017753001988/): Streaming some more Kaladesh Remastered draft (ep 2) https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
 Unfortunately, internet was too poor again tonight for streaming :(
 Ok, I went ahead and did two drafts which was a terrible idea because I did very poorly both times. (Didn&rsquo;t bother getting a screenshot of the second result, they were the same!) Sigh, this format is tough. Hopefully I figure it out by next time.
@@ -36,9 +37,6 @@ Ok, I went ahead and did two drafts which was a terrible idea because I did very
 - [16 Nov 2020 3:24pm](https://mirror.roytang.net/2020/11/1328358247061831680/): Okay I&rsquo;m going to try to explain this, so bear with me. On Tiktok, an entire community has come together to create Ratatouille the Musical. What seemed like a joke has become an incredible undertaking. Or not? Here&rsquo;s how it started, with a call:
 Your browser does not support the video tag.  
 - [15 Nov 2020 5:57am](https://mirror.roytang.net/2020/11/1327853276302217223/): [Team Camote] - Post-Trivia Trivia ni Seresa https://www.youtube.com/watch?v=no0sYBcU5LA via @YouTube
-- [14 Nov 2020 5:36am](https://mirror.roytang.net/2020/11/1327606340764766209/): Kaladesh Remastered draft ep 1 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
-Sadly, internet wasn&rsquo;t too good so I just cut the stream short. Too bad, so sad
-Draft didn&rsquo;t feel super good, but I managed to break even in the games. No video because no stream. (In hindsight I could have just recorded locally!) Maybe I&rsquo;ll try streaming a draft again early next week.
 
 [View all notes](https://mirror.roytang.net/notes)
 

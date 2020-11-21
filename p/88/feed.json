@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/09/907506647026737152/",
+            "url": "https://mirror.roytang.net/2017/09/907506647026737152/",
+            "path": "/2017/09/907506647026737152/",
+            "title": "",
+            "content_html": "\u003cp\u003eAccurate. \u003ca href=\"http://imgur.com/gallery/uOBTO\"\u003ehttp://imgur.com/gallery/uOBTO\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Accurate. http://imgur.com/gallery/uOBTO",
+            "date_published": "2017-09-12T07:30:19+00:00",
+            "date_modified": "2020-08-20T05:26:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/907506647026737152/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/907506647026737152/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/09/907469356182921216/",
             "url": "https://mirror.roytang.net/2017/09/907469356182921216/",
             "path": "/2017/09/907469356182921216/",
@@ -846,31 +863,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/901780347532099584/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/45901868/",
-            "url": "https://mirror.roytang.net/2017/08/45901868/",
-            "path": "/2017/08/45901868/",
-            "title": "MarkLogic node.js: sorting by the value of a json element with multiple instances in the same document",
-            "content_html": "\u003cp\u003eSorry if the title is unclear, but I\u0026rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n  \u0026quot;count\u0026quot;: 100,\n  \u0026quot;groups\u0026quot;: [\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group A\u0026quot;,\n    \u0026quot;count\u0026quot;: 12\n    },\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group B\u0026quot;,\n    \u0026quot;count\u0026quot;: 22\n    },\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group C\u0026quot;,\n    \u0026quot;count\u0026quot;: 7\n    }\n  ]\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBasically, the document has an item count plus a breakdown of that count into smaller groups. So this record represents a collection of 100 items, of which 12 are from group A, 22 are from group B, 7 are from group C.\u003c/p\u003e\n\u003cp\u003eNow, I have an element range index on \u0026ldquo;count\u0026rdquo; and a bunch of such documents. I\u0026rsquo;d like to be able to sort by any of the options:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003esort by total count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group A count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group B count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group C count (descending or ascending)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI\u0026rsquo;ve tried\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e.orderBy(qb.sort(\u0026quot;count\u0026quot;, \u0026quot;descending\u0026quot;))\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis seems to be sort by the total cost (the one in the document root), but I\u0026rsquo;m not sure if that\u0026rsquo;s always true or I need to specify something else to guarantee it always gets that particular one.\u003c/p\u003e\n\u003cp\u003eFor sorting by a specific group, I have no idea how to specify it.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
-            "summary": "Sorry if the title is unclear, but I\u0026rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:\n{ \u0026quot;count\u0026quot;: 100, \u0026quot;groups\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;group A\u0026quot;, \u0026quot;count\u0026quot;: 12 }, { \u0026quot;name\u0026quot;: \u0026quot;group B\u0026quot;, \u0026quot;count\u0026quot;: 22 }, { \u0026quot;name\u0026quot;: \u0026quot;group C\u0026quot;, \u0026quot;count\u0026quot;: 7 } ] }  Basically, the document has an item count plus a breakdown of that count into smaller groups.",
-            "date_published": "2017-08-27T05:09:50+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/45901868/index.md"
-            , "tags": ["marklogic","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance",
-                    "source_file": "comment-20170827T163709-45907105.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance",
-                    "source_file": "comment-20170827T170834-45907355.json"
-                }
-            ]
             }
         
     ]
