@@ -11,6 +11,63 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2012/08/12170462/",
+            "url": "https://mirror.roytang.net/2012/08/12170462/",
+            "path": "/2012/08/12170462/",
+            "title": "How to assess the risk of a java version upgrade?",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.\u003c/p\u003e\n\u003cp\u003eThe current suggested approach is to do a source compare of the JDK sources for each version and assess those changes to see which ones might have impact, but it seems there\u0026rsquo;s a lot of changes to go through (and as mentioned the codebase is kinda large). Is it safe and easier to just review the java version changes for each version? Or is there an easier way to conduct this assessment?\u003c/p\u003e\n\u003cp\u003eEdit: I forgot to mention the version upgrade being considered is a minor version upgrade, i.e. 1.6.10 to 1.6.33\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.",
+            "date_published": "2012-08-29T03:24:13+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/12170462/index.md"
+            , "tags": ["java","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032701-16289981.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032750-16289987.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032929-12170491.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T033007-16290007.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034524-16290156.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034722-12170597.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T035906-16290285.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/08/c60g3ez/",
+            "url": "https://mirror.roytang.net/2012/08/c60g3ez/",
+            "path": "/2012/08/c60g3ez/",
+            "title": "",
+            "content_html": "\u003cp\u003eI have this random daydream/fantasy where a bear gets loose and goes wild somewhere in town and I save a bunch of people by defeating it in single unarmed combat.\u003c/p\u003e\n\u003cp\u003eSo yeah, this thread is relevant to my interests.\u003c/p\u003e\n",
+            "summary": "I have this random daydream/fantasy where a bear gets loose and goes wild somewhere in town and I save a bunch of people by defeating it in single unarmed combat.\nSo yeah, this thread is relevant to my interests.",
+            "date_published": "2012-08-29T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/c60g3ez/index.md"
+            , "tags": ["AskReddit"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/AskReddit/comments/z0ijt/what_would_be_the_best_tactic_for_fighting_an/c60g3ez/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2012/08/240571677438787584/",
             "url": "https://mirror.roytang.net/2012/08/240571677438787584/",
             "path": "/2012/08/240571677438787584/",
@@ -822,40 +879,6 @@
             "source_path": "notes/2012/08/236107838181756928.md"
             , "tags": ["dcdigital"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236107838181756928/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/08/236105359218057216/",
-            "url": "https://mirror.roytang.net/2012/08/236105359218057216/",
-            "path": "/2012/08/236105359218057216/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e :p\u003c/p\u003e\n",
-            "summary": "@aleksfelipe :p",
-            "date_published": "2012-08-16T14:21:18+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/236105359218057216.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236105359218057216/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/08/236081722872168448/",
-            "url": "https://mirror.roytang.net/2012/08/236081722872168448/",
-            "path": "/2012/08/236081722872168448/",
-            "title": "",
-            "content_html": "\u003cp\u003eWoohoo my GP manila prize check came in\u003c/p\u003e\n",
-            "summary": "Woohoo my GP manila prize check came in",
-            "date_published": "2012-08-16T12:47:23+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/236081722872168448.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/236081722872168448/"}]
             
             
             }
