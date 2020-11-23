@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-11-22 The Moments In Between](/2020/11/weeknotes-2020-11-22/)
+
 - [Weeknotes 2020-11-15 Winds and Rain](/2020/11/weeknotes-2020-11-15/)
 
 - [Weeknotes 2020-11-01 A Collective Sigh of Relief](/2020/11/weeknotes-2020-11-08/)
