@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2010/04/11675402405/",
+            "url": "https://mirror.roytang.net/2010/04/11675402405/",
+            "path": "/2010/04/11675402405/",
+            "title": "",
+            "content_html": "\u003cp\u003eeh, bakit brownout?\u003c/p\u003e\n",
+            "summary": "eh, bakit brownout?",
+            "date_published": "2010-04-06T02:27:46+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/04/11675402405.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/11675402405/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/108587645840399"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2010/04/498370383/",
             "url": "https://mirror.roytang.net/2010/04/498370383/",
             "path": "/2010/04/498370383/",
@@ -839,23 +856,6 @@
             "source_path": "notes/2010/03/10900319764.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10900319764/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/2496418/",
-            "url": "https://mirror.roytang.net/2010/03/2496418/",
-            "path": "/2010/03/2496418/",
-            "title": "",
-            "content_html": "\u003cp\u003eMINUS is the same as saying \u0026ldquo;get all the rows of the first query, then from that set remove the rows that are also in the second query\u0026rdquo;, so you could like load the results from the first query into an array in-memory, then loop through the second query results and check them one-by-one against the first query results and remove them if they exist.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m not sure that will actually perform better though (depends on a lot of things). You might also want to consider using NOT EXISTS instead and check that performance, i.e.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT  RTRIM(LTRIM(A.HEAD)),\n  A.EFFECTIVE_DATE,\nFROM   TABLE_1 A\nWHERE  A.TYPE_OF_ACTION='6'\nAND    A.EFFECTIVE_DATE \u0026gt;= ADD_MONTHS(SYSDATE,-15)  \nAND NOT EXISTS (\n  SELECT 1 fFROM TABLE_2 B\n  WHERE RTRIM(LTRIM(A.HEAD)) = RTRIM(LTRIM(B.HEAD))\n  AND A.EFFECTIVE_DATE = B.EFFECTIVE_DATE\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSome functional indexing may also be needed on RTRIM(LTRIM(A.HEAD))\u003c/p\u003e\n",
-            "summary": "MINUS is the same as saying \u0026ldquo;get all the rows of the first query, then from that set remove the rows that are also in the second query\u0026rdquo;, so you could like load the results from the first query into an array in-memory, then loop through the second query results and check them one-by-one against the first query results and remove them if they exist.\nI\u0026rsquo;m not sure that will actually perform better though (depends on a lot of things).",
-            "date_published": "2010-03-22T23:12:29+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/03/2496418/index.md"
-            , "tags": ["performance","oracle"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2496360/comparing-two-cursors-in-oracle-instead-of-using-minus/2496418#2496418"}]
             
             
             }

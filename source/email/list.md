@@ -1,4 +1,6 @@
 
+- [local Django superuser](/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/)
+
 - [facebook masks](/2020/10/a38e76d18c18ef7048cd755f7374f753/)
 
 - [beaver test](/2020/10/4d61f87d13cb070725f8e993d517ee40/)
