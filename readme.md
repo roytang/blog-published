@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [We Shouldn&#39;t Need Heroes](https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/)
+- [Weeknotes 2020-11-29](https://mirror.roytang.net/2020/11/weeknotes-2020-11-29/)
 - [Weeknotes 2020-11-22 The Moments In Between](https://mirror.roytang.net/2020/11/weeknotes-2020-11-22/)
 - [Weeknotes 2020-11-15 Winds and Rain](https://mirror.roytang.net/2020/11/weeknotes-2020-11-15/)
 - [Weeknotes 2020-11-01 A Collective Sigh of Relief](https://mirror.roytang.net/2020/11/weeknotes-2020-11-08/)
-- [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](https://mirror.roytang.net/2020/11/server-setup-notes/)
-- [Weeknotes 2020-11-01 Storm&#39;s comin&#39;](https://mirror.roytang.net/2020/11/weeknotes-2020-11-01/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

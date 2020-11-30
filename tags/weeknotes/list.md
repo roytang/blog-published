@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-11-29](/2020/11/weeknotes-2020-11-29/)
+
 - [Weeknotes 2020-11-22 The Moments In Between](/2020/11/weeknotes-2020-11-22/)
 
 - [Weeknotes 2020-11-15 Winds and Rain](/2020/11/weeknotes-2020-11-15/)
