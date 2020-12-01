@@ -1,4 +1,6 @@
 
+- [Book Review: Rhythm of War by Sanderson, Brandon](/2020/12/rhythm-of-war/)
+
 - [Book Review: Atomic Habits by James Clear](/2020/01/atomic-habits/)
 
 - [Book Review: So Good They Cant Ignore You by Cal Newport](/2019/11/so-good-they-cant-ignore-you/)
