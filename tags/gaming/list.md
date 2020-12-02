@@ -1,4 +1,6 @@
 
+- [Game Review: Super Mario Odyssey](/2020/12/game-review-super-mario-odyssey/)
+
 - [Game Review: Super Mario 3d All-stars](/2020/10/mario-3d-all-stars/)
 
 - [Late Game Review: Uncharted 4: A Thief&#39;s End](/2020/09/uncharted4/)

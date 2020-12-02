@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Game Review: Super Mario Odyssey](https://mirror.roytang.net/2020/12/game-review-super-mario-odyssey/)
 - [Book Review: Rhythm of War by Sanderson, Brandon](https://mirror.roytang.net/2020/12/rhythm-of-war/)
 - [We Shouldn&#39;t Need Heroes](https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/)
 - [Weeknotes 2020-11-29](https://mirror.roytang.net/2020/11/weeknotes-2020-11-29/)
 - [Weeknotes 2020-11-22 The Moments In Between](https://mirror.roytang.net/2020/11/weeknotes-2020-11-22/)
-- [Weeknotes 2020-11-15 Winds and Rain](https://mirror.roytang.net/2020/11/weeknotes-2020-11-15/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,13 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [2 Dec 2020 4:42am](https://mirror.roytang.net/2020/12/1333994890338832384/): It&rsquo;s only the 1st week of December and we&rsquo;re already getting &ldquo;best of 2020&rdquo; lists. The year isn&rsquo;t up yet, who knows what surprises await!
 - [30 Nov 2020 5:48am](https://mirror.roytang.net/2020/11/1333407638336532480/): Streaming some Kaladesh Remastered draft! Watch me be terrible https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
 As predicted; I was indeed terrible. Draft seemed to go well enough, but I made too many mistakes I guess? Seems like this format is not for me.
 YT: https://www.youtube.com/watch?v=S15AgtyStzw
 - [26 Nov 2020 5:46am](https://mirror.roytang.net/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/): I wonder if any other Django devs always forgot what their local env&rsquo;s superuser password is and just createsuperuser again every so often
 - [23 Nov 2020 1:09pm](https://mirror.roytang.net/2020/11/1330861073247813634/): @art_abon Ranma has a much bigger cast that can cause hijinx. Dito it&rsquo;s always either Larry or Balki (and Larry most of the time)
 - [23 Nov 2020 1:08pm](https://mirror.roytang.net/2020/11/1330860801477885960/): @joyarmadamba uh, i have a copy
-- [21 Nov 2020 11:40am](https://mirror.roytang.net/2020/11/1330113747550134277/): I&rsquo;ve been binging Perfect Strangers. Fun show (and maybe best theme song), but 80% of the eps are like &ldquo;Balki says/does something naive, Larry overreacts and gets them into trouble, but it all works out in the end&rdquo;
 
 [View all notes](https://mirror.roytang.net/notes)
 

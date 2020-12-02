@@ -1,5 +1,9 @@
 
+- [Game Review: Super Mario Odyssey](/2020/12/game-review-super-mario-odyssey/)
+
 - [](/2020/10/1322214646221205504/)
+
+- [Game Review: Super Mario 3d All-stars](/2020/10/mario-3d-all-stars/)
 
 - [](/2020/10/1318238520251621377/)
 
