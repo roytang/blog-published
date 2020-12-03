@@ -11,6 +11,54 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/06/876861645837877248/",
+            "url": "https://mirror.roytang.net/2017/06/876861645837877248/",
+            "path": "/2017/06/876861645837877248/",
+            "title": "",
+            "content_html": "\u003cp\u003etired but cannot sleep / glowing screen calls out to me / soon the dawn draws near #haiku \u003ca href=\"http://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near\"\u003ehttp://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "tired but cannot sleep / glowing screen calls out to me / soon the dawn draws near #haiku http://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near",
+            "date_published": "2017-06-19T17:58:02+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/06/876861645837877248.md"
+            , "tags": ["haiku"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/876861645837877248/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/06/44621849/",
+            "url": "https://mirror.roytang.net/2017/06/44621849/",
+            "path": "/2017/06/44621849/",
+            "title": "MarkLogic node.js api - group by sum",
+            "content_html": "\u003cp\u003eSomething similar to my question here: \u003ca href=\"https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\"\u003ehttps://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI have documents in Marklogic with fields \u003cem\u003ename\u003c/em\u003e and \u003cem\u003eamount\u003c/em\u003e. I want to get the total amount for each name. Basically in SQL it would be\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eselect name, sum(amount) from table group by name\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI have \u003cstrong\u003erange indexes\u003c/strong\u003e for both \u003cem\u003ename\u003c/em\u003e and \u003cem\u003eamount\u003c/em\u003e.\nFor getting sum aggregates, the documentation suggests something like \u003cstrong\u003evaluesBuilder.fromIndexes(\u0026lsquo;amount\u0026rsquo;).aggregates(\u0026lsquo;sum\u0026rsquo;)\u003c/strong\u003e, but this only gets the sum for all records, instead of per name like I want.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
+            "summary": "Something similar to my question here: https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\nI have documents in Marklogic with fields name and amount. I want to get the total amount for each name. Basically in SQL it would be\nselect name, sum(amount) from table group by name  I have range indexes for both name and amount. For getting sum aggregates, the documentation suggests something like valuesBuilder.fromIndexes(\u0026lsquo;amount\u0026rsquo;).aggregates(\u0026lsquo;sum\u0026rsquo;), but this only gets the sum for all records, instead of per name like I want.",
+            "date_published": "2017-06-19T03:27:09+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/06/44621849/index.md"
+            , "tags": ["node.js","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170619T095946-76240521.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170619T213653-44640360.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170620T082102-44647599.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170809T172048-45596982.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/06/10155766048823912/",
             "url": "https://mirror.roytang.net/2017/06/10155766048823912/",
             "path": "/2017/06/10155766048823912/",
@@ -822,40 +870,6 @@
             "source_path": "notes/2017/06/873353776769376256/index.md"
             , "tags": ["BlackPanther"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/873353776769376256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/review-persona-5-you-never-saw-it-coming/",
-            "url": "https://mirror.roytang.net/2017/06/review-persona-5-you-never-saw-it-coming/",
-            "path": "/2017/06/review-persona-5-you-never-saw-it-coming/",
-            "title": "Review: Persona 5 (You Never Saw It Coming)",
-            "content_html": "\u003cp\u003eMy first Persona game was Persona 4 Golden on the Vita \u0026ndash; a fantastic game. After that I dived into Persona 3 Portable and eventually the spin-off games Persona 4 Arena (and Ultimax) and Persona Q on 3DS. So it was no surprise that one of the game releases I was most looking forward to this year would be the next numbered game in the series: Persona 5 on the Playstation 4.\u003c/p\u003e\n\u003cp\u003eLike P4G before it, the focus is on the school life of a young man forced into a new environment, interspersed with some good old JRPG dungeon crawling. You meet a ragtag group of misfits and somehow band together to save all of Japanese society from itself. Or something to that extent. This is just an excuse to dump some screens of P5, so let\u0026rsquo;s \u003ca href=\"#resources\"\u003eget that out of the way\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe JRPG side streamlines a lot of the problems from P4G: the main story dungeons are hand-built JRPG style dungeons and there are save points in between to make dying not so much of a pain. Even on normal difficulty, I still managed to die a few times \u0026ndash; notably to those Angel enemies that tend to suicide when low on life. And they brought back Persona negotiation! I didn\u0026rsquo;t appreciate this too much in \u003cem\u003eShin Megami Tensei IV\u003c/em\u003e as it felt a bit obtuse there, but here the Persona\u0026rsquo;s \u0026ldquo;personality\u0026rdquo; is shown which makes it easier to figure out the \u0026ldquo;correct\u0026rdquo; answers.\u003c/p\u003e\n\u003cp\u003eSince you\u0026rsquo;re supposed to be leading a team of thieves there\u0026rsquo;s also a bit of a \u0026ldquo;stealth system\u0026rdquo; while dungeon crawling. It\u0026rsquo;s not a very deep stealth system, basically just hide behind corners and ambush enemies to gain battle advantage. The only problem is that the camera and the controls don\u0026rsquo;t always agree with your stealth plans, and sometimes the wrong button press can lead you to disaster.\u003c/p\u003e\n\u003cp\u003eThe Phantom Thieves story is okay, although most of the plot is telegraphed ahead of time. I kind of liked P4G\u0026rsquo;s big murder mystery where you had to figure out who among your confidants was a big ‘ol bad guy. Here in P5, it\u0026rsquo;s painfully obvious who sold you out, even if you hadn\u0026rsquo;t noticed his \u0026ldquo;mistake\u0026rdquo; early on. That being said, there is a surprise twist near the end that caught me by surprise.\u003c/p\u003e\n\u003cp\u003eCompared to P4G, Persona 5 comes out at the height of social media, so while I like the P4G\u0026rsquo;s battle theme a bit better, P5\u0026rsquo;s battle music has managed to become a meme of its own:\u003c/p\u003e\n\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/WUWQFnC2zqU\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI must\u0026rsquo;ve seen this video at least 50 times now due to some of my friends (you know who you are).\u003c/p\u003e\n\u003cp\u003eOne thing I dislike about the Persona series is that because of the time management aspect of the game, a lot of things are missable. Since I tend to play RPGs without any guides or walkthroughs the first time around, it\u0026rsquo;s problematic for me. This means that on my first run through I missed completing the Confidants/Social Links, even though when I started the run I told myself I\u0026rsquo;d prioritize them over other activities. Definitely need a second run for the platinum. (Of course, I have yet to platinum P4G either due to a mistake I made during the second run~)\u003c/p\u003e\n\u003cp\u003eIn conclusion: Despite (or maybe because of?) it\u0026rsquo;s ridiculousness, Persona 5 is a great game. Story is tight, and the dungeon crawling has been streamlined a lot. That being said, it\u0026rsquo;s definitely not a game for everyone, mostly because of the style. If you dislike Japanese stuff or anime or anything turn-based, it\u0026rsquo;s definitely not for you. Go play Call of Duty or something. For everyone else, enjoy one of the year\u0026rsquo;s best JRPGs (sorry FF15!)\u003c/p\u003e\n",
-            "summary": "My first Persona game was Persona 4 Golden on the Vita \u0026ndash; a fantastic game. After that I dived into Persona 3 Portable and eventually the spin-off games Persona 4 Arena (and Ultimax) and Persona Q on 3DS. So it was no surprise that one of the game releases I was most looking forward to this year would be the next numbered game in the series: Persona 5 on the Playstation 4.",
-            "date_published": "2017-06-10T01:30:38+00:00",
-            "date_modified": "2020-09-26T21:00:32+08:00",
-            "section": "post",
-            "source_path": "post/2017/06/review-persona-5-you-never-saw-it-coming/index.md"
-            , "tags": ["Review","Gaming"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/161640913350/review-persona-5-you-never-saw-it-coming"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/873354848841945088/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/872821064526581760/",
-            "url": "https://mirror.roytang.net/2017/06/872821064526581760/",
-            "path": "/2017/06/872821064526581760/",
-            "title": "",
-            "content_html": "\u003cp\u003eI wonder if I could ever enjoy watching The Usual Suspects (havent seen it yet), when Keyser Soze\u0026rsquo;s identity is practically internet 101\u003c/p\u003e\n",
-            "summary": "I wonder if I could ever enjoy watching The Usual Suspects (havent seen it yet), when Keyser Soze\u0026rsquo;s identity is practically internet 101",
-            "date_published": "2017-06-08T14:22:12+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/872821064526581760.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/872821064526581760/"}]
             
             
             }
