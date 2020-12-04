@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/04/ekjdthd/",
+            "url": "https://mirror.roytang.net/2019/04/ekjdthd/",
+            "path": "/2019/04/ekjdthd/",
+            "title": "",
+            "content_html": "\u003cp\u003eHoho, I\u0026rsquo;ll be visiting Seattle in June, this is good to hear\u003c/p\u003e\n",
+            "summary": "Hoho, I\u0026rsquo;ll be visiting Seattle in June, this is good to hear",
+            "date_published": "2019-04-10T10:51:34+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/04/ekjdthd/index.md"
+            , "tags": ["todayilearned"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/todayilearned/comments/bbjsfd/til_seattletacoma_international_airport_in/ekjdthd/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "url": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "path": "/2019/04/initial-page-load/",
+            "title": "Initial Page Load",
+            "content_html": "\u003cp\u003eI read a recent \u003ca href=\"https://testkeis.wordpress.com/2019/03/21/wondering-how-much-it-matters-initial-load-of-page/\"\u003eblog post from a friend\u003c/a\u003e about the large page sizes on initial load of a web page. From there, I got to a link which said that the \u003ca href=\"https://speedcurve.com/blog/web-performance-page-bloat/\"\u003eaverage page size nowadays is at least 3MB\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since \u003ca href=\"/2018/11/site-migration-from-wordpress-to-hugo/\"\u003eI migrated to a static site using Hugo\u003c/a\u003e. The homepage of the old Wordpress version of the blog comes with 44 requests totalling a bit over 500KB. And the new homepage lists way more posts too.\u003c/p\u003e\n\u003cp\u003eThe page for individual posts leaves some room for improvement however, coming at 62 requests totalling more than 2MB. The main culprit is Disqus which I use for commenting. At least Disqus uses delayed loading, so the content renders immediately, but that\u0026rsquo;s still a lot of bandwidth that could be saved. Leaving aside the question of \u0026ldquo;Do I really need comments?\u0026rdquo;, I did a quick search if there were pre-existing solutions for optimizing Disqus loading on static sites.\u003c/p\u003e\n\u003cp\u003eThe best hit so far was \u003ca href=\"https://css-tricks.com/lazy-loading-disqus-comments/\"\u003edisqusLoader\u003c/a\u003e, which avoids loading Disqus until the comment area actually scrolls into view. It\u0026rsquo;s a neat idea, but I encountered some JS errors when I did a quick test with it. I\u0026rsquo;ll revisit this again later when I have more time.\u003c/p\u003e\n\u003cp\u003eAn alternative of course would be to write my own JS-based commenting engine to rival Disqus, which seems to have no competition in its particular niche. I like building things so this option naturally came to mind, but in all likelihood I don\u0026rsquo;t have time to do that, and there\u0026rsquo;s a good chance it may end up as heavy as Disqus anyway.\u003c/p\u003e\n\u003cp\u003eNeed to think about this some more.\u003c/p\u003e\n",
+            "summary": "I read a recent blog post from a friend about the large page sizes on initial load of a web page. From there, I got to a link which said that the average page size nowadays is at least 3MB.\nThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since I migrated to a static site using Hugo.",
+            "date_published": "2019-04-10T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/04/initial-page-load/index.md"
+            , "tags": ["Tech Life","Meta"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1115857589227655171/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/04/digging-through-time/",
             "url": "https://mirror.roytang.net/2019/04/digging-through-time/",
             "path": "/2019/04/digging-through-time/",
@@ -822,40 +856,6 @@
             "source_path": "post/2019/03/twitter-app/index.md"
             , "tags": ["Software Development"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110059423018430464/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/meritocracy/",
-            "url": "https://mirror.roytang.net/2019/03/meritocracy/",
-            "path": "/2019/03/meritocracy/",
-            "title": "Meritocracy",
-            "content_html": "\u003cp\u003eThe concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the \u003ca href=\"http://time.com/5549921/college-admissions-bribery-scandal/\"\u003erecent college admissions scandal\u003c/a\u003e in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money. Of course, it was always open knowledge before that one could get their kid admitted to such universities simply by making a huge donation. The recent events apparently crosses some line because the \u0026ldquo;donation\u0026rdquo; was in the form of bribe money to individuals instead of the school itself, but even without them there was no true meritocracy.\u003c/p\u003e\n\u003cp\u003eI went to a specialized high school (and college) that had supposedly merit-based entrance exams as well, such that one could simply not get in without passing the exams. (Athletics-based admissions aren\u0026rsquo;t very popular in this country.) Even in such a system, rich kids still have a significant leg up of course - aside from growing up in an environment that favored them, their parents could also afford to send them to expensive review centers to prep for the exams. I was reminded of this due to a recent thread among my HS batchmates discussing how their kids had to prep for the entrance exams years early because it was much more competitive these days.\u003c/p\u003e\n\u003cp\u003eI used to be a strong believer in meritocracy when I was young (probably due to my educational background), believing it to be an ideal for society to aspire to. The idea is certainly attractive - that we should give the jobs and positions to those who would be able to use them most effectively, for the betterment of society. I later learned that the term orignated in 1958 as a condemnatory word by Michael Young in his work \u0026ldquo;The Rise of the Meritocracy\u0026rdquo;. I realize now that while a pure meritocracy would be nice, it would disadvantage people who are already behind in life due to poverty, sickness or other such challenges. I think that like many things, some sort of balance is better struck, with a \u0026ldquo;meritocracy at large\u0026rdquo; in effect for the most part, but with opportunities promoted for marginalized groups. That is, a meritocracy that favors the poor instead of the rich.\u003c/p\u003e\n\u003cp\u003eAll this meritocract quote reminds me of a quote from the Simpsons\u0026rsquo; villainous Mr Burns who tries to justify cheating in a contest during a company retreat, which gives us a different perspective:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eMr. Burns: Tell me, Simpson, if an opportunity arose for taking a small short-cut, you wouldn\u0026rsquo;t be averse to taking it, would you?\u003c/p\u003e\n\u003cp\u003eHomer: Hmm, not as such.\u003c/p\u003e\n\u003cp\u003eMr. Burns: Neither would I. If you can take advantage of a situation in some way, it\u0026rsquo;s your duty as an American to do it. Why should the race always be to the swift, or the Jumble to the quick-witted? Should they be allowed to win merely because of the gifts God gave them? Well I say, \u0026ldquo;Cheating is the gift man gives himself.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHomer: Mr. Burns, I insist that we cheat!\u003c/p\u003e\n\u003cp\u003eMr. Burns: Excellent!\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "The concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the recent college admissions scandal in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money.",
-            "date_published": "2019-03-24T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/meritocracy/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "url": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "path": "/2019/03/ej8tj5e/",
-            "title": "",
-            "content_html": "\u003cp\u003eYou are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well\u003c/p\u003e\n",
-            "summary": "You are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well",
-            "date_published": "2019-03-24T03:52:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/ej8tj5e/index.md"
-            , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/b4og0x/marvel_comics_announces_historic_xmen_milestone/ej8tj5e/"}]
             
             
             }
