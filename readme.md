@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Dress Codes](https://mirror.roytang.net/2020/12/dress-codes/)
 - [Ephemeral Echoes](https://mirror.roytang.net/2020/12/ephemeral-echoes/)
 - [Game Review: Super Mario Odyssey](https://mirror.roytang.net/2020/12/game-review-super-mario-odyssey/)
 - [Book Review: Rhythm of War by Sanderson, Brandon](https://mirror.roytang.net/2020/12/rhythm-of-war/)
 - [We Shouldn&#39;t Need Heroes](https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/)
-- [Weeknotes 2020-11-29](https://mirror.roytang.net/2020/11/weeknotes-2020-11-29/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

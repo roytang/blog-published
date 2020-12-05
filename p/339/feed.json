@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/10/weekend-project-1-mtg-utils-decklist-sharing-tool/",
+            "url": "https://mirror.roytang.net/2009/10/weekend-project-1-mtg-utils-decklist-sharing-tool/",
+            "path": "/2009/10/weekend-project-1-mtg-utils-decklist-sharing-tool/",
+            "title": "Weekend Project #1: MTG Utils Decklist Sharing Tool",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been meaning to write a nontrivial app using \u003ca href=\"http://appengine.google.com/\"\u003eGoogle App Engin\u003c/a\u003ee for a while, and here\u0026rsquo;s my first weekend project: \u003ca href=\"http://mtg-utils.appspot.com/deck/\"\u003eDecklist Sharing Tool\u003c/a\u003e, an tool for MTG players to share decklists online.\u003c/p\u003e\n\u003cp\u003eI had the decklist parsing and autocarding code available for a while (and used on my MTG related posts), so that part was fairly easy, I got it done under 3 hours I think. The rest of the time (around 5-ish hours) was spent on glue logic, fixing minor bugs, working on HTML layout, cleaning up text, etc. It feels pretty good for a one manday effort, let\u0026rsquo;s see if it breaks down. Not the best code I\u0026rsquo;ve ever written though (until the latest upload the main class was named \u0026ldquo;hello.py\u0026rdquo;)\u003c/p\u003e\n\u003cp\u003eSome notes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe Django template engine included with GAE seems to be earlier than version 1, as the escapejs filter wasn\u0026rsquo;t available and I had to write it myself. Still, being familiar with the Django template engine helped a lot\u003c/li\u003e\n\u003cli\u003eWordPress.com blogs don\u0026rsquo;t allow Javascript inside the posts, so the blog sharing code I provide won\u0026rsquo;t work there. It works on Blogger though. I\u0026rsquo;ll look for a workaround\u0026hellip; (iframes?)\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;ve yet to try using memcache, so the current version doesn\u0026rsquo;t cache anything, I mean to try it in a future version\u003c/li\u003e\n\u003cli\u003eyes, I put adsense ads there. I was like, why not? 😀\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eUpdate May 2020: The app used to be deployed on Google App Engine, but is no longer available. I\u0026rsquo;ve since uploaded the code to Github at \u003ca href=\"https://github.com/roytang/mtg-utils\"\u003ehttps://github.com/roytang/mtg-utils\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve been meaning to write a nontrivial app using Google App Engine for a while, and here\u0026rsquo;s my first weekend project: Decklist Sharing Tool, an tool for MTG players to share decklists online.\nI had the decklist parsing and autocarding code available for a while (and used on my MTG related posts), so that part was fairly easy, I got it done under 3 hours I think. The rest of the time (around 5-ish hours) was spent on glue logic, fixing minor bugs, working on HTML layout, cleaning up text, etc.",
+            "date_published": "2009-10-03T18:18:03+00:00",
+            "date_modified": "2020-05-04T03:35:10+08:00",
+            "section": "post",
+            "source_path": "post/2009/10/weekend-project-1-mtg-utils-decklist-sharing-tool/index.md"
+            , "tags": ["Software Development"]
+            
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-20091004112611-wp-Some anonymous person.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/10/4584080040/",
             "url": "https://mirror.roytang.net/2009/10/4584080040/",
             "path": "/2009/10/4584080040/",
@@ -850,23 +872,6 @@
             "source_path": "notes/2009/09/4124100660.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4124100660/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4123202618/",
-            "url": "https://mirror.roytang.net/2009/09/4123202618/",
-            "path": "/2009/09/4123202618/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/habeo/\"\u003e@habeo\u003c/a\u003e the betterment of society as a whole\n\u003ca href=\"https://twitter.com/roytang/\"\u003e@roytang\u003c/a\u003e I know. shouldn\u0026rsquo;t we therefore think about alternative approaches? Cramming them through school is not necessarily to their benefit\u003c/p\u003e\n",
-            "summary": "@habeo the betterment of society as a whole @roytang I know. shouldn\u0026rsquo;t we therefore think about alternative approaches? Cramming them through school is not necessarily to their benefit",
-            "date_published": "2009-09-20T13:14:01+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4123202618/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4123202618/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/4123272725/"}]
             
             
             }
