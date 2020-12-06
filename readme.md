@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Perfect Strangers](https://mirror.roytang.net/2020/12/perfect-strangers/)
 - [Dress Codes](https://mirror.roytang.net/2020/12/dress-codes/)
 - [Ephemeral Echoes](https://mirror.roytang.net/2020/12/ephemeral-echoes/)
 - [Game Review: Super Mario Odyssey](https://mirror.roytang.net/2020/12/game-review-super-mario-odyssey/)
 - [Book Review: Rhythm of War by Sanderson, Brandon](https://mirror.roytang.net/2020/12/rhythm-of-war/)
-- [We Shouldn&#39;t Need Heroes](https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [5 Dec 2020 10:33am](https://mirror.roytang.net/2020/12/1335170496153841664/): @visakanv It kind of bothers me that the first tweet in that thread says “2019 tweets”. I know that refers to the quoted 2019 thread, but you otherwise typically start your threads with context for the rest of the thread
 - [2 Dec 2020 3:23am](https://mirror.roytang.net/2020/12/1334095939020046336/): This is how my year sounded on @Spotify. Get your 2020 Wrapped now #2020Wrapped https://open.spotify.com/wrapped/share-fdd70c18adb14e70a29521ce4fc85e96-1080x1920?lang=en&amp;si=Wrpf3LjSQl2kQ6vLM3Olpw
 @Spotify basically exactly the same as last year&rsquo;s lol
 Quoted roytang&#39;s tweet:   This is how my year sounded on Spotify. Get your 2019 Wrapped #spotifywrapped https://open.spotify.com/wrapped/ddf3e4a1ee43a067d9e011917a96978cb404b9e4  
@@ -37,7 +38,6 @@ Quoted roytang&#39;s tweet:   This is how my year sounded on Spotify. Get your 2
 As predicted; I was indeed terrible. Draft seemed to go well enough, but I made too many mistakes I guess? Seems like this format is not for me.
 YT: https://www.youtube.com/watch?v=S15AgtyStzw
 - [26 Nov 2020 5:46am](https://mirror.roytang.net/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/): I wonder if any other Django devs always forgot what their local env&rsquo;s superuser password is and just createsuperuser again every so often
-- [23 Nov 2020 1:09pm](https://mirror.roytang.net/2020/11/1330861073247813634/): @art_abon Ranma has a much bigger cast that can cause hijinx. Dito it&rsquo;s always either Larry or Balki (and Larry most of the time)
 
 [View all notes](https://mirror.roytang.net/notes)
 
