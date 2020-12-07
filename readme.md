@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2020-12-06](https://mirror.roytang.net/2020/12/weeknotes-2020-12-06/)
 - [Perfect Strangers](https://mirror.roytang.net/2020/12/perfect-strangers/)
 - [Dress Codes](https://mirror.roytang.net/2020/12/dress-codes/)
 - [Ephemeral Echoes](https://mirror.roytang.net/2020/12/ephemeral-echoes/)
 - [Game Review: Super Mario Odyssey](https://mirror.roytang.net/2020/12/game-review-super-mario-odyssey/)
-- [Book Review: Rhythm of War by Sanderson, Brandon](https://mirror.roytang.net/2020/12/rhythm-of-war/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
