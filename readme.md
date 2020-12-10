@@ -29,15 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [9 Dec 2020 6:42pm](https://mirror.roytang.net/2020/12/1336743110601162752/): @Westraid Why do you want to work holidays?
+- [9 Dec 2020 8:04am](https://mirror.roytang.net/2020/12/1336703174711803906/): The internet needs to stop telling me things about Tom Holland&rsquo;s 3rd spider-man movie :/
+Also, the last time a live action Spider-Man movie tried to tell us there was a multiverse&hellip; well you know what happened there
+- [9 Dec 2020 8:10am](https://mirror.roytang.net/2020/12/1336584083476946944/): I made the most of 2020 by learning Spanish on Duolingo. Check out my progress! #Duolingo365 https://2020.duolingo.com/share.html?rid=BDHTZTB5CWWKTAN665AG5I7KBY
 - [5 Dec 2020 10:33am](https://mirror.roytang.net/2020/12/1335170496153841664/): @visakanv It kind of bothers me that the first tweet in that thread says “2019 tweets”. I know that refers to the quoted 2019 thread, but you otherwise typically start your threads with context for the rest of the thread
 - [2 Dec 2020 3:23am](https://mirror.roytang.net/2020/12/1334095939020046336/): This is how my year sounded on @Spotify. Get your 2020 Wrapped now #2020Wrapped https://open.spotify.com/wrapped/share-fdd70c18adb14e70a29521ce4fc85e96-1080x1920?lang=en&amp;si=Wrpf3LjSQl2kQ6vLM3Olpw
 @Spotify basically exactly the same as last year&rsquo;s lol
 Quoted roytang&#39;s tweet:   This is how my year sounded on Spotify. Get your 2019 Wrapped #spotifywrapped https://open.spotify.com/wrapped/ddf3e4a1ee43a067d9e011917a96978cb404b9e4  
-- [2 Dec 2020 4:42am](https://mirror.roytang.net/2020/12/1333994890338832384/): It&rsquo;s only the 1st week of December and we&rsquo;re already getting &ldquo;best of 2020&rdquo; lists. The year isn&rsquo;t up yet, who knows what surprises await!
-- [30 Nov 2020 5:48am](https://mirror.roytang.net/2020/11/1333407638336532480/): Streaming some Kaladesh Remastered draft! Watch me be terrible https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgkld
-As predicted; I was indeed terrible. Draft seemed to go well enough, but I made too many mistakes I guess? Seems like this format is not for me.
-YT: https://www.youtube.com/watch?v=S15AgtyStzw
-- [26 Nov 2020 5:46am](https://mirror.roytang.net/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/): I wonder if any other Django devs always forgot what their local env&rsquo;s superuser password is and just createsuperuser again every so often
 
 [View all notes](https://mirror.roytang.net/notes)
 
