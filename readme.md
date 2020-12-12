@@ -29,12 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [11 Dec 2020 5:47pm](https://mirror.roytang.net/2020/12/1337453916162703360/): Thread! Author @sparrowtrooper and I are giving away 3 signed copies &amp; 5 eBook copies of her book! @David__Cage @ChrisTheHoff and I were quoted on the back! It&rsquo;s wild. RT this for a chance to win! Winners will be selected after this tweet gets 100 retweets https://www.amazon.com/How-Games-Get-Made-Stories/dp/1636765483/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=
 - [10 Dec 2020 11:43pm](https://mirror.roytang.net/2020/12/1337181083952017412/): Star Wars looking to overtake Star Trek in number of TV series within the next two years
 - [9 Dec 2020 6:42pm](https://mirror.roytang.net/2020/12/1336743110601162752/): @Westraid Why do you want to work holidays?
 - [9 Dec 2020 8:04am](https://mirror.roytang.net/2020/12/1336703174711803906/): The internet needs to stop telling me things about Tom Holland&rsquo;s 3rd spider-man movie :/
 Also, the last time a live action Spider-Man movie tried to tell us there was a multiverse&hellip; well you know what happened there
 - [9 Dec 2020 8:10am](https://mirror.roytang.net/2020/12/1336584083476946944/): I made the most of 2020 by learning Spanish on Duolingo. Check out my progress! #Duolingo365 https://2020.duolingo.com/share.html?rid=BDHTZTB5CWWKTAN665AG5I7KBY
-- [5 Dec 2020 10:33am](https://mirror.roytang.net/2020/12/1335170496153841664/): @visakanv It kind of bothers me that the first tweet in that thread says “2019 tweets”. I know that refers to the quoted 2019 thread, but you otherwise typically start your threads with context for the rest of the thread
 
 [View all notes](https://mirror.roytang.net/notes)
 
