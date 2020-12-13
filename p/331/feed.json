@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2010/02/8923399162/",
+            "url": "https://mirror.roytang.net/2010/02/8923399162/",
+            "path": "/2010/02/8923399162/",
+            "title": "",
+            "content_html": "\u003cp\u003eI now have Google Buzz. Now what?\u003c/p\u003e\n",
+            "summary": "I now have Google Buzz. Now what?",
+            "date_published": "2010-02-10T23:02:12+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/02/8923399162.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/8923399162/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/296422895980"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2010/02/8901038256/",
             "url": "https://mirror.roytang.net/2010/02/8901038256/",
             "path": "/2010/02/8901038256/",
@@ -846,31 +863,6 @@
             , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2063935/javascript-table-select/2063983#2063983"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/01/2062066/",
-            "url": "https://mirror.roytang.net/2010/01/2062066/",
-            "path": "/2010/01/2062066/",
-            "title": "Far future expire header and HTTP 304",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to optimize the loading time of a website. One of the things I\u0026rsquo;ve done is set a far-futures expires header for static content so that they are cached (as described by \u003ca href=\"http://developer.yahoo.com/performance/rules.html#expires\"\u003eYahoo\u003c/a\u003e). However, even though they are cached, the browser still sends a request and gets back a 304 (Not Modified) response for that resource.\u003c/p\u003e\n\u003cp\u003eI realize the 304 response is very small and probably has minimal performance effect, but is there a way to make it such that the browser will no longer send the request at all and just always use the cache for that resource?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to optimize the loading time of a website. One of the things I\u0026rsquo;ve done is set a far-futures expires header for static content so that they are cached (as described by Yahoo). However, even though they are cached, the browser still sends a request and gets back a 304 (Not Modified) response for that resource.\nI realize the 304 response is very small and probably has minimal performance effect, but is there a way to make it such that the browser will no longer send the request at all and just always use the cache for that resource?",
-            "date_published": "2010-01-14T03:57:51+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/01/2062066/index.md"
-            , "tags": ["http","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2062066/far-future-expire-header-and-http-304"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/2062066/far-future-expire-header-and-http-304",
-                    "source_file": "comment-20100114T040813-1990450.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/2062066/far-future-expire-header-and-http-304",
-                    "source_file": "comment-20100114T042534-2062148.json"
-                }
-            ]
             }
         
     ]

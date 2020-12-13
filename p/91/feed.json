@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/08/897074778862792708/",
+            "url": "https://mirror.roytang.net/2017/08/897074778862792708/",
+            "path": "/2017/08/897074778862792708/",
+            "title": "",
+            "content_html": "\u003cp\u003eFor a moment I wondered what the bears were paying close attention to\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/inquirerdotnet/status/897029714379800576'\u003einquirerdotnet\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    PH consulate in Guam/Northern Mariana islands declares Alert Level 1: \u0026lsquo;situation is out of ordinary and bears paying close attention to\u0026rsquo;\n\u003c/blockquote\u003e\n",
+            "summary": "For a moment I wondered what the bears were paying close attention to\nQuoted inquirerdotnet\u0026#39;s tweet:   PH consulate in Guam/Northern Mariana islands declares Alert Level 1: \u0026lsquo;situation is out of ordinary and bears paying close attention to\u0026rsquo;  ",
+            "date_published": "2017-08-14T12:37:48+00:00",
+            "date_modified": "2020-07-14T23:20:57+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/897074778862792708/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/897074778862792708/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/08/897070547128926208/",
             "url": "https://mirror.roytang.net/2017/08/897070547128926208/",
             "path": "/2017/08/897070547128926208/",
@@ -846,31 +863,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893715886795661312/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/45507423/",
-            "url": "https://mirror.roytang.net/2017/08/45507423/",
-            "path": "/2017/08/45507423/",
-            "title": "MarkLogic node.js - is it possible to support a derived value in parseBindings?",
-            "content_html": "\u003cp\u003eWe have a search application using MarkLogic node.js. We use parsedQuery like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e            qb.parsedFrom(prop.search, \n            qb.parseBindings(\n                qb.word('name', qb.bind('name')),\n                qb.word('birthdate', qb.bind('birthdate')),\n                qb.range('count', qb.datatype('float'), qb.bind('count'))\n            )\n        )\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly. We can\u0026rsquo;t store the age in the documents since the age changes depending on the current date.\u003c/p\u003e\n\u003cp\u003eIs this possible and if so, how? If it matters, we are using ML8\u003c/p\u003e\n",
-            "summary": "We have a search application using MarkLogic node.js. We use parsedQuery like this:\n qb.parsedFrom(prop.search, qb.parseBindings( qb.word('name', qb.bind('name')), qb.word('birthdate', qb.bind('birthdate')), qb.range('count', qb.datatype('float'), qb.bind('count')) ) )  The above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly.",
-            "date_published": "2017-08-04T12:55:30+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/45507423/index.md"
-            , "tags": ["marklogic","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
-                    "source_file": "comment-20170804T125909-45507502.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
-                    "source_file": "comment-20170807T174517-45552786.json"
-                }
-            ]
             }
         
     ]
