@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-12-13](/2020/12/weeknotes-2020-12-13/)
+
 - [Weeknotes 2020-12-06](/2020/12/weeknotes-2020-12-06/)
 
 - [Weeknotes 2020-11-29](/2020/11/weeknotes-2020-11-29/)

@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2008/11/1022726596/",
+            "url": "https://mirror.roytang.net/2008/11/1022726596/",
+            "path": "/2008/11/1022726596/",
+            "title": "",
+            "content_html": "\u003cp\u003e24 Redemption (Season 7) Episode 1\u003c/p\u003e\n",
+            "summary": "24 Redemption (Season 7) Episode 1",
+            "date_published": "2008-11-25T14:32:58+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/11/1022726596.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1022726596/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/",
+            "url": "https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/",
+            "path": "/2008/11/django-update-wordpress-import-and-more/",
+            "title": "Django Update -- WordPress Import and More",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I\u0026rsquo;m coding. I\u0026rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.\u003c/p\u003e\n\u003cp\u003eSince I was running the script repeatedly, I had to figure out how to easily run it from the command line, without having to run it from inside manage.py shell. After some searching, I found that what I needed to do was set an environment variable DJANGO_SETTINGS_FILE to point to my settings file. After that, the importer script could be run repeatedly.\u003c/p\u003e\n\u003cp\u003eAlso made a few tweaks to my dev copy:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eModified URL mapping to follow the permalinks of the old blog (so that people linking to me don\u0026rsquo;t suddenly have broken links)\u003c/li\u003e\n\u003cli\u003eAdded a tag cloud (Still using django-tagging)\u003c/li\u003e\n\u003cli\u003eAdded markdown support to the admin maintenance screen. I used to think I would need to code my own form for posting, but I think I can live with just using the admin-provided one (initially at least)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI plan to migrate my main blog over once I take my Christmas break (hopefully 2nd week of December)\u003c/p\u003e\n\u003cp\u003eStuff to do:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eUse clean, non-hardcoded urls (url template tag and reverse())\u003c/li\u003e\n\u003cli\u003eCustomize the admin screen for posting\u003c/li\u003e\n\u003cli\u003eClean up the layout and templates\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "I\u0026rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I\u0026rsquo;m coding. I\u0026rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.\nSince I was running the script repeatedly, I had to figure out how to easily run it from the command line, without having to run it from inside manage.",
+            "date_published": "2008-11-23T00:04:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/11/django-update-wordpress-import-and-more/index.md"
+            , "tags": ["royondjango","django","python","wordpress","software development"]
+            , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/11/django-update-wordpress-import-and-more.html"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2008/11/ptq-kyoto-i/",
             "url": "https://mirror.roytang.net/2008/11/ptq-kyoto-i/",
             "path": "/2008/11/ptq-kyoto-i/",
@@ -1025,40 +1059,6 @@
             , "tags": ["games","flash"]
             
             ,"link": "http://woodgears.ca/eyeball/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/956549226/",
-            "url": "https://mirror.roytang.net/2008/10/956549226/",
-            "path": "/2008/10/956549226/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe internets need more content.\u003c/p\u003e\n",
-            "summary": "The internets need more content.",
-            "date_published": "2008-10-12T15:13:44+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/10/956549226.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/956549226/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/83-free-d-d-adventures-dungeon-mastering-dungeons-and-dragons-blog-dm-tips/",
-            "url": "https://mirror.roytang.net/2008/10/83-free-d-d-adventures-dungeon-mastering-dungeons-and-dragons-blog-dm-tips/",
-            "path": "/2008/10/83-free-d-d-adventures-dungeon-mastering-dungeons-and-dragons-blog-dm-tips/",
-            "title": "83 free D\u0026D adventures - Dungeon Mastering - Dungeons and Dragons blog - DM tips...",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2008-10-11T23:34:11+00:00",
-            "date_modified": "2020-01-29T00:26:29+08:00",
-            "section": "links",
-            "source_path": "links/2008/10/83-free-d-d-adventures-dungeon-mastering-dungeons-and-dragons-blog-dm-tips/index.md"
-            , "tags": ["games"]
-            
-            ,"link": "http://www.dungeonmastering.com/campaigns-adventures/83-free-dd-adventures"
             
             }
         
