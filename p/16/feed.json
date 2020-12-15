@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/02/1232493019292557313/",
+            "url": "https://mirror.roytang.net/2020/02/1232493019292557313/",
+            "path": "/2020/02/1232493019292557313/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis only works today\u003c/p\u003e\n",
+            "summary": "This only works today",
+            "date_published": "2020-02-26T02:30:09+00:00",
+            "date_modified": "2020-02-26T02:45:14+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/02/1232493019292557313/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1232493019292557313/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/02/tumblr-cloudflare/",
+            "url": "https://mirror.roytang.net/2020/02/tumblr-cloudflare/",
+            "path": "/2020/02/tumblr-cloudflare/",
+            "title": "Apparently Tumblr custom domains don't work well with Cloudflare",
+            "content_html": "\u003cp\u003eI used to host my tumblr blog on a custom domain at \u003ca href=\"https://tumblr.roytang.net\"\u003etumblr.roytang.net\u003c/a\u003e. That was working fine for a while.\u003c/p\u003e\n\u003cp\u003eThen recently I decided to play around with having \u003ca href=\"https://www.cloudflare.com/\"\u003eCloudflare\u003c/a\u003e in front of my site (might be helpful on the off-chance I ever manage to go viral somehow). Not yet sure whether Cloudflare was a good idea, but apparently it doesn\u0026rsquo;t play well with Tumblr\u0026rsquo;s custom domains, so the above custom tumblr URL got turned off.\u003c/p\u003e\n\u003cp\u003eNow, I don\u0026rsquo;t actually care about the tumblr blog anymore and have no intention of updating it further. All the content from that blog has already been \u003ca href=\"/source/tumblr\"\u003eimported into this site\u003c/a\u003e anyway. But those imported posts still have a link pointing back to the original URL. I\u0026rsquo;m not a fan of link rot on the web, and I want to minimize it as much as possible, so I was OC\u0026rsquo;ed into fixing it.\u003c/p\u003e\n\u003cp\u003eFirst idea was to just find-and-replace all the old links on this site to point to where the tumblr blog now lives. It would be super straightforward since it\u0026rsquo;s just file updates. But other sources out in the wild may be pointing back to the original URL, and I don\u0026rsquo;t want to give them link rot either.\u003c/p\u003e\n\u003cp\u003eI tried to figure out a solution with the Tumblr and Cloudflare DNS settings for around ten minutes before saying \u0026ldquo;screw it\u0026rdquo; and set up a redirector from \u003ca href=\"https://tumblr.roytang.net\"\u003etumblr.roytang.net\u003c/a\u003e to \u003ca href=\"roytang.tumblr.com\"\u003eroytang.tumblr.com\u003c/a\u003e, which is where the tumblr blog now lives. It was a simple \u003ccode\u003e.htaccess\u003c/code\u003e redirect like so:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eRewriteRule ^(.*)$ https://roytang.tumblr.com/%{REQUEST_URI} [R=301,L]\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e(Someday when I migrate off shared hosting/apache, I will have to live with rewriting all of these .htaccess workarounds to work with Nginx or such.)\u003c/p\u003e\n\u003cp\u003eSo now all the old links just automagically redirect to the appropriate post as expected.\u003c/p\u003e\n\u003cp\u003e(Just for fun, I also changed the tumblr\u0026rsquo;s theme, since I was already logged in to the dashboard anyway.)\u003c/p\u003e\n",
+            "summary": "I used to host my tumblr blog on a custom domain at tumblr.roytang.net. That was working fine for a while.\nThen recently I decided to play around with having Cloudflare in front of my site (might be helpful on the off-chance I ever manage to go viral somehow). Not yet sure whether Cloudflare was a good idea, but apparently it doesn\u0026rsquo;t play well with Tumblr\u0026rsquo;s custom domains, so the above custom tumblr URL got turned off.",
+            "date_published": "2020-02-26T00:00:00+00:00",
+            "date_modified": "2020-02-26T03:15:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/02/tumblr-cloudflare/index.md"
+            , "tags": ["tech life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1232503072217276417/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/02/current-status/",
+            "url": "https://mirror.roytang.net/2020/02/current-status/",
+            "path": "/2020/02/current-status/",
+            "title": "What Am I Doing Now?",
+            "content_html": "\u003ch3 id=\"summary\"\u003eSummary:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m kind of in-between things at the moment, so I\u0026rsquo;m exploring various personal projects and things I\u0026rsquo;d like to be doing.\u003c/li\u003e\n\u003cli\u003eWork/employment is not a priority.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"current-location\"\u003eCurrent Location:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003estill living in Quezon City, Philippines.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"work\"\u003eWork\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time.\u003c/li\u003e\n\u003cli\u003eNo specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.\u003c/li\u003e\n\u003cli\u003eI am very picky with taking on new work, and I usually have very few hours I\u0026rsquo;m willing to dedicate to any one client, and will usually prefer interesting work. I don\u0026rsquo;t consider work nor full-time employment to be an important part of my identity and it is definitely not a priority.\u003c/li\u003e\n\u003cli\u003eNonetheless, if you have a work opportunity you feel I might like, feel free to contact me, maybe we\u0026rsquo;ll get lucky.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"how-am-i-spending-my-time\"\u003eHow am I spending my time\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m working on multiple personal projects, most of which I don\u0026rsquo;t want to talk about. The only public one is this website/blog. I write as often as I can and am constantly trying to update this site to make it better or more to my liking.\u003c/li\u003e\n\u003cli\u003eI try not to go out and about Metro Manila too much, as I hate the traffic, but if you are an old friend I haven\u0026rsquo;t seen in a while, feel free to ping me\u003c/li\u003e\n\u003cli\u003eI still do a lot of gaming\u003c/li\u003e\n\u003cli\u003eI watch a \u003ca href=\"/tags/watching-lately\"\u003elot of TV and movies\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eI still do \u003ca href=\"/2013/03/scenes-from-a-quiz-night/\"\u003equiz nights\u003c/a\u003e, a few times a month\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Summary:  I\u0026rsquo;m kind of in-between things at the moment, so I\u0026rsquo;m exploring various personal projects and things I\u0026rsquo;d like to be doing. Work/employment is not a priority.  Current Location:  still living in Quezon City, Philippines.  Work  I still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time. No specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.",
+            "date_published": "2020-02-26T00:00:00+00:00",
+            "date_modified": "2020-05-04T05:59:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/02/current-status/index.md"
+            , "tags": ["current-status"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/page/about/now/",
+            "url": "https://mirror.roytang.net/page/about/now/",
+            "path": "/page/about/now/",
+            "title": "What Am I Doing Now?",
+            "content_html": "\u003ch2 id=\"what-am-i-doing-these-days\"\u003eWhat Am I Doing These Days?\u003c/h2\u003e\n\n\n\n\u003ch3 id=\"summary\"\u003eSummary:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eLike every other sensible person in the pandemic, I am staying hunkered down at home all of the time. Really only going out to get groceries and meds.\u003c/li\u003e\n\u003cli\u003eWork/employment is not a priority.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"current-location\"\u003eCurrent Location:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003estill living in Quezon City, Philippines.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"work\"\u003eWork\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time.\u003c/li\u003e\n\u003cli\u003eNo specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.\u003c/li\u003e\n\u003cli\u003eI am very picky with taking on new work, and I usually have very few hours I\u0026rsquo;m willing to dedicate to any one client, and will usually prefer interesting work. I don\u0026rsquo;t consider work nor full-time employment to be an important part of my identity and it is definitely not a priority.\u003c/li\u003e\n\u003cli\u003eNonetheless, if you have a work opportunity you feel I might like, feel free to contact me, maybe we\u0026rsquo;ll get lucky.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"how-am-i-spending-my-time\"\u003eHow am I spending my time\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m working on multiple personal projects, most of which I don\u0026rsquo;t want to talk about. The only public one is this website/blog. I write as often as I can and am constantly trying to update this site to make it better or more to my liking.\u003c/li\u003e\n\u003cli\u003eI still do a lot of gaming\u003c/li\u003e\n\u003cli\u003eQuiz team does online \u003ca href=\"/2013/03/scenes-from-a-quiz-night/\"\u003equiz nights\u003c/a\u003e, a few times a month\u003c/li\u003e\n\u003cli\u003eCheck the \u003ca href=\"/tags/weeknotes\"\u003eweeknotes\u003c/a\u003e for regular updates.\u003c/li\u003e\n\u003c/ul\u003e\n\n\n\n\u003chr\u003e\n\u003cp\u003eThis is a \u003ca href=\"https://nownownow.com/about\"\u003enow page\u003c/a\u003e. Check previous entries under the \u003ca href=\"/tags/current-status\"\u003ecurrent-status tag\u003c/a\u003e.\u003c/p\u003e\n",
+            "summary": "What Am I Doing These Days? Summary:  Like every other sensible person in the pandemic, I am staying hunkered down at home all of the time. Really only going out to get groceries and meds. Work/employment is not a priority.  Current Location:  still living in Quezon City, Philippines.  Work  I still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time. No specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.",
+            "date_published": "2020-02-26T00:00:00+00:00",
+            "date_modified": "2020-05-04T05:59:02+08:00",
+            "section": "page",
+            "source_path": "page/about/now.md"
+            
+            
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/02/1232332237300887552/",
             "url": "https://mirror.roytang.net/2020/02/1232332237300887552/",
             "path": "/2020/02/1232332237300887552/",
@@ -809,74 +877,6 @@
             "source_path": "photos/2020/02/1227050279989702656/index.md"
             , "tags": ["duolingo"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1227050279989702656/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/02/1227026596571205632/",
-            "url": "https://mirror.roytang.net/2020/02/1227026596571205632/",
-            "path": "/2020/02/1227026596571205632/",
-            "title": "",
-            "content_html": "\u003cp\u003eHad an ecg taken this morning. Briefly considered pretending to be receiving electric shocks before reining in my chaotic side\u003c/p\u003e\n",
-            "summary": "Had an ecg taken this morning. Briefly considered pretending to be receiving electric shocks before reining in my chaotic side",
-            "date_published": "2020-02-11T00:28:32+00:00",
-            "date_modified": "2020-02-11T00:30:13+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/02/1227026596571205632/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1227026596571205632/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/02/web-design-the-first-100-years/",
-            "url": "https://mirror.roytang.net/2020/02/web-design-the-first-100-years/",
-            "path": "/2020/02/web-design-the-first-100-years/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-02-10T14:23:53+00:00",
-            "date_modified": "2020-02-10T15:00:14+00:00",
-            "section": "links",
-            "source_path": "links/2020/02/web-design-the-first-100-years/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://idlewords.com/talks/web_design_first_100_years.htm"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1226881287178399745/"}]
-            ,"link": "https://idlewords.com/talks/web_design_first_100_years.htm"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/02/web-bloat/",
-            "url": "https://mirror.roytang.net/2020/02/web-bloat/",
-            "path": "/2020/02/web-bloat/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-02-10T11:10:31+00:00",
-            "date_modified": "2020-02-10T11:30:12+00:00",
-            "section": "links",
-            "source_path": "links/2020/02/web-bloat/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"http://danluu.com/web-bloat/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1226828465673867264/"}]
-            ,"link": "http://danluu.com/web-bloat/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/02/1226823567360217091/",
-            "url": "https://mirror.roytang.net/2020/02/1226823567360217091/",
-            "path": "/2020/02/1226823567360217091/",
-            "title": "",
-            "content_html": "\u003cp\u003eI had a very long convo with globe customer support via messenger about that unliBB thing (took 3 days because they took so long to respond between messages). Adding new charges to a bill without confirmation should be illegal\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/momblogger/status/1226816225826590721'\u003emomblogger\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003ca href=\"https://twitter.com/talk2GLOBE/\"\u003e@talk2GLOBE\u003c/a\u003e hello. I did not subscribe to amazon Prime. It was a trial period. Pls remove it. Also unliBB. WHY DO you do this ?\n\u003c/blockquote\u003e\n",
-            "summary": "I had a very long convo with globe customer support via messenger about that unliBB thing (took 3 days because they took so long to respond between messages). Adding new charges to a bill without confirmation should be illegal\nQuoted momblogger\u0026#39;s tweet:   @talk2GLOBE hello. I did not subscribe to amazon Prime. It was a trial period. Pls remove it. Also unliBB. WHY DO you do this ?  ",
-            "date_published": "2020-02-10T11:01:46+00:00",
-            "date_modified": "2020-02-10T11:15:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/02/1226823567360217091/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1226823567360217091/"}]
             
             
             }

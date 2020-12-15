@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [How Not to Mentor Software Developers](https://mirror.roytang.net/2020/12/how-not-to-mentor-software-developers/)
 - [Weeknotes 2020-12-13](https://mirror.roytang.net/2020/12/weeknotes-2020-12-13/)
 - [Weeknotes 2020-12-06](https://mirror.roytang.net/2020/12/weeknotes-2020-12-06/)
 - [Perfect Strangers](https://mirror.roytang.net/2020/12/perfect-strangers/)
 - [Dress Codes](https://mirror.roytang.net/2020/12/dress-codes/)
-- [Ephemeral Echoes](https://mirror.roytang.net/2020/12/ephemeral-echoes/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,16 +29,18 @@ Latest shared links:
 Latest notes:
     
 
+- [15 Dec 2020 4:46am](https://mirror.roytang.net/2020/12/1338707102395584512/): Cancel niyo na muna:
+❌Pagpunta sa gym, coffee shop, indoor resto, mall, masisikip na lugar
+❌Pakikipagkita sa jowa, barkada, kamag-anak
+Celebrate at home kung ayaw niyong may magkasakit o malagas sa pamilya niyo. Kahit may pera kayo kung puno ang ospital, di kayo magagamot.
+- [14 Dec 2020 8:20am](https://mirror.roytang.net/2020/12/1338398359619469314/): @rovietoosin naku madaming pera jan ano lol
+- [14 Dec 2020 7:47am](https://mirror.roytang.net/2020/12/1338390255959883777/): @rovietoosin San ka na lumipat?
 - [13 Dec 2020 3:56am](https://mirror.roytang.net/2020/12/1337969729902821376/): RTing so I know to clean up my mac later
 Quoted lorenb&#39;s tweet:   So it turns out that Google Chrome was making everything on my computer slow even when it wasn’t running, because it installs something called Keystone which is basically malware.
 I made a website because this shouldn’t happen:
 https://chromeisbad.com
  
 - [11 Dec 2020 5:47pm](https://mirror.roytang.net/2020/12/1337453916162703360/): Thread! Author @sparrowtrooper and I are giving away 3 signed copies &amp; 5 eBook copies of her book! @David__Cage @ChrisTheHoff and I were quoted on the back! It&rsquo;s wild. RT this for a chance to win! Winners will be selected after this tweet gets 100 retweets https://www.amazon.com/How-Games-Get-Made-Stories/dp/1636765483/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=
-- [10 Dec 2020 11:43pm](https://mirror.roytang.net/2020/12/1337181083952017412/): Star Wars looking to overtake Star Trek in number of TV series within the next two years
-- [9 Dec 2020 6:42pm](https://mirror.roytang.net/2020/12/1336743110601162752/): @Westraid Why do you want to work holidays?
-- [9 Dec 2020 8:04am](https://mirror.roytang.net/2020/12/1336703174711803906/): The internet needs to stop telling me things about Tom Holland&rsquo;s 3rd spider-man movie :/
-Also, the last time a live action Spider-Man movie tried to tell us there was a multiverse&hellip; well you know what happened there
 
 [View all notes](https://mirror.roytang.net/notes)
 

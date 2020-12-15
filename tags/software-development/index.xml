@@ -7,12 +7,32 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Thu, 05 Nov 2020 06:59:41 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>How Not to Mentor Software Developers
+</title>
+            <link>https://mirror.roytang.net/2020/12/how-not-to-mentor-software-developers/</link>
+            <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/12/how-not-to-mentor-software-developers/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve talked a bit about &lt;a href=&#34;https://mirror.roytang.net/2018/10/mentoring-in-software-development/&#34;&gt;mentoring in software development&lt;/a&gt; before, and how early on I used to get feedback about me being &amp;ldquo;intimidating&amp;rdquo;. I never got any concrete feedback regarding that, so I don&amp;rsquo;t know what problems I had specifically. Though I was recently reminded of one particular incident that was a bit cringey for me personally.&lt;/p&gt;
+&lt;p&gt;This was a bit more than 10 years ago I think. I was usually assigned to mentor new hires, which means fresh graduates who usually needed guidance with a Java (which was our primary programming language at that time) and with our in-house web framework, which could be a bit challenging to work with. That means a lot of my days are spent answering questions or guiding newbies through more complicated tasks.&lt;/p&gt;
+&lt;p&gt;The incident I remember was with one particular newbie. After they completed a particular task, they asked me to check their work and everything was fine. I don&amp;rsquo;t have the actual wording of what I said but recall making an offhand in-jest remark congratulating them on getting an entire thing done with zero questions and no actual issues. I remember thinking almost immediately afterwards that it was a terrible thing to say since it implies that asking questions might be frowned upon. It&amp;rsquo;s kind of like the difference between just saying &amp;ldquo;Good job&amp;rdquo; and &amp;ldquo;Good job, you didn&amp;rsquo;t screw this one up!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I might have been overthinking it a bit back then as I don&amp;rsquo;t remember any actual negative reaction to that particular remark. That&amp;rsquo;s not really a good metric though, especially when you&amp;rsquo;re dealing with newbies on their first job. There&amp;rsquo;s power dynamics to consider, so they may not think it appropriate to complain even if something makes them feel bad or uncomfortable.&lt;/p&gt;
+&lt;p&gt;As a mentor, it&amp;rsquo;s important to actually encourage the mentees to ask questions when things are unclear or to raise conceerns when there are problems. It&amp;rsquo;s an essential communication skill that all developers (maybe arguably all people) should have. And it&amp;rsquo;s not enough to say &amp;ldquo;Hey, you can ask me questions any time&amp;rdquo;, but you also have to reflect that openness in your actions, your feedback, and your comments.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>Server Setup Notes: Ubuntu, Nginx, Django, MySQL
 </title>
@@ -2020,32 +2040,6 @@ git checkout HEAD
             
             &lt;p&gt;Ten years ago this month, I started studying &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; by trying to build my own blog application. I found the code lying around while I was going through some backups lately. It&amp;rsquo;s way out of date, it uses an early version of django. I thought of bringing it up to speed, but that didn&amp;rsquo;t seem practical. Instead, for archival purposes, I cleaned it up a bit and &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;uploaded the code to a github repo&lt;/a&gt;. (Helpful github immediately warned me that having a very old version of Django was a security risk lol). There&amp;rsquo;s a lot more information in the README.md of that repo. I actually used this as my main blog engine for a while before I decided the maintenance effort wasn&amp;rsquo;t worth it and switched to WordPress.&lt;/p&gt;
 &lt;p&gt;Tangent: I&amp;rsquo;m not actually 100% happy with WordPress, and when I found this old code I was tempted to maybe trying building Yet Another Blog Application (TM), except maybe using the opportunity to learn some other framework. My 2018 personal to-do list is already way too long though.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Gladwell and Risk Management
-</title>
-            <link>https://mirror.roytang.net/2018/10/gladwell-and-risk-management/</link>
-            <pubDate>Thu, 25 Oct 2018 13:00:02 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/10/gladwell-and-risk-management/</guid>
-            <description>
-            
-            &lt;p&gt;Malcolm Gladwell, in &lt;a href=&#34;http://gladwell.com/blowup/&#34;&gt;an article from 1996 discussing the Challenger disaster&lt;/a&gt;, tells us:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This kind of disaster is what the Yale University sociologist Charles Perrow has famously called a &amp;ldquo;normal accident.&amp;rdquo; By &amp;ldquo;normal&amp;rdquo; Perrow does not mean that it is frequent; he means that it is the kind of accident one can expect in the normal functioning of a technologically complex operation. Modern systems, Perrow argues, are made up of thousands of parts, all of which interrelate in ways that are impossible to anticipate. Given that complexity, he says, it is almost inevitable that some combinations of minor failures will eventually amount to something catastrophic.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The description of &amp;ldquo;modern systems&amp;rdquo; above reminds me most of modern software systems. And it is true that modern software systems are made of thousands of &amp;ldquo;parts&amp;rdquo;, and the way they all interrelate with each other can be impossible to anticipate. This is why software defects are inevitable, especially as system size grows. Once a software system is large enough, there will be no single developer who can see all the details of every operation the software does. While we try to maximize testing scope, we cannot possibly handle every possible combination of thousands of inputs, and we limit ourselves to the most likely cases. This is considered an acceptable risk of software development.&lt;/p&gt;
-&lt;p&gt;While your critical software bug is not likely to cost millions of dollars to clean up, a lot of what Gladwell discusses in the article can still be applicable to software development.&lt;/p&gt;
-&lt;p&gt;If software systems can be compared to normal accidents, what else does Gladwell&amp;rsquo;s article say about such accidents that might be applicable to software systems? Later on Gladwell tells us about &lt;em&gt;risk homeostasis:&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;There is another way to look at this problem, and that is from the standpoint of how human beings handle risk. One of the assumptions behind the modern disaster ritual is that when a risk can be identified and eliminated a system can be made safer. The new booster joints on the shuttle, for example, are so much better than the old ones that the over-all chances of a Challenger-style accident’s ever happening again must be lower-right? This is such a straightforward idea that questioning it seems almost impossible. But that is just what another group of scholars has done, under what is called the theory of &amp;ldquo;risk homeostasis.&amp;rdquo; It should be said that within the academic community there are huge debates over how widely the theory of risk homeostasis can and should be applied. But the basic idea, which has been laid out brilliantly by the Canadian psychologist Gerald Wilde in his book &amp;ldquo;Target Risk,&amp;rdquo; is quite simple: under certain circumstances, changes that appear to make a system or an organization safer in fact don’t. Why? Because human beings have a seemingly fundamental tendency to compensate for lower risks in one area by taking greater risks in another.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Risk management is a big part of software development, especially as projects grow larger. We need to be careful that we are evaluating the collective risks on a project accurately and not just trading one set of risks for another.&lt;/p&gt;
 
 
 

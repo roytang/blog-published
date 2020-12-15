@@ -1,4 +1,6 @@
 
+- [How Not to Mentor Software Developers](/2020/12/how-not-to-mentor-software-developers/)
+
 - [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](/2020/11/server-setup-notes/)
 
 - [On Mobile App Development](/2020/09/mobile-app-dev/)

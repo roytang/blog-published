@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/11/1324571861670227968/",
+            "url": "https://mirror.roytang.net/2020/11/1324571861670227968/",
+            "path": "/2020/11/1324571861670227968/",
+            "title": "",
+            "content_html": "\u003cp\u003ePag pinadalhanka ng bill ng meralco sabihan mo sila na mukhang pera\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/PhilippineStar/status/1324374435902578689'\u003ePhilippineStar\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003e‘MUKHANG PERA’\u003c/p\u003e\n\u003cp\u003eThis was President Duterte’s comment when Health Secretary Francisco Duque III reported during a Cabinet meeting that the Philippine Red Cross has resumed conducting COVID-19 swab tests after the PhilHealth paid its close to P1-B debt. | \u003ca href=\"https://twitter.com/xtinamen/\"\u003e@xtinamen\u003c/a\u003e\u003c/p\u003e\n\u003cvideo width='320' height='320' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1324373973283471360/pu/vid/720x720/PlqQVfcBH2LyC-nI.mp4?tag=10' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Pag pinadalhanka ng bill ng meralco sabihan mo sila na mukhang pera\nQuoted PhilippineStar\u0026#39;s tweet:   ‘MUKHANG PERA’\nThis was President Duterte’s comment when Health Secretary Francisco Duque III reported during a Cabinet meeting that the Philippine Red Cross has resumed conducting COVID-19 swab tests after the PhilHealth paid its close to P1-B debt. | @xtinamen\nYour browser does not support the video tag.   ",
+            "date_published": "2020-11-06T04:38:35+08:00",
+            "date_modified": "2020-11-06T04:42:07+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/11/1324571861670227968/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1324571861670227968/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/11/1324406196514729984/",
+            "url": "https://mirror.roytang.net/2020/11/1324406196514729984/",
+            "path": "/2020/11/1324406196514729984/",
+            "title": "",
+            "content_html": "\u003cp\u003eOne upside of this election is that I’ve learned a lot about where US states are on the map\u003c/p\u003e\n",
+            "summary": "One upside of this election is that I’ve learned a lot about where US states are on the map",
+            "date_published": "2020-11-05T17:40:18+08:00",
+            "date_modified": "2020-11-05T17:50:27+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/11/1324406196514729984/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1324406196514729984/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/11/server-setup-notes/",
+            "url": "https://mirror.roytang.net/2020/11/server-setup-notes/",
+            "path": "/2020/11/server-setup-notes/",
+            "title": "Server Setup Notes: Ubuntu, Nginx, Django, MySQL",
+            "content_html": "\u003cp\u003eI recently did \u003ca href=\"/2020/10/site-migration-to-django/\"\u003ea server migration\u003c/a\u003e since I moved to new hosting, The move was from managed/shared hosting to a VPS, these are some notes I took during the process, which I figure might be helpful if I ever tried to  do this again. (And maybe someone else finds it helpful too). Links and references to helpeful resources are included.\u003c/p\u003e\n\u003ch3 id=\"setting-up-a-webserver-and-wsgi-container\"\u003eSetting up a webserver and WSGI container\u003c/h3\u003e\n\u003cp\u003eI already knew I wanted to use Nginx (managed hosting on the old server always used Apache), that meant needing to choose a WSGI container for the Django apps. The choices were either gunicorn or uwsgi. Readings suggest minimal performance difference between the two. I did try setting up both, and found uwsgi\u0026rsquo;s setup much more straightforward and with more helpful step-by-step documentation: \u003ca href=\"https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html\"\u003ehttps://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eNginx itself was pretty straightforward to set up. This \u0026ldquo;common pitfalls\u0026rdquo; article was helpful in resolving issues: \u003ca href=\"https://origin-www.wp.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/\"\u003ehttps://origin-www.wp.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eOne thing I will note that\u0026rsquo;s not in the article above is that for static files to be served by Nginx, it was easier to just have everything be under /var/www, for permission purposes. I initially had static files in a different folder in my user root, but really there\u0026rsquo;s no reason for that since you\u0026rsquo;re going to serve them statically anyway.\u003c/p\u003e\n\u003ch3 id=\"setting-up-php-on-nginx\"\u003eSetting up PHP on Nginx\u003c/h3\u003e\n\u003cp\u003eI needed PHP since I had a few minor scripts/pages and a Wordpress install that needed PHP. For the setup on Nginx, I found this guide from askubuntu super helpful: \u003ca href=\"https://askubuntu.com/questions/134666/what-is-the-easiest-way-to-enable-php-on-nginx\"\u003ehttps://askubuntu.com/questions/134666/what-is-the-easiest-way-to-enable-php-on-nginx\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThis guide from DigitalOcean was also helpful: \u003ca href=\"https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04\"\u003ehttps://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI was encountering some issues with fastcgi not mapping requests to the correct PHP script if the Nginx location block was aliased. This was with me using the default \u003ccode\u003esnippets/fastcgi-php.conf\u003c/code\u003e that was provided with the fastcgi install. I resolved the issue by adding an additional fastcgi_param to the php location block like so:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e    location /sample-path {\n        alias /var/www/sample-path;\n        # autoindex on;\n\n        location ~ \\.php$ {\n                include snippets/fastcgi-php.conf;\n                fastcgi_param  SCRIPT_FILENAME    $request_filename;\n                fastcgi_pass unix:/run/php/php7.4-fpm.sock;\n        }\n    }\n\u003c/code\u003e\u003c/pre\u003e\u003cp\u003eThe solution for this came from the Nginx common pitfalls article listed above.\u003c/p\u003e\n\u003ch3 id=\"choosing-a-database\"\u003eChoosing a database\u003c/h3\u003e\n\u003cp\u003eI initially wanted to use PostgreSQL (since that\u0026rsquo;s what I was using locally) and set that up first. Then I realized I had a Wordpress install I wanted to carry over, and apparently Wordpress needs MySQL, so oops. I didn\u0026rsquo;t want to have two databases running, so that was out. Plan out your database usage boys.\u003c/p\u003e\n\u003ch3 id=\"setting-up-mysql-for-django\"\u003eSetting up MySQL for Django\u003c/h3\u003e\n\u003cp\u003eI created the initial MySQL database with character set \u003ccode\u003eutf8\u003c/code\u003e, which apparently had the dumb implementation of only supporting 3 bytes for multibyte characters. This led to errors when I tried importing records into Django that had emojis and the like in text. Apparently the \u0026ldquo;correct\u0026rdquo; character set to use is \u003ccode\u003eutf8mb4\u003c/code\u003e (mb4 -\u0026gt; \u0026ldquo;multibyte 4\u0026rdquo; I guess?). It\u0026rsquo;s kinda dumb that they had to invent a \u0026ldquo;more utf8 character set\u0026rdquo; because of their initial dumb implementation. It\u0026rsquo;s also dumb that I didn\u0026rsquo;t realize this when apparently the MySQL databases on the old server were already using \u003ccode\u003eutf8mb4\u003c/code\u003e! On the Django side, you need to specify the charset in the database settings. Helpful for resolving this issue was donturner\u0026rsquo;s answer on this SO question: \u003ca href=\"https://stackoverflow.com/questions/2108824/\"\u003ehttps://stackoverflow.com/questions/2108824/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eAfter some initial testing, I also encountered a \u0026ldquo;MySQL has gone away\u0026rdquo; every so often. Turns out Django was holding on to connections for too long, so a timeout had to be set in the database settings as well. SO reference: \u003ca href=\"https://stackoverflow.com/questions/26958592/\"\u003ehttps://stackoverflow.com/questions/26958592/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eEdit: I just encountered this a few hours after I wrote this post, when I tried to make the site display all times in Manila local time. Apparently, even if I set my Django app to be timezone, aware, additional setup needs to be done on the MySQL side so it knows what the actual timezones are (feels like they should really do this as part of the install!). Basically you need to run \u003ccode\u003emysql_tzinfo_to_sql\u003c/code\u003e to load the OS timezone info into the database. This is in the \u003ca href=\"https://django.readthedocs.io/en/stable/ref/databases.html\"\u003eDjango documentation\u003c/a\u003e and the \u003ca href=\"https://dev.mysql.com/doc/refman/5.6/en/mysql-tzinfo-to-sql.html\"\u003eMySQL documentation\u003c/a\u003e.\u003c/p\u003e\n\u003ch3 id=\"misc-stuff\"\u003eMisc stuff\u003c/h3\u003e\n\u003cp\u003eI used cron to set up most of the batch jobs I usually run (like the Twitter bots, etc). Initially I had problems where it seemed like cron wasn\u0026rsquo;t running the jobs, even though syslog showed me the cron daemon was actually running. I don\u0026rsquo;t have notes on how I resolved this, but mentioning it here so that if this happens again in the future, I know to actuall take notes!\u003c/p\u003e\n\u003cp\u003eSetting up log files for my cron jobs: I did it this way: \u003ccode\u003e0 * * * * /path-to-batch/hourly.sh \u0026gt;\u0026gt; /var/log/cron/my-log-file.log 2\u0026gt;\u0026amp;1\u003c/code\u003e. The \u0026ldquo;2\u0026gt;\u0026amp;1\u0026rdquo; at the end is necessary so that stderr is redirected to the same file (otherwise you\u0026rsquo;d only get stdout).\u003c/p\u003e\n\u003cp\u003eLog rotation: these is the kind of thing you don\u0026rsquo;t realize you need to do when you\u0026rsquo;re managing your own server. Anyway, I found this guide helpful: \u003ca href=\"https://linoxide.com/linux-how-to/setup-log-rotation-logrotate-ubuntu/\"\u003ehttps://linoxide.com/linux-how-to/setup-log-rotation-logrotate-ubuntu/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI needed to set up AWStats on the new server (and migrate data from the old server). This guide was helpful: \u003ca href=\"https://larsee.com/blog/2020/06/awstats-on-ubuntu-20-04-with-nginx/\"\u003ehttps://larsee.com/blog/2020/06/awstats-on-ubuntu-20-04-with-nginx/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eWhen migrating the old AWStats data files, the filename format from the oldserver was slightly different (new install needed to end with \u003ccode\u003e*.roytang.net.txt\u003c/code\u003e), so I learned a bit of bash scripting to do the batch rename:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003efor i in /path-to-tmp/awstats/*.txt ; do cp \u0026quot;$i\u0026quot; \u0026quot;/path-to-tmp/awstats/out/$(basename \u0026quot;$i\u0026quot; .txt).roytang.net.txt\u0026quot; ; done\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eSetting up Let\u0026rsquo;s Encrypt SSL on Nginx: \u003ca href=\"https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/\"\u003ehttps://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/\u003c/a\u003e\u003c/p\u003e\n\u003ch3 id=\"lessons-learned\"\u003eLessons learned\u003c/h3\u003e\n\u003cp\u003eOne thing I didn\u0026rsquo;t expect from the migration from shared hosting to a VPS is how much memory I\u0026rsquo;d need. My old hosting plan was only on 512MB ram, and the lowest DigitalOcean droplet had 1GB RAM, so I figured that was fine! But MySQL occasionally had out of memory errors on startup even at 1GB ram, so I bumped up to the next level (2GB RAM). I guess the database RAM usage didn\u0026rsquo;t count against my limits on the shared hosting! The next tier isn\u0026rsquo;t much more expensive and is still manageable for my casual/hobby hosting purposes, but I will probably try to look into more detail into the memory situation at some point to see what I can optimize.\u003c/p\u003e\n",
+            "summary": "I recently did a server migration since I moved to new hosting, The move was from managed/shared hosting to a VPS, these are some notes I took during the process, which I figure might be helpful if I ever tried to do this again. (And maybe someone else finds it helpful too). Links and references to helpeful resources are included.\nSetting up a webserver and WSGI container I already knew I wanted to use Nginx (managed hosting on the old server always used Apache), that meant needing to choose a WSGI container for the Django apps.",
+            "date_published": "2020-11-05T06:59:41+00:00",
+            "date_modified": "2020-11-06T01:20:09+08:00",
+            "section": "post",
+            "source_path": "post/2020/11/server-setup-notes/index.md"
+            , "tags": ["tech life","software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105156709394792329"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1324263713411538945/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/11/1324179840522596353/",
+            "url": "https://mirror.roytang.net/2020/11/1324179840522596353/",
+            "path": "/2020/11/1324179840522596353/",
+            "title": "",
+            "content_html": "\u003cp\u003eHe should just migrate here to the Philippines, thats how 90% of our politicians are\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/bmemike/status/1324165217643827200'\u003ebmemike\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e I heard something in coverage earlier today and it\u0026rsquo;s just 100% spot on:\u003c/p\u003e\n\u003cp\u003eThe only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It\u0026rsquo;s just not part of his brand.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "He should just migrate here to the Philippines, thats how 90% of our politicians are\nQuoted bmemike\u0026#39;s tweet:   @wrongwaygoback I heard something in coverage earlier today and it\u0026rsquo;s just 100% spot on:\nThe only two outcomes for Trump is that he wins or the election was stolen. He can never be a loser. It\u0026rsquo;s just not part of his brand.\n ",
+            "date_published": "2020-11-05T02:40:50+00:00",
+            "date_modified": "2020-11-05T02:50:31+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/11/1324179840522596353/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1324179840522596353/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/11/1324088239699816448/",
             "url": "https://mirror.roytang.net/2020/11/1324088239699816448/",
             "path": "/2020/11/1324088239699816448/",
@@ -952,74 +1020,6 @@
             "source_path": "photos/2020/10/1318238520251621377/index.md"
             , "tags": ["NintendoSwitch","SuperMario3DAllStars"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1318238520251621377/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/inktober-19-dizzy/",
-            "url": "https://mirror.roytang.net/2020/10/inktober-19-dizzy/",
-            "path": "/2020/10/inktober-19-dizzy/",
-            "title": "Inktober 2020 Day 19: Dizzy",
-            "content_html": "\u003cp\u003eInktober 2020 day 19: DIZZY\u003c/p\u003e\n\u003cp\u003eI will admit I was being kind of lazy here.\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Inktober 2020 day 19: DIZZY\nI will admit I was being kind of lazy here.\nOfficial prompt list: https://inktober.com/rules",
-            "date_published": "2020-10-19T09:46:57+00:00",
-            "date_modified": "2020-10-19T18:49:17+08:00",
-            "section": "photos",
-            "source_path": "photos/2020/10/inktober-19-dizzy/index.md"
-            , "tags": ["inktober","inktober2020"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1318137297414451201/"},{"type":"instagram","url":"https://instagram.com/p/CGhZg7phIyK/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1318057267246198784/",
-            "url": "https://mirror.roytang.net/2020/10/1318057267246198784/",
-            "path": "/2020/10/1318057267246198784/",
-            "title": "",
-            "content_html": "\u003cp\u003eThis is a test. Well, maybe all of life is a test.\u003c/p\u003e\n",
-            "summary": "This is a test. Well, maybe all of life is a test.",
-            "date_published": "2020-10-19T05:11:55+00:00",
-            "date_modified": "2020-10-23T05:07:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1318057267246198784/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1318057267246198784/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1317805734554259456/",
-            "url": "https://mirror.roytang.net/2020/10/1317805734554259456/",
-            "path": "/2020/10/1317805734554259456/",
-            "title": "",
-            "content_html": "\u003cp\u003eLet’s ask \u003ca href=\"https://twitter.com/MMDA/\"\u003e@MMDA\u003c/a\u003e\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/roytang/status/1317803889601564672'\u003eroytang\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003ca href=\"https://twitter.com/paulcatiang/\"\u003e@paulcatiang\u003c/a\u003e \u0026hellip; why does an mmda asec need 70 admins? are we paying for those?\n\u003c/blockquote\u003e\n",
-            "summary": "Let’s ask @MMDA\nQuoted roytang\u0026#39;s tweet:   @paulcatiang \u0026hellip; why does an mmda asec need 70 admins? are we paying for those?  ",
-            "date_published": "2020-10-18T12:32:25+00:00",
-            "date_modified": "2020-10-23T05:07:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1317805734554259456/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1317805734554259456/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1317803889601564672/",
-            "url": "https://mirror.roytang.net/2020/10/1317803889601564672/",
-            "path": "/2020/10/1317803889601564672/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/paulcatiang/\"\u003e@paulcatiang\u003c/a\u003e \u0026hellip; why does an mmda asec need 70 admins? are we paying for those?\u003c/p\u003e\n",
-            "summary": "@paulcatiang \u0026hellip; why does an mmda asec need 70 admins? are we paying for those?",
-            "date_published": "2020-10-18T12:25:05+00:00",
-            "date_modified": "2020-10-23T05:07:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1317803889601564672/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1317803889601564672/"}]
             
             
             }

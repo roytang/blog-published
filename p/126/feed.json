@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/09/55036u/",
+            "url": "https://mirror.roytang.net/2016/09/55036u/",
+            "path": "/2016/09/55036u/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-09-29T10:29:23+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "links",
+            "source_path": "links/2016/09/55036u/index.md"
+            , "tags": ["philippines"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Philippines/comments/55036u/miriam_santiago_has_passed_away/"}]
+            ,"link": "https://twitter.com/gmanews/status/781318780345606148"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/781333334580269056/",
+            "url": "https://mirror.roytang.net/2016/09/781333334580269056/",
+            "path": "/2016/09/781333334580269056/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-09-29T03:22:38+00:00",
+            "date_modified": "2020-08-28T19:56:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/09/781333334580269056/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/781333334580269056/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/type-interfaces-matter/",
+            "url": "https://mirror.roytang.net/2016/09/type-interfaces-matter/",
+            "path": "/2016/09/type-interfaces-matter/",
+            "title": "Type Interfaces Matter",
+            "content_html": "\u003cp\u003e\u0026hellip; especially for strongly-typed languages.\u003c/p\u003e\n\u003cp\u003eIn one of the bigger Java projects that I took over, I was often annoyed to find some devs had written method signatures like\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003epublic void doTheThing(HashMap\u0026lt;K, V\u0026gt; params)\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhich is silly \u0026ndash; not because of the naming, that\u0026rsquo;s obviously not a real-world function name. The silly part is requiring a particular implementation (HashMap) instead of the generic interface (Map). It unnecessarily restricts your API and makes it less flexible. Unless your function specifically cares about the hashing part, there\u0026rsquo;s no reason the parameter isn\u0026rsquo;t a Map instead\u003c/p\u003e\n\u003cp\u003eSince most Java libraries will perform proper encapsulation and give you a generic Map type, it adds some mismatch when you have to plug one of those types into your function; one would need to instantiate a new HashMap and copy the contents of the generic Map into it so that your function accepts it\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eUse the generic interface as much as possible! Use the specific implementation type only when instantiating!\u003c/strong\u003e\u003c/p\u003e\n",
+            "summary": "\u0026hellip; especially for strongly-typed languages.\nIn one of the bigger Java projects that I took over, I was often annoyed to find some devs had written method signatures like\n public void doTheThing(HashMap\u0026lt;K, V\u0026gt; params)\n Which is silly \u0026ndash; not because of the naming, that\u0026rsquo;s obviously not a real-world function name. The silly part is requiring a particular implementation (HashMap) instead of the generic interface (Map). It unnecessarily restricts your API and makes it less flexible.",
+            "date_published": "2016-09-29T01:30:42+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/09/type-interfaces-matter/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/151079461050/type-interfaces-matter"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/781306007297417216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/bk6jrucbo-l/",
+            "url": "https://mirror.roytang.net/2016/09/bk6jrucbo-l/",
+            "path": "/2016/09/bk6jrucbo-l/",
+            "title": "",
+            "content_html": "\u003cp\u003eLeonardo #sketchdaily\u003c/p\u003e\n",
+            "summary": "Leonardo #sketchdaily",
+            "date_published": "2016-09-28T10:47:09+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/09/BK6JRUCBo-l/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BK6JRUCBo-l/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/151061293345/leonardo-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/781188560347140097/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154947955153912:1"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/09/bk55rmvbqrp/",
             "url": "https://mirror.roytang.net/2016/09/bk55rmvbqrp/",
             "path": "/2016/09/bk55rmvbqrp/",
@@ -788,74 +856,6 @@
             "source_path": "photos/2016/09/BKrxCn5hQ3T/index.md"
             , "tags": ["sketchdaily","philippines"]
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BKrxCn5hQ3T/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/150802932230/senator-boxer-sketchdaily-philippines"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/779164940120784897/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154930867308912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/779007968008286208/",
-            "url": "https://mirror.roytang.net/2016/09/779007968008286208/",
-            "path": "/2016/09/779007968008286208/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Mitografia/\"\u003e@Mitografia\u003c/a\u003e how long does it usually take you to do an interior page? Great work btw!\u003c/p\u003e\n",
-            "summary": "@Mitografia how long does it usually take you to do an interior page? Great work btw!",
-            "date_published": "2016-09-22T17:22:27+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/779007968008286208.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/779007968008286208/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778903700802633728/",
-            "url": "https://mirror.roytang.net/2016/09/778903700802633728/",
-            "path": "/2016/09/778903700802633728/",
-            "title": "",
-            "content_html": "\u003cp\u003eLooking at my Gmail\u0026rsquo;s spam folder, roughly half of them came in via my Yahoo account =/\u003c/p\u003e\n",
-            "summary": "Looking at my Gmail\u0026rsquo;s spam folder, roughly half of them came in via my Yahoo account =/",
-            "date_published": "2016-09-22T10:28:08+00:00",
-            "date_modified": "2019-09-26T19:12:59+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778903700802633728.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778903700802633728/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154930066913912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/bkqg0zzb4sy/",
-            "url": "https://mirror.roytang.net/2016/09/bkqg0zzb4sy/",
-            "path": "/2016/09/bkqg0zzb4sy/",
-            "title": "",
-            "content_html": "\u003cp\u003ePumpkin spies #sketchdaily\u003c/p\u003e\n",
-            "summary": "Pumpkin spies #sketchdaily",
-            "date_published": "2016-09-22T09:05:07+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/09/BKqg0zZB4SY/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BKqg0zZB4SY/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/150777074560/pumpkin-spies-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/778988993987739649/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154930867308912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778800651392262144/",
-            "url": "https://mirror.roytang.net/2016/09/778800651392262144/",
-            "path": "/2016/09/778800651392262144/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SuperficialGZT/\"\u003e@SuperficialGZT\u003c/a\u003e wag nyo na lang replyan mga ganyan, hayaan nyo sila magtaka ano yung satire :p\u003c/p\u003e\n",
-            "summary": "@SuperficialGZT wag nyo na lang replyan mga ganyan, hayaan nyo sila magtaka ano yung satire :p",
-            "date_published": "2016-09-22T03:38:39+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778800651392262144.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778800651392262144/"}]
             
             
             }
