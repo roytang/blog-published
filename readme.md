@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [15 Dec 2020 10:56pm](https://mirror.roytang.net/2020/12/1338981232621703168/): https://asiatimes.com/2020/12/duterte-fatally-misplays-philippines-vaccine-diplomacy/
+i would be infuriated but at this point I&rsquo;m just tired
 - [15 Dec 2020 4:46am](https://mirror.roytang.net/2020/12/1338707102395584512/): Cancel niyo na muna:
 ❌Pagpunta sa gym, coffee shop, indoor resto, mall, masisikip na lugar
 ❌Pakikipagkita sa jowa, barkada, kamag-anak
@@ -40,7 +42,6 @@ Quoted lorenb&#39;s tweet:   So it turns out that Google Chrome was making every
 I made a website because this shouldn’t happen:
 https://chromeisbad.com
  
-- [11 Dec 2020 5:47pm](https://mirror.roytang.net/2020/12/1337453916162703360/): Thread! Author @sparrowtrooper and I are giving away 3 signed copies &amp; 5 eBook copies of her book! @David__Cage @ChrisTheHoff and I were quoted on the back! It&rsquo;s wild. RT this for a chance to win! Winners will be selected after this tweet gets 100 retweets https://www.amazon.com/How-Games-Get-Made-Stories/dp/1636765483/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=
 
 [View all notes](https://mirror.roytang.net/notes)
 

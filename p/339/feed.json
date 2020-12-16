@@ -11,6 +11,34 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/10/1547415/",
+            "url": "https://mirror.roytang.net/2009/10/1547415/",
+            "path": "/2009/10/1547415/",
+            "title": "how to handle IE select onchange and ajax requests",
+            "content_html": "\u003cp\u003eLet\u0026rsquo;s say I attach a javascript \u0026ldquo;change\u0026rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.\u003c/p\u003e\n\u003cp\u003eThis is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there\u0026rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.\u003c/p\u003e\n\u003cp\u003eNow, our previous workaround was that we would introduce a timeout to the change handler, such that it would wait a fraction of a second before actually dispatching the request. If in that short time, another change event comes in, we cancel the previous timeout and start a new one, thus preventing spamming multiple requests.\u003c/p\u003e\n\u003cp\u003eNow, while this seems to be working, it\u0026rsquo;s a bit hackish and I\u0026rsquo;m wondering if there\u0026rsquo;s any better approach. Is there a different event we can hook to so that it doesn\u0026rsquo;t fire repeatedly when scrolling with the mouse? Or should we just disable mouse-wheeling altogether (onmousewheel=\u0026quot;return false;\u0026quot;)? Firefox does not seem to support mouse-wheeling thru combo boxes, but I\u0026rsquo;m not sure if disabling mouse wheeling is a serious usability no-no or something.\u003c/p\u003e\n\u003cp\u003eCan anyone recommend other solutions?\u003c/p\u003e\n",
+            "summary": "Let\u0026rsquo;s say I attach a javascript \u0026ldquo;change\u0026rdquo; event handler to a select element, something that dispatches an ajax request to load some stuff from the server.\nThis is fine in Firefox. However, in IE, the change event will fire every time you scroll rapidly through the combo box options using a mouse wheel. This is troublesome because it spams the server with requests, and there\u0026rsquo;s no guarantee the requests come back in the correct order, hence the client-side state may become inconsistent.",
+            "date_published": "2009-10-10T08:46:00+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/1547415/index.md"
+            , "tags": ["javascript","internet-explorer","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091010T090513-1547442.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091010T093926-1547501.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1547415/how-to-handle-ie-select-onchange-and-ajax-requests",
+                    "source_file": "comment-20091013T161033-1561254.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/10/4749097600/",
             "url": "https://mirror.roytang.net/2009/10/4749097600/",
             "path": "/2009/10/4749097600/",
@@ -855,23 +883,6 @@
             "source_path": "notes/2009/09/4360846064.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4360846064/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/09/4317707604/",
-            "url": "https://mirror.roytang.net/2009/09/4317707604/",
-            "path": "/2009/09/4317707604/",
-            "title": "",
-            "content_html": "\u003cp\u003ewhat are you waiting for? \u003ca href=\"https://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/\"\u003ehttps://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "what are you waiting for? https://www.reddit.com/r/AskReddit/comments/9mmom/what_are_you_waiting_for/",
-            "date_published": "2009-09-23T15:29:01+00:00",
-            "date_modified": "2019-09-23T01:11:31+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/09/4317707604.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4317707604/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/169538087328"}]
             
             
             }
