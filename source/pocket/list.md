@@ -1,4 +1,6 @@
 
+- [Facebook Is a Doomsday Machine](/2020/12/facebook-is-a-doomsday-machine/)
+
 - [How To Avoid Spoilers For Everything Forever](/2020/11/how-to-avoid-spoilers-for-everything-forever/)
 
 - [13 Life-Learnings from 13 Years of Brain Pickings](/2020/11/13-life-learnings-from-13-years-of-brain-pickings/)

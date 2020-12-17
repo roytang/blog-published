@@ -18,17 +18,18 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Facebook Is a Doomsday Machine](https://mirror.roytang.net/2020/12/facebook-is-a-doomsday-machine/)
 - [How To Avoid Spoilers For Everything Forever](https://mirror.roytang.net/2020/11/how-to-avoid-spoilers-for-everything-forever/)
 - [13 Life-Learnings from 13 Years of Brain Pickings](https://mirror.roytang.net/2020/11/13-life-learnings-from-13-years-of-brain-pickings/)
 - [“Fake COTS” and the one-day rule](https://mirror.roytang.net/2020/10/fake-cots-and-the-one-day-rule/)
 - [An ed-tech specialist spoke out about remote testing software — and now he’s being sued](https://mirror.roytang.net/2020/10/an-ed-tech-specialist-spoke-out-about-remote-testing-software-and-now-hes-being-sued/)
-- [The story behind Markdown.](https://mirror.roytang.net/2020/10/the-story-behind-markdown/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [16 Dec 2020 6:38am](https://mirror.roytang.net/2020/12/gfyytvp/): Both the site (https://patawadpatawad.blogspot.com/) and the qr code are valid, props for that!
 - [15 Dec 2020 10:56pm](https://mirror.roytang.net/2020/12/1338981232621703168/): https://asiatimes.com/2020/12/duterte-fatally-misplays-philippines-vaccine-diplomacy/
 i would be infuriated but at this point I&rsquo;m just tired
 - [15 Dec 2020 4:46am](https://mirror.roytang.net/2020/12/1338707102395584512/): Cancel niyo na muna:
@@ -37,11 +38,6 @@ i would be infuriated but at this point I&rsquo;m just tired
 Celebrate at home kung ayaw niyong may magkasakit o malagas sa pamilya niyo. Kahit may pera kayo kung puno ang ospital, di kayo magagamot.
 - [14 Dec 2020 8:20am](https://mirror.roytang.net/2020/12/1338398359619469314/): @rovietoosin naku madaming pera jan ano lol
 - [14 Dec 2020 7:47am](https://mirror.roytang.net/2020/12/1338390255959883777/): @rovietoosin San ka na lumipat?
-- [13 Dec 2020 3:56am](https://mirror.roytang.net/2020/12/1337969729902821376/): RTing so I know to clean up my mac later
-Quoted lorenb&#39;s tweet:   So it turns out that Google Chrome was making everything on my computer slow even when it wasn’t running, because it installs something called Keystone which is basically malware.
-I made a website because this shouldn’t happen:
-https://chromeisbad.com
- 
 
 [View all notes](https://mirror.roytang.net/notes)
 
