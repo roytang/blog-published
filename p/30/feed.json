@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/",
+            "url": "https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/",
+            "path": "/2019/07/upgrading-a-react-native-project/",
+            "title": "Upgrading a React Native Project",
+            "content_html": "\u003cp\u003eI have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eBy August 1, 2019, all apps that use native code must provide a 64-bit version in addition to the 32-bit version in order to publish an update. This past January, we reiterated that this is required in order to make way for innovation and in anticipation of future Android devices that only support 64-bit code.\u003c/p\u003e\n\u003cp\u003eAs the deadline approaches, we wanted to remind you that at least one of your apps* uses native code but does not currently offer a 64-bit variant\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThis illustrates for me one of the big problems with mobile development: that app was perfectly fine when I last deployed it in 2018 and now even though I haven\u0026rsquo;t changed anything, there\u0026rsquo;s additional work that needs to be done. I guess I\u0026rsquo;m too used to web development where we just deploy the app on a server and the server architecture doesn\u0026rsquo;t suddenly change for no reason. With mobile apps, the platforms and APIs and frameworks change quickly, leading to situations where even if your app doesn\u0026rsquo;t have any pending changes, you need to do some work on it anyway. (Granted, this can also happen with webservers due to security patches and such, but with managed hosting, that\u0026rsquo;s not something you worry about as often, and the resolution is often straightforward!)\u003c/p\u003e\n\u003cp\u003eAs I was about to be out of the country on vacation for more than a month, I put this off and only started looking at it when I got back. Luckily, I did actually also have some minor revisions to do on the app, so I would do all the work in one go.\u003c/p\u003e\n\u003cp\u003eAs it turns out, the version of RN I was using was too old and did not support providing the 64-bit version. I had to upgrade to a later version of RN, and after reviewing the process, it seemed like a nontrivial amount of work. There was an upgrade tool, but because I was so many versions behind, it couldn\u0026rsquo;t work directly. The problem seems to be in the initial boilerplate created by \u003ccode\u003ereact-native init\u003c/code\u003e for the ios and android subprojects; the older boilerplate was out of date and needed to be updated, which was not straightforward given that you may have modified that boilerplate afterwards. I had to use some kind of diff tool to manually find the differences in the boilerplate and merge the changes manually.\u003c/p\u003e\n\u003cp\u003eThat seemed like a lot of work, and the app wasn\u0026rsquo;t that large and didn\u0026rsquo;t have that much code, so I figured it was more straightforward to just create a new RN project from scratch, which would be using the latest version of RN (0.60.3, from 0.50.4). Afterwards, I port over the project code into the new project, them swap the new project back into the old project\u0026rsquo;s repo. That way I only had to update the few dependencies I was using in the project itself.\u003c/p\u003e\n\u003cp\u003eIt was still a nontrivial amount of work, but I eventually got everything working through many iterations of trial-and-error.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI went ahead and upgraded the dependencies to the latest versions as well, to make sure there was no conflict with the new RN version\u003c/li\u003e\n\u003cli\u003eReactNavigation had some backward incompatible changes:\n\u003cul\u003e\n\u003cli\u003eneeded to \u003ca href=\"https://reactnavigation.org/docs/en/getting-started.html#installation\"\u003einitialize the gesture handler\u003c/a\u003e in the java class\u003c/li\u003e\n\u003cli\u003enew function \u003ccode\u003ecreateStackNavigator\u003c/code\u003e instead of just \u003ccode\u003eStackNavigator\u003c/code\u003e constructor\u003c/li\u003e\n\u003cli\u003eneeded to use \u003ccode\u003ecreateAppContainer\u003c/code\u003e to initialize the navigator\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003esome components such as WebView and AsyncStorage were no longer part of RN core and had to be imported accordingly\u003c/li\u003e\n\u003cli\u003eAndroid now requires that I explicitly prompt for the \u003ccode\u003eREAD_EXTERNAL_STORAGE\u003c/code\u003e permission when trying to access the camera roll\u003c/li\u003e\n\u003cli\u003eGoogle now recommends that I provide an upload key for encryption, but since I reset the project, I also accidentally deleted the signing key I was using before. Oops! Momentary panic until I have the sense to do a search and realize that past me was wise enough to backup the file elsewhere.\u003c/li\u003e\n\u003cli\u003eTest that I can create the app bundle successfully.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBy this point I more or less had a working Android build, then shifted over to iOS. Since I only \u003ca href=\"/2018/12/macbook-air-2017-model/\"\u003erecently got a Macbook Air\u003c/a\u003e, I actually hadn\u0026rsquo;t tried creating and publishing the iOS build, someone was helping me with that part before. Because of reasons, I wanted/had to do it myself this time around, so a bit of a learning curve and trial-and-error again.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eclone the project from repo, \u003ccode\u003enpm install\u003c/code\u003e, try \u003ccode\u003ereact-native run-ios\u003c/code\u003e, oops missing dependencies\u003c/li\u003e\n\u003cli\u003efind out about CocoaPods. Clone a fresh copy of the project, \u003ccode\u003enpm install\u003c/code\u003e then \u003ccode\u003epod install\u003c/code\u003e (took a while), then try \u003ccode\u003ereact-native run-ios\u003c/code\u003e again\u003c/li\u003e\n\u003cli\u003eneeded to fix some dependencies I was using by manual linking and updating\u003c/li\u003e\n\u003cli\u003ecamera roll also needed to be added to the podfile (a config I possibly lost when I reset the project)\u003c/li\u003e\n\u003cli\u003efix a bunch of configs before I can actually run and test the app in the simulator\u003c/li\u003e\n\u003cli\u003eSuccess!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAt this point, I make my other app changes and test on both my Android phone and the iOS simulator. The changes are easy, so now to try publishing.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTry to publish and upload to iTunesConnect. Takes me a few tries to figure out that I need to be updating stuff like bundle identifier, version number, etc.\u003c/li\u003e\n\u003cli\u003eiTunesConnect has some new requirements too (like the iPad version needs to support all orientations) which causes a couple more iterations\u003c/li\u003e\n\u003cli\u003emore screenshots are now required when submitting the app!\u003c/li\u003e\n\u003cli\u003eI set up TestFlight and verify everything is ok with the published app. (I only tested using the simulator before)\u003c/li\u003e\n\u003cli\u003eiOS app now submitted and \u0026ldquo;Waiting for Review\u0026rdquo;. I anticipate they will have some ridiculous request and it might take me a couple more submission rounds before I can publish\u003c/li\u003e\n\u003cli\u003eGoogle Play is more straightforward. \u003ccode\u003egradlew releaseBundle\u003c/code\u003e is already working after my previous effort, so I just upload the bundle and distribute.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI see no indication that I have satisfied Google\u0026rsquo;s action item, but it let me publish the update without complaints, so I\u0026rsquo;m done!\u003c/p\u003e\n\u003cp\u003eMy initial estimate that the work was nontrivial ends up correct, I spent way more manhours than I expected on the upgrade. Part of it was learning how to do the iOS deployment, so hopefully that ends up easier in the future.\u003c/p\u003e\n",
+            "summary": "I have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:\n By August 1, 2019, all apps that use native code must provide a 64-bit version in addition to the 32-bit version in order to publish an update.",
+            "date_published": "2019-07-20T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/07/react-native-mobile-devt/index.md"
+            , "tags": ["software development","react native","mobile"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1152458840299974657/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/07/1151907300065415169/",
+            "url": "https://mirror.roytang.net/2019/07/1151907300065415169/",
+            "path": "/2019/07/1151907300065415169/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e \u003ca href=\"https://twitter.com/SeresaTagAraw/\"\u003e@SeresaTagAraw\u003c/a\u003e pano nagwiwithdraw sa CR!\u003c/p\u003e\n",
+            "summary": "@jaymelynilao @SeresaTagAraw pano nagwiwithdraw sa CR!",
+            "date_published": "2019-07-18T17:31:16+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/07/1151907300065415169/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1151907300065415169/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/07/1151718693379985408/",
             "url": "https://mirror.roytang.net/2019/07/1151718693379985408/",
             "path": "/2019/07/1151718693379985408/",
@@ -830,40 +864,6 @@
             "source_path": "notes/2019/07/esvk3ix/index.md"
             , "tags": ["Philippines"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/c9b42x/tips_on_dealing_with_pldt_4_months_no_internet/esvk3ix/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/1146943797642891264/",
-            "url": "https://mirror.roytang.net/2019/07/1146943797642891264/",
-            "path": "/2019/07/1146943797642891264/",
-            "title": "",
-            "content_html": "\u003cp\u003eNiece deleted photos from her camera, quick search let me find PhotoRec (\u003ca href=\"https://www.cgsecurity.org/wiki/TestDisk_Download\"\u003ehttps://www.cgsecurity.org/wiki/TestDisk_Download\u003c/a\u003e) which let me recover the files from the SD card\u003c/p\u003e\n",
-            "summary": "Niece deleted photos from her camera, quick search let me find PhotoRec (https://www.cgsecurity.org/wiki/TestDisk_Download) which let me recover the files from the SD card",
-            "date_published": "2019-07-05T00:48:05+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/1146943797642891264/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146943797642891264/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/1146642989822775296/",
-            "url": "https://mirror.roytang.net/2019/07/1146642989822775296/",
-            "path": "/2019/07/1146642989822775296/",
-            "title": "",
-            "content_html": "\u003cp\u003eSteve Lichman\u003c/p\u003e\n\u003cp\u003e(more in replies)\u003c/p\u003e\n",
-            "summary": "Steve Lichman\n(more in replies)",
-            "date_published": "2019-07-04T04:52:47+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/1146642989822775296/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146642989822775296/"}]
             
             
             }
