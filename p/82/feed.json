@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/12/47880549/",
+            "url": "https://mirror.roytang.net/2017/12/47880549/",
+            "path": "/2017/12/47880549/",
+            "title": "Marklogic Template Driven Extraction: How to define nullable in Javascript template?",
+            "content_html": "\u003cp\u003eHow to specify that a column in the schema should be nullable?\u003c/p\u003e\n\u003cp\u003eI tried adding a nullable attribute:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar myFirstTDE = xdmp.toJSON(\n  {\n    \u0026quot;template\u0026quot;: {\n      \u0026quot;context\u0026quot;: \u0026quot;/match\u0026quot;,\n      \u0026quot;collections\u0026quot;: [\u0026quot;source1\u0026quot;],\n      \u0026quot;rows\u0026quot;: [\n        {\n          \u0026quot;schemaName\u0026quot;: \u0026quot;soccer\u0026quot;,\n          \u0026quot;viewName\u0026quot;: \u0026quot;matches\u0026quot;,\n          \u0026quot;columns\u0026quot;: [\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;id\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;long\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;id\u0026quot;,\n              \u0026quot;nullable\u0026quot;: 0\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;document\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;docUri\u0026quot;\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;date\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;date\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;match-date\u0026quot;\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;league\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;league\u0026quot;\n            }\n          ]\n        }\n      ]\n    }\n  }\n);\n\ntde.validate( \n  [myFirstTDE]\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBut this gave me a template error:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026quot;message\u0026quot;: \u0026quot;TDE-INVALIDTEMPLATENODE: Invalid extraction template node: fn:doc('')/template/array-node('rows')/object-node()/array-node('columns')/object-node()[1]/number-node('nullable')\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor a template defined using XQuery, adding nullable to the column works:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;column\u0026gt;\n  \u0026lt;name\u0026gt;ISSN\u0026lt;/name\u0026gt;\n  \u0026lt;scalar-type\u0026gt;string\u0026lt;/scalar-type\u0026gt;\n  \u0026lt;val\u0026gt;Journal/ISSN\u0026lt;/val\u0026gt;\n  \u0026lt;nullable\u0026gt;true\u0026lt;/nullable\u0026gt;\n\u0026lt;/column\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHow to do the same thing using JS/Json?\u003c/p\u003e\n",
+            "summary": "How to specify that a column in the schema should be nullable?\nI tried adding a nullable attribute:\nvar myFirstTDE = xdmp.toJSON( { \u0026quot;template\u0026quot;: { \u0026quot;context\u0026quot;: \u0026quot;/match\u0026quot;, \u0026quot;collections\u0026quot;: [\u0026quot;source1\u0026quot;], \u0026quot;rows\u0026quot;: [ { \u0026quot;schemaName\u0026quot;: \u0026quot;soccer\u0026quot;, \u0026quot;viewName\u0026quot;: \u0026quot;matches\u0026quot;, \u0026quot;columns\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;id\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;long\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;id\u0026quot;, \u0026quot;nullable\u0026quot;: 0 }, { \u0026quot;name\u0026quot;: \u0026quot;document\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;docUri\u0026quot; }, { \u0026quot;name\u0026quot;: \u0026quot;date\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;date\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;match-date\u0026quot; }, { \u0026quot;name\u0026quot;: \u0026quot;league\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;league\u0026quot; } ] } ] } } ); tde.",
+            "date_published": "2017-12-19T05:31:56+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/47880549/index.md"
+            , "tags": ["javascript","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47880549/marklogic-template-driven-extraction-how-to-define-nullable-in-javascript-templ"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47880549/marklogic-template-driven-extraction-how-to-define-nullable-in-javascript-templ",
+                    "source_file": "comment-20171219T075100-47882235.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/942824321055055872/",
+            "url": "https://mirror.roytang.net/2017/12/942824321055055872/",
+            "path": "/2017/12/942824321055055872/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/ohhhace/\"\u003e@ohhhace\u003c/a\u003e daily commute mo yan?\u003c/p\u003e\n",
+            "summary": "@ohhhace daily commute mo yan?",
+            "date_published": "2017-12-18T18:30:09+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/942824321055055872.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/942824321055055872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/10156270709908912/",
+            "url": "https://mirror.roytang.net/2017/12/10156270709908912/",
+            "path": "/2017/12/10156270709908912/",
+            "title": "",
+            "content_html": "\u003cp\u003ePSA: walang 4 cheese whopper sa burger king sa singapore\u003c/p\u003e\n",
+            "summary": "PSA: walang 4 cheese whopper sa burger king sa singapore",
+            "date_published": "2017-12-18T11:24:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/10156270709908912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156270709908912"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/12/942640177050148864/",
             "url": "https://mirror.roytang.net/2017/12/942640177050148864/",
             "path": "/2017/12/942640177050148864/",
@@ -805,57 +861,6 @@
             "source_path": "photos/2017/12/BcYmnZLAV7P/index.md"
             
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BcYmnZLAV7P/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/938597972144803841/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156242365888912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938408839078076416/",
-            "url": "https://mirror.roytang.net/2017/12/938408839078076416/",
-            "path": "/2017/12/938408839078076416/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/derektmead/\"\u003e@derektmead\u003c/a\u003e: I have been waiting weeks for this story, which has been months in the making, and I think it\u0026rsquo;s the funniest thing we\u0026rsquo;ve ev…\u003c/p\u003e\n",
-            "summary": "RT @derektmead: I have been waiting weeks for this story, which has been months in the making, and I think it\u0026rsquo;s the funniest thing we\u0026rsquo;ve ev…",
-            "date_published": "2017-12-06T14:04:36+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938408839078076416.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938408839078076416/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938408514011066369/",
-            "url": "https://mirror.roytang.net/2017/12/938408514011066369/",
-            "path": "/2017/12/938408514011066369/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/scalzi/\"\u003e@scalzi\u003c/a\u003e: Time chose correctly, and this is a very good article.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://time.com/time-person-of-the-year-2017-silence-breakers/\"\u003ehttps://time.com/time-person-of-the-year-2017-silence-breakers/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "RT @scalzi: Time chose correctly, and this is a very good article.\nhttps://time.com/time-person-of-the-year-2017-silence-breakers/",
-            "date_published": "2017-12-06T14:03:19+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938408514011066369.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938408514011066369/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938088083005743104/",
-            "url": "https://mirror.roytang.net/2017/12/938088083005743104/",
-            "path": "/2017/12/938088083005743104/",
-            "title": "",
-            "content_html": "\u003cp\u003eI’d be more excited about this if I could actually finish megaman 9 and 10 lol\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/megaman/status/937762291415576576'\u003eMegaMan\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eGet equipped with Mega Man 11, coming to Switch, PS4, Xbox One, and PC in Late 2018! Watch the #MegaMan30 livestream at \u003ca href=\"http://twitch.tv/capcomunity!\"\u003ehttp://twitch.tv/capcomunity!\u003c/a\u003e\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/amplify_video/937682224186515457/vid/1280x720/22MEhyJf-3Rw7iOx.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "I’d be more excited about this if I could actually finish megaman 9 and 10 lol\nQuoted MegaMan\u0026#39;s tweet:   Get equipped with Mega Man 11, coming to Switch, PS4, Xbox One, and PC in Late 2018! Watch the #MegaMan30 livestream at http://twitch.tv/capcomunity!\nYour browser does not support the video tag.   ",
-            "date_published": "2017-12-05T16:50:02+00:00",
-            "date_modified": "2020-09-11T16:08:14+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938088083005743104/index.md"
-            , "tags": ["megaman30"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938088083005743104/"}]
             
             
             }

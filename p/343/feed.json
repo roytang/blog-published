@@ -11,6 +11,65 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/3128001328/",
+            "url": "https://mirror.roytang.net/2009/08/3128001328/",
+            "path": "/2009/08/3128001328/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/bry_bibat/\"\u003e@bry_bibat\u003c/a\u003e I forgot I had firefox. I only tried with IE and Chrome\u003c/p\u003e\n",
+            "summary": "@bry_bibat I forgot I had firefox. I only tried with IE and Chrome",
+            "date_published": "2009-08-04T17:27:59+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3128001328.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3128001328/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3127861002/",
+            "url": "https://mirror.roytang.net/2009/08/3127861002/",
+            "path": "/2009/08/3127861002/",
+            "title": "",
+            "content_html": "\u003cp\u003etrying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating\u003c/p\u003e\n",
+            "summary": "trying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating",
+            "date_published": "2009-08-04T17:19:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3127861002.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3127861002/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/114821597870"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/1225798/",
+            "url": "https://mirror.roytang.net/2009/08/1225798/",
+            "path": "/2009/08/1225798/",
+            "title": "Javascript - programmatically invoking events",
+            "content_html": "\u003cp\u003eSay I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\u003c/p\u003e\n\u003cp\u003eThe events handlers are added/removed using an object like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar Event = {\n    add: function(obj,type,fn) {\n        if (obj.attachEvent) {\n            obj.attachEvent('on'+type,fn);\n        } else {\n            obj.addEventListener(type,fn,false);\n        }\n    },\n    remove: function(obj,type,fn) {\n        if (obj.detachEvent) {\n            obj.detachEvent('on'+type,fn);\n        } else {\n            obj.removeEventListener(type,fn,false);\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOr do I need to store copies of each handler and just add an Event.invoke(\u0026hellip;) function?\u003c/p\u003e\n\u003cp\u003eEdit: Also, jQuery is not an option :D\u003c/p\u003e\n",
+            "summary": "Say I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\nThe events handlers are added/removed using an object like this:\nvar Event = { add: function(obj,type,fn) { if (obj.attachEvent) { obj.attachEvent('on'+type,fn); } else { obj.addEventListener(type,fn,false); } }, remove: function(obj,type,fn) { if (obj.detachEvent) { obj.detachEvent('on'+type,fn); } else { obj.removeEventListener(type,fn,false); } } }  Or do I need to store copies of each handler and just add an Event.",
+            "date_published": "2009-08-04T05:27:59+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/1225798/index.md"
+            , "tags": ["javascript","javascript-events","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T062116-1225925.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T101430-1226696.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3114739612/",
             "url": "https://mirror.roytang.net/2009/08/3114739612/",
             "path": "/2009/08/3114739612/",
@@ -816,57 +875,6 @@
             "source_path": "notes/2009/07/2632435179.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2632435179/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/103420423751"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2632360006/",
-            "url": "https://mirror.roytang.net/2009/07/2632360006/",
-            "path": "/2009/07/2632360006/",
-            "title": "",
-            "content_html": "\u003cp\u003ekinakabahan ako\u003c/p\u003e\n",
-            "summary": "kinakabahan ako",
-            "date_published": "2009-07-14T13:56:11+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2632360006.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2632360006/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/103316458275"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2631881738/",
-            "url": "https://mirror.roytang.net/2009/07/2631881738/",
-            "path": "/2009/07/2631881738/",
-            "title": "",
-            "content_html": "\u003cp\u003emy optical mouse is crappy!\u003c/p\u003e\n",
-            "summary": "my optical mouse is crappy!",
-            "date_published": "2009-07-14T13:18:35+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2631881738.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2631881738/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/115131414576"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2631651517/",
-            "url": "https://mirror.roytang.net/2009/07/2631651517/",
-            "path": "/2009/07/2631651517/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/densdensdens/\"\u003e@densdensdens\u003c/a\u003e wow productive ka na rin!\u003c/p\u003e\n",
-            "summary": "@densdensdens wow productive ka na rin!",
-            "date_published": "2009-07-14T12:59:17+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2631651517.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2631651517/"}]
             
             
             }
