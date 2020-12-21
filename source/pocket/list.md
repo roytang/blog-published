@@ -1,4 +1,6 @@
 
+- [HTML Tags Memory Test](/2020/12/html-tags-memory-test/)
+
 - [The Beat&#39;s list of the 50 best comics of 2020 includes titles by seasoned creators and up-and-coming talents.](/2020/12/the-beats-list-of-the-50-best-comics-of-2020-includes-titles-by-seasoned-creators-and-up-and-coming/)
 
 - [Facebook Is a Doomsday Machine](/2020/12/facebook-is-a-doomsday-machine/)
