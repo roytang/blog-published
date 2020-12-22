@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/07/753049987613806592/",
+            "url": "https://mirror.roytang.net/2016/07/753049987613806592/",
+            "path": "/2016/07/753049987613806592/",
+            "title": "",
+            "content_html": "\u003cp\u003e50 Of The Most Beautiful Sentences In Literature \u003ca href=\"http://ideaspots.com/50-beautiful-sentences-literature/\"\u003ehttp://ideaspots.com/50-beautiful-sentences-literature/\u003c/a\u003e via @\u003c/p\u003e\n",
+            "summary": "50 Of The Most Beautiful Sentences In Literature http://ideaspots.com/50-beautiful-sentences-literature/ via @",
+            "date_published": "2016-07-13T02:14:42+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753049987613806592.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753049987613806592/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753040154936225792/",
+            "url": "https://mirror.roytang.net/2016/07/753040154936225792/",
+            "path": "/2016/07/753040154936225792/",
+            "title": "",
+            "content_html": "\u003cp\u003eUse my link to start playing Hearthstone and get a free pack! \u003ca href=\"https://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc\"\u003ehttps://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Use my link to start playing Hearthstone and get a free pack! https://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc",
+            "date_published": "2016-07-13T01:35:38+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753040154936225792.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753040154936225792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bhyz91jhcoc/",
+            "url": "https://mirror.roytang.net/2016/07/bhyz91jhcoc/",
+            "path": "/2016/07/bhyz91jhcoc/",
+            "title": "",
+            "content_html": "\u003cp\u003ePeacock #sketchdaily\u003c/p\u003e\n",
+            "summary": "Peacock #sketchdaily",
+            "date_published": "2016-07-13T00:52:07+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BHyz91jhCoC/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHyz91jhCoC/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/147332490550/peacock-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/753134928217464832/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154738681063912:1"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/07/what-is-a-good-way-to-measure/",
             "url": "https://mirror.roytang.net/2016/07/what-is-a-good-way-to-measure/",
             "path": "/2016/07/what-is-a-good-way-to-measure/",
@@ -805,57 +856,6 @@
             "source_path": "notes/2016/07/d52ik6q/index.md"
             , "tags": ["Marvel"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Marvel/comments/4rifr3/marvels_new_iron_man_is_a_black_woman/d52ik6q/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/07/web-security-file-upload-vulnerabilities/",
-            "url": "https://mirror.roytang.net/2016/07/web-security-file-upload-vulnerabilities/",
-            "path": "/2016/07/web-security-file-upload-vulnerabilities/",
-            "title": "Web Security: File Upload Vulnerabilities",
-            "content_html": "\u003cp\u003eA friend of mine had an informal consultation with me the other day (read: asked me questions over FB messenger) about what their IT staff was telling them about a file upload vulnerability that had been recently exploited in one of their applications. Obviously it was difficult for me to judge given that I didn\u0026rsquo;t know all the details, but for me it was most likely a vulnerability introduced in the application code itself.\u003c/p\u003e\n\u003cp\u003eIf you\u0026rsquo;re not familiar with file upload vulnerability, the simplest type of attack goes something like this: the user (or attacker in this case) uploads a file using a file upload function on the system (a common functionality), and the system allows the user to execute that file as if it were code. This can happen if the application saves the uploaded file directly into the web application path, such that it can be executed directly from the client. This is a common vulnerability listed on the OWASP page.\u003c/p\u003e\n\u003cp\u003eFor example, your application provides a function to upload an image to use as the user\u0026rsquo;s profile picture, then the applications stores the uploaded image in the file system directly in the application path such that it is served to the user as something like /images/uploadedfile.png. However, if the user uploads instead a file that can be executed directly by the web server, such as a .PHP file for PHP webservers or a .JSP file for Java containers, the user can now execute any code that was in his uploaded file simply by invoking /images/uploadedfile.php! And this access would be absolute, everything your system has access to will be fair game: file system, network, database, etc., and provides the attacker with more information for succeeding attacks.\u003c/p\u003e\n\u003cp\u003eThe key to protecting yourself from file upload vulnerabilities is one of the basic tenets of web application security: \u003cstrong\u003eNever trust user submitted data\u003c/strong\u003e. This means that you should validate uploaded files \u0026ndash; maybe you only allow image files for example \u0026ndash; and your validation should be thorough. You shouldn\u0026rsquo;t validate only be checking the file extension or the content type in the HTTP header, as these can be faked. Use a server-side API call to verify the file type.\u003c/p\u003e\n\u003cp\u003eIn addition, \u003cstrong\u003edo not store or serve the uploaded files in a way that they will be executed by the web application\u003c/strong\u003e. For Java webapps I\u0026rsquo;ve worked on, often we will store uploaded files in the Oracle database, and when they need to be served they are dumped directly into the response OutputStream. If you \u003cem\u003emust\u003c/em\u003e store the uploads in the file system, do it in a location that is not accessible from the web server directly. For J2EE containers that can be inside /WEB-INF/ or outside the application path itself. For PHP, it should be outside the HTTP doc folder of the Apache server.\u003c/p\u003e\n\u003cp\u003eFor the PHP example above, you should also avoid serving the image files using a PHP include. If the URL to access the image is something like uploadedimage?image_id=1 and your code maps that image_id to a file on the file system and serves it using a PHP include, it will still be executed by the system as code. Instead the file should be dumped directly into the response. One way to do it is as follows:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cpre\u003e\u0026lt;?php\n\u003c/blockquote\u003e\n\u003cp\u003eheader(\u0026lsquo;Content-Type: [whatever your content type is]');\nheader(\u0026ldquo;Content-Disposition: inline; filename=\u0026quot;$file_name\u0026quot;\u0026quot;);\necho $file;\n?\u0026gt;\u003c/pre\u003e\u003c/p\u003e\n\u003cp\u003eThis is only the most basic attack. File upload functions can be exploited in a number of other ways. For example, the attacker could upload a number of large files to attempt to take down your server due to insufficient disk space (prevention: restrict file upload size, prevent user uploading too many files). So developers need to be carefully in how they allow file uploads in their system and be aware of possible vulnerabilities and exploits, the OWASP page linked above lists some more prevention measures.\u003c/p\u003e\n",
-            "summary": "A friend of mine had an informal consultation with me the other day (read: asked me questions over FB messenger) about what their IT staff was telling them about a file upload vulnerability that had been recently exploited in one of their applications. Obviously it was difficult for me to judge given that I didn\u0026rsquo;t know all the details, but for me it was most likely a vulnerability introduced in the application code itself.",
-            "date_published": "2016-07-07T01:30:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2016/07/web-security-file-upload-vulnerabilities/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/750868946899857409/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/07/how-can-you-prepare-for-a-comp/",
-            "url": "https://mirror.roytang.net/2016/07/how-can-you-prepare-for-a-comp/",
-            "path": "/2016/07/how-can-you-prepare-for-a-comp/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-can-you-prepare-for-a-completely-fresh-start-in-life/answer/Roy-Tang\"\u003eHow can you prepare for a completely fresh start in life?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eYou will need to consider several things. First, to ensure survival:\u003c/p\u003e\u003cul\u003e\u003cli\u003ewhere will you live? How much will it cost?\u003c/li\u003e\u003cli\u003ewhat is the average cost of daily living where you plan to go?\u003c/li\u003e\u003cli\u003ewill you be able to find a job that pays a sufficient wage?\u003c/li\u003e\u003c/ul\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eYou will need to brace yourself, more likely than not you will be encountering difficulties that you have not encountered before. You may need to accept work beneath your skill level (largely depends on your situation). You may need to power through some difficult times before you manage to settle in and be in a good place\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003egood luck!\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n How can you prepare for a completely fresh start in life?\n You will need to consider several things. First, to ensure survival:\nwhere will you live? How much will it cost?what is the average cost of daily living where you plan to go?will you be able to find a job that pays a sufficient wage?You will need to brace yourself, more likely than not you will be encountering difficulties that you have not encountered before.",
-            "date_published": "2016-07-07T00:00:00+00:00",
-            "date_modified": "2020-03-26T15:19:51+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/07/how-can-you-prepare-for-a-comp.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-can-you-prepare-for-a-completely-fresh-start-in-life/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/07/i-asked-my-boss-for-a-day-s-le/",
-            "url": "https://mirror.roytang.net/2016/07/i-asked-my-boss-for-a-day-s-le/",
-            "path": "/2016/07/i-asked-my-boss-for-a-day-s-le/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/I-asked-my-boss-for-a-days-leave-its-my-nephews-birthday-I-dont-want-to-miss-it-but-he-said-no-Is-this-what-life-is-Is-it-just-obligation/answer/Roy-Tang\"\u003eI asked my boss for a day\u0026rsquo;s leave, its my nephew\u0026rsquo;s birthday, I dont want to miss it but he said no. Is this what life is? Is it just obligation?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eDuring the twelve years I worked at my previous company, I had never had a leave request denied. Not because my managers are particularly strict or lenient, but because I prefer to take into account the situation at work before applying for a leave. If we are in a critical period where we can scarcely afford a person taking a day off, I’m not going to ask for a leave. Or if I really have to, I’m going to try to arrange to make contingency plans, i.e. see if someone can cover my responsibilities while I’m away, or see if some targets or schedules can be adjusted to accommodate my leave. As an employee, it is part of your obligation to take non-emergency leaves responsibly.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eThat being said, life is not all obligation. You are not banned from just not going to work that day. Of course there may be consequences. You may lose a day’s pay. It may reflect poorly on your evaluation as an employee. It is up to you to weigh those consequences against your desire to attend your nephew’s birthday. If you decide that you can’t take those consequences even to attend your nephew’s birthday, then you have already made a decision as to how to prioritize obligation versus your personal desires. That is what life is - a series of decisions of prioritization.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eOf course, the above assumes that your employer is reasonable and is willing to let you take a day’s leave if the workload can accommodate it. If your employer is the sort that like to be unreasonable and keep you around just to squeeze more work from you, then you might have bigger problems than just leaves, and you might want to consider looking for employment elsewhere.\u003c/p\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eOne other thing: if your employer is unreasonable about this sort of thing, but you decide to stay anyway, next time don’t bother giving him a detailed reason for your leave request. Just say you have personal matters to attend to. Or if you feel exceptionally sneaky, just pretend to be sick on that day, or pretend to have an emergency - weigh your personal ethics if it is acceptable to you to deceive your employer in this manner, if your employer is not particularly reasonable you may be able to justify it to yourself\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n I asked my boss for a day\u0026rsquo;s leave, its my nephew\u0026rsquo;s birthday, I dont want to miss it but he said no. Is this what life is? Is it just obligation?\n During the twelve years I worked at my previous company, I had never had a leave request denied. Not because my managers are particularly strict or lenient, but because I prefer to take into account the situation at work before applying for a leave.",
-            "date_published": "2016-07-07T00:00:00+00:00",
-            "date_modified": "2020-03-26T15:19:51+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/07/i-asked-my-boss-for-a-day-s-le.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/I-asked-my-boss-for-a-days-leave-its-my-nephews-birthday-I-dont-want-to-miss-it-but-he-said-no-Is-this-what-life-is-Is-it-just-obligation/answer/Roy-Tang"}]
             
             
             }
