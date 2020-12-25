@@ -1,4 +1,6 @@
 
+- [My favorite essays of life advice](/2020/12/my-favorite-essays-of-life-advice/)
+
 - [“Turn your audience into a business”](/2020/12/turn-your-audience-into-a-business/)
 
 - [This used to be our playground](/2020/12/this-used-to-be-our-playground/)

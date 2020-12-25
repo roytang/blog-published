@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/python-yield/",
+            "url": "https://mirror.roytang.net/2019/11/python-yield/",
+            "path": "/2019/11/python-yield/",
+            "title": "DevNotes: Python's yield",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been using Python for well over 10 years, and I still don\u0026rsquo;t have an intuitive mastery of one of its keywords: \u003ccode\u003eyield\u003c/code\u003e. Everytime I see it in someone\u0026rsquo;s code I need to stop and mentally remind myself what it does. I figured I\u0026rsquo;d write a devnote to help improve my recall.\u003c/p\u003e\n\u003cp\u003eTypically, \u003ccode\u003eyield\u003c/code\u003e is used in a function with a loop, like so:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esome_func\u003c/span\u003e(lim):\n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e i \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e range(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e, lim):\n        \u003cspan style=\"color:#66d9ef\"\u003eyield\u003c/span\u003e i\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e\u003ccode\u003eyield\u003c/code\u003e means the function returns a \u0026ldquo;generator\u0026rdquo; that can be used as an iterable in a loop:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e val \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e some_func(\u003cspan style=\"color:#ae81ff\"\u003e5\u003c/span\u003e):\n    \u003cspan style=\"color:#66d9ef\"\u003eprint\u003c/span\u003e(val)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eYou can also straight up convert the generator into a list via something like \u003ccode\u003elist(some_func(5))\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eThe equivalent function, without using \u003ccode\u003eyield\u003c/code\u003e would be something like:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esome_func\u003c/span\u003e(lim):\n    result \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e []\n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e i \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e range(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e, lim):\n        result\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eappend(i)\n    \u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e result\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThis is definitely the kind of function I\u0026rsquo;ve written often! Now that I\u0026rsquo;ve actually written it down, \u003ccode\u003eyield\u003c/code\u003e is rather straightforward, and hopefully it can help me shorten some of the python code I\u0026rsquo;ll be writing in the future!\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve been using Python for well over 10 years, and I still don\u0026rsquo;t have an intuitive mastery of one of its keywords: yield. Everytime I see it in someone\u0026rsquo;s code I need to stop and mentally remind myself what it does. I figured I\u0026rsquo;d write a devnote to help improve my recall.\nTypically, yield is used in a function with a loop, like so:\ndef some_func(lim): for i in range(0, lim): yield i yield means the function returns a \u0026ldquo;generator\u0026rdquo; that can be used as an iterable in a loop:",
+            "date_published": "2019-11-07T00:00:00+00:00",
+            "date_modified": "2020-09-16T14:57:40+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/python-yield/index.md"
+            , "tags": ["software development","devnotes"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192280118468792321/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/roytang/status/1192280118468792321#favorited-by-1000529293171150849",
+                    "source_file": "like-20191107T233128-webmention-722387.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/dsg036/",
+            "url": "https://mirror.roytang.net/2019/11/dsg036/",
+            "path": "/2019/11/dsg036/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-ronepiece-found-these-in-storage-from-years-ago-forgot-where-i-got-them-idk-why-luffy-has-a-stickhttpsredditcomronepiececommentsdsg036found_these_in_storage_from_years_ago_forgot\"\u003ePosted on r/OnePiece: \u003ca href=\"https://reddit.com/r/OnePiece/comments/dsg036/found_these_in_storage_from_years_ago_forgot/\"\u003eFound these in storage from years ago. Forgot where I got them. IDK why Luffy has a stick.\u003c/a\u003e\u003c/h4\u003e\n",
+            "summary": "Posted on r/OnePiece: Found these in storage from years ago. Forgot where I got them. IDK why Luffy has a stick. ",
+            "date_published": "2019-11-06T21:03:01+00:00",
+            "date_modified": "2020-10-19T18:08:02+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/11/dsg036/index.md"
+            , "tags": ["onepiece"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/OnePiece/comments/dsg036/found_these_in_storage_from_years_ago_forgot/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/handover-documentation/",
+            "url": "https://mirror.roytang.net/2019/11/handover-documentation/",
+            "path": "/2019/11/handover-documentation/",
+            "title": "The Perils of Handover Documentation",
+            "content_html": "\u003cp\u003eA while back I found myself having to figure out how to compile/build/run a mobile application. The developers previously assigned to the project were no longer available to consult with, but they did leave behind some documentation. However, their documentation quality left a lot to be desired. The instructions they left basically amounted to:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003ccode\u003enpm install\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eionic serve\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eionic codrova run android\u003c/code\u003e/\u003ccode\u003eios\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eOkay, first sign of trouble is that their instructions were basically commands that anyone who knew the app used Ionic would be able to Google. But ok, I gave this a shot, even though I had not used Ionic/Cordova before, I assumed the simple documentation meant it would be straightforward (spoiler: it was not).\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFirst problem: \u003ccode\u003enpm install\u003c/code\u003e fails. Okaaaay. I dig around for a bit and figure out there\u0026rsquo;s an incompatibility between one of the packages and my node version (12). Some more digging around tells me that the previous developers likely were using Node 8. I switch to Node 8 and \u003ccode\u003enpm install\u003c/code\u003e finishes successfully, somehow.\u003c/li\u003e\n\u003cli\u003eSecond problem: \u003ccode\u003eionic serve\u003c/code\u003e throws an error from one of the dependencies. A bit more digging around. Reading ionic docs. Stackoverflow. Turns out there was some extra configuration needed to be added if you\u0026rsquo;re doing this stuff on Windows. (I later found out the previous developers had used Ubuntu.)\u003c/li\u003e\n\u003cli\u003eThird problem: \u003ccode\u003eionic serve\u003c/code\u003e throws a whole bunch of typescript errors. Why? After facepalming for a bit, I dig around again. And dig some more. Looks like dependency issues. But the \u003ccode\u003epackage.json\u003c/code\u003e has dozens of dependencies, it would take me forever to figure out the problem. I find myself digging through the repository\u0026rsquo;s commit history trying to figure out if there was a recent change to the \u003ccode\u003epackage.json\u003c/code\u003e that would cause the issue. What I notice instead is that a couple of weeks before the handover, someone deleted \u003ccode\u003epackage-lock.json\u003c/code\u003e from the repository for some unknown reason. Deciding to try it out, I restore the old version of \u003ccode\u003epackage-lock.json\u003c/code\u003e, do the whole \u003ccode\u003enpm install\u003c/code\u003e dance again, and sure enough the typescript errors vanish. But we\u0026rsquo;re not yet done.\u003c/li\u003e\n\u003cli\u003eFourth problem: \u003ccode\u003eionic serve\u003c/code\u003e no longer throws an error, but when it launches the browser, there\u0026rsquo;s a cyclic error stacktrace shown. Some stackoverflow answers tells me this is because something can\u0026rsquo;t be serialize it, and I trace the problem to a generic error handler that just calls \u003ccode\u003econsole.log\u003c/code\u003e. I comment this out so that I can see the actual error, which is \u0026ldquo;cordova doesn\u0026rsquo;t exist\u0026rdquo; (or something to that effect). I realize this means that the mobile app uses some native-specific things, so Cordova is required and it\u0026rsquo;s not going to work when served via web, so why did they include this step?\u003c/li\u003e\n\u003cli\u003eSo instead I do \u003ccode\u003eionic cordova run android\u003c/code\u003e (after installing the necessary Android Studio/SDK things\u0026hellip;this was after my \u003ca href=\"/2019/09/two-backups/\"\u003erecent computer troubles\u003c/a\u003e, so I had a fresh OS install.) And yes, long story short, I am finally able to get the Android app running in an emulator (and eventually in a device, and then the iOS version as well).\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI recounted this because I could use it as lesson to note that even when you do have documentation, there are so many ways the documentation can be insufficient. In this case:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe dependencies/requirements were not specified\u003c/li\u003e\n\u003cli\u003ethey did not have someone actually go through these steps from a fresh install to verify things would work\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eA case could also be made that they should have just had something like a Docker setup available, but they actually did have a \u003ccode\u003edocker-compose.yml\u003c/code\u003e in the repository! Sadly, it wouldn\u0026rsquo;t have worked either because it referenced some environment variables that I had no idea what the value needed to be. And besides, my PC doesn\u0026rsquo;t support Docker (silly Windows Home), but looking at the docker image did clue me in to what Node version to use.\u003c/p\u003e\n\u003cp\u003eIn this instance, it was also a problem was that the old team was asked to provide the documentation only after the handover (due to circumstances beyond our control). Ideally, a handover would have them available for consultation should there be problems found with their documentation, and the documentation would only be cleared for acceptance after such review. (Realistically, a lot of documentation like user manuals wouldn\u0026rsquo;t even be looked at, but in this case, the ability to build the application was kind of crucial!)\u003c/p\u003e\n",
+            "summary": "A while back I found myself having to figure out how to compile/build/run a mobile application. The developers previously assigned to the project were no longer available to consult with, but they did leave behind some documentation. However, their documentation quality left a lot to be desired. The instructions they left basically amounted to:\n npm install ionic serve ionic codrova run android/ios  Okay, first sign of trouble is that their instructions were basically commands that anyone who knew the app used Ionic would be able to Google.",
+            "date_published": "2019-11-06T12:07:37+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/documentation/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192065025537716226/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/b4ftel9hegp/",
             "url": "https://mirror.roytang.net/2019/11/b4ftel9hegp/",
             "path": "/2019/11/b4ftel9hegp/",
@@ -813,57 +869,6 @@
             "source_path": "notes/2019/10/1186980194063511552/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1186980194063511552/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1186891878324568069/",
-            "url": "https://mirror.roytang.net/2019/10/1186891878324568069/",
-            "path": "/2019/10/1186891878324568069/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e daily standup?\u003c/p\u003e\n",
-            "summary": "@jaymelynilao daily standup?",
-            "date_published": "2019-10-23T06:27:29+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/1186891878324568069/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1186891878324568069/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b38tee-bhoz/",
-            "url": "https://mirror.roytang.net/2019/10/b38tee-bhoz/",
-            "path": "/2019/10/b38tee-bhoz/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 22: ghost #inktober #sketchdaily\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 22: ghost #inktober #sketchdaily",
-            "date_published": "2019-10-23T05:32:11+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B38tEe-BhoZ/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1186877961766670336/"},{"type":"instagram","url":"https://instagram.com/p/B38tEe-BhoZ/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dlf71p/october_22nd_clocks/f4uemr4/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1186777397477036032/",
-            "url": "https://mirror.roytang.net/2019/10/1186777397477036032/",
-            "path": "/2019/10/1186777397477036032/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/patio11/\"\u003e@patio11\u003c/a\u003e what’s wrong with “blogging”?\u003c/p\u003e\n",
-            "summary": "@patio11 what’s wrong with “blogging”?",
-            "date_published": "2019-10-22T22:52:35+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/1186777397477036032/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1186777397477036032/"}]
             
             
             }
