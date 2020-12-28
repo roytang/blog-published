@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2020-12-27 Season Finale](https://mirror.roytang.net/2020/12/weeknotes-2020-12-27/)
 - [Christmas Traditions](https://mirror.roytang.net/2020/12/xmas-traditions/)
 - [Weeknotes 2020-12-20](https://mirror.roytang.net/2020/12/weeknotes-2020-12-20/)
 - [How Not to Mentor Software Developers](https://mirror.roytang.net/2020/12/how-not-to-mentor-software-developers/)
 - [Weeknotes 2020-12-13](https://mirror.roytang.net/2020/12/weeknotes-2020-12-13/)
-- [Weeknotes 2020-12-06](https://mirror.roytang.net/2020/12/weeknotes-2020-12-06/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

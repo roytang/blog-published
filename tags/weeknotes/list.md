@@ -1,4 +1,6 @@
 
+- [Weeknotes 2020-12-27 Season Finale](/2020/12/weeknotes-2020-12-27/)
+
 - [Weeknotes 2020-12-20](/2020/12/weeknotes-2020-12-20/)
 
 - [Weeknotes 2020-12-13](/2020/12/weeknotes-2020-12-13/)
