@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/page/stats/gaming/",
+            "url": "https://mirror.roytang.net/page/stats/gaming/",
+            "path": "/page/stats/gaming/",
+            "title": "Stats :: Gaming",
+            "content_html": "\u003cp\u003eStats :: \u003ca href=\"/page/stats/site\"\u003eWebsite\u003c/a\u003e :: \u003ca href=\"/page/stats/awstats\"\u003eServer-side Stats\u003c/a\u003e :: \u003ca href=\"/page/stats/socmed\"\u003eSocial Media\u003c/a\u003e :: \u003ca href=\"/page/stats/mtg\"\u003eMTG\u003c/a\u003e :: \u003ca href=\"/page/stats/gaming\"\u003eGaming\u003c/a\u003e :: \u003ca href=\"/page/stats/listening\"\u003eListening\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"steam-stats\"\u003eSteam stats\u003c/h3\u003e\n\u003cdiv id=\"app\"\u003e\n    \u003ch4\u003ePlaytime by Year\u003c/h4\u003e\n    \u003ctable class=\"data\"\u003e\n        \u003ctr v-for=\"item in items.playtime_by_years\"\u003e\n            \u003ctd\u003e[[ item.year ]]\u003c/td\u003e\n            \u003ctd\u003e[[ item.playtime.toFixed(2) ]] hour(s)\u003c/td\u003e\n        \u003c/tr\u003e\n    \u003c/table\u003e\n    \u003ch4\u003eMost Played Games\u003c/h4\u003e\n    \u003ctable class=\"data\"\u003e\n        \u003ctr\u003e\u003cth colspan=\"2\"\u003eLifetime\u003c/th\u003e\u003c/tr\u003e\n        \u003ctr v-for=\"item in items.top_games\"\u003e\n            \u003ctd\u003e\u003ca href=\"[[ item.url ]]\"\u003e[[ item.name ]]\u003c/a\u003e\u003c/td\u003e\n            \u003ctd\u003e[[ item.playtime.toFixed(2) ]] hour(s)\u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctemplate v-for=\"(data, year) in items.top_games_by_year\"\u003e\n            \u003ctr\u003e\u003cth colspan=\"2\"\u003e[[ year ]]\u003c/th\u003e\u003c/tr\u003e\n            \u003ctr v-for=\"item in data\"\u003e\n                \u003ctd\u003e\u003ca href=\"[[ item.url ]]\"\u003e[[ item.name ]]\u003c/a\u003e\u003c/td\u003e\n                \u003ctd\u003e[[ item.playtime.toFixed(2) ]] hour(s)\u003c/td\u003e\n            \u003c/tr\u003e\n        \u003c/template\u003e\n    \u003c/table\u003e\n\u003c/div\u003e\n\u003cscript src=\"https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js\"\u003e\u003c/script\u003e\n\u003cscript src=\"https://cdn.jsdelivr.net/npm/vue-resource@1.3.4\"\u003e\u003c/script\u003e\n\u003cscript type=\"text/javascript\"\u003e\n    let timeline = new Vue({\n        delimiters: ['[[', ']]'],\n        el: '#app',\n        data: {\n            title: \"test\",\n            items: [],\n        },\n        http: {\n            root: '/',\n        },\n        mounted: function() {\n            this.loadEntries();\n        },\n        methods: {\n            loadEntries: function() {\n                this.$http.get(\"/apps/steamhist/report/\", {params: {\"json\": \"true\"}})\n                    .then(response =\u003e {\n                        this.items = response.data;\n                        console.log(this.items);\n                    });\n            },\n        }\n    });\n\u003c/script\u003e\n\u003cp\u003e\u003cstrong\u003eupdated daily; loading the data on this page requires JavaScript\u003c/strong\u003e\u003c/p\u003e\n",
+            "summary": "Stats :: Website :: Server-side Stats :: Social Media :: MTG :: Gaming :: Listening\n Steam stats Playtime by Year [[ item.year ]] [[ item.playtime.toFixed(2) ]] hour(s)   Most Played Games Lifetime [[ item.name ]] [[ item.playtime.toFixed(2) ]] hour(s)  [[ year ]] [[ item.name ]] [[ item.playtime.toFixed(2) ]] hour(s)       let timeline = new Vue({ delimiters: ['[[', ']]'], el: '#app', data: { title: \"",
+            "date_published": "2020-12-29T00:00:00+00:00",
+            "date_modified": "2020-12-29T01:23:36+08:00",
+            "section": "page",
+            "source_path": "page/stats/gaming.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/12/52-things-i-learned-in-2020/",
+            "url": "https://mirror.roytang.net/2020/12/52-things-i-learned-in-2020/",
+            "path": "/2020/12/52-things-i-learned-in-2020/",
+            "title": "52 things I learned in 2020",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-12-28T08:40:36+00:00",
+            "date_modified": "2020-12-28T08:50:25+00:00",
+            "section": "links",
+            "source_path": "links/2020/12/52-things-i-learned-in-2020/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://medium.com/fluxx-studio-notes/52-things-i-learned-in-2020-6a380692dbb8"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105456954313851239"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1343479388357083136/"}]
+            ,"link": "https://medium.com/fluxx-studio-notes/52-things-i-learned-in-2020-6a380692dbb8"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/12/weeknotes-2020-12-27/",
             "url": "https://mirror.roytang.net/2020/12/weeknotes-2020-12-27/",
             "path": "/2020/12/weeknotes-2020-12-27/",
@@ -835,45 +869,6 @@
             "source_path": "notes/2020/11/1333407638336532480/index.md"
             , "tags": ["mtg","magicarena","twitch","mtgkld"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1333407638336532480/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1333439996049592327/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/",
-            "url": "https://mirror.roytang.net/2020/11/we-shouldnt-need-heroes/",
-            "path": "/2020/11/we-shouldnt-need-heroes/",
-            "title": "We Shouldn't Need Heroes",
-            "content_html": "\u003cp\u003eIt\u0026rsquo;s National Heroes Day over here, so I\u0026rsquo;ve been thinking about heroics.\u003c/p\u003e\n\u003cp\u003eIn software development, \u003ca href=\"https://wiki.c2.com/?HeroicProgramming\"\u003eHeroic Programming\u003c/a\u003e can have a negative connotation:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eHeroicProgramming is often the only course of action left when poor planning, insufficient funds, and impractical schedules leave a project stranded and unlikely to complete successfully.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eI guess it\u0026rsquo;s not just in software development either. Many times heroics are an indicator of failed systems.\u003c/p\u003e\n\u003cp\u003eBonifacio and other Philippine heroes were needed because Spanish colonialism had failed the Filipino people, necessitating a revolution.\u003c/p\u003e\n\u003cp\u003eIn this pandemic, we hail the medical workers and other frontliners as heroes for their sacrifices during the pandemic, but they wouldn\u0026rsquo;t need to do so if we had better health care systems and the government had made better planning early on.\u003c/p\u003e\n\u003cp\u003eWhistleblowers are hailed as heroes, but it would be better if instead the people in charge knew better than to do the bad things that would need whistleblowing.\u003c/p\u003e\n\u003cp\u003eWhenever there\u0026rsquo;s an election, we look among the candidates, searching for a hero who will fix all our problems and save our country, but a few good politicians won\u0026rsquo;t be enough, what we need are systems and institutions that work to serve the citizenship and can survive even bad leadership.\u003c/p\u003e\n\u003cp\u003eThere will always be exceptionalism, and heroics always make for great stories, but there\u0026rsquo;s also something to be said for just having normal, working systems, institutions, and communities that don\u0026rsquo;t need heroes to keep going. We should celebrate our heroes and be grateful for their heroics, but even better would be a world where we need less heroes; a society that functions normally without people having to make sacrifices.\u003c/p\u003e\n",
-            "summary": "It\u0026rsquo;s National Heroes Day over here, so I\u0026rsquo;ve been thinking about heroics.\nIn software development, Heroic Programming can have a negative connotation:\n HeroicProgramming is often the only course of action left when poor planning, insufficient funds, and impractical schedules leave a project stranded and unlikely to complete successfully.\n I guess it\u0026rsquo;s not just in software development either. Many times heroics are an indicator of failed systems.\nBonifacio and other Philippine heroes were needed because Spanish colonialism had failed the Filipino people, necessitating a revolution.",
-            "date_published": "2020-11-30T00:00:00+00:00",
-            "date_modified": "2020-11-30T02:20:31+00:00",
-            "section": "post",
-            "source_path": "post/2020/11/we-shouldnt-need-heroes/index.md"
-            
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105296864283575619"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1333233628449370112/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://mastodon.technology/@dvshkn",
-                    "source_file": "repost-20201130-053818-a52a6c04-f27f-41f3-a2bb-b7eee984262a.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/11/1333200765167366144/",
-            "url": "https://mirror.roytang.net/2020/11/1333200765167366144/",
-            "path": "/2020/11/1333200765167366144/",
-            "title": "",
-            "content_html": "\u003cp\u003eLast minute mythic on #magicarena. Also hit master on Eternal last week, so it\u0026rsquo;s my first double month! #mtg\u003c/p\u003e\n",
-            "summary": "Last minute mythic on #magicarena. Also hit master on Eternal last week, so it\u0026rsquo;s my first double month! #mtg",
-            "date_published": "2020-11-30T00:06:46+08:00",
-            "date_modified": "2020-11-30T00:10:33+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/11/1333200765167366144/index.md"
-            , "tags": ["magicarena","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1333200765167366144/"}]
             
             
             }

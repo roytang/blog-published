@@ -5,7 +5,11 @@
 
 - [Late Game Review: Uncharted 4: A Thief&#39;s End](/2020/09/uncharted4/)
 
+- [](/2020/09/1301222471568297984/)
+
 - [The PS3 Collection](/2020/08/ps3-collection/)
+
+- [](/2020/08/1293051269129486337/)
 
 - [Review: Final Fantasy VII Remake](/2020/07/ff7r-review/)
 

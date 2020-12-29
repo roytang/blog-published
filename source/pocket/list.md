@@ -1,4 +1,6 @@
 
+- [52 things I learned in 2020](/2020/12/52-things-i-learned-in-2020/)
+
 - [My favorite essays of life advice](/2020/12/my-favorite-essays-of-life-advice/)
 
 - [“Turn your audience into a business”](/2020/12/turn-your-audience-into-a-business/)
