@@ -29,11 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [29 Dec 2020 5:11am](https://mirror.roytang.net/2020/12/c12b1185667d4adc5a2c99224584a981/): The circle of life:
+ I want to do so many things - things cost time - I don&rsquo;t have enough time - I don&rsquo;t want to prioritize the things, I want to do them all - I end up just going to sleep  
 - [26 Dec 2020 2:17pm](https://mirror.roytang.net/2020/12/1342836877942931456/): @Westraid Merry Christmas!
 - [25 Dec 2020 10:29am](https://mirror.roytang.net/2020/12/1342417270094479360/): @wrongwaygoback the token can&rsquo;t be used for quick draft or for arena cube
 - [24 Dec 2020 6:20pm](https://mirror.roytang.net/2020/12/ggvzbuq/): For people like me who dislike watching videos: Before you start drafting a set, craft all the common/uncommon cards from the new set, so that each common/uncommon you open in draft adds to the vault percentage.
 - [21 Dec 2020 6:35pm](https://mirror.roytang.net/2020/12/1341090027996999680/): I bet I could make an earthquake detection machine where all it does is check PH twitter for &ldquo;lindol&rdquo; tweets
-- [21 Dec 2020 3:55am](https://mirror.roytang.net/2020/12/1340868417394331648/): Kung akala mo ay walang kinalaman ang administrasyon na &lsquo;to sa pagpatay ng isang pulis sa mag-inang walang laban, isa kang hangal.
 
 [View all notes](https://mirror.roytang.net/notes)
 

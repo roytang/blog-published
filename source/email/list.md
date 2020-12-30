@@ -1,4 +1,6 @@
 
+- [The circle of life](/2020/12/c12b1185667d4adc5a2c99224584a981/)
+
 - [local Django superuser](/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/)
 
 - [facebook masks](/2020/10/a38e76d18c18ef7048cd755f7374f753/)
