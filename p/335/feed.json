@@ -11,6 +11,45 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/12/1927273/",
+            "url": "https://mirror.roytang.net/2009/12/1927273/",
+            "path": "/2009/12/1927273/",
+            "title": "Applet freezes page on initial load (Mac Firefox)",
+            "content_html": "\u003cp\u003eWe have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\u003c/p\u003e\n\u003cp\u003eThe problem is encountered on the user site.\nOn initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets.\nAfter refreshing the page, it loads normally.\nIf the cache is cleared, same problem happens again.\u003c/p\u003e\n\u003cp\u003eUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)\u003c/p\u003e\n\u003cp\u003eWe were able to get a jstack thread dump, see below:\n\u003ca href=\"http://pastebin.com/m527e05dd\"\u003ehttp://pastebin.com/m527e05dd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eHowever, we\u0026rsquo;re not sure how to interpret it. Any suggestions or advice?\u003c/p\u003e\n\u003cp\u003eEdit:\nWe were able to replicate in our testing machine by creating a new user (clean Firefox profile). If we clear the java cache then visit the problematic pages, the edit controls are disabled (we can\u0026rsquo;t click them to focus them), the Firefox address bar and search box have the same behavior. The edit box controls only \u0026ldquo;unfreeze\u0026rdquo; when we access the \u0026ldquo;Help\u0026rdquo; menu entry, which has a Search edit box that \u003cem\u003eis\u003c/em\u003e active.\u003c/p\u003e\n",
+            "summary": "We have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\nThe problem is encountered on the user site. On initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets. After refreshing the page, it loads normally. If the cache is cleared, same problem happens again.\nUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)",
+            "date_published": "2009-12-18T09:48:12+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/1927273/index.md"
+            , "tags": ["firefox","macos","applet","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox",
+                    "source_file": "comment-20091228T192007-1971063.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/12/6779222709/",
+            "url": "https://mirror.roytang.net/2009/12/6779222709/",
+            "path": "/2009/12/6779222709/",
+            "title": "",
+            "content_html": "\u003cp\u003ewoke up still angry. Result: At the office early.\u003c/p\u003e\n",
+            "summary": "woke up still angry. Result: At the office early.",
+            "date_published": "2009-12-18T00:08:48+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/6779222709.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6779222709/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/208779742934"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/12/6768122908/",
             "url": "https://mirror.roytang.net/2009/12/6768122908/",
             "path": "/2009/12/6768122908/",
@@ -842,40 +881,6 @@
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6522534243/"}]
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6522423454/",
-            "url": "https://mirror.roytang.net/2009/12/6522423454/",
-            "path": "/2009/12/6522423454/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf you\u0026rsquo;re a fan of The Big Bang Theory, you might enjoy this twitter list: \u003ca href=\"http://twitter.com/roytang/bbt\"\u003ehttp://twitter.com/roytang/bbt\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "If you\u0026rsquo;re a fan of The Big Bang Theory, you might enjoy this twitter list: http://twitter.com/roytang/bbt",
-            "date_published": "2009-12-10T05:14:17+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6522423454.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6522423454/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "url": "https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "path": "/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "title": "List of open source video games - Wikipedia, the free encyclopedia",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2009-12-10T03:58:16+00:00",
-            "date_modified": "2020-01-29T00:26:29+08:00",
-            "section": "links",
-            "source_path": "links/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/index.md"
-            , "tags": ["software","games","gamedev"]
-            
-            ,"link": "http://en.wikipedia.org/wiki/List_of_open_source_video_games"
             
             }
         

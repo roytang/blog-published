@@ -29,13 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [31 Dec 2020 11:33pm](https://mirror.roytang.net/2020/12/1344788913697669120/): Since I do Google Takeout on a regular basis, it would be nice if they had an option to generate a delta export since the last one, instead of making me download 100+ gigs everytime
+- [31 Dec 2020 4:04pm](https://mirror.roytang.net/2020/12/1344675891784212485/): Andami pa ding paputok
+- [31 Dec 2020 9:37am](https://mirror.roytang.net/2020/12/1344578492143341568/): @rovietoosin but&hellip; it&rsquo;s not Chinese New year
 - [30 Dec 2020 1:11pm](https://mirror.roytang.net/2020/12/1344269903285473283/): I thought my PC had died earlier today, but I was somehow able to resurrect it. Here&rsquo;s hoping this machine outlasts the pandemic somehow
 - [30 Dec 2020 1:10pm](https://mirror.roytang.net/2020/12/1344269606374948865/): @joyarmadamba uh, might be through less than legal means. Don&rsquo;t worry, it&rsquo;s &ldquo;justified&rdquo; wut.
 &hellip; let&rsquo;s not have this convo everytime i watch sth not available to stream locally, medyo madami for 2021 lol
-- [30 Dec 2020 7:58am](https://mirror.roytang.net/2020/12/1344191049963425795/): Finally watched #WonderWoman1984. Maybe don&rsquo;t think too much about what&rsquo;s going on in the movie. My headcanon is that the only reason it takes place in 1984 is because it&rsquo;s pre-crisis
-- [29 Dec 2020 5:11am](https://mirror.roytang.net/2020/12/c12b1185667d4adc5a2c99224584a981/): The circle of life:
- I want to do so many things - things cost time - I don&rsquo;t have enough time - I don&rsquo;t want to prioritize the things, I want to do them all - I end up just going to sleep  
-- [26 Dec 2020 2:17pm](https://mirror.roytang.net/2020/12/1342836877942931456/): @Westraid Merry Christmas!
 
 [View all notes](https://mirror.roytang.net/notes)
 
