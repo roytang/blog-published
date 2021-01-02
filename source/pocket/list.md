@@ -1,4 +1,6 @@
 
+- [It’s Okay If You Didn’t Read This Year](/2021/01/its-okay-if-you-didnt-read-this-year/)
+
 - [52 things I learned in 2020](/2020/12/52-things-i-learned-in-2020/)
 
 - [My favorite essays of life advice](/2020/12/my-favorite-essays-of-life-advice/)
