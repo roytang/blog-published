@@ -29,11 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [2 Jan 2021 10:58pm](https://mirror.roytang.net/2021/01/1345504732060663808/): PSA: if you keep your timeline in &ldquo;latest tweets&rdquo; mode (click sparkly blue icon on top right of app) you will have a chronological timeline and never have to see what your follows like. I always forget that&rsquo;s a thing since I never see it
+Quoted daretorant&#39;s tweet:   I feel like folks don’t fully realize that liking a tweet puts it into their followers’ feeds (almost at the same rate that RTs do).
 - [1 Jan 2021 12:10pm](https://mirror.roytang.net/2021/01/1344979283568050176/): It&rsquo;s Jan first, let&rsquo;s just restart all the habits and see which ones stick
 - [31 Dec 2020 11:33pm](https://mirror.roytang.net/2020/12/1344788913697669120/): Since I do Google Takeout on a regular basis, it would be nice if they had an option to generate a delta export since the last one, instead of making me download 100+ gigs everytime
 - [31 Dec 2020 4:04pm](https://mirror.roytang.net/2020/12/1344675891784212485/): Andami pa ding paputok
 - [31 Dec 2020 9:37am](https://mirror.roytang.net/2020/12/1344578492143341568/): @rovietoosin but&hellip; it&rsquo;s not Chinese New year
-- [30 Dec 2020 1:11pm](https://mirror.roytang.net/2020/12/1344269903285473283/): I thought my PC had died earlier today, but I was somehow able to resurrect it. Here&rsquo;s hoping this machine outlasts the pandemic somehow
 
 [View all notes](https://mirror.roytang.net/notes)
 
