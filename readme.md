@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Goodbye Flipboard](https://mirror.roytang.net/2021/01/goodbye-flipboard/)
+- [Weeknotes 2021-01-03 Every New Beginning Is Some Other Beginning&#39;s End](https://mirror.roytang.net/2021/01/weeknotes-2021-01-03/)
 - [2020 Year in Review](https://mirror.roytang.net/2021/01/2020-year-in-review/)
 - [New Year&#39;s Checklist 2021](https://mirror.roytang.net/2021/01/new-years-checklist/)
 - [Weeknotes 2020-12-27 Season Finale](https://mirror.roytang.net/2020/12/weeknotes-2020-12-27/)
-- [Christmas Traditions](https://mirror.roytang.net/2020/12/xmas-traditions/)
-- [Weeknotes 2020-12-20](https://mirror.roytang.net/2020/12/weeknotes-2020-12-20/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

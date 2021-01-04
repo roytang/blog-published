@@ -11,6 +11,113 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/3343206296/",
+            "url": "https://mirror.roytang.net/2009/08/3343206296/",
+            "path": "/2009/08/3343206296/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/altealice/\"\u003e@altealice\u003c/a\u003e this is useful in cuba\u003c/p\u003e\n",
+            "summary": "@altealice this is useful in cuba",
+            "date_published": "2009-08-16T11:33:11+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3343206296.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3343206296/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3340130499/",
+            "url": "https://mirror.roytang.net/2009/08/3340130499/",
+            "path": "/2009/08/3340130499/",
+            "title": "",
+            "content_html": "\u003cp\u003e#mtg wow it didn\u0026rsquo;t matter. I got passed 2 more Doom Blades in pack 3, plus a tendrils\u003c/p\u003e\n",
+            "summary": "#mtg wow it didn\u0026rsquo;t matter. I got passed 2 more Doom Blades in pack 3, plus a tendrils",
+            "date_published": "2009-08-16T05:02:57+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3340130499.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3340130499/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/119475403074"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3340096693/",
+            "url": "https://mirror.roytang.net/2009/08/3340096693/",
+            "path": "/2009/08/3340096693/",
+            "title": "",
+            "content_html": "\u003cp\u003e#mtg Doom Blade or Whispersilk Cloak?\u003c/p\u003e\n",
+            "summary": "#mtg Doom Blade or Whispersilk Cloak?",
+            "date_published": "2009-08-16T05:00:12+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3340096693.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3340096693/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/119249812426"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3327165854/",
+            "url": "https://mirror.roytang.net/2009/08/3327165854/",
+            "path": "/2009/08/3327165854/",
+            "title": "",
+            "content_html": "\u003cp\u003e#mtg lol just won a draft on MTGO with my bombs being 2 Soul Warden + 2 Howl of the Night Pack\u003c/p\u003e\n",
+            "summary": "#mtg lol just won a draft on MTGO with my bombs being 2 Soul Warden + 2 Howl of the Night Pack",
+            "date_published": "2009-08-15T12:09:25+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3327165854.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3327165854/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/117913930269"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3309916619/",
+            "url": "https://mirror.roytang.net/2009/08/3309916619/",
+            "path": "/2009/08/3309916619/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/densdensdens/\"\u003e@densdensdens\u003c/a\u003e pabasa!\u003c/p\u003e\n",
+            "summary": "@densdensdens pabasa!",
+            "date_published": "2009-08-14T16:00:07+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3309916619.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3309916619/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/1276714/",
+            "url": "https://mirror.roytang.net/2009/08/1276714/",
+            "path": "/2009/08/1276714/",
+            "title": "Invoking Java code across Application Server cluster nodes",
+            "content_html": "\u003cp\u003eLet\u0026rsquo;s say I have a Java webapp deployed on some Application Server with clustering across a few nodes.\u003c/p\u003e\n\u003cp\u003eIn the webapp, we maintain a cache of some values retrieved from the database, stored in-memory as static variables. Whenever a user performs an update in a particular screen, we clear the cache so that the cached values will be retrieved again the next time they are needed.\u003c/p\u003e\n\u003cp\u003eNow the problem: Since each node in the cluster is running on a separate JVM, how can I clear the cache across all nodes? Basically I want to call a static function on each cluster node. Is there some standard J2EE way to do this, or it depends on the Application Server software?\u003c/p\u003e\n",
+            "summary": "Let\u0026rsquo;s say I have a Java webapp deployed on some Application Server with clustering across a few nodes.\nIn the webapp, we maintain a cache of some values retrieved from the database, stored in-memory as static variables. Whenever a user performs an update in a particular screen, we clear the cache so that the cached values will be retrieved again the next time they are needed.\nNow the problem: Since each node in the cluster is running on a separate JVM, how can I clear the cache across all nodes?",
+            "date_published": "2009-08-14T08:40:06+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/1276714/index.md"
+            , "tags": ["java","java-ee","cluster-computing","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1276714/invoking-java-code-across-application-server-cluster-nodes"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1276714/invoking-java-code-across-application-server-cluster-nodes",
+                    "source_file": "comment-20090814T132043-1277809.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3267916426/",
             "url": "https://mirror.roytang.net/2009/08/3267916426/",
             "path": "/2009/08/3267916426/",
@@ -778,108 +885,6 @@
             "source_path": "notes/2009/08/3087572396.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3087572396/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/3086843964/",
-            "url": "https://mirror.roytang.net/2009/08/3086843964/",
-            "path": "/2009/08/3086843964/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg Victory! Just won my 3 byes for Bangkok\u003c/p\u003e\n",
-            "summary": "#mtg Victory! Just won my 3 byes for Bangkok",
-            "date_published": "2009-08-02T14:27:06+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/08/3086843964.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3086843964/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/112155774511"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/3071316879/",
-            "url": "https://mirror.roytang.net/2009/08/3071316879/",
-            "path": "/2009/08/3071316879/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/altealice/\"\u003e@altealice\u003c/a\u003e no thanks, I already have internets\u003c/p\u003e\n",
-            "summary": "@altealice no thanks, I already have internets",
-            "date_published": "2009-08-01T15:40:06+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/08/3071316879.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3071316879/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/3071301621/",
-            "url": "https://mirror.roytang.net/2009/08/3071301621/",
-            "path": "/2009/08/3071301621/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/altealice/\"\u003e@altealice\u003c/a\u003e bumili na din ako ng blazblue. spending spree!\u003c/p\u003e\n",
-            "summary": "@altealice bumili na din ako ng blazblue. spending spree!",
-            "date_published": "2009-08-01T15:38:54+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/08/3071301621.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3071301621/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/3067225022/",
-            "url": "https://mirror.roytang.net/2009/08/3067225022/",
-            "path": "/2009/08/3067225022/",
-            "title": "",
-            "content_html": "\u003cp\u003ebought a nokia 5800\u003c/p\u003e\n",
-            "summary": "bought a nokia 5800",
-            "date_published": "2009-08-01T07:50:37+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/08/3067225022.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3067225022/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/109694426036"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/",
-            "url": "https://mirror.roytang.net/2009/08/",
-            "path": "/2009/08/",
-            "title": "Monthly Archives for 08 2009",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2009-08-01T00:00:00+00:00",
-            "date_modified": "2019-08-09T01:14:44+08:00",
-            "section": "archm",
-            "source_path": "archm/2009-08.md"
-            
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2872446278/",
-            "url": "https://mirror.roytang.net/2009/07/2872446278/",
-            "path": "/2009/07/2872446278/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/altealice/\"\u003e@altealice\u003c/a\u003e I\u0026rsquo;m always serious\u003c/p\u003e\n",
-            "summary": "@altealice I\u0026rsquo;m always serious",
-            "date_published": "2009-07-27T16:03:50+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2872446278.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2872446278/"}]
             
             
             }

@@ -1,4 +1,6 @@
 
+- [Goodbye Flipboard](/2021/01/goodbye-flipboard/)
+
 - [Ephemeral Echoes](/2020/12/ephemeral-echoes/)
 
 - [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](/2020/11/server-setup-notes/)

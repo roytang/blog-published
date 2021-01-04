@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-01-03 Every New Beginning Is Some Other Beginning&#39;s End](/2021/01/weeknotes-2021-01-03/)
+
 - [Weeknotes 2020-12-27 Season Finale](/2020/12/weeknotes-2020-12-27/)
 
 - [Weeknotes 2020-12-20](/2020/12/weeknotes-2020-12-20/)
