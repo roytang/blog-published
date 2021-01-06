@@ -11,6 +11,82 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/04/web-application-security/",
+            "url": "https://mirror.roytang.net/2020/04/web-application-security/",
+            "path": "/2020/04/web-application-security/",
+            "title": "Web Application Security",
+            "content_html": "\u003cp\u003eA while back one of the biggest leaks of personal information in history was made by hackers accessing the Commission on Elections database here in the Philippines. More than 50 million voter registration records, including information such as full names, date of birth, address, among others. A small percentage of the data leaked also included email addresses and even passport numbers. The hack exposed more than half of the country’s population to the possibility of social engineering and other exploits.\nIt was certainly a national embarrassment, especially for those of us working in software development. But the truth of the matter is that securing publicly accessible sites against determined bad actors is difficult, very difficult. It’s something that needs to be taken into account on all levels of the system.\u003c/p\u003e\n\u003cp\u003eI don\u0026rsquo;t consider myself any kind of security specialist, but I think it\u0026rsquo;s something that software developers of all levels need to at least have a passing knowledge of, especially in this modern age where many tech companies store personal/private data for large numbers of users. I tend to classify the security practices and vulnerabilities under several levels:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePhysical / hardware layer - this means controlling the physical access of unauthorized personnel to hardware that contains private information. It would take serious levels of screw-ups for a system to be compromised in this manner, or perhaps a well-placed bribe. It is however, comparatively easy to detect any breaches in this layer. In any case, this is not really a concern for the software engineer.\u003c/li\u003e\n\u003cli\u003eServer OS and local network level - this means that controlling the access to the actual OS running on the machine and the corresponding local network the server is on. Practically as bad (sometimes worse) than compromising the hardware layer, a compromise on this layer means the bad actor can access everything, possibly remotely, making it much more difficult to detect. Securing your system on this layer involves among other things making sure known vulnerabilities on your OS are patched or worked around and network access is restricted as needed. This is often the concern of people like network engineers or devops people who are setting up and securing your servers.\u003c/li\u003e\n\u003cli\u003eApplication container level - this doesn’t necessarily mean your application itself, but typically websites and web applications will be running inside a container software such as a webserver like Apache, Tomcat, ISS, etc. Securing this layer is often just a matter of making sure the latest security patches are applied and known vulnerabilities are closed and access is restricted as needed. If this layer is compromised, the bad actors will typically have access to any files deployed in the container (which may contain other information that will facilitate further leaks). I also include here securing vulnerabilities in the database software used as your backend.\u003c/li\u003e\n\u003cli\u003eApplication level - this refers to your security in the design of your application itself. Typically, problems in the first three layers above will be the responsibility of people setting up the servers and the server software, who are probably a different set of people than the development team. Concerns from this layer onwards are more applicable to the actual application developers.  Application-level security can be further broken down into several levels:\n\u003cul\u003e\n\u003cli\u003eUser authentication - this refers to your application’s implementation of user login and session control, and management of things like passwords, password reset requests, two-party authentication, etc. If the implementation is poor, your application may have vulnerabilities like bad actors being able to identify your users’ usernames by enumerating login requests or being able to brute force their passwords.\u003c/li\u003e\n\u003cli\u003eFunctional security - this refers to how your application grants rights to each user as to which functions in the system he is able to access. As an example, in a typical system, normal users should not be able to access functions restricted to administrator users.\u003c/li\u003e\n\u003cli\u003eUser-specific Data security - this ensures that only relevant data for each user can be accessed by each user. For example, if I’m logged in as User ID = 1, I shouldn’t be able to view the data for User ID = 2 simply by changing a parameter such as USER_ID=2 in the URL.\u003c/li\u003e\n\u003cli\u003eDomain-specific security - this refers to additional security rules specific to the domain your application is involved in. For example, your security rules may demand that sensitive information can only be viewed by users with specific privileges and would need to be masked for other users. This may introduce some special logic in your program development.\u003c/li\u003e\n\u003cli\u003eLogging - applications typically log a lot of information to log files and audit trails, to facilitate debugging of problems and often also for statutory purposes. Security restrictions may require making sure that sensitive data is not included in the logs and audit trails.\u003c/li\u003e\n\u003cli\u003eCode level - this refers to security in coding practices in both the code used to write your application and also any third-party libraries or frameworks used by the application. This is highly experience-based and requires knowledge of the most common vulnerabilities as a result of coding practices. Organizations such as OWASP regularly publish lists of the most common vulnerabilities, many of them resulting from poor coding decisions such as SQL injection, cross-site scripting, cross-site request forgery, etc. Modern frameworks will typically provide standard ways for developers to minimize the chance of introducing the most well-known vulnerabilities.\u003c/li\u003e\n\u003cli\u003eDatabase level - this refers to security in the design of the database itself. Examples of concerns on this level are whether sensitive information is encrypted or hashed or whether financial data such as credit card information is stored in the database and secured appropriately (for credit card information specifically, there are standards laid out for managing credit card data that you have to comply with in order to be certified to handle credit card transactions). I guess I would also include in this layer how database backups and purged data are handled - are they backed up and encrypted separated from the main database? - although the protection of such backups may be outside the scope of the application developer.\u003c/li\u003e\n\u003cli\u003eThird party code - modern day applications use a lot of third party libraries and packages, not to mention code that developers are copying from StackOverflow. And rightly so - since using these dependencies means savings in effort and more productivity. But developers need to be aware of the cost every time we add a new dependency; not only are we dependent on that third party library working correctly, but also that it is generally secure. And if a security issue is found, will it be fixed in a timely manner? And this kind of thing can be difficult to track. There have been stories of websites being exposed to security breaches or even things like embedded crypto miners simply because they added a node.js dependency that had another dependency that had another dependency that was compromised. It\u0026rsquo;s the kind of thing more senior developers on the team should be aware of and on the lookout for.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIn modern settings, developers often specialize into roles like frontend and backend. And one might think that security concerns are limited only to the backend side, but one should not neglect security on the front end either. There are security concerns on the browser/JavaScript level as well, and you have to make sure that your frontend is aligned with the backend\u0026rsquo;s security paradigms.\u003c/p\u003e\n\u003cp\u003eOften times many clients will require that a third-party security audit will be done near the end of the project, and the development team will need to address any security concerns that come up during the audit. I’ve been on the receiving end of these a few times and I’ve found the companies doing them to be fairly thorough.\u003c/p\u003e\n\u003cp\u003eIt\u0026rsquo;s better for your dev team to be generally aware of security best practices from the very beginning, as it may be more costly to correct security problems towards the end of a project. It\u0026rsquo;s the kind of valuable tribal knowledge among developers that you can carry easily across projects and companies and tech stacks.\u003c/p\u003e\n",
+            "summary": "A while back one of the biggest leaks of personal information in history was made by hackers accessing the Commission on Elections database here in the Philippines. More than 50 million voter registration records, including information such as full names, date of birth, address, among others. A small percentage of the data leaked also included email addresses and even passport numbers. The hack exposed more than half of the country’s population to the possibility of social engineering and other exploits.",
+            "date_published": "2020-04-16T00:00:00+00:00",
+            "date_modified": "2020-04-16T03:30:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/04/web-application-security/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104006104133566935"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1250624976618549249/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://social.matej-lach.me/@MatejLach",
+                    "source_file": "like-20200416-103355-7210ab13-0582-4fd2-a9f3-c6b24b4be50e.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200416-051324-213cbfc2-7d6c-4179-84e8-000d35e04be5.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/04/1250401445477826560/",
+            "url": "https://mirror.roytang.net/2020/04/1250401445477826560/",
+            "path": "/2020/04/1250401445477826560/",
+            "title": "",
+            "content_html": "\u003cp\u003eStreaming some more Arena Cube Sealed \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eManaged to do two runs but they were both terrible T_T \u003ca href=\"https://www.youtube.com/watch?v=QXMOoJC5iOA\"\u003ehttps://www.youtube.com/watch?v=QXMOoJC5iOA\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Streaming some more Arena Cube Sealed https://www.twitch.tv/twitchyroy\nManaged to do two runs but they were both terrible T_T https://www.youtube.com/watch?v=QXMOoJC5iOA",
+            "date_published": "2020-04-15T12:31:50+00:00",
+            "date_modified": "2020-04-16T11:59:25+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1250401445477826560/index.md"
+            , "tags": ["twitch","magic arena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1250401445477826560/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1250462129674571777/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/04/six-fanarts-followup/",
+            "url": "https://mirror.roytang.net/2020/04/six-fanarts-followup/",
+            "path": "/2020/04/six-fanarts-followup/",
+            "title": "Six Fanarts Follow Up",
+            "content_html": "\u003cp\u003eA couple of quick follow-up sketches I made in response to comments on \u003ca href=\"/2020/04/six-fanarts/\"\u003ethe SixFanarts post\u003c/a\u003e over \u003ca href=\"https://www.facebook.com/stephen.roy.tang/posts/10158362576173912\"\u003eon Facebook\u003c/a\u003e.\u003c/p\u003e\n",
+            "summary": "A couple of quick follow-up sketches I made in response to comments on the SixFanarts post over on Facebook.",
+            "date_published": "2020-04-15T14:41:12+08:00",
+            "date_modified": "2020-04-15T14:46:22+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/04/six-fanarts-followup/index.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/04/1250163978761670658/",
+            "url": "https://mirror.roytang.net/2020/04/1250163978761670658/",
+            "path": "/2020/04/1250163978761670658/",
+            "title": "",
+            "content_html": "\u003cp\u003eLmao Bolt is rude\u003c/p\u003e\n",
+            "summary": "Lmao Bolt is rude",
+            "date_published": "2020-04-14T20:48:14+00:00",
+            "date_modified": "2020-04-14T21:00:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/04/1250163978761670658/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1250163978761670658/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/04/fe45adb8c24e654605b9906dea2df749/",
             "url": "https://mirror.roytang.net/2020/04/fe45adb8c24e654605b9906dea2df749/",
             "path": "/2020/04/fe45adb8c24e654605b9906dea2df749/",
@@ -857,74 +933,6 @@
             "source_path": "notes/2020/03/1244153079072727041/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244153079072727041/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244198432715075586/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/weeknotes-2020-03-29/",
-            "url": "https://mirror.roytang.net/2020/03/weeknotes-2020-03-29/",
-            "path": "/2020/03/weeknotes-2020-03-29/",
-            "title": "Weeknotes 2020-03-29 Time Is Meaningless",
-            "content_html": "\u003cp\u003eMy \u003ca href=\"/2020/03/covid19/\"\u003eCOVID19 Diary\u003c/a\u003e is still ongoing, although that TOC is starting to get unwieldy. Need to think of a better UX solution for that.\u003c/p\u003e\n\n\n\n\n\n\n\n\n    \n    \n        \n    \n    \n    \n        \n            \n            \n            \n            \n              \n            \n            \n            \u003ca href=\"#ebaca044327af45cfc02b507f864565e-lightbox\"\u003e\n                \u003cfigure\u003e\n                  \u003cimg src=\"/2020/03/1242953238497751040/ET_bYDoUMAA8vty_hu61559ea2fb5b54ac6f28ab0474d68098_8100_300x0_resize_box_2.png\" alt=\"\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\" title=\"\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\" class=\"tn\" /\u003e\n                  \u003cfigcaption\u003e“Time is meaningless under extreme enhanced community quarantine” (Click to view full-size)\u003c/figcaption\u003e\n                \u003c/figure\u003e\n            \u003c/a\u003e\n            \u003cdiv  class=\"lightbox\" id=\"ebaca044327af45cfc02b507f864565e-lightbox\" style=\"display: none;\"\u003e\n              \u003ca href=\"#_\"\u003e\n                \u003cimg src=\"/2020/03/1242953238497751040/ET_bYDoUMAA8vty.png\" /\u003e\n              \u003c/a\u003e\n              \u003cdiv class=\"lightbox_overlay\"\u003e\n                \u003cp\u003e\u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\u003c/p\u003e\n                \u003ctime class=\"dt-published\" datetime=\"29 Mar 2020 12:00am\"\u003e29 Mar 2020 12:00am\u003c/time\u003e\u003ca href=\"/2020/03/1242953238497751040/\"\u003eView post\u003c/a\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n              \u003c/div\u003e\n            \u003c/div\u003e            \n        \n    \n\n\u003cp\u003eI know it\u0026rsquo;s probably unrealistic, but I\u0026rsquo;m hoping the lockdown somehow gets lifted sooner rather than later. It\u0026rsquo;s not that I crave social interaction (I don\u0026rsquo;t), but I miss going out for food. I miss pizza. And japanese curry. And fancy sandwiches with sesame seeds and such. The food at the house is fine and all, but tends to get repetitive. And during the last grocery run, the only mayonnaise they had was Best Foods Mayo Magic. Bleah. I\u0026rsquo;m so gonna eat at so many places after all of this is over.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eOn the upside, I did get to do much more stuff this work compared to last week, among other things:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003epublished a \u003ca href=\"/blog/\"\u003efew posts\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eparticipated in 2 online quiz nights!\u003c/li\u003e\n\u003cli\u003ea bit more consulting work\u003c/li\u003e\n\u003cli\u003esome room cleanup\u003c/li\u003e\n\u003cli\u003esome cleanup/sorting of old files and stuff\u003c/li\u003e\n\u003cli\u003edid the groceries\u003c/li\u003e\n\u003cli\u003epaid my dad\u0026rsquo;s credit card bills online (he was actually planning to go to the bank to pay them!)\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"watching-lately\"\u003eWatching lately\u003c/h3\u003e\n\u003cp\u003eI think I\u0026rsquo;ll retire the \u003ca href=\"/tags/watching-lately/\"\u003ewatching lately tag\u003c/a\u003e and just include my media notes here in the weeknotes. More convenient, and more fine-tuned. Let\u0026rsquo;s see how it works out.\u003c/p\u003e\n\u003cp\u003eFor this week:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ewatched \u003ca href=\"/page/lists/2020/movies/\"\u003e4 new movies\u003c/a\u003e. Rate has slowed down a lot, but I figure I could get to a 100 for the year still. Princess Mononoke and Logan Lucky were particularly good\u003c/li\u003e\n\u003cli\u003ealso started watching Picard (via Amazon Prime Video), since all the episodes have aired. I\u0026rsquo;m only a couple of episodes in, but I can already tell it has a completely different feel than TNG (or any of the TV series pre-Discovery for that matter)\u003c/li\u003e\n\u003cli\u003egreatly enjoyed Brooklyn Nine-Nine this week with JK Simmons!\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"gaming\"\u003eGaming\u003c/h3\u003e\n\u003cp\u003eSince everyone\u0026rsquo;s at home, I\u0026rsquo;m getting a lot of multiplayer gaming done. This week our gaming group got into team Starcraft 2 vs AI battles. (We find ladder too stressful!). Since we have discord these days for voice, there is much more coordination in the team battles. And we even have some post-match analysis going on in our discord channel!\u003c/p\u003e\n\u003cp\u003eOn the singleplayer side, I managed to finished Megaman 1 in the Legacy Collection! Easily the toughest of the early Megaman games. Here\u0026rsquo;s \u003ca href=\"https://www.youtube.com/watch?v=MiWhBlrGiK8\"\u003ea video of me struggling to beat the yellow devil/cyclops\u003c/a\u003e. I\u0026rsquo;m hoping to be able to beat all 6 of the games in the collection. I\u0026rsquo;m old and rusty and don\u0026rsquo;t have the reflexes of 1990s Roy, but at least I have savescumming.\u003c/p\u003e\n\u003cp\u003eI passed on this month\u0026rsquo;s Humble Choice. I kind of wanted Fell Seal, but not that badly.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003ePersonal projects: Minor bug fixes mostly.\u003c/p\u003e\n\u003cp\u003eRecent site changes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI added the \u003ca href=\"/albums\"\u003ealbums\u003c/a\u003e section under photos (similar to how FB has albums I guess?)\u003c/li\u003e\n\u003cli\u003emass formatting cleanup of \u003ca href=\"/source/quora\"\u003eold posts imported from quora\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eminor CSS changes in various places\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003cp\u003eI don\u0026rsquo;t have anything specific to look forward to in the coming week. Time under the lockdown moves at a different scale, we just take everything one day at a time.\u003c/p\u003e\n",
-            "summary": "My COVID19 Diary is still ongoing, although that TOC is starting to get unwieldy. Need to think of a better UX solution for that.\n “Time is meaningless under extreme enhanced community quarantine” (Click to view full-size)    \u0026ldquo;Time is meaningless under extreme enhanced community quarantine\u0026rdquo;\n29 Mar 2020 12:00amView postClose   I know it\u0026rsquo;s probably unrealistic, but I\u0026rsquo;m hoping the lockdown somehow gets lifted sooner rather than later.",
-            "date_published": "2020-03-29T00:00:00+00:00",
-            "date_modified": "2020-03-29T03:30:03+00:00",
-            "section": "post",
-            "source_path": "post/2020/03/weeknotes-03-29/index.md"
-            , "tags": ["weeknotes","watching-lately"]
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103904182530128602"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1244101994492473344/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/1243803632912359424/",
-            "url": "https://mirror.roytang.net/2020/03/1243803632912359424/",
-            "path": "/2020/03/1243803632912359424/",
-            "title": "",
-            "content_html": "\u003cp\u003eI recorded myself struggling to beat the Cyclops boss from Megaman 1: \u003ca href=\"https://www.youtube.com/watch?v=MiWhBlrGiK8\"\u003ehttps://www.youtube.com/watch?v=MiWhBlrGiK8\u003c/a\u003e #gaming\u003c/p\u003e\n",
-            "summary": "I recorded myself struggling to beat the Cyclops boss from Megaman 1: https://www.youtube.com/watch?v=MiWhBlrGiK8 #gaming",
-            "date_published": "2020-03-28T07:34:29+00:00",
-            "date_modified": "2020-03-28T07:45:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/03/1243803632912359424/index.md"
-            , "tags": ["gaming"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243803632912359424/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/1243454963709173761/",
-            "url": "https://mirror.roytang.net/2020/03/1243454963709173761/",
-            "path": "/2020/03/1243454963709173761/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/momblogger/\"\u003e@momblogger\u003c/a\u003e Our death stats may already be very inaccurate\u003c/p\u003e\n",
-            "summary": "@momblogger Our death stats may already be very inaccurate",
-            "date_published": "2020-03-27T08:29:00+00:00",
-            "date_modified": "2020-03-27T08:30:14+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/03/1243454963709173761/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243454963709173761/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/1243390590680592384/",
-            "url": "https://mirror.roytang.net/2020/03/1243390590680592384/",
-            "path": "/2020/03/1243390590680592384/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/bfintal/\"\u003e@bfintal\u003c/a\u003e \u003ca href=\"https://twitter.com/jutsine_/\"\u003e@jutsine_\u003c/a\u003e engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!\u003c/p\u003e\n",
-            "summary": "@bfintal @jutsine_ engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!",
-            "date_published": "2020-03-27T04:13:12+00:00",
-            "date_modified": "2020-03-27T04:30:04+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/03/1243390590680592384/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243390590680592384/"}]
             
             
             }

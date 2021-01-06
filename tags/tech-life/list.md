@@ -1,4 +1,6 @@
 
+- [2020 Word Clouds](/2021/01/2020-word-clouds/)
+
 - [Goodbye Flipboard](/2021/01/goodbye-flipboard/)
 
 - [Ephemeral Echoes](/2020/12/ephemeral-echoes/)

@@ -7,12 +7,29 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Thu, 24 Dec 2020 18:20:56 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 05 Jan 2021 22:01:37 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/source/reddit/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Reply to &#39;Arena needs to shift focus away from Win/Loss metric&#39; on /r/MagicArena at https://reddit.com/r/MagicArena/comments/kqorml/arena_needs_to_shift_focus_away_from_winloss/:
+</title>
+            <link>https://mirror.roytang.net/2021/01/gi6ha57/</link>
+            <pubDate>Tue, 05 Jan 2021 22:01:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/01/gi6ha57/</guid>
+            <description>
+            Reply to &amp;#39;Arena needs to shift focus away from Win/Loss metric&amp;#39; on /r/MagicArena at https://reddit.com/r/MagicArena/comments/kqorml/arena_needs_to_shift_focus_away_from_winloss/:
+
+            &lt;p&gt;I can’t relate to this request (I guess because I’m spiky), but I’m always curious whenever this comes up: are there other ccgs that do this (having systems that reward things other than winning, aside from daily quests)?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>Reply to &#39;When a new set comes out you can upgrade your common and uncommon wilds!&#39; on /r/MagicArena at https://reddit.com/r/MagicArena/comments/kj7j72/when_a_new_set_comes_out_you_can_upgrade_your/:
 </title>
@@ -907,32 +924,6 @@ Only if you are earning recurring income not earned under an employer-employee r
             Reply to &amp;#39;What do Hong Kongers feel today?&amp;#39; on /r/webcomics at https://reddit.com/r/webcomics/comments/dzcmdg/what_do_hong_kongers_feel_today/:
 
             &lt;p&gt;Whats with blue restaurants?&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Reply to a comment by sgxadhith on &#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7ybonm/:
-</title>
-            <link>https://mirror.roytang.net/2019/11/f7yj706/</link>
-            <pubDate>Mon, 18 Nov 2019 16:54:16 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2019/11/f7yj706/</guid>
-            <description>
-            Reply to a comment by sgxadhith on &amp;#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7ybonm/:
-
-            &lt;p&gt;Decision trees like &amp;ldquo;which starter pokemon do you pick&amp;rdquo; aren&amp;rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.&lt;/p&gt;
-&lt;p&gt;For this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it&amp;rsquo;s easier for me:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;starters: [&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I choose Charmander!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0001&amp;quot;},&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I want Bulbasaur!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0002&amp;quot;},&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I want Pikachu!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0003&amp;quot;}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;(I forgot who the 3rd starter was supposed to be, I&amp;rsquo;m not big on Pokemon. Also I&amp;rsquo;m guessing those aren&amp;rsquo;t the actual pokedex IDs)&lt;/p&gt;
-&lt;p&gt;Each item on the list could also contain some other info. For example in dialogue trees, you might have NPCs react differently depending on what you say, so in that case each node would have an id pointing to the specific NPC response.&lt;/p&gt;
-&lt;p&gt;The idea is to separate the data from your code, since those are totally separate concerns. This is a general programming principle not specific to game development. In this way, you make it easier to modify your data (like decision trees) without necessarily having to rebuild your code. For example, you could change the dialog message for each pokemon starter choice, or maybe you could add more choices, or make the starter pokemon be Snorlax, MewTwo and Ekans for some reason (those are pokemon right? Lol). Bigger game studios will have separate tools to maintain those data files so that even nonprogrammers can help change those kinds of things in the game.&lt;/p&gt;
 
 
 
