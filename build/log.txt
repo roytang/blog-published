@@ -1,4 +1,4 @@
-Wed Jan  6 05:25:01 UTC 2021
+Thu Jan  7 05:21:16 UTC 2021
 Hugo Static Site Generator v0.72.0-8A7EF3CF linux/amd64 BuildDate: 2020-05-31T12:07:45Z
 Building sites … 
 Template Metrics:
@@ -6,124 +6,124 @@ Template Metrics:
      cumulative       average       maximum         
        duration      duration      duration  count  template
      ----------      --------      --------  -----  --------
-  9m10.094933943s  2.455780955s  41.859665507s    224  archm/single.html
-  6m39.605497179s   95.759764ms  1.148512859s   4173  partials/image_thumbnail.html
-  6m38.446727093s   16.046342ms  39.447191524s  24831  _default/image_list.html
-  4m57.754585754s    16.06705ms  13.292131434s  18532  _default/single.html
-  3m12.083741289s  524.818965ms   946.55708ms    366  otd/single.html
-  2m28.231366145s    9.277797ms  13.186269141s  15977  _default/single.content.html
-  2m27.744191995s    9.338486ms  13.186110261s  15821  partials/block/photos.html
-  1m50.425320217s    5.958629ms  173.920683ms  18532  _default/single.boot.html
-  1m44.391953693s    5.633064ms  173.737541ms  18532  partials/block/comments.html
-  1m3.55834812s     971.038µs  2.708571917s  65454  _default/list_item.html
-  1m2.103362033s    3.281898ms  2.708548347s  18923  partials/summary.html
-  57.965296163s   43.289989ms  2.708092958s   1339  post/summary.content.html
-   32.53274683s  154.917842ms  777.226337ms    210  shortcodes/img.html
-  21.223072745s     981.958µs   23.183778ms  21613  partials/sidebar.html
-  20.570403257s      237.94µs    20.93443ms  86452  partials/block/menu.html
-  17.419105613s  220.495007ms  596.663069ms     79  shortcodes/photo.html
-  16.662955823s     770.969µs  1.196563508s  21613  partials/head.html
-  14.363052821s     664.556µs  1.196447348s  21613  partials/metas.html
-   9.723316307s  360.122826ms  2.708012829s     27  partials/block/featured_image.html
-   8.162653659s  388.697793ms  605.452687ms     21  archy/single.html
-   8.077720455s    3.414083ms   63.708499ms   2366  partials/block/paged-list.html
-   6.411326194s     296.642µs   20.761959ms  21613  partials/foot.html
-   6.197118966s     286.731µs   20.745916ms  21613  partials/footer.html
-   4.364433945s   12.912526ms   65.384156ms    338  _default/section.html
-   4.321476775s    1.772549ms   38.199677ms   2438  partials/pagination.html
-   4.237687241s     223.943µs   20.724217ms  18923  partials/block/meta.html
-   3.988435399s    2.678599ms   42.937341ms   1489  tags/list.html
-   3.492219258s    9.754802ms    46.11879ms    358  source/list.html
-   2.739692886s  136.984644ms  227.777315ms     20  shortcodes/note.html
-   2.179527326s     113.855µs   41.518976ms  19143  partials/block/navigation.html
-   2.058711235s    1.277116ms  102.448702ms   1612  _default/list.rss.xml
-   1.755099722s     245.228µs   46.708333ms   7157  partials/block/entry-list.html
-   1.712992065s   71.374669ms  1.199366476s     24  page/single.html
-   1.441159477s      76.159µs   20.371165ms  18923  partials/block/author-timestamp.html
-    1.27828236s      87.565µs   20.830068ms  14598  notes/summary.content.html
-   1.168504737s       61.75µs   20.753955ms  18923  _default/summary.boot.html
-   1.054664102s    2.746521ms    4.538254ms    384  _default/list.jsonfeed.json
-   793.555195ms  396.777597ms  537.926373ms      2  partials/block/section-list.html
-   784.694598ms  784.694598ms  784.694598ms      1  page/urlmap.json.json
-   693.501838ms  693.501838ms  693.501838ms      1  page/onthisday.html
-   675.582378ms      35.701µs      750.55µs  18923  partials/block/summary-comments.html
-   652.717812ms  326.358906ms   454.16983ms      2  shortcodes/archives/grid-or-list.html
-   626.407949ms  626.407949ms  626.407949ms      1  index.html
-   596.057896ms      76.614µs   47.407581ms   7780  _default/summary.content.rss.xml
-   538.618727ms  538.618727ms  538.618727ms      1  shortcodes/archives/section-list.html
-   532.247843ms   15.207081ms   37.243634ms     35  photos/list.html
-    511.41501ms      27.004µs   20.411696ms  18938  partials/block/tags.html
-   507.895135ms      26.825µs   10.204057ms  18933  partials/block/syndication.html
-   504.737787ms      17.293µs     787.961µs  29186  notes/title.html
-   459.554051ms       31.48µs   20.298307ms  14598  notes/summary.hat.html
-   419.041553ms      28.725µs     800.037µs  14588  notes/single.hat.html
-   410.926333ms  410.926333ms  410.926333ms      1  index.hfeed.html
-   393.129715ms   10.920269ms   58.049891ms     36  albums/list.html
-   392.625924ms  196.312962ms  307.863584ms      2  partials/archives/grid.html
-    371.51111ms   371.51111ms   371.51111ms      1  _internal/_default/sitemap.xml
-    337.09761ms    1.872764ms   20.489799ms    180  locations/list.html
-   331.891668ms     208.082µs  121.974519ms   1595  _default/list.mdlist.md
-   330.085445ms  110.028481ms  151.235026ms      3  shortcodes/latest.html
-   324.474706ms    1.802637ms     3.96478ms    180  partials/block/locations.html
-    261.94608ms      661.48µs   15.928614ms    396  shortcodes/cardgroup.html
-   259.530801ms    129.7654ms  146.204293ms      2  partials/archives/list.html
-   207.936286ms      31.424µs   11.279233ms   6617  partials/block/title.html
-   206.338803ms  206.338803ms  206.338803ms      1  index.rss.xml
-   201.343412ms     115.185µs    8.450833ms   1748  photos/single.content.html
-   187.793577ms     107.433µs   10.235259ms   1748  photos/summary.content.html
-    166.28616ms      53.416µs   32.811154ms   3113  _default/single.hat.html
-   142.367973ms  142.367973ms  142.367973ms      1  _default/index.readme.md
-   138.393254ms      39.495µs    6.144503ms   3504  _default/summary.hat.html
-    112.92286ms   112.92286ms   112.92286ms      1  links/section.html
-    68.414235ms      18.982µs   15.505337ms   3604  notes/title.rss.xml
-    62.752021ms   62.752021ms   62.752021ms      1  tags/terms.html.html
-    61.215441ms      73.224µs     368.162µs    836  links/summary.hat.html
-    55.628455ms   55.628455ms   55.628455ms      1  albums/terms.html
-     53.24503ms       12.75µs     844.073µs   4176  _default/title.rss.xml
-    50.400287ms      13.984µs     866.295µs   3604  notes/summary.hat.rss.xml
-     39.97045ms      24.491µs    1.042188ms   1632  _internal/alias.html
-     33.10603ms      39.838µs     669.058µs    831  links/single.hat.html
-    30.345341ms     104.279µs     374.148µs    291  shortcodes/quoted.html
-    27.717293ms      30.193µs     899.625µs    918  links/summary.hat.rss.xml
-    12.396958ms   12.396958ms   12.396958ms      1  locations/terms.html.html
-     8.423927ms       6.788µs     272.057µs   1241  _default/summary.content.html
-      4.50574ms     109.896µs     691.013µs     41  _internal/shortcodes/youtube.html
-     3.781747ms      42.491µs     321.855µs     89  shortcodes/video.html
-     3.029563ms    1.514781ms    1.568676ms      2  partials/header.html
-     2.452013ms         752ns     770.449µs   3258  _default/summary.hat.rss.xml
-      2.33578ms     233.578µs     759.251µs     10  notes/home_item.html
-      2.29237ms     254.707µs     835.623µs      9  photos/home_item.html
-     2.275518ms    2.275518ms    2.275518ms      1  source/terms.html.html
-     2.143311ms     153.093µs     515.297µs     14  shortcodes/spoiler.html
-     2.131256ms      88.802µs     730.836µs     24  shortcodes/grid_item.html
-     2.129044ms      21.948µs     218.522µs     97  shortcodes/cardlist.html
-     2.088762ms      139.25µs     753.458µs     15  shortcodes/html.html
-     1.972923ms    1.972923ms    1.972923ms      1  shortcodes/markdown.html
-     1.771768ms       52.11µs     283.523µs     34  shortcodes/footnote.html
-     1.490574ms    1.490574ms    1.490574ms      1  shortcodes/blogroll.html
-     1.462764ms    1.462764ms    1.462764ms      1  404.html
-     1.408693ms    1.408693ms    1.408693ms      1  _default/list.html
-     1.358873ms     271.774µs     991.548µs      5  post/home_item.html
-     1.146604ms       95.55µs     672.733µs     12  shortcodes/grid3.html
-     1.094849ms       1.317µs     584.294µs    831  links/single.content.html
-       958.13µs       9.877µs     201.565µs     97  shortcodes/card.html
-      807.803µs      161.56µs     537.849µs      5  links/home_item.html
-      564.227µs      80.603µs     372.528µs      7  fiction/summary.content.html
-      528.368µs     105.673µs     427.454µs      5  partials/block/timestamp.html
-      413.848µs       1.847µs     336.254µs    224  archm/list_item.html
-      390.207µs      18.581µs     383.441µs     21  archy/list_item.html
-      259.832µs     129.916µs     180.359µs      2  partials/header/search.html
+  9m13.521456932s  2.471077932s  42.491823209s    224  archm/single.html
+  6m42.159926757s    96.32573ms  1.113188506s   4175  partials/image_thumbnail.html
+  6m41.046643576s   16.143895ms  40.090111257s  24842  _default/image_list.html
+  4m57.186727302s   16.026031ms  13.678095572s  18544  _default/single.html
+  3m11.875735752s  524.250644ms  998.524947ms    366  otd/single.html
+  2m28.57427859s    9.295187ms  13.610222607s  15984  _default/single.content.html
+  2m28.082342938s    9.356311ms  13.610111479s  15827  partials/block/photos.html
+  1m50.467024972s    5.957022ms  165.424064ms  18544  _default/single.boot.html
+  1m44.497447647s    5.635108ms  165.236975ms  18544  partials/block/comments.html
+  1m3.976712415s     976.892µs  2.718795362s  65490  _default/list_item.html
+  1m2.561157539s    3.303995ms  2.718771321s  18935  partials/summary.html
+  58.458816715s   43.625982ms  2.718369978s   1340  post/summary.content.html
+  33.055257127s  155.921024ms  763.007752ms    212  shortcodes/img.html
+   21.20063825s     980.331µs   41.679184ms  21626  partials/sidebar.html
+  20.537724307s     237.419µs   40.740267ms  86504  partials/block/menu.html
+  17.530211589s  221.901412ms  602.044348ms     79  shortcodes/photo.html
+  15.351422961s     709.859µs  757.006979ms  21626  partials/head.html
+  13.067144272s     604.233µs  756.896313ms  21626  partials/metas.html
+   9.757553617s  348.484057ms  2.718276162s     28  partials/block/featured_image.html
+   8.756199216s    3.699281ms  131.717532ms   2367  partials/block/paged-list.html
+   8.600596626s   409.55222ms  636.624858ms     21  archy/single.html
+   6.365918202s     294.364µs    20.94899ms  21626  partials/foot.html
+    6.16597654s     285.118µs    20.92809ms  21626  partials/footer.html
+   4.772005453s    3.202688ms   57.633237ms   1490  tags/list.html
+   4.426497879s   13.096147ms   134.01576ms    338  _default/section.html
+   4.324105961s    1.772901ms   33.979113ms   2439  partials/pagination.html
+    4.15971726s     219.684µs    14.56909ms  18935  partials/block/meta.html
+   3.445965556s    9.625602ms   51.177325ms    358  source/list.html
+   2.781556056s  139.077802ms  229.073044ms     20  shortcodes/note.html
+   2.204278936s     115.075µs   44.603897ms  19155  partials/block/navigation.html
+   1.583109203s     221.259µs   23.007188ms   7155  partials/block/entry-list.html
+   1.439388438s     892.367µs   49.931039ms   1613  _default/list.rss.xml
+   1.425560838s      75.287µs    8.513158ms  18935  partials/block/author-timestamp.html
+   1.193134401s   49.713933ms  758.549909ms     24  page/single.html
+   1.180759917s      80.851µs   20.387158ms  14604  notes/summary.content.html
+   1.130802144s       59.72µs   20.685358ms  18935  _default/summary.boot.html
+   1.088473557s    2.834566ms    4.678764ms    384  _default/list.jsonfeed.json
+   1.068168761s  1.068168761s  1.068168761s      1  index.html
+   770.115235ms  770.115235ms  770.115235ms      1  page/urlmap.json.json
+   679.894254ms      35.906µs   14.339608ms  18935  partials/block/summary-comments.html
+   588.545897ms      20.157µs   20.932145ms  29198  notes/title.html
+    565.22812ms   282.61406ms  344.165118ms      2  partials/block/section-list.html
+   517.571569ms       35.44µs   20.962712ms  14604  notes/summary.hat.html
+   502.135906ms      26.504µs   10.176287ms  18945  partials/block/syndication.html
+   466.471928ms      24.615µs    1.094454ms  18950  partials/block/tags.html
+   461.097697ms      31.595µs   20.258033ms  14594  notes/single.hat.html
+    417.67524ms     261.701µs  169.193607ms   1596  _default/list.mdlist.md
+   409.216948ms  204.608474ms  250.115192ms      2  shortcodes/archives/grid-or-list.html
+   408.000274ms  408.000274ms  408.000274ms      1  _internal/_default/sitemap.xml
+   407.609539ms      52.385µs   29.489352ms   7781  _default/summary.content.rss.xml
+    391.55275ms   391.55275ms   391.55275ms      1  page/onthisday.html
+    344.57313ms   344.57313ms   344.57313ms      1  shortcodes/archives/section-list.html
+   333.205688ms    1.851142ms    4.809837ms    180  partials/block/locations.html
+    324.51485ms     1.80286ms    2.613045ms    180  locations/list.html
+    295.87783ms   295.87783ms   295.87783ms      1  index.hfeed.html
+   269.328442ms      40.677µs    40.50106ms   6621  partials/block/title.html
+    261.92568ms     7.48359ms   21.407027ms     35  photos/list.html
+   251.919408ms   83.973136ms  112.529229ms      3  shortcodes/latest.html
+   250.718444ms  125.359222ms  163.815989ms      2  partials/archives/grid.html
+    234.62528ms   234.62528ms   234.62528ms      1  _default/index.readme.md
+   219.175215ms     125.314µs   20.351549ms   1749  photos/summary.content.html
+   218.341784ms  218.341784ms  218.341784ms      1  links/section.html
+   218.315969ms     551.302µs    3.870946ms    396  shortcodes/cardgroup.html
+      212.761ms    5.910027ms   29.615383ms     36  albums/list.html
+   189.142448ms     108.143µs    8.837955ms   1749  photos/single.content.html
+   186.272925ms      53.129µs   40.520394ms   3506  _default/summary.hat.html
+    157.93959ms   78.969795ms   86.211492ms      2  partials/archives/list.html
+   150.098843ms      48.185µs   15.283606ms   3115  _default/single.hat.html
+   116.016724ms  116.016724ms  116.016724ms      1  index.rss.xml
+    59.548575ms      70.891µs     365.022µs    840  links/summary.hat.html
+    51.967294ms      31.823µs   10.191857ms   1633  _internal/alias.html
+    43.946089ms      12.193µs    1.282492ms   3604  notes/title.rss.xml
+    43.114459ms      10.321µs     437.184µs   4177  _default/title.rss.xml
+    40.765602ms      11.311µs     463.494µs   3604  notes/summary.hat.rss.xml
+    29.243448ms     100.492µs     354.286µs    291  shortcodes/quoted.html
+    28.556811ms      34.199µs     278.559µs    835  links/single.hat.html
+    27.343815ms   27.343815ms   27.343815ms      1  albums/terms.html
+    22.071369ms      24.042µs     494.967µs    918  links/summary.hat.rss.xml
+    18.941474ms   18.941474ms   18.941474ms      1  tags/terms.html.html
+    12.916732ms   12.916732ms   12.916732ms      1  locations/terms.html.html
+     8.450529ms       6.787µs     273.489µs   1245  _default/summary.content.html
+     4.339318ms     105.837µs     620.452µs     41  _internal/shortcodes/youtube.html
+      3.74623ms      41.624µs     314.215µs     90  shortcodes/video.html
+     3.082284ms     308.228µs    1.174295ms     10  notes/home_item.html
+       3.0377ms     337.522µs    1.245105ms      9  photos/home_item.html
+     2.907865ms    1.453932ms    1.503973ms      2  partials/header.html
+     2.207017ms    2.207017ms    2.207017ms      1  source/terms.html.html
+     2.173758ms     434.751µs    1.700966ms      5  post/home_item.html
+     2.149946ms     143.329µs     553.135µs     15  shortcodes/spoiler.html
+     2.024708ms      20.873µs     364.825µs     97  shortcodes/cardlist.html
+     1.915875ms         587ns     395.475µs   3259  _default/summary.hat.rss.xml
+      1.72174ms      50.639µs     288.407µs     34  shortcodes/footnote.html
+     1.644692ms    1.644692ms    1.644692ms      1  _default/list.html
+     1.415948ms    1.415948ms    1.415948ms      1  shortcodes/markdown.html
+     1.361385ms      56.724µs     413.953µs     24  shortcodes/grid_item.html
+      1.20079ms      80.052µs     467.883µs     15  shortcodes/html.html
+     1.189556ms     237.911µs     873.155µs      5  links/home_item.html
+     1.093821ms    1.093821ms    1.093821ms      1  404.html
+      984.115µs      10.145µs      236.03µs     97  shortcodes/card.html
+      913.546µs     182.709µs     780.533µs      5  partials/block/timestamp.html
+      885.549µs     885.549µs     885.549µs      1  shortcodes/blogroll.html
+      781.243µs      65.103µs     361.071µs     12  shortcodes/grid3.html
+      726.391µs       3.242µs      640.32µs    224  archm/list_item.html
+      721.752µs      34.369µs     714.624µs     21  archy/list_item.html
+      554.051µs         663ns     211.195µs    835  links/single.content.html
+      549.554µs      78.507µs     354.697µs      7  fiction/summary.content.html
+      166.615µs      83.307µs     104.187µs      2  partials/header/search.html
 
 
                    |  EN    
 -------------------+--------
-  Pages            | 23994  
+  Pages            | 24009  
   Paginator pages  |  1213  
-  Non-page files   |  5900  
+  Non-page files   |  5903  
   Static files     |    41  
-  Processed images |  4531  
-  Aliases          |  1632  
+  Processed images |  4534  
+  Aliases          |  1633  
   Sitemaps         |     1  
   Cleaned          |     0  
 
-Total in 546986 ms
+Total in 548091 ms

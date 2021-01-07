@@ -1,4 +1,12 @@
 
+- [100 Tips For A Better Life](/2021/01/100-tips-for-a-better-life/)
+
+- [The Year in Cheer](/2021/01/the-year-in-cheer/)
+
+- [Newsletters; or, an enormous rant about writing on the web that doesn’t really go anywhere and that’s okay with me](/2021/01/newsletters-or-an-enormous-rant-about-writing-on-the-web-that-doesnt-really-go-anywhere-and-thats-ok/)
+
+- [You can now listen to the Persona game soundtracks on Spotify](/2021/01/you-can-now-listen-to-the-persona-game-soundtracks-on-spotify/)
+
 - [It’s Okay If You Didn’t Read This Year](/2021/01/its-okay-if-you-didnt-read-this-year/)
 
 - [52 things I learned in 2020](/2020/12/52-things-i-learned-in-2020/)
