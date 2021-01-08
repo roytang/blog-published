@@ -1,4 +1,6 @@
 
+- [Pieces of Thinking](/2021/01/pieces-of-thinking/)
+
 - [100 Tips For A Better Life](/2021/01/100-tips-for-a-better-life/)
 
 - [The Year in Cheer](/2021/01/the-year-in-cheer/)
