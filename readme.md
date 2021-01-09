@@ -7,36 +7,35 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Quotes!](https://mirror.roytang.net/2021/01/quotes/)
 - [Regular Reviews and Tracking](https://mirror.roytang.net/2021/01/regular-reviews-and-tracking/)
 - [Pinoy Drawing Memes](https://mirror.roytang.net/2021/01/pinoy-drawing-memes/)
 - [2020 Word Clouds](https://mirror.roytang.net/2021/01/2020-word-clouds/)
 - [Goodbye Flipboard](https://mirror.roytang.net/2021/01/goodbye-flipboard/)
-- [Weeknotes 2021-01-03 Every New Beginning Is Some Other Beginning&#39;s End](https://mirror.roytang.net/2021/01/weeknotes-2021-01-03/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
 Latest shared links:
     
 
+- [Lockdown Productivity: Spaceship You](https://mirror.roytang.net/2021/01/lockdown-productivity-spaceship-you/)
+- [Into the Personal-Website-Verse](https://mirror.roytang.net/2021/01/into-the-personal-website-verse/)
 - [Pieces of Thinking](https://mirror.roytang.net/2021/01/pieces-of-thinking/)
 - [100 Tips For A Better Life](https://mirror.roytang.net/2021/01/100-tips-for-a-better-life/)
 - [The Year in Cheer](https://mirror.roytang.net/2021/01/the-year-in-cheer/)
-- [Newsletters; or, an enormous rant about writing on the web that doesn’t really go anywhere and that’s okay with me](https://mirror.roytang.net/2021/01/newsletters-or-an-enormous-rant-about-writing-on-the-web-that-doesnt-really-go-anywhere-and-thats-ok/)
-- [You can now listen to the Persona game soundtracks on Spotify](https://mirror.roytang.net/2021/01/you-can-now-listen-to-the-persona-game-soundtracks-on-spotify/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
-- [8 Jan 2021 1:08am](https://mirror.roytang.net/2021/01/gify580/): Best is probably to call a judge.
-- [7 Jan 2021 9:56pm](https://mirror.roytang.net/2021/01/1347301175016656897/): @switchfollows I&rsquo;ve been meaning to do something like that, but I mine aren&rsquo;t something I&rsquo;ve really concretely/formally defined ever (though I guess the blog does some of that work for me). I feel like a lot of my thought processes are straightforward and obvious, but maybe that&rsquo;s just my POV
-- [7 Jan 2021 4:20am](https://mirror.roytang.net/2021/01/1347035294416007168/): 【スラムダンク】
-映画になります！
-#slamdunkmovie
-Your browser does not support the video tag.  
-- [7 Jan 2021 4:08am](https://mirror.roytang.net/2021/01/1347032343945510915/): @bloodyvints What did he do
-- [7 Jan 2021 3:12am](https://mirror.roytang.net/2021/01/1347018337990021122/): The last time the US considered the 25th amendment was back in 1997 when president James Marshall was held hostage by terrorist and Radek loyalist Egor Korshunov aboard Air Force One
+- [8 Jan 2021 7:47pm](https://mirror.roytang.net/2021/01/1347631047215702016/): I have yet to see any Valki Vartokamus jokes and I am disappointed in all of you #mtg #MTGKaldheim
+Quoted SaffronOlive&#39;s tweet:   Geez, god/planeswalker MDFC. At first glance it seems really solid. Valki is good early, Tibalt gives you late game utility.  
+- [8 Jan 2021 7:37pm](https://mirror.roytang.net/2021/01/1347628452577304576/): If this isn&rsquo;t some allegory for what we face as a country, IDK what is
+Quoted PhilippineStar&#39;s tweet:   The Philippine Eagle Foundation (PEF) on Friday announced the passing of Philippine Eagle Pag-asa, the icon of conservation efforts in the country.  
+- [8 Jan 2021 7:31pm](https://mirror.roytang.net/2021/01/1347626957047877632/): I wonder if the US cop procedurals (NCIS, etc) have started putting white supremacists/altright nazis/homegrown terrorists into their regular rotation of villains
+- [8 Jan 2021 10:23am](https://mirror.roytang.net/2021/01/1347488989385613312/): So far the only thing we can be sure about in the Dacera case is how incompetent our cops are. So, nothing new.
+- [8 Jan 2021 10:16am](https://mirror.roytang.net/2021/01/1347487434125111297/): @wrongwaygoback happy birthday!
 
 [View all notes](https://mirror.roytang.net/notes)
 

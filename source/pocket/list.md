@@ -1,4 +1,8 @@
 
+- [Lockdown Productivity: Spaceship You](/2021/01/lockdown-productivity-spaceship-you/)
+
+- [Into the Personal-Website-Verse](/2021/01/into-the-personal-website-verse/)
+
 - [Pieces of Thinking](/2021/01/pieces-of-thinking/)
 
 - [100 Tips For A Better Life](/2021/01/100-tips-for-a-better-life/)

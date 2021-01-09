@@ -11,6 +11,240 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/1194525792778121216/",
+            "url": "https://mirror.roytang.net/2019/11/1194525792778121216/",
+            "path": "/2019/11/1194525792778121216/",
+            "title": "",
+            "content_html": "\u003cp\u003eHong Kong protests are in their fifth month despite an escalating crackdown. How? One surprising answer: the fate of China\u0026rsquo;s Uyghurs. Many talked to me about it. They watched and learned. They\u0026rsquo;ve decided that they \u0026ldquo;may as well go down fighting.\u0026rdquo; My latest. \u003ca href=\"https://www.theatlantic.com/international/archive/2019/11/escalating-violence-hong-kong-protests/601804/\"\u003ehttps://www.theatlantic.com/international/archive/2019/11/escalating-violence-hong-kong-protests/601804/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Hong Kong protests are in their fifth month despite an escalating crackdown. How? One surprising answer: the fate of China\u0026rsquo;s Uyghurs. Many talked to me about it. They watched and learned. They\u0026rsquo;ve decided that they \u0026ldquo;may as well go down fighting.\u0026rdquo; My latest. https://www.theatlantic.com/international/archive/2019/11/escalating-violence-hong-kong-protests/601804/",
+            "date_published": "2019-11-13T08:01:56+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1194525792778121216/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1194525792778121216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/sql-dying-art/",
+            "url": "https://mirror.roytang.net/2019/11/sql-dying-art/",
+            "path": "/2019/11/sql-dying-art/",
+            "title": "Is SQL a dying art?",
+            "content_html": "\u003cp\u003eI was helping my brother check some database issues the other week, and he mentioned how impressed he was with how quickly I was able to come up with SQL queries on the fly. I told him that SQL was one of the skills I considered myself to have mastery over. This shouldn\u0026rsquo;t be surprising given my early career path:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efor most of my first year working as a software developer, I was working on reports which involved lovingly handcrafted (and oftentimes quite complicated) SQL queries. And there was a lot of Oracle PL/SQL too\u003c/li\u003e\n\u003cli\u003eby my second year, I was already conducting SQL training for new hires in the company\u003c/li\u003e\n\u003cli\u003eby my third year and onwards, I was already regularly asked to help other projects with their SQL performance issues\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMost of my experience was with Oracle SQL, but as the ANSI standard has evolved quite well, the knowledge translates well to other databases. (Maybe not the PL/SQL though.)\u003c/p\u003e\n\u003cp\u003eThese days I feel like SQL knowledge has become a much rarer skill among developers, chiefly for 2-3 reasons:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe introduction and widespread use of tools like frameworks with ORMs and business intelligence software, minimizing the amount of SQL that needs to be hand-written in most applications\u003c/li\u003e\n\u003cli\u003ethe modern software development stack is much more complicated than it used to be, particularly for web development. When I started out, almost everybody was a \u0026ldquo;full stack engineer\u0026rdquo;, and that meant having to be familiar with most technologies you were using, including the database layer. These days, for any nontrivial project, developers on a team will often need to be specialized, with many working only on frontend issues, some on backend, and any SQL or stored procedure work is handled by a specialist developer or a DBA.\u003c/li\u003e\n\u003cli\u003ea possible secondary reason is the rise of alternative data storage solutions such as NoSQL databases.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRealistically, the need for people who can write good SQL may never go away, but the poor of people who can do so may be getting smaller due to the reasons above. Well, maybe it\u0026rsquo;s a good thing for me, since scarcity means it may become a more valuable skill as time goes on!\u003c/p\u003e\n",
+            "summary": "I was helping my brother check some database issues the other week, and he mentioned how impressed he was with how quickly I was able to come up with SQL queries on the fly. I told him that SQL was one of the skills I considered myself to have mastery over. This shouldn\u0026rsquo;t be surprising given my early career path:\n for most of my first year working as a software developer, I was working on reports which involved lovingly handcrafted (and oftentimes quite complicated) SQL queries.",
+            "date_published": "2019-11-13T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/sql-dying-art/index.md"
+            , "tags": ["software development","sql"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1194436027081019406/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/prod-crisis/",
+            "url": "https://mirror.roytang.net/2019/11/prod-crisis/",
+            "path": "/2019/11/prod-crisis/",
+            "title": "What to do in a production crisis",
+            "content_html": "\u003cp\u003eDespite our best efforts as software developers, it can still happen: production goes down. Or some sort of bug introduces catastrophic data error. Hopefully you have a support/DevOps team to handle the response. If not, the dev team themselves have to step in. This usual means a mad rush to figure out what happened and how to fix it, sometimes during off hours and maybe even into the early morning, all while facing pressure from clients and higher-ups. I was advising another developer in such a situation a while back, and it was his first stint as technical lead so he was extra worried. I gave him a few tips to see him through the time of crisis.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eKeep calm. In Tagalog, \u003ca href=\"/2019/04/project-management-tip-kalma-lang/\"\u003ekalma lang\u003c/a\u003e. In a crisis, there can be a lot of stress and pressure to fix things immediately. It\u0026rsquo;s best to keep a level head and make sure the team is keeping it together. Don\u0026rsquo;t let your emotions carry you away, and try to avoid panic.\u003c/li\u003e\n\u003cli\u003eSolve one problem at a time until you can go home. This is a lesson from the movie \u003ca href=\"/2015/10/10154142633048912/\"\u003eThe Martian\u003c/a\u003e. In a crisis it can be difficult to focus on the task at hand and if you\u0026rsquo;re not thinking straight you might just charge in there blindly and move things around until things get better. Follow step #1, then figure out what are the most pressing problems that need to be solved immediately, then address them one at a time. It can also help your team morale to identify which issues can be left until the next day. This gives them a concrete sense of what is set of problems to focus on, and motivates them to solve those so they can go home.\u003c/li\u003e\n\u003cli\u003eBe extra careful. In times like these, you may find yourself needing to deploy hotfixes directly to production or maybe even update data directly in the production database, in the interest of expediency. It\u0026rsquo;s also during times like these that you are more likely to make a mistake, especially if your team is under stress and working overtime/during off hours. So it would pay to be extra careful, maybe add an additional layer of review before deploying things directly to production. You\u0026rsquo;re already in a crisis, don\u0026rsquo;t make things worse by making a sloppy mistake.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eHaving to provide tech support during such a crisis is something you shouldn\u0026rsquo;t wish on any developer, but sometimes it can\u0026rsquo;t be avoided. (Some might even consider it a kind of rite of passage so to speak). Make sure to have the right mindset to be able to operate well under such stressful conditions.\u003c/p\u003e\n",
+            "summary": "Despite our best efforts as software developers, it can still happen: production goes down. Or some sort of bug introduces catastrophic data error. Hopefully you have a support/DevOps team to handle the response. If not, the dev team themselves have to step in. This usual means a mad rush to figure out what happened and how to fix it, sometimes during off hours and maybe even into the early morning, all while facing pressure from clients and higher-ups.",
+            "date_published": "2019-11-12T00:00:00+00:00",
+            "date_modified": "2019-11-19T07:20:58+00:00",
+            "section": "post",
+            "source_path": "post/2019/11/prod-crisis/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1194052290363232257/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://lostfocus.de/2019/11/23923/",
+                    "source_file": "comment-20191112T084315-webmention-723389.json"
+                }, { 
+                    "url": "https://twitter.com/roytang/status/1194052290363232257#favorited-by-2251223190",
+                    "source_file": "like-20191113T022938-webmention-723865.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/1193936749342277639/",
+            "url": "https://mirror.roytang.net/2019/11/1193936749342277639/",
+            "path": "/2019/11/1193936749342277639/",
+            "title": "",
+            "content_html": "\u003cp\u003eShould really be going to sleep, but I\u0026rsquo;m really enjoying reading the release notes for Mystery Booster lol\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://magic.wizards.com/en/articles/archive/feature/mystery-booster-release-notes-2019-11-11\"\u003ehttps://magic.wizards.com/en/articles/archive/feature/mystery-booster-release-notes-2019-11-11\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThoughts on the set: it\u0026rsquo;s clearly meant to be drafted for fun, don\u0026rsquo;t worry so much about the \u0026ldquo;value\u0026rdquo;, unless it turns out to be horribly overpriced\u003c/p\u003e\n",
+            "summary": "Should really be going to sleep, but I\u0026rsquo;m really enjoying reading the release notes for Mystery Booster lol\nhttps://magic.wizards.com/en/articles/archive/feature/mystery-booster-release-notes-2019-11-11\nThoughts on the set: it\u0026rsquo;s clearly meant to be drafted for fun, don\u0026rsquo;t worry so much about the \u0026ldquo;value\u0026rdquo;, unless it turns out to be horribly overpriced",
+            "date_published": "2019-11-11T17:01:17+00:00",
+            "date_modified": "2019-11-19T07:20:58+00:00",
+            "section": "photos",
+            "source_path": "photos/2019/11/1193936749342277639/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1193936749342277639/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/anime-op/",
+            "url": "https://mirror.roytang.net/2019/11/anime-op/",
+            "path": "/2019/11/anime-op/",
+            "title": "Anime Opening/Ending Themes",
+            "content_html": "\u003cp\u003eHad a friendly discussion last night about our favorite anime theme music, figured I\u0026rsquo;d share some of my favorites. J-Pop in general and anime theme music in particular have a kind of energy that you just don\u0026rsquo;t get from Western music. I think that generally I tend to favor those that openings for series that I had a chance to watch on TV (instead of via streaming/online channels), since back in those days I had to sit through the openings! (So most of these are rather old!)\u003c/p\u003e\n\u003cp\u003eKimi Ga Suki da to Sakebitai from Slam Dunk by Baad:\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/7qLwmho_240\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\u003cp\u003eHohoemi no Bakudan from Yu Yu Hakusho by Matsuko Mawatari:\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/IEjRBJChZMA\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\u003cp\u003e1/3 no Junjou na Kanjou from Rurouni Kenshin by Siam Shade:\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/rzziisIJudY\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\u003cp\u003e(RK in particular had a lot of tracks I liked, but let\u0026rsquo;s limit it to one per series)\u003c/p\u003e\n\u003cp\u003eChala Head Chala from Dragonball Z by Hironobu Kageyama:\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/pYnLO7MVKno\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\u003cp\u003eWe Are! from One Piece by Hiroshi Kitadani:\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/ZwXKz2CeHwY\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\u003cp\u003eThat\u0026rsquo;s all for now! Here\u0026rsquo;s a \u003ca href=\"https://open.spotify.com/playlist/1aUsKTSASpG2jPSDSzVICw\"\u003espotify playlist\u003c/a\u003e if you\u0026rsquo;re into that sort of thing.\u003c/p\u003e\n",
+            "summary": "Had a friendly discussion last night about our favorite anime theme music, figured I\u0026rsquo;d share some of my favorites. J-Pop in general and anime theme music in particular have a kind of energy that you just don\u0026rsquo;t get from Western music. I think that generally I tend to favor those that openings for series that I had a chance to watch on TV (instead of via streaming/online channels), since back in those days I had to sit through the openings!",
+            "date_published": "2019-11-11T05:07:32+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/anime-op/index.md"
+            , "tags": ["anime","music"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1193770770398400512/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/1193558150223261697/",
+            "url": "https://mirror.roytang.net/2019/11/1193558150223261697/",
+            "path": "/2019/11/1193558150223261697/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-11-10T15:56:52+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1193558150223261697/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1193558150223261697/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/indieweb/",
+            "url": "https://mirror.roytang.net/2019/11/indieweb/",
+            "path": "/2019/11/indieweb/",
+            "title": "Indieweb Updates and Thoughts",
+            "content_html": "\u003cp\u003eI \u003ca href=\"/2019/07/move-fast-break-things/\"\u003ementioned before\u003c/a\u003e that I was looking into indieweb stuff. There\u0026rsquo;s a \u003ca href=\"https://indieweb.org/\"\u003ewhole wiki of information\u003c/a\u003e about it if you\u0026rsquo;re into that sort of thing, but also \u003ca href=\"https://www.jvt.me/posts/2019/10/20/indieweb-talk/\"\u003ehere\u0026rsquo;s a recent post\u003c/a\u003e which kind of serves as an overview. I have some comments on the content of this post, more on that \u003ca href=\"#later\"\u003elater\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eIndieweb things I\u0026rsquo;ve already implemented on this site:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ehave a personal domain (\u003ca href=\"/2006/02/welcome-to-roytang-net/\"\u003esince 2006\u003c/a\u003e)\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://microformats.io/\"\u003emicroformats\u003c/a\u003e (h-card and h-feeds and h-entrys), though I would have to be using some sort of microformats reader to make sure everything there is hunky-dory (no concrete plans for this yet)\u003c/li\u003e\n\u003cli\u003ewebmention support, via \u003ca href=\"https://webmention.io/\"\u003ewebmention.io\u003c/a\u003e. Of course, I\u0026rsquo;m not actually interacting with anyone else on the indieweb yet, so this is mostly experimental and untested.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://indieweb.org/POSSE\"\u003ePOSSE\u003c/a\u003e (partially): blog posts are syndicated to Twitter and Mastodon, but I\u0026rsquo;m also still posting content on those platforms (and to Instagram)\u003c/li\u003e\n\u003cli\u003eowning my content: (almost) all posts I make to other social media channels now get backfed into the \u003ca href=\"/2019/10/archive-of-my-own/\"\u003earchive on this site\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThings I hope to be able to implement (no timetable):\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePOSSE (full) - currently for notes and photos I still mostly post using Twitter and Instagram because their native posting features are more convenient (especially on mobile) compared to my current workflow of \u0026ldquo;push a markdown file to git\u0026rdquo;. This is largely contingent on me implementing the next item:\u003c/li\u003e\n\u003cli\u003eA web interface for posting to the site. A web interface should be sufficient convenient for mobile use. Optionally using the next item:\u003c/li\u003e\n\u003cli\u003eMicropub. I\u0026rsquo;m still iffy whether I really need the protocol. It could be handy in certain situations.\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;ve also been \u003ca href=\"https://mastodon.technology/@roytang/102954512082445097\"\u003edigging into ActivityPub\u003c/a\u003e lately. My hope is to eventually have this site itself serve as an ActivityPub server, such that one would be able to follow me on Mastodon via something like \u003ca href=\"mailto:roy@roytang.net\"\u003eroy@roytang.net\u003c/a\u003e. Similar to how \u003ca href=\"https://aaronparecki.com/aaronpk\"\u003eAaron Parecki has done it\u003c/a\u003e. I\u0026rsquo;ve already done some exploratory work on this but it might be a ways off (low priority I guess.)\u003c/li\u003e\n\u003cli\u003eArchive Mastodon posts into this site (this is kinda ironic for some reason)\u003c/li\u003e\n\u003cli\u003eAutomatic sending out of webmentions\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca id=\"later\"\u003e#\u003c/a\u003e Anyway, back to the post I linked above. My main criticism for the indieweb movement at the moment is that I don\u0026rsquo;t see a path to mass adoption, especially for the purposes of moving people away from silos like Facebook. Maybe that\u0026rsquo;s not really one of the goals. My main issue is with two of the principles outlined in the post above (read the post again for more details):\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026ldquo;Make What You Need / Scratch Your Itch\u0026rdquo;\u003c/li\u003e\n\u003cli\u003e\u0026ldquo;Use What You Make / Dogfood\u0026rdquo;\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe thing about these concepts is that there is a lot of work involved and there are significant barriers to entry for getting involved. I mean, most people aren\u0026rsquo;t going to (won\u0026rsquo;t be able to) bother with the first step (getting your own domain), much more be able to \u0026ldquo;make what you need\u0026rdquo;. It\u0026rsquo;s ok for people like me who are comfortable with the highly technical and have a bunch of free time, but for the average person it seems unlikely.\u003c/p\u003e\n\u003cp\u003eI can imagine there might be created a service that supports most of the Indieweb features and can easily be adopted by the mass market, although that has a lot of its own challenges as well, and it\u0026rsquo;s kind of like replacing one kind of silo with another? At least it would be a more open silo I guess? I think \u003ca href=\"https://micro.blog/\"\u003emicro.blog\u003c/a\u003e already supports the indieweb stuff, but I haven\u0026rsquo;t yet looked too closely into that.\u003c/p\u003e\n\u003cp\u003eI am still moving forward with the indieweb stuff, and I am hopeful that it manages to coalesce into something that can challenge the way the modern internet works, but that may be a long way off. As far as I can tell, adoption is not yet very widespread, and AFAICT the main people driving the effort with their \u003ca href=\"https://indieweb.org/events/2019-11-13-homebrew-website-club\"\u003eHomebrew Website Clubs\u003c/a\u003e are in Western countries. It\u0026rsquo;s even possible that I\u0026rsquo;m the first in the Philippines looking into this Indieweb stuff. :)\u003c/p\u003e\n",
+            "summary": "I mentioned before that I was looking into indieweb stuff. There\u0026rsquo;s a whole wiki of information about it if you\u0026rsquo;re into that sort of thing, but also here\u0026rsquo;s a recent post which kind of serves as an overview. I have some comments on the content of this post, more on that later.\nIndieweb things I\u0026rsquo;ve already implemented on this site:\n have a personal domain (since 2006) microformats (h-card and h-feeds and h-entrys), though I would have to be using some sort of microformats reader to make sure everything there is hunky-dory (no concrete plans for this yet) webmention support, via webmention.",
+            "date_published": "2019-11-10T15:00:00+00:00",
+            "date_modified": "2019-11-19T07:20:58+00:00",
+            "section": "post",
+            "source_path": "post/2019/11/indieweb/index.md"
+            , "tags": ["tech life","meta","changelog"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1193551787376156672/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stream.jeremycherfas.net/2019/good-work-so-far-as-you-note",
+                    "source_file": "comment-20191110T153701-webmention-722915.json"
+                }, { 
+                    "url": "http://known.kevinmarks.com/2019/hello-and-welcome-to-the-indieweb",
+                    "source_file": "comment-20191110T153800-webmention-722916.json"
+                }, { 
+                    "url": "https://www.jvt.me/mf2/2019/11/w4tgj/",
+                    "source_file": "comment-20191110T211800-webmention-723052.json"
+                }, { 
+                    "url": "https://janboddez.tech/notes/946613625",
+                    "source_file": "comment-20191111T092014-webmention-723186.json"
+                }, { 
+                    "url": "https://beko.famkos.net/2019/11/11/microformat-parser/",
+                    "source_file": "comment-20191111T102301-webmention-723190.json"
+                }, { 
+                    "url": "https://twitter.com/NurseMcHurt/status/1193962253445414913",
+                    "source_file": "comment-20191111T185234-webmention-723280.json"
+                }, { 
+                    "url": "https://gregorlove.com/2019/11/hello-and-welcome/",
+                    "source_file": "comment-20191111T185755-webmention-723281.json"
+                }, { 
+                    "url": "https://boffosocko.com/2019/11/11/indieweb-updates-and-thoughts-roy-tang/",
+                    "source_file": "comment-20191111T224645-webmention-723306.json"
+                }, { 
+                    "url": "https://simply.micro.jenett.org/2019/11/11/20:50:10/",
+                    "source_file": "comment-20191112T015018-webmention-723325.json"
+                }, { 
+                    "url": "https://grant.codes/2019/11/11/11-00-37",
+                    "source_file": "like-20191111T110047-webmention-723194.json"
+                }, { 
+                    "url": "https://twitter.com/roytang/status/1193551787376156672#favorited-by-2691886662",
+                    "source_file": "like-20191111T195013-webmention-723291.json"
+                }, { 
+                    "url": "https://twitter.com/roytang/status/1193551787376156672#favorited-by-1154684923",
+                    "source_file": "like-20191111T195014-webmention-723292.json"
+                }, { 
+                    "url": "https://twitter.com/roytang/status/1193551787376156672#favorited-by-5398102",
+                    "source_file": "like-20191111T211331-webmention-723300.json"
+                }, { 
+                    "url": "https://twitter.com/roytang/status/1193551787376156672#favorited-by-2868925860",
+                    "source_file": "like-20191111T234435-webmention-723317.json"
+                }, { 
+                    "url": "https://blog.voss.co/2019/indieweb-updates-and-thoughts-middot-roy-tang",
+                    "source_file": "like-20191115T235212-webmention-724735.json"
+                }, { 
+                    "url": "https://hub.iwebthings.com/simply-micro-2019-11-11-205010/",
+                    "source_file": "like-20200114T225333-webmention-744477.json"
+                }, { 
+                    "url": "https://twitter.com/kevinmarks/status/1193553850424266757",
+                    "source_file": "repost-20191110T154940-webmention-722920.json"
+                }, { 
+                    "url": "https://twitter.com/tchambers/status/1193667075757281281",
+                    "source_file": "repost-20191110T233837-webmention-723088.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/b4op_a_h17a/",
+            "url": "https://mirror.roytang.net/2019/11/b4op_a_h17a/",
+            "path": "/2019/11/b4op_a_h17a/",
+            "title": "",
+            "content_html": "\u003cp\u003eFirst #ps4 purchase for the year #pickups\u003c/p\u003e\n",
+            "summary": "First #ps4 purchase for the year #pickups",
+            "date_published": "2019-11-09T07:08:35+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/11/B4op_a_h17a/index.md"
+            , "tags": ["ps4","pickups"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1193062813448785920/"},{"type":"instagram","url":"https://instagram.com/p/B4op_a_h17a/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/so-good-they-cant-ignore-you/",
+            "url": "https://mirror.roytang.net/2019/11/so-good-they-cant-ignore-you/",
+            "path": "/2019/11/so-good-they-cant-ignore-you/",
+            "title": "Book Review: So Good They Cant Ignore You by Cal Newport",
+            "content_html": "\u003cp\u003eAha! I finally managed to finish a book again!\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve heard of Cal Newport since years ago tangentially due to his Study Hacks blog, which was pretty good at the time. I haven\u0026rsquo;t followed his career too closely, but he\u0026rsquo;s an academic at Georgetown apparently. I wasn\u0026rsquo;t looking for any career advice in particular, but I did have a recommendation for this book from somewhere so I thought I\u0026rsquo;d give it a go.\u003c/p\u003e\n\u003cp\u003eThe book is \u003cem\u003eSo Good They Can\u0026rsquo;t Ignore You\u003c/em\u003e, and focuses on what it takes to have a \u0026ldquo;successful career\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eMy favorite thing about this book is that from the get-go, the author discards something most self-improvement books focus on: passion. The author discards passion as non-essential. A lot of self-improvement books also lay out a bunch of principles and rules and wink at the reader and say something to the effect of \u0026ldquo;You just have to do all of this stuff, and you\u0026rsquo;ll be super successful!\u0026rdquo;, as if all of those rules + a bit of passion are some sort of secret ingredient that allow you to skip past all the hard work necessary to find success. This book doesn\u0026rsquo;t shy away from the concept of hard work. Instead, it embraces it, in the form of what the author calls \u0026ldquo;career capital\u0026rdquo;. Basically, you need to earn enough \u0026ldquo;career capital\u0026rdquo; in order to then exchange that capital for the trappings of a successful career, such as more control over your time. \u0026ldquo;Career capital\u0026rdquo; is what makes you \u0026ldquo;so good they can\u0026rsquo;t ignore you.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eLike many books of this type, the ideas are presented as if the author came by them scientific analysis, but really the basis seems to be a series of anecdotal success stories of people whose career paths coincide with the author\u0026rsquo;s central thesis. This is not inherently a bad thing, though it does weaken the foundation of the books claims that it\u0026rsquo;s not backed by a detailed scientific study. But for purposes of laying out his ideas in an entertaining manner, the format is certainly sufficient. The success stories are really the meat of the book, designed to lay out the author\u0026rsquo;s rules and show how they are applicable to real, actual careers. And in most of the success stories, he traces their story for more than a decade of building up \u0026ldquo;career capital\u0026rdquo;, again emphasizing hard work over dreaming of overnight success.\u003c/p\u003e\n\u003cp\u003eI personally relate to the concept of not being defined by passion and instead working hard to earn \u0026ldquo;career capital\u0026rdquo; and the idea that you can cash that capital in for more control. This mirrors my own career path where I spent more than a decade working for some multinational company, not really specializing in anything in particular and developing a variety of interests before deciding to use that career capital to go freelance and establish more control over my life. What I don\u0026rsquo;t have yet, is the overarching \u0026ldquo;mission\u0026rdquo; described by the author\u0026rsquo;s Rule #4. I don\u0026rsquo;t have a unifying vision driving my life forward, probably a result of my being very \u003ca href=\"/2019/11/unfocused/\"\u003eunfocused\u003c/a\u003e. Or perhaps I already have one and it is yet to be clearly articulated? Hmm, we\u0026rsquo;ll see. In any case, I find the book\u0026rsquo;s contents quite relevant to my own career and the ideas presented here will probably be relevant to me personally as I try to crystallize my own plans for the future.\u003c/p\u003e\n\u003cp\u003eThe book is a relatively short (Kindle version says 276 pages, and a lot of that is notes and links) and a quick read (I finished it piecemeal over 3 days, but could have easily finished in 1). I think I got it on sale a few months ago for around $4, not bad for that price, and a decent pickup for anyone looking to chart a clearer career path.\u003c/p\u003e\n",
+            "summary": "Aha! I finally managed to finish a book again!\nI\u0026rsquo;ve heard of Cal Newport since years ago tangentially due to his Study Hacks blog, which was pretty good at the time. I haven\u0026rsquo;t followed his career too closely, but he\u0026rsquo;s an academic at Georgetown apparently. I wasn\u0026rsquo;t looking for any career advice in particular, but I did have a recommendation for this book from somewhere so I thought I\u0026rsquo;d give it a go.",
+            "date_published": "2019-11-09T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/book-review-so-good-they-cant-ignore-you/index.md"
+            , "tags": ["books","review"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192987972989325312/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/1192929877449527298/",
+            "url": "https://mirror.roytang.net/2019/11/1192929877449527298/",
+            "path": "/2019/11/1192929877449527298/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe weight of last night’s decisions bear heavily upon me\u003c/p\u003e\n",
+            "summary": "The weight of last night’s decisions bear heavily upon me",
+            "date_published": "2019-11-08T22:20:21+00:00",
+            "date_modified": "2019-11-19T07:20:58+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1192929877449527298/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192929877449527298/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/removed-webfont/",
             "url": "https://mirror.roytang.net/2019/11/removed-webfont/",
             "path": "/2019/11/removed-webfont/",
@@ -699,176 +933,6 @@
             "source_path": "notes/2019/10/1188671049027616768/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188671049027616768/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4irirmh8uk/",
-            "url": "https://mirror.roytang.net/2019/10/b4irirmh8uk/",
-            "path": "/2019/10/b4irirmh8uk/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 27: coat #inktober #sketchdaily It was a magical wizard coat of healing all along! Also I somehow managed to catch up!\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 27: coat #inktober #sketchdaily It was a magical wizard coat of healing all along! Also I somehow managed to catch up!",
-            "date_published": "2019-10-27T17:16:14+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4IRirMh8uK/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188504689597472773/"},{"type":"instagram","url":"https://instagram.com/p/B4IRirMh8uK/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dnqw28/october_27th_inspector_gadget/f5gq2cb/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4hxn0dhuib/",
-            "url": "https://mirror.roytang.net/2019/10/b4hxn0dhuib/",
-            "path": "/2019/10/b4hxn0dhuib/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 26: dark #inktober #sketchdaily\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 26: dark #inktober #sketchdaily",
-            "date_published": "2019-10-27T08:51:09+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4HXN0dhuIB/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188377584083582976/"},{"type":"instagram","url":"https://instagram.com/p/B4HXN0dhuIB/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dnbedu/october_26th_false_chameleon/f5e5nof/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4g_divbqpi/",
-            "url": "https://mirror.roytang.net/2019/10/b4g_divbqpi/",
-            "path": "/2019/10/b4g_divbqpi/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 25: tasty #inktober #sketchdaily\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 25: tasty #inktober #sketchdaily",
-            "date_published": "2019-10-27T05:11:39+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4G_dIvBQPI/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188322345871654916/"},{"type":"instagram","url":"https://instagram.com/p/B4G_dIvBQPI/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dmup6s/october_25th_the_last_friday_in_october/f5dewad/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1188308327035355136/",
-            "url": "https://mirror.roytang.net/2019/10/1188308327035355136/",
-            "path": "/2019/10/1188308327035355136/",
-            "title": "",
-            "content_html": "\u003cp\u003eBrawl is the most fun I\u0026rsquo;ve had playing #mtg arena since it started. I play it even when I\u0026rsquo;m out of rewards for the day because it\u0026rsquo;s so fun, even against the Oko decks (I won this one!)\u003c/p\u003e\n",
-            "summary": "Brawl is the most fun I\u0026rsquo;ve had playing #mtg arena since it started. I play it even when I\u0026rsquo;m out of rewards for the day because it\u0026rsquo;s so fun, even against the Oko decks (I won this one!)",
-            "date_published": "2019-10-27T04:15:57+00:00",
-            "date_modified": "2019-10-27T06:30:02+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/1188308327035355136/index.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188308327035355136/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4g3rk0bfsx/",
-            "url": "https://mirror.roytang.net/2019/10/b4g3rk0bfsx/",
-            "path": "/2019/10/b4g3rk0bfsx/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 24: dizzy #inktober #sketchdaily\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 24: dizzy #inktober #sketchdaily",
-            "date_published": "2019-10-27T04:01:28+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4G3rk0BFSX/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188304681854013441/"},{"type":"instagram","url":"https://instagram.com/p/B4G3rk0BFSX/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dmdorx/october_24th_dolphins/f5dexxf/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/current-desktops/",
-            "url": "https://mirror.roytang.net/2019/10/current-desktops/",
-            "path": "/2019/10/current-desktops/",
-            "title": "",
-            "content_html": "\u003cp\u003eCurrent desktop images (Windows 10 PC and Macbook Air). I\u0026rsquo;ve been toying with the idea of dual-booting my PC with Ubuntu because reasons (and also I miss having an Ubuntu desktop to toy around with), and I figured maybe I should document my current setup first before I try something that might end in disaster. Both of the pictured wallpapers are from \u003ca href=\"https://roytang.net/2019/05/street-fighter-background-wallpapers/\"\u003ehere\u003c/a\u003e. Also, yes I am generally bad at cleaning my desktops of icons.\u003c/p\u003e\n",
-            "summary": "Current desktop images (Windows 10 PC and Macbook Air). I\u0026rsquo;ve been toying with the idea of dual-booting my PC with Ubuntu because reasons (and also I miss having an Ubuntu desktop to toy around with), and I figured maybe I should document my current setup first before I try something that might end in disaster. Both of the pictured wallpapers are from here. Also, yes I am generally bad at cleaning my desktops of icons.",
-            "date_published": "2019-10-25T21:00:00+00:00",
-            "date_modified": "2019-10-26T05:11:54+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/current-desktops/index.md"
-            , "tags": ["tech life","desktops"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4dh0bmhxfc/",
-            "url": "https://mirror.roytang.net/2019/10/b4dh0bmhxfc/",
-            "path": "/2019/10/b4dh0bmhxfc/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 23: ancient #inktober #sketchdaily a few days behind now, trying to claw my way to the finish\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 23: ancient #inktober #sketchdaily a few days behind now, trying to claw my way to the finish",
-            "date_published": "2019-10-25T20:56:27+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4Dh0BmhxfC/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1187835334131900416/"},{"type":"instagram","url":"https://instagram.com/p/B4Dh0BmhxfC/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dlwimx/october_23rd_herbs/f57jt07/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1187696401859235840/",
-            "url": "https://mirror.roytang.net/2019/10/1187696401859235840/",
-            "path": "/2019/10/1187696401859235840/",
-            "title": "",
-            "content_html": "\u003cp\u003eCasual fridays imply the existence of ranked competitive fridays\u003c/p\u003e\n",
-            "summary": "Casual fridays imply the existence of ranked competitive fridays",
-            "date_published": "2019-10-25T11:44:23+00:00",
-            "date_modified": "2019-10-25T12:30:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/1187696401859235840/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1187696401859235840/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1187406001143570434/",
-            "url": "https://mirror.roytang.net/2019/10/1187406001143570434/",
-            "path": "/2019/10/1187406001143570434/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e just generally a much bigger hassle compared to web. no option to do something simple without using a big framework and a million dependencies. dependency management is a pain. and the debug/build/deploy cycle is a lot slower #dev\u003c/p\u003e\n",
-            "summary": "@jaymelynilao just generally a much bigger hassle compared to web. no option to do something simple without using a big framework and a million dependencies. dependency management is a pain. and the debug/build/deploy cycle is a lot slower #dev",
-            "date_published": "2019-10-24T16:30:26+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/1187406001143570434/index.md"
-            , "tags": ["dev"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1187406001143570434/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/1187239580757446656/",
-            "url": "https://mirror.roytang.net/2019/10/1187239580757446656/",
-            "path": "/2019/10/1187239580757446656/",
-            "title": "",
-            "content_html": "\u003cp\u003eEvery time I try building a mobile app, I\u0026rsquo;m reminded why I hate mobile app development\u003c/p\u003e\n",
-            "summary": "Every time I try building a mobile app, I\u0026rsquo;m reminded why I hate mobile app development",
-            "date_published": "2019-10-24T05:29:08+00:00",
-            "date_modified": "2019-10-24T06:30:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/1187239580757446656/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1187239580757446656/"}]
             
             
             }

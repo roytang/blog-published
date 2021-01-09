@@ -11,6 +11,181 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/11/933865414748078080/",
+            "url": "https://mirror.roytang.net/2017/11/933865414748078080/",
+            "path": "/2017/11/933865414748078080/",
+            "title": "",
+            "content_html": "\u003cp\u003eQuick little tweetstorm on why, if you desire to have a small software business, you should prefer doing Boring Business Productivity SaaS to writing a video game, even if you really like videogames:\u003c/p\u003e\n",
+            "summary": "Quick little tweetstorm on why, if you desire to have a small software business, you should prefer doing Boring Business Productivity SaaS to writing a video game, even if you really like videogames:",
+            "date_published": "2017-11-24T01:10:39+00:00",
+            "date_modified": "2020-09-10T21:26:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/933865414748078080/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/933865414748078080/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/10156207341078912/",
+            "url": "https://mirror.roytang.net/2017/11/10156207341078912/",
+            "path": "/2017/11/10156207341078912/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2017-11-23T18:41:00+00:00",
+            "date_modified": "2019-11-23T06:44:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/11/10156207341078912/index.md"
+            , "tags": ["mobile-uploads"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156207341078912"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/933646589138046976/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/933644403024969728/",
+            "url": "https://mirror.roytang.net/2017/11/933644403024969728/",
+            "path": "/2017/11/933644403024969728/",
+            "title": "",
+            "content_html": "\u003cp\u003e“You want to change the world, Shallan. That’s well and good. But be careful. The world predates you. She has seniority.”\u003c/p\u003e\n",
+            "summary": "“You want to change the world, Shallan. That’s well and good. But be careful. The world predates you. She has seniority.”",
+            "date_published": "2017-11-23T10:32:26+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/933644403024969728.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/933644403024969728/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156207331413912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/47449002/",
+            "url": "https://mirror.roytang.net/2017/11/47449002/",
+            "path": "/2017/11/47449002/",
+            "title": "MarkLogic template driven extraction and triples: dealing with array nodes",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been studying the examples here: \u003ca href=\"https://docs.marklogic.com/guide/semantics/tde#id_25531\"\u003ehttps://docs.marklogic.com/guide/semantics/tde#id_25531\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form \u0026ldquo;name1 is-a-parent-of name2\u0026rdquo;. Here\u0026rsquo;s a test I tried, with a sample of the document structure:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edeclareUpdate();\n\nxdmp.documentInsert(\n       '/test/tde.json',\n       {\n         content: {\n           name:'Joe Parent',\n           children: [\n             {\n               name: 'Bob Child'\n             },\n             {\n               name: 'Sue Child'\n             }\n           ]\n         }\n       },\n       {permissions : xdmp.defaultPermissions(),\n        collections : ['test']})\n\ncts.doc('/test/tde.json')\n\nvar tde = require(\u0026quot;/MarkLogic/tde.xqy\u0026quot;);\n// Load the user template for user profile rows\nvar template = xdmp.toJSON(\n{\n  \u0026quot;template\u0026quot;:{\n    \u0026quot;context\u0026quot;:\u0026quot;content\u0026quot;,\n    \u0026quot;collections\u0026quot;: [\n      \u0026quot;test\u0026quot;\n    ],\n      \u0026quot;triples\u0026quot;:[\n      {\n        \u0026quot;subject\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;xs:string(name)\u0026quot;\n        },\n        \u0026quot;predicate\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;sem:iri('is-parent-of')\u0026quot;\n        },\n        \u0026quot;object\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;xs:string(children/name)\u0026quot;\n        }     \n      }\n    ]   \n  }\n}\n);\n//tde.validate([template]),\ntde.templateInsert(\u0026quot;/templates/test.tde\u0026quot;, template);\ntde.nodeDataExtract( \n  [cts.doc( '/test/tde.json' )]\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, the above throws an Exception:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[javascript] TDE-EVALFAILED: tde.nodeDataExtract([cts.doc(\u0026quot;/test/tde.json\u0026rdquo;)]) \u0026ndash; Eval for Object='xs:string(children/name)\u0026rsquo; returns TDE-BADVALEXPRESSION: Invalid val expression: XDMP-CAST: (err:FORG0001) Invalid cast: (fn:doc(\u0026quot;/test/tde.json\u0026rdquo;)/content/array-node(\u0026ldquo;children\u0026rdquo;)/object-node()[1]/text(\u0026ldquo;name\u0026rdquo;), fn:doc(\u0026quot;/test/tde.json\u0026rdquo;)/content/array-node(\u0026ldquo;children\u0026rdquo;)/object-node()[2]/text(\u0026ldquo;name\u0026rdquo;)) cast as xs:string?\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhat is the proper syntax for extracting array nodes into a triple?\u003c/p\u003e\n\u003cp\u003e2nd somewhat related question: say I also wanted to have triples of the form \u0026ldquo;child1 is-sibling-of child2\u0026rdquo;. For the example above it would be \u0026ldquo;Bob Child is-sibling-of Sue Child\u0026rdquo;. What would be the proper syntax for this? I\u0026rsquo;m not even sure how to begin with this one.\u003c/p\u003e\n\u003cp\u003eIs TDE even the way to go here? Or is it better to do this programmatically? i.e. on document ingestion, generate those triples inside the document directly?\u003c/p\u003e\n\u003cp\u003e(If it\u0026rsquo;s relevant, the ML version being used is 9.)\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve been studying the examples here: https://docs.marklogic.com/guide/semantics/tde#id_25531\nI have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form \u0026ldquo;name1 is-a-parent-of name2\u0026rdquo;. Here\u0026rsquo;s a test I tried, with a sample of the document structure:\ndeclareUpdate(); xdmp.documentInsert( '/test/tde.json', { content: { name:'Joe Parent', children: [ { name: 'Bob Child' }, { name: 'Sue Child' } ] } }, {permissions : xdmp.",
+            "date_published": "2017-11-23T06:32:35+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47449002/index.md"
+            , "tags": ["marklogic","marklogic-9","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes",
+                    "source_file": "comment-20171123T155014-47459250.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/933378413397549057/",
+            "url": "https://mirror.roytang.net/2017/11/933378413397549057/",
+            "path": "/2017/11/933378413397549057/",
+            "title": "",
+            "content_html": "\u003cp\u003eApparently hindi ko pa kaya manalo ng quiz night magisa\u003c/p\u003e\n",
+            "summary": "Apparently hindi ko pa kaya manalo ng quiz night magisa",
+            "date_published": "2017-11-22T16:55:29+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/933378413397549057.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/933378413397549057/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/932937994352279553/",
+            "url": "https://mirror.roytang.net/2017/11/932937994352279553/",
+            "path": "/2017/11/932937994352279553/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhat\u0026rsquo;s the point of a selling post with \u0026ldquo;Take all for 5999. Last Price 5500!\u0026rdquo;? Why bother with the 5999?\u003c/p\u003e\n",
+            "summary": "What\u0026rsquo;s the point of a selling post with \u0026ldquo;Take all for 5999. Last Price 5500!\u0026rdquo;? Why bother with the 5999?",
+            "date_published": "2017-11-21T11:45:25+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/932937994352279553.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/932937994352279553/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/932925886789165057/",
+            "url": "https://mirror.roytang.net/2017/11/932925886789165057/",
+            "path": "/2017/11/932925886789165057/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e the joke is that ninjas are supposed to be stealthy so master ninjas wont be seen\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback the joke is that ninjas are supposed to be stealthy so master ninjas wont be seen",
+            "date_published": "2017-11-21T10:57:18+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/932925886789165057.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/932925886789165057/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/932887665346670593/",
+            "url": "https://mirror.roytang.net/2017/11/932887665346670593/",
+            "path": "/2017/11/932887665346670593/",
+            "title": "",
+            "content_html": "\u003cp\u003e@_@\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ComicBookNOW/status/932876239261532160'\u003eComicBookNOW\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003e\u0026lsquo;Rurouni Kenshin\u0026rsquo; Creator Nobuhiro Watsuki Arrested On Child Pornography Charges\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"http://comicbook.com/anime/2017/11/21/rurouni-kenshin-nobuhiro-watsuki-sex-crime-arrested-anime/\"\u003ehttp://comicbook.com/anime/2017/11/21/rurouni-kenshin-nobuhiro-watsuki-sex-crime-arrested-anime/\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "@_@\nQuoted ComicBookNOW\u0026#39;s tweet:   \u0026lsquo;Rurouni Kenshin\u0026rsquo; Creator Nobuhiro Watsuki Arrested On Child Pornography Charges\nhttp://comicbook.com/anime/2017/11/21/rurouni-kenshin-nobuhiro-watsuki-sex-crime-arrested-anime/\n ",
+            "date_published": "2017-11-21T08:25:26+00:00",
+            "date_modified": "2020-09-10T21:26:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/932887665346670593/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/932887665346670593/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/932789569291825152/",
+            "url": "https://mirror.roytang.net/2017/11/932789569291825152/",
+            "path": "/2017/11/932789569291825152/",
+            "title": "",
+            "content_html": "\u003cp\u003eLife goals: find a quiet spot, lie down and read\u003c/p\u003e\n",
+            "summary": "Life goals: find a quiet spot, lie down and read",
+            "date_published": "2017-11-21T01:55:38+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/932789569291825152.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/932789569291825152/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/932752576759570432/",
+            "url": "https://mirror.roytang.net/2017/11/932752576759570432/",
+            "path": "/2017/11/932752576759570432/",
+            "title": "",
+            "content_html": "\u003cp\u003eSometimes even our dreams tell us to move on\u003c/p\u003e\n",
+            "summary": "Sometimes even our dreams tell us to move on",
+            "date_published": "2017-11-20T23:28:38+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/932752576759570432.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/932752576759570432/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/11/932197000052858880/",
             "url": "https://mirror.roytang.net/2017/11/932197000052858880/",
             "path": "/2017/11/932197000052858880/",
@@ -699,176 +874,6 @@
             "source_path": "notes/2017/11/930374893073457152/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930374893073457152/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930271248470327296/",
-            "url": "https://mirror.roytang.net/2017/11/930271248470327296/",
-            "path": "/2017/11/930271248470327296/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026lt;hunter\u0026gt; what if someday is today :p\u003c/p\u003e\n",
-            "summary": "\u0026lt;hunter\u0026gt; what if someday is today :p",
-            "date_published": "2017-11-14T03:08:43+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930271248470327296/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930271248470327296/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930104501528227841/",
-            "url": "https://mirror.roytang.net/2017/11/930104501528227841/",
-            "path": "/2017/11/930104501528227841/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe idea behind non-official channels, like Sass, RJ, Bruce, and other D D S bloggers, is ensure there will be attack dogs for issues that official channels can’t tackle head on. This strategy achieves a common goal with the benefit of deniability.\u003c/p\u003e\n",
-            "summary": "The idea behind non-official channels, like Sass, RJ, Bruce, and other D D S bloggers, is ensure there will be attack dogs for issues that official channels can’t tackle head on. This strategy achieves a common goal with the benefit of deniability.",
-            "date_published": "2017-11-13T16:06:08+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930104501528227841/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930104501528227841/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930049251781910530/",
-            "url": "https://mirror.roytang.net/2017/11/930049251781910530/",
-            "path": "/2017/11/930049251781910530/",
-            "title": "",
-            "content_html": "\u003cp\u003eI may be a scrubby #SFV Bronze, but at least I\u0026rsquo;m ready for season 3\u003c/p\u003e\n",
-            "summary": "I may be a scrubby #SFV Bronze, but at least I\u0026rsquo;m ready for season 3",
-            "date_published": "2017-11-13T12:26:35+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/11/930049251781910530/index.md"
-            , "tags": ["SFV"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930049251781910530/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/bbca1dzfhuw/",
-            "url": "https://mirror.roytang.net/2017/11/bbca1dzfhuw/",
-            "path": "/2017/11/bbca1dzfhuw/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe niece is staying over so I had her assemble some #Legos to keep her busy\u003c/p\u003e\n",
-            "summary": "The niece is staying over so I had her assemble some #Legos to keep her busy",
-            "date_published": "2017-11-13T06:49:55+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/11/BbcA1dZFHuw/index.md"
-            , "tags": ["Legos"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BbcA1dZFHuw/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/167449395540/the-niece-is-staying-over-so-i-had-her-assemble"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/930152682383388673/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/930070284702449664/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156182000983912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/929912103225384960/",
-            "url": "https://mirror.roytang.net/2017/11/929912103225384960/",
-            "path": "/2017/11/929912103225384960/",
-            "title": "",
-            "content_html": "\u003cp\u003eAstrophysicist and science communicator Carl Sagan was born #OTD in 1934. Here is what he feared we might become, from “The Demon Haunted World.”\u003c/p\u003e\n",
-            "summary": "Astrophysicist and science communicator Carl Sagan was born #OTD in 1934. Here is what he feared we might become, from “The Demon Haunted World.”",
-            "date_published": "2017-11-13T03:21:36+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/929912103225384960/index.md"
-            , "tags": ["OTD"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929912103225384960/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/929880278792728576/",
-            "url": "https://mirror.roytang.net/2017/11/929880278792728576/",
-            "path": "/2017/11/929880278792728576/",
-            "title": "",
-            "content_html": "\u003cp\u003eThere should be a term for this. Maybe “algorithmic radicalization.”\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html\"\u003ehttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html\u003c/a\u003e \u003ca href=\"https://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news\"\u003ehttps://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "There should be a term for this. Maybe “algorithmic radicalization.”\nhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.htmlhttps://www.nytimes.com/2017/11/12/technology/social-media-disinformation.html https://www.buzzfeed.com/vijaypandurangan/how-can-we-kill-fake-news",
-            "date_published": "2017-11-13T01:15:09+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/929880278792728576/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929880278792728576/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/dppnzwm/",
-            "url": "https://mirror.roytang.net/2017/11/dppnzwm/",
-            "path": "/2017/11/dppnzwm/",
-            "title": "",
-            "content_html": "\u003cp\u003eAMA Request: A Jollibee customer na nakipagkwentuhan kay Trudeau\u003c/p\u003e\n",
-            "summary": "AMA Request: A Jollibee customer na nakipagkwentuhan kay Trudeau",
-            "date_published": "2017-11-12T17:08:13+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/dppnzwm/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/7cesx1/gma_news_on_twitter_matapos_bumisita_sa_womens/dppnzwm/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/929744705226653696/",
-            "url": "https://mirror.roytang.net/2017/11/929744705226653696/",
-            "path": "/2017/11/929744705226653696/",
-            "title": "",
-            "content_html": "\u003cp\u003eMore respect now for Krysten\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/nytimesbooks/status/929733788485279745'\u003enytimesbooks\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    The actress Krysten RItter has written a debut thriller, \u0026ldquo;Bonfire.\u0026rdquo; But you won\u0026rsquo;t catch her reading books on set. \u003ca href=\"http://nyti.ms/2AzVf7Y\"\u003ehttp://nyti.ms/2AzVf7Y\u003c/a\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "More respect now for Krysten\nQuoted nytimesbooks\u0026#39;s tweet:   The actress Krysten RItter has written a debut thriller, \u0026ldquo;Bonfire.\u0026rdquo; But you won\u0026rsquo;t catch her reading books on set. http://nyti.ms/2AzVf7Y  ",
-            "date_published": "2017-11-12T16:16:26+00:00",
-            "date_modified": "2020-09-08T00:33:30+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/929744705226653696/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929744705226653696/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/929673995527401478/",
-            "url": "https://mirror.roytang.net/2017/11/929673995527401478/",
-            "path": "/2017/11/929673995527401478/",
-            "title": "",
-            "content_html": "\u003cp\u003eI wouldnt mind an all-female reboot of the PH govt either.\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/conanobrien/status/929414716446986245'\u003eConanOBrien\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    I\u0026rsquo;m ready for the all-female reboot of America.\n\u003c/blockquote\u003e\n",
-            "summary": "I wouldnt mind an all-female reboot of the PH govt either.\nQuoted ConanOBrien\u0026#39;s tweet:   I\u0026rsquo;m ready for the all-female reboot of America.  ",
-            "date_published": "2017-11-12T11:35:27+00:00",
-            "date_modified": "2020-09-08T00:33:30+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/929673995527401478/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929673995527401478/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/929673103604461568/",
-            "url": "https://mirror.roytang.net/2017/11/929673103604461568/",
-            "path": "/2017/11/929673103604461568/",
-            "title": "",
-            "content_html": "\u003cp\u003eThread\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/tonyocruz/status/929665661126590466'\u003etonyocruz\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThe weakest link in the broad anti-Duterte opposition are the Yellows (not all, just the diehard and rabid ones).\u003c/p\u003e\n\u003cp\u003eThey think their votes are more important than others.\u003c/p\u003e\n\u003cp\u003eThey think Duterte’s sins absolve PNoy’s record of ineptitude, cruelty, corruption and puppetry.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "Thread\nQuoted tonyocruz\u0026#39;s tweet:   The weakest link in the broad anti-Duterte opposition are the Yellows (not all, just the diehard and rabid ones).\nThey think their votes are more important than others.\nThey think Duterte’s sins absolve PNoy’s record of ineptitude, cruelty, corruption and puppetry.\n ",
-            "date_published": "2017-11-12T11:31:55+00:00",
-            "date_modified": "2020-09-08T00:33:30+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/929673103604461568/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/929673103604461568/"}]
             
             
             }

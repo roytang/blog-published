@@ -1,4 +1,6 @@
 
+- [Quotes!](/2021/01/quotes/)
+
 - [Three Hearts](/2019/08/three-hearts/)
 
 - [In Search of Knowledge](/2019/05/in-search-of-knowledge/)
