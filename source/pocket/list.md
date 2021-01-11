@@ -1,4 +1,8 @@
 
+- [The Platform Is The Enemy](/2021/01/the-platform-is-the-enemy/)
+
+- [Who Wants To Be a Thousandaire?](/2021/01/who-wants-to-be-a-thousandaire/)
+
 - [Lockdown Productivity: Spaceship You](/2021/01/lockdown-productivity-spaceship-you/)
 
 - [Into the Personal-Website-Verse](/2021/01/into-the-personal-website-verse/)

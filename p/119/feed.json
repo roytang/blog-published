@@ -11,6 +11,121 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/12/40968519/",
+            "url": "https://mirror.roytang.net/2016/12/40968519/",
+            "path": "/2016/12/40968519/",
+            "title": "Marklogic Node.js API: How to get the document where an embedded triple lives?",
+            "content_html": "\u003cp\u003eI tried to insert the following test document:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edb.documents.write(\n    {\n        uri: \u0026quot;/test/doc1.json\u0026quot;,\n        contentType: \u0026quot;application/json\u0026quot;,\n        collections: \u0026quot;test\u0026quot;,\n        content: {\n            name : \u0026quot;Peter\u0026quot;,\n            hobby: \u0026quot;Sleeping\u0026quot;,\n            other: \u0026quot;Some other info\u0026quot;,\n            \u0026quot;triple\u0026quot;: {\n                \u0026quot;subject\u0026quot;: {   \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot;   \n                },   \n                \u0026quot;predicate\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot;   \n                },   \n                \u0026quot;object\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot;   \n                }\n          \t}\n        }\n    }\n  ).\n  result(function(response){\n    console.log(\u0026quot;Done loading\u0026quot;);\n  }); \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen I queried as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar query = [\n  'SELECT ?s ?p ?o' ,\n  'WHERE { ?s ?p ?o }' ,\n];\ndb.graphs.sparql('application/sparql-results+json', query.join('\\n')\n).result(function (result) {\n  console.log(JSON.stringify(result, null, 2));\n}, function(error) {\n  console.log(JSON.stringify(error, null, 2));\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?\u003c/p\u003e\n",
+            "summary": "I tried to insert the following test document:\ndb.documents.write( { uri: \u0026quot;/test/doc1.json\u0026quot;, contentType: \u0026quot;application/json\u0026quot;, collections: \u0026quot;test\u0026quot;, content: { name : \u0026quot;Peter\u0026quot;, hobby: \u0026quot;Sleeping\u0026quot;, other: \u0026quot;Some other info\u0026quot;, \u0026quot;triple\u0026quot;: { \u0026quot;subject\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot; }, \u0026quot;predicate\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot; }, \u0026quot;object\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot; } } } } ). result(function(response){ console.log(\u0026quot;Done loading\u0026quot;); });  Then I queried as follows:\nvar query = [ 'SELECT ?s ?",
+            "date_published": "2016-12-05T06:44:52+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/40968519/index.md"
+            , "tags": ["node.js","sparql","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T082757-40969974.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T153147-40977742.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/40968002/",
+            "url": "https://mirror.roytang.net/2016/12/40968002/",
+            "path": "/2016/12/40968002/",
+            "title": "How to query Marklogic triples using SPARQL?",
+            "content_html": "\u003cp\u003eI inserted a test document using the Node.js API:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e  db.documents.write(\n    {\n        uri: \u0026quot;/test/doc1.json\u0026quot;,\n        contentType: \u0026quot;application/json\u0026quot;,\n        collections: \u0026quot;test\u0026quot;,\n        content: {\n            name : \u0026quot;Peter\u0026quot;,\n            \u0026quot;triple\u0026quot;: {\n                \u0026quot;subject\u0026quot;: {   \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot;   \n                },   \n                \u0026quot;predicate\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot;   \n                },   \n                \u0026quot;object\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot;   \n                }\n          \t}\n        }\n    }\n  ).\n  result(function(response){\n    console.log(\u0026quot;Done loading\u0026quot;);\n  }); \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen I tried querying it via SPARQL on the Marklogic console webapp:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT ?s ?p ?o\n  WHERE { ?s ?p ?o }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe query above works fine, it retrieves the test triple I inserted above\u003c/p\u003e\n\u003cp\u003eHowever, if I want to filter by the literal value \u0026ldquo;Paris\u0026rdquo;, I tried the following:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003ePREFIX loc: \u0026lt;http://example.com/location/\u0026gt;\n\nSELECT ?s ?p \n  WHERE { ?s ?p loc:Paris }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBut in this case I got zero results. Is this syntax incorrect? I was just following how the queries looked in \u003ca href=\"https://docs.marklogic.com/guide/semantics/semantic-searches\"\u003ehttps://docs.marklogic.com/guide/semantics/semantic-searches\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eWhat is the proper way to do it?\u003c/p\u003e\n",
+            "summary": "I inserted a test document using the Node.js API:\n db.documents.write( { uri: \u0026quot;/test/doc1.json\u0026quot;, contentType: \u0026quot;application/json\u0026quot;, collections: \u0026quot;test\u0026quot;, content: { name : \u0026quot;Peter\u0026quot;, \u0026quot;triple\u0026quot;: { \u0026quot;subject\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot; }, \u0026quot;predicate\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot; }, \u0026quot;object\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot; } } } } ). result(function(response){ console.log(\u0026quot;Done loading\u0026quot;); });  Then I tried querying it via SPARQL on the Marklogic console webapp:\nSELECT ?s ?p ?",
+            "date_published": "2016-12-05T06:02:58+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/40968002/index.md"
+            , "tags": ["sparql","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/40968002/how-to-query-marklogic-triples-using-sparql"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/40968002/how-to-query-marklogic-triples-using-sparql",
+                    "source_file": "comment-20161205T081620-40969816.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/805643923334889472/",
+            "url": "https://mirror.roytang.net/2016/12/805643923334889472/",
+            "path": "/2016/12/805643923334889472/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/emilyrauhala/\"\u003e@emilyrauhala\u003c/a\u003e who was the first one?\u003c/p\u003e\n",
+            "summary": "@emilyrauhala who was the first one?",
+            "date_published": "2016-12-05T05:24:14+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/805643923334889472.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/805643923334889472/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/805455287951818753/",
+            "url": "https://mirror.roytang.net/2016/12/805455287951818753/",
+            "path": "/2016/12/805455287951818753/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e that reminds me. PNP Chief\u0026rsquo;s recent santa clause stunt reminded me of this: \u003ca href=\"https://gatherer.wizards.com/Pages/Card/Details.aspx?name=reparations\"\u003ehttps://gatherer.wizards.com/Pages/Card/Details.aspx?name=reparations\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@Woerlan that reminds me. PNP Chief\u0026rsquo;s recent santa clause stunt reminded me of this: https://gatherer.wizards.com/Pages/Card/Details.aspx?name=reparations",
+            "date_published": "2016-12-04T16:54:39+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/805455287951818753.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/805455287951818753/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/805451540509007873/",
+            "url": "https://mirror.roytang.net/2016/12/805451540509007873/",
+            "path": "/2016/12/805451540509007873/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;Irreconcilable differences\u0026rdquo; \u0026gt; \u0026ldquo;healing and unity\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;Irreconcilable differences\u0026rdquo; \u0026gt; \u0026ldquo;healing and unity\u0026rdquo;",
+            "date_published": "2016-12-04T16:39:46+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/805451540509007873.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/805451540509007873/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155144477958912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/805435581224263681/",
+            "url": "https://mirror.roytang.net/2016/12/805435581224263681/",
+            "path": "/2016/12/805435581224263681/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SaffronOlive/\"\u003e@SaffronOlive\u003c/a\u003e how much are they now?\u003c/p\u003e\n",
+            "summary": "@SaffronOlive how much are they now?",
+            "date_published": "2016-12-04T15:36:21+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/805435581224263681.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/805435581224263681/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/12/805428661356675073/",
             "url": "https://mirror.roytang.net/2016/12/805428661356675073/",
             "path": "/2016/12/805428661356675073/",
@@ -754,108 +869,6 @@
             "source_path": "post/2016/11/are-you-willing-to-accept-criticism/index.md"
             , "tags": ["Opinions","Self-Improvement"]
             , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/153798744930/are-you-willing-to-accept-criticism"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/803412776530116608/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803263083074310145/",
-            "url": "https://mirror.roytang.net/2016/11/803263083074310145/",
-            "path": "/2016/11/803263083074310145/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m a judge at a .BR \u0026ldquo;low budget MTG Card cosplay\u0026rdquo; competition and I have to say human creativity knows no bounds \u003ca href=\"https://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop\"\u003ehttps://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m a judge at a .BR \u0026ldquo;low budget MTG Card cosplay\u0026rdquo; competition and I have to say human creativity knows no bounds https://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop",
-            "date_published": "2016-11-28T15:43:37+00:00",
-            "date_modified": "2020-09-10T22:04:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803263083074310145/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803263083074310145/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803238137052807168/",
-            "url": "https://mirror.roytang.net/2016/11/803238137052807168/",
-            "path": "/2016/11/803238137052807168/",
-            "title": "",
-            "content_html": "\u003cp\u003eMocha Uson posted more lies about VP Leni. Contreras shared it naman with inputs pa. Mga loko talaga eh.\u003c/p\u003e\n",
-            "summary": "Mocha Uson posted more lies about VP Leni. Contreras shared it naman with inputs pa. Mga loko talaga eh.",
-            "date_published": "2016-11-28T14:04:29+00:00",
-            "date_modified": "2020-09-10T22:04:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803238137052807168/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803238137052807168/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803231189230178304/",
-            "url": "https://mirror.roytang.net/2016/11/803231189230178304/",
-            "path": "/2016/11/803231189230178304/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Yoshi_OnoChin/\"\u003e@Yoshi_OnoChin\u003c/a\u003e will there be a surprise announcement?!?\u003c/p\u003e\n",
-            "summary": "@Yoshi_OnoChin will there be a surprise announcement?!?",
-            "date_published": "2016-11-28T13:36:53+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803231189230178304.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803231189230178304/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803135642758627330/",
-            "url": "https://mirror.roytang.net/2016/11/803135642758627330/",
-            "path": "/2016/11/803135642758627330/",
-            "title": "",
-            "content_html": "\u003cp\u003e#Nanowrimo2016 Day 28: +1647 words, 46669 total\u003c/p\u003e\n",
-            "summary": "#Nanowrimo2016 Day 28: +1647 words, 46669 total",
-            "date_published": "2016-11-28T07:17:13+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803135642758627330.md"
-            , "tags": ["Nanowrimo2016"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803135642758627330/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/bnww689boze/",
-            "url": "https://mirror.roytang.net/2016/11/bnww689boze/",
-            "path": "/2016/11/bnww689boze/",
-            "title": "",
-            "content_html": "\u003cp\u003eSlimer #sketchdaily\u003c/p\u003e\n",
-            "summary": "Slimer #sketchdaily",
-            "date_published": "2016-11-28T06:35:08+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/11/BNWw689BOZE/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BNWw689BOZE/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/153774842720/slimer-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/803230780868661250/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155126752048912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/5f5xde/",
-            "url": "https://mirror.roytang.net/2016/11/5f5xde/",
-            "path": "/2016/11/5f5xde/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-rphilippines-are-there-martial-law-era-crimes-for-which-fvr-and-enrile-can-be-made-accountable-or-do-we-forgive-them-because-of-their-support-for-the-revolutionhttpsredditcomrphilippinescomments5f5xdeare_there_martial_law_era_crimes_for_which_fvr\"\u003ePosted on r/Philippines: \u003ca href=\"https://reddit.com/r/Philippines/comments/5f5xde/are_there_martial_law_era_crimes_for_which_fvr/\"\u003eAre there Martial law era crimes for which FVR and Enrile can be made accountable? Or do we forgive them because of their support for the revolution?\u003c/a\u003e\u003c/h4\u003e\n",
-            "summary": "Posted on r/Philippines: Are there Martial law era crimes for which FVR and Enrile can be made accountable? Or do we forgive them because of their support for the revolution? ",
-            "date_published": "2016-11-28T00:02:02+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/5f5xde/index.md"
-            , "tags": ["philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Philippines/comments/5f5xde/are_there_martial_law_era_crimes_for_which_fvr/"}]
             
             
             }
