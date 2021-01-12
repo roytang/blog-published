@@ -11,6 +11,116 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/11/935805257573023744/",
+            "url": "https://mirror.roytang.net/2017/11/935805257573023744/",
+            "path": "/2017/11/935805257573023744/",
+            "title": "",
+            "content_html": "\u003cp\u003eAll the more I’m convinced our basic political culture is unconcerned with causes, and only with results. Woe to anyone in a position of responsibility to who thinks otherwise. Cause and effect only relevant if instant relief is result. In nearly a century behavior unchanged.\u003c/p\u003e\n",
+            "summary": "All the more I’m convinced our basic political culture is unconcerned with causes, and only with results. Woe to anyone in a position of responsibility to who thinks otherwise. Cause and effect only relevant if instant relief is result. In nearly a century behavior unchanged.",
+            "date_published": "2017-11-29T09:38:54+00:00",
+            "date_modified": "2020-09-10T22:04:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/935805257573023744/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/935805257573023744/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/935803955497410561/",
+            "url": "https://mirror.roytang.net/2017/11/935803955497410561/",
+            "path": "/2017/11/935803955497410561/",
+            "title": "",
+            "content_html": "\u003cp\u003eTIL about the Overton window \u003ca href=\"https://en.wikipedia.org/wiki/Overton_window\"\u003ehttps://en.wikipedia.org/wiki/Overton_window\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "TIL about the Overton window https://en.wikipedia.org/wiki/Overton_window",
+            "date_published": "2017-11-29T09:33:44+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/935803955497410561.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/935803955497410561/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156221931478912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/10156217568758912/",
+            "url": "https://mirror.roytang.net/2017/11/10156217568758912/",
+            "path": "/2017/11/10156217568758912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurvey: what is the most difficult animal to pack?\u003c/p\u003e\n",
+            "summary": "Survey: what is the most difficult animal to pack?",
+            "date_published": "2017-11-27T22:43:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/10156217568758912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156217568758912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/935187534581133312/",
+            "url": "https://mirror.roytang.net/2017/11/935187534581133312/",
+            "path": "/2017/11/935187534581133312/",
+            "title": "",
+            "content_html": "\u003cp\u003eShe said she was just going out to get some milk\u0026hellip; \u003ca href=\"https://twitter.com/kensingtonroyal/status/935086035989655553\"\u003ehttps://twitter.com/kensingtonroyal/status/935086035989655553\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "She said she was just going out to get some milk\u0026hellip; https://twitter.com/kensingtonroyal/status/935086035989655553",
+            "date_published": "2017-11-27T16:44:17+00:00",
+            "date_modified": "2020-09-10T22:04:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/935187534581133312/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/935187534581133312/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/47513579/",
+            "url": "https://mirror.roytang.net/2017/11/47513579/",
+            "path": "/2017/11/47513579/",
+            "title": "MarkLogic template driven extraction and triples: forming triples between array nodes",
+            "content_html": "\u003cp\u003eThis is a follow-up to my question here: \u003ca href=\"https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250\"\u003ehttps://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSo let\u0026rsquo;s say I have a number of documents structured like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edeclareUpdate();\n\nxdmp.documentInsert(\n       '/test/tde.json',\n       {\n         content: {\n           name:'Joe Parent',\n           children: [\n             {\n               name: 'Bob Child'\n             },\n             {\n               name: 'Sue Child'\n             },\n             {\n               name: 'Guy Child'\n             }\n           ]\n         }\n       },\n       {permissions : xdmp.defaultPermissions(),\n        collections : ['test']})\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI want to define a template that would extract triples from these documents defining sibling relationships between the children. For the above example, I would want to extract the following triples (the relationship is two-way):\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eBob Child sibling-of Sue Child\nBob Child sibling-of Guy Child\nSue Child sibling-of Bob Child\nSue Child sibling-of Guy Child\nGuy Child sibling-of Bob Child\nGuy Child sibling-of Sue Child\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHow can i set up my template to accomplish this?\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
+            "summary": "This is a follow-up to my question here: https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250\nSo let\u0026rsquo;s say I have a number of documents structured like this:\ndeclareUpdate(); xdmp.documentInsert( '/test/tde.json', { content: { name:'Joe Parent', children: [ { name: 'Bob Child' }, { name: 'Sue Child' }, { name: 'Guy Child' } ] } }, {permissions : xdmp.defaultPermissions(), collections : ['test']})  I want to define a template that would extract triples from these documents defining sibling relationships between the children.",
+            "date_published": "2017-11-27T14:42:48+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47513579/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47513579/marklogic-template-driven-extraction-and-triples-forming-triples-between-array"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47513579/marklogic-template-driven-extraction-and-triples-forming-triples-between-array",
+                    "source_file": "comment-20171128T172758-47537558.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/47513579/marklogic-template-driven-extraction-and-triples-forming-triples-between-array",
+                    "source_file": "comment-20171128T225013-47542247.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/934935454834507777/",
+            "url": "https://mirror.roytang.net/2017/11/934935454834507777/",
+            "path": "/2017/11/934935454834507777/",
+            "title": "",
+            "content_html": "\u003cp\u003e8 ppl ahead in the queue. shouldve brought a laptop for sleepy coding\u003c/p\u003e\n",
+            "summary": "8 ppl ahead in the queue. shouldve brought a laptop for sleepy coding",
+            "date_published": "2017-11-27T00:02:37+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/934935454834507777.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/934935454834507777/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/11/934832729643933696/",
             "url": "https://mirror.roytang.net/2017/11/934832729643933696/",
             "path": "/2017/11/934832729643933696/",
@@ -772,108 +882,6 @@
             "source_path": "notes/2017/11/931059702510731266/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931059702510731266/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930495482119340032/",
-            "url": "https://mirror.roytang.net/2017/11/930495482119340032/",
-            "path": "/2017/11/930495482119340032/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TolarianCollege/\"\u003e@TolarianCollege\u003c/a\u003e \u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later\u003c/p\u003e\n",
-            "summary": "@TolarianCollege @mtgaaron Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later",
-            "date_published": "2017-11-14T17:59:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930495482119340032.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495482119340032/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930495180070830080/",
-            "url": "https://mirror.roytang.net/2017/11/930495180070830080/",
-            "path": "/2017/11/930495180070830080/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Nintendo_Legend/\"\u003e@Nintendo_Legend\u003c/a\u003e: Super Nintendo Chalmers! 😂😂\u003c/p\u003e\n",
-            "summary": "RT @Nintendo_Legend: Super Nintendo Chalmers! 😂😂",
-            "date_published": "2017-11-14T17:58:33+00:00",
-            "date_modified": "2020-10-13T15:05:14+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930495180070830080/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495180070830080/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930494881432088577/",
-            "url": "https://mirror.roytang.net/2017/11/930494881432088577/",
-            "path": "/2017/11/930494881432088577/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhile I\u0026rsquo;m complaining about Tweetdeck, how come it doesn\u0026rsquo;t support pasting screen captures from the keyboard? (I have to open regular \u003ca href=\"https://twitter.com/Twitter/\"\u003e@Twitter\u003c/a\u003e to do it)\u003c/p\u003e\n",
-            "summary": "While I\u0026rsquo;m complaining about Tweetdeck, how come it doesn\u0026rsquo;t support pasting screen captures from the keyboard? (I have to open regular @Twitter to do it)",
-            "date_published": "2017-11-14T17:57:22+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930494881432088577.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494881432088577/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930494399707934720/",
-            "url": "https://mirror.roytang.net/2017/11/930494399707934720/",
-            "path": "/2017/11/930494399707934720/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/FogCreek/\"\u003e@FogCreek\u003c/a\u003e \u003ca href=\"https://twitter.com/anildash/\"\u003e@anildash\u003c/a\u003e Tweetdeck preview image wasn\u0026rsquo;t good for you guys\u003c/p\u003e\n",
-            "summary": "@FogCreek @anildash Tweetdeck preview image wasn\u0026rsquo;t good for you guys",
-            "date_published": "2017-11-14T17:55:27+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/930494399707934720/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494399707934720/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930494149647667200/",
-            "url": "https://mirror.roytang.net/2017/11/930494149647667200/",
-            "path": "/2017/11/930494149647667200/",
-            "title": "",
-            "content_html": "\u003cp\u003eNow I have three browsers pinned to my taskbar! (I don\u0026rsquo;t really use Edge but I keep him around for some weird kind of sentimental reason)\u003c/p\u003e\n",
-            "summary": "Now I have three browsers pinned to my taskbar! (I don\u0026rsquo;t really use Edge but I keep him around for some weird kind of sentimental reason)",
-            "date_published": "2017-11-14T17:54:27+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/11/930494149647667200/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930494149647667200/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/930493317279727616/",
-            "url": "https://mirror.roytang.net/2017/11/930493317279727616/",
-            "path": "/2017/11/930493317279727616/",
-            "title": "",
-            "content_html": "\u003cp\u003eWith the recent release of Firefox Quantum, I decided to use it as my main browser for a while. My first complaint: Tweetdeck scrollbars are horrible in FF vs Chrome.\u003c/p\u003e\n",
-            "summary": "With the recent release of Firefox Quantum, I decided to use it as my main browser for a while. My first complaint: Tweetdeck scrollbars are horrible in FF vs Chrome.",
-            "date_published": "2017-11-14T17:51:09+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/11/930493317279727616/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930493317279727616/"}]
             
             
             }

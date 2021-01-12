@@ -11,6 +11,116 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/08/893715886795661312/",
+            "url": "https://mirror.roytang.net/2017/08/893715886795661312/",
+            "path": "/2017/08/893715886795661312/",
+            "title": "",
+            "content_html": "\u003cp\u003eEvery part of the ACLU amicus brief in defense of John Oliver is amazing. Even the footnotes.\u003c/p\u003e\n\u003cp\u003eTruly, everyone is allowed to have dreams.\u003c/p\u003e\n",
+            "summary": "Every part of the ACLU amicus brief in defense of John Oliver is amazing. Even the footnotes.\nTruly, everyone is allowed to have dreams.",
+            "date_published": "2017-08-05T06:10:46+00:00",
+            "date_modified": "2020-07-14T05:17:24+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893715886795661312/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893715886795661312/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/45507423/",
+            "url": "https://mirror.roytang.net/2017/08/45507423/",
+            "path": "/2017/08/45507423/",
+            "title": "MarkLogic node.js - is it possible to support a derived value in parseBindings?",
+            "content_html": "\u003cp\u003eWe have a search application using MarkLogic node.js. We use parsedQuery like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e            qb.parsedFrom(prop.search, \n            qb.parseBindings(\n                qb.word('name', qb.bind('name')),\n                qb.word('birthdate', qb.bind('birthdate')),\n                qb.range('count', qb.datatype('float'), qb.bind('count'))\n            )\n        )\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly. We can\u0026rsquo;t store the age in the documents since the age changes depending on the current date.\u003c/p\u003e\n\u003cp\u003eIs this possible and if so, how? If it matters, we are using ML8\u003c/p\u003e\n",
+            "summary": "We have a search application using MarkLogic node.js. We use parsedQuery like this:\n qb.parsedFrom(prop.search, qb.parseBindings( qb.word('name', qb.bind('name')), qb.word('birthdate', qb.bind('birthdate')), qb.range('count', qb.datatype('float'), qb.bind('count')) ) )  The above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly.",
+            "date_published": "2017-08-04T12:55:30+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/45507423/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
+                    "source_file": "comment-20170804T125909-45507502.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
+                    "source_file": "comment-20170807T174517-45552786.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893375729836056576/",
+            "url": "https://mirror.roytang.net/2017/08/893375729836056576/",
+            "path": "/2017/08/893375729836056576/",
+            "title": "",
+            "content_html": "\u003cp\u003eI don\u0026rsquo;t even have an optical drive anymore \u003ca href=\"https://twitter.com/shanselman/status/892986807259877376\"\u003ehttps://twitter.com/shanselman/status/892986807259877376\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I don\u0026rsquo;t even have an optical drive anymore https://twitter.com/shanselman/status/892986807259877376",
+            "date_published": "2017-08-04T07:39:06+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893375729836056576.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893375729836056576/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893135647828881408/",
+            "url": "https://mirror.roytang.net/2017/08/893135647828881408/",
+            "path": "/2017/08/893135647828881408/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn my Ruby code, half of my methods are just one or two lines long. 93% are under 10.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://martinfowler.com/bliki/FunctionLength.html\"\u003ehttps://martinfowler.com/bliki/FunctionLength.html\u003c/a\u003e \u003ca href=\"https://twitter.com/RonJeffries/status/893071198401290240\"\u003ehttps://twitter.com/RonJeffries/status/893071198401290240\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "In my Ruby code, half of my methods are just one or two lines long. 93% are under 10.\nhttps://martinfowler.com/bliki/FunctionLength.html https://twitter.com/RonJeffries/status/893071198401290240",
+            "date_published": "2017-08-03T15:45:06+00:00",
+            "date_modified": "2020-07-14T05:17:24+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893135647828881408/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893135647828881408/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893127391161090049/",
+            "url": "https://mirror.roytang.net/2017/08/893127391161090049/",
+            "path": "/2017/08/893127391161090049/",
+            "title": "",
+            "content_html": "\u003cp\u003eBoo :(\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/polygon/status/893100906211942400'\u003ePolygon\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    The Dark Tower is boring, lifeless and close to being an absolute total disaster. Our review. \u003ca href=\"https://www.polygon.com/2017/8/3/16087834/the-dark-tower-review\"\u003ehttps://www.polygon.com/2017/8/3/16087834/the-dark-tower-review\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Boo :(\nQuoted Polygon\u0026#39;s tweet:   The Dark Tower is boring, lifeless and close to being an absolute total disaster. Our review. https://www.polygon.com/2017/8/3/16087834/the-dark-tower-review  ",
+            "date_published": "2017-08-03T15:12:18+00:00",
+            "date_modified": "2021-01-05T20:44:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893127391161090049/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893127391161090049/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893056454671740928/",
+            "url": "https://mirror.roytang.net/2017/08/893056454671740928/",
+            "path": "/2017/08/893056454671740928/",
+            "title": "",
+            "content_html": "\u003cp\u003eWatching NCIS Los Angeles: Kahawig ni LL Cool J si Bato\u003c/p\u003e\n",
+            "summary": "Watching NCIS Los Angeles: Kahawig ni LL Cool J si Bato",
+            "date_published": "2017-08-03T10:30:25+00:00",
+            "date_modified": "2020-01-04T01:03:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893056454671740928.md"
+            , "tags": ["tv"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893056454671740928/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155921875728912"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/08/45463003/",
             "url": "https://mirror.roytang.net/2017/08/45463003/",
             "path": "/2017/08/45463003/",
@@ -762,108 +872,6 @@
             "source_path": "notes/2017/07/887923466132832256.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887923466132832256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/887716682143195137/",
-            "url": "https://mirror.roytang.net/2017/07/887716682143195137/",
-            "path": "/2017/07/887716682143195137/",
-            "title": "",
-            "content_html": "\u003cp\u003eSometime you gamble and you lose. That\u0026rsquo;s why it\u0026rsquo;s called gambling. But at least you got vodka.\u003c/p\u003e\n",
-            "summary": "Sometime you gamble and you lose. That\u0026rsquo;s why it\u0026rsquo;s called gambling. But at least you got vodka.",
-            "date_published": "2017-07-19T16:52:04+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/887716682143195137.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887716682143195137/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155875646913912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/887461547873783808/",
-            "url": "https://mirror.roytang.net/2017/07/887461547873783808/",
-            "path": "/2017/07/887461547873783808/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/VGAdvisor/\"\u003e@VGAdvisor\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "@VGAdvisor",
-            "date_published": "2017-07-18T23:58:15+00:00",
-            "date_modified": "2020-10-13T15:05:14+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/887461547873783808/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887461547873783808/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/10155871975868912/",
-            "url": "https://mirror.roytang.net/2017/07/10155871975868912/",
-            "path": "/2017/07/10155871975868912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: Who do you think dies first:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eSam Tarly\u003c/li\u003e\n\u003cli\u003eMissandei\u003c/li\u003e\n\u003cli\u003eBrienne of Tarth\u003c/li\u003e\n\u003cli\u003eDavos Seaworth\u003c/li\u003e\n\u003cli\u003eEuron Greyjoy\u003c/li\u003e\n\u003cli\u003ePodrick Payne\u003c/li\u003e\n\u003cli\u003eLyanna Mormont\u003c/li\u003e\n\u003cli\u003eJuan Ponce Enrile\u003c/li\u003e\n\u003c/ol\u003e\n",
-            "summary": "Survey: Who do you think dies first:\n Sam Tarly Missandei Brienne of Tarth Davos Seaworth Euron Greyjoy Podrick Payne Lyanna Mormont Juan Ponce Enrile  ",
-            "date_published": "2017-07-18T23:33:00+00:00",
-            "date_modified": "2020-07-11T02:32:48+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/10155871975868912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155871975868912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/887327310583484418/",
-            "url": "https://mirror.roytang.net/2017/07/887327310583484418/",
-            "path": "/2017/07/887327310583484418/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Thomasintokyo/\"\u003e@Thomasintokyo\u003c/a\u003e how long does it take you to do one of these\u003c/p\u003e\n",
-            "summary": "@Thomasintokyo how long does it take you to do one of these",
-            "date_published": "2017-07-18T15:04:51+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/887327310583484418.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887327310583484418/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/887326815265538048/",
-            "url": "https://mirror.roytang.net/2017/07/887326815265538048/",
-            "path": "/2017/07/887326815265538048/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT if ur filipino and u really don\u0026rsquo;t get him \u003ca href=\"https://twitter.com/TIME/status/886869377903099905\"\u003ehttps://twitter.com/TIME/status/886869377903099905\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "RT if ur filipino and u really don\u0026rsquo;t get him https://twitter.com/TIME/status/886869377903099905",
-            "date_published": "2017-07-18T15:02:53+00:00",
-            "date_modified": "2020-07-11T02:32:48+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/887326815265538048/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887326815265538048/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/10155868016068912/",
-            "url": "https://mirror.roytang.net/2017/07/10155868016068912/",
-            "path": "/2017/07/10155868016068912/",
-            "title": "",
-            "content_html": "\u003cp\u003eI find it so strange that there is actually criticism about the thirteenth Doctor being a woman. I\u0026rsquo;ve always assumed sci-fi fans would tend to be liberal in their thinking and Doctor Who in particular always felt to me that it had a liberal tendency. Once again, humanity has disappointed me lol. (Also I should really catch up with episodes before the internet spoils me on what happens with Twelve/Bill/Master/Missy/etc)\u003c/p\u003e\n",
-            "summary": "I find it so strange that there is actually criticism about the thirteenth Doctor being a woman. I\u0026rsquo;ve always assumed sci-fi fans would tend to be liberal in their thinking and Doctor Who in particular always felt to me that it had a liberal tendency. Once again, humanity has disappointed me lol. (Also I should really catch up with episodes before the internet spoils me on what happens with Twelve/Bill/Master/Missy/etc)",
-            "date_published": "2017-07-17T19:00:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/10155868016068912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155868016068912"}]
             
             
             }

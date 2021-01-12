@@ -3,8 +3,6 @@
 
 - [Recent Links: Black Holes, Stealth Wealth, Distinguished Engineers](/2019/04/recent-links-black-holes-stealth-wealth-distinguished-engineers/)
 
-- [A dozen of the best start-up pitches on the Web | JonBischke.com](/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/)
-
 - [Speed Reading](/2008/12/speed-reading/)
 
 - [links for 2008-12-01](/2008/12/links-for-2008-12-01/)
@@ -96,8 +94,6 @@
 - [links for 2007-03-07](/2007/03/links-for-2007-03-07/)
 
 - [links for 2007-02-24](/2007/02/links-for-2007-02-24/)
-
-- [YouTube - The Simpsons Movie 3rd trailer](/2007/02/youtube-the-simpsons-movie-3rd-trailer/)
 
 - [links for 2007-02-22](/2007/02/links-for-2007-02-22/)
 
