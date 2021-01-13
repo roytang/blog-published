@@ -29,12 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [12 Jan 2021 2:40pm](https://mirror.roytang.net/2021/01/1349003322246754304/): @Westraid what is that?
 - [12 Jan 2021 4:31am](https://mirror.roytang.net/2021/01/gix8ts5/): Philippines. Very little impact as few people use it here. The dominant messaging apps here are Messenger and Viber
 - [12 Jan 2021 3:50am](https://mirror.roytang.net/2021/01/1348839756042391552/): @MaoiArroyo Happy birthday!
 - [11 Jan 2021 3:10pm](https://mirror.roytang.net/2021/01/giuoap8/): That seems to be for a text link?
 - [11 Jan 2021 2:53pm](https://mirror.roytang.net/2021/01/1348644221733883905/): Has this &ldquo;government&rdquo; actually made any comment on the price difference as compared to other vaccines?
 Quoted cnnphilippines&#39;s tweet:   Roque on govt&rsquo;s suppposed preference for Sinovac: Yun ang vaccine na una nating nakuha, at ang Western brands, na lantad ang colonial mentality sa mga Pilipino, July pa natin makukuha earliest  
-- [11 Jan 2021 1:52pm](https://mirror.roytang.net/2021/01/1348628918979358722/): Timezones are terrible.
 
 [View all notes](https://mirror.roytang.net/notes)
 
