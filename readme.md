@@ -29,12 +29,11 @@ Latest shared links:
 Latest notes:
     
 
-- [12 Jan 2021 2:40pm](https://mirror.roytang.net/2021/01/1349003322246754304/): @Westraid what is that?
-- [12 Jan 2021 4:31am](https://mirror.roytang.net/2021/01/gix8ts5/): Philippines. Very little impact as few people use it here. The dominant messaging apps here are Messenger and Viber
-- [12 Jan 2021 3:50am](https://mirror.roytang.net/2021/01/1348839756042391552/): @MaoiArroyo Happy birthday!
-- [11 Jan 2021 3:10pm](https://mirror.roytang.net/2021/01/giuoap8/): That seems to be for a text link?
-- [11 Jan 2021 2:53pm](https://mirror.roytang.net/2021/01/1348644221733883905/): Has this &ldquo;government&rdquo; actually made any comment on the price difference as compared to other vaccines?
-Quoted cnnphilippines&#39;s tweet:   Roque on govt&rsquo;s suppposed preference for Sinovac: Yun ang vaccine na una nating nakuha, at ang Western brands, na lantad ang colonial mentality sa mga Pilipino, July pa natin makukuha earliest  
+- [14 Jan 2021 12:37am](https://mirror.roytang.net/2021/01/1349515835971256323/): @TagoFabic Happy birthday!
+- [13 Jan 2021 11:45am](https://mirror.roytang.net/2021/01/1349321771489447939/): @zaaaldehyde it&rsquo;s more like you learn to live with how your life turned out
+- [13 Jan 2021 11:03am](https://mirror.roytang.net/2021/01/gj2o5nv/): Ah, that&rsquo;s good to know! Thanks
+- [13 Jan 2021 6:44am](https://mirror.roytang.net/2021/01/kw2qun/): Posted on r/MagicArena: Foretell and Revealed Cards in Hand on Arena I&rsquo;m wondering how Arena will handle using Foretell when some of the cards in the opponent&rsquo;s hand are revealed to you, since the card you exile with foretell should be hidden information. i.e., if I thoughtseize you and you&rsquo;re holding 3 different foretell cards, then during your turn you pay 2 and exile one of them, the other 2 should no longer be revealed to me, since I would be able to deduce which card was exiled.
+- [13 Jan 2021 6:14am](https://mirror.roytang.net/2021/01/1349238475199979521/): There will be people who leave your life without closure and sometimes even many years after you thought you’d moved on, they will appear in your dreams and you will find that the sadness remains
 
 [View all notes](https://mirror.roytang.net/notes)
 
