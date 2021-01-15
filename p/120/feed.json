@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/12/bnepnyebupa/",
+            "url": "https://mirror.roytang.net/2016/12/bnepnyebupa/",
+            "path": "/2016/12/bnepnyebupa/",
+            "title": "",
+            "content_html": "\u003cp\u003eBoxer #sketchdaily\u003c/p\u003e\n",
+            "summary": "Boxer #sketchdaily",
+            "date_published": "2016-12-01T08:05:17+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/12/BNepnyEBUPa/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BNepnyEBUPa/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/153906454390/boxer-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/804340630868688896/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155134744583912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/javascript-references-to-out-of-scope-variables/",
+            "url": "https://mirror.roytang.net/2016/12/javascript-references-to-out-of-scope-variables/",
+            "path": "/2016/12/javascript-references-to-out-of-scope-variables/",
+            "title": "Javascript: References to out-of-scope variables.",
+            "content_html": "\u003cp\u003eIn JavaScript, referencing variables that are declared outside of a function\u0026rsquo;s scope can be tricky. If you have code like this:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-javascript\" data-lang=\"javascript\"\u003e  \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ebtn\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN\u0026#34;\u003c/span\u003e);\n  \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003etest\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#ae81ff\"\u003e1\u003c/span\u003e;\n  \u003cspan style=\"color:#a6e22e\"\u003ebtn\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003eonclick\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e() {\n      \u003cspan style=\"color:#a6e22e\"\u003ealert\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003etest\u003c/span\u003e);\n  }\n  \u003cspan style=\"color:#a6e22e\"\u003etest\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#ae81ff\"\u003e2\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThe click handler above retains a reference to the test variable even though it falls out of scope as soon as the script block finishes execution. When you actually click the button, the alert will show the last value of the variable when the block finished execution (2) instead of the value at the time the function was initialized (1).\u003c/p\u003e\n\u003cp\u003eI thought about this because another developer raised a similar problem to me a few days ago. He had a loop that was initializing click handlers for an array of elements. Of course I can\u0026rsquo;t replicate his example here, but let\u0026rsquo;s say we wanted to add click handlers to an array of buttons that would show the result of multiplying an input value by different integers.\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-javascript\" data-lang=\"javascript\"\u003e    \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e [];\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN1\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN2\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN3\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN4\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003einput\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;IN\u0026#34;\u003c/span\u003e);\n\n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e (\u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e; \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e\u0026lt;\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e4\u003c/span\u003e; \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e++\u003c/span\u003e) {\n      \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e[\u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e].\u003cspan style=\"color:#a6e22e\"\u003eonclick\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e() {\n        \u003cspan style=\"color:#a6e22e\"\u003ealert\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003einput\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003evalue\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e*\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e+\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e2\u003c/span\u003e));\n      }\n    }\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThis is kind of an analogous example for the problem. In this case, the expected behavior is that the first button outputs the input value times 2, while the second button outputs the input value times 3, and so on. But because each of the click handlers retains a reference to the loop counter i, what they will remember on execution is the last value of i after the loop exits, that is, i==4. All the buttons will show the same output.\u003c/p\u003e\n\u003cp\u003eThere are several ways to correct the behavior. One way would be to build the click handlers using a utility function, like so:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-javascript\" data-lang=\"javascript\"\u003e    \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e [];\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN1\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN2\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN3\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003epush\u003c/span\u003e(document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;BTN4\u0026#34;\u003c/span\u003e));\n    \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003einput\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;IN\u0026#34;\u003c/span\u003e);\n\n    \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003egetClickHandler\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003ecounter\u003c/span\u003e) {\n      \u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e() {\n        \u003cspan style=\"color:#a6e22e\"\u003ealert\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003einput\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003evalue\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e*\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003ecounter\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e+\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e2\u003c/span\u003e));\n      }\n    }\n    \n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e (\u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e; \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e\u0026lt;\u003c/span\u003e\u003cspan style=\"color:#ae81ff\"\u003e4\u003c/span\u003e; \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e++\u003c/span\u003e) {\n      \u003cspan style=\"color:#a6e22e\"\u003ebtns\u003c/span\u003e[\u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e].\u003cspan style=\"color:#a6e22e\"\u003eonclick\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003egetClickHandler\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e);\n    }\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThis way, the value for the local function variable \u0026ldquo;counter\u0026rdquo; is locked in once getClickHandler exits execution, and each returned function now has a reference to a different \u0026ldquo;counter\u0026rdquo;, and the buttons will behave as expected.\u003c/p\u003e\n",
+            "summary": "In JavaScript, referencing variables that are declared outside of a function\u0026rsquo;s scope can be tricky. If you have code like this:\nvar btn = document.getElementById(\u0026#34;BTN\u0026#34;); var test = 1; btn.onclick = function() { alert(test); } test = 2; The click handler above retains a reference to the test variable even though it falls out of scope as soon as the script block finishes execution. When you actually click the button, the alert will show the last value of the variable when the block finished execution (2) instead of the value at the time the function was initialized (1).",
+            "date_published": "2016-12-01T01:30:53+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/12/javascript-references-to-out-of-scope-variables/index.md"
+            , "tags": ["javascript","Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/153885002880/javascript-references-to-out-of-scope-variables"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/804136962735095810/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/10155133493983912/",
+            "url": "https://mirror.roytang.net/2016/12/10155133493983912/",
+            "path": "/2016/12/10155133493983912/",
+            "title": "",
+            "content_html": "\u003cp\u003eIDK, it feels a bit appropriate for 2016\u0026hellip;\u003c/p\u003e\n",
+            "summary": "IDK, it feels a bit appropriate for 2016\u0026hellip;",
+            "date_published": "2016-12-01T00:05:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/12/10155133493983912/index.md"
+            , "tags": ["timeline-photos"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155133493983912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/",
+            "url": "https://mirror.roytang.net/2016/12/",
+            "path": "/2016/12/",
+            "title": "Monthly Archives for 12 2016",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-12-01T00:00:00+00:00",
+            "date_modified": "2019-08-09T01:14:44+08:00",
+            "section": "archm",
+            "source_path": "archm/2016-12.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/11/5fq4af/",
+            "url": "https://mirror.roytang.net/2016/11/5fq4af/",
+            "path": "/2016/11/5fq4af/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rphilippines-many-times-its-a-struggle-between-a-trying-to-reach-out-to-and-understand-people-who-hold-different-views-and-b-holding-back-because-you-dont-feel-like-you-can-have-a-productive-conversation-with-such-people-especially-online-how-can-we-breach-the-dividehttpsredditcomrphilippinescomments5fq4afmany_times_its_a_struggle_between_a_trying_to\"\u003ePosted on r/Philippines: \u003ca href=\"https://reddit.com/r/Philippines/comments/5fq4af/many_times_its_a_struggle_between_a_trying_to/\"\u003eMany times it\u0026rsquo;s a struggle between (a) trying to reach out to and understand people who hold different views; and (b) holding back because you don\u0026rsquo;t feel like you can have a productive conversation with such people, especially online. How can we breach the divide?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eEdit: By \u0026ldquo;breach the divide\u0026rdquo;, I don\u0026rsquo;t really mean persuading others that you are correct, more like trying to find common ground and to learn from each other. At the very least we should be able to agree on certain things like the need to verify information and not simply believe everything we read on the internet or to be respectful to others that hold different opinions, but it seems many people aren\u0026rsquo;t even open to that. It\u0026rsquo;s just frustrating sometimes.\u003c/p\u003e\n",
+            "summary": "Posted on r/Philippines: Many times it\u0026rsquo;s a struggle between (a) trying to reach out to and understand people who hold different views; and (b) holding back because you don\u0026rsquo;t feel like you can have a productive conversation with such people, especially online. How can we breach the divide? Edit: By \u0026ldquo;breach the divide\u0026rdquo;, I don\u0026rsquo;t really mean persuading others that you are correct, more like trying to find common ground and to learn from each other.",
+            "date_published": "2016-11-30T23:17:23+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/11/5fq4af/index.md"
+            , "tags": ["philippines"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Philippines/comments/5fq4af/many_times_its_a_struggle_between_a_trying_to/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/11/583ebd0b88cfcc7d0858b633/",
             "url": "https://mirror.roytang.net/2016/11/583ebd0b88cfcc7d0858b633/",
             "path": "/2016/11/583ebd0b88cfcc7d0858b633/",
@@ -771,91 +856,6 @@
             "source_path": "photos/2016/11/10155114299223912/index.md"
             , "tags": ["mobile-uploads"]
             , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155114299223912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/801409095618076672/",
-            "url": "https://mirror.roytang.net/2016/11/801409095618076672/",
-            "path": "/2016/11/801409095618076672/",
-            "title": "",
-            "content_html": "\u003cp\u003eBREAKING: Konoha leader Naruto Uzumaki formally condemns the use of \u0026ldquo;Hokage\u0026rdquo; to describe Marcos\u0026rsquo; LNMB burial.\u003c/p\u003e\n",
-            "summary": "BREAKING: Konoha leader Naruto Uzumaki formally condemns the use of \u0026ldquo;Hokage\u0026rdquo; to describe Marcos\u0026rsquo; LNMB burial.",
-            "date_published": "2016-11-23T12:56:32+00:00",
-            "date_modified": "2020-09-10T21:26:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/801409095618076672/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/801409095618076672/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/801349647340019712/",
-            "url": "https://mirror.roytang.net/2016/11/801349647340019712/",
-            "path": "/2016/11/801349647340019712/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/RealShigeruM/\"\u003e@RealShigeruM\u003c/a\u003e: \u003cem\u003ehacker voice\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m in\u003c/p\u003e\n",
-            "summary": "RT @RealShigeruM: hacker voice\nI\u0026rsquo;m in",
-            "date_published": "2016-11-23T09:00:18+00:00",
-            "date_modified": "2020-10-13T14:58:22+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/11/801349647340019712/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/801349647340019712/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/801327411677843456/",
-            "url": "https://mirror.roytang.net/2016/11/801327411677843456/",
-            "path": "/2016/11/801327411677843456/",
-            "title": "",
-            "content_html": "\u003cp\u003e#Nanowrimo2016 Day 23: +1882 words, 38563 total\u003c/p\u003e\n",
-            "summary": "#Nanowrimo2016 Day 23: +1882 words, 38563 total",
-            "date_published": "2016-11-23T07:31:57+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/801327411677843456.md"
-            , "tags": ["Nanowrimo2016"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/801327411677843456/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/801287223937093632/",
-            "url": "https://mirror.roytang.net/2016/11/801287223937093632/",
-            "path": "/2016/11/801287223937093632/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/RealShigeruM/\"\u003e@RealShigeruM\u003c/a\u003e: WHO THE HELL DID THIS\u003c/p\u003e\n",
-            "summary": "RT @RealShigeruM: WHO THE HELL DID THIS",
-            "date_published": "2016-11-23T04:52:16+00:00",
-            "date_modified": "2020-10-13T14:58:22+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/11/801287223937093632/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/801287223937093632/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/bnjpkv8brz7/",
-            "url": "https://mirror.roytang.net/2016/11/bnjpkv8brz7/",
-            "path": "/2016/11/bnjpkv8brz7/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;You MONSTER!\u0026rdquo; #sketchdaily\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;You MONSTER!\u0026rdquo; #sketchdaily",
-            "date_published": "2016-11-23T04:20:46+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/11/BNJpkV8BRz7/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BNJpkV8BRz7/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/153555291435/you-monster-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/801385022028705792/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155114868833912:0"}]
             
             
             }
