@@ -1,4 +1,6 @@
 
+- [Why can&#39;t I write code inside my browser?](/2021/01/why-cant-i-write-code-inside-my-browser/)
+
 - [The Platform Is The Enemy](/2021/01/the-platform-is-the-enemy/)
 
 - [Who Wants To Be a Thousandaire?](/2021/01/who-wants-to-be-a-thousandaire/)

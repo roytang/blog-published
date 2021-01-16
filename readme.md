@@ -18,17 +18,18 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Why can&#39;t I write code inside my browser?](https://mirror.roytang.net/2021/01/why-cant-i-write-code-inside-my-browser/)
 - [The Platform Is The Enemy](https://mirror.roytang.net/2021/01/the-platform-is-the-enemy/)
 - [Who Wants To Be a Thousandaire?](https://mirror.roytang.net/2021/01/who-wants-to-be-a-thousandaire/)
 - [Lockdown Productivity: Spaceship You](https://mirror.roytang.net/2021/01/lockdown-productivity-spaceship-you/)
 - [Into the Personal-Website-Verse](https://mirror.roytang.net/2021/01/into-the-personal-website-verse/)
-- [Pieces of Thinking](https://mirror.roytang.net/2021/01/pieces-of-thinking/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [15 Jan 2021 11:29am](https://mirror.roytang.net/2021/01/1350042544567029763/): 2021 movies no. 1: The Godfather (1972). Everyone is so young! Such a well-told gangster tale. Looking forward to the sequel
 - [15 Jan 2021 3:01am](https://mirror.roytang.net/2021/01/1349914464309501954/): Sea shanty tiktok
 Quoted etelsverdlov&#39;s tweet:   The biggest compilation I’ve seen so far of the Wellerman sea shanty. It’s chefs kiss! 🤩
 Your browser does not support the video tag.   
@@ -40,7 +41,6 @@ There is no counter to help with the 2/3 mode.
 - [14 Jan 2021 3:59pm](https://mirror.roytang.net/2021/01/1349748048096727040/): OK, I don&rsquo;t have high expectations or anything, but that trailer animation was pretty good
 Voltes V: Legacy, soon on GMA! https://www.youtube.com/watch?v=XJ4ChZPlikM&amp;feature=youtu.be via @YouTube
 - [14 Jan 2021 12:37am](https://mirror.roytang.net/2021/01/1349515835971256323/): @TagoFabic Happy birthday!
-- [13 Jan 2021 11:45am](https://mirror.roytang.net/2021/01/1349321771489447939/): @zaaaldehyde it&rsquo;s more like you learn to live with how your life turned out
 
 [View all notes](https://mirror.roytang.net/notes)
 
