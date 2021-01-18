@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-01-17 There May Or May Not Be Sea Shanties](/2021/01/weeknotes-2021-01-17/)
+
 - [Weeknotes 2021-01-10 Now With More Links](/2021/01/weeknotes-2021-01-10/)
 
 - [Weeknotes 2021-01-03 Every New Beginning Is Some Other Beginning&#39;s End](/2021/01/weeknotes-2021-01-03/)

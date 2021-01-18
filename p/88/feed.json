@@ -11,6 +11,82 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/10/47009063/",
+            "url": "https://mirror.roytang.net/2017/10/47009063/",
+            "path": "/2017/10/47009063/",
+            "title": "Marklogic 9: MLCP fails when importing records with a transform",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\u003c/p\u003e\n\u003cp\u003eMy MLCP options file is as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport\n-host \n192.168.33.10\n-port \n8041\n-username \nadmin\n-password\nadmin\n-input_file_path \nd:\\maroon\\data\\mbastest.csv \n-mode \nlocal \n-input_file_type \ndelimited_text \n-uri_id \nClientId \n-output_uri_prefix\n/test/records/\n-output_uri_suffix \n.json \n-document_type \njson \n-transform_module \n/ingestion/transform.js\n-transform_function \ntestTransform\n-transform_param\ntest\n-content_encoding \nwindows-1252 \n-thread_count\n1\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHere\u0026rsquo;s the output of a test run with only 2 records in the test CSV file:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON\n17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1\n17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf I remove the transform params, the import works fine.\u003c/p\u003e\n\u003cp\u003eI thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// Add a property named \u0026quot;NEWPROP\u0026quot; to any JSON input document.\n// Otherwise, input passes through unchanged.\n\nfunction addProp(content, context)\n{\n  const propVal = (context.transform_param == undefined)\n                 ? \u0026quot;UNDEFINED\u0026quot; : context.transform_param;\n\n  if (xdmp.nodeKind(content.value) == 'document' \u0026amp;\u0026amp;\n      content.value.documentFormat == 'JSON') {\n    // Convert input to mutable object and add new property\n    const newDoc = content.value.toObject();\n    newDoc.NEWPROP = propVal;\n\n    // Convert result back into a document\n    content.value = xdmp.unquote(xdmp.quote(newDoc));\n  }\n  return content;\n};\n\nexports.addProp = addProp;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e(Of course I changed the params in the MLCP options file accordingly)\u003c/p\u003e\n\u003cp\u003eThe issue still persists even with just this test function.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\nMy MLCP options file is as follows:\nimport -host 192.168.33.10 -port 8041 -username admin -password admin -input_file_path d:\\maroon\\data\\mbastest.csv -mode local -input_file_type delimited_text -uri_id ClientId -output_uri_prefix /test/records/ -output_uri_suffix .",
+            "date_published": "2017-10-30T06:15:37+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/47009063/index.md"
+            , "tags": ["marklogic","mlcp","marklogic-9","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
+                    "source_file": "comment-20171030T115743-80975606.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
+                    "source_file": "comment-20171030T132641-47016456.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/924657274534076416/",
+            "url": "https://mirror.roytang.net/2017/10/924657274534076416/",
+            "path": "/2017/10/924657274534076416/",
+            "title": "",
+            "content_html": "\u003cp\u003eI giggled at this for some reason\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/iwritemonsters/status/924059787675029504'\u003eIWriteMonsters\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    My daughter insisted on this costume. All the other parents at daycare will think I\u0026rsquo;ve never read a comic book. #HalloweenWeekend\n\u003c/blockquote\u003e\n",
+            "summary": "I giggled at this for some reason\nQuoted IWriteMonsters\u0026#39;s tweet:   My daughter insisted on this costume. All the other parents at daycare will think I\u0026rsquo;ve never read a comic book. #HalloweenWeekend  ",
+            "date_published": "2017-10-29T15:20:48+00:00",
+            "date_modified": "2020-09-07T14:21:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/924657274534076416/index.md"
+            , "tags": ["halloweenweekend"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924657274534076416/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/924618013055131648/",
+            "url": "https://mirror.roytang.net/2017/10/924618013055131648/",
+            "path": "/2017/10/924618013055131648/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/EkaJade/\"\u003e@EkaJade\u003c/a\u003e you\u0026rsquo;re a staircase!\u003c/p\u003e\n",
+            "summary": "@EkaJade you\u0026rsquo;re a staircase!",
+            "date_published": "2017-10-29T12:44:47+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/924618013055131648.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924618013055131648/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/924546017281785859/",
+            "url": "https://mirror.roytang.net/2017/10/924546017281785859/",
+            "path": "/2017/10/924546017281785859/",
+            "title": "",
+            "content_html": "\u003cp\u003eI’m like 90% through Kingdom Hearts 2 Final Mix and I have no idea what’s going on\u003c/p\u003e\n",
+            "summary": "I’m like 90% through Kingdom Hearts 2 Final Mix and I have no idea what’s going on",
+            "date_published": "2017-10-29T07:58:42+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/924546017281785859.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924546017281785859/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/10/924041440564355072/",
             "url": "https://mirror.roytang.net/2017/10/924041440564355072/",
             "path": "/2017/10/924041440564355072/",
@@ -143,7 +219,15 @@
             , "tags": ["movies","spoiler-free-review"]
             , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156133009878912"}]
             
-            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20171025-000000-826e4d8e-0d83-43bf-8b1d-0a7c7e6b7a0c.json"
+                }, { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20171025-000001-1307a2ad-af65-47c8-820f-4f6f0ae4b675.json"
+                }
+            ]
             }
         
         , {
@@ -381,7 +465,126 @@
             
             , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156124370273912"}]
             
-            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/solar.archpope",
+                    "source_file": "comment-20171021-000000-3af20357-4454-42a9-b7b4-222fa7992830.json"
+                }, { 
+                    "url": "https://www.facebook.com/roderick.manalo",
+                    "source_file": "comment-20171021-000001-92f79ca2-647e-4095-a892-9162b07b3fa6.json"
+                }, { 
+                    "url": "https://www.facebook.com/joyapreyes",
+                    "source_file": "comment-20171021-000002-68cd675e-6409-4835-b277-cfa85427e660.json"
+                }, { 
+                    "url": "https://www.facebook.com/mikong",
+                    "source_file": "comment-20171021-000003-ece9bd52-fc60-4692-a8a5-0a8238f8aec1.json"
+                }, { 
+                    "url": "https://www.facebook.com/phwraengck",
+                    "source_file": "comment-20171021-000004-f395d5d4-05d2-441b-8fe1-f141ea8ddc1a.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20171021-000005-cc347bbb-57a8-4b84-9225-6392dcbb7dc4.json"
+                }, { 
+                    "url": "https://www.facebook.com/jonathan.tan.399041",
+                    "source_file": "comment-20171021-000006-a5f192ad-3ca7-4e2c-82ce-c971ba1addd0.json"
+                }, { 
+                    "url": "https://www.facebook.com/christine.rabe",
+                    "source_file": "comment-20171021-000007-43846740-f53c-451f-9164-cdc5a8bc6d73.json"
+                }, { 
+                    "url": "https://www.facebook.com/richardeden77",
+                    "source_file": "comment-20171021-000008-fed3830e-4e09-4b05-9d60-ab0be355ca8b.json"
+                }, { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20171021-000009-9c26653a-d93b-4ae6-8404-d7bbec2a7768.json"
+                }, { 
+                    "url": "https://www.facebook.com/marc.cengca",
+                    "source_file": "comment-20171021-000010-a604bc05-fd07-44d4-b8f0-70298a999913.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20171021-000011-fcd21a0e-0d50-417c-bb4b-46812efbe987.json"
+                }, { 
+                    "url": "https://www.facebook.com/xenia.p.david",
+                    "source_file": "comment-20171021-000012-255289c5-f63a-43cb-89ab-36c20f5d7238.json"
+                }, { 
+                    "url": "https://www.facebook.com/isah.pajarilloeumague",
+                    "source_file": "comment-20171021-000013-95ff1f57-09f6-4470-b451-bb4f126882d7.json"
+                }, { 
+                    "url": "https://www.facebook.com/karenkulit",
+                    "source_file": "comment-20171021-000014-c59123df-fa5e-4aa0-a488-02719a5b8c6b.json"
+                }, { 
+                    "url": "https://www.facebook.com/ging.lorenzostodomingo",
+                    "source_file": "comment-20171021-000015-bc8ca3f3-d579-49b9-8a72-4183aefcb59b.json"
+                }, { 
+                    "url": "https://www.facebook.com/chiko.tiongson",
+                    "source_file": "comment-20171021-000016-a70a124d-e95d-40ec-85e9-b15714bea39c.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171021-000017-775c8087-d163-4fa6-a273-19a2eafaa583.json"
+                }, { 
+                    "url": "https://www.facebook.com/robert.kee.33",
+                    "source_file": "comment-20171021-000018-328dc657-c042-434b-a6e2-94a3288ced7b.json"
+                }, { 
+                    "url": "https://www.facebook.com/tsarskii.pamuurkan",
+                    "source_file": "comment-20171021-000019-8e00ec27-41a1-4f2e-9f0e-13d6945d5f7a.json"
+                }, { 
+                    "url": "https://www.facebook.com/JaguarSergio",
+                    "source_file": "comment-20171021-000020-0a39c698-cf80-419d-a0fc-b69803d2f68e.json"
+                }, { 
+                    "url": "https://www.facebook.com/digolo",
+                    "source_file": "comment-20171021-000021-2f6cf202-7c3b-4702-92c2-da8ecdf260c7.json"
+                }, { 
+                    "url": "https://www.facebook.com/jcdeoferio",
+                    "source_file": "comment-20171021-000022-42d5582f-1f11-490b-aa3b-72fe279851f8.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20171021-000023-b7df14ba-53e4-47df-9a8c-6ead3193f436.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20171021-000024-c36c4c4c-9689-49b1-a9af-7a399db24b84.json"
+                }, { 
+                    "url": "https://www.facebook.com/leico30",
+                    "source_file": "comment-20171021-000025-19d5eef4-f862-4f36-9bee-0614937a8664.json"
+                }, { 
+                    "url": "https://www.facebook.com/erika.lim",
+                    "source_file": "comment-20171021-000026-a192d697-d38a-4402-b048-cca00be51311.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20171021-000027-d0c35d44-6f43-4cf8-b092-cd0c539434a5.json"
+                }, { 
+                    "url": "https://www.facebook.com/rocky.teodoro",
+                    "source_file": "comment-20171021-000028-0781cf1c-daf5-4bed-bc16-1c8592117aeb.json"
+                }, { 
+                    "url": "https://www.facebook.com/bernadette.galinato",
+                    "source_file": "comment-20171021-000029-11481e8f-70d6-4cbc-b467-005c541738d9.json"
+                }, { 
+                    "url": "https://www.facebook.com/greg.vargas",
+                    "source_file": "comment-20171021-000030-d7e3f1cd-97a7-4d34-9ff6-3b47f25fa69a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jackngan",
+                    "source_file": "comment-20171021-000031-21f7b594-3068-4de5-9822-99239d352bdc.json"
+                }, { 
+                    "url": "https://www.facebook.com/modista",
+                    "source_file": "comment-20171021-000032-fc5299c8-437a-4762-a011-84dea4f78ec2.json"
+                }, { 
+                    "url": "https://www.facebook.com/aldwin.espiritu",
+                    "source_file": "comment-20171021-000033-4f3b2a2d-342f-4695-820d-c6025f0d960b.json"
+                }, { 
+                    "url": "https://www.facebook.com/elenore.uy",
+                    "source_file": "comment-20171021-000034-c125585c-67f8-4c0c-9bb0-8948036f66d2.json"
+                }, { 
+                    "url": "https://www.facebook.com/weng.santos.9",
+                    "source_file": "comment-20171021-000035-f4410ec3-846e-4a76-969b-5cc6ea6dd771.json"
+                }, { 
+                    "url": "https://www.facebook.com/shalombrian.mercader",
+                    "source_file": "comment-20171022-000036-5d46cdb2-c7e9-4cb7-b738-84c7aba9f9ae.json"
+                }, { 
+                    "url": "https://www.facebook.com/amielmalay",
+                    "source_file": "comment-20171022-000037-955a311d-6e93-4e4a-96a8-23d1cdfcbf44.json"
+                }, { 
+                    "url": "https://www.facebook.com/lponce",
+                    "source_file": "comment-20171022-000038-36fbafc8-f29e-46f9-9e36-67e0df4ddb25.json"
+                }
+            ]
             }
         
         , {
@@ -449,7 +652,15 @@
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921408826313605120/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156123421688912"}]
             
-            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/rocky.teodoro",
+                    "source_file": "comment-20171021-000000-10e5143a-40ac-4ce4-88fc-bf155562c71a.json"
+                }, { 
+                    "url": "https://www.facebook.com/josemarcianopatino",
+                    "source_file": "comment-20171021-000001-1f9beb74-9ee9-4a50-934b-dba19368978d.json"
+                }
+            ]
             }
         
         , {
@@ -749,13 +960,21 @@
             "content_html": "\u003cp\u003eHirap maging rotten banana\u003c/p\u003e\n",
             "summary": "Hirap maging rotten banana",
             "date_published": "2017-10-13T15:44:23+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
             "section": "notes",
-            "source_path": "notes/2017/10/918865004199231489.md"
+            "source_path": "notes/2017/10/918865004199231489/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918865004199231489/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156106428213912"}]
             
-            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20171013-000000-06e81052-75e2-4ccc-a918-587db6651222.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20171014-000001-9ec0ca54-009c-4453-948c-ab8046d89a31.json"
+                }
+            ]
             }
         
         , {
@@ -798,74 +1017,6 @@
                     "source_file": "comment-20171013T124748-46730317.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/918805340900040705/",
-            "url": "https://mirror.roytang.net/2017/10/918805340900040705/",
-            "path": "/2017/10/918805340900040705/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/FUNimation/\"\u003e@FUNimation\u003c/a\u003e \u003ca href=\"https://twitter.com/MarkMan23/\"\u003e@MarkMan23\u003c/a\u003e \u003ca href=\"https://twitter.com/BandaiNamcoUS/\"\u003e@BandaiNamcoUS\u003c/a\u003e rx-0 unicorn!\u003c/p\u003e\n",
-            "summary": "@FUNimation @MarkMan23 @BandaiNamcoUS rx-0 unicorn!",
-            "date_published": "2017-10-13T11:47:18+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/918805340900040705.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918805340900040705/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/918642817039077376/",
-            "url": "https://mirror.roytang.net/2017/10/918642817039077376/",
-            "path": "/2017/10/918642817039077376/",
-            "title": "",
-            "content_html": "\u003cp\u003eI did this just last week\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/tangincheek/status/918642448489836544'\u003etangincheek\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    did you know you can put on headphone and shout at people and its okay\n\u003c/blockquote\u003e\n",
-            "summary": "I did this just last week\nQuoted tangincheek\u0026#39;s tweet:   did you know you can put on headphone and shout at people and its okay  ",
-            "date_published": "2017-10-13T01:01:29+00:00",
-            "date_modified": "2020-09-07T04:59:27+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/918642817039077376/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918642817039077376/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/918477274575286272/",
-            "url": "https://mirror.roytang.net/2017/10/918477274575286272/",
-            "path": "/2017/10/918477274575286272/",
-            "title": "",
-            "content_html": "\u003cp\u003e9 charts on how the world sees President Trump \u003ca href=\"http://pewrsr.ch/2yfQp0N\"\u003ehttp://pewrsr.ch/2yfQp0N\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "9 charts on how the world sees President Trump http://pewrsr.ch/2yfQp0N",
-            "date_published": "2017-10-12T14:03:41+00:00",
-            "date_modified": "2020-09-07T03:33:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/918477274575286272/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918477274575286272/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/918476893468291072/",
-            "url": "https://mirror.roytang.net/2017/10/918476893468291072/",
-            "path": "/2017/10/918476893468291072/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;A developed country is not a place where the poor have cars. It\u0026rsquo;s where the rich ride public transportation.\u0026rdquo; - \u003ca href=\"https://twitter.com/EnriquePenalosa/\"\u003e@EnriquePenalosa\u003c/a\u003e, #25\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;A developed country is not a place where the poor have cars. It\u0026rsquo;s where the rich ride public transportation.\u0026rdquo; - @EnriquePenalosa, #25",
-            "date_published": "2017-10-12T14:02:10+00:00",
-            "date_modified": "2020-09-07T03:33:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/918476893468291072/index.md"
-            , "tags": ["25"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918476893468291072/"}]
-            
-            
             }
         
     ]
