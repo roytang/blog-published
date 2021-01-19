@@ -29,13 +29,11 @@ Latest shared links:
 Latest notes:
     
 
+- [18 Jan 2021 11:42am](https://mirror.roytang.net/2021/01/1351132929196511240/): JUST IN: In a letter addressed to UP Pres. Danilo Concepcion, Department of National Defense (DND) Secretary Delfin Lorenzana says the UP-DND Accord, an agreement that keeps state forces from entering the premises of the University, is terminated effective January 15. #DefendUP
+- [18 Jan 2021 6:38am](https://mirror.roytang.net/2021/01/763b493ae866e86f9f0fdff5202e072e/): Survey: What was your favorite movie of 2020?
 - [17 Jan 2021 3:04pm](https://mirror.roytang.net/2021/01/1350821282380615682/): The daily covid death stats hit you differently when you know one of them
 - [17 Jan 2021 11:28am](https://mirror.roytang.net/2021/01/1350766994576982022/): @Westraid happy birthday!
 - [16 Jan 2021 8:39am](https://mirror.roytang.net/2021/01/1350361902149324800/): 2021 #movies no 2: The Godfather part 2 (1974). This is two movies rolled into one. Still pretty good, but I think I liked the singular focus of the first one more.
-- [15 Jan 2021 11:29am](https://mirror.roytang.net/2021/01/1350042544567029763/): 2021 movies no. 1: The Godfather (1972). Everyone is so young! Such a well-told gangster tale. Looking forward to the sequel
-- [15 Jan 2021 3:01am](https://mirror.roytang.net/2021/01/1349914464309501954/): Sea shanty tiktok
-Quoted etelsverdlov&#39;s tweet:   The biggest compilation I’ve seen so far of the Wellerman sea shanty. It’s chefs kiss! 🤩
-Your browser does not support the video tag.   
 
 [View all notes](https://mirror.roytang.net/notes)
 

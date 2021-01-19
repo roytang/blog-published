@@ -1,4 +1,6 @@
 
+- [2020 movie survey](/2021/01/763b493ae866e86f9f0fdff5202e072e/)
+
 - [The circle of life](/2020/12/c12b1185667d4adc5a2c99224584a981/)
 
 - [local Django superuser](/2020/11/10e889f1bfa7c8798065f6dcfe8b2278/)
