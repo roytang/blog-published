@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/03/the-paradox-of-preparation/",
+            "url": "https://mirror.roytang.net/2020/03/the-paradox-of-preparation/",
+            "path": "/2020/03/the-paradox-of-preparation/",
+            "title": "The Paradox of Preparation",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-03-17T07:59:18+00:00",
+            "date_modified": "2020-03-17T08:00:15+00:00",
+            "section": "links",
+            "source_path": "links/2020/03/the-paradox-of-preparation/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://kottke.org/20/03/the-paradox-of-preparation"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/103837336466973436"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1239823846024200192/"}]
+            ,"link": "https://kottke.org/20/03/the-paradox-of-preparation"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/03/1239694666867421184/",
+            "url": "https://mirror.roytang.net/2020/03/1239694666867421184/",
+            "path": "/2020/03/1239694666867421184/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/berkun/\"\u003e@berkun\u003c/a\u003e Arent emails searchable too?\u003c/p\u003e\n",
+            "summary": "@berkun Arent emails searchable too?",
+            "date_published": "2020-03-16T23:26:55+00:00",
+            "date_modified": "2020-03-16T23:30:13+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/03/1239694666867421184/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1239694666867421184/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/03/1239613404748214272/",
             "url": "https://mirror.roytang.net/2020/03/1239613404748214272/",
             "path": "/2020/03/1239613404748214272/",
@@ -827,54 +861,6 @@
             "source_path": "notes/2020/03/1235575427109924864/index.md"
             , "tags": ["twitch","magic the gathering"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1235575427109924864/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1235599066102255616/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/pure-css-spoilers/",
-            "url": "https://mirror.roytang.net/2020/03/pure-css-spoilers/",
-            "path": "/2020/03/pure-css-spoilers/",
-            "title": "Pure CSS Spoilers",
-            "content_html": "\u003cp\u003eEdit 2020/04/17: A month and a half later, I found \u003ca href=\"/2020/04/pure-html-toggles/\"\u003ea better way to do this\u003c/a\u003e!\u003c/p\u003e\n\u003cp\u003eI previously had some post that had some \u003ca href=\"/2018/10/october-2018-watching-lately\"\u003econtent hidden via spoiler tags\u003c/a\u003e, using a custom Hugo shortcode. Since I\u0026rsquo;m an \u003ca href=\"/2020/02/old-web/\"\u003eold-school developer\u003c/a\u003e I was previously doing this using some Javascript run on load:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-javascript\" data-lang=\"javascript\"\u003e    \u003cspan style=\"color:#66d9ef\"\u003elet\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eelements\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e document.\u003cspan style=\"color:#a6e22e\"\u003equerySelectorAll\u003c/span\u003e(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;.spoiler_header\u0026#34;\u003c/span\u003e);\n    Array.\u003cspan style=\"color:#a6e22e\"\u003eprototype\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003eforEach\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003ecall\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003eelements\u003c/span\u003e, \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003eel\u003c/span\u003e, \u003cspan style=\"color:#a6e22e\"\u003ei\u003c/span\u003e) {\n        \u003cspan style=\"color:#a6e22e\"\u003eel\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003eaddEventListener\u003c/span\u003e( \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;click\u0026#39;\u003c/span\u003e, \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e( \u003cspan style=\"color:#a6e22e\"\u003eevent\u003c/span\u003e ) {\n            \u003cspan style=\"color:#66d9ef\"\u003elet\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003enextEl\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eel\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003enextElementSibling\u003c/span\u003e;\n            \u003cspan style=\"color:#66d9ef\"\u003elet\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003edisplay\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003egetComputedStyle\u003c/span\u003e(\u003cspan style=\"color:#a6e22e\"\u003enextEl\u003c/span\u003e)[\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;display\u0026#39;\u003c/span\u003e];\n            \u003cspan style=\"color:#66d9ef\"\u003eif\u003c/span\u003e (\u003cspan style=\"color:#a6e22e\"\u003edisplay\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e==\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;none\u0026#39;\u003c/span\u003e) {\n                \u003cspan style=\"color:#a6e22e\"\u003enextEl\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003estyle\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003edisplay\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;block\u0026#39;\u003c/span\u003e;\n            } \u003cspan style=\"color:#66d9ef\"\u003eelse\u003c/span\u003e {\n                \u003cspan style=\"color:#a6e22e\"\u003enextEl\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003estyle\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003edisplay\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;none\u0026#39;\u003c/span\u003e;\n            }\n        }, \u003cspan style=\"color:#66d9ef\"\u003efalse\u003c/span\u003e);        \n    });\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThis is the modern age however. We should really be trying to minimize our Javascript on the non-app public web as much as possible, so I decided to change it to a Pure CSS solution. Here\u0026rsquo;s a quick demo:\u003c/p\u003e\n\u003cdetails class=\"spoiler\"\u003e\n    \u003csummary\u003e(Spoilers)\u003c/summary\u003e\n    This is hidden text!\n\u003c/details\u003e\n\u003cp /\u003e\n\u003cp\u003eThe Pure CSS solution uses the following HTML (including Hugo shortcode macros, should be easy to understand; .Inner is the actual spoiler content.):\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-html\" data-lang=\"html\"\u003e\u0026lt;\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;spoiler_container\u0026#34;\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;spoiler_link\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;#spoiler-{{ $id }}\u0026#34;\u003c/span\u003e\u0026gt;(Spoilers)\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt; \n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;spoiler_target\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eid\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;spoiler-{{ $id }}\u0026#34;\u003c/span\u003e\u0026gt;\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\n    \u0026lt;\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;spoiler\u0026#34;\u003c/span\u003e\u0026gt;{{ .Inner }} \u0026lt;\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ehref\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;#\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eclass\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;hide_spoiler\u0026#34;\u003c/span\u003e\u0026gt;Hide Spoilers\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ea\u003c/span\u003e\u0026gt;\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e\u0026gt;    \n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ediv\u003c/span\u003e\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ep\u003c/span\u003e /\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThe CSS for this toggle is:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-css\" data-lang=\"css\"\u003e.\u003cspan style=\"color:#a6e22e\"\u003espoiler\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003edisplay\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003enone\u003c/span\u003e;\n}\n.\u003cspan style=\"color:#a6e22e\"\u003espoiler_target\u003c/span\u003e:\u003cspan style=\"color:#a6e22e\"\u003etarget\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003eposition\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003efixed\u003c/span\u003e;\n}\n.\u003cspan style=\"color:#a6e22e\"\u003espoiler_target\u003c/span\u003e:\u003cspan style=\"color:#a6e22e\"\u003etarget\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e+\u003c/span\u003e .\u003cspan style=\"color:#a6e22e\"\u003espoiler\u003c/span\u003e {\n    \u003cspan style=\"color:#66d9ef\"\u003edisplay\u003c/span\u003e: \u003cspan style=\"color:#66d9ef\"\u003einline\u003c/span\u003e;\n}\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eBasically, this takes advantage of the \u003ccode\u003e:target\u003c/code\u003e CSS pseudo-selector. The \u0026ldquo;(Spoiler)\u0026rdquo; anchor changes the URL hash to point to the id of the \u003ccode\u003espoiler_target\u003c/code\u003e element, and we use the CSS \u003ccode\u003e+\u003c/code\u003e operator to display the actual spoiler content when the \u003ccode\u003e:target\u003c/code\u003e pseudo-selector is activated. I originally tried it with the id being assigned directly to the spoiler content, but this had the problem of \u0026ldquo;jumping around\u0026rdquo;, i.e. clicking the \u0026ldquo;(Spoiler)\u0026rdquo; link would scroll the page to the anchor location. The workaround for this was separating the target anchor from the spoiler content, making the anchor hidden (no text) and adding \u003ccode\u003eposition:fixed\u003c/code\u003e (to prevent the scrolling). The \u0026ldquo;Hide\u0026rdquo; link simply sets the URL hash location back to \u0026ldquo;#\u0026rdquo;.\u003c/p\u003e\n",
-            "summary": "Edit 2020/04/17: A month and a half later, I found a better way to do this!\nI previously had some post that had some content hidden via spoiler tags, using a custom Hugo shortcode. Since I\u0026rsquo;m an old-school developer I was previously doing this using some Javascript run on load:\nlet elements = document.querySelectorAll(\u0026#34;.spoiler_header\u0026#34;); Array.prototype.forEach.call(elements, function(el, i) { el.addEventListener( \u0026#39;click\u0026#39;, function( event ) { let nextEl = el.nextElementSibling; let display = getComputedStyle(nextEl)[\u0026#39;display\u0026#39;]; if (display == \u0026#39;none\u0026#39;) { nextEl.",
-            "date_published": "2020-03-05T00:00:00+00:00",
-            "date_modified": "2020-09-16T14:57:40+08:00",
-            "section": "post",
-            "source_path": "post/2020/03/pure-css-spoilers/index.md"
-            , "tags": ["software development","css"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1235416366804619265/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://framapiaf.org/@Dio94",
-                    "source_file": "like-20200305-095835-1d4fde90-ce4c-4867-8b0b-a5c84b2efa38.json"
-                }, { 
-                    "url": "https://fosstodon.org/@eatingbrb",
-                    "source_file": "like-20200305-192740-af2f5817-b287-4800-bb78-54b2c95c421c.json"
-                }, { 
-                    "url": "https://mastodon.nl/@Ajz",
-                    "source_file": "repost-20200305-095835-a668771b-f5cb-4165-81d2-3375c04c658d.json"
-                }, { 
-                    "url": "https://floss.social/@alcinnz",
-                    "source_file": "repost-20200305-095839-eb46c712-54be-4fd6-a510-37c4d0be4973.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/1235301383315828736/",
-            "url": "https://mirror.roytang.net/2020/03/1235301383315828736/",
-            "path": "/2020/03/1235301383315828736/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt\u0026rsquo;s March and one of my tasklists still has an entry for \u0026ldquo;Clean room for NY\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "It\u0026rsquo;s March and one of my tasklists still has an entry for \u0026ldquo;Clean room for NY\u0026rdquo;",
-            "date_published": "2020-03-04T20:29:35+00:00",
-            "date_modified": "2020-03-04T20:30:15+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/03/1235301383315828736/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1235301383315828736/"}]
             
             
             }

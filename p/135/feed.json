@@ -11,6 +11,54 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/08/10154830197573912/",
+            "url": "https://mirror.roytang.net/2016/08/10154830197573912/",
+            "path": "/2016/08/10154830197573912/",
+            "title": "",
+            "content_html": "\u003cp\u003eI actually try to not be so negative about the administration anymore, but Dear Leader doesn\u0026rsquo;t make it easy. Hardly a day goes by when there aren\u0026rsquo;t some sort of disappointing shenanigans or hypocrisy. The sad thing is tuwang tuwa pa ang mga supporters kasi for them Dear Leader can do no wrong\u003c/p\u003e\n",
+            "summary": "I actually try to not be so negative about the administration anymore, but Dear Leader doesn\u0026rsquo;t make it easy. Hardly a day goes by when there aren\u0026rsquo;t some sort of disappointing shenanigans or hypocrisy. The sad thing is tuwang tuwa pa ang mga supporters kasi for them Dear Leader can do no wrong",
+            "date_published": "2016-08-18T01:58:00+00:00",
+            "date_modified": "2019-09-28T20:36:05+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/08/10154830197573912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154830197573912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/maui.listana",
+                    "source_file": "comment-20160818-000000-a00916f1-61e8-4711-9324-588cc1196c57.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20160818-000001-110562c6-5508-48e7-a40f-b1847bb6ec2a.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20160818-000002-d2b5e2a9-dac5-4bb5-b556-786b8ada8e87.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20160818-000003-8a62f7b8-4aa1-4f5d-8d8f-d4bf88963ed2.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/08/programming-is-finding-the-right-arrangement-of-code/",
+            "url": "https://mirror.roytang.net/2016/08/programming-is-finding-the-right-arrangement-of-code/",
+            "path": "/2016/08/programming-is-finding-the-right-arrangement-of-code/",
+            "title": "Programming is Finding the Right Arrangement of Code",
+            "content_html": "\u003cp\u003eI like to say that software development is a challenging career because no two projects are ever the same and there are always new challenges to face and new concepts to learn, but the truth of the matter is a bit more complex.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eWriting software is about breaking down large problems into a series of very small technical problems for which we already have solutions.\u003c/strong\u003e Examples of small enough technical problems include list sorting, comparison, arithmetic operations, path traversal, string concatenation, returning a string as an HTTP response, rendering text to the screen, retrieving submitted parameters from an HTTP request, and so on. Any given non-trivial software project will be broken down into thousands, possibly hundreds of thousands of such small tasks, some occurring more often under different contexts.\u003c/p\u003e\n\u003cp\u003eThe job of the software developer designed to implement such a program or some part of a program is to identify all those tiny tasks and the order in which they need to be done, then actually do it and put it all together in a way that satisfies the software\u0026rsquo;s requirements. Finding out the proper arrangement of tasks is a form of design in and of itself, separate from the design of the software requirements. This is why many programmers will tell you that coding itself is both design and implementation \u0026ndash; the coder still has to make numerous small decisions, rearranging code and tasks until he finds the correct arrangement that works to satisfy your needs.\u003c/p\u003e\n\u003cp\u003eInvariably, practically all of these tiny tasks are either trivial to implement (based on knowledge the programmer already has), or have already been implemented somewhere else by some other programmer. This is why Q\u0026amp;A sites such as \u003ca href=\"http://stackoverflow.com/\"\u003eStack Overflow\u003c/a\u003e are very useful for the modern programmer \u0026ndash; you simply dip your pool into the communal knowledge of the programming community and most of the time the programmers who have solved the same problem before will tell you how they did it.\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Practically all\u0026rdquo; means in the rare instance, you will still encounter problems that as far as you can tell have yet to be solved by anyone else in the world. I am unsure if there is anything quite as depressing to the programmer as finally finding a single Google hit about that one problem he was unable to solve only to find that it was a link to his own unanswered Stack Overflow question from months before.\u003c/p\u003e\n\u003cp\u003eOften this happens when you are doing something or some combination of things so obscure no one else has tried it before, or when you are legitimately blazing new ground. It largely depends on the field you are working in \u0026ndash; if you are using proven frameworks to build your 10th web application, most likely 999 out of every 1,000 problems you have are already solved. On the other hand, if you were maybe writing drivers for a new piece of hardware, or maybe writing a new framework to be used at the same time as the first application using it, that number shoots up considerably.\u003c/p\u003e\n\u003cp\u003eWhat to do when faced with such a situation where all the sources you consult \u0026ndash; mentors, experts, textbooks, the internet, and so on \u0026ndash; are unable to help you solve the problem and it stops you from moving forward? Well, if you can sense that trying to solve the problem on your own or brute forcing it in some manner may waste a lot of time that you can\u0026rsquo;t afford, you should remember what I said above: **Writing software is about breaking down large problems into a series of very small technical problems for which we already have solutions. **This means your first choice should be to check first if there is an alternative arrangement of tasks for which that particular problem could be avoided (that is, \u0026ldquo;re-design your code to work around the problem\u0026rdquo;). You shouldn\u0026rsquo;t box yourself into a particular sequence of steps, be willing to \u0026ldquo;think outside the box\u0026rdquo; to look for other solutions that while not immediately obvious, may be more feasible (i.e. \u0026ldquo;already solved\u0026rdquo;)\u003c/p\u003e\n\u003cp\u003eThis method of iterating the arrangements of parts until the software works might seem a bit clunky, but I\u0026rsquo;ve found it useful to think in this manner \u0026ndash; it makes even the impossible problems seem feasible. Now, if only problems with humans could be solved just be rearranging things\u0026hellip;\u003c/p\u003e\n",
+            "summary": "I like to say that software development is a challenging career because no two projects are ever the same and there are always new challenges to face and new concepts to learn, but the truth of the matter is a bit more complex.\nWriting software is about breaking down large problems into a series of very small technical problems for which we already have solutions. Examples of small enough technical problems include list sorting, comparison, arithmetic operations, path traversal, string concatenation, returning a string as an HTTP response, rendering text to the screen, retrieving submitted parameters from an HTTP request, and so on.",
+            "date_published": "2016-08-18T01:30:21+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/08/programming-is-finding-the-right-arrangement-of-code/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/149105212450/programming-is-finding-the-right-arrangement-of"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/766085739205517312/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/08/should-i-work-only-on-project/",
             "url": "https://mirror.roytang.net/2016/08/should-i-work-only-on-project/",
             "path": "/2016/08/should-i-work-only-on-project/",
@@ -861,40 +909,6 @@
             "source_path": "notes/2016/08/763743348263755778.md"
             , "tags": ["NBS1millionthanks"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/763743348263755778/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/08/763719933536505856/",
-            "url": "https://mirror.roytang.net/2016/08/763719933536505856/",
-            "path": "/2016/08/763719933536505856/",
-            "title": "",
-            "content_html": "\u003cp\u003eHow the father of the World Wide Web plans to reclaim it from Facebook and Google \u003ca href=\"https://www.digitaltrends.com/web/ways-to-decentralize-the-web/\"\u003ehttps://www.digitaltrends.com/web/ways-to-decentralize-the-web/\u003c/a\u003e via \u003ca href=\"https://twitter.com/DigitalTrends/\"\u003e@DigitalTrends\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "How the father of the World Wide Web plans to reclaim it from Facebook and Google https://www.digitaltrends.com/web/ways-to-decentralize-the-web/ via @DigitalTrends",
-            "date_published": "2016-08-11T12:53:16+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/08/763719933536505856.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/763719933536505856/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/08/10154812916033912/",
-            "url": "https://mirror.roytang.net/2016/08/10154812916033912/",
-            "path": "/2016/08/10154812916033912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomething I\u0026rsquo;ve been wondering about, maybe someone can enlighten me: if as some people claim, Marcos Sr is already entitled to be buried sa LNMB, what has stopped him from being buried there before?   Bakit kailangan pa iutos ng presidente? Meron bang discretion ang executive branch to allow or deny that privelege?   Kasi even if you say that past administrations were not friendly enough to the Marcos family, if totoo that the rules entitled them to that privelege, bakit hindi sila nagfile ng kaso against whomever was preventing it?\u003c/p\u003e\n",
-            "summary": "Something I\u0026rsquo;ve been wondering about, maybe someone can enlighten me: if as some people claim, Marcos Sr is already entitled to be buried sa LNMB, what has stopped him from being buried there before? Bakit kailangan pa iutos ng presidente? Meron bang discretion ang executive branch to allow or deny that privelege? Kasi even if you say that past administrations were not friendly enough to the Marcos family, if totoo that the rules entitled them to that privelege, bakit hindi sila nagfile ng kaso against whomever was preventing it?",
-            "date_published": "2016-08-11T10:23:00+00:00",
-            "date_modified": "2019-09-28T20:36:05+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/08/10154812916033912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154812916033912"}]
             
             
             }

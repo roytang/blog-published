@@ -29,11 +29,11 @@ Latest shared links:
 Latest notes:
     
 
+- [20 Jan 2021 4:17am](https://mirror.roytang.net/2021/01/1351745725428768769/): PRRD said that its unfair that only UP &amp; PUP have a pact&hellip; I completely agree!!!! So why not enter into a similar pact with ALL THE OTHER UNIVERSITIES or, better yet, pass a law that will guaramtee this to ALL UNIVERSITIES instead of abrogating these two. #TrustTheFilipinoYouth
 - [18 Jan 2021 11:42am](https://mirror.roytang.net/2021/01/1351132929196511240/): JUST IN: In a letter addressed to UP Pres. Danilo Concepcion, Department of National Defense (DND) Secretary Delfin Lorenzana says the UP-DND Accord, an agreement that keeps state forces from entering the premises of the University, is terminated effective January 15. #DefendUP
 - [18 Jan 2021 6:38am](https://mirror.roytang.net/2021/01/763b493ae866e86f9f0fdff5202e072e/): Survey: What was your favorite movie of 2020?
 - [17 Jan 2021 3:04pm](https://mirror.roytang.net/2021/01/1350821282380615682/): The daily covid death stats hit you differently when you know one of them
 - [17 Jan 2021 11:28am](https://mirror.roytang.net/2021/01/1350766994576982022/): @Westraid happy birthday!
-- [16 Jan 2021 8:39am](https://mirror.roytang.net/2021/01/1350361902149324800/): 2021 #movies no 2: The Godfather part 2 (1974). This is two movies rolled into one. Still pretty good, but I think I liked the singular focus of the first one more.
 
 [View all notes](https://mirror.roytang.net/notes)
 
