@@ -19,8 +19,6 @@
 
 - [Chapter 1. Zero to Sixty: Introducing Scala](/2010/05/chapter-1-zero-to-sixty-introducing-scala/)
 
-- [A checklist for improving the writing style of technical blog posts ...](/2010/04/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/)
-
 - [Anyone care to share neat python tricks? : programming](/2010/01/anyone-care-to-share-neat-python-tricks-programming/)
 
 - [node.js](/2009/11/node-js/)

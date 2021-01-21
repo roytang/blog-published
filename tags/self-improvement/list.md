@@ -67,6 +67,8 @@
 
 - [Dealing with Failure](/2016/07/dealing-with-failure/)
 
+- [58 Noteworthy Resolutions For The New Year](/2010/04/58-noteworthy-resolutions-for-the-new-year/)
+
 - [Above Average](/2008/06/above-average/)
 
 - [The Four Agreements](/2006/04/the-four-agreements/)

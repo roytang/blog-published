@@ -7,12 +7,29 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 20 Dec 2020 16:34:25 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>HTML Tags Memory Test
+</title>
+            <link>https://mirror.roytang.net/2020/12/html-tags-memory-test/</link>
+            <pubDate>Sun, 20 Dec 2020 16:34:25 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/12/html-tags-memory-test/</guid>
+            <description>
+            Shared via pocket:
+    &lt;a href=&#34;https://codepen.io/plfstr/full/zYqQeRw&#34;&gt;HTML Tags Memory Test&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
         <item>
             <title>How Not to Mentor Software Developers
 </title>
@@ -1319,6 +1336,23 @@ git checkout HEAD
         </item>
     
         <item>
+            <title>QUIZ: Well aimed? How well do you know CSS selectors?
+</title>
+            <link>https://mirror.roytang.net/2019/04/quiz-well-aimed-how-well-do-you-know-css-selectors/</link>
+            <pubDate>Sat, 13 Apr 2019 11:07:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/04/quiz-well-aimed-how-well-do-you-know-css-selectors/</guid>
+            <description>
+            Shared via pocket:
+    &lt;a href=&#34;https://codepen.io/pehaa/full/ROapJZ&#34;&gt;QUIZ: Well aimed? How well do you know CSS selectors?&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
             <title>A Quick Twitter App I Wrote
 </title>
             <link>https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/</link>
@@ -1990,56 +2024,6 @@ git checkout HEAD
 &lt;li&gt;I had been working on a Python script that would fetch JSON from an external URL and process it. Local dev environment was running Python 3.6. Everything worked well. When I went to deploy it to my server, I found that my host only supported Python 3.5. I was like surely there wouldn’t be a problem, so of course there was. It turns out the &lt;a href=&#34;https://docs.python.org/3/whatsnew/3.6.html#json&#34;&gt;json load functions added support for binary inputs in 3.6&lt;/a&gt;, which I had been using all this time. I ended up using a codecs workaround from &lt;a href=&#34;https://stackoverflow.com/questions/6862770/python-3-let-json-object-accept-bytes-or-let-urlopen-output-strings&#34;&gt;this Stackoverflow post&lt;/a&gt; which happened to work well in both versions.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt; &lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Change and Risk and Governments
-</title>
-            <link>https://mirror.roytang.net/2018/10/change-and-risk-and-governments/</link>
-            <pubDate>Wed, 31 Oct 2018 05:03:25 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/10/change-and-risk-and-governments/</guid>
-            <description>
-            
-            &lt;p&gt;Systemic change is difficult. I&amp;rsquo;m talking about software projects/systems, but there are a lot of parallels with societal systems too, like governments or states.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve been in large projects with hundreds of thousands of LOC where a lot of the code was painful to read and full of code smells and so on. It happens over time as projects get maintained by different developers and teams or different enhancements or changes are made. It becomes more difficult/costly for new developers to work on the project as things are brittle and may easily fall apart.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve also had the dubious pleasure of living under a system of government heavily burdened by corruption and inefficiency and patronage and nepotism and inequality and a bunch of other problems.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;You Will Be Tempted To Throw Everything Out And Start Over&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In such situations, you will often find yourself fed up. You will be tempted to throw everything away and start over and rebuild everything from scratch. You wonder who made all of these past decisions that have resulted in such a terrible system and what the heck were they thinking?&lt;/p&gt;
-&lt;p&gt;Unfortunately, you can&amp;rsquo;t just throw everything away. People still need to eat, and the system users still need to do their work. You can instead do some kind of system-wide one-time big-time change. But the problem with that is&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Change Is Risk&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;More often than not, the existing system works. Or at least, it works well enough that the system isn&amp;rsquo;t totally unusable. The software system&amp;rsquo;s users can still perform the needed functions, albeit maybe with some number of bugs. The state&amp;rsquo;s citizens can still mostly survive and there aren&amp;rsquo;t riots on the streets or people dying of mass starvation or anything like that. Life is hard, but there is life.&lt;/p&gt;
-&lt;p&gt;Looking to change things means some level of risk, and of course some level of cost. There are several possible outcomes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Change happens and things become better. Hooray! The change was worth it!&lt;/li&gt;
-&lt;li&gt;Change happens but things remain the same. Uhh, why did we spend all that time and effort for the change then?&lt;/li&gt;
-&lt;li&gt;Change happens but things actually get worse. This is the worst of all worlds. We wasted time and money and energy and things got worse! Why didn&amp;rsquo;t anyone warn us this could happen!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Often we can&amp;rsquo;t predict with any certainty which outcome will happen. We can make educated guesses, by comparing to past experiences or other people&amp;rsquo;s experiences. **But each software project is unique. **This is kind of a blessing since it means it&amp;rsquo;s hard for programmers to run out of work. But it&amp;rsquo;s also more of a curse since it means we can only reuse small parts from other projects with no guarantee that the entire whole will work cohesively together.&lt;/p&gt;
-&lt;p&gt;Countries/states/governments are unique too. Each people has their own geography, culture and history and unique problems arising from such. And to make matters worse, countries are made up of people, and most people will have differing opinions on which things are better and which things are worse. This makes it much more difficult to form a consensus.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Risk Management&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;****Granted that change is risk. But sometimes we have to take those risks anyway. We have to decide whether the risk is worth the possible upside vs the potential downside.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Django Blog Application
-</title>
-            <link>https://mirror.roytang.net/2018/10/django-blog-application/</link>
-            <pubDate>Sun, 28 Oct 2018 05:02:37 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/10/django-blog-application/</guid>
-            <description>
-            
-            &lt;p&gt;Ten years ago this month, I started studying &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; by trying to build my own blog application. I found the code lying around while I was going through some backups lately. It&amp;rsquo;s way out of date, it uses an early version of django. I thought of bringing it up to speed, but that didn&amp;rsquo;t seem practical. Instead, for archival purposes, I cleaned it up a bit and &lt;a href=&#34;https://github.com/roytang/django-blog&#34;&gt;uploaded the code to a github repo&lt;/a&gt;. (Helpful github immediately warned me that having a very old version of Django was a security risk lol). There&amp;rsquo;s a lot more information in the README.md of that repo. I actually used this as my main blog engine for a while before I decided the maintenance effort wasn&amp;rsquo;t worth it and switched to WordPress.&lt;/p&gt;
-&lt;p&gt;Tangent: I&amp;rsquo;m not actually 100% happy with WordPress, and when I found this old code I was tempted to maybe trying building Yet Another Blog Application (TM), except maybe using the opportunity to learn some other framework. My 2018 personal to-do list is already way too long though.&lt;/p&gt;
 
 
 

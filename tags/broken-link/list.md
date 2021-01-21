@@ -1,9 +1,5 @@
 
-- [HTML Tags Memory Test](/2020/12/html-tags-memory-test/)
-
 - [](/2019/05/an-incomplete-list-of-30-things-i-learned-in-30-years/)
-
-- [QUIZ: Well aimed? How well do you know CSS selectors?](/2019/04/quiz-well-aimed-how-well-do-you-know-css-selectors/)
 
 - [Nihilist Dad Jokes, Part 2](/2019/01/nihilist-dad-jokes-part-2/)
 
@@ -23,8 +19,6 @@
 
 - [Logic &amp; Proofs | Open Learning Initiative](/2015/10/logic-proofs-open-learning-initiative/)
 
-- [[BBC-4267] JULY 31 PAYMENT RUN DISCREPANCIES - Azeus Systems Limited](/2015/08/bbc-4267-july-31-payment-run-discrepancies-azeus-systems-limited/)
-
 - [](/2015/07/3bujl7/)
 
 - [](/2015/02/2uvmfy/)
@@ -35,15 +29,9 @@
 
 - [“If you want to change the world with technology…” - The Official Microsoft](/2013/10/if-you-want-to-change-the-world-with-technology-the-official-microsoft/)
 
-- [The Codename Rules: Rands In Repose](/2013/10/the-codename-rules-rands-in-repose/)
-
 - [How bad is smelly code? | Mesan](/2013/09/how-bad-is-smelly-code-mesan/)
 
-- [](/2013/09/1mjsl0/)
-
 - [10 Easy Steps to a Complete Understanding of SQL](/2013/09/10-easy-steps-to-a-complete-understanding-of-sql/)
-
-- [](/2013/06/1fg9j6/)
 
 - [rands: We expect too much of geeks: http://t.co/kESMxbEe](/2013/01/rands-we-expect-too-much-of-geeks-http-t-co-kesmxbee/)
 
@@ -54,10 +42,6 @@
 - [](/2012/02/q02rd/)
 
 - [](/2012/01/o7a7l/)
-
-- [](/2011/12/mycqh/)
-
-- [](/2011/11/mtkft/)
 
 - [](/2011/08/jgs1w/)
 
@@ -90,8 +74,6 @@
 - [A checklist for improving the writing style of technical blog posts ...](/2010/04/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/)
 
 - [A dozen of the best start-up pitches on the Web | JonBischke.com](/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/)
-
-- [Play framework ★ Home](/2009/10/play-framework-home/)
 
 - [Andy McKay&#39;s blog](/2009/09/andy-mckay-s-blog/)
 

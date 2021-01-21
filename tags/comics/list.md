@@ -369,6 +369,8 @@
 
 - [](/2013/11/cd514ck/)
 
+- [Jim Shooter–A Second Opinion, Part Two: Romper Room on Crystal Meth (instal](/2013/10/jim-shooter-a-second-opinion-part-two-romper-room-on-crystal-meth-instal/)
+
 - [](/2013/10/ccmq6by/)
 
 - [](/2013/09/cchljrg/)

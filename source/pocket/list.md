@@ -553,8 +553,6 @@
 
 - [Logic &amp; Proofs | Open Learning Initiative](/2015/10/logic-proofs-open-learning-initiative/)
 
-- [[BBC-4267] JULY 31 PAYMENT RUN DISCREPANCIES - Azeus Systems Limited](/2015/08/bbc-4267-july-31-payment-run-discrepancies-azeus-systems-limited/)
-
 - [Gamasutra - Postmortem: Overhaul Games&#39; Baldur&#39;s Gate: Enhanced Edition](/2015/07/gamasutra-postmortem-overhaul-games-baldur-s-gate-enhanced-edition/)
 
 - [Best Fighting Game On PC: Ultra SFIV | Rock, Paper, Shotgun](/2015/07/best-fighting-game-on-pc-ultra-sfiv-rock-paper-shotgun/)

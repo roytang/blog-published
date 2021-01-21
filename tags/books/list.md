@@ -1,4 +1,6 @@
 
+- [Book Review: The End of Everything by Katie Mack](/2021/01/book-review-the-end-of-everything-by-katie-mack/)
+
 - [Book Review: Rhythm of War by Sanderson, Brandon](/2020/12/rhythm-of-war/)
 
 - [Book Review: Atomic Habits by James Clear](/2020/01/atomic-habits/)

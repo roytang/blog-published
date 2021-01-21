@@ -1,4 +1,6 @@
 
+- [https://nvdk.co/2018/11/28/entrepreneurship/building-a-company-is-fucking-hard/](/2018/11/https-nvdk-co-2018-11-28-entrepreneurship-building-a-company-is-fucking-hard/)
+
 - [Hacker News | Ask HN: Fastest way to make $300-400 a month online?](/2010/04/hacker-news-ask-hn-fastest-way-to-make-300-400-a-month-online/)
 
 - [A Guide to Self-Employment - Business Week](/2010/04/a-guide-to-self-employment-business-week/)

@@ -149,6 +149,8 @@
 
 - [Responsiveness and Notifications](/2018/11/responsiveness-and-notifications/)
 
+- [Everything Old Isn’t New Again (Yet) – Mimix](/2018/11/everything-old-isnt-new-again-yet-mimix/)
+
 - [Engagement algorithms encourage extreme/divisive views](/2018/11/engagement-algorithms-encourage-extreme-divisive-views/)
 
 - [The Rise and Fall of the Final Fantasy Forum](/2018/10/the-rise-and-fall-of-the-final-fantasy-forum/)
@@ -160,6 +162,8 @@
 - [Google Duplex and Conversation AIs](/2018/05/google-duplex-and-conversation-ais/)
 
 - [Spoiler Alert!](/2018/05/spoiler-alert/)
+
+- [Because of Instagram, this woman ended up with Php 500K debt | PEP.ph](/2018/03/because-of-instagram-this-woman-ended-up-with-php-500k-debt-pep-ph/)
 
 - [Rethinking Facebook](/2018/03/rethinking-facebook/)
 

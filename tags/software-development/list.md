@@ -1,4 +1,6 @@
 
+- [HTML Tags Memory Test](/2020/12/html-tags-memory-test/)
+
 - [How Not to Mentor Software Developers](/2020/12/how-not-to-mentor-software-developers/)
 
 - [Server Setup Notes: Ubuntu, Nginx, Django, MySQL](/2020/11/server-setup-notes/)
@@ -58,6 +60,8 @@
 - [10X Programmers](/2019/07/10x-programmers/)
 
 - [Learning from failure](/2019/04/learning-from-failure/)
+
+- [QUIZ: Well aimed? How well do you know CSS selectors?](/2019/04/quiz-well-aimed-how-well-do-you-know-css-selectors/)
 
 - [A Quick Twitter App I Wrote](/2019/03/a-quick-twitter-app-i-wrote/)
 
@@ -277,6 +281,12 @@
 
 - [CKEditor - Can I trigger inline editing programmatically?](/2013/10/19397197/)
 
+- [The Codename Rules: Rands In Repose](/2013/10/the-codename-rules-rands-in-repose/)
+
+- [How bad is smelly code? | Mesan](/2013/09/how-bad-is-smelly-code-mesan/)
+
+- [10 Easy Steps to a Complete Understanding of SQL](/2013/09/10-easy-steps-to-a-complete-understanding-of-sql/)
+
 - [Differences between IE 8 and IE 8 Compatibility View Browser Modes?](/2013/07/17855992/)
 
 - [CKEditor 4 - how to add font family and font size controls to the toolbar](/2013/04/16184236/)
@@ -328,6 +338,8 @@
 - [Weekend Project: Stack Bragger](/2010/07/weekend-project-stack-bragger/)
 
 - [jquery-like HTML parsing in Python?](/2010/06/3051295/)
+
+- [A checklist for improving the writing style of technical blog posts ...](/2010/04/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/)
 
 - [Oracle Thin Driver and Transparent Failover of RAC DB](/2010/01/2084133/)
 

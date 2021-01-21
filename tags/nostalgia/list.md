@@ -5,6 +5,8 @@
 
 - [Fanfiction](/2018/12/fanfiction/)
 
+- [Everything Old Isn’t New Again (Yet) – Mimix](/2018/11/everything-old-isnt-new-again-yet-mimix/)
+
 - [When I dream I live in a different house](/2018/10/when-i-dream-i-live-in-a-different-house/)
 
 - [The Rise and Fall of the Final Fantasy Forum](/2018/10/the-rise-and-fall-of-the-final-fantasy-forum/)
