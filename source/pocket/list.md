@@ -1,4 +1,10 @@
 
+- [Online speech and publishing](/2021/01/online-speech-and-publishing/)
+
+- [What social networks can learn from public spaces](/2021/01/what-social-networks-can-learn-from-public-spaces/)
+
+- [How to Start Fixing Social Media](/2021/01/how-to-start-fixing-social-media/)
+
 - [Why can&#39;t I write code inside my browser?](/2021/01/why-cant-i-write-code-inside-my-browser/)
 
 - [The Platform Is The Enemy](/2021/01/the-platform-is-the-enemy/)

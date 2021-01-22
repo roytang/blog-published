@@ -18,23 +18,23 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Online speech and publishing](https://mirror.roytang.net/2021/01/online-speech-and-publishing/)
+- [What social networks can learn from public spaces](https://mirror.roytang.net/2021/01/what-social-networks-can-learn-from-public-spaces/)
+- [How to Start Fixing Social Media](https://mirror.roytang.net/2021/01/how-to-start-fixing-social-media/)
 - [Why can&#39;t I write code inside my browser?](https://mirror.roytang.net/2021/01/why-cant-i-write-code-inside-my-browser/)
 - [The Platform Is The Enemy](https://mirror.roytang.net/2021/01/the-platform-is-the-enemy/)
-- [Who Wants To Be a Thousandaire?](https://mirror.roytang.net/2021/01/who-wants-to-be-a-thousandaire/)
-- [Lockdown Productivity: Spaceship You](https://mirror.roytang.net/2021/01/lockdown-productivity-spaceship-you/)
-- [Into the Personal-Website-Verse](https://mirror.roytang.net/2021/01/into-the-personal-website-verse/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [21 Jan 2021 3:43pm](https://mirror.roytang.net/2021/01/1352280628490747906/): Platforms should not be responsible for a person making awful content. They are absolutely responsible when they put it in front of people who didn’t even know it existed. They should know the difference between hosting awful content and choosing to broadcast it. We all should.
+- [21 Jan 2021 9:19am](https://mirror.roytang.net/2021/01/1352184058369871874/): @rom thank you!
+- [21 Jan 2021 9:17am](https://mirror.roytang.net/2021/01/1352183495053852672/): @rom what device is that?
+- [21 Jan 2021 6:15am](https://mirror.roytang.net/2021/01/1352137686614564867/): 2021 movie no. 3: World War Z (2013). Pretty typical action movie I think, entertaining enough. Should have watched at the start of the pandemic.
 - [21 Jan 2021 3:04am](https://mirror.roytang.net/2021/01/1352089564244938754/): I see some people posting like &ldquo;why are you all excited about biden, the US is still going to be imperialist/not progressive enough/whatever&rdquo; and i&rsquo;m like ugh sure whatever, lots of room for improvement still, but did you actually prefer trump?
 The US just kicked out a racist, misogynistic, egocentric sociopath president, let them enjoy that for a little bit maybe? There&rsquo;s no shortage of people willing to push their admin for reforms either.
-- [20 Jan 2021 4:17am](https://mirror.roytang.net/2021/01/1351745725428768769/): PRRD said that its unfair that only UP &amp; PUP have a pact&hellip; I completely agree!!!! So why not enter into a similar pact with ALL THE OTHER UNIVERSITIES or, better yet, pass a law that will guaramtee this to ALL UNIVERSITIES instead of abrogating these two. #TrustTheFilipinoYouth
-- [18 Jan 2021 11:42am](https://mirror.roytang.net/2021/01/1351132929196511240/): JUST IN: In a letter addressed to UP Pres. Danilo Concepcion, Department of National Defense (DND) Secretary Delfin Lorenzana says the UP-DND Accord, an agreement that keeps state forces from entering the premises of the University, is terminated effective January 15. #DefendUP
-- [18 Jan 2021 6:38am](https://mirror.roytang.net/2021/01/763b493ae866e86f9f0fdff5202e072e/): Survey: What was your favorite movie of 2020?
-- [17 Jan 2021 3:04pm](https://mirror.roytang.net/2021/01/1350821282380615682/): The daily covid death stats hit you differently when you know one of them
 
 [View all notes](https://mirror.roytang.net/notes)
 

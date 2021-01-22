@@ -79,6 +79,11 @@
         }
     }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The solution for this came from the Nginx common pitfalls article listed above.&lt;/p&gt;
+&lt;h3 id=&#34;wordpress-specific&#34;&gt;Wordpress-specific&lt;/h3&gt;
+&lt;p&gt;(Added 1/21/2021)&lt;/p&gt;
+&lt;p&gt;Wordpress worked well enough for the most part. Except permalinks didn&amp;rsquo;t work! I had to add a directive to the nginx config file for unknown urls to be redirected to index.php:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;try_files $uri $uri/ /index.php?$args;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://nginxlibrary.com/wordpress-permalinks/&#34;&gt;https://nginxlibrary.com/wordpress-permalinks/&lt;/a&gt;. It&amp;rsquo;s also mentioned in the &lt;a href=&#34;https://wordpress.org/support/article/nginx/&#34;&gt;official Wordpress docs&lt;/a&gt; , but buried in a bunch of other stuff so less helpful.&lt;/p&gt;
 &lt;h3 id=&#34;choosing-a-database&#34;&gt;Choosing a database&lt;/h3&gt;
 &lt;p&gt;I initially wanted to use PostgreSQL (since that&amp;rsquo;s what I was using locally) and set that up first. Then I realized I had a Wordpress install I wanted to carry over, and apparently Wordpress needs MySQL, so oops. I didn&amp;rsquo;t want to have two databases running, so that was out. Plan out your database usage boys.&lt;/p&gt;
 &lt;h3 id=&#34;setting-up-mysql-for-django&#34;&gt;Setting up MySQL for Django&lt;/h3&gt;

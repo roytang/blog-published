@@ -11,6 +11,282 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/07/45113755/",
+            "url": "https://mirror.roytang.net/2017/07/45113755/",
+            "path": "/2017/07/45113755/",
+            "title": "jsplumb - scroll the canvas when node dragged outside visible area",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m trying out jsplumb. I have a copy of this demo: \u003ca href=\"https://jsplumbtoolkit.com/community/demo/statemachine/index.html\"\u003ehttps://jsplumbtoolkit.com/community/demo/statemachine/index.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eIn this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.\u003c/p\u003e\n\u003cp\u003eI would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area. Any advice on how to do this?\u003c/p\u003e\n\u003cp\u003eSecondary question: In the demo above the scrollbars appear as expected when I drag elements off the right or bottom of the canvas, but not when I drag them off the left edge or off the top edge. That is, if I drag a node upward off the canvas and drop it there, I no longer have any way of viewing that node or dragging it back down. Is there a way around this?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m trying out jsplumb. I have a copy of this demo: https://jsplumbtoolkit.com/community/demo/statemachine/index.html\nIn this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.\nI would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area.",
+            "date_published": "2017-07-15T02:04:29+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/45113755/index.md"
+            , "tags": ["javascript","css","jsplumb","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45113755/jsplumb-scroll-the-canvas-when-node-dragged-outside-visible-area"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/885769848805916674/",
+            "url": "https://mirror.roytang.net/2017/07/885769848805916674/",
+            "path": "/2017/07/885769848805916674/",
+            "title": "",
+            "content_html": "\u003cp\u003ei have never identified more with a comic\u003c/p\u003e\n",
+            "summary": "i have never identified more with a comic",
+            "date_published": "2017-07-14T07:56:03+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/885769848805916674/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885769848805916674/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/885759937770541057/",
+            "url": "https://mirror.roytang.net/2017/07/885759937770541057/",
+            "path": "/2017/07/885759937770541057/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/sehurlburt/\"\u003e@sehurlburt\u003c/a\u003e arent there risks/issued with figuring out the costing for that though?\u003c/p\u003e\n",
+            "summary": "@sehurlburt arent there risks/issued with figuring out the costing for that though?",
+            "date_published": "2017-07-14T07:16:40+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/885759937770541057.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885759937770541057/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/45093664/",
+            "url": "https://mirror.roytang.net/2017/07/45093664/",
+            "path": "/2017/07/45093664/",
+            "title": "MarkLogic - detecting similar/duplicate names",
+            "content_html": "\u003cp\u003eI have a number of documents from different sources. Many of them reference a company name, but may have stored the information slightly differently. The name is a field in the documents.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;d like to be able to detect variations on the same name, something like:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAjax Company Incorporated\u003c/li\u003e\n\u003cli\u003eAjax Co. Inc.\u003c/li\u003e\n\u003cli\u003eAjax Company Inc.\u003c/li\u003e\n\u003cli\u003eAjax Company\u003c/li\u003e\n\u003cli\u003eAjax Company (formerly Ajax Unlimited)\u003c/li\u003e\n\u003cli\u003eetc\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDoes MarkLogic have any facility to query documents that have \u0026ldquo;similar\u0026rdquo; name as above? I\u0026rsquo;m not sure if there\u0026rsquo;s a more technical term that I should be searching for. Preferably for either the node client API or server-side js.\u003c/p\u003e\n",
+            "summary": "I have a number of documents from different sources. Many of them reference a company name, but may have stored the information slightly differently. The name is a field in the documents.\nI\u0026rsquo;d like to be able to detect variations on the same name, something like:\n Ajax Company Incorporated Ajax Co. Inc. Ajax Company Inc. Ajax Company Ajax Company (formerly Ajax Unlimited) etc  Does MarkLogic have any facility to query documents that have \u0026ldquo;similar\u0026rdquo; name as above?",
+            "date_published": "2017-07-14T02:27:11+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/45093664/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45093664/marklogic-detecting-similar-duplicate-names"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/45093664/marklogic-detecting-similar-duplicate-names",
+                    "source_file": "comment-20170714T062051-45096016.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/10155853747033912/",
+            "url": "https://mirror.roytang.net/2017/07/10155853747033912/",
+            "path": "/2017/07/10155853747033912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurvey: what is your favorite local chichiria?\u003c/p\u003e\n",
+            "summary": "Survey: what is your favorite local chichiria?",
+            "date_published": "2017-07-13T21:37:00+00:00",
+            "date_modified": "2019-09-26T06:53:34+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/07/10155853747033912/index.md"
+            , "tags": ["mobile-uploads"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155853747033912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/ej.tumaneng",
+                    "source_file": "comment-20170713-000000-c169db9b-d160-47f3-a854-4ba5782c6502.json"
+                }, { 
+                    "url": "https://www.facebook.com/romancoat",
+                    "source_file": "comment-20170713-000001-1cf518b3-29d8-4960-b95d-11abacc48156.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20170713-000002-ab74c298-cac7-4ffe-828e-409b7acc3c32.json"
+                }, { 
+                    "url": "https://www.facebook.com/angu.cooper",
+                    "source_file": "comment-20170713-000003-93ba4c52-89b0-44ef-ad4b-483ecebb4d02.json"
+                }, { 
+                    "url": "https://www.facebook.com/berna.tang",
+                    "source_file": "comment-20170713-000004-ea992df6-28b5-4cb4-b7c2-ef80b1390268.json"
+                }, { 
+                    "url": "https://www.facebook.com/rocky.teodoro",
+                    "source_file": "comment-20170713-000005-f2b28d37-83f4-45cc-ba27-e480a500b1b7.json"
+                }, { 
+                    "url": "https://www.facebook.com/maui.listana",
+                    "source_file": "comment-20170713-000006-428c43e4-309a-47a6-949c-b920ca806eb5.json"
+                }, { 
+                    "url": "https://www.facebook.com/ruby.davo.3",
+                    "source_file": "comment-20170714-000007-cdaad1d9-1041-487e-a04b-d0188370750a.json"
+                }, { 
+                    "url": "https://www.facebook.com/roderick.manalo",
+                    "source_file": "comment-20170714-000008-04111ef1-b0fe-4727-bf56-49e89b58510e.json"
+                }, { 
+                    "url": "https://www.facebook.com/jason.inocencio",
+                    "source_file": "comment-20170714-000009-8aeda23e-3b76-4f5e-b150-ef744f2a7781.json"
+                }, { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20170714-000010-a764514f-1edc-463c-bd4b-7e179787231f.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20170714-000011-441e88ac-45ce-473b-a06a-4ea7b87f6df0.json"
+                }, { 
+                    "url": "https://www.facebook.com/jackngan",
+                    "source_file": "comment-20170714-000012-24a41623-4b13-4eb8-95c2-d7af5ce4c2ab.json"
+                }, { 
+                    "url": "https://www.facebook.com/jonathan.tan.399041",
+                    "source_file": "comment-20170714-000013-1e2480fd-393f-4e59-9c00-e73331344560.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20170714-000014-a43e6c89-ee63-49d2-ac08-af1ebd529ace.json"
+                }, { 
+                    "url": "https://www.facebook.com/rjrinon",
+                    "source_file": "comment-20170714-000015-35403636-d61f-412e-8c5c-b94afda5e3a4.json"
+                }, { 
+                    "url": "https://www.facebook.com/joyapreyes",
+                    "source_file": "comment-20170714-000016-778592c4-5204-4244-b295-699dafbde060.json"
+                }, { 
+                    "url": "https://www.facebook.com/krna82",
+                    "source_file": "comment-20170714-000017-bc837e92-9018-408e-9f92-89f7bbfa664e.json"
+                }, { 
+                    "url": "https://www.facebook.com/xenia.p.david",
+                    "source_file": "comment-20170714-000018-8ec70144-5925-49f2-8cac-aa37f38b3fef.json"
+                }, { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20170714-000019-a4837720-7d14-4e6c-b6ee-ef9493417d83.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20170714-000020-65b9db48-4ea8-436f-bed4-8d012536af4d.json"
+                }, { 
+                    "url": "https://www.facebook.com/noemiamor.jardino",
+                    "source_file": "comment-20170714-000021-33ad489f-5746-4cb5-abbe-a3431981f060.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20170714-000022-41b877e4-77f7-494e-968d-aa946aa4187e.json"
+                }, { 
+                    "url": "https://www.facebook.com/elenore.uy",
+                    "source_file": "comment-20170714-000023-75c4235e-2149-4e85-b696-03691dd43ed1.json"
+                }, { 
+                    "url": "https://www.facebook.com/liza.budlong.5",
+                    "source_file": "comment-20170714-000024-a8f7f754-0957-4381-a159-1afb0b2a5146.json"
+                }, { 
+                    "url": "https://www.facebook.com/lissramgurl01",
+                    "source_file": "comment-20170714-000025-79fc082f-1213-4eae-8b3d-634152849bab.json"
+                }, { 
+                    "url": "https://www.facebook.com/aldwin.espiritu",
+                    "source_file": "comment-20170714-000026-0a61eb4b-2f76-4a9b-8a22-756c6fd1a9f1.json"
+                }, { 
+                    "url": "https://www.facebook.com/mavericktriggerhappy",
+                    "source_file": "comment-20170714-000027-a1c15cc1-3f98-48c0-abd9-e58ca1253080.json"
+                }, { 
+                    "url": "https://www.facebook.com/phwraengck",
+                    "source_file": "comment-20170714-000028-ff5eea29-b206-4895-a2c0-8635d08dec38.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20170714-004820-84e77a28-8f86-46a6-99d6-70ee4bacf6f0.json"
+                }, { 
+                    "url": "https://www.facebook.com/phwraengck",
+                    "source_file": "comment-20170714-004821-271cabb1-a334-42bc-a879-80e567d922bd.json"
+                }, { 
+                    "url": "https://www.facebook.com/michelle.m.casal",
+                    "source_file": "comment-20170715-000029-c16f9153-bf7f-4d58-a009-8972a50687b3.json"
+                }, { 
+                    "url": "https://www.facebook.com/naycemartinez",
+                    "source_file": "comment-20170715-000030-ded53dd8-a1f4-4e1a-b60c-5770ce13f0c8.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/10155852049623912/",
+            "url": "https://mirror.roytang.net/2017/07/10155852049623912/",
+            "path": "/2017/07/10155852049623912/",
+            "title": "",
+            "content_html": "\u003cp\u003eCelebrity couple who are living together: bad example daw dahil sa influence nila\u003c/p\u003e\n\u003cp\u003ePolitical leader who makes rapes jokes and openly talks about wanting to kill people: no comment\u003c/p\u003e\n",
+            "summary": "Celebrity couple who are living together: bad example daw dahil sa influence nila\nPolitical leader who makes rapes jokes and openly talks about wanting to kill people: no comment",
+            "date_published": "2017-07-13T06:58:00+00:00",
+            "date_modified": "2019-09-28T21:45:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/10155852049623912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155852049623912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20170713-000000-a58f902c-3a45-4391-baef-03200d3de135.json"
+                }, { 
+                    "url": "https://www.facebook.com/angu.cooper",
+                    "source_file": "comment-20170713-000001-c7540962-df9e-4886-90b3-cdcf00f35b75.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20170713-000002-150920da-81bb-4574-a9c1-16da91f48429.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20170713-000140-085c4f8a-1ac8-4867-abff-0a9d19861136.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20170713-000320-0fd9cad4-6339-4443-ae50-f64717ac4bdd.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/885332910500233216/",
+            "url": "https://mirror.roytang.net/2017/07/885332910500233216/",
+            "path": "/2017/07/885332910500233216/",
+            "title": "",
+            "content_html": "\u003cp\u003eFacts are so screwed: \u003ca href=\"https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama\"\u003ehttps://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Facts are so screwed: https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama",
+            "date_published": "2017-07-13T02:59:49+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/885332910500233216/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885332910500233216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/885304536516116481/",
+            "url": "https://mirror.roytang.net/2017/07/885304536516116481/",
+            "path": "/2017/07/885304536516116481/",
+            "title": "",
+            "content_html": "\u003cp\u003eStill true today!\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/tangincheek/status/885302768063234049'\u003etangincheek\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    antagal ko na nagHTML nde ko pa rin naiintindihan ang CSS floats\n\u003c/blockquote\u003e\n",
+            "summary": "Still true today!\nQuoted tangincheek\u0026#39;s tweet:   antagal ko na nagHTML nde ko pa rin naiintindihan ang CSS floats  ",
+            "date_published": "2017-07-13T01:07:04+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/885304536516116481/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885304536516116481/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/07/885272287775043584/",
+            "url": "https://mirror.roytang.net/2017/07/885272287775043584/",
+            "path": "/2017/07/885272287775043584/",
+            "title": "",
+            "content_html": "\u003cp\u003eCelebrities living together: bad example daw\u003c/p\u003e\n\u003cp\u003ePolitician who makes rapes jokes and openly wants to kill people: no comment\u003c/p\u003e\n",
+            "summary": "Celebrities living together: bad example daw\nPolitician who makes rapes jokes and openly wants to kill people: no comment",
+            "date_published": "2017-07-12T22:58:55+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/07/885272287775043584.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885272287775043584/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/07/884928057248579585/",
             "url": "https://mirror.roytang.net/2017/07/884928057248579585/",
             "path": "/2017/07/884928057248579585/",
@@ -216,6 +492,12 @@
                 }, { 
                     "url": "https://www.facebook.com/joyapreyes",
                     "source_file": "comment-20170708-000006-51329c61-77be-4dbf-b245-17a5e91ed030.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20170708-000500-15f3bf90-04ee-4cb6-a998-e12102a586ed.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20170708-000501-94b1f6d6-841f-4381-9f7b-b9711d874ac6.json"
                 }
             ]
             }
@@ -561,6 +843,21 @@
                 }, { 
                     "url": "https://www.facebook.com/xenia.p.david",
                     "source_file": "comment-20170704-000002-34ec77b3-505e-47ca-933d-62bf9f51ffc8.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20170704-000140-49e93de3-be78-4e54-9f71-f8fc00da5c3a.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20170704-000320-d4abe37c-ac33-4e7c-8cfc-0550276b0640.json"
+                }, { 
+                    "url": "https://www.facebook.com/donsantos",
+                    "source_file": "comment-20170705-000321-5e5a06aa-5998-4235-8b85-f89d1581ab32.json"
+                }, { 
+                    "url": "https://www.facebook.com/michelle.m.casal",
+                    "source_file": "comment-20170706-000500-a354bd00-28ab-46db-8e70-e526b1aca478.json"
+                }, { 
+                    "url": "https://www.facebook.com/xenia.p.david",
+                    "source_file": "comment-20170706-000501-e6a3904d-538e-4da2-83a0-f80108f8886a.json"
                 }
             ]
             }
@@ -748,175 +1045,6 @@
             "source_path": "notes/2017/06/880675131491790848/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/880675131491790848/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/software-development-and-government/",
-            "url": "https://mirror.roytang.net/2017/06/software-development-and-government/",
-            "path": "/2017/06/software-development-and-government/",
-            "title": "Software Development and Government",
-            "content_html": "\u003cp\u003eRandom thoughts while walking at night: The structure of government can be a bit analogous to the structure of a software development project.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eConstitution\u003c/strong\u003e is like the \u003cstrong\u003erequirements\u003c/strong\u003e for a project. It\u0026rsquo;s kind of high-level and (I believe) shouldn\u0026rsquo;t be too detailed. Supposedly the requirements are written by the client. For a country like the Philippines the client is \u0026ldquo;we the sovereign Filipino people\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eSlight tangent: I used to know this guy who was one of those rabid \u0026ldquo;we need to amend the constitution\u0026rdquo; types and he asked me to review a \u0026ldquo;mathematical model to track the budget as a function of tax collection and monetary policy\u0026rdquo; that he wanted to include in a proposed new constitution. I told him I didn\u0026rsquo;t believe such detailed rules shouldn\u0026rsquo;t be in the constitution \u0026ndash; that would unnecessarily tie us down to a specific model that we may or may not regret later on. I ended up declining to help him with his strange hobby.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eLegislative branch\u003c/strong\u003e are the a\u003cstrong\u003enalysts\u003c/strong\u003e. They make the detailed specs/laws to define how we\u0026rsquo;re going to satisfy the requirements/constitution. In a real project, the client usually signs off on the specs. In government, we supposedly sign off when we vote for the legislators.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eExecutive branch\u003c/strong\u003e are the \u003cstrong\u003edevelopers\u003c/strong\u003e. They\u0026rsquo;re responsible for implementing the specs/laws in order to fulfill the requirements/constitution. They can decide the technical approach to use, as long as they satisfy the specs and the requirements.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eJudiciary\u003c/strong\u003e is the \u003cstrong\u003eQA\u003c/strong\u003e, they review the work of the developers/executive and make sure they\u0026rsquo;re following the specs/laws and adhering to the requirements/constitution. Sometimes they even have to review the specs/laws themselves to make sure they aren\u0026rsquo;t contradicting the requirements/constitution.\u003c/p\u003e\n\u003cp\u003eSometimes a project is so large and you need to form smaller subteams to specialize in different areas or modules. That\u0026rsquo;s called **Federalism. **Or maybe \u003cstrong\u003elocal government.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSometimes one person handles specs, development and QA. That\u0026rsquo;s called \u003cstrong\u003edictatorship.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSometimes people want to rewrite or amend the requirements/constitution. That\u0026rsquo;s called \u003cstrong\u003eagile development.\u003c/strong\u003e Or maybe \u003cstrong\u003escope creep.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSometimes the bureaucracy needs to be reorganized to be more efficient. That\u0026rsquo;s called \u003cstrong\u003erefactoring\u003c/strong\u003e.\u003c/p\u003e\n\u003cp\u003eThe big difference between government and software projects is that in software projects, team members are selected based on meritocracy. In theory at least, you choose the best people for the job. In government, who gets the job is determined by who is best at bamboozling the largest number of people to vote them in. Maybe someday we\u0026rsquo;ll get a meritocracy in government too, but until then I\u0026rsquo;m probably sticking to software development.\u003c/p\u003e\n",
-            "summary": "Random thoughts while walking at night: The structure of government can be a bit analogous to the structure of a software development project.\nThe Constitution is like the requirements for a project. It\u0026rsquo;s kind of high-level and (I believe) shouldn\u0026rsquo;t be too detailed. Supposedly the requirements are written by the client. For a country like the Philippines the client is \u0026ldquo;we the sovereign Filipino people\u0026rdquo;.\nSlight tangent: I used to know this guy who was one of those rabid \u0026ldquo;we need to amend the constitution\u0026rdquo; types and he asked me to review a \u0026ldquo;mathematical model to track the budget as a function of tax collection and monetary policy\u0026rdquo; that he wanted to include in a proposed new constitution.",
-            "date_published": "2017-06-29T01:30:34+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/06/software-development-and-government/index.md"
-            , "tags": ["Philippines","Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/162378129730/software-development-and-government"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/880237738913656832/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155804204753912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20170629-000000-1b1a8c79-7577-41b4-98ca-e6289ef83b66.json"
-                }, { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20170629-000001-219d5f87-7839-4e99-86b0-9e205c1af1fd.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/880076191356420096/",
-            "url": "https://mirror.roytang.net/2017/06/880076191356420096/",
-            "path": "/2017/06/880076191356420096/",
-            "title": "",
-            "content_html": "\u003cp\u003eFinished binging Freaks and Geeks on @Netflix \u0026hellip;wow, that was a series that ended too soon\u003c/p\u003e\n",
-            "summary": "Finished binging Freaks and Geeks on @Netflix \u0026hellip;wow, that was a series that ended too soon",
-            "date_published": "2017-06-28T14:51:29+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/880076191356420096.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/880076191356420096/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/44804960/",
-            "url": "https://mirror.roytang.net/2017/06/44804960/",
-            "path": "/2017/06/44804960/",
-            "title": "Submit a URL as a file in a form",
-            "content_html": "\u003cp\u003eThe scenario is: the user can input a URL for an image file, then on form submit I want to download the file and submit it to the server. As if they had selected the file using an \u003ccode\u003e\u0026lt;input type='file' /\u0026gt;\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eOf course I can just do it on the server-side. But my question: how can I do this on the browser side via JavaScript? Is it possible?\u003c/p\u003e\n",
-            "summary": "The scenario is: the user can input a URL for an image file, then on form submit I want to download the file and submit it to the server. As if they had selected the file using an \u0026lt;input type='file' /\u0026gt;.\nOf course I can just do it on the server-side. But my question: how can I do this on the browser side via JavaScript? Is it possible?",
-            "date_published": "2017-06-28T14:11:34+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/44804960/index.md"
-            , "tags": ["javascript","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/44804960/submit-a-url-as-a-file-in-a-form"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/44804960/submit-a-url-as-a-file-in-a-form",
-                    "source_file": "comment-20170628T141417-76590000.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/44804960/submit-a-url-as-a-file-in-a-form",
-                    "source_file": "comment-20170630T103559-76668932.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/880063352826875904/",
-            "url": "https://mirror.roytang.net/2017/06/880063352826875904/",
-            "path": "/2017/06/880063352826875904/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e j k rowling\u003c/p\u003e\n",
-            "summary": "@triviastorm j k rowling",
-            "date_published": "2017-06-28T14:00:28+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/880063352826875904.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/880063352826875904/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/880038474753032193/",
-            "url": "https://mirror.roytang.net/2017/06/880038474753032193/",
-            "path": "/2017/06/880038474753032193/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe jumps in Ori and the Blind Forest are so have such a weird arc I find myself missing my landings a lot\u003c/p\u003e\n",
-            "summary": "The jumps in Ori and the Blind Forest are so have such a weird arc I find myself missing my landings a lot",
-            "date_published": "2017-06-28T12:21:37+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/880038474753032193.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/880038474753032193/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/880015926065717249/",
-            "url": "https://mirror.roytang.net/2017/06/880015926065717249/",
-            "path": "/2017/06/880015926065717249/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e good job! did they catch him?\u003c/p\u003e\n",
-            "summary": "@Westraid good job! did they catch him?",
-            "date_published": "2017-06-28T10:52:01+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/880015926065717249.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/880015926065717249/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/879958795945783297/",
-            "url": "https://mirror.roytang.net/2017/06/879958795945783297/",
-            "path": "/2017/06/879958795945783297/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e jaws\u003c/p\u003e\n",
-            "summary": "@triviastorm jaws",
-            "date_published": "2017-06-28T07:05:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/879958795945783297.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/879958795945783297/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/879735534523789312/",
-            "url": "https://mirror.roytang.net/2017/06/879735534523789312/",
-            "path": "/2017/06/879735534523789312/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TolarianCollege/\"\u003e@TolarianCollege\u003c/a\u003e and then he can use the planar portal to take over Cleveland or something.\u003c/p\u003e\n",
-            "summary": "@TolarianCollege and then he can use the planar portal to take over Cleveland or something.",
-            "date_published": "2017-06-27T16:17:50+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/879735534523789312.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/879735534523789312/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/879734428322324480/",
-            "url": "https://mirror.roytang.net/2017/06/879734428322324480/",
-            "path": "/2017/06/879734428322324480/",
-            "title": "",
-            "content_html": "\u003cp\u003eChrono Trigger (Live at Symphony Hall) \u003ca href=\"https://www.youtube.com/watch?v=iEGniXc7Xtc\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=iEGniXc7Xtc\u0026amp;feature=youtu.be\u003c/a\u003e via \u003ca href=\"https://twitter.com/YouTube/\"\u003e@YouTube\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Chrono Trigger (Live at Symphony Hall) https://www.youtube.com/watch?v=iEGniXc7Xtc\u0026amp;feature=youtu.be via @YouTube",
-            "date_published": "2017-06-27T16:13:27+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/879734428322324480.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/879734428322324480/"}]
             
             
             }
