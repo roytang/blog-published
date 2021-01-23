@@ -1,4 +1,6 @@
 
+- [Thoughts on Tech Censorship and Social Media](/2021/01/tech-censorship/)
+
 - [Weeknotes 2020-08-16 The Sameyness Report](/2020/08/weeknotes-2020-08-16-the-sameyness-report/)
 
 - [Weeknotes 2020-08-09](/2020/08/weeknotes-08-09/)

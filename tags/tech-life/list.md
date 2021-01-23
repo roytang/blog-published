@@ -1,4 +1,6 @@
 
+- [Thoughts on Tech Censorship and Social Media](/2021/01/tech-censorship/)
+
 - [Regular Reviews and Tracking](/2021/01/regular-reviews-and-tracking/)
 
 - [2020 Word Clouds](/2021/01/2020-word-clouds/)
