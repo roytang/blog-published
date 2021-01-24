@@ -11,6 +11,31 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/12/40968519/",
+            "url": "https://mirror.roytang.net/2016/12/40968519/",
+            "path": "/2016/12/40968519/",
+            "title": "Marklogic Node.js API: How to get the document where an embedded triple lives?",
+            "content_html": "\u003cp\u003eI tried to insert the following test document:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edb.documents.write(\n    {\n        uri: \u0026quot;/test/doc1.json\u0026quot;,\n        contentType: \u0026quot;application/json\u0026quot;,\n        collections: \u0026quot;test\u0026quot;,\n        content: {\n            name : \u0026quot;Peter\u0026quot;,\n            hobby: \u0026quot;Sleeping\u0026quot;,\n            other: \u0026quot;Some other info\u0026quot;,\n            \u0026quot;triple\u0026quot;: {\n                \u0026quot;subject\u0026quot;: {   \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot;   \n                },   \n                \u0026quot;predicate\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot;   \n                },   \n                \u0026quot;object\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot;   \n                }\n          \t}\n        }\n    }\n  ).\n  result(function(response){\n    console.log(\u0026quot;Done loading\u0026quot;);\n  }); \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen I queried as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar query = [\n  'SELECT ?s ?p ?o' ,\n  'WHERE { ?s ?p ?o }' ,\n];\ndb.graphs.sparql('application/sparql-results+json', query.join('\\n')\n).result(function (result) {\n  console.log(JSON.stringify(result, null, 2));\n}, function(error) {\n  console.log(JSON.stringify(error, null, 2));\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?\u003c/p\u003e\n",
+            "summary": "I tried to insert the following test document:\ndb.documents.write( { uri: \u0026quot;/test/doc1.json\u0026quot;, contentType: \u0026quot;application/json\u0026quot;, collections: \u0026quot;test\u0026quot;, content: { name : \u0026quot;Peter\u0026quot;, hobby: \u0026quot;Sleeping\u0026quot;, other: \u0026quot;Some other info\u0026quot;, \u0026quot;triple\u0026quot;: { \u0026quot;subject\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot; }, \u0026quot;predicate\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot; }, \u0026quot;object\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot; } } } } ). result(function(response){ console.log(\u0026quot;Done loading\u0026quot;); });  Then I queried as follows:\nvar query = [ 'SELECT ?s ?",
+            "date_published": "2016-12-05T06:44:52+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/40968519/index.md"
+            , "tags": ["node.js","sparql","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T082757-40969974.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T153147-40977742.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/12/40968002/",
             "url": "https://mirror.roytang.net/2016/12/40968002/",
             "path": "/2016/12/40968002/",
@@ -1042,23 +1067,6 @@
                     "source_file": "comment-20161129-000001-6083e8f1-e691-4173-bb72-af8b65fd6d2d.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/11/803263083074310145/",
-            "url": "https://mirror.roytang.net/2016/11/803263083074310145/",
-            "path": "/2016/11/803263083074310145/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m a judge at a .BR \u0026ldquo;low budget MTG Card cosplay\u0026rdquo; competition and I have to say human creativity knows no bounds \u003ca href=\"https://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop\"\u003ehttps://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m a judge at a .BR \u0026ldquo;low budget MTG Card cosplay\u0026rdquo; competition and I have to say human creativity knows no bounds https://www.youtube.com/watch?v=xyZ8nl3dg7c\u0026amp;app=desktop",
-            "date_published": "2016-11-28T15:43:37+00:00",
-            "date_modified": "2020-09-10T22:04:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/11/803263083074310145/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/803263083074310145/"}]
-            
-            
             }
         
     ]
