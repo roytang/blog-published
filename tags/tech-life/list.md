@@ -217,6 +217,8 @@
 
 - [Desktop rebooting restarts wireless connection](/2009/09/36263/)
 
+- [Can Anyone Recommend a Phone](/2008/12/can-anyone-recommend-a-phone/)
+
 - [Imeem](/2008/10/imeem/)
 
 - [Bayan DSL Proxy](/2008/10/bayan-dsl-proxy/)

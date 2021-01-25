@@ -151,7 +151,7 @@
 <p>Some time ago this guy I follow on Twitter, <a href="https://twitter.com/visakanv/">visakanv</a> wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here&rsquo;s <a href="https://twitter.com/visakanv/status/1087316852663939072">the thread</a>.</p>
 <p>Anyway, in a fit of &ldquo;I&rsquo;m a bit bored, anything interesting I could do?&rdquo; I figured I could set up a quick webapp to do that. I did a quick PoC in Python/Flask, with <a href="http://www.tweepy.org/">Tweepy</a> for accessing the Twitter API. I normally prefer Django for my webapps, but since this was just a small, quick app, I figured Flask would be ideal. That worked out fine, except that I had to use my personal access tokens to for all the API calls. This means that if many people were using the app, it was likely to hit Twitter&rsquo;s rate limits!</p>
 <p>That was a few months back. A couple of days ago, someone emailed me asking about an error he encountered using the app, and sure enough it was due to the rate limits. I had a couple of free hours last weekend, so I figured I&rsquo;d update the app a bit. I decided to add a Twitter login requirement, that way we can use the individual user&rsquo;s access token instead of using mine globally. This would allow the rate limits to be per user and thus less likely to be hit. Now, I&rsquo;ve tried implementing OAuth login some years ago and it can be terribly complicated, but luckily I found out that there&rsquo;s a nifty Python package called <a href="https://github.com/singingwolfboy/flask-dance">Flask-Dance</a> that made it super easy to add Twitter OAuth to a Flask app. This also let me discard the Tweepy dependency, since the Twitter OAuth session let me query the API endpoints directly. I also did a bit of UI cleanup and error handling and deployed the changes quickly.</p>
-<p>The app is available online at <a href="http://apps.roytang.net/twitter">apps.roytang.net/twitter</a>. There&rsquo;s a few other Twitter tools I&rsquo;ve been meaning to build, so I&rsquo;ll probably put them here too when I get around to them.</p>
+<p>The app is available online at <a href="https://mirror.roytang.net/apps/twitter">roytang.net/apps/twitter</a>. There&rsquo;s a few other Twitter tools I&rsquo;ve been meaning to build, so I&rsquo;ll probably put them here too when I get around to them.</p>
 
 
 
@@ -394,7 +394,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2020 09 26 17:21:30.
+        Last modified at: 2021 01 25 07:34:22.
         
         <a href='https://github.com/roytang/blog/tree/master/content/post/2019/03/twitter-app/index.md' title='source file'>Source file</a>
         

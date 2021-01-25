@@ -154,7 +154,7 @@
 <div class="e-content">
 
 <p>I had been meaning to try writing a Twitter bot for a while now. I figured a trivia bot would be pretty easy to implement, so I spent some time a couple of weekends to rig one together.</p>
-<p>It&rsquo;s (mostly) working now, the bot is active as <a href="https://twitter.com/triviastorm/">triviastorm on Twitter</a>, with a supporting webapp deployed on <a href="http://trivia.roytang.net/">http://trivia.roytang.net/</a>. The bot tweets out a trivia question once every hour. It will then award points to the first five people who gave the correct answer. The bot will only recognize answers given as a direct reply to the tweet with the question, and only those submitted within the one hour period.</p>
+<p>It&rsquo;s (mostly) working now, the bot is active as <a href="https://twitter.com/triviastorm/">triviastorm on Twitter</a>, with a supporting webapp deployed on <a href="https://triviastorm.net/">https://triviastorm.net/</a>. The bot tweets out a trivia question once every hour. It will then award points to the first five people who gave the correct answer. The bot will only recognize answers given as a direct reply to the tweet with the question, and only those submitted within the one hour period.</p>
 <p>Some technical details:</p>
 <p>My scripting language of choice for the past few years has been Python 2.7. I&rsquo;m using <a href="http://www.tweepy.org/">Tweepy</a> to interact with the Twitter API, <a href="https://github.com/PyMySQL/PyMySQL">PyMySQL</a> to connect to the database, and <a href="http://flask.pocoo.org/">Flask</a> to run the webapp. I haven&rsquo;t used Flask in some time, but it&rsquo;s still very straightforward. I actually had a harder time configuring the webapp with mod_wsgi on my host.</p>
 <p>The main problem with a trivia system is that you need a large and high-quality set of questions. Right now the bot is using a small trivia set &ndash;around a thousand questions I got from a variety of sources. If I want to leave this bot running for a while, I&rsquo;m going to need a much larger trivia set. However, reviewing and collating the questions is a nontrivial task. Hopefully I can add new questions every so often.</p>
@@ -413,7 +413,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2020 09 26 17:21:30.
+        Last modified at: 2021 01 25 07:34:22.
         
         <a href='https://github.com/roytang/blog/tree/master/content/post/2017/02/weekend-project-twitter-trivia-bot/index.md' title='source file'>Source file</a>
         
