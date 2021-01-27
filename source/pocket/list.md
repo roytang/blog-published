@@ -1,4 +1,6 @@
 
+- [Doomscrolling at Scale](/2021/01/doomscrolling-at-scale/)
+
 - [Andrea Zittel: These things I know for sure](/2021/01/andrea-zittel-these-things-i-know-for-sure/)
 
 - [Facebook Disabled My Account After I Criticized Them](/2021/01/facebook-disabled-my-account-after-i-criticized-them/)

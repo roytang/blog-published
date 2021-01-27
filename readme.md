@@ -18,11 +18,11 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Doomscrolling at Scale](https://mirror.roytang.net/2021/01/doomscrolling-at-scale/)
 - [Andrea Zittel: These things I know for sure](https://mirror.roytang.net/2021/01/andrea-zittel-these-things-i-know-for-sure/)
 - [Facebook Disabled My Account After I Criticized Them](https://mirror.roytang.net/2021/01/facebook-disabled-my-account-after-i-criticized-them/)
 - [How homogeneous is Japan?](https://mirror.roytang.net/2021/01/how-homogeneous-is-japan/)
 - [The man third in the line of presidential succession has been in five &#39;Batman&#39; movies](https://mirror.roytang.net/2021/01/the-man-third-in-the-line-of-presidential-succession-has-been-in-five-batman-movies/)
-- [Online speech and publishing](https://mirror.roytang.net/2021/01/online-speech-and-publishing/)
 
 [View all links](https://mirror.roytang.net/links)
 
