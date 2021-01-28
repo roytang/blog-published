@@ -29,13 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [28 Jan 2021 12:08am](https://mirror.roytang.net/2021/01/gkyo689/): No, I only got the one search result and that was the matching one
+- [27 Jan 2021 7:13pm](https://mirror.roytang.net/2021/01/gkxp5u8/): I followed the Sporza feed that was the result of pasting that url, and it looks like it&rsquo;s the correct one:
+https://i.imgur.com/RK7pNDG.png
 - [25 Jan 2021 5:14am](https://mirror.roytang.net/2021/01/1353571824806727680/): @angelicaaira I think most people naman are dealing with some level of fear and/or anxiety, it&rsquo;s just that hindi sya visible for most people, and there are those who can handle it better, so sometimes you can feel like ikaw lang ang ganun sa mundo. Rest assured, it gets better
 - [24 Jan 2021 2:06pm](https://mirror.roytang.net/2021/01/1353343377157181443/): Write despite rejection. Write like the world is ending. Write like this may be the last minute you have to say the inarticulable thing. And write in spite of the world&ndash;with love for this irredeemable beautiful ravaged planet. Write for the mouse in the kitchen.
 - [24 Jan 2021 11:52am](https://mirror.roytang.net/2021/01/1353309670799073285/): TIL shambolically: in a confused or disorganised manner
 Quoted TheEconomist&#39;s tweet:   Few countries have handled vaccine procurement as shambolically as the Philippines https://econ.st/394APqN  
-- [24 Jan 2021 11:43am](https://mirror.roytang.net/2021/01/1353307357166542851/): @davewiner the US imposes a large shadow over the rest of us
-- [24 Jan 2021 11:31am](https://mirror.roytang.net/2021/01/1353304383803379712/): uh did anyone have “nickelback turns their own song rockstar into a sea shanty and frankly it’s really good” on their 2021 bingo card?
-Your browser does not support the video tag.  
 
 [View all notes](https://mirror.roytang.net/notes)
 
