@@ -11,6 +11,121 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2006/05/gmail-raises-the-bar-for-everyone/",
+            "url": "https://mirror.roytang.net/2006/05/gmail-raises-the-bar-for-everyone/",
+            "path": "/2006/05/gmail-raises-the-bar-for-everyone/",
+            "title": "GMail raises the bar for everyone",
+            "content_html": "\u003cp\u003eSo I was at work, and one of the HK guys asks me if we can have a themed button for the file input control in one of our screens. So, I\u0026rsquo;m all \u0026ldquo;alpha geek\u0026rdquo; and stuff, and I go: \u0026ldquo;No we can\u0026rsquo;t. We can\u0026rsquo;t style the ‘Browse\u0026rsquo; button directly, and IE will throw an Access Denied error on submit if we invoke the click() method using Javascript.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eBut HK guy replies: \u0026ldquo;Gee, I wonder how GMail does it then.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eI checked, and he\u0026rsquo;s right. I never noticed before because I use Firefox all the time, but GMail in IE doesn\u0026rsquo;t even show the freakin\u0026rsquo; file input control! It\u0026rsquo;s just an \u0026ldquo;Attach a File\u0026rdquo; link that opens the \u0026ldquo;Open File\u0026rdquo; dialog on click! I took a look at it and I was like\u0026hellip; \u0026ldquo;how in the world\u0026hellip; \u0026quot;\u003c/p\u003e\n\u003cp\u003eSo, being a developer, I of course attempt to get the source, analyze it, break it down, and get it to work for me. But from experience, I know that trying to figure out gmail\u0026rsquo;s obfuscated javascript code would take me days. So I decided to take an alternative approach: I would let gmail execute it\u0026rsquo;s weird javascript magic, then use javascript myself to extract the relevant HTML and Javascript code from the gmail window at the correct state.\u003c/p\u003e\n\u003cp\u003eMy first attempt: I tried to load gmail in an iframe so I could read the document contents from window.top. Eh, no go. Gmail pops itself out of the frame easily.\u003c/p\u003e\n\u003cp\u003eMy second attempt: I open gmail in a new window using javascript\u0026rsquo;s window.open, then use the resulting window variable to access the document contents. Something like this:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-html\" data-lang=\"html\"\u003e\u0026lt;\u003cspan style=\"color:#f92672\"\u003ehtml\u003c/span\u003e\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ebody\u003c/span\u003e\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003escript\u003c/span\u003e\u0026gt;\n  \u003cspan style=\"color:#66d9ef\"\u003evar\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ewin\u003c/span\u003e;\n  \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003edoIt\u003c/span\u003e() {\n  \u003cspan style=\"color:#a6e22e\"\u003ewin\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e window.\u003cspan style=\"color:#a6e22e\"\u003eopen\u003c/span\u003e(\u003cspan style=\"color:#960050;background-color:#1e0010\"\u003e‘\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003ehttp\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e:\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e//www.gmail.com’);\n\u003c/span\u003e\u003cspan style=\"color:#75715e\"\u003e\u003c/span\u003e  }\n  \u003cspan style=\"color:#66d9ef\"\u003efunction\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003egetIt\u003c/span\u003e() {\n  document.\u003cspan style=\"color:#a6e22e\"\u003egetElementById\u003c/span\u003e(\u003cspan style=\"color:#960050;background-color:#1e0010\"\u003e“\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003et\u003c/span\u003e\u003cspan style=\"color:#960050;background-color:#1e0010\"\u003e”\u003c/span\u003e).\u003cspan style=\"color:#a6e22e\"\u003einnerHTML\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003ewin\u003c/span\u003e.document.\u003cspan style=\"color:#a6e22e\"\u003ebody\u003c/span\u003e.\u003cspan style=\"color:#a6e22e\"\u003einnerHTML\u003c/span\u003e;\n  }\n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003escript\u003c/span\u003e\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ebr\u003c/span\u003e/\u0026gt;\u0026lt;\u003cspan style=\"color:#f92672\"\u003einput\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003etype\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”button”\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eonclick\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”doIt()”\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”clickMe”\u003c/span\u003e /\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ebr\u003c/span\u003e/\u0026gt;\u0026lt;\u003cspan style=\"color:#f92672\"\u003einput\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003etype\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”button”\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eonclick\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”getIt()”\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003evalue\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”getContents”\u003c/span\u003e /\u0026gt;\n\u0026lt;\u003cspan style=\"color:#f92672\"\u003ebr\u003c/span\u003e/\u0026gt;\u0026lt;\u003cspan style=\"color:#f92672\"\u003etextarea\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003estyle\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”width:100%;\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eheight:\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e40\u003c/span\u003e\u003cspan style=\"color:#960050;background-color:#1e0010\"\u003e%;”\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eid\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e\u003cspan style=\"color:#e6db74\"\u003e”t”\u003c/span\u003e\u0026gt;\u0026lt;/\u003cspan style=\"color:#f92672\"\u003etextarea\u003c/span\u003e\u0026gt;\n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ebody\u003c/span\u003e\u0026gt;\n\u0026lt;/\u003cspan style=\"color:#f92672\"\u003ehtml\u003c/span\u003e\u0026gt; \n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eWow, \u0026ldquo;Access is denied.\u0026rdquo; Who knew IE actually had that much security?\u003c/p\u003e\n\u003cp\u003eI try a few other methods, mainly trying to navigate the properties of the \u0026ldquo;win\u0026rdquo; variable to find something I can actually use. I go through trees of frames trying to find something\u0026hellip; but I get \u0026ldquo;Access Denied\u0026rdquo; and \u0026ldquo;Permission Denied\u0026rdquo; anytime I try to get near a document element.\u003c/p\u003e\n\u003cp\u003eDamn this is tough\u0026hellip; I thought it would only take me a few minutes =/\u003c/p\u003e\n",
+            "summary": "So I was at work, and one of the HK guys asks me if we can have a themed button for the file input control in one of our screens. So, I\u0026rsquo;m all \u0026ldquo;alpha geek\u0026rdquo; and stuff, and I go: \u0026ldquo;No we can\u0026rsquo;t. We can\u0026rsquo;t style the ‘Browse\u0026rsquo; button directly, and IE will throw an Access Denied error on submit if we invoke the click() method using Javascript.\u0026rdquo;\nBut HK guy replies: \u0026ldquo;Gee, I wonder how GMail does it then.",
+            "date_published": "2006-05-03T06:56:37+00:00",
+            "date_modified": "2020-09-16T14:57:40+08:00",
+            "section": "post",
+            "source_path": "post/2006/05/gmail-raises-the-bar-for-everyone/index.md"
+            , "tags": ["Software Development"]
+            
+            
+            , "comments": [
+                { 
+                    "url": "http://advanced-webhosting.net",
+                    "source_file": "comment-20071031171252-wp-advanced.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2006/05/",
+            "url": "https://mirror.roytang.net/2006/05/",
+            "path": "/2006/05/",
+            "title": "Monthly Archives for 05 2006",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2006-05-01T00:00:00+00:00",
+            "date_modified": "2019-08-09T01:14:44+08:00",
+            "section": "archm",
+            "source_path": "archm/2006-05.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2006/04/yahoo-mail-beta/",
+            "url": "https://mirror.roytang.net/2006/04/yahoo-mail-beta/",
+            "path": "/2006/04/yahoo-mail-beta/",
+            "title": "Yahoo Mail Beta",
+            "content_html": "\u003cp\u003eI tried the new \u003ca href=\"http://www.pinoytechblog.com/archives/try-the-new-yahoomail-beta\"\u003eYahoo Mail Beta\u003c/a\u003e for a while, but I decided to switch back just now.\u003c/p\u003e\n\u003cp\u003eShort review: it\u0026rsquo;s nice looking, but feels a tad sluggish. Well, sluggish compared to gmail at least. The biggest problem is that scrollbar in the message list. It\u0026rsquo;s like promising that you can scroll through all your messages, but when you try to scroll to a far away part of the list, you just get a lot of \u0026ldquo;Loading\u0026hellip; \u0026quot; text. I doubt that scales very well, especially as you get to the thousands in your number of messages.\u003c/p\u003e\n\u003cp\u003eGoogle is being smart in that Gmail will only display at most 100 messages at a time. With their compact layout, that\u0026rsquo;s still a lot more than most other email webapps/clients.\u003c/p\u003e\n",
+            "summary": "I tried the new Yahoo Mail Beta for a while, but I decided to switch back just now.\nShort review: it\u0026rsquo;s nice looking, but feels a tad sluggish. Well, sluggish compared to gmail at least. The biggest problem is that scrollbar in the message list. It\u0026rsquo;s like promising that you can scroll through all your messages, but when you try to scroll to a far away part of the list, you just get a lot of \u0026ldquo;Loading\u0026hellip; \u0026quot; text.",
+            "date_published": "2006-04-28T05:21:35+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2006/04/yahoo-mail-beta/index.md"
+            , "tags": ["Tech Life"]
+            
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-20100316144132-wp-Vijay.json"
+                }, { 
+                    "url": "",
+                    "source_file": "comment-disqus-40073792.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2006/04/del-icio-us-bookmarks-for-2006-04-24/",
+            "url": "https://mirror.roytang.net/2006/04/del-icio-us-bookmarks-for-2006-04-24/",
+            "path": "/2006/04/del-icio-us-bookmarks-for-2006-04-24/",
+            "title": "Del.icio.us bookmarks for 2006-04-24",
+            "content_html": "\u003cp\u003eShared bookmarks for \u003ca href=\"http://del.icio.us/\"\u003edel.icio.us\u003c/a\u003e user \u003ca href=\"http://del.icio.us/roytang\"\u003eroytang\u003c/a\u003e on 2006-04-24\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"http://max.45.kg/ycc/esc.html\" title=\"http://max.45.kg/ycc/esc.html\"\u003eEscape ycc/ESC\u003c/a\u003e —\u003c/p\u003e\n\u003cp\u003eTagged as: flash games\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Shared bookmarks for del.icio.us user roytang on 2006-04-24\n  Escape ycc/ESC —\nTagged as: flash games\n  ",
+            "date_published": "2006-04-24T18:00:01+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2006/04/del-icio-us-bookmarks-for-2006-04-24/index.md"
+            , "tags": ["Links"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2006/04/escape-ycc-esc/",
+            "url": "https://mirror.roytang.net/2006/04/escape-ycc-esc/",
+            "path": "/2006/04/escape-ycc-esc/",
+            "title": "Escape ycc/ESC",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2006-04-24T00:29:58+00:00",
+            "date_modified": "2021-01-20T01:07:07+08:00",
+            "section": "links",
+            "source_path": "links/2006/04/escape-ycc-esc/index.md"
+            , "tags": ["flash","games","broken-link"]
+            
+            ,"link": "http://max.45.kg/ycc/esc.html"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2006/04/del-icio-us-bookmarks-for-2006-04-23/",
+            "url": "https://mirror.roytang.net/2006/04/del-icio-us-bookmarks-for-2006-04-23/",
+            "path": "/2006/04/del-icio-us-bookmarks-for-2006-04-23/",
+            "title": "Del.icio.us bookmarks for 2006-04-23",
+            "content_html": "\u003cp\u003eShared bookmarks for \u003ca href=\"http://del.icio.us/\"\u003edel.icio.us\u003c/a\u003e user \u003ca href=\"http://del.icio.us/roytang\"\u003eroytang\u003c/a\u003e on 2006-04-23\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"http://qntm.org/destroy\" title=\"http://qntm.org/destroy\"\u003eHow to destroy the Earth @ Things Of Interest\u003c/a\u003e —\u003c/p\u003e\n\u003cp\u003eTagged as: cool humor\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"http://www.dieselsweeties.com/\" title=\"http://www.dieselsweeties.com/\"\u003ediesel sweeties: pixelated robot romance web comic \u0026amp; t-shirt party\u003c/a\u003e —\u003c/p\u003e\n\u003cp\u003eTagged as: webcomics\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Shared bookmarks for del.icio.us user roytang on 2006-04-23\n  How to destroy the Earth @ Things Of Interest —\nTagged as: cool humor\n  diesel sweeties: pixelated robot romance web comic \u0026amp; t-shirt party —\nTagged as: webcomics\n  ",
+            "date_published": "2006-04-23T18:00:02+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2006/04/del-icio-us-bookmarks-for-2006-04-23/index.md"
+            , "tags": ["Links"]
+            
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2006/04/how-to-destroy-the-earth-things-of-interest/",
             "url": "https://mirror.roytang.net/2006/04/how-to-destroy-the-earth-things-of-interest/",
             "path": "/2006/04/how-to-destroy-the-earth-things-of-interest/",
@@ -772,118 +887,6 @@
             
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/118022394/",
-            "url": "https://mirror.roytang.net/2006/03/118022394/",
-            "path": "/2006/03/118022394/",
-            "title": "",
-            "content_html": "\u003cp\u003eI attended Grand Prix Manila last March 17, 2006, and the event was jam-packed with people. Can you find me in the picture?\u003c/p\u003e\n",
-            "summary": "I attended Grand Prix Manila last March 17, 2006, and the event was jam-packed with people. Can you find me in the picture?",
-            "date_published": "2006-03-26T00:39:58+00:00",
-            "date_modified": "2019-09-21T14:20:27+08:00",
-            "section": "photos",
-            "source_path": "photos/2006/03/118022394/index.md"
-            
-            , "syndicated": [{"type":"flickr","url":"https://www.flickr.com/photos/zroytang/118022394/"}]
-            
-            , "comments": [
-                { 
-                    "url": null,
-                    "source_file": "photo_118022394.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/del-icio-us-bookmarks-for-2006-03-20/",
-            "url": "https://mirror.roytang.net/2006/03/del-icio-us-bookmarks-for-2006-03-20/",
-            "path": "/2006/03/del-icio-us-bookmarks-for-2006-03-20/",
-            "title": "Del.icio.us bookmarks for 2006-03-20",
-            "content_html": "\u003cp\u003eShared bookmarks for \u003ca href=\"http://del.icio.us/\"\u003edel.icio.us\u003c/a\u003e user \u003ca href=\"http://del.icio.us/roytang\"\u003eroytang\u003c/a\u003e on 2006-03-20\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"http://www.playbabble.com/1091\" title=\"http://www.playbabble.com/1091\"\u003eBabble: The Ultimate Word Game\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e—\u003c/p\u003e\n\u003cp\u003eTagged as: games web-based\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "Shared bookmarks for del.icio.us user roytang on 2006-03-20\n  Babble: The Ultimate Word Game\n—\nTagged as: games web-based\n  ",
-            "date_published": "2006-03-20T18:00:02+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2006/03/del-icio-us-bookmarks-for-2006-03-20/index.md"
-            , "tags": ["Links"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/babble-the-ultimate-word-game/",
-            "url": "https://mirror.roytang.net/2006/03/babble-the-ultimate-word-game/",
-            "path": "/2006/03/babble-the-ultimate-word-game/",
-            "title": "Babble: The Ultimate Word Game",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2006-03-20T09:04:17+00:00",
-            "date_modified": "2020-01-29T00:26:29+08:00",
-            "section": "links",
-            "source_path": "links/2006/03/babble-the-ultimate-word-game/index.md"
-            , "tags": ["games","web-based-games"]
-            
-            ,"link": "http://www.playbabble.com/1091"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/del-icio-us-bookmarks-for-2006-03-12/",
-            "url": "https://mirror.roytang.net/2006/03/del-icio-us-bookmarks-for-2006-03-12/",
-            "path": "/2006/03/del-icio-us-bookmarks-for-2006-03-12/",
-            "title": "Del.icio.us bookmarks for 2006-03-12",
-            "content_html": "\u003cp\u003eShared bookmarks for \u003ca href=\"http://del.icio.us/\"\u003edel.icio.us\u003c/a\u003e user \u003ca href=\"http://del.icio.us/roytang\"\u003eroytang \u003c/a\u003eon 2006-03-12\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"http://www.tamba2.org.uk/wordpress/usb/\" title=\"http://www.tamba2.org.uk/wordpress/usb/\"\u003eWordPress \u0026ndash; USB\u003c/a\u003e —\u003c/p\u003e\n\u003cp\u003eWordpress on a stickTagged as: usb wordpress\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "Shared bookmarks for del.icio.us user roytang on 2006-03-12\n  WordPress \u0026ndash; USB —\nWordpress on a stickTagged as: usb wordpress\n  ",
-            "date_published": "2006-03-12T18:00:01+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2006/03/del-icio-us-bookmarks-for-2006-03-12/index.md"
-            , "tags": ["Links"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/wordpress-usb/",
-            "url": "https://mirror.roytang.net/2006/03/wordpress-usb/",
-            "path": "/2006/03/wordpress-usb/",
-            "title": "WordPress - USB",
-            "content_html": "\u003cp\u003eWordpress on a stick\u003c/p\u003e\n",
-            "summary": "Wordpress on a stick",
-            "date_published": "2006-03-12T16:00:27+00:00",
-            "date_modified": "2021-01-20T01:07:07+08:00",
-            "section": "links",
-            "source_path": "links/2006/03/wordpress-usb/index.md"
-            , "tags": ["wordpress","usb","broken-link"]
-            
-            ,"link": "http://www.tamba2.org.uk/wordpress/usb/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2006/03/recent-reading-2006-03-12/",
-            "url": "https://mirror.roytang.net/2006/03/recent-reading-2006-03-12/",
-            "path": "/2006/03/recent-reading-2006-03-12/",
-            "title": "Recent Reading 2006-03-12",
-            "content_html": "\u003cp\u003eBooks I\u0026rsquo;ve finished reading in the past few months:\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eRapid Development\u003c/em\u003e by Steve McConnell \u0026ndash; I was browsing through my company\u0026rsquo;s small library of development books and found this little gem among the usual language-specific tomes. A bit old, but I know from Code Complete that Steve McConnell really hits in the mark with regard to software best practices. This book is aimed mainly at technical leads — coincidentally, that was my role at the time. I picked up a lot of good ideas, hopefully I can start to make some interesting changes in the place I work at.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003ePragmatic Programmer: From Journeyman to Master\u003c/em\u003e by Andrew Hunt and David Thomas \u0026ndash; yeah, I\u0026rsquo;ve been in a sort of \u0026ldquo;improving my software development skills\u0026rdquo; mode lately, snapping up books like this and the previous one and going through them like life depended on it. Lots of sagely advice here, mostly stuff good developers know about inherently, and quite a few good ideas new to me.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eAng Alamat ng Gubat\u003c/em\u003e by Bob Ong \u0026ndash; literally translated, it\u0026rsquo;s \u0026ldquo;The Forest Legend\u0026rdquo;; the book is somewhat of a modern-day fable about how things are in the modern-day Philippines. I\u0026rsquo;m pretty sure each of the animals in the book represents some sector of society and its\u0026rsquo; faults, but I don\u0026rsquo;t think I\u0026rsquo;m currently smart enough to identify them all.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eStainless Longganisa\u003c/em\u003e by Bob Ong \u0026ndash; I picked up this and the previous book on a whim at National Bookstore, because we were sorely in need of new bathroom reading material. (I\u0026rsquo;m not kidding, and bathroom reading material should be a treasured position among authors.) As usual, Bob Ong starts off with some hilarious real-life tales, before heading into some serious stuff about life in the Philippines. The main thrust of this book is to explain how and why he became a writer, giving the reader some insights into what aspiring writers in the Philippines can look forward to (or avoid.)\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eEqual Rites\u003c/em\u003e by Terry Pratchett \u0026ndash; I think this is the third Discworld book, but it\u0026rsquo;s only the first one I finished. I\u0026rsquo;m not sure, it seems like the Discworld books make relatively quick and painless reading. It\u0026rsquo;s light fantasy of course, much the same way that Douglas Adams is light sci-fi; not the sort of thing you should seriously form a whole range of theories about, but fascinating nonetheless. I believe I will try to read more of these books.\u003c/p\u003e\n",
-            "summary": "Books I\u0026rsquo;ve finished reading in the past few months:\nRapid Development by Steve McConnell \u0026ndash; I was browsing through my company\u0026rsquo;s small library of development books and found this little gem among the usual language-specific tomes. A bit old, but I know from Code Complete that Steve McConnell really hits in the mark with regard to software best practices. This book is aimed mainly at technical leads — coincidentally, that was my role at the time.",
-            "date_published": "2006-03-12T00:42:25+00:00",
-            "date_modified": "2020-05-01T02:59:56+08:00",
-            "section": "post",
-            "source_path": "post/2006/03/recent-reading-2006-03-12/index.md"
-            , "tags": ["Books","Pop Culture"]
-            
-            
-            , "comments": [
-                { 
-                    "url": "http://clair.pinoyweb.net",
-                    "source_file": "comment-20060314093459-wp-Clair.json"
-                }
-            ]
             }
         
     ]

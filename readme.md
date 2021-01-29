@@ -18,24 +18,25 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Software development topics I&#39;ve changed my mind on after 6 years in the industry](https://mirror.roytang.net/2021/01/software-development-topics-ive-changed-my-mind-on-after-6-years-in-the-industry/)
 - [Doomscrolling at Scale](https://mirror.roytang.net/2021/01/doomscrolling-at-scale/)
 - [Andrea Zittel: These things I know for sure](https://mirror.roytang.net/2021/01/andrea-zittel-these-things-i-know-for-sure/)
 - [Facebook Disabled My Account After I Criticized Them](https://mirror.roytang.net/2021/01/facebook-disabled-my-account-after-i-criticized-them/)
 - [How homogeneous is Japan?](https://mirror.roytang.net/2021/01/how-homogeneous-is-japan/)
-- [The man third in the line of presidential succession has been in five &#39;Batman&#39; movies](https://mirror.roytang.net/2021/01/the-man-third-in-the-line-of-presidential-succession-has-been-in-five-batman-movies/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [29 Jan 2021 4:56am](https://mirror.roytang.net/2021/01/1355016829169754115/): Streaming some Civ 6 with Vietnam! https://www.twitch.tv/twitchyroy #twitch #civ6
+- [28 Jan 2021 5:57am](https://mirror.roytang.net/2021/01/1354670019045584899/): The whole Gamestop brouhaha reminds me of the explanation I made for stock market prices a while back on reddit&rsquo;s ELI5 forum: https://www.reddit.com/r/explainlikeimfive/comments/6c9plk/eli5_stock_prices_constantly_changing/dhtc9qo/?context=3
+&ldquo;There is no magic formula that predicts what stock prices will be (whoever discovers that first will be rich). It&rsquo;s largely a matter of perception and psychology. Sometimes stock prices move mainly because of rumors or speculation.&rdquo; -&gt; basically everything&rsquo;s made up, lol
+And if I may add, if this reddit thing ends up as a catalyst to topple/reform capitalism, unlikely as it may seem, I would find that hilarious
 - [28 Jan 2021 12:08am](https://mirror.roytang.net/2021/01/gkyo689/): No, I only got the one search result and that was the matching one
 - [27 Jan 2021 7:13pm](https://mirror.roytang.net/2021/01/gkxp5u8/): I followed the Sporza feed that was the result of pasting that url, and it looks like it&rsquo;s the correct one:
 https://i.imgur.com/RK7pNDG.png
 - [25 Jan 2021 5:14am](https://mirror.roytang.net/2021/01/1353571824806727680/): @angelicaaira I think most people naman are dealing with some level of fear and/or anxiety, it&rsquo;s just that hindi sya visible for most people, and there are those who can handle it better, so sometimes you can feel like ikaw lang ang ganun sa mundo. Rest assured, it gets better
-- [24 Jan 2021 2:06pm](https://mirror.roytang.net/2021/01/1353343377157181443/): Write despite rejection. Write like the world is ending. Write like this may be the last minute you have to say the inarticulable thing. And write in spite of the world&ndash;with love for this irredeemable beautiful ravaged planet. Write for the mouse in the kitchen.
-- [24 Jan 2021 11:52am](https://mirror.roytang.net/2021/01/1353309670799073285/): TIL shambolically: in a confused or disorganised manner
-Quoted TheEconomist&#39;s tweet:   Few countries have handled vaccine procurement as shambolically as the Philippines https://econ.st/394APqN  
 
 [View all notes](https://mirror.roytang.net/notes)
 
