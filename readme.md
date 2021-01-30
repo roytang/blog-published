@@ -29,14 +29,13 @@ Latest shared links:
 Latest notes:
     
 
-- [29 Jan 2021 4:56am](https://mirror.roytang.net/2021/01/1355016829169754115/): Streaming some Civ 6 with Vietnam! https://www.twitch.tv/twitchyroy #twitch #civ6
-- [28 Jan 2021 5:57am](https://mirror.roytang.net/2021/01/1354670019045584899/): The whole Gamestop brouhaha reminds me of the explanation I made for stock market prices a while back on reddit&rsquo;s ELI5 forum: https://www.reddit.com/r/explainlikeimfive/comments/6c9plk/eli5_stock_prices_constantly_changing/dhtc9qo/?context=3
-&ldquo;There is no magic formula that predicts what stock prices will be (whoever discovers that first will be rich). It&rsquo;s largely a matter of perception and psychology. Sometimes stock prices move mainly because of rumors or speculation.&rdquo; -&gt; basically everything&rsquo;s made up, lol
-And if I may add, if this reddit thing ends up as a catalyst to topple/reform capitalism, unlikely as it may seem, I would find that hilarious
-- [28 Jan 2021 12:08am](https://mirror.roytang.net/2021/01/gkyo689/): No, I only got the one search result and that was the matching one
-- [27 Jan 2021 7:13pm](https://mirror.roytang.net/2021/01/gkxp5u8/): I followed the Sporza feed that was the result of pasting that url, and it looks like it&rsquo;s the correct one:
-https://i.imgur.com/RK7pNDG.png
-- [25 Jan 2021 5:14am](https://mirror.roytang.net/2021/01/1353571824806727680/): @angelicaaira I think most people naman are dealing with some level of fear and/or anxiety, it&rsquo;s just that hindi sya visible for most people, and there are those who can handle it better, so sometimes you can feel like ikaw lang ang ganun sa mundo. Rest assured, it gets better
+- [30 Jan 2021 1:52am](https://mirror.roytang.net/2021/01/1355333156157591552/): @wrongwaygoback @mtgaaron @maro254 I just woke up, what&rsquo;s happening?
+- [30 Jan 2021 1:43am](https://mirror.roytang.net/2021/01/1355330692813516804/): @switchfollows but wala pa rin balita when we&rsquo;ll get D+ here D:
+- [30 Jan 2021 12:49am](https://mirror.roytang.net/2021/01/gl991w8/): This is great. Any tips for capturing people&rsquo;s likenesses?
+- [29 Jan 2021 5:37pm](https://mirror.roytang.net/2021/01/1355208484178939906/): No spoilers: WandaVision is so so good.
+- [29 Jan 2021 2:43pm](https://mirror.roytang.net/2021/01/1355164547842248704/): Streaming some late-night Kaldheim sealed! https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena
+I ended up playing a dumb 3-color deck and only went 2-3 due to mana issues and being unable to kill big dudes. Draft next week probably!
+YT: https://www.youtube.com/watch?v=5Afau62kS1w
 
 [View all notes](https://mirror.roytang.net/notes)
 
