@@ -7,22 +7,22 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-01-31 Stonks!](https://mirror.roytang.net/2021/01/weeknotes-2021-01-31/)
 - [Weeknotes 2021-01-24](https://mirror.roytang.net/2021/01/weeknotes-2021-01-24/)
 - [Thoughts on Tech Censorship and Social Media](https://mirror.roytang.net/2021/01/tech-censorship/)
 - [Book Review: The End of Everything by Katie Mack](https://mirror.roytang.net/2021/01/book-review-the-end-of-everything-by-katie-mack/)
 - [Weeknotes 2021-01-17 There May Or May Not Be Sea Shanties](https://mirror.roytang.net/2021/01/weeknotes-2021-01-17/)
-- [Weeknotes 2021-01-10 Now With More Links](https://mirror.roytang.net/2021/01/weeknotes-2021-01-10/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
 Latest shared links:
     
 
+- [So you&#39;ve made a mistake and it&#39;s public...](https://mirror.roytang.net/2021/01/so-youve-made-a-mistake-and-its-public/)
 - [Software development topics I&#39;ve changed my mind on after 6 years in the industry](https://mirror.roytang.net/2021/01/software-development-topics-ive-changed-my-mind-on-after-6-years-in-the-industry/)
 - [Doomscrolling at Scale](https://mirror.roytang.net/2021/01/doomscrolling-at-scale/)
 - [Andrea Zittel: These things I know for sure](https://mirror.roytang.net/2021/01/andrea-zittel-these-things-i-know-for-sure/)
 - [Facebook Disabled My Account After I Criticized Them](https://mirror.roytang.net/2021/01/facebook-disabled-my-account-after-i-criticized-them/)
-- [How homogeneous is Japan?](https://mirror.roytang.net/2021/01/how-homogeneous-is-japan/)
 
 [View all links](https://mirror.roytang.net/links)
 

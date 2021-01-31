@@ -1,4 +1,6 @@
 
+- [So you&#39;ve made a mistake and it&#39;s public...](/2021/01/so-youve-made-a-mistake-and-its-public/)
+
 - [Software development topics I&#39;ve changed my mind on after 6 years in the industry](/2021/01/software-development-topics-ive-changed-my-mind-on-after-6-years-in-the-industry/)
 
 - [Doomscrolling at Scale](/2021/01/doomscrolling-at-scale/)
