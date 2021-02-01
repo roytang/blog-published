@@ -18,24 +18,24 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Grow the IndieWeb with Webmentions](https://mirror.roytang.net/2021/01/grow-the-indieweb-with-webmentions/)
+- [20 Lessons from 5 years of developing Academia: School Simulator](https://mirror.roytang.net/2021/01/20-lessons-from-5-years-of-developing-academia-school-simulator/)
 - [So you&#39;ve made a mistake and it&#39;s public...](https://mirror.roytang.net/2021/01/so-youve-made-a-mistake-and-its-public/)
 - [Software development topics I&#39;ve changed my mind on after 6 years in the industry](https://mirror.roytang.net/2021/01/software-development-topics-ive-changed-my-mind-on-after-6-years-in-the-industry/)
 - [Doomscrolling at Scale](https://mirror.roytang.net/2021/01/doomscrolling-at-scale/)
-- [Andrea Zittel: These things I know for sure](https://mirror.roytang.net/2021/01/andrea-zittel-these-things-i-know-for-sure/)
-- [Facebook Disabled My Account After I Criticized Them](https://mirror.roytang.net/2021/01/facebook-disabled-my-account-after-i-criticized-them/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [31 Jan 2021 5:52am](https://mirror.roytang.net/2021/01/1355755874015449089/): Drafting Kaldheim ep1 https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena #kaldheim
+Ran RW, only managed a meager 3-3, but that&rsquo;s plenty since I feel like I drafted terribly lol.
+YT: https://www.youtube.com/watch?v=zao0PjGKlyw
 - [30 Jan 2021 1:52am](https://mirror.roytang.net/2021/01/1355333156157591552/): @wrongwaygoback @mtgaaron @maro254 I just woke up, what&rsquo;s happening?
 - [30 Jan 2021 1:43am](https://mirror.roytang.net/2021/01/1355330692813516804/): @switchfollows but wala pa rin balita when we&rsquo;ll get D+ here D:
 - [30 Jan 2021 12:49am](https://mirror.roytang.net/2021/01/gl991w8/): This is great. Any tips for capturing people&rsquo;s likenesses?
 - [29 Jan 2021 5:37pm](https://mirror.roytang.net/2021/01/1355208484178939906/): No spoilers: WandaVision is so so good.
-- [29 Jan 2021 2:43pm](https://mirror.roytang.net/2021/01/1355164547842248704/): Streaming some late-night Kaldheim sealed! https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena
-I ended up playing a dumb 3-color deck and only went 2-3 due to mana issues and being unable to kill big dudes. Draft next week probably!
-YT: https://www.youtube.com/watch?v=5Afau62kS1w
 
 [View all notes](https://mirror.roytang.net/notes)
 
