@@ -1,4 +1,6 @@
 
+- [Why Generation X will save the web](/2021/02/why-generation-x-will-save-the-web/)
+
 - [Grow the IndieWeb with Webmentions](/2021/01/grow-the-indieweb-with-webmentions/)
 
 - [20 Lessons from 5 years of developing Academia: School Simulator](/2021/01/20-lessons-from-5-years-of-developing-academia-school-simulator/)
