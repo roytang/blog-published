@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [1 Feb 2021 1:20pm](https://mirror.roytang.net/2021/02/1356230925277822976/): Shared via pocket: Why Generation X will save the web https://webdevlaw.uk/2021/01/30/why-generation-x-will-save-the-web/
 - [1 Feb 2021 11:08am](https://mirror.roytang.net/2021/02/1356197700480479232/): Drafting Kaldheim ep2 https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena #kaldheim
 Today&rsquo;s draft went slightly better than the last one, though I still lost to some mana issues because I went for the greedy 5-color snow build.
 YT: https://www.youtube.com/watch?v=EKkEC5DEe8E
@@ -37,7 +38,6 @@ YT: https://www.youtube.com/watch?v=EKkEC5DEe8E
 Ran RW, only managed a meager 3-3, but that&rsquo;s plenty since I feel like I drafted terribly lol.
 YT: https://www.youtube.com/watch?v=zao0PjGKlyw
 - [30 Jan 2021 1:52am](https://mirror.roytang.net/2021/01/1355333156157591552/): @wrongwaygoback @mtgaaron @maro254 I just woke up, what&rsquo;s happening?
-- [30 Jan 2021 1:43am](https://mirror.roytang.net/2021/01/1355330692813516804/): @switchfollows but wala pa rin balita when we&rsquo;ll get D+ here D:
 
 [View all notes](https://mirror.roytang.net/notes)
 

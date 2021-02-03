@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/04/ekk4quj/",
+            "url": "https://mirror.roytang.net/2019/04/ekk4quj/",
+            "path": "/2019/04/ekk4quj/",
+            "title": "",
+            "content_html": "\u003cp\u003ePlane\u003c/p\u003e\n",
+            "summary": "Plane",
+            "date_published": "2019-04-10T16:49:37+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/04/ekk4quj/index.md"
+            , "tags": ["todayilearned"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/todayilearned/comments/bbjsfd/til_seattletacoma_international_airport_in/ekk4quj/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/04/ekjdthd/",
+            "url": "https://mirror.roytang.net/2019/04/ekjdthd/",
+            "path": "/2019/04/ekjdthd/",
+            "title": "",
+            "content_html": "\u003cp\u003eHoho, I\u0026rsquo;ll be visiting Seattle in June, this is good to hear\u003c/p\u003e\n",
+            "summary": "Hoho, I\u0026rsquo;ll be visiting Seattle in June, this is good to hear",
+            "date_published": "2019-04-10T10:51:34+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/04/ekjdthd/index.md"
+            , "tags": ["todayilearned"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/todayilearned/comments/bbjsfd/til_seattletacoma_international_airport_in/ekjdthd/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/04/initial-page-load/",
             "url": "https://mirror.roytang.net/2019/04/initial-page-load/",
             "path": "/2019/04/initial-page-load/",
@@ -871,40 +905,6 @@
             "source_path": "notes/2019/03/1110072615362674689.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110072615362674689/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
-            "url": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
-            "path": "/2019/03/a-quick-twitter-app-i-wrote/",
-            "title": "A Quick Twitter App I Wrote",
-            "content_html": "\u003cp\u003eI wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\u003c/p\u003e\n\u003cp\u003eSome time ago this guy I follow on Twitter, \u003ca href=\"https://twitter.com/visakanv/\"\u003evisakanv\u003c/a\u003e wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s \u003ca href=\"https://twitter.com/visakanv/status/1087316852663939072\"\u003ethe thread\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eAnyway, in a fit of \u0026ldquo;I\u0026rsquo;m a bit bored, anything interesting I could do?\u0026rdquo; I figured I could set up a quick webapp to do that. I did a quick PoC in Python/Flask, with \u003ca href=\"http://www.tweepy.org/\"\u003eTweepy\u003c/a\u003e for accessing the Twitter API. I normally prefer Django for my webapps, but since this was just a small, quick app, I figured Flask would be ideal. That worked out fine, except that I had to use my personal access tokens to for all the API calls. This means that if many people were using the app, it was likely to hit Twitter\u0026rsquo;s rate limits!\u003c/p\u003e\n\u003cp\u003eThat was a few months back. A couple of days ago, someone emailed me asking about an error he encountered using the app, and sure enough it was due to the rate limits. I had a couple of free hours last weekend, so I figured I\u0026rsquo;d update the app a bit. I decided to add a Twitter login requirement, that way we can use the individual user\u0026rsquo;s access token instead of using mine globally. This would allow the rate limits to be per user and thus less likely to be hit. Now, I\u0026rsquo;ve tried implementing OAuth login some years ago and it can be terribly complicated, but luckily I found out that there\u0026rsquo;s a nifty Python package called \u003ca href=\"https://github.com/singingwolfboy/flask-dance\"\u003eFlask-Dance\u003c/a\u003e that made it super easy to add Twitter OAuth to a Flask app. This also let me discard the Tweepy dependency, since the Twitter OAuth session let me query the API endpoints directly. I also did a bit of UI cleanup and error handling and deployed the changes quickly.\u003c/p\u003e\n\u003cp\u003eThe app is available online at \u003ca href=\"/apps/twitter\"\u003eroytang.net/apps/twitter\u003c/a\u003e. There\u0026rsquo;s a few other Twitter tools I\u0026rsquo;ve been meaning to build, so I\u0026rsquo;ll probably put them here too when I get around to them.\u003c/p\u003e\n",
-            "summary": "I wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\nSome time ago this guy I follow on Twitter, visakanv wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s the thread.",
-            "date_published": "2019-03-25T05:56:56+00:00",
-            "date_modified": "2021-01-25T07:34:22+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/twitter-app/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110059423018430464/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/meritocracy/",
-            "url": "https://mirror.roytang.net/2019/03/meritocracy/",
-            "path": "/2019/03/meritocracy/",
-            "title": "Meritocracy",
-            "content_html": "\u003cp\u003eThe concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the \u003ca href=\"http://time.com/5549921/college-admissions-bribery-scandal/\"\u003erecent college admissions scandal\u003c/a\u003e in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money. Of course, it was always open knowledge before that one could get their kid admitted to such universities simply by making a huge donation. The recent events apparently crosses some line because the \u0026ldquo;donation\u0026rdquo; was in the form of bribe money to individuals instead of the school itself, but even without them there was no true meritocracy.\u003c/p\u003e\n\u003cp\u003eI went to a specialized high school (and college) that had supposedly merit-based entrance exams as well, such that one could simply not get in without passing the exams. (Athletics-based admissions aren\u0026rsquo;t very popular in this country.) Even in such a system, rich kids still have a significant leg up of course - aside from growing up in an environment that favored them, their parents could also afford to send them to expensive review centers to prep for the exams. I was reminded of this due to a recent thread among my HS batchmates discussing how their kids had to prep for the entrance exams years early because it was much more competitive these days.\u003c/p\u003e\n\u003cp\u003eI used to be a strong believer in meritocracy when I was young (probably due to my educational background), believing it to be an ideal for society to aspire to. The idea is certainly attractive - that we should give the jobs and positions to those who would be able to use them most effectively, for the betterment of society. I later learned that the term orignated in 1958 as a condemnatory word by Michael Young in his work \u0026ldquo;The Rise of the Meritocracy\u0026rdquo;. I realize now that while a pure meritocracy would be nice, it would disadvantage people who are already behind in life due to poverty, sickness or other such challenges. I think that like many things, some sort of balance is better struck, with a \u0026ldquo;meritocracy at large\u0026rdquo; in effect for the most part, but with opportunities promoted for marginalized groups. That is, a meritocracy that favors the poor instead of the rich.\u003c/p\u003e\n\u003cp\u003eAll this meritocract quote reminds me of a quote from the Simpsons\u0026rsquo; villainous Mr Burns who tries to justify cheating in a contest during a company retreat, which gives us a different perspective:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eMr. Burns: Tell me, Simpson, if an opportunity arose for taking a small short-cut, you wouldn\u0026rsquo;t be averse to taking it, would you?\u003c/p\u003e\n\u003cp\u003eHomer: Hmm, not as such.\u003c/p\u003e\n\u003cp\u003eMr. Burns: Neither would I. If you can take advantage of a situation in some way, it\u0026rsquo;s your duty as an American to do it. Why should the race always be to the swift, or the Jumble to the quick-witted? Should they be allowed to win merely because of the gifts God gave them? Well I say, \u0026ldquo;Cheating is the gift man gives himself.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHomer: Mr. Burns, I insist that we cheat!\u003c/p\u003e\n\u003cp\u003eMr. Burns: Excellent!\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "The concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the recent college admissions scandal in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money.",
-            "date_published": "2019-03-24T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/meritocracy/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
             
             
             }
