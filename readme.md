@@ -29,15 +29,16 @@ Latest shared links:
 Latest notes:
     
 
+- [3 Feb 2021 3:11pm](https://mirror.roytang.net/2021/02/23ef43058c482c829265e01e331d53c2/): Please write more.
+Not just on social media, FB, Twitter, whatever. Write on your own sites and blogs. On your tumblrs, wordpresses, whatever. Long-form, rambling, incessant. The world could use more sincere blogging.
+- [3 Feb 2021 11:21am](https://mirror.roytang.net/2021/02/1356925836297981955/): Drafting Kaldheim ep3 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+Wasn&rsquo;t able to screencap the results, but this draft went quite well! Tergrid&rsquo;s Lantern is definitely a bomb, and even the squirrel overperformed I think.
+YT: https://www.youtube.com/watch?v=n9FPB1Ivl7U
 - [1 Feb 2021 1:20pm](https://mirror.roytang.net/2021/02/1356230925277822976/): Shared via pocket: Why Generation X will save the web https://webdevlaw.uk/2021/01/30/why-generation-x-will-save-the-web/
 - [1 Feb 2021 11:08am](https://mirror.roytang.net/2021/02/1356197700480479232/): Drafting Kaldheim ep2 https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena #kaldheim
 Today&rsquo;s draft went slightly better than the last one, though I still lost to some mana issues because I went for the greedy 5-color snow build.
 YT: https://www.youtube.com/watch?v=EKkEC5DEe8E
 - [1 Feb 2021 6:48am](https://mirror.roytang.net/2021/02/1356132294101065730/): @rocketkeis good luck!
-- [31 Jan 2021 5:52am](https://mirror.roytang.net/2021/01/1355755874015449089/): Drafting Kaldheim ep1 https://www.twitch.tv/twitchyroy #twitch #mtg #magicarena #kaldheim
-Ran RW, only managed a meager 3-3, but that&rsquo;s plenty since I feel like I drafted terribly lol.
-YT: https://www.youtube.com/watch?v=zao0PjGKlyw
-- [30 Jan 2021 1:52am](https://mirror.roytang.net/2021/01/1355333156157591552/): @wrongwaygoback @mtgaaron @maro254 I just woke up, what&rsquo;s happening?
 
 [View all notes](https://mirror.roytang.net/notes)
 
