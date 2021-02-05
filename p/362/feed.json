@@ -11,6 +11,31 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/",
+            "url": "https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/",
+            "path": "/2008/02/mtg-autocard-wordpress-plugin/",
+            "title": "MTG Autocard WordPress Plugin",
+            "content_html": "\u003cp\u003eI had been planning to do this for a while: it\u0026rsquo;s my first WordPress Plugin! Over at \u003ca href=\"/tags/mtg\"\u003eRoy on Magic\u003c/a\u003e, I often have to write out decklists and such, so I wanted to have an autocard feature similar to the one used at MTGSalvation. After a quick five-minute search I couldn\u0026rsquo;t figure out how they did it, so I just wrote the plugin myself. Actual effort was around 3.5 hours, most of it struggling with PHP and Regular Expressions. :p\u003c/p\u003e\n\u003cp\u003eDetails and download are at \u003ca href=\"http://roytang.pbworks.com/w/page/7977432/MTG-Autocard-WP\"\u003ehttp://roytang.pbworks.com/w/page/7977432/MTG-Autocard-WP\u003c/a\u003e. Hopefully someone else will find it useful.\u003c/p\u003e\n\u003cp\u003eUpdate Jan 2021: Since the wiki link above is obsolete, I\u0026rsquo;ve rescued the text below for archival purposes. \u003cem\u003eThis is not an active project!\u003c/em\u003e The download link below should be working, but I make no guarantees as to whether it will still work with current wordpress versions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cem\u003eMTG Autocard for Wordpress\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eWhat: Wordpress Plugin\u003c/p\u003e\n\u003cp\u003ePlugin Name: MTG Autocard for Wordpress\u003c/p\u003e\n\u003cp\u003eURI: \u003ca href=\"http://www.roytang.net/wiki/index.php/MTG_Autocard_WP\"\u003ehttp://www.roytang.net/wiki/index.php/MTG_Autocard_WP\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eDescription: For Magic: The Gathering bloggers, a plugin that will automatically convert [CARD] and [DECK] tags to autocard links.\u003c/p\u003e\n\u003cp\u003eAuthor: Roy Tang\u003c/p\u003e\n\u003cp\u003eVersion: 1.1\u003c/p\u003e\n\u003cp\u003eAuthor URI: \u003ca href=\"http://roytang.net\"\u003ehttp://roytang.net\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eRevision 12-Oct-2008 (v1.1): Changed the algorithm that splits the card list into columns; can now potentially split into more than two columns.\u003c/p\u003e\n\u003cp\u003eRevision 13-Apr-2008: Fixed a bug where two [CARD] tag pairs in the same line/paragraph won\u0026rsquo;t be converted correctly.\u003c/p\u003e\n\u003ch4 id=\"installation-notes\"\u003eInstallation Notes\u003c/h4\u003e\n\u003cp\u003eDownload the latest version file from /files/autocard.1.1.zip\u003c/p\u003e\n\u003cp\u003eExtract autocard.php\u003c/p\u003e\n\u003cp\u003eUpload autocard.php into your wp-content/plugins folder\u003c/p\u003e\n\u003cp\u003eActivate the plugin in the Wordpress Admin interface\u003c/p\u003e\n\u003ch4 id=\"usage-notes\"\u003eUsage Notes\u003c/h4\u003e\n\u003cp\u003eWhen posting, use \u003ccode\u003e[CARD](cardname)[/CARD]\u003c/code\u003e to generate an autocard link to a single card.\u003c/p\u003e\n\u003cp\u003eWhen posting a decklist, use a format like\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e[DECK]\nHeader1\n4 Cardname1\n4 Cardname2\n\nHeader2\n12 Cardname3\n8 Cardname4\n[/DECK]\n\u003c/code\u003e\u003c/pre\u003e\u003cp\u003eThe above will generate a two-column table with autocard links. The program will try to break the list into two columns at the first header that exists after the midpoint.\u003c/p\u003e\n\u003cp\u003eTo change the style of the decklist table, add a CSS definition for \u0026ldquo;autocard_table\u0026rdquo; in your style.css, for example:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e.autocard_table {border: 1px red solid; background-color: yellow;}\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eTodo list\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCreate a settings page to allow the user to select the URL opened by the autocard links. (Currently always uses \u003ca href=\"http://magiccards.info/autocard.php\"\u003ehttp://magiccards.info/autocard.php\u003c/a\u003e)\u003c/li\u003e\n\u003cli\u003eMore options for formatting the autocard_table, i.e. more columns, etc.\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "I had been planning to do this for a while: it\u0026rsquo;s my first WordPress Plugin! Over at Roy on Magic, I often have to write out decklists and such, so I wanted to have an autocard feature similar to the one used at MTGSalvation. After a quick five-minute search I couldn\u0026rsquo;t figure out how they did it, so I just wrote the plugin myself. Actual effort was around 3.5 hours, most of it struggling with PHP and Regular Expressions.",
+            "date_published": "2008-02-10T15:18:23+00:00",
+            "date_modified": "2021-01-25T00:27:29+08:00",
+            "section": "post",
+            "source_path": "post/2008/02/mtg-autocard-wordpress-plugin/index.md"
+            , "tags": ["wordpress","Software Development"]
+            
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-20110705162334-wp-Mario B.json"
+                }, { 
+                    "url": "https://roytang.net/",
+                    "source_file": "comment-20110706050116-wp-roy.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2008/02/i-have-a-psp/",
             "url": "https://mirror.roytang.net/2008/02/i-have-a-psp/",
             "path": "/2008/02/i-have-a-psp/",
@@ -870,23 +895,6 @@
             "section": "post",
             "source_path": "post/2007/11/lorwyn-inaugurals/index.md"
             , "tags": ["mtg"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2007/11/wow-hacked/",
-            "url": "https://mirror.roytang.net/2007/11/wow-hacked/",
-            "path": "/2007/11/wow-hacked/",
-            "title": "WoW, Hacked!",
-            "content_html": "\u003cp\u003e2 days ago: My brother Alvin and Brian report suspicious activities on the computer in their room. Random Chinese popups appearing, mysterious processes in the taskbar. As needed, virus scans and adware scans are done. Trojans are identified and quarantined, but keep reappearing. Brian plays WoW on the machine despite the issues.\u003c/p\u003e\n\u003cp\u003eYesterday: Alvin decides to reformat the machine and begins backing up. Brian plays WoW on the machine in my room instead.\u003c/p\u003e\n\u003cp\u003eTonight, around 8 PM: I\u0026rsquo;m surfing the ‘net at work before I go for the day, I receive an instant message from Alvin telling me they can\u0026rsquo;t login to the WoW account. I try the password recovery, but it won\u0026rsquo;t accept my details. I IM Alvin to keep trying, and hurry home.\u003c/p\u003e\n\u003cp\u003eAround 9:30 PM: I notice emails that tell me that a paid character transfer has been performed on the WoW account. We\u0026rsquo;ve been hacked! I immediately use the web form on Blizzard\u0026rsquo;s site to report the incident. I\u0026rsquo;ve already lost $25 to the hacker.\u003c/p\u003e\n\u003cp\u003eWe still have no idea how it happened. My best guess is a keylogger on the other machine that trapped the WoW account password. We\u0026rsquo;ve been toning down the WoW-playing lately, so it may be time to kill the account, if Blizzard actually responds in time. In the worst case, I\u0026rsquo;ll need to have my credit card canceled if Blizzard refuses to help.\u003c/p\u003e\n\u003cp\u003eEdit 23-Nov 7:37 AM: Around 12:30 AM today, Blizzard reset my account password and notified that they were in the process of character transfer reversal. I immediately went in and updated the details. Very good service, Changed my passwords elsewhere too, for good measure.\u003c/p\u003e\n\u003cp\u003eMore as it develops\u0026hellip;\u003c/p\u003e\n",
-            "summary": "2 days ago: My brother Alvin and Brian report suspicious activities on the computer in their room. Random Chinese popups appearing, mysterious processes in the taskbar. As needed, virus scans and adware scans are done. Trojans are identified and quarantined, but keep reappearing. Brian plays WoW on the machine despite the issues.\nYesterday: Alvin decides to reformat the machine and begins backing up. Brian plays WoW on the machine in my room instead.",
-            "date_published": "2007-11-22T05:55:27+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2007/11/wow-hacked/index.md"
-            , "tags": ["Gaming"]
             
             
             
