@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-02-07](/2021/02/weeknotes-2021-02-07/)
+
 - [Weeknotes 2021-01-31 Stonks!](/2021/01/weeknotes-2021-01-31/)
 
 - [Weeknotes 2021-01-24](/2021/01/weeknotes-2021-01-24/)
