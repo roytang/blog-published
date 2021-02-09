@@ -11,6 +11,113 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/11/47333503/",
+            "url": "https://mirror.roytang.net/2017/11/47333503/",
+            "path": "/2017/11/47333503/",
+            "title": "Marklogic Roxy: Calling a javascript module from app_specific.rb",
+            "content_html": "\u003cp\u003eI have a Marklogic 9 project that I\u0026rsquo;m configuring with Roxy.\nI\u0026rsquo;ve been following these examples: \u003ca href=\"https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\"\u003ehttps://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eBasically, I have a server-side JS function that I want to call after deploy content. I have something like this:\u003c/p\u003e\n\u003ch1 id=\"then-you-would-define-your-new-method\"\u003ethen you would define your new method\u003c/h1\u003e\n\u003cpre\u003e\u003ccode\u003e  def deploy_content\n    # you can optionally call the original\n    original_deploy_content\n\n    # do your stuff here\n    execute_query(%Q{\n      xquery version \u0026quot;1.0-ml\u0026quot;;\n      xdmp:javascript-eval('var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent();')\n    },\n    :db_name =\u0026gt; @properties[\u0026quot;ml.app-name\u0026quot;] + \u0026quot;-content\u0026quot;)\n\n  end\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe xquery being called here evaluates fine when executed via query console. But when I call ml local deploy content, I get the following error:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eERROR: 500 \u0026quot;Internal Server Error\u0026quot;\nERROR: \u0026lt;html xmlns=\u0026quot;http://www.w3.org/1999/xhtml\u0026quot;\u0026gt;\n  \u0026lt;head\u0026gt;\n    \u0026lt;title\u0026gt;500 Internal Server Error\u0026lt;/title\u0026gt;\n    \u0026lt;meta name=\u0026quot;robots\u0026quot; content=\u0026quot;noindex,nofollow\u0026quot;/\u0026gt;\n    \u0026lt;link rel=\u0026quot;stylesheet\u0026quot; href=\u0026quot;/error.css\u0026quot;/\u0026gt;\n  \u0026lt;/head\u0026gt;\n  \u0026lt;body\u0026gt;\n    \u0026lt;span class=\u0026quot;error\u0026quot;\u0026gt;\n      \u0026lt;h1\u0026gt;500 Internal Server Error\u0026lt;/h1\u0026gt;\n      \u0026lt;dl\u0026gt;\n        \u0026lt;dt\u0026gt;XDMP-MODNOTFOUND: var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent(); -- Module /ingestion/process.sjs not found\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;in [anonymous], at 1:14 [javascript]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;at 3:6,\nin xdmp:eval(\u0026quot;var process = require(\u0026amp;amp;quot;/ingestion/process.sjs\u0026amp;amp;quot;); proce...\u0026quot;) [javascript]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n        \u0026lt;dt\u0026gt;in /eval, at 3:6 [1.0-ml]\u0026lt;/dt\u0026gt;\n        \u0026lt;dd\u0026gt;\u0026lt;/dd\u0026gt;\n      \u0026lt;/dl\u0026gt;\n    \u0026lt;/span\u0026gt;\n  \u0026lt;/body\u0026gt;\n\u0026lt;/html\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWhy is the module not found when running via xquery from app_specific.rb?\u003c/p\u003e\n\u003cp\u003eOr\u0026hellip; is there a better way to call a JS module function from here. Sorry, I\u0026rsquo;m not too familiar with the xquery side, so I just called a JS function instead.\u003c/p\u003e\n",
+            "summary": "I have a Marklogic 9 project that I\u0026rsquo;m configuring with Roxy. I\u0026rsquo;ve been following these examples: https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps\nBasically, I have a server-side JS function that I want to call after deploy content. I have something like this:\nthen you would define your new method  def deploy_content # you can optionally call the original original_deploy_content # do your stuff here execute_query(%Q{ xquery version \u0026quot;1.0-ml\u0026quot;; xdmp:javascript-eval('var process = require(\u0026quot;/ingestion/process.sjs\u0026quot;); process.postDeployContent();') }, :db_name =\u0026gt; @properties[\u0026quot;ml.",
+            "date_published": "2017-11-16T15:31:08+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/47333503/index.md"
+            , "tags": ["marklogic","roxy","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47333503/marklogic-roxy-calling-a-javascript-module-from-app-specific-rb"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47333503/marklogic-roxy-calling-a-javascript-module-from-app-specific-rb",
+                    "source_file": "comment-20171116T160107-47334114.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/931139413672783872/",
+            "url": "https://mirror.roytang.net/2017/11/931139413672783872/",
+            "path": "/2017/11/931139413672783872/",
+            "title": "",
+            "content_html": "\u003cp\u003eWAS told BBM has hired Russian \u0026amp; Indonesian trolls; they\u0026rsquo;re cheaper. Unfortunately, their Tagalog is crooked. Test them by talking in Tagalog. Incidentally, Pinoy trolls have quit. Kapag kausap ninyo ang mga bagong trolls, laliman ninyo ang Tagalog para mabuking. They\u0026rsquo;re here.\u003c/p\u003e\n",
+            "summary": "WAS told BBM has hired Russian \u0026amp; Indonesian trolls; they\u0026rsquo;re cheaper. Unfortunately, their Tagalog is crooked. Test them by talking in Tagalog. Incidentally, Pinoy trolls have quit. Kapag kausap ninyo ang mga bagong trolls, laliman ninyo ang Tagalog para mabuking. They\u0026rsquo;re here.",
+            "date_published": "2017-11-16T12:38:30+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931139413672783872/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931139413672783872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/931138992572997637/",
+            "url": "https://mirror.roytang.net/2017/11/931138992572997637/",
+            "path": "/2017/11/931138992572997637/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis honey is A COMPUTER SIMULATION\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/tweet_video/DOwK5kAUMAAX8s5.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
+            "summary": "This honey is A COMPUTER SIMULATION\nYour browser does not support the video tag.  ",
+            "date_published": "2017-11-16T12:36:50+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931138992572997637/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931138992572997637/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/931059702510731266/",
+            "url": "https://mirror.roytang.net/2017/11/931059702510731266/",
+            "path": "/2017/11/931059702510731266/",
+            "title": "",
+            "content_html": "\u003cp\u003eOur president’s rate is probably way lower since he doesnt tweet. Still, sana someone does that analysis haha\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/cnn/status/930520761131061253'\u003eCNN\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    President Trump says something that isn\u0026rsquo;t true 5.5 times a day. Every day. | Analysis by \u003ca href=\"https://twitter.com/CillizzaCNN/\"\u003e@CillizzaCNN\u003c/a\u003e \u003ca href=\"http://cnn.it/2AFkOUr\"\u003ehttp://cnn.it/2AFkOUr\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Our president’s rate is probably way lower since he doesnt tweet. Still, sana someone does that analysis haha\nQuoted CNN\u0026#39;s tweet:   President Trump says something that isn\u0026rsquo;t true 5.5 times a day. Every day. | Analysis by @CillizzaCNN http://cnn.it/2AFkOUr  ",
+            "date_published": "2017-11-16T07:21:45+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/931059702510731266/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/931059702510731266/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/930495482119340032/",
+            "url": "https://mirror.roytang.net/2017/11/930495482119340032/",
+            "path": "/2017/11/930495482119340032/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TolarianCollege/\"\u003e@TolarianCollege\u003c/a\u003e \u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later\u003c/p\u003e\n",
+            "summary": "@TolarianCollege @mtgaaron Someone\u0026rsquo;s gonna be selling it on one of those custom T-shirt stores sooner or later",
+            "date_published": "2017-11-14T17:59:45+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930495482119340032.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495482119340032/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/11/930495180070830080/",
+            "url": "https://mirror.roytang.net/2017/11/930495180070830080/",
+            "path": "/2017/11/930495180070830080/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Nintendo_Legend/\"\u003e@Nintendo_Legend\u003c/a\u003e: Super Nintendo Chalmers! 😂😂\u003c/p\u003e\n",
+            "summary": "RT @Nintendo_Legend: Super Nintendo Chalmers! 😂😂",
+            "date_published": "2017-11-14T17:58:33+00:00",
+            "date_modified": "2020-10-13T15:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/11/930495180070830080/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/930495180070830080/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/11/930494881432088577/",
             "url": "https://mirror.roytang.net/2017/11/930494881432088577/",
             "path": "/2017/11/930494881432088577/",
@@ -794,113 +901,6 @@
             "source_path": "notes/2017/11/927566591943876610/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/927566591943876610/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/927533742993817601/",
-            "url": "https://mirror.roytang.net/2017/11/927533742993817601/",
-            "path": "/2017/11/927533742993817601/",
-            "title": "",
-            "content_html": "\u003cp\u003eAmerica is a stuck in a Groundhog Day loop of gun violence \u003ca href=\"https://kottke.org/17/11/the-united-states-of-guns-2\"\u003ehttps://kottke.org/17/11/the-united-states-of-guns-2\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "America is a stuck in a Groundhog Day loop of gun violence https://kottke.org/17/11/the-united-states-of-guns-2",
-            "date_published": "2017-11-06T13:50:51+00:00",
-            "date_modified": "2020-09-07T19:55:44+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/927533742993817601/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/927533742993817601/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/927525883530719234/",
-            "url": "https://mirror.roytang.net/2017/11/927525883530719234/",
-            "path": "/2017/11/927525883530719234/",
-            "title": "",
-            "content_html": "\u003cp\u003edo you silently judge people who have their cellphone font be some kind of weird cursive\u003c/p\u003e\n",
-            "summary": "do you silently judge people who have their cellphone font be some kind of weird cursive",
-            "date_published": "2017-11-06T13:19:37+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/927525883530719234.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/927525883530719234/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/47129470/",
-            "url": "https://mirror.roytang.net/2017/11/47129470/",
-            "path": "/2017/11/47129470/",
-            "title": "Marklogic Roxy and Template Driven Extraction",
-            "content_html": "\u003cp\u003eDoes Roxy have support for deploying templates for use with Marklogic 9\u0026rsquo;s Template Driven Extraction?\u003c/p\u003e\n",
-            "summary": "Does Roxy have support for deploying templates for use with Marklogic 9\u0026rsquo;s Template Driven Extraction?",
-            "date_published": "2017-11-06T03:48:06+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/47129470/index.md"
-            , "tags": ["marklogic","roxy","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47129470/marklogic-roxy-and-template-driven-extraction"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/47129470/marklogic-roxy-and-template-driven-extraction",
-                    "source_file": "comment-20171106T081233-47132380.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/927150520740954112/",
-            "url": "https://mirror.roytang.net/2017/11/927150520740954112/",
-            "path": "/2017/11/927150520740954112/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e slog implies tedious? i heard it was pretty good\u003c/p\u003e\n",
-            "summary": "@wrongwaygoback slog implies tedious? i heard it was pretty good",
-            "date_published": "2017-11-05T12:28:04+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/927150520740954112.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/927150520740954112/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/927051333663784963/",
-            "url": "https://mirror.roytang.net/2017/11/927051333663784963/",
-            "path": "/2017/11/927051333663784963/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/QTPYEx/\"\u003e@QTPYEx\u003c/a\u003e its likely that posting these only encourages such behavior\u003c/p\u003e\n",
-            "summary": "@QTPYEx its likely that posting these only encourages such behavior",
-            "date_published": "2017-11-05T05:53:56+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/927051333663784963.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/927051333663784963/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/926888363155603457/",
-            "url": "https://mirror.roytang.net/2017/11/926888363155603457/",
-            "path": "/2017/11/926888363155603457/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt eventually gets better, without any sort of explanation; one day u just realize that you’re no longer upset. You’re no longer mad, hurt, or bothered by the things that took so much of ur energy and thoughts. You will find yourself in a peaceful place and enjoy that feeling.\u003c/p\u003e\n",
-            "summary": "It eventually gets better, without any sort of explanation; one day u just realize that you’re no longer upset. You’re no longer mad, hurt, or bothered by the things that took so much of ur energy and thoughts. You will find yourself in a peaceful place and enjoy that feeling.",
-            "date_published": "2017-11-04T19:06:21+00:00",
-            "date_modified": "2020-09-07T19:55:44+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/926888363155603457/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/926888363155603457/"}]
             
             
             }

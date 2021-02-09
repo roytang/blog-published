@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Book Review: The Year Without Pants](https://mirror.roytang.net/2021/02/book-review-the-year-without-pants/)
+- [Link Rot](https://mirror.roytang.net/2021/02/link-rot/)
 - [Weeknotes 2021-02-07](https://mirror.roytang.net/2021/02/weeknotes-2021-02-07/)
 - [Weeknotes 2021-01-31 Stonks!](https://mirror.roytang.net/2021/01/weeknotes-2021-01-31/)
 - [Weeknotes 2021-01-24](https://mirror.roytang.net/2021/01/weeknotes-2021-01-24/)
-- [Thoughts on Tech Censorship and Social Media](https://mirror.roytang.net/2021/01/tech-censorship/)
-- [Book Review: The End of Everything by Katie Mack](https://mirror.roytang.net/2021/01/book-review-the-end-of-everything-by-katie-mack/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,13 +29,15 @@ Latest shared links:
 Latest notes:
     
 
+- [8 Feb 2021 11:11am](https://mirror.roytang.net/2021/02/1358735311971483650/): Drafting Kaldheim ep5 https://www.twitch.tv/twitchyroy
+Managed to do two drafts this time. One of them was a monowhite deck, while the other was a 3 color pile. Easy to predict which one did better.
+YT: https://www.youtube.com/watch?v=7XjAGkOPGk4
 - [7 Feb 2021 10:48pm](https://mirror.roytang.net/2021/02/146ce75d91951cde348df07bbf175ad4/): My computer greets me in the morning as it always has for the past few months: with &ldquo;Your dropbox is almost full&rdquo;.
 - [7 Feb 2021 7:54pm](https://mirror.roytang.net/2021/02/gmeu5pi/): “please respect my belief that your beliefs are bullshit”
 - [7 Feb 2021 6:44am](https://mirror.roytang.net/2021/02/1358305512517849089/): Sometimes I consider writing a regular newsletter about daily goings-on in the country, but I quickly realize I would quickly burn out on the sheer density of shenanigans our politicians/&ldquo;leaders&rdquo; get into. Probably not a job for a single person.
 - [5 Feb 2021 11:19am](https://mirror.roytang.net/2021/02/1357650153709142017/): Gonna draft some more Kaldheim, keep me company if you like: https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
 I got the lantern again, but this draft didn&rsquo;t go as well as the last one. Might have needed more lands.
 YT: https://www.youtube.com/watch?v=wGC-9xAO1Kk
-- [5 Feb 2021 11:15am](https://mirror.roytang.net/2021/02/1357649120769445890/): I finished the WandaVision ep 10 mins ago and I&rsquo;m still in OMGWTH mode
 
 [View all notes](https://mirror.roytang.net/notes)
 

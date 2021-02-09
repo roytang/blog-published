@@ -1,4 +1,8 @@
 
+- [Book Review: The Year Without Pants](/2021/02/book-review-the-year-without-pants/)
+
+- [Link Rot](/2021/02/link-rot/)
+
 - [Thoughts on Tech Censorship and Social Media](/2021/01/tech-censorship/)
 
 - [Regular Reviews and Tracking](/2021/01/regular-reviews-and-tracking/)
