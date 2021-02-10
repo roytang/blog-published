@@ -1,4 +1,8 @@
 
+- [Newsletters, Redux](/2021/02/newsletters-redux/)
+
+- [Sincere Blogging](/2021/02/sincere-blogging/)
+
 - [Book Review: The Year Without Pants](/2021/02/book-review-the-year-without-pants/)
 
 - [Link Rot](/2021/02/link-rot/)

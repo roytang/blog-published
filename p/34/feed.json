@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/07/euak2hq/",
+            "url": "https://mirror.roytang.net/2019/07/euak2hq/",
+            "path": "/2019/07/euak2hq/",
+            "title": "",
+            "content_html": "\u003cp\u003eFinal Fantasy Tactics\u003c/p\u003e\n",
+            "summary": "Final Fantasy Tactics",
+            "date_published": "2019-07-20T11:32:38+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/07/euak2hq/index.md"
+            , "tags": ["AskReddit"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/AskReddit/comments/cfiqjq/gamers_of_reddit_whats_your_favourite_game_of_all/euak2hq/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/",
+            "url": "https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/",
+            "path": "/2019/07/upgrading-a-react-native-project/",
+            "title": "Upgrading a React Native Project",
+            "content_html": "\u003cp\u003eI have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eBy August 1, 2019, all apps that use native code must provide a 64-bit version in addition to the 32-bit version in order to publish an update. This past January, we reiterated that this is required in order to make way for innovation and in anticipation of future Android devices that only support 64-bit code.\u003c/p\u003e\n\u003cp\u003eAs the deadline approaches, we wanted to remind you that at least one of your apps* uses native code but does not currently offer a 64-bit variant\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThis illustrates for me one of the big problems with mobile development: that app was perfectly fine when I last deployed it in 2018 and now even though I haven\u0026rsquo;t changed anything, there\u0026rsquo;s additional work that needs to be done. I guess I\u0026rsquo;m too used to web development where we just deploy the app on a server and the server architecture doesn\u0026rsquo;t suddenly change for no reason. With mobile apps, the platforms and APIs and frameworks change quickly, leading to situations where even if your app doesn\u0026rsquo;t have any pending changes, you need to do some work on it anyway. (Granted, this can also happen with webservers due to security patches and such, but with managed hosting, that\u0026rsquo;s not something you worry about as often, and the resolution is often straightforward!)\u003c/p\u003e\n\u003cp\u003eAs I was about to be out of the country on vacation for more than a month, I put this off and only started looking at it when I got back. Luckily, I did actually also have some minor revisions to do on the app, so I would do all the work in one go.\u003c/p\u003e\n\u003cp\u003eAs it turns out, the version of RN I was using was too old and did not support providing the 64-bit version. I had to upgrade to a later version of RN, and after reviewing the process, it seemed like a nontrivial amount of work. There was an upgrade tool, but because I was so many versions behind, it couldn\u0026rsquo;t work directly. The problem seems to be in the initial boilerplate created by \u003ccode\u003ereact-native init\u003c/code\u003e for the ios and android subprojects; the older boilerplate was out of date and needed to be updated, which was not straightforward given that you may have modified that boilerplate afterwards. I had to use some kind of diff tool to manually find the differences in the boilerplate and merge the changes manually.\u003c/p\u003e\n\u003cp\u003eThat seemed like a lot of work, and the app wasn\u0026rsquo;t that large and didn\u0026rsquo;t have that much code, so I figured it was more straightforward to just create a new RN project from scratch, which would be using the latest version of RN (0.60.3, from 0.50.4). Afterwards, I port over the project code into the new project, them swap the new project back into the old project\u0026rsquo;s repo. That way I only had to update the few dependencies I was using in the project itself.\u003c/p\u003e\n\u003cp\u003eIt was still a nontrivial amount of work, but I eventually got everything working through many iterations of trial-and-error.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI went ahead and upgraded the dependencies to the latest versions as well, to make sure there was no conflict with the new RN version\u003c/li\u003e\n\u003cli\u003eReactNavigation had some backward incompatible changes:\n\u003cul\u003e\n\u003cli\u003eneeded to \u003ca href=\"https://reactnavigation.org/docs/en/getting-started.html#installation\"\u003einitialize the gesture handler\u003c/a\u003e in the java class\u003c/li\u003e\n\u003cli\u003enew function \u003ccode\u003ecreateStackNavigator\u003c/code\u003e instead of just \u003ccode\u003eStackNavigator\u003c/code\u003e constructor\u003c/li\u003e\n\u003cli\u003eneeded to use \u003ccode\u003ecreateAppContainer\u003c/code\u003e to initialize the navigator\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003esome components such as WebView and AsyncStorage were no longer part of RN core and had to be imported accordingly\u003c/li\u003e\n\u003cli\u003eAndroid now requires that I explicitly prompt for the \u003ccode\u003eREAD_EXTERNAL_STORAGE\u003c/code\u003e permission when trying to access the camera roll\u003c/li\u003e\n\u003cli\u003eGoogle now recommends that I provide an upload key for encryption, but since I reset the project, I also accidentally deleted the signing key I was using before. Oops! Momentary panic until I have the sense to do a search and realize that past me was wise enough to backup the file elsewhere.\u003c/li\u003e\n\u003cli\u003eTest that I can create the app bundle successfully.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBy this point I more or less had a working Android build, then shifted over to iOS. Since I only \u003ca href=\"/2018/12/macbook-air-2017-model/\"\u003erecently got a Macbook Air\u003c/a\u003e, I actually hadn\u0026rsquo;t tried creating and publishing the iOS build, someone was helping me with that part before. Because of reasons, I wanted/had to do it myself this time around, so a bit of a learning curve and trial-and-error again.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eclone the project from repo, \u003ccode\u003enpm install\u003c/code\u003e, try \u003ccode\u003ereact-native run-ios\u003c/code\u003e, oops missing dependencies\u003c/li\u003e\n\u003cli\u003efind out about CocoaPods. Clone a fresh copy of the project, \u003ccode\u003enpm install\u003c/code\u003e then \u003ccode\u003epod install\u003c/code\u003e (took a while), then try \u003ccode\u003ereact-native run-ios\u003c/code\u003e again\u003c/li\u003e\n\u003cli\u003eneeded to fix some dependencies I was using by manual linking and updating\u003c/li\u003e\n\u003cli\u003ecamera roll also needed to be added to the podfile (a config I possibly lost when I reset the project)\u003c/li\u003e\n\u003cli\u003efix a bunch of configs before I can actually run and test the app in the simulator\u003c/li\u003e\n\u003cli\u003eSuccess!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAt this point, I make my other app changes and test on both my Android phone and the iOS simulator. The changes are easy, so now to try publishing.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTry to publish and upload to iTunesConnect. Takes me a few tries to figure out that I need to be updating stuff like bundle identifier, version number, etc.\u003c/li\u003e\n\u003cli\u003eiTunesConnect has some new requirements too (like the iPad version needs to support all orientations) which causes a couple more iterations\u003c/li\u003e\n\u003cli\u003emore screenshots are now required when submitting the app!\u003c/li\u003e\n\u003cli\u003eI set up TestFlight and verify everything is ok with the published app. (I only tested using the simulator before)\u003c/li\u003e\n\u003cli\u003eiOS app now submitted and \u0026ldquo;Waiting for Review\u0026rdquo;. I anticipate they will have some ridiculous request and it might take me a couple more submission rounds before I can publish\u003c/li\u003e\n\u003cli\u003eGoogle Play is more straightforward. \u003ccode\u003egradlew releaseBundle\u003c/code\u003e is already working after my previous effort, so I just upload the bundle and distribute.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI see no indication that I have satisfied Google\u0026rsquo;s action item, but it let me publish the update without complaints, so I\u0026rsquo;m done!\u003c/p\u003e\n\u003cp\u003eMy initial estimate that the work was nontrivial ends up correct, I spent way more manhours than I expected on the upgrade. Part of it was learning how to do the iOS deployment, so hopefully that ends up easier in the future.\u003c/p\u003e\n",
+            "summary": "I have a small mobile app that I wrote using React Native (henceforth RN) back in 2017, currently deployed on the Google Play Store and Apple App Store. Shortly before my US trip, I got an email from Google telling me about a required action:\n By August 1, 2019, all apps that use native code must provide a 64-bit version in addition to the 32-bit version in order to publish an update.",
+            "date_published": "2019-07-20T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/07/react-native-mobile-devt/index.md"
+            , "tags": ["software development","react native","mobile"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1152458840299974657/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/07/1151907300065415169/",
+            "url": "https://mirror.roytang.net/2019/07/1151907300065415169/",
+            "path": "/2019/07/1151907300065415169/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e \u003ca href=\"https://twitter.com/SeresaTagAraw/\"\u003e@SeresaTagAraw\u003c/a\u003e pano nagwiwithdraw sa CR!\u003c/p\u003e\n",
+            "summary": "@jaymelynilao @SeresaTagAraw pano nagwiwithdraw sa CR!",
+            "date_published": "2019-07-18T17:31:16+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/07/1151907300065415169/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1151907300065415169/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/07/1151718693379985408/",
+            "url": "https://mirror.roytang.net/2019/07/1151718693379985408/",
+            "path": "/2019/07/1151718693379985408/",
+            "title": "",
+            "content_html": "\u003cp\u003eOvercoming the Need to Be Exceptional \u003ca href=\"https://www.theschooloflife.com/thebookoflife/overcoming-the-need-to-be-exceptional/\"\u003ehttps://www.theschooloflife.com/thebookoflife/overcoming-the-need-to-be-exceptional/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Overcoming the Need to Be Exceptional https://www.theschooloflife.com/thebookoflife/overcoming-the-need-to-be-exceptional/",
+            "date_published": "2019-07-18T05:01:49+00:00",
+            "date_modified": "2019-09-07T07:00:25+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/07/1151718693379985408/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1151718693379985408/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/07/overcoming-the-need-to-be-exceptional/",
+            "url": "https://mirror.roytang.net/2019/07/overcoming-the-need-to-be-exceptional/",
+            "path": "/2019/07/overcoming-the-need-to-be-exceptional/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-07-17T23:49:56-05:00",
+            "date_modified": "2020-02-10T07:11:30+08:00",
+            "section": "links",
+            "source_path": "links/2019/07/overcoming-the-need-to-be-exceptional/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://www.theschooloflife.com/thebookoflife/overcoming-the-need-to-be-exceptional/"}]
+            ,"link": "https://www.theschooloflife.com/thebookoflife/overcoming-the-need-to-be-exceptional/"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/07/1151509392098861057/",
             "url": "https://mirror.roytang.net/2019/07/1151509392098861057/",
             "path": "/2019/07/1151509392098861057/",
@@ -787,91 +872,6 @@
             "source_path": "notes/2019/07/eszeedn/index.md"
             , "tags": ["Philippines"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/c9jhm2/any_tips_for_fresh_grads_for_adulting_and_life_in/eszeedn/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/esvk3ix/",
-            "url": "https://mirror.roytang.net/2019/07/esvk3ix/",
-            "path": "/2019/07/esvk3ix/",
-            "title": "",
-            "content_html": "\u003cp\u003eVisit one of their offices in person (we went to the one along east avenue) instead of calling their cs. Its better if you documented your calls, have ticket numbers etc.\u003c/p\u003e\n",
-            "summary": "Visit one of their offices in person (we went to the one along east avenue) instead of calling their cs. Its better if you documented your calls, have ticket numbers etc.",
-            "date_published": "2019-07-05T04:15:54+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/esvk3ix/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/c9b42x/tips_on_dealing_with_pldt_4_months_no_internet/esvk3ix/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/1146943797642891264/",
-            "url": "https://mirror.roytang.net/2019/07/1146943797642891264/",
-            "path": "/2019/07/1146943797642891264/",
-            "title": "",
-            "content_html": "\u003cp\u003eNiece deleted photos from her camera, quick search let me find PhotoRec (\u003ca href=\"https://www.cgsecurity.org/wiki/TestDisk_Download\"\u003ehttps://www.cgsecurity.org/wiki/TestDisk_Download\u003c/a\u003e) which let me recover the files from the SD card\u003c/p\u003e\n",
-            "summary": "Niece deleted photos from her camera, quick search let me find PhotoRec (https://www.cgsecurity.org/wiki/TestDisk_Download) which let me recover the files from the SD card",
-            "date_published": "2019-07-05T00:48:05+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/1146943797642891264/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146943797642891264/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/1146642989822775296/",
-            "url": "https://mirror.roytang.net/2019/07/1146642989822775296/",
-            "path": "/2019/07/1146642989822775296/",
-            "title": "",
-            "content_html": "\u003cp\u003eSteve Lichman\u003c/p\u003e\n\u003cp\u003e(more in replies)\u003c/p\u003e\n",
-            "summary": "Steve Lichman\n(more in replies)",
-            "date_published": "2019-07-04T04:52:47+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/1146642989822775296/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146642989822775296/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/us-2019-seattle/",
-            "url": "https://mirror.roytang.net/2019/07/us-2019-seattle/",
-            "path": "/2019/07/us-2019-seattle/",
-            "title": "US 2019 - Seattle",
-            "content_html": "\u003cp\u003eSeattle was the riskiest part of my trip, relatively speaking, because it was my solo leg - I didn\u0026rsquo;t have any friends or relatives in the city I could turn to in case of an emergency. I had also read online that while Seattle was very much a walkable city, there was a nontrivial homeless population, and some areas may be a bit sketchy after dark. As a friend of mine said though, \u0026ldquo;sketchy\u0026rdquo; in the US is probably a lot safer than \u0026ldquo;sketchy\u0026rdquo; in Metro Manila. I still worried a little bit, but given where I from, it didn\u0026rsquo;t make sense to worry about it.\u003c/p\u003e\n\u003cp\u003eMy primary purpose for this leg of the trip was of course \u003ca href=\"/2019/07/grand-prix-seattle-2019/\"\u003eGP Seattle\u003c/a\u003e, but I also looked forward to being able to walk and explore the city by myself. Not that I don\u0026rsquo;t enjoy hanging out and travelling with my family, but I enjoy being able to wander around freely by myself with no real agenda, \u003ca href=\"/2009/03/sometimes-you-just-go-where-your-feet-take-you/\"\u003eletting my feet take me wherever\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThat meant instead of theme parks and tourist attractions and shopping outlets, I found myself walking around looking into small bookstores, vintage shops, collectibles stores, hobby shops, gaming arcades, and so on. My poor performance at the GP main event gave me some extra time to wander the streets as well.\u003c/p\u003e\n\u003cp\u003eI did hit a few tourist spots:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI took some pictures at the Space Needle. Didn\u0026rsquo;t bother going up, I felt like I\u0026rsquo;ve already climbed enough tall structures in my lifetime and it wasn\u0026rsquo;t really worth the cost\u003c/li\u003e\n\u003cli\u003eI did take half a day to go through the Museum of Pop Culture near the Space Needle, which I enjoyed. They had exhibits on Washington state bands like Pearl Jam and Nirvana, fantasy and sci-fi exhibits, and even an independent gaming exhibit sponsored by Nintendo.\u003c/li\u003e\n\u003cli\u003eSupposedly, Seattle\u0026rsquo;s number one tourist attraction is Pike Place Market, which I found weird, because well, it\u0026rsquo;s a market. I did visit the market and wander the shop and had some of Beecher\u0026rsquo;s \u0026ldquo;World\u0026rsquo;s Best Mac and Cheese\u0026rdquo; (tastes great, but the cheese is very sharp, some people might not like it). There were some nice market shops - I enjoyed browsing a couple of the used bookstores there and there was a comic book store as well (was able to resist adding more to my reading backlog though). I think there was supposed to be some performance by the fishmongers in the market proper, and I did see some crowd gathered around one of the stalls and clapping, but I couldn\u0026rsquo;t push through quick enough to see what was going on, and didn\u0026rsquo;t bother waiting for something to happen again.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOne thing I did not enjoy was how steeply inclined Seattle\u0026rsquo;s streets were. Going from my Airbnb near Capitol Hill to the downtown area was easy enough as it was mostly downhill, but going back home at the end of the day was always a bit of a challenge.\u003c/p\u003e\n\u003cp\u003eI like Seattle as a city, especially the Capitol Hill district - it feels like it has a lot of character, compared to say, Los Angeles (although that might be an unfair comparison as I didn\u0026rsquo;t really get to wander LA much). The city has more of a west coast-artistic vibe going on, there\u0026rsquo;s a lot of posters for events everywhere, art murals on a lot of walls, there\u0026rsquo;s more music shops and book shops, a lot of random small parks, and a lot of place are very LGBTQ-friendly, even some of the crosswalks are rainbow-colored. The bookstores I browsed were great, a couple had the staff leaving small notes on the shelves about various titles they recommend.\u003c/p\u003e\n\u003cp\u003eOn my last day in Seattle, due to some combination of poor planning and cheapness, I had to spend an inordinate amount of time at SEATAC airport, pre-security. I was basically at the airport 8 hours before my flight, a personal record. I thought Southwest would at least let me check my bags and go through security maybe 3-4 hours before the 5am flight, but their counter only opened an hour and a half before the flight. So I have no real opinions on whether SEATAC is a good airport or not lol.\u003c/p\u003e\n\u003cp\u003eAnyway, I\u0026rsquo;ll leave you with some pictures!\u003c/p\u003e\n\u003cp\u003eSeattle photo dump:\u003c/p\u003e\n\u003cblockquote class=\"imgur-embed-pub\" lang=\"en\" data-id=\"a/Q6yBFyk\"\u003e\u003ca href=\"//imgur.com/a/Q6yBFyk\"\u003eSeattle\u003c/a\u003e\u003c/blockquote\u003e\u003cscript async src=\"//s.imgur.com/min/embed.js\" charset=\"utf-8\"\u003e\u003c/script\u003e\n\u003cp\u003eMoPOP photo dump (part 1):\u003c/p\u003e\n\u003cblockquote class=\"imgur-embed-pub\" lang=\"en\" data-id=\"a/45uzuCk\"\u003e\u003ca href=\"//imgur.com/a/45uzuCk\"\u003e\u003c/a\u003e\u003c/blockquote\u003e\u003cscript async src=\"//s.imgur.com/min/embed.js\" charset=\"utf-8\"\u003e\u003c/script\u003e\n\u003cp\u003eMoPOP photo dump (part 2) - scfi and fantasy\u003c/p\u003e\n\u003cblockquote class=\"imgur-embed-pub\" lang=\"en\" data-id=\"a/KgOUcEX\"\u003e\u003ca href=\"//imgur.com/a/KgOUcEX\"\u003eMoPOP part 2\u003c/a\u003e\u003c/blockquote\u003e\u003cscript async src=\"//s.imgur.com/min/embed.js\" charset=\"utf-8\"\u003e\u003c/script\u003e",
-            "summary": "Seattle was the riskiest part of my trip, relatively speaking, because it was my solo leg - I didn\u0026rsquo;t have any friends or relatives in the city I could turn to in case of an emergency. I had also read online that while Seattle was very much a walkable city, there was a nontrivial homeless population, and some areas may be a bit sketchy after dark. As a friend of mine said though, \u0026ldquo;sketchy\u0026rdquo; in the US is probably a lot safer than \u0026ldquo;sketchy\u0026rdquo; in Metro Manila.",
-            "date_published": "2019-07-03T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/07/us-2019-seattle/index.md"
-            , "tags": ["travels","ustrip2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146299864504000512/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/07/1146229803332198400/",
-            "url": "https://mirror.roytang.net/2019/07/1146229803332198400/",
-            "path": "/2019/07/1146229803332198400/",
-            "title": "",
-            "content_html": "\u003cp\u003eI imagine this kind of thought stems from the misconception that the twitter you see is the same twitter everybody else sees. Obviously I\u0026rsquo;m not on 25yo twitter or teenybopper twitter or w/e I\u0026rsquo;m on 40yo tech/ph/nerd culture twitter \nQuoted \u003ca href=\"https://twitter.com/emmeneeez/status/1145827747031388165\"\u003eemmeneeez\u0026rsquo;s tweet\u003c/a\u003e:\n\u0026gt; ok i want a genuine answer if ur past the age of 25 why are u on twitter? i genuinely want to know\u003c/p\u003e\n",
-            "summary": "I imagine this kind of thought stems from the misconception that the twitter you see is the same twitter everybody else sees. Obviously I\u0026rsquo;m not on 25yo twitter or teenybopper twitter or w/e I\u0026rsquo;m on 40yo tech/ph/nerd culture twitter Quoted emmeneeez\u0026rsquo;s tweet: \u0026gt; ok i want a genuine answer if ur past the age of 25 why are u on twitter? i genuinely want to know",
-            "date_published": "2019-07-03T01:30:55+00:00",
-            "date_modified": "2019-09-11T20:44:47+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/07/1146229803332198400/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1146229803332198400/"}]
             
             
             }
