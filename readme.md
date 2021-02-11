@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Irregular Calendars](https://mirror.roytang.net/2021/02/irregular-calendars/)
 - [Newsletters, Redux](https://mirror.roytang.net/2021/02/newsletters-redux/)
 - [Sincere Blogging](https://mirror.roytang.net/2021/02/sincere-blogging/)
 - [Book Review: The Year Without Pants](https://mirror.roytang.net/2021/02/book-review-the-year-without-pants/)
 - [Link Rot](https://mirror.roytang.net/2021/02/link-rot/)
-- [Weeknotes 2021-02-07](https://mirror.roytang.net/2021/02/weeknotes-2021-02-07/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,13 +29,17 @@ Latest shared links:
 Latest notes:
     
 
+- [10 Feb 2021 3:54pm](https://mirror.roytang.net/2021/02/1359531216542724097/): The phrase “respect the hustle” makes me sad.
+We deserve a world where nobody has to hustle.
+https://bit.ly/2HZOYVS
+- [10 Feb 2021 10:27am](https://mirror.roytang.net/2021/02/1359448935409025027/): Drafting Kaldheim ep6 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+Today was another double draft day. One of these was the worst Kaldheim run so far, the other was a bit better. Guess which is which!
+YT: https://www.youtube.com/watch?v=sCxRbfwbGvs
 - [9 Feb 2021 1:46pm](https://mirror.roytang.net/2021/02/1359136696764227589/): https://www.youtube.com/watch?v=vYmSAMcwXA8&amp;feature=youtu.be
 - [9 Feb 2021 10:36am](https://mirror.roytang.net/2021/02/1359088716749234179/): @Westraid isnt it tough to bike in the snow?
 - [8 Feb 2021 11:11am](https://mirror.roytang.net/2021/02/1358735311971483650/): Drafting Kaldheim ep5 https://www.twitch.tv/twitchyroy
 Managed to do two drafts this time. One of them was a monowhite deck, while the other was a 3 color pile. Easy to predict which one did better.
 YT: https://www.youtube.com/watch?v=7XjAGkOPGk4
-- [7 Feb 2021 10:48pm](https://mirror.roytang.net/2021/02/146ce75d91951cde348df07bbf175ad4/): My computer greets me in the morning as it always has for the past few months: with &ldquo;Your dropbox is almost full&rdquo;.
-- [7 Feb 2021 7:54pm](https://mirror.roytang.net/2021/02/gmeu5pi/): “please respect my belief that your beliefs are bullshit”
 
 [View all notes](https://mirror.roytang.net/notes)
 
