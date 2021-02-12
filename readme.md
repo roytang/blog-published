@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Decentralization](https://mirror.roytang.net/2021/02/decentralization/)
 - [Irregular Calendars](https://mirror.roytang.net/2021/02/irregular-calendars/)
 - [Newsletters, Redux](https://mirror.roytang.net/2021/02/newsletters-redux/)
 - [Sincere Blogging](https://mirror.roytang.net/2021/02/sincere-blogging/)
 - [Book Review: The Year Without Pants](https://mirror.roytang.net/2021/02/book-review-the-year-without-pants/)
-- [Link Rot](https://mirror.roytang.net/2021/02/link-rot/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [11 Feb 2021 7:03am](https://mirror.roytang.net/2021/02/1359759899765317636/): @SeresaTagAraw nagtratrabaho ka pa ba? lol
 - [10 Feb 2021 3:54pm](https://mirror.roytang.net/2021/02/1359531216542724097/): The phrase “respect the hustle” makes me sad.
 We deserve a world where nobody has to hustle.
 https://bit.ly/2HZOYVS
@@ -37,9 +38,6 @@ Today was another double draft day. One of these was the worst Kaldheim run so f
 YT: https://www.youtube.com/watch?v=sCxRbfwbGvs
 - [9 Feb 2021 1:46pm](https://mirror.roytang.net/2021/02/1359136696764227589/): https://www.youtube.com/watch?v=vYmSAMcwXA8&amp;feature=youtu.be
 - [9 Feb 2021 10:36am](https://mirror.roytang.net/2021/02/1359088716749234179/): @Westraid isnt it tough to bike in the snow?
-- [8 Feb 2021 11:11am](https://mirror.roytang.net/2021/02/1358735311971483650/): Drafting Kaldheim ep5 https://www.twitch.tv/twitchyroy
-Managed to do two drafts this time. One of them was a monowhite deck, while the other was a 3 color pile. Easy to predict which one did better.
-YT: https://www.youtube.com/watch?v=7XjAGkOPGk4
 
 [View all notes](https://mirror.roytang.net/notes)
 

@@ -1,4 +1,6 @@
 
+- [Decentralization](/2021/02/decentralization/)
+
 - [Newsletters, Redux](/2021/02/newsletters-redux/)
 
 - [Sincere Blogging](/2021/02/sincere-blogging/)
