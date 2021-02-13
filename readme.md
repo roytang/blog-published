@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Don&#39;t Be Ashamed of Joy](https://mirror.roytang.net/2021/02/dont-be-ashamed-of-joy/)
 - [Decentralization](https://mirror.roytang.net/2021/02/decentralization/)
 - [Irregular Calendars](https://mirror.roytang.net/2021/02/irregular-calendars/)
 - [Newsletters, Redux](https://mirror.roytang.net/2021/02/newsletters-redux/)
 - [Sincere Blogging](https://mirror.roytang.net/2021/02/sincere-blogging/)
-- [Book Review: The Year Without Pants](https://mirror.roytang.net/2021/02/book-review-the-year-without-pants/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,6 +29,10 @@ Latest shared links:
 Latest notes:
     
 
+- [12 Feb 2021 11:29am](https://mirror.roytang.net/2021/02/1360189270577844230/): Drafting Kaldheim ep7 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+Ugh, I continued to be terrible
+I drafted two BW decks today, both performed terribly. Or I did, whatever.
+YT: https://www.youtube.com/watch?v=cXc-gyBtfvE
 - [11 Feb 2021 7:03am](https://mirror.roytang.net/2021/02/1359759899765317636/): @SeresaTagAraw nagtratrabaho ka pa ba? lol
 - [10 Feb 2021 3:54pm](https://mirror.roytang.net/2021/02/1359531216542724097/): The phrase “respect the hustle” makes me sad.
 We deserve a world where nobody has to hustle.
@@ -37,7 +41,6 @@ https://bit.ly/2HZOYVS
 Today was another double draft day. One of these was the worst Kaldheim run so far, the other was a bit better. Guess which is which!
 YT: https://www.youtube.com/watch?v=sCxRbfwbGvs
 - [9 Feb 2021 1:46pm](https://mirror.roytang.net/2021/02/1359136696764227589/): https://www.youtube.com/watch?v=vYmSAMcwXA8&amp;feature=youtu.be
-- [9 Feb 2021 10:36am](https://mirror.roytang.net/2021/02/1359088716749234179/): @Westraid isnt it tough to bike in the snow?
 
 [View all notes](https://mirror.roytang.net/notes)
 
