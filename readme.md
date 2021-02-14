@@ -29,6 +29,10 @@ Latest shared links:
 Latest notes:
     
 
+- [13 Feb 2021 11:17am](https://mirror.roytang.net/2021/02/1360548734229045255/): Back before the 2016 elections, somebody I used to know claimed that we needed a &ldquo;rottweiler&rdquo; like Duterte as president because he would be tough against China. I remember this sometimes and laugh and then am also sad
+Quoted momblogger&#39;s tweet:   This is an unhealthy kind of love &hellip; Duterte says he &lsquo;cannot afford to be brave in the mouth against China&rsquo; https://www.rappler.com/nation/duterte-cannot-afford-be-brave-in-mouth-against-china  
+- [13 Feb 2021 7:00am](https://mirror.roytang.net/2021/02/f9e8b66a362f9a61612057f4db10b9cf/): After watching an episode of:
+ Brooklyn 99: Oh, Netflix already queued up the next episode, might as well WandaVision: I need to wait one more week to find out what happens?? The Expanse: So many things happened, I need time to digest  
 - [12 Feb 2021 11:29am](https://mirror.roytang.net/2021/02/1360189270577844230/): Drafting Kaldheim ep7 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
 Ugh, I continued to be terrible
 I drafted two BW decks today, both performed terribly. Or I did, whatever.
@@ -37,10 +41,6 @@ YT: https://www.youtube.com/watch?v=cXc-gyBtfvE
 - [10 Feb 2021 3:54pm](https://mirror.roytang.net/2021/02/1359531216542724097/): The phrase “respect the hustle” makes me sad.
 We deserve a world where nobody has to hustle.
 https://bit.ly/2HZOYVS
-- [10 Feb 2021 10:27am](https://mirror.roytang.net/2021/02/1359448935409025027/): Drafting Kaldheim ep6 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
-Today was another double draft day. One of these was the worst Kaldheim run so far, the other was a bit better. Guess which is which!
-YT: https://www.youtube.com/watch?v=sCxRbfwbGvs
-- [9 Feb 2021 1:46pm](https://mirror.roytang.net/2021/02/1359136696764227589/): https://www.youtube.com/watch?v=vYmSAMcwXA8&amp;feature=youtu.be
 
 [View all notes](https://mirror.roytang.net/notes)
 
