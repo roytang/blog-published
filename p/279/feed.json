@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2012/07/226395725003649025/",
+            "url": "https://mirror.roytang.net/2012/07/226395725003649025/",
+            "path": "/2012/07/226395725003649025/",
+            "title": "",
+            "content_html": "\u003cp\u003eRawr still awake\u003c/p\u003e\n",
+            "summary": "Rawr still awake",
+            "date_published": "2012-07-20T19:18:41+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/226395725003649025.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/226395725003649025/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/225854648068755456/",
+            "url": "https://mirror.roytang.net/2012/07/225854648068755456/",
+            "path": "/2012/07/225854648068755456/",
+            "title": "",
+            "content_html": "\u003cp\u003eTDKR: Fantastic movie, especially for people who\u0026rsquo;ve followed the Batman comics. Great ending!\u003c/p\u003e\n",
+            "summary": "TDKR: Fantastic movie, especially for people who\u0026rsquo;ve followed the Batman comics. Great ending!",
+            "date_published": "2012-07-19T07:28:38+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/225854648068755456.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/225854648068755456/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151740052073912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/225848297615671296/",
+            "url": "https://mirror.roytang.net/2012/07/225848297615671296/",
+            "path": "/2012/07/225848297615671296/",
+            "title": "",
+            "content_html": "\u003cp\u003eTDKR spoilers: Wow. Nolan knows how to end a trilogy\u003c/p\u003e\n",
+            "summary": "TDKR spoilers: Wow. Nolan knows how to end a trilogy",
+            "date_published": "2012-07-19T07:03:24+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/225848297615671296.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/225848297615671296/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2012/07/ws6u1/",
             "url": "https://mirror.roytang.net/2012/07/ws6u1/",
             "path": "/2012/07/ws6u1/",
@@ -820,62 +871,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/220308572251242496/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/c59asd7/",
-            "url": "https://mirror.roytang.net/2012/07/c59asd7/",
-            "path": "/2012/07/c59asd7/",
-            "title": "",
-            "content_html": "\u003cp\u003eUpdating it would probably break too many foreign key constraints\u003c/p\u003e\n",
-            "summary": "Updating it would probably break too many foreign key constraints",
-            "date_published": "2012-07-04T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/c59asd7/index.md"
-            , "tags": ["Steam"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Steam/comments/w10g3/we_all_know_the_steam_login_name_cannot_be/c59asd7/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/220305419380326400/",
-            "url": "https://mirror.roytang.net/2012/07/220305419380326400/",
-            "path": "/2012/07/220305419380326400/",
-            "title": "",
-            "content_html": "\u003cp\u003e@lizbethjane WTH pauwi ka pa lang!\u003c/p\u003e\n",
-            "summary": "@lizbethjane WTH pauwi ka pa lang!",
-            "date_published": "2012-07-03T23:57:59+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/220305419380326400.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/220305419380326400/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/11305956/",
-            "url": "https://mirror.roytang.net/2012/07/11305956/",
-            "path": "/2012/07/11305956/",
-            "title": "Capturing and replacing the JSP response in a Filter",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain. However, I\u0026rsquo;m getting an \u0026ldquo;IllegalStateException: getOutputStream() has already been called for this response.\u0026rdquo; It seems to happen whenever one of our taglibs tries to write using the writer returned by \u0026ldquo;this.pageContext.getOut()\u0026rdquo;, so I guess the response/writer/outputstream being used by Tomcat isn\u0026rsquo;t using the wrapper classes I passed via the filter.\u003c/p\u003e\n\u003cp\u003eAny suggestions? Or is there a better way to accomplish what I\u0026rsquo;m trying to do?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\nI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain.",
-            "date_published": "2012-07-03T07:00:24+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/11305956/index.md"
-            , "tags": ["jsp","servlet-filters","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter",
-                    "source_file": "comment-20120703T071412-11306131.json"
-                }
-            ]
             }
         
     ]

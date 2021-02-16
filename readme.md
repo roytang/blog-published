@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Digital Boardgames Review: Sentinels of the Multiverse](https://mirror.roytang.net/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 - [Weeknotes 2021-02-14](https://mirror.roytang.net/2021/02/weeknotes-2021-02-14/)
 - [Don&#39;t Be Ashamed of Joy](https://mirror.roytang.net/2021/02/dont-be-ashamed-of-joy/)
 - [Decentralization](https://mirror.roytang.net/2021/02/decentralization/)
 - [Irregular Calendars](https://mirror.roytang.net/2021/02/irregular-calendars/)
-- [Newsletters, Redux](https://mirror.roytang.net/2021/02/newsletters-redux/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,6 +29,9 @@ Latest shared links:
 Latest notes:
     
 
+- [15 Feb 2021 11:14am](https://mirror.roytang.net/2021/02/1361272787231514627/): Drafting Kaldheim ep8 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+Ended up having to cut yesterday&rsquo;s stream short because of technical issues. Draft deck felt decent, though the run started poorly.
+YT: https://www.youtube.com/watch?v=GKFafLV-pSw
 - [14 Feb 2021 11:33am](https://mirror.roytang.net/2021/02/1360915041088757761/): cc: all those influencers/celebrities who have parties and make excuses that “we all got tested”
 Quoted DrEricDing&#39;s tweet:   “False sense of security”—high tech gathering of 49 tech thinkers was held in 4 day “bubble” without mask mandate after arrival+daily testing. Result? ~43% (21 of 49) of tech attendees got #COVID19 soon after, including organizer @PeterDiamandis. 0% of masked support staff. 🧵  
 - [13 Feb 2021 11:17am](https://mirror.roytang.net/2021/02/1360548734229045255/): Back before the 2016 elections, somebody I used to know claimed that we needed a &ldquo;rottweiler&rdquo; like Duterte as president because he would be tough against China. I remember this sometimes and laugh and then am also sad
@@ -39,7 +42,6 @@ Quoted momblogger&#39;s tweet:   This is an unhealthy kind of love &hellip; Dute
 Ugh, I continued to be terrible
 I drafted two BW decks today, both performed terribly. Or I did, whatever.
 YT: https://www.youtube.com/watch?v=cXc-gyBtfvE
-- [11 Feb 2021 7:03am](https://mirror.roytang.net/2021/02/1359759899765317636/): @SeresaTagAraw nagtratrabaho ka pa ba? lol
 
 [View all notes](https://mirror.roytang.net/notes)
 
