@@ -29,19 +29,16 @@ Latest shared links:
 Latest notes:
     
 
+- [16 Feb 2021 11:15pm](https://mirror.roytang.net/2021/02/1361816433877917699/): Globe fiber&rsquo;s been down in the house since yesterday afternoon. On the bright side, I managed to finish a book and a game yesterday. Reading and playing, not writing and making, unfortunately.
+It&rsquo;s Ash Wednesday, so I guess it&rsquo;s a bit of penitensya for me =/
+- [16 Feb 2021 8:22am](https://mirror.roytang.net/2021/02/1361591861454852098/): @talk2GLOBE is there any fiber outage currently in tsora qc area?
+- [16 Feb 2021 6:30am](https://mirror.roytang.net/2021/02/1361563612385398785/): I feel like I&rsquo;ve seen this episode before
+Quoted ABSCBNNews&#39;s tweet:   BREAKING: Pwersahang inililikas ng Philippine Coast Guard ang mga nasa Taal Volcano Island sa utos ng Batangas PDRRMO dahil sa pag-aalburuto ng bulkan. | via @Dennis_Datu #TaalVolcano  
 - [15 Feb 2021 11:14am](https://mirror.roytang.net/2021/02/1361272787231514627/): Drafting Kaldheim ep8 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
 Ended up having to cut yesterday&rsquo;s stream short because of technical issues. Draft deck felt decent, though the run started poorly.
 YT: https://www.youtube.com/watch?v=GKFafLV-pSw
 - [14 Feb 2021 11:33am](https://mirror.roytang.net/2021/02/1360915041088757761/): cc: all those influencers/celebrities who have parties and make excuses that “we all got tested”
 Quoted DrEricDing&#39;s tweet:   “False sense of security”—high tech gathering of 49 tech thinkers was held in 4 day “bubble” without mask mandate after arrival+daily testing. Result? ~43% (21 of 49) of tech attendees got #COVID19 soon after, including organizer @PeterDiamandis. 0% of masked support staff. 🧵  
-- [13 Feb 2021 11:17am](https://mirror.roytang.net/2021/02/1360548734229045255/): Back before the 2016 elections, somebody I used to know claimed that we needed a &ldquo;rottweiler&rdquo; like Duterte as president because he would be tough against China. I remember this sometimes and laugh and then am also sad
-Quoted momblogger&#39;s tweet:   This is an unhealthy kind of love &hellip; Duterte says he &lsquo;cannot afford to be brave in the mouth against China&rsquo; https://www.rappler.com/nation/duterte-cannot-afford-be-brave-in-mouth-against-china  
-- [13 Feb 2021 7:00am](https://mirror.roytang.net/2021/02/f9e8b66a362f9a61612057f4db10b9cf/): After watching an episode of:
- Brooklyn 99: Oh, Netflix already queued up the next episode, might as well WandaVision: I need to wait one more week to find out what happens?? The Expanse: So many things happened, I need time to digest  
-- [12 Feb 2021 11:29am](https://mirror.roytang.net/2021/02/1360189270577844230/): Drafting Kaldheim ep7 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
-Ugh, I continued to be terrible
-I drafted two BW decks today, both performed terribly. Or I did, whatever.
-YT: https://www.youtube.com/watch?v=cXc-gyBtfvE
 
 [View all notes](https://mirror.roytang.net/notes)
 
