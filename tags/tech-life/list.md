@@ -1,4 +1,6 @@
 
+- [Book Review: Walkaway by Cory Doctorow](/2021/02/book-review-walkaway-by-cory-doctorow/)
+
 - [Decentralization](/2021/02/decentralization/)
 
 - [Newsletters, Redux](/2021/02/newsletters-redux/)

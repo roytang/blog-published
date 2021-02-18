@@ -1,4 +1,6 @@
 
+- [Book Review: Walkaway by Cory Doctorow](/2021/02/book-review-walkaway-by-cory-doctorow/)
+
 - [Book Review: The Year Without Pants](/2021/02/book-review-the-year-without-pants/)
 
 - [Book Review: The End of Everything by Katie Mack](/2021/01/book-review-the-end-of-everything-by-katie-mack/)

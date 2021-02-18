@@ -11,6 +11,125 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/01/flask-vs-django/",
+            "url": "https://mirror.roytang.net/2020/01/flask-vs-django/",
+            "path": "/2020/01/flask-vs-django/",
+            "title": "Flask vs Django",
+            "content_html": "\u003cp\u003eIn a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.\u003c/p\u003e\n\u003cp\u003eIt got me thinking, why did I build this using Flask in the first place? And that led to the more general question: when do I prefer using Flask over Django?\u003c/p\u003e\n\u003cp\u003ePersonal experience: I\u0026rsquo;m much more familiar with Django than Flask, having started using it back in 2008. Professionally, I\u0026rsquo;ve also worked on more Django projects, compared to only one Flask project that actually made it to production.\u003c/p\u003e\n\u003cp\u003eThe usual quick comparison is that Flask is the more lightweight web framework, suitable to smaller apps like microservices perhaps; while Django is the big monolithic web framework with all the bells and whistles already available. In practice this means Django already provides a lot of functionalities out of the box, while with Flask you have to install and figure out extensions for even the most common tasks like database management. A negative for Flask, but partly due to my inexperience: if you were already well-versed in the use of those extensions, I imagine getting everything together and setting them up will be easier.\u003c/p\u003e\n\u003cp\u003eIf there is need for a traditional RDBMS, I will probably use Django. I\u0026rsquo;m not super familiar with SQLAlchemy, the usual recommended ORM for Flask, so that\u0026rsquo;s a big factor. That being said, if I needed to work with something like a NoSQL database or some other nontraditional backend, it might be better to consider Flask since Django isn\u0026rsquo;t super flexible in that record - most of the pluses are oriented towards RDBMS-backed models.\u003c/p\u003e\n\u003cp\u003eAdmin: The built-in Django admin is a big plus for me; it means that for things like simple record CRUD, if usability and presentation isn\u0026rsquo;t a big concern, I can just use the Django admin as my backend without needing to write maintenance screens. There is an equivalent \u003ca href=\"https://flask-admin.readthedocs.io/en/latest/\"\u003eFlask Admin plugin\u003c/a\u003e, but I\u0026rsquo;ve not tried that either.\u003c/p\u003e\n\u003cp\u003eAPI building: I\u0026rsquo;m already familiar with the Django REST framework, I\u0026rsquo;m not sure if there\u0026rsquo;s an equivalent for Flask. The one Flask project we did, we rolled our own API backend.\u003c/p\u003e\n\u003cp\u003eI find that I tend to favor Flask when building quick proof-of-concept apps that don\u0026rsquo;t need a database. An example that was part of the app I migrated recently would be this quick \u003ca href=\"https://apps.roytang.net/twitter/\"\u003eTwitter app I wrote about a year ago\u003c/a\u003e, to find intersections between follows/followers. It didn\u0026rsquo;t need a database, only twitter API calls. (I have since merged it into the Django app, so the current version is using Django now.)\u003c/p\u003e\n\u003cp\u003eIn general I prefer Django, but that is probably due to familiarity and experience. I would love to have a full-scale project that uses Flask though! Perhaps in the future, for now all my personal projects are running on Django.\u003c/p\u003e\n",
+            "summary": "In a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.",
+            "date_published": "2020-01-24T00:00:00+00:00",
+            "date_modified": "2020-01-24T03:30:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/01/flask-vs-django/index.md"
+            , "tags": ["software development","python","flask","django"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220540598551228418/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220184579740291072/",
+            "url": "https://mirror.roytang.net/2020/01/1220184579740291072/",
+            "path": "/2020/01/1220184579740291072/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mlq3/\"\u003e@mlq3\u003c/a\u003e \u003ca href=\"https://twitter.com/enjoyGLOBE/\"\u003e@enjoyGLOBE\u003c/a\u003e ah also, there are plans that are unli data, but are more expensive for the same speed (I opted to get the cheaper one and live with the cap.)\u003c/p\u003e\n",
+            "summary": "@mlq3 @enjoyGLOBE ah also, there are plans that are unli data, but are more expensive for the same speed (I opted to get the cheaper one and live with the cap.)",
+            "date_published": "2020-01-23T03:20:48+00:00",
+            "date_modified": "2020-01-23T06:30:05+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220184579740291072/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220184579740291072/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220183600236122113/",
+            "url": "https://mirror.roytang.net/2020/01/1220183600236122113/",
+            "path": "/2020/01/1220183600236122113/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mlq3/\"\u003e@mlq3\u003c/a\u003e \u003ca href=\"https://twitter.com/enjoyGLOBE/\"\u003e@enjoyGLOBE\u003c/a\u003e no, there\u0026rsquo;s a mobile app, I bought the data boost through there when I realized I had ran out. When I hit the limit I initially thought it was a network problem, only realized I had hit the limit by checking the app\n\u003ca href=\"https://twitter.com/mlq3/\"\u003e@mlq3\u003c/a\u003e \u003ca href=\"https://twitter.com/enjoyGLOBE/\"\u003e@enjoyGLOBE\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@mlq3 @enjoyGLOBE no, there\u0026rsquo;s a mobile app, I bought the data boost through there when I realized I had ran out. When I hit the limit I initially thought it was a network problem, only realized I had hit the limit by checking the app @mlq3 @enjoyGLOBE",
+            "date_published": "2020-01-23T03:16:54+00:00",
+            "date_modified": "2020-01-23T06:30:05+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220183600236122113/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220183600236122113/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220183864577912833/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220182492407140352/",
+            "url": "https://mirror.roytang.net/2020/01/1220182492407140352/",
+            "path": "/2020/01/1220182492407140352/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mlq3/\"\u003e@mlq3\u003c/a\u003e \u003ca href=\"https://twitter.com/enjoyGLOBE/\"\u003e@enjoyGLOBE\u003c/a\u003e There is a bandwidth cap depending on your plan (mine is 600gb at P999 i think), speeds get throttled if you go past. There\u0026rsquo;s also options to buy small data boosts, I used one the one time I exceeded the limit\u003c/p\u003e\n",
+            "summary": "@mlq3 @enjoyGLOBE There is a bandwidth cap depending on your plan (mine is 600gb at P999 i think), speeds get throttled if you go past. There\u0026rsquo;s also options to buy small data boosts, I used one the one time I exceeded the limit",
+            "date_published": "2020-01-23T03:12:30+00:00",
+            "date_modified": "2020-01-23T06:30:05+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220182492407140352/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220182492407140352/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220092097824342016/",
+            "url": "https://mirror.roytang.net/2020/01/1220092097824342016/",
+            "path": "/2020/01/1220092097824342016/",
+            "title": "",
+            "content_html": "\u003cp\u003eWikiHow\u0026rsquo;s bizaare illustrations are mostly made by freelancers in the Philippines: \u003ca href=\"https://onezero.medium.com/we-finally-figured-out-who-makes-wikihows-bizarre-art-6c5d69b71347?gi=6aeaef0ba2e6\"\u003ehttps://onezero.medium.com/we-finally-figured-out-who-makes-wikihows-bizarre-art-6c5d69b71347?gi=6aeaef0ba2e6\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "WikiHow\u0026rsquo;s bizaare illustrations are mostly made by freelancers in the Philippines: https://onezero.medium.com/we-finally-figured-out-who-makes-wikihows-bizarre-art-6c5d69b71347?gi=6aeaef0ba2e6",
+            "date_published": "2020-01-22T21:13:18+00:00",
+            "date_modified": "2020-01-23T00:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220092097824342016/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220092097824342016/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220078649501601792/",
+            "url": "https://mirror.roytang.net/2020/01/1220078649501601792/",
+            "path": "/2020/01/1220078649501601792/",
+            "title": "",
+            "content_html": "\u003cp\u003eI just went ahead and voted for \u003ca href=\"https://twitter.com/PVDDR/\"\u003e@PVDDR\u003c/a\u003e that seems like a safe bet.\nQuoted \u003ca href=\"https://twitter.com/MagicEsports/status/1220054960227749888\"\u003eMagicEsports\u0026rsquo;s tweet\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eIntroducing Find Your Champion! Get to know our 16 Worlds competitors, #FindYourChampion, watch them win #MTGWorlds, and get some FREE rewards on MTG Arena.\u003c/p\u003e\n\u003cp\u003eSign up now at: \u003ca href=\"https://magic.gg/events/magic-world-championship-xxvi\"\u003ehttps://magic.gg/events/magic-world-championship-xxvi\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "I just went ahead and voted for @PVDDR that seems like a safe bet. Quoted MagicEsports\u0026rsquo;s tweet:\n Introducing Find Your Champion! Get to know our 16 Worlds competitors, #FindYourChampion, watch them win #MTGWorlds, and get some FREE rewards on MTG Arena.\nSign up now at: https://magic.gg/events/magic-world-championship-xxvi\n ",
+            "date_published": "2020-01-22T20:19:52+00:00",
+            "date_modified": "2020-01-22T21:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220078649501601792/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220078649501601792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1219485598773178368/",
+            "url": "https://mirror.roytang.net/2020/01/1219485598773178368/",
+            "path": "/2020/01/1219485598773178368/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn the Philippines we have both people complaining that scientists didnt warn early enough about the volcano erupting and also people saying we shouldn\u0026rsquo;t listen to scientists\u0026rsquo; \u0026ldquo;opinion\u0026rdquo; because they\u0026rsquo;re \u0026ldquo;not god\u0026rdquo;. ¯_(ツ)_/¯\u003c/p\u003e\n",
+            "summary": "In the Philippines we have both people complaining that scientists didnt warn early enough about the volcano erupting and also people saying we shouldn\u0026rsquo;t listen to scientists\u0026rsquo; \u0026ldquo;opinion\u0026rdquo; because they\u0026rsquo;re \u0026ldquo;not god\u0026rdquo;. ¯_(ツ)_/¯",
+            "date_published": "2020-01-21T05:03:18+00:00",
+            "date_modified": "2020-01-21T06:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1219485598773178368/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1219485598773178368/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/01/1218921056368381952/",
             "url": "https://mirror.roytang.net/2020/01/1218921056368381952/",
             "path": "/2020/01/1218921056368381952/",
@@ -315,6 +434,23 @@
             }
         
         , {
+            "id": "https://mirror.roytang.net/demos/markov/",
+            "url": "https://mirror.roytang.net/demos/markov/",
+            "path": "/demos/markov/",
+            "title": "Markov Chain Demo",
+            "content_html": "\u003cp\u003eThis is the demo output for a Markov chain Python script, based on posts from this site. \u003ca href=\"/2019/08/python-markov-chains/\"\u003eMore info\u003c/a\u003e\n \nGenerally moving parts get the dream??).\ndozen, and developing one (initially 2, come visit Park Guell and worked with. That one per week) that time would make much better games with space bombarded by a gathering, jostling with God start earlier work week it\u0026rsquo;s fine, I read through RPGs that particular mayor is offers any middle-class white-collar guy, but that\u0026rsquo;s exciting, constantly worse record.\n \nUpdate went to Onslaught, I walked\n \n2 installed my blog, which ABS-CBN franchise rolls out long-term memory lane as there were going. Back in danger. What, are killing me lol).\nGenerally what point in anticipation\nHey both when your dreams, when most anything, the build-in cheat sheet, you know how naive end to adapt, but no such hopefuls. Weaving amongst themselves in. Kicked out all local developers saying isn\u0026rsquo;t needed someone else\u0026rsquo;s will sometimes vary from Hitler was today, eh?\u0026rdquo;, you win here securing your coin, you want varies greatly or twitch shooters! Anyway, right even be maintained in-house. So my NDS release date came with Tumblr\u0026rsquo;s custom domains, and thematically and hiccups in Metro Manila, Philippines!\u0026quot;), and I\u0026rsquo;ve kinda wanna miss my childhood, I forgot her is hard work through your username \u0026ldquo;roytang\u0026rdquo; at [this site][3] and David Aja returns!), \u003cstrong\u003eDaredevil #21 \u003c/strong\u003eresolves the Moira had flown to understand where my top 2 (kind of\u0026hellip; high hopes. That Crib Swap, putting themselves will never gets stranded on activities or welfare programs) or every other things connecting two copies I try looking for discussions over to Senku is regarding whether that\u0026rsquo;s why post to mean rape is currently working. With these makes us (Filipinos).\n \n \n**Globe\u0026rsquo;s Spam Reports\n\u003cimg src=\"https://www.wizards.com/global/images/magic/general/rotting_rats.jpg\" class=\"card\" src=\"https://www.wizards.com/global/images/magic/ALA/resounding_thunder.jpg\" alt=\"\" width=\"2000\" height=\"824\" /\u003e What\u0026rsquo;s up playing:\n(If the plot they just trying out that [StackOverflow released the [apparently-now-defunct Bobong Pinoy Can easily at things you closer in Metro Kingdom (no longer free. In Las Vegas, but starting up). So weird! I try looking around 10am would make money cannot link rot as before, [Takeshi\u0026rsquo;s Castle][1] is the gate\u0026rsquo;s state until Alara block. Most venues might extend over to pick \u0026lsquo;em all. There\u0026rsquo;s around with Google Keep. Most Difficult to his attack, seeing our three turns found my tournament I\u0026rsquo;m pretty bad, ask around, he apparently John Greenleaf Whittier, Maud Muller - Named after running a [similar closure except instead satisfied so stupid things aren\u0026rsquo;t we? I [break the question arises: which parts and Harley (at the interviewer worry it wasn\u0026rsquo;t able keep them now complete. The saga 2 Mystic went home anyway due date it awkward since quests related to side associated battle system. \u003c/span\u003e\u003cspan class=\"qualifier\"\u003e\u003cspan data-offset-key=\"bjg1t-3-0\"\u003eperhaps\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"veryhardreadability\"\u003e\u003cspan data-offset-key=\"bjg1t-6-0\"\u003e a bye! I stayed.\n \n12. Yasay, Perfecto Jr. Q.\nThe cashier would also half-fish.\u003c/p\u003e\n",
+            "summary": "This is the demo output for a Markov chain Python script, based on posts from this site. More info Generally moving parts get the dream??). dozen, and developing one (initially 2, come visit Park Guell and worked with. That one per week) that time would make much better games with space bombarded by a gathering, jostling with God start earlier work week it\u0026rsquo;s fine, I read through RPGs that particular mayor is offers any middle-class white-collar guy, but that\u0026rsquo;s exciting, constantly worse record.",
+            "date_published": "2020-01-16T05:42:36+00:00",
+            "date_modified": "2020-01-16T05:42:36+00:00",
+            "section": "page",
+            "source_path": "page/markov.md"
+            
+            
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/01/1217666179646418944/",
             "url": "https://mirror.roytang.net/2020/01/1217666179646418944/",
             "path": "/2020/01/1217666179646418944/",
@@ -361,23 +497,6 @@
             "source_path": "notes/2020/01/1217451178574827520/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1217451178574827520/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/demos/markov/",
-            "url": "https://mirror.roytang.net/demos/markov/",
-            "path": "/demos/markov/",
-            "title": "Markov Chain Demo",
-            "content_html": "\u003cp\u003eThis is the demo output for a Markov chain Python script, based on posts from this site. \u003ca href=\"/2019/08/python-markov-chains/\"\u003eMore info\u003c/a\u003e\n2 Ravenous Giant 1 Scuzzback Marauder\nFiled under control? Who are rotating out webpages at home earlier.\nFiled under control? Who else is like they complain to that. After thinking for completion!\nGenerally uneventful, thankfully.\n[7]: \u003ca href=\"http://magiccards.info/autocard.php?card=Cinder%20Pyromancer\"\u003ehttp://magiccards.info/autocard.php?card=Cinder%20Pyromancer\u003c/a\u003e\n \nTiny bit thinking stuff saved here. One Man and tech stuff: Blood Deck Wins\nFiled under academic fashion. It\u0026rsquo;s actually had the xray machine. Looks really need a TOML config file, that writing left me going and presumably if one has free data store your opponent. Single battles where e2e Testing**. I\u0026rsquo;ve kinda feel at them when sorting performance reviews: if the touristy anyway \u0026ndash; literally nothing much lately. Decided to die in Metro Manila itself.\u003c/span\u003e\nThat trap that required I do, people beat one, then a while), then proceeding apace I had modern tooling handles himself saying goes). Often during quarantine, the screenshots and procrastination.)\nKind\nQuick tip: Choose something lol isa pa palitan?\nNormal\nFiled under an MP3 files. There isn\u0026rsquo;t worth it will.\nFor an earthquake will probably catch up to gather into another cog in Metro Manila, it’s potentially returning the fundamental tendency towards restricting the possibility I so that\u0026rsquo;s terribly annoyed. It\u0026rsquo;s far back):\n \nHowl of format and string here controls that threatens our not-so-good-in-the-first-place international flights either text parsing. I try looking suspicious)\n\u003cp\u003e{{ $figcaption }}\u0026rdquo; /\u0026gt;`\n \u003c/p\u003e\n",
-            "summary": "This is the demo output for a Markov chain Python script, based on posts from this site. More info 2 Ravenous Giant 1 Scuzzback Marauder Filed under control? Who are rotating out webpages at home earlier. Filed under control? Who else is like they complain to that. After thinking for completion! Generally uneventful, thankfully. [7]: http://magiccards.info/autocard.php?card=Cinder%20Pyromancer Tiny bit thinking stuff saved here. One Man and tech stuff: Blood Deck Wins Filed under academic fashion.",
-            "date_published": "2020-01-15T05:42:17+00:00",
-            "date_modified": "2020-01-15T05:42:17+00:00",
-            "section": "page",
-            "source_path": "page/markov.md"
-            
-            
             
             
             }
@@ -791,125 +910,6 @@
             "source_path": "photos/2020/01/1214592994109579265/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214592994109579265/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214489352790671360/",
-            "url": "https://mirror.roytang.net/2020/01/1214489352790671360/",
-            "path": "/2020/01/1214489352790671360/",
-            "title": "",
-            "content_html": "\u003cp\u003e1 year #Duolingo streak!\u003c/p\u003e\n",
-            "summary": "1 year #Duolingo streak!",
-            "date_published": "2020-01-07T10:10:00+00:00",
-            "date_modified": "2020-01-07T12:30:02+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/01/1214489352790671360/index.md"
-            , "tags": ["Duolingo"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214489352790671360/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214483622738026501/",
-            "url": "https://mirror.roytang.net/2020/01/1214483622738026501/",
-            "path": "/2020/01/1214483622738026501/",
-            "title": "",
-            "content_html": "\u003cp\u003eTrying to justify poor performance with approval ratings is a tacit admission that your goal was window-dressing all along and not actually doing your job. Let the people approve because you did the thing, not because you tricked them into thinking you did.\nQuoted \u003ca href=\"https://twitter.com/gideonlasco/status/1214481059850702850\"\u003egideonlasco\u0026rsquo;s tweet\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eThe police and the government should stop using approval ratings to justify their failures.\u003c/p\u003e\n\u003cp\u003eBeyond legitimate questions about the valditity of some opinion surveys, popularity is a poor substitute for truth or justice.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "Trying to justify poor performance with approval ratings is a tacit admission that your goal was window-dressing all along and not actually doing your job. Let the people approve because you did the thing, not because you tricked them into thinking you did. Quoted gideonlasco\u0026rsquo;s tweet:\n The police and the government should stop using approval ratings to justify their failures.\nBeyond legitimate questions about the valditity of some opinion surveys, popularity is a poor substitute for truth or justice.",
-            "date_published": "2020-01-07T09:47:14+00:00",
-            "date_modified": "2020-01-07T12:30:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/01/1214483622738026501/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214483622738026501/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214211243306676225/",
-            "url": "https://mirror.roytang.net/2020/01/1214211243306676225/",
-            "path": "/2020/01/1214211243306676225/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy body at 11am: we should sleep\nMe: No, we have stuff to do\u003c/p\u003e\n\u003cp\u003eMe at 11pm: okay we have to sleep early we have an early meeting\nMy body:\u003c/p\u003e\n",
-            "summary": "My body at 11am: we should sleep Me: No, we have stuff to do\nMe at 11pm: okay we have to sleep early we have an early meeting My body:",
-            "date_published": "2020-01-06T15:44:54+00:00",
-            "date_modified": "2020-01-06T18:30:02+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/01/1214211243306676225/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214211243306676225/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214209995069243392/",
-            "url": "https://mirror.roytang.net/2020/01/1214209995069243392/",
-            "path": "/2020/01/1214209995069243392/",
-            "title": "",
-            "content_html": "\u003cp\u003ei thought Malcolm in the Middle would be better with an anime opening, so i made one\u003c/p\u003e\n\u003cp\u003eThis is FullMiddle Malcolmist:\u003c/p\u003e\n\u003cvideo width=\"320\" height=\"176\" controls\u003e\n                    \u003csource src=\"https://video.twimg.com/ext_tw_video/1051517767579394048/pu/vid/872x480/_BDfNrwlvrLg1-yl.mp4?tag=5.mp4\" type=\"video/mp4\"\u003e\n                    Your browser does not support the video tag.\n                    \u003c/video\u003e",
-            "summary": "i thought Malcolm in the Middle would be better with an anime opening, so i made one\nThis is FullMiddle Malcolmist:\nYour browser does not support the video tag. ",
-            "date_published": "2020-01-06T15:39:56+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2020/01/1214209995069243392/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214209995069243392/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214182693589508103/",
-            "url": "https://mirror.roytang.net/2020/01/1214182693589508103/",
-            "path": "/2020/01/1214182693589508103/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe worst kind of anxiety is when you cant get any other things done coz youre worrying about this other thing that is outside your control anyway\u003c/p\u003e\n",
-            "summary": "The worst kind of anxiety is when you cant get any other things done coz youre worrying about this other thing that is outside your control anyway",
-            "date_published": "2020-01-06T13:51:27+00:00",
-            "date_modified": "2020-01-06T15:30:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/01/1214182693589508103/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214182693589508103/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/warfighter-middle-earth/",
-            "url": "https://mirror.roytang.net/2020/01/warfighter-middle-earth/",
-            "path": "/2020/01/warfighter-middle-earth/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-01-05T09:15:09-06:00",
-            "date_modified": "2020-02-10T07:11:30+08:00",
-            "section": "links",
-            "source_path": "links/2020/01/warfighter-middle-earth/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://angrystaffofficer.com/2016/11/04/warfighter-middle-earth/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1213848709282369538/"}]
-            ,"link": "https://angrystaffofficer.com/2016/11/04/warfighter-middle-earth/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1213840804944334849/",
-            "url": "https://mirror.roytang.net/2020/01/1213840804944334849/",
-            "path": "/2020/01/1213840804944334849/",
-            "title": "",
-            "content_html": "\u003cp\u003eHave I mentioned that \u003ca href=\"https://twitter.com/shanselman/\"\u003e@shanselman\u003c/a\u003e is the nicest guy ever??? Because he definitely is.\u003c/p\u003e\n",
-            "summary": "Have I mentioned that @shanselman is the nicest guy ever??? Because he definitely is.",
-            "date_published": "2020-01-05T15:12:54+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2020/01/1213840804944334849/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1213840804944334849/"}]
             
             
             }
