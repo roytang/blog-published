@@ -102,6 +102,259 @@
     <li>
 <article class="list_item notes h-entry">
     
+<div class="title">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
+    </svg>        
+    Reply to <a class="u-in-reply-to" href="https://stackoverflow.com/questions/1801787/how-do-i-change-the-location-of-index-jsp-in-a-war-file">&#39;How do I change the location of index.jsp in a war file&#39; on stackoverflow</a>:
+</div>
+
+
+    
+<div class="content e-content">
+
+<p>The contents of WEB-INF aren&rsquo;t publicly accessible resources, why are you putting the other jsps there? Are those other jsps accessible?</p>
+<p>If you want to hide the index.jsp, create a servlet mapped to the root path and have it forward to index.jsp.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/11/1801815/"><time class="dt-published" datetime="2009-11-26 06:07:40">26 Nov 2009 6:07am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/java">#java</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/web-applications">#web-applications</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/web.xml">#web.xml</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/1801787/how-do-i-change-the-location-of-index-jsp-in-a-war-file/1801815#1801815" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/11/1801815/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>While testing our setup for user acceptance testing, we got some reports that java applets in our web application would occasionally fail to load. The envt where it was reported was WinXP/IE6, and there were no errors found in the java console.</p>
+<p>Obviously we&rsquo;d like to avoid it. What sort of things should we be checking for here? On our local servers, everything seems fine. There&rsquo;s some turnaround time when sending questions to the on-site guy, so I&rsquo;d look to cover as many possible causes as possible.</p>
+<p>Some more info:
+We have multiple applets, in the instance that they fail loading, all of them fail loading. The applet jar files vary in size from 2MB to 8MB. I&rsquo;m told it seems more likely to happen if the applet isn&rsquo;t cached yet, i.e. if they&rsquo;ve been able to load the applets once on a given machine, further runs on that machine go smoothly. I&rsquo;m wondering if there&rsquo;s some sort of network transfer error when downloading the applets, but I don&rsquo;t know how to verify that.</p>
+<p>Any advise is welcome!</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/11/1801804/"><time class="dt-published" datetime="2009-11-26 06:01:39">26 Nov 2009 6:01am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/java">#java</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/applet">#applet</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/1801804/applets-failing-to-load" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/11/1801804/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+<div class="title">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
+    </svg>        
+    Reply to <a class="u-in-reply-to" href="https://twitter.com/bry_bibat/statuses/6011548272/">bry_bibat&#39;s tweet</a>:
+</div>
+
+
+    
+<div class="content e-content">
+
+<p><a href="https://twitter.com/bry_bibat/">@bry_bibat</a> do you have a new job?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/11/6011564024/"><time class="dt-published" datetime="2009-11-24 16:05:28">24 Nov 2009 4:05pm</time></a>
+
+    
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/6011564024/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/11/6011564024/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Cody and Adon confirmed for SSF4! Yay! <a href="https://www.eventhubs.com/images/2009/nov/24/famitsu-scan-shows-cody-and-adon-super-street-fighter-4/">https://www.eventhubs.com/images/2009/nov/24/famitsu-scan-shows-cody-and-adon-super-street-fighter-4/</a></p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/11/6008325466/"><time class="dt-published" datetime="2009-11-24 13:58:03">24 Nov 2009 1:58pm</time></a>
+
+    
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/6008325466/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/179372618039" title="View on facebook">facebook</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/11/6008325466/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        3</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
 
 <div class="title">
     <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
@@ -2798,241 +3051,6 @@ Also on:
 </article>
 </li>
 
-    <li>
-<article class="list_item notes h-entry">
-    
-<div class="title">
-    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-        <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
-    </svg>        
-    Reply to <a class="u-in-reply-to" href="https://twitter.com/wrongwaygoback/statuses/5361954782/">wrongwaygoback&#39;s tweet</a>:
-</div>
-
-
-    
-<div class="content e-content">
-
-<p><a href="https://twitter.com/wrongwaygoback/">@wrongwaygoback</a> how short is &ldquo;short term&rdquo;? why do you expect it to jump? just because me3 won&rsquo;t be drafted anymore?</p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2009/11/5362965038/"><time class="dt-published" datetime="2009-11-02 13:36:48">2 Nov 2009 1:36pm</time></a>
-
-    
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/5362965038/" title="View on twitter">twitter</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2009/11/5362965038/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        0</a>
-
-    
-    
-</div>
-</article>
-</li>
-
-    <li>
-<article class="list_item notes h-entry">
-    
-
-    
-<div class="content e-content">
-
-<p>RT <a href="https://twitter.com/WhitsonGordon/">@WhitsonGordon</a>: Best picture ever. <a href="https://gizmodo.com/where-are-those-damn-droids-5393133">https://gizmodo.com/where-are-those-damn-droids-5393133</a></p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2009/11/5359228325/"><time class="dt-published" datetime="2009-11-02 08:49:12">2 Nov 2009 8:49am</time></a>
-
-    
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/5359228325/" title="View on twitter">twitter</a>
-
-    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/168957738613" title="View on facebook">facebook</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2009/11/5359228325/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        1</a>
-
-    
-    
-</div>
-</article>
-</li>
-
-    <li>
-<article class="list_item notes h-entry">
-    
-<div class="title">
-    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-        <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
-    </svg>        
-    Reply to <a class="u-in-reply-to" href="https://twitter.com/misterorange/statuses/5358112425/">misterorange&#39;s tweet</a>:
-</div>
-
-
-    
-<div class="content e-content">
-
-<p><a href="https://twitter.com/misterorange/">@misterorange</a> ah my bad, it only protects white dudes &gt;.&lt;</p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2009/11/5358135131/"><time class="dt-published" datetime="2009-11-02 07:10:14">2 Nov 2009 7:10am</time></a>
-
-    
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/5358135131/" title="View on twitter">twitter</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2009/11/5358135131/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        0</a>
-
-    
-    
-</div>
-</article>
-</li>
-
-    <li>
-<article class="list_item notes h-entry">
-    
-<div class="title">
-    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-        <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
-    </svg>        
-    Reply to <a class="u-in-reply-to" href="https://twitter.com/misterorange/statuses/5358112425/">misterorange&#39;s tweet</a>:
-</div>
-
-
-    
-<div class="content e-content">
-
-<p><a href="https://twitter.com/misterorange/">@misterorange</a> not playing brave the elements? I&rsquo;d play that over tempest owl</p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2009/11/5358130054/"><time class="dt-published" datetime="2009-11-02 07:09:50">2 Nov 2009 7:09am</time></a>
-
-    
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/5358130054/" title="View on twitter">twitter</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2009/11/5358130054/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        0</a>
-
-    
-    
-</div>
-</article>
-</li>
-
 </ul>
 
 
@@ -4362,7 +4380,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2021 02 18 00:00:24.
+        Last modified at: 2021 02 18 13:00:18.
         
     </p>
 </footer>      

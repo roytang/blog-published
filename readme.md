@@ -29,17 +29,16 @@ Latest shared links:
 Latest notes:
     
 
+- [18 Feb 2021 10:48am](https://mirror.roytang.net/2021/02/1362353266387021827/): Drafting Kaldheim ep9 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+Looks like my internet isn&rsquo;t very good for streaming tonight though =/
+Managed to play 2 drafts, but both had terrible outcomes. I did take local recordings, but I&rsquo;m not gonna bother uploading lol
+- [18 Feb 2021 9:16am](https://mirror.roytang.net/2021/02/1362330261174689793/): Probably too optimistic, but maybe this well help governments realize their platforms for information delivery shouldnt center around private social media platforms.
+Quoted ZaidJilani&#39;s tweet:   Just a private company, controlling chokepoints of vital information and shutting them down when they&rsquo;re trying to intimidate a country&rsquo;s government.  
+- [18 Feb 2021 9:07am](https://mirror.roytang.net/2021/02/1362327948783575041/): ATTACK AND DETHRONE CAPITALISM
+Quoted westonpagano&#39;s tweet:   let’s check in on how America/capitalism is handling the latest crisis  
+- [18 Feb 2021 8:58am](https://mirror.roytang.net/2021/02/1362325561754808322/): @ChelDiokno Sir, hindi po ba pwedeng kasuhan ng cyberlibel ang mga ganyan
 - [17 Feb 2021 11:57pm](https://mirror.roytang.net/2021/02/1362189435815698433/): Our internet service has thankfully been restored, now I no longer have any excuse for not being productive.
 I am once again living in a society
-- [16 Feb 2021 11:15pm](https://mirror.roytang.net/2021/02/1361816433877917699/): Globe fiber&rsquo;s been down in the house since yesterday afternoon. On the bright side, I managed to finish a book and a game yesterday. Reading and playing, not writing and making, unfortunately.
-It&rsquo;s Ash Wednesday, so I guess it&rsquo;s a bit of penitensya for me =/
-Globe internet outage in tandang sora area into its 28th hour so far. @talk2GLOBE hasnt replied to me DMs in 10hrs. Internet service is crucial during the pandemic, so more responsive customer service would be nice
-- [16 Feb 2021 8:22am](https://mirror.roytang.net/2021/02/1361591861454852098/): @talk2GLOBE is there any fiber outage currently in tsora qc area?
-- [16 Feb 2021 6:30am](https://mirror.roytang.net/2021/02/1361563612385398785/): I feel like I&rsquo;ve seen this episode before
-Quoted ABSCBNNews&#39;s tweet:   BREAKING: Pwersahang inililikas ng Philippine Coast Guard ang mga nasa Taal Volcano Island sa utos ng Batangas PDRRMO dahil sa pag-aalburuto ng bulkan. | via @Dennis_Datu #TaalVolcano  
-- [15 Feb 2021 11:14am](https://mirror.roytang.net/2021/02/1361272787231514627/): Drafting Kaldheim ep8 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
-Ended up having to cut yesterday&rsquo;s stream short because of technical issues. Draft deck felt decent, though the run started poorly.
-YT: https://www.youtube.com/watch?v=GKFafLV-pSw
 
 [View all notes](https://mirror.roytang.net/notes)
 
