@@ -29,16 +29,15 @@ Latest shared links:
 Latest notes:
     
 
+- [20 Feb 2021 1:21am](https://mirror.roytang.net/2021/02/1362935326239465472/): @art_abon the only surviving humans are the descendants of the first Mars colonists. Their only government: The SpaceX board of directors
+- [19 Feb 2021 3:18pm](https://mirror.roytang.net/2021/02/1362783672357724161/): The year is 2398. Earth is no longer habitable, the surviving humans have migrated to space colonies. The entire Earth has been converted into a supercluster of quantum computers with one purpose: to mine bitcoin
+- [19 Feb 2021 12:31pm](https://mirror.roytang.net/2021/02/1362741510282747906/): @talk2GLOBE please reply to my PM
+- [19 Feb 2021 10:34am](https://mirror.roytang.net/2021/02/1362712229636898817/): Friday night Kaldheim sealed! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
+I played two sealed pools today, both felt decent but didn&rsquo;t do so well, mostly because of my own bad plays =/
+YT: https://www.youtube.com/watch?v=0pSfh3h058A
 - [18 Feb 2021 10:48am](https://mirror.roytang.net/2021/02/1362353266387021827/): Drafting Kaldheim ep9 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #kaldheim
 Looks like my internet isn&rsquo;t very good for streaming tonight though =/
 Managed to play 2 drafts, but both had terrible outcomes. I did take local recordings, but I&rsquo;m not gonna bother uploading lol
-- [18 Feb 2021 9:16am](https://mirror.roytang.net/2021/02/1362330261174689793/): Probably too optimistic, but maybe this well help governments realize their platforms for information delivery shouldnt center around private social media platforms.
-Quoted ZaidJilani&#39;s tweet:   Just a private company, controlling chokepoints of vital information and shutting them down when they&rsquo;re trying to intimidate a country&rsquo;s government.  
-- [18 Feb 2021 9:07am](https://mirror.roytang.net/2021/02/1362327948783575041/): ATTACK AND DETHRONE CAPITALISM
-Quoted westonpagano&#39;s tweet:   let’s check in on how America/capitalism is handling the latest crisis  
-- [18 Feb 2021 8:58am](https://mirror.roytang.net/2021/02/1362325561754808322/): @ChelDiokno Sir, hindi po ba pwedeng kasuhan ng cyberlibel ang mga ganyan
-- [17 Feb 2021 11:57pm](https://mirror.roytang.net/2021/02/1362189435815698433/): Our internet service has thankfully been restored, now I no longer have any excuse for not being productive.
-I am once again living in a society
 
 [View all notes](https://mirror.roytang.net/notes)
 
