@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/01/bpxoln1lmjf/",
+            "url": "https://mirror.roytang.net/2017/01/bpxoln1lmjf/",
+            "path": "/2017/01/bpxoln1lmjf/",
+            "title": "",
+            "content_html": "\u003cp\u003eHelmet #sketchdaily\u003c/p\u003e\n",
+            "summary": "Helmet #sketchdaily",
+            "date_published": "2017-01-27T06:17:25+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPxOln1lmJf/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPxOln1lmJf/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/156442006285/helmet-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824969605873541120/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155316719363912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/problems-in-large-software-dev-teams/",
+            "url": "https://mirror.roytang.net/2017/01/problems-in-large-software-dev-teams/",
+            "path": "/2017/01/problems-in-large-software-dev-teams/",
+            "title": "Problems in Large Software Dev Teams",
+            "content_html": "\u003cp\u003eHopefully by now most developers and project managers are well aware \u003ca href=\"https://en.wikipedia.org/wiki/The_Mythical_Man-Month\"\u003eof the mythical man-month and Brooks\u0026rsquo; Law:\u003c/a\u003e\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAdding manpower to a late software project makes it later\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe idea is that communications overhead scales up quickly as you add more people to a project. Oftentimes it is counter-intuitively not worthwhile to keep adding more people to try to catch up. Some implications of larger team/project size may not be immediately obvious. Some problems scale up faster as team/project size grows:\u003c/p\u003e\n\u003cp\u003eLower productivity due to increased overhead as mentioned above.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMeetings will tend to involve more people and take longer\u003c/li\u003e\n\u003cli\u003eThere will be a lot more emails\u003c/li\u003e\n\u003cli\u003eProject management effort scales up quickly too\u003c/li\u003e\n\u003cli\u003eMore people need to be allocated to maintaining builds and servers\u003c/li\u003e\n\u003cli\u003eMore time needs to be spent on task prioritization, bug triage, etc\u003c/li\u003e\n\u003cli\u003eMore people asking WTF happened to their code (LOL)\u003c/li\u003e\n\u003cli\u003eAny decision making that requires consensus building takes longer\u003c/li\u003e\n\u003cli\u003eIt becomes more difficult to find the right person to ask things\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSimply due to the number of people, there are more things that could go wrong\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDevelopers breaking the build happens more often\u003c/li\u003e\n\u003cli\u003ePeople going on sick days will happen more often\u003c/li\u003e\n\u003cli\u003eServer performance becomes much more important since any delay or downtime affects more people\u003c/li\u003e\n\u003cli\u003eSchedule delays or others unexpected problems will be more likely\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMaintainability becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTechnical debt becomes more burdensome and poor code is more likely to come back and bite you in the ass in the future\u003c/li\u003e\n\u003cli\u003eThe need for good coding and development standards increases\u003c/li\u003e\n\u003cli\u003eHigher likelihood of code duplication (\u0026ldquo;I didn\u0026rsquo;t know that Developer R already wrote a function that does X!\u0026quot;)\u003c/li\u003e\n\u003cli\u003eMore important for code to be well-decoupled, to reduce the likelihood of one developer breaking a lot of things\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSource control gets harder to use, with so many people making so many changes.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe team needs to develop standards for commit messages and linking commits to bug reports. to make it easier to track and monitor changes\u003c/li\u003e\n\u003cli\u003eSource control commit comments need to be a lot more helpful or descriptive.\u003c/li\u003e\n\u003cli\u003eMore commits happening in the same amount of time, the more you need to be constantly updating from the repository.\u003c/li\u003e\n\u003cli\u003eMerging is more likely to become difficult and complicated (may be made easier by modern source control systems)\u003c/li\u003e\n\u003cli\u003eMore important to use more, smaller files instead of fewer large files (less likely to produce conflicts)\u003c/li\u003e\n\u003cli\u003eNeed better coding/programming standards. Otherwise you have the problem of changes/commits being difficult to track for example if one developer uses different autoformatting standard (his commits will have many small reformats)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHaving consistent rules for naming, UI,  and other things becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe more developers you have, the more likely that they will have different ways of thinking. There are far more likely conflicts among a team of 8-10 developers than between 2-3 developers.\u003c/li\u003e\n\u003cli\u003eIt becomes more important to have a standard or plan for where different kinds of files should be placed. Otherwise you run into problems like different developers using different folders for their css or different package naming conventions, etc.\u003c/li\u003e\n\u003cli\u003eConsistency and standards more difficult to enforce (since there are more devs)\u003c/li\u003e\n\u003cli\u003eNeed to keep things consistent on all levels: databases, code, UI, and so on.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDocumentation becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTribal knowledge is often spread out among multiple developers\u003c/li\u003e\n\u003cli\u003eUndocumented things are less likely to be passed on to new developers\u003c/li\u003e\n\u003cli\u003eDevelopers unaware of undocumented things are more likely to have difficulties or to break things\u003c/li\u003e\n\u003cli\u003eBecomes a lot more difficult to absorb new developers into the team in times of urgentness\u003c/li\u003e\n\u003cli\u003eDocumentation more likely to quickly become out of date due to rapid pace of changes\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAnything you want to add?\u003c/p\u003e\n",
+            "summary": "Hopefully by now most developers and project managers are well aware of the mythical man-month and Brooks\u0026rsquo; Law:\n Adding manpower to a late software project makes it later\n The idea is that communications overhead scales up quickly as you add more people to a project. Oftentimes it is counter-intuitively not worthwhile to keep adding more people to try to catch up. Some implications of larger team/project size may not be immediately obvious.",
+            "date_published": "2017-01-26T01:30:20+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2017/01/problems-in-large-software-dev-teams/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/156378509465/problems-in-large-software-dev-teams"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824431448748920836/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/danielrey.cimafranca",
+                    "source_file": "comment-20170126-000000-483cdeb2-8692-4515-8fe0-910abf032fa9.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/bptlcy6lzco/",
+            "url": "https://mirror.roytang.net/2017/01/bptlcy6lzco/",
+            "path": "/2017/01/bptlcy6lzco/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;Believe me, my heart is exceptionally pure\u0026hellip; pure evil!\u0026rdquo; #sketchdaily #dragonballz\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;Believe me, my heart is exceptionally pure\u0026hellip; pure evil!\u0026rdquo; #sketchdaily #dragonballz",
+            "date_published": "2017-01-25T20:20:13+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPtlcy6lzco/index.md"
+            , "tags": ["dragonballz","sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPtlcy6lzco/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/156382339820/believe-me-my-heart-is-exceptionally-pure-pure"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824456916567019520/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155310886053912:1"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/01/156344450610/",
             "url": "https://mirror.roytang.net/2017/01/156344450610/",
             "path": "/2017/01/156344450610/",
@@ -932,65 +988,6 @@
             "source_path": "notes/2017/01/821202290799296512.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/821202290799296512/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/online-discussions-opposing-views-and-street-fighter/",
-            "url": "https://mirror.roytang.net/2017/01/online-discussions-opposing-views-and-street-fighter/",
-            "path": "/2017/01/online-discussions-opposing-views-and-street-fighter/",
-            "title": "Online Discussions, Opposing Views, and Street Fighter",
-            "content_html": "\u003cblockquote\u003e\n\u003cp\u003e\u0026ldquo;If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.\u0026rdquo;\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e― Sun Tzu, The Art of War\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eI was reading a forum thread recently about learning competitive Street Fighter. The poster was using a particular character (his \u0026ldquo;main\u0026rdquo;) and asking how he could learn to counter the attack strings of other characters. The answers from more experienced players were pretty much what I would have expected: you had to dedicate specific time and effort to each matchup you wanted to study. That meant going into training mode, looking at the opposing character\u0026rsquo;s attack strings and seeing where he could interrupt them or the proper way to answer them. It meant a lot of hard work too, since fighting games typically have a lot of characters. So reaching the top tiers meant understanding each opposing character in and out, knowing their strengths and weaknesses and so on.\u003c/p\u003e\n\u003cp\u003eI think it not only applies to competition, but also to any scenario where there is an opposing party or point of view. In order to make any progress or improvement, it is necessary to understand where the other side is coming from and study their motivations. Sadly, in online debates it often turns into the equivalent of a shouting match where everyone just screams out their POV hoping to brute force their opponent into some kind of \u0026ldquo;submission\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eBack to Street Fighter: When picking up a new fighting game, I typically try to sample all the available characters until I find one whose fighting style I like and am comfortable playing as \u0026ldquo;main\u0026rdquo; (hint: it\u0026rsquo;s often Ryu lol).\u003c/p\u003e\n\u003cp\u003eIn the same way, in any online discussion it\u0026rsquo;s important to expose yourself to a variety of opinions, and not limit your discussions only to people with similar views. Political discussion online can get toxic so it becomes tempting to block out those views that you disagree with, but this tends to create an echo chamber effect. It\u0026rsquo;s a good idea to keep a healthy amount of opposing views on your feeds. Although where you draw the line is of course your own decision; Personally I try to avoid blocking any friends and have not yet had occasion to do so, although I do block any sites that tend to promote misinformation or stuff like racism.\u003c/p\u003e\n\u003cp\u003eUnlike competition, the goal of an online discussion (especially for sensitive topics like politics) isn\u0026rsquo;t really winning. Discussion should lead to some sort of progress or learning, or in the worst case, \u0026ldquo;agreeing to disagree\u0026rdquo;. But regardless of the outcome, understanding opposing points of view should give you valuable insights into your own views, and maybe even convince you to reconsider them.\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.\u0026rdquo;\n  ― Sun Tzu, The Art of War\n I was reading a forum thread recently about learning competitive Street Fighter.",
-            "date_published": "2017-01-17T01:30:54+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2017/01/online-discussions-opposing-views-and-street-fighter/index.md"
-            , "tags": ["Opinions"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/155970854510/online-discussions-opposing-views-and-street"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/821169667309977600/"}]
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20170117124558-wp-MrValdez.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20170117141425-wp-roy.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/5oagti/",
-            "url": "https://mirror.roytang.net/2017/01/5oagti/",
-            "path": "/2017/01/5oagti/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-rgames-what-was-the-best-game-trailer-of-all-timehttpsredditcomrgamescomments5oagtiwhat_was_the_best_game_trailer_of_all_time\"\u003ePosted on r/Games: \u003ca href=\"https://reddit.com/r/Games/comments/5oagti/what_was_the_best_game_trailer_of_all_time/\"\u003eWhat was the best game trailer of all time?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e[removed]\u003c/p\u003e\n",
-            "summary": "Posted on r/Games: What was the best game trailer of all time? [removed]",
-            "date_published": "2017-01-16T19:59:02+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/5oagti/index.md"
-            , "tags": ["gaming"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Games/comments/5oagti/what_was_the_best_game_trailer_of_all_time/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/820978500685348866/",
-            "url": "https://mirror.roytang.net/2017/01/820978500685348866/",
-            "path": "/2017/01/820978500685348866/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e FrAgile\u003c/p\u003e\n",
-            "summary": "@rocketkeis FrAgile",
-            "date_published": "2017-01-16T12:58:22+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/820978500685348866.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/820978500685348866/"}]
             
             
             }
