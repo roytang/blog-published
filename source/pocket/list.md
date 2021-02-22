@@ -1,4 +1,6 @@
 
+- [The Big List of Personal Websites](/2021/02/the-big-list-of-personal-websites/)
+
 - [The web didn&#39;t change; you did](/2021/02/the-web-didnt-change-you-did/)
 
 - [General Unstructured Thoughts On “Being Cancelled”](/2021/02/general-unstructured-thoughts-on-being-cancelled/)
