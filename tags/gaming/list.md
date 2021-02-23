@@ -1,4 +1,6 @@
 
+- [Digital Boardgames Review: Scythe](/2021/02/digital-boardgames-review-scythe/)
+
 - [Digital Boardgames Review: Sentinels of the Multiverse](/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 
 - [Game Review: Super Mario Odyssey](/2020/12/game-review-super-mario-odyssey/)

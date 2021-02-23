@@ -1,4 +1,6 @@
 
+- [Book Review: Ghost of My Father by Scott Berkun](/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
+
 - [Book Review: Walkaway by Cory Doctorow](/2021/02/book-review-walkaway-by-cory-doctorow/)
 
 - [Book Review: The Year Without Pants](/2021/02/book-review-the-year-without-pants/)
