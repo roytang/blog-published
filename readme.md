@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Game Review: Knightin&#39;](https://mirror.roytang.net/2021/02/game-review-knightin/)
 - [Book Review: Ghost of My Father by Scott Berkun](https://mirror.roytang.net/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
 - [Digital Boardgames Review: Scythe](https://mirror.roytang.net/2021/02/digital-boardgames-review-scythe/)
 - [Weeknotes 2021-02-21](https://mirror.roytang.net/2021/02/weeknotes-2021-02-21/)
 - [Book Review: Walkaway by Cory Doctorow](https://mirror.roytang.net/2021/02/book-review-walkaway-by-cory-doctorow/)
-- [Digital Boardgames Review: Sentinels of the Multiverse](https://mirror.roytang.net/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,12 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [23 Feb 2021 10:00pm](https://mirror.roytang.net/2021/02/lquag0/): Posted on r/StreetFighter: SF5 - is it expected to be so hard to find a match? Filthy casual here. I haven&rsquo;t booted up the game in a while, I play on Steam (though I also have the PS4 copy&hellip; somewhere). Tried to find a match (ranked) last night, around 10pm. My settings are connection 4-5, platform any. Waited for 10 mins, couldn&rsquo;t find a match. Not sure if it&rsquo;s because I&rsquo;m low ranked (ultra bronze i think) while everyone&rsquo;s already silver and up or something?
+- [23 Feb 2021 10:01am](https://mirror.roytang.net/2021/02/1364153348023226368/): I think #MagicArena should have a random deck mode. You queue up, you get paired, it chooses one of the decks in your collection at random (any format), you don&rsquo;t know which until your mulligan decision. (People with &lt; 10 decks get starter decks added to their pool)
+- [23 Feb 2021 2:56am](https://mirror.roytang.net/2021/02/512f30a007215436724cc156c524ff00/): &ldquo;Let everything happen to you: beauty and terror. Just keep going. No feeling is final.&rdquo;
+-Rainer Maria Rilke, &ldquo;Go to the Limits of Your Longing&rdquo;
 - [22 Feb 2021 11:07am](https://mirror.roytang.net/2021/02/5d9c9ac4060b440cdd16fcf15bf78000/): Sometimes I find some long ago note or tweet that I wrote implying something bad or disappointing happened and I have no other notes or any idea what happened on that date, a mystery forever lost to time, but also a reminder that THIS TOO SHALL PASS always applies
 - [22 Feb 2021 8:19am](https://mirror.roytang.net/2021/02/1363765401742569474/): Time to (re)mix it up! This pixel perfect adventure is one you don’t want to miss.
 Your browser does not support the video tag.  
-- [22 Feb 2021 7:09am](https://mirror.roytang.net/2021/02/1363747640391860225/): For some reason, I watched Space Sweepers, a Korean sci-fi movie on Netflix. Fun ride, fairly entertaining, pretty good setpieces and special effects. (They are so far ahead of the local film industry.) Plot a bit predictable. Villain made no sense.
-- [20 Feb 2021 1:21am](https://mirror.roytang.net/2021/02/1362935326239465472/): @art_abon the only surviving humans are the descendants of the first Mars colonists. Their only government: The SpaceX board of directors
-- [19 Feb 2021 3:18pm](https://mirror.roytang.net/2021/02/1362783672357724161/): The year is 2398. Earth is no longer habitable, the surviving humans have migrated to space colonies. The entire Earth has been converted into a supercluster of quantum computers with one purpose: to mine bitcoin
 
 [View all notes](https://mirror.roytang.net/notes)
 

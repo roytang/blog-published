@@ -1,4 +1,6 @@
 
+- [Game Review: Knightin&#39;](/2021/02/game-review-knightin/)
+
 - [Digital Boardgames Review: Scythe](/2021/02/digital-boardgames-review-scythe/)
 
 - [Digital Boardgames Review: Sentinels of the Multiverse](/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
