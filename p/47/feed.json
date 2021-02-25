@@ -11,6 +11,142 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/",
+            "url": "https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/",
+            "path": "/2019/02/triviastorm-text-and-answer-parsing/",
+            "title": "TriviaStorm: Text and Answer parsing",
+            "content_html": "\u003cp\u003eA while back I started a \u003ca href=\"/2017/02/weekend-project-twitter-trivia-bot/\"\u003eTwitter trivia bot as a weekend project\u003c/a\u003e. That bot is still \u003ca href=\"https://twitter.com/triviastorm\"\u003eup and running on Twitter\u003c/a\u003e, you can check it out there!\u003c/p\u003e\n\u003cp\u003eBut today, I thought I\u0026rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for \u003ca href=\"https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/\"\u003eDjango\u0026rsquo;s unit testing framework\u003c/a\u003e. I\u0026rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe bot had to be able to handle a wide variety of answers\u003c/li\u003e\n\u003cli\u003ethere were a lot of test cases to check and a single checking function handling everything - I couldn\u0026rsquo;t risk breaking previous working tests\u003c/li\u003e\n\u003cli\u003einputs were discrete and outputs were easily checkable\u003c/li\u003e\n\u003cli\u003eI needed to be able to add new test scenarios all the time as more problematic answers were provided\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe project currently isn\u0026rsquo;t open source, but I did make a gist of the \u003ccode\u003etests.py\u003c/code\u003e I used \u003ca href=\"https://gist.github.com/roytang/9199962097bdf3ca2aa8ec9c43bd7ef8\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe \u003ccode\u003echeck\u003c/code\u003e function basically accepts three parameters:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea checking mode (currently only supports EXACT and ALL_ANYORDER)\u003c/li\u003e\n\u003cli\u003ethe answer phrase provided by the player\u003c/li\u003e\n\u003cli\u003ea set of valid answers accepted for the question\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThere\u0026rsquo;s a number of test cases already handled:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003echecking should be case-insensitive\u003c/li\u003e\n\u003cli\u003earticles should be ignored if they\u0026rsquo;re at the start of the answer phrase\u003c/li\u003e\n\u003cli\u003enumbers should be acceptable for the spelled-out versions i.e. \u0026ldquo;7\u0026rdquo; should be accepted for \u0026ldquo;seven\u0026rdquo;, and vice versa\u003c/li\u003e\n\u003cli\u003esome minor soundex (phonetic matching) support (via \u003ca href=\"https://github.com/jamesturk/jellyfish\"\u003ePython Jellyfish\u003c/a\u003e)\u003c/li\u003e\n\u003cli\u003ehandling of questions that support multiple answers. This is what ALL_ANYORDER is for - it means that all the given answers must be provided, but they can be in any order. i.e. if the valid answer set is \u003ccode\u003e\u0026quot;Huey\u0026quot;\u003c/code\u003e, \u003ccode\u003e\u0026quot;Dewey\u0026quot;\u003c/code\u003e and \u003ccode\u003e\u0026quot;Louie\u0026quot;\u003c/code\u003e, then \u003ccode\u003e\u0026quot;Louie Huey Dewey\u0026quot;\u003c/code\u003e should be accepted as an answer\u003c/li\u003e\n\u003cli\u003enonalphanumeric characters should be treated as whitespace, except in some special cases\u003c/li\u003e\n\u003cli\u003especial case: abbreviations like \u003ccode\u003e\u0026quot;don't\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;can't\u0026quot;\u003c/code\u003e should be treated as if they were a single term like \u003ccode\u003e\u0026quot;dont\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;cant\u0026quot;\u003c/code\u003e instead of \u003ccode\u003e\u0026quot;don t\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;can t\u0026quot;\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe answer checking definitely still isn\u0026rsquo;t perfect, but I\u0026rsquo;m pretty happy with where it\u0026rsquo;s at right now. There is also definitely an element of subjectivity as to which answers should be accepted. One time a player complained that his answer \u003ccode\u003e\u0026quot;Batman vs Superman Dawn of Justice\u0026quot;\u003c/code\u003e should count for \u003ccode\u003e\u0026quot;Batman v Superman: Dawn of Justice\u0026quot;\u003c/code\u003e, but for this particular question I had chosen not to allow \u0026ldquo;vs\u0026rdquo; for \u0026ldquo;v\u0026rdquo; because that was the actual movie title, which might be unreasonable now that I think about it!\u003c/p\u003e\n\u003cp\u003eI do know that I need to implement a better \u0026ldquo;synonym\u0026rdquo; handling, i.e. mapping of \u003ccode\u003e\u0026quot;v\u0026quot;\u0026lt;-\u0026gt;\u0026quot;vs\u0026quot;\u003c/code\u003e and other terms like \u003ccode\u003e\u0026quot;mr\u0026quot;\u0026lt;-\u0026gt;\u0026quot;mister\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;natl\u0026quot;\u0026lt;-\u0026gt;\u0026quot;national\u0026quot;\u003c/code\u003e. The problem with handling things like that is that is the possible combinations of phrases expands when multiple such terms are found in the same answer, so it can\u0026rsquo;t scale too well. I suppose I need to normalize the answer sets at the time the question is defined. What do you know, I figured out how to do something just by writing a blog post!\u003c/p\u003e\n\u003cp\u003eI do have a bunch of other enhancements planned for the trivia bot, including support for slack and discord, and a longer time frame roadmap, but I\u0026rsquo;m not sure when I can commit more time to it. Still, it\u0026rsquo;s turned out to be a pretty fun endeavor, I\u0026rsquo;m hoping it leads to something cool!\u003c/p\u003e\n",
+            "summary": "A while back I started a Twitter trivia bot as a weekend project. That bot is still up and running on Twitter, you can check it out there!\nBut today, I thought I\u0026rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for Django\u0026rsquo;s unit testing framework. I\u0026rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:",
+            "date_published": "2019-02-03T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/02/triviastorm-checking-answers/index.md"
+            , "tags": ["projects","python","triviastorm","testing","Software Development"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/182513007484/",
+            "url": "https://mirror.roytang.net/2019/02/182513007484/",
+            "path": "/2019/02/182513007484/",
+            "title": "",
+            "content_html": "\u003cp\u003eFlash (Rebirth) #34 Justice League movie variant cover by McKone and Fajardo\u003c/p\u003e\n",
+            "summary": "Flash (Rebirth) #34 Justice League movie variant cover by McKone and Fajardo",
+            "date_published": "2019-02-03T02:00:39+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/182513007484/index.md"
+            , "tags": ["dc","comics","dc comics","flash","justice league","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182513007484/flash-rebirth-34-justice-league-movie-variant"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091879108550770689/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/1091808147465895936/",
+            "url": "https://mirror.roytang.net/2019/02/1091808147465895936/",
+            "path": "/2019/02/1091808147465895936/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone in the US hacked my BPI credit card somehow D:\u003c/p\u003e\n",
+            "summary": "Someone in the US hacked my BPI credit card somehow D:",
+            "date_published": "2019-02-02T21:18:41+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/02/1091808147465895936.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091808147465895936/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/1091612242972274689/",
+            "url": "https://mirror.roytang.net/2019/02/1091612242972274689/",
+            "path": "/2019/02/1091612242972274689/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhen I run out of stuff to say \u003ca href=\"https://twitter.com/andreasklinger/status/1091555027053772800\"\u003ehttps://twitter.com/andreasklinger/status/1091555027053772800\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "When I run out of stuff to say https://twitter.com/andreasklinger/status/1091555027053772800",
+            "date_published": "2019-02-02T08:20:14+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/02/1091612242972274689.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091612242972274689/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/game-review-slay-the-spire/",
+            "url": "https://mirror.roytang.net/2019/02/game-review-slay-the-spire/",
+            "path": "/2019/02/game-review-slay-the-spire/",
+            "title": "Game Review: Slay the Spire",
+            "content_html": "\u003cp\u003eI picked up Slay the Spire during the last (Winter) Steam Sale, not really knowing what I was getting into. I had heard some good things, but I didn\u0026rsquo;t really know much other than it was a roguelite where I had to go through a dungeon. But it was cheap so I took the dive.\u003c/p\u003e\n\u003cp\u003eI was pleasantly surprised to find that not only was it a roguelite, it was also a deckbuilding game! I love deckbuilding games, they often generate a significant amount of variance that translates to fun, and pairing that mechanic with a roguelite meant each run would be pretty interesting.\u003c/p\u003e\n\u003cp\u003eSo in Slay the Spire, you choose a character from three choices, each of which have a different set of powers and cards. You go through the dungeons, one room at a time. Each room might have an enemy, a treasure or a random event. The map for the entire dungeon act is available ahead of time, so you can plot your route as needed.\u003c/p\u003e\n\u003ca href=\"#1c94092f8f4b7ae78ac2c2ef706b0caa-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/02/game-review-slay-the-spire/slaythespire_hu35bffa5482582b07d5d679f7c3d03273_358404_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"1c94092f8f4b7ae78ac2c2ef706b0caa-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/02/game-review-slay-the-spire/slaythespire.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"2 Feb 2019 5:56am\"\u003e2 Feb 2019 5:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eYour character is equipped with a deck of cards that includes attacks and blocks and powers. Along the way you can add new cards to your deck by defeating enemies or opening chests or buying from merchants and so on.\u003c/p\u003e\n\u003cp\u003eThere are three available characters to play (as of now), and they offer pretty different play styles. There\u0026rsquo;s the Ironclad, who\u0026rsquo;s kind of a straightforward attack and block kind of guy. There\u0026rsquo;s the Silent, a rogue who prefers chaining multiple attacks or using poison. And there\u0026rsquo;s the Defect, who summons persistent orbs that perform various functions. The dungeon proceeds the same way for each class, but they have different card sets to choose from so battles often play out differently, and each character has different builds you can lean towards to increase your odds of a successful run.\u003c/p\u003e\n\u003cp\u003eBattles proceed in a turn-based manner. You draw some number of cards from your deck and each turn, and play as many as your energy allows. The unique thing about Slay the Spire is that during your turn, you can see each enemy\u0026rsquo;s intent. That is, you can see what the enemy will do next turn, more or less, via an icon over their head (see image).\u003c/p\u003e\n\u003ca href=\"#aafaacd2db44b2628a0dce0eb63cb6a4-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/02/game-review-slay-the-spire/slaythespireintent_hu4b75871302203df90c0b1fcd01f05aff_410558_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"aafaacd2db44b2628a0dce0eb63cb6a4-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/02/game-review-slay-the-spire/slaythespireintent.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"2 Feb 2019 5:56am\"\u003e2 Feb 2019 5:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eIf the enemy plans to attack, there\u0026rsquo;s an icon over their head indicating how much damage and how many attacks they\u0026rsquo;re going to do. If they\u0026rsquo;re going to block, there\u0026rsquo;s a shield icon. And there\u0026rsquo;s icon for if they are going to do buffs or debuffs. In a sense the game gives you perfect information about what the enemies are going to do.\u003c/p\u003e\n\u003cp\u003eThis means every turn is sort of a mini-puzzle: what are the cards I need to play to minimize the amount of damage I take (always your priority, since taking too much damage endangers your run) or should I try to avoid debuffs or can I maybe already beat the enemy this turn?\u003c/p\u003e\n\u003cp\u003eIt all plays out in the framework of the spire, the dungeon you\u0026rsquo;re trying to conquer, with the map being randomly generated rooms. Every room presents choices: which card to add to your deck? Which card to remove? Should I risk some HP to gain a relic? And so on.\u003c/p\u003e\n\u003cp\u003eIt\u0026rsquo;s all very fun, and quite challenging. It can also be frustrating, but since the game gives you near perfect information (you even know at the start of a floor which among a set of bosses you are going to be facing at the end of the floor), any deaths are always at least partly your fault.\u003c/p\u003e\n\u003cp\u003eI tend to wait until I\u0026rsquo;ve \u0026ldquo;completed\u0026rdquo; games before I review them, and for Slay the Spire I did manage to finish a run with each class at least once. But I\u0026rsquo;ve only scratched the surface, there\u0026rsquo;s a ton of content beyond that. I haven\u0026rsquo;t even gotten the \u0026ldquo;true ending\u0026rdquo; yet, which only becomes available after beating the game once with each class, as the \u0026ldquo;true ending\u0026rdquo; boss is quite difficult. And even beyond that there\u0026rsquo;s special cards to unlock, daily challenges with different parameters, and even an endless mode I haven\u0026rsquo;t tried yet. I also hear that the devs are very diligent and add content on a regular basis.\u003c/p\u003e\n\u003cp\u003eSlay the Spire recently went \u0026ldquo;live\u0026rdquo; and left Early Access, just last month, and they\u0026rsquo;re planning for a Switch port too. The one disadvantage of the game for me is that each run takes a considerable amount of time (You can actually quit at any time during a run and resume it later, but I always feel compelled to finish each run in one sitting), and I have a lot of other games to play. I\u0026rsquo;ll still probably revisit the Spire from time to time, but frankly trying to \u0026ldquo;complete\u0026rdquo; the game, Steam achievements and all, seems like a huge task, given the large amount of variance in the game, but maybe I\u0026rsquo;ll get there someday.\u003c/p\u003e\n",
+            "summary": "I picked up Slay the Spire during the last (Winter) Steam Sale, not really knowing what I was getting into. I had heard some good things, but I didn\u0026rsquo;t really know much other than it was a roguelite where I had to go through a dungeon. But it was cheap so I took the dive.\nI was pleasantly surprised to find that not only was it a roguelite, it was also a deckbuilding game!",
+            "date_published": "2019-02-02T05:56:56+00:00",
+            "date_modified": "2020-10-20T13:05:18+08:00",
+            "section": "post",
+            "source_path": "post/2019/02/slay-the-spire/index.md"
+            , "tags": ["Gaming"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091578222427422721/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/182487760887/",
+            "url": "https://mirror.roytang.net/2019/02/182487760887/",
+            "path": "/2019/02/182487760887/",
+            "title": "",
+            "content_html": "\u003cp\u003eNew Superman #1 cover by Bogdanovic and Shannon\u003c/p\u003e\n",
+            "summary": "New Superman #1 cover by Bogdanovic and Shannon",
+            "date_published": "2019-02-02T02:00:51+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/182487760887/index.md"
+            , "tags": ["dc","comics","dc comics","superman","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182487760887/new-superman-1-cover-by-bogdanovic-and-shannon"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091516769624358912/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/1091374129410859009/",
+            "url": "https://mirror.roytang.net/2019/02/1091374129410859009/",
+            "path": "/2019/02/1091374129410859009/",
+            "title": "",
+            "content_html": "\u003cp\u003ecurrent mood\u003c/p\u003e\n",
+            "summary": "current mood",
+            "date_published": "2019-02-01T16:34:03+00:00",
+            "date_modified": "2020-10-13T14:58:22+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/1091374129410859009/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091374129410859009/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/1091372287654121472/",
+            "url": "https://mirror.roytang.net/2019/02/1091372287654121472/",
+            "path": "/2019/02/1091372287654121472/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2019-02-01T16:26:44+00:00",
+            "date_modified": "2020-02-01T01:26:35+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/1091372287654121472/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091372287654121472/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/02/1091357731280146433/",
             "url": "https://mirror.roytang.net/2019/02/1091357731280146433/",
             "path": "/2019/02/1091357731280146433/",
@@ -720,142 +856,6 @@
             "source_path": "notes/2019/01/1088642083320139778.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088642083320139778/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/182283926466/",
-            "url": "https://mirror.roytang.net/2019/01/182283926466/",
-            "path": "/2019/01/182283926466/",
-            "title": "",
-            "content_html": "\u003cp\u003eCaptain America (2018) #1 cover by Alex Ross\u003c/p\u003e\n",
-            "summary": "Captain America (2018) #1 cover by Alex Ross",
-            "date_published": "2019-01-25T02:00:36+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/01/182283926466/index.md"
-            , "tags": ["marvel","comics","captain america","alex ross","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182283926466/captain-america-2018-1-cover-by-alex-ross"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088617602912608256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/1088485116798676992/",
-            "url": "https://mirror.roytang.net/2019/01/1088485116798676992/",
-            "path": "/2019/01/1088485116798676992/",
-            "title": "",
-            "content_html": "\u003cp\u003eAlso, my quest for Arena mythic rank is not going well #somanybadplays\u003c/p\u003e\n",
-            "summary": "Also, my quest for Arena mythic rank is not going well #somanybadplays",
-            "date_published": "2019-01-24T17:14:09+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/1088485116798676992.md"
-            , "tags": ["somanybadplays"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088485116798676992/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/1088485026159706113/",
-            "url": "https://mirror.roytang.net/2019/01/1088485026159706113/",
-            "path": "/2019/01/1088485026159706113/",
-            "title": "",
-            "content_html": "\u003cp\u003eTIL Google Sheets can do some simple SQL, i.e. something like =QUERY(A2:D1000,\u0026ldquo;select C, count(A) group by C\u0026rdquo;)\u003c/p\u003e\n",
-            "summary": "TIL Google Sheets can do some simple SQL, i.e. something like =QUERY(A2:D1000,\u0026ldquo;select C, count(A) group by C\u0026rdquo;)",
-            "date_published": "2019-01-24T17:13:47+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/1088485026159706113.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088485026159706113/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/eetszhb/",
-            "url": "https://mirror.roytang.net/2019/01/eetszhb/",
-            "path": "/2019/01/eetszhb/",
-            "title": "",
-            "content_html": "\u003cp\u003eBack to the Future\u003c/p\u003e\n",
-            "summary": "Back to the Future",
-            "date_published": "2019-01-24T06:36:30+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/eetszhb/index.md"
-            , "tags": ["AskReddit"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/AskReddit/comments/aj7a3g/what_movie_do_you_consider_to_be_perfect/eetszhb/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/trailers-and-spoilers/",
-            "url": "https://mirror.roytang.net/2019/01/trailers-and-spoilers/",
-            "path": "/2019/01/trailers-and-spoilers/",
-            "title": "Trailers and Spoilers",
-            "content_html": "\u003cp\u003eThe first trailer for \u003cem\u003eSpider-Man Far From Home\u003c/em\u003e dropped last week. I used to pretty hyped for superhero movie trailers, but I haven\u0026rsquo;t bother watching this one yet. MCU still has two more movies coming out before this one, and I\u0026rsquo;m already hyped enough for those, I don\u0026rsquo;t think I have hype to spare for a third one.\u003c/p\u003e\n\u003cp\u003eMy brother was complaining to me about the trailer, saying he was spoiled about some elements. Specifically, he wasn\u0026rsquo;t aware that [actor] was in the movie playing [villain]. I keep up with comic book news, so that wasn\u0026rsquo;t news for me, but I can see how disappointing it might be. Also, this seems to be typical - I check the first trailer for \u003cem\u003eSpider-Man Homecoming\u003c/em\u003e and it did show Michael Keaton\u0026rsquo;s Vulture. It\u0026rsquo;s hard to avoid the villain info, few people consider it a spoiler, it\u0026rsquo;s usually right there in the IMDB page.\u003c/p\u003e\n\u003cp\u003eI do think that trailers these days show too much though. During the past few years, I\u0026rsquo;ve been avoiding watching any trailer beyond the first one that comes out. Although given that I follow comic book news, it\u0026rsquo;s hard to avoid spoilers from succeeding trailer. Starting with the new Spider-Man I\u0026rsquo;m considering not watching any trailers at all (at least until I\u0026rsquo;m forced to watch one before an actual movie).\u003c/p\u003e\n\u003cp\u003eIt might also be a problem with these comic book movies that they come from an established IP - so someone familiar with the source material like me basically already has an idea of what stuff might happen. The title alone of \u003cem\u003eAvengers Infinity War\u003c/em\u003e gave me an idea of what happens in the movie after all.\u003c/p\u003e\n\u003cp\u003eI think the perfect trailer for a completely new franchise gives you a taste of what\u0026rsquo;s to come without giving you details of the major conflict and so on. The \u003cem\u003eCaptain Marvel\u003c/em\u003e and \u003cem\u003eShazam\u003c/em\u003e trailers have been pretty good in this regard.\u003c/p\u003e\n\u003cp\u003eFor a sequel, the perfect trailer for me would be the first trailer for \u003cem\u003eAvengers: Endgame\u003c/em\u003e, which basically acted as a \u0026ldquo;story so far\u0026rdquo;, giving no new info that we didn\u0026rsquo;t know from \u003cem\u003eInfinity War\u003c/em\u003e. Other than the actual movie\u0026rsquo;s title at least, which I had been anticipating for a long time.\u003c/p\u003e\n",
-            "summary": "The first trailer for Spider-Man Far From Home dropped last week. I used to pretty hyped for superhero movie trailers, but I haven\u0026rsquo;t bother watching this one yet. MCU still has two more movies coming out before this one, and I\u0026rsquo;m already hyped enough for those, I don\u0026rsquo;t think I have hype to spare for a third one.\nMy brother was complaining to me about the trailer, saying he was spoiled about some elements.",
-            "date_published": "2019-01-24T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/01/trailers-and-spoilers/index.md"
-            , "tags": ["movies","Pop Culture"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088317109791272961/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/182258322007/",
-            "url": "https://mirror.roytang.net/2019/01/182258322007/",
-            "path": "/2019/01/182258322007/",
-            "title": "",
-            "content_html": "\u003cp\u003eImmortal Hulk #1 cover by Alex Ross\u003c/p\u003e\n",
-            "summary": "Immortal Hulk #1 cover by Alex Ross",
-            "date_published": "2019-01-24T02:00:31+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/01/182258322007/index.md"
-            , "tags": ["marvel","comics","hulk","alex ross","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182258322007/immortal-hulk-1-cover-by-alex-ross"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088255195514134529/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/eerozdf/",
-            "url": "https://mirror.roytang.net/2019/01/eerozdf/",
-            "path": "/2019/01/eerozdf/",
-            "title": "",
-            "content_html": "\u003cblockquote\u003e\n\u003cp\u003esince mono-red is the majority of the meta at my ranking, what deck would be best to punish that deck\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eFor budget options, I like the white weenie decks vs red. They have 12 one-drops that can gain life (the vampire from legion\u0026rsquo;s landing, the 1/1 lifelink flier and the 1/1 gain 1 life if if i have 3 creatures), so they almost always have incidental lifegain. If they manage to pump even 1-2 lifelink vampires with the \u0026ldquo;convoke and put a +1/+1 counter on my dudes\u0026rdquo; elephant, it\u0026rsquo;s a big deal. (I should really learn the names of cards). Selesnya is also pretty good - they have access to both Knight of Autumn and Wildgrowth Walker, so it\u0026rsquo;s kind of a nightmare. And then of course there\u0026rsquo;s those control decks that have Absorb AND \u0026ldquo;Gain 3 life draw a card\u0026rdquo; AND Moment of Craving. I consider these much worse matchups for RDW than Golgari\u003c/p\u003e\n\u003cp\u003eI agree the Golgari deck can run out of steam too. Golgari\u0026rsquo;s advantage is that your creatures are generally of higher quality and will win over theirs (except maybe for Chainwhirler). Find, Vivien, Karn, and even small Vraska are good for getting your second wind and refilling your hand after stabilizing.\u003c/p\u003e\n\u003cp\u003eI also run 1 Brontodon in the main, but I don\u0026rsquo;t think I can cut the reapers, as I\u0026rsquo;ve won a few close fights just by chump blocking with creatures to draw cards and find my answers.\u003c/p\u003e\n",
-            "summary": "since mono-red is the majority of the meta at my ranking, what deck would be best to punish that deck\n For budget options, I like the white weenie decks vs red. They have 12 one-drops that can gain life (the vampire from legion\u0026rsquo;s landing, the 1/1 lifelink flier and the 1/1 gain 1 life if if i have 3 creatures), so they almost always have incidental lifegain. If they manage to pump even 1-2 lifelink vampires with the \u0026ldquo;convoke and put a +1/+1 counter on my dudes\u0026rdquo; elephant, it\u0026rsquo;s a big deal.",
-            "date_published": "2019-01-23T14:54:13+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/eerozdf/index.md"
-            , "tags": ["spikes"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/spikes/comments/ais6hu/standard_golgari_midrange_players_how_do_you_beat/eerozdf/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/eerjc0i/",
-            "url": "https://mirror.roytang.net/2019/01/eerjc0i/",
-            "path": "/2019/01/eerjc0i/",
-            "title": "",
-            "content_html": "\u003cp\u003eI started tracking my BO1 Arena games today. Out of 35 matches, I faced 8 RDW, won 50% (4 matches). I think the matchup overall is about 50-50, maybe 55-45 in Golgari\u0026rsquo;s favor, and your win rate goes up if you get at least one life gain off Wildgrowth Walker. The 3 out of the 4 games I lost I either didn\u0026rsquo;t have access to one color, or never got off 2 lands. (I might need to mulligan better or add more duals - I\u0026rsquo;ve been saving my rare WCs so I only have 3 shock 2 check)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve played both decks on Arena; red has some explosive hands, but has a tendency to run out of steam. If they get the nut draw, there\u0026rsquo;s not much you can do, and you\u0026rsquo;ll be down to 6-8 before turn 4.\u003c/p\u003e\n\u003cp\u003eHaving wildgrowth isn\u0026rsquo;t necessary to win - 2 out of my 4 wins I didn\u0026rsquo;t draw one.\u003c/p\u003e\n\u003cp\u003eThe ideal opening hand has 2-3 explore creatures (ideally two 2-drops, squire is preferred over branchwalker and a jadelight) to ensure a steady flow of lands. On turn one you play an elf if you have it, even if you have to use a shock, because they\u0026rsquo;ll bolt it everytime, and 2 \u0026lt;= 2-3. I kind of wish I had been tracking who was going first - I suspect it matters a lot, I\u0026rsquo;ll do that tomorrow.\u003c/p\u003e\n\u003cp\u003eYou want to play creatures on turns 2-3 and just assume they\u0026rsquo;re going to die. You want them to waste their burn spells on your creatures. Play wildgrowth last, but if he\u0026rsquo;s your only guy, it\u0026rsquo;s okay to run him on 2 (especially if you have Find to get him back later).\u003c/p\u003e\n\u003cp\u003eWhen exploring during the early turns, send to the graveyard Tyrant, Karn, big Vraska, or Vivienne, those won\u0026rsquo;t be much help. Getting more creatures is better, just make sure you can play them.\u003c/p\u003e\n\u003cp\u003eYou\u0026rsquo;re going to stabilize at around turns 4-6, with around 6-10 life, and hopefully the red deck\u0026rsquo;s hand is spent. 6 life is scary - you\u0026rsquo;re basically hoping he doesn\u0026rsquo;t have two bolts, but it happens. Stay scared, never attack without leaving a blocker for a hasted 2/2 mage. You\u0026rsquo;re hoping he doesn\u0026rsquo;t draw LUtS, Risk Factor or Frenzy (frenzy is the worst for him, light up is the best)\u003c/p\u003e\n",
-            "summary": "I started tracking my BO1 Arena games today. Out of 35 matches, I faced 8 RDW, won 50% (4 matches). I think the matchup overall is about 50-50, maybe 55-45 in Golgari\u0026rsquo;s favor, and your win rate goes up if you get at least one life gain off Wildgrowth Walker. The 3 out of the 4 games I lost I either didn\u0026rsquo;t have access to one color, or never got off 2 lands.",
-            "date_published": "2019-01-23T13:30:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/eerjc0i/index.md"
-            , "tags": ["spikes"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/spikes/comments/ais6hu/standard_golgari_midrange_players_how_do_you_beat/eerjc0i/"}]
             
             
             }

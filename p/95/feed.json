@@ -11,6 +11,158 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/08/902202716675497985/",
+            "url": "https://mirror.roytang.net/2017/08/902202716675497985/",
+            "path": "/2017/08/902202716675497985/",
+            "title": "",
+            "content_html": "\u003cp\u003eCersei Lannister doesn\u0026rsquo;t care about anyone but her own family. She\u0026rsquo;s basically Filipino.\u003c/p\u003e\n",
+            "summary": "Cersei Lannister doesn\u0026rsquo;t care about anyone but her own family. She\u0026rsquo;s basically Filipino.",
+            "date_published": "2017-08-28T16:14:24+00:00",
+            "date_modified": "2020-08-19T14:11:33+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/902202716675497985/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/902202716675497985/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/902155592499789824/",
+            "url": "https://mirror.roytang.net/2017/08/902155592499789824/",
+            "path": "/2017/08/902155592499789824/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e greece\u003c/p\u003e\n",
+            "summary": "@triviastorm greece",
+            "date_published": "2017-08-28T13:07:09+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/902155592499789824.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/902155592499789824/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/901780347532099584/",
+            "url": "https://mirror.roytang.net/2017/08/901780347532099584/",
+            "path": "/2017/08/901780347532099584/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SBianchiArt/\"\u003e@SBianchiArt\u003c/a\u003e how long does a piece like this take you?\u003c/p\u003e\n",
+            "summary": "@SBianchiArt how long does a piece like this take you?",
+            "date_published": "2017-08-27T12:16:03+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/901780347532099584.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/901780347532099584/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/45901868/",
+            "url": "https://mirror.roytang.net/2017/08/45901868/",
+            "path": "/2017/08/45901868/",
+            "title": "MarkLogic node.js: sorting by the value of a json element with multiple instances in the same document",
+            "content_html": "\u003cp\u003eSorry if the title is unclear, but I\u0026rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n  \u0026quot;count\u0026quot;: 100,\n  \u0026quot;groups\u0026quot;: [\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group A\u0026quot;,\n    \u0026quot;count\u0026quot;: 12\n    },\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group B\u0026quot;,\n    \u0026quot;count\u0026quot;: 22\n    },\n    {\n    \u0026quot;name\u0026quot;: \u0026quot;group C\u0026quot;,\n    \u0026quot;count\u0026quot;: 7\n    }\n  ]\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBasically, the document has an item count plus a breakdown of that count into smaller groups. So this record represents a collection of 100 items, of which 12 are from group A, 22 are from group B, 7 are from group C.\u003c/p\u003e\n\u003cp\u003eNow, I have an element range index on \u0026ldquo;count\u0026rdquo; and a bunch of such documents. I\u0026rsquo;d like to be able to sort by any of the options:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003esort by total count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group A count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group B count (descending or ascending)\u003c/li\u003e\n\u003cli\u003esort by group C count (descending or ascending)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI\u0026rsquo;ve tried\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e.orderBy(qb.sort(\u0026quot;count\u0026quot;, \u0026quot;descending\u0026quot;))\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis seems to be sort by the total cost (the one in the document root), but I\u0026rsquo;m not sure if that\u0026rsquo;s always true or I need to specify something else to guarantee it always gets that particular one.\u003c/p\u003e\n\u003cp\u003eFor sorting by a specific group, I have no idea how to specify it.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
+            "summary": "Sorry if the title is unclear, but I\u0026rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:\n{ \u0026quot;count\u0026quot;: 100, \u0026quot;groups\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;group A\u0026quot;, \u0026quot;count\u0026quot;: 12 }, { \u0026quot;name\u0026quot;: \u0026quot;group B\u0026quot;, \u0026quot;count\u0026quot;: 22 }, { \u0026quot;name\u0026quot;: \u0026quot;group C\u0026quot;, \u0026quot;count\u0026quot;: 7 } ] }  Basically, the document has an item count plus a breakdown of that count into smaller groups.",
+            "date_published": "2017-08-27T05:09:50+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/45901868/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance",
+                    "source_file": "comment-20170827T163709-45907105.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance",
+                    "source_file": "comment-20170827T170834-45907355.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/the-final-empire/",
+            "url": "https://mirror.roytang.net/2017/08/the-final-empire/",
+            "path": "/2017/08/the-final-empire/",
+            "title": "Book Review: The Final Empire by Sanderson, Brandon",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://www.goodreads.com/book/show/68428.The_Final_Empire\" style=\"float: left; padding-right: 20px\"\u003e\u003cimg border=\"0\" alt=\"The Final Empire (Mistborn, #1)\" src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480717416l/68428._SX98_.jpg\" /\u003e\u003c/a\u003e\u003ca href=\"https://www.goodreads.com/book/show/68428.The_Final_Empire\"\u003eThe Final Empire\u003c/a\u003e by \u003ca href=\"https://www.goodreads.com/author/show/38550.Brandon_Sanderson\"\u003eBrandon Sanderson\u003c/a\u003e\u003cbr/\u003e\nMy rating: \u003ca href=\"https://www.goodreads.com/review/show/2104551754\"\u003e5 of 5 stars\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e\nGreat book. The story\u0026rsquo;s pace was a bit slow at first as Sanderson was doing his excellent worldbuilding and introducing us to the magic system in his world (he\u0026rsquo;s good at that sort of thing!), but it picks up about a third of the way through. A lot of the plot twists and character developments are handled very well. The pace proceeds fairly quickly towards the end - I burned through the last third of the book in one night because things were escalating quickly. Looking forward to the other books in the series\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href=\"https://www.goodreads.com/review/list/18436248-roy-tang\"\u003eView all my reviews\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "The Final Empire by Brandon Sanderson My rating: 5 of 5 stars\nGreat book. The story\u0026rsquo;s pace was a bit slow at first as Sanderson was doing his excellent worldbuilding and introducing us to the magic system in his world (he\u0026rsquo;s good at that sort of thing!), but it picks up about a third of the way through. A lot of the plot twists and character developments are handled very well.",
+            "date_published": "2017-08-27T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2017/08/the-final-empire/index.md"
+            , "tags": ["books","mistborn"]
+            , "syndicated": [{"type":"goodreads","url":"https://www.goodreads.com/review/show/2104551754"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/the-well-of-ascension/",
+            "url": "https://mirror.roytang.net/2017/08/the-well-of-ascension/",
+            "path": "/2017/08/the-well-of-ascension/",
+            "title": "Book Review: The Well of Ascension by Sanderson, Brandon",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://www.goodreads.com/book/show/68429.The_Well_of_Ascension\" style=\"float: left; padding-right: 20px\"\u003e\u003cimg border=\"0\" alt=\"The Well of Ascension (Mistborn, #2)\" src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480717596l/68429._SX98_.jpg\" /\u003e\u003c/a\u003e\u003ca href=\"https://www.goodreads.com/book/show/68429.The_Well_of_Ascension\"\u003eThe Well of Ascension\u003c/a\u003e by \u003ca href=\"https://www.goodreads.com/author/show/38550.Brandon_Sanderson\"\u003eBrandon Sanderson\u003c/a\u003e\u003cbr/\u003e\nMy rating: \u003ca href=\"https://www.goodreads.com/review/show/2106145410\"\u003e4 of 5 stars\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e\nI finished Well of Ascension only two days after finishing The Final Empire. I think I enjoyed it a bit less than the first book - mainly because there\u0026rsquo;s a lot of self-doubt here among the protagonists, a lot of paragraphs of \u0026ldquo;why am i doing this? I\u0026rsquo;m not good enough, etc\u0026rdquo;. The plot also takes longer to solidify. Unlike the first book where they had a very solid objective until the end (the downfall of the Final Empire), the protagonists spend most of this book running in circles trying to figure out what they should do.\u003cbr /\u003e\u003cbr /\u003eThat being said, I did read through the book in two days, so I still found it compelling. Sanderson expands upon the worldbuilding, mythos and systems from the first book. The first book already had a theme of hopelessness around it, but the second book goes even darker. And as you can expect for the second book of a trilogy, the ending doesn\u0026rsquo;t leave our heroes or the world in a very good spot. Looking forward to the final book.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href=\"https://www.goodreads.com/review/list/18436248-roy-tang\"\u003eView all my reviews\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "The Well of Ascension by Brandon Sanderson My rating: 4 of 5 stars\nI finished Well of Ascension only two days after finishing The Final Empire. I think I enjoyed it a bit less than the first book - mainly because there\u0026rsquo;s a lot of self-doubt here among the protagonists, a lot of paragraphs of \u0026ldquo;why am i doing this? I\u0026rsquo;m not good enough, etc\u0026rdquo;. The plot also takes longer to solidify.",
+            "date_published": "2017-08-27T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2017/08/the-well-of-ascension/index.md"
+            , "tags": ["books","mistborn"]
+            , "syndicated": [{"type":"goodreads","url":"https://www.goodreads.com/review/show/2106145410"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/901467376687824898/",
+            "url": "https://mirror.roytang.net/2017/08/901467376687824898/",
+            "path": "/2017/08/901467376687824898/",
+            "title": "",
+            "content_html": "\u003cp\u003eTIL there was a second Eraserheads tribute album\u003c/p\u003e\n",
+            "summary": "TIL there was a second Eraserheads tribute album",
+            "date_published": "2017-08-26T15:32:25+00:00",
+            "date_modified": "2020-10-13T14:58:22+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/08/901467376687824898/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/901467376687824898/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155983423193912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/pinoyhatdog",
+                    "source_file": "comment-20170827-000000-d81d9087-b64d-4d7c-9634-e5b9ccd3fe4e.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20170827-000140-ed5ee466-be30-4842-a6b1-6b43da8e5c5f.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/901429102678167553/",
+            "url": "https://mirror.roytang.net/2017/08/901429102678167553/",
+            "path": "/2017/08/901429102678167553/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e kurt Vonnegut\u003c/p\u003e\n",
+            "summary": "@triviastorm kurt Vonnegut",
+            "date_published": "2017-08-26T13:00:20+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/901429102678167553.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/901429102678167553/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/08/901405020804927489/",
             "url": "https://mirror.roytang.net/2017/08/901405020804927489/",
             "path": "/2017/08/901405020804927489/",
@@ -796,153 +948,6 @@
             "source_path": "notes/2017/08/898887051214331905/index.md"
             , "tags": ["SorryNotSorry"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898887051214331905/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/10155964670608912/",
-            "url": "https://mirror.roytang.net/2017/08/10155964670608912/",
-            "path": "/2017/08/10155964670608912/",
-            "title": "",
-            "content_html": "\u003cp\u003eWalking out in the street at night, any one of us could be an \u0026ldquo;isolated case\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "Walking out in the street at night, any one of us could be an \u0026ldquo;isolated case\u0026rdquo;",
-            "date_published": "2017-08-19T10:35:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/10155964670608912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155964670608912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/ej.tumaneng",
-                    "source_file": "comment-20170819-000000-39f5365b-fdfb-4072-8413-f5a0e155587a.json"
-                }, { 
-                    "url": "https://www.facebook.com/christine.rabe",
-                    "source_file": "comment-20170819-000001-65adeec6-353e-4a4f-8331-03a110732539.json"
-                }, { 
-                    "url": "https://www.facebook.com/luc.valencia",
-                    "source_file": "comment-20170819-000002-0c2b4901-e193-4019-9958-9cd7f018c0af.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898817848067317760/",
-            "url": "https://mirror.roytang.net/2017/08/898817848067317760/",
-            "path": "/2017/08/898817848067317760/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/triviastorm/\"\u003e@triviastorm\u003c/a\u003e use the force luke\u003c/p\u003e\n",
-            "summary": "@triviastorm use the force luke",
-            "date_published": "2017-08-19T08:04:08+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898817848067317760.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898817848067317760/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898784412367699968/",
-            "url": "https://mirror.roytang.net/2017/08/898784412367699968/",
-            "path": "/2017/08/898784412367699968/",
-            "title": "",
-            "content_html": "\u003cp\u003ebefore: nak aral ka mabuti para yumaman ka at makaranas ng ginhawa\u003c/p\u003e\n\u003cp\u003enow: nak aral ka mabuti para yumaman ka at makaranas ng due process\u003c/p\u003e\n",
-            "summary": "before: nak aral ka mabuti para yumaman ka at makaranas ng ginhawa\nnow: nak aral ka mabuti para yumaman ka at makaranas ng due process",
-            "date_published": "2017-08-19T05:51:17+00:00",
-            "date_modified": "2020-08-09T02:53:47+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898784412367699968/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898784412367699968/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898673035573551106/",
-            "url": "https://mirror.roytang.net/2017/08/898673035573551106/",
-            "path": "/2017/08/898673035573551106/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/PlayDuelyst/\"\u003e@PlayDuelyst\u003c/a\u003e my game won\u0026rsquo;t startup. Stuck at black screen showing \u0026ldquo;Duelyst\u0026rdquo;. Launching from Steam, already tried reinstalling\u003c/p\u003e\n",
-            "summary": "@PlayDuelyst my game won\u0026rsquo;t startup. Stuck at black screen showing \u0026ldquo;Duelyst\u0026rdquo;. Launching from Steam, already tried reinstalling",
-            "date_published": "2017-08-18T22:28:42+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898673035573551106.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898673035573551106/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898669975375720449/",
-            "url": "https://mirror.roytang.net/2017/08/898669975375720449/",
-            "path": "/2017/08/898669975375720449/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/tiffauy/\"\u003e@tiffauy\u003c/a\u003e: i was excited for the solar eclipse but this made me so sad\u003c/p\u003e\n",
-            "summary": "RT @tiffauy: i was excited for the solar eclipse but this made me so sad",
-            "date_published": "2017-08-18T22:16:33+00:00",
-            "date_modified": "2020-10-13T15:05:14+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898669975375720449/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898669975375720449/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898660349691416576/",
-            "url": "https://mirror.roytang.net/2017/08/898660349691416576/",
-            "path": "/2017/08/898660349691416576/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/CORSAIR/\"\u003e@CORSAIR\u003c/a\u003e: Good morning everyone! It\u0026rsquo;s #FreeCodeFriday and we\u0026rsquo;re giving away a copy of StarCraft Remastered! RT and follow for a chance t…\u003c/p\u003e\n",
-            "summary": "RT @CORSAIR: Good morning everyone! It\u0026rsquo;s #FreeCodeFriday and we\u0026rsquo;re giving away a copy of StarCraft Remastered! RT and follow for a chance t…",
-            "date_published": "2017-08-18T21:38:18+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898660349691416576.md"
-            , "tags": ["FreeCodeFriday"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898660349691416576/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/10155962827838912/",
-            "url": "https://mirror.roytang.net/2017/08/10155962827838912/",
-            "path": "/2017/08/10155962827838912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSo it goes\u003c/p\u003e\n",
-            "summary": "So it goes",
-            "date_published": "2017-08-18T19:42:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/10155962827838912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155962827838912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/898040668315987968/",
-            "url": "https://mirror.roytang.net/2017/08/898040668315987968/",
-            "path": "/2017/08/898040668315987968/",
-            "title": "",
-            "content_html": "\u003cp\u003eA handy dandy infographic explaining why tolerance has a limit. (it\u0026rsquo;s kinda common sense)\u003c/p\u003e\n",
-            "summary": "A handy dandy infographic explaining why tolerance has a limit. (it\u0026rsquo;s kinda common sense)",
-            "date_published": "2017-08-17T04:35:54+00:00",
-            "date_modified": "2020-08-09T02:33:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/898040668315987968/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/898040668315987968/"}]
             
             
             }
