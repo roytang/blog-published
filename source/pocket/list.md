@@ -1,4 +1,6 @@
 
+- [How I cut GTA Online loading times by 70%](/2021/03/how-i-cut-gta-online-loading-times-by-70/)
+
 - [The Big List of Personal Websites](/2021/02/the-big-list-of-personal-websites/)
 
 - [The web didn&#39;t change; you did](/2021/02/the-web-didnt-change-you-did/)
