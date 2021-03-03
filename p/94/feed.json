@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/09/46263980/",
+            "url": "https://mirror.roytang.net/2017/09/46263980/",
+            "path": "/2017/09/46263980/",
+            "title": "MarkLogic - query for documents where a specific json property is not defined",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property \u0026ldquo;summaryData\u0026rdquo;, something like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n...(other stuff)...\n  summaryData: {\n    count: 100,\n    total: 10000,\n    summaryDate: (date value)\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, not all documents have this property. I\u0026rsquo;d like to construct an SJS query to retrieve those documents that don\u0026rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like \u0026ldquo;WHERE summaryData IS NULL\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eI wasn\u0026rsquo;t sure what to search for in the docs. Any advise would be helpful.\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property \u0026ldquo;summaryData\u0026rdquo;, something like:\n{ ...(other stuff)... summaryData: { count: 100, total: 10000, summaryDate: (date value) } }  However, not all documents have this property. I\u0026rsquo;d like to construct an SJS query to retrieve those documents that don\u0026rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like \u0026ldquo;WHERE summaryData IS NULL\u0026rdquo;",
+            "date_published": "2017-09-17T12:17:12+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/46263980/index.md"
+            , "tags": ["javascript","json","marklogic","sjs","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/46263980/marklogic-query-for-documents-where-a-specific-json-property-is-not-defined"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/46263980/marklogic-query-for-documents-where-a-specific-json-property-is-not-defined",
+                    "source_file": "comment-20170917T151632-46265653.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/09/909209906045083648/",
+            "url": "https://mirror.roytang.net/2017/09/909209906045083648/",
+            "path": "/2017/09/909209906045083648/",
+            "title": "",
+            "content_html": "\u003cp\u003eTo which a logical reply would be: Mr. President, you\u0026rsquo;re fixated on drugs. Are you a drug lord? \u003ca href=\"https://twitter.com/momblogger/status/909001630229524480\"\u003ehttps://twitter.com/momblogger/status/909001630229524480\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "To which a logical reply would be: Mr. President, you\u0026rsquo;re fixated on drugs. Are you a drug lord? https://twitter.com/momblogger/status/909001630229524480",
+            "date_published": "2017-09-17T00:18:28+00:00",
+            "date_modified": "2020-08-28T03:45:43+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/909209906045083648/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/909209906045083648/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/09/908973974943498240/",
+            "url": "https://mirror.roytang.net/2017/09/908973974943498240/",
+            "path": "/2017/09/908973974943498240/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e i already lost the first match haha. solid naman deck ko pero no bombs\u003c/p\u003e\n",
+            "summary": "@aleksfelipe i already lost the first match haha. solid naman deck ko pero no bombs",
+            "date_published": "2017-09-16T08:40:58+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/908973974943498240.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/908973974943498240/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/09/908910344898088960/",
             "url": "https://mirror.roytang.net/2017/09/908910344898088960/",
             "path": "/2017/09/908910344898088960/",
@@ -838,57 +894,6 @@
             "source_path": "notes/2017/09/904284997120491520/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/904284997120491520/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/09/904226503218544640/",
-            "url": "https://mirror.roytang.net/2017/09/904226503218544640/",
-            "path": "/2017/09/904226503218544640/",
-            "title": "",
-            "content_html": "\u003cp\u003eI kind of want to laze around and do nothing for a couple of weeks\u003c/p\u003e\n",
-            "summary": "I kind of want to laze around and do nothing for a couple of weeks",
-            "date_published": "2017-09-03T06:16:12+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/09/904226503218544640.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/904226503218544640/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/09/903999265176862720/",
-            "url": "https://mirror.roytang.net/2017/09/903999265176862720/",
-            "path": "/2017/09/903999265176862720/",
-            "title": "",
-            "content_html": "\u003cp\u003eSo did the cruel angel ever get her degree, or?\u003c/p\u003e\n",
-            "summary": "So did the cruel angel ever get her degree, or?",
-            "date_published": "2017-09-02T15:13:14+00:00",
-            "date_modified": "2020-08-20T04:51:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/09/903999265176862720/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/903999265176862720/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/09/903885498204143616/",
-            "url": "https://mirror.roytang.net/2017/09/903885498204143616/",
-            "path": "/2017/09/903885498204143616/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e im surprised bukas ang bank today\u003c/p\u003e\n",
-            "summary": "@jaymelynilao im surprised bukas ang bank today",
-            "date_published": "2017-09-02T07:41:10+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/09/903885498204143616.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/903885498204143616/"}]
             
             
             }

@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/01/1220674891445428225/",
+            "url": "https://mirror.roytang.net/2020/01/1220674891445428225/",
+            "path": "/2020/01/1220674891445428225/",
+            "title": "",
+            "content_html": "\u003cp\u003eCasually streaming Magic Arena with Standard Bogles \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/4eKEjvQpnqQ\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n",
+            "summary": "Casually streaming Magic Arena with Standard Bogles https://www.twitch.tv/twitchyroy\n  ",
+            "date_published": "2020-01-24T11:49:07+00:00",
+            "date_modified": "2020-02-14T15:07:11+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220674891445428225/index.md"
+            , "tags": ["twitch","gaming","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220674891445428225/"},{"type":"youtube","url":"https://www.youtube.com/watch?v=4eKEjvQpnqQ"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/1220618129773973505/",
+            "url": "https://mirror.roytang.net/2020/01/1220618129773973505/",
+            "path": "/2020/01/1220618129773973505/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s hard to be so responsible\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s hard to be so responsible",
+            "date_published": "2020-01-24T08:03:34+00:00",
+            "date_modified": "2020-01-24T09:30:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/01/1220618129773973505/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220618129773973505/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/01/flask-vs-django/",
+            "url": "https://mirror.roytang.net/2020/01/flask-vs-django/",
+            "path": "/2020/01/flask-vs-django/",
+            "title": "Flask vs Django",
+            "content_html": "\u003cp\u003eIn a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.\u003c/p\u003e\n\u003cp\u003eIt got me thinking, why did I build this using Flask in the first place? And that led to the more general question: when do I prefer using Flask over Django?\u003c/p\u003e\n\u003cp\u003ePersonal experience: I\u0026rsquo;m much more familiar with Django than Flask, having started using it back in 2008. Professionally, I\u0026rsquo;ve also worked on more Django projects, compared to only one Flask project that actually made it to production.\u003c/p\u003e\n\u003cp\u003eThe usual quick comparison is that Flask is the more lightweight web framework, suitable to smaller apps like microservices perhaps; while Django is the big monolithic web framework with all the bells and whistles already available. In practice this means Django already provides a lot of functionalities out of the box, while with Flask you have to install and figure out extensions for even the most common tasks like database management. A negative for Flask, but partly due to my inexperience: if you were already well-versed in the use of those extensions, I imagine getting everything together and setting them up will be easier.\u003c/p\u003e\n\u003cp\u003eIf there is need for a traditional RDBMS, I will probably use Django. I\u0026rsquo;m not super familiar with SQLAlchemy, the usual recommended ORM for Flask, so that\u0026rsquo;s a big factor. That being said, if I needed to work with something like a NoSQL database or some other nontraditional backend, it might be better to consider Flask since Django isn\u0026rsquo;t super flexible in that record - most of the pluses are oriented towards RDBMS-backed models.\u003c/p\u003e\n\u003cp\u003eAdmin: The built-in Django admin is a big plus for me; it means that for things like simple record CRUD, if usability and presentation isn\u0026rsquo;t a big concern, I can just use the Django admin as my backend without needing to write maintenance screens. There is an equivalent \u003ca href=\"https://flask-admin.readthedocs.io/en/latest/\"\u003eFlask Admin plugin\u003c/a\u003e, but I\u0026rsquo;ve not tried that either.\u003c/p\u003e\n\u003cp\u003eAPI building: I\u0026rsquo;m already familiar with the Django REST framework, I\u0026rsquo;m not sure if there\u0026rsquo;s an equivalent for Flask. The one Flask project we did, we rolled our own API backend.\u003c/p\u003e\n\u003cp\u003eI find that I tend to favor Flask when building quick proof-of-concept apps that don\u0026rsquo;t need a database. An example that was part of the app I migrated recently would be this quick \u003ca href=\"https://apps.roytang.net/twitter/\"\u003eTwitter app I wrote about a year ago\u003c/a\u003e, to find intersections between follows/followers. It didn\u0026rsquo;t need a database, only twitter API calls. (I have since merged it into the Django app, so the current version is using Django now.)\u003c/p\u003e\n\u003cp\u003eIn general I prefer Django, but that is probably due to familiarity and experience. I would love to have a full-scale project that uses Flask though! Perhaps in the future, for now all my personal projects are running on Django.\u003c/p\u003e\n",
+            "summary": "In a bid to reduce the number of webapps actually running on my server (for resource consumption reasons), I decided to migrate a small Flask app I had and merge into this larger Django app where I have a lot of my personal data tracking stuff. The Flask app was small enough, mostly containing backend support for this blog (like search and comment submissions) and some Twitter things. The migration was straightforward, taking around half a day, most of that was wrangling with Twitter API rate limits.",
+            "date_published": "2020-01-24T00:00:00+00:00",
+            "date_modified": "2020-01-24T03:30:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/01/flask-vs-django/index.md"
+            , "tags": ["software development","python","flask","django"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1220540598551228418/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/01/1220184579740291072/",
             "url": "https://mirror.roytang.net/2020/01/1220184579740291072/",
             "path": "/2020/01/1220184579740291072/",
@@ -860,57 +911,6 @@
             
             , "syndicated": [{"type":"pocket","url":"http://paulgraham.com/lesson.html"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214677432621555712/"}]
             ,"link": "http://paulgraham.com/lesson.html"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214592994109579265/",
-            "url": "https://mirror.roytang.net/2020/01/1214592994109579265/",
-            "path": "/2020/01/1214592994109579265/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhat has two thumbs and knocked 4 items off the todo list today?\u003c/p\u003e\n",
-            "summary": "What has two thumbs and knocked 4 items off the todo list today?",
-            "date_published": "2020-01-07T17:01:50+00:00",
-            "date_modified": "2020-01-07T18:30:03+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/01/1214592994109579265/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214592994109579265/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214489352790671360/",
-            "url": "https://mirror.roytang.net/2020/01/1214489352790671360/",
-            "path": "/2020/01/1214489352790671360/",
-            "title": "",
-            "content_html": "\u003cp\u003e1 year #Duolingo streak!\u003c/p\u003e\n",
-            "summary": "1 year #Duolingo streak!",
-            "date_published": "2020-01-07T10:10:00+00:00",
-            "date_modified": "2020-01-07T12:30:02+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/01/1214489352790671360/index.md"
-            , "tags": ["Duolingo"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214489352790671360/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/01/1214483622738026501/",
-            "url": "https://mirror.roytang.net/2020/01/1214483622738026501/",
-            "path": "/2020/01/1214483622738026501/",
-            "title": "",
-            "content_html": "\u003cp\u003eTrying to justify poor performance with approval ratings is a tacit admission that your goal was window-dressing all along and not actually doing your job. Let the people approve because you did the thing, not because you tricked them into thinking you did.\nQuoted \u003ca href=\"https://twitter.com/gideonlasco/status/1214481059850702850\"\u003egideonlasco\u0026rsquo;s tweet\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eThe police and the government should stop using approval ratings to justify their failures.\u003c/p\u003e\n\u003cp\u003eBeyond legitimate questions about the valditity of some opinion surveys, popularity is a poor substitute for truth or justice.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "Trying to justify poor performance with approval ratings is a tacit admission that your goal was window-dressing all along and not actually doing your job. Let the people approve because you did the thing, not because you tricked them into thinking you did. Quoted gideonlasco\u0026rsquo;s tweet:\n The police and the government should stop using approval ratings to justify their failures.\nBeyond legitimate questions about the valditity of some opinion surveys, popularity is a poor substitute for truth or justice.",
-            "date_published": "2020-01-07T09:47:14+00:00",
-            "date_modified": "2020-01-07T12:30:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/01/1214483622738026501/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1214483622738026501/"}]
-            
             
             }
         
