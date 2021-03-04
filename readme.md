@@ -29,6 +29,9 @@ Latest shared links:
 Latest notes:
     
 
+- [4 Mar 2021 1:29am](https://mirror.roytang.net/2021/03/1367286107361054724/): Ladies and gentlemen……..”What if Wes Anderson directed X-Men?”
+https://www.youtube.com/watch?v=UngE0qn3VRY
+- [3 Mar 2021 11:42pm](https://mirror.roytang.net/2021/03/gplein5/): Ugh, my bad. I posted the Feb 28th drawing into the Feb 27th thread instead. Thanks for checking, have reposted it into the correct thread!
 - [3 Mar 2021 3:22am](https://mirror.roytang.net/2021/03/1366952145623281670/): I&rsquo;m torn, because I know I&rsquo;m supposed to get the second vaccine shot, but I&rsquo;m also supposed to avoid sequel injection
 - [2 Mar 2021 2:25pm](https://mirror.roytang.net/2021/03/1366756482553843719/): THREAD: Lots of us learned classical music from watching old cartoons, so I’m going to identify the pieces that frequently popped up.
 One of the most recognizable is Franz Liszt’s “Hungarian Rhapsody No. 2,” performed by those great piano virtuosos Bugs Bunny and Tom &amp; Jerry.
@@ -37,8 +40,6 @@ Your browser does not support the video tag.
 Quoted desamting&#39;s tweet:   We&rsquo;re approaching the anniversary of the COVID-19 lockdown. -_- Show me your last photos outside before you went into the bunker.
 Last call on the night they announced the lockdown https://twitter.com/NoOneDelaCruz/status/1366266878444756995
  
-- [28 Feb 2021 10:17am](https://mirror.roytang.net/2021/02/1365969286905298952/): @EashanKotha
-- [26 Feb 2021 12:22pm](https://mirror.roytang.net/2021/02/1365276093977038852/): &ldquo;What is grief if not love preserving&rdquo;
 
 [View all notes](https://mirror.roytang.net/notes)
 
