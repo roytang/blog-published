@@ -29,17 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [5 Mar 2021 1:59pm](https://mirror.roytang.net/2021/03/wandavision/): #WandaVision spoiler-free review:
+ Overall, I really liked it, and I think they did well with the one-episode-per-week format. The show certainly would not have been this hyped if it all came in one drop Really difficult to not spoil. If you have somehow avoid being spoiled by the internet until it all dropped, good for you! A very emotional story of Wanda dealing with the aftermath of Infinity War/Endgame good usage of the sitcom tropes fantastic performance by Elisabeth Olsen lots of fan service for comic book fans to dig into.
+- [5 Mar 2021 11:47am](https://mirror.roytang.net/2021/03/1367804028604674052/): &ldquo;We have said goodbye before, so it stands to reason&hellip;&rdquo;
+&ldquo;&hellip;we&rsquo;ll say hello again.&rdquo;
 - [4 Mar 2021 1:29am](https://mirror.roytang.net/2021/03/1367286107361054724/): Ladies and gentlemen……..”What if Wes Anderson directed X-Men?”
 https://www.youtube.com/watch?v=UngE0qn3VRY
 - [3 Mar 2021 11:42pm](https://mirror.roytang.net/2021/03/gplein5/): Ugh, my bad. I posted the Feb 28th drawing into the Feb 27th thread instead. Thanks for checking, have reposted it into the correct thread!
 - [3 Mar 2021 3:22am](https://mirror.roytang.net/2021/03/1366952145623281670/): I&rsquo;m torn, because I know I&rsquo;m supposed to get the second vaccine shot, but I&rsquo;m also supposed to avoid sequel injection
-- [2 Mar 2021 2:25pm](https://mirror.roytang.net/2021/03/1366756482553843719/): THREAD: Lots of us learned classical music from watching old cartoons, so I’m going to identify the pieces that frequently popped up.
-One of the most recognizable is Franz Liszt’s “Hungarian Rhapsody No. 2,” performed by those great piano virtuosos Bugs Bunny and Tom &amp; Jerry.
-Your browser does not support the video tag.  
-- [1 Mar 2021 11:26am](https://mirror.roytang.net/2021/03/1366349139559129088/): I haven’t been to the QC circle in a year!
-Quoted desamting&#39;s tweet:   We&rsquo;re approaching the anniversary of the COVID-19 lockdown. -_- Show me your last photos outside before you went into the bunker.
-Last call on the night they announced the lockdown https://twitter.com/NoOneDelaCruz/status/1366266878444756995
- 
 
 [View all notes](https://mirror.roytang.net/notes)
 

@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/on-feed-readers/",
+            "url": "https://mirror.roytang.net/2019/11/on-feed-readers/",
+            "path": "/2019/11/on-feed-readers/",
+            "title": "On Feed Readers",
+            "content_html": "\u003cp\u003eI don\u0026rsquo;t use \u003ca href=\"https://www.inoreader.com/\"\u003eInoreader\u003c/a\u003e anymore, but a recent blog post of theirs recently appeared in my feeds that mentioned \u003ca href=\"https://blog.inoreader.com/2019/11/new-feature-sort-by-magic-and-article-popularity-indicators.html\"\u003ethey implemented \u0026ldquo;sort by magic\u0026rdquo;\u003c/a\u003e. This was a feature that \u003ca href=\"/2009/10/5149594629/\"\u003eGoogle reader had 10 YEARS AGO\u003c/a\u003e! There hasn\u0026rsquo;t been much innovation in the feed reader space in the last decade it seems, which is totally understandable given they are mostly tools used by internet \u0026ldquo;power users\u0026rdquo;, and mostly by older netheads, so the target market isn\u0026rsquo;t very large.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eWhen I talk about \u0026ldquo;feeds\u0026rdquo; and \u0026ldquo;feed readers\u0026rdquo;, I\u0026rsquo;m not talking only about RSS and the associated readers, but anything that lets me aggregate contents from a set of sources. This includes most social media streams (Twitter, etc), I guess Indieweb microformats readers (though I haven\u0026rsquo;t tried these a lot), and apps like \u003ca href=\"https://flipboard.com/\"\u003eFlipboard\u003c/a\u003e (which I typically use for my morning news).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eRecently I installed a self-hosted \u003ca href=\"https://tt-rss.org/\"\u003eTiny Tiny RSS\u003c/a\u003e to take the place of my primary RSS feed reader. I also previously tried Inoreader and Feedly. The jump to TTRSS was mostly to avoid the free account limitations on those services. TTRSS is fine and it\u0026rsquo;s serviceable, but there\u0026rsquo;s still a lot of improvement I would like. I think about feed reader features a lot because (a) I like reading content from a wide variety of sources and feed readers help me do that; and (b) even back when Google Reader was still around I was kicking around the idea of writing my own feed reader. It\u0026rsquo;s one of those side projects that I want to build for myself but never get around to it. I\u0026rsquo;ll note down a couple of features I\u0026rsquo;ve been thinking about in the past decade.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eThe first flaw I find in most readers (including social media feeds) is that they typically treat all feeds the same way. In reality, I would like to be able to treat some feeds differently. I can think of at least two categories:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efeeds where I don\u0026rsquo;t mind missing some of their content (since I don\u0026rsquo;t always have time to read), and don\u0026rsquo;t mind just browsing their latest content like a magazine. Flipboard is great for this. Most social media feeds on the other hand seem to want to pull you away from this model by having their feeds be \u0026ldquo;algorithmic\u0026rdquo;. And for traditional RSS readers, having unread counts for this type of feed doesn\u0026rsquo;t make sense, and only annoys me and my compulsive need for zero unread counts.\u003c/li\u003e\n\u003cli\u003efeeds where I don\u0026rsquo;t want to miss any of their content. Maybe because it\u0026rsquo;s a particular source that I enjoy reading, or because it\u0026rsquo;s a feed I set up for notification purposes or such, or maybe the source is an events page where I want to know all the events they set up. Basically feeds that have a high signal-to-noise ratio for me (although ideally all the feeds I follow have high S/N ratio.) For this kind of feed, the unread counts in traditional RSS readers make sense.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI imagine there could be some in-between categories as well, possibly customizable. Something like a feed where I have unread counts, but also automatically mark as read articles that are too old? IDK.\u003c/p\u003e\n\u003cp\u003eI remembered this when I realized I could import my \u003ca href=\"https://roytang.net/2019/08/1167000875090378752/\"\u003eYoutube subscriptions as RSS\u003c/a\u003e. That gave me a whole lot of new feeds to follow, but I realized it was kind of a waste of time because most of the channels I follow are there for me to browse through when I\u0026rsquo;m looking for entertainment, but usually not the kind of content I want to regularly appear in my feeds. (So they\u0026rsquo;re under the first type.) Importing them basically added a lot of noise to my feed reader.\u003c/p\u003e\n\u003cp\u003eFacebook actually had something like you could add friends to a \u0026ldquo;Close Friends\u0026rdquo; list, and their posts would be prioritized for you and appear in your notification bar. I don\u0026rsquo;t FB much anymore, so IDK if this feature is still around, but as I recall you can\u0026rsquo;t use it with Pages.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eAnother feature I\u0026rsquo;d like is grouping posts by topic, or the ability to highlight \u0026ldquo;related stories\u0026rdquo; for an article from other sources that I\u0026rsquo;m also following. For example, if there\u0026rsquo;s some breaking news story, and the article about this from NewsSourceA appears in my feed, I could maybe see a link to related articles about the same topic from NewsSourceB, NewsSourceC, and so on that I also follow. Or maybe choose to mark the topic as read or block further content about this topic.\u003c/p\u003e\n\u003cp\u003eThis is one of my major grips when using Flipboard, especially for the \u0026ldquo;Latest news\u0026rdquo; sections. There\u0026rsquo;ll be like 5 different articles about the latest Trump meltdown, and I encounter them at different points in the feed. I don\u0026rsquo;t mind reading about Trump meltdowns, but it would be more efficient if I could have each instance only appear in my feeds once. I understand this may be a bit challenging since it involves some automated content analysis though.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eI must admit I haven\u0026rsquo;t explored too much the paid features of services like Feedly or Inoreader, so maybe they support something similar to these features already. (I feel like it\u0026rsquo;s unlikely though. And I\u0026rsquo;m not really up for paying the monthly fees haha.) In addition to traditional RSS readers though, I\u0026rsquo;d also like my reader to be able to support following other kinds of sources like social media, ActivityStreams-compliant streams (Mastodon, etc), microformats feeds, and so on.\u003c/p\u003e\n\u003cp\u003eMaybe someday I\u0026rsquo;ll get around to finally building that feed reader I wanted for myself!\u003c/p\u003e\n",
+            "summary": "I don\u0026rsquo;t use Inoreader anymore, but a recent blog post of theirs recently appeared in my feeds that mentioned they implemented \u0026ldquo;sort by magic\u0026rdquo;. This was a feature that Google reader had 10 YEARS AGO! There hasn\u0026rsquo;t been much innovation in the feed reader space in the last decade it seems, which is totally understandable given they are mostly tools used by internet \u0026ldquo;power users\u0026rdquo;, and mostly by older netheads, so the target market isn\u0026rsquo;t very large.",
+            "date_published": "2019-11-17T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/on-feed-readers/index.md"
+            , "tags": ["tech life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195916779861749760/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/1195794038223294464/",
+            "url": "https://mirror.roytang.net/2019/11/1195794038223294464/",
+            "path": "/2019/11/1195794038223294464/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/visakanv/\"\u003e@visakanv\u003c/a\u003e ill look into it, but afaik searching via the twitter api doesnt have that filter\u003c/p\u003e\n",
+            "summary": "@visakanv ill look into it, but afaik searching via the twitter api doesnt have that filter",
+            "date_published": "2019-11-16T20:01:30+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1195794038223294464/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195794038223294464/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/1195700917636497411/",
             "url": "https://mirror.roytang.net/2019/11/1195700917636497411/",
             "path": "/2019/11/1195700917636497411/",
@@ -921,40 +955,6 @@
             "source_path": "photos/2019/10/B4QaJrDlp7n/index.md"
             , "tags": ["sketchdaily","inktober","inktober2019"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1189649825840685056/"},{"type":"instagram","url":"https://instagram.com/p/B4QaJrDlp7n/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dpkt7s/october_31st_fruit/f5w50yv/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/f5sjoyx/",
-            "url": "https://mirror.roytang.net/2019/10/f5sjoyx/",
-            "path": "/2019/10/f5sjoyx/",
-            "title": "",
-            "content_html": "\u003cp\u003eThis kind of logic reminds me of \u003ca href=\"https://knowyourmeme.com/photos/1330819-webcomics\"\u003ehttps://knowyourmeme.com/photos/1330819-webcomics\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "This kind of logic reminds me of https://knowyourmeme.com/photos/1330819-webcomics",
-            "date_published": "2019-10-30T11:06:36+00:00",
-            "date_modified": "2020-10-19T18:08:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/10/f5sjoyx/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/dp3kpc/guys_this_asshate_used_a_random_picture_of_a/f5sjoyx/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/b4obcdvfkl9/",
-            "url": "https://mirror.roytang.net/2019/10/b4obcdvfkl9/",
-            "path": "/2019/10/b4obcdvfkl9/",
-            "title": "",
-            "content_html": "\u003cp\u003e#inktober2019 day 30: catch #inktober #sketchdaily\u003c/p\u003e\n",
-            "summary": "#inktober2019 day 30: catch #inktober #sketchdaily",
-            "date_published": "2019-10-29T22:41:34+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/10/B4OBCdVFKl9/index.md"
-            , "tags": ["sketchdaily","inktober","inktober2019"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1189311338713092097/"},{"type":"instagram","url":"https://instagram.com/p/B4OBCdVFKl9/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dp440u/october_30th_plums/f5vb8z7/"}]
             
             
             }

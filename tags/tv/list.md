@@ -1,4 +1,6 @@
 
+- [Wandavision Spoiler-free Review](/2021/03/wandavision/)
+
 - [Perfect Strangers](/2020/12/perfect-strangers/)
 
 - [Watching Lately, Feb 2020 - Not Much Apparently](/2020/02/watching-lately/)

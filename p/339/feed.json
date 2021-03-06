@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/12/306136742/",
+            "url": "https://mirror.roytang.net/2009/12/306136742/",
+            "path": "/2009/12/306136742/",
+            "title": "",
+            "content_html": "\u003cp\u003eCookie Monster nightmare\u003c/p\u003e",
+            "summary": "Cookie Monster nightmare",
+            "date_published": "2009-12-29T12:47:37+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/306136742/index.md"
+            
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/306136742/cookie-monster-nightmare"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/12/306090948/",
+            "url": "https://mirror.roytang.net/2009/12/306090948/",
+            "path": "/2009/12/306090948/",
+            "title": "",
+            "content_html": "\u003cp\u003e(via \u003ca href=\"http://alican.tumblr.com/\"\u003ealican\u003c/a\u003e)\u003c/p\u003e",
+            "summary": "(via alican)",
+            "date_published": "2009-12-29T11:56:55+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/306090948/index.md"
+            
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/306090948/via-alican"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/12/7156815222/",
             "url": "https://mirror.roytang.net/2009/12/7156815222/",
             "path": "/2009/12/7156815222/",
@@ -929,50 +963,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6800792098/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6800080768/",
-            "url": "https://mirror.roytang.net/2009/12/6800080768/",
-            "path": "/2009/12/6800080768/",
-            "title": "",
-            "content_html": "\u003cp\u003estill took the bus home. Can\u0026rsquo;t let the bad guys win!\u003c/p\u003e\n",
-            "summary": "still took the bus home. Can\u0026rsquo;t let the bad guys win!",
-            "date_published": "2009-12-18T16:03:05+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6800080768/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6800080768/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/207552761009"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20091219-000000-a8f3d9a2-6077-4ab5-9123-498834b516a3.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1927273/",
-            "url": "https://mirror.roytang.net/2009/12/1927273/",
-            "path": "/2009/12/1927273/",
-            "title": "Applet freezes page on initial load (Mac Firefox)",
-            "content_html": "\u003cp\u003eWe have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\u003c/p\u003e\n\u003cp\u003eThe problem is encountered on the user site.\nOn initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets.\nAfter refreshing the page, it loads normally.\nIf the cache is cleared, same problem happens again.\u003c/p\u003e\n\u003cp\u003eUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)\u003c/p\u003e\n\u003cp\u003eWe were able to get a jstack thread dump, see below:\n\u003ca href=\"http://pastebin.com/m527e05dd\"\u003ehttp://pastebin.com/m527e05dd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eHowever, we\u0026rsquo;re not sure how to interpret it. Any suggestions or advice?\u003c/p\u003e\n\u003cp\u003eEdit:\nWe were able to replicate in our testing machine by creating a new user (clean Firefox profile). If we clear the java cache then visit the problematic pages, the edit controls are disabled (we can\u0026rsquo;t click them to focus them), the Firefox address bar and search box have the same behavior. The edit box controls only \u0026ldquo;unfreeze\u0026rdquo; when we access the \u0026ldquo;Help\u0026rdquo; menu entry, which has a Search edit box that \u003cem\u003eis\u003c/em\u003e active.\u003c/p\u003e\n",
-            "summary": "We have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\nThe problem is encountered on the user site. On initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets. After refreshing the page, it loads normally. If the cache is cleared, same problem happens again.\nUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)",
-            "date_published": "2009-12-18T09:48:12+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1927273/index.md"
-            , "tags": ["firefox","macos","applet","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox",
-                    "source_file": "comment-20091228T192007-1971063.json"
-                }
-            ]
             }
         
     ]

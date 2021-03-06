@@ -102,6 +102,171 @@
     <li>
 <article class="list_item notes h-entry">
     
+
+    
+<div class="content e-content">
+
+<p>In a quiet suburban neighborhood there was a lot that had been empty for years.
+One morning nearby residents woke up to see that a tall and imposing black tower had appeared on the lot.
+It cast a long shadow over their comparatively small houses.</p>
+<p>It had no windows, and the lone entrance was a large gray door of wrought iron.
+Upon the door lay a vicious carving of a monster&rsquo;s head bearing a giant knocker.
+None dared approach the tower and they only spoke of it later.</p>
+<p>Two days later a man in a suit arrived in the neighborhood.
+He walked briskly to the tower and without hesitation lifted the giant knocker.
+The bang of the knocker echoed throughout the neighborhood.</p>
+<p>From their windows the residents watched as the man in the suit waited for what seemed like an eternity.
+Finally, the wrought-iron door started to budge, and residents swore     the metal creaked loudly upon stone with an otherwordly wail.</p>
+<p>From the darkness beyond a tall figure emerged engulfed in a hooded cloak seemingly made of even blacker darkness.
+The figure towered over the man in the suit and the morning  sunlight     showed only a hint of bluish-gray skin underneath his hood.</p>
+<p>They stared at each other for a long while, the hooded figure and the man in the suit.
+Finally, the hooded figure spoke in a deep voice that seemed to reverberate across the area.</p>
+<p>WHO DISTURBS MY REST, the voice boomed.
+The man in the suit held a fist to his mouth and coughed before speaking.
+&ldquo;Sir, I&rsquo;m from city hall. You can&rsquo;t build a tower here, you&rsquo;re violating at least three zoning ordinances!&rdquo;</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/12/946778692314734592/"><time class="dt-published" datetime="2017-12-29 16:23:25">29 Dec 2017 4:23pm</time></a>
+
+    
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778692314734592/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778694009241601/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778695619854336/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778697469607936/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778699159912448/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778700749578240/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/946778702536368128/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/10156299113278912" title="View on facebook">facebook</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/12/946778692314734592/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a query using MarkLogic node.js that basically boils down to something like this:</p>
+<pre><code>db.documents.query(qb.where(qb.collection('test'))).stream()
+.on('data', function(row) {
+    console.log(&quot;Stream on data&quot;);
+})
+.on('end', function() {
+    console.log(&quot;Stream on end&quot;);
+})
+.on('error', function(error) {
+    console.log(error);
+})
+;
+</code></pre>
+<p>Now, for a certain collection we have in our database, the &lsquo;end&rsquo; function doesn&rsquo;t fire, i.e. I never see &ldquo;Stream on end&rdquo; appear in the log. There&rsquo;s no error or anything, processing just stops. It&rsquo;s only for this particular collection, other collections seem fine.</p>
+<p>If I query documents in that collection directly using other methods such as qb.value() without using qb.collection(), the end event fires correctly. But once I add qb.collection() into the mix (using qb.and), the end event doesn&rsquo;t fire.</p>
+<p>I&rsquo;m unsure how to debug this, as this is my first time trying to use streams in the nodejs client library. Any advice as to what I can check?</p>
+<p>Thanks!</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/12/48011448/"><time class="dt-published" datetime="2017-12-28 17:04:03">28 Dec 2017 5:04pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/48011448/marklogic-node-js-stream-end-event-doesnt-fire-for-certain-collections" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/12/48011448/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
 <div class="title">
     <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
         <path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
@@ -3187,118 +3352,6 @@ Also on:
 </article>
 </li>
 
-    <li>
-<article class="list_item notes h-entry">
-    
-
-    
-<div class="content e-content">
-
-<p>Crap. I forgot to tell my Fallout Shelter explorer to return to the vault before going on vacation. She’s gonna die&hellip;</p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2017/12/941029056656572418/"><time class="dt-published" datetime="2017-12-13 19:36:25">13 Dec 2017 7:36pm</time></a>
-
-    
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/941029056656572418/" title="View on twitter">twitter</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2017/12/941029056656572418/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        0</a>
-
-    
-    
-</div>
-</article>
-</li>
-
-    <li>
-<article class="list_item notes h-entry">
-    
-
-    
-<div class="content e-content">
-
-<p>At this hour travelling from the north end of the metro to the south end takes all of thirty minutes. Parang nasa parallel universe #fb</p>
-
-
-
-<div class="image-list">
-
-
-
-
-
-
-
-</div>
-</div>
-
-    <div class="meta">
-    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
-    <a href="https://mirror.roytang.net/2017/12/941023196848865280/"><time class="dt-published" datetime="2017-12-13 19:13:08">13 Dec 2017 7:13pm</time></a>
-
-    
-
-<a class="tag p-category" href="https://mirror.roytang.net/tags/fb">#fb</a>
-
-
-
-
-    <br />
-    
-Also on: 
-
-    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/941023196848865280/" title="View on twitter">twitter</a>
-
-    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/10156259507233912" title="View on facebook">facebook</a>
-
-
-
-    /
-    
-    
-    
-    <a href="https://mirror.roytang.net/2017/12/941023196848865280/#header-comments">
-        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
-            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
-        </svg>
-        0</a>
-
-    
-    
-</div>
-</article>
-</li>
-
 </ul>
 
 
@@ -4632,7 +4685,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2021 03 04 01:30:16.
+        Last modified at: 2021 03 05 23:39:09.
         
     </p>
 </footer>      

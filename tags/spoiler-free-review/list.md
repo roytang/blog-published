@@ -1,4 +1,6 @@
 
+- [Wandavision Spoiler-free Review](/2021/03/wandavision/)
+
 - [Birds of Prey and the Fantabulous Emancipation of One Harley Quinn spoiler-free review!](/2020/03/birds-of-prey/)
 
 - [](/2020/01/1217311777035366401/)
