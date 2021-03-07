@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [7 Mar 2021 5:37am](https://mirror.roytang.net/2021/03/1368435737884909568/): [Team Camote] - StarCraft 2 Showmatch - hungryroy (me) vs tzia_n #starcraft2 #gaming
+https://www.youtube.com/watch?v=1bINjaPjt1M
 - [5 Mar 2021 1:59pm](https://mirror.roytang.net/2021/03/wandavision/): #WandaVision spoiler-free review:
  Overall, I really liked it, and I think they did well with the one-episode-per-week format. The show certainly would not have been this hyped if it all came in one drop Really difficult to not spoil. If you have somehow avoid being spoiled by the internet until it all dropped, good for you! A very emotional story of Wanda dealing with the aftermath of Infinity War/Endgame good usage of the sitcom tropes fantastic performance by Elisabeth Olsen lots of fan service for comic book fans to dig into.
 - [5 Mar 2021 11:47am](https://mirror.roytang.net/2021/03/1367804028604674052/): &ldquo;We have said goodbye before, so it stands to reason&hellip;&rdquo;
@@ -36,7 +38,6 @@ Latest notes:
 - [4 Mar 2021 1:29am](https://mirror.roytang.net/2021/03/1367286107361054724/): Ladies and gentlemen……..”What if Wes Anderson directed X-Men?”
 https://www.youtube.com/watch?v=UngE0qn3VRY
 - [3 Mar 2021 11:42pm](https://mirror.roytang.net/2021/03/gplein5/): Ugh, my bad. I posted the Feb 28th drawing into the Feb 27th thread instead. Thanks for checking, have reposted it into the correct thread!
-- [3 Mar 2021 3:22am](https://mirror.roytang.net/2021/03/1366952145623281670/): I&rsquo;m torn, because I know I&rsquo;m supposed to get the second vaccine shot, but I&rsquo;m also supposed to avoid sequel injection
 
 [View all notes](https://mirror.roytang.net/notes)
 

@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2018/01/10156316193913912-0/",
+            "url": "https://mirror.roytang.net/2018/01/10156316193913912-0/",
+            "path": "/2018/01/10156316193913912-0/",
+            "title": "",
+            "content_html": "\u003cp\u003eNot sorry #PS4share\u003c/p\u003e\n",
+            "summary": "Not sorry #PS4share",
+            "date_published": "2018-01-05T19:27:00+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/01/10156316193913912-0/index.md"
+            , "tags": ["ps4","ps4share"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156316193913912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/01/949469857849880576/",
+            "url": "https://mirror.roytang.net/2018/01/949469857849880576/",
+            "path": "/2018/01/949469857849880576/",
+            "title": "",
+            "content_html": "\u003cp\u003eMy kid just asked me at what age do people “figure it out” LOL\u003c/p\u003e\n\u003cp\u003eDear young folks,\u003c/p\u003e\n\u003cp\u003eAs you get older you just make peace with the fact that you’ll never have it together, therefore, looking like you have it together.\u003c/p\u003e\n",
+            "summary": "My kid just asked me at what age do people “figure it out” LOL\nDear young folks,\nAs you get older you just make peace with the fact that you’ll never have it together, therefore, looking like you have it together.",
+            "date_published": "2018-01-06T02:37:09+08:00",
+            "date_modified": "2021-01-01T13:34:24+08:00",
+            "section": "notes",
+            "source_path": "notes/2018/01/949469857849880576/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/949469857849880576/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/01/949318192073121792/",
+            "url": "https://mirror.roytang.net/2018/01/949318192073121792/",
+            "path": "/2018/01/949318192073121792/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis game was amazing #PS4share\u003c/p\u003e\n\u003cp\u003e(Life is Strange)\u003c/p\u003e\n",
+            "summary": "This game was amazing #PS4share\n(Life is Strange)",
+            "date_published": "2018-01-05T16:34:29+00:00",
+            "date_modified": "2021-01-01T13:34:24+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/01/949318192073121792/index.md"
+            , "tags": ["PS4share"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/949318192073121792/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156316193913912:1"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2018/01/949206313967300608/",
             "url": "https://mirror.roytang.net/2018/01/949206313967300608/",
             "path": "/2018/01/949206313967300608/",
@@ -933,57 +984,6 @@
             "source_path": "photos/2017/12/BdSoCLkATzo/index.md"
             
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BdSoCLkATzo/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/946763541897531398/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156299120533912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/48011448/",
-            "url": "https://mirror.roytang.net/2017/12/48011448/",
-            "path": "/2017/12/48011448/",
-            "title": "MarkLogic node.js: stream end event doesn't fire for certain collections",
-            "content_html": "\u003cp\u003eI have a query using MarkLogic node.js that basically boils down to something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edb.documents.query(qb.where(qb.collection('test'))).stream()\n.on('data', function(row) {\n    console.log(\u0026quot;Stream on data\u0026quot;);\n})\n.on('end', function() {\n    console.log(\u0026quot;Stream on end\u0026quot;);\n})\n.on('error', function(error) {\n    console.log(error);\n})\n;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow, for a certain collection we have in our database, the \u0026lsquo;end\u0026rsquo; function doesn\u0026rsquo;t fire, i.e. I never see \u0026ldquo;Stream on end\u0026rdquo; appear in the log. There\u0026rsquo;s no error or anything, processing just stops. It\u0026rsquo;s only for this particular collection, other collections seem fine.\u003c/p\u003e\n\u003cp\u003eIf I query documents in that collection directly using other methods such as qb.value() without using qb.collection(), the end event fires correctly. But once I add qb.collection() into the mix (using qb.and), the end event doesn\u0026rsquo;t fire.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m unsure how to debug this, as this is my first time trying to use streams in the nodejs client library. Any advice as to what I can check?\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
-            "summary": "I have a query using MarkLogic node.js that basically boils down to something like this:\ndb.documents.query(qb.where(qb.collection('test'))).stream() .on('data', function(row) { console.log(\u0026quot;Stream on data\u0026quot;); }) .on('end', function() { console.log(\u0026quot;Stream on end\u0026quot;); }) .on('error', function(error) { console.log(error); }) ;  Now, for a certain collection we have in our database, the \u0026lsquo;end\u0026rsquo; function doesn\u0026rsquo;t fire, i.e. I never see \u0026ldquo;Stream on end\u0026rdquo; appear in the log. There\u0026rsquo;s no error or anything, processing just stops.",
-            "date_published": "2017-12-28T17:04:03+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/48011448/index.md"
-            , "tags": ["node.js","marklogic","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/48011448/marklogic-node-js-stream-end-event-doesnt-fire-for-certain-collections"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/946248604653465600/",
-            "url": "https://mirror.roytang.net/2017/12/946248604653465600/",
-            "path": "/2017/12/946248604653465600/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mcnr_b/\"\u003e@mcnr_b\u003c/a\u003e Poor air man!\u003c/p\u003e\n",
-            "summary": "@mcnr_b Poor air man!",
-            "date_published": "2017-12-28T05:17:02+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/946248604653465600.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/946248604653465600/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/10156294616568912/",
-            "url": "https://mirror.roytang.net/2017/12/10156294616568912/",
-            "path": "/2017/12/10156294616568912/",
-            "title": "",
-            "content_html": "\u003cp\u003e“Everything ends and it\u0026rsquo;s always sad, but everything begins again, too. And that\u0026rsquo;s always happy. Be happy.”\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe Doctor\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "“Everything ends and it\u0026rsquo;s always sad, but everything begins again, too. And that\u0026rsquo;s always happy. Be happy.”\n The Doctor  ",
-            "date_published": "2017-12-28T02:55:00+00:00",
-            "date_modified": "2019-09-28T21:45:17+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/10156294616568912/index.md"
-            , "tags": ["quotes"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156294616568912"}]
             
             
             }
