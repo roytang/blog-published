@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-03-07](https://mirror.roytang.net/2021/03/weeknotes-2021-03-07/)
 - [Weeknotes 2021-02-28](https://mirror.roytang.net/2021/02/weeknotes-2021-02-28/)
 - [Game Review: Knightin&#39;](https://mirror.roytang.net/2021/02/game-review-knightin/)
 - [Book Review: Ghost of My Father by Scott Berkun](https://mirror.roytang.net/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
 - [Digital Boardgames Review: Scythe](https://mirror.roytang.net/2021/02/digital-boardgames-review-scythe/)
-- [Weeknotes 2021-02-21](https://mirror.roytang.net/2021/02/weeknotes-2021-02-21/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -31,6 +31,7 @@ Latest notes:
 
 - [7 Mar 2021 5:37am](https://mirror.roytang.net/2021/03/1368435737884909568/): [Team Camote] - StarCraft 2 Showmatch - hungryroy (me) vs tzia_n #starcraft2 #gaming
 https://www.youtube.com/watch?v=1bINjaPjt1M
+The rest of our games are in this youtube playlist: https://www.youtube.com/playlist?list=PL5c1J8DcHGjdzou13Vcn9eydWENvFb652
 - [5 Mar 2021 1:59pm](https://mirror.roytang.net/2021/03/wandavision/): #WandaVision spoiler-free review:
  Overall, I really liked it, and I think they did well with the one-episode-per-week format. The show certainly would not have been this hyped if it all came in one drop Really difficult to not spoil. If you have somehow avoid being spoiled by the internet until it all dropped, good for you! A very emotional story of Wanda dealing with the aftermath of Infinity War/Endgame good usage of the sitcom tropes fantastic performance by Elisabeth Olsen lots of fan service for comic book fans to dig into.
 - [5 Mar 2021 11:47am](https://mirror.roytang.net/2021/03/1367804028604674052/): &ldquo;We have said goodbye before, so it stands to reason&hellip;&rdquo;

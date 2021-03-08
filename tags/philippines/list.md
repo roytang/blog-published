@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-03-07](/2021/03/weeknotes-2021-03-07/)
+
 - [](/2021/02/gmeu5pi/)
 
 - [Pinoy Drawing Memes](/2021/01/pinoy-drawing-memes/)
