@@ -1,4 +1,6 @@
 
+- [Digital Boardgames Review: Blood Rage](/2021/03/digital-boardgames-review-blood-rage/)
+
 - [](/2021/03/1368435737884909568/)
 
 - [Game Review: Knightin&#39;](/2021/02/game-review-knightin/)

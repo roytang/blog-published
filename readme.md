@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Digital Boardgames Review: Blood Rage](https://mirror.roytang.net/2021/03/digital-boardgames-review-blood-rage/)
 - [Weeknotes 2021-03-07](https://mirror.roytang.net/2021/03/weeknotes-2021-03-07/)
 - [Weeknotes 2021-02-28](https://mirror.roytang.net/2021/02/weeknotes-2021-02-28/)
 - [Game Review: Knightin&#39;](https://mirror.roytang.net/2021/02/game-review-knightin/)
 - [Book Review: Ghost of My Father by Scott Berkun](https://mirror.roytang.net/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
-- [Digital Boardgames Review: Scythe](https://mirror.roytang.net/2021/02/digital-boardgames-review-scythe/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
