@@ -29,16 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [10 Mar 2021 1:20pm](https://mirror.roytang.net/2021/03/gqfxqv1/): They should release the 3 Kaldra equipment into historic one at a time, one every three years or so
+- [10 Mar 2021 8:04am](https://mirror.roytang.net/2021/03/951fcfe07a7cbb8d04ee6dd219c181fb/): Is there any good privacy respecting recaptcha alternative?
+- [10 Mar 2021 7:40am](https://mirror.roytang.net/2021/03/2b14f8356f57460da0a4790b27b44b8a/): Haven&rsquo;t seen any of the pre-Brosnan Bond films, so I started today with Dr No (1962). Pretty good, but if this were a modern film, I&rsquo;d have expected some kind of plot twist with Honey Rider, like maybe she would have turned out to be the actual Dr No
 - [8 Mar 2021 10:54am](https://mirror.roytang.net/2021/03/1368877891543564289/): Quoted ANCALERTS&#39;s tweet:   As pandemic lockdown nears one year, Malacañang says: &lsquo;We were excellent&rsquo; #COVID19Quarantine https://news.abs-cbn.com/news/03/08/21/as-pandemic-lockdown-nears-one-year-malacaang-says-we-were-excellent  
 - [7 Mar 2021 5:37am](https://mirror.roytang.net/2021/03/1368435737884909568/): [Team Camote] - StarCraft 2 Showmatch - hungryroy (me) vs tzia_n #starcraft2 #gaming
 https://www.youtube.com/watch?v=1bINjaPjt1M
 The rest of our games are in this youtube playlist: https://www.youtube.com/playlist?list=PL5c1J8DcHGjdzou13Vcn9eydWENvFb652
-- [5 Mar 2021 1:59pm](https://mirror.roytang.net/2021/03/wandavision/): #WandaVision spoiler-free review:
- Overall, I really liked it, and I think they did well with the one-episode-per-week format. The show certainly would not have been this hyped if it all came in one drop Really difficult to not spoil. If you have somehow avoid being spoiled by the internet until it all dropped, good for you! A very emotional story of Wanda dealing with the aftermath of Infinity War/Endgame good usage of the sitcom tropes fantastic performance by Elisabeth Olsen lots of fan service for comic book fans to dig into.
-- [5 Mar 2021 11:47am](https://mirror.roytang.net/2021/03/1367804028604674052/): &ldquo;We have said goodbye before, so it stands to reason&hellip;&rdquo;
-&ldquo;&hellip;we&rsquo;ll say hello again.&rdquo;
-- [4 Mar 2021 1:29am](https://mirror.roytang.net/2021/03/1367286107361054724/): Ladies and gentlemen……..”What if Wes Anderson directed X-Men?”
-https://www.youtube.com/watch?v=UngE0qn3VRY
 
 [View all notes](https://mirror.roytang.net/notes)
 
