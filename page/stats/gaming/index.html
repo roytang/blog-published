@@ -71,7 +71,7 @@
     },
     "datePublished": "2020-12-29",
     "description": "",
-    "wordCount":  103 
+    "wordCount":  56 
   }
 </script>
 
@@ -170,31 +170,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
-<script type="text/javascript">
-    let timeline = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '#app',
-        data: {
-            title: "test",
-            items: [],
-        },
-        http: {
-            root: '/',
-        },
-        mounted: function() {
-            this.loadEntries();
-        },
-        methods: {
-            loadEntries: function() {
-                this.$http.get("/apps/steamhist/report/", {params: {"json": "true"}})
-                    .then(response => {
-                        this.items = response.data;
-                        console.log(this.items);
-                    });
-            },
-        }
-    });
-</script>
+<script src="https://mirror.roytang.net/static/js/steamhist.js"></script>
 <ul>
 <li>updated daily; loading the data on this page requires JavaScript</li>
 <li>I don&rsquo;t really play DOTA 2, that&rsquo;s my brothers playing on my account</li>
@@ -325,7 +301,7 @@
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2020 12 29 13:36:10.
+        Last modified at: 2021 03 12 00:41:31.
         
         <a href='https://github.com/roytang/blog/tree/master/content/page/stats/gaming.md' title='source file'>Source file</a>
         

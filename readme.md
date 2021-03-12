@@ -29,13 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [11 Mar 2021 11:29am](https://mirror.roytang.net/2021/03/1369973843050164226/): A bit worse off, since we didn&rsquo;t have a pandemic in 1985 afaik.
+Quoted LaTtEX&#39;s tweet:   Massacres openly conducted by the police and military. Opposition figures in jail. A dying but belligerent despot. Deputies jockeying for power. A crashed economy. Infrastructure projects burying us in decades of debt.
+Aminin na natin Pilipinas, bumalik lang tayo sa 1985.
+ 
+- [11 Mar 2021 10:56am](https://mirror.roytang.net/2021/03/1369965501107998720/): @Westraid there’s a lot of these movies though, gonna take a while to get through them!
+- [11 Mar 2021 9:14am](https://mirror.roytang.net/2021/03/096b7c67797c165b01283d0c7cd6c016/): James Bond movie no. 2: To Russia With Love (1963). This one actually had more bits that felt like actual espionage. And Bond didn&rsquo;t need to get captured this time!
 - [10 Mar 2021 1:20pm](https://mirror.roytang.net/2021/03/gqfxqv1/): They should release the 3 Kaldra equipment into historic one at a time, one every three years or so
 - [10 Mar 2021 8:04am](https://mirror.roytang.net/2021/03/951fcfe07a7cbb8d04ee6dd219c181fb/): Is there any good privacy respecting recaptcha alternative?
-- [10 Mar 2021 7:40am](https://mirror.roytang.net/2021/03/2b14f8356f57460da0a4790b27b44b8a/): Haven&rsquo;t seen any of the pre-Brosnan Bond films, so I started today with Dr No (1962). Pretty good, but if this were a modern film, I&rsquo;d have expected some kind of plot twist with Honey Rider, like maybe she would have turned out to be the actual Dr No
-- [8 Mar 2021 10:54am](https://mirror.roytang.net/2021/03/1368877891543564289/): Quoted ANCALERTS&#39;s tweet:   As pandemic lockdown nears one year, Malacañang says: &lsquo;We were excellent&rsquo; #COVID19Quarantine https://news.abs-cbn.com/news/03/08/21/as-pandemic-lockdown-nears-one-year-malacaang-says-we-were-excellent  
-- [7 Mar 2021 5:37am](https://mirror.roytang.net/2021/03/1368435737884909568/): [Team Camote] - StarCraft 2 Showmatch - hungryroy (me) vs tzia_n #starcraft2 #gaming
-https://www.youtube.com/watch?v=1bINjaPjt1M
-The rest of our games are in this youtube playlist: https://www.youtube.com/playlist?list=PL5c1J8DcHGjdzou13Vcn9eydWENvFb652
 
 [View all notes](https://mirror.roytang.net/notes)
 

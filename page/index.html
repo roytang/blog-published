@@ -136,31 +136,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
-<script type="text/javascript">
-    let timeline = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '#app',
-        data: {
-            title: "test",
-            items: [],
-        },
-        http: {
-            root: '/',
-        },
-        mounted: function() {
-            this.loadEntries();
-        },
-        methods: {
-            loadEntries: function() {
-                this.$http.get("/apps/steamhist/report/", {params: {"json": "true"}})
-                    .then(response => {
-                        this.items = response.data;
-                        console.log(this.items);
-                    });
-            },
-        }
-    });
-</script>
+<script src="https://mirror.roytang.net/static/js/steamhist.js"></script>
 <ul>
 <li>updated daily; loading the data on this page requires JavaScript</li>
 <li>I don&rsquo;t really play DOTA 2, that&rsquo;s my brothers playing on my account</li>
@@ -10087,7 +10063,7 @@ dataset on this graph though)
         <td class="arc">
             
             
-                <a href='https://mirror.roytang.net/2021/03/'>12</a>
+                <a href='https://mirror.roytang.net/2021/03/'>15</a>
             
         </td>
         
@@ -10115,7 +10091,7 @@ dataset on this graph though)
             <td></td>
                 
     
-    <td class="arc"><a href='https://mirror.roytang.net/2021'>122</a></td>
+    <td class="arc"><a href='https://mirror.roytang.net/2021'>125</a></td>
 </tr>
 
 <tr>
@@ -12163,7 +12139,7 @@ dataset on this graph though)
         
         
         
-            <li><a href='https://mirror.roytang.net/2021/03/'>2021 March</a> (12)</li>
+            <li><a href='https://mirror.roytang.net/2021/03/'>2021 March</a> (15)</li>
         
     
         
@@ -13106,18 +13082,16 @@ dataset on this graph though)
   <li><a href="https://mirror.roytang.net/links">Links</a> Shared links. (853 items)</li>
 
   
-  <li><a href="https://mirror.roytang.net/photos">Photos</a> Photos, sketches, screenshots, and definitely memes. (1829 items)</li>
+  <li><a href="https://mirror.roytang.net/photos">Photos</a> Photos, sketches, screenshots, and definitely memes. (1831 items)</li>
 
   
-  <li><a href="https://mirror.roytang.net/notes">Notes</a> Microblog-like status updates. (14710 items)</li>
+  <li><a href="https://mirror.roytang.net/notes">Notes</a> Microblog-like status updates. (14713 items)</li>
 
   
   <li><a href="https://mirror.roytang.net/fiction">Fiction</a> Some works of fiction I have written. (7 items)</li>
 
 </ul>
 <p><a href="https://mirror.roytang.net/onthisday/">On This Day</a> (Updated around every 01:00 GMT)</p>
-<p><a href="https://mirror.roytang.net/tags/">All Content By Tags</a></p>
-<p><a href="https://mirror.roytang.net/source/">All Content By Import Source</a></p>
 <p><a href="https://mirror.roytang.net/archives/ancient/">Older (ancient) versions of this site</a></p>
 <p><a href="https://mirror.roytang.net/tags/changelog/">Site changelog</a></p>
 
@@ -13374,7 +13348,7 @@ dataset on this graph though)
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2021 01 19 16:25:04.
+        Last modified at: 2021 03 12 00:41:31.
         
     </p>
 </footer>      
