@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/",
+            "url": "https://mirror.roytang.net/2018/12/adding-developers-to-a-late-project/",
+            "path": "/2018/12/adding-developers-to-a-late-project/",
+            "title": "Adding Developers to a Late Project",
+            "content_html": "\u003cp\u003eFor any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.\u003c/p\u003e\n\u003cp\u003eThe most signifiant cost is of course the communication overhead as described in \u003ca href=\"https://en.wikipedia.org/wiki/The_Mythical_Man-Month\"\u003ethe Mythical Man Month\u003c/a\u003e. Fun story, the CEO of a company once told me they would add more developers to a delayed project to meet the deadline and when I pointed out the increased overhead he said to me that it wasn\u0026rsquo;t a problem because they would just assign modules to those devs that have minimal dependencies so they don\u0026rsquo;t have to communicate so much. Ha! I just shrugged and let him think it was a good idea.\u003c/p\u003e\n\u003cp\u003eIn my experience, it\u0026rsquo;s never a good idea, especially late in the game. Even if you are somehow able to minimize any domain overhead (which I seriously doubt), there is also the nontrivial matter of technical overhead that any new developer intake needs to go through. I\u0026rsquo;m not just talking about learning the programming language or the technical stack - presumably if you are adding someone to the team, he is either already familiar with the stack or you have factored in his being a newbie and needing training time.\u003c/p\u003e\n\u003cp\u003eNo, I\u0026rsquo;m talking about things like templates, UI standards, coding standards, devops processes, configuration, libraries in use, data dictionaries, and so on. Most projects will have \u0026ldquo;preferred ways of doing things\u0026rdquo;, and the more work that has been done on the project, the more such \u0026ldquo;tribal knowledge\u0026rdquo; is often undocumented and you will need to bother someone to figure the stuff out. And if the project is behind schedule and everyone is trying to catch up, it\u0026rsquo;s more likely people are going to forget to tell you stuff.\u003c/p\u003e\n\u003cp\u003eSlightly related side note: If there is very little in the way of standards or tribal knowledge global to the project, that might be a warning sign. I once worked with a client who had several subcontractors to work on the different modules in their system. Each module/subcontractor worked more or less independently from the others, with very little documentation or standards in place. The result was a weird hodgepodge system where one module did things one way, and the next module did things a completely different way, and so on.\u003c/p\u003e\n\u003cp\u003eAs an example, I was once asked to help in a project with a relatively large codebase and significant deadline pressure and I was coming in hot with no knowledge of the domain and minimal experience with the framework in use. I told them I wasn\u0026rsquo;t sure I could hit the target given I had to learn a bunch of stuff, but they were in desperate need and so ok we proceeded anyway. Now, I\u0026rsquo;m an experienced developer, so pulling me in was a better option than pulling in some newbie since there\u0026rsquo;s a lot of stuff I can figure out myself, but off the top of my head, I had to explicitly bother other people about:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eproper access rights to the repo\u003c/li\u003e\n\u003cli\u003eproper access rights to the google drive with all the documents\u003c/li\u003e\n\u003cli\u003eCRLF problems when I use windows to clone the repo\u003c/li\u003e\n\u003cli\u003edatabase credentials for the provided dev VM\u003c/li\u003e\n\u003cli\u003eerrors encountered due to undocumented steps missing from the setup document\u003c/li\u003e\n\u003cli\u003ewhere should I put new configuration options\u003c/li\u003e\n\u003cli\u003ewhere should I put my new module in the menu\u003c/li\u003e\n\u003cli\u003ehow to map data in other tables to my new tables\u003c/li\u003e\n\u003cli\u003ethe proper HTML markup and CSS classes needed to conform to the way they layouted pages\u003c/li\u003e\n\u003cli\u003ehow to implement form validations the same way as other screens\u003c/li\u003e\n\u003cli\u003estandard methods for displaying messages/errors\u003c/li\u003e\n\u003cli\u003ehow to setup role permissions for my new screens\u003c/li\u003e\n\u003cli\u003epreferred library for making third party API calls\u003c/li\u003e\n\u003cli\u003eJS errors encountered when using a particular component\u003c/li\u003e\n\u003cli\u003eproblems with dynamically created reccords not behaving properly when the page redirects on error\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u0026hellip; and probably a lot more I\u0026rsquo;m unable to recall anymore, and that\u0026rsquo;s not accounting for any comments that would be later logged by QA because I was unfamiliar with how other screens usually behaved.\u003c/p\u003e\n\u003cp\u003eIf you\u0026rsquo;re adding developers to a late project, you have to account for these onboarding costs, in addition to the increased communication overhead. That means sounding the alarm and asking for help earlier. If there\u0026rsquo;s a module that\u0026rsquo;s estimated by your devs to take say, one sprint, you can\u0026rsquo;t ask for help one sprint before the needed delivery - you need to look for help maybe one or two sprints earlier. (Of course, the best approach would be to avoid painting your project into this corner at all, but as we all know in this industry, sometimes things just happen!)\u003c/p\u003e\n",
+            "summary": "For any nontrivial software project of at least moderate team size, there can be a significant cost to onboarding a new team member, especially at later stages when you are rushing to meet deadlines.\nThe most signifiant cost is of course the communication overhead as described in the Mythical Man Month. Fun story, the CEO of a company once told me they would add more developers to a delayed project to meet the deadline and when I pointed out the increased overhead he said to me that it wasn\u0026rsquo;t a problem because they would just assign modules to those devs that have minimal dependencies so they don\u0026rsquo;t have to communicate so much.",
+            "date_published": "2018-12-13T01:56:56+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2018/12/adding-devs/index.md"
+            , "tags": ["devto","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1073035117860454400/"}]
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-disqus-4242382225.json"
+                }, { 
+                    "url": "",
+                    "source_file": "comment-disqus-4242430508.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/12/10157118256658912/",
+            "url": "https://mirror.roytang.net/2018/12/10157118256658912/",
+            "path": "/2018/12/10157118256658912/",
+            "title": "",
+            "content_html": "\u003cp\u003eAquaman Spoiler-Free review!\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI came in with low expectations (given DC\u0026rsquo;s history), but the movie turned out pretty good, even though it wasn\u0026rsquo;t the best comic book related thing I\u0026rsquo;ve seen this week (see previous post)\u003c/li\u003e\n\u003cli\u003eit\u0026rsquo;s fun and action-packed, some fun set pieces and action sequences. Lots of CGI (as can be expected)\u003c/li\u003e\n\u003cli\u003ethe plot is fairly predictable, I\u0026rsquo;ve seen similar story arcs for this character more than once, things pretty much happen as you expect\u003c/li\u003e\n\u003cli\u003ealso the plot kinda feels a bit like black panther, except in reverse? does that make sense?\u003c/li\u003e\n\u003cli\u003ethe first act felt a bit longish, but not really draggy or anything, it\u0026rsquo;s just that there\u0026rsquo;s a lot of set up to be done\u003c/li\u003e\n\u003cli\u003ethe director\u0026rsquo;s horror movie background shines through a bit in one of the sequences around the second act\u003c/li\u003e\n\u003cli\u003eI had the urge to pee about 1 hour in, but I had to hold it in until the end of the movie, I didn\u0026rsquo;t want to miss stuff. So much water didn\u0026rsquo;t help!\u003c/li\u003e\n\u003cli\u003eArthur\u0026rsquo;s dad looks like a Pinoy lol\u003c/li\u003e\n\u003cli\u003eI didn\u0026rsquo;t watch in IMAX3D, but I suspect there\u0026rsquo;s a lot of 3d given the volume of CGI\u003c/li\u003e\n\u003cli\u003ethere is one mid-credits scene\u003c/li\u003e\n\u003cli\u003eI\u0026rsquo;d say it\u0026rsquo;s family-friendly even though there is quite a bit of bloodshed\u003c/li\u003e\n\u003cli\u003emagugustuhan ba ni Mama. Eh, maybe? Not really her type of movie, but maybe if I explain it a bit?\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSpider-verse this weekend!\u003c/p\u003e\n",
+            "summary": "Aquaman Spoiler-Free review!\n I came in with low expectations (given DC\u0026rsquo;s history), but the movie turned out pretty good, even though it wasn\u0026rsquo;t the best comic book related thing I\u0026rsquo;ve seen this week (see previous post) it\u0026rsquo;s fun and action-packed, some fun set pieces and action sequences. Lots of CGI (as can be expected) the plot is fairly predictable, I\u0026rsquo;ve seen similar story arcs for this character more than once, things pretty much happen as you expect also the plot kinda feels a bit like black panther, except in reverse?",
+            "date_published": "2018-12-12T21:43:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/12/10157118256658912/index.md"
+            , "tags": ["timeline-photos","movies","spoiler-free-review"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1072849384574984193/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1072849384574984193/"},{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181046297550/aquaman-spoiler-free-review-i-came-in-with-low"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10157118257318912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20181213-000000-6c9b2e6e-b302-4d0f-a54a-26e0593599d8.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20181213-000001-d06897a7-c89e-44e1-85a9-3e5c00ea519b.json"
+                }, { 
+                    "url": "https://www.facebook.com/briantang25",
+                    "source_file": "comment-20181213-000002-82ac273f-7437-4830-9798-8ecfa428e238.json"
+                }, { 
+                    "url": "https://www.facebook.com/romancoat",
+                    "source_file": "comment-20181213-000320-d37bb741-d358-42e0-bd26-54a1e8a67bf8.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2018/12/1072877672513003521/",
             "url": "https://mirror.roytang.net/2018/12/1072877672513003521/",
             "path": "/2018/12/1072877672513003521/",
@@ -839,40 +895,6 @@
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070226872452165632/"}]
             ,"link": "https://waxy.org/2018/12/why-you-should-never-ever-use-quora/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/12/1070201446446944256/",
-            "url": "https://mirror.roytang.net/2018/12/1070201446446944256/",
-            "path": "/2018/12/1070201446446944256/",
-            "title": "",
-            "content_html": "\u003cp\u003eI know myself so well I have an everday alarm set for 2PM to stop myself from napping after lunch\u003c/p\u003e\n",
-            "summary": "I know myself so well I have an everday alarm set for 2PM to stop myself from napping after lunch",
-            "date_published": "2018-12-05T06:21:22+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/12/1070201446446944256.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070201446446944256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/12/180811685048/",
-            "url": "https://mirror.roytang.net/2018/12/180811685048/",
-            "path": "/2018/12/180811685048/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"http://bear1na.tumblr.com/post/180304021229/guardians-of-the-galaxy-1-variant-cover-by-gerald\" class=\"tumblr_blog\"\u003ebear1na\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003eGuardians of the Galaxy #1 variant cover by Gerald Parel *\u003c/p\u003e\u003c/blockquote\u003e",
-            "summary": "bear1na:\nGuardians of the Galaxy #1 variant cover by Gerald Parel *",
-            "date_published": "2018-12-05T02:01:08+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/12/180811685048/index.md"
-            , "tags": ["marvel","comics","guardians of the galaxy","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/180811685048/bear1na-guardians-of-the-galaxy-1-variant"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1070135957070983168/"}]
-            
             
             }
         

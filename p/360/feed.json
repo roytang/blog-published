@@ -11,45 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2008/12/links-for-2008-12-01/",
-            "url": "https://mirror.roytang.net/2008/12/links-for-2008-12-01/",
-            "path": "/2008/12/links-for-2008-12-01/",
-            "title": "links for 2008-12-01",
-            "content_html": "\u003cul class=\"delicious\"\u003e\n  \u003cli\u003e\n    \u003cdiv class=\"delicious-link\"\u003e\n      \u003ca href=\"http://www.aaronsw.com/weblog/productivity\"\u003eHOWTO: Be more productive (Aaron Swartz's Raw Thought)\u003cbr /\u003e \u003c/a\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"delicious-tags\"\u003e\n      (tags: \u003ca href=\"http://delicious.com/roytang/lifehacks\"\u003elifehacks \u003c/a\u003e\u003ca href=\"http://delicious.com/roytang/productivity\"\u003eproductivity\u003c/a\u003e)\n    \u003c/div\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e",
-            "summary": " HOWTO: Be more productive (Aaron Swartz's Raw Thought)\n  (tags: lifehacks productivity)   ",
-            "date_published": "2008-12-01T17:04:36+00:00",
-            "date_modified": "2020-05-03T15:21:18+08:00",
-            "section": "post",
-            "source_path": "post/2008/12/links-for-2008-12-01/index.md"
-            , "tags": ["Links"]
-            
-            
-            , "comments": [
-                { 
-                    "url": "http://www.ripoffreport.com/reports/0/321/RipOff0321145.htm",
-                    "source_file": "comment-20081208080720-wp-Tim Reynolds.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/12/1032276320/",
-            "url": "https://mirror.roytang.net/2008/12/1032276320/",
-            "path": "/2008/12/1032276320/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mikong/\"\u003e@mikong\u003c/a\u003e ano yang avatar mo?\u003c/p\u003e\n",
-            "summary": "@mikong ano yang avatar mo?",
-            "date_published": "2008-12-01T14:10:59+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/12/1032276320.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1032276320/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
             "url": "https://mirror.roytang.net/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
             "path": "/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
@@ -1012,6 +973,51 @@
             
             
             
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/",
+            "url": "https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/",
+            "path": "/2008/10/playing-with-generic-views-and-urls/",
+            "title": "Playing with Generic Views and URLs",
+            "content_html": "\u003cp\u003e\u0026ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e-\u0026gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003ereturn HttpResponseRedirect(\u0026quot;../\u0026quot; + str(post.id) + \u0026quot;/\u0026quot;)\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eI got the basic posting structure up.\u003c/p\u003e\n\u003cp\u003e/post/new/ -\u0026gt; To make new posts\u003c/p\u003e\n\u003cp\u003e/post// -\u0026gt; To view a single post\u003c/p\u003e\n\u003cp\u003e/post/all/ -\u0026gt; To view all posts\u003c/p\u003e\n\u003cp\u003eI should probably start thinking of a better url scheme. Ideally, I\u0026rsquo;d want the @login_required views to be indicated as such in the urls. Something like \u0026ldquo;/admin/post/\u0026rdquo; for new posts \u0026ldquo;/admin/manage/\u0026rdquo; for a screen to manage posts to differentiate it from a screen just to list them out.\u003c/p\u003e\n\u003cp\u003eNext I think I\u0026rsquo;ll try to CSS-ify the blog; I\u0026rsquo;ll probably just reuse stuff from one of the blogger templates as I\u0026rsquo;m still not very good with the HTML/CSS.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ll also look into using some of the date-based generic views to get an archive view. I\u0026rsquo;ll need more data though. Will consider importing from the WordPress blog.\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\u0026rdquo;\n-\u0026gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.\nreturn HttpResponseRedirect(\u0026quot;../\u0026quot; + str(post.id) + \u0026quot;/\u0026quot;)\nI got the basic posting structure up.\n/post/new/ -\u0026gt; To make new posts\n/post// -\u0026gt; To view a single post\n/post/all/ -\u0026gt; To view all posts\nI should probably start thinking of a better url scheme.",
+            "date_published": "2008-10-20T13:44:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/10/playing-with-generic-views-and-urls/index.md"
+            , "tags": ["royondjango","django","python","software development"]
+            , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/10/when-redirecting-how-can-i-make.html"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/10/217801/",
+            "url": "https://mirror.roytang.net/2008/10/217801/",
+            "path": "/2008/10/217801/",
+            "title": "Getting Language for Non-Unicode Programs",
+            "content_html": "\u003cp\u003eAnyone have any idea how to get the value of \u0026ldquo;Language for Non-Unicode Programs\u0026rdquo; in Control Panel Regional Settings programmatically using c#?\u003c/p\u003e\n\u003cp\u003eAlready tried CultureInfo, RegionInfo and getting the default encoding using the Encoding object, but I can only get the Standards and Formats value or the main code page.\u003c/p\u003e\n",
+            "summary": "Anyone have any idea how to get the value of \u0026ldquo;Language for Non-Unicode Programs\u0026rdquo; in Control Panel Regional Settings programmatically using c#?\nAlready tried CultureInfo, RegionInfo and getting the default encoding using the Encoding object, but I can only get the Standards and Formats value or the main code page.",
+            "date_published": "2008-10-20T08:42:26+00:00",
+            "date_modified": "2020-06-01T13:51:57+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/10/217801/index.md"
+            , "tags": ["csharp","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/217801/getting-language-for-non-unicode-programs"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/217801/getting-language-for-non-unicode-programs",
+                    "source_file": "comment-20081020T091849-217858.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/217801/getting-language-for-non-unicode-programs",
+                    "source_file": "comment-20081020T092415-217875.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/217801/getting-language-for-non-unicode-programs",
+                    "source_file": "comment-20170923T191758-46383388.json"
+                }
+            ]
             }
         
     ]

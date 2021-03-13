@@ -511,7 +511,7 @@
 
 - [How to Make Things Happen | Scott Berkun](/2018/03/how-to-make-things-happen-scott-berkun/)
 
-- [Gamasutra - Devs weigh in on the best ways to use (but not abuse) procedura](/2018/03/gamasutra-devs-weigh-in-on-the-best-ways-to-use-but-not-abuse-procedura/)
+- [Gamasutra - Devs weigh in on the best ways to use (but not abuse) procedural generation](/2018/03/gamasutra-devs-weigh-in-on-the-best-ways-to-use-but-not-abuse-procedura/)
 
 - [How Agents of SHIELD Became Marvel&#39;s Best-Reviewed TV Show](/2018/03/how-agents-of-shield-became-marvel-s-best-reviewed-tv-show/)
 
