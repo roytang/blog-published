@@ -11,6 +11,70 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/02/1233397945/",
+            "url": "https://mirror.roytang.net/2009/02/1233397945/",
+            "path": "/2009/02/1233397945/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/habeo/\"\u003e@habeo\u003c/a\u003e does that mean you\u0026rsquo;ve become stronger and now closer to becoming The One?\u003c/p\u003e\n",
+            "summary": "@habeo does that mean you\u0026rsquo;ve become stronger and now closer to becoming The One?",
+            "date_published": "2009-02-21T05:25:56+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/02/1233397945.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1233397945/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/02/1222403030/",
+            "url": "https://mirror.roytang.net/2009/02/1222403030/",
+            "path": "/2009/02/1222403030/",
+            "title": "",
+            "content_html": "\u003cp\u003efixed the internet!\u003c/p\u003e\n",
+            "summary": "fixed the internet!",
+            "date_published": "2009-02-18T10:45:55+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/02/1222403030/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1222403030/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/52043204708"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/kerwin.j.tang",
+                    "source_file": "comment-20090219-000000-ce689c50-702d-45b6-ac6f-82e1ee72e4c4.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/02/1219086981/",
+            "url": "https://mirror.roytang.net/2009/02/1219086981/",
+            "path": "/2009/02/1219086981/",
+            "title": "",
+            "content_html": "\u003cp\u003eam on dial-up. let\u0026rsquo;s take it slow, so slow.\u003c/p\u003e\n",
+            "summary": "am on dial-up. let\u0026rsquo;s take it slow, so slow.",
+            "date_published": "2009-02-17T14:54:31+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/02/1219086981/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1219086981/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/51594764591"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/kerwin.j.tang",
+                    "source_file": "comment-20090218-000000-74d2819e-38ee-4bdf-9b93-1796e08ba45e.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20090218-000001-fc87a102-3a56-4182-be0a-02a3da613cc2.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/02/1219081752/",
             "url": "https://mirror.roytang.net/2009/02/1219081752/",
             "path": "/2009/02/1219081752/",
@@ -890,57 +954,6 @@
             "source_path": "notes/2009/01/1095166088.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1095166088/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/01/using-django-pingback/",
-            "url": "https://mirror.roytang.net/2009/01/using-django-pingback/",
-            "path": "/2009/01/using-django-pingback/",
-            "title": "Using Django Pingback",
-            "content_html": "\u003cp\u003eI actually had some trouble using \u003ca href=\"http://code.google.com/p/django-pingback/\"\u003edjango-pingback\u003c/a\u003e on my custom blog engine; the \u003ca href=\"http://hg.piranha.org.ua/django-pingback/file/6ca8eadcd22d/README.md#l1\"\u003edjango-pingback documentation\u003c/a\u003e is mostly fine, but there were some caveats that I had to discover myself through a bit of debugging:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eThe URL specified for the XML-RPC endpoint in the HTML head needs to be a full absolute url including domain, i.e. \u003ca href=\"http://roytang.net/xmlrpc/,\"\u003ehttp://roytang.net/xmlrpc/,\u003c/a\u003e which gave me trouble when I was trying to test using localhost pinging to an online server. I eventually just decided to set it up, deploy on webfaction and test it online before I redirected the domain name.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe documentation mentioned that the pingback handler needs to have the same arguments as the detail view for the post, so I wrote it as follows:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#75715e\"\u003e# exactly same arguments as \u0026#39;details\u0026#39; view.\u003c/span\u003e\n\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003epingback_blog_handler\u003c/span\u003e(catslug, year, month, slug, \u003cspan style=\"color:#f92672\"\u003e**\u003c/span\u003ekwargs):\n    cat \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e Category\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eobjects\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eget(slug\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003ecatslug)\n    \u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e Post\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003epub_objects\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eget(date__year\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003eyear, date__month\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003emonth, slug\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003eslug, category\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003ecat, published\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003eTrue)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eBut it wasn\u0026rsquo;t exactly working for me, for some reason the function wasn\u0026rsquo;t being called. After some debugging I found that I needed to use named parameters for catslug, year, month, slug in the URLConf for the post permalink in order for this to work. I\u0026rsquo;m not sure if this was because I was doing it wrong or it\u0026rsquo;s some sort of undocumented requirement.\u003c/li\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe pingback client was throwing a KeyError whenever a post I made would have anchor tags without an href attribute. Granted that there isn\u0026rsquo;t much point in having an \u003ca\u003eanchor tag without the href\u003c/a\u003e, but the code shouldn\u0026rsquo;t just choke on it. I modified the following line in client.py:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e  links \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e [a[\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;href\u0026#39;\u003c/span\u003e] \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e a \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e soup\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003efindAll(\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;a\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eif\u003c/span\u003e is_external(a[\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;href\u0026#39;\u003c/span\u003e], url)]\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eAdding the check for the href attribute:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e  links \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e [a[\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;href\u0026#39;\u003c/span\u003e] \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e a \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e soup\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003efindAll(\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;a\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eif\u003c/span\u003e a\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003ehas_key(\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;href\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#f92672\"\u003eand\u003c/span\u003e is_external(a[\u003cspan style=\"color:#e6db74\"\u003e\u0026#39;href\u0026#39;\u003c/span\u003e], url)]\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThose are all the changes I made to get pingbacks working. I hope they\u0026rsquo;re still working now, as I haven\u0026rsquo;t received any pingbacks since the django version of this blog went live \u0026gt;.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "I actually had some trouble using django-pingback on my custom blog engine; the django-pingback documentation is mostly fine, but there were some caveats that I had to discover myself through a bit of debugging:\n  The URL specified for the XML-RPC endpoint in the HTML head needs to be a full absolute url including domain, i.e. http://roytang.net/xmlrpc/, which gave me trouble when I was trying to test using localhost pinging to an online server.",
-            "date_published": "2009-01-04T07:22:20+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2009/01/using-django-pingback/index.md"
-            , "tags": ["royondjango","django","python","software development"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/01/1094743294/",
-            "url": "https://mirror.roytang.net/2009/01/1094743294/",
-            "path": "/2009/01/1094743294/",
-            "title": "",
-            "content_html": "\u003cp\u003eTrying out pinax \u003ca href=\"https://pinaxproject.com/\"\u003ehttps://pinaxproject.com/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Trying out pinax https://pinaxproject.com/",
-            "date_published": "2009-01-04T05:50:25+00:00",
-            "date_modified": "2019-09-26T19:28:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/01/1094743294.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1094743294/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/48879125918"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/01/1093335393/",
-            "url": "https://mirror.roytang.net/2009/01/1093335393/",
-            "path": "/2009/01/1093335393/",
-            "title": "",
-            "content_html": "\u003cp\u003ewatching DjangoCon 2008 videos on youtube\u003c/p\u003e\n",
-            "summary": "watching DjangoCon 2008 videos on youtube",
-            "date_published": "2009-01-03T12:57:53+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/01/1093335393.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1093335393/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/59135651787"}]
             
             
             }

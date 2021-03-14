@@ -18,11 +18,11 @@ Latest blog posts:
 Latest shared links:
     
 
+- [writings](https://mirror.roytang.net/2021/03/writings/)
 - [An opinionated list of best practices for textual websites](https://mirror.roytang.net/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 - [How I cut GTA Online loading times by 70%](https://mirror.roytang.net/2021/03/how-i-cut-gta-online-loading-times-by-70/)
 - [The Big List of Personal Websites](https://mirror.roytang.net/2021/02/the-big-list-of-personal-websites/)
 - [The web didn&#39;t change; you did](https://mirror.roytang.net/2021/02/the-web-didnt-change-you-did/)
-- [General Unstructured Thoughts On “Being Cancelled”](https://mirror.roytang.net/2021/02/general-unstructured-thoughts-on-being-cancelled/)
 
 [View all links](https://mirror.roytang.net/links)
 

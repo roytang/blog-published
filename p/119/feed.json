@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/01/the-simplest-code-that-can-do-the-job/",
+            "url": "https://mirror.roytang.net/2017/01/the-simplest-code-that-can-do-the-job/",
+            "path": "/2017/01/the-simplest-code-that-can-do-the-job/",
+            "title": "The Simplest Code That Can Do The Job",
+            "content_html": "\u003cp\u003eSo the other day I was reworking a Python script that I had been using for years on my home PC to manage and categorize some downloaded files for me. This time I wanted to add some smarter behavior to make it more able to figure out when to group files into folders without constantly needing manual intervention from me. To do this, I needed to persist some data between runs \u0026ndash; so that the script remembers how it categorized previous files and is able to group similar files together.\u003c/p\u003e\n\u003cp\u003eNow since my software development career has largely been as an enterprise-y kind of developer, my first thought was to just use a database to store the data. I already had a MySql installation on my machine so that was fine, I just needed Python to interface with it. After looking up how to do it, I balked at having to install a new Python library just to connect to MySql and reconsidered.\u003c/p\u003e\n\u003cp\u003eAs programmers, we have a tendency sometimes to over-engineer solutions because that\u0026rsquo;s what we\u0026rsquo;re used to doing. Did I really need a database for this? The data won\u0026rsquo;t be very big, and I won\u0026rsquo;t need to do any sort of maintenance on it, so maybe a simpler solution was in order.\u003c/p\u003e\n\u003cp\u003eI ended up just using pickle, which was already built-in to Python:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003eload_db\u003c/span\u003e():\n\tall_series \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e {}\n\t\u003cspan style=\"color:#66d9ef\"\u003ewith\u003c/span\u003e open(DATABASE_FILE, \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;rb\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eas\u003c/span\u003e handle:\n\t\tall_series \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e pickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eload(handle)\n\t\u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e all_series\n\n\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esave_db\u003c/span\u003e(all_series):\n\t\u003cspan style=\"color:#66d9ef\"\u003ewith\u003c/span\u003e open(DATABASE_FILE, \u003cspan style=\"color:#e6db74\"\u003e\u0026#39;wb\u0026#39;\u003c/span\u003e) \u003cspan style=\"color:#66d9ef\"\u003eas\u003c/span\u003e handle:\n\t\tpickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003edump(all_series, handle, protocol\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003epickle\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eHIGHEST_PROTOCOL)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e(Above code \u003cem\u003eprobably\u003c/em\u003e gives you an idea what kind of files I\u0026rsquo;m sorting\u0026hellip; )\u003c/p\u003e\n\u003cp\u003eAs an added benefit, I didn\u0026rsquo;t need to design any database schemas or tables or whatnot, pickle just lets me serialize the map as-is and reload it later from disk without any hassle.\u003c/p\u003e\n\u003cp\u003eI guess my lesson here was: don\u0026rsquo;t over-complicate things when something simple will work fine. Write the simplest code that can do the job.\u003c/p\u003e\n",
+            "summary": "So the other day I was reworking a Python script that I had been using for years on my home PC to manage and categorize some downloaded files for me. This time I wanted to add some smarter behavior to make it more able to figure out when to group files into folders without constantly needing manual intervention from me. To do this, I needed to persist some data between runs \u0026ndash; so that the script remembers how it categorized previous files and is able to group similar files together.",
+            "date_published": "2017-01-11T01:30:06+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2017/01/the-simplest-code-that-can-do-the-job/index.md"
+            , "tags": ["python","Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/155696317600/the-simplest-code-that-can-do-the-job"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/818995252224790529/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/how-can-i-become-an-expert-dat/",
+            "url": "https://mirror.roytang.net/2017/01/how-can-i-become-an-expert-dat/",
+            "path": "/2017/01/how-can-i-become-an-expert-dat/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-can-I-become-an-expert-database-programmer/answer/Roy-Tang\"\u003eHow can I become an expert database programmer?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eThe same way you can become an expert in anything else - time and effort. Take on more database-focused work. Take more challenging tasks. Study your mistakes. Read relevant books. Study. Practice. Learn. Grow.\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n How can I become an expert database programmer?\n The same way you can become an expert in anything else - time and effort. Take on more database-focused work. Take more challenging tasks. Study your mistakes. Read relevant books. Study. Practice. Learn. Grow.",
+            "date_published": "2017-01-11T00:00:00+00:00",
+            "date_modified": "2021-01-01T13:54:57+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/how-can-i-become-an-expert-dat.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-can-I-become-an-expert-database-programmer/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/my-old-coworkers-keep-calling/",
+            "url": "https://mirror.roytang.net/2017/01/my-old-coworkers-keep-calling/",
+            "path": "/2017/01/my-old-coworkers-keep-calling/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/My-old-coworkers-keep-calling-me-everyday-I-got-a-new-job-and-left-due-to-the-stress-What-should-I-do/answer/Roy-Tang\"\u003eMy old coworkers keep calling me everyday. I got a new job and left due to the stress. What should I do?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cspan class=\"ui_qtext_rendered_qtext\"\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eTell them. “Hey you know, I really enjoy our chats, but to be honest I don’t really want to talk about the old job anymore. That part of my life is done, you know? I don’t want to think about it anymore and move on professionally. So I’d appreciate if we keep work out of our chats, I’m sure you’ll understand, right?”\u003c/p\u003e\u003c/span\u003e\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n My old coworkers keep calling me everyday. I got a new job and left due to the stress. What should I do?\n Tell them. “Hey you know, I really enjoy our chats, but to be honest I don’t really want to talk about the old job anymore. That part of my life is done, you know? I don’t want to think about it anymore and move on professionally.",
+            "date_published": "2017-01-11T00:00:00+00:00",
+            "date_modified": "2020-03-26T15:19:51+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/my-old-coworkers-keep-calling.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/My-old-coworkers-keep-calling-me-everyday-I-got-a-new-job-and-left-due-to-the-stress-What-should-I-do/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/01/when-i-work-on-a-new-software/",
             "url": "https://mirror.roytang.net/2017/01/when-i-work-on-a-new-software/",
             "path": "/2017/01/when-i-work-on-a-new-software/",
@@ -845,175 +896,6 @@
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BOxGXLVlrLZ/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155298404125/professor-layton-and-the-curious-reflection"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/815944312181719040/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155244355293912:0"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/815741074459066368/",
-            "url": "https://mirror.roytang.net/2017/01/815741074459066368/",
-            "path": "/2017/01/815741074459066368/",
-            "title": "",
-            "content_html": "\u003cp\u003eUntil what date is it not weird to say happy new year?\u003c/p\u003e\n",
-            "summary": "Until what date is it not weird to say happy new year?",
-            "date_published": "2017-01-02T02:06:42+00:00",
-            "date_modified": "2021-01-17T09:45:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/815741074459066368/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/815741074459066368/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155242975963912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/romancoat",
-                    "source_file": "comment-20170102-000000-48d84b11-1293-4b6e-9f9a-27e926511816.json"
-                }, { 
-                    "url": "https://www.facebook.com/shalombrian.mercader",
-                    "source_file": "comment-20170102-000001-bf07291f-6b8a-45d3-a67c-7b743b05597a.json"
-                }, { 
-                    "url": "https://www.facebook.com/catherine.calunsod",
-                    "source_file": "comment-20170102-000002-b97a9ae4-3942-4aaa-94e5-215214703c2b.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170102-000320-3b3233d1-6e9b-4161-8232-c73aa5c44cbd.json"
-                }, { 
-                    "url": "https://www.facebook.com/shalombrian.mercader",
-                    "source_file": "comment-20170102-000321-f77f8cc0-2bed-46e8-be02-47a83cc4610a.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170102-000322-280d1e71-d83b-4af5-9cef-636be27e01d9.json"
-                }, { 
-                    "url": "https://www.facebook.com/shalombrian.mercader",
-                    "source_file": "comment-20170102-000323-93dbdc07-a2ff-463c-8510-b60902ec202c.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/the-hobbit-or-there-and-back-again/",
-            "url": "https://mirror.roytang.net/2017/01/the-hobbit-or-there-and-back-again/",
-            "path": "/2017/01/the-hobbit-or-there-and-back-again/",
-            "title": "Book Review: The Hobbit or There and Back Again by Tolkien, J.R.R.",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again\" style=\"float: left; padding-right: 20px\"\u003e\u003cimg border=\"0\" alt=\"The Hobbit or There and Back Again\" src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg\" /\u003e\u003c/a\u003e\u003ca href=\"https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again\"\u003eThe Hobbit or There and Back Again\u003c/a\u003e by \u003ca href=\"https://www.goodreads.com/author/show/656983.J_R_R_Tolkien\"\u003eJ.R.R. Tolkien\u003c/a\u003e\u003cbr/\u003e\nMy rating: \u003ca href=\"https://www.goodreads.com/review/show/1867502912\"\u003e5 of 5 stars\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e\nStarting the year off right with some Tolkien. The book is unapologetic about how it drags both unsuspecting Bilbo and the reader down a long adventure that includes a lot of singing and being captured and being almost eaten. I\u0026rsquo;m not sure how they managed to stretch it into three movies though, the book isn\u0026rsquo;t particularly long.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href=\"https://www.goodreads.com/review/list/18436248-roy-tang\"\u003eView all my reviews\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "The Hobbit or There and Back Again by J.R.R. Tolkien My rating: 5 of 5 stars\nStarting the year off right with some Tolkien. The book is unapologetic about how it drags both unsuspecting Bilbo and the reader down a long adventure that includes a lot of singing and being captured and being almost eaten. I\u0026rsquo;m not sure how they managed to stretch it into three movies though, the book isn\u0026rsquo;t particularly long.",
-            "date_published": "2017-01-02T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/01/the-hobbit-or-there-and-back-again/index.md"
-            , "tags": ["books"]
-            , "syndicated": [{"type":"goodreads","url":"https://www.goodreads.com/review/show/1867502912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/10155241191463912/",
-            "url": "https://mirror.roytang.net/2017/01/10155241191463912/",
-            "path": "/2017/01/10155241191463912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: How do you keep track of errands that you have to run? (Examples: Need to go to the bank on Thursday, need to buy eggs tomorrow, etc)\u003c/p\u003e\n",
-            "summary": "Survey: How do you keep track of errands that you have to run? (Examples: Need to go to the bank on Thursday, need to buy eggs tomorrow, etc)",
-            "date_published": "2017-01-01T20:11:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/10155241191463912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155241191463912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/lissramgurl01",
-                    "source_file": "comment-20170101-000000-a355cf4d-6a9a-4a45-bda5-14b76b984012.json"
-                }, { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20170101-000001-e036ff87-c009-4af7-80e5-55f22561259d.json"
-                }, { 
-                    "url": "https://www.facebook.com/romancoat",
-                    "source_file": "comment-20170101-000002-d1887eba-9864-43a4-aad9-cc528d22ef20.json"
-                }, { 
-                    "url": "https://www.facebook.com/barayantan",
-                    "source_file": "comment-20170101-000003-6318ea0c-a7ce-43f6-88d5-7c6717677eba.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170101-000004-df42d5e3-e102-4b08-82bc-7b399dceb728.json"
-                }, { 
-                    "url": "https://www.facebook.com/colorsandmelodies",
-                    "source_file": "comment-20170101-000005-5970b5ee-17ce-4189-b8bc-1bf8467d2cf7.json"
-                }, { 
-                    "url": "https://www.facebook.com/pjpunla",
-                    "source_file": "comment-20170101-000006-ddc72f9c-41a9-4683-b800-807ecf67203d.json"
-                }, { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20170101-000007-475bdeda-2c8f-4583-8f56-9b05ab1109b9.json"
-                }, { 
-                    "url": "https://www.facebook.com/danniel.alcantara",
-                    "source_file": "comment-20170101-000008-1c23d0e7-1c89-407a-b870-786e96f164fd.json"
-                }, { 
-                    "url": "https://www.facebook.com/d3CaL08",
-                    "source_file": "comment-20170101-000009-2fbda444-571f-4e5e-b7aa-43c063d1d469.json"
-                }, { 
-                    "url": "https://www.facebook.com/LaTtEX",
-                    "source_file": "comment-20170101-000010-6cf27fab-5fe1-494b-acbe-0aa41ef3ca65.json"
-                }, { 
-                    "url": "https://www.facebook.com/earl.robles.7",
-                    "source_file": "comment-20170101-000011-aa7e29a6-ee7a-4fbf-bf1c-a77b372a7019.json"
-                }, { 
-                    "url": "https://www.facebook.com/phwraengck",
-                    "source_file": "comment-20170101-000012-43e877d7-e56c-46fb-877e-f2c28fa9536e.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170101-000820-f52c7f72-b989-496b-bae9-533c05200d92.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170101-000821-32c3ad6b-41f7-4ca5-93b0-110c4ea2686b.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170101-000822-4e985398-fd65-49ab-8176-5647a66c9b6e.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170101-000823-8969bb85-089a-4bb3-81ca-9f0682f1668f.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170101-000824-94875982-a14d-4b5f-81e0-d055000ceb60.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170101-000825-ccf9f27b-cb6b-4f24-8e8f-08b053641301.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170101-000826-d651b14c-5942-49c4-91ba-44c54c7aac96.json"
-                }, { 
-                    "url": "https://www.facebook.com/paul.villangca",
-                    "source_file": "comment-20170101-000827-b80faa83-027b-4f1f-8d8c-f9b3c512f7a1.json"
-                }, { 
-                    "url": "https://www.facebook.com/morristan",
-                    "source_file": "comment-20170101-000828-6fb29357-5dfd-4e54-9ee1-d00533369364.json"
-                }, { 
-                    "url": "https://www.facebook.com/danniel.alcantara",
-                    "source_file": "comment-20170101-001640-f813b6af-5092-4aaf-bc33-4b7302dcb456.json"
-                }, { 
-                    "url": "https://www.facebook.com/d3CaL08",
-                    "source_file": "comment-20170101-001641-8bf77af4-1976-48e8-9469-8327b3386dfc.json"
-                }, { 
-                    "url": "https://www.facebook.com/aj.sahagun",
-                    "source_file": "comment-20170102-000013-2cb49a5f-becd-4507-963b-e85916971cea.json"
-                }, { 
-                    "url": "https://www.facebook.com/danielrey.cimafranca",
-                    "source_file": "comment-20170102-000014-8b2bfed2-f570-49e0-9dae-42b3231aa7fa.json"
-                }, { 
-                    "url": "https://www.facebook.com/cecile.monina",
-                    "source_file": "comment-20170102-000829-bbd91580-478c-40d2-a587-3a7e91d77746.json"
-                }, { 
-                    "url": "https://www.facebook.com/cecile.monina",
-                    "source_file": "comment-20170102-000830-a418823f-a745-4756-8110-4e99d12b7bef.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170102-002320-aa951a00-5fd9-418d-be25-ee571c9ea6c6.json"
-                }, { 
-                    "url": "https://www.facebook.com/erika.lim",
-                    "source_file": "comment-20170103-000015-8b8b9db2-bc8b-43d6-9fc0-65aaee7fa720.json"
-                }, { 
-                    "url": "https://www.facebook.com/niawdeleon",
-                    "source_file": "comment-20170103-000016-5f0f75f8-b333-4bf6-8a69-f51ef36915f1.json"
-                }
-            ]
             }
         
     ]

@@ -1,4 +1,6 @@
 
+- [writings](/2021/03/writings/)
+
 - [An opinionated list of best practices for textual websites](/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 
 - [How I cut GTA Online loading times by 70%](/2021/03/how-i-cut-gta-online-loading-times-by-70/)
