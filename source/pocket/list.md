@@ -1,4 +1,6 @@
 
+- [Stop Keeping Score](/2021/03/stop-keeping-score/)
+
 - [writings](/2021/03/writings/)
 
 - [An opinionated list of best practices for textual websites](/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)

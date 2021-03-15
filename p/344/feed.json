@@ -11,6 +11,73 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/10/5315807191/",
+            "url": "https://mirror.roytang.net/2009/10/5315807191/",
+            "path": "/2009/10/5315807191/",
+            "title": "",
+            "content_html": "\u003cp\u003eTaking of Pelham 123: It has Denzel Washnigton and John Travolta in it, you\u0026rsquo;d expect a decent movie. You\u0026rsquo;d be right.\u003c/p\u003e\n",
+            "summary": "Taking of Pelham 123: It has Denzel Washnigton and John Travolta in it, you\u0026rsquo;d expect a decent movie. You\u0026rsquo;d be right.",
+            "date_published": "2009-10-31T15:31:53+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5315807191/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5315807191/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/163893287877"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20091101-000000-8b154012-c469-4939-a235-28676e2a6202.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5312812625/",
+            "url": "https://mirror.roytang.net/2009/10/5312812625/",
+            "path": "/2009/10/5312812625/",
+            "title": "",
+            "content_html": "\u003cp\u003eJust finished watching Echelon Conspiracy. Action was ok, plot was a bit predictable, ending was lame.\u003c/p\u003e\n",
+            "summary": "Just finished watching Echelon Conspiracy. Action was ok, plot was a bit predictable, ending was lame.",
+            "date_published": "2009-10-31T12:46:05+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5312812625.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5312812625/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/169176390969"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/166078434102/",
+            "url": "https://mirror.roytang.net/2009/10/166078434102/",
+            "path": "/2009/10/166078434102/",
+            "title": "",
+            "content_html": "\u003cp\u003ePower is back, but is it stable?\u003c/p\u003e\n",
+            "summary": "Power is back, but is it stable?",
+            "date_published": "2009-10-31T09:00:00+00:00",
+            "date_modified": "2019-09-28T14:51:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/166078434102/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/166078434102"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/michaelretuta",
+                    "source_file": "comment-20091031-000000-934ff4ae-6c0d-48d0-9a04-0c0a258e3add.json"
+                }, { 
+                    "url": "https://www.facebook.com/Altealice",
+                    "source_file": "comment-20091031-000001-72e070fd-c7ab-4185-95fb-828ab3187945.json"
+                }, { 
+                    "url": "https://www.facebook.com/dennis.garce",
+                    "source_file": "comment-20091031-000002-172aa917-5f80-4cbd-9358-dce5a67ead43.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/10/5310171764/",
             "url": "https://mirror.roytang.net/2009/10/5310171764/",
             "path": "/2009/10/5310171764/",
@@ -892,62 +959,6 @@
             "source_path": "notes/2009/10/4787669227.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4787669227/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/155385357617"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/1550532/",
-            "url": "https://mirror.roytang.net/2009/10/1550532/",
-            "path": "/2009/10/1550532/",
-            "title": "Trimming whitespace from HTML content?",
-            "content_html": "\u003cp\u003eI have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous \u0026amp;nbsp; and \u0026lt;br\u0026gt; and such from the beginning and end of the HTML string.\u003c/p\u003e\n\u003cp\u003eI can opt to either do it on the client side (using Javascript) or on the server side (using Java) Is there an easy way to do this, using regular expressions or something? I\u0026rsquo;m not sure how complex it needs to be, I need to be able to remove stuff like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;p\u0026gt;\u0026lt;br /\u0026gt; \u0026amp;nbsp;\u0026lt;/p\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eyet retain it if there\u0026rsquo;s any kind of meaningful text in between. (Above snippet is from actual HTML data saved by the tester)\u003c/p\u003e\n",
-            "summary": "I have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous \u0026amp;nbsp; and \u0026lt;br\u0026gt; and such from the beginning and end of the HTML string.",
-            "date_published": "2009-10-11T11:58:13+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/1550532/index.md"
-            , "tags": ["java","javascript","html","html-parsing","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1550532/trimming-whitespace-from-html-content"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1550532/trimming-whitespace-from-html-content",
-                    "source_file": "comment-20091011T123533-1550599.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/4781499947/",
-            "url": "https://mirror.roytang.net/2009/10/4781499947/",
-            "path": "/2009/10/4781499947/",
-            "title": "",
-            "content_html": "\u003cp\u003eheading out to mass then straight to work afterwards\u003c/p\u003e\n",
-            "summary": "heading out to mass then straight to work afterwards",
-            "date_published": "2009-10-11T09:52:42+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/4781499947.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4781499947/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/162607477568"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/4768949403/",
-            "url": "https://mirror.roytang.net/2009/10/4768949403/",
-            "path": "/2009/10/4768949403/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Trevkor/\"\u003e@Trevkor\u003c/a\u003e it was an either/or draft pick though :p\u003c/p\u003e\n",
-            "summary": "@Trevkor it was an either/or draft pick though :p",
-            "date_published": "2009-10-10T21:10:03+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/4768949403.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4768949403/"}]
             
             
             }

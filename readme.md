@@ -7,22 +7,22 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-03-14](https://mirror.roytang.net/2021/03/weeknotes-2021-03-14/)
 - [Digital Boardgames Review: Blood Rage](https://mirror.roytang.net/2021/03/digital-boardgames-review-blood-rage/)
 - [Weeknotes 2021-03-07](https://mirror.roytang.net/2021/03/weeknotes-2021-03-07/)
 - [Weeknotes 2021-02-28](https://mirror.roytang.net/2021/02/weeknotes-2021-02-28/)
 - [Game Review: Knightin&#39;](https://mirror.roytang.net/2021/02/game-review-knightin/)
-- [Book Review: Ghost of My Father by Scott Berkun](https://mirror.roytang.net/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
 Latest shared links:
     
 
+- [Stop Keeping Score](https://mirror.roytang.net/2021/03/stop-keeping-score/)
 - [writings](https://mirror.roytang.net/2021/03/writings/)
 - [An opinionated list of best practices for textual websites](https://mirror.roytang.net/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 - [How I cut GTA Online loading times by 70%](https://mirror.roytang.net/2021/03/how-i-cut-gta-online-loading-times-by-70/)
 - [The Big List of Personal Websites](https://mirror.roytang.net/2021/02/the-big-list-of-personal-websites/)
-- [The web didn&#39;t change; you did](https://mirror.roytang.net/2021/02/the-web-didnt-change-you-did/)
 
 [View all links](https://mirror.roytang.net/links)
 
