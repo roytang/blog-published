@@ -55,7 +55,7 @@
 
 - [Anti Comment Spam](/2008/05/anti-comment-spam/)
 
-- [I&#39;m Lawful Good](/2008/02/i39m-lawful-good/)
+- [I&#39;m Lawful Good](/2008/02/im-lawful-good/)
 
 - [roytang on magic](/2007/09/roytang-on-magic/)
 

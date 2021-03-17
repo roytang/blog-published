@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2012/07/11305956/",
+            "url": "https://mirror.roytang.net/2012/07/11305956/",
+            "path": "/2012/07/11305956/",
+            "title": "Capturing and replacing the JSP response in a Filter",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain. However, I\u0026rsquo;m getting an \u0026ldquo;IllegalStateException: getOutputStream() has already been called for this response.\u0026rdquo; It seems to happen whenever one of our taglibs tries to write using the writer returned by \u0026ldquo;this.pageContext.getOut()\u0026rdquo;, so I guess the response/writer/outputstream being used by Tomcat isn\u0026rsquo;t using the wrapper classes I passed via the filter.\u003c/p\u003e\n\u003cp\u003eAny suggestions? Or is there a better way to accomplish what I\u0026rsquo;m trying to do?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\nI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain.",
+            "date_published": "2012-07-03T07:00:24+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/11305956/index.md"
+            , "tags": ["jsp","servlet-filters","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter",
+                    "source_file": "comment-20120703T071412-11306131.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/219773806825320448/",
+            "url": "https://mirror.roytang.net/2012/07/219773806825320448/",
+            "path": "/2012/07/219773806825320448/",
+            "title": "",
+            "content_html": "\u003cp\u003eNo Llanowar, no BoP, no Noble Hierarch in #M13, all we get is\u0026hellip; Arbor Elf? =/\u003c/p\u003e\n",
+            "summary": "No Llanowar, no BoP, no Noble Hierarch in #M13, all we get is\u0026hellip; Arbor Elf? =/",
+            "date_published": "2012-07-02T12:45:33+00:00",
+            "date_modified": "2019-11-25T13:34:06+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/219773806825320448.md"
+            , "tags": ["m13","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219773806825320448/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/07/219768199779074048/",
+            "url": "https://mirror.roytang.net/2012/07/219768199779074048/",
+            "path": "/2012/07/219768199779074048/",
+            "title": "",
+            "content_html": "\u003cp\u003eAre you behaving like a protagonist right now?\u003c/p\u003e\n",
+            "summary": "Are you behaving like a protagonist right now?",
+            "date_published": "2012-07-02T12:23:16+00:00",
+            "date_modified": "2020-07-01T00:31:08+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/07/219768199779074048/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219768199779074048/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2012/07/219766981790941184/",
             "url": "https://mirror.roytang.net/2012/07/219766981790941184/",
             "path": "/2012/07/219766981790941184/",
@@ -810,57 +866,6 @@
             "source_path": "notes/2012/06/214319270623064064.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214319270623064064/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/214316542056345602/",
-            "url": "https://mirror.roytang.net/2012/06/214316542056345602/",
-            "path": "/2012/06/214316542056345602/",
-            "title": "",
-            "content_html": "\u003cp\u003e@magicprotour  what\u0026rsquo;s up with people turning into zombies in the event coverage? \u003ca href=\"http://yfrog.com/ockwiep\"\u003ehttp://yfrog.com/ockwiep\u003c/a\u003e lol #GPManila\u003c/p\u003e\n",
-            "summary": "@magicprotour what\u0026rsquo;s up with people turning into zombies in the event coverage? http://yfrog.com/ockwiep lol #GPManila",
-            "date_published": "2012-06-17T11:20:20+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214316542056345602.md"
-            , "tags": ["GPManila"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214316542056345602/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/214309588240044033/",
-            "url": "https://mirror.roytang.net/2012/06/214309588240044033/",
-            "path": "/2012/06/214309588240044033/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e ang grabe pa, all 5 of those were different builds! Meron isa Delverless Delver, meron LSV build, etc.\u003c/p\u003e\n",
-            "summary": "@aleksfelipe ang grabe pa, all 5 of those were different builds! Meron isa Delverless Delver, meron LSV build, etc.",
-            "date_published": "2012-06-17T10:52:42+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214309588240044033.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214309588240044033/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/214299330213986304/",
-            "url": "https://mirror.roytang.net/2012/06/214299330213986304/",
-            "path": "/2012/06/214299330213986304/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy only sustenance for the past 12 hours was a bottle of mineral water and a kfc brownie from yesterday\u003c/p\u003e\n",
-            "summary": "My only sustenance for the past 12 hours was a bottle of mineral water and a kfc brownie from yesterday",
-            "date_published": "2012-06-17T10:11:56+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/214299330213986304.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/214299330213986304/"}]
             
             
             }
