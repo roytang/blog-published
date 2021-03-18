@@ -1,4 +1,6 @@
 
+- [The internet is splitting apart. The Internet Archive wants to save it all forever.](/2021/03/the-internet-is-splitting-apart-the-internet-archive-wants-to-save-it-all-forever/)
+
 - [Stop Keeping Score](/2021/03/stop-keeping-score/)
 
 - [writings](/2021/03/writings/)

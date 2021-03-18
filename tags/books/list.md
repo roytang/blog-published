@@ -1,4 +1,6 @@
 
+- [Book Review: Neuromancer by William Gibson](/2021/03/book-review-neuromancer-by-william-gibson/)
+
 - [Book Review: Ghost of My Father by Scott Berkun](/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
 
 - [Book Review: Walkaway by Cory Doctorow](/2021/02/book-review-walkaway-by-cory-doctorow/)
