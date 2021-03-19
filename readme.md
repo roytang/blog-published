@@ -29,11 +29,11 @@ Latest shared links:
 Latest notes:
     
 
+- [18 Mar 2021 8:43am](https://mirror.roytang.net/2021/03/1372468780039688193/): @paulcatiang might be a while before I consider the other books in the trilogy haha
 - [18 Mar 2021 2:54am](https://mirror.roytang.net/2021/03/1372380839728713730/): Huh, just found out someone with a nontrivial following on PH twitter has blocked me. Not anyone I know personally and not anyone I remember getting into any argument with, but still curious as I find myself largely inoffensive lol. Still, achievement unlocked I guess?
 - [17 Mar 2021 4:27pm](https://mirror.roytang.net/2021/03/1372223129209208838/): Star Trek episode where a magician named Robert Angier accidentally time travels to the Enterprise in the 23rd century. When Scotty explains the transporter to him, he weeps.
 - [16 Mar 2021 2:28pm](https://mirror.roytang.net/2021/03/gr4j6py/): Oh wow, when people joke about not having seen the homepage, I thought they meant the logged in home page with the Top Questions list. I really have never seen this before!
 - [16 Mar 2021 5:34am](https://mirror.roytang.net/2021/03/4d1fb5fa3502d4df0ff4f70f9891a7c3/): I changed my Windows color preferences to Light mode for like 10 minutes to test something and I was like &ldquo;How do people live like this?&rdquo;
-- [15 Mar 2021 9:54am](https://mirror.roytang.net/2021/03/273eae12d668c24135d4db358511c9d4/): Bond movie no. 3: Goldfinger (1964). Lot of the classic Bond tropes introduced. Bad guy&rsquo;s plan was actually pretty good, even had the escape contingency. Disappointed he did not have an actual gold finger. Great fight between Bond and Oddjob.
 
 [View all notes](https://mirror.roytang.net/notes)
 
