@@ -7,12 +7,83 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Wed, 17 Feb 2021 08:01:30 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 19 Mar 2021 07:18:03 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/tech-life/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>2021 Site Update
+</title>
+            <link>https://mirror.roytang.net/2021/03/2021-site-update/</link>
+            <pubDate>Fri, 19 Mar 2021 07:18:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/03/2021-site-update/</guid>
+            <description>
+            
+            &lt;p&gt;Over the past couple of weeks or so, I&amp;rsquo;ve made quite a few changes to the site, mostly focused on frontend/layout/UI changes. The changes are more or less done, so here&amp;rsquo;s a changelog entry.&lt;/p&gt;
+&lt;p&gt;The main driver of the changes was this post about &lt;a href=&#34;https://seirdy.one/2020/11/23/website-best-practices.html&#34;&gt;best practices for text websites&lt;/a&gt;. Not all of it applies to the site, since I do have a bunch of image content around as well, but enough that I was spurred to apply many of the points and also include some additional changes I&amp;rsquo;ve been meaning to do. Secondary objectives include: improving site performance, accessibility, and code output; and hopefully making the site menus more organized.&lt;/p&gt;
+&lt;p&gt;Layout changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simplified top header content. V-card and some other stuff moved to the footer. Merged &amp;ldquo;Blog&amp;rdquo;, &amp;ldquo;Notes&amp;rdquo; and &amp;ldquo;Links&amp;rdquo; into &amp;ldquo;Posts&amp;rdquo; for shorter menu.&lt;/li&gt;
+&lt;li&gt;Removed sidebar. Most of the sidebar links for my own use/benefit anyway, and not for the potential blog reader. Most of the content has been moved into the home page, footer, and the new explore page.&lt;/li&gt;
+&lt;li&gt;Added submenus to most listing pages.&lt;/li&gt;
+&lt;li&gt;Standardize display of page title/description where possible&lt;/li&gt;
+&lt;li&gt;Added support for &amp;ldquo;prefers-color-scheme: light&amp;rdquo;. I still &lt;a href=&#34;https://mirror.roytang.net/2021/03/4d1fb5fa3502d4df0ff4f70f9891a7c3/&#34;&gt;default to dark mode&lt;/a&gt; though!&lt;/li&gt;
+&lt;li&gt;Switched to a monospace font. Honestly I find it hard to decide whether I like monospace or sans-serif more, but let&amp;rsquo;s go with this for now.&lt;/li&gt;
+&lt;li&gt;Cleaned up/reduced the meta info at the bottom of each post.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Client-side performance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;full-size images are now set to lazy load, so the browser doesn&amp;rsquo;t have to download them all immediately for example when &lt;a href=&#34;https://mirror.roytang.net/albums/sketchbook&#34;&gt;viewing an album&lt;/a&gt;. Only the thumbnails are loaded immediately, full-size images are shown only when activating &lt;a href=&#34;https://mirror.roytang.net/2020/07/hugo-lightbox/&#34;&gt;the lightbox&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;featured image for blog posts now use a thumbnail when shown in list view.&lt;/li&gt;
+&lt;li&gt;I also wanted to improve &lt;a href=&#34;https://www.webbloatscore.com/&#34;&gt;the WebBloat score&lt;/a&gt;. It&amp;rsquo;s currently fine for text-heavy blog posts, but I guess I can&amp;rsquo;t avoid a higher score for image-heavy content since the crawler they use ignores the fact that I lazy load the full-size images and they are initially hidden. Something to consider in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Content changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;new front/home page with content samplers&lt;/li&gt;
+&lt;li&gt;added &lt;a href=&#34;https://mirror.roytang.net/explore&#34;&gt;&amp;ldquo;Explore&amp;rdquo; page&lt;/a&gt; where I can put links that don&amp;rsquo;t belong in any of the submenus&lt;/li&gt;
+&lt;li&gt;improved &lt;a href=&#34;https://mirror.roytang.net/now&#34;&gt;&amp;ldquo;Now&amp;rdquo; page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cleaned up some out of date stuff in the About pages&lt;/li&gt;
+&lt;li&gt;use profile photo as favicon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Backend/code changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML Validation: Most pages should now validate without warnings/errors on the &lt;a href=&#34;https://validator.w3.org/nu&#34;&gt;W3C HTML validator&lt;/a&gt;. There was actually a lot of broken HTML I had to fix (due to me mistyping things and so on.)&lt;/li&gt;
+&lt;li&gt;Made sure most images had alt-text, even if just default values.&lt;/li&gt;
+&lt;li&gt;Score of 75/100 on the &lt;a href=&#34;https://observatory.mozilla.org/analyze/roytang.net&#34;&gt;Mozilla Observatory&lt;/a&gt;. It was at 20/100 before. The only thing I hadn&amp;rsquo;t implemented yet was the Content Security Policy (CSP) header, as it would have caused some issues on certain pages.&lt;/li&gt;
+&lt;li&gt;I also tried to generally reduce the page weight, but it wasn&amp;rsquo;t actually that high before, so I don&amp;rsquo;t think there&amp;rsquo;s any measurable change there. Minifying HTML/CSS was a possibility, but that just makes it harder for me to debug things, and really feels like something too serious for a hobby site like this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scripts and cookies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the site already uses minimal JS in a few places: there&amp;rsquo;s a captcha for comments, and the &lt;a href=&#34;https://mirror.roytang.net/locations&#34;&gt;locations page&lt;/a&gt; requires JS, and some of the stat pages load data remotely via JS, but that should be it. 99% of the pages of the site should be JS free.&lt;/li&gt;
+&lt;li&gt;I also don&amp;rsquo;t use any cookies myself. But I do have Cloudflare enabled on the site, and they do add a &lt;code&gt;__cfduid&lt;/code&gt; cookie, supposedly to detect bots. This &lt;a href=&#34;https://blog.cloudflare.com/deprecating-cfduid-cookie/&#34;&gt;cookie is being deprecated by May 2021&lt;/a&gt; though, so by then the site should be cookie-free.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That should be it! I had some other features in mind to implement (never ending scope creep when you have a personal project really), but I&amp;rsquo;ve already spent too much time on this and need to work on my other shenanigans as well.&lt;/p&gt;
+&lt;p&gt;One last thing: attaching some images so that I can compare to the future look of the website:&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/03/2021-site-update/ew_light_mode_huf4208e5206627b0caa356abc004e54ad_254237_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/03/2021-site-update/home_hu3066e4a7108b46953fc96c95e21764cc_124152_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/03/2021-site-update/photos_hu3150ba93f13c38793ec002ee44b7a03c_1853528_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/03/2021-site-update/post_hu0b309b8b2395edff54bcb14bd9b3cd0c_495022_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>Book Review: Walkaway by Cory Doctorow
 </title>
@@ -2549,87 +2620,6 @@ git checkout HEAD
 &lt;p&gt;Although I realize I might not enjoy that world either. Imagine if Twitter or Instagram had cosmetic purchases where you could buy like stuff to decorate your profile page or custom frames for your posts or something like that. I think it would be a huge hit among some people, at the same time be really annoying for other people (people like me lol).&lt;/p&gt;
 &lt;h3 id=&#34;3&#34;&gt;3&lt;/h3&gt;
 &lt;p&gt;I guess what I&amp;rsquo;m saying is: I wish we could live in an (online) world where people weren&amp;rsquo;t constantly trying to make money off each other. I realize that this comes from a position of privilege - of having enough so that I don&amp;rsquo;t need to be thinking about earning money all the time. I realize that&amp;rsquo;s not the world works and that commercialization is a sad reality that I have to live with, but a man can dream.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Note-taking / Todo Workflow
-</title>
-            <link>https://mirror.roytang.net/2019/08/note-taking-/-todo-workflow/</link>
-            <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2019/08/note-taking-/-todo-workflow/</guid>
-            <description>
-            
-            &lt;p&gt;In perhaps what is a perfect example of how &lt;a href=&#34;https://mirror.roytang.net/2019/08/writing-brings-clarity/&#34;&gt;writing bring clarity&lt;/a&gt;, I started drafting a post listing out the problems with my current notes/todo workflow and ended up coming to a conclusion as to how to make things better for myself.&lt;/p&gt;
-&lt;p&gt;The main issue is that I have a smattering of todo-lists and notes scattered over several platforms: plain text files (in different places!), evernote, google keep, google docs, &lt;a href=&#34;https://standardnotes.org/&#34;&gt;standard notes&lt;/a&gt;, and recently I also started trying &lt;a href=&#34;https://trello.com&#34;&gt;Trello&lt;/a&gt;. So everything is everywhere and not consolidated in the same place.&lt;/p&gt;
-&lt;p&gt;To tackle the problem, first I consider what are my use cases and requirements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Say I think of something that I need to do while I&amp;rsquo;m away from my computer and want to jot it down quickly before I forget about it. It needs to be quick and easy to note something down. Such things can include:
-&lt;ul&gt;
-&lt;li&gt;a work todo&lt;/li&gt;
-&lt;li&gt;an idea I want to investigate later&lt;/li&gt;
-&lt;li&gt;a blog post idea&lt;/li&gt;
-&lt;li&gt;something that I need to tell somebody&lt;/li&gt;
-&lt;li&gt;a project that I could work on&lt;/li&gt;
-&lt;li&gt;a game or book that looks interesting&lt;/li&gt;
-&lt;li&gt;something I want to read later&lt;/li&gt;
-&lt;li&gt;and so on&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;I need to note something that I will need for reference at some future point(s). For these pieces of information, I need to be able to pull them up quickly as needed. Examples:
-&lt;ul&gt;
-&lt;li&gt;a wifi password&lt;/li&gt;
-&lt;li&gt;API keys&lt;/li&gt;
-&lt;li&gt;the url for the production server&lt;/li&gt;
-&lt;li&gt;account numbers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;I need to record something on a regular basis (for example, blood pressure) and need a place to store that information for future reference&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;On mobile, the main way I capture information now is via Google Keep since it&amp;rsquo;s quick and easy. This means my Google Keep is full of many random cards with lists, some of which I can&amp;rsquo;t even recall the context of later. For longer-term inputs, I will typically use either a text file stored in Dropbox or StandardNotes or Google Docs.&lt;/p&gt;
-&lt;p&gt;The solution came to me when I realized that I was capturing all these inputs and leaving them in the same place: so all the free-floating ideas I captured stay in Google Keep, unorganized and chaotic. I figured I needed to have two separate phases:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Capture ideas/todo items into an &amp;ldquo;inbox&amp;rdquo; (in this case, Google Keep)&lt;/li&gt;
-&lt;li&gt;Periodically review the &amp;ldquo;inbox&amp;rdquo; and move items to the appropriate locations, for example:
-&lt;ul&gt;
-&lt;li&gt;immediately actionable items can be done immediately&lt;/li&gt;
-&lt;li&gt;todo lists for actionable items&lt;/li&gt;
-&lt;li&gt;reference folders for reference material&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I mostly didn&amp;rsquo;t have step 2 before. This is largely similar to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Getting_Things_Done&#34;&gt;&amp;ldquo;Getting Things Done&amp;rdquo;&lt;/a&gt; workflow that became popular for productivity nerds a while back.&lt;/p&gt;
-&lt;p&gt;An additional step for me to have more well-defined &amp;ldquo;buckets&amp;rdquo; or locations, where different types of items need to be sent. Having them be well-defined makes the review step easier. For now my initial schema is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Google Keep
-&lt;ul&gt;
-&lt;li&gt;inbox for capturing new items, should be reviewed and cleaned regularly&lt;/li&gt;
-&lt;li&gt;short reference notes can be kept here for quick access&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Trello
-&lt;ul&gt;
-&lt;li&gt;for lists, such as todo lists, ideas lists, project lists&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;StandardNotes
-&lt;ul&gt;
-&lt;li&gt;for reference material that can be stored plaintext&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Google Docs
-&lt;ul&gt;
-&lt;li&gt;for reference material that requires formatted documents or spreadsheets&lt;/li&gt;
-&lt;li&gt;for document drafts that will later be published elsewhere&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note: I have largely abandoned Evernote because of free account limitations. I also want to reduce Dropbox usage for the same reasons.&lt;/p&gt;
-&lt;p&gt;Hopefully this scheme lets me be a bit more organized than I have in the past! I would also love to hear about how other people organize their notes and lists!&lt;/p&gt;
 
 
 

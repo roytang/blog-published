@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2021/03/1372926424533794822/",
+            "url": "https://mirror.roytang.net/2021/03/1372926424533794822/",
+            "path": "/2021/03/1372926424533794822/",
+            "title": "",
+            "content_html": "\u003cp\u003eAmazon #sketchdaily 78/365\u003c/p\u003e\n",
+            "summary": "Amazon #sketchdaily 78/365",
+            "date_published": "2021-03-19T15:02:22+00:00",
+            "date_modified": "2021-03-19T15:20:16+00:00",
+            "section": "photos",
+            "source_path": "photos/2021/03/1372926424533794822/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1372926424533794822/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/m8d3h3/march_19th_amazon_rainforest_brazil/grhjvgb/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/03/2021-site-update/",
+            "url": "https://mirror.roytang.net/2021/03/2021-site-update/",
+            "path": "/2021/03/2021-site-update/",
+            "title": "2021 Site Update",
+            "content_html": "\u003cp\u003eOver the past couple of weeks or so, I\u0026rsquo;ve made quite a few changes to the site, mostly focused on frontend/layout/UI changes. The changes are more or less done, so here\u0026rsquo;s a changelog entry.\u003c/p\u003e\n\u003cp\u003eThe main driver of the changes was this post about \u003ca href=\"https://seirdy.one/2020/11/23/website-best-practices.html\"\u003ebest practices for text websites\u003c/a\u003e. Not all of it applies to the site, since I do have a bunch of image content around as well, but enough that I was spurred to apply many of the points and also include some additional changes I\u0026rsquo;ve been meaning to do. Secondary objectives include: improving site performance, accessibility, and code output; and hopefully making the site menus more organized.\u003c/p\u003e\n\u003cp\u003eLayout changes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSimplified top header content. V-card and some other stuff moved to the footer. Merged \u0026ldquo;Blog\u0026rdquo;, \u0026ldquo;Notes\u0026rdquo; and \u0026ldquo;Links\u0026rdquo; into \u0026ldquo;Posts\u0026rdquo; for shorter menu.\u003c/li\u003e\n\u003cli\u003eRemoved sidebar. Most of the sidebar links for my own use/benefit anyway, and not for the potential blog reader. Most of the content has been moved into the home page, footer, and the new explore page.\u003c/li\u003e\n\u003cli\u003eAdded submenus to most listing pages.\u003c/li\u003e\n\u003cli\u003eStandardize display of page title/description where possible\u003c/li\u003e\n\u003cli\u003eAdded support for \u0026ldquo;prefers-color-scheme: light\u0026rdquo;. I still \u003ca href=\"/2021/03/4d1fb5fa3502d4df0ff4f70f9891a7c3/\"\u003edefault to dark mode\u003c/a\u003e though!\u003c/li\u003e\n\u003cli\u003eSwitched to a monospace font. Honestly I find it hard to decide whether I like monospace or sans-serif more, but let\u0026rsquo;s go with this for now.\u003c/li\u003e\n\u003cli\u003eCleaned up/reduced the meta info at the bottom of each post.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eClient-side performance:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efull-size images are now set to lazy load, so the browser doesn\u0026rsquo;t have to download them all immediately for example when \u003ca href=\"/albums/sketchbook\"\u003eviewing an album\u003c/a\u003e. Only the thumbnails are loaded immediately, full-size images are shown only when activating \u003ca href=\"/2020/07/hugo-lightbox/\"\u003ethe lightbox\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003efeatured image for blog posts now use a thumbnail when shown in list view.\u003c/li\u003e\n\u003cli\u003eI also wanted to improve \u003ca href=\"https://www.webbloatscore.com/\"\u003ethe WebBloat score\u003c/a\u003e. It\u0026rsquo;s currently fine for text-heavy blog posts, but I guess I can\u0026rsquo;t avoid a higher score for image-heavy content since the crawler they use ignores the fact that I lazy load the full-size images and they are initially hidden. Something to consider in the future.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eContent changes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003enew front/home page with content samplers\u003c/li\u003e\n\u003cli\u003eadded \u003ca href=\"/explore\"\u003e\u0026ldquo;Explore\u0026rdquo; page\u003c/a\u003e where I can put links that don\u0026rsquo;t belong in any of the submenus\u003c/li\u003e\n\u003cli\u003eimproved \u003ca href=\"/now\"\u003e\u0026ldquo;Now\u0026rdquo; page\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003ecleaned up some out of date stuff in the About pages\u003c/li\u003e\n\u003cli\u003euse profile photo as favicon\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBackend/code changes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eHTML Validation: Most pages should now validate without warnings/errors on the \u003ca href=\"https://validator.w3.org/nu\"\u003eW3C HTML validator\u003c/a\u003e. There was actually a lot of broken HTML I had to fix (due to me mistyping things and so on.)\u003c/li\u003e\n\u003cli\u003eMade sure most images had alt-text, even if just default values.\u003c/li\u003e\n\u003cli\u003eScore of 75/100 on the \u003ca href=\"https://observatory.mozilla.org/analyze/roytang.net\"\u003eMozilla Observatory\u003c/a\u003e. It was at 20/100 before. The only thing I hadn\u0026rsquo;t implemented yet was the Content Security Policy (CSP) header, as it would have caused some issues on certain pages.\u003c/li\u003e\n\u003cli\u003eI also tried to generally reduce the page weight, but it wasn\u0026rsquo;t actually that high before, so I don\u0026rsquo;t think there\u0026rsquo;s any measurable change there. Minifying HTML/CSS was a possibility, but that just makes it harder for me to debug things, and really feels like something too serious for a hobby site like this.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eScripts and cookies:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe site already uses minimal JS in a few places: there\u0026rsquo;s a captcha for comments, and the \u003ca href=\"/locations\"\u003elocations page\u003c/a\u003e requires JS, and some of the stat pages load data remotely via JS, but that should be it. 99% of the pages of the site should be JS free.\u003c/li\u003e\n\u003cli\u003eI also don\u0026rsquo;t use any cookies myself. But I do have Cloudflare enabled on the site, and they do add a \u003ccode\u003e__cfduid\u003c/code\u003e cookie, supposedly to detect bots. This \u003ca href=\"https://blog.cloudflare.com/deprecating-cfduid-cookie/\"\u003ecookie is being deprecated by May 2021\u003c/a\u003e though, so by then the site should be cookie-free.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThat should be it! I had some other features in mind to implement (never ending scope creep when you have a personal project really), but I\u0026rsquo;ve already spent too much time on this and need to work on my other shenanigans as well.\u003c/p\u003e\n\u003cp\u003eOne last thing: attaching some images so that I can compare to the future look of the website:\u003c/p\u003e\n",
+            "summary": "Over the past couple of weeks or so, I\u0026rsquo;ve made quite a few changes to the site, mostly focused on frontend/layout/UI changes. The changes are more or less done, so here\u0026rsquo;s a changelog entry.\nThe main driver of the changes was this post about best practices for text websites. Not all of it applies to the site, since I do have a bunch of image content around as well, but enough that I was spurred to apply many of the points and also include some additional changes I\u0026rsquo;ve been meaning to do.",
+            "date_published": "2021-03-19T07:18:03+00:00",
+            "date_modified": "2021-03-19T08:30:16+00:00",
+            "section": "post",
+            "source_path": "post/2021/03/2021-site-update/index.md"
+            , "tags": ["changelog","tech-life"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105915503029613660"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1372826506288795653/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/03/c6152994fa5ddf4b9c3302bcddfdd699/",
+            "url": "https://mirror.roytang.net/2021/03/c6152994fa5ddf4b9c3302bcddfdd699/",
+            "path": "/2021/03/c6152994fa5ddf4b9c3302bcddfdd699/",
+            "title": "",
+            "content_html": "\u003cp\u003eBond movie no. 4: Thunderball (1965). This is the first one I didn\u0026rsquo;t like very much. Too many boring/confusing underwater parts. There\u0026rsquo;s a jetpack! Wasn\u0026rsquo;t there an atomic bomb aboard that boat when it exploded? And did they just leave the guy who helped Domino escape floating alone in the ocean?\u003c/p\u003e\n",
+            "summary": "Bond movie no. 4: Thunderball (1965). This is the first one I didn\u0026rsquo;t like very much. Too many boring/confusing underwater parts. There\u0026rsquo;s a jetpack! Wasn\u0026rsquo;t there an atomic bomb aboard that boat when it exploded? And did they just leave the guy who helped Domino escape floating alone in the ocean?",
+            "date_published": "2021-03-19T07:13:49+00:00",
+            "date_modified": "2021-03-19T15:23:56+08:00",
+            "section": "notes",
+            "source_path": "notes/2021/03/c6152994fa5ddf4b9c3302bcddfdd699/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1372808885900222466/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1372808942519164928/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2021/03/1372541524437700614/",
             "url": "https://mirror.roytang.net/2021/03/1372541524437700614/",
             "path": "/2021/03/1372541524437700614/",
@@ -78,16 +129,16 @@
             , "comments": [
                 { 
                     "url": "https://twitter.com/paulcatiang",
-                    "source_file": "comment-20210318-045404-d7925d8e-34e6-4630-8cfa-4e88e62d823d.json"
-                }, { 
-                    "url": "https://twitter.com/paulcatiang",
-                    "source_file": "comment-20210318-085043-eb5744a3-9af5-4d7e-bc99-bd32be774d6b.json"
+                    "source_file": "comment-20210318-030603-b3a375db-c005-4416-8649-bd2d86dd7292.json"
                 }, { 
                     "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20210318-085044-99dd968f-7d58-474c-8efc-aee7befe316b.json"
+                    "source_file": "comment-20210318-084351-270f3685-1cbb-49e8-8d56-fbe4247dc5e0.json"
                 }, { 
                     "url": "https://twitter.com/paulcatiang",
-                    "source_file": "like-20210318-045405-e4fcc625-6399-4428-8f2a-11f43f380d63.json"
+                    "source_file": "comment-20210318-084520-9cd67286-d011-475d-ac6f-0bc991a0bd84.json"
+                }, { 
+                    "url": "https://twitter.com/paulcatiang",
+                    "source_file": "like-20210318-045405-f13b674f-8bed-42d5-bbe0-8c510f1c4590.json"
                 }
             ]
             }
@@ -386,8 +437,8 @@
             "url": "https://mirror.roytang.net/page/explore/",
             "path": "/page/explore/",
             "title": "Explore",
-            "content_html": "\u003cp\u003eThere\u0026rsquo;s a lot of stuff on the site. I\u0026rsquo;m putting here some links that I don\u0026rsquo;t know where else to put at the moment. Suggestions welcome.\u003c/p\u003e\n\u003ch4\u003eAll Content By Section\u003c/h4\u003e\n\u003cul class=\"section-list\"\u003e\n\n\n\n  \n  \u003cli\u003e\u003ca href=\"/post\"\u003eBlog\u003c/a\u003e Traditional blog posts, usually longer than other types, with a title. (1370 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/links\"\u003eLinks\u003c/a\u003e Shared links. (856 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/photos\"\u003ePhotos\u003c/a\u003e Photos, sketches, screenshots, and definitely memes. (1839 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/notes\"\u003eNotes\u003c/a\u003e Microblog-like status updates. (14716 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/fiction\"\u003eFiction\u003c/a\u003e Some works of fiction I have written. (7 items)\u003c/li\u003e\n\n\u003c/ul\u003e\n\u003cp\u003e\u003ca href=\"/search\"\u003eSearch\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/random\"\u003eJump to a random post\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/blogroll\"\u003eBlogroll\u003c/a\u003e - sporadically updated.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/onthisday/\"\u003eOn This Day\u003c/a\u003e - replacement for \u0026ldquo;On this day\u0026rdquo; feature in social media platforms.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/today\"\u003eToday\u003c/a\u003e - all content for the current day.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/locations\"\u003eLocations I\u0026rsquo;ve visited\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/archives/ancient/\"\u003eOlder (ancient) versions of this site\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/stats/site/\"\u003eStats\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/tags/changelog/\"\u003eSite changelog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/feeds\"\u003eFeeds\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/now\"\u003eNow\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/lists/reading/\"\u003eReading List\u003c/a\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI welcome any suggestions as to how to better organize the site contents\u003c/li\u003e\n\u003cli\u003eSome of the links here might not work if you\u0026rsquo;re on the mirror.\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "There\u0026rsquo;s a lot of stuff on the site. I\u0026rsquo;m putting here some links that I don\u0026rsquo;t know where else to put at the moment. Suggestions welcome.\nAll Content By Section Blog Traditional blog posts, usually longer than other types, with a title. (1370 items) Links Shared links. (856 items) Photos Photos, sketches, screenshots, and definitely memes. (1839 items) Notes Microblog-like status updates. (14716 items) Fiction Some works of fiction I have written.",
+            "content_html": "\u003cp\u003eThere\u0026rsquo;s a lot of stuff on the site. I\u0026rsquo;m putting here some links that I don\u0026rsquo;t know where else to put at the moment. Suggestions welcome.\u003c/p\u003e\n\u003ch4\u003eAll Content By Section\u003c/h4\u003e\n\u003cul class=\"section-list\"\u003e\n\n\n\n  \n  \u003cli\u003e\u003ca href=\"/post\"\u003eBlog\u003c/a\u003e Traditional blog posts, usually longer than other types, with a title. (1371 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/links\"\u003eLinks\u003c/a\u003e Shared links. (856 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/photos\"\u003ePhotos\u003c/a\u003e Photos, sketches, screenshots, and definitely memes. (1840 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/notes\"\u003eNotes\u003c/a\u003e Microblog-like status updates. (14717 items)\u003c/li\u003e\n\n  \n  \u003cli\u003e\u003ca href=\"/fiction\"\u003eFiction\u003c/a\u003e Some works of fiction I have written. (7 items)\u003c/li\u003e\n\n\u003c/ul\u003e\n\u003cp\u003e\u003ca href=\"/search\"\u003eSearch\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/random\"\u003eJump to a random post\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/blogroll\"\u003eBlogroll\u003c/a\u003e - sporadically updated.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/onthisday/\"\u003eOn This Day\u003c/a\u003e - replacement for \u0026ldquo;On this day\u0026rdquo; feature in social media platforms.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/today\"\u003eToday\u003c/a\u003e - all content for the current day.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/locations\"\u003eLocations I\u0026rsquo;ve visited\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/archives/ancient/\"\u003eOlder (ancient) versions of this site\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/stats/site/\"\u003eStats\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/tags/changelog/\"\u003eSite changelog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/feeds\"\u003eFeeds\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/now\"\u003eNow\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/page/lists/reading/\"\u003eReading List\u003c/a\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI welcome any suggestions as to how to better organize the site contents\u003c/li\u003e\n\u003cli\u003eSome of the links here might not work if you\u0026rsquo;re on the mirror.\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "There\u0026rsquo;s a lot of stuff on the site. I\u0026rsquo;m putting here some links that I don\u0026rsquo;t know where else to put at the moment. Suggestions welcome.\nAll Content By Section Blog Traditional blog posts, usually longer than other types, with a title. (1371 items) Links Shared links. (856 items) Photos Photos, sketches, screenshots, and definitely memes. (1840 items) Notes Microblog-like status updates. (14717 items) Fiction Some works of fiction I have written.",
             "date_published": "2021-03-12T14:26:33+08:00",
             "date_modified": "2021-03-16T19:16:00+08:00",
             "section": "page",
@@ -585,7 +636,7 @@
             , "comments": [
                 { 
                     "url": "https://mastodon.technology/@zeroed",
-                    "source_file": "repost-20210309-110206-251b7626-1b2e-47d6-b6c6-5b8937e6b46b.json"
+                    "source_file": "repost-20210309-110206-d84e5216-6b62-4fe8-b5ba-8b9f088260b6.json"
                 }
             ]
             }
@@ -709,7 +760,7 @@
             , "comments": [
                 { 
                     "url": "https://twitter.com/Jason_Shew",
-                    "source_file": "like-20210307-093302-bb56ab95-c5cb-4909-9f06-efee51c0c3fb.json"
+                    "source_file": "like-20210307-093302-9ba2d525-0a7e-4a82-8419-612e06996a27.json"
                 }
             ]
             }
@@ -829,57 +880,6 @@
             "source_path": "notes/2021/03/gplein5/index.md"
             , "tags": ["SketchDaily"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/lwqabz/march_3rd_santorini_greece/gplein5/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/03/1367105814608011266/",
-            "url": "https://mirror.roytang.net/2021/03/1367105814608011266/",
-            "path": "/2021/03/1367105814608011266/",
-            "title": "",
-            "content_html": "\u003cp\u003eOlives. #sketchdaily 62/365\u003c/p\u003e\n",
-            "summary": "Olives. #sketchdaily 62/365",
-            "date_published": "2021-03-03T13:33:20+00:00",
-            "date_modified": "2021-03-03T13:50:15+00:00",
-            "section": "photos",
-            "source_path": "photos/2021/03/1367105814608011266/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1367105814608011266/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/lwqabz/march_3rd_santorini_greece/gpj61f4/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/03/1366952145623281670/",
-            "url": "https://mirror.roytang.net/2021/03/1366952145623281670/",
-            "path": "/2021/03/1366952145623281670/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m torn, because I know I\u0026rsquo;m supposed to get the second vaccine shot, but I\u0026rsquo;m also supposed to avoid sequel injection\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m torn, because I know I\u0026rsquo;m supposed to get the second vaccine shot, but I\u0026rsquo;m also supposed to avoid sequel injection",
-            "date_published": "2021-03-03T03:22:42+00:00",
-            "date_modified": "2021-03-03T03:30:14+00:00",
-            "section": "notes",
-            "source_path": "notes/2021/03/1366952145623281670/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1366952145623281670/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/03/1366756482553843719/",
-            "url": "https://mirror.roytang.net/2021/03/1366756482553843719/",
-            "path": "/2021/03/1366756482553843719/",
-            "title": "",
-            "content_html": "\u003cp\u003eTHREAD: Lots of us learned classical music from watching old cartoons, so I’m going to identify the pieces that frequently popped up.\u003c/p\u003e\n\u003cp\u003eOne of the most recognizable is Franz Liszt’s “Hungarian Rhapsody No. 2,” performed by those great piano virtuosos Bugs Bunny and Tom \u0026amp; Jerry.\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1366449458427400196/pu/vid/960x540/nsBD5U-xuM2bbRAS.mp4?tag=10' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
-            "summary": "THREAD: Lots of us learned classical music from watching old cartoons, so I’m going to identify the pieces that frequently popped up.\nOne of the most recognizable is Franz Liszt’s “Hungarian Rhapsody No. 2,” performed by those great piano virtuosos Bugs Bunny and Tom \u0026amp; Jerry.\nYour browser does not support the video tag.  ",
-            "date_published": "2021-03-02T14:25:13+00:00",
-            "date_modified": "2021-03-02T14:30:20+00:00",
-            "section": "notes",
-            "source_path": "notes/2021/03/1366756482553843719/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1366756482553843719/"}]
             
             
             }
