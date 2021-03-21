@@ -3,7 +3,7 @@
 
 - [Stop Keeping Score](/2021/03/stop-keeping-score/)
 
-- [writings](/2021/03/writings/)
+- [My Website is a Personal Museum: the creative freedom we lost in the age of social media](/2021/03/writings/)
 
 - [An opinionated list of best practices for textual websites](/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 

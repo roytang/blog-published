@@ -20,7 +20,7 @@ Latest shared links:
 
 - [The internet is splitting apart. The Internet Archive wants to save it all forever.](https://mirror.roytang.net/2021/03/the-internet-is-splitting-apart-the-internet-archive-wants-to-save-it-all-forever/)
 - [Stop Keeping Score](https://mirror.roytang.net/2021/03/stop-keeping-score/)
-- [writings](https://mirror.roytang.net/2021/03/writings/)
+- [My Website is a Personal Museum: the creative freedom we lost in the age of social media](https://mirror.roytang.net/2021/03/writings/)
 - [An opinionated list of best practices for textual websites](https://mirror.roytang.net/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 - [How I cut GTA Online loading times by 70%](https://mirror.roytang.net/2021/03/how-i-cut-gta-online-loading-times-by-70/)
 
