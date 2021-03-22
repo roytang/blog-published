@@ -11,964 +11,862 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2013/03/15611653/",
-            "url": "https://mirror.roytang.net/2013/03/15611653/",
-            "path": "/2013/03/15611653/",
-            "title": "Implementing HTTP Basic Authentication in a servlet",
-            "content_html": "\u003cp\u003eI want to write a servlet that wraps around a set of resources and needs to protect them with basic HTTP auth; the submitted username/pass will be checked against the backend database before serving the file.\u003c/p\u003e\n\u003cp\u003eDoes anyone have any working examples of this? I tried the sample at \u003ca href=\"http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications\"\u003ehttp://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications\u003c/a\u003e but it kept returning an \u003ccode\u003eIllegalStateException\u003c/code\u003e in the \u003ccode\u003esendError\u003c/code\u003e call.\u003c/p\u003e\n",
-            "summary": "I want to write a servlet that wraps around a set of resources and needs to protect them with basic HTTP auth; the submitted username/pass will be checked against the backend database before serving the file.\nDoes anyone have any working examples of this? I tried the sample at http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications but it kept returning an IllegalStateException in the sendError call.",
-            "date_published": "2013-03-25T09:37:29+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/15611653/index.md"
-            , "tags": ["java","servlets","basic-authentication","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet",
-                    "source_file": "comment-20130325T095447-22141897.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet",
-                    "source_file": "comment-20130325T111319-22144368.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet",
-                    "source_file": "comment-20130325T112806-22144830.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet",
-                    "source_file": "comment-20130820T142154-26916041.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/15611653/implementing-http-basic-authentication-in-a-servlet",
-                    "source_file": "comment-20130821T165041-18363307.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/scenes-from-a-quiz-night/",
-            "url": "https://mirror.roytang.net/2013/03/scenes-from-a-quiz-night/",
-            "path": "/2013/03/scenes-from-a-quiz-night/",
-            "title": "Scenes from a Quiz Night",
-            "content_html": "\u003cp\u003e\u003cstrong\u003eWednesday, March 20, 7:56pm\u003c/strong\u003e We were four of us walking down the barely lit passage on the side of the building. The guard had lazily pointed us to a large open door near the back of the building. The interior was a studio-type area and there was a group of three women dressed in white who had arrived ahead of us and we followed them up a narrow set of stairs to an elevated lounge area with chairs and tables. We recognized some of the faces already there so we knew we were in the right place. No, we weren\u0026rsquo;t there for some illicit meetup of any sort; we were there to participate in something a bit more geeky. We were here for a quiz night.\u003c/p\u003e\n\u003cp\u003eQuiz nights (or \u003ca href=\"http://en.wikipedia.org/wiki/Pub_quiz\"\u003epub quizzes\u003c/a\u003e, as they\u0026rsquo;re known in Britain) at their heart are simple affairs. You get a bunch of friends to form a team and you go to the event venue for a night of answering questions on various topics, competing with other teams. There\u0026rsquo;s usually food and alcohol involved too. This particular quiz night we were attending was Geekfight, a monthly event which was coming back from a three-month hiatus. Their questions usually revolved around pop culture and traditionally geeky exploits. That means you knowledge of the minutiae of movies, TV shows, comic books and other such channels of geek culture.\u003c/p\u003e\n\u003cp\u003eWe\u0026rsquo;ve arrived early since we didn\u0026rsquo;t know where the venue was and didn\u0026rsquo;t want to get lost. Aside from the organizers we are the only team already present. We jokingly said that maybe that meant we could win the event for once. I\u0026rsquo;ve been participating in quiz nights for more than three years now by my reckoning, but we\u0026rsquo;ve never finished first, the closest being a previous Geekfight where we tied for first place and I dropped the crucial tiebreaker question.\u003c/p\u003e\n\u003cp\u003eWe\u0026rsquo;re looking to change that tonight though. Each quiz night is usually divided into several rounds of questions, with each round following a certain category of questions. For Geekfight, the categories are announced ahead of time so we know that tonight\u0026rsquo;s questions will be all about movies and we figure we have a solid chance. Two more of our group arrive so that we hit the Geekfight maximum of six members per team. We order some pizza from the pizzeria out front since the venue doesn\u0026rsquo;t serve food.\u003c/p\u003e\n\u003cp\u003eThe place starts to fill in with other teams just as we\u0026rsquo;re finishing our pizza, though we don\u0026rsquo;t really mingle. \u0026ldquo;I feel like a lot of the people here know each other except for us,\u0026rdquo; one of us jokes, which starts a healthy discussion on our being introverts and our Myers-Briggs classifications. Still, we recognize many of the teams and attendees by face and by team name, and a few by name. A number of these players and teams also attend another of our regular haunts: quiz nights at Amici Greenhills which is held every first Thursday of the month. Amici\u0026rsquo;s question set is a bit wider and less involved with details as compared to Geekfight but still focused on pop culture, and the food is usually much better.\u003c/p\u003e\n\u003cp\u003eIt takes a while before all the teams are assembled (probably had the same trouble as us finding the place) so the event starts off a bit later than the 9pm call time. The organizers have a projector set up to show slides against the far side of the room. The host (a guy who looks like one of our ex-officemates) calls out the rules and categories. Each team is approached by a scorer and is given a small whiteboard and a marker to use to show their answers. The host is going to call out each question as they appear on the slides and give the teams some time usually around 30 seconds to scrawl an answer onto their boards. After some time the host counts down from 5 then asks the team to raise their boards. The host will then call out each answer (or not, depending on how lazy he\u0026rsquo;s feeling) before going to the next slide to show the answer. Each round will have ten such questions.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRounds one and two.\u003c/strong\u003e The event kicks off with a round on Sports Movies which gets us scratching our head over questions such as what team Tidwell played for in \u003cem\u003eJerry Maguire\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-1\" id=\"footnotebase-1\"\u003e[1]\u003c/a\u003e\n and what Kevin Bacon movie has him recruiting basketball players in Africa \u003ca href=\"#a2\" name=\"q2\"\u003e\n\n    \n\n\n\u003ca href=\"#footnote-2\" id=\"footnotebase-2\"\u003e[2]\u003c/a\u003e\n\u003c/a\u003e. Halfway through the round I predict that we\u0026rsquo;re going to get a \u003cem\u003eDodgeball\u003c/em\u003e question and sure enough the very next slide asks us to name the gym opposite Average Joe\u0026rsquo;s in that movie \n\n    \n\n\n\u003ca href=\"#footnote-3\" id=\"footnotebase-3\"\u003e[3]\u003c/a\u003e\n. The second round is on Science Fiction movies which leads to me struggling to remember the name of Emmet Brown\u0026rsquo;s dog in the year 1955 in the movie \u003cem\u003eBack to the Future\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-4\" id=\"footnotebase-4\"\u003e[4]\u003c/a\u003e\n (it\u0026rsquo;s not Einstein!) and the technical name for the liquid metal that composed the T-1000 in \u003cem\u003eTerminator 2: Judgement Day\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-5\" id=\"footnotebase-5\"\u003e[5]\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eUnlike Geekfight and Amici which focus more on pop-culture topics, the first time we went to a quiz night was at a venue that tended towards more academic subjects \u0026ndash; which was how we found out about our team\u0026rsquo;s unfortunate weakness to geography and history questions. That was at the first establishment to start running quiz nights in Metro Manila: Murphy\u0026rsquo;s, an Irish pub in Makati which still runs their quiz nights weekly every Tuesdays. It\u0026rsquo;s still pretty fun and challenging, so we still go there every few weeks or so, but the best our group has done there was third place.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRounds three and four.\u003c/strong\u003e Geekfight continued with a round on Gangster Movies, which sees us naming the lead character in \u003cem\u003eScarface\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-6\" id=\"footnotebase-6\"\u003e[6]\u003c/a\u003e\n trying to guess the two leads of the 1976 movie \u003cem\u003eBitayin si Baby Ama\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-7\" id=\"footnotebase-7\"\u003e[7]\u003c/a\u003e\n and luckily one of knows the name of the movie where Brad Pitt plays famous outlaw Jesse James \n\n    \n\n\n\u003ca href=\"#footnote-8\" id=\"footnotebase-8\"\u003e[8]\u003c/a\u003e\n.\u003c/p\u003e\n\u003cp\u003eThe next round was a picture round, each slide showed a scene from a movie and we were to identify both the name of the place and the movie it appeared in (2 points each slide, so this round was worth twice as much as others!). The first question was a scene from the local movie \u003cem\u003eAng Nawawala\u003c/em\u003e which by coincidence some of the people who worked on it were at Geekfight that night! When we were shown a shot of Luke Skywalker leaving behind his dead Uncle and Aunt, I wanted to write \u0026ldquo;Lars Water Farm\u0026rdquo; or something like that instead of Tatooine and it turns out that we did indeed have to be more specific (part of quiz night is knowing when to override your team!) I felt a bit redeemed later when I successfully named the Firehouse from \u003cem\u003eGhostbusters\u003c/em\u003e.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eBreaktime!\u003c/strong\u003e After the first four rounds, it was halftime. We scored 26 points (out of a possible 50), which left us a sixth place out of 16 teams. Not bad, but certainly not good enough, we had to step it up. We took some time to vote on a category to joker. The joker was a common feature of the local quiz nights; it basically meant that each team gets to choose the category they\u0026rsquo;re most confident in and the team would earn double points for that particular category. Before my vote, it was split between Animated Movies and Rom-coms I just went with Rom-coms.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRounds five and six.\u003c/strong\u003e Rom-coms happened to be the very next round too! We had to think about who played the lead roles in the remake of the Humphrey Bogart and Audrey Hepburn film \u003cem\u003eSabrina\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-9\" id=\"footnotebase-9\"\u003e[9]\u003c/a\u003e\n and we had to fill in the \u003cem\u003eWhen Harry Met Sally\u003c/em\u003e quote \u0026ldquo;Waiter, there is too much pepper on my [blank]. But I would be proud to partake of your [blank]\u0026rdquo; \n\n    \n\n\n\u003ca href=\"#footnote-10\" id=\"footnotebase-10\"\u003e[10]\u003c/a\u003e\n. We did fairly well in the joker round, only slightly worse than our best round which was the next round on War movies. The War movies round has us naming the ships in \u003cem\u003eMaster and Commander: Far Side of the World\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-11\" id=\"footnotebase-11\"\u003e[11]\u003c/a\u003e\n and failing to identify the Oliver Stone war movie filmed in the Philippines \n\n    \n\n\n\u003ca href=\"#footnote-12\" id=\"footnotebase-12\"\u003e[12]\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRounds seven and eight.\u003c/strong\u003e The last two rounds were good for us so we just have to do well in the last two rounds (Fantasy and Animated Films). Shouldn\u0026rsquo;t be too hard right? You\u0026rsquo;d think so. The fantasy round had questions on old fantasy films we hadn\u0026rsquo;t seen such as \u003cem\u003eWillow\u003c/em\u003e and recent films we weren\u0026rsquo;t fond of like \u003cem\u003eKingdom of Heaven\u003c/em\u003e. The animated round featured questions like who voiced Wreck-gar in the 1986 \u003cem\u003eTransformers\u003c/em\u003e movie \n\n    \n\n\n\u003ca href=\"#footnote-13\" id=\"footnotebase-13\"\u003e[13]\u003c/a\u003e\n and what was the name of the kart racing gaming in \u003cem\u003eWreck-It-Ralph\u003c/em\u003e \n\n    \n\n\n\u003ca href=\"#footnote-14\" id=\"footnotebase-14\"\u003e[14]\u003c/a\u003e\n alongside questions on stuff we hadn\u0026rsquo;t seen like an obscure animated short that won some Oscar and a picture question asking us to identify which movie a character came from (we didn\u0026rsquo;t get the answer; it was, embarrassingly enough, \u003cem\u003eThe Little Mermaid\u003c/em\u003e.)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eWrapping up.\u003c/strong\u003e When all the rounds were done, we had score 29 points in the second half, with only one team scoring more points than us (30) in the second half. When we perform badly, we usually don\u0026rsquo;t bother waiting for the final rankings to be called out, but I felt like there was an outside chance of us actually winning here since most of the top scores were clustered together. It turns out that we finished with 55 points, just below the fifth-place team with 57 points, so it was the same rank we had in the first half. =/ Interestingly, the 1st and 2nd placers are tied, as are the 3rd and 4th placers, so an additional tie break question had to be done. (I\u0026rsquo;ve been there before!)\u003c/p\u003e\n\u003cp\u003eAh well, we\u0026rsquo;re used to not winning anyway. Yet we still keep coming back to quiz nights, Geekfight and Amici and Murphy\u0026rsquo;s. We enjoy the challenge I guess, and we love digging deep trying to find the answers to those trivia questions. Yes, we enjoy it even when we have trouble figuring them out. But next time we\u0026rsquo;re going to win for sure! (Or so I keep telling myself)\u003c/p\u003e\n\u003cp\u003e=============================\u003c/p\u003e\n\u003cp\u003eThis might be the longest post I\u0026rsquo;ve ever written. Here are the answers to trivia questions marked in the post body:\u003c/p\u003e\n",
-            "summary": "Wednesday, March 20, 7:56pm We were four of us walking down the barely lit passage on the side of the building. The guard had lazily pointed us to a large open door near the back of the building. The interior was a studio-type area and there was a group of three women dressed in white who had arrived ahead of us and we followed them up a narrow set of stairs to an elevated lounge area with chairs and tables.",
-            "date_published": "2013-03-24T16:44:57+00:00",
-            "date_modified": "2020-05-04T05:11:43+08:00",
-            "section": "post",
-            "source_path": "post/2013/03/scenes-from-a-quiz-night/index.md"
-            , "tags": ["favorites"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315866889219874816/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/603074006388963"}]
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20130324165406-wp-Kerwin.json"
-                }, { 
-                    "url": "http://facebook.com/profile.php?id=632418911",
-                    "source_file": "comment-20130324165819-wp-Roy Tang.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20130325000301-wp-The guy.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang/posts/603074006388963",
-                    "source_file": "like-20130324T171737-wp-585.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang/posts/603074006388963",
-                    "source_file": "like-20130325T021946-wp-587.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang/posts/603074006388963",
-                    "source_file": "like-20130325T021948-wp-588.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang/posts/603074006388963",
-                    "source_file": "like-20130325T021951-wp-589.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315819157742579714/",
-            "url": "https://mirror.roytang.net/2013/03/315819157742579714/",
-            "path": "/2013/03/315819157742579714/",
+            "id": "https://mirror.roytang.net/2012/12/284290643327590400/",
+            "url": "https://mirror.roytang.net/2012/12/284290643327590400/",
+            "path": "/2012/12/284290643327590400/",
             "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e kamusta ka na raw\u003c/p\u003e\n",
-            "summary": "@alvinjtang kamusta ka na raw",
-            "date_published": "2013-03-24T13:35:29+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315819157742579714.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315819157742579714/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315429435874635776/",
-            "url": "https://mirror.roytang.net/2013/03/315429435874635776/",
-            "path": "/2013/03/315429435874635776/",
-            "title": "",
-            "content_html": "\u003cp\u003eIn observance of earth hour, imma gonna sleep now\u003c/p\u003e\n",
-            "summary": "In observance of earth hour, imma gonna sleep now",
-            "date_published": "2013-03-23T11:46:52+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315429435874635776.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315429435874635776/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315209677103308802/",
-            "url": "https://mirror.roytang.net/2013/03/315209677103308802/",
-            "path": "/2013/03/315209677103308802/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e I dont mind delays on KH3 (already have too much on the old gaming backlog anyway), as long as they dont screw it up\u003c/p\u003e\n",
-            "summary": "@Woerlan I dont mind delays on KH3 (already have too much on the old gaming backlog anyway), as long as they dont screw it up",
-            "date_published": "2013-03-22T21:13:37+00:00",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e i cant confirm that!\u003c/p\u003e\n",
+            "summary": "@Woerlan i cant confirm that!",
+            "date_published": "2012-12-27T13:32:25+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/315209677103308802.md"
+            "source_path": "notes/2012/12/284290643327590400.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315209677103308802/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315203993490030592/",
-            "url": "https://mirror.roytang.net/2013/03/315203993490030592/",
-            "path": "/2013/03/315203993490030592/",
-            "title": "",
-            "content_html": "\u003cp\u003eBest announement out of PAX so far lol DuckTales Remastered \u0026ndash; Reveal Trailer: \u003ca href=\"https://www.youtube.com/watch?v=6N0PzqF9gWY\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=6N0PzqF9gWY\u0026amp;feature=youtu.be\u003c/a\u003e via @youtube\u003c/p\u003e\n",
-            "summary": "Best announement out of PAX so far lol DuckTales Remastered \u0026ndash; Reveal Trailer: https://www.youtube.com/watch?v=6N0PzqF9gWY\u0026amp;feature=youtu.be via @youtube",
-            "date_published": "2013-03-22T20:51:02+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315203993490030592.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315203993490030592/"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284290643327590400/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/315136629020958720/",
-            "url": "https://mirror.roytang.net/2013/03/315136629020958720/",
-            "path": "/2013/03/315136629020958720/",
+            "id": "https://mirror.roytang.net/2012/12/284287387578810368/",
+            "url": "https://mirror.roytang.net/2012/12/284287387578810368/",
+            "path": "/2012/12/284287387578810368/",
             "title": "",
-            "content_html": "\u003cp\u003eNeed to be awake in 4-5 hours. Might be a good idea to catch some shut eye now.\u003c/p\u003e\n",
-            "summary": "Need to be awake in 4-5 hours. Might be a good idea to catch some shut eye now.",
-            "date_published": "2013-03-22T16:23:21+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315136629020958720.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315136629020958720/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315122869808033794/",
-            "url": "https://mirror.roytang.net/2013/03/315122869808033794/",
-            "path": "/2013/03/315122869808033794/",
-            "title": "",
-            "content_html": "\u003cp\u003eKingdom Hearts 1.5 HD, FFX Remaster, Lightning Returns, Tales of Xillia\u0026hellip; 2013 looks like a great year for JRPG fans on the PS3\u003c/p\u003e\n",
-            "summary": "Kingdom Hearts 1.5 HD, FFX Remaster, Lightning Returns, Tales of Xillia\u0026hellip; 2013 looks like a great year for JRPG fans on the PS3",
-            "date_published": "2013-03-22T15:28:41+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315122869808033794.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315122869808033794/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/315119915323514880/",
-            "url": "https://mirror.roytang.net/2013/03/315119915323514880/",
-            "path": "/2013/03/315119915323514880/",
-            "title": "",
-            "content_html": "\u003cp\u003eTrying to view the PAX Stream while downloading stuff in the background. Could always use more bandwidth\u003c/p\u003e\n",
-            "summary": "Trying to view the PAX Stream while downloading stuff in the background. Could always use more bandwidth",
-            "date_published": "2013-03-22T15:16:57+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/315119915323514880.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/315119915323514880/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/c90ff65/",
-            "url": "https://mirror.roytang.net/2013/03/c90ff65/",
-            "path": "/2013/03/c90ff65/",
-            "title": "",
-            "content_html": "\u003cp\u003eKindly pick me. Thanks :D\u003c/p\u003e\n",
-            "summary": "Kindly pick me. Thanks :D",
-            "date_published": "2013-03-22T00:00:00+00:00",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e i read more or less everything marvel/dc nowadays :p\u003c/p\u003e\n",
+            "summary": "@Woerlan i read more or less everything marvel/dc nowadays :p",
+            "date_published": "2012-12-27T13:19:29+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/c90ff65/index.md"
-            , "tags": ["RandomActsOfGaming"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/RandomActsOfGaming/comments/1as1t9/bioshock_1_who_wants_it/c90ff65/"}]
+            "source_path": "notes/2012/12/284287387578810368.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284287387578810368/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/c90genn/",
-            "url": "https://mirror.roytang.net/2013/03/c90genn/",
-            "path": "/2013/03/c90genn/",
+            "id": "https://mirror.roytang.net/2012/12/284227833746829312/",
+            "url": "https://mirror.roytang.net/2012/12/284227833746829312/",
+            "path": "/2012/12/284227833746829312/",
             "title": "",
-            "content_html": "\u003cp\u003eYes, they are allowed to count. The number of cards in each library is public information.\u003c/p\u003e\n",
-            "summary": "Yes, they are allowed to count. The number of cards in each library is public information.",
-            "date_published": "2013-03-22T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/c90genn/index.md"
-            , "tags": ["magicTCG"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/1asyuj/is_your_opponent_allowed_to_count_your_deck/c90genn/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/314749849088176128/",
-            "url": "https://mirror.roytang.net/2013/03/314749849088176128/",
-            "path": "/2013/03/314749849088176128/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhen getting into taxi: may resibo ba kayo manong? Driver: meron po. Pag bababa na: naku pasensya na ser, kinuha ata ng partner ko =/\u003c/p\u003e\n",
-            "summary": "When getting into taxi: may resibo ba kayo manong? Driver: meron po. Pag bababa na: naku pasensya na ser, kinuha ata ng partner ko =/",
-            "date_published": "2013-03-21T14:46:26+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/314749849088176128.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/314749849088176128/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/314512232467800064/",
-            "url": "https://mirror.roytang.net/2013/03/314512232467800064/",
-            "path": "/2013/03/314512232467800064/",
-            "title": "",
-            "content_html": "\u003cp\u003eNot a lot of sleep. Gonna need some coffee today\u003c/p\u003e\n",
-            "summary": "Not a lot of sleep. Gonna need some coffee today",
-            "date_published": "2013-03-20T23:02:14+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/314512232467800064.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/314512232467800064/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/314439381186400256/",
-            "url": "https://mirror.roytang.net/2013/03/314439381186400256/",
-            "path": "/2013/03/314439381186400256/",
-            "title": "",
-            "content_html": "\u003cp\u003e@lizbethjane may CM ep na\u003c/p\u003e\n",
-            "summary": "@lizbethjane may CM ep na",
-            "date_published": "2013-03-20T18:12:45+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/314439381186400256.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/314439381186400256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/314153007698825217/",
-            "url": "https://mirror.roytang.net/2013/03/314153007698825217/",
-            "path": "/2013/03/314153007698825217/",
-            "title": "",
-            "content_html": "\u003cp\u003eSample acquired!\u003c/p\u003e\n",
-            "summary": "Sample acquired!",
-            "date_published": "2013-03-19T23:14:48+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/314153007698825217.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/314153007698825217/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/10152151264378912/",
-            "url": "https://mirror.roytang.net/2013/03/10152151264378912/",
-            "path": "/2013/03/10152151264378912/",
-            "title": "",
-            "content_html": "\u003cp\u003eHas anyone tried making an Android developer account from the Philippines? Wala daw kasi merchant account support dito, but I see for-pay apps from Philippines sa google play store?\u003c/p\u003e\n",
-            "summary": "Has anyone tried making an Android developer account from the Philippines? Wala daw kasi merchant account support dito, but I see for-pay apps from Philippines sa google play store?",
-            "date_published": "2013-03-18T23:24:00+00:00",
-            "date_modified": "2019-09-28T15:27:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/10152151264378912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152151264378912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/kerwin.j.tang",
-                    "source_file": "comment-20130318-000000-60687740-e894-41ea-9d1f-67d2b8bf3f40.json"
-                }, { 
-                    "url": "https://www.facebook.com/briantang25",
-                    "source_file": "comment-20130318-000001-970ce5a5-7333-46d3-a6ad-6457435e7140.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20130318-000002-e15bcd5b-51b3-41bd-875c-539888070aaa.json"
-                }, { 
-                    "url": "https://www.facebook.com/maki.villano",
-                    "source_file": "comment-20130318-000003-d466debb-a490-41ef-b2f8-53754389750a.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20130319-000004-7b7358c1-361f-49c1-b012-213f955c4735.json"
-                }, { 
-                    "url": "https://www.facebook.com/kimosalen",
-                    "source_file": "comment-20130319-000005-f25ad86b-ae6b-4fa5-a1f0-5c2f481e6f7b.json"
-                }, { 
-                    "url": "https://www.facebook.com/augustli",
-                    "source_file": "comment-20130319-000006-38817aac-a0a0-41ab-8022-bdf656049717.json"
-                }, { 
-                    "url": "https://www.facebook.com/kimosalen",
-                    "source_file": "comment-20130319-000007-8d46031c-9b72-4398-9671-a46c89875de4.json"
-                }, { 
-                    "url": "https://www.facebook.com/augustli",
-                    "source_file": "comment-20130319-000008-a17b8f29-b2db-494e-8902-6131eefe9759.json"
-                }, { 
-                    "url": "https://www.facebook.com/spenson",
-                    "source_file": "comment-20130319-000009-ffe11d8a-68f4-4b96-9577-f78b1db539f1.json"
-                }, { 
-                    "url": "https://www.facebook.com/augustli",
-                    "source_file": "comment-20130319-000010-3fbeb482-ae4d-4da4-b5f4-ce10880066c1.json"
-                }, { 
-                    "url": "https://www.facebook.com/augustli",
-                    "source_file": "comment-20130319-000011-2ec42d73-67f2-4165-b9a6-ca474d69e808.json"
-                }, { 
-                    "url": "https://www.facebook.com/spenson",
-                    "source_file": "comment-20130319-000012-ae49b147-22b9-4bd2-840f-74513ea959aa.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313684434735992832/",
-            "url": "https://mirror.roytang.net/2013/03/313684434735992832/",
-            "path": "/2013/03/313684434735992832/",
-            "title": "",
-            "content_html": "\u003cp\u003eYugaTech is giving away 3 Android phones. Here\u0026rsquo;s one of them \u0026ndash;  \u003ca href=\"https://www.yugatech.com/contests/yugatech-giveaway-cherry-mobile-crystal/\"\u003ehttps://www.yugatech.com/contests/yugatech-giveaway-cherry-mobile-crystal/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "YugaTech is giving away 3 Android phones. Here\u0026rsquo;s one of them \u0026ndash; https://www.yugatech.com/contests/yugatech-giveaway-cherry-mobile-crystal/",
-            "date_published": "2013-03-18T16:12:51+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313684434735992832.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313684434735992832/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/15474727/",
-            "url": "https://mirror.roytang.net/2013/03/15474727/",
-            "path": "/2013/03/15474727/",
-            "title": "jquery: listing out ready handlers",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to trace a slowdown on load of a web page in our application and there\u0026rsquo;s a ton of JavaScript to go through so I\u0026rsquo;d rather not process them individually.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m trying to see if there\u0026rsquo;s a way to list out all the event handlers added to \u003ccode\u003e$(document).ready()\u003c/code\u003e so that I would just look through those handlers to see what might be causing the problem.\u003c/p\u003e\n\u003cp\u003eIs there a way to do this?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to trace a slowdown on load of a web page in our application and there\u0026rsquo;s a ton of JavaScript to go through so I\u0026rsquo;d rather not process them individually.\nI\u0026rsquo;m trying to see if there\u0026rsquo;s a way to list out all the event handlers added to $(document).ready() so that I would just look through those handlers to see what might be causing the problem.\nIs there a way to do this?",
-            "date_published": "2013-03-18T10:35:55+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/15474727/index.md"
-            , "tags": ["javascript","jquery","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/15474727/jquery-listing-out-ready-handlers"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/15474727/jquery-listing-out-ready-handlers",
-                    "source_file": "comment-20130318T103957-21901074.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/15474727/jquery-listing-out-ready-handlers",
-                    "source_file": "comment-20130325T094214-15611747.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313333880788762624/",
-            "url": "https://mirror.roytang.net/2013/03/313333880788762624/",
-            "path": "/2013/03/313333880788762624/",
-            "title": "",
-            "content_html": "\u003cp\u003eLetterman pwning Bill O\u0026rsquo;Reilly. \u0026ldquo;It\u0026rsquo;s not easy for me because I\u0026rsquo;m thoughtful.\u0026rdquo; Lol. \u003ca href=\"https://www.youtube.com/watch?v=2ukq8pt_JpE\"\u003ehttps://www.youtube.com/watch?v=2ukq8pt_JpE\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Letterman pwning Bill O\u0026rsquo;Reilly. \u0026ldquo;It\u0026rsquo;s not easy for me because I\u0026rsquo;m thoughtful.\u0026rdquo; Lol. https://www.youtube.com/watch?v=2ukq8pt_JpE",
-            "date_published": "2013-03-17T16:59:53+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313333880788762624.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313333880788762624/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313326299529748480/",
-            "url": "https://mirror.roytang.net/2013/03/313326299529748480/",
-            "path": "/2013/03/313326299529748480/",
-            "title": "",
-            "content_html": "\u003cp\u003e@lizbethjane \u003ca href=\"http://i.imgur.com/qPNTERn.jpg\"\u003ehttp://i.imgur.com/qPNTERn.jpg\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "@lizbethjane http://i.imgur.com/qPNTERn.jpg",
-            "date_published": "2013-03-17T16:29:45+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313326299529748480.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313326299529748480/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313323165206073346/",
-            "url": "https://mirror.roytang.net/2013/03/313323165206073346/",
-            "path": "/2013/03/313323165206073346/",
-            "title": "",
-            "content_html": "\u003cp\u003eWorld poverty is shrinking rapidly, new index reveals \u003ca href=\"https://www.theguardian.com/society/2013/mar/17/aid-trade-reduce-acute-poverty?CMP=twt_gu\"\u003ehttps://www.theguardian.com/society/2013/mar/17/aid-trade-reduce-acute-poverty?CMP=twt_gu\u003c/a\u003e via \u003ca href=\"https://twitter.com/guardian/\"\u003e@guardian\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "World poverty is shrinking rapidly, new index reveals https://www.theguardian.com/society/2013/mar/17/aid-trade-reduce-acute-poverty?CMP=twt_gu via @guardian",
-            "date_published": "2013-03-17T16:17:18+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313323165206073346.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313323165206073346/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313320291872956417/",
-            "url": "https://mirror.roytang.net/2013/03/313320291872956417/",
-            "path": "/2013/03/313320291872956417/",
-            "title": "",
-            "content_html": "\u003cp\u003eI want to change the world, but I\u0026rsquo;m lazy\u003c/p\u003e\n",
-            "summary": "I want to change the world, but I\u0026rsquo;m lazy",
-            "date_published": "2013-03-17T16:05:53+00:00",
-            "date_modified": "2021-01-12T13:08:49+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313320291872956417/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313320291872956417/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152149671578912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/LaTtEX",
-                    "source_file": "comment-20130318-000000-52b3805f-1da0-4b79-a1cc-db0611ba692d.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313319139223666689/",
-            "url": "https://mirror.roytang.net/2013/03/313319139223666689/",
-            "path": "/2013/03/313319139223666689/",
-            "title": "",
-            "content_html": "\u003cp\u003eApparently there is a Beverly Hills Cop TV series in the making, Eddie Murphy is reprising his role as Axel Foley, the lead is Axel\u0026rsquo;s son\u003c/p\u003e\n",
-            "summary": "Apparently there is a Beverly Hills Cop TV series in the making, Eddie Murphy is reprising his role as Axel Foley, the lead is Axel\u0026rsquo;s son",
-            "date_published": "2013-03-17T16:01:18+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313319139223666689.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313319139223666689/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/313314579893583872/",
-            "url": "https://mirror.roytang.net/2013/03/313314579893583872/",
-            "path": "/2013/03/313314579893583872/",
-            "title": "",
-            "content_html": "\u003cp\u003eFinished reading Slaughterhouse Five. Looking to alternate fiction and nonfiction so the next book I read is probably Brief History of Time\u003c/p\u003e\n",
-            "summary": "Finished reading Slaughterhouse Five. Looking to alternate fiction and nonfiction so the next book I read is probably Brief History of Time",
-            "date_published": "2013-03-17T15:43:11+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/313314579893583872.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/313314579893583872/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/c8x9p5o/",
-            "url": "https://mirror.roytang.net/2013/03/c8x9p5o/",
-            "path": "/2013/03/c8x9p5o/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m sure she\u0026rsquo;s not the only one that\u0026rsquo;s tired.\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m sure she\u0026rsquo;s not the only one that\u0026rsquo;s tired.",
-            "date_published": "2013-03-17T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/c8x9p5o/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/1afusi/santiago_im_tired_im_tired_of_the_world_im_tired/c8x9p5o/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312875381596229632/",
-            "url": "https://mirror.roytang.net/2013/03/312875381596229632/",
-            "path": "/2013/03/312875381596229632/",
-            "title": "",
-            "content_html": "\u003cp\u003eUninstalling Wordweb from my desktop PC. You have interrupted my gaming for the last time!\u003c/p\u003e\n",
-            "summary": "Uninstalling Wordweb from my desktop PC. You have interrupted my gaming for the last time!",
-            "date_published": "2013-03-16T10:37:58+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/312875381596229632.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312875381596229632/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312843250853629952/",
-            "url": "https://mirror.roytang.net/2013/03/312843250853629952/",
-            "path": "/2013/03/312843250853629952/",
-            "title": "",
-            "content_html": "\u003cp\u003eWoo finally won a match lol #SC2 #HOTS\u003c/p\u003e\n",
-            "summary": "Woo finally won a match lol #SC2 #HOTS",
-            "date_published": "2013-03-16T08:30:18+00:00",
+            "content_html": "\u003cp\u003eCan you beat me in \u003ca href=\"https://twitter.com/WordsWFriends/\"\u003e@WordsWFriends\u003c/a\u003e? Prove it. Username: \u0026lsquo;Hungryroy\u0026rsquo;. #LetsPlay \u003ca href=\"http://wwf-fb.zyngawithfriends.com/mobilestartgame.php?user=10597689\"\u003ehttp://wwf-fb.zyngawithfriends.com/mobilestartgame.php?user=10597689\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Can you beat me in @WordsWFriends? Prove it. Username: \u0026lsquo;Hungryroy\u0026rsquo;. #LetsPlay http://wwf-fb.zyngawithfriends.com/mobilestartgame.php?user=10597689",
+            "date_published": "2012-12-27T09:22:50+00:00",
             "date_modified": "2019-09-07T03:37:00+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/312843250853629952.md"
-            , "tags": ["SC2","HOTS"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312843250853629952/"}]
+            "source_path": "notes/2012/12/284227833746829312.md"
+            , "tags": ["LetsPlay"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284227833746829312/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/45484569653/",
-            "url": "https://mirror.roytang.net/2013/03/45484569653/",
-            "path": "/2013/03/45484569653/",
+            "id": "https://mirror.roytang.net/2012/12/284145723648385024/",
+            "url": "https://mirror.roytang.net/2012/12/284145723648385024/",
+            "path": "/2012/12/284145723648385024/",
             "title": "",
-            "content_html": "\u003cp\u003eNancy Binay for Senator\u003c/p\u003e\n\u003cp\u003eI couldn\u0026rsquo;t resist after reading \u003ca href=\"https://twitter.com/inquirerdotnet/status/312774733601067009\"\u003ethis tweet\u003c/a\u003e from \u003ca href=\"https://twitter.com/inquirerdotnet\"\u003e@inquirerdotnet\u003c/a\u003e\u003c/p\u003e",
-            "summary": "Nancy Binay for Senator\nI couldn\u0026rsquo;t resist after reading this tweet from @inquirerdotnet",
-            "date_published": "2013-03-16T07:48:47+00:00",
-            "date_modified": "2019-08-30T09:41:45+08:00",
-            "section": "photos",
-            "source_path": "photos/2013/03/45484569653/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/45484569653/nancy-binay-for-senator-i-couldnt-resist-after"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/312832823830663168/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312822937361199106/",
-            "url": "https://mirror.roytang.net/2013/03/312822937361199106/",
-            "path": "/2013/03/312822937361199106/",
-            "title": "",
-            "content_html": "\u003cp\u003eBabysitting used up half my day lol\u003c/p\u003e\n",
-            "summary": "Babysitting used up half my day lol",
-            "date_published": "2013-03-16T07:09:34+00:00",
+            "content_html": "\u003cp\u003eBeautiful map of The Walking Dead story line X-post from r/thewalkingdead (comic spoilers) \u003ca href=\"http://i.imgur.com/VIpUt.jpg\"\u003ehttp://i.imgur.com/VIpUt.jpg\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Beautiful map of The Walking Dead story line X-post from r/thewalkingdead (comic spoilers) http://i.imgur.com/VIpUt.jpg",
+            "date_published": "2012-12-27T03:56:34+00:00",
             "date_modified": "2019-09-01T15:11:18+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/312822937361199106.md"
+            "source_path": "notes/2012/12/284145723648385024.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312822937361199106/"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284145723648385024/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/c8w6lux/",
-            "url": "https://mirror.roytang.net/2013/03/c8w6lux/",
-            "path": "/2013/03/c8w6lux/",
+            "id": "https://mirror.roytang.net/2012/12/c7mcx46/",
+            "url": "https://mirror.roytang.net/2012/12/c7mcx46/",
+            "path": "/2012/12/c7mcx46/",
             "title": "",
-            "content_html": "\u003cp\u003eWait, woah, Phil Noto is taking over? What issue does he start?\u003c/p\u003e\n",
-            "summary": "Wait, woah, Phil Noto is taking over? What issue does he start?",
-            "date_published": "2013-03-16T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
+            "content_html": "\u003cp\u003eDan Slott has mentioned that the first part of AOU takes place before SSM\u003c/p\u003e\n",
+            "summary": "Dan Slott has mentioned that the first part of AOU takes place before SSM",
+            "date_published": "2012-12-27T00:00:00+00:00",
+            "date_modified": "2020-05-11T04:30:23+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/c8w6lux/index.md"
+            "source_path": "notes/2012/12/c7mcx46/index.md"
             , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/1acm6m/thunderbolts_8_cover/c8w6lux/"}]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15gy67/amazing_spiderman_700_discussion_what_do_you/c7mcx46/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/312712753393582080/",
-            "url": "https://mirror.roytang.net/2013/03/312712753393582080/",
-            "path": "/2013/03/312712753393582080/",
+            "id": "https://mirror.roytang.net/2012/12/c7mcy7q/",
+            "url": "https://mirror.roytang.net/2012/12/c7mcy7q/",
+            "path": "/2012/12/c7mcy7q/",
             "title": "",
-            "content_html": "\u003cp\u003eStressful talaga mag SC2 multiplayer lol\u003c/p\u003e\n",
-            "summary": "Stressful talaga mag SC2 multiplayer lol",
-            "date_published": "2013-03-15T23:51:44+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s kind of a different experience, especially in terms of warfare since you can stack multiple units on a tile. In Civ4 you basically create one superstack then throw it at everything.\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s kind of a different experience, especially in terms of warfare since you can stack multiple units on a tile. In Civ4 you basically create one superstack then throw it at everything.",
+            "date_published": "2012-12-27T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/312712753393582080.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312712753393582080/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/10152146527163912-0/",
-            "url": "https://mirror.roytang.net/2013/03/10152146527163912-0/",
-            "path": "/2013/03/10152146527163912-0/",
-            "title": "",
-            "content_html": "\u003cp\u003eGame time! Okay, maybe install time first\u003c/p\u003e\n",
-            "summary": "Game time! Okay, maybe install time first",
-            "date_published": "2013-03-15T23:25:00+00:00",
-            "date_modified": "2019-09-26T06:53:34+08:00",
-            "section": "photos",
-            "source_path": "photos/2013/03/10152146527163912-0/index.md"
-            , "tags": ["mobile-uploads"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152146527163912:0"}]
+            "source_path": "notes/2012/12/c7mcy7q/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Games/comments/15gx3h/i_have_been_playing_civ_5_and_i_like_it_civ_4/c7mcy7q/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/10152146516893912/",
-            "url": "https://mirror.roytang.net/2013/03/10152146516893912/",
-            "path": "/2013/03/10152146516893912/",
+            "id": "https://mirror.roytang.net/2012/12/c7md2gw/",
+            "url": "https://mirror.roytang.net/2012/12/c7md2gw/",
+            "path": "/2012/12/c7md2gw/",
             "title": "",
-            "content_html": "\u003cp\u003eFriendly advisory: Please don\u0026rsquo;t send me invites for Candy Crush Saga or any other Facebook game. If I\u0026rsquo;m interested in them, I\u0026rsquo;ll seek them out myself. Thanks!\u003c/p\u003e\n",
-            "summary": "Friendly advisory: Please don\u0026rsquo;t send me invites for Candy Crush Saga or any other Facebook game. If I\u0026rsquo;m interested in them, I\u0026rsquo;ll seek them out myself. Thanks!",
-            "date_published": "2013-03-15T23:15:00+00:00",
-            "date_modified": "2019-09-28T15:27:19+08:00",
+            "content_html": "\u003cp\u003eiTunes will only accept certain video formats. For example, I think mp4s are fine but mkvs aren\u0026rsquo;t. Not sure if it filters based on the container or the encoding.\u003c/p\u003e\n\u003cp\u003eAnd yeah, syncing to an iPad isn\u0026rsquo;t the best thing =/\u003c/p\u003e\n",
+            "summary": "iTunes will only accept certain video formats. For example, I think mp4s are fine but mkvs aren\u0026rsquo;t. Not sure if it filters based on the container or the encoding.\nAnd yeah, syncing to an iPad isn\u0026rsquo;t the best thing =/",
+            "date_published": "2012-12-27T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/10152146516893912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152146516893912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/kerwin.j.tang",
-                    "source_file": "comment-20130315-000000-d8695406-73e6-472a-ad0f-79a84a9879ce.json"
-                }, { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20130316-000001-6f198aec-40ca-4c4a-a13d-dcca2338735f.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312600320033316864/",
-            "url": "https://mirror.roytang.net/2013/03/312600320033316864/",
-            "path": "/2013/03/312600320033316864/",
-            "title": "",
-            "content_html": "\u003cp\u003eBetween SC2:HOTS installation, PSN downloads, Steam updates and new TV episodes, I\u0026rsquo;m really pushing the bandwidth tonight.\u003c/p\u003e\n",
-            "summary": "Between SC2:HOTS installation, PSN downloads, Steam updates and new TV episodes, I\u0026rsquo;m really pushing the bandwidth tonight.",
-            "date_published": "2013-03-15T16:24:58+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/312600320033316864.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312600320033316864/"}]
+            "source_path": "notes/2012/12/c7md2gw/index.md"
+            , "tags": ["ipad"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/ipad/comments/15h0wh/is_there_an_easy_way_to_drag_and_drop_movie_files/c7md2gw/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/312540925475827712/",
-            "url": "https://mirror.roytang.net/2013/03/312540925475827712/",
-            "path": "/2013/03/312540925475827712/",
+            "id": "https://mirror.roytang.net/2012/12/c7md328/",
+            "url": "https://mirror.roytang.net/2012/12/c7md328/",
+            "path": "/2012/12/c7md328/",
             "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m at JiPan (Mandaluyong City, Metro Manila) \u003ca href=\"http://4sq.com/XcvYp0\"\u003ehttp://4sq.com/XcvYp0\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m at JiPan (Mandaluyong City, Metro Manila) http://4sq.com/XcvYp0",
-            "date_published": "2013-03-15T12:28:58+00:00",
-            "date_modified": "2020-05-25T19:34:53+08:00",
+            "content_html": "\u003cp\u003eI think it\u0026rsquo;s just a problem of Age of Ultron being delayed - I remember Bendis saying somewhere that it\u0026rsquo;s been in the works for a while now.\u003c/p\u003e\n",
+            "summary": "I think it\u0026rsquo;s just a problem of Age of Ultron being delayed - I remember Bendis saying somewhere that it\u0026rsquo;s been in the works for a while now.",
+            "date_published": "2012-12-27T00:00:00+00:00",
+            "date_modified": "2020-05-11T04:30:23+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/312540925475827712.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312540925475827712/"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/51431409e4b0d92b45faab64?s=yiGCdyiGr5huxwGQuHMPUf8d2Ng\u0026ref=tw"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/51431409e4b0d92b45faab64?s=yiGCdyiGr5huxwGQuHMPUf8d2Ng\u0026ref=tw"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312540925538746369/",
-            "url": "https://mirror.roytang.net/2013/03/312540925538746369/",
-            "path": "/2013/03/312540925538746369/",
-            "title": "",
-            "content_html": "\u003cp\u003eI just unlocked the \u0026ldquo;Bento\u0026rdquo; badge on @foursquare for checking in at Japanese Restaurants! Irasshaimase! \u003ca href=\"http://4sq.com/Xcw0x9\"\u003ehttp://4sq.com/Xcw0x9\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I just unlocked the \u0026ldquo;Bento\u0026rdquo; badge on @foursquare for checking in at Japanese Restaurants! Irasshaimase! http://4sq.com/Xcw0x9",
-            "date_published": "2013-03-15T12:28:58+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/312540925538746369.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312540925538746369/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/312219788225167360/",
-            "url": "https://mirror.roytang.net/2013/03/312219788225167360/",
-            "path": "/2013/03/312219788225167360/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy record #94seconds: 86 pts, better than 99.5% of all the players! 1 letter, 1 theme, 1 word to find, 94s! via \u003ca href=\"https://twitter.com/94Seconds/\"\u003e@94Seconds\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "My record #94seconds: 86 pts, better than 99.5% of all the players! 1 letter, 1 theme, 1 word to find, 94s! via @94Seconds",
-            "date_published": "2013-03-14T15:12:52+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/312219788225167360.md"
-            , "tags": ["94seconds"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/312219788225167360/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/311987415457857537/",
-            "url": "https://mirror.roytang.net/2013/03/311987415457857537/",
-            "path": "/2013/03/311987415457857537/",
-            "title": "",
-            "content_html": "\u003cp\u003eSad face :( Google Reader to shut down July 1st \u003ca href=\"http://vrge.co/10IbveE\"\u003ehttp://vrge.co/10IbveE\u003c/a\u003e via \u003ca href=\"https://twitter.com/verge/\"\u003e@verge\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Sad face :( Google Reader to shut down July 1st http://vrge.co/10IbveE via @verge",
-            "date_published": "2013-03-13T23:49:30+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/311987415457857537.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311987415457857537/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/1a5ie9/",
-            "url": "https://mirror.roytang.net/2013/03/1a5ie9/",
-            "path": "/2013/03/1a5ie9/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-rcomicbooks-has-anyone-tried-the-marvel-unlimited-subscriptionipad-apphttpsredditcomrcomicbookscomments1a5ie9has_anyone_tried_the_marvel_unlimited\"\u003ePosted on r/comicbooks: \u003ca href=\"https://reddit.com/r/comicbooks/comments/1a5ie9/has_anyone_tried_the_marvel_unlimited/\"\u003eHas anyone tried the Marvel Unlimited subscription/ipad app?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eHow is reading on the app compared to say, Comixology?\u003c/p\u003e\n\u003cp\u003eLooks like a sweet deal, but my problem is I\u0026rsquo;m offline during 90% of the day (I dont have a data plan) and I heard they only allow 6 offline issues at once. I usually do my reading when I\u0026rsquo;m out of the house (when waiting in line, etc) so I\u0026rsquo;m kinda on the fence about subscribing.\u003c/p\u003e\n",
-            "summary": "Posted on r/comicbooks: Has anyone tried the Marvel Unlimited subscription/ipad app? How is reading on the app compared to say, Comixology?\nLooks like a sweet deal, but my problem is I\u0026rsquo;m offline during 90% of the day (I dont have a data plan) and I heard they only allow 6 offline issues at once. I usually do my reading when I\u0026rsquo;m out of the house (when waiting in line, etc) so I\u0026rsquo;m kinda on the fence about subscribing.",
-            "date_published": "2013-03-13T00:07:11+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/1a5ie9/index.md"
+            "source_path": "notes/2012/12/c7md328/index.md"
             , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/1a5ie9/has_anyone_tried_the_marvel_unlimited/"}]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15gy67/amazing_spiderman_700_discussion_what_do_you/c7md328/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/311504181078921218/",
-            "url": "https://mirror.roytang.net/2013/03/311504181078921218/",
-            "path": "/2013/03/311504181078921218/",
+            "id": "https://mirror.roytang.net/2012/12/c7mmkzg/",
+            "url": "https://mirror.roytang.net/2012/12/c7mmkzg/",
+            "path": "/2012/12/c7mmkzg/",
             "title": "",
-            "content_html": "\u003cp\u003eMy record #94seconds: 52 pts, better than 97.0% of all the players! 1 letter, 1 theme, 1 word to find, 94s! via \u003ca href=\"https://twitter.com/94Seconds/\"\u003e@94Seconds\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "My record #94seconds: 52 pts, better than 97.0% of all the players! 1 letter, 1 theme, 1 word to find, 94s! via @94Seconds",
-            "date_published": "2013-03-12T15:49:18+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/311504181078921218.md"
-            , "tags": ["94seconds"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311504181078921218/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/311501331783352320/",
-            "url": "https://mirror.roytang.net/2013/03/311501331783352320/",
-            "path": "/2013/03/311501331783352320/",
-            "title": "",
-            "content_html": "\u003cp\u003eQ: Vegetable, starts with B A: Bacon! #94seconds\u003c/p\u003e\n",
-            "summary": "Q: Vegetable, starts with B A: Bacon! #94seconds",
-            "date_published": "2013-03-12T15:37:59+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/311501331783352320.md"
-            , "tags": ["94seconds"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311501331783352320/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/10152140418883912/",
-            "url": "https://mirror.roytang.net/2013/03/10152140418883912/",
-            "path": "/2013/03/10152140418883912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSo facebook said that it was alerted that I had suspicious activity snd might not be a real person and I had to do the security check thing where i had to identify people in pictures. Not sure what that was all about\u003c/p\u003e\n",
-            "summary": "So facebook said that it was alerted that I had suspicious activity snd might not be a real person and I had to do the security check thing where i had to identify people in pictures. Not sure what that was all about",
-            "date_published": "2013-03-12T06:18:00+00:00",
-            "date_modified": "2019-09-28T15:27:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/10152140418883912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152140418883912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/ryan.sylam.liwanag",
-                    "source_file": "comment-20130312-000000-29877121-057b-4d0a-bf50-80a992b93270.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20130312-000001-d1a12d4b-d035-45d4-9b66-d0f72e4e2632.json"
-                }, { 
-                    "url": "https://www.facebook.com/barayantan",
-                    "source_file": "comment-20130312-000002-0bb08603-0e7c-4742-8dd2-9a60c5b39b41.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/311143218857271296/",
-            "url": "https://mirror.roytang.net/2013/03/311143218857271296/",
-            "path": "/2013/03/311143218857271296/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;I just need it to work\u0026rdquo; \u0026ndash; that\u0026rsquo;s how bad code gets written!\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;I just need it to work\u0026rdquo; \u0026ndash; that\u0026rsquo;s how bad code gets written!",
-            "date_published": "2013-03-11T15:54:58+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/311143218857271296.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311143218857271296/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/311141589823156226/",
-            "url": "https://mirror.roytang.net/2013/03/311141589823156226/",
-            "path": "/2013/03/311141589823156226/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/barayantan/\"\u003e@barayantan\u003c/a\u003e go home!\u003c/p\u003e\n",
-            "summary": "@barayantan go home!",
-            "date_published": "2013-03-11T15:48:30+00:00",
+            "content_html": "\u003cp\u003eThat was the old limit. They changed it a while back so that the limit is now 2 machines\u003c/p\u003e\n",
+            "summary": "That was the old limit. They changed it a while back so that the limit is now 2 machines",
+            "date_published": "2012-12-27T00:00:00+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/311141589823156226.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311141589823156226/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/311137500439670784/",
-            "url": "https://mirror.roytang.net/2013/03/311137500439670784/",
-            "path": "/2013/03/311137500439670784/",
-            "title": "",
-            "content_html": "\u003cp\u003eGet to win this O+ 8.12 Android phone from YugaTech:  \u003ca href=\"https://www.yugatech.com/contests/contest-o-8-12-giveaway/\"\u003ehttps://www.yugatech.com/contests/contest-o-8-12-giveaway/\u003c/a\u003e \u003ca href=\"https://www.yugatech.com/contests/contest-o-8-12-giveaway/\"\u003ehttps://www.yugatech.com/contests/contest-o-8-12-giveaway/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Get to win this O+ 8.12 Android phone from YugaTech: https://www.yugatech.com/contests/contest-o-8-12-giveaway/ https://www.yugatech.com/contests/contest-o-8-12-giveaway/",
-            "date_published": "2013-03-11T15:32:15+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/311137500439670784.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/311137500439670784/"}]
+            "source_path": "notes/2012/12/c7mmkzg/index.md"
+            , "tags": ["truegaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/truegaming/comments/15hfr7/why_do_sony_and_microsoft_care_if_you_play_used/c7mmkzg/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/c8tnl5s/",
-            "url": "https://mirror.roytang.net/2013/03/c8tnl5s/",
-            "path": "/2013/03/c8tnl5s/",
+            "id": "https://mirror.roytang.net/2012/12/c7msen8/",
+            "url": "https://mirror.roytang.net/2012/12/c7msen8/",
+            "path": "/2012/12/c7msen8/",
             "title": "",
-            "content_html": "\u003cp\u003eI just clicked a whole lot of [Free] buttons\u003c/p\u003e\n",
-            "summary": "I just clicked a whole lot of [Free] buttons",
-            "date_published": "2013-03-11T00:00:00+00:00",
+            "content_html": "\u003cp\u003eThe first FOUR pages have already been previewed: \u003ca href=\"http://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/\"\u003ehttp://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "The first FOUR pages have already been previewed: http://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/",
+            "date_published": "2012-12-27T00:00:00+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/c8tnl5s/index.md"
+            "source_path": "notes/2012/12/c7msen8/index.md"
             , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/1a16o7/marvel_sxsw_marvel_1_over_700_1_issues_available/c8tnl5s/"}]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15iq55/first_3_pages_of_superior_spiderman_1_spoilers/c7msen8/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/310902604341338113/",
-            "url": "https://mirror.roytang.net/2013/03/310902604341338113/",
-            "path": "/2013/03/310902604341338113/",
+            "id": "https://mirror.roytang.net/2012/12/c7msez7/",
+            "url": "https://mirror.roytang.net/2012/12/c7msez7/",
+            "path": "/2012/12/c7msez7/",
             "title": "",
-            "content_html": "\u003cp\u003eMarvel giving out 700 digital #1s for free, providing digital subscription service to back catalog\u0026hellip; Your move DC\u003c/p\u003e\n",
-            "summary": "Marvel giving out 700 digital #1s for free, providing digital subscription service to back catalog\u0026hellip; Your move DC",
-            "date_published": "2013-03-10T23:58:51+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2013/03/310902604341338113.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/310902604341338113/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2013/03/310590978090209280/",
-            "url": "https://mirror.roytang.net/2013/03/310590978090209280/",
-            "path": "/2013/03/310590978090209280/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/switchfollows/\"\u003e@switchfollows\u003c/a\u003e that guildgate\u0026rsquo;s only purpose was to activate boros keyrune\u003c/p\u003e\n",
-            "summary": "@switchfollows that guildgate\u0026rsquo;s only purpose was to activate boros keyrune",
-            "date_published": "2013-03-10T03:20:34+00:00",
+            "content_html": "\u003cp\u003eThe fate of the Octobot is unknown at this point. Also, Peter managed to tell Carlie about the brainswap (she\u0026rsquo;s the only one Peter was able to tell)\u003c/p\u003e\n",
+            "summary": "The fate of the Octobot is unknown at this point. Also, Peter managed to tell Carlie about the brainswap (she\u0026rsquo;s the only one Peter was able to tell)",
+            "date_published": "2012-12-27T00:00:00+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/310590978090209280.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/310590978090209280/"}]
+            "source_path": "notes/2012/12/c7msez7/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15iq55/first_3_pages_of_superior_spiderman_1_spoilers/c7msez7/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/310349313576407040/",
-            "url": "https://mirror.roytang.net/2013/03/310349313576407040/",
-            "path": "/2013/03/310349313576407040/",
+            "id": "https://mirror.roytang.net/2012/12/284064789792186368/",
+            "url": "https://mirror.roytang.net/2012/12/284064789792186368/",
+            "path": "/2012/12/284064789792186368/",
             "title": "",
-            "content_html": "\u003cp\u003eBatman Forever on HBO. Wondering what kind of Riddler Nolan would have given us instead of the ridiculous caricature Jim Carrey portrays\u003c/p\u003e\n",
-            "summary": "Batman Forever on HBO. Wondering what kind of Riddler Nolan would have given us instead of the ridiculous caricature Jim Carrey portrays",
-            "date_published": "2013-03-09T11:20:17+00:00",
+            "content_html": "\u003cp\u003eWatching Doctor Who early in the morning\u003c/p\u003e\n",
+            "summary": "Watching Doctor Who early in the morning",
+            "date_published": "2012-12-26T22:34:58+00:00",
+            "date_modified": "2020-01-04T01:03:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/284064789792186368.md"
+            , "tags": ["tv"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284064789792186368/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151988753933912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/284061089849810945/",
+            "url": "https://mirror.roytang.net/2012/12/284061089849810945/",
+            "path": "/2012/12/284061089849810945/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e have you tried the new Hawkeye book? It\u0026rsquo;s pretty good and only 6 issues in\u003c/p\u003e\n",
+            "summary": "@Woerlan have you tried the new Hawkeye book? It\u0026rsquo;s pretty good and only 6 issues in",
+            "date_published": "2012-12-26T22:20:16+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/284061089849810945.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/284061089849810945/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283979260979462144/",
+            "url": "https://mirror.roytang.net/2012/12/283979260979462144/",
+            "path": "/2012/12/283979260979462144/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn what has become an ugly annual tradition, BuzzFeed\u0026rsquo;s \u0026ldquo;Teens Complaining About Gifts\u0026rdquo; \u003ca href=\"https://www.buzzfeed.com/daves4/22-people-who-didnt-get-what-they-wanted-for-chri\"\u003ehttps://www.buzzfeed.com/daves4/22-people-who-didnt-get-what-they-wanted-for-chri\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "In what has become an ugly annual tradition, BuzzFeed\u0026rsquo;s \u0026ldquo;Teens Complaining About Gifts\u0026rdquo; https://www.buzzfeed.com/daves4/22-people-who-didnt-get-what-they-wanted-for-chri",
+            "date_published": "2012-12-26T16:55:06+00:00",
+            "date_modified": "2020-06-25T23:40:26+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283979260979462144.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283979260979462144/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283974760914898944/",
+            "url": "https://mirror.roytang.net/2012/12/283974760914898944/",
+            "path": "/2012/12/283974760914898944/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Woerlan/\"\u003e@Woerlan\u003c/a\u003e \u003ca href=\"https://twitter.com/DanSlott/\"\u003e@DanSlott\u003c/a\u003e There\u0026rsquo;s already some previews of SSM#1 that can help you decide. \u003ca href=\"https://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/\"\u003ehttps://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/\u003c/a\u003e  I enjoyed seeing the Living Brain\u003c/p\u003e\n",
+            "summary": "@Woerlan @DanSlott There\u0026rsquo;s already some previews of SSM#1 that can help you decide. https://comicbook.com/blog/2012/12/26/superior-spider-man-1-preview-pages-hit-the-web/ I enjoyed seeing the Living Brain",
+            "date_published": "2012-12-26T16:37:13+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283974760914898944.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283974760914898944/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283971688104869889/",
+            "url": "https://mirror.roytang.net/2012/12/283971688104869889/",
+            "path": "/2012/12/283971688104869889/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/DanSlott/\"\u003e@DanSlott\u003c/a\u003e what week of January is SSM#1 coming out?\u003c/p\u003e\n",
+            "summary": "@DanSlott what week of January is SSM#1 coming out?",
+            "date_published": "2012-12-26T16:25:01+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283971688104869889.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283971688104869889/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283954365864239104/",
+            "url": "https://mirror.roytang.net/2012/12/283954365864239104/",
+            "path": "/2012/12/283954365864239104/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurvey: What was your favorite movie of 2012?\u003c/p\u003e\n",
+            "summary": "Survey: What was your favorite movie of 2012?",
+            "date_published": "2012-12-26T15:16:11+00:00",
             "date_modified": "2019-09-12T04:21:53+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/310349313576407040.md"
+            "source_path": "notes/2012/12/283954365864239104.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/310349313576407040/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10152135957968912"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283954365864239104/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151988202318912"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2013/03/310267306192297984/",
-            "url": "https://mirror.roytang.net/2013/03/310267306192297984/",
-            "path": "/2013/03/310267306192297984/",
+            "id": "https://mirror.roytang.net/2012/12/283929362124914691/",
+            "url": "https://mirror.roytang.net/2012/12/283929362124914691/",
+            "path": "/2012/12/283929362124914691/",
             "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/antuk1ng/\"\u003e@antuk1ng\u003c/a\u003e \u003ca href=\"https://twitter.com/yoshiyahu/\"\u003e@yoshiyahu\u003c/a\u003e antagal ng sagot lol\u003c/p\u003e\n",
-            "summary": "@antuk1ng @yoshiyahu antagal ng sagot lol",
-            "date_published": "2013-03-09T05:54:24+00:00",
+            "content_html": "\u003cp\u003eMmm\u0026hellip;three musketeers chocolate\u003c/p\u003e\n",
+            "summary": "Mmm\u0026hellip;three musketeers chocolate",
+            "date_published": "2012-12-26T13:36:49+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283929362124914691.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283929362124914691/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283911275614986240/",
+            "url": "https://mirror.roytang.net/2012/12/283911275614986240/",
+            "path": "/2012/12/283911275614986240/",
+            "title": "",
+            "content_html": "\u003cp\u003eJason statham looks like agent coulson\u003c/p\u003e\n",
+            "summary": "Jason statham looks like agent coulson",
+            "date_published": "2012-12-26T12:24:57+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283911275614986240.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283911275614986240/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283911136301158400/",
+            "url": "https://mirror.roytang.net/2012/12/283911136301158400/",
+            "path": "/2012/12/283911136301158400/",
+            "title": "",
+            "content_html": "\u003cp\u003eYay it was only 10mins and I get to watch the transporter apparently\u003c/p\u003e\n",
+            "summary": "Yay it was only 10mins and I get to watch the transporter apparently",
+            "date_published": "2012-12-26T12:24:24+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283911136301158400.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283911136301158400/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283908769488982016/",
+            "url": "https://mirror.roytang.net/2012/12/283908769488982016/",
+            "path": "/2012/12/283908769488982016/",
+            "title": "",
+            "content_html": "\u003cp\u003eAs a sign that I\u0026rsquo;ve forgotten how to commute, I got on an ortigas ilalim bus and expect to be stuck in front of galleria for the next 30mins\u003c/p\u003e\n",
+            "summary": "As a sign that I\u0026rsquo;ve forgotten how to commute, I got on an ortigas ilalim bus and expect to be stuck in front of galleria for the next 30mins",
+            "date_published": "2012-12-26T12:15:00+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283908769488982016.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283908769488982016/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283783684497223681/",
+            "url": "https://mirror.roytang.net/2012/12/283783684497223681/",
+            "path": "/2012/12/283783684497223681/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe 5 Best Board Games of 2012 \u003ca href=\"https://kotaku.com/the-5-best-board-games-of-2012-5971084\"\u003ehttps://kotaku.com/the-5-best-board-games-of-2012-5971084\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "The 5 Best Board Games of 2012 https://kotaku.com/the-5-best-board-games-of-2012-5971084",
+            "date_published": "2012-12-26T03:57:57+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283783684497223681.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283783684497223681/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283760963574960128/",
+            "url": "https://mirror.roytang.net/2012/12/283760963574960128/",
+            "path": "/2012/12/283760963574960128/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/barayantan/\"\u003e@barayantan\u003c/a\u003e nakaon na\u003c/p\u003e\n",
+            "summary": "@barayantan nakaon na",
+            "date_published": "2012-12-26T02:27:40+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2013/03/310267306192297984.md"
+            "source_path": "notes/2012/12/283760963574960128.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/310267306192297984/"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283760963574960128/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7lxw1v/",
+            "url": "https://mirror.roytang.net/2012/12/c7lxw1v/",
+            "path": "/2012/12/c7lxw1v/",
+            "title": "",
+            "content_html": "\u003cp\u003eThey only work for the EU store.\u003c/p\u003e\n",
+            "summary": "They only work for the EU store.",
+            "date_published": "2012-12-26T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7lxw1v/index.md"
+            , "tags": ["PS3"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/15f5vn/playstation_xmas_games_giveaway_on_facebook/c7lxw1v/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7lxwj6/",
+            "url": "https://mirror.roytang.net/2012/12/c7lxwj6/",
+            "path": "/2012/12/c7lxwj6/",
+            "title": "",
+            "content_html": "\u003cp\u003eSome info:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eThe giveaway games are all minis: Velocity, Breakquest, Canabalt, Wizorb\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe codes will only work on the Europe store (you can just create a EU account if you really want them)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e3 of my codes worked fine; but for Canabalt, the store said the code was already used =/\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n",
+            "summary": "Some info:\n  The giveaway games are all minis: Velocity, Breakquest, Canabalt, Wizorb\n  The codes will only work on the Europe store (you can just create a EU account if you really want them)\n  3 of my codes worked fine; but for Canabalt, the store said the code was already used =/\n  ",
+            "date_published": "2012-12-26T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7lxwj6/index.md"
+            , "tags": ["PS3"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/15f5vn/playstation_xmas_games_giveaway_on_facebook/c7lxwj6/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7lxy9b/",
+            "url": "https://mirror.roytang.net/2012/12/c7lxy9b/",
+            "path": "/2012/12/c7lxy9b/",
+            "title": "",
+            "content_html": "\u003cp\u003eThere is an r/vita, might wanna ask over there.\u003c/p\u003e\n",
+            "summary": "There is an r/vita, might wanna ask over there.",
+            "date_published": "2012-12-26T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7lxy9b/index.md"
+            , "tags": ["PS3"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/15faqg/i_got_a_vita_this_year/c7lxy9b/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7mc1ce/",
+            "url": "https://mirror.roytang.net/2012/12/c7mc1ce/",
+            "path": "/2012/12/c7mc1ce/",
+            "title": "",
+            "content_html": "\u003cp\u003eI wonder if fans reacted as violently to that six-arms thing as they did to ASM700\u003c/p\u003e\n",
+            "summary": "I wonder if fans reacted as violently to that six-arms thing as they did to ASM700",
+            "date_published": "2012-12-26T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7mc1ce/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15gsnl/moments_from_every_amazing_spiderman_anniversary/c7mc1ce/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283618931418210304/",
+            "url": "https://mirror.roytang.net/2012/12/283618931418210304/",
+            "path": "/2012/12/283618931418210304/",
+            "title": "",
+            "content_html": "\u003cp\u003eDear Apple, please stop asking me to update Safari and Quicktime when I only want to update iTunes. Love, Windows users.\u003c/p\u003e\n",
+            "summary": "Dear Apple, please stop asking me to update Safari and Quicktime when I only want to update iTunes. Love, Windows users.",
+            "date_published": "2012-12-25T17:03:17+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283618931418210304.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283618931418210304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283617851695300608/",
+            "url": "https://mirror.roytang.net/2012/12/283617851695300608/",
+            "path": "/2012/12/283617851695300608/",
+            "title": "",
+            "content_html": "\u003cp\u003eWe should celebrate Boxing Day. Why don\u0026rsquo;t we celebrate Boxing Day? We\u0026rsquo;re a nation of Pacquiao fans right?\u003c/p\u003e\n",
+            "summary": "We should celebrate Boxing Day. Why don\u0026rsquo;t we celebrate Boxing Day? We\u0026rsquo;re a nation of Pacquiao fans right?",
+            "date_published": "2012-12-25T16:58:59+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283617851695300608.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283617851695300608/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151986815908912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283617517426057216/",
+            "url": "https://mirror.roytang.net/2012/12/283617517426057216/",
+            "path": "/2012/12/283617517426057216/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis Tuseran Forte hasn\u0026rsquo;t been effective at all.\u003c/p\u003e\n",
+            "summary": "This Tuseran Forte hasn\u0026rsquo;t been effective at all.",
+            "date_published": "2012-12-25T16:57:40+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283617517426057216.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283617517426057216/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151986813138912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283615989239775232/",
+            "url": "https://mirror.roytang.net/2012/12/283615989239775232/",
+            "path": "/2012/12/283615989239775232/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e lol bakit nagtweet parin, didnt you cancel it? :p\u003c/p\u003e\n",
+            "summary": "@alvinjtang lol bakit nagtweet parin, didnt you cancel it? :p",
+            "date_published": "2012-12-25T16:51:35+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283615989239775232.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283615989239775232/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283603320592035840/",
+            "url": "https://mirror.roytang.net/2012/12/283603320592035840/",
+            "path": "/2012/12/283603320592035840/",
+            "title": "",
+            "content_html": "\u003cp\u003eWow, I won something in YugaTech\u0026rsquo;s giveaway :D Thanks po \u003ca href=\"https://twitter.com/abeolandres/\"\u003e@abeolandres\u003c/a\u003e how to claim the portable speakers po? :D\u003c/p\u003e\n",
+            "summary": "Wow, I won something in YugaTech\u0026rsquo;s giveaway :D Thanks po @abeolandres how to claim the portable speakers po? :D",
+            "date_published": "2012-12-25T16:01:15+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283603320592035840.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283603320592035840/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283598538569560068/",
+            "url": "https://mirror.roytang.net/2012/12/283598538569560068/",
+            "path": "/2012/12/283598538569560068/",
+            "title": "",
+            "content_html": "\u003cp\u003eGonna take my first late of December tomorrow\u003c/p\u003e\n",
+            "summary": "Gonna take my first late of December tomorrow",
+            "date_published": "2012-12-25T15:42:15+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283598538569560068.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283598538569560068/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/15dshs/",
+            "url": "https://mirror.roytang.net/2012/12/15dshs/",
+            "path": "/2012/12/15dshs/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rgaming-what-a-great-mass-effect-bundlehttpsredditcomrgamingcomments15dshswhat_a_great_mass_effect_bundle\"\u003ePosted on r/gaming: \u003ca href=\"https://reddit.com/r/gaming/comments/15dshs/what_a_great_mass_effect_bundle/\"\u003eWhat a great Mass Effect bundle!\u003c/a\u003e\u003c/h4\u003e\n",
+            "summary": "Posted on r/gaming: What a great Mass Effect bundle! ",
+            "date_published": "2012-12-25T02:10:27+00:00",
+            "date_modified": "2020-09-12T08:15:13+08:00",
+            "section": "photos",
+            "source_path": "photos/2012/12/15dshs/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/gaming/comments/15dshs/what_a_great_mass_effect_bundle/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/283273556731785216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7lpbn6/",
+            "url": "https://mirror.roytang.net/2012/12/c7lpbn6/",
+            "path": "/2012/12/c7lpbn6/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhen are you playing in a prerelease? The next prereleases are for Gatecrash at the end of January\u003c/p\u003e\n",
+            "summary": "When are you playing in a prerelease? The next prereleases are for Gatecrash at the end of January",
+            "date_published": "2012-12-25T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7lpbn6/index.md"
+            , "tags": ["magicTCG"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/15dk1k/first_time_playing_in_a_prerelease_any_tips/c7lpbn6/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/10151984658048912/",
+            "url": "https://mirror.roytang.net/2012/12/10151984658048912/",
+            "path": "/2012/12/10151984658048912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSa bahay namin, kaming dalawa lang ng nanay ko nasasarapan sa keso de bola. Well, pati si Jasmine.\u003c/p\u003e\n",
+            "summary": "Sa bahay namin, kaming dalawa lang ng nanay ko nasasarapan sa keso de bola. Well, pati si Jasmine.",
+            "date_published": "2012-12-24T20:53:00+00:00",
+            "date_modified": "2019-09-28T15:27:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/10151984658048912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151984658048912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20121224-000000-a026c256-c6a3-4da1-831e-d3457c0f0734.json"
+                }, { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20121224-000001-91a8e2d0-c789-4d37-9e98-63d859b9d96c.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20121224-000002-06bbed54-723b-4791-82c1-0bb11ff878f7.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283208330275602433/",
+            "url": "https://mirror.roytang.net/2012/12/283208330275602433/",
+            "path": "/2012/12/283208330275602433/",
+            "title": "",
+            "content_html": "\u003cp\u003e90: IRA GLASS: Advice for beginners  \u003ca href=\"https://zenpencils.com/comic/90-ira-glass-advice-for-beginners/\"\u003ehttps://zenpencils.com/comic/90-ira-glass-advice-for-beginners/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "90: IRA GLASS: Advice for beginners https://zenpencils.com/comic/90-ira-glass-advice-for-beginners/",
+            "date_published": "2012-12-24T13:51:42+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283208330275602433.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283208330275602433/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283193495399825410/",
+            "url": "https://mirror.roytang.net/2012/12/283193495399825410/",
+            "path": "/2012/12/283193495399825410/",
+            "title": "",
+            "content_html": "\u003cp\u003e[science] The Great Filter Theory: \u003ca href=\"https://io9.gizmodo.com/the-great-filter-theory-suggests-humans-have-already-co-5970501\"\u003ehttps://io9.gizmodo.com/the-great-filter-theory-suggests-humans-have-already-co-5970501\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "[science] The Great Filter Theory: https://io9.gizmodo.com/the-great-filter-theory-suggests-humans-have-already-co-5970501",
+            "date_published": "2012-12-24T12:52:45+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283193495399825410.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283193495399825410/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/283190377664630785/",
+            "url": "https://mirror.roytang.net/2012/12/283190377664630785/",
+            "path": "/2012/12/283190377664630785/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Bill_Gross/\"\u003e@Bill_Gross\u003c/a\u003e: \u0026ldquo;America had 11,000 gun-related homicides in 2008. Japan had 11. Does anyone know if they play video games in Japan?\u0026rdquo; @J \u0026hellip;\u003c/p\u003e\n",
+            "summary": "RT @Bill_Gross: \u0026ldquo;America had 11,000 gun-related homicides in 2008. Japan had 11. Does anyone know if they play video games in Japan?\u0026rdquo; @J \u0026hellip;",
+            "date_published": "2012-12-24T12:40:22+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/283190377664630785.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/283190377664630785/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7l2ws7/",
+            "url": "https://mirror.roytang.net/2012/12/c7l2ws7/",
+            "path": "/2012/12/c7l2ws7/",
+            "title": "",
+            "content_html": "\u003cp\u003eLuckily, you don\u0026rsquo;t have to play it!\u003c/p\u003e\n",
+            "summary": "Luckily, you don\u0026rsquo;t have to play it!",
+            "date_published": "2012-12-24T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7l2ws7/index.md"
+            , "tags": ["PS3"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/15bzbo/why_i_dont_like_the_ps3/c7l2ws7/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7l301v/",
+            "url": "https://mirror.roytang.net/2012/12/c7l301v/",
+            "path": "/2012/12/c7l301v/",
+            "title": "",
+            "content_html": "\u003cp\u003eFor me, it\u0026rsquo;s a toss-up between Avengers and Thor. Both seem epic and have great art.\u003c/p\u003e\n",
+            "summary": "For me, it\u0026rsquo;s a toss-up between Avengers and Thor. Both seem epic and have great art.",
+            "date_published": "2012-12-24T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7l301v/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15bteo/marvel_now_what_would_you_say_is_the_best_series/c7l301v/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/",
+            "url": "https://mirror.roytang.net/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/",
+            "path": "/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/",
+            "title": "Last Week In Marvel NOW!: Avengers, Thor, All-New X-Men and others",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s \u0026ldquo;Last Week in Marvel NOW!\u0026rdquo; since this is going up on Sunday/Monday. And what a lot of Marvel NOW! we got, since many of the top titles are double shipping this month. Hopefully the schedule normalizes back to monthlies soon, I\u0026rsquo;m already reading far too many books as it is! (Well, that\u0026rsquo;s kind of a good problem to have right?) Luckily Marvel only has two books coming out on Christmas week, gives me some time to catch up.\u003c/p\u003e\n\u003cp\u003eThe best books this week are the same ones I\u0026rsquo;ve been raving about the past month. We start with \u003cstrong\u003eAvengers #2\u003c/strong\u003e by Hickman/Opena/White. There\u0026rsquo;s a lot less action in this issue as Hickman takes the time to do some more scenario-building. We\u0026rsquo;re treated to a bit of a background check on the new villains as well as some flashbacks of how Tony and Cap went around recruiting the new Avengers team.\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#cf26b337bcf61d4c7f4112b629c155c0-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/avengers2_hub3dd375c188f9c85c4e2f38613e34129_498736_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"cf26b337bcf61d4c7f4112b629c155c0-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/avengers2.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"23 Dec 2012 4:57pm\"\u003e23 Dec 2012 4:57pm\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eThe opening story arc of Hickman\u0026rsquo;s Avengers harkens back to the trope used to introduce a new team in Giant-Sized X-Men #1, with the original team getting captured and only their leader making it back to assemble a new team for a rescue mission. This issue ends with the new team starting the rescue mission, hopefully we\u0026rsquo;re in for an action-packed third issue. Art-wise the issue is still spectacular, although Thor does look a bit ridiculous in the cover:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#ca4d8e53ea5663afa12515c7cff622cf-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/IMG_0125_hu4920d1e88de3e3eee883f98d2d9a1dcb_1398091_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"ca4d8e53ea5663afa12515c7cff622cf-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/IMG_0125.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"23 Dec 2012 4:57pm\"\u003e23 Dec 2012 4:57pm\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eThe internal pages by Opena/White are still top-notch though. I\u0026rsquo;m especially fond of the level of detail and the way they present close-ups of the different characters. I hope they\u0026rsquo;ll be able to stay on the book and maintain such a high-level of quality in the long run.\u003c/p\u003e\n\u003cp\u003eNext up is \u003cstrong\u003eThor God of Thunder #3, \u003c/strong\u003econtinuing the god butcher story arc. This issue focuses more on present-day Thor as he tries to track down the god butcher and all he finds are more victims. Hard to predict how Jason Aaron plans to end this thing, since the god butcher is still around at the time of future Thor, we can only assume that Thor either loses (not likely, since that means his death) or he won\u0026rsquo;t be able to come up with a permanent solution. Ribic\u0026rsquo;s pencils and Svorcina\u0026rsquo;s colors seem to be getting more epic with each issue, I\u0026rsquo;ll just leave you with a quick taste:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#93d3d33421a8aa2c83ca93e16daee22c-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/thor3_hub5bbb0ccd1fe4044c2b93c694240a276_684260_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"93d3d33421a8aa2c83ca93e16daee22c-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/thor3.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"23 Dec 2012 4:57pm\"\u003e23 Dec 2012 4:57pm\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003e\u003cstrong\u003eAll-New X-Men #4 \u003c/strong\u003ewas a bit disappointing for me though still pretty good. Okay, the only really disappointing part was that we didn\u0026rsquo;t have a real Scott and Scott confrontation, and Cyclops and Magneto kind of just chickened out and fled. I kinda feel the way young Iceman feels:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#2c36ad9cf62fe638589c5621c9427420-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/anxm4_hu096b4e901aad6172e6f9e54cbed9364f_204672_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"2c36ad9cf62fe638589c5621c9427420-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/anxm4.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"23 Dec 2012 4:57pm\"\u003e23 Dec 2012 4:57pm\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI guess it just feels like we\u0026rsquo;re four issues in and we\u0026rsquo;re barely past the initial premise of the book, the pacing could be a bit faster I guess. Of course it\u0026rsquo;s already amazing that we\u0026rsquo;re at issue 4 when Marvel NOW! isn\u0026rsquo;t even two months old! That being said, Bendis and Immonen are still doing great here in terms of some excellent dialogue and panels and I\u0026rsquo;m still eagerly looking forward to the next issue.\u003c/p\u003e\n\u003cp\u003eJust some quick hits for the other Marvel NOW! releases this week: \u003cstrong\u003eIndestructible Hulk #2 \u003c/strong\u003esees a skeptical Tony Stark visiting Banner at his new SHIELD laboratories (Tony has been visiting a lot of people recently) and there\u0026rsquo;s a funny panel where Tony tries to reinforce his self-confidence after witnessing just how much of a genius Banner is. This issue doesn\u0026rsquo;t really build up to any story arc but rather cements Banner\u0026rsquo;s role as a SHIELD guy especially with regards to Tony. \u003cstrong\u003eFF #2 \u003c/strong\u003esees an attack on the Baxter Building right after the original Four supposedly should have returned but didn\u0026rsquo;t, and the substitute Four gets to show off a bit. The first two issues of both \u003cem\u003eFantastic Four \u003c/em\u003eand this book actually form the introductory story arc, broken across the two books so it\u0026rsquo;s better to be following both. Fraction\u0026rsquo;s writing is ok so far, but I\u0026rsquo;m not really a fan of Allred\u0026rsquo;s art style though I know a lot of people are. \u003cstrong\u003eAvengers Arena #2 \u003c/strong\u003etells me that we should be expecting issues focusing on each of Arcade\u0026rsquo;s 16 battle royale contestants which is good - a lot of them look unfamiliar and I\u0026rsquo;m not sure whether this is their first series. This issue focuses on Deathlocket, who\u0026rsquo;s apprently the daughter of the guy who invents the Deathloks. We also get another death in this issue, but it\u0026rsquo;s one of the new kids and feels a bit like a throwaway. I\u0026rsquo;m still iffy on this series, but let\u0026rsquo;s see where Hopeless takes it.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m kind of \u0026ldquo;meh\u0026rdquo; overall on the last three books I\u0026rsquo;m reviewing, they haven\u0026rsquo;t really wowed me so far.\u003cstrong\u003e Cable and X-Force #2 \u003c/strong\u003egives us a more solid look and what\u0026rsquo;s going on and how their team came together, but we still have no idea how they got to the point where the Uncanny Avengers needed to be taking them in. Cable is apparently having prophetic visions of disaster and supposedly this is going to lead the team to more shenanigans. \u003cstrong\u003eThunderbolts #2 \u003c/strong\u003efollows a mostly boring first issue, but gives us a better idea of the kind of missions Ross has in mind for his team. The artwork isn\u0026rsquo;t the best, it seems like the artist is using the same outlines for every unmasked face; there\u0026rsquo;s a panel where Ross just looks like Punisher (in the same panel) except painted red. This is my first time with Steve Dillon\u0026rsquo;s work and I\u0026rsquo;m not impressed. \u003cstrong\u003eX-Men Legacy #3\u003c/strong\u003e kinda feels like the writer Simon Spurrier is tripping with us a bit but at least he\u0026rsquo;s bringing some perspective to what it\u0026rsquo;s like to be David Haller. I\u0026rsquo;m looking forward to the next issue where he actually interacts with some X-Men! I get that the book is supposed to be Legion-focused but still, it\u0026rsquo;s X-Men Legacy, not Legion Legacy.\u003c/p\u003e\n\u003cp\u003eThat\u0026rsquo;s it for Marvel NOW! Next: DC and Image.\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s \u0026ldquo;Last Week in Marvel NOW!\u0026rdquo; since this is going up on Sunday/Monday. And what a lot of Marvel NOW! we got, since many of the top titles are double shipping this month. Hopefully the schedule normalizes back to monthlies soon, I\u0026rsquo;m already reading far too many books as it is! (Well, that\u0026rsquo;s kind of a good problem to have right?) Luckily Marvel only has two books coming out on Christmas week, gives me some time to catch up.",
+            "date_published": "2012-12-23T16:57:53+00:00",
+            "date_modified": "2020-09-26T21:46:53+08:00",
+            "section": "post",
+            "source_path": "post/2012/12/last-week-in-marvel-now-avengers-thor-all-new-x-men-and-others/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/282892823555080192/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/128572420635591"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/random-story-time/",
+            "url": "https://mirror.roytang.net/2012/12/random-story-time/",
+            "path": "/2012/12/random-story-time/",
+            "title": "Random story time",
+            "content_html": "\u003cp\u003eFor some reason I remembered today this D\u0026amp;D roleplaying session with some people a while back (I wasn\u0026rsquo;t participating, just observing). The party had come into a village tavern looking for information, and there was this tavern wench who was acting a bit suspiciously in their eyes. As she exited the main tavern room (presumably to get more ale or whatever), one of the party members who for some reason was armed with a pitchfork declared that he would stop her from leaving the room by throwing the pitchfork in her path. A couple of disastrous rolls later and the tavern wench had died from a thrown pitchfork. Things escalated quickly and soon the party was holding the tavern patrons hostage inside the building as the local watch was trying to get in. The D\u0026amp;D session didn\u0026rsquo;t last long as I recall. Fun times!\u003c/p\u003e",
+            "summary": "For some reason I remembered today this D\u0026amp;D roleplaying session with some people a while back (I wasn\u0026rsquo;t participating, just observing). The party had come into a village tavern looking for information, and there was this tavern wench who was acting a bit suspiciously in their eyes. As she exited the main tavern room (presumably to get more ale or whatever), one of the party members who for some reason was armed with a pitchfork declared that he would stop her from leaving the room by throwing the pitchfork in her path.",
+            "date_published": "2012-12-23T15:47:22+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2012/12/38630074013/index.md"
+            
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/38630074013/random-story-time"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/282875053421510656/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7ks0en/",
+            "url": "https://mirror.roytang.net/2012/12/c7ks0en/",
+            "path": "/2012/12/c7ks0en/",
+            "title": "",
+            "content_html": "\u003cp\u003eThat\u0026rsquo;s like 12 H\u0026rsquo;s!\u003c/p\u003e\n",
+            "summary": "That\u0026rsquo;s like 12 H\u0026rsquo;s!",
+            "date_published": "2012-12-23T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7ks0en/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Games/comments/159xkx/thq_owes_45_million_to_wwe_unsecured_creditor/c7ks0en/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7ksbdz/",
+            "url": "https://mirror.roytang.net/2012/12/c7ksbdz/",
+            "path": "/2012/12/c7ksbdz/",
+            "title": "",
+            "content_html": "\u003cp\u003eNah, I feel that way too. This year\u0026rsquo;s sale isn\u0026rsquo;t too exciting really. Or maybe it\u0026rsquo;s just that there aren\u0026rsquo;t many games I\u0026rsquo;d want to buy anymore.\u003c/p\u003e\n\u003cp\u003eI miss those great achievement hunts they used to have.\u003c/p\u003e\n",
+            "summary": "Nah, I feel that way too. This year\u0026rsquo;s sale isn\u0026rsquo;t too exciting really. Or maybe it\u0026rsquo;s just that there aren\u0026rsquo;t many games I\u0026rsquo;d want to buy anymore.\nI miss those great achievement hunts they used to have.",
+            "date_published": "2012-12-23T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7ksbdz/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Games/comments/15adqp/steam_holiday_sale_day_3/c7ksbdz/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7ksedh/",
+            "url": "https://mirror.roytang.net/2012/12/c7ksedh/",
+            "path": "/2012/12/c7ksedh/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhy is \u0026ldquo;Supervisor\u0026rdquo; in quotes?\u003c/p\u003e\n\u003cp\u003eAny interesting tales of debauchery on the job?\u003c/p\u003e\n",
+            "summary": "Why is \u0026ldquo;Supervisor\u0026rdquo; in quotes?\nAny interesting tales of debauchery on the job?",
+            "date_published": "2012-12-23T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7ksedh/index.md"
+            , "tags": ["IAmA"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/IAmA/comments/15aefi/ima_former_call_center_supervisor_for_one_of_the/c7ksedh/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/c7ksl8f/",
+            "url": "https://mirror.roytang.net/2012/12/c7ksl8f/",
+            "path": "/2012/12/c7ksl8f/",
+            "title": "",
+            "content_html": "\u003cp\u003eI don\u0026rsquo;t know why I still read Newsarama, I hate these slideshow format things they have.\u003c/p\u003e\n",
+            "summary": "I don\u0026rsquo;t know why I still read Newsarama, I hate these slideshow format things they have.",
+            "date_published": "2012-12-23T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/c7ksl8f/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/15arh8/10_things_newsarama_doesnt_like_about_marvel_now/c7ksl8f/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/15a4a2/",
+            "url": "https://mirror.roytang.net/2012/12/15a4a2/",
+            "path": "/2012/12/15a4a2/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-ripad-simple-questionsending-textlinks-between-ipadpchttpsredditcomripadcomments15a4a2simple_questionsending_textlinks_between_ipadpc\"\u003ePosted on r/ipad: \u003ca href=\"https://reddit.com/r/ipad/comments/15a4a2/simple_questionsending_textlinks_between_ipadpc/\"\u003eSimple question\u0026hellip;sending text/links between ipad/pc\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eIs there something that makes this easy? Like say I\u0026rsquo;m browsing something on my PC and I see an image that could be a good ipad wallpaper so I want to send it to my ipad somehow. Or maybe I see something on my ipad and think \u0026ldquo;I want to view this on my desktop\u0026rdquo; so I want to send the link there. I don\u0026rsquo;t want to have to do something like send it out via an email, I\u0026rsquo;m hoping /r/ipad has some sort of mindblowing magic for me.\u003c/p\u003e\n\u003cp\u003eEdit: probably should have mentioned i dont use a mac\u003c/p\u003e\n",
+            "summary": "Posted on r/ipad: Simple question\u0026hellip;sending text/links between ipad/pc Is there something that makes this easy? Like say I\u0026rsquo;m browsing something on my PC and I see an image that could be a good ipad wallpaper so I want to send it to my ipad somehow. Or maybe I see something on my ipad and think \u0026ldquo;I want to view this on my desktop\u0026rdquo; so I want to send the link there.",
+            "date_published": "2012-12-22T22:39:36+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/15a4a2/index.md"
+            , "tags": ["ipad"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/ipad/comments/15a4a2/simple_questionsending_textlinks_between_ipadpc/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/15a309/",
+            "url": "https://mirror.roytang.net/2012/12/15a309/",
+            "path": "/2012/12/15a309/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rphilippines-what-is-this-facundo-meme-supposed-to-be-abouthttpsredditcomrphilippinescomments15a309what_is_this_facundo_meme_supposed_to_be_about\"\u003ePosted on r/Philippines: \u003ca href=\"https://reddit.com/r/Philippines/comments/15a309/what_is_this_facundo_meme_supposed_to_be_about/\"\u003eWhat is this \u0026ldquo;Facundo\u0026rdquo; meme supposed to be about?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eI\u0026rsquo;ve seen them in a few places, the one with the blond girl acting all haughty.\u003c/p\u003e\n",
+            "summary": "Posted on r/Philippines: What is this \u0026ldquo;Facundo\u0026rdquo; meme supposed to be about? I\u0026rsquo;ve seen them in a few places, the one with the blond girl acting all haughty.",
+            "date_published": "2012-12-22T21:56:25+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/15a309/index.md"
+            , "tags": ["philippines"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Philippines/comments/15a309/what_is_this_facundo_meme_supposed_to_be_about/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/12/282485679643058177/",
+            "url": "https://mirror.roytang.net/2012/12/282485679643058177/",
+            "path": "/2012/12/282485679643058177/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/ZacharyLevi/\"\u003e@ZacharyLevi\u003c/a\u003e would you prefer playing Fandral in Thor 2, or Star Lord in Guardians of the Galaxy?\u003c/p\u003e\n",
+            "summary": "@ZacharyLevi would you prefer playing Fandral in Thor 2, or Star Lord in Guardians of the Galaxy?",
+            "date_published": "2012-12-22T14:00:09+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/12/282485679643058177.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/282485679643058177/"}]
             
             
             }
