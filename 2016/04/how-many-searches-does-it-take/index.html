@@ -146,7 +146,7 @@
 <blockquote>
 <p><a href="https://www.quora.com/How-many-searches-does-it-take-on-average-to-find-a-row-when-not-indexed-in-MySQL-database/answer/Roy-Tang">How many searches does it take on average to find a row when not indexed in MySQL database?</a></p>
 </blockquote>
-<p><span class="ui_qtext_rendered_qtext"><p class="ui_qtext_para u-ltr u-text-align--start">When there is no index in use, you are essentially performing a sequential search (iterating through each row and testing it to see if it matches your criteria), which means the search performs at O(n). If you limit your results to the first hit (using TOP 1 as pointed out by Scott Berry), the average number of checks is n/2 where n is the total size of the sample set. If there is no limit, the average number of checks is n (since you check all rows)</p></span></p>
+<p>When there is no index in use, you are essentially performing a sequential search (iterating through each row and testing it to see if it matches your criteria), which means the search performs at O(n). If you limit your results to the first hit (using TOP 1 as pointed out by Scott Berry), the average number of checks is n/2 where n is the total size of the sample set. If there is no limit, the average number of checks is n (since you check all rows)</p>
 
 
 
@@ -364,7 +364,7 @@ Also on:
     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
     
     <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
-        Last modified at: 2020 03 26 15:19:51.
+        Last modified at: 2021 03 22 23:22:13.
         
         <a href='https://github.com/roytang/blog/tree/master/content/notes/2016/04/how-many-searches-does-it-take.md' title='source file'>Source file</a>
         

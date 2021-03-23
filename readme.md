@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [22 Mar 2021 9:36am](https://mirror.roytang.net/2021/03/1373931556079759363/): @paulcatiang @miithinks https://www.philstar.com/headlines/2021/03/22/2086189/ncr-plus-messaging-unclear-pnp-says-tourism-allowed-palace-says-stay-home
+- [22 Mar 2021 7:12am](https://mirror.roytang.net/2021/03/1373895279812911104/): @paulcatiang Wait so there&rsquo;s no free movement even within the &ldquo;bubble&rdquo;?
 - [21 Mar 2021 1:51pm](https://mirror.roytang.net/2021/03/1373633368936620036/): now that people know who both thanos and darkseid are, it’s time to bring back the greatest parody comic of all time
 - [21 Mar 2021 9:10am](https://mirror.roytang.net/2021/03/1373562580375986178/): PH quarantine levels:
   Extremely Confusing Quarantine
@@ -37,8 +39,6 @@ Latest notes:
   Medyo Generally Confusing Quarantine ver 1.1.1.1 FINAL FINAL NA TALAGA
   
 - [21 Mar 2021 6:56am](https://mirror.roytang.net/2021/03/1373528862726885377/): I&rsquo;ve got to get better at marking funny things I read on Twitter so I can reference them later
-- [19 Mar 2021 7:13am](https://mirror.roytang.net/2021/03/c6152994fa5ddf4b9c3302bcddfdd699/): Bond movie no. 4: Thunderball (1965). This is the first one I didn&rsquo;t like very much. Too many boring/confusing underwater parts. There&rsquo;s a jetpack! Wasn&rsquo;t there an atomic bomb aboard that boat when it exploded? And did they just leave the guy who helped Domino escape floating alone in the ocean?
-- [18 Mar 2021 8:43am](https://mirror.roytang.net/2021/03/1372468780039688193/): @paulcatiang might be a while before I consider the other books in the trilogy haha
 
 [View all notes](https://mirror.roytang.net/notes)
 

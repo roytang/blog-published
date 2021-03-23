@@ -27,7 +27,7 @@
 
 - [](/2017/01/how-important-is-being-able-to/)
 
-- [](/2017/01/span-class-ui-qtext-rendered/)
+- [](/2017/01/why-are-there-some-genius-like/)
 
 - [](/2016/10/why-do-software-engineer-need/)
 
@@ -81,7 +81,7 @@
 
 - [](/2016/07/which-philippines-city-s-call/)
 
-- [](/2016/07/span-class-ui-qtext-rendered/)
+- [](/2016/07/how-do-i-become-the-best-in-everything-ever/)
 
 - [](/2016/07/what-i-should-do-when-i-am-fee/)
 
@@ -153,11 +153,11 @@
 
 - [](/2016/06/i-do-work-as-android-developer/)
 
-- [](/2016/06/span-class-ui-qtext-rendered/)
-
 - [](/2016/06/what-do-web-developers-mean-wh/)
 
 - [](/2016/06/why-are-some-people-scared-of/)
+
+- [](/2016/06/why-cant-the-world-have-a-universal-language/)
 
 - [](/2016/06/why-is-much-of-the-game-indust/)
 
@@ -231,9 +231,9 @@
 
 - [](/2016/05/how-do-people-scoring-high-on/)
 
-- [](/2016/05/span-class-ui-qtext-rendered/)
-
 - [](/2016/05/what-is-the-mindset-that-every/)
+
+- [](/2016/05/which-are-the-most-important-3-skills/)
 
 - [](/2016/04/what-were-the-reasons-for-the/)
 
@@ -371,7 +371,7 @@
 
 - [](/2016/04/how-do-you-figure-out-the-valu/)
 
-- [](/2016/04/span-class-ui-qtext-rendered/)
+- [](/2016/04/my-boss-invited-all-of-us/)
 
 - [](/2016/04/how-can-you-overcome-the-fear/)
 
@@ -523,11 +523,11 @@
 
 - [](/2016/03/why-do-people-around-me-seem-s/)
 
+- [](/2016/03/how-do-i-become-an-excellent-orator/)
+
 - [](/2016/03/i-was-just-promoted-to-a-senio/)
 
 - [](/2016/03/should-we-literally-live-every/)
-
-- [](/2016/03/span-class-ui-qtext-rendered/)
 
 - [](/2016/03/are-servlets-jsp-still-relevan/)
 
@@ -615,7 +615,7 @@
 
 - [](/2016/02/software-engineers-how-often/)
 
-- [](/2016/02/span-class-ui-qtext-rendered/)
+- [](/2016/02/what-are-things-i-should-do-every-day/)
 
 - [](/2016/02/what-jobs-can-one-get-as-a-ver/)
 
