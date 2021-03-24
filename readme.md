@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Zack Snyder&#39;s Justice League (aka The Snyder Cut) review](https://mirror.roytang.net/2021/03/zack-snyders-justice-league-aka-the-snyder-cut-review/)
 - [Weeknotes 2021-03-21](https://mirror.roytang.net/2021/03/weeknotes-2021-03-21/)
 - [2021 Site Update](https://mirror.roytang.net/2021/03/2021-site-update/)
 - [Book Review: Neuromancer by William Gibson](https://mirror.roytang.net/2021/03/book-review-neuromancer-by-william-gibson/)
 - [Alignment Shift: No Longer Lawful](https://mirror.roytang.net/2021/03/alignment-shift-no-longer-lawful/)
-- [Weeknotes 2021-03-14](https://mirror.roytang.net/2021/03/weeknotes-2021-03-14/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,16 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [23 Mar 2021 3:41pm](https://mirror.roytang.net/2021/03/1374385938273476623/): Why it&rsquo;s hard to trust either the Chinese government or Sinovac, exhibit 22,316
+Quoted rthk_enews&#39;s tweet:   The #HongKong government stops a doctor from giving out #COVID19 jabs after he allegedly told people that the BioNTech vaccine has a much better reputation than the one made by China&rsquo;s Sinovac. https://news.rthk.hk/rthk/en/component/k2/1582148-20210323.htm  
+- [23 Mar 2021 7:50am](https://mirror.roytang.net/2021/03/1374267414192353281/): Give people aid so they can stay at home, you cowards
+Quoted PhilippineStar&#39;s tweet:   READ: Amid rising COVID-19 cases, NEDA acting secretary @_karlchua says the issue now is the total health of the people, including hunger and other sickness apart from COVID-19. Localized lockdowns and managing risks should be the focus. | @maureensimeon  
+- [23 Mar 2021 7:39am](https://mirror.roytang.net/2021/03/1374264516414894085/): Whenever I deliver any software to clients I should go “Please enjoy the gifts from me, please make a commitment that you will take care of this code, you will take car of this database, you will take care of these bugs..”
+Quoted paulcatiang&#39;s tweet:   Managed to get the receipt for the crass display by @DOTrPH. Remember, the people&rsquo;s taxes paid for those and continue to put food on your tables, you ungrateful public servants.
 - [22 Mar 2021 9:36am](https://mirror.roytang.net/2021/03/1373931556079759363/): @paulcatiang @miithinks https://www.philstar.com/headlines/2021/03/22/2086189/ncr-plus-messaging-unclear-pnp-says-tourism-allowed-palace-says-stay-home
 - [22 Mar 2021 7:12am](https://mirror.roytang.net/2021/03/1373895279812911104/): @paulcatiang Wait so there&rsquo;s no free movement even within the &ldquo;bubble&rdquo;?
-- [21 Mar 2021 1:51pm](https://mirror.roytang.net/2021/03/1373633368936620036/): now that people know who both thanos and darkseid are, it’s time to bring back the greatest parody comic of all time
-- [21 Mar 2021 9:10am](https://mirror.roytang.net/2021/03/1373562580375986178/): PH quarantine levels:
-  Extremely Confusing Quarantine
-  Generally Confusing Quarantine
-  Medyo Generally Confusing Quarantine
-  Medyo Generally Confusing Quarantine ver 1.1.1.1 FINAL FINAL NA TALAGA
-  
-- [21 Mar 2021 6:56am](https://mirror.roytang.net/2021/03/1373528862726885377/): I&rsquo;ve got to get better at marking funny things I read on Twitter so I can reference them later
 
 [View all notes](https://mirror.roytang.net/notes)
 

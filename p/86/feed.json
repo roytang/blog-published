@@ -11,6 +11,113 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/12/47880549/",
+            "url": "https://mirror.roytang.net/2017/12/47880549/",
+            "path": "/2017/12/47880549/",
+            "title": "Marklogic Template Driven Extraction: How to define nullable in Javascript template?",
+            "content_html": "\u003cp\u003eHow to specify that a column in the schema should be nullable?\u003c/p\u003e\n\u003cp\u003eI tried adding a nullable attribute:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar myFirstTDE = xdmp.toJSON(\n  {\n    \u0026quot;template\u0026quot;: {\n      \u0026quot;context\u0026quot;: \u0026quot;/match\u0026quot;,\n      \u0026quot;collections\u0026quot;: [\u0026quot;source1\u0026quot;],\n      \u0026quot;rows\u0026quot;: [\n        {\n          \u0026quot;schemaName\u0026quot;: \u0026quot;soccer\u0026quot;,\n          \u0026quot;viewName\u0026quot;: \u0026quot;matches\u0026quot;,\n          \u0026quot;columns\u0026quot;: [\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;id\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;long\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;id\u0026quot;,\n              \u0026quot;nullable\u0026quot;: 0\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;document\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;docUri\u0026quot;\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;date\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;date\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;match-date\u0026quot;\n            },\n            {\n              \u0026quot;name\u0026quot;: \u0026quot;league\u0026quot;,\n              \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;,\n              \u0026quot;val\u0026quot;: \u0026quot;league\u0026quot;\n            }\n          ]\n        }\n      ]\n    }\n  }\n);\n\ntde.validate( \n  [myFirstTDE]\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBut this gave me a template error:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026quot;message\u0026quot;: \u0026quot;TDE-INVALIDTEMPLATENODE: Invalid extraction template node: fn:doc('')/template/array-node('rows')/object-node()/array-node('columns')/object-node()[1]/number-node('nullable')\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor a template defined using XQuery, adding nullable to the column works:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;column\u0026gt;\n  \u0026lt;name\u0026gt;ISSN\u0026lt;/name\u0026gt;\n  \u0026lt;scalar-type\u0026gt;string\u0026lt;/scalar-type\u0026gt;\n  \u0026lt;val\u0026gt;Journal/ISSN\u0026lt;/val\u0026gt;\n  \u0026lt;nullable\u0026gt;true\u0026lt;/nullable\u0026gt;\n\u0026lt;/column\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHow to do the same thing using JS/Json?\u003c/p\u003e\n",
+            "summary": "How to specify that a column in the schema should be nullable?\nI tried adding a nullable attribute:\nvar myFirstTDE = xdmp.toJSON( { \u0026quot;template\u0026quot;: { \u0026quot;context\u0026quot;: \u0026quot;/match\u0026quot;, \u0026quot;collections\u0026quot;: [\u0026quot;source1\u0026quot;], \u0026quot;rows\u0026quot;: [ { \u0026quot;schemaName\u0026quot;: \u0026quot;soccer\u0026quot;, \u0026quot;viewName\u0026quot;: \u0026quot;matches\u0026quot;, \u0026quot;columns\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;id\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;long\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;id\u0026quot;, \u0026quot;nullable\u0026quot;: 0 }, { \u0026quot;name\u0026quot;: \u0026quot;document\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;docUri\u0026quot; }, { \u0026quot;name\u0026quot;: \u0026quot;date\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;date\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;match-date\u0026quot; }, { \u0026quot;name\u0026quot;: \u0026quot;league\u0026quot;, \u0026quot;scalarType\u0026quot;: \u0026quot;string\u0026quot;, \u0026quot;val\u0026quot;: \u0026quot;league\u0026quot; } ] } ] } } ); tde.",
+            "date_published": "2017-12-19T05:31:56+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/47880549/index.md"
+            , "tags": ["javascript","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47880549/marklogic-template-driven-extraction-how-to-define-nullable-in-javascript-templ"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/47880549/marklogic-template-driven-extraction-how-to-define-nullable-in-javascript-templ",
+                    "source_file": "comment-20171219T075100-47882235.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/942824321055055872/",
+            "url": "https://mirror.roytang.net/2017/12/942824321055055872/",
+            "path": "/2017/12/942824321055055872/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/ohhhace/\"\u003e@ohhhace\u003c/a\u003e daily commute mo yan?\u003c/p\u003e\n",
+            "summary": "@ohhhace daily commute mo yan?",
+            "date_published": "2017-12-18T18:30:09+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/942824321055055872.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/942824321055055872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/10156270709908912/",
+            "url": "https://mirror.roytang.net/2017/12/10156270709908912/",
+            "path": "/2017/12/10156270709908912/",
+            "title": "",
+            "content_html": "\u003cp\u003ePSA: walang 4 cheese whopper sa burger king sa singapore\u003c/p\u003e\n",
+            "summary": "PSA: walang 4 cheese whopper sa burger king sa singapore",
+            "date_published": "2017-12-18T11:24:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/10156270709908912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156270709908912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/942640177050148864/",
+            "url": "https://mirror.roytang.net/2017/12/942640177050148864/",
+            "path": "/2017/12/942640177050148864/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/sehurlburt/\"\u003e@sehurlburt\u003c/a\u003e how do you feel about interviews where you dont have to code but you have to walk thru how you would solve a particular problem instead\u003c/p\u003e\n",
+            "summary": "@sehurlburt how do you feel about interviews where you dont have to code but you have to walk thru how you would solve a particular problem instead",
+            "date_published": "2017-12-18T06:18:26+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/942640177050148864.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/942640177050148864/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/941973396845244417/",
+            "url": "https://mirror.roytang.net/2017/12/941973396845244417/",
+            "path": "/2017/12/941973396845244417/",
+            "title": "",
+            "content_html": "\u003cp\u003eit took me forever to get to the root of this thread\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/walalangbored/status/941972113971228672'\u003ewalalangbored\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eMe in cebu: atay ka boring\u003c/p\u003e\n\u003cp\u003eMe in manila: The blood of lapu lapu flows through me and i have been touched by the Sto. Niño. Do not come at me with your inferior lechons for i have tasted the lechon of the gods. Yeah sex is good but have you heard of Sinulog? \u003ca href=\"https://twitter.com/jeaphernelia/status/941929657212870656\"\u003ehttps://twitter.com/jeaphernelia/status/941929657212870656\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "it took me forever to get to the root of this thread\nQuoted walalangbored\u0026#39;s tweet:   Me in cebu: atay ka boring\nMe in manila: The blood of lapu lapu flows through me and i have been touched by the Sto. Niño. Do not come at me with your inferior lechons for i have tasted the lechon of the gods. Yeah sex is good but have you heard of Sinulog?",
+            "date_published": "2017-12-16T10:08:53+00:00",
+            "date_modified": "2020-09-12T03:19:50+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/941973396845244417/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/941973396845244417/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/941968730849910784/",
+            "url": "https://mirror.roytang.net/2017/12/941968730849910784/",
+            "path": "/2017/12/941968730849910784/",
+            "title": "",
+            "content_html": "\u003cp\u003e4-4 matches 9-10 games Deadzzzz #gpsing #mtg at least i dont have to be eaely tmr\u003c/p\u003e\n",
+            "summary": "4-4 matches 9-10 games Deadzzzz #gpsing #mtg at least i dont have to be eaely tmr",
+            "date_published": "2017-12-16T09:50:21+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/941968730849910784.md"
+            , "tags": ["gpsing","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/941968730849910784/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/12/941952337928523776/",
             "url": "https://mirror.roytang.net/2017/12/941952337928523776/",
             "path": "/2017/12/941952337928523776/",
@@ -845,130 +952,6 @@
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BcYmnZLAV7P/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/938597972144803841/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156242365888912:0"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938408839078076416/",
-            "url": "https://mirror.roytang.net/2017/12/938408839078076416/",
-            "path": "/2017/12/938408839078076416/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/derektmead/\"\u003e@derektmead\u003c/a\u003e: I have been waiting weeks for this story, which has been months in the making, and I think it\u0026rsquo;s the funniest thing we\u0026rsquo;ve ev…\u003c/p\u003e\n",
-            "summary": "RT @derektmead: I have been waiting weeks for this story, which has been months in the making, and I think it\u0026rsquo;s the funniest thing we\u0026rsquo;ve ev…",
-            "date_published": "2017-12-06T14:04:36+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938408839078076416.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938408839078076416/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938408514011066369/",
-            "url": "https://mirror.roytang.net/2017/12/938408514011066369/",
-            "path": "/2017/12/938408514011066369/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/scalzi/\"\u003e@scalzi\u003c/a\u003e: Time chose correctly, and this is a very good article.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://time.com/time-person-of-the-year-2017-silence-breakers/\"\u003ehttps://time.com/time-person-of-the-year-2017-silence-breakers/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "RT @scalzi: Time chose correctly, and this is a very good article.\nhttps://time.com/time-person-of-the-year-2017-silence-breakers/",
-            "date_published": "2017-12-06T14:03:19+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938408514011066369.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938408514011066369/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/938088083005743104/",
-            "url": "https://mirror.roytang.net/2017/12/938088083005743104/",
-            "path": "/2017/12/938088083005743104/",
-            "title": "",
-            "content_html": "\u003cp\u003eI’d be more excited about this if I could actually finish megaman 9 and 10 lol\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/megaman/status/937762291415576576'\u003eMegaMan\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eGet equipped with Mega Man 11, coming to Switch, PS4, Xbox One, and PC in Late 2018! Watch the #MegaMan30 livestream at \u003ca href=\"http://twitch.tv/capcomunity!\"\u003ehttp://twitch.tv/capcomunity!\u003c/a\u003e\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/amplify_video/937682224186515457/vid/1280x720/22MEhyJf-3Rw7iOx.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "I’d be more excited about this if I could actually finish megaman 9 and 10 lol\nQuoted MegaMan\u0026#39;s tweet:   Get equipped with Mega Man 11, coming to Switch, PS4, Xbox One, and PC in Late 2018! Watch the #MegaMan30 livestream at http://twitch.tv/capcomunity!\nYour browser does not support the video tag.   ",
-            "date_published": "2017-12-05T16:50:02+00:00",
-            "date_modified": "2020-09-11T16:08:14+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/938088083005743104/index.md"
-            , "tags": ["megaman30"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/938088083005743104/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/937700734983966720/",
-            "url": "https://mirror.roytang.net/2017/12/937700734983966720/",
-            "path": "/2017/12/937700734983966720/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf someone is rude to you, don\u0026rsquo;t get mad. Just imagine na baka natatae na sya\u003c/p\u003e\n",
-            "summary": "If someone is rude to you, don\u0026rsquo;t get mad. Just imagine na baka natatae na sya",
-            "date_published": "2017-12-04T15:10:51+00:00",
-            "date_modified": "2021-01-17T09:45:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/937700734983966720/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/937700734983966720/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156235301498912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20171204-000000-18ea0060-836e-4dd1-bddf-8f1bc21001e9.json"
-                }, { 
-                    "url": "https://www.facebook.com/aj.sahagun",
-                    "source_file": "comment-20171205-000001-82bc4cdb-27dc-43af-b2b1-e18a96217a7b.json"
-                }, { 
-                    "url": "https://www.facebook.com/karlvin.listana",
-                    "source_file": "comment-20171205-000002-b768f6b2-6b23-46b9-9b4f-0031e0f8c939.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/936791566928060417/",
-            "url": "https://mirror.roytang.net/2017/12/936791566928060417/",
-            "path": "/2017/12/936791566928060417/",
-            "title": "",
-            "content_html": "\u003cp\u003eAgents of SHIELD came back with no fucks to give and pulling all the strings ready to prove that they deserve to be on air. Fuck yes. #agentsofshield\u003c/p\u003e\n",
-            "summary": "Agents of SHIELD came back with no fucks to give and pulling all the strings ready to prove that they deserve to be on air. Fuck yes. #agentsofshield",
-            "date_published": "2017-12-02T02:58:08+00:00",
-            "date_modified": "2020-09-11T21:37:27+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/936791566928060417/index.md"
-            , "tags": ["agentsofshield"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/jemsfitz/statuses/936791566928060417/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/936643979822505984/",
-            "url": "https://mirror.roytang.net/2017/12/936643979822505984/",
-            "path": "/2017/12/936643979822505984/",
-            "title": "",
-            "content_html": "\u003cp\u003eNew startup idea: I read, watch, play, study, write, draw, and create whatever I want, whenever I want. How do I get funded?\u003c/p\u003e\n",
-            "summary": "New startup idea: I read, watch, play, study, write, draw, and create whatever I want, whenever I want. How do I get funded?",
-            "date_published": "2017-12-01T17:11:41+00:00",
-            "date_modified": "2021-01-17T09:45:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/936643979822505984/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/936643979822505984/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156227735193912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/profile.php",
-                    "source_file": "comment-20171202-000000-eda2cb27-0fef-4fa5-91e4-50f7a887a213.json"
-                }, { 
-                    "url": "https://www.facebook.com/jose.zapatos.9",
-                    "source_file": "comment-20171204-000001-596f89fd-bb34-4317-af77-f54d9c434f1f.json"
-                }, { 
-                    "url": "https://www.facebook.com/jose.zapatos.9",
-                    "source_file": "comment-20171204-000320-aff8ad45-3efe-45e2-b107-3c0a2ffec66f.json"
-                }
-            ]
             }
         
     ]
