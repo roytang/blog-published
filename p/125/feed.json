@@ -11,6 +11,147 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/09/781333334580269056/",
+            "url": "https://mirror.roytang.net/2016/09/781333334580269056/",
+            "path": "/2016/09/781333334580269056/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-09-29T03:22:38+00:00",
+            "date_modified": "2020-08-28T19:56:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/09/781333334580269056/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/781333334580269056/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/type-interfaces-matter/",
+            "url": "https://mirror.roytang.net/2016/09/type-interfaces-matter/",
+            "path": "/2016/09/type-interfaces-matter/",
+            "title": "Type Interfaces Matter",
+            "content_html": "\u003cp\u003e\u0026hellip; especially for strongly-typed languages.\u003c/p\u003e\n\u003cp\u003eIn one of the bigger Java projects that I took over, I was often annoyed to find some devs had written method signatures like\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003epublic void doTheThing(HashMap\u0026lt;K, V\u0026gt; params)\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhich is silly \u0026ndash; not because of the naming, that\u0026rsquo;s obviously not a real-world function name. The silly part is requiring a particular implementation (HashMap) instead of the generic interface (Map). It unnecessarily restricts your API and makes it less flexible. Unless your function specifically cares about the hashing part, there\u0026rsquo;s no reason the parameter isn\u0026rsquo;t a Map instead\u003c/p\u003e\n\u003cp\u003eSince most Java libraries will perform proper encapsulation and give you a generic Map type, it adds some mismatch when you have to plug one of those types into your function; one would need to instantiate a new HashMap and copy the contents of the generic Map into it so that your function accepts it\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eUse the generic interface as much as possible! Use the specific implementation type only when instantiating!\u003c/strong\u003e\u003c/p\u003e\n",
+            "summary": "\u0026hellip; especially for strongly-typed languages.\nIn one of the bigger Java projects that I took over, I was often annoyed to find some devs had written method signatures like\n public void doTheThing(HashMap\u0026lt;K, V\u0026gt; params)\n Which is silly \u0026ndash; not because of the naming, that\u0026rsquo;s obviously not a real-world function name. The silly part is requiring a particular implementation (HashMap) instead of the generic interface (Map). It unnecessarily restricts your API and makes it less flexible.",
+            "date_published": "2016-09-29T01:30:42+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/09/type-interfaces-matter/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/151079461050/type-interfaces-matter"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/781306007297417216/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/bk6jrucbo-l/",
+            "url": "https://mirror.roytang.net/2016/09/bk6jrucbo-l/",
+            "path": "/2016/09/bk6jrucbo-l/",
+            "title": "",
+            "content_html": "\u003cp\u003eLeonardo #sketchdaily\u003c/p\u003e\n",
+            "summary": "Leonardo #sketchdaily",
+            "date_published": "2016-09-28T10:47:09+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/09/BK6JRUCBo-l/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BK6JRUCBo-l/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/151061293345/leonardo-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/781188560347140097/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154947955153912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/bk55rmvbqrp/",
+            "url": "https://mirror.roytang.net/2016/09/bk55rmvbqrp/",
+            "path": "/2016/09/bk55rmvbqrp/",
+            "title": "",
+            "content_html": "\u003cp\u003eUndefeated streak at Pop quiz continues!\u003c/p\u003e\n",
+            "summary": "Undefeated streak at Pop quiz continues!",
+            "date_published": "2016-09-28T08:30:55+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/09/BK55rmVBqrp/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BK55rmVBqrp/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/781154265465257984/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154947955153912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/bk4gtc8hr9m/",
+            "url": "https://mirror.roytang.net/2016/09/bk4gtc8hr9m/",
+            "path": "/2016/09/bk4gtc8hr9m/",
+            "title": "",
+            "content_html": "\u003cp\u003eWindmill #sketchdaily\u003c/p\u003e\n",
+            "summary": "Windmill #sketchdaily",
+            "date_published": "2016-09-27T19:33:29+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/09/BK4gtc8hR9M/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BK4gtc8hR9M/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/780958615733669888/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/780795949912162304/",
+            "url": "https://mirror.roytang.net/2016/09/780795949912162304/",
+            "path": "/2016/09/780795949912162304/",
+            "title": "",
+            "content_html": "\u003cp\u003eReading comments on news article about Duterte saying US undermining PHL/manipulating peso depreciation when I see: SADAM JOSE.\u003c/p\u003e\n",
+            "summary": "Reading comments on news article about Duterte saying US undermining PHL/manipulating peso depreciation when I see: SADAM JOSE.",
+            "date_published": "2016-09-27T15:47:15+00:00",
+            "date_modified": "2020-08-28T19:56:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/09/780795949912162304/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/780795949912162304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/lying-and-salesmanship/",
+            "url": "https://mirror.roytang.net/2016/09/lying-and-salesmanship/",
+            "path": "/2016/09/lying-and-salesmanship/",
+            "title": "Lying and Salesmanship",
+            "content_html": "\u003cp\u003eA \u003ca href=\"http://waitbutwhy.com/table/when-is-it-okay-to-lie\"\u003erecent post on Wait But Why\u003c/a\u003e had me thinking about lying.\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#156762f0f0b6c5bc30c13dd9e7093048-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/09/lying-and-salesmanship/lying_hu5e2a1ce206cfbe1292a2aa426385ba8c_223279_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"156762f0f0b6c5bc30c13dd9e7093048-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/09/lying-and-salesmanship/lying.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"27 Sep 2016 1:30am\"\u003e27 Sep 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eSome people will scoff if I say I don\u0026rsquo;t lie. They\u0026rsquo;re not wrong. I once spun a tall tale about a childhood rival I had visited in the province who challenged me to a swimming contest to explain \u003ca href=\"/2004/11/my-eyeglasses-belong-to-the-sea/\"\u003ewhy I had lost my glasses to the sea\u003c/a\u003e. The lie was so good, I got a follow-up question about it a year later and was so surprised I just blurted out that my rival died in accident before finally admitting to the fib\u003c/p\u003e\n\u003cp\u003eBut I will intentionally lie often only for fun or mischief, or in the rare case, to protect someone or avoid some problem or injustice. Even for that last scenario I will try to avoid it as much as possible. I am more likely to stay quiet or avoid discussion or maybe even stretch the truth a bit to \u0026ldquo;technically correct\u0026rdquo;, but I try to avoid any outright falsehoods unless absolutely necessary\u003c/p\u003e\n\u003cp\u003eFor this same reason, I kind of have the same aversion to any form of salesmanship, although I am occasionally told that I am good at writing copy. At work I was sometimes asked to write some response to questions in a tender that would be less than honest.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u0026ldquo;We don\u0026rsquo;t have this feature, how should I respond?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Just say we have it.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;But we don\u0026rsquo;t. How about I just write that this feature will be available?\u0026rdquo;\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eYou can see the use of optimistic future tense to stretch the truth a bit. At one point a higher-up even told me that all the other suppliers do that to, as if that justifies it. Being asked to outright be dishonest was stressful for me at best so I later on learned to avoid such tasks altogether.\u003c/p\u003e\n\u003cp\u003eI understand that not all salesmanship is dishonest and that not all salesmen are scammers looking to sell snake oil. But we basically live in a world that is caveat emptor don\u0026rsquo;t we? I feel like those salesmen who are honestly just extolling the virtues of their wares are the exception rather than the norm.\u003c/p\u003e\n\u003cp\u003eI recognize the need for salesmanship as a skill in everyday life, although younger me would have scoffed at that idea, believing that things should be judged solely on their merits. But merits aren\u0026rsquo;t always obvious, and you still need some level of presentation and good communication skills to push your ideas and merits forward.  I\u0026rsquo;m fine with that I guess, as long as we try to keep things honest.\u003c/p\u003e\n",
+            "summary": "A recent post on Wait But Why had me thinking about lying.\n  (Click to view full-size)    \n27 Sep 2016 1:30amClose   Some people will scoff if I say I don\u0026rsquo;t lie. They\u0026rsquo;re not wrong. I once spun a tall tale about a childhood rival I had visited in the province who challenged me to a swimming contest to explain why I had lost my glasses to the sea.",
+            "date_published": "2016-09-27T01:30:41+00:00",
+            "date_modified": "2021-01-25T07:34:22+08:00",
+            "section": "post",
+            "source_path": "post/2016/09/lying-and-salesmanship/index.md"
+            , "tags": ["Opinions"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/150987667115/lying-and-salesmanship"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/780581915728482304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/09/10154942118908912/",
+            "url": "https://mirror.roytang.net/2016/09/10154942118908912/",
+            "path": "/2016/09/10154942118908912/",
+            "title": "",
+            "content_html": "\u003cp\u003eIf you send me a friend request anywhere and I don\u0026rsquo;t recognize you or your username, might be a good idea to PM me with an explanation\u003c/p\u003e\n",
+            "summary": "If you send me a friend request anywhere and I don\u0026rsquo;t recognize you or your username, might be a good idea to PM me with an explanation",
+            "date_published": "2016-09-26T23:16:00+00:00",
+            "date_modified": "2019-09-28T20:36:05+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/09/10154942118908912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154942118908912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20160927-000000-2e7f186a-1e39-43a8-aadb-6099e47bea01.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/09/780379873617424384/",
             "url": "https://mirror.roytang.net/2016/09/780379873617424384/",
             "path": "/2016/09/780379873617424384/",
@@ -754,162 +895,6 @@
             "source_path": "notes/2016/09/779007968008286208.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/779007968008286208/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778903700802633728/",
-            "url": "https://mirror.roytang.net/2016/09/778903700802633728/",
-            "path": "/2016/09/778903700802633728/",
-            "title": "",
-            "content_html": "\u003cp\u003eLooking at my Gmail\u0026rsquo;s spam folder, roughly half of them came in via my Yahoo account =/\u003c/p\u003e\n",
-            "summary": "Looking at my Gmail\u0026rsquo;s spam folder, roughly half of them came in via my Yahoo account =/",
-            "date_published": "2016-09-22T10:28:08+00:00",
-            "date_modified": "2019-09-26T19:12:59+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778903700802633728.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778903700802633728/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154930066913912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/bkqg0zzb4sy/",
-            "url": "https://mirror.roytang.net/2016/09/bkqg0zzb4sy/",
-            "path": "/2016/09/bkqg0zzb4sy/",
-            "title": "",
-            "content_html": "\u003cp\u003ePumpkin spies #sketchdaily\u003c/p\u003e\n",
-            "summary": "Pumpkin spies #sketchdaily",
-            "date_published": "2016-09-22T09:05:07+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/09/BKqg0zZB4SY/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BKqg0zZB4SY/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/150777074560/pumpkin-spies-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/778988993987739649/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154930867308912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778800651392262144/",
-            "url": "https://mirror.roytang.net/2016/09/778800651392262144/",
-            "path": "/2016/09/778800651392262144/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SuperficialGZT/\"\u003e@SuperficialGZT\u003c/a\u003e wag nyo na lang replyan mga ganyan, hayaan nyo sila magtaka ano yung satire :p\u003c/p\u003e\n",
-            "summary": "@SuperficialGZT wag nyo na lang replyan mga ganyan, hayaan nyo sila magtaka ano yung satire :p",
-            "date_published": "2016-09-22T03:38:39+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778800651392262144.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778800651392262144/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/overhead-scales-up-rapidly-in-software-projects/",
-            "url": "https://mirror.roytang.net/2016/09/overhead-scales-up-rapidly-in-software-projects/",
-            "path": "/2016/09/overhead-scales-up-rapidly-in-software-projects/",
-            "title": "Overhead scales up rapidly in software projects",
-            "content_html": "\u003cp\u003eOverhead scale up rapidly as project team size increases. Every time you add a new person to the team, he comes with a lot of overhead such as the need to learn the project details, responsibilities of other team members, who to consult when there\u0026rsquo;s trouble, custom project procedures, and so on\u003c/p\u003e\n\u003cp\u003eIt\u0026rsquo;s a reinforcing cycle too. As overhead increases, the team imposes more processes and restrictions to make sure everyone is doing the right thing and there are no screw-ups. More processes means even greater overhead when new team members join. And the cycle repeats\u003c/p\u003e\n\u003cp\u003eAs team size increases, mistakes become more costly too. When you\u0026rsquo;re a team of two or three developers all in the same room, you can barrel ahead quickly and when there\u0026rsquo;s a problem you can quickly figure out who broke the build. But when there\u0026rsquo;s like eighty of you split over two floors, it becomes a tedious exercise. And every broken build and every critical bug now costs a lot more man-hours because it affects a lot more people. So everybody needs to be even more careful, and yeap even more overhead. You end up introducing more coordinators, reviewers, etc.\u003c/p\u003e\n\u003cp\u003eIn so many words, the above is simply a restatement of the famous \u0026ldquo;Mythical man-month\u0026rdquo; quote:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAdding more people to a late project makes it even later\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eIn practice though, I find that people who are aware of this quote find themselves falling into the trap of \u0026ldquo;this won\u0026rsquo;t happen to me\u0026rdquo;, so a more nuanced discussion of the problems of scale might need to be had. Management typically responds more to qualitative costs, so maybe there are some metrics that you team could find? Something like \u0026ldquo;for every N developers, we need an additional X amount of coordination work\u0026rdquo; and so on\u003c/p\u003e\n\u003cp\u003eOr maybe it\u0026rsquo;s one of those myths we are doomed to relive again and again\u0026hellip;\u003c/p\u003e\n",
-            "summary": "Overhead scale up rapidly as project team size increases. Every time you add a new person to the team, he comes with a lot of overhead such as the need to learn the project details, responsibilities of other team members, who to consult when there\u0026rsquo;s trouble, custom project procedures, and so on\nIt\u0026rsquo;s a reinforcing cycle too. As overhead increases, the team imposes more processes and restrictions to make sure everyone is doing the right thing and there are no screw-ups.",
-            "date_published": "2016-09-22T01:30:22+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2016/09/overhead-scales-up-rapidly-in-software-projects/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/150752272600/overhead-scales-up-rapidly-in-software-projects"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/778768860925362176/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778603832196501504/",
-            "url": "https://mirror.roytang.net/2016/09/778603832196501504/",
-            "path": "/2016/09/778603832196501504/",
-            "title": "",
-            "content_html": "\u003cp\u003eIs there a word for picking up a new thing and never being happy with the level of your output?\u003c/p\u003e\n",
-            "summary": "Is there a word for picking up a new thing and never being happy with the level of your output?",
-            "date_published": "2016-09-21T14:36:34+00:00",
-            "date_modified": "2021-01-18T16:43:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778603832196501504/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778603832196501504/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154927854518912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/oliver.quiray",
-                    "source_file": "comment-20160921-000000-0a4330b1-beee-45c5-8f29-c7613c3509f6.json"
-                }, { 
-                    "url": "https://www.facebook.com/niawdeleon",
-                    "source_file": "comment-20160921-000001-ad652eaa-b82a-4b8f-9b4e-971d17acf08a.json"
-                }, { 
-                    "url": "https://www.facebook.com/ej.tumaneng",
-                    "source_file": "comment-20160921-000002-6ba85fca-591b-434c-90f3-10502d0daa29.json"
-                }, { 
-                    "url": "https://www.facebook.com/ritchie.tiongson",
-                    "source_file": "comment-20160923-000003-c71579e4-e364-4c62-8ef3-a4fb8589a5ec.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20160923-000004-5df01bf4-aacf-426f-be2a-7f9b607b7c21.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20160923-000640-3df8972b-60a7-420b-92ee-198255b2f960.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/bknxp2-bzts/",
-            "url": "https://mirror.roytang.net/2016/09/bknxp2-bzts/",
-            "path": "/2016/09/bknxp2-bzts/",
-            "title": "",
-            "content_html": "\u003cp\u003eCampfire #sketchdaily\u003c/p\u003e\n",
-            "summary": "Campfire #sketchdaily",
-            "date_published": "2016-09-21T07:30:54+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/09/BKnxP2-BZtS/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BKnxP2-BZtS/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/150727917380/campfire-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/778602448005033984/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154925411593912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/778475282315431936/",
-            "url": "https://mirror.roytang.net/2016/09/778475282315431936/",
-            "path": "/2016/09/778475282315431936/",
-            "title": "",
-            "content_html": "\u003cp\u003e@MtACast hiding behind a pillar is clearly in black\u0026rsquo;s color pie\u003c/p\u003e\n",
-            "summary": "@MtACast hiding behind a pillar is clearly in black\u0026rsquo;s color pie",
-            "date_published": "2016-09-21T06:05:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/09/778475282315431936.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/778475282315431936/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/09/10154925418168912/",
-            "url": "https://mirror.roytang.net/2016/09/10154925418168912/",
-            "path": "/2016/09/10154925418168912/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://www.facebook.com/690269563\"\u003eKarlvin King Listana\u003c/a\u003e is this true?\u003c/p\u003e\n",
-            "summary": "Karlvin King Listana is this true?",
-            "date_published": "2016-09-21T01:49:00+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/09/10154925418168912/index.md"
-            , "tags": ["timeline-photos"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154925418168912"}]
             
             
             }

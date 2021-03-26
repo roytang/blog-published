@@ -11,6 +11,158 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/08/893715886795661312/",
+            "url": "https://mirror.roytang.net/2017/08/893715886795661312/",
+            "path": "/2017/08/893715886795661312/",
+            "title": "",
+            "content_html": "\u003cp\u003eEvery part of the ACLU amicus brief in defense of John Oliver is amazing. Even the footnotes.\u003c/p\u003e\n\u003cp\u003eTruly, everyone is allowed to have dreams.\u003c/p\u003e\n",
+            "summary": "Every part of the ACLU amicus brief in defense of John Oliver is amazing. Even the footnotes.\nTruly, everyone is allowed to have dreams.",
+            "date_published": "2017-08-05T06:10:46+00:00",
+            "date_modified": "2020-07-14T05:17:24+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893715886795661312/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893715886795661312/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/45507423/",
+            "url": "https://mirror.roytang.net/2017/08/45507423/",
+            "path": "/2017/08/45507423/",
+            "title": "MarkLogic node.js - is it possible to support a derived value in parseBindings?",
+            "content_html": "\u003cp\u003eWe have a search application using MarkLogic node.js. We use parsedQuery like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e            qb.parsedFrom(prop.search, \n            qb.parseBindings(\n                qb.word('name', qb.bind('name')),\n                qb.word('birthdate', qb.bind('birthdate')),\n                qb.range('count', qb.datatype('float'), qb.bind('count'))\n            )\n        )\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly. We can\u0026rsquo;t store the age in the documents since the age changes depending on the current date.\u003c/p\u003e\n\u003cp\u003eIs this possible and if so, how? If it matters, we are using ML8\u003c/p\u003e\n",
+            "summary": "We have a search application using MarkLogic node.js. We use parsedQuery like this:\n qb.parsedFrom(prop.search, qb.parseBindings( qb.word('name', qb.bind('name')), qb.word('birthdate', qb.bind('birthdate')), qb.range('count', qb.datatype('float'), qb.bind('count')) ) )  The above currently supports search syntax like \u0026ldquo;count GT 50\u0026rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like \u0026ldquo;age GT 10\u0026rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly.",
+            "date_published": "2017-08-04T12:55:30+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/45507423/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
+                    "source_file": "comment-20170804T125909-45507502.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings",
+                    "source_file": "comment-20170807T174517-45552786.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893375729836056576/",
+            "url": "https://mirror.roytang.net/2017/08/893375729836056576/",
+            "path": "/2017/08/893375729836056576/",
+            "title": "",
+            "content_html": "\u003cp\u003eI don\u0026rsquo;t even have an optical drive anymore \u003ca href=\"https://twitter.com/shanselman/status/892986807259877376\"\u003ehttps://twitter.com/shanselman/status/892986807259877376\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I don\u0026rsquo;t even have an optical drive anymore https://twitter.com/shanselman/status/892986807259877376",
+            "date_published": "2017-08-04T07:39:06+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893375729836056576.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893375729836056576/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893135647828881408/",
+            "url": "https://mirror.roytang.net/2017/08/893135647828881408/",
+            "path": "/2017/08/893135647828881408/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn my Ruby code, half of my methods are just one or two lines long. 93% are under 10.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://martinfowler.com/bliki/FunctionLength.html\"\u003ehttps://martinfowler.com/bliki/FunctionLength.html\u003c/a\u003e \u003ca href=\"https://twitter.com/RonJeffries/status/893071198401290240\"\u003ehttps://twitter.com/RonJeffries/status/893071198401290240\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "In my Ruby code, half of my methods are just one or two lines long. 93% are under 10.\nhttps://martinfowler.com/bliki/FunctionLength.html https://twitter.com/RonJeffries/status/893071198401290240",
+            "date_published": "2017-08-03T15:45:06+00:00",
+            "date_modified": "2020-07-14T05:17:24+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893135647828881408/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893135647828881408/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893127391161090049/",
+            "url": "https://mirror.roytang.net/2017/08/893127391161090049/",
+            "path": "/2017/08/893127391161090049/",
+            "title": "",
+            "content_html": "\u003cp\u003eBoo :(\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/polygon/status/893100906211942400'\u003ePolygon\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    The Dark Tower is boring, lifeless and close to being an absolute total disaster. Our review. \u003ca href=\"https://www.polygon.com/2017/8/3/16087834/the-dark-tower-review\"\u003ehttps://www.polygon.com/2017/8/3/16087834/the-dark-tower-review\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Boo :(\nQuoted Polygon\u0026#39;s tweet:   The Dark Tower is boring, lifeless and close to being an absolute total disaster. Our review. https://www.polygon.com/2017/8/3/16087834/the-dark-tower-review  ",
+            "date_published": "2017-08-03T15:12:18+00:00",
+            "date_modified": "2021-01-05T20:44:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893127391161090049/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893127391161090049/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/893056454671740928/",
+            "url": "https://mirror.roytang.net/2017/08/893056454671740928/",
+            "path": "/2017/08/893056454671740928/",
+            "title": "",
+            "content_html": "\u003cp\u003eWatching NCIS Los Angeles: Kahawig ni LL Cool J si Bato\u003c/p\u003e\n",
+            "summary": "Watching NCIS Los Angeles: Kahawig ni LL Cool J si Bato",
+            "date_published": "2017-08-03T10:30:25+00:00",
+            "date_modified": "2020-01-04T01:03:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/893056454671740928.md"
+            , "tags": ["tv"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/893056454671740928/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155921875728912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/45463003/",
+            "url": "https://mirror.roytang.net/2017/08/45463003/",
+            "path": "/2017/08/45463003/",
+            "title": "Marklogic: Delete all element range indexes on a database?",
+            "content_html": "\u003cp\u003eIs there an easy way to delete all the element range indexes on a given database?\u003c/p\u003e\n\u003cp\u003eThanks\u003c/p\u003e\n",
+            "summary": "Is there an easy way to delete all the element range indexes on a given database?\nThanks",
+            "date_published": "2017-08-02T13:58:28+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/45463003/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45463003/marklogic-delete-all-element-range-indexes-on-a-database"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/45463003/marklogic-delete-all-element-range-indexes-on-a-database",
+                    "source_file": "comment-20170802T143939-45463906.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/45463003/marklogic-delete-all-element-range-indexes-on-a-database",
+                    "source_file": "comment-20170802T212748-45471291.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/08/892407782409777152/",
+            "url": "https://mirror.roytang.net/2017/08/892407782409777152/",
+            "path": "/2017/08/892407782409777152/",
+            "title": "",
+            "content_html": "\u003cp\u003eRenewed my driver\u0026rsquo;s license today. TBF it was pretty easy, alhough I just paid around P1k for a receipt and a promise\u003c/p\u003e\n",
+            "summary": "Renewed my driver\u0026rsquo;s license today. TBF it was pretty easy, alhough I just paid around P1k for a receipt and a promise",
+            "date_published": "2017-08-01T15:32:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/08/892407782409777152.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/892407782409777152/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155917525193912"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/08/892406831523418112/",
             "url": "https://mirror.roytang.net/2017/08/892406831523418112/",
             "path": "/2017/08/892406831523418112/",
@@ -754,262 +906,6 @@
             "source_path": "notes/2017/07/887327310583484418.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887327310583484418/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/887326815265538048/",
-            "url": "https://mirror.roytang.net/2017/07/887326815265538048/",
-            "path": "/2017/07/887326815265538048/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT if ur filipino and u really don\u0026rsquo;t get him \u003ca href=\"https://twitter.com/TIME/status/886869377903099905\"\u003ehttps://twitter.com/TIME/status/886869377903099905\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "RT if ur filipino and u really don\u0026rsquo;t get him https://twitter.com/TIME/status/886869377903099905",
-            "date_published": "2017-07-18T15:02:53+00:00",
-            "date_modified": "2020-07-11T02:32:48+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/887326815265538048/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/887326815265538048/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/10155868016068912/",
-            "url": "https://mirror.roytang.net/2017/07/10155868016068912/",
-            "path": "/2017/07/10155868016068912/",
-            "title": "",
-            "content_html": "\u003cp\u003eI find it so strange that there is actually criticism about the thirteenth Doctor being a woman. I\u0026rsquo;ve always assumed sci-fi fans would tend to be liberal in their thinking and Doctor Who in particular always felt to me that it had a liberal tendency. Once again, humanity has disappointed me lol. (Also I should really catch up with episodes before the internet spoils me on what happens with Twelve/Bill/Master/Missy/etc)\u003c/p\u003e\n",
-            "summary": "I find it so strange that there is actually criticism about the thirteenth Doctor being a woman. I\u0026rsquo;ve always assumed sci-fi fans would tend to be liberal in their thinking and Doctor Who in particular always felt to me that it had a liberal tendency. Once again, humanity has disappointed me lol. (Also I should really catch up with episodes before the internet spoils me on what happens with Twelve/Bill/Master/Missy/etc)",
-            "date_published": "2017-07-17T19:00:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/10155868016068912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155868016068912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/pjpunla",
-                    "source_file": "comment-20170717-000000-1c7c44e5-fbfa-452b-9358-c175d224239f.json"
-                }, { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20170717-000001-5e7c86f9-3ebf-417f-8d49-446223bc9f24.json"
-                }, { 
-                    "url": "https://www.facebook.com/romancoat",
-                    "source_file": "comment-20170717-000002-66ec1626-f017-4a63-a5dc-9977927d0aa9.json"
-                }, { 
-                    "url": "https://www.facebook.com/ritchie.tiongson",
-                    "source_file": "comment-20170717-000003-fc97ae2d-17ee-43e8-b678-7b9938a4832d.json"
-                }, { 
-                    "url": "https://www.facebook.com/pjpunla",
-                    "source_file": "comment-20170717-000140-7ebc4b09-1eef-47e6-8145-d51ccf50f97b.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170717-000141-bc7b450e-37f9-457d-bfbd-90f0ead25723.json"
-                }, { 
-                    "url": "https://www.facebook.com/pjpunla",
-                    "source_file": "comment-20170717-000142-cbc8c53d-1a8c-4d7f-b959-45a2650a1102.json"
-                }, { 
-                    "url": "https://www.facebook.com/romancoat",
-                    "source_file": "comment-20170717-000320-959d3416-f26f-4bd6-b462-f950e783fbcc.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170717-000321-aa2f223d-20a2-49d1-b741-6885e57250a0.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/886822416625881088/",
-            "url": "https://mirror.roytang.net/2017/07/886822416625881088/",
-            "path": "/2017/07/886822416625881088/",
-            "title": "",
-            "content_html": "\u003cp\u003eI took Daily Mail comments from people angry about a possible Female Dr Who and turned them into episode titles for the new series\u003c/p\u003e\n",
-            "summary": "I took Daily Mail comments from people angry about a possible Female Dr Who and turned them into episode titles for the new series",
-            "date_published": "2017-07-17T05:38:35+00:00",
-            "date_modified": "2020-07-11T02:32:48+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/886822416625881088/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/886822416625881088/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/886521408083304448/",
-            "url": "https://mirror.roytang.net/2017/07/886521408083304448/",
-            "path": "/2017/07/886521408083304448/",
-            "title": "",
-            "content_html": "\u003cp\u003eTwitter needs to give me back a continuous view of my timeline with none of this \u0026ldquo;in case you missed it\u0026rdquo; bs\u003c/p\u003e\n",
-            "summary": "Twitter needs to give me back a continuous view of my timeline with none of this \u0026ldquo;in case you missed it\u0026rdquo; bs",
-            "date_published": "2017-07-16T09:42:29+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/886521408083304448.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/886521408083304448/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/10155863611258912/",
-            "url": "https://mirror.roytang.net/2017/07/10155863611258912/",
-            "path": "/2017/07/10155863611258912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: You must give up one source of carbs among the following: 1. Rice 2. Noodles 3. Bread (includes pastries, cakes, etc) 4. Potatoes. Which do you choose?\u003c/p\u003e\n",
-            "summary": "Survey: You must give up one source of carbs among the following: 1. Rice 2. Noodles 3. Bread (includes pastries, cakes, etc) 4. Potatoes. Which do you choose?",
-            "date_published": "2017-07-16T09:14:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/10155863611258912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155863611258912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/michaelretuta",
-                    "source_file": "comment-20170716-000000-b538fd6a-9407-4473-b883-965bfe299520.json"
-                }, { 
-                    "url": "https://www.facebook.com/michael.lua.3",
-                    "source_file": "comment-20170716-000001-2f8c164c-5620-4adc-8741-1e42be796afd.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170716-000002-fa9179d7-b787-482f-b2be-358fd4b3b4a7.json"
-                }, { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20170716-000003-13b42388-bb42-42cd-b969-b046de5565c9.json"
-                }, { 
-                    "url": "https://www.facebook.com/maui.listana",
-                    "source_file": "comment-20170716-000004-0aebf47e-22e2-4593-b98c-8e06098685a4.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20170716-000005-35f26dcd-6c7f-4a56-89ff-13e25f0dcb2c.json"
-                }, { 
-                    "url": "https://www.facebook.com/jonathan.tan.399041",
-                    "source_file": "comment-20170716-000006-e1087270-4caa-4532-beb9-6db161f7b69c.json"
-                }, { 
-                    "url": "https://www.facebook.com/ging.lorenzostodomingo",
-                    "source_file": "comment-20170716-000007-76160466-8628-475e-85ea-9ee4adf8cc81.json"
-                }, { 
-                    "url": "https://www.facebook.com/profile.php",
-                    "source_file": "comment-20170716-000008-7acae3d6-713a-4e2c-9c03-bf3683e09571.json"
-                }, { 
-                    "url": "https://www.facebook.com/joyapreyes",
-                    "source_file": "comment-20170716-000009-7275c3c0-697a-4dc2-afb3-c30e8ec05c6d.json"
-                }, { 
-                    "url": "https://www.facebook.com/happyeclair",
-                    "source_file": "comment-20170716-000010-88df77f5-8322-4bd2-87b7-4aad0e69b531.json"
-                }, { 
-                    "url": "https://www.facebook.com/planeswalker",
-                    "source_file": "comment-20170716-000011-a823da27-bfab-46ff-9308-09674630178f.json"
-                }, { 
-                    "url": "https://www.facebook.com/nicksolana",
-                    "source_file": "comment-20170716-000012-92593cd2-dc9e-44e1-8a57-f0f51db84970.json"
-                }, { 
-                    "url": "https://www.facebook.com/Altealice",
-                    "source_file": "comment-20170716-000013-eadb8d78-97e8-41f3-80f6-6c14e8a5e21b.json"
-                }, { 
-                    "url": "https://www.facebook.com/mavericktriggerhappy",
-                    "source_file": "comment-20170716-000014-278966aa-45be-4438-9077-5a9ac08714b6.json"
-                }, { 
-                    "url": "https://www.facebook.com/keiscasas",
-                    "source_file": "comment-20170716-000015-7920fa40-c850-4b0b-b92e-9d586d22dc73.json"
-                }, { 
-                    "url": "https://www.facebook.com/arthur.abon",
-                    "source_file": "comment-20170716-000016-69e1e624-ed4e-4453-9b2d-83ca67c0629b.json"
-                }, { 
-                    "url": "https://www.facebook.com/rocky.teodoro",
-                    "source_file": "comment-20170716-000017-b8c66f71-216b-4b0d-af32-a1d5a5a9de9d.json"
-                }, { 
-                    "url": "https://www.facebook.com/erika.lim",
-                    "source_file": "comment-20170716-000018-e0177c73-bfa6-4082-a8e1-38d3debd0983.json"
-                }, { 
-                    "url": "https://www.facebook.com/ritchie.tiongson",
-                    "source_file": "comment-20170716-000019-58fbd753-1404-469f-b29c-9a21d2f52598.json"
-                }, { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20170716-000020-5e548235-bcb1-4b5c-8cb1-349fb118f1fb.json"
-                }, { 
-                    "url": "https://www.facebook.com/maan.sicam",
-                    "source_file": "comment-20170716-000021-609f4b1c-3302-4c27-838e-abd30da3c0d7.json"
-                }, { 
-                    "url": "https://www.facebook.com/jennifer.l.roxas.9",
-                    "source_file": "comment-20170716-000022-e2a4c40a-e879-4689-bfb7-e59aafbff99a.json"
-                }, { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20170716-002640-7f55c38f-cfe4-4a91-a430-8876220626f9.json"
-                }, { 
-                    "url": "https://www.facebook.com/liza.budlong.5",
-                    "source_file": "comment-20170717-000023-a0a92fea-5167-442d-82f3-f51a09631db9.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/45113954/",
-            "url": "https://mirror.roytang.net/2017/07/45113954/",
-            "path": "/2017/07/45113954/",
-            "title": "Moving connector edges in jsplumb",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m using the \u003ca href=\"https://jsplumbtoolkit.com/community/demo/statemachine/index.html\"\u003edemo of jsPlumb here:\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eIn this demo, there\u0026rsquo;s no way to move an existing connection to a different target node. Any idea how to do it?\u003c/p\u003e\n\u003cp\u003eSome of the other examples have movable connections, but they also use specific endpoints on the nodes. I like this particular example where I can drag the connection endpoint to any point of the target node.\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m using the demo of jsPlumb here:\nIn this demo, there\u0026rsquo;s no way to move an existing connection to a different target node. Any idea how to do it?\nSome of the other examples have movable connections, but they also use specific endpoints on the nodes. I like this particular example where I can drag the connection endpoint to any point of the target node.",
-            "date_published": "2017-07-15T02:40:41+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/45113954/index.md"
-            , "tags": ["javascript","jsplumb","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45113954/moving-connector-edges-in-jsplumb"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/45113954/moving-connector-edges-in-jsplumb",
-                    "source_file": "comment-20170715T024911-77199282.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/45113954/moving-connector-edges-in-jsplumb",
-                    "source_file": "comment-20170715T031404-77199488.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/45113954/moving-connector-edges-in-jsplumb",
-                    "source_file": "comment-20170715T031535-77199502.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/45113954/moving-connector-edges-in-jsplumb",
-                    "source_file": "comment-20170720T101546-45211844.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/45113755/",
-            "url": "https://mirror.roytang.net/2017/07/45113755/",
-            "path": "/2017/07/45113755/",
-            "title": "jsplumb - scroll the canvas when node dragged outside visible area",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying out jsplumb. I have a copy of this demo: \u003ca href=\"https://jsplumbtoolkit.com/community/demo/statemachine/index.html\"\u003ehttps://jsplumbtoolkit.com/community/demo/statemachine/index.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eIn this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.\u003c/p\u003e\n\u003cp\u003eI would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area. Any advice on how to do this?\u003c/p\u003e\n\u003cp\u003eSecondary question: In the demo above the scrollbars appear as expected when I drag elements off the right or bottom of the canvas, but not when I drag them off the left edge or off the top edge. That is, if I drag a node upward off the canvas and drop it there, I no longer have any way of viewing that node or dragging it back down. Is there a way around this?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying out jsplumb. I have a copy of this demo: https://jsplumbtoolkit.com/community/demo/statemachine/index.html\nIn this demo, when I drag one of the nodes outside of the canvas boundary, a scrollbar appears to indicate the canvas area has expanded. However, I still have to manually scroll the view to see the dragged node.\nI would like the view to automatically scroll when I drag a node beyond the edge. Same thing when dragging a new connector, I would like to automatically scroll the view - so I can choose to connect to a node currently outside the visible area.",
-            "date_published": "2017-07-15T02:04:29+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/45113755/index.md"
-            , "tags": ["javascript","css","jsplumb","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/45113755/jsplumb-scroll-the-canvas-when-node-dragged-outside-visible-area"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/07/885769848805916674/",
-            "url": "https://mirror.roytang.net/2017/07/885769848805916674/",
-            "path": "/2017/07/885769848805916674/",
-            "title": "",
-            "content_html": "\u003cp\u003ei have never identified more with a comic\u003c/p\u003e\n",
-            "summary": "i have never identified more with a comic",
-            "date_published": "2017-07-14T07:56:03+00:00",
-            "date_modified": "2020-07-11T02:32:48+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/07/885769848805916674/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/885769848805916674/"}]
             
             
             }
