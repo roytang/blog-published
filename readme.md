@@ -29,13 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [27 Mar 2021 2:29am](https://mirror.roytang.net/2021/03/1375636032448696323/): It always feels weird for me when the PH president exercises a line item veto, since presumably Congress has balanced the bill as a whole. This is an unusual power, Wikipedia only lists 3-4 countries that allow line item vetoes https://en.wikipedia.org/wiki/Line-item_veto
+Quoted manilabulletin&#39;s tweet:   READ: President Duterte vetoed nine items in CREATE law, including hike in VAT threshold on real property sale, redundant incentives for domestic enterprises; automatic approval of incentive application (📷: Roque) | @GenKabiling  Note that the PH isn&rsquo;t one of those listed in the Wikipedia article!
 - [26 Mar 2021 4:10am](https://mirror.roytang.net/2021/03/gs98o1v/): So what does that mean? Are we never getting iOS/Android versions in SEA? Will they (Tencent) release it later? Or there&rsquo;s no word at all?
 - [26 Mar 2021 3:02am](https://mirror.roytang.net/2021/03/mdf9dp/): Posted on r/magicTCG: Android/iOS versions not available in Southeast Asia? Has anyone in SEA been able to get the mobile versions? I&rsquo;m from the Philippines, me and my friend in Singapore both can&rsquo;t find the app on the stores. Even when using a direct link, the stores will just say Arena isn&rsquo;t available in the country/region. Any others from SEA countries have any luck?
 Have they released any official word on this?
 - [25 Mar 2021 5:58pm](https://mirror.roytang.net/2021/03/1375144979174019072/): @mtgcolorpie I would guess Negate more likely than Mana Leak
 - [25 Mar 2021 3:42pm](https://mirror.roytang.net/2021/03/1375110861237325824/): So @MTG_Arena why isn&rsquo;t your iOS app available in my region? #mtgarena
-- [24 Mar 2021 8:01am](https://mirror.roytang.net/2021/03/fb71576d1974213ea471b5cda8a20948/): Bond movie no. 5: You Only Live Twice (1967). Such Japan. Much wow. Cringe at trying to pass Bond off as Japanese. Introduction of secret volcano lair trope. Ninjas with guns! First screen appearance of the head of SPECTRE, inspiration for Dr Evil.
- That endgame scene of ninjas invading the secret volcano lair reminded me of the Simpsons episode You Only Move Twice. Bond&rsquo;s &ldquo;wife&rdquo; never named despite being only Bond girl to survive the movie.
 
 [View all notes](https://mirror.roytang.net/notes)
 

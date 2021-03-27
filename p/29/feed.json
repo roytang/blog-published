@@ -11,6 +11,48 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/one-year-with-hugo/",
+            "url": "https://mirror.roytang.net/2019/11/one-year-with-hugo/",
+            "path": "/2019/11/one-year-with-hugo/",
+            "title": "One Year with Hugo: Highs and Lows",
+            "content_html": "\u003cp\u003eIt was a bit more than a year ago that I decided to \u003ca href=\"/2018/11/site-migration-from-wordpress-to-hugo/\"\u003ehaphazardly and suddenly migrate from Wordpress to Hugo\u003c/a\u003e. It\u0026rsquo;s a good time to look back and reflect on that decision and consider where we are now, and how to move forward.\u003c/p\u003e\n\u003cp\u003eGood:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI am extremely happy with the site\u0026rsquo;s browser performance. It currently scores an insanely high 96 on \u003ca href=\"https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Froytang.net\"\u003eGoogle\u0026rsquo;s Pagespeed tool\u003c/a\u003e, and I\u0026rsquo;m pretty sure I I know how to close the remaining 4% gap. (I just need to get around to it.)\u003c/li\u003e\n\u003cli\u003egenerally all the advantages listed in the original post a year ago. I\u0026rsquo;m particularly happy with managing the posts through the file system, especially with a decent editor like VS Code. I don\u0026rsquo;t miss Wordpress\u0026rsquo;s clunky editor at all.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBad:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe main sticking point right now is that the build time is really high. I have a Travis build script setup that automatically builds the hugo site from source whenever I push a new commit, then the output is committed to a second repo, which is the one deployed to the live site every 15 minutes. This build right now takes on average around 8 mins, which is ridiculous. The hugo build itself takes around 3 mins, the rest is copying files and git clones and push and so on. The build times really skyrocketed when I did the \u003ca href=\"/2019/10/archive-of-my-own/\"\u003esocial media archiving\u003c/a\u003e, since the number of markdown files skyrocketed from around 1000 to almost 16,000. For sure, a lot of it is the fault of the theme I am using on this site, because I am adding a lot of features like static comments, image resizing, monthly archives, a bunch of taxonomies, and so on. I don\u0026rsquo;t blame Hugo at all, and I\u0026rsquo;m pretty sure any other static site generator would simply choke on the amount of posts I have. There are surely a lot of optimizations that can be done, but even if I manage to pare down the template generation to bare minimum, I am most probably hitting the limits on disk I/O. As mentioned in \u003ca href=\"https://discourse.gohugo.io/t/performance-expectations-for-large-number-of-pages/21887\"\u003ethis discussion I had on the Hugo forums\u003c/a\u003e, simply copying the entire content folder already takes 30 seconds on my local computer, so that is the bare minimum I could go. This is not an intolerable problem, but it means I don\u0026rsquo;t have immediate feedback when I push a post, it can take at least 15 minutes or more for recent changes.\u003c/li\u003e\n\u003cli\u003eThere are also a number of dynamic features I want to implement, which are impossible with just a static website. I have a python web app backing the static hugo site which I use for things like search, comments, and so on, but basically there is nontrivial effort when I want to implement new things. This is even less of an issue than the last one, mostly because I enjoy working with Python anyway lol.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe build performance is such a big issue for me that I briefly considered the option of migrating back to Wordpress. Ha! I\u0026rsquo;m not ruling it out, but the fact is I find managing posts through the Wordpress interface to be extremely clunky, especially compared to my current set up.\u003c/p\u003e\n\u003cp\u003eAnother option would be to write my own database-backed webapp. This is something I\u0026rsquo;ve done before after all, and again, I enjoy working on Python anyway. But it\u0026rsquo;s a lot of work, so maybe shelve that for now.\u003c/p\u003e\n\u003cp\u003eMoving forward, I think I\u0026rsquo;m going to stay with my current static hugo + dynamic python support, and try to optimize the build time as much as I can. I will probably be on the look out for possible alternative solutions, some other blogging software perhaps, or some other hybrid approach.\u003c/p\u003e\n",
+            "summary": "It was a bit more than a year ago that I decided to haphazardly and suddenly migrate from Wordpress to Hugo. It\u0026rsquo;s a good time to look back and reflect on that decision and consider where we are now, and how to move forward.\nGood:\n I am extremely happy with the site\u0026rsquo;s browser performance. It currently scores an insanely high 96 on Google\u0026rsquo;s Pagespeed tool, and I\u0026rsquo;m pretty sure I I know how to close the remaining 4% gap.",
+            "date_published": "2019-11-22T19:48:47+00:00",
+            "date_modified": "2020-02-07T15:30:02+00:00",
+            "section": "post",
+            "source_path": "post/2019/11/one-year-with-hugo/index.md"
+            , "tags": ["tech life","blogging","hugo"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1198008086260338689/"}]
+            
+            , "comments": [
+                { 
+                    "url": "http://bit.ly/2ECXoDa",
+                    "source_file": "comment-20200122-064924-1a58e33d-7ac1-4504-b921-211924c8571a.json"
+                }, { 
+                    "url": "http://paulcapewell.com/2020/02/07/stuff-ive-seen-and-read-recently-january-2020/",
+                    "source_file": "comment-20200207T150121-webmention-753342.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/new-video-card/",
+            "url": "https://mirror.roytang.net/2019/11/new-video-card/",
+            "path": "/2019/11/new-video-card/",
+            "title": "New Video Card!",
+            "content_html": "\u003cp\u003eThis is a follow up to my previous \u003ca href=\"/2019/08/the-great-memory-scare-of-2019/\"\u003eposts\u003c/a\u003e about my \u003ca href=\"/2019/09/two-backups/\"\u003e2019 PC troubles\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eI was still encountering game crashes even after reinstalling the OS, so the most likely culprits now were either the video card or the power supply. I sent the video card over to my brother for him to test on his PC to see if he encountered the same symptoms. Sure enough, he couldn\u0026rsquo;t even run the 3DMARK Time Spy test without immediately crashing, which was the same when it was on my PC.\u003c/p\u003e\n\u003cp\u003eSince then I\u0026rsquo;ve been running on onboard graphics only, which luckily could still handle things like Starcraft II, Magic Arena and Eternal. Oh, and I had to live on a single monitor, like a savage!\u003c/p\u003e\n\u003cp\u003eI began canvassing last month for a new video card. I didn\u0026rsquo;t want to get anything super expensive, so I thought I\u0026rsquo;d keep the budget under 10k PHP (around $200). I also have a preference for NVidia/GeForce since the one time I tried an AMD I had an overclocking issue and had to replace the card within a couple of months (this was almost entirely my fault though!).\u003c/p\u003e\n\u003cp\u003eGiven that, the best (most recent) NVidia card in my price range was this year\u0026rsquo;s GTX1650. Unfortunately, reviews said this was not good value for money, as it was comparable in performance to the older and slightly cheaper AMD RX570 card. I also looked at a couple of cards above my budget line, namely the recently released GTX1650 Super and GTX1660 Super. The price difference between the two wasn\u0026rsquo;t too high, so I figured the 1660S was a better deal overall, but it was around $100 more expensive than the RX570.\u003c/p\u003e\n\u003cp\u003eSo the choice now was the cheaper RX570, which would be an upgrade anyway over my old GTX 970, or the more expensive GTX 1660 Super. Getting the more expensive card was a bit more future proof, but the problem is that this rig overall is already going on 4 years old, so I might need to upgrade everything again in a couple of years anyway. I figured it was better to get the cheaper card first then decide a few years down the line whether I needed a complete refresh.\u003c/p\u003e\n\u003cp\u003eUnfortunately, when I checked my nearby PC part stores, neither the RX570 nor the GTX1660S were in stock. (The first one due to high demand, the second due to maybe being too new?). Against my instincts, I decided to just order online from Lazada.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m not yet a fan of buying electronics online in the Philippines. Online purchases for me are fine for digital products or physical things that are relatively cheap. But for expensive electronics, I have some anxiety that there\u0026rsquo;s so much that could go wrong. And I had some friends with bad stories about shady/sloppy Lazada sellers too. I also prefer getting my components from a store because (a) I don\u0026rsquo;t have to wait for delivery; and (b) I can ask them to test the part right there and then to make sure no issues before I bring it home.\u003c/p\u003e\n\u003cp\u003eIn this case I had no choice, so online it was. Luckily, I found that one of my nearby PC part stores EasyPC was also a Lazada seller, and they had RX570 in stock online. I settled on a Gigabyte 4GB RX570, then waited the requisite number of days.\u003c/p\u003e\n\u003cp\u003eThe package arrived yesterday, a day earlier than predicted. I unboxed it and set about installing the card. I have some anxiety as well about installing PC parts myself, as I\u0026rsquo;m always worried that I\u0026rsquo;ll do some damage via static electricity or my sweat dropping down into the PC case or something like that. But this time went smoothly. These new video cards are nice because they have back plates making them easier to grip. The only problem I encountered was that I didn\u0026rsquo;t have an extra screw to pin the card unto the back of the case (I\u0026rsquo;ll get one later).\u003c/p\u003e\n\u003cp\u003eAnyway, plugged the card into pci-e, connect the 8-pin power connector, plug in both monitors, then boot! Success! I got my 2nd monitor back!\u003c/p\u003e\n\u003cp\u003eI installed the latest AMD drivers, then to verify everything was fine, I ran the 3DMARK Timespy benchmark test. The test scored my system at \u003ca href=\"https://www.3dmark.com/spy/9343394\"\u003earound 3600+\u003c/a\u003e, which wasn\u0026rsquo;t too bad. Comparing to results using my old card and the same CPU, those scores were around 1700+, so there\u0026rsquo;s a significant improvement. With the 1650, it would have been 3600+ as well. The results said I\u0026rsquo;m only better than 19% of all results, but that\u0026rsquo;s ok, I\u0026rsquo;m not looking for super high end graphics at super high resolutions and I rarely care about framerate.\u003c/p\u003e\n\u003cp\u003eNext were the game tests!\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eStarcraft II at Ultra settings: No crashes! Which is great, since all of this started with SC2 anyway\u003c/li\u003e\n\u003cli\u003eStreet Fighter V: Smooth! I had tried SFV before with onboard graphics, but it was basically super slow.\u003c/li\u003e\n\u003cli\u003eTales of Berseria: Smooth! I chose this game because I\u0026rsquo;ve been meaning to play it. It didn\u0026rsquo;t do too well with the onboard graphics either.\u003c/li\u003e\n\u003cli\u003eDragon Ball Fighter Z: Smooth!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAlright, everything looks good! I\u0026rsquo;ll probably be testing the card with a few other games over the weekend, but otherwise everything looks great!\u003c/p\u003e\n",
+            "summary": "This is a follow up to my previous posts about my 2019 PC troubles.\nI was still encountering game crashes even after reinstalling the OS, so the most likely culprits now were either the video card or the power supply. I sent the video card over to my brother for him to test on his PC to see if he encountered the same symptoms. Sure enough, he couldn\u0026rsquo;t even run the 3DMARK Time Spy test without immediately crashing, which was the same when it was on my PC.",
+            "date_published": "2019-11-22T00:00:00+00:00",
+            "date_modified": "2019-11-23T05:46:16+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/new-video-card/index.md"
+            , "tags": ["tech life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1197698518749786114/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/1197560294203019264/",
             "url": "https://mirror.roytang.net/2019/11/1197560294203019264/",
             "path": "/2019/11/1197560294203019264/",
@@ -913,40 +955,6 @@
             "source_path": "notes/2019/11/1191492068440326144/index.md"
             , "tags": ["MYTHICCHAMPIONSHIPVI"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1191492068440326144/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1191420015154610176/",
-            "url": "https://mirror.roytang.net/2019/11/1191420015154610176/",
-            "path": "/2019/11/1191420015154610176/",
-            "title": "",
-            "content_html": "\u003cp\u003eWe\u0026rsquo;re giving away a Vita and you could be the winner!\u003c/p\u003e\n\u003cp\u003eTo enter: follow us \u0026amp; RT this tweet. We\u0026rsquo;ll draw a winner on 11/30.\u003c/p\u003e\n\u003cp\u003eIn addition, for every 1,000 retweets this gets, we will add a Limited Run Vita game to the grand prize. We\u0026rsquo;ve got over 100 of them, so keep the RT\u0026rsquo;s coming!\u003c/p\u003e\n",
-            "summary": "We\u0026rsquo;re giving away a Vita and you could be the winner!\nTo enter: follow us \u0026amp; RT this tweet. We\u0026rsquo;ll draw a winner on 11/30.\nIn addition, for every 1,000 retweets this gets, we will add a Limited Run Vita game to the grand prize. We\u0026rsquo;ve got over 100 of them, so keep the RT\u0026rsquo;s coming!",
-            "date_published": "2019-11-04T18:20:41+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/11/1191420015154610176/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1191420015154610176/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/b4cpvadbnlh/",
-            "url": "https://mirror.roytang.net/2019/11/b4cpvadbnlh/",
-            "path": "/2019/11/b4cpvadbnlh/",
-            "title": "",
-            "content_html": "\u003cp\u003eBlurr! #transformers\u003c/p\u003e\n",
-            "summary": "Blurr! #transformers",
-            "date_published": "2019-11-04T14:57:15+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/11/B4cpVadBNLH/index.md"
-            , "tags": ["transformers"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1191368817022246917/"},{"type":"instagram","url":"https://instagram.com/p/B4cpVadBNLH/"}]
             
             
             }
