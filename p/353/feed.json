@@ -11,6 +11,125 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
+            "url": "https://mirror.roytang.net/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
+            "path": "/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/",
+            "title": "HOWTO: Be more productive (Aaron Swartz's Raw Thought)",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2008-12-01T12:58:30+00:00",
+            "date_modified": "2020-01-29T00:26:29+08:00",
+            "section": "links",
+            "source_path": "links/2008/12/howto-be-more-productive-aaron-swartz-s-raw-thought/index.md"
+            , "tags": ["lifehacks","productivity"]
+            
+            ,"link": "http://www.aaronsw.com/weblog/productivity"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/12/fixing-up-the-comments/",
+            "url": "https://mirror.roytang.net/2008/12/fixing-up-the-comments/",
+            "path": "/2008/12/fixing-up-the-comments/",
+            "title": "Fixing up the comments",
+            "content_html": "\u003cp\u003eI played around with the built-in comments app today, trying to clean it up.\u003c/p\u003e\n\u003cp\u003eSome findings:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eSome of the moderation views, such as flagging a post or deleting a post, accept a next parameter that determines where the view will redirect to after the operation. However, the way the url\u0026rsquo;s are set up, there\u0026rsquo;s no easy way to pass this parameter normally, even through query strings. This lovely bug is documented in \u003ca href=\"http://code.djangoproject.com/ticket/8968\"\u003ehttp://code.djangoproject.com/ticket/8968\u003c/a\u003e. I wasn\u0026rsquo;t confident enough to try patching it, so as a temporary workaround, I overrode the flag and delete templates and placed the following inside the form:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003ccode\u003e\u0026lt;input type=\u0026quot;hidden\u0026quot; name=\u0026quot;next\u0026quot; value=\u0026quot;{{ comment.get\\_content\\_object_url }}\u0026quot; /\u0026gt;\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eEdit: Wow that was stupid. Blogger didn\u0026rsquo;t want to render the HTML code above!\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eI also replaced the URL in the \u0026ldquo;cancel\u0026rdquo; links for both pages. For some reason, {{ comment.permalink }} wasn\u0026rsquo;t giving me anything useful.\u003c/p\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003e\n\u003cp\u003eTook me a bit of work to figure out how the moderation part works. Apparently I have to hook on some of the signals to add my moderation logic. I\u0026rsquo;m not sure yet how to handle this, or whether I should try customizing the comment form with something like a captcha to prevent comment spam.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eI have a pending problem now that submitting comments from the preview or error page does not redirect to the correct place. (i.e. the post page). I tried adding the next parameter to the form, but apparently comment.get_content_object_url returns an empty string here because the comment has not yet been saved to the database. I think the content object should be provided in the context for the preview page. This would be handled by \u003ca href=\"http://code.djangoproject.com/ticket/9268\"\u003ehttp://code.djangoproject.com/ticket/9268\u003c/a\u003e, except apparently no one\u0026rsquo;s paying attention to it yet.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSome random features I added: Gravatar support (the Gravatar for the email address used to post the comment will be shown), and Markdown support in the comment body. Easy stuff.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eCleaned up an refactored the templates that render the comments, separating them from the parts that render the blog posts. This makes it easier if I want to have comments for other non-Blog post objects later.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eNon-comment related:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eAdded simple search!\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe script to import from WordPress has some problems. Since I\u0026rsquo;m storing the post body in markdown format, I use \u003ca href=\"http://www.aaronsw.com/2002/html2text/\"\u003ehtml2text\u003c/a\u003e to convert the HTML body from old posts into markdown, but nice stuff like image alignments and tables are lost. I think I have to make do with editing straight HTML for old posts imported from WordPress, and just clean them up later as needed.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eMy code is rather messy now (especially from the HTML side). I should clean it up sometime soon.\u003c/p\u003e\n",
+            "summary": "I played around with the built-in comments app today, trying to clean it up.\nSome findings:\n Some of the moderation views, such as flagging a post or deleting a post, accept a next parameter that determines where the view will redirect to after the operation. However, the way the url\u0026rsquo;s are set up, there\u0026rsquo;s no easy way to pass this parameter normally, even through query strings. This lovely bug is documented in http://code.",
+            "date_published": "2008-12-01T04:58:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/12/fixing-up-the-comments/index.md"
+            , "tags": ["royondjango","django","python","software development"]
+            , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/12/fixing-up-comments.html"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/12/",
+            "url": "https://mirror.roytang.net/2008/12/",
+            "path": "/2008/12/",
+            "title": "Monthly Archives for 12 2008",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2008-12-01T00:00:00+00:00",
+            "date_modified": "2019-08-09T01:14:44+08:00",
+            "section": "archm",
+            "source_path": "archm/2008-12.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/11/links-for-2008-11-29/",
+            "url": "https://mirror.roytang.net/2008/11/links-for-2008-11-29/",
+            "path": "/2008/11/links-for-2008-11-29/",
+            "title": "links for 2008-11-29",
+            "content_html": "\u003cul class=\"delicious\"\u003e\n  \u003cli\u003e\n    \u003cdiv class=\"delicious-link\"\u003e\n      \u003ca href=\"http://www.darthsanddroids.net/\"\u003eDarths \u0026 Droids\u003cbr /\u003e \u003c/a\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"delicious-tags\"\u003e\n      (tags: \u003ca href=\"http://delicious.com/roytang/webcomics\"\u003ewebcomics \u003c/a\u003e\u003ca href=\"http://delicious.com/roytang/funny\"\u003efunny \u003c/a\u003e\u003ca href=\"http://delicious.com/roytang/starwars\"\u003estarwars\u003c/a\u003e)\n    \u003c/div\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e",
+            "summary": " Darths \u0026 Droids\n  (tags: webcomics funny starwars)   ",
+            "date_published": "2008-11-29T17:02:23+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/11/links-for-2008-11-29/index.md"
+            , "tags": ["Links"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/11/darths-droids/",
+            "url": "https://mirror.roytang.net/2008/11/darths-droids/",
+            "path": "/2008/11/darths-droids/",
+            "title": "Darths \u0026 Droids",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2008-11-29T15:10:20+00:00",
+            "date_modified": "2020-01-29T00:26:29+08:00",
+            "section": "links",
+            "source_path": "links/2008/11/darths-droids/index.md"
+            , "tags": ["webcomics","funny","starwars"]
+            
+            ,"link": "http://www.darthsanddroids.net/"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/11/links-for-2008-11-25/",
+            "url": "https://mirror.roytang.net/2008/11/links-for-2008-11-25/",
+            "path": "/2008/11/links-for-2008-11-25/",
+            "title": "links for 2008-11-25",
+            "content_html": "\u003cul class=\"delicious\"\u003e\n  \u003cli\u003e\n    \u003cdiv class=\"delicious-link\"\u003e\n      \u003ca href=\"http://www.fictitiousnonsense.com/archives/22\"\u003eFictitious Nonsense » Overriding a Widget in the Django Admin Site\u003cbr /\u003e \u003c/a\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"delicious-tags\"\u003e\n      (tags: \u003ca href=\"http://delicious.com/roytang/programming\"\u003eprogramming \u003c/a\u003e\u003ca href=\"http://delicious.com/roytang/django\"\u003edjango \u003c/a\u003e\u003ca href=\"http://delicious.com/roytang/widget\"\u003ewidget\u003c/a\u003e)\n    \u003c/div\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e",
+            "summary": " Fictitious Nonsense » Overriding a Widget in the Django Admin Site\n  (tags: programming django widget)   ",
+            "date_published": "2008-11-25T17:03:36+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/11/links-for-2008-11-25/index.md"
+            , "tags": ["Links"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/",
+            "url": "https://mirror.roytang.net/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/",
+            "path": "/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/",
+            "title": "Fictitious Nonsense » Overriding a Widget in the Django Admin Site",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2008-11-25T16:00:16+00:00",
+            "date_modified": "2021-01-20T01:07:07+08:00",
+            "section": "links",
+            "source_path": "links/2008/11/fictitious-nonsense-overriding-a-widget-in-the-django-admin-site/index.md"
+            , "tags": ["programming","django","widget","broken-link"]
+            
+            ,"link": "http://www.fictitiousnonsense.com/archives/22"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2008/11/1022843186/",
             "url": "https://mirror.roytang.net/2008/11/1022843186/",
             "path": "/2008/11/1022843186/",
@@ -897,167 +1016,6 @@
                 }, { 
                     "url": "https://stackoverflow.com/questions/217801/getting-language-for-non-unicode-programs",
                     "source_file": "comment-20170923T191758-46383388.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/roy-on-django/",
-            "url": "https://mirror.roytang.net/2008/10/roy-on-django/",
-            "path": "/2008/10/roy-on-django/",
-            "title": "Roy on Django",
-            "content_html": "\u003cp\u003e\u003ca href=\"http://royondjango.blogspot.com/\"\u003ehttp://royondjango.blogspot.com/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "http://royondjango.blogspot.com/",
-            "date_published": "2008-10-19T07:41:19+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2008/10/roy-on-django/index.md"
-            , "tags": ["Software Development"]
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/starting-out/",
-            "url": "https://mirror.roytang.net/2008/10/starting-out/",
-            "path": "/2008/10/starting-out/",
-            "title": "Starting out",
-            "content_html": "\u003cp\u003eThe quintessential app to learn from is of course a blog.\u003c/p\u003e\n\u003cp\u003eStarted using a simple Post model. Added the new post form and view. Can now successfully insert posts into the DB.\u003c/p\u003e\n\u003cp\u003eNext:\u003c/p\u003e\n\u003cp\u003e\u0026ndash; create the detail page that will show the post after saving\u003c/p\u003e\n\u003cp\u003eFigure out:\u003c/p\u003e\n\u003cp\u003e\u0026ndash; when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\u003c/p\u003e\n\u003cp\u003ei.e. if the parent app has the following mapping:\u003c/p\u003e\n\u003cp\u003e‘^blog/\u0026rsquo; -\u0026gt; pass to blog.urls.urlpatterns\u003c/p\u003e\n\u003cp\u003ethe blog app has mappings for\u003c/p\u003e\n\u003cp\u003e‘^post/new/\u0026rsquo; -\u0026gt; new post\u003c/p\u003e\n\u003cp\u003e‘^post/([A-Za-z-])/\u0026rsquo; -\u0026gt; post detail\u003c/p\u003e\n\u003cp\u003einside the view, I want to redirect to \u0026ldquo;post/\u0026rdquo;, but with respect to the app, it should be \u0026ldquo;blog/post/\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eI should subscribe to one of the Django mailing lists to ask stuff like this.\u003c/p\u003e\n",
-            "summary": "The quintessential app to learn from is of course a blog.\nStarted using a simple Post model. Added the new post form and view. Can now successfully insert posts into the DB.\nNext:\n\u0026ndash; create the detail page that will show the post after saving\nFigure out:\n\u0026ndash; when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\ni.e. if the parent app has the following mapping:",
-            "date_published": "2008-10-19T07:33:00+00:00",
-            "date_modified": "2020-01-23T03:49:52+08:00",
-            "section": "post",
-            "source_path": "post/2008/10/starting-out/index.md"
-            , "tags": ["royondjango","django","python","software development"]
-            , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/10/starting-out.html"}]
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20081020084600-wp-Tim Medina.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/964993612/",
-            "url": "https://mirror.roytang.net/2008/10/964993612/",
-            "path": "/2008/10/964993612/",
-            "title": "",
-            "content_html": "\u003cp\u003eSo does twitter automatically tinyurl-ize any urls I put in?\u003c/p\u003e\n",
-            "summary": "So does twitter automatically tinyurl-ize any urls I put in?",
-            "date_published": "2008-10-18T10:13:29+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/10/964993612.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/964993612/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/963798670/",
-            "url": "https://mirror.roytang.net/2008/10/963798670/",
-            "path": "/2008/10/963798670/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e: \u003ca href=\"https://testing.googleblog.com/2008/10/test-engineering-at-google.html\"\u003ehttps://testing.googleblog.com/2008/10/test-engineering-at-google.html\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "@rocketkeis: https://testing.googleblog.com/2008/10/test-engineering-at-google.html",
-            "date_published": "2008-10-17T13:28:55+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/10/963798670.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/963798670/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/every-wednesday-is-hotdog-day/",
-            "url": "https://mirror.roytang.net/2008/10/every-wednesday-is-hotdog-day/",
-            "path": "/2008/10/every-wednesday-is-hotdog-day/",
-            "title": "Every Wednesday is Hotdog Day!",
-            "content_html": "\u003cp\u003eActually, I\u0026rsquo;m writing this post to test comments on the blog, which someone has reported to be currently borken. See ya in the comments.\u003c/p\u003e\n",
-            "summary": "Actually, I\u0026rsquo;m writing this post to test comments on the blog, which someone has reported to be currently borken. See ya in the comments.",
-            "date_published": "2008-10-15T05:05:14+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2008/10/every-wednesday-is-hotdog-day/index.md"
-            , "tags": ["Meta"]
-            
-            
-            , "comments": [
-                { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20081015210839-wp-Roy.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20081015210859-wp-Roy.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081015211532-wp-Roy.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20081015211653-wp-Roy.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081016210741-wp-Roy.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081017092626-wp-noems.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20081017205337-wp-Roy.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081201191307-wp-roytesting.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/957643572/",
-            "url": "https://mirror.roytang.net/2008/10/957643572/",
-            "path": "/2008/10/957643572/",
-            "title": "",
-            "content_html": "\u003cp\u003eWant to try playing competitive scrabble again\u0026hellip;but can\u0026rsquo;t find any info on tournaments on the intarwebs\u003c/p\u003e\n",
-            "summary": "Want to try playing competitive scrabble again\u0026hellip;but can\u0026rsquo;t find any info on tournaments on the intarwebs",
-            "date_published": "2008-10-13T14:18:46+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/10/957643572.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/957643572/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/10/links-for-2008-10-12/",
-            "url": "https://mirror.roytang.net/2008/10/links-for-2008-10-12/",
-            "path": "/2008/10/links-for-2008-10-12/",
-            "title": "links for 2008-10-12",
-            "content_html": "\u003cul class=\"delicious\"\u003e\n  \u003cli\u003e\n    \u003cdiv class=\"delicious-link\"\u003e\n      \u003ca href=\"http://woodgears.ca/eyeball/\"\u003eThe eyeballing game\u003c/a\u003e\n    \u003c/div\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cdiv class=\"delicious-link\"\u003e\n      Flash game to check how good you are eyeballing geometry. I got a score of 6.62.\n    \u003c/div\u003e\n    \u003cdiv class=\"delicious-tags\"\u003e\n      (tags: \u003ca href=\"http://delicious.com/roytang/games\"\u003egames\u003c/a\u003e \u003ca href=\"http://delicious.com/roytang/flash\"\u003eflash\u003c/a\u003e)\n    \u003c/div\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e",
-            "summary": " The eyeballing game    Flash game to check how good you are eyeballing geometry. I got a score of 6.62.  (tags: games flash)   ",
-            "date_published": "2008-10-12T17:01:52+00:00",
-            "date_modified": "2020-01-17T14:54:58+08:00",
-            "section": "post",
-            "source_path": "post/2008/10/links-for-2008-10-12/index.md"
-            , "tags": ["Links"]
-            
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20081017092441-wp-noems.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081018164502-wp-KC.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20081025071757-wp-peng.json"
                 }
             ]
             }

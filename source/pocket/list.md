@@ -1,4 +1,10 @@
 
+- [Write Simply](/2021/03/write-simply/)
+
+- [Douglas Adams&#39; note to self reveals author found writing torture](/2021/03/douglas-adams-note-to-self-reveals-author-found-writing-torture/)
+
+- [30 covers that are better than the originals](/2021/03/30-covers-that-are-better-than-the-originals/)
+
 - [blogging and the blogosphere](/2021/03/blogging-and-the-blogosphere/)
 
 - [The internet is splitting apart. The Internet Archive wants to save it all forever.](/2021/03/the-internet-is-splitting-apart-the-internet-archive-wants-to-save-it-all-forever/)

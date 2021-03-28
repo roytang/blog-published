@@ -18,24 +18,23 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Write Simply](https://mirror.roytang.net/2021/03/write-simply/)
+- [Douglas Adams&#39; note to self reveals author found writing torture](https://mirror.roytang.net/2021/03/douglas-adams-note-to-self-reveals-author-found-writing-torture/)
+- [30 covers that are better than the originals](https://mirror.roytang.net/2021/03/30-covers-that-are-better-than-the-originals/)
 - [blogging and the blogosphere](https://mirror.roytang.net/2021/03/blogging-and-the-blogosphere/)
 - [The internet is splitting apart. The Internet Archive wants to save it all forever.](https://mirror.roytang.net/2021/03/the-internet-is-splitting-apart-the-internet-archive-wants-to-save-it-all-forever/)
-- [Stop Keeping Score](https://mirror.roytang.net/2021/03/stop-keeping-score/)
-- [My Website is a Personal Museum: the creative freedom we lost in the age of social media](https://mirror.roytang.net/2021/03/writings/)
-- [An opinionated list of best practices for textual websites](https://mirror.roytang.net/2021/03/an-opinionated-list-of-best-practices-for-textual-websites/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [27 Mar 2021 12:30pm](https://mirror.roytang.net/2021/03/1375787410055827462/): @paulcatiang Alt + 0151 — use the numpad
+- [27 Mar 2021 12:15pm](https://mirror.roytang.net/2021/03/1375783440952397832/): @SaffronOlive Wait, are bolt counterspell and swords allowed in historic brawl then?
+- [27 Mar 2021 9:10am](https://mirror.roytang.net/2021/03/1375737016407625729/): Planning for a stricter lockdown less than a week after starting this ridiculous bubble, without even waiting to see the effects, reeks of making shit up as they go along, just reacting to the numbers without any real analysis or planning.
 - [27 Mar 2021 2:29am](https://mirror.roytang.net/2021/03/1375636032448696323/): It always feels weird for me when the PH president exercises a line item veto, since presumably Congress has balanced the bill as a whole. This is an unusual power, Wikipedia only lists 3-4 countries that allow line item vetoes https://en.wikipedia.org/wiki/Line-item_veto
 Quoted manilabulletin&#39;s tweet:   READ: President Duterte vetoed nine items in CREATE law, including hike in VAT threshold on real property sale, redundant incentives for domestic enterprises; automatic approval of incentive application (📷: Roque) | @GenKabiling  Note that the PH isn&rsquo;t one of those listed in the Wikipedia article!
 - [26 Mar 2021 4:10am](https://mirror.roytang.net/2021/03/gs98o1v/): So what does that mean? Are we never getting iOS/Android versions in SEA? Will they (Tencent) release it later? Or there&rsquo;s no word at all?
-- [26 Mar 2021 3:02am](https://mirror.roytang.net/2021/03/mdf9dp/): Posted on r/magicTCG: Android/iOS versions not available in Southeast Asia? Has anyone in SEA been able to get the mobile versions? I&rsquo;m from the Philippines, me and my friend in Singapore both can&rsquo;t find the app on the stores. Even when using a direct link, the stores will just say Arena isn&rsquo;t available in the country/region. Any others from SEA countries have any luck?
-Have they released any official word on this?
-- [25 Mar 2021 5:58pm](https://mirror.roytang.net/2021/03/1375144979174019072/): @mtgcolorpie I would guess Negate more likely than Mana Leak
-- [25 Mar 2021 3:42pm](https://mirror.roytang.net/2021/03/1375110861237325824/): So @MTG_Arena why isn&rsquo;t your iOS app available in my region? #mtgarena
 
 [View all notes](https://mirror.roytang.net/notes)
 

@@ -11,6 +11,136 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/",
+            "url": "https://mirror.roytang.net/2020/08/on-mozilla-and-firefox/",
+            "path": "/2020/08/on-mozilla-and-firefox/",
+            "title": "On Mozilla and Firefox",
+            "content_html": "\u003cp\u003eMozilla made the tech news recently for laying off a whole lot of people. (\u003ca href=\"https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/\"\u003eOfficial statement\u003c/a\u003e). People were alarmed and worried about the future of what is the last major independent browser and the open web, bit it looks like it isn\u0026rsquo;t that bleak. Most of the layoffs were to teams other than those working on Firefox, things like the experimental browser engine Servo, devtools, and MDN. The core Gecko team seems to be unaffected.\u003c/p\u003e\n\u003cp\u003eNot that these things aren\u0026rsquo;t important. MDN, if you\u0026rsquo;re not familiar, is a set of documentation of web standards and browser support, \u003ca href=\"https://developer.mozilla.org/en-US/\"\u003eavailable online\u003c/a\u003e, that is one of the best resources for web developers working on cross-platform things. Mozilla no longer funding it\u0026rsquo;s maintenance is a big deal, it means it\u0026rsquo;s less likely to be kept up-to-date, even though community work can still continue. Peter-Paul Koch, writer of \u003ca href=\"https://quirksmode.org\"\u003equirksmode.org\u003c/a\u003e, which was the original resource for cross-browser compatibility back in the heyday of the browser wars, wrote an article about Mozilla\u0026rsquo;s problems titled \u003ca href=\"https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html\"\u003e\u0026ldquo;The Cult of the Free\u0026rdquo;\u003c/a\u003e where he argues that it\u0026rsquo;s time to step out of this mentality that all these resources must be maintained for free by \u0026ldquo;the community\u0026rdquo;, but that we as consumers must get used to the idea of paying or donating to support these resources. Expecting \u0026ldquo;the community\u0026rdquo; to step in and maintain these resources \u003ca href=\"https://www.quirksmode.org/blog/archives/2020/08/i_love_mdn_or_t.html\"\u003ealso devalues the work of technical writers.\u003c/a\u003e Trying to get more people to support these \u0026ldquo;free\u0026rdquo; resources is a good idea, but I worry it goes against the grain of years of internet culture which has conditioned people to expect online content for free.\u003c/p\u003e\n\u003cp\u003eSpeaking of contributing, a while back I had considered looking for open source projects I could contribute to, and preferred projects that I actively use. Given that I\u0026rsquo;d been using Firefox \u003ca href=\"/2004/10/firefox-1-0-on-november-9/\"\u003esince before version 1.0\u003c/a\u003e, one of the projects I considered was Firefox. I went through the whole rigmarole of \u003ca href=\"https://firefox-source-docs.mozilla.org/setup/windows_build.html\"\u003etheir instructions to set up my machine for the Windows build\u003c/a\u003e, and just the setup process, which involved setting up and checking out code took more than an hour. That was fine for initial setup, but actually building and running Firefox itself took an additional hour or so. Might have been more than that even, it was a while back so I don\u0026rsquo;t clearly remember, but I do remember thinking that I didn\u0026rsquo;t have time for these hour-long build times. The whole set up also took up a nontrivial amount of my SSD disk space (imagine how much worse the build time would have been if I had used my non-SSD drive!), which I am always dangerously low on. These 2 factors led me to shelve the idea for the time being; perhaps I could revisit the idea of contributing to Firefox when I upgraded my computer or had more SSD space available. (TBF, I kind of gave up real quick after the first build, maybe the builds get faster on succeeding runs?). So that\u0026rsquo;s my personal \u0026ldquo;contributing-to-Firefox\u0026rdquo; story, for now.\u003c/p\u003e\n\u003cp\u003eThe sheer size of the codebase and the long build times just drive home the point of how much modern browsers are these large complex beasts that are doing so much. They are pretty much an OS of their own since they host a ton of features and web applications and JIT JS and all of that. This means it\u0026rsquo;s really difficult for independent browser efforts to hit feature parity with modern web browsers - even just working with JS and CSS standards, there are so many to implement.\u003c/p\u003e\n\u003cp\u003eDrew DeVault laments that \u003ca href=\"https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html\"\u003eWeb browsers need to stop\u003c/a\u003e with all these new functionalities and APIs that add scope and complexity, and maybe focus more on performance, efficiency, etc. I do agree - if I was contributing to Firefox, I would want to find a way to reduce the massive memory footprint it always has. I don\u0026rsquo;t even use that many tabs, and I already feel burdened by Firefox\u0026rsquo;s memory footprint. (Pretty sure Chrome is pretty bad in this regard as well.)\u003c/p\u003e\n\u003cp\u003eWhy care about Mozilla/Firefox at all? Why not just use Chrome, it\u0026rsquo;s pretty good right?\u003c/p\u003e\n\u003cp\u003eFirst of all, no, Chrome is not necessarily \u0026ldquo;pretty good\u0026rdquo;, given how it props up a surveillance capitalsm engine.\u003c/p\u003e\n\u003cp\u003eSecondly, even if you didn\u0026rsquo;t dislike Google, having a browser (engine) monoculture is not a good thing. I \u003ca href=\"/2020/02/old-web/\"\u003egot my start in web development\u003c/a\u003e at around the height of Internet Explorer 6\u0026rsquo;s dominance, and I\u0026rsquo;d rather not find my way back there. Granted, one of the issues back then was that IE6 was a stagnant platform that upstarts Firefox and eventually Chrome left behind. No such problem exists now, since Chrome is still in active development and still pushing new web standards forward. And the fact that Chrome is an open-source platform means in theory someone could just fork it if ever Google goes off the rails or such. (And people have already built indie browsers on top of Chrome of course!) But it\u0026rsquo;s still dangerous for a single company and/or codebase to be the sole major implementer of web standards. A single company dictating the future of the web isn\u0026rsquo;t a good thing, and is the very opposite of the idea of an \u0026ldquo;open\u0026rdquo; web.\u003c/p\u003e\n\u003cp\u003eSide note: Maybe I should try building Chromium too, just for comparison.\u003c/p\u003e\n\u003cp\u003eAnyway, that\u0026rsquo;s all my ranting for today. In conclusion: reduce your surveillance capitalism footprint and support the open web, use Firefox.\u003c/p\u003e\n",
+            "summary": "Mozilla made the tech news recently for laying off a whole lot of people. (Official statement). People were alarmed and worried about the future of what is the last major independent browser and the open web, bit it looks like it isn\u0026rsquo;t that bleak. Most of the layoffs were to teams other than those working on Firefox, things like the experimental browser engine Servo, devtools, and MDN. The core Gecko team seems to be unaffected.",
+            "date_published": "2020-08-18T00:00:00+00:00",
+            "date_modified": "2020-08-18T08:00:04+00:00",
+            "section": "post",
+            "source_path": "post/2020/08/mozilla/index.md"
+            , "tags": ["tech life","software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104709292313278002"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295629020504010753/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://radical.town/@fructose_dealer",
+                    "source_file": "like-20200818-080243-ade06749-7c2d-4c99-bda5-e8dfcb67b729.json"
+                }, { 
+                    "url": "https://fosstodon.org/@daniels",
+                    "source_file": "like-20200818-084325-b464fd3e-7b25-4067-a7ba-678bb9eef5b5.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200818-080241-8e696dd8-903d-4cb9-929d-fa06dcdfdd35.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/the-cult-of-the-free-must-die/",
+            "url": "https://mirror.roytang.net/2020/08/the-cult-of-the-free-must-die/",
+            "path": "/2020/08/the-cult-of-the-free-must-die/",
+            "title": "The cult of the free must die",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-08-17T22:01:08+00:00",
+            "date_modified": "2020-08-17T22:15:03+00:00",
+            "section": "links",
+            "source_path": "links/2020/08/the-cult-of-the-free-must-die/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104707012138883635"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295483088860901376/"}]
+            ,"link": "https://quirksmode.org/blog/archives/2020/08/the_cult_of_the.html"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/1295317142502608897/",
+            "url": "https://mirror.roytang.net/2020/08/1295317142502608897/",
+            "path": "/2020/08/1295317142502608897/",
+            "title": "",
+            "content_html": "\u003cp\u003eMonday evening Amonkhet Remastered draft (ep4) \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #twitch #mtgakr\u003c/p\u003e\n\u003cp\u003eDraft was good, but I was too dumb to get to 7 wins D: \u003ca href=\"https://www.youtube.com/watch?v=vcI0CRqRlwM\"\u003ehttps://www.youtube.com/watch?v=vcI0CRqRlwM\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Monday evening Amonkhet Remastered draft (ep4) https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgakr\nDraft was good, but I was too dumb to get to 7 wins D: https://www.youtube.com/watch?v=vcI0CRqRlwM",
+            "date_published": "2020-08-17T11:10:47+00:00",
+            "date_modified": "2020-08-17T15:00:05+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/08/1295317142502608897/index.md"
+            , "tags": ["mtgakr","twitch","magicarena","mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295317142502608897/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295370927622852608/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/web-browsers-need-to-stop/",
+            "url": "https://mirror.roytang.net/2020/08/web-browsers-need-to-stop/",
+            "path": "/2020/08/web-browsers-need-to-stop/",
+            "title": "Web browsers need to stop",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-08-16T16:12:36+00:00",
+            "date_modified": "2020-08-16T16:30:04+00:00",
+            "section": "links",
+            "source_path": "links/2020/08/web-browsers-need-to-stop/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104699973544364615"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295032619067772928/"}]
+            ,"link": "https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/1294999597593501698/",
+            "url": "https://mirror.roytang.net/2020/08/1294999597593501698/",
+            "path": "/2020/08/1294999597593501698/",
+            "title": "",
+            "content_html": "\u003cp\u003eI cant be sure, but I suspect Globe wants me to know that my payment has been posted\u003c/p\u003e\n",
+            "summary": "I cant be sure, but I suspect Globe wants me to know that my payment has been posted",
+            "date_published": "2020-08-16T14:08:58+00:00",
+            "date_modified": "2020-08-16T14:15:02+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/08/1294999597593501698/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294999597593501698/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/1294998594081021955/",
+            "url": "https://mirror.roytang.net/2020/08/1294998594081021955/",
+            "path": "/2020/08/1294998594081021955/",
+            "title": "",
+            "content_html": "\u003cp\u003eTwitter should consider just showing the person’s bio when you reply to a tweet, to help avoid dumbass moments like this.\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/danslott/status/1294919941091721218'\u003eDanSlott\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThere are definitely times when I should step away from Twitter for a bit\u0026hellip; like\u0026hellip; right\u0026hellip; NOW.\u003c/p\u003e\n\u003cp\u003eAll right, back to my script.\u003c/p\u003e\n\u003cp\u003eSee ya later.\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "Twitter should consider just showing the person’s bio when you reply to a tweet, to help avoid dumbass moments like this.\nQuoted DanSlott\u0026#39;s tweet:   There are definitely times when I should step away from Twitter for a bit\u0026hellip; like\u0026hellip; right\u0026hellip; NOW.\nAll right, back to my script.\nSee ya later.\n ",
+            "date_published": "2020-08-16T14:04:59+00:00",
+            "date_modified": "2020-08-16T14:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/08/1294998594081021955/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294998594081021955/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/08/1294941749983379456/",
+            "url": "https://mirror.roytang.net/2020/08/1294941749983379456/",
+            "path": "/2020/08/1294941749983379456/",
+            "title": "",
+            "content_html": "\u003cp\u003eDo any other countries have this scale of time-based \u0026ldquo;mass recoveries\u0026rdquo;\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ABSCBNNews/status/1294914534138757121'\u003eABSCBNNews\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    OVER 112,000 RECOVERIES. DOH logs additional 40,397 new recoveries, citing data reconciliation efforts and adjustment in classification under \u0026ldquo;OPLAN RECOVERY.\u0026rdquo; As of August 16, PH has total 112,586 #COVID19 recoveries.\n\u003c/blockquote\u003e\n",
+            "summary": "Do any other countries have this scale of time-based \u0026ldquo;mass recoveries\u0026rdquo;\nQuoted ABSCBNNews\u0026#39;s tweet:   OVER 112,000 RECOVERIES. DOH logs additional 40,397 new recoveries, citing data reconciliation efforts and adjustment in classification under \u0026ldquo;OPLAN RECOVERY.\u0026rdquo; As of August 16, PH has total 112,586 #COVID19 recoveries.  ",
+            "date_published": "2020-08-16T10:19:06+00:00",
+            "date_modified": "2020-08-16T10:30:04+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/08/1294941749983379456/index.md"
+            , "tags": ["covid19"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294941749983379456/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/08/1294919994816462849/",
             "url": "https://mirror.roytang.net/2020/08/1294919994816462849/",
             "path": "/2020/08/1294919994816462849/",
@@ -747,125 +877,6 @@
             "source_path": "post/2020/08/weeknotes-08-02/index.md"
             , "tags": ["weeknotes","current events","philippines"]
             , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104618538046957752"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1289820747397963778/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/",
-            "url": "https://mirror.roytang.net/2020/08/",
-            "path": "/2020/08/",
-            "title": "Monthly Archives for 08 2020",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-08-01T00:00:00+00:00",
-            "date_modified": "2020-08-02T07:00:25+00:00",
-            "section": "archm",
-            "source_path": "archm/2020-08.md"
-            
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/write-like-a-human/",
-            "url": "https://mirror.roytang.net/2020/07/write-like-a-human/",
-            "path": "/2020/07/write-like-a-human/",
-            "title": "Write like a human",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-07-31T17:20:44+00:00",
-            "date_modified": "2020-07-31T17:30:14+00:00",
-            "section": "links",
-            "source_path": "links/2020/07/write-like-a-human/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://om.co/2020/07/30/write-like-a-human/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104609651797758002"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1289252027093012480/"}]
-            ,"link": "https://om.co/2020/07/30/write-like-a-human/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/1289135105663881216/",
-            "url": "https://mirror.roytang.net/2020/07/1289135105663881216/",
-            "path": "/2020/07/1289135105663881216/",
-            "title": "",
-            "content_html": "\u003cp\u003e“Those countries with zero cases, either they have no testing kits or they are lying.”\u003c/p\u003e\n\u003cp\u003eOur govt doesnt seem to understand that better things are possible.\u003c/p\u003e\n\u003cp\u003eTagging \u003ca href=\"https://twitter.com/jacindaardern/\"\u003e@jacindaardern\u003c/a\u003e\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/cnnphilippines/status/1289123500620357632'\u003ecnnphilippines\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003ca href=\"https://twitter.com/daninakpil/\"\u003e@daninakpil\u003c/a\u003e Año: \u0026lsquo;yong mga countries na nag ze-zero (cases), either wala silang testing kit o nagsisinungaling sila.\n\u003c/blockquote\u003e\n",
-            "summary": "“Those countries with zero cases, either they have no testing kits or they are lying.”\nOur govt doesnt seem to understand that better things are possible.\nTagging @jacindaardern\nQuoted cnnphilippines\u0026#39;s tweet:   @daninakpil Año: \u0026lsquo;yong mga countries na nag ze-zero (cases), either wala silang testing kit o nagsisinungaling sila.  ",
-            "date_published": "2020-07-31T09:45:34+00:00",
-            "date_modified": "2020-07-31T10:00:04+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/07/1289135105663881216/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1289135105663881216/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/1288964042241929217/",
-            "url": "https://mirror.roytang.net/2020/07/1288964042241929217/",
-            "path": "/2020/07/1288964042241929217/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/joyarmadamba/\"\u003e@joyarmadamba\u003c/a\u003e I am surely not, but eegardless both of us are the wrong generation to affect these results. am also not convinced the typical/average genz pinoy even listens to the radio\u003c/p\u003e\n",
-            "summary": "@joyarmadamba I am surely not, but eegardless both of us are the wrong generation to affect these results. am also not convinced the typical/average genz pinoy even listens to the radio",
-            "date_published": "2020-07-30T22:25:50+00:00",
-            "date_modified": "2020-07-30T22:30:13+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/07/1288964042241929217/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1288964042241929217/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/1288957903735422976/",
-            "url": "https://mirror.roytang.net/2020/07/1288957903735422976/",
-            "path": "/2020/07/1288957903735422976/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/joyarmadamba/\"\u003e@joyarmadamba\u003c/a\u003e (1) his data is global (I participated), although it is reasonable to assume majority of respondents are americans/europeans. (2) \u0026ldquo;constant radio airplay\u0026rdquo; -\u0026gt; not sure if true, I\u0026rsquo;ve certainly never heard \u0026ldquo;Stay\u0026rdquo; on the radio in the last 10 years.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://twitter.com/joyarmadamba/\"\u003e@joyarmadamba\u003c/a\u003e This may just be an observation bias on your part since you likely prefer listening to radio stations that specialize in \u0026ldquo;oldies\u0026rdquo; (and those radio stations exist in other countries too)\u003c/p\u003e\n",
-            "summary": "@joyarmadamba (1) his data is global (I participated), although it is reasonable to assume majority of respondents are americans/europeans. (2) \u0026ldquo;constant radio airplay\u0026rdquo; -\u0026gt; not sure if true, I\u0026rsquo;ve certainly never heard \u0026ldquo;Stay\u0026rdquo; on the radio in the last 10 years.\n@joyarmadamba This may just be an observation bias on your part since you likely prefer listening to radio stations that specialize in \u0026ldquo;oldies\u0026rdquo; (and those radio stations exist in other countries too)",
-            "date_published": "2020-07-30T22:01:26+00:00",
-            "date_modified": "2020-07-30T22:15:02+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/07/1288957903735422976/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1288957903735422976/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1288957991094427648/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/defining-the-90s-music-canon/",
-            "url": "https://mirror.roytang.net/2020/07/defining-the-90s-music-canon/",
-            "path": "/2020/07/defining-the-90s-music-canon/",
-            "title": "Defining the 90s Music Canon",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-07-30T18:00:29+00:00",
-            "date_modified": "2020-07-30T18:15:12+00:00",
-            "section": "links",
-            "source_path": "links/2020/07/defining-the-90s-music-canon/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://pudding.cool/2020/07/song-decay/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104604146845474170"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1288899712112717824/"}]
-            ,"link": "https://pudding.cool/2020/07/song-decay/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/07/1288893973776306177/",
-            "url": "https://mirror.roytang.net/2020/07/1288893973776306177/",
-            "path": "/2020/07/1288893973776306177/",
-            "title": "",
-            "content_html": "\u003cp\u003eI cant recommend this improv special enough (its on netflix). Already seen it but rewatching the clips is still funny\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/rejectedjokes/status/1288892115196317697'\u003erejectedjokes\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThis Fucking Guy. #MiddleditchAndSchwartz\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/amplify_video/1288890934977945600/vid/1280x720/L1oDV4MloWnvuKRi.mp4?tag=13' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "I cant recommend this improv special enough (its on netflix). Already seen it but rewatching the clips is still funny\nQuoted rejectedjokes\u0026#39;s tweet:   This Fucking Guy. #MiddleditchAndSchwartz\nYour browser does not support the video tag.   ",
-            "date_published": "2020-07-30T17:47:24+00:00",
-            "date_modified": "2020-07-30T18:00:04+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/07/1288893973776306177/index.md"
-            , "tags": ["middleditchandschwartz"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1288893973776306177/"}]
             
             
             }
