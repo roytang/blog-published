@@ -11,6 +11,93 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/3127861002/",
+            "url": "https://mirror.roytang.net/2009/08/3127861002/",
+            "path": "/2009/08/3127861002/",
+            "title": "",
+            "content_html": "\u003cp\u003etrying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating\u003c/p\u003e\n",
+            "summary": "trying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating",
+            "date_published": "2009-08-04T17:19:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3127861002.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3127861002/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/114821597870"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/1225798/",
+            "url": "https://mirror.roytang.net/2009/08/1225798/",
+            "path": "/2009/08/1225798/",
+            "title": "Javascript - programmatically invoking events",
+            "content_html": "\u003cp\u003eSay I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\u003c/p\u003e\n\u003cp\u003eThe events handlers are added/removed using an object like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar Event = {\n    add: function(obj,type,fn) {\n        if (obj.attachEvent) {\n            obj.attachEvent('on'+type,fn);\n        } else {\n            obj.addEventListener(type,fn,false);\n        }\n    },\n    remove: function(obj,type,fn) {\n        if (obj.detachEvent) {\n            obj.detachEvent('on'+type,fn);\n        } else {\n            obj.removeEventListener(type,fn,false);\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOr do I need to store copies of each handler and just add an Event.invoke(\u0026hellip;) function?\u003c/p\u003e\n\u003cp\u003eEdit: Also, jQuery is not an option :D\u003c/p\u003e\n",
+            "summary": "Say I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\nThe events handlers are added/removed using an object like this:\nvar Event = { add: function(obj,type,fn) { if (obj.attachEvent) { obj.attachEvent('on'+type,fn); } else { obj.addEventListener(type,fn,false); } }, remove: function(obj,type,fn) { if (obj.detachEvent) { obj.detachEvent('on'+type,fn); } else { obj.removeEventListener(type,fn,false); } } }  Or do I need to store copies of each handler and just add an Event.",
+            "date_published": "2009-08-04T05:27:59+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/1225798/index.md"
+            , "tags": ["javascript","javascript-events","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T062116-1225925.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T101430-1226696.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3114739612/",
+            "url": "https://mirror.roytang.net/2009/08/3114739612/",
+            "path": "/2009/08/3114739612/",
+            "title": "",
+            "content_html": "\u003cp\u003ewhat\u0026rsquo;s up with the random 5-minute rainshowers? Oh crap, I\u0026rsquo;m gonna be late!\u003c/p\u003e\n",
+            "summary": "what\u0026rsquo;s up with the random 5-minute rainshowers? Oh crap, I\u0026rsquo;m gonna be late!",
+            "date_published": "2009-08-04T00:36:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3114739612.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3114739612/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/112021242874"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3106498671/",
+            "url": "https://mirror.roytang.net/2009/08/3106498671/",
+            "path": "/2009/08/3106498671/",
+            "title": "",
+            "content_html": "\u003cp\u003estill sucks at Blazblue\u003c/p\u003e\n",
+            "summary": "still sucks at Blazblue",
+            "date_published": "2009-08-03T16:12:22+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3106498671/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3106498671/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/259124095240"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20090804-000000-b0db64d5-8eb4-44d8-89e0-cb0b0063b1ce.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20090804-000001-f9c91de3-2a82-4fa7-a9dc-ff7eecb6768c.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20090805-000002-4317bbc5-5670-42ad-8646-dfc67edfcb37.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3106323110/",
             "url": "https://mirror.roytang.net/2009/08/3106323110/",
             "path": "/2009/08/3106323110/",
@@ -876,85 +963,6 @@
             "source_path": "notes/2009/07/2632360006.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2632360006/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/103316458275"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2631881738/",
-            "url": "https://mirror.roytang.net/2009/07/2631881738/",
-            "path": "/2009/07/2631881738/",
-            "title": "",
-            "content_html": "\u003cp\u003emy optical mouse is crappy!\u003c/p\u003e\n",
-            "summary": "my optical mouse is crappy!",
-            "date_published": "2009-07-14T13:18:35+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2631881738.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2631881738/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/115131414576"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2631651517/",
-            "url": "https://mirror.roytang.net/2009/07/2631651517/",
-            "path": "/2009/07/2631651517/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/densdensdens/\"\u003e@densdensdens\u003c/a\u003e wow productive ka na rin!\u003c/p\u003e\n",
-            "summary": "@densdensdens wow productive ka na rin!",
-            "date_published": "2009-07-14T12:59:17+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2631651517.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2631651517/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/1123415/",
-            "url": "https://mirror.roytang.net/2009/07/1123415/",
-            "path": "/2009/07/1123415/",
-            "title": "styling a disabled combobox in internet explorer",
-            "content_html": "\u003cp\u003eSay I had the following:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;select disabled=\u0026quot;disabled\u0026quot; style=\u0026quot;border: 1px red solid; color: black;\u0026quot;\u0026gt;\n\u0026lt;option\u0026gt;ABC\u0026lt;/option\u0026gt;\n\u0026lt;/select\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFirefox renders the above with a red border and black text as I expect; but IE does not, it seems to be using native colors for the border and the disabled text. Is there any way for me to be able to style it?\u003c/p\u003e\n\u003cp\u003eFor edit boxes my workaround was to use readOnly instead of disabled so that I can style it, but it seems for combo boxes the readOnly attribute has no effect.\u003c/p\u003e\n\u003cp\u003eNote: I only need this to work in IE (it\u0026rsquo;s for an intranet webapp where users must use IE), so IE-specific solutions are fine.\u003c/p\u003e\n",
-            "summary": "Say I had the following:\n\u0026lt;select disabled=\u0026quot;disabled\u0026quot; style=\u0026quot;border: 1px red solid; color: black;\u0026quot;\u0026gt; \u0026lt;option\u0026gt;ABC\u0026lt;/option\u0026gt; \u0026lt;/select\u0026gt;  Firefox renders the above with a red border and black text as I expect; but IE does not, it seems to be using native colors for the border and the disabled text. Is there any way for me to be able to style it?\nFor edit boxes my workaround was to use readOnly instead of disabled so that I can style it, but it seems for combo boxes the readOnly attribute has no effect.",
-            "date_published": "2009-07-14T04:23:32+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/1123415/index.md"
-            , "tags": ["html","css","internet-explorer","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1123415/styling-a-disabled-combobox-in-internet-explorer"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1123415/styling-a-disabled-combobox-in-internet-explorer",
-                    "source_file": "comment-20090714T042719-1123423.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1123415/styling-a-disabled-combobox-in-internet-explorer",
-                    "source_file": "comment-20090714T050239-1123518.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1123415/styling-a-disabled-combobox-in-internet-explorer",
-                    "source_file": "comment-20090714T183728-1127188.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2621644349/",
-            "url": "https://mirror.roytang.net/2009/07/2621644349/",
-            "path": "/2009/07/2621644349/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/roytang/\"\u003e@roytang\u003c/a\u003e A: Sa Cubao. Yung Araneta Calcium!\u003c/p\u003e\n",
-            "summary": "@roytang A: Sa Cubao. Yung Araneta Calcium!",
-            "date_published": "2009-07-13T22:22:13+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2621644349.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2621644349/"}]
             
             
             }

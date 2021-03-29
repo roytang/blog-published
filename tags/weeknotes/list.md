@@ -1,4 +1,12 @@
 
+- [Weeknotes 2021-03-28](/2021/03/weeknotes-2021-03-28/)
+
+- [Weeknotes 2021-03-21](/2021/03/weeknotes-2021-03-21/)
+
+- [Weeknotes 2021-03-14](/2021/03/weeknotes-2021-03-14/)
+
+- [Weeknotes 2021-03-07](/2021/03/weeknotes-2021-03-07/)
+
 - [Weeknotes 2021-02-28](/2021/02/weeknotes-2021-02-28/)
 
 - [Weeknotes 2021-02-21](/2021/02/weeknotes-2021-02-21/)
