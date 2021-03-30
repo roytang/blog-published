@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/09/04b1428fe35c94f8157dc2178209b6a7/",
+            "url": "https://mirror.roytang.net/2020/09/04b1428fe35c94f8157dc2178209b6a7/",
+            "path": "/2020/09/04b1428fe35c94f8157dc2178209b6a7/",
+            "title": "git merge",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve been using git for at least 6 years, and every time I need to do a merge I still search for \u0026ldquo;git merging\u0026rdquo; to make sure I don\u0026rsquo;t merge in the wrong direction\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve been using git for at least 6 years, and every time I need to do a merge I still search for \u0026ldquo;git merging\u0026rdquo; to make sure I don\u0026rsquo;t merge in the wrong direction",
+            "date_published": "2020-09-16T18:23:00+00:00",
+            "date_modified": "2020-09-16T18:45:03+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/04b1428fe35c94f8157dc2178209b6a7/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104876016713000957"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1306299382506029056/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/page/demo/",
+            "url": "https://mirror.roytang.net/page/demo/",
+            "path": "/page/demo/",
+            "title": "Demo stuff",
+            "content_html": "\u003ch1 id=\"an-h1-header\"\u003eAn h1 header\u003c/h1\u003e\n\u003cp\u003eTest \n\n    \n\n\n\u003ca href=\"#footnote-1\" id=\"footnotebase-1\"\u003e[1]\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eTest 2 \n\n    \n\n\n\u003ca href=\"#footnote-2\" id=\"footnotebase-2\"\u003e[2]\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eTest 3 \n\n    \n\n\n\u003ca href=\"#footnote-3\" id=\"footnotebase-3\"\u003e[3]\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eParagraphs are separated by a blank line.\u003c/p\u003e\n\u003cp\u003e2nd paragraph. \u003cem\u003eItalic\u003c/em\u003e, \u003cstrong\u003ebold\u003c/strong\u003e, and \u003ccode\u003emonospace\u003c/code\u003e. Itemized lists\nlook like:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethis one\u003c/li\u003e\n\u003cli\u003ethat one\u003c/li\u003e\n\u003cli\u003ethe other one\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eNote that \u0026mdash; not considering the asterisk \u0026mdash; the actual text\ncontent starts at 4-columns in.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eBlock quotes are\nwritten like so.\u003c/p\u003e\n\u003cp\u003eThey can span multiple paragraphs,\nif you like.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eUse 3 dashes for an em-dash. Use 2 dashes for ranges (ex., \u0026ldquo;it\u0026rsquo;s all\nin chapters 12\u0026ndash;14\u0026rdquo;). Three dots \u0026hellip; will be converted to an ellipsis.\nUnicode is supported. ☺\u003c/p\u003e\n\u003cdetails class=\"spoiler\"\u003e\n    \u003csummary\u003e(Spoilers)\u003c/summary\u003e\n    \u003cul\u003e\n\u003cli\u003eitem 1\u003c/li\u003e\n\u003cli\u003eitem 2\u003c/li\u003e\n\u003cli\u003eitem 3\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/details\u003e\n\u003cp /\u003e\n\u003cp\u003eDefinitely, we are using Django templates but there is still one problem though. We are still hardcoding raw HTML inside our views. Creating templates for a large HTML page in this way would be very cumbersome and tedious. It would be much better if we could write the HTML in an external file. Let\u0026rsquo;s do this.\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-go-html-template\" data-lang=\"go-html-template\"\u003eLatest blog posts:\n\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$pages\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e:=\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003efirst\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e5\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003e(\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003ewhere\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esite\u003c/span\u003e\u003cspan style=\"color:#a6e22e\"\u003e.RegularPages\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#34;Type\u0026#34;\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#34;post\u0026#34;\u003c/span\u003e\u003cspan style=\"color:#f92672\"\u003e)\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e    \n\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#66d9ef\"\u003erange\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e$pages\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\n- [\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.Title\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e](\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.Permalink\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e)\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#66d9ef\"\u003eend\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003e\n\n[View all posts](\u003cspan style=\"color:#75715e\"\u003e{{\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003e.Permalink\u003c/span\u003e \u003cspan style=\"color:#75715e\"\u003e}}\u003c/span\u003eblog)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/tweet_video/CKKiqvPXAAAaE5A.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003cp\u003eThe quick brown fox jumps over the lazy dog.\u003c/p\u003e\n\n\n\n\u003cp\u003eSee also: \u003ca href=\"/2017/11/931540341919965184/\"\u003eJustice League spoiler-free review (2017)\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThis is basically a movie that\u0026rsquo;s more than 3 years old, we\u0026rsquo;re not holding back on spoilers here.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eplot basically follows the same beats as the theatrical cut\u003c/li\u003e\n\u003cli\u003eexcept this time we have a lot more team setup time (one of my criticisms from the previous version), giving the characters stronger backgrounds, especially Cyborg and Flash\u003c/li\u003e\n\u003cli\u003eRay Fisher was right to complain; in this version he\u0026rsquo;s one of the important characters of the ensemble while he was basically a minor guest character in the theatrical cut\u003c/li\u003e\n\u003cli\u003emore DC characters make appearances in this version, among them Ryan Choi, DeSaad, Granny Goodness, Martian Manhunter, the Joker and of course Darkseid himself\u003c/li\u003e\n\u003cli\u003eI accept this version as a better version of the original theatrical release and is my new DCEU headcanon\u003c/li\u003e\n\u003cli\u003eit never would have worked in theaters anyway, given the four hour runtime. Maybe if they split it into two movies\u0026hellip; (and I actually did take two sittings to watch this one!)\u003c/li\u003e\n\u003cli\u003eanyway, this version does a much better job of setting up any succeeding movies, including the upcoming Flash movie (although I\u0026rsquo;m not sure if the changes cause any continuity issues with the 2019 Aquaman movie\u0026hellip; not that the DCEU cares too much about continuity anyway\u0026hellip;)\u003c/li\u003e\n\u003c/ul\u003e\n\n\n\n\u003cdiv class=\"mtgdecklist\"\u003e\n\u003cdiv class=\"header\"\u003e\n    \u003ch4\u003eTest card lists\u003chr\u003e\u003c/h4\u003e\n\u003c/div\u003e\n\u003cdiv class=\"content\"\u003e\n    \u003cdiv class=\"wrapper\"\u003e\n        \n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eLands\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    2\n                \n            \n                \n                    \n                    \n                \n            \n                \n                    \n                        \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Crumbling%20Necropolis' \u003eCrumbling Necropolis\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    9\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Plains' \u003ePlains\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    1\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Mountain' \u003eMountain\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n            \u003cli\u003e\n                \n                    5\n                \n            \n                \n                    \n                    \n                \n            \n            \u003ca target=\"_new\" href='http://gatherer.wizards.com/Handlers/Image.ashx?size=small\u0026type=card\u0026name=Forest' \u003eForest\u003c/a\u003e\n            \u003c/li\u003e\n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\n    \u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv class=\"mtgdecklist\"\u003e\n\u003cdiv class=\"header\"\u003e\n    \u003ch4\u003e\u003chr\u003e\u003c/h4\u003e\n\u003c/div\u003e\n\u003cdiv class=\"content\"\u003e\n    \u003cdiv class=\"wrapper\"\u003e\n        \n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eLands\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eCreatures\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eSpells\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eSideboard\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\n    \u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv class=\"mtgdecklist\"\u003e\n\u003cdiv class=\"header\"\u003e\n    \u003ch4\u003e\u003chr\u003e\u003c/h4\u003e\n\u003c/div\u003e\n\u003cdiv class=\"content\"\u003e\n    \u003cdiv class=\"wrapper\"\u003e\n        \n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eWhite\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eBlue\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eBlack\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eRed\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eGreen\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\u003cdiv class=\"box\"\u003e\n    \u003cdiv class=\"section_header\"\u003eOthers\u003c/div\u003e\n    \u003cul\u003e\n        \n        \n            \n            \n            \n        \n            \n            \n            \n        \n    \u003c/ul\u003e\n\u003c/div\u003e\n\n\n\n    \u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n",
+            "summary": "An h1 header Test [1] Test 2 [2] Test 3 [3] Paragraphs are separated by a blank line.\n2nd paragraph. Italic, bold, and monospace. Itemized lists look like:\n this one that one the other one  Note that \u0026mdash; not considering the asterisk \u0026mdash; the actual text content starts at 4-columns in.\n Block quotes are written like so.\nThey can span multiple paragraphs, if you like.\n Use 3 dashes for an em-dash.",
+            "date_published": "2020-09-16T00:00:00+00:00",
+            "date_modified": "2020-09-26T15:31:54+08:00",
+            "section": "page",
+            "source_path": "page/demo.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/1305838795506368512/",
+            "url": "https://mirror.roytang.net/2020/09/1305838795506368512/",
+            "path": "/2020/09/1305838795506368512/",
+            "title": "",
+            "content_html": "\u003cp\u003eThere’s something to be said about how straightforward “Playstation 5” is compared to the debacle that is Xbox naming\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ign/status/1305280363061800961'\u003eIGN\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThe Xbox Series S will not run Xbox One X enhanced versions of backwards compatible games, but will instead run Xbox One S versions of Xbox One and Xbox 360 titles.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://bit.ly/2Fv4ltE\"\u003ehttps://bit.ly/2Fv4ltE\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "There’s something to be said about how straightforward “Playstation 5” is compared to the debacle that is Xbox naming\nQuoted IGN\u0026#39;s tweet:   The Xbox Series S will not run Xbox One X enhanced versions of backwards compatible games, but will instead run Xbox One S versions of Xbox One and Xbox 360 titles.\nhttps://bit.ly/2Fv4ltE\n ",
+            "date_published": "2020-09-15T12:00:04+00:00",
+            "date_modified": "2020-09-15T12:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/1305838795506368512/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1305838795506368512/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/09/81f2a56837f67d1702af671036373a3c/",
             "url": "https://mirror.roytang.net/2020/09/81f2a56837f67d1702af671036373a3c/",
             "path": "/2020/09/81f2a56837f67d1702af671036373a3c/",
@@ -838,57 +889,6 @@
             "source_path": "notes/2020/08/1296706526808166400/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1296706526808166400/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/1296340801820061696/",
-            "url": "https://mirror.roytang.net/2020/08/1296340801820061696/",
-            "path": "/2020/08/1296340801820061696/",
-            "title": "",
-            "content_html": "\u003cp\u003eStarted Uncharted 4 and gotta admit, kinda envious of how nice Drake\u0026rsquo;s house is #PS4share\u003c/p\u003e\n",
-            "summary": "Started Uncharted 4 and gotta admit, kinda envious of how nice Drake\u0026rsquo;s house is #PS4share",
-            "date_published": "2020-08-20T06:58:26+00:00",
-            "date_modified": "2020-08-20T07:00:22+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/08/1296340801820061696/index.md"
-            , "tags": ["PS4share"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1296340801820061696/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/1296335528766234625/",
-            "url": "https://mirror.roytang.net/2020/08/1296335528766234625/",
-            "path": "/2020/08/1296335528766234625/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe Story of the Legendary Grilled Cheese.\u003c/p\u003e\n",
-            "summary": "The Story of the Legendary Grilled Cheese.",
-            "date_published": "2020-08-20T06:37:29+00:00",
-            "date_modified": "2020-08-20T06:45:19+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/08/1296335528766234625/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1296335528766234625/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/1296331918158385153/",
-            "url": "https://mirror.roytang.net/2020/08/1296331918158385153/",
-            "path": "/2020/08/1296331918158385153/",
-            "title": "",
-            "content_html": "\u003cp\u003eI kind of feel bad for the applicant whenever I ser resume writing skills like this (or lack thereof). I\u0026rsquo;m thinking I can offer help editing resumes, but I think everyone i follow/who follows me can write decently anyway\u003c/p\u003e\n",
-            "summary": "I kind of feel bad for the applicant whenever I ser resume writing skills like this (or lack thereof). I\u0026rsquo;m thinking I can offer help editing resumes, but I think everyone i follow/who follows me can write decently anyway",
-            "date_published": "2020-08-20T06:23:08+00:00",
-            "date_modified": "2020-08-20T06:30:18+00:00",
-            "section": "photos",
-            "source_path": "photos/2020/08/1296331918158385153/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1296331918158385153/"}]
             
             
             }

@@ -29,12 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [29 Mar 2021 11:22am](https://mirror.roytang.net/2021/03/1376494924409933826/): @anthony_siy what does service contracting mean here sir?
 - [28 Mar 2021 2:27pm](https://mirror.roytang.net/2021/03/1376179123924598786/): @Wizards_MagicEU @mtgjp &ldquo;All around the world&rdquo;? What about in southeast asia?
 - [28 Mar 2021 2:12pm](https://mirror.roytang.net/2021/03/1376175428121939970/): This one is my favorite so far.
 Quoted ponettplus&#39;s tweet:   don&rsquo;t worry everyone, help has arrived  
 - [27 Mar 2021 12:30pm](https://mirror.roytang.net/2021/03/1375787410055827462/): @paulcatiang Alt + 0151 — use the numpad
 - [27 Mar 2021 12:15pm](https://mirror.roytang.net/2021/03/1375783440952397832/): @SaffronOlive Wait, are bolt counterspell and swords allowed in historic brawl then?
-- [27 Mar 2021 9:10am](https://mirror.roytang.net/2021/03/1375737016407625729/): Planning for a stricter lockdown less than a week after starting this ridiculous bubble, without even waiting to see the effects, reeks of making shit up as they go along, just reacting to the numbers without any real analysis or planning.
 
 [View all notes](https://mirror.roytang.net/notes)
 
