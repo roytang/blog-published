@@ -18,23 +18,23 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Something to look forward to](https://mirror.roytang.net/2021/03/something-to-look-forward-to/)
 - [Write Simply](https://mirror.roytang.net/2021/03/write-simply/)
 - [Douglas Adams&#39; note to self reveals author found writing torture](https://mirror.roytang.net/2021/03/douglas-adams-note-to-self-reveals-author-found-writing-torture/)
 - [30 covers that are better than the originals](https://mirror.roytang.net/2021/03/30-covers-that-are-better-than-the-originals/)
 - [blogging and the blogosphere](https://mirror.roytang.net/2021/03/blogging-and-the-blogosphere/)
-- [The internet is splitting apart. The Internet Archive wants to save it all forever.](https://mirror.roytang.net/2021/03/the-internet-is-splitting-apart-the-internet-archive-wants-to-save-it-all-forever/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [30 Mar 2021 6:03am](https://mirror.roytang.net/2021/03/1376777097453072386/): @mlq3 @rocketkeis Noted. Thanks!
+- [30 Mar 2021 5:57am](https://mirror.roytang.net/2021/03/1376775457153019905/): @rocketkeis what is it supposed to mean?
 - [29 Mar 2021 11:22am](https://mirror.roytang.net/2021/03/1376494924409933826/): @anthony_siy what does service contracting mean here sir?
 - [28 Mar 2021 2:27pm](https://mirror.roytang.net/2021/03/1376179123924598786/): @Wizards_MagicEU @mtgjp &ldquo;All around the world&rdquo;? What about in southeast asia?
 - [28 Mar 2021 2:12pm](https://mirror.roytang.net/2021/03/1376175428121939970/): This one is my favorite so far.
 Quoted ponettplus&#39;s tweet:   don&rsquo;t worry everyone, help has arrived  
-- [27 Mar 2021 12:30pm](https://mirror.roytang.net/2021/03/1375787410055827462/): @paulcatiang Alt + 0151 — use the numpad
-- [27 Mar 2021 12:15pm](https://mirror.roytang.net/2021/03/1375783440952397832/): @SaffronOlive Wait, are bolt counterspell and swords allowed in historic brawl then?
 
 [View all notes](https://mirror.roytang.net/notes)
 

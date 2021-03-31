@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/07/vf1juqyd0za/",
+            "url": "https://mirror.roytang.net/2016/07/vf1juqyd0za/",
+            "path": "/2016/07/vf1juqyd0za/",
+            "title": "",
+            "content_html": "\u003cp\u003eFuri_20160707140034\nPretty game, but not sure it‘s for me \u0026ndash; this fight took me three tries!\u003c/p\u003e\n\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n  \u003ciframe src=\"https://www.youtube.com/embed/Vf1JUqYd0ZA\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" allowfullscreen title=\"YouTube Video\"\u003e\u003c/iframe\u003e\n\u003c/div\u003e\n\n",
+            "summary": "Furi_20160707140034 Pretty game, but not sure it‘s for me \u0026ndash; this fight took me three tries!\n  ",
+            "date_published": "2016-07-07T09:31:21+00:00",
+            "date_modified": "2020-12-30T00:26:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/Vf1JUqYd0ZA/index.md"
+            , "tags": ["PS4share","PlayStation 4","Sony Interactive Entertainment","Furi","legendaryroy"]
+            , "syndicated": [{"type":"youtube","url":"https://www.youtube.com/watch?v=Vf1JUqYd0ZA"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/750982429855199232/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/d52ik6q/",
+            "url": "https://mirror.roytang.net/2016/07/d52ik6q/",
+            "path": "/2016/07/d52ik6q/",
+            "title": "",
+            "content_html": "\u003cp\u003eThey\u0026rsquo;re making a bunch of new characters too\u0026hellip; mostly Inhumans though\u003c/p\u003e\n",
+            "summary": "They\u0026rsquo;re making a bunch of new characters too\u0026hellip; mostly Inhumans though",
+            "date_published": "2016-07-07T06:28:56+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/d52ik6q/index.md"
+            , "tags": ["Marvel"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Marvel/comments/4rifr3/marvels_new_iron_man_is_a_black_woman/d52ik6q/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/web-security-file-upload-vulnerabilities/",
+            "url": "https://mirror.roytang.net/2016/07/web-security-file-upload-vulnerabilities/",
+            "path": "/2016/07/web-security-file-upload-vulnerabilities/",
+            "title": "Web Security: File Upload Vulnerabilities",
+            "content_html": "\u003cp\u003eA friend of mine had an informal consultation with me the other day (read: asked me questions over FB messenger) about what their IT staff was telling them about a file upload vulnerability that had been recently exploited in one of their applications. Obviously it was difficult for me to judge given that I didn\u0026rsquo;t know all the details, but for me it was most likely a vulnerability introduced in the application code itself.\u003c/p\u003e\n\u003cp\u003eIf you\u0026rsquo;re not familiar with file upload vulnerability, the simplest type of attack goes something like this: the user (or attacker in this case) uploads a file using a file upload function on the system (a common functionality), and the system allows the user to execute that file as if it were code. This can happen if the application saves the uploaded file directly into the web application path, such that it can be executed directly from the client. This is a common vulnerability listed on the OWASP page.\u003c/p\u003e\n\u003cp\u003eFor example, your application provides a function to upload an image to use as the user\u0026rsquo;s profile picture, then the applications stores the uploaded image in the file system directly in the application path such that it is served to the user as something like /images/uploadedfile.png. However, if the user uploads instead a file that can be executed directly by the web server, such as a .PHP file for PHP webservers or a .JSP file for Java containers, the user can now execute any code that was in his uploaded file simply by invoking /images/uploadedfile.php! And this access would be absolute, everything your system has access to will be fair game: file system, network, database, etc., and provides the attacker with more information for succeeding attacks.\u003c/p\u003e\n\u003cp\u003eThe key to protecting yourself from file upload vulnerabilities is one of the basic tenets of web application security: \u003cstrong\u003eNever trust user submitted data\u003c/strong\u003e. This means that you should validate uploaded files \u0026ndash; maybe you only allow image files for example \u0026ndash; and your validation should be thorough. You shouldn\u0026rsquo;t validate only be checking the file extension or the content type in the HTTP header, as these can be faked. Use a server-side API call to verify the file type.\u003c/p\u003e\n\u003cp\u003eIn addition, \u003cstrong\u003edo not store or serve the uploaded files in a way that they will be executed by the web application\u003c/strong\u003e. For Java webapps I\u0026rsquo;ve worked on, often we will store uploaded files in the Oracle database, and when they need to be served they are dumped directly into the response OutputStream. If you \u003cem\u003emust\u003c/em\u003e store the uploads in the file system, do it in a location that is not accessible from the web server directly. For J2EE containers that can be inside /WEB-INF/ or outside the application path itself. For PHP, it should be outside the HTTP doc folder of the Apache server.\u003c/p\u003e\n\u003cp\u003eFor the PHP example above, you should also avoid serving the image files using a PHP include. If the URL to access the image is something like uploadedimage?image_id=1 and your code maps that image_id to a file on the file system and serves it using a PHP include, it will still be executed by the system as code. Instead the file should be dumped directly into the response. One way to do it is as follows:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cpre\u003e\u0026lt;?php\n\u003c/blockquote\u003e\n\u003cp\u003eheader(\u0026lsquo;Content-Type: [whatever your content type is]');\nheader(\u0026ldquo;Content-Disposition: inline; filename=\u0026quot;$file_name\u0026quot;\u0026quot;);\necho $file;\n?\u0026gt;\u003c/pre\u003e\u003c/p\u003e\n\u003cp\u003eThis is only the most basic attack. File upload functions can be exploited in a number of other ways. For example, the attacker could upload a number of large files to attempt to take down your server due to insufficient disk space (prevention: restrict file upload size, prevent user uploading too many files). So developers need to be carefully in how they allow file uploads in their system and be aware of possible vulnerabilities and exploits, the OWASP page linked above lists some more prevention measures.\u003c/p\u003e\n",
+            "summary": "A friend of mine had an informal consultation with me the other day (read: asked me questions over FB messenger) about what their IT staff was telling them about a file upload vulnerability that had been recently exploited in one of their applications. Obviously it was difficult for me to judge given that I didn\u0026rsquo;t know all the details, but for me it was most likely a vulnerability introduced in the application code itself.",
+            "date_published": "2016-07-07T01:30:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/07/web-security-file-upload-vulnerabilities/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/750868946899857409/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/how-can-you-prepare-for-a-comp/",
+            "url": "https://mirror.roytang.net/2016/07/how-can-you-prepare-for-a-comp/",
+            "path": "/2016/07/how-can-you-prepare-for-a-comp/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-can-you-prepare-for-a-completely-fresh-start-in-life/answer/Roy-Tang\"\u003eHow can you prepare for a completely fresh start in life?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eYou will need to consider several things. First, to ensure survival:\u003c/p\u003e\u003cul\u003e\u003cli\u003ewhere will you live? How much will it cost?\u003c/li\u003e\u003cli\u003ewhat is the average cost of daily living where you plan to go?\u003c/li\u003e\u003cli\u003ewill you be able to find a job that pays a sufficient wage?\u003c/li\u003e\u003c/ul\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eYou will need to brace yourself, more likely than not you will be encountering difficulties that you have not encountered before. You may need to accept work beneath your skill level (largely depends on your situation). You may need to power through some difficult times before you manage to settle in and be in a good place\u003c/p\u003e\n\u003cp\u003egood luck!\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n How can you prepare for a completely fresh start in life?\n You will need to consider several things. First, to ensure survival:\nwhere will you live? How much will it cost?what is the average cost of daily living where you plan to go?will you be able to find a job that pays a sufficient wage?You will need to brace yourself, more likely than not you will be encountering difficulties that you have not encountered before.",
+            "date_published": "2016-07-07T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/how-can-you-prepare-for-a-comp.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-can-you-prepare-for-a-completely-fresh-start-in-life/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/07/i-asked-my-boss-for-a-day-s-le/",
             "url": "https://mirror.roytang.net/2016/07/i-asked-my-boss-for-a-day-s-le/",
             "path": "/2016/07/i-asked-my-boss-for-a-day-s-le/",
@@ -805,74 +873,6 @@
             "source_path": "notes/2016/06/748480225210601472.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/748480225210601472/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d4ts9jj/",
-            "url": "https://mirror.roytang.net/2016/06/d4ts9jj/",
-            "path": "/2016/06/d4ts9jj/",
-            "title": "",
-            "content_html": "\u003cp\u003eAnd yet we still have homework even to this day! What an ineffective president!\u003c/p\u003e\n",
-            "summary": "And yet we still have homework even to this day! What an ineffective president!",
-            "date_published": "2016-06-30T10:19:52+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4ts9jj/index.md"
-            , "tags": ["mildlyinteresting"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/mildlyinteresting/comments/4qkng6/obama_in_my_dads_year_book_protesting_homework/d4ts9jj/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bhrucilhjrg/",
-            "url": "https://mirror.roytang.net/2016/06/bhrucilhjrg/",
-            "path": "/2016/06/bhrucilhjrg/",
-            "title": "",
-            "content_html": "\u003cp\u003eShouldnt have walked into kfc #sketchdaily\u003c/p\u003e\n",
-            "summary": "Shouldnt have walked into kfc #sketchdaily",
-            "date_published": "2016-06-30T04:28:53+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BHRucIlhjrG/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHRucIlhjrG/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/146700321405/shouldnt-have-walked-into-kfc-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/748478416597323776/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154710562383912:1"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4qkjnq/june_30th_mashed_potatoes/d4ttmp2/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
-            "url": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
-            "path": "/2016/06/bhrs9-dbtpc/",
-            "title": "",
-            "content_html": "\u003cp\u003eHomemade chicken alfredo\u003c/p\u003e\n",
-            "summary": "Homemade chicken alfredo",
-            "date_published": "2016-06-30T04:16:02+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BHRs9-dBtPC/index.md"
-            
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHRs9-dBtPC/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154710562383912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
-            "url": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
-            "path": "/2016/06/performance-optimization-for-wordpress-blogs/",
-            "title": "Performance Optimization for WordPress Blogs",
-            "content_html": "\u003cp\u003eSome time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this \u003ca href=\"https://testmysite.thinkwithgoogle.com/\"\u003eSpeed Testing Tool\u003c/a\u003e. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#0c6ac79b772c7e82c9d4b481ecd82269-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"0c6ac79b772c7e82c9d4b481ecd82269-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI also ran the site through \u003ca href=\"https://developers.google.com/speed/pagespeed/insights\"\u003eGoogle PageSpeed Insights\u003c/a\u003e. The results were mostly the same, but the Google site gave me results faster, so this was the one I referenced for subsequent testing. The most important problems to address were:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOptimizing image sizes\u003c/li\u003e\n\u003cli\u003eRemoving render-blocking JS and CSS in above-the fold content\u003c/li\u003e\n\u003cli\u003eLeverage browser caching (through the use of HTTP headers)\u003c/li\u003e\n\u003cli\u003eMinify CSS and Javascript\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAll of these are familiar to me since they are very common performance optimizations done in web applications. However, this blog is running on WordPress, which means I should try to look for existing WordPress-based solutions instead of hacking the code myself. (I used to run a custom-built Django-based blog system here, but I got tired of maintaining it myself so I went for tried-and-true WordPress). Here are the optimizations I ended up doing:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eUpgraded to the default WordPress Twenty-Sixteen Theme. Not strictly necessary for optimization, but I was previously using the Twenty-Twelve Theme, and the problem with using older themes is that they may not be using newer web development techniques to improve performance. Also, Twenty-Sixteen looked better haha. And yes, I do use the default WordPress themes. Too lazy (as of yet) to look for a nice custom theme, and I don\u0026rsquo;t have the design chops myself to build it, so it will do for now.\u003c/li\u003e\n\u003cli\u003eFor the image size problem, I found that the biggest offender was the \u003ca href=\"/2016/03/sketching-daily/\"\u003eSketching Daily post\u003c/a\u003e where I broke down how I do my daily sketches. The problem was that I was uploading full-size images of the drawings and they were being inlined into the post \u0026ndash; which meant the browser was loading the full-size image even though it was shown in a smaller size on the post itself. Instead, I manually changed the settings of each image in the post to use one of the smaller-size images generated by WordPress on upload. \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#5e6f8afbe11d06811d33a26b4c215b02-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"5e6f8afbe11d06811d33a26b4c215b02-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n Choosing \u0026ldquo;Large\u0026rdquo; here meant the Large one would be inlined, while I could still set the image to link to the full-size one on click. The full size image is a whole fifteen times larger than the \u0026ldquo;large\u0026rdquo; image! It\u0026rsquo;s something I need to remember in the future if I ever upload huge images again. I also found a link that described how to set the \u003ca href=\"https://made4wp.com/changing-default-attachment-display-setting-insert-image-post/\"\u003edefault image size\u003c/a\u003e (so that it doesn\u0026rsquo;t default to full size all the time), but I don\u0026rsquo;t think it\u0026rsquo;s necessary for now.\u003c/li\u003e\n\u003cli\u003eTo further help with image optimization, I installed the \u003ca href=\"https://wordpress.org/plugins/wp-smushit/\"\u003eWP Smush plugin\u003c/a\u003e, which automatically optimizes (\u0026ldquo;smushes\u0026rdquo;) uploaded images. I found that WP Smush reduces the uploaded image sizes by around 10-15% on average, it\u0026rsquo;s not too bad.\u003c/li\u003e\n\u003cli\u003eNext was render-blocking JavaScript. If you\u0026rsquo;re not familiar, any \u003ccode\u003e\u0026lt;script include=\u0026quot;... \u0026quot; /\u0026gt;\u003c/code\u003e tag in your HTML blocks the rendering of any content below the tag itself until the content of the JS has finished executing. The typical solutions are either to (a) move the script tags to below the content (\u0026ldquo;below the fold\u0026rdquo;) or (b) add an \u0026ldquo;async\u0026rdquo; or \u0026ldquo;defer\u0026rdquo; attribute to the script tag. It turns out that there was already a plugin that did (b), \u003ca href=\"https://wordpress.org/plugins/async-javascript/\"\u003eAsync Javascript\u003c/a\u003e. So I gave it a go, but for some reason it wasn\u0026rsquo;t working. After a bit of debugging, I found that there was an \u0026ldquo;aj_enabled\u0026rdquo; option that wasn\u0026rsquo;t being set. I couldn\u0026rsquo;t figure out any settings page to update it, so I went ahead and edited the plugin directly to set the value: \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n It\u0026rsquo;s generally a bad idea to hack the local copy of your WordPress plugins, since you have to check the impact every time the plugin has a new version, but I decided to live with it for now. After the update, sure enough the JS no longer blocked page rendering.\u003c/li\u003e\n\u003cli\u003eLastly, I installed the \u003ca href=\"https://wordpress.org/plugins/w3-total-cache/\"\u003eW3 Total Cache plugin\u003c/a\u003e. I disabled the WP Super Cache plugin I was using before since they would probably have some sort of conflict. In addition to page caching, this plugin addresses a couple of other issues: it supports HTML/JS/CSS minification (reduces file sizes and HTTP requests) and it allows adding the expiry headers to static content (to leverage browser caching). If you\u0026rsquo;ve done any work on website performance, the settings for the plugin are straightforward to understand, but I also referenced the guide at \u003ca href=\"https://gtmetrix.com/wordpress-optimization-guide.html\"\u003ethis link\u003c/a\u003e. The plugin looks okay, but there\u0026rsquo;s an unfortunate side effect: the minified JS created by the plugin does not respect Async Javascript, so it blocks above the fold content from rendering. It\u0026rsquo;s a problem I\u0026rsquo;ll have to try to resolve in the future.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eAfter the above changes, I retest the site:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#21b8bf5fee6eb583237d7c9920559f3b-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"21b8bf5fee6eb583237d7c9920559f3b-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eMuch improvement indeed! There\u0026rsquo;s still a few issues to iron out, but for the most part I\u0026rsquo;m happy with the results (and my pride has been satisfied :p). I may revisit this issue at a future date to see if there\u0026rsquo;s anything else I can improve on.\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n",
-            "summary": "Some time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this Speed Testing Tool. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p",
-            "date_published": "2016-06-30T01:30:32+00:00",
-            "date_modified": "2021-01-25T07:34:22+08:00",
-            "section": "post",
-            "source_path": "post/2016/06/performance-optimization-for-wordpress-blogs/index.md"
-            , "tags": ["wordpress","Software Development"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/748331247005499392/"}]
             
             
             }

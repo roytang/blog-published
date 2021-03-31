@@ -11,6 +11,74 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2018/11/1062673531891318786/",
+            "url": "https://mirror.roytang.net/2018/11/1062673531891318786/",
+            "path": "/2018/11/1062673531891318786/",
+            "title": "",
+            "content_html": "\u003cp\u003eMarvel\u0026rsquo;s Spider-Man\u003c/p\u003e\n\u003cp\u003eBe Greater (Platinum)\u003c/p\u003e\n\u003cp\u003eCollect all Trophies #PS4share \u003ca href=\"https://store.playstation.com/#!/en-us/tid=CUSA02299_00\"\u003ehttps://store.playstation.com/#!/en-us/tid=CUSA02299_00\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Marvel\u0026rsquo;s Spider-Man\nBe Greater (Platinum)\nCollect all Trophies #PS4share https://store.playstation.com/#!/en-us/tid=CUSA02299_00",
+            "date_published": "2018-11-14T11:48:08+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/11/1062673531891318786/index.md"
+            , "tags": ["PS4share"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1062673531891318786/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/",
+            "url": "https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/",
+            "path": "/2018/11/site-migration-from-wordpress-to-hugo/",
+            "title": "Site Migration from Wordpress to Hugo",
+            "content_html": "\u003ch3 id=\"leaving-wordpress\"\u003eLeaving Wordpress\u003c/h3\u003e\n\u003cp\u003eI\u0026rsquo;ve been using Wordpress for this blog since circa 2006 I believe, but as I mentioned in an \u003ca href=\"https://roytang.net/2018/10/django-blog-application/\"\u003eearlier blog post\u003c/a\u003e that I was not 100% happy with using Wordpress for this blog. I have a few issues with Wordpress, none of them a major dealbreaker, but collectively enough to make me consider something else:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe new \u003ca href=\"https://wordpress.org/gutenberg/\"\u003eGutenberg editor\u003c/a\u003e set to become standard in 5.0 was in my experience, very clunky and kinda annoying\u003c/li\u003e\n\u003cli\u003ethe code structure of Wordpress is very deep and complex, sometimes making it difficult for me to make changes I want. I can usually figure it out, but it feels like things are unnecessarily more complicated than they need to be\u003c/li\u003e\n\u003cli\u003eWordpress\u0026rsquo;s rich plugin library is a plus, but it also means having to figure out how to have multiple plugins interoperate with each other. An easy example is that I was using a queueing plugin that didn\u0026rsquo;t work great with the Gutenberg editor\u003c/li\u003e\n\u003cli\u003eWordpress requires a lot of maintenance, including needing to regularly update plugins for security purposes, and comment moderation\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"static-site-generators\"\u003eStatic Site Generators\u003c/h3\u003e\n\u003cp\u003eAt the same time, while reading across some blogs over the past few months, I had ran into the idea of static site generators, which intrigued me as a Wordpress alternative. SSGs offered several advantages:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI could compose my posts offline and using any \u003ca href=\"https://roytang.net/2018/11/my-history-in-text-editors/\"\u003etext editor\u003c/a\u003e I wanted, using a simple format like Markdown\u003c/li\u003e\n\u003cli\u003ePage load performance is better since Apache will simply serve up the static files, no processing or database hits of any kind\u003c/li\u003e\n\u003cli\u003eStatic sites don\u0026rsquo;t require security updates of any sort - there\u0026rsquo;s no database or admin backend to be hacked\u003c/li\u003e\n\u003cli\u003eEasy backups. In WP I was using a custom plugin for backups. With an SSG, I can simply have the raw content stored in Github, then the static content \u0026ldquo;built\u0026rdquo; from there. The content always exists in at least three places - the actual site, Github, and my local computer I use for posting.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"why-hugo\"\u003eWhy Hugo\u003c/h3\u003e\n\u003cp\u003eThere\u0026rsquo;s quite a lot of static site generators available right now actually. The most popular one seems to be \u003ca href=\"https://jekyllrb.com/\"\u003eJekyll\u003c/a\u003e which is ruby-based. I first decided to try \u003ca href=\"https://blog.getpelican.com/\"\u003ePelican\u003c/a\u003e because I preferred Python over Ruby. However, it turned out problematic on my Windows machine, I encountered some interoperability problems with pandoc for the WP migration. I didn\u0026rsquo;t want to have too many dependencies and issues with dependencies because I would later want to deploy the generator itself to my hosting on Webfaction for automated deployments, so I wanted the setup to be as easy as possible.\u003c/p\u003e\n\u003cp\u003eThen I stumbled upon \u003ca href=\"https://gohugo.io/\"\u003eHugo\u003c/a\u003e, which offered two main advantages:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe MSP was performance. I wanted to migrate over the entire history of the blog, which was almost 900 posts at this point.\u003c/li\u003e\n\u003cli\u003eno external dependencies - all I needed was to download the hugo executable\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAfter reading up and testing a bit of Hugo, I had a fit of \u0026ldquo;I couldn\u0026rsquo;t sleep, I\u0026rsquo;ll just go ahead and do the site migration now\u0026rdquo; that I would later regret since it completely screwed up my sleep schedule.\u003c/p\u003e\n\u003ch3 id=\"wordpress-export\"\u003eWordpress Export\u003c/h3\u003e\n\u003cp\u003eI used the \u003ca href=\"https://github.com/SchumacherFM/wordpress-to-hugo-exporter\"\u003eWordpress to Hugo plugin\u003c/a\u003e to convert my Wordpress content for Hugo. Many posts had reported problems with this plugin, but I didn\u0026rsquo;t have any issues with its basic operation. I had a two problems with it:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ewhen exporting existing Wordpress comments, it didn\u0026rsquo;t include the commenter\u0026rsquo;s URL, which I felt I should include\u003c/li\u003e\n\u003cli\u003eall the posts were exported into a single \u003ccode\u003eposts\u003c/code\u003e folder. While this didn\u0026rsquo;t create any permalinks issues due to each post having the \u003ccode\u003eurl\u003c/code\u003e attribute in the frontmatter, it made the entire folder look very unorganized since I had almost 900+ posts. I preferred that the posts be grouped by year and month, matching the \u003ccode\u003e/yyyy/mm/slug/\u003c/code\u003e format of the permalink\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSince I had the source for the plugin, it was straightforward to fix both issues myself.\u003c/p\u003e\n\u003cp\u003eAfter getting the export from the plugin, I still had a bit of post-processing and cleaning up of the posts to do.\u003c/p\u003e\n\u003cp\u003eFor one thing, all the single-quotes in the exported posts seem to have been converted to HTML entities for that smart quote thing, so I had to reverse that. Luckily, it was a simple find and replace across text files. The format for embedding posts such as Twitter, Youtube, etc was different as well, I had to correct those files one by one.\u003c/p\u003e\n\u003ch3 id=\"cleaning-up-the-taxonomies\"\u003eCleaning up the taxonomies\u003c/h3\u003e\n\u003cp\u003eI had always wanted to clean up the categories in the blog, but I never got around to it with Wordpress because I didn\u0026rsquo;t feel like figuring out the SQL I would have needed to do it. (I\u0026rsquo;ve never liked Wordpress\u0026rsquo;s table structure.). With Hugo, all I had to do was update a bunch of text files, which I was much more comfortable with. This involved simply importing a Python library to \u003ca href=\"https://elbauldelprogramador.com/en/how-to-parse-frontmatter-with-python/\"\u003eparse frontmatter\u003c/a\u003e, and a \u003ca href=\"https://github.com/roytang/blog/blob/master/utils/clean_categories.py\"\u003escript\u003c/a\u003e to do the conversion.\u003c/p\u003e\n\u003ch3 id=\"generating-the-archive-pages\"\u003eGenerating the archive pages\u003c/h3\u003e\n\u003cp\u003eHugo doesn\u0026rsquo;t have built-in support for archive pages, so I had to create them myself. I followed the setup described in \u003ca href=\"https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/\"\u003ethis blog post\u003c/a\u003e and wrote a python \u003ca href=\"https://github.com/roytang/blog/blob/master/utils/create-archives.py\"\u003escript\u003c/a\u003e to generate the individual year/month archive pages.\u003c/p\u003e\n\u003cp\u003eA bigger problem was the archive listing (the page that would link to the individual archive pages). Because the blog has been running for 15 years, there\u0026rsquo;s a whole lot, so I preferred to organize them in a table like this:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2018/11/site-migration-from-wordpress-to-hugo/archive-grid.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"14 Nov 2018 3:06am\"\u003e14 Nov 2018 3:06am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI actually couldn\u0026rsquo;t find a decent Wordpress plugin that did this for me exactly, so I wrote my \u003ca href=\"https://github.com/roytang/wp_grid_archive/\"\u003eown plugin\u003c/a\u003e for this.\u003c/p\u003e\n\u003cp\u003eFor Hugo, I struggled with this a while and was close to figure out when I finally got the approach right. CHeck \u003ca href=\"/archives\"\u003emy archives page\u003c/a\u003e for how it turned out. The upside is I got to become a bit familiar with \u003ca href=\"https://golang.org/,\"\u003ehttps://golang.org/,\u003c/a\u003e particularly the way content is parsed and processed in Hugo templates.\u003c/p\u003e\n\u003ch3 id=\"custom-shortcodes\"\u003eCustom shortcodes\u003c/h3\u003e\n\u003cp\u003eI had some custom-formatted code in Wordpress that wasn\u0026rsquo;t exported properly by the plugin. This required I create some new shortcodes for Hugo and replace the corresponding calls.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSpoilers. I had only recently added this WP plugin, and only one post was using it so this was straightforward. I created the spoiler shortcode and added some simple jQuery-backed code to toggle the spoiler content. I would have preferred doing this with vanilla JS so as to avoid the jQuery dependency, but I decided to put off learning how to do that for another day.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/categories/magic-the-gathering\"\u003eMTG\u003c/a\u003e Decklists and card links. Individual card links wasn\u0026rsquo;t an issue - I just generated an anchor as needed, and had to clean up some of the pages that used it. The decklist part was more challenging, as it involved a lot of text parsing. I managed to get it working to a point where the decklists were formatted correctly, but individual cards weren\u0026rsquo;t linked, before deciding to give up. The main issue is I haven\u0026rsquo;t figured out how to parse each line to split the card count and the card name, if the card count exists, i.e. \u0026ldquo;3 Lightning Bolt\u0026rdquo;. I considered just adding JavaScript to format the contents post-load, but the current behavior will do for now. Maybe I\u0026rsquo;ll even revisit the Hugo parsing issue later.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"redirects\"\u003eRedirects\u003c/h3\u003e\n\u003cp\u003eI wanted to minimize changes in the URLs of older content, so the permalinks for the old posts were kept in place. Another issue was the RSS feed, generated at \u003ccode\u003e/index.xml\u003c/code\u003e by Hugo, which I wanted at \u003ccode\u003e/feed/\u003c/code\u003e so that feed readers don\u0026rsquo;t need to be updated. A simple redirect in .htaccess was enough to get this done. I\u0026rsquo;m not much good at regexes, so I had to reference another \u003ca href=\"https://blog.philipphauer.de/moving-wordpress-hugo/\"\u003eblog post\u003c/a\u003e for this one. The RSS feeds for categories/tags has changed, I think that\u0026rsquo;s fine.\u003c/p\u003e\n\u003ch3 id=\"automatic-deployment\"\u003eAutomatic Deployment\u003c/h3\u003e\n\u003cp\u003eI referenced another \u003ca href=\"https://gomakethings.com/automating-the-deployment-of-your-static-site-with-hugo-and-github/\"\u003eblog post\u003c/a\u003e for setting up automatic deployment. The main difference was my host was Webfaction while his was Digital Ocean, which did cause me a bit of trouble when I was trying to set up a Github webhook to automatically deploy on every push. It turns out Webfaction doesn\u0026rsquo;t allow me to set an env variable in .htaccess to be read by the PHP script (as was in the blog post linked above). It took me a while to figure out this was the issue, so I just gave up on the Github webhook for now and just set a cron job to periodically pull and redeploy the site. I needed the cron job anyway, if I wanted to support future publishing and possibly some form of queueing later on.\u003c/p\u003e\n\u003ch3 id=\"comments\"\u003eComments\u003c/h3\u003e\n\u003cp\u003eLegacy comments from WP are imported directly into the markdown of each page. Future comments are now handled using Disqus. I already had a Disqus account before, I forgot why I stopped using it. That being said, outsourcing the comments makes a lot of sense.\u003c/p\u003e\n\u003ch3 id=\"limitations\"\u003eLimitations\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003ewe lose the site search for now. There are some workarounds, including Google SiteSearch (I believe it has ads) or building a JSON index and searching on the client-side (seems impractical given the number of posts). I believe I\u0026rsquo;m the only one using the site search anyway, I\u0026rsquo;ll revisit this at another time.\u003c/li\u003e\n\u003cli\u003ethe markdown engine allows raw HTML in the content, but if you have any line breaks in between, your structure breaks, so that required some cleanup\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"theme\"\u003eTheme\u003c/h3\u003e\n\u003cp\u003eI\u0026rsquo;m not much of a CSS/site design guy, I\u0026rsquo;m more a \u0026ldquo;find an existing theme and tweak it to your liking\u0026rdquo; guy, so I browsed Hugo\u0026rsquo;s available themes for a while and settled on \u003ca href=\"https://github.com/enten/hyde-y\"\u003eHyde-Y\u003c/a\u003e, which I proceeded to modify a bit, adding a picture to the sidebar and so on. It\u0026rsquo;s simple and clean and straightforward, nothing too fancy. Maybe I\u0026rsquo;ll revisit the theme later.\u003c/p\u003e\n\u003cp\u003eFor posterity\u0026rsquo;s sake, a screenshot of the new layout/theme:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#860b271077bc60f75bc0ebe8bec296c9-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"860b271077bc60f75bc0ebe8bec296c9-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"14 Nov 2018 3:06am\"\u003e14 Nov 2018 3:06am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003ch3 id=\"summary\"\u003eSummary\u003c/h3\u003e\n\u003cp\u003eAt the end of it, it turned out a bit more effort than I expected. I\u0026rsquo;ll probably be cleaning up the exported older posts every so often because I\u0026rsquo;m OC that well. The theming/templating turned out to be a bit more complicated than I expected, but I think it was easier to manage than Wordpress. The last time I tried to use a custom blog engine, I got tired of maintaining and upating it so I switched back to Wordpress, hopefully that doesn\u0026rsquo;t happen here. Not having to maintain a web interface is a pretty good indicator.\u003c/p\u003e\n\u003cp\u003eDespite the effort, the great thing is that I did learn a few things, so at the minimum it\u0026rsquo;s already a win:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea bit of GoLang\u003c/li\u003e\n\u003cli\u003ehow to create Github Webhooks\u003c/li\u003e\n\u003cli\u003emore .htaccess stuff\u003c/li\u003e\n\u003cli\u003eusage of pathlib.Path in Python3 (no more os.glob for me!)\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Leaving Wordpress I\u0026rsquo;ve been using Wordpress for this blog since circa 2006 I believe, but as I mentioned in an earlier blog post that I was not 100% happy with using Wordpress for this blog. I have a few issues with Wordpress, none of them a major dealbreaker, but collectively enough to make me consider something else:\n the new Gutenberg editor set to become standard in 5.0 was in my experience, very clunky and kinda annoying the code structure of Wordpress is very deep and complex, sometimes making it difficult for me to make changes I want.",
+            "date_published": "2018-11-14T03:06:26+00:00",
+            "date_modified": "2020-10-27T04:23:10+08:00",
+            "section": "post",
+            "source_path": "post/2018/11/site-migration-to-hugo/index.md"
+            , "tags": ["hugo","wordpress","Meta","Tech Life","changelog"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1062557630156234753/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/11/180089412453/",
+            "url": "https://mirror.roytang.net/2018/11/180089412453/",
+            "path": "/2018/11/180089412453/",
+            "title": "",
+            "content_html": "\u003cp\u003eDaredevil #609 cover art by Phil Noto\u003c/p\u003e\n",
+            "summary": "Daredevil #609 cover art by Phil Noto",
+            "date_published": "2018-11-14T02:01:03+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/11/180089412453/index.md"
+            , "tags": ["marvel","comics","daredevil","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/180089412453/daredevil-609-cover-art-by-phil-noto"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1062525790842224640/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2018/11/1062278408149843968/",
+            "url": "https://mirror.roytang.net/2018/11/1062278408149843968/",
+            "path": "/2018/11/1062278408149843968/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis is the best costume in the game  #PS4share\u003c/p\u003e\n",
+            "summary": "This is the best costume in the game #PS4share",
+            "date_published": "2018-11-13T09:38:03+00:00",
+            "date_modified": "2020-10-13T14:58:22+08:00",
+            "section": "photos",
+            "source_path": "photos/2018/11/1062278408149843968/index.md"
+            , "tags": ["PS4share"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1062278408149843968/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2018/11/the-larger-the-audience-the-more-careful-you-have-to-be-with-your-words/",
             "url": "https://mirror.roytang.net/2018/11/the-larger-the-audience-the-more-careful-you-have-to-be-with-your-words/",
             "path": "/2018/11/the-larger-the-audience-the-more-careful-you-have-to-be-with-your-words/",
@@ -804,85 +872,6 @@
             "source_path": "notes/2018/11/9u47nt/index.md"
             , "tags": ["writing"]
             , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/writing/comments/9u47nt/would_it_make_sense_to_practice_writing_short/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/11/10157031997543912/",
-            "url": "https://mirror.roytang.net/2018/11/10157031997543912/",
-            "path": "/2018/11/10157031997543912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: Have Novembers always been this hot? Or it has gotten hotter with time?\u003c/p\u003e\n",
-            "summary": "Survey: Have Novembers always been this hot? Or it has gotten hotter with time?",
-            "date_published": "2018-11-04T22:50:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/11/10157031997543912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10157031997543912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/barayantan",
-                    "source_file": "comment-20181104-000000-e75427c6-60d4-4808-becd-e5acec2e605d.json"
-                }, { 
-                    "url": "https://www.facebook.com/weng.santos.9",
-                    "source_file": "comment-20181106-000001-8275fa16-1d4f-4bbc-ab02-60d30ff8fac7.json"
-                }, { 
-                    "url": "https://www.facebook.com/joyapreyes",
-                    "source_file": "comment-20181106-000002-54ecc7d0-1564-4ca1-8f2c-292cee603043.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/11/everything-old-isnt-new-again-yet-mimix/",
-            "url": "https://mirror.roytang.net/2018/11/everything-old-isnt-new-again-yet-mimix/",
-            "path": "/2018/11/everything-old-isnt-new-again-yet-mimix/",
-            "title": "Everything Old Isn’t New Again (Yet) – Mimix",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2018-11-04T14:09:11+00:00",
-            "date_modified": "2021-01-20T21:55:38+08:00",
-            "section": "links",
-            "source_path": "links/2018/11/everything-old-isnt-new-again-yet-mimix.md"
-            , "tags": ["broken-link","tech-life","nostalgia"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1059096526155366402/"},{"type":"archive.org","url":"https://web.archive.org/web/20181105132753/http://mimix.io/retro/"}]
-            ,"link": "http://mimix.io/retro/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/11/good-things-don-t-scale-woman-legend-blog/",
-            "url": "https://mirror.roytang.net/2018/11/good-things-don-t-scale-woman-legend-blog/",
-            "path": "/2018/11/good-things-don-t-scale-woman-legend-blog/",
-            "title": "Good things don't scale  · Woman. Legend.Blog",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2018-11-04T12:53:46+00:00",
-            "date_modified": "2019-11-04T13:09:17+08:00",
-            "section": "links",
-            "source_path": "links/2018/11/good-things-don-t-scale-woman-legend-blog.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1059066283566776320/"}]
-            ,"link": "http://blog.vickiboykis.com/2017/05/10/good-things-don't-scale/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/11/1058953074616631297/",
-            "url": "https://mirror.roytang.net/2018/11/1058953074616631297/",
-            "path": "/2018/11/1058953074616631297/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt\u0026rsquo;s November why is it still so frickin hot in the country\u003c/p\u003e\n",
-            "summary": "It\u0026rsquo;s November why is it still so frickin hot in the country",
-            "date_published": "2018-11-04T05:24:22+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/11/1058953074616631297.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1058953074616631297/"}]
             
             
             }

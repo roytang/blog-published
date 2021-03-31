@@ -1,4 +1,6 @@
 
+- [Something to look forward to](/2021/03/something-to-look-forward-to/)
+
 - [Write Simply](/2021/03/write-simply/)
 
 - [Douglas Adams&#39; note to self reveals author found writing torture](/2021/03/douglas-adams-note-to-self-reveals-author-found-writing-torture/)
