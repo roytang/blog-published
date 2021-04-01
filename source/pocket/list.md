@@ -1,4 +1,6 @@
 
+- [The man with no plot: how I watched Lee Child write a Jack Reacher novel](/2021/03/the-man-with-no-plot-how-i-watched-lee-child-write-a-jack-reacher-novel/)
+
 - [Something to look forward to](/2021/03/something-to-look-forward-to/)
 
 - [Write Simply](/2021/03/write-simply/)
