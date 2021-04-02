@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/02/efnsfuq/",
+            "url": "https://mirror.roytang.net/2019/02/efnsfuq/",
+            "path": "/2019/02/efnsfuq/",
+            "title": "",
+            "content_html": "\u003cp\u003eAhh\u0026hellip; you\u0026rsquo;re right! I totally forgot about the Mausoleum lol. Thanks!\u003c/p\u003e\n",
+            "summary": "Ahh\u0026hellip; you\u0026rsquo;re right! I totally forgot about the Mausoleum lol. Thanks!",
+            "date_published": "2019-02-03T15:20:27+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/02/efnsfuq/index.md"
+            , "tags": ["civ"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/civ/comments/ammpn5/how_does_mimar_sinans_activated_ability_work_if_i/efnsfuq/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/ammpn5/",
+            "url": "https://mirror.roytang.net/2019/02/ammpn5/",
+            "path": "/2019/02/ammpn5/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rciv-how-does-mimar-sinans-activated-ability-work-if-i-activate-it-in-a-city-then-that-city-completes-an-industrial-district-bordering-another-civ-it-flips-those-tiles-over-to-me-it-seems-weird-to-do-it-this-way-instead-of-just-activating-over-an-existing-industrial-district-to-flip-adjacent-tileshttpsredditcomrcivcommentsammpn5how_does_mimar_sinans_activated_ability_work_if_i\"\u003ePosted on r/civ: \u003ca href=\"https://reddit.com/r/civ/comments/ammpn5/how_does_mimar_sinans_activated_ability_work_if_i/\"\u003eHow does Mimar Sinan\u0026rsquo;s activated ability work? If I activate it in a city, then that city completes an Industrial District bordering another civ, it flips those tiles over to me? (It seems weird to do it this way instead of just activating over an existing Industrial District to flip adjacent tiles)\u003c/a\u003e\u003c/h4\u003e\n",
+            "summary": "Posted on r/civ: How does Mimar Sinan\u0026rsquo;s activated ability work? If I activate it in a city, then that city completes an Industrial District bordering another civ, it flips those tiles over to me? (It seems weird to do it this way instead of just activating over an existing Industrial District to flip adjacent tiles) ",
+            "date_published": "2019-02-03T13:26:13+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/ammpn5/index.md"
+            , "tags": ["civ"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/civ/comments/ammpn5/how_does_mimar_sinans_activated_ability_work_if_i/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/efnbnds/",
+            "url": "https://mirror.roytang.net/2019/02/efnbnds/",
+            "path": "/2019/02/efnbnds/",
+            "title": "",
+            "content_html": "\u003cp\u003eIn that case, what effect does ability have in the city he was activated in? I initially assumed it was a global effect like you mentioned but then there was a second activation available so I got confused\u003c/p\u003e\n",
+            "summary": "In that case, what effect does ability have in the city he was activated in? I initially assumed it was a global effect like you mentioned but then there was a second activation available so I got confused",
+            "date_published": "2019-02-03T08:29:06+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/02/efnbnds/index.md"
+            , "tags": ["civ"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/civ/comments/ammpn5/how_does_mimar_sinans_activated_ability_work_if_i/efnbnds/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/",
+            "url": "https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/",
+            "path": "/2019/02/triviastorm-text-and-answer-parsing/",
+            "title": "TriviaStorm: Text and Answer parsing",
+            "content_html": "\u003cp\u003eA while back I started a \u003ca href=\"/2017/02/weekend-project-twitter-trivia-bot/\"\u003eTwitter trivia bot as a weekend project\u003c/a\u003e. That bot is still \u003ca href=\"https://twitter.com/triviastorm\"\u003eup and running on Twitter\u003c/a\u003e, you can check it out there!\u003c/p\u003e\n\u003cp\u003eBut today, I thought I\u0026rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for \u003ca href=\"https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/\"\u003eDjango\u0026rsquo;s unit testing framework\u003c/a\u003e. I\u0026rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe bot had to be able to handle a wide variety of answers\u003c/li\u003e\n\u003cli\u003ethere were a lot of test cases to check and a single checking function handling everything - I couldn\u0026rsquo;t risk breaking previous working tests\u003c/li\u003e\n\u003cli\u003einputs were discrete and outputs were easily checkable\u003c/li\u003e\n\u003cli\u003eI needed to be able to add new test scenarios all the time as more problematic answers were provided\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe project currently isn\u0026rsquo;t open source, but I did make a gist of the \u003ccode\u003etests.py\u003c/code\u003e I used \u003ca href=\"https://gist.github.com/roytang/9199962097bdf3ca2aa8ec9c43bd7ef8\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe \u003ccode\u003echeck\u003c/code\u003e function basically accepts three parameters:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea checking mode (currently only supports EXACT and ALL_ANYORDER)\u003c/li\u003e\n\u003cli\u003ethe answer phrase provided by the player\u003c/li\u003e\n\u003cli\u003ea set of valid answers accepted for the question\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThere\u0026rsquo;s a number of test cases already handled:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003echecking should be case-insensitive\u003c/li\u003e\n\u003cli\u003earticles should be ignored if they\u0026rsquo;re at the start of the answer phrase\u003c/li\u003e\n\u003cli\u003enumbers should be acceptable for the spelled-out versions i.e. \u0026ldquo;7\u0026rdquo; should be accepted for \u0026ldquo;seven\u0026rdquo;, and vice versa\u003c/li\u003e\n\u003cli\u003esome minor soundex (phonetic matching) support (via \u003ca href=\"https://github.com/jamesturk/jellyfish\"\u003ePython Jellyfish\u003c/a\u003e)\u003c/li\u003e\n\u003cli\u003ehandling of questions that support multiple answers. This is what ALL_ANYORDER is for - it means that all the given answers must be provided, but they can be in any order. i.e. if the valid answer set is \u003ccode\u003e\u0026quot;Huey\u0026quot;\u003c/code\u003e, \u003ccode\u003e\u0026quot;Dewey\u0026quot;\u003c/code\u003e and \u003ccode\u003e\u0026quot;Louie\u0026quot;\u003c/code\u003e, then \u003ccode\u003e\u0026quot;Louie Huey Dewey\u0026quot;\u003c/code\u003e should be accepted as an answer\u003c/li\u003e\n\u003cli\u003enonalphanumeric characters should be treated as whitespace, except in some special cases\u003c/li\u003e\n\u003cli\u003especial case: abbreviations like \u003ccode\u003e\u0026quot;don't\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;can't\u0026quot;\u003c/code\u003e should be treated as if they were a single term like \u003ccode\u003e\u0026quot;dont\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;cant\u0026quot;\u003c/code\u003e instead of \u003ccode\u003e\u0026quot;don t\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;can t\u0026quot;\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe answer checking definitely still isn\u0026rsquo;t perfect, but I\u0026rsquo;m pretty happy with where it\u0026rsquo;s at right now. There is also definitely an element of subjectivity as to which answers should be accepted. One time a player complained that his answer \u003ccode\u003e\u0026quot;Batman vs Superman Dawn of Justice\u0026quot;\u003c/code\u003e should count for \u003ccode\u003e\u0026quot;Batman v Superman: Dawn of Justice\u0026quot;\u003c/code\u003e, but for this particular question I had chosen not to allow \u0026ldquo;vs\u0026rdquo; for \u0026ldquo;v\u0026rdquo; because that was the actual movie title, which might be unreasonable now that I think about it!\u003c/p\u003e\n\u003cp\u003eI do know that I need to implement a better \u0026ldquo;synonym\u0026rdquo; handling, i.e. mapping of \u003ccode\u003e\u0026quot;v\u0026quot;\u0026lt;-\u0026gt;\u0026quot;vs\u0026quot;\u003c/code\u003e and other terms like \u003ccode\u003e\u0026quot;mr\u0026quot;\u0026lt;-\u0026gt;\u0026quot;mister\u0026quot;\u003c/code\u003e or \u003ccode\u003e\u0026quot;natl\u0026quot;\u0026lt;-\u0026gt;\u0026quot;national\u0026quot;\u003c/code\u003e. The problem with handling things like that is that is the possible combinations of phrases expands when multiple such terms are found in the same answer, so it can\u0026rsquo;t scale too well. I suppose I need to normalize the answer sets at the time the question is defined. What do you know, I figured out how to do something just by writing a blog post!\u003c/p\u003e\n\u003cp\u003eI do have a bunch of other enhancements planned for the trivia bot, including support for slack and discord, and a longer time frame roadmap, but I\u0026rsquo;m not sure when I can commit more time to it. Still, it\u0026rsquo;s turned out to be a pretty fun endeavor, I\u0026rsquo;m hoping it leads to something cool!\u003c/p\u003e\n",
+            "summary": "A while back I started a Twitter trivia bot as a weekend project. That bot is still up and running on Twitter, you can check it out there!\nBut today, I thought I\u0026rsquo;d write about the answer-checking mechanism used by the bot. It was a bit interesting to me because it was the first nontrivial use I had for Django\u0026rsquo;s unit testing framework. I\u0026rsquo;m not too keen on unit testing web functionality (something I still have to learn), but this seemed an appropriate first use of a unit test framework for several reasons:",
+            "date_published": "2019-02-03T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/02/triviastorm-checking-answers/index.md"
+            , "tags": ["projects","python","triviastorm","testing","Software Development"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/02/182513007484/",
+            "url": "https://mirror.roytang.net/2019/02/182513007484/",
+            "path": "/2019/02/182513007484/",
+            "title": "",
+            "content_html": "\u003cp\u003eFlash (Rebirth) #34 Justice League movie variant cover by McKone and Fajardo\u003c/p\u003e\n",
+            "summary": "Flash (Rebirth) #34 Justice League movie variant cover by McKone and Fajardo",
+            "date_published": "2019-02-03T02:00:39+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/02/182513007484/index.md"
+            , "tags": ["dc","comics","dc comics","flash","justice league","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182513007484/flash-rebirth-34-justice-league-movie-variant"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1091879108550770689/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/02/1091808147465895936/",
             "url": "https://mirror.roytang.net/2019/02/1091808147465895936/",
             "path": "/2019/02/1091808147465895936/",
@@ -562,7 +647,7 @@
             "content_html": "\u003cp\u003eSome things I\u0026rsquo;ve been watching lately, aside from the usual TV shows I follow:\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eBumblebee\u003c/strong\u003e only came out over here in January (thanks to the usual MMFF shenanigans), and I decided to watch it on a whim. Pretty decent soft reboot, read my \u003ca href=\"https://tumblr.roytang.net/post/181926569205/bumblebee-spoiler-free-review-attached-image\"\u003espoiler-free review over on the Tumblr\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe first half of \u003cstrong\u003eYoung Justice Outsiders\u003c/strong\u003e is out, and it\u0026rsquo;s pretty good. Focus is back on a smaller group after the larger team in YJ season 2. A few new characters are introduced and I learned about a couple of DC heroes I wasn\u0026rsquo;t familiar with before. Probably still the best animated superhero show to date.\u003c/p\u003e\n\u003cp\u003eOn the Netflix side, season 2 of \u003cstrong\u003ePunisher\u003c/strong\u003e is out as well. I finished watching it but didn\u0026rsquo;t bother posting a spoiler-free review this time. It was okay, but I don\u0026rsquo;t have much commentary. Not as strikingly good as the first one was, but pretty decent. It feels weird now watching these shows knowing they are likely to end soon.\u003c/p\u003e\n\u003cp\u003eSeason 2 of \u003cstrong\u003eStar Trek Discovery\u003c/strong\u003e has also started! Only two episodes in so far, but still very good. Feels a lot more classic Trek than the previous season, and a much lighter tone, not just because their captain isn\u0026rsquo;t afraid of the light anymore.\u003c/p\u003e\n\u003cp\u003eMy Netflix history also says I watched Bird Box, which became a bit viral early this month for some reason, but that was just my niece making my mom watch it with her, even after I warned her she would get scared (she did).\u003c/p\u003e\n",
             "summary": "Some things I\u0026rsquo;ve been watching lately, aside from the usual TV shows I follow:\nBumblebee only came out over here in January (thanks to the usual MMFF shenanigans), and I decided to watch it on a whim. Pretty decent soft reboot, read my spoiler-free review over on the Tumblr\nThe first half of Young Justice Outsiders is out, and it\u0026rsquo;s pretty good. Focus is back on a smaller group after the larger team in YJ season 2.",
             "date_published": "2019-01-28T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
+            "date_modified": "2021-04-02T11:01:07+08:00",
             "section": "post",
             "source_path": "post/2019/01/watching-lately-jan-2019/index.md"
             , "tags": ["Movies","Review","tv","watching lately","Pop Culture"]
@@ -771,91 +856,6 @@
             "source_path": "notes/2019/01/1088701208116617216.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088701208116617216/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/depression-or-just-laziness/",
-            "url": "https://mirror.roytang.net/2019/01/depression-or-just-laziness/",
-            "path": "/2019/01/depression-or-just-laziness/",
-            "title": "Depression or just laziness?",
-            "content_html": "\u003cp\u003eSometimes I see posts like this:\u003c/p\u003e\n\u003ca href=\"#1a0f542a4399a04a97c6df0278d99b5a-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/01/depression-or-just-laziness/depression_hu588f8eeca7b90ca9058aacc530629023_41766_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"1a0f542a4399a04a97c6df0278d99b5a-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/01/depression-or-just-laziness/depression.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"25 Jan 2019 5:56am\"\u003e25 Jan 2019 5:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eand I can\u0026rsquo;t help but feel like it\u0026rsquo;s at least a little bit applicable to me. And I start to wonder whether maybe I\u0026rsquo;m suffering depression? Or maybe just a little depressed?\u003c/p\u003e\n\u003cp\u003eThe question only lasts in my head for a moment. Despite my sometimes \u003ca href=\"/2018/11/the-sky-is-falling/\"\u003ebleak outlook for humanity\u003c/a\u003e, I still consider myself a largely optimistic person and I understand life is generally good for me at least (at the moment). I\u0026rsquo;m like 99% sure that I\u0026rsquo;m mostly just lazy.\u003c/p\u003e\n\u003cp\u003eOr am I?\u003c/p\u003e\n",
-            "summary": "Sometimes I see posts like this:\n  (Click to view full-size)    \n25 Jan 2019 5:56amClose   and I can\u0026rsquo;t help but feel like it\u0026rsquo;s at least a little bit applicable to me. And I start to wonder whether maybe I\u0026rsquo;m suffering depression? Or maybe just a little depressed?\nThe question only lasts in my head for a moment. Despite my sometimes bleak outlook for humanity, I still consider myself a largely optimistic person and I understand life is generally good for me at least (at the moment).",
-            "date_published": "2019-01-25T05:56:56+00:00",
-            "date_modified": "2020-10-20T15:25:02+08:00",
-            "section": "post",
-            "source_path": "post/2019/01/depression-or-laziness/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088678151675437056/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/1088642083320139778/",
-            "url": "https://mirror.roytang.net/2019/01/1088642083320139778/",
-            "path": "/2019/01/1088642083320139778/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;Productivity is what makes things fun, that\u0026rsquo;s why humans go to work.\u0026rdquo; - Raymond Holt\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;Productivity is what makes things fun, that\u0026rsquo;s why humans go to work.\u0026rdquo; - Raymond Holt",
-            "date_published": "2019-01-25T03:37:53+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/1088642083320139778.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088642083320139778/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/182283926466/",
-            "url": "https://mirror.roytang.net/2019/01/182283926466/",
-            "path": "/2019/01/182283926466/",
-            "title": "",
-            "content_html": "\u003cp\u003eCaptain America (2018) #1 cover by Alex Ross\u003c/p\u003e\n",
-            "summary": "Captain America (2018) #1 cover by Alex Ross",
-            "date_published": "2019-01-25T02:00:36+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/01/182283926466/index.md"
-            , "tags": ["marvel","comics","captain america","alex ross","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/182283926466/captain-america-2018-1-cover-by-alex-ross"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088617602912608256/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/1088485116798676992/",
-            "url": "https://mirror.roytang.net/2019/01/1088485116798676992/",
-            "path": "/2019/01/1088485116798676992/",
-            "title": "",
-            "content_html": "\u003cp\u003eAlso, my quest for Arena mythic rank is not going well #somanybadplays\u003c/p\u003e\n",
-            "summary": "Also, my quest for Arena mythic rank is not going well #somanybadplays",
-            "date_published": "2019-01-24T17:14:09+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/1088485116798676992.md"
-            , "tags": ["somanybadplays"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088485116798676992/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/01/1088485026159706113/",
-            "url": "https://mirror.roytang.net/2019/01/1088485026159706113/",
-            "path": "/2019/01/1088485026159706113/",
-            "title": "",
-            "content_html": "\u003cp\u003eTIL Google Sheets can do some simple SQL, i.e. something like =QUERY(A2:D1000,\u0026ldquo;select C, count(A) group by C\u0026rdquo;)\u003c/p\u003e\n",
-            "summary": "TIL Google Sheets can do some simple SQL, i.e. something like =QUERY(A2:D1000,\u0026ldquo;select C, count(A) group by C\u0026rdquo;)",
-            "date_published": "2019-01-24T17:13:47+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/01/1088485026159706113.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1088485026159706113/"}]
             
             
             }

@@ -11,6 +11,96 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2010/03/2496418/",
+            "url": "https://mirror.roytang.net/2010/03/2496418/",
+            "path": "/2010/03/2496418/",
+            "title": "",
+            "content_html": "\u003cp\u003eMINUS is the same as saying \u0026ldquo;get all the rows of the first query, then from that set remove the rows that are also in the second query\u0026rdquo;, so you could like load the results from the first query into an array in-memory, then loop through the second query results and check them one-by-one against the first query results and remove them if they exist.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m not sure that will actually perform better though (depends on a lot of things). You might also want to consider using NOT EXISTS instead and check that performance, i.e.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT  RTRIM(LTRIM(A.HEAD)),\n  A.EFFECTIVE_DATE,\nFROM   TABLE_1 A\nWHERE  A.TYPE_OF_ACTION='6'\nAND    A.EFFECTIVE_DATE \u0026gt;= ADD_MONTHS(SYSDATE,-15)  \nAND NOT EXISTS (\n  SELECT 1 fFROM TABLE_2 B\n  WHERE RTRIM(LTRIM(A.HEAD)) = RTRIM(LTRIM(B.HEAD))\n  AND A.EFFECTIVE_DATE = B.EFFECTIVE_DATE\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSome functional indexing may also be needed on RTRIM(LTRIM(A.HEAD))\u003c/p\u003e\n",
+            "summary": "MINUS is the same as saying \u0026ldquo;get all the rows of the first query, then from that set remove the rows that are also in the second query\u0026rdquo;, so you could like load the results from the first query into an array in-memory, then loop through the second query results and check them one-by-one against the first query results and remove them if they exist.\nI\u0026rsquo;m not sure that will actually perform better though (depends on a lot of things).",
+            "date_published": "2010-03-22T23:12:29+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/03/2496418/index.md"
+            , "tags": ["performance","oracle"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2496360/comparing-two-cursors-in-oracle-instead-of-using-minus/2496418#2496418"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/03/10895252074/",
+            "url": "https://mirror.roytang.net/2010/03/10895252074/",
+            "path": "/2010/03/10895252074/",
+            "title": "",
+            "content_html": "\u003cp\u003eit seems that I lost almost 200 rep on stackoverflow for no reason, as if it was never there\u003c/p\u003e\n",
+            "summary": "it seems that I lost almost 200 rep on stackoverflow for no reason, as if it was never there",
+            "date_published": "2010-03-22T23:05:50+00:00",
+            "date_modified": "2021-01-11T14:30:01+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/03/10895252074/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10895252074/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/101597856547504"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20100323-000000-c1e3c614-203c-4023-ab50-2615409315c1.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/03/10868323916/",
+            "url": "https://mirror.roytang.net/2010/03/10868323916/",
+            "path": "/2010/03/10868323916/",
+            "title": "",
+            "content_html": "\u003cp\u003e♻ \u003ca href=\"https://twitter.com/chrisguillebeau/\"\u003e@chrisguillebeau\u003c/a\u003e: It takes courage to believe in yourself. (via @conversationage)\u003c/p\u003e\n",
+            "summary": "♻ @chrisguillebeau: It takes courage to believe in yourself. (via @conversationage)",
+            "date_published": "2010-03-22T11:57:59+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/03/10868323916.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10868323916/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/111210985558327"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/03/10860539827/",
+            "url": "https://mirror.roytang.net/2010/03/10860539827/",
+            "path": "/2010/03/10860539827/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e  \u003ca href=\"https://twitter.com/pluish/\"\u003e@pluish\u003c/a\u003e pahiram naman ng shredder :D\u003c/p\u003e\n",
+            "summary": "@rocketkeis @pluish pahiram naman ng shredder :D",
+            "date_published": "2010-03-22T06:44:29+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/03/10860539827.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10860539827/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/03/10823249515/",
+            "url": "https://mirror.roytang.net/2010/03/10823249515/",
+            "path": "/2010/03/10823249515/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e maybe \u003ca href=\"https://twitter.com/habeo/\"\u003e@habeo\u003c/a\u003e is stalking you!\u003c/p\u003e\n",
+            "summary": "@rocketkeis maybe @habeo is stalking you!",
+            "date_published": "2010-03-21T14:44:58+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/03/10823249515.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10823249515/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2010/03/463151548/",
             "url": "https://mirror.roytang.net/2010/03/463151548/",
             "path": "/2010/03/463151548/",
@@ -921,99 +1011,6 @@
                     "source_file": "comment-20100308-000003-43b3edf2-7657-4080-8e02-9e7173625d7e.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/10097278973/",
-            "url": "https://mirror.roytang.net/2010/03/10097278973/",
-            "path": "/2010/03/10097278973/",
-            "title": "",
-            "content_html": "\u003cp\u003eManaged to finish Star Ocean: Last Hope in time. FFXIII on Tuesday!\u003c/p\u003e\n",
-            "summary": "Managed to finish Star Ocean: Last Hope in time. FFXIII on Tuesday!",
-            "date_published": "2010-03-07T00:51:01+00:00",
-            "date_modified": "2021-01-11T14:30:01+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/03/10097278973/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10097278973/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/375634658803"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/paul.villangca",
-                    "source_file": "comment-20100307-000000-319f4584-007a-4d7b-b343-097ae0a5ad3e.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20100307-000001-db1cef20-c3cf-4fb1-8f8f-4c776341ee0f.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/10076855727/",
-            "url": "https://mirror.roytang.net/2010/03/10076855727/",
-            "path": "/2010/03/10076855727/",
-            "title": "",
-            "content_html": "\u003cp\u003eManila the most densely populated city in the world? \u003ca href=\"https://en.wikipedia.org/wiki/List_of_cities_proper_by_population_density\"\u003ehttps://en.wikipedia.org/wiki/List_of_cities_proper_by_population_density\u003c/a\u003e (from \u003ca href=\"https://twitter.com/kerwintang/\"\u003e@kerwintang\u003c/a\u003e )\u003c/p\u003e\n",
-            "summary": "Manila the most densely populated city in the world? https://en.wikipedia.org/wiki/List_of_cities_proper_by_population_density (from @kerwintang )",
-            "date_published": "2010-03-06T15:12:13+00:00",
-            "date_modified": "2019-09-26T19:28:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/03/10076855727.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10076855727/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/377136021139"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/10025047808/",
-            "url": "https://mirror.roytang.net/2010/03/10025047808/",
-            "path": "/2010/03/10025047808/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitpic.com/16pm84\"\u003ehttps://twitpic.com/16pm84\u003c/a\u003e - Today\u0026rsquo;s shocking headline! RT \u003ca href=\"https://twitter.com/LaTtEX/\"\u003e@LaTtEX\u003c/a\u003e: RT \u003ca href=\"https://twitter.com/JimAyson/\"\u003e@JimAyson\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "https://twitpic.com/16pm84 - Today\u0026rsquo;s shocking headline! RT @LaTtEX: RT @JimAyson",
-            "date_published": "2010-03-05T14:02:08+00:00",
-            "date_modified": "2020-10-26T13:11:47+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/03/10025047808.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/10025047808/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/347114010811"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/428282544/",
-            "url": "https://mirror.roytang.net/2010/03/428282544/",
-            "path": "/2010/03/428282544/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"http://www.pinoytumblr.com/post/427168329/damdamn-here-is-a-comparative-analysis-about\"\u003epinoytumblr\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"http://damdamn.tumblr.com/post/425807590/here-is-a-comparative-analysis-about-some-of-the\"\u003edamdamn\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eHere is a comparative analysis about some of the presidentiables for the coming elections. Let’s vote wisely this coming May 2010!\u003c/p\u003e\n\u003cp\u003e\u003ci\u003ePLEASE CLICK PICTURE FOR LARGER VIEW\u003c/i\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/blockquote\u003e",
-            "summary": "pinoytumblr:\n damdamn:\n Here is a comparative analysis about some of the presidentiables for the coming elections. Let’s vote wisely this coming May 2010!\nPLEASE CLICK PICTURE FOR LARGER VIEW\n ",
-            "date_published": "2010-03-05T13:51:00+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/03/428282544/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/428282544/pinoytumblr-damdamn-here-is-a-comparative"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/03/",
-            "url": "https://mirror.roytang.net/2010/03/",
-            "path": "/2010/03/",
-            "title": "Monthly Archives for 03 2010",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2010-03-01T00:00:00+00:00",
-            "date_modified": "2019-09-29T18:26:08+08:00",
-            "section": "archm",
-            "source_path": "archm/2010-03.md"
-            
-            
-            
-            
             }
         
     ]

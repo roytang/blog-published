@@ -129,7 +129,7 @@
 
 - [Kung Fu Panda](/2008/06/kung-fu-panda/)
 
-- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-quotraidersquot-vs-quotcrystal-skullquot/)
+- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-raiders-vs-crystal-skull/)
 
 - [Pinoy Comic Strips: Beerkada](/2008/05/pinoy-comic-strips-beerkada/)
 

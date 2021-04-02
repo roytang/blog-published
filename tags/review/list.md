@@ -53,7 +53,7 @@
 
 - [Eagle Eye](/2008/10/eagle-eye/)
 
-- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-quotraidersquot-vs-quotcrystal-skullquot/)
+- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-raiders-vs-crystal-skull/)
 
 - [300](/2007/03/300/)
 

@@ -197,7 +197,7 @@
 
 - [Kung Fu Panda](/2008/06/kung-fu-panda/)
 
-- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-quotraidersquot-vs-quotcrystal-skullquot/)
+- [Indiana Jones: Raiders vs Crystal Skull](/2008/06/indiana-jones-raiders-vs-crystal-skull/)
 
 - [Must Watch: I Am Legend&#39;s Original Ending - This is Amazing « FirstShowing.net](/2008/03/must-watch-i-am-legend-s-original-ending-this-is-amazing-firstshowing-net/)
 
