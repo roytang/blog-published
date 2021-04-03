@@ -1,4 +1,6 @@
 
+- [A categorized list of all Java and JVM features since JDK 8 to 16](/2021/04/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-16/)
+
 - [In Defense of Doing Nothing](/2021/04/in-defense-of-doing-nothing/)
 
 - [Benford&#39;s law](/2021/04/benfords-law/)
