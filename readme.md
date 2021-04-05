@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-04-04](https://mirror.roytang.net/2021/04/weeknotes-2021-04-04/)
 - [Weeknotes 2021-03-28](https://mirror.roytang.net/2021/03/weeknotes-2021-03-28/)
 - [Zack Snyder&#39;s Justice League (aka The Snyder Cut) review](https://mirror.roytang.net/2021/03/zack-snyders-justice-league-aka-the-snyder-cut-review/)
 - [Weeknotes 2021-03-21](https://mirror.roytang.net/2021/03/weeknotes-2021-03-21/)
 - [2021 Site Update](https://mirror.roytang.net/2021/03/2021-site-update/)
-- [Book Review: Neuromancer by William Gibson](https://mirror.roytang.net/2021/03/book-review-neuromancer-by-william-gibson/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,11 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [5 Apr 2021 5:33am](https://mirror.roytang.net/2021/04/1378943968163950606/): @bloodyvints thanks!
+- [5 Apr 2021 5:27am](https://mirror.roytang.net/2021/04/1378942372751417350/): @bloodyvints What series and issue is this from?
+- [4 Apr 2021 6:56am](https://mirror.roytang.net/2021/04/1a1ab3ad610478ba3b672b0a89c26333/): Bond movie no. 6: On Her Majesty&rsquo;s Secret Service (1969). Only Lazenby appearance. He was fine, I suppose. Tracy probably best Bond girl so far. I liked the ski scenes more than Thunderball&rsquo;s underwater scenes.
+ Loose continuity. Was confused by Blofeld not recognizing Bond after they already met in the previous movie. Apparently, the novel order was reversed. Also, did Bond just leave him stuck in a tree assuming he was dead after hunting him relentlessly?
 - [1 Apr 2021 9:40am](https://mirror.roytang.net/2021/04/1377556584780361732/): @zaaaldehyde Food deliveries are allowed past the curfew time
 - [30 Mar 2021 6:03am](https://mirror.roytang.net/2021/03/1376777097453072386/): @mlq3 @rocketkeis Noted. Thanks!
-- [30 Mar 2021 5:57am](https://mirror.roytang.net/2021/03/1376775457153019905/): @rocketkeis what is it supposed to mean?
-- [29 Mar 2021 11:22am](https://mirror.roytang.net/2021/03/1376494924409933826/): @anthony_siy what does service contracting mean here sir?
-- [28 Mar 2021 2:27pm](https://mirror.roytang.net/2021/03/1376179123924598786/): @Wizards_MagicEU @mtgjp &ldquo;All around the world&rdquo;? What about in southeast asia?
 
 [View all notes](https://mirror.roytang.net/notes)
 
