@@ -1,4 +1,6 @@
 
+- [Book Reviews: Guards! Guards! and Men at Arms by Terry Pratchett](/2021/04/book-reviews-guards-guards-and-men-at-arms-by-terry-pratchett/)
+
 - [Book Review: Neuromancer by William Gibson](/2021/03/book-review-neuromancer-by-william-gibson/)
 
 - [Book Review: Ghost of My Father by Scott Berkun](/2021/02/book-review-ghost-of-my-father-by-scott-berkun/)
