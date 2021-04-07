@@ -633,6 +633,8 @@
 
 - [](/2016/04/d22vkm4/)
 
+- [Commentary thread for the vice presidential debate today](/2016/04/719119181833052160/)
+
 - [](/2016/04/d1tb80w/)
 
 - [](/2016/04/d1oqv0y/)
