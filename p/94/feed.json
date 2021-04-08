@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/09/46112486/",
+            "url": "https://mirror.roytang.net/2017/09/46112486/",
+            "path": "/2017/09/46112486/",
+            "title": "MarkLogic node.js - conditional updates using fields other than versionId",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m using ML8 and Node.js. The documentation here: \u003ca href=\"http://docs.marklogic.com/guide/node-dev/documents#id_68765\"\u003ehttp://docs.marklogic.com/guide/node-dev/documents#id_68765\u003c/a\u003e describes how to do conditional updates in ML using the versionId field.\u003c/p\u003e\n\u003cp\u003eBut for example if I want to do a conditional update on a different field, is it possible?\u003c/p\u003e\n\u003cp\u003eMy scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)\u003c/p\u003e\n\u003cp\u003eNow, for my \u0026ldquo;Assign\u0026rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update. I don\u0026rsquo;t care if other fields in the same document have been updated or not - if other fields have been updated, I can still proceed with the Assign operation (hence I cannot use the versionId approach, since that covers the whole document)\u003c/p\u003e\n\u003cp\u003eHow can this be done?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m using ML8 and Node.js. The documentation here: http://docs.marklogic.com/guide/node-dev/documents#id_68765 describes how to do conditional updates in ML using the versionId field.\nBut for example if I want to do a conditional update on a different field, is it possible?\nMy scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)\nNow, for my \u0026ldquo;Assign\u0026rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update.",
+            "date_published": "2017-09-08T08:53:55+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/46112486/index.md"
+            , "tags": ["marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/46112486/marklogic-node-js-conditional-updates-using-fields-other-than-versionid"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/46112486/marklogic-node-js-conditional-updates-using-fields-other-than-versionid",
+                    "source_file": "comment-20170908T175024-46122057.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/09/906001651005132805/",
             "url": "https://mirror.roytang.net/2017/09/906001651005132805/",
             "path": "/2017/09/906001651005132805/",
@@ -863,23 +885,6 @@
             "source_path": "notes/2017/08/900370701915377665/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/900370701915377665/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/08/900202998797873153/",
-            "url": "https://mirror.roytang.net/2017/08/900202998797873153/",
-            "path": "/2017/08/900202998797873153/",
-            "title": "",
-            "content_html": "\u003cp\u003eTaking a page from Duterte\u0026rsquo;s propaganda playbook\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/mattmfm/status/900158567461900288'\u003emattmfm\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Trump supporters desperately spreading fake photos on Twitter \u0026ldquo;from\u0026rdquo; Trump\u0026rsquo;s Phoenix Rally.\n\u003c/blockquote\u003e\n",
-            "summary": "Taking a page from Duterte\u0026rsquo;s propaganda playbook\nQuoted mattmfm\u0026#39;s tweet:   Trump supporters desperately spreading fake photos on Twitter \u0026ldquo;from\u0026rdquo; Trump\u0026rsquo;s Phoenix Rally.  ",
-            "date_published": "2017-08-23T03:48:14+00:00",
-            "date_modified": "2020-08-18T20:10:05+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/08/900202998797873153/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/900202998797873153/"}]
             
             
             }

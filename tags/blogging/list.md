@@ -1,4 +1,6 @@
 
+- [Blogs of Yesteryear](/2021/04/blogs-of-yesteryear/)
+
 - [Sincere Blogging](/2021/02/sincere-blogging/)
 
 - [Thoughts on Blogging, 2020 Edition, Vol 2](/2020/05/thoughts-on-blogging-2020-v2/)

@@ -1,4 +1,6 @@
 
+- [Blogs of Yesteryear](/2021/04/blogs-of-yesteryear/)
+
 - [2021 Site Update](/2021/03/2021-site-update/)
 
 - [Book Review: Walkaway by Cory Doctorow](/2021/02/book-review-walkaway-by-cory-doctorow/)
@@ -324,6 +326,8 @@
 - [Broadband!](/2005/03/broadband/)
 
 - [My First Nigerian Spam](/2005/03/my-first-nigerian-spam/)
+
+- [Blog Layouts from 2004](/2004/12/blog-layouts-from-2004/)
 
 - [Firefox in 98?](/2004/10/firefox-in-98/)
 

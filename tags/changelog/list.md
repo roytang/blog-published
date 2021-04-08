@@ -40,3 +40,5 @@
 - [Welcome to roytang.net](/2006/02/welcome-to-roytang-net/)
 
 - [Moving Things Around A Bit](/2005/12/moving-things-around-a-bit/)
+
+- [Blog Layouts from 2004](/2004/12/blog-layouts-from-2004/)

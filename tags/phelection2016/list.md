@@ -1,2 +1,2 @@
 
-- [](/2016/04/4fdl1h/)
+- [2016 Senatorial Candidates Information Megathread](/2016/04/2016-senatorial-candidates-information-megathread/)
