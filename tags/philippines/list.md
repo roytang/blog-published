@@ -359,8 +359,6 @@
 
 - [](/2016/05/d2smq68/)
 
-- [](/2016/05/4ht7jh/)
-
 - [](/2016/05/d2s6flm/)
 
 - [Elections 2016 -- My Ballot](/2016/05/elections-2016-my-ballot/)
@@ -583,7 +581,11 @@
 
 - [PHVote: Choosing your 2013 Senators and Party List](/2013/05/phvote-choosing-your-2013-senators-and-party-list/)
 
+- [Even more ramblings about the elections](/2013/05/even-more-ramblings-about-the-elections/)
+
 - [](/2013/04/c9pjmrc/)
+
+- [Nancy and the Elections: A Fictional Dialogue](/2013/04/nancy-and-the-elections-a-fictional-dialogue/)
 
 - [](/2013/04/c9cl4am/)
 

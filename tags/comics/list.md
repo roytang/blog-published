@@ -23,8 +23,6 @@
 
 - [A Look Back at the Marvel Cinematic Universe](/2019/07/a-look-back-at-the-marvel-cinematic-universe/)
 
-- [](/2019/04/em2cofm/)
-
 - [Promised Neverland and Dr. Stone](/2019/04/promised-neverland-and-dr.-stone/)
 
 - [](/2019/03/ej8tj5e/)

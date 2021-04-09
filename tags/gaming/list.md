@@ -697,6 +697,8 @@
 
 - [](/2010/08/946842507/)
 
+- [](/2010/04/552465073/)
+
 - [Street Fighter IV: The Answer Lies in the Heart of Battle](/2009/03/street-fighter-iv-the-answer-lies-in-the-heart-of-battle/)
 
 - [Street Fighter IV: My Fist Ur Face](/2009/02/street-fighter-iv-my-fist-ur-face/)
