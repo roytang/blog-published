@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/1196545389823848448/",
+            "url": "https://mirror.roytang.net/2019/11/1196545389823848448/",
+            "path": "/2019/11/1196545389823848448/",
+            "title": "",
+            "content_html": "\u003cp\u003eNow is the winter of our disc one content\u003c/p\u003e\n",
+            "summary": "Now is the winter of our disc one content",
+            "date_published": "2019-11-18T21:47:06+00:00",
+            "date_modified": "2019-11-19T07:20:58+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1196545389823848448/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1196545389823848448/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/11/f7yj706/",
+            "url": "https://mirror.roytang.net/2019/11/f7yj706/",
+            "path": "/2019/11/f7yj706/",
+            "title": "",
+            "content_html": "\u003cp\u003eDecision trees like \u0026ldquo;which starter pokemon do you pick\u0026rdquo; aren\u0026rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.\u003c/p\u003e\n\u003cp\u003eFor this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it\u0026rsquo;s easier for me:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003estarters: [\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I choose Charmander!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0001\u0026quot;},\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I want Bulbasaur!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0002\u0026quot;},\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I want Pikachu!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0003\u0026quot;}\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e]\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e(I forgot who the 3rd starter was supposed to be, I\u0026rsquo;m not big on Pokemon. Also I\u0026rsquo;m guessing those aren\u0026rsquo;t the actual pokedex IDs)\u003c/p\u003e\n\u003cp\u003eEach item on the list could also contain some other info. For example in dialogue trees, you might have NPCs react differently depending on what you say, so in that case each node would have an id pointing to the specific NPC response.\u003c/p\u003e\n\u003cp\u003eThe idea is to separate the data from your code, since those are totally separate concerns. This is a general programming principle not specific to game development. In this way, you make it easier to modify your data (like decision trees) without necessarily having to rebuild your code. For example, you could change the dialog message for each pokemon starter choice, or maybe you could add more choices, or make the starter pokemon be Snorlax, MewTwo and Ekans for some reason (those are pokemon right? Lol). Bigger game studios will have separate tools to maintain those data files so that even nonprogrammers can help change those kinds of things in the game.\u003c/p\u003e\n",
+            "summary": "Decision trees like \u0026ldquo;which starter pokemon do you pick\u0026rdquo; aren\u0026rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.\nFor this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it\u0026rsquo;s easier for me:",
+            "date_published": "2019-11-18T16:54:16+00:00",
+            "date_modified": "2020-10-19T18:08:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/f7yj706/index.md"
+            , "tags": ["gamedev"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7yj706/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/1196464077268086784/",
             "url": "https://mirror.roytang.net/2019/11/1196464077268086784/",
             "path": "/2019/11/1196464077268086784/",
@@ -915,48 +949,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1190863134661038080/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1190827086497251330/",
-            "url": "https://mirror.roytang.net/2019/11/1190827086497251330/",
-            "path": "/2019/11/1190827086497251330/",
-            "title": "",
-            "content_html": "\u003cp\u003e300! #duolingo\u003c/p\u003e\n",
-            "summary": "300! #duolingo",
-            "date_published": "2019-11-03T03:04:36+00:00",
-            "date_modified": "2019-11-03T12:30:02+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/11/1190827086497251330/index.md"
-            , "tags": ["duolingo"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1190827086497251330/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/nablopomo/",
-            "url": "https://mirror.roytang.net/2019/11/nablopomo/",
-            "path": "/2019/11/nablopomo/",
-            "title": "NaBloPoMo: Just Write",
-            "content_html": "\u003cp\u003eApparently, \u003ca href=\"http://nablopomoguideunofficial.blogspot.com/\"\u003eNaBloPoMo\u003c/a\u003e (or \u003cem\u003eNational Blog Posting Month\u003c/em\u003e) is a thing. It doesn\u0026rsquo;t quite roll off the tongue as the original \u003cem\u003eNanowrimo\u003c/em\u003e (which was already a tough sell), but I think it\u0026rsquo;s a worthy endeavor nonetheless. Some friends were inviting me to do Nanowrimo again this year, but due to general life and busyness and other things, I wasn\u0026rsquo;t able to prep. I could just wing it (maybe I still will!), but that likely leads to disaster! Let\u0026rsquo;s do this easier challenge instead. Easier because I\u0026rsquo;ve already done daily posting on multiple months this year, and also in comparison to \u003ca href=\"/2019/11/inktober-2019/\"\u003elast month\u0026rsquo;s challenge\u003c/a\u003e!\u003c/p\u003e\n\u003cp\u003eSome helpful tips and reminders for those who want to bring blogging back (did it ever really leave?):\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eA \u003cem\u003eblog\u003c/em\u003e (noun) is series of entries, called \u003cem\u003eblog posts\u003c/em\u003e, often primarily presented in reverse chronological order. A \u003cem\u003eblog post\u003c/em\u003e (noun) or simply a post is a single entry in a blog, usually consisting of a title, a date, and some content in either text or some other media. To \u003cem\u003eblog\u003c/em\u003e (verb) is to write one or more posts on a blog.\u003c/li\u003e\n\u003cli\u003eBlog posts can be anything you want them to be. They can be short or long. They can be focused on a particular topic, or discuss multiple topics, or be about no one topic in particular. They can have a title or have no title. They can be posted in the past, in the present or in the future. The sky\u0026rsquo;s the limit.\u003c/li\u003e\n\u003cli\u003eJust write. Some may struggle with putting their thoughts into words because they\u0026rsquo;re always looking for the perfect words or structure. Your posts don\u0026rsquo;t have to be the best, impeccable writing. They can written first and then improved upon. The goal of an exercise like this one or Nanowrimo is to force you into the habit of writing freely and without filter, to learn to embrace the imperfect. So just write.\u003c/li\u003e\n\u003cli\u003eStruggling to find something to write about? Here are some prompts, choose one:\n\u003cul\u003e\n\u003cli\u003ewhat have you been watching/reading lately?\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s something you tried recently?\u003c/li\u003e\n\u003cli\u003ewhat recent accomplishments are you proud of?\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s a recent failure you experienced and what did you learn from it?\u003c/li\u003e\n\u003cli\u003ewhen was the last time a friend asked you for advice, and what did you tell him?\u003c/li\u003e\n\u003cli\u003ewhen was the last time someone exceeded your expectations?\u003c/li\u003e\n\u003cli\u003ewhat happened the last time you went to a government office to get something done?\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s something you do or enjoy that none of your friends do?\u003c/li\u003e\n\u003cli\u003ewhat always annoys you when people ask about it?\u003c/li\u003e\n\u003cli\u003ewhat recent unexpected find made you happy?\u003c/li\u003e\n\u003cli\u003etry to draw a horse. then, mock your drawing\u003c/li\u003e\n\u003cli\u003ewhat recent article did you read that really impressed you?\u003c/li\u003e\n\u003cli\u003ewhat new blogs or social media accounts have you recently discovered and found interesting?\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s your strategy for saving money?\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s a recent restaurant meal you really liked? write a review!\u003c/li\u003e\n\u003cli\u003ewhat\u0026rsquo;s a recent government decision you think was really good or really bad? discuss!\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eEnjoy blogging!\u003c/p\u003e\n",
-            "summary": "Apparently, NaBloPoMo (or National Blog Posting Month) is a thing. It doesn\u0026rsquo;t quite roll off the tongue as the original Nanowrimo (which was already a tough sell), but I think it\u0026rsquo;s a worthy endeavor nonetheless. Some friends were inviting me to do Nanowrimo again this year, but due to general life and busyness and other things, I wasn\u0026rsquo;t able to prep. I could just wing it (maybe I still will!), but that likely leads to disaster!",
-            "date_published": "2019-11-03T00:00:00+00:00",
-            "date_modified": "2019-11-05T16:30:03+00:00",
-            "section": "post",
-            "source_path": "post/2019/11/nablopomo/index.md"
-            , "tags": ["writing","blogging"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1190969726891155456/"}]
-            
-            , "comments": [
-                { 
-                    "url": null,
-                    "source_file": "comment-20191105-081835-f3159568-7168-4317-94ee-c0d6438658fc.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20200627-093221-4df67035-4dac-4061-87f1-cac4de51cb51.json"
-                }
-            ]
             }
         
     ]
