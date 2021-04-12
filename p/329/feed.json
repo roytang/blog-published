@@ -11,960 +11,1106 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2009/12/6548680373/",
-            "url": "https://mirror.roytang.net/2009/12/6548680373/",
-            "path": "/2009/12/6548680373/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e: \u003ca href=\"https://twitter.com/NorrYtt/\"\u003e@NorrYtt\u003c/a\u003e Who is the unknown planeswalker? I\u0026rsquo;m betting either Sam Beckett or Quinn Mallory.\u003c/p\u003e\n",
-            "summary": "RT @wrongwaygoback: @NorrYtt Who is the unknown planeswalker? I\u0026rsquo;m betting either Sam Beckett or Quinn Mallory.",
-            "date_published": "2009-12-11T00:06:18+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
+            "id": "https://mirror.roytang.net/2009/11/1754697/",
+            "url": "https://mirror.roytang.net/2009/11/1754697/",
+            "path": "/2009/11/1754697/",
+            "title": "Displaying Chinese text in an Applet",
+            "content_html": "\u003cp\u003eWe have an Applet that can possibly display Chinese text. We are specifying a font for it (Arial), it works fine under both Windows and Mac OSX.\u003c/p\u003e\n\u003cp\u003eBut in Firefox on Linux the Chinese characters are rendered as squares. Is there a way to work around this? Note that we can\u0026rsquo;t assume the existence of a particular font file on the client.\u003c/p\u003e\n",
+            "summary": "We have an Applet that can possibly display Chinese text. We are specifying a font for it (Arial), it works fine under both Windows and Mac OSX.\nBut in Firefox on Linux the Chinese characters are rendered as squares. Is there a way to work around this? Note that we can\u0026rsquo;t assume the existence of a particular font file on the client.",
+            "date_published": "2009-11-18T09:21:01+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/6548680373.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6548680373/"}]
+            "source_path": "notes/2009/11/1754697/index.md"
+            , "tags": ["java","linux","localization","applet","cjk","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1754697/displaying-chinese-text-in-an-applet"}]
             
-            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1754697/displaying-chinese-text-in-an-applet",
+                    "source_file": "comment-20091118T100324-1754885.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1754697/displaying-chinese-text-in-an-applet",
+                    "source_file": "comment-20091118T131027-1755856.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1754697/displaying-chinese-text-in-an-applet",
+                    "source_file": "comment-20091118T132100-1755924.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1754697/displaying-chinese-text-in-an-applet",
+                    "source_file": "comment-20100629T161932-3142638.json"
+                }
+            ]
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/6546072579/",
-            "url": "https://mirror.roytang.net/2009/12/6546072579/",
-            "path": "/2009/12/6546072579/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/abeolandres/\"\u003e@abeolandres\u003c/a\u003e how does one get into that gig where samsung is giving you HDTVs? :p\u003c/p\u003e\n",
-            "summary": "@abeolandres how does one get into that gig where samsung is giving you HDTVs? :p",
-            "date_published": "2009-12-10T22:36:49+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
+            "id": "https://mirror.roytang.net/2009/11/1754135/",
+            "url": "https://mirror.roytang.net/2009/11/1754135/",
+            "path": "/2009/11/1754135/",
+            "title": "Applet with JDialog not hiding correctly in Mac OSX",
+            "content_html": "\u003cp\u003eI have an applet that calls a JDialog that contains a JProgressBar component. I subclass the JDialog to expose a method to update the JProgressBar, something like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003epublic class ProgressDialog extends javax.swing.JDialog {\n    public void setProgress(double progress) {\n        jProgressBar1.setValue(jProgressBar1.getMinimum() + (int) (progress * jProgressBar1.getMaximum()));\n    }\n    ...\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI use this dialog in the following manner:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003epublic void test() throws Exception {\n    progressDialog = new ProgressDialog(null, true);\n\n    try {\n        progressDialog.setLocationRelativeTo(null);\n\n        // show the dialog\n        EventQueue.invokeLater(new Runnable() {\n            public void run() {\n                progressDialog.setVisible(true);\n            }\n        });\n\n        // business logic code that calls progressDialog.setProgress along the way\n        doStuff();\n        \n    } finally {\n        progressDialog.setVisible(false);\n        progressDialog.dispose();\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIt works fine on Windows/any browser. However, when invoking the above function on Firefox 2/3/3.5 on a Mac, the progressDialog is displayed indefinitely, i.e. it doesn\u0026rsquo;t close.\u003c/p\u003e\n\u003cp\u003eI suspected that calling setVisible(true) inside the EventQueue was causing the problem, since it\u0026rsquo;s a blocking call and might block the queue completely, so I tried changing it to:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e        // show the dialog\n        new Thread() {\n            public void run() {\n                progressDialog.setVisible(true);\n            }\n        }.start();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWith this change, the progressDialog now closes correctly, but a new problem emerged - the contents of the dialog (which included the progressbar, an icon and a JLabel used to show a message string) were no longer shown inside the dialog. It was still a problem only on Mac Firefox.\u003c/p\u003e\n\u003cp\u003eAny ideas? I realize it\u0026rsquo;s probably some AWT threading issue, but I\u0026rsquo;ve been at this for a couple of days and can\u0026rsquo;t find a good solution. Wrapping the doStuff() business logic in a separate new Thread seems to work, but it\u0026rsquo;s not easy to refactor the actual business logic code into a separate thread, so I\u0026rsquo;m hoping there\u0026rsquo;s a simpler solution.\u003c/p\u003e\n\u003cp\u003eThe envt is:\nMac OSX 10.5\nJava 1.5\nFirefox 2/3/3.5\u003c/p\u003e\n",
+            "summary": "I have an applet that calls a JDialog that contains a JProgressBar component. I subclass the JDialog to expose a method to update the JProgressBar, something like:\npublic class ProgressDialog extends javax.swing.JDialog { public void setProgress(double progress) { jProgressBar1.setValue(jProgressBar1.getMinimum() + (int) (progress * jProgressBar1.getMaximum())); } ... }  I use this dialog in the following manner:\npublic void test() throws Exception { progressDialog = new ProgressDialog(null, true); try { progressDialog.setLocationRelativeTo(null); // show the dialog EventQueue.",
+            "date_published": "2009-11-18T06:58:03+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/6546072579.md"
+            "source_path": "notes/2009/11/1754135/index.md"
+            , "tags": ["java","macos","applet","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1754135/applet-with-jdialog-not-hiding-correctly-in-mac-osx"}]
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6546072579/"}]
-            
-            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1754135/applet-with-jdialog-not-hiding-correctly-in-mac-osx",
+                    "source_file": "comment-20091119T102451-1762300.json"
+                }
+            ]
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/6531885873/",
-            "url": "https://mirror.roytang.net/2009/12/6531885873/",
-            "path": "/2009/12/6531885873/",
+            "id": "https://mirror.roytang.net/2009/11/5796335770/",
+            "url": "https://mirror.roytang.net/2009/11/5796335770/",
+            "path": "/2009/11/5796335770/",
             "title": "",
-            "content_html": "\u003cp\u003eThere aren\u0026rsquo;t enough hours in the day.\u003c/p\u003e\n",
-            "summary": "There aren\u0026rsquo;t enough hours in the day.",
-            "date_published": "2009-12-10T14:01:55+00:00",
+            "content_html": "\u003cp\u003eLet\u0026rsquo;s say you could live in any period in history, which period do you choose?\u003c/p\u003e\n",
+            "summary": "Let\u0026rsquo;s say you could live in any period in history, which period do you choose?",
+            "date_published": "2009-11-17T14:08:21+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5796335770/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5796335770/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/181474741305"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/Altealice",
+                    "source_file": "comment-20091117-000000-1a094c90-dc33-47d5-a878-e4e11a8325bd.json"
+                }, { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20091118-000001-b486959e-591a-4fe4-af9e-5d3f2257c9a1.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091118-000002-8b93cdaf-b22d-4eea-ad40-a875592eba95.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091118-000003-9590f177-4c0c-4443-aa7e-192178592f7a.json"
+                }, { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20091118-000004-53fb7b3b-b0fc-4266-8033-9421ba8abcb0.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5794209603/",
+            "url": "https://mirror.roytang.net/2009/11/5794209603/",
+            "path": "/2009/11/5794209603/",
+            "title": "",
+            "content_html": "\u003cp\u003edual monitors!\u003c/p\u003e\n",
+            "summary": "dual monitors!",
+            "date_published": "2009-11-17T12:19:24+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5794209603/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5794209603/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/205031969415"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20091118-000000-2d24be88-9763-4083-9b7d-a5138b670180.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/1740843/",
+            "url": "https://mirror.roytang.net/2009/11/1740843/",
+            "path": "/2009/11/1740843/",
+            "title": "How to enforce a site-wide license?",
+            "content_html": "\u003cp\u003eWe have a small .Net program that we sell with individual licenses. The individual licenses are enforced by registering a key file that is generated using information from the machine used to install the program (MAC address, etc.)\u003c/p\u003e\n\u003cp\u003eNow, we have a customer request for a site-wide license, such that they can deploy to as many machines on their site as possible. From the technical POV I\u0026rsquo;m not sure what are the usual approaches for this; our old approach won\u0026rsquo;t work since we can\u0026rsquo;t map the license to any machine-specific information.\u003c/p\u003e\n\u003cp\u003eAny suggestions?\u003c/p\u003e\n\u003cp\u003eA few more details:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethe program is a client-side program that includes an Office Add-In\u003c/li\u003e\n\u003cli\u003ethe machines to be installed on may or may not have internet access\u003c/li\u003e\n\u003cli\u003ewe aren\u0026rsquo;t restricted to .Net-only approaches, I\u0026rsquo;m just looking for a general idea of how this sort of thing is usually handled\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "We have a small .Net program that we sell with individual licenses. The individual licenses are enforced by registering a key file that is generated using information from the machine used to install the program (MAC address, etc.)\nNow, we have a customer request for a site-wide license, such that they can deploy to as many machines on their site as possible. From the technical POV I\u0026rsquo;m not sure what are the usual approaches for this; our old approach won\u0026rsquo;t work since we can\u0026rsquo;t map the license to any machine-specific information.",
+            "date_published": "2009-11-16T08:34:23+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/1740843/index.md"
+            , "tags": [".net","licensing","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license",
+                    "source_file": "comment-20091116T083651-1740855.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license",
+                    "source_file": "comment-20091116T090818-1740956.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license",
+                    "source_file": "comment-20091116T091712-1740993.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license",
+                    "source_file": "comment-20091206T230023-1856938.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1740843/how-to-enforce-a-site-wide-license",
+                    "source_file": "comment-20100615T053115-3042736.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5758272142/",
+            "url": "https://mirror.roytang.net/2009/11/5758272142/",
+            "path": "/2009/11/5758272142/",
+            "title": "",
+            "content_html": "\u003cp\u003eIf you get a dog in a computer game, you must name him dogmeat. #dragonage -Update via SMS for FREE using \u003ca href=\"http://isip.ph\"\u003ehttp://isip.ph\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "If you get a dog in a computer game, you must name him dogmeat. #dragonage -Update via SMS for FREE using http://isip.ph",
+            "date_published": "2009-11-16T05:57:07+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5758272142/index.md"
+            , "tags": ["dragonage"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5758272142/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/177053388212"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/rocky.teodoro",
+                    "source_file": "comment-20091116-000000-223b3aa7-3e15-425d-bc49-74ede89ea0f1.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5755090930/",
+            "url": "https://mirror.roytang.net/2009/11/5755090930/",
+            "path": "/2009/11/5755090930/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e How did I miss this insanely detailed analysis of choose-your-own-adventure books -\u0026gt; \u003ca href=\"http://samizdat.co/cyoa/\"\u003ehttp://samizdat.co/cyoa/\u003c/a\u003e ?\u003c/p\u003e\n",
+            "summary": "RT @wrongwaygoback How did I miss this insanely detailed analysis of choose-your-own-adventure books -\u0026gt; http://samizdat.co/cyoa/ ?",
+            "date_published": "2009-11-16T03:23:15+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5755090930/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5755090930/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/179754017622"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091116-000000-341fffa4-5296-49b2-962a-22367c1344d1.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091116-000001-eb0eb856-1f44-4ee3-af10-b25abe3418db.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091116-000002-6f06ac86-ad53-4151-bb64-92f1adace2d4.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5739010158/",
+            "url": "https://mirror.roytang.net/2009/11/5739010158/",
+            "path": "/2009/11/5739010158/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"http://icio.us/a2hg31\"\u003ehttp://icio.us/a2hg31\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "http://icio.us/a2hg31",
+            "date_published": "2009-11-15T16:07:43+00:00",
             "date_modified": "2019-09-01T15:11:18+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/6531885873.md"
+            "source_path": "notes/2009/11/5739010158.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6531885873/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6531854635/",
-            "url": "https://mirror.roytang.net/2009/12/6531854635/",
-            "path": "/2009/12/6531854635/",
-            "title": "",
-            "content_html": "\u003cp\u003eIdeal team size and ratios: \u003ca href=\"https://www.jrothman.com/mpd/project-management/2009/12/ideal-team-size-and-ratios/\"\u003ehttps://www.jrothman.com/mpd/project-management/2009/12/ideal-team-size-and-ratios/\u003c/a\u003e Some people might note the part about having extra testers for multiple OS/sw versions\u003c/p\u003e\n",
-            "summary": "Ideal team size and ratios: https://www.jrothman.com/mpd/project-management/2009/12/ideal-team-size-and-ratios/ Some people might note the part about having extra testers for multiple OS/sw versions",
-            "date_published": "2009-12-10T14:00:41+00:00",
-            "date_modified": "2019-09-26T19:28:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6531854635.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6531854635/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/242576101040"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5739010158/"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/6531586375/",
-            "url": "https://mirror.roytang.net/2009/12/6531586375/",
-            "path": "/2009/12/6531586375/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhen inspiration comes I want it to find me working. - Pablo Picasso\u003c/p\u003e\n",
-            "summary": "When inspiration comes I want it to find me working. - Pablo Picasso",
-            "date_published": "2009-12-10T13:49:48+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6531586375.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6531586375/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6528179993/",
-            "url": "https://mirror.roytang.net/2009/12/6528179993/",
-            "path": "/2009/12/6528179993/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/abeolandres/\"\u003e@abeolandres\u003c/a\u003e are you giving it away? I would gladly join that raffle!\u003c/p\u003e\n",
-            "summary": "@abeolandres are you giving it away? I would gladly join that raffle!",
-            "date_published": "2009-12-10T10:59:25+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6528179993.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6528179993/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6522534243/",
-            "url": "https://mirror.roytang.net/2009/12/6522534243/",
-            "path": "/2009/12/6522534243/",
-            "title": "",
-            "content_html": "\u003cp\u003eA day in the internet: \u003ca href=\"http://www.onlineeducation.net/internet\"\u003ehttp://www.onlineeducation.net/internet\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "A day in the internet: http://www.onlineeducation.net/internet",
-            "date_published": "2009-12-10T05:19:14+00:00",
-            "date_modified": "2019-09-06T17:54:17+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6522534243.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6522534243/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6522423454/",
-            "url": "https://mirror.roytang.net/2009/12/6522423454/",
-            "path": "/2009/12/6522423454/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf you\u0026rsquo;re a fan of The Big Bang Theory, you might enjoy this twitter list: \u003ca href=\"http://twitter.com/roytang/bbt\"\u003ehttp://twitter.com/roytang/bbt\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "If you\u0026rsquo;re a fan of The Big Bang Theory, you might enjoy this twitter list: http://twitter.com/roytang/bbt",
-            "date_published": "2009-12-10T05:14:17+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6522423454.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6522423454/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "url": "https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "path": "/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/",
-            "title": "List of open source video games - Wikipedia, the free encyclopedia",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2009-12-10T03:58:16+00:00",
+            "id": "https://mirror.roytang.net/2009/11/writing-great-documentation-what-to-write/",
+            "url": "https://mirror.roytang.net/2009/11/writing-great-documentation-what-to-write/",
+            "path": "/2009/11/writing-great-documentation-what-to-write/",
+            "title": "Writing great documentation: what to write",
+            "content_html": "\u003cp\u003eWriting great documentation: what to write\u003c/p\u003e\n",
+            "summary": "Writing great documentation: what to write",
+            "date_published": "2009-11-15T16:00:57+00:00",
             "date_modified": "2020-01-29T00:26:29+08:00",
             "section": "links",
-            "source_path": "links/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/index.md"
-            , "tags": ["software","games","gamedev"]
+            "source_path": "links/2009/11/writing-great-documentation-what-to-write/index.md"
+            , "tags": ["documentation","for:@twitter"]
             
-            ,"link": "http://en.wikipedia.org/wiki/List_of_open_source_video_games"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6510979903/",
-            "url": "https://mirror.roytang.net/2009/12/6510979903/",
-            "path": "/2009/12/6510979903/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg #WWK Celestial Colonnade (R) Land ETB tapped T: U or W. 3UW: Becomes 4/4 u/w elem w/flying and vigilance until EOT \u003ca href=\"https://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/226949-wwk-celestial-colonnade-buy-a-box-promo#c1\"\u003ehttps://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/226949-wwk-celestial-colonnade-buy-a-box-promo#c1\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "#mtg #WWK Celestial Colonnade (R) Land ETB tapped T: U or W. 3UW: Becomes 4/4 u/w elem w/flying and vigilance until EOT https://www.mtgsalvation.com/forums/magic-fundamentals/the-rumor-mill/226949-wwk-celestial-colonnade-buy-a-box-promo#c1",
-            "date_published": "2009-12-09T22:34:12+00:00",
-            "date_modified": "2019-09-13T04:51:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6510979903.md"
-            , "tags": ["mtg","wwk"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6510979903/"}]
-            
+            ,"link": "http://jacobian.org/writing/great-documentation/what-to-write/"
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/6497902472/",
-            "url": "https://mirror.roytang.net/2009/12/6497902472/",
-            "path": "/2009/12/6497902472/",
+            "id": "https://mirror.roytang.net/2009/11/5737173160/",
+            "url": "https://mirror.roytang.net/2009/11/5737173160/",
+            "path": "/2009/11/5737173160/",
             "title": "",
-            "content_html": "\u003cp\u003eThey should reprint Dodecapod in #WorldWake, that would solve Blightning\u003c/p\u003e\n",
-            "summary": "They should reprint Dodecapod in #WorldWake, that would solve Blightning",
-            "date_published": "2009-12-09T14:42:07+00:00",
-            "date_modified": "2019-09-13T04:51:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6497902472.md"
-            , "tags": ["worldwake","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497902472/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6497378044/",
-            "url": "https://mirror.roytang.net/2009/12/6497378044/",
-            "path": "/2009/12/6497378044/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg I find this amusing for some reason: Compiled list of N-for-1s \u003ca href=\"http://strategy.channelfireball.com/uncategorized/compiled-list-of-n-for-1s/\"\u003ehttp://strategy.channelfireball.com/uncategorized/compiled-list-of-n-for-1s/\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "#mtg I find this amusing for some reason: Compiled list of N-for-1s http://strategy.channelfireball.com/uncategorized/compiled-list-of-n-for-1s/",
-            "date_published": "2009-12-09T14:22:06+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6497378044.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497378044/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6497261773/",
-            "url": "https://mirror.roytang.net/2009/12/6497261773/",
-            "path": "/2009/12/6497261773/",
-            "title": "",
-            "content_html": "\u003cp\u003etest (pls ignore this tweet, it doesn\u0026rsquo;t exist)\u003c/p\u003e\n",
-            "summary": "test (pls ignore this tweet, it doesn\u0026rsquo;t exist)",
-            "date_published": "2009-12-09T14:17:32+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6497261773.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497261773/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6497203110/",
-            "url": "https://mirror.roytang.net/2009/12/6497203110/",
-            "path": "/2009/12/6497203110/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mananation/\"\u003e@mananation\u003c/a\u003e thanks, that sounds perfect! I\u0026rsquo;ll look into it\u003c/p\u003e\n",
-            "summary": "@mananation thanks, that sounds perfect! I\u0026rsquo;ll look into it",
-            "date_published": "2009-12-09T14:15:13+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6497203110.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497203110/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6497105491/",
-            "url": "https://mirror.roytang.net/2009/12/6497105491/",
-            "path": "/2009/12/6497105491/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TheDecepticons/\"\u003e@TheDecepticons\u003c/a\u003e Apprentice data files have some weird format, I want a plain text file I can parse - probably just get from gatherer\u003c/p\u003e\n",
-            "summary": "@TheDecepticons Apprentice data files have some weird format, I want a plain text file I can parse - probably just get from gatherer",
-            "date_published": "2009-12-09T14:11:16+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6497105491.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497105491/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/276124344/",
-            "url": "https://mirror.roytang.net/2009/12/276124344/",
-            "path": "/2009/12/276124344/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf I had one hour to live\u0026hellip;via \u003ca href=\"http://i.imgur.com/NWqCz.jpg\"\u003ei.imgur.com\u003c/a\u003e\u003c/p\u003e",
-            "summary": "If I had one hour to live\u0026hellip;via i.imgur.com",
-            "date_published": "2009-12-09T14:06:20+00:00",
-            "date_modified": "2019-08-26T17:23:46+08:00",
-            "section": "photos",
-            "source_path": "photos/2009/12/276124344/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/276124344/if-i-had-one-hour-to-livevia-iimgurcom"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6496942275/",
-            "url": "https://mirror.roytang.net/2009/12/6496942275/",
-            "path": "/2009/12/6496942275/",
-            "title": "",
-            "content_html": "\u003cp\u003eCourage doesn\u0026rsquo;t always roar. Sometimes courage is the quiet voice at the end of the day saying, \u0026ldquo;I will try again tomorrow.\u0026rdquo; - Radmacher\u003c/p\u003e\n",
-            "summary": "Courage doesn\u0026rsquo;t always roar. Sometimes courage is the quiet voice at the end of the day saying, \u0026ldquo;I will try again tomorrow.\u0026rdquo; - Radmacher",
-            "date_published": "2009-12-09T14:04:45+00:00",
+            "content_html": "\u003cp\u003ewatching Taken\u003c/p\u003e\n",
+            "summary": "watching Taken",
+            "date_published": "2009-11-15T14:35:19+00:00",
             "date_modified": "2021-01-11T12:51:35+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/6496942275/index.md"
+            "source_path": "notes/2009/11/5737173160/index.md"
             
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6496942275/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/200667001964"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20091210-000000-9766477a-6666-4d04-82d6-d1b82d30e542.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6496667504/",
-            "url": "https://mirror.roytang.net/2009/12/6496667504/",
-            "path": "/2009/12/6496667504/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mikong/\"\u003e@mikong\u003c/a\u003e what\u0026rsquo;s #pechakucha?\u003c/p\u003e\n",
-            "summary": "@mikong what\u0026rsquo;s #pechakucha?",
-            "date_published": "2009-12-09T13:53:37+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6496667504.md"
-            , "tags": ["pechakucha"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6496667504/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/80761/",
-            "url": "https://mirror.roytang.net/2009/12/80761/",
-            "path": "/2009/12/80761/",
-            "title": "Yahoo Mail forwarding?",
-            "content_html": "\u003cp\u003eIs there any way to have my Yahoo Mail forwarded to another email address, without getting Yahoo Mail plus?\u003c/p\u003e\n",
-            "summary": "Is there any way to have my Yahoo Mail forwarded to another email address, without getting Yahoo Mail plus?",
-            "date_published": "2009-12-09T04:47:22+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/80761/index.md"
-            , "tags": ["email","forwarding","yahoo-mail","questions","superuser","tech life"]
-            , "syndicated": [{"type":"stackexchange","url":"https://superuser.com/questions/80761/yahoo-mail-forwarding"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://superuser.com/questions/80761/yahoo-mail-forwarding",
-                    "source_file": "comment-20091209T050243-80766.json"
-                }, { 
-                    "url": "https://superuser.com/questions/80761/yahoo-mail-forwarding",
-                    "source_file": "comment-20091219T005308-85241.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1871146/",
-            "url": "https://mirror.roytang.net/2009/12/1871146/",
-            "path": "/2009/12/1871146/",
-            "title": "",
-            "content_html": "\u003cp\u003ets_1, ts_2, ts_3, etc. are different fields on the same table? There\u0026rsquo;s no way to do that with a single statement.\u003c/p\u003e\n",
-            "summary": "ts_1, ts_2, ts_3, etc. are different fields on the same table? There\u0026rsquo;s no way to do that with a single statement.",
-            "date_published": "2009-12-09T01:49:56+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1871146/index.md"
-            , "tags": ["mysql"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1871131/is-it-really-no-solution-to-update-multiple-records-in-mysql/1871146#1871146"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6465766422/",
-            "url": "https://mirror.roytang.net/2009/12/6465766422/",
-            "path": "/2009/12/6465766422/",
-            "title": "",
-            "content_html": "\u003cp\u003eI just got killed by bees! #ZeldaSpiritTracks\u003c/p\u003e\n",
-            "summary": "I just got killed by bees! #ZeldaSpiritTracks",
-            "date_published": "2009-12-08T15:12:34+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6465766422/index.md"
-            , "tags": ["ZeldaSpiritTracks"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6465766422/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/340193000135"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/profile.php",
-                    "source_file": "comment-20091209-000000-f230c7ce-5740-468a-baf7-9ed50fe89d24.json"
-                }, { 
-                    "url": "https://www.facebook.com/raymond.lirag",
-                    "source_file": "comment-20091209-000001-b0173cde-8843-4fad-94b3-533fe575d3d1.json"
-                }, { 
-                    "url": "https://www.facebook.com/christine.rabe",
-                    "source_file": "comment-20091209-000002-05f4b243-5060-4d87-b107-877cbbb2dc8c.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20091209-000003-146f2e2d-8218-4003-9909-ff625c7ddc06.json"
-                }, { 
-                    "url": "https://www.facebook.com/profile.php",
-                    "source_file": "comment-20091209-000004-99c40444-3260-4b36-8213-6f1653cd59cb.json"
-                }, { 
-                    "url": "https://www.facebook.com/raymond.lirag",
-                    "source_file": "comment-20091210-000005-5b901474-a77e-4c30-a3ed-4d44765dbb68.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1866186/",
-            "url": "https://mirror.roytang.net/2009/12/1866186/",
-            "path": "/2009/12/1866186/",
-            "title": "",
-            "content_html": "\u003cp\u003eYou will need a better editor than Notepad. With Notepad, use Save As\u0026hellip;, and type \u0026ldquo;helloworld.py\u0026rdquo; in the dialog, \u003cstrong\u003eincluding\u003c/strong\u003e quotes so that the file extension is .py instead of .txt\u003c/p\u003e\n",
-            "summary": "You will need a better editor than Notepad. With Notepad, use Save As\u0026hellip;, and type \u0026ldquo;helloworld.py\u0026rdquo; in the dialog, including quotes so that the file extension is .py instead of .txt",
-            "date_published": "2009-12-08T10:52:08+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1866186/index.md"
-            , "tags": ["python","google-app-engine","file","makefile"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1866147/how-to-create-a-py-file-for-google-app-engine/1866186#1866186"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6433815818/",
-            "url": "https://mirror.roytang.net/2009/12/6433815818/",
-            "path": "/2009/12/6433815818/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/altealice/\"\u003e@altealice\u003c/a\u003e hanap ka lang ng pokemon!\u003c/p\u003e\n",
-            "summary": "@altealice hanap ka lang ng pokemon!",
-            "date_published": "2009-12-07T15:46:11+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6433815818.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6433815818/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1859466/",
-            "url": "https://mirror.roytang.net/2009/12/1859466/",
-            "path": "/2009/12/1859466/",
-            "title": "",
-            "content_html": "\u003cp\u003ePOI probably has a dependency on log4j. Just include the log4j jar in your classpath.\u003c/p\u003e\n",
-            "summary": "POI probably has a dependency on log4j. Just include the log4j jar in your classpath.",
-            "date_published": "2009-12-07T11:37:24+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1859466/index.md"
-            , "tags": ["apache","excel","file","apache-poi"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1859454/apache-poi-error-in-reading-excel-file/1859466#1859466"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1859425/",
-            "url": "https://mirror.roytang.net/2009/12/1859425/",
-            "path": "/2009/12/1859425/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt means that any single SQL statement you run is atomic in nature - it will either succeed completely or fail completely. If your SQL statement fails, and triggers that would have run as a result of that SQL statement will fail as well.\u003c/p\u003e\n",
-            "summary": "It means that any single SQL statement you run is atomic in nature - it will either succeed completely or fail completely. If your SQL statement fails, and triggers that would have run as a result of that SQL statement will fail as well.",
-            "date_published": "2009-12-07T11:27:02+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1859425/index.md"
-            , "tags": ["oracle","transactions"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1859411/triggers-statement-level-atomicity/1859425#1859425"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/273071960/",
-            "url": "https://mirror.roytang.net/2009/12/273071960/",
-            "path": "/2009/12/273071960/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2009-12-07T11:10:58+00:00",
-            "date_modified": "2019-08-26T17:23:46+08:00",
-            "section": "photos",
-            "source_path": "photos/2009/12/273071960/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/273071960"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6427829545/",
-            "url": "https://mirror.roytang.net/2009/12/6427829545/",
-            "path": "/2009/12/6427829545/",
-            "title": "",
-            "content_html": "\u003cp\u003eMSI-ECS Great IT Sale: \u003ca href=\"https://www.yugatech.com/events/msi-ecs-great-it-sale-pricelist/\"\u003ehttps://www.yugatech.com/events/msi-ecs-great-it-sale-pricelist/\u003c/a\u003e Dec 8-10 at Eastwood. Too bad I don\u0026rsquo;t have time to pass by, we\u0026rsquo;re looking for a good netbook\u003c/p\u003e\n",
-            "summary": "MSI-ECS Great IT Sale: https://www.yugatech.com/events/msi-ecs-great-it-sale-pricelist/ Dec 8-10 at Eastwood. Too bad I don\u0026rsquo;t have time to pass by, we\u0026rsquo;re looking for a good netbook",
-            "date_published": "2009-12-07T11:08:49+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6427829545/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6427829545/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/188683186900"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/alvinjtang",
-                    "source_file": "comment-20091207-000000-ac2bdd02-d1ad-465e-aa28-228c603b91e1.json"
-                }, { 
-                    "url": "https://www.facebook.com/kerwin.j.tang",
-                    "source_file": "comment-20091207-000001-901f5b3f-3851-4489-8437-43a4ae0e4226.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6425195596/",
-            "url": "https://mirror.roytang.net/2009/12/6425195596/",
-            "path": "/2009/12/6425195596/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg I\u0026rsquo;m looking for an easily-parsable database file of all magic cards. Suggestions? MTGO export doesn\u0026rsquo;t have type, subtype, p/t, etc\u003c/p\u003e\n",
-            "summary": "#mtg I\u0026rsquo;m looking for an easily-parsable database file of all magic cards. Suggestions? MTGO export doesn\u0026rsquo;t have type, subtype, p/t, etc",
-            "date_published": "2009-12-07T08:01:12+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6425195596.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6425195596/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6425119979/",
-            "url": "https://mirror.roytang.net/2009/12/6425119979/",
-            "path": "/2009/12/6425119979/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e was thinking of Lapse of Certainty in the board, to stop Wrath/Time Walk. (Multiple accts confusing!)\u003c/p\u003e\n",
-            "summary": "@mtgsalivanth was thinking of Lapse of Certainty in the board, to stop Wrath/Time Walk. (Multiple accts confusing!)",
-            "date_published": "2009-12-07T07:56:15+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6425119979.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6425119979/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6424628233/",
-            "url": "https://mirror.roytang.net/2009/12/6424628233/",
-            "path": "/2009/12/6424628233/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt\u0026rsquo;s never too late to be who you might have been\u003c/p\u003e\n",
-            "summary": "It\u0026rsquo;s never too late to be who you might have been",
-            "date_published": "2009-12-07T07:24:18+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6424628233.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6424628233/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/193944975414"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6419385223/",
-            "url": "https://mirror.roytang.net/2009/12/6419385223/",
-            "path": "/2009/12/6419385223/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e I took your WW list for a spin. It\u0026rsquo;s pretty good, but needs a plan vs fog\u003c/p\u003e\n",
-            "summary": "@mtgsalivanth I took your WW list for a spin. It\u0026rsquo;s pretty good, but needs a plan vs fog",
-            "date_published": "2009-12-07T03:11:55+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6419385223.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6419385223/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6417651358/",
-            "url": "https://mirror.roytang.net/2009/12/6417651358/",
-            "path": "/2009/12/6417651358/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mturian/\"\u003e@mturian\u003c/a\u003e  #WWK do it now!\u003c/p\u003e\n",
-            "summary": "@mturian #WWK do it now!",
-            "date_published": "2009-12-07T02:05:11+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6417651358.md"
-            , "tags": ["wwk","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6417651358/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/343224675430/",
-            "url": "https://mirror.roytang.net/2009/12/343224675430/",
-            "path": "/2009/12/343224675430/",
-            "title": "",
-            "content_html": "\u003cp\u003eAt Kerwin and Joy\u0026rsquo;s place\u003c/p\u003e\n",
-            "summary": "At Kerwin and Joy\u0026rsquo;s place",
-            "date_published": "2009-12-06T16:16:00+00:00",
-            "date_modified": "2019-09-28T14:51:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/343224675430/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/343224675430"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20091206-000000-1b3555ef-9afa-4ce2-b2b2-a5a7c1911656.json"
-                }, { 
-                    "url": "https://www.facebook.com/kerwin.j.tang",
-                    "source_file": "comment-20091206-000001-ef4441e1-e8d7-4ef7-b077-b392c4b667de.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6402269416/",
-            "url": "https://mirror.roytang.net/2009/12/6402269416/",
-            "path": "/2009/12/6402269416/",
-            "title": "",
-            "content_html": "\u003cp\u003eI watched a baby poop today\u003c/p\u003e\n",
-            "summary": "I watched a baby poop today",
-            "date_published": "2009-12-06T15:47:26+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6402269416/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6402269416/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/191883944079"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/aldwin.espiritu",
-                    "source_file": "comment-20091207-000000-d1b3e578-a62c-4fab-9977-fa36b1422640.json"
-                }, { 
-                    "url": "https://www.facebook.com/maan.sicam",
-                    "source_file": "comment-20091207-000001-934db513-248c-4fbc-b7a5-f2f19494faab.json"
-                }, { 
-                    "url": "https://www.facebook.com/lponce",
-                    "source_file": "comment-20091207-000002-28ec5090-6eca-42d2-811a-6e62b4fd3cec.json"
-                }, { 
-                    "url": "https://www.facebook.com/jennifer.l.roxas.9",
-                    "source_file": "comment-20091207-000003-ef7da661-b6dc-41cd-804f-a7b51932e0e3.json"
-                }, { 
-                    "url": "https://www.facebook.com/great.dilla",
-                    "source_file": "comment-20091207-000004-f9f14b1d-962d-4315-93a8-73d3697d4455.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20091207-000005-067278d3-f962-4810-96f2-d4130db32a0a.json"
-                }, { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20091208-000006-54b78c2f-83f6-4e5b-a35e-0e74cad6c0e1.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6397698831/",
-            "url": "https://mirror.roytang.net/2009/12/6397698831/",
-            "path": "/2009/12/6397698831/",
-            "title": "",
-            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/LaTtEX/\"\u003e@LaTtEX\u003c/a\u003e: RT \u003ca href=\"https://twitter.com/pinoy2com/\"\u003e@pinoy2com\u003c/a\u003e: bakit daw pag pangit ang humahabol syo, stalker ang tawag mo. pero pag maganda/gwapo, secret admirer? :D\u003c/p\u003e\n",
-            "summary": "RT @LaTtEX: RT @pinoy2com: bakit daw pag pangit ang humahabol syo, stalker ang tawag mo. pero pag maganda/gwapo, secret admirer? :D",
-            "date_published": "2009-12-06T11:33:11+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6397698831.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6397698831/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6384876802/",
-            "url": "https://mirror.roytang.net/2009/12/6384876802/",
-            "path": "/2009/12/6384876802/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"http://www.google.com/search?hl=en\u0026amp;q=recursion\"\u003ehttp://www.google.com/search?hl=en\u0026amp;q=recursion\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "http://www.google.com/search?hl=en\u0026amp;q=recursion",
-            "date_published": "2009-12-06T00:35:47+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6384876802.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6384876802/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/358847400303"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6367201553/",
-            "url": "https://mirror.roytang.net/2009/12/6367201553/",
-            "path": "/2009/12/6367201553/",
-            "title": "",
-            "content_html": "\u003cp\u003ehave a slight headache. I should probably just relax this weekend.\u003c/p\u003e\n",
-            "summary": "have a slight headache. I should probably just relax this weekend.",
-            "date_published": "2009-12-05T11:29:31+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6367201553.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6367201553/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/237110826000"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6366652313/",
-            "url": "https://mirror.roytang.net/2009/12/6366652313/",
-            "path": "/2009/12/6366652313/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe PTQ didn\u0026rsquo;t go well for me. Ended up R/B again but my curve was not as sick as it was the last PTQ. Went 2-3-drop\u003c/p\u003e\n",
-            "summary": "The PTQ didn\u0026rsquo;t go well for me. Ended up R/B again but my curve was not as sick as it was the last PTQ. Went 2-3-drop",
-            "date_published": "2009-12-05T10:48:24+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6366652313.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6366652313/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6355125848/",
-            "url": "https://mirror.roytang.net/2009/12/6355125848/",
-            "path": "/2009/12/6355125848/",
-            "title": "",
-            "content_html": "\u003cp\u003eGoing PTQ\u0026rsquo;ing today! Wish me a good sealed pool!\u003c/p\u003e\n",
-            "summary": "Going PTQ\u0026rsquo;ing today! Wish me a good sealed pool!",
-            "date_published": "2009-12-05T00:55:58+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6355125848.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6355125848/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6340193373/",
-            "url": "https://mirror.roytang.net/2009/12/6340193373/",
-            "path": "/2009/12/6340193373/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e how often do the pauper queues fire?\u003c/p\u003e\n",
-            "summary": "@mtgsalivanth how often do the pauper queues fire?",
-            "date_published": "2009-12-04T15:42:48+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6340193373.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6340193373/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/1845277/",
-            "url": "https://mirror.roytang.net/2009/12/1845277/",
-            "path": "/2009/12/1845277/",
-            "title": "Generating java core dump log file for applets in Linux",
-            "content_html": "\u003cp\u003eI have an applet that is crashing Firefox on Linux.\u003c/p\u003e\n\u003cp\u003eCan anyone tell me how I can enable the java core dump log file for this applet and where the file would be generated?\u003c/p\u003e\n",
-            "summary": "I have an applet that is crashing Firefox on Linux.\nCan anyone tell me how I can enable the java core dump log file for this applet and where the file would be generated?",
-            "date_published": "2009-12-04T06:49:54+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/1845277/index.md"
-            , "tags": ["java","applet","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1845277/generating-java-core-dump-log-file-for-applets-in-linux"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1845277/generating-java-core-dump-log-file-for-applets-in-linux",
-                    "source_file": "comment-20091204T072111-1739018.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1845277/generating-java-core-dump-log-file-for-applets-in-linux",
-                    "source_file": "comment-20091204T072112-1845370.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6320784962/",
-            "url": "https://mirror.roytang.net/2009/12/6320784962/",
-            "path": "/2009/12/6320784962/",
-            "title": "",
-            "content_html": "\u003cp\u003eI wonder if it\u0026rsquo;s a good time to play Standard on MtGO this weekend, all the Americans will be at States!\u003c/p\u003e\n",
-            "summary": "I wonder if it\u0026rsquo;s a good time to play Standard on MtGO this weekend, all the Americans will be at States!",
-            "date_published": "2009-12-04T00:35:03+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6320784962.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6320784962/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6320529412/",
-            "url": "https://mirror.roytang.net/2009/12/6320529412/",
-            "path": "/2009/12/6320529412/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt seems that coffee cannot compensate for a lack of sleep. =/\u003c/p\u003e\n",
-            "summary": "It seems that coffee cannot compensate for a lack of sleep. =/",
-            "date_published": "2009-12-04T00:25:52+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6320529412/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6320529412/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/188810899914"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jaime.l.garcia.779",
-                    "source_file": "comment-20091204-000000-9011b8fd-7df6-404a-947d-e8b5d732e239.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6320505200/",
-            "url": "https://mirror.roytang.net/2009/12/6320505200/",
-            "path": "/2009/12/6320505200/",
-            "title": "",
-            "content_html": "\u003cp\u003eI made a separate account for #mtg tweets, please follow me at \u003ca href=\"https://twitter.com/mtgstorm/\"\u003e@mtgstorm\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I made a separate account for #mtg tweets, please follow me at @mtgstorm",
-            "date_published": "2009-12-04T00:25:00+00:00",
-            "date_modified": "2019-09-26T19:12:59+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6320505200.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6320505200/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/195233135676"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6320463516/",
-            "url": "https://mirror.roytang.net/2009/12/6320463516/",
-            "path": "/2009/12/6320463516/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhat\u0026rsquo;s the EV for playing in an MtGO Exodus Prerelease? I just want to because older formats are fun :D\u003c/p\u003e\n",
-            "summary": "What\u0026rsquo;s the EV for playing in an MtGO Exodus Prerelease? I just want to because older formats are fun :D",
-            "date_published": "2009-12-04T00:23:28+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6320463516.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6320463516/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/190981271035/",
-            "url": "https://mirror.roytang.net/2009/12/190981271035/",
-            "path": "/2009/12/190981271035/",
-            "title": "",
-            "content_html": "\u003cp\u003eRelease notes for the latest L4D2 update: \u0026ldquo;Fixed bug where a burning witch could get into a state where she\u0026rsquo;s invincible\u0026rdquo; - that\u0026rsquo;s not a bug, that\u0026rsquo;s a feature!\u003c/p\u003e\n",
-            "summary": "Release notes for the latest L4D2 update: \u0026ldquo;Fixed bug where a burning witch could get into a state where she\u0026rsquo;s invincible\u0026rdquo; - that\u0026rsquo;s not a bug, that\u0026rsquo;s a feature!",
-            "date_published": "2009-12-03T00:23:00+00:00",
-            "date_modified": "2019-09-28T14:51:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/190981271035/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/190981271035"}]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5737173160/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/211717499921"}]
             
             , "comments": [
                 { 
                     "url": "https://www.facebook.com/morristan",
-                    "source_file": "comment-20091203-000000-c525ef67-a726-46a1-bce1-501cf5f4579c.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/6285914387/",
-            "url": "https://mirror.roytang.net/2009/12/6285914387/",
-            "path": "/2009/12/6285914387/",
-            "title": "",
-            "content_html": "\u003cp\u003eAn SQL Query walks into a bar and talks to two tables: \u0026ldquo;Can I join you?\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "An SQL Query walks into a bar and talks to two tables: \u0026ldquo;Can I join you?\u0026rdquo;",
-            "date_published": "2009-12-02T23:59:24+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/6285914387/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/6285914387/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/213801487526"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/rumz0rz",
-                    "source_file": "comment-20091203-000000-1339cddd-19ca-482d-93a2-8a10f30c72b4.json"
+                    "source_file": "comment-20091115-000000-b62de47c-1f79-497b-8846-764277c175c4.json"
                 }, { 
                     "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20091203-000001-f5a0024b-5c47-41a2-83b4-3c43381f9a99.json"
+                    "source_file": "comment-20091115-000001-d20811db-35bc-4e76-8811-d9055e152088.json"
                 }, { 
-                    "url": "https://www.facebook.com/rumz0rz",
-                    "source_file": "comment-20091203-000002-e00dffb7-1622-4026-9f57-d6bb59638c7d.json"
+                    "url": "https://www.facebook.com/Altealice",
+                    "source_file": "comment-20091116-000002-62503fd4-d3d6-4cc4-9a8b-64ef17545573.json"
                 }
             ]
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/1831244/",
-            "url": "https://mirror.roytang.net/2009/12/1831244/",
-            "path": "/2009/12/1831244/",
+            "id": "https://mirror.roytang.net/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/",
+            "url": "https://mirror.roytang.net/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/",
+            "path": "/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/",
+            "title": "A dozen of the best start-up pitches on the Web | JonBischke.com",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2009-11-15T12:01:19+00:00",
+            "date_modified": "2021-01-20T23:53:05+08:00",
+            "section": "links",
+            "source_path": "links/2009/11/a-dozen-of-the-best-start-up-pitches-on-the-web-jonbischke-com/index.md"
+            , "tags": ["broken-link"]
+            , "syndicated": [{"type":"archive.org","url":"https://web.archive.org/web/20091117054003/http://jonbischke.com/2009/11/13/a-dozen-of-the-best-start-up-pitches-on-the-web/"}]
+            ,"link": "http://jonbischke.com/2009/11/13/a-dozen-of-the-best-start-up-pitches-on-the-web/"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5734456046/",
+            "url": "https://mirror.roytang.net/2009/11/5734456046/",
+            "path": "/2009/11/5734456046/",
             "title": "",
-            "content_html": "\u003cp\u003eThe usual reason is separation of concerns. You should make it easy to modify the presentation without affecting the business layer.\u003c/p\u003e\n",
-            "summary": "The usual reason is separation of concerns. You should make it easy to modify the presentation without affecting the business layer.",
-            "date_published": "2009-12-02T07:42:36+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/kerwintang/\"\u003e@kerwintang\u003c/a\u003e: i just noticed that Going Bulilit is rated PG.\u003c/p\u003e\n",
+            "summary": "RT @kerwintang: i just noticed that Going Bulilit is rated PG.",
+            "date_published": "2009-11-15T11:40:58+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/1831244/index.md"
-            , "tags": ["jsp"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1831238/jsp-for-business-layer/1831244#1831244"}]
+            "source_path": "notes/2009/11/5734456046/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5734456046/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/177883519641"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5726938872/",
+            "url": "https://mirror.roytang.net/2009/11/5726938872/",
+            "path": "/2009/11/5726938872/",
+            "title": "",
+            "content_html": "\u003cp\u003ewalang krimen sa pilipinas ngayon. either that, or it\u0026rsquo;s the perfect time to commit \u0026lsquo;em!\u003c/p\u003e\n",
+            "summary": "walang krimen sa pilipinas ngayon. either that, or it\u0026rsquo;s the perfect time to commit \u0026lsquo;em!",
+            "date_published": "2009-11-15T03:33:43+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5726938872/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5726938872/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/175125393207"}]
             
             , "comments": [
                 { 
-                    "url": "https://stackoverflow.com/questions/1831238/jsp-for-business-layer/1831244#1831244",
-                    "source_file": "comment-20091202T074543-1723043.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1831238/jsp-for-business-layer/1831244#1831244",
-                    "source_file": "comment-20091202T080423-1723122.json"
+                    "url": "https://www.facebook.com/keiscasas",
+                    "source_file": "comment-20091115-000000-7cae225e-7327-4154-a5a1-5ae91de74ca2.json"
                 }
             ]
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/1831230/",
-            "url": "https://mirror.roytang.net/2009/12/1831230/",
-            "path": "/2009/12/1831230/",
+            "id": "https://mirror.roytang.net/2009/11/5726861488/",
+            "url": "https://mirror.roytang.net/2009/11/5726861488/",
+            "path": "/2009/11/5726861488/",
             "title": "",
-            "content_html": "\u003cp\u003eYou can have an array of 3-item tuples.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003earr = [ (1,2,3), (4,5,6), (7,8,9)]\nfor (k, v, x) in arr:\n  # do stuff\u003c/code\u003e\u003c/pre\u003e\n",
-            "summary": "You can have an array of 3-item tuples.\narr = [ (1,2,3), (4,5,6), (7,8,9)] for (k, v, x) in arr: # do stuff ",
-            "date_published": "2009-12-02T07:37:51+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
+            "content_html": "\u003cp\u003eInteresting tool: The Google Wonder Wheel \u003ca href=\"http://bit.ly/6uyA2\"\u003ehttp://bit.ly/6uyA2\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Interesting tool: The Google Wonder Wheel http://bit.ly/6uyA2",
+            "date_published": "2009-11-15T03:30:08+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/1831230/index.md"
-            , "tags": ["python","tuples"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1831218/is-there-a-tuple-data-structure-in-python/1831230#1831230"}]
+            "source_path": "notes/2009/11/5726861488.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5726861488/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/187514472448"}]
             
             
             }
         
         , {
-            "id": "https://mirror.roytang.net/2009/12/1831183/",
-            "url": "https://mirror.roytang.net/2009/12/1831183/",
-            "path": "/2009/12/1831183/",
+            "id": "https://mirror.roytang.net/2009/11/5725575447/",
+            "url": "https://mirror.roytang.net/2009/11/5725575447/",
+            "path": "/2009/11/5725575447/",
             "title": "",
-            "content_html": "\u003cp\u003eIf you want the average salary for all records AND a listing of the name column for each record, you need to use 2 separate queries\u003c/p\u003e\n",
-            "summary": "If you want the average salary for all records AND a listing of the name column for each record, you need to use 2 separate queries",
-            "date_published": "2009-12-02T07:21:02+00:00",
+            "content_html": "\u003cp\u003eNokiaSoftwareUpdater does not support Windows 7? Way to be cutting-edge!\u003c/p\u003e\n",
+            "summary": "NokiaSoftwareUpdater does not support Windows 7? Way to be cutting-edge!",
+            "date_published": "2009-11-15T02:32:35+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5725575447.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5725575447/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/174201637271"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5725425917/",
+            "url": "https://mirror.roytang.net/2009/11/5725425917/",
+            "path": "/2009/11/5725425917/",
+            "title": "",
+            "content_html": "\u003cp\u003eYou can watch the fight live using sopcast - sop://broker.sopcast.com:3912/24267 Download the client here: \u003ca href=\"https://download.cnet.com/SopCast/3000-13632_4-10601520.html\"\u003ehttps://download.cnet.com/SopCast/3000-13632_4-10601520.html\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "You can watch the fight live using sopcast - sop://broker.sopcast.com:3912/24267 Download the client here: https://download.cnet.com/SopCast/3000-13632_4-10601520.html",
+            "date_published": "2009-11-15T02:25:51+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5725425917/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5725425917/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/207652484026"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20091115-000000-8d4d6895-893b-4390-8ff4-265e89935fe0.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5724770336/",
+            "url": "https://mirror.roytang.net/2009/11/5724770336/",
+            "path": "/2009/11/5724770336/",
+            "title": "",
+            "content_html": "\u003cp\u003eI suspect the intertubes are clogged by Pacquiao fans. Get off my internet!\u003c/p\u003e\n",
+            "summary": "I suspect the intertubes are clogged by Pacquiao fans. Get off my internet!",
+            "date_published": "2009-11-15T01:57:24+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5724770336/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5724770336/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/209316060409"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091115-000000-7c62a6b1-b80f-4106-9b1c-0814631c646e.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20091115-000001-074d8889-dab1-4674-b5b9-7bb502af6581.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091115-000002-340fa90c-b608-4240-b98c-d905d7da6c41.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5724235876/",
+            "url": "https://mirror.roytang.net/2009/11/5724235876/",
+            "path": "/2009/11/5724235876/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/TeamPilipinas/\"\u003e@TeamPilipinas\u003c/a\u003e: Pacquiao - Cotto (Free Live Streaming) Links: \u003ca href=\"http://TeamPilipinas.info\"\u003ehttp://TeamPilipinas.info\u003c/a\u003e, \u003ca href=\"http://RNHalawi.com\"\u003ehttp://RNHalawi.com\u003c/a\u003e \u0026amp; \u003ca href=\"http://www.BoxingTV.org\"\u003ehttp://www.BoxingTV.org\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @TeamPilipinas: Pacquiao - Cotto (Free Live Streaming) Links: http://TeamPilipinas.info, http://RNHalawi.com \u0026amp; http://www.BoxingTV.org",
+            "date_published": "2009-11-15T01:32:47+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5724235876.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5724235876/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/201092004362"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5723376325/",
+            "url": "https://mirror.roytang.net/2009/11/5723376325/",
+            "path": "/2009/11/5723376325/",
+            "title": "",
+            "content_html": "\u003cp\u003eanyone know where I can watch the fight live online?\u003c/p\u003e\n",
+            "summary": "anyone know where I can watch the fight live online?",
+            "date_published": "2009-11-15T00:54:02+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5723376325/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5723376325/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/177982998426"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/keiscasas",
+                    "source_file": "comment-20091115-000000-c0a2a618-9a50-4b2b-a355-87d75b024ceb.json"
+                }, { 
+                    "url": "https://www.facebook.com/keiscasas",
+                    "source_file": "comment-20091115-000001-d74f96ca-8f36-4a10-8459-c798df7f7de4.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5707772794/",
+            "url": "https://mirror.roytang.net/2009/11/5707772794/",
+            "path": "/2009/11/5707772794/",
+            "title": "",
+            "content_html": "\u003cp\u003ePROTIP: If you plan to watch a new movie release on Saturday night when there\u0026rsquo;s a sale at the mall, get your tickets around 3 hours early.\u003c/p\u003e\n",
+            "summary": "PROTIP: If you plan to watch a new movie release on Saturday night when there\u0026rsquo;s a sale at the mall, get your tickets around 3 hours early.",
+            "date_published": "2009-11-14T12:25:32+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5707772794/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5707772794/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/189992356584"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20091114-000000-c1bd7728-7b66-4026-a40e-9e877293d2b3.json"
+                }, { 
+                    "url": "https://www.facebook.com/tara.cagadoc",
+                    "source_file": "comment-20091114-000001-6d9fd241-bd78-4146-95c9-10d51e3c5766.json"
+                }, { 
+                    "url": "https://www.facebook.com/keiscasas",
+                    "source_file": "comment-20091114-000002-a6549b75-f1d7-4536-b537-23618d13eb9a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20091114-000003-6a200d7a-2e9b-4823-beb5-4c2e45300c14.json"
+                }, { 
+                    "url": "https://www.facebook.com/luis.formilleza",
+                    "source_file": "comment-20091115-000004-80d8a22c-d5fd-4850-b0f3-b3f3b0028693.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20091115-000005-008e13b7-a245-4c00-b8ac-d980d2a9ba99.json"
+                }, { 
+                    "url": "https://www.facebook.com/luis.formilleza",
+                    "source_file": "comment-20091115-000006-90909b2e-f7be-4ef8-94ce-7398975defeb.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5702569824/",
+            "url": "https://mirror.roytang.net/2009/11/5702569824/",
+            "path": "/2009/11/5702569824/",
+            "title": "",
+            "content_html": "\u003cp\u003espent the whole morning reading Bakuman \u0026gt;.\u0026lt;\u003c/p\u003e\n",
+            "summary": "spent the whole morning reading Bakuman \u0026gt;.\u0026lt;",
+            "date_published": "2009-11-14T05:37:16+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5702569824.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5702569824/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/313627995540"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5700331751/",
+            "url": "https://mirror.roytang.net/2009/11/5700331751/",
+            "path": "/2009/11/5700331751/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/Scobleizer/\"\u003e@Scobleizer\u003c/a\u003e: WARNING: another virus is going around inside Twitter. Do NOT click on links in DM\u0026rsquo;s. Even from your friends!\u003c/p\u003e\n",
+            "summary": "RT @Scobleizer: WARNING: another virus is going around inside Twitter. Do NOT click on links in DM\u0026rsquo;s. Even from your friends!",
+            "date_published": "2009-11-14T03:44:43+00:00",
+            "date_modified": "2020-09-08T01:29:52+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5700331751/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5700331751/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/175118921917"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5679826057/",
+            "url": "https://mirror.roytang.net/2009/11/5679826057/",
+            "path": "/2009/11/5679826057/",
+            "title": "",
+            "content_html": "\u003cp\u003eTweeting for 1 year, 2 months, 4 weeks, 10 hours, 12 minutes, 5 seconds (August 17, 2008). How about you? \u003ca href=\"http://bit.ly/eC942\"\u003ehttp://bit.ly/eC942\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Tweeting for 1 year, 2 months, 4 weeks, 10 hours, 12 minutes, 5 seconds (August 17, 2008). How about you? http://bit.ly/eC942",
+            "date_published": "2009-11-13T13:55:10+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5679826057.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5679826057/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/170687768870"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5679715728/",
+            "url": "https://mirror.roytang.net/2009/11/5679715728/",
+            "path": "/2009/11/5679715728/",
+            "title": "",
+            "content_html": "\u003cp\u003estarted reading Bakuman\u003c/p\u003e\n",
+            "summary": "started reading Bakuman",
+            "date_published": "2009-11-13T13:50:05+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5679715728.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5679715728/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/177149360788"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5678915490/",
+            "url": "https://mirror.roytang.net/2009/11/5678915490/",
+            "path": "/2009/11/5678915490/",
+            "title": "",
+            "content_html": "\u003cp\u003eboo, PTQ tomorrow was canceled!\u003c/p\u003e\n",
+            "summary": "boo, PTQ tomorrow was canceled!",
+            "date_published": "2009-11-13T13:10:58+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5678915490.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5678915490/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/181083885985"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5648873300/",
+            "url": "https://mirror.roytang.net/2009/11/5648873300/",
+            "path": "/2009/11/5648873300/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgsalivanth/\"\u003e@mtgsalivanth\u003c/a\u003e I get a lot of good quality sleep. But I\u0026rsquo;m yawning all the time at work and I always need naps. Might just be bored with work\u003c/p\u003e\n",
+            "summary": "@mtgsalivanth I get a lot of good quality sleep. But I\u0026rsquo;m yawning all the time at work and I always need naps. Might just be bored with work",
+            "date_published": "2009-11-12T13:32:32+00:00",
             "date_modified": "2020-01-23T05:14:22+08:00",
             "section": "notes",
-            "source_path": "notes/2009/12/1831183/index.md"
-            , "tags": ["sql"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1831166/sql-help-for-each/1831183#1831183"}]
+            "source_path": "notes/2009/11/5648873300.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5648873300/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5647713812/",
+            "url": "https://mirror.roytang.net/2009/11/5647713812/",
+            "path": "/2009/11/5647713812/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m sleepy all the time. Should I start drinking coffee?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m sleepy all the time. Should I start drinking coffee?",
+            "date_published": "2009-11-12T12:30:30+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5647713812/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5647713812/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/188519176472"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/rocky.teodoro",
+                    "source_file": "comment-20091112-000000-07d9b479-7d6b-454c-8964-26bbe1f88f35.json"
+                }, { 
+                    "url": "https://www.facebook.com/lponce",
+                    "source_file": "comment-20091112-000001-77519b15-e88d-47a8-b262-2c173e74416b.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20091113-000002-1e53c7bd-140b-4aaf-9bcb-7139f44621db.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20091113-000003-f9db7564-2ce1-4fa3-ade5-d6296618ff8c.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20091113-000004-e49fc5fc-dc9e-467f-aeae-6ec3cde986fb.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20091113-000005-ee8d3598-5bb8-468f-b98d-6c455ad45cf2.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20091113-000006-885a07cb-c200-4fc7-ad16-c8ca4c816f0d.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20091113-000007-ba77dac4-63b8-4f8b-a135-1f248e00a2df.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20091113-000008-520511c3-4307-495d-9418-aef928a6cf91.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20091113-000009-36a0e815-1846-48b6-8052-bfa4f566343a.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20091113-000010-31ffca02-77d4-4ce7-9c41-3a77b972463d.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20091113-000011-d6ea75f6-ca89-4fe1-a8b0-6579ec0356e5.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20091113-000012-28d66e1c-60bb-4e3e-963b-8d1b7abe7935.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20091113-000013-f26ee606-7322-4111-a6b9-e9b0e5aef306.json"
+                }, { 
+                    "url": "https://www.facebook.com/bryan.apostol",
+                    "source_file": "comment-20091113-000014-f99dd573-c04d-47cb-8657-539900b7d1c4.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20091113-000015-b5eaac62-5bf8-4006-bc39-7d4aa4ba007f.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20091114-000016-387cd619-97ca-425e-b8a1-cd580dfdefb2.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5555457491/",
+            "url": "https://mirror.roytang.net/2009/11/5555457491/",
+            "path": "/2009/11/5555457491/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/codinghorror/\"\u003e@codinghorror\u003c/a\u003e can we win from outside the US? :D\u003c/p\u003e\n",
+            "summary": "@codinghorror can we win from outside the US? :D",
+            "date_published": "2009-11-09T10:09:58+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5555457491.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5555457491/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5505127423/",
+            "url": "https://mirror.roytang.net/2009/11/5505127423/",
+            "path": "/2009/11/5505127423/",
+            "title": "",
+            "content_html": "\u003cp\u003eNow playing: Dragon Age: Origins\u003c/p\u003e\n",
+            "summary": "Now playing: Dragon Age: Origins",
+            "date_published": "2009-11-07T12:35:22+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5505127423/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5505127423/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/197352608967"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20091108-000000-2b0ccfe5-7837-4543-ba88-9b7c2ce41de4.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5492194161/",
+            "url": "https://mirror.roytang.net/2009/11/5492194161/",
+            "path": "/2009/11/5492194161/",
+            "title": "",
+            "content_html": "\u003cp\u003eProduct development notes from Sirlin: \u003ca href=\"http://bit.ly/ke0EU\"\u003ehttp://bit.ly/ke0EU\u003c/a\u003e His article is for game dev but the advise applies to other software dev as well\u003c/p\u003e\n",
+            "summary": "Product development notes from Sirlin: http://bit.ly/ke0EU His article is for game dev but the advise applies to other software dev as well",
+            "date_published": "2009-11-06T23:26:28+00:00",
+            "date_modified": "2020-09-07T19:55:44+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5492194161/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5492194161/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/171552458892"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5479858639/",
+            "url": "https://mirror.roytang.net/2009/11/5479858639/",
+            "path": "/2009/11/5479858639/",
+            "title": "",
+            "content_html": "\u003cp\u003eabout time they made a web version RT @starcitygames: Evan Erwin brings us a look at MTGO Version Awesome!  \u003ca href=\"http://www.starcitygames.com/magic/misc/18254_The_Magic_Show_164_A_New_Magic_Online.html\"\u003ehttp://www.starcitygames.com/magic/misc/18254_The_Magic_Show_164_A_New_Magic_Online.html\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "about time they made a web version RT @starcitygames: Evan Erwin brings us a look at MTGO Version Awesome! http://www.starcitygames.com/magic/misc/18254_The_Magic_Show_164_A_New_Magic_Online.html",
+            "date_published": "2009-11-06T14:44:20+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5479858639.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5479858639/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/99043369962"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5420282801/",
+            "url": "https://mirror.roytang.net/2009/11/5420282801/",
+            "path": "/2009/11/5420282801/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e: Character Alignment: A visual guide \u003ca href=\"http://bit.ly/2VNCBa\"\u003ehttp://bit.ly/2VNCBa\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @misterorange: Character Alignment: A visual guide http://bit.ly/2VNCBa",
+            "date_published": "2009-11-04T13:49:52+00:00",
+            "date_modified": "2020-09-07T19:55:44+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5420282801/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5420282801/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/194081222618"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20091104-000000-00db7467-8c66-4c8c-8180-02afc1da8d10.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5420235178/",
+            "url": "https://mirror.roytang.net/2009/11/5420235178/",
+            "path": "/2009/11/5420235178/",
+            "title": "",
+            "content_html": "\u003cp\u003eAt work today, I tried to download Google Chrome and install it on the inet machine. Firefox crashed everytime I loaded the download page!\u003c/p\u003e\n",
+            "summary": "At work today, I tried to download Google Chrome and install it on the inet machine. Firefox crashed everytime I loaded the download page!",
+            "date_published": "2009-11-04T13:47:26+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5420235178/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5420235178/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/170304833356"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20091104-000000-4d872756-ded1-4991-b7f9-7a243160bf8b.json"
+                }, { 
+                    "url": "https://www.facebook.com/dennis.garce",
+                    "source_file": "comment-20091104-000001-1ba4b43f-00ad-4e99-aed3-eb6fe09bb150.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5363508194/",
+            "url": "https://mirror.roytang.net/2009/11/5363508194/",
+            "path": "/2009/11/5363508194/",
+            "title": "",
+            "content_html": "\u003cp\u003eHave some fries! \u003ca href=\"https://twitpic.com/o03dc\"\u003ehttps://twitpic.com/o03dc\u003c/a\u003e (Testing tweetdeck/twitpic integration)\u003c/p\u003e\n",
+            "summary": "Have some fries! https://twitpic.com/o03dc (Testing tweetdeck/twitpic integration)",
+            "date_published": "2009-11-02T14:04:56+00:00",
+            "date_modified": "2020-10-26T13:11:47+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5363508194/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5363508194/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/326706260450"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5363418792/",
+            "url": "https://mirror.roytang.net/2009/11/5363418792/",
+            "path": "/2009/11/5363418792/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e parang that\u0026rsquo;s an old picture :p\u003c/p\u003e\n",
+            "summary": "@rocketkeis parang that\u0026rsquo;s an old picture :p",
+            "date_published": "2009-11-02T14:00:35+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5363418792.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5363418792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5362965038/",
+            "url": "https://mirror.roytang.net/2009/11/5362965038/",
+            "path": "/2009/11/5362965038/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e how short is \u0026ldquo;short term\u0026rdquo;? why do you expect it to jump? just because me3 won\u0026rsquo;t be drafted anymore?\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback how short is \u0026ldquo;short term\u0026rdquo;? why do you expect it to jump? just because me3 won\u0026rsquo;t be drafted anymore?",
+            "date_published": "2009-11-02T13:36:48+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5362965038.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5362965038/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5359228325/",
+            "url": "https://mirror.roytang.net/2009/11/5359228325/",
+            "path": "/2009/11/5359228325/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/WhitsonGordon/\"\u003e@WhitsonGordon\u003c/a\u003e: Best picture ever. \u003ca href=\"https://gizmodo.com/where-are-those-damn-droids-5393133\"\u003ehttps://gizmodo.com/where-are-those-damn-droids-5393133\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "RT @WhitsonGordon: Best picture ever. https://gizmodo.com/where-are-those-damn-droids-5393133",
+            "date_published": "2009-11-02T08:49:12+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5359228325/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5359228325/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/168957738613"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20091102-000000-b68f732c-7da6-4f91-a872-18323797bede.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5358135131/",
+            "url": "https://mirror.roytang.net/2009/11/5358135131/",
+            "path": "/2009/11/5358135131/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e ah my bad, it only protects white dudes \u0026gt;.\u0026lt;\u003c/p\u003e\n",
+            "summary": "@misterorange ah my bad, it only protects white dudes \u0026gt;.\u0026lt;",
+            "date_published": "2009-11-02T07:10:14+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5358135131.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5358135131/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5358130054/",
+            "url": "https://mirror.roytang.net/2009/11/5358130054/",
+            "path": "/2009/11/5358130054/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/misterorange/\"\u003e@misterorange\u003c/a\u003e not playing brave the elements? I\u0026rsquo;d play that over tempest owl\u003c/p\u003e\n",
+            "summary": "@misterorange not playing brave the elements? I\u0026rsquo;d play that over tempest owl",
+            "date_published": "2009-11-02T07:09:50+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5358130054.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5358130054/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5357755025/",
+            "url": "https://mirror.roytang.net/2009/11/5357755025/",
+            "path": "/2009/11/5357755025/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/wrongwaygoback/\"\u003e@wrongwaygoback\u003c/a\u003e why mana drains and why tonight? are they going to spike?\u003c/p\u003e\n",
+            "summary": "@wrongwaygoback why mana drains and why tonight? are they going to spike?",
+            "date_published": "2009-11-02T06:39:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5357755025.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5357755025/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5329543128/",
+            "url": "https://mirror.roytang.net/2009/11/5329543128/",
+            "path": "/2009/11/5329543128/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/maro254/\"\u003e@maro254\u003c/a\u003e \u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e why were the quest triggers made optional? It creates so many \u0026ldquo;Do you want to use this ability?\u0026rdquo; prompts on MTGO\u003c/p\u003e\n",
+            "summary": "@maro254 @mtgaaron why were the quest triggers made optional? It creates so many \u0026ldquo;Do you want to use this ability?\u0026rdquo; prompts on MTGO",
+            "date_published": "2009-11-01T03:10:23+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5329543128.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5329543128/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5328386992/",
+            "url": "https://mirror.roytang.net/2009/11/5328386992/",
+            "path": "/2009/11/5328386992/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/mashable/\"\u003e@mashable\u003c/a\u003e TIP: try going to Twitter.com today \u0026amp; tweeting either #trick or #treat , \u0026amp; nothing else. Hidden Twitter feature!\u003c/p\u003e\n",
+            "summary": "RT @mashable TIP: try going to Twitter.com today \u0026amp; tweeting either #trick or #treat , \u0026amp; nothing else. Hidden Twitter feature!",
+            "date_published": "2009-11-01T02:09:34+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5328386992.md"
+            , "tags": ["trick","treat"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5328386992/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/171341961337"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5327379015/",
+            "url": "https://mirror.roytang.net/2009/11/5327379015/",
+            "path": "/2009/11/5327379015/",
+            "title": "",
+            "content_html": "\u003cp\u003e@magicprotour ob nix\u003c/p\u003e\n",
+            "summary": "@magicprotour ob nix",
+            "date_published": "2009-11-01T01:17:19+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5327379015.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5327379015/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/",
+            "url": "https://mirror.roytang.net/2009/11/",
+            "path": "/2009/11/",
+            "title": "Monthly Archives for 11 2009",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2009-11-01T00:00:00+00:00",
+            "date_modified": "2019-09-29T18:26:08+08:00",
+            "section": "archm",
+            "source_path": "archm/2009-11.md"
+            
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5325164839/",
+            "url": "https://mirror.roytang.net/2009/10/5325164839/",
+            "path": "/2009/10/5325164839/",
+            "title": "",
+            "content_html": "\u003cp\u003efrom the inquirer today: Nov27-28 holidays in ARMM only accdg to Malacanang\u003c/p\u003e\n",
+            "summary": "from the inquirer today: Nov27-28 holidays in ARMM only accdg to Malacanang",
+            "date_published": "2009-10-31T23:20:29+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5325164839/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5325164839/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/169943227351"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/ryan.sylam.liwanag",
+                    "source_file": "comment-20091101-000000-f4a3e614-5ebd-4287-bda8-be5a062cb76f.json"
+                }, { 
+                    "url": "https://www.facebook.com/yumdenate",
+                    "source_file": "comment-20091101-000001-6d176f8b-2042-42d4-9aa9-d355bf32bb9b.json"
+                }, { 
+                    "url": "https://www.facebook.com/dennis.garce",
+                    "source_file": "comment-20091101-000002-6e9dea80-1ffe-4b95-b839-85abd88c9452.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20091101-000003-45665f66-1d21-491b-8063-adadeeeea450.json"
+                }, { 
+                    "url": "https://www.facebook.com/yumdenate",
+                    "source_file": "comment-20091101-000004-4cc4bb19-ec4e-404b-94e9-7638d345805e.json"
+                }, { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20091101-000005-857f4633-9348-4dee-8335-853e303f4cff.json"
+                }, { 
+                    "url": "https://www.facebook.com/glenn.apacible",
+                    "source_file": "comment-20091101-000006-ab86e1da-8200-462e-97ac-1a31c3d7d998.json"
+                }, { 
+                    "url": "https://www.facebook.com/magarrado",
+                    "source_file": "comment-20091101-000007-7278a41b-124c-437a-b850-5c1c9fa7f86e.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5315807191/",
+            "url": "https://mirror.roytang.net/2009/10/5315807191/",
+            "path": "/2009/10/5315807191/",
+            "title": "",
+            "content_html": "\u003cp\u003eTaking of Pelham 123: It has Denzel Washnigton and John Travolta in it, you\u0026rsquo;d expect a decent movie. You\u0026rsquo;d be right.\u003c/p\u003e\n",
+            "summary": "Taking of Pelham 123: It has Denzel Washnigton and John Travolta in it, you\u0026rsquo;d expect a decent movie. You\u0026rsquo;d be right.",
+            "date_published": "2009-10-31T15:31:53+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5315807191/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5315807191/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/163893287877"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20091101-000000-8b154012-c469-4939-a235-28676e2a6202.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5312812625/",
+            "url": "https://mirror.roytang.net/2009/10/5312812625/",
+            "path": "/2009/10/5312812625/",
+            "title": "",
+            "content_html": "\u003cp\u003eJust finished watching Echelon Conspiracy. Action was ok, plot was a bit predictable, ending was lame.\u003c/p\u003e\n",
+            "summary": "Just finished watching Echelon Conspiracy. Action was ok, plot was a bit predictable, ending was lame.",
+            "date_published": "2009-10-31T12:46:05+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5312812625.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5312812625/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/169176390969"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/166078434102/",
+            "url": "https://mirror.roytang.net/2009/10/166078434102/",
+            "path": "/2009/10/166078434102/",
+            "title": "",
+            "content_html": "\u003cp\u003ePower is back, but is it stable?\u003c/p\u003e\n",
+            "summary": "Power is back, but is it stable?",
+            "date_published": "2009-10-31T09:00:00+00:00",
+            "date_modified": "2019-09-28T14:51:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/166078434102/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/166078434102"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/michaelretuta",
+                    "source_file": "comment-20091031-000000-934ff4ae-6c0d-48d0-9a04-0c0a258e3add.json"
+                }, { 
+                    "url": "https://www.facebook.com/Altealice",
+                    "source_file": "comment-20091031-000001-72e070fd-c7ab-4185-95fb-828ab3187945.json"
+                }, { 
+                    "url": "https://www.facebook.com/dennis.garce",
+                    "source_file": "comment-20091031-000002-172aa917-5f80-4cbd-9358-dce5a67ead43.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5310171764/",
+            "url": "https://mirror.roytang.net/2009/10/5310171764/",
+            "path": "/2009/10/5310171764/",
+            "title": "",
+            "content_html": "\u003cp\u003eI like this post-typhoon weather\u003c/p\u003e\n",
+            "summary": "I like this post-typhoon weather",
+            "date_published": "2009-10-31T08:42:26+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5310171764.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5310171764/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/193448546426"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/10/5309746753/",
+            "url": "https://mirror.roytang.net/2009/10/5309746753/",
+            "path": "/2009/10/5309746753/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e amazingly, three dudes has a higher CMC than six dudes!\u003c/p\u003e\n",
+            "summary": "@mtgaaron amazingly, three dudes has a higher CMC than six dudes!",
+            "date_published": "2009-10-31T07:57:46+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/10/5309746753.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5309746753/"}]
             
             
             }

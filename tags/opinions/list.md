@@ -81,8 +81,6 @@
 
 - [Marcos and Historical Revisionism](/2016/05/marcos-and-historical-revisionism/)
 
-- [Movie Review: Man of Steel (Spoilers!)](/2013/06/movie-review-man-of-steel-spoilers/)
-
 - [PHVote: Choosing your 2013 Senators and Party List](/2013/05/phvote-choosing-your-2013-senators-and-party-list/)
 
 - [Even more ramblings about the elections](/2013/05/even-more-ramblings-about-the-elections/)

@@ -23,6 +23,8 @@
 
 - [](/2016/08/bjrxt6gb_xx/)
 
+- [](/2016/06/bgemf1xmocn/)
+
 - [](/2016/03/bc2jky3moer/)
 
 - [](/2016/01/ba6us1qsoel/)

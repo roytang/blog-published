@@ -11,6 +11,159 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/",
+            "url": "https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/",
+            "path": "/2019/08/devnotes-migrating-mercurial-to-git/",
+            "title": "Devnotes: Migrating Mercurial to Git",
+            "content_html": "\u003cp\u003eBig news in online repositories this week is that \u003ca href=\"https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket\"\u003eBitbucket is sunsetting support for Mercurial\u003c/a\u003e! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git). Now that Gitlab and Github both offer unlimited private repos, there\u0026rsquo;s no reason to stick with Bitbucket either. I had already migrated most of my private Git repos to Gitlab before, but hadn\u0026rsquo;t realized until now that I also had a couple of Mercurial repos there that needed to be migrated as well. I hadn\u0026rsquo;t touched those repos in so long that I didn\u0026rsquo;t even have Mercurial installed locally anymore! (Although I\u0026rsquo;m still using the code locally!)\u003c/p\u003e\n\u003cp\u003eLuckily, converting a mercurial repo to git turned out to be straightforward thanks to a project called \u003ca href=\"https://repo.or.cz/fast-export.git\"\u003efast-export\u003c/a\u003e. Modified instructions from a convenient \u003ca href=\"https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository#\"\u003estackoverflow post\u003c/a\u003e:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-bash\" data-lang=\"bash\"\u003ebrew install hg \u003cspan style=\"color:#75715e\"\u003e# install hg on my mac first\u003c/span\u003e\ncd ~\nhg clone https://user@bitbucket.org/user/reponame\ngit clone git://repo.or.cz/fast-export.git\ngit init git_repo\ncd git_repo\n~/fast-export/hg-fast-export.sh -r ~/reponame\ngit checkout HEAD\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThe process was fairly quick, and the commit history from the Mercurial side was even retained, I would have been happy just retaining HEAD! After that, I just create a new private repo on Gitlab, set that as the remote, then push to Gitlab as usual.\u003c/p\u003e\n\u003cp\u003eIt\u0026rsquo;s a good thing I remembered to check my Bitbucket account, as apparently they will be deleting the old Mercurial repos when time is up!\u003c/p\u003e\n",
+            "summary": "Big news in online repositories this week is that Bitbucket is sunsetting support for Mercurial! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git).",
+            "date_published": "2019-08-24T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/migrate-mercurial-to-git/index.md"
+            , "tags": ["software development","tech life","devnotes"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1165053929215975424/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164694432085495809/",
+            "url": "https://mirror.roytang.net/2019/08/1164694432085495809/",
+            "path": "/2019/08/1164694432085495809/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis cant possibly be a healthy sleep rhythm\u003c/p\u003e\n",
+            "summary": "This cant possibly be a healthy sleep rhythm",
+            "date_published": "2019-08-23T00:22:46+00:00",
+            "date_modified": "2019-09-07T07:00:25+00:00",
+            "section": "photos",
+            "source_path": "photos/2019/08/1164694432085495809/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164694432085495809/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/edith-finch/",
+            "url": "https://mirror.roytang.net/2019/08/edith-finch/",
+            "path": "/2019/08/edith-finch/",
+            "title": "Games: What Remains of Edith Finch",
+            "content_html": "\u003cp\u003eI might be lending out my PS4 next month when the latest annual release of a sports franchise rolls around, so I figured I\u0026rsquo;d finish off a PS4 game before the console vanishes on me for a few months. \u003cem\u003eWhat Remains of Edith Finch\u003c/em\u003e came out on PS+ a couple of months ago and people are always raving about how good it is and how it\u0026rsquo;s relatively short, so I decided to give it a go. I went in blind, not knowing anything, since mysteriously no one on Reddit could explain what makes the game good. This is understandably so as any sort of information kind of spoils the story for you. As such, consider yourself warned that this review might be considered spoiler-y. Overall if you like story-based games, just go ahead and play this one, then come back here to read the review if you\u0026rsquo;d like.\u003c/p\u003e\n\u003ch3 id=\"1-narratives\"\u003e1 Narratives\u003c/h3\u003e\n\u003cp\u003e\u003cem\u003eWhat Remains of Edith Finch\u003c/em\u003e is a first-person exploration game. The gameplay is largely focused around the story and advancing the narrative. The story revolves around the Finch family and their so-called \u0026ldquo;curse\u0026rdquo; which causes many of the family members to die of unusual causes. You spend the game exploring the now-abandoned Finch family house where five generations of Finches have lived since coming to America. As you explore the house you come across shrines for each deceased Finch family member, and each one takes you into a different scenario narrating their individual stories. Each family member\u0026rsquo;s story is told in a different manner: there\u0026rsquo;s one told as if it were a comic book, one told from the point of view of a baby in a bathtub, several are seen through the lens of a child\u0026rsquo;s imagination, and so on. The presentation of the substories and the main story exploring the house is very clever, with the actual text of the narratives often appearing throughout the environment, guiding you where to go next.\u003c/p\u003e\n\u003ch3 id=\"2-gameplay\"\u003e2 Gameplay\u003c/h3\u003e\n\u003cp\u003eGameplay is primarily based on exploration and experimentation. In the main story you explore the house and unlock secret passages and crawl through tunnels and climb to the roof and so on. There are no failure states in the gameplay, you simply keep pushing forward. If you get stuck, you walk around until you figure out a way to advance.\u003c/p\u003e\n\u003cp\u003eThe individual substories are the same way, although many of them adjust the control schemes and expect you to experiment accordingly. As an example, in one of the substories you get to fly around as an owl, then later crawl around a cruise ship as some kind of tentacle monster. In another, you\u0026rsquo;re a baby in a bathtub imagining your toys coming to life. In yet another, you\u0026rsquo;re an assembly-line worker in a cannery dreaming of a fantasy world, and you must explore your fantasy world and slice off fishheads at the cannery at the same time.\u003c/p\u003e\n\u003cp\u003eThe substories take place in their own little sandboxes, so to speak, and many of them seem like tech demos of cool things a developer would want to try like \u0026ldquo;Ooh, let\u0026rsquo;s make the player a shark on land and he has to fall into the ocean!\u0026rdquo; or \u0026ldquo;Let\u0026rsquo;s make a scenario where the player is just flying a kite!\u0026rdquo; It\u0026rsquo;s not a proble, and it does create some interesting ways of presenting the narratives.\u003c/p\u003e\n\u003cp\u003eAll of this happens from the first person view, which was a bit problematic at times. Since I\u0026rsquo;m getting along with age, I\u0026rsquo;m not as good with first person gaming as I used to be, and playing with this view for an extended period of time can give me some dizziness. Luckily, the game was quite short, and I managed to finish it in two sittings. (Maybe 1.5 hours total)\u003c/p\u003e\n\u003ch3 id=\"3-achievements\"\u003e3 Achievements?\u003c/h3\u003e\n\u003cp\u003eI usually try to go for achievement completion before posting a review, especially for story-based games like this. But this time I didn\u0026rsquo;t bother. Most of the achievements are silly things that you can do during the exploration gameplay, like knocking all of the balls off a pool table. Most can be acquired after completing the game the first time, since that unlocks the ability to replay individual substories. But there was one achievement that required looking through every peephole/telescope in the game, and that seemed like I couldn\u0026rsquo;t do it without replaying everything from the beginning. That didn\u0026rsquo;t appeal to me because (a) I might get dizzy again; and (b) this is the sort of game where it\u0026rsquo;s best experienced the first time around, and successive playthroughs won\u0026rsquo;t be of much value.\u003c/p\u003e\n\u003ch3 id=\"4-overall\"\u003e4 Overall\u003c/h3\u003e\n\u003cp\u003e\u0026hellip;I liked it, though not as much as say, Life is Strange. The exploration of the house is great and the all of the scenes and sandboxes are well set up and very detailed, although the overarching Finch family story is a thinly-veiled framing device to bring together the individual substories. The game is well worth the 1-2 hours to go through it.\u003c/p\u003e\n",
+            "summary": "I might be lending out my PS4 next month when the latest annual release of a sports franchise rolls around, so I figured I\u0026rsquo;d finish off a PS4 game before the console vanishes on me for a few months. What Remains of Edith Finch came out on PS+ a couple of months ago and people are always raving about how good it is and how it\u0026rsquo;s relatively short, so I decided to give it a go.",
+            "date_published": "2019-08-23T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/edith-finch/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164691569775190016/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164523842238214144/",
+            "url": "https://mirror.roytang.net/2019/08/1164523842238214144/",
+            "path": "/2019/08/1164523842238214144/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e it\u0026rsquo;s the color of the bear that\u0026rsquo;s too much. If my pet was a black bear would I be out of luck? lol\u003c/p\u003e\n",
+            "summary": "@Westraid it\u0026rsquo;s the color of the bear that\u0026rsquo;s too much. If my pet was a black bear would I be out of luck? lol",
+            "date_published": "2019-08-22T13:04:54+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164523842238214144/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164523842238214144/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164507187751706624/",
+            "url": "https://mirror.roytang.net/2019/08/1164507187751706624/",
+            "path": "/2019/08/1164507187751706624/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e This seems oddly specific\u003c/p\u003e\n",
+            "summary": "@Westraid This seems oddly specific",
+            "date_published": "2019-08-22T11:58:43+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164507187751706624/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164507187751706624/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164506207354159104/",
+            "url": "https://mirror.roytang.net/2019/08/1164506207354159104/",
+            "path": "/2019/08/1164506207354159104/",
+            "title": "",
+            "content_html": "\u003cp\u003eLawrence Ferlinghetti, 100 years old today. Thank you.\u003c/p\u003e\n",
+            "summary": "Lawrence Ferlinghetti, 100 years old today. Thank you.",
+            "date_published": "2019-08-22T11:54:49+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164506207354159104/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164506207354159104/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164491442846224384/",
+            "url": "https://mirror.roytang.net/2019/08/1164491442846224384/",
+            "path": "/2019/08/1164491442846224384/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/gangbadoy/\"\u003e@gangbadoy\u003c/a\u003e panget ang response sa trial balloon nila e\u003c/p\u003e\n",
+            "summary": "@gangbadoy panget ang response sa trial balloon nila e",
+            "date_published": "2019-08-22T10:56:09+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164491442846224384/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164491442846224384/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1164486925694070784/",
+            "url": "https://mirror.roytang.net/2019/08/1164486925694070784/",
+            "path": "/2019/08/1164486925694070784/",
+            "title": "",
+            "content_html": "\u003cp\u003eLast night I was in a loo and a woman entered the only other stall crying. I did the awkward shout over and asked if she was ok or wanted to talk about it, or needed a hug\u003c/p\u003e\n",
+            "summary": "Last night I was in a loo and a woman entered the only other stall crying. I did the awkward shout over and asked if she was ok or wanted to talk about it, or needed a hug",
+            "date_published": "2019-08-22T10:38:12+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1164486925694070784/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164486925694070784/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/",
+            "url": "https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/",
+            "path": "/2019/08/the-great-memory-scare-of-2019/",
+            "title": "The Great Memory Scare of 2019",
+            "content_html": "\u003cp\u003eMy current desktop PC has been with me since late 2015, so going on 4 years now. I bought relatively high-end parts for it at the time, hoping to be a bit future-proof so that it would last me longer than previous desktops. So I was a bit worried when I started encountering issues during the recent weeks.\u003c/p\u003e\n\u003cp\u003eHere\u0026rsquo;s the timeline:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMay 2019, before my overseas trip. It happened a few times that the computer would completely shut down while I was playing \u003ca href=\"/2019/04/starcraft-2/\"\u003eStarcraft 2\u003c/a\u003e coop. The displays would go black, but they still had power, and for a little while the OS would keep going. I know this because I could still hear the game sounds for a bit. Eventually the PC would be inaccessible, even via network. Only choice would be to hard reset. It didn\u0026rsquo;t happen regularly enough for me to figure it out before we left for the 5 week trip.\u003c/li\u003e\n\u003cli\u003eJuly 2019. After getting back from the trip, I encountered the Starcraft 2 issue again. Some reading indicated early concerns that SC2 may be killing video cards, but that was from 4 years ago! Besides, after my quick hard reboot, the GPU temp would be quite normal so I didn\u0026rsquo;t think that was the issue. The problem began to happen regularly, until I could not play SC2 at all. Eventually, a friend suggested I tried lowering SC2 graphics settings and surprisingly that worked! Things looked terrible, but I didn\u0026rsquo;t mind, and I could play again.\u003c/li\u003e\n\u003cli\u003eEVO weekend, Aug 3-4 2019. I started playing Dragonball Fighter Z because it had a free weekend promo. I enjoyed the game and eventually bought it before the free weekend finished. The loading times were a bit long on my system, but tolerable.\u003c/li\u003e\n\u003cli\u003eAfter EVO weekend, I tried installing Microsoft Windows update 1903, as my current version was nearing end of life. Update went smoothly.\u003c/li\u003e\n\u003cli\u003eAfter the update, I noticed the performance of DBFZ had drastically worsened. Incredibly long loading times, occasionaly framerate drops during battles.\u003c/li\u003e\n\u003cli\u003eOn Aug 5, first BSOD encountered:\u003c/li\u003e\n\u003c/ul\u003e\n\u003ca href=\"#85c44ca416915055df00fa0efaff0f78-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/bluescreen_hu952dd7ed026f0f96b5127da3081ac276_1135197_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"85c44ca416915055df00fa0efaff0f78-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/bluescreen.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"22 Aug 2019 12:00am\"\u003e22 Aug 2019 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003ebecause of the recent Windows update, I assumed first that was the cause of the problems. So I rolled it back first and observed the behavior.\u003c/li\u003e\n\u003cli\u003eover the next two weeks, additional instances of BSODs were observed, along with occasional crashes where the PC just straight freezes in place (often with annoying beeping sound) and a hard reset is needed. The crashes would happen even during normal usage (browsing etc) and sometimes even while the PC was unattended!\u003c/li\u003e\n\u003cli\u003elast week I got fed up and started doing serious diagnostics:\n\u003cul\u003e\n\u003cli\u003eI re-installed the Windows 10 1903 update\u003c/li\u003e\n\u003cli\u003eI updated my graphics drivers\u003c/li\u003e\n\u003cli\u003eI uninstalled a bunch of unnecessary old stuff\u003c/li\u003e\n\u003cli\u003eI ran \u003ccode\u003echkdsk\u003c/code\u003e and \u003ccode\u003esfc\u003c/code\u003e. System File Checker found some issues and repaired them! Maybe that fixed things? Nope.\u003c/li\u003e\n\u003cli\u003eI tried running the Windows Memory Diagnostic tool. Standard check froze up the first time, but was successful on the second try.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAt this point I was still hoping it was a software issue (since hardware issues generally require cash to fix), but all signs pointed to either video card (due to SC2) or memory (due to memory diagnostic failure) problems. Time to test each component in turn!\u003c/li\u003e\n\u003c/ul\u003e\n\u003ca href=\"#0467e22f95d101d351c8514706ce2ace-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/20190819_080244_hub4ddedb5154cb122abe7c37065511f9d_1316978_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"0467e22f95d101d351c8514706ce2ace-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/08/the-great-memory-scare-of-2019/20190819_080244.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"22 Aug 2019 12:00am\"\u003e22 Aug 2019 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m no stranger to digging through computer parts, but this is literally my least favorite part of being PC master race: having to figure out which of your hardware components is failing. At least my PC case is a lot more organized and spacious this time; my older PCs had super tight layouts that were hard to manipulate\n\u003cul\u003e\n\u003cli\u003eI started with the easy one: I moved my monitors to the onboard graphics card and enabled it in the BIOS. If the issue is the video card, then I shouldn\u0026rsquo;t encounter it while using the onboard graphics. Nope, had a crash less than an hour in.\u003c/li\u003e\n\u003cli\u003eNext we try the memory. I had two 8gb DDR3 ram sticks installed. I removed one of the sticks (pretty sure I could live on 8gb RAM tbh) and then rebooted and ran the memory diagnostics. Pass! I used the PC for one whole day with this config, even playing some SC2 and DBFZ and no issues were encountered. Things were looking up, it was likely there was a faulty memory stick!\u003c/li\u003e\n\u003cli\u003ethe next day I decided to confirm it by swapping the memory sticks. Oops, now PC wouldn\u0026rsquo;t boot. Displays don\u0026rsquo;t get any signal, USB devices (mouse and keyboard unpowered). Is it because of the faulty memory stick? I swap back the \u0026ldquo;good\u0026rdquo; RAM, but still the same issue. I try a few other combinations, different RAM slots, but no such luck.\u003c/li\u003e\n\u003cli\u003eThis was last Monday (Quezon City holiday!). I concede defeat and acknowledge that this is beyond my power. I call up a nearby EasyPC branch and ask if they can take a look at it for me. I take a quick Grab there and the guy starts taking a look. He starts by pulling out the mem sticks and the vid card and cleaning out the connectors with an eraser. He pops out the CMOS battery to reset the board. He plugs them back in but the PC doesn\u0026rsquo;t boot. He tells me the motherboard is dead. He tries some thing with a jumper, and the MB comes back to life!\u003c/li\u003e\n\u003cli\u003eI have my full 16GB back. He tells me the memory problems were probably due to the dirty connectors and suggests I take the desktop back home to do an extended memory diagnostic. I agree, since I don\u0026rsquo;t want to leave it at the shop. I happily pay the repair fee plus a small tip and take another Grab back home. I was expecting that I would have to shell out for new memory sticks as the best case! The whole process took less than an hour. This is one of those examples where I was wasting too many man-hours trying to do something myself!\u003c/li\u003e\n\u003cli\u003eBack home, I run the standard Memory Diagnostic first and it passes! Hooray. I use the PC for a while, no issues. Before going to sleep, I start the extended Memory Diagnostic and left it running overnight. In the morning, it was still going around 10 hours after it started, at less than 80% of the first pass! I reduce the passes from 2 to 1, because to be honest I wasn\u0026rsquo;t going to wait another 10-12 hours for a second pass! Luckily, the test finished a couple of hours later without issues.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eHooray! All is well! Generally, at least. It\u0026rsquo;s been 48 hours and no crashes or BSODs or such have been encountered. Gaming seems fine. There seems to be a minor problem of Windows Explorer randomly spiking in CPU usage every so often, but that\u0026rsquo;s probably some software issue I\u0026rsquo;ll have to figure out independently. In any case, the Great Memory Scare of 2019 was over, and I get to keep using this desktop, hopefully for a lot longer!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI was a bit amused at how sad I felt when I first realized there might be a hardware problem with the PC, especially since I was hoping it would last me for years down the line. I may be a bit too attached to it lol. Well, my desktop generally does give me joy, so I\u0026rsquo;m not Kondo-ing it anytime soon!\u003c/p\u003e\n",
+            "summary": "My current desktop PC has been with me since late 2015, so going on 4 years now. I bought relatively high-end parts for it at the time, hoping to be a bit future-proof so that it would last me longer than previous desktops. So I was a bit worried when I started encountering issues during the recent weeks.\nHere\u0026rsquo;s the timeline:\n May 2019, before my overseas trip. It happened a few times that the computer would completely shut down while I was playing Starcraft 2 coop.",
+            "date_published": "2019-08-22T00:00:00+00:00",
+            "date_modified": "2020-10-20T15:25:02+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/great-memory-scare/index.md"
+            , "tags": ["tech life","gaming"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164328992012460033/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/08/b1buw8mhgqb/",
             "url": "https://mirror.roytang.net/2019/08/b1buw8mhgqb/",
             "path": "/2019/08/b1buw8mhgqb/",
@@ -726,164 +879,6 @@
             "source_path": "photos/2019/08/1159134490913988608/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159134490913988608/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/how-to-set-up-a-perfect-python-project/",
-            "url": "https://mirror.roytang.net/2019/08/how-to-set-up-a-perfect-python-project/",
-            "path": "/2019/08/how-to-set-up-a-perfect-python-project/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2019-08-07T06:40:15-05:00",
-            "date_modified": "2020-02-10T07:11:30+08:00",
-            "section": "links",
-            "source_path": "links/2019/08/how-to-set-up-a-perfect-python-project/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://sourcery.ai/blog/python-best-practices/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159068764782125056/"}]
-            ,"link": "https://sourcery.ai/blog/python-best-practices/"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/fighting-games/",
-            "url": "https://mirror.roytang.net/2019/08/fighting-games/",
-            "path": "/2019/08/fighting-games/",
-            "title": "Fighting Games",
-            "content_html": "\u003cp\u003eThis past weekend was \u003ca href=\"https://en.wikipedia.org/wiki/Evo_2019\"\u003eEVO 2019\u003c/a\u003e, the world\u0026rsquo;s biggest celebrations of fighting games. If I had stayed in the US another month maybe I could have gone to Vegas to attend and lose badly. Instead, I thought I\u0026rsquo;d write about fighting games.\u003c/p\u003e\n\u003cp\u003eI consider fighting games one of my weaknesses, in the sense that (a) I easily succumb to the temptation to spend money on them; and (b) I\u0026rsquo;m not very good at them. Example of (a): I\u0026rsquo;m pretty sure I\u0026rsquo;ve purchased Street Fighter IV on at least 4 different platforms, including all DLC. Example of (b): I have yet to advance past bronze rank in online Street Fighter V, despite having purchased the game at launch back in 2016.\u003c/p\u003e\n\u003cp\u003eLike many in my generation, I got my introduction to fighting games with the arcade release of \u003cstrong\u003eStreet Fighter II\u003c/strong\u003e in the arcades in the early 90s. Prior to that, my arcade experience had been mostly side-scrolling beat-em ups like the old \u003ca href=\"https://www.youtube.com/watch?v=VgF_VMQ19aA\"\u003eX-Men arcade game\u003c/a\u003e. I remember my brother and I literally playing the SF2 arcade release like \u0026ldquo;scrubs\u0026rdquo;, i.e., often times scrubbing our palms over the buttons trying to get moves going. Back then arcade machines didn\u0026rsquo;t come with instructions and you had to figure out how the character moves worked by experimentation. I remember he preferred playing Ryu/Ken, while I liked Guile. We didn\u0026rsquo;t really do combos, most of the time we just did Flash Kicks (which we called the \u0026ldquo;Slice\u0026rdquo;), Sonic Booms, Fireballs, and Dragon Punches most of the time. We also found it hard to understand what the Japanese characters were saying; we called Ryu\u0026rsquo;s hurricane kick the \u0026ldquo;Kat-kat-nougat\u0026rdquo; because that\u0026rsquo;s what it sounded like he was shouting! The other characters were mysteries! We didn\u0026rsquo;t know how Zangief worked for example. And I\u0026rsquo;m pretty sure we never finished the arcade mode.\u003c/p\u003e\n\u003cp\u003eStreet Fighter II eventually got a home release, I remember playing it for the first time at a friend\u0026rsquo;s house when he got his copy first. We would be playing SF2 on the SNES a lot. I remember the annoyance when playing SF2 at another person\u0026rsquo;s house, I\u0026rsquo;d have to configure my controller because I didn\u0026rsquo;t use the default button layout. I used a layout called \u0026ldquo;YXLBAR\u0026rdquo; (with the heavy attacks on the SNES shoulder buttons) instead of the default \u0026ldquo;YLXBRA\u0026rdquo;. Rumor has it someone used an insane layout like \u0026ldquo;YBAXLR\u0026rdquo;. I also remember seeing the \u003ca href=\"https://www.youtube.com/watch?v=uY0KBMkvDyo\"\u003earcade intro for the updated \u003cstrong\u003eSuper Street Fighter II\u003c/strong\u003e\u003c/a\u003e and being so amazed.\u003c/p\u003e\n\u003ca href=\"#9255053aacc428b06549560c2419f614-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/08/fighting-games/ssf2shinkuhadouken_huf0b9fa7f4cb0977fcabeeae76d376d02_338304_300x0_resize_box.gif\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"9255053aacc428b06549560c2419f614-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/08/fighting-games/ssf2shinkuhadouken.gif\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"7 Aug 2019 12:00am\"\u003e7 Aug 2019 12:00am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eWe tried out some other fighting game franchises on SNES too, like the Japanese \u003cstrong\u003eDragonball Butoden\u003c/strong\u003e series, a TMNT fighting game, and the \u003cstrong\u003eJustice League Task Force\u003c/strong\u003e fighting game. On the PC, we also had a copy of \u003cstrong\u003eMortal Kombat\u003c/strong\u003e 1. I\u0026rsquo;m not even sure our PC could handle color back then, we may have been playing Mortal Kombat in black and white! We also didn\u0026rsquo;t have controllers for the PC back then, so we had to play with two players to one keyboard, and if you held down four buttons or more on your side, the keyboard couldn\u0026rsquo;t register any more additional inputs so your opponent couldn\u0026rsquo;t move!\u003c/p\u003e\n\u003cp\u003eAside from playing with my brothers, me and some HS friends often got together at a friend\u0026rsquo;s house and would be playing fighting games \u0026lsquo;til the early morning hours. We got to try a lot more fighting games in the PS1 era, since games were cheaper in the PH then. A lot of it was still capcom stuff: \u003cstrong\u003eStreet Fighter Alpha 3\u003c/strong\u003e, the \u003cstrong\u003eStreet Fighter EX\u003c/strong\u003e series, \u003cstrong\u003eRival Schools\u003c/strong\u003e, \u003cstrong\u003eDarkstalkers\u003c/strong\u003e, \u003cstrong\u003eXmen vs Street Fighter\u003c/strong\u003e, and \u003cstrong\u003eMarvel vs Capcom\u003c/strong\u003e 1. There were also the games that were similar in command style like the King of Fighters series and Guilty Gear. We would also sometimes try the 3d games like \u003cstrong\u003eTekken\u003c/strong\u003e, \u003cstrong\u003eSoul Edge\u003c/strong\u003e, \u003cstrong\u003eVirtua Fighter\u003c/strong\u003e, or \u003cstrong\u003eBattle Arena\u003c/strong\u003e Toshinden but those played a lot differently than SF-style games and they never really caught on with our group.\u003c/p\u003e\n\u003cp\u003eThe PS2 era brought with it one of our most played games of all time: the legendary \u003cstrong\u003eCapcom vs SNK 2\u003c/strong\u003e. With a ridiculous 48 characters and six different \u0026ldquo;grooves\u0026rdquo; or playstyles to choose from, there was a lot of variety in the game and we rarely got tired of it. The \u003cstrong\u003eStreet Fighter III\u003c/strong\u003e series also came out at around the same time, but we never got too much into it because \u003cstrong\u003eNew Generation\u003c/strong\u003e and \u003cstrong\u003eSecond Impact\u003c/strong\u003e only had home releases on Dreamcast; I remember we did play \u003cstrong\u003eThird Strike\u003c/strong\u003e for a while, but that was quickly overshadowed when CvS2 came out. There were a lot of other Capcom/SNK/other fighting game releases we tried out at this time too, but CvS2 was the main one I remember from this era.\u003c/p\u003e\n\u003cp\u003eWith the PS3 era came \u003cstrong\u003eStreet Fighter IV\u003c/strong\u003e and a new dimension: online play! This is where I got my first indication that I wasn\u0026rsquo;t very good at fighting games, despite enjoying them so much. I was fine when playing on the couch casually with my friends, but online was another matter entirely. I remember being so frustrated at the \u0026ldquo;ten wins in a row\u0026rdquo; and \u0026ldquo;get C rank for all characters\u0026rdquo; achievements in SF4 because of how difficult they were. Around this time, my brother and I also tried attending a local tournament or two, but we did poorly. During this era, I also tried out games like \u003cstrong\u003eBlazblue\u003c/strong\u003e, \u003cstrong\u003eInjustice\u003c/strong\u003e, \u003cstrong\u003ePersona 4 Arena\u003c/strong\u003e, and so on. (ArcSys really got it\u0026rsquo;s groove in this era as far as I\u0026rsquo;m concerned.)\u003c/p\u003e\n\u003cp\u003eIt was during this era that I started preferring fight sticks as well. I bought my first fight stick for the PS3, and I found I liked it a lot more than playing with a controller. My play group still prefers controllers, so when I meet up with them I have to suck it up, but at home and for online play I\u0026rsquo;m usually on a fight stick. This generation also marked the first time for me to play the \u003cstrong\u003eSmash Brothers\u003c/strong\u003e series via the Wii U installment, but I never could get the hang of that game either.\u003c/p\u003e\n\u003cp\u003eFinally that brings us to the PS4 era and of course \u003cstrong\u003eStreet Fighter V\u003c/strong\u003e. SF5 isn\u0026rsquo;t too popular these days, mainly due to some balancing issues and lack of innovation,making the game feel stale, but it\u0026rsquo;s still very hype at EVO. My old play group doesn\u0026rsquo;t get to play much anymore, mostly because the one who usually brought the console has moved abroad, but we still manage to meet up at least once a year or so and put up our fighting dukes. I still play SF5 online, though not as often as I did with SF4. Matchmaking is a lot tougher, probably because I\u0026rsquo;ve been stuck at bronze level all this time. I still get hyped for fighting games when EVO rolls around, and I\u0026rsquo;m always tempted to buy these flashy new fighting games that come out. Just this weekend I purchased \u003cstrong\u003eDragonball Fighter Z\u003c/strong\u003e on Steam after trying it out for the free weekend and enjoying it. It helps that it has a lot of nice single-player content so I can justify the cost even if I don\u0026rsquo;t win/play online too much.\u003c/p\u003e\n\u003cp\u003eWhy am I so bad at fighting games? I\u0026rsquo;m sure part of it is old age - these days my reaction time isn\u0026rsquo;t as good as I\u0026rsquo;d want it to be (maybe it never was?!?). A large part of it is due to laziness - fighting games take a lot of practice, and you need a lot of experience to do well online. You also need to put in the time in training to be able to pull off execution of more complicated moves like \u003ca href=\"https://streetfighter.fandom.com/wiki/Focus_Attack#Dash_Cancelling\"\u003eSF4\u0026rsquo;s famous FADC\u003c/a\u003e. I don\u0026rsquo;t have time to really play fighting games all the much anymore. I was doing slightly better online during the PS3 era because my play group and me and my brothers were still playing regularly, but with SF5, I don\u0026rsquo;t really have anyone to practice offline with on a regular basis, and just spending a lot of time in training bores me, so here we are.\u003c/p\u003e\n\u003cp\u003eWhy do I still enjoy playing fighting games so much even though I\u0026rsquo;m bad at them? I\u0026rsquo;ve thought about this a lot, and I think the main reason other than general competitiveness, is that I enjoy the spectacle (these days at least). It\u0026rsquo;s one of the few genres where I can truly appreciate the over-the-top graphics and cool moves and supers and so on. When I get a new fighting game and try out a new character one of the first things I do is try to get a super off to see how cool it is. I also enjoy the variance in game play - which is why I prefer fighting games with larger rosters like CvS2, and I especially like it when there is a random character select option. When my play group meets up, we always do random character selection where possible, it exposes us to all the characters and everything the game has to offer.\u003c/p\u003e\n\u003cp\u003eIn recent years it has become easier to enjoy fighting games even if you\u0026rsquo;re not good at them or you don\u0026rsquo;t have much time to play, since there\u0026rsquo;s a lot more tournaments these days and many of them are live-streamed and available to watch on demand online. I still want to play the games, but when I can\u0026rsquo;t find a match, watching tournament play is a good alternative.\u003c/p\u003e\n\u003cp\u003eMy reflexes can only get worse as the years pass, but I\u0026rsquo;m sure I\u0026rsquo;ll still be playing fighting games for years to come, and I\u0026rsquo;ll probably buy Street Fighter VI day one when it comes out for the PS5 or whatever. I may not have the skills to be the world champion in fighting games, but I\u0026rsquo;ll always be a street fighter at heart.\u003c/p\u003e\n",
-            "summary": "This past weekend was EVO 2019, the world\u0026rsquo;s biggest celebrations of fighting games. If I had stayed in the US another month maybe I could have gone to Vegas to attend and lose badly. Instead, I thought I\u0026rsquo;d write about fighting games.\nI consider fighting games one of my weaknesses, in the sense that (a) I easily succumb to the temptation to spend money on them; and (b) I\u0026rsquo;m not very good at them.",
-            "date_published": "2019-08-07T00:00:00+00:00",
-            "date_modified": "2020-10-20T15:25:02+08:00",
-            "section": "post",
-            "source_path": "post/2019/08/fighting-games/index.md"
-            , "tags": ["gaming"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158908212730630151/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/roytang/status/1158908212730630151#favorited-by-12953232",
-                    "source_file": "like-20190813T043308-webmention-667318.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158776498045607936/",
-            "url": "https://mirror.roytang.net/2019/08/1158776498045607936/",
-            "path": "/2019/08/1158776498045607936/",
-            "title": "",
-            "content_html": "\u003cp\u003eI watched this video of the old X-Men arcade game: \u003ca href=\"https://www.youtube.com/watch?v=VgF_VMQ19aA\"\u003ehttps://www.youtube.com/watch?v=VgF_VMQ19aA\u003c/a\u003e where the White Queen is allied with Magneto and tries to fight the X-Men in CQC, and Colossus for some reason has the ability to project an explosive ball of energy from his body\u003c/p\u003e\n",
-            "summary": "I watched this video of the old X-Men arcade game: https://www.youtube.com/watch?v=VgF_VMQ19aA where the White Queen is allied with Magneto and tries to fight the X-Men in CQC, and Colossus for some reason has the ability to project an explosive ball of energy from his body",
-            "date_published": "2019-08-06T16:27:00+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1158776498045607936/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158776498045607936/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158701882866458625/",
-            "url": "https://mirror.roytang.net/2019/08/1158701882866458625/",
-            "path": "/2019/08/1158701882866458625/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rovietoosin/\"\u003e@rovietoosin\u003c/a\u003e why? :p\u003c/p\u003e\n",
-            "summary": "@rovietoosin why? :p",
-            "date_published": "2019-08-06T11:30:31+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1158701882866458625/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158701882866458625/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/ew1mj5o/",
-            "url": "https://mirror.roytang.net/2019/08/ew1mj5o/",
-            "path": "/2019/08/ew1mj5o/",
-            "title": "",
-            "content_html": "\u003cp\u003ehuh, that’s the us price? i’m in the philippines, the price here is around 30usd for pass 1 and around 12usd for pass 2, weird\u003c/p\u003e\n",
-            "summary": "huh, that’s the us price? i’m in the philippines, the price here is around 30usd for pass 1 and around 12usd for pass 2, weird",
-            "date_published": "2019-08-05T17:37:34+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/ew1mj5o/index.md"
-            , "tags": ["GameDeals"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GameDeals/comments/cm6omf/steam_fighterz_pass_2_1249_50_off_12_hours_left/ew1mj5o/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158428627265916929/",
-            "url": "https://mirror.roytang.net/2019/08/1158428627265916929/",
-            "path": "/2019/08/1158428627265916929/",
-            "title": "",
-            "content_html": "\u003cp\u003eWell\u0026hellip; this is new\nended up having to rollback the windows 10 1903 upgrade from a couple of days ago, was causing too many issues\u003c/p\u003e\n",
-            "summary": "Well\u0026hellip; this is new ended up having to rollback the windows 10 1903 upgrade from a couple of days ago, was causing too many issues",
-            "date_published": "2019-08-05T17:24:41+00:00",
-            "date_modified": "2019-09-12T01:25:43+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/08/1158428627265916929/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158428627265916929/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158614851737882624/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158416233483517952/",
-            "url": "https://mirror.roytang.net/2019/08/1158416233483517952/",
-            "path": "/2019/08/1158416233483517952/",
-            "title": "",
-            "content_html": "\u003cp\u003eFound this weird ad on flipboard\u003c/p\u003e\n",
-            "summary": "Found this weird ad on flipboard",
-            "date_published": "2019-08-05T16:35:27+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/08/1158416233483517952/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158416233483517952/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/ew0qmob/",
-            "url": "https://mirror.roytang.net/2019/08/ew0qmob/",
-            "path": "/2019/08/ew0qmob/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhy is fighter pass 2 so much cheaper than fighter pass 1\u003c/p\u003e\n",
-            "summary": "Why is fighter pass 2 so much cheaper than fighter pass 1",
-            "date_published": "2019-08-05T10:48:43+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/ew0qmob/index.md"
-            , "tags": ["GameDeals"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GameDeals/comments/cm6omf/steam_fighterz_pass_2_1249_50_off_12_hours_left/ew0qmob/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1158309987698896897/",
-            "url": "https://mirror.roytang.net/2019/08/1158309987698896897/",
-            "path": "/2019/08/1158309987698896897/",
-            "title": "",
-            "content_html": "\u003cp\u003eI know it would be weird, but I kind of want \u003ca href=\"https://twitter.com/ArcSystemWorksU/\"\u003e@ArcSystemWorksU\u003c/a\u003e to do the next Marvel vs Capcom because MvC deserves this level of animation \u003ca href=\"https://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I know it would be weird, but I kind of want @ArcSystemWorksU to do the next Marvel vs Capcom because MvC deserves this level of animation https://www.youtube.com/watch?v=vAJUvy4ibeA\u0026amp;feature=youtu.be",
-            "date_published": "2019-08-05T09:33:16+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1158309987698896897/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1158309987698896897/"}]
             
             
             }
