@@ -1,4 +1,6 @@
 
+- [Without Their Permission by Alexis Ohanian](/2021/04/without-their-permission-by-alexis-ohanian/)
+
 - [Blogs of Yesteryear](/2021/04/blogs-of-yesteryear/)
 
 - [2021 Site Update](/2021/03/2021-site-update/)

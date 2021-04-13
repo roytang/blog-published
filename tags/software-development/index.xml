@@ -7,12 +7,35 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Sun, 20 Dec 2020 16:34:25 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 13 Apr 2021 05:25:58 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Programming is hard, but anyone can be a programmer
+</title>
+            <link>https://mirror.roytang.net/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/</link>
+            <pubDate>Tue, 13 Apr 2021 05:25:58 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;https://dorinlazar.ro/&#34;&gt;dorinlazar.ro&lt;/a&gt; talks about &lt;a href=&#34;https://dorinlazar.ro/2021-02-programming-is-hard/&#34;&gt;programming being hard&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Most beginners in programming eventually end up with the same ingratiating message: „Programming is easy, everyone can do it”, with some threatening message that people doing the gatekeeping should stop doing that. I’m here to tell you that that is not true. Programming is hard, programming is not for everyone, and for the time being everyone might be able to do it, but most definitely most should not. Like most of the empty, shallow, positive messages coming with an automatic defense against refute, in this case talking about this gatekeeping thing that simply doesn’t happen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think gatekeeping is definitely a thing that happens. I should know, I used to hold the opinion that not everybody can be a programmer, because there are non-trivial skill sets that are necessary, such as attention to detail, ability to analyze and reason out possible outcomes, the ability to imagine abstractions in your head, and so on. Back when I did training for new hires, I could easily tell who are the people who wouldn&amp;rsquo;t pass, by simply noting who had trouble with things like SQL joins. (This was back in the day when we expected our devs to be able to handle everything from backend database stuff to web frontends with HTML/CSS/JS. I assume modern day frontend devs wouldn&amp;rsquo;t have much use for SQL usage&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;That being said, it&amp;rsquo;s not a hard gate, where someone can tell you it&amp;rsquo;s impossible to become a programmer. Anyone can be a programmer, in the same way that anyone can become an accountant or a lawyer or such: it&amp;rsquo;s going to take a nontrivial amount of effort and hard work (I&amp;rsquo;m not claiming that being a programmer is necessarily as difficult as those jobs!). Some people may make it look easy, because they may have a bit more aptitude than others (due to background or whatever), in the same way that some people find math easy and others find it nearly impossible. And a lot of the time it&amp;rsquo;s impossible to detect whether that aptitude exists until you&amp;rsquo;re trying it out.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also a huge difference between learning to code just to write a few scripts in Python or some macros in Excel vs working professionally as a programmer, possibly in a team, with serious deadlines and crunch and all that. Not everyone is suited to that life.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m all for inclusivity - we definitely need more people working in tech, and for people who are struggling, learning to code may be a way for them to live better lives. But we shouldn&amp;rsquo;t sugarcoat the challenges involved or the effort required. &amp;ldquo;Anyone can learn to code&amp;rdquo;, given enough time and effort, but that doesn&amp;rsquo;t mean programming is easy.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>HTML Tags Memory Test
 </title>
@@ -2008,27 +2031,6 @@ git checkout HEAD
 &lt;p&gt;If you sleep 8 hours a day and spend 4 hours a day for meals and leisure and have a day job that takes 9 hours (including travel time), you only have an extra 3 hours per day, or 21 hours per week. At this rate, you can become an expert in 477 weeks. (Roughly 9 years and 2 months)&lt;/p&gt;
 &lt;p&gt;Are there shortcuts to expertise? Probably talent can help some. But for most of us, it takes a whole lot of hard work. You can make things go faster if you like, but you need to sacrifice a lot.&lt;/p&gt;
 &lt;p&gt;Personal note: I mentioned before that I had &lt;a href=&#34;https://roytang.net/2018/10/working-hours-and-overtime/&#34;&gt;my own effort data from 2003-2015&lt;/a&gt;. The total is 23621.36 hours of work in various software development projects. I shouldn’t be shy about calling myself an expert, impostor syndrome be damned.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Version Issues
-</title>
-            <link>https://mirror.roytang.net/2018/11/version-issues/</link>
-            <pubDate>Wed, 07 Nov 2018 05:06:56 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/11/version-issues/</guid>
-            <description>
-            
-            &lt;p&gt;SCM (Software Configuration Management) doesn’t just refer to version control for the software you’re building. It also means controlling the versions of software you depend on. This includes operating system and programming runtimes. Sometimes even minor version differences can cause issues in running your software. I have two example stories to share:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;One of our clients asked us for help with an upgrade their production servers from CentOS 6.4 to 6.9. It was supposed to be a straightforward yum upgrade, which meant of course there would be a problem. The problem turned out to be one of the SOAP calls to a third-party service. After a bunch of retries and log checking, we found that OpenSSL was complaining that the third party’s certificate didn’t have enough bits in the Diffie-Hellman (DH) parameters. Complaining to the third party would have taken forever, so we had to find a workaround ourselves. I had previously been told that OpenSSL was the same version before and after the upgrade, but after we did our own checking, we found that there was a minor version difference. That led to a lot of searching until I managed to &lt;a href=&#34;https://access.redhat.com/errata/RHBA-2017:0660&#34;&gt;find release notes from Red Hat&lt;/a&gt; (which was upstream of CentOS). The release notes linked us to &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?id=1335921&#34;&gt;this bug&lt;/a&gt; which gave us the workaround we needed.&lt;/li&gt;
-&lt;li&gt;I had been working on a Python script that would fetch JSON from an external URL and process it. Local dev environment was running Python 3.6. Everything worked well. When I went to deploy it to my server, I found that my host only supported Python 3.5. I was like surely there wouldn’t be a problem, so of course there was. It turns out the &lt;a href=&#34;https://docs.python.org/3/whatsnew/3.6.html#json&#34;&gt;json load functions added support for binary inputs in 3.6&lt;/a&gt;, which I had been using all this time. I ended up using a codecs workaround from &lt;a href=&#34;https://stackoverflow.com/questions/6862770/python-3-let-json-object-accept-bytes-or-let-urlopen-output-strings&#34;&gt;this Stackoverflow post&lt;/a&gt; which happened to work well in both versions.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt; &lt;/p&gt;
 
 
 

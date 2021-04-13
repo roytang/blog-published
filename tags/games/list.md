@@ -1,4 +1,6 @@
 
+- [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
+
 - [[Step by step modding-Guide]: Turn Baldur&#39;s Gate and its sequel into ...](/2010/09/step-by-step-modding-guide-turn-baldur-s-gate-and-its-sequel-into/)
 
 - [Collectible Card Game Headquarters • View forum - ManaLink 2.0](/2010/03/collectible-card-game-headquarters-view-forum-manalink-2-0/)

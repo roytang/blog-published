@@ -11,6 +11,172 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/10/inktober-27-music/",
+            "url": "https://mirror.roytang.net/2020/10/inktober-27-music/",
+            "path": "/2020/10/inktober-27-music/",
+            "title": "Inktober 2020 Day 27: Music",
+            "content_html": "\u003cp\u003eInktober 2020 day 27: MUSIC\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Inktober 2020 day 27: MUSIC\nOfficial prompt list: https://inktober.com/rules",
+            "date_published": "2020-10-27T11:11:47+00:00",
+            "date_modified": "2020-10-27T19:21:34+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/10/inktober-27-music/index.md"
+            , "tags": ["inktober","inktober2020"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1321047863212740608/"},{"type":"instagram","url":"https://instagram.com/p/CG2E-qYhHxg/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/1320978632534228994/",
+            "url": "https://mirror.roytang.net/2020/10/1320978632534228994/",
+            "path": "/2020/10/1320978632534228994/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e yeap. binili ni godaddy e\u003c/p\u003e\n",
+            "summary": "@alvinjtang yeap. binili ni godaddy e",
+            "date_published": "2020-10-27T06:40:23+00:00",
+            "date_modified": "2020-10-27T06:50:21+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/10/1320978632534228994/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320978632534228994/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/",
+            "url": "https://mirror.roytang.net/2020/10/site-migration-from-hugo-to-django/",
+            "path": "/2020/10/site-migration-from-hugo-to-django/",
+            "title": "Site Migration from Hugo to Django",
+            "content_html": "\u003ch3 id=\"leaving-hugo\"\u003eLeaving Hugo\u003c/h3\u003e\n\u003cp\u003eIt\u0026rsquo;s been a bit under two years since \u003ca href=\"/2018/11/site-migration-to-hugo/\"\u003eI migrated the site from Wordpress to Hugo\u003c/a\u003e. As discussed in \u003ca href=\"/2019/11/one-year-with-hugo/\"\u003ethis post one year ago\u003c/a\u003e, I was very happy with the general workflow of managing posts through markdown files in git, but had big problems with the Hugo build time, largely a consequence of \u003ca href=\"/2019/10/archive-of-my-own/\"\u003emy social media archiving\u003c/a\u003e. At that time, I didn\u0026rsquo;t want to invest effort into migrating to a different backend, but the problem has only gotten incrementally worse since then, so I decided to take the jump and started working on it last month.\u003c/p\u003e\n\u003ch3 id=\"migration-goals\"\u003eMigration goals\u003c/h3\u003e\n\u003cp\u003eThe main goal is to get rid of the unnecessary build time. I also don\u0026rsquo;t want to have to store all the pre-generated HTML files. It\u0026rsquo;s fine for a small site, but with the large number of posts here, there\u0026rsquo;s a large amount of unnecessary duplication, considering listing pages and such. That means reverting to a system where each page is generated on the fly.\u003c/p\u003e\n\u003cp\u003eI want to retain the current workflow of managing content via markdown files, so that rules out something like Wordpress. Still, I figured I needed some kind of database for indexing, so that things like listing and archive pages work properly. Given that we would be migrating away from a static site, I fully expect a performance hit, at least initially, but ideally it\u0026rsquo;s not too bad.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;d also like to retain the current content written for Hugo as much as possible. This means the new system will need to be able to parse the custom Hugo shortcodes I\u0026rsquo;d set up for the site.\u003c/p\u003e\n\u003cp\u003eI would also be migrating to a new server which I would be managing myself, which means I would need to set up the deployment myself.\u003c/p\u003e\n\u003ch3 id=\"why-django\"\u003eWhy Django\u003c/h3\u003e\n\u003cp\u003eI naturally fell back on Django, it\u0026rsquo;s my ORM+backend framework of choice, and the one I\u0026rsquo;m most familiar with. Also, I already had a handful of small Django apps that I needed to migrate to the new server as well, so no matter what I needed to have a Django app on the server anyway. I also had a bunch of Python scripts that were doing already doing support functions for the site like search and ingestion of social media content, so that\u0026rsquo;s something to fold into the new backend as well.\u003c/p\u003e\n\u003ch3 id=\"why-bother\"\u003eWhy Bother?\u003c/h3\u003e\n\u003cp\u003eI will fully admit I spent far too much effort unnecessarily doing this, but the realization is that it\u0026rsquo;s actually work I enjoy. This site is primarily a project for myself, and I enjoy the time working on it and learning stuff and improving things.\u003c/p\u003e\n\u003cp\u003eThat being said, the effort wasn\u0026rsquo;t too much. There was a lot of code to reuse and migrate, so most of the effort was testing and making sure things worked. Most of the new code was for parsing the markdown files to render the hugo shortcodes as HTML; I basically wrote Django templates for each Hugo shortcode to be supported.\u003c/p\u003e\n\u003ch3 id=\"changes\"\u003eChanges\u003c/h3\u003e\n\u003cp\u003eThe migration was largely done in-place: site design remains mostly the same, post URLs should be more or less retained. I did take the opportunity to make one nontrivial change: Photos are now under \u003ca href=\"/notes\"\u003eNotes\u003c/a\u003e category. I really only had a separate photos category before because in Hugo I didn\u0026rsquo;t have a way to query posts that have attached images. Even with everything under Notes, since I have a database now, I can do silly things like show \u003ca href=\"/photos/random\"\u003erandom photos\u003c/a\u003e. Also, now the notes section is closer to a microblog/tumblr-like feed.\u003c/p\u003e\n\u003cp\u003eThe source for the site content will still be \u003ca href=\"https://github.com/roytang/blog\"\u003eavailable publicly via Github\u003c/a\u003e, as it was before. Unfortunately, I am not ready to make public the source for this site, because (a) a lot of it is old code that I reused so it looks terrible; and (b) some level of security by obscurity I guess?\u003c/p\u003e\n\u003cp\u003eNot that the site needs to be secure; there isn\u0026rsquo;t actually any critical/important data being stored anywhere. But the fact that a database now exists means I need to follow some kind of security practices.\u003c/p\u003e\n\u003cp\u003eThe server is now hosted on DigitalOcean. Here\u0026rsquo;s \u003ca href=\"https://m.do.co/c/6c2e6b11b260\"\u003emy affiliate link\u003c/a\u003e. Since I\u0026rsquo;m on a self-managed VPS now, that means Github webhooks now work, so whenever I push new posts, they take less than a minute to now appear on the site. This is a vast improvement over the old system where it would take anywhere between 30-60 minutes depending on how Travis was feeling.\u003c/p\u003e\n\u003cp\u003eSpeaking of Travis, I set up a new mirror, Travis now publishes to \u003ca href=\"https://mirror.roytang.net\"\u003ehttps://mirror.roytang.net\u003c/a\u003e once a day, hosted on Netlify. The mirror is still generated using Hugo! I don\u0026rsquo;t know how long I can keep up having the content generate correctly for both builds, but we\u0026rsquo;ll see how it goes.\u003c/p\u003e\n\u003ch3 id=\"summary\"\u003eSummary\u003c/h3\u003e\n\u003cp\u003eAll of this actually went out much smoother than I thought it would. Took less effort than expected, deployment was a breeze. The listing pages have slightly worse performance, but individual pages are hitting 100 on Pagespeed, so that\u0026rsquo;s mostly fine.\u003c/p\u003e\n\u003cp\u003eThis post was just the overview of the site changes. There\u0026rsquo;s still a bunch of technical notes to be written up, so that\u0026rsquo;s stuff for a future blog post.\u003c/p\u003e\n\u003cp\u003eThe last time I used a Django backend for my website was \u003ca href=\"/2008/12/roytang-net-site-update/\"\u003ewaaaay back in 2008\u003c/a\u003e, and that didn\u0026rsquo;t last more than a year before I switched to Wordpress. We\u0026rsquo;ll see how long this one holds out!\u003c/p\u003e\n",
+            "summary": "Leaving Hugo It\u0026rsquo;s been a bit under two years since I migrated the site from Wordpress to Hugo. As discussed in this post one year ago, I was very happy with the general workflow of managing posts through markdown files in git, but had big problems with the Hugo build time, largely a consequence of my social media archiving. At that time, I didn\u0026rsquo;t want to invest effort into migrating to a different backend, but the problem has only gotten incrementally worse since then, so I decided to take the jump and started working on it last month.",
+            "date_published": "2020-10-27T00:00:00+00:00",
+            "date_modified": "2020-10-27T04:20:19+00:00",
+            "section": "post",
+            "source_path": "post/2020/10/site-migration-to-django/index.md"
+            , "tags": ["hugo","django","Meta","Tech Life","changelog"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105104806762996697"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320941945070313472/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/alvinjtang",
+                    "source_file": "comment-20201027-065132-2532aedb-2e2a-4fec-a940-249b518d661b.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20201027-065134-b8c5f0a7-acf6-49b2-a834-819f08703309.json"
+                }, { 
+                    "url": "https://twitter.com/remybernstein",
+                    "source_file": "like-20201027-043910-fee8cf5c-6581-404b-a2ce-1ba6506f0ad4.json"
+                }, { 
+                    "url": "https://pl.nudie.social/users/ninja",
+                    "source_file": "like-20201027-230249-2b8c9805-42a8-4b2a-ae3f-b98cf05b103e.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20201027-230250-eb9f8f17-52fb-40f5-ac12-da4fcc7cdd9e.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/current-status/",
+            "url": "https://mirror.roytang.net/2020/10/current-status/",
+            "path": "/2020/10/current-status/",
+            "title": "What Am I Doing Now?",
+            "content_html": "\u003ch3 id=\"summary\"\u003eSummary:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eLike every other sensible person in the pandemic, I am staying hunkered down at home all of the time. Really only going out to get groceries and meds.\u003c/li\u003e\n\u003cli\u003eWork/employment is not a priority.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"current-location\"\u003eCurrent Location:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003estill living in Quezon City, Philippines.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"work\"\u003eWork\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time.\u003c/li\u003e\n\u003cli\u003eNo specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.\u003c/li\u003e\n\u003cli\u003eI am very picky with taking on new work, and I usually have very few hours I\u0026rsquo;m willing to dedicate to any one client, and will usually prefer interesting work. I don\u0026rsquo;t consider work nor full-time employment to be an important part of my identity and it is definitely not a priority.\u003c/li\u003e\n\u003cli\u003eNonetheless, if you have a work opportunity you feel I might like, feel free to contact me, maybe we\u0026rsquo;ll get lucky.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"how-am-i-spending-my-time\"\u003eHow am I spending my time\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI\u0026rsquo;m working on multiple personal projects, most of which I don\u0026rsquo;t want to talk about. The only public one is this website/blog. I write as often as I can and am constantly trying to update this site to make it better or more to my liking.\u003c/li\u003e\n\u003cli\u003eI still do a lot of gaming\u003c/li\u003e\n\u003cli\u003eQuiz team does online \u003ca href=\"/2013/03/scenes-from-a-quiz-night/\"\u003equiz nights\u003c/a\u003e, a few times a month\u003c/li\u003e\n\u003cli\u003eCheck the \u003ca href=\"/tags/weeknotes\"\u003eweeknotes\u003c/a\u003e for regular updates.\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Summary:  Like every other sensible person in the pandemic, I am staying hunkered down at home all of the time. Really only going out to get groceries and meds. Work/employment is not a priority.  Current Location:  still living in Quezon City, Philippines.  Work  I still work part-time as a software developer/technical lead/system architect consultant, with the emphasis on part-time. No specific clients I care to mention, though it\u0026rsquo;s easy to find out if you dig around a bit.",
+            "date_published": "2020-10-27T00:00:00+00:00",
+            "date_modified": "2020-10-27T04:23:10+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/10/current-status/index.md"
+            , "tags": ["current-status"]
+            
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/fake-cots-and-the-one-day-rule/",
+            "url": "https://mirror.roytang.net/2020/10/fake-cots-and-the-one-day-rule/",
+            "path": "/2020/10/fake-cots-and-the-one-day-rule/",
+            "title": "“Fake COTS” and the one-day rule",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2020-10-26T22:26:48+00:00",
+            "date_modified": "2020-10-26T22:30:21+00:00",
+            "section": "links",
+            "source_path": "links/2020/10/fake-cots-and-the-one-day-rule/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://sboots.ca/2020/09/16/fake-cots-and-the-one-day-rule/?s=09"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/105103452910080474"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320855298609799171/"}]
+            ,"link": "https://sboots.ca/2020/09/16/fake-cots-and-the-one-day-rule/?s=09"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/inktober-26-hide/",
+            "url": "https://mirror.roytang.net/2020/10/inktober-26-hide/",
+            "path": "/2020/10/inktober-26-hide/",
+            "title": "Inktober 2020 Day 26: Hide",
+            "content_html": "\u003cp\u003eInktober 2020 day 26: HIDE\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Inktober 2020 day 26: HIDE\nOfficial prompt list: https://inktober.com/rules",
+            "date_published": "2020-10-26T08:58:30+00:00",
+            "date_modified": "2020-10-27T19:13:54+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/10/inktober-26-hide/index.md"
+            , "tags": ["inktober","inktober2020"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320652138263891970/"},{"type":"instagram","url":"https://instagram.com/p/CGzRB4vB-ph/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/GreenfinchG",
+                    "source_file": "like-20201026-093749-0b86af2f-537d-42b7-be9d-2686269c7279.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/1320562175245598721/",
+            "url": "https://mirror.roytang.net/2020/10/1320562175245598721/",
+            "path": "/2020/10/1320562175245598721/",
+            "title": "",
+            "content_html": "\u003cp\u003eLocal banks need to be making sure their websites work with Firefox. Not everyone uses Chrome!\u003c/p\u003e\n",
+            "summary": "Local banks need to be making sure their websites work with Firefox. Not everyone uses Chrome!",
+            "date_published": "2020-10-26T03:05:32+00:00",
+            "date_modified": "2020-10-26T03:10:26+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/10/1320562175245598721/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320562175245598721/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/10/inktober-25-buddy/",
+            "url": "https://mirror.roytang.net/2020/10/inktober-25-buddy/",
+            "path": "/2020/10/inktober-25-buddy/",
+            "title": "Inktober 2020 Day 25: Buddy",
+            "content_html": "\u003cp\u003eInktober 2020 day 25: BUDDY\u003c/p\u003e\n\u003cp\u003eThis was way too ambitious for my shaky hands. Proportions also a bit out of whack.\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Inktober 2020 day 25: BUDDY\nThis was way too ambitious for my shaky hands. Proportions also a bit out of whack.\nOfficial prompt list: https://inktober.com/rules",
+            "date_published": "2020-10-25T05:04:32+00:00",
+            "date_modified": "2020-10-25T18:17:05+08:00",
+            "section": "photos",
+            "source_path": "photos/2020/10/inktober-25-buddy/index.md"
+            , "tags": ["inktober","inktober2020"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1320230665300791296/"},{"type":"instagram","url":"https://instagram.com/p/CGwRVlkhZ1a/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/Ka_mauu",
+                    "source_file": "like-20201025-052141-06fdde81-daaa-42bc-9f6c-3e056c101dc4.json"
+                }, { 
+                    "url": "https://twitter.com/JacobMiltSmith",
+                    "source_file": "like-20201025-061058-0d320361-1876-4f42-be25-435761e21890.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/10/weeknotes-2020-10-25/",
             "url": "https://mirror.roytang.net/2020/10/weeknotes-2020-10-25/",
             "path": "/2020/10/weeknotes-2020-10-25/",
@@ -866,208 +1032,6 @@
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314965791847006208/"}]
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/inktober-10-hope/",
-            "url": "https://mirror.roytang.net/2020/10/inktober-10-hope/",
-            "path": "/2020/10/inktober-10-hope/",
-            "title": "Inktober 2020 Day 10: Hope",
-            "content_html": "\u003cp\u003eInktober 2020 day 10: HOPE\u003c/p\u003e\n\u003cp\u003eThis\u0026hellip; wasn\u0026rsquo;t great.\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Inktober 2020 day 10: HOPE\nThis\u0026hellip; wasn\u0026rsquo;t great.\nOfficial prompt list: https://inktober.com/rules",
-            "date_published": "2020-10-10T05:02:37+00:00",
-            "date_modified": "2020-10-11T16:53:07+08:00",
-            "section": "photos",
-            "source_path": "photos/2020/10/inktober-10-hope/index.md"
-            , "tags": ["inktober","inktober2020"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314806379060752385/"},{"type":"instagram","url":"https://instagram.com/p/CGJue_QB1JA/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/katemiawhite",
-                    "source_file": "like-20201010-061324-7464c849-4f52-4655-9861-f4cff21e41cd.json"
-                }, { 
-                    "url": "https://twitter.com/Danveron",
-                    "source_file": "like-20201010-064521-35f1fe55-e60b-4183-92e4-ae1b810ce143.json"
-                }, { 
-                    "url": "https://www.instagram.com/romancoat/",
-                    "source_file": "like-20201010-215311-f73a3503-f211-4461-92e0-688b6737e215.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1314485835119689728/",
-            "url": "https://mirror.roytang.net/2020/10/1314485835119689728/",
-            "path": "/2020/10/1314485835119689728/",
-            "title": "",
-            "content_html": "\u003cp\u003eFriday afternoon Zendikar Rising draft! ep7 \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ehttps://www.twitch.tv/twitchyroy\u003c/a\u003e #mtg #magicarena #twitch #mtgznr\u003c/p\u003e\n\u003cp\u003eDraft went reasonably well! Tried a new archetype this time (new for me at least)\u003c/p\u003e\n\u003cp\u003eYT: \u003ca href=\"https://www.youtube.com/watch?v=IQVHzOe2Y5c\"\u003ehttps://www.youtube.com/watch?v=IQVHzOe2Y5c\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Friday afternoon Zendikar Rising draft! ep7 https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgznr\nDraft went reasonably well! Tried a new archetype this time (new for me at least)\nYT: https://www.youtube.com/watch?v=IQVHzOe2Y5c",
-            "date_published": "2020-10-09T08:40:19+00:00",
-            "date_modified": "2020-10-09T11:30:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1314485835119689728/index.md"
-            , "tags": ["mtgznr","twitch","magicarena","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314485835119689728/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314526020997791745/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/inktober-09-throw/",
-            "url": "https://mirror.roytang.net/2020/10/inktober-09-throw/",
-            "path": "/2020/10/inktober-09-throw/",
-            "title": "Inktober 2020 Day 9: Throw",
-            "content_html": "\u003cp\u003eInktober 2020 day 9: THROW\u003c/p\u003e\n\u003cp\u003eI feel like I should have done this with the pad in landscape orientation\u003c/p\u003e\n\u003cp\u003eReference image from \u003ca href=\"https://www.teepublic.com/t-shirt/229273-fastball-special\"\u003ehttps://www.teepublic.com/t-shirt/229273-fastball-special\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Inktober 2020 day 9: THROW\nI feel like I should have done this with the pad in landscape orientation\nReference image from https://www.teepublic.com/t-shirt/229273-fastball-special\nOfficial prompt list: https://inktober.com/rules",
-            "date_published": "2020-10-09T05:41:20+00:00",
-            "date_modified": "2020-10-09T22:38:24+08:00",
-            "section": "photos",
-            "source_path": "photos/2020/10/inktober-09-throw/index.md"
-            , "tags": ["inktober","inktober2020"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314449635784548353/"},{"type":"instagram","url":"https://instagram.com/p/CGHMUdLh-dJ/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.instagram.com/swertesatrese/",
-                    "source_file": "comment-20201009-074156-912a8221-f47a-48f2-989c-1d5539e066e4.json"
-                }, { 
-                    "url": "https://www.instagram.com/tagofabic/",
-                    "source_file": "like-20201009-074155-277f31f4-44b4-425d-b652-828337d9f4ca.json"
-                }, { 
-                    "url": "https://www.instagram.com/a_drawer_in_purple/",
-                    "source_file": "like-20201009-074157-a6f06aa6-cefa-47c2-bd2d-02082b126a03.json"
-                }, { 
-                    "url": "https://www.instagram.com/gabe.caro/",
-                    "source_file": "like-20201009-074158-7bfc4da8-88f9-4e71-89f4-964eb86d9d14.json"
-                }, { 
-                    "url": "https://www.instagram.com/yana.pulp/",
-                    "source_file": "like-20201009-074159-c6dee9ec-5cae-44c8-83e7-91ae9bfb0421.json"
-                }, { 
-                    "url": "https://www.instagram.com/putilina__kate/",
-                    "source_file": "like-20201009-074200-028ff24c-e932-43c2-bf92-bf45d8415461.json"
-                }, { 
-                    "url": "https://www.instagram.com/aiailol/",
-                    "source_file": "like-20201009-074201-30d54376-9b09-4a55-b278-ce8985eae909.json"
-                }, { 
-                    "url": "https://www.instagram.com/cptn.yuri/",
-                    "source_file": "like-20201009-074202-3fa23f7a-4631-42da-afe4-65d890fe9497.json"
-                }, { 
-                    "url": "https://www.instagram.com/twinkling.melody/",
-                    "source_file": "like-20201009-074203-af26963f-7bfc-487e-bf45-37877a1b0073.json"
-                }, { 
-                    "url": "https://www.instagram.com/uniqueunork/",
-                    "source_file": "like-20201009-074204-54b58645-b740-43dd-80b7-6b1d52119001.json"
-                }, { 
-                    "url": "https://twitter.com/Danveron",
-                    "source_file": "like-20201009-090253-460d9017-d3ea-4518-9639-91de998ee5c9.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1314224120490389504/",
-            "url": "https://mirror.roytang.net/2020/10/1314224120490389504/",
-            "path": "/2020/10/1314224120490389504/",
-            "title": "",
-            "content_html": "\u003cp\u003eI finished Super Mario Sunshine! #SuperMario3DAllStars #NintendoSwitch\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1314224070301376513/pu/vid/1280x720/PCRaLVSb1yXImPtF.mp4?tag=10' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
-            "summary": "I finished Super Mario Sunshine! #SuperMario3DAllStars #NintendoSwitch\nYour browser does not support the video tag.  ",
-            "date_published": "2020-10-08T15:20:22+00:00",
-            "date_modified": "2020-10-08T15:30:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1314224120490389504/index.md"
-            , "tags": ["NintendoSwitch","SuperMario3DAllStars"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314224120490389504/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/the-100-sequences-that-shaped-animation/",
-            "url": "https://mirror.roytang.net/2020/10/the-100-sequences-that-shaped-animation/",
-            "path": "/2020/10/the-100-sequences-that-shaped-animation/",
-            "title": "The 100 Sequences That Shaped Animation",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-10-08T14:47:22+00:00",
-            "date_modified": "2020-10-08T15:00:03+00:00",
-            "section": "links",
-            "source_path": "links/2020/10/the-100-sequences-that-shaped-animation/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://www.vulture.com/article/most-influential-best-scenes-animation-history.html"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104999722142875088"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314216529399934976/"}]
-            ,"link": "https://www.vulture.com/article/most-influential-best-scenes-animation-history.html"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/inktober-08-teeth/",
-            "url": "https://mirror.roytang.net/2020/10/inktober-08-teeth/",
-            "path": "/2020/10/inktober-08-teeth/",
-            "title": "Inktober 2020 Day 8: Teeth",
-            "content_html": "\u003cp\u003eInktober 2020 day 8: TEETH\u003c/p\u003e\n\u003cp\u003eOfficial prompt list: \u003ca href=\"https://inktober.com/rules\"\u003ehttps://inktober.com/rules\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Inktober 2020 day 8: TEETH\nOfficial prompt list: https://inktober.com/rules",
-            "date_published": "2020-10-08T07:19:14+00:00",
-            "date_modified": "2020-10-09T13:44:23+08:00",
-            "section": "photos",
-            "source_path": "photos/2020/10/inktober-08-teeth/index.md"
-            , "tags": ["inktober","inktober2020"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1314135300197683202/"},{"type":"instagram","url":"https://instagram.com/p/CGE9Tjxhc8L/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.instagram.com/zakkart_i/",
-                    "source_file": "like-20201008-110139-2ac94362-82ce-46f3-8448-dac92bcf7f25.json"
-                }, { 
-                    "url": "https://www.instagram.com/valhallart.ch/",
-                    "source_file": "like-20201008-110139-dbf576e8-fe28-4c5e-b916-07049af8877c.json"
-                }, { 
-                    "url": "https://www.instagram.com/alena_aliz/",
-                    "source_file": "like-20201008-110142-15f6ccd8-e072-4145-be17-e908e84e4e90.json"
-                }, { 
-                    "url": "https://www.instagram.com/art_maczak/",
-                    "source_file": "like-20201008-110142-382f9d78-3607-40b3-b054-cc8e0041fe33.json"
-                }, { 
-                    "url": "https://www.instagram.com/ohhhace/",
-                    "source_file": "like-20201008-202015-5f0c8d85-4b22-4b66-9ebe-45ea064a2aef.json"
-                }, { 
-                    "url": "https://www.instagram.com/bardofwar/",
-                    "source_file": "like-20201009-052638-5d3ff84f-322e-4d0b-b733-d0c2868c7846.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/1313952706197778432/",
-            "url": "https://mirror.roytang.net/2020/10/1313952706197778432/",
-            "path": "/2020/10/1313952706197778432/",
-            "title": "",
-            "content_html": "\u003cp\u003eAs an electronics engineer and someone who puts his own pcs together, this was great to watch, but damn that console is huge!\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/playstation/status/1313811387815206913'\u003ePlayStation\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eThe official PS5 teardown video is here: \u003ca href=\"http://play.st/3lgZ884\"\u003ehttp://play.st/3lgZ884\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eGet up-close and personal with PS5\u0026rsquo;s next-generation technology, a culmination of five years of design and development.\u003c/p\u003e\n\u003cvideo width='320' height='180' controls\u003e\n    \u003csource src='https://video.twimg.com/amplify_video/1313805176382394369/vid/1280x720/ro9IK9gm0719K790.mp4?tag=13' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "As an electronics engineer and someone who puts his own pcs together, this was great to watch, but damn that console is huge!\nQuoted PlayStation\u0026#39;s tweet:   The official PS5 teardown video is here: http://play.st/3lgZ884\nGet up-close and personal with PS5\u0026rsquo;s next-generation technology, a culmination of five years of design and development.\nYour browser does not support the video tag.   ",
-            "date_published": "2020-10-07T21:21:51+00:00",
-            "date_modified": "2020-10-07T21:45:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/10/1313952706197778432/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1313952706197778432/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/10/why-do-mirrors-flip-horizontally-but-not-vertically/",
-            "url": "https://mirror.roytang.net/2020/10/why-do-mirrors-flip-horizontally-but-not-vertically/",
-            "path": "/2020/10/why-do-mirrors-flip-horizontally-but-not-vertically/",
-            "title": "Why do mirrors flip horizontally (but not vertically)?",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-10-07T16:32:35+00:00",
-            "date_modified": "2020-10-07T16:45:05+00:00",
-            "section": "links",
-            "source_path": "links/2020/10/why-do-mirrors-flip-horizontally-but-not-vertically/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://www.youtube.com/watch?v=vBpxhfBlVLU\u0026feature=share"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104994492405193568"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1313881828030214144/"}]
-            ,"link": "https://www.youtube.com/watch?v=vBpxhfBlVLU\u0026feature=share"
             
             }
         

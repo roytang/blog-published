@@ -1,4 +1,6 @@
 
+- [Without Their Permission by Alexis Ohanian](/2021/04/without-their-permission-by-alexis-ohanian/)
+
 - [Book Reviews: Guards! Guards! and Men at Arms by Terry Pratchett](/2021/04/book-reviews-guards-guards-and-men-at-arms-by-terry-pratchett/)
 
 - [Book Review: Neuromancer by William Gibson](/2021/03/book-review-neuromancer-by-william-gibson/)

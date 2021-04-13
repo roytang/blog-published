@@ -1,4 +1,6 @@
 
+- [Programming is hard, but anyone can be a programmer](/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/)
+
 - [HTML Tags Memory Test](/2020/12/html-tags-memory-test/)
 
 - [How Not to Mentor Software Developers](/2020/12/how-not-to-mentor-software-developers/)
