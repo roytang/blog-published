@@ -11,546 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2016/06/bgt2bqfmofb/",
-            "url": "https://mirror.roytang.net/2016/06/bgt2bqfmofb/",
-            "path": "/2016/06/bgt2bqfmofb/",
-            "title": "",
-            "content_html": "\u003cp\u003eCola #sketchdaily\u003c/p\u003e\n",
-            "summary": "Cola #sketchdaily",
-            "date_published": "2016-06-16T06:02:31+00:00",
-            "date_modified": "2020-05-22T19:56:57+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BGt2BqfMoFB/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGt2BqfMoFB/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/146009754295/cola-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/743428550271766528/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154675363318912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4oc94z/june_16th_carbonated_beverage/d4bhg51/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d4b68ts/",
-            "url": "https://mirror.roytang.net/2016/06/d4b68ts/",
-            "path": "/2016/06/d4b68ts/",
-            "title": "",
-            "content_html": "\u003cp\u003eThank you for the kind words. I have something rolling about in my head about how Alex and Harry\u0026rsquo;s relationship devolve into what it\u0026rsquo;s going to be. I may write it up someday.\u003c/p\u003e\n",
-            "summary": "Thank you for the kind words. I have something rolling about in my head about how Alex and Harry\u0026rsquo;s relationship devolve into what it\u0026rsquo;s going to be. I may write it up someday.",
-            "date_published": "2016-06-16T04:01:33+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4b68ts/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4o4qr5/wp_the_day_after_a_man_invents_the_worlds_first/d4b68ts/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
-            "url": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
-            "path": "/2016/06/password-security-for-application-developers/",
-            "title": "Password Security for Application Developers",
-            "content_html": "\u003cp\u003eIn the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eNever store passwords in plain text!\u003c/strong\u003e This is the most important rule. It means that if your database is ever compromised, the password information will not be exposed\u003c/p\u003e\n\u003cp\u003eThis is true even if your application doesn\u0026rsquo;t contain sensitive data or would not otherwise cause any problems if compromised. This is because many users will tend to re-use the same password across different services (although they really shouldn\u0026rsquo;t!)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eUse a strong one-way cryptographic hash function to store the passwords.\u003c/strong\u003e One-way hashes can still be brute-forced, but the idea is that the computational effort to do so will be so large to make it not worth the effort. The most commonly used/recommended algorithms are \u003ca href=\"http://security.stackexchange.com/questions/4781/do-any-security-experts-recommend-bcrypt-for-password-storage/6415#6415\"\u003ebcrypt and PBKDF2\u003c/a\u003e. One of these should suffice, but take note to check every few years or so if better cryptographic hash algorithms emerge; as technology and hardware evolves and computational power increases, at some point in the future stronger algorithms may be needed (it might take a while though, bcrypt has been good since 1999)\u003c/p\u003e\n\u003cp\u003eCryptographic hash functions are designed to be collision-resistant, meaning the result of the hash function will almost certainly be unique. When the user submits a password for authentication, you simply hash it using the same method and compare the hash against the one stored in the database\u003c/p\u003e\n\u003cp\u003e**Use a unique salt per password before hashing. **Salting means that you don\u0026rsquo;t hash the password by itself, you instead combine it with another string before hashing. Not only does this increase the length and complexity of the hashed string, but reduces vulnerability to so-called \u003ca href=\"https://en.wikipedia.org/wiki/Dictionary_attack\"\u003edictionary attacks\u003c/a\u003e and \u003ca href=\"https://en.wikipedia.org/wiki/Rainbow_table\"\u003erainbow table attacks\u003c/a\u003e. The salt should be different for each user, probably some combination of personal data like the username and a key like the user id stored in your system\u003c/p\u003e\n\u003cp\u003e**Never send passwords in plain text either. **You may be tempted to send out an email with the password in plain text on a password reset request. The common practice now is to just generate and send a unique user-specific link to allow the user to set his own password manually\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eForce good password practices on your users\u003c/strong\u003e. This means requiring sufficiently strong passwords. Many modern services provide quick feedback on how strong the input password is. Optionally you can also require that the password contains a varied amount of lower case letters, upper case letters, numbers, and other special characters, but this is not really necessary if the passwords are of sufficient length. Also consider requiring users to change their passwords after a set period\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eYou should disallow the most common passwords.\u003c/strong\u003e A list of the most commonly used passwords (such as \u0026ldquo;password\u0026rdquo; and \u0026ldquo;123456\u0026rdquo;) are available from previously leaked password hacks. Microsoft has recently started to roll out this sort of check now in their services. Actually, one good idea I\u0026rsquo;ve heard of before is to have a uniqueness check on the password field \u0026ndash; disallow users from having the same password as any other user, but this may not be feasible depending on how you hash the passwords\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eIf your application has a large number of users or is especially critical (anything involving money transactions is a good candidate), you should also consider implementing some sort of \u003cstrong\u003etwo-factor authentication\u003c/strong\u003e. Most common implementations these days use email, SMS or a mobile application as the second factor\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eThese practices won\u0026rsquo;t prevent your application from being hacked. In truth, probably nothing can really prevent hacks 100% especially against determined hackers. These are simply mitigation practices you need to be aware of as the application developer to protect your users in case your application does get hacked. Other methods of securing your system may be the responsibility of other roles such as system administrators/engineers or dev ops\u003c/p\u003e\n",
-            "summary": "In the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:",
-            "date_published": "2016-06-16T01:30:02+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2016/06/password-security-for-application-developers/index.md"
-            , "tags": ["Software Development","Tech Life"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743255093370290176/"}]
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20160616094928-wp-joaquin.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/743238173598224385/",
-            "url": "https://mirror.roytang.net/2016/06/743238173598224385/",
-            "path": "/2016/06/743238173598224385/",
-            "title": "",
-            "content_html": "\u003cp\u003eBloodstained is looking sweet: \u003ca href=\"https://www.youtube.com/watch?v=lAL07Pbqx3c\"\u003ehttps://www.youtube.com/watch?v=lAL07Pbqx3c\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Bloodstained is looking sweet: https://www.youtube.com/watch?v=lAL07Pbqx3c",
-            "date_published": "2016-06-16T00:26:03+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/743238173598224385.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743238173598224385/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/where-can-i-find-the-best-web/",
-            "url": "https://mirror.roytang.net/2016/06/where-can-i-find-the-best-web/",
-            "path": "/2016/06/where-can-i-find-the-best-web/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Where-can-I-find-the-best-web-developers-in-the-Philippines/answer/Roy-Tang\"\u003eWhere can I find the best web developers in the Philippines?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe best web developers are working for other people/firms and don’t need to advertise themselves. They always have work lined up so they don’t need to be camping oDesk, Freelancer, etc\u003c/p\u003e\n\u003cp\u003eWhat sort of work are you looking to provide?\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n Where can I find the best web developers in the Philippines?\n The best web developers are working for other people/firms and don’t need to advertise themselves. They always have work lined up so they don’t need to be camping oDesk, Freelancer, etc\nWhat sort of work are you looking to provide?",
-            "date_published": "2016-06-16T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/where-can-i-find-the-best-web.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Where-can-I-find-the-best-web-developers-in-the-Philippines/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/4o7ifq/",
-            "url": "https://mirror.roytang.net/2016/06/4o7ifq/",
-            "path": "/2016/06/4o7ifq/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-rcomicbooks-question-about-flashpoint-and-rebirthhttpsredditcomrcomicbookscomments4o7ifqquestion_about_flashpoint_and_rebirth\"\u003ePosted on r/comicbooks: \u003ca href=\"https://reddit.com/r/comicbooks/comments/4o7ifq/question_about_flashpoint_and_rebirth/\"\u003eQuestion about Flashpoint and Rebirth\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eSo, the current surviving Clark Kent/Superman is supposedly pre-Flashpoint Superman, and New 52 Superman is dead right?\u003c/p\u003e\n\u003cp\u003eBut Pre-Flashpoint Wally West coming out of the speed force and restoring New 52 Barry\u0026rsquo;s memories implies that New 52 Barry is the same as Pre-Flashpoint Barry. Shouldn\u0026rsquo;t this also mean that New 52 Superman should be the same Superman from Pre-Flashpoint? Is this discrepancy something that\u0026rsquo;s been explained somewhere? Or we just accept that Barry and Superman transitioned differently and handwave it away. \u0026ldquo;Comics, everbody!\u0026rdquo;\u003c/p\u003e\n",
-            "summary": "Posted on r/comicbooks: Question about Flashpoint and Rebirth So, the current surviving Clark Kent/Superman is supposedly pre-Flashpoint Superman, and New 52 Superman is dead right?\nBut Pre-Flashpoint Wally West coming out of the speed force and restoring New 52 Barry\u0026rsquo;s memories implies that New 52 Barry is the same as Pre-Flashpoint Barry. Shouldn\u0026rsquo;t this also mean that New 52 Superman should be the same Superman from Pre-Flashpoint? Is this discrepancy something that\u0026rsquo;s been explained somewhere?",
-            "date_published": "2016-06-15T22:15:53+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/4o7ifq/index.md"
-            , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/4o7ifq/question_about_flashpoint_and_rebirth/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/743154314139492354/",
-            "url": "https://mirror.roytang.net/2016/06/743154314139492354/",
-            "path": "/2016/06/743154314139492354/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e friends are a quality over quantity thing. When you click with the right people, it won\u0026rsquo;t be a pain. Well, not much at least :p\u003c/p\u003e\n",
-            "summary": "@Westraid friends are a quality over quantity thing. When you click with the right people, it won\u0026rsquo;t be a pain. Well, not much at least :p",
-            "date_published": "2016-06-15T18:52:50+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/743154314139492354.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743154314139492354/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d4aj3md/",
-            "url": "https://mirror.roytang.net/2016/06/d4aj3md/",
-            "path": "/2016/06/d4aj3md/",
-            "title": "",
-            "content_html": "\u003cp\u003eI like interesting battle systems. Is there some place that documents what are the best things about the Pokemon battle system for someone who doesn\u0026rsquo;t play the games?\u003c/p\u003e\n",
-            "summary": "I like interesting battle systems. Is there some place that documents what are the best things about the Pokemon battle system for someone who doesn\u0026rsquo;t play the games?",
-            "date_published": "2016-06-15T18:43:04+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4aj3md/index.md"
-            , "tags": ["truegaming"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/truegaming/comments/4o62a8/why_hasnt_there_been_an_indie_clone_of_pokemon/d4aj3md/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d49zkde/",
-            "url": "https://mirror.roytang.net/2016/06/d49zkde/",
-            "path": "/2016/06/d49zkde/",
-            "title": "",
-            "content_html": "\u003cp\u003eThanks for the feedback!\u003c/p\u003e\n",
-            "summary": "Thanks for the feedback!",
-            "date_published": "2016-06-15T10:06:18+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d49zkde/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4o4qr5/wp_the_day_after_a_man_invents_the_worlds_first/d49zkde/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bgrswr3sob7/",
-            "url": "https://mirror.roytang.net/2016/06/bgrswr3sob7/",
-            "path": "/2016/06/bgrswr3sob7/",
-            "title": "",
-            "content_html": "\u003cp\u003eGarden #sketchdaily\u003c/p\u003e\n",
-            "summary": "Garden #sketchdaily",
-            "date_published": "2016-06-15T09:59:28+00:00",
-            "date_modified": "2020-05-22T20:39:37+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BGrsWR3soB7/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGrsWR3soB7/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145967350245/garden-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/743125795091025920/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154672468068912:1"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4o690y/june_15th_gardens/d4adxvv/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742990992274493440/",
-            "url": "https://mirror.roytang.net/2016/06/742990992274493440/",
-            "path": "/2016/06/742990992274493440/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe world owes you nothing. You can either learn to cope with it and make peace with all that is, or continue suffering.\u003c/p\u003e\n",
-            "summary": "The world owes you nothing. You can either learn to cope with it and make peace with all that is, or continue suffering.",
-            "date_published": "2016-06-15T08:03:51+00:00",
-            "date_modified": "2020-06-16T00:29:24+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742990992274493440/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742990992274493440/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742972714068119558/",
-            "url": "https://mirror.roytang.net/2016/06/742972714068119558/",
-            "path": "/2016/06/742972714068119558/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe new Zelda looks amazingly good \u003ca href=\"http://i.imgur.com/0C6mcQS.gif\"\u003ehttp://i.imgur.com/0C6mcQS.gif\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "The new Zelda looks amazingly good http://i.imgur.com/0C6mcQS.gif",
-            "date_published": "2016-06-15T06:51:13+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742972714068119558.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742972714068119558/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d49uv2s/",
-            "url": "https://mirror.roytang.net/2016/06/d49uv2s/",
-            "path": "/2016/06/d49uv2s/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe building had a nondescript white exterior, with a single grey metal door on the facade and no other hint of what lie within. I tried the knob and a metallic rattle told me it was locked. I frowned, then remembered, then pulled out the mysterious envelope I had found under my door yesterday. I mean, 93 years from now. Well, not 93 years from now for me. Yesterday for me. God, I need to figure out how to think of time again.\u003c/p\u003e\n\u003cp\u003eI opened the envelope, equally nondescript as the building exterior, and shook it a bit. The small key fell out of it and I almost miss catching it. Harold would have sneered derisively if he was here. \u0026ldquo;World\u0026rsquo;s clumsiest time traveller!\u0026rdquo; he would have said.\u003c/p\u003e\n\u003cp\u003eHarold. Harry. Good old Harry. The argument had been gone sour last night. Will have gone sour? \u0026ldquo;Why should we go? We have no idea what this is. No idea!\u0026rdquo; he had exclaimed, gesturing wildly as he was wont to do.\u003c/p\u003e\n\u003cp\u003eI inserted the small key into the lock on the doorknob, and sure enough it clicked into place. I turned the knob and stepped inside.\u003c/p\u003e\n\u003cp\u003eHarry was always the smart one. The prudent one. He had all these rules. \u0026ldquo;We can\u0026rsquo;t risk collapsing the universe!\u0026rdquo; or some such theoretical physics bullshit. He\u0026rsquo;d be hopping mad if he knew I\u0026rsquo;d actually gone. Well, he doesn\u0026rsquo;t need to know, it\u0026rsquo;s a fucking time machine isn\u0026rsquo;t it? I\u0026rsquo;ll be back before he knows it.\u003c/p\u003e\n\u003cp\u003eBehind the door was a long and dimly lit corridor. The only sound was the subtle whirring of a large ceiling fan overhead. Well, that and the creaking of the metal door as I shut it back into place.\u003c/p\u003e\n\u003cp\u003eA desk. There was a desk. And behind it, a person. A stocky woman, her hair tied in a bun, wearing spectacles. She looked up from what looked like a sudoku puzzle as I stepped closer. Did they even have sudoku in 1923? I reached into my pocket for the envelope again.\u003c/p\u003e\n\u003cp\u003eI needn\u0026rsquo;t have bothered. \u0026ldquo;Mr. Reyes, isn\u0026rsquo;t it?\u0026rdquo; She nodded towards the far end of the hallway. \u0026ldquo;Take the elevator at the end. There\u0026rsquo;s only one stop.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Er, I was hoping to ask\u0026ndash;\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Pl\u003c/p\u003e\n",
-            "summary": "The building had a nondescript white exterior, with a single grey metal door on the facade and no other hint of what lie within. I tried the knob and a metallic rattle told me it was locked. I frowned, then remembered, then pulled out the mysterious envelope I had found under my door yesterday. I mean, 93 years from now. Well, not 93 years from now for me. Yesterday for me.",
-            "date_published": "2016-06-15T05:59:04+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d49uv2s/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4o4qr5/wp_the_day_after_a_man_invents_the_worlds_first/d49uv2s/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/as-a-teacher-how-do-you-grade/",
-            "url": "https://mirror.roytang.net/2016/06/as-a-teacher-how-do-you-grade/",
-            "path": "/2016/06/as-a-teacher-how-do-you-grade/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/As-a-teacher-how-do-you-grade-an-hand-written-programming-exam/answer/Roy-Tang\"\u003eAs a teacher, how do you grade an hand-written programming exam?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eAs a computer science teacher, you really shouldn’t give this kind of an exam. It’s in no way reflective of how code is written in the real world\u003c/p\u003e\n\u003cp\u003eIf you must have an exam of this sort, you should focus on making sure the algorithm used in the code is conceptually correct, and disregard any problems in syntax that may fail a compiler. In fact, it’s probably better to have the students submit their answers in some sort of pseudocode or other informal format instead of actual program code, so they know not to focus on syntax\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n As a teacher, how do you grade an hand-written programming exam?\n As a computer science teacher, you really shouldn’t give this kind of an exam. It’s in no way reflective of how code is written in the real world\nIf you must have an exam of this sort, you should focus on making sure the algorithm used in the code is conceptually correct, and disregard any problems in syntax that may fail a compiler.",
-            "date_published": "2016-06-15T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/as-a-teacher-how-do-you-grade.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/As-a-teacher-how-do-you-grade-an-hand-written-programming-exam/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/how-should-i-learn-java-for-ba/",
-            "url": "https://mirror.roytang.net/2016/06/how-should-i-learn-java-for-ba/",
-            "path": "/2016/06/how-should-i-learn-java-for-ba/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-should-I-learn-Java-for-backend-development/answer/Roy-Tang\"\u003eHow should I learn Java for backend development?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eYou should start with Servlets and JSP as these are the basic building block technologies. For people new to Java web development I always recommend the book Head First Servlets and JSPs, as it builds up from these base technologies and moves towards establishing something similar to an MVC framework like Spring\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n How should I learn Java for backend development?\n You should start with Servlets and JSP as these are the basic building block technologies. For people new to Java web development I always recommend the book Head First Servlets and JSPs, as it builds up from these base technologies and moves towards establishing something similar to an MVC framework like Spring",
-            "date_published": "2016-06-15T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/how-should-i-learn-java-for-ba.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-should-I-learn-Java-for-backend-development/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/would-venture-capitalists-inve/",
-            "url": "https://mirror.roytang.net/2016/06/would-venture-capitalists-inve/",
-            "path": "/2016/06/would-venture-capitalists-inve/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Would-venture-capitalists-invest-money-in-a-16-boy-that-can-code/answer/Roy-Tang\"\u003eWould venture capitalists invest money in a 16 boy that can code?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThousands, maybe millions, of people know how to code. Anyone can have a killer idea. I literally had two of them right before going to bed last night.\u003c/p\u003e\n\u003cp\u003eTherefore, there is a nontrivial number of people who both know how to code and have at least one killer idea. Many of them will be way be more experienced than a 16-year old kid and will have a better idea of how the world works and will have better reputations and will be more likely to have contacts who can hook them up to VCs.\u003c/p\u003e\n\u003cp\u003eIf you are a 16-year old kid who knows how to code and has a killer idea, the best way to attract a VC’s attention is: implement your idea already. Start to finish, top to bottom. Prototype, iterate, then release it. Gather users, build a following. Be so big you become impossible to ignore.\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n Would venture capitalists invest money in a 16 boy that can code?\n Thousands, maybe millions, of people know how to code. Anyone can have a killer idea. I literally had two of them right before going to bed last night.\nTherefore, there is a nontrivial number of people who both know how to code and have at least one killer idea. Many of them will be way be more experienced than a 16-year old kid and will have a better idea of how the world works and will have better reputations and will be more likely to have contacts who can hook them up to VCs.",
-            "date_published": "2016-06-15T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/would-venture-capitalists-inve.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Would-venture-capitalists-invest-money-in-a-16-boy-that-can-code/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742851125401919488/",
-            "url": "https://mirror.roytang.net/2016/06/742851125401919488/",
-            "path": "/2016/06/742851125401919488/",
-            "title": "",
-            "content_html": "\u003cp\u003eKnowing what the right thing to do is and actually doing it are completely different things\u003c/p\u003e\n",
-            "summary": "Knowing what the right thing to do is and actually doing it are completely different things",
-            "date_published": "2016-06-14T22:48:04+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742851125401919488.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742851125401919488/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154671895773912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bgqvwtcmogl/",
-            "url": "https://mirror.roytang.net/2016/06/bgqvwtcmogl/",
-            "path": "/2016/06/bgqvwtcmogl/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003cem\u003egasp\u003c/em\u003e what a plot twist! #megaman9\u003c/p\u003e\n",
-            "summary": "gasp what a plot twist! #megaman9",
-            "date_published": "2016-06-14T21:19:19+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BGqVWtcMoGL/index.md"
-            , "tags": ["megaman9"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGqVWtcMoGL/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/742934494815133697/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154672468068912:0"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/aleksfelipe",
-                    "source_file": "comment-20160615-053607-a0ebce7e-74a6-4b0c-9682-d9778824c21f.json"
-                }, { 
-                    "url": "https://twitter.com/aleksfelipe",
-                    "source_file": "comment-20160615-053848-217525e0-0df5-40a0-abff-e4da32ea8caf.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20160615-060215-5f5b4796-6105-4f20-af7d-320e9753a3c1.json"
-                }, { 
-                    "url": "https://twitter.com/aleksfelipe",
-                    "source_file": "comment-20160615-062310-57ad7d85-07e3-4c11-b839-42e065d03c46.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742808968876019712/",
-            "url": "https://mirror.roytang.net/2016/06/742808968876019712/",
-            "path": "/2016/06/742808968876019712/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf I\u0026rsquo;m still awake at 4am, I\u0026rsquo;m probably going to stay up until after breakfast\u003c/p\u003e\n",
-            "summary": "If I\u0026rsquo;m still awake at 4am, I\u0026rsquo;m probably going to stay up until after breakfast",
-            "date_published": "2016-06-14T20:00:33+00:00",
-            "date_modified": "2021-01-18T16:43:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742808968876019712/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742808968876019712/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154671637763912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/shalombrian.mercader",
-                    "source_file": "comment-20160615-000000-1acef4ed-b60e-4914-b76c-0bee2e5046e9.json"
-                }, { 
-                    "url": "https://www.facebook.com/lissramgurl01",
-                    "source_file": "comment-20160615-000001-4be19885-0ef3-476a-b5ee-c7181916326e.json"
-                }, { 
-                    "url": "https://www.facebook.com/luis.formilleza",
-                    "source_file": "comment-20160615-000002-9e5144d2-1c02-4dfb-ad27-54d389c107b4.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742780187419381761/",
-            "url": "https://mirror.roytang.net/2016/06/742780187419381761/",
-            "path": "/2016/06/742780187419381761/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rovietoosin/\"\u003e@rovietoosin\u003c/a\u003e saan ka pupunta?\u003c/p\u003e\n",
-            "summary": "@rovietoosin saan ka pupunta?",
-            "date_published": "2016-06-14T18:06:11+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742780187419381761.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742780187419381761/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742777410433646593/",
-            "url": "https://mirror.roytang.net/2016/06/742777410433646593/",
-            "path": "/2016/06/742777410433646593/",
-            "title": "",
-            "content_html": "\u003cp\u003eWatching this Zelda stream makes me wish the Dragonborn could climb in Skyrim #E32016\u003c/p\u003e\n",
-            "summary": "Watching this Zelda stream makes me wish the Dragonborn could climb in Skyrim #E32016",
-            "date_published": "2016-06-14T17:55:09+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742777410433646593.md"
-            , "tags": ["E32016"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742777410433646593/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742775953433067520/",
-            "url": "https://mirror.roytang.net/2016/06/742775953433067520/",
-            "path": "/2016/06/742775953433067520/",
-            "title": "",
-            "content_html": "\u003cp\u003eTell me #Pokemon fans: If the Pokedex already knows all the Pokemon, why are there new Pokemon appearing in each game?\u003c/p\u003e\n",
-            "summary": "Tell me #Pokemon fans: If the Pokedex already knows all the Pokemon, why are there new Pokemon appearing in each game?",
-            "date_published": "2016-06-14T17:49:22+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742775953433067520.md"
-            , "tags": ["Pokemon"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742775953433067520/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742775446278799361/",
-            "url": "https://mirror.roytang.net/2016/06/742775446278799361/",
-            "path": "/2016/06/742775446278799361/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt\u0026rsquo;s the first time I\u0026rsquo;ve ever seen a Nintendo treehouse thing, these are kinda boring huh? #E32016\u003c/p\u003e\n",
-            "summary": "It\u0026rsquo;s the first time I\u0026rsquo;ve ever seen a Nintendo treehouse thing, these are kinda boring huh? #E32016",
-            "date_published": "2016-06-14T17:47:21+00:00",
-            "date_modified": "2019-09-07T03:37:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742775446278799361.md"
-            , "tags": ["E32016"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742775446278799361/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/742775302535798784/",
-            "url": "https://mirror.roytang.net/2016/06/742775302535798784/",
-            "path": "/2016/06/742775302535798784/",
-            "title": "",
-            "content_html": "\u003cp\u003eStill so much we don\u0026rsquo;t know about our world and its history \u003ca href=\"https://www.theguardian.com/world/2016/jun/11/lost-city-medieval-discovered-hidden-beneath-cambodian-jungle?CMP=soc_567\"\u003ehttps://www.theguardian.com/world/2016/jun/11/lost-city-medieval-discovered-hidden-beneath-cambodian-jungle?CMP=soc_567\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Still so much we don\u0026rsquo;t know about our world and its history https://www.theguardian.com/world/2016/jun/11/lost-city-medieval-discovered-hidden-beneath-cambodian-jungle?CMP=soc_567",
-            "date_published": "2016-06-14T17:46:46+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742775302535798784.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742775302535798784/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/4o0it1/",
-            "url": "https://mirror.roytang.net/2016/06/4o0it1/",
-            "path": "/2016/06/4o0it1/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2016-06-14T16:51:47+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "links",
-            "source_path": "links/2016/06/4o0it1/index.md"
-            , "tags": ["stellaris"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Stellaris/comments/4o0it1/stellaris_postmortem_you_guys_might_find_this/"}]
-            ,"link": "http://www.gamasutra.com/view/news/274018/Postmortem_Paradox_Development_Studios_Stellaris.php?utm_source=dlvr.it\u0026utm_medium=twitter"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d48rbxq/",
-            "url": "https://mirror.roytang.net/2016/06/d48rbxq/",
-            "path": "/2016/06/d48rbxq/",
-            "title": "",
-            "content_html": "\u003cp\u003eI liked the Life Comix Shen!\u003c/p\u003e\n",
-            "summary": "I liked the Life Comix Shen!",
-            "date_published": "2016-06-14T14:25:01+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d48rbxq/index.md"
-            , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comics/comments/4o13u8/definitely_photoshop/d48rbxq/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d48gkta/",
-            "url": "https://mirror.roytang.net/2016/06/d48gkta/",
-            "path": "/2016/06/d48gkta/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt only works for digital purchases\u003c/p\u003e\n",
-            "summary": "It only works for digital purchases",
-            "date_published": "2016-06-14T06:55:19+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d48gkta/index.md"
-            , "tags": ["gaming"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Games/comments/4nwi09/xbox_play_anywhere_lets_you_play_select_games/d48gkta/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d48fmjb/",
-            "url": "https://mirror.roytang.net/2016/06/d48fmjb/",
-            "path": "/2016/06/d48fmjb/",
-            "title": "",
-            "content_html": "\u003cp\u003eNice! I should try that dotted shading thing some time\u003c/p\u003e\n",
-            "summary": "Nice! I should try that dotted shading thing some time",
-            "date_published": "2016-06-14T06:14:15+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d48fmjb/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4nunnz/june_13th_a_bathroom/d48fmjb/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d48fl8m/",
-            "url": "https://mirror.roytang.net/2016/06/d48fl8m/",
-            "path": "/2016/06/d48fl8m/",
-            "title": "",
-            "content_html": "\u003cp\u003eLooks good! But why are there black splotches on your wall? :p\u003c/p\u003e\n",
-            "summary": "Looks good! But why are there black splotches on your wall? :p",
-            "date_published": "2016-06-14T06:12:44+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d48fl8m/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4nunnz/june_13th_a_bathroom/d48fl8m/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d48fkk2/",
-            "url": "https://mirror.roytang.net/2016/06/d48fkk2/",
-            "path": "/2016/06/d48fkk2/",
-            "title": "",
-            "content_html": "\u003cp\u003eLooks good!\u003c/p\u003e\n",
-            "summary": "Looks good!",
-            "date_published": "2016-06-14T06:11:57+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d48fkk2/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4nunnz/june_13th_a_bathroom/d48fkk2/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2016/06/742547043910983681/",
             "url": "https://mirror.roytang.net/2016/06/742547043910983681/",
             "path": "/2016/06/742547043910983681/",
@@ -946,6 +406,570 @@
             "source_path": "notes/2016/06/why-do-i-feel-guilty-for-havin.md"
             , "tags": ["answers"]
             , "syndicated": [{"type":"quora","url":"https://www.quora.com/Why-do-I-feel-guilty-for-having-a-good-life/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/742031647738974208/",
+            "url": "https://mirror.roytang.net/2016/06/742031647738974208/",
+            "path": "/2016/06/742031647738974208/",
+            "title": "",
+            "content_html": "\u003cp\u003eDespite all my free time, somehow there\u0026rsquo;s still far too much stuff to read, learn, watch, play, create, and write\u003c/p\u003e\n",
+            "summary": "Despite all my free time, somehow there\u0026rsquo;s still far too much stuff to read, learn, watch, play, create, and write",
+            "date_published": "2016-06-12T16:31:45+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/742031647738974208/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742031647738974208/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154666529583912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20160613-000000-47324df4-52c8-41c8-9d02-8515edaf355f.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20160613-000001-f8c635b0-a9c9-42b2-aec5-5afc2eda4425.json"
+                }, { 
+                    "url": "https://www.facebook.com/jcdeoferio",
+                    "source_file": "comment-20160613-000002-f2856818-a982-4745-9544-7ae3b3ca9c9d.json"
+                }, { 
+                    "url": "https://www.facebook.com/maoi.arroyo",
+                    "source_file": "comment-20160613-000003-2b6764b3-7e76-4e66-bc58-e1ee3658506d.json"
+                }, { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20160613-000320-179d0d19-fac6-43c3-b231-41d1c0199bed.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20160613-000321-8ea9ad26-f2f8-446b-b884-ea060c6f110b.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20160613-000500-c0a47227-3c4d-469d-82eb-8f638f187fab.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20160613-000640-042d7a01-5cca-4012-b643-013fce4a77d1.json"
+                }, { 
+                    "url": "https://www.facebook.com/maoi.arroyo",
+                    "source_file": "comment-20160613-000641-7682a460-4b66-4bab-bd8a-a5a6bb518b54.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgi_lqfmohf/",
+            "url": "https://mirror.roytang.net/2016/06/bgi_lqfmohf/",
+            "path": "/2016/06/bgi_lqfmohf/",
+            "title": "",
+            "content_html": "\u003cp\u003eEating ramen #sketchdaily\u003c/p\u003e\n",
+            "summary": "Eating ramen #sketchdaily",
+            "date_published": "2016-06-12T00:54:26+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGi_lqFMoHF/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGi_lqFMoHF/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145794483755/eating-ramen-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/741901466944708610/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154664371433912:2"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4npeoy/june_12th_ramen/d45skyl/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/how-do-i-improve-my-computer-k/",
+            "url": "https://mirror.roytang.net/2016/06/how-do-i-improve-my-computer-k/",
+            "path": "/2016/06/how-do-i-improve-my-computer-k/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-do-I-improve-my-computer-knowledge-as-a-programmer/answer/Roy-Tang\"\u003eHow do I improve my computer knowledge as a programmer?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eFirst, it isn’t necessary for you as a programmer to know these things\u003c/p\u003e\n\u003cp\u003eSecond, do you have a computer of your own? I’ve had and maintained my own computer for almost two decades now, so most of my knowledge of how computers work comes with that experience. I’ve encountered a lot of problems and researched how to fix each one so I have a good idea of how computers work and what fixes are available to common problems. Having your own computer for personal use (not just the one at work) will help a lot. Desktops are better than laptops, since they are more easily customisable\u003c/p\u003e\n\u003cp\u003eThird, if you don’t already have a computer, build one yourself. Or even if you already have one, either build a second one for yourself and help a friend build one. And by “build” I don’t mean buying one fully assembled already; I mean buying each part individually and putting it together yourself. That means researching what parts are needed and what will serve your needs best and what will be compatible and canvassing for the best prices and finally sitting down and opening all the boxes and putting it all together. I’ve put together five different desktop builds over the past twenty years myself\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n How do I improve my computer knowledge as a programmer?\n First, it isn’t necessary for you as a programmer to know these things\nSecond, do you have a computer of your own? I’ve had and maintained my own computer for almost two decades now, so most of my knowledge of how computers work comes with that experience. I’ve encountered a lot of problems and researched how to fix each one so I have a good idea of how computers work and what fixes are available to common problems.",
+            "date_published": "2016-06-12T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/how-do-i-improve-my-computer-k.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-do-I-improve-my-computer-knowledge-as-a-programmer/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/is-it-acceptable-for-the-menta/",
+            "url": "https://mirror.roytang.net/2016/06/is-it-acceptable-for-the-menta/",
+            "path": "/2016/06/is-it-acceptable-for-the-menta/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Is-it-acceptable-for-the-mentally-ill-to-take-a-little-time-after-a-psychotic-break-so-they-can-put-life-back-into-perspective/answer/Roy-Tang\"\u003eIs it acceptable for the mentally ill to take a little time after a psychotic break, so they can put life back into perspective?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eRegardless of being mentally ill or not, you \u003cem\u003eshould\u003c/em\u003e take a little time after a psychotic break to put your life back into perspective\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n Is it acceptable for the mentally ill to take a little time after a psychotic break, so they can put life back into perspective?\n Regardless of being mentally ill or not, you should take a little time after a psychotic break to put your life back into perspective",
+            "date_published": "2016-06-12T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/is-it-acceptable-for-the-menta.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Is-it-acceptable-for-the-mentally-ill-to-take-a-little-time-after-a-psychotic-break-so-they-can-put-life-back-into-perspective/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741701723534692353/",
+            "url": "https://mirror.roytang.net/2016/06/741701723534692353/",
+            "path": "/2016/06/741701723534692353/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe Laws of Simplicity: \u003ca href=\"http://lawsofsimplicity.com/los.html\"\u003ehttp://lawsofsimplicity.com/los.html\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "The Laws of Simplicity: http://lawsofsimplicity.com/los.html",
+            "date_published": "2016-06-11T18:40:45+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741701723534692353.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741701723534692353/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741664037520310273/",
+            "url": "https://mirror.roytang.net/2016/06/741664037520310273/",
+            "path": "/2016/06/741664037520310273/",
+            "title": "",
+            "content_html": "\u003cp\u003eToday\u0026rsquo;s Google doodle is a jeepney. I wonder if there\u0026rsquo;s this one guy at Google whose only job is to think up the next day\u0026rsquo;s Google doodle\u003c/p\u003e\n",
+            "summary": "Today\u0026rsquo;s Google doodle is a jeepney. I wonder if there\u0026rsquo;s this one guy at Google whose only job is to think up the next day\u0026rsquo;s Google doodle",
+            "date_published": "2016-06-11T16:11:00+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741664037520310273.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741664037520310273/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bghdlqvsohy/",
+            "url": "https://mirror.roytang.net/2016/06/bghdlqvsohy/",
+            "path": "/2016/06/bghdlqvsohy/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurprisingly spicy (not sure what I expected)\u003c/p\u003e\n",
+            "summary": "Surprisingly spicy (not sure what I expected)",
+            "date_published": "2016-06-11T10:38:06+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGhdlqvsoHy/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGhdlqvsoHy/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154664371433912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741544478746382336/",
+            "url": "https://mirror.roytang.net/2016/06/741544478746382336/",
+            "path": "/2016/06/741544478746382336/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhen I see \u0026ldquo;Uberpool\u0026rdquo; I imagine an app that lets you call for a mutant mercenary on demand\u003c/p\u003e\n",
+            "summary": "When I see \u0026ldquo;Uberpool\u0026rdquo; I imagine an app that lets you call for a mutant mercenary on demand",
+            "date_published": "2016-06-11T08:15:55+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741544478746382336/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741544478746382336/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154663321588912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160611-000000-4e331194-a1e8-4935-81f5-45533cad7994.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741525261582114816/",
+            "url": "https://mirror.roytang.net/2016/06/741525261582114816/",
+            "path": "/2016/06/741525261582114816/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis is hilarious \u003ca href=\"https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email\"\u003ehttps://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "This is hilarious https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email",
+            "date_published": "2016-06-11T06:59:33+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741525261582114816.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741525261582114816/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741518362597949441/",
+            "url": "https://mirror.roytang.net/2016/06/741518362597949441/",
+            "path": "/2016/06/741518362597949441/",
+            "title": "",
+            "content_html": "\u003cp\u003eCommon Evidence of Bias: Your candidate is the best, and you can find absolutely nothing good to say about other candidates.\u003c/p\u003e\n",
+            "summary": "Common Evidence of Bias: Your candidate is the best, and you can find absolutely nothing good to say about other candidates.",
+            "date_published": "2016-06-11T06:32:09+00:00",
+            "date_modified": "2020-06-11T06:04:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741518362597949441/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741518362597949441/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741511843068280832/",
+            "url": "https://mirror.roytang.net/2016/06/741511843068280832/",
+            "path": "/2016/06/741511843068280832/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/momblogger/\"\u003e@momblogger\u003c/a\u003e mostly becauze \u003ca href=\"https://twitter.com/RRD_Davao/\"\u003e@RRD_Davao\u003c/a\u003e has managed to turn off a lot of people \u003ca href=\"https://twitter.com/lenirobredo/\"\u003e@lenirobredo\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@momblogger mostly becauze @RRD_Davao has managed to turn off a lot of people @lenirobredo",
+            "date_published": "2016-06-11T06:06:14+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741511843068280832.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741511843068280832/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/10154662247293912/",
+            "url": "https://mirror.roytang.net/2016/06/10154662247293912/",
+            "path": "/2016/06/10154662247293912/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-06-11T06:03:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/10154662247293912/index.md"
+            , "tags": ["timeline-photos"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154662247293912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgggiwjsog2/",
+            "url": "https://mirror.roytang.net/2016/06/bgggiwjsog2/",
+            "path": "/2016/06/bgggiwjsog2/",
+            "title": "",
+            "content_html": "\u003cp\u003eUnfair race #sketchdaily gonna try pen instead of pencil for a while\u003c/p\u003e\n",
+            "summary": "Unfair race #sketchdaily gonna try pen instead of pencil for a while",
+            "date_published": "2016-06-11T01:41:04+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGggIWjsoG2/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGggIWjsoG2/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145747259825/unfair-race-sketchdaily-gonna-try-pen-instead-of"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/741550815286960128/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154661363478912:1"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4nklkx/june_11th_motorcycles/d44pdt5/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/in-simple-words-how-do-you-ex/",
+            "url": "https://mirror.roytang.net/2016/06/in-simple-words-how-do-you-ex/",
+            "path": "/2016/06/in-simple-words-how-do-you-ex/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/In-simple-words-how-do-you-explain-to-a-non-engineer-like-a-doctor-or-a-scientist-what-a-Full-Stack-Developer-does/answer/Roy-Tang\"\u003eIn simple words, how do you explain to a non-engineer (like a doctor or a scientist) what a Full Stack Developer does?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eIt’s probably really easy to explain it to a doctor, since they have specialties in their field too. “It’s like if you used to be a dermatologist, but now you handle internal medicine too”\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n In simple words, how do you explain to a non-engineer (like a doctor or a scientist) what a Full Stack Developer does?\n It’s probably really easy to explain it to a doctor, since they have specialties in their field too. “It’s like if you used to be a dermatologist, but now you handle internal medicine too”",
+            "date_published": "2016-06-11T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/in-simple-words-how-do-you-ex.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/In-simple-words-how-do-you-explain-to-a-non-engineer-like-a-doctor-or-a-scientist-what-a-Full-Stack-Developer-does/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741370834598535168/",
+            "url": "https://mirror.roytang.net/2016/06/741370834598535168/",
+            "path": "/2016/06/741370834598535168/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Netflixhelps/\"\u003e@Netflixhelps\u003c/a\u003e thats very disappointing. I\u0026rsquo;m afraid I must send you a frown :(\u003c/p\u003e\n",
+            "summary": "@Netflixhelps thats very disappointing. I\u0026rsquo;m afraid I must send you a frown :(",
+            "date_published": "2016-06-10T20:45:55+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741370834598535168.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741370834598535168/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/d43f0p4/",
+            "url": "https://mirror.roytang.net/2016/06/d43f0p4/",
+            "path": "/2016/06/d43f0p4/",
+            "title": "",
+            "content_html": "\u003cp\u003eWow! How long did that take?\u003c/p\u003e\n",
+            "summary": "Wow! How long did that take?",
+            "date_published": "2016-06-10T08:34:04+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/d43f0p4/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4nfb0z/june_10th_free_drawlogy_friday/d43f0p4/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgemf1xmocn/",
+            "url": "https://mirror.roytang.net/2016/06/bgemf1xmocn/",
+            "path": "/2016/06/bgemf1xmocn/",
+            "title": "",
+            "content_html": "\u003cp\u003eI was not the King of Tokyo\u003c/p\u003e\n",
+            "summary": "I was not the King of Tokyo",
+            "date_published": "2016-06-10T07:54:40+00:00",
+            "date_modified": "2021-04-12T10:28:30+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGemF1xMoCn/index.md"
+            , "tags": ["boardgames"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGemF1xMoCn/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154661363478912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/741155089516269568/",
+            "url": "https://mirror.roytang.net/2016/06/741155089516269568/",
+            "path": "/2016/06/741155089516269568/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/NetflixAsia/\"\u003e@NetflixAsia\u003c/a\u003e will Voltron be out today in asia?\u003c/p\u003e\n",
+            "summary": "@NetflixAsia will Voltron be out today in asia?",
+            "date_published": "2016-06-10T06:28:37+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/741155089516269568.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741155089516269568/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/what-is-the-best-book-to-learn/",
+            "url": "https://mirror.roytang.net/2016/06/what-is-the-best-book-to-learn/",
+            "path": "/2016/06/what-is-the-best-book-to-learn/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/What-is-the-best-book-to-learn-enterprise-application-development/answer/Roy-Tang\"\u003eWhat is the best book to learn enterprise application development?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe best way to learn is to actually participate in an enterprise application project. You won’t get everything you need from a book, particularly things on how to work well and communicate well with a team. That being said, I would suggest reading the following books:\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003ci\u003eDesign Patterns: Elements of Reusable Object-Oriented Software\u003c/i\u003e by The Gang of Four\u003c/li\u003e\u003cli\u003eRefactoring by Martin Fowler\u003c/li\u003e\u003cli\u003eThe Pragmatic Programmer by Andy Hunt and David Thomas\u003c/li\u003e\u003cli\u003ePeopleware - Productive Projects and Teams by Lister and DeMarco\u003c/li\u003e\u003cli\u003eRapid Development by Steve McConnell\u003c/li\u003e\u003c/ul\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eThat should give you a relatively good/balanced foundation to build on\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n What is the best book to learn enterprise application development?\n The best way to learn is to actually participate in an enterprise application project. You won’t get everything you need from a book, particularly things on how to work well and communicate well with a team. That being said, I would suggest reading the following books:\nDesign Patterns: Elements of Reusable Object-Oriented Software by The Gang of FourRefactoring by Martin FowlerThe Pragmatic Programmer by Andy Hunt and David ThomasPeopleware - Productive Projects and Teams by Lister and DeMarcoRapid Development by Steve McConnellThat should give you a relatively good/balanced foundation to build on",
+            "date_published": "2016-06-10T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/what-is-the-best-book-to-learn.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/What-is-the-best-book-to-learn-enterprise-application-development/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/740963206366040064/",
+            "url": "https://mirror.roytang.net/2016/06/740963206366040064/",
+            "path": "/2016/06/740963206366040064/",
+            "title": "",
+            "content_html": "\u003cp\u003eCivil War in the 1980s: \u003ca href=\"http://i.imgur.com/E2p3wgz.jpg\"\u003ehttp://i.imgur.com/E2p3wgz.jpg\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Civil War in the 1980s: http://i.imgur.com/E2p3wgz.jpg",
+            "date_published": "2016-06-09T17:46:09+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/740963206366040064/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/740963206366040064/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154659018508912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20160610-000000-30927517-5041-4521-b40b-4430ebb41ad1.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160610-000001-9348ce3a-b204-4bf7-b518-e214a03c6ca6.json"
+                }, { 
+                    "url": "https://www.facebook.com/jackngan",
+                    "source_file": "comment-20160610-000002-b53e1d3d-512e-45b9-bcc3-a77aa8e80a6c.json"
+                }, { 
+                    "url": "https://www.facebook.com/maoi.arroyo",
+                    "source_file": "comment-20160610-000003-a4037c15-172b-47f4-856e-0d4e0bbfe563.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20160610-000320-34ed6fd9-adc6-415a-a48a-3a23e8179d1c.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160610-000321-293d9ece-b3b9-4fcf-a28c-3a6e10053a56.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/740921024561086464/",
+            "url": "https://mirror.roytang.net/2016/06/740921024561086464/",
+            "path": "/2016/06/740921024561086464/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;I never could get the hang of Thursdays\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;I never could get the hang of Thursdays\u0026rdquo;",
+            "date_published": "2016-06-09T14:58:32+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/740921024561086464.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/740921024561086464/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154658623428912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgcmjhisobj/",
+            "url": "https://mirror.roytang.net/2016/06/bgcmjhisobj/",
+            "path": "/2016/06/bgcmjhisobj/",
+            "title": "",
+            "content_html": "\u003cp\u003eMr Jones #sketchdaily\u003c/p\u003e\n\u003cp\u003eEdit: Reference - \u003ca href=\"https://tytempletonart.wordpress.com/2012/03/14/convention-sketches-i-dont-hate/\"\u003ehttps://tytempletonart.wordpress.com/2012/03/14/convention-sketches-i-dont-hate/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Mr Jones #sketchdaily\nEdit: Reference - https://tytempletonart.wordpress.com/2012/03/14/convention-sketches-i-dont-hate/",
+            "date_published": "2016-06-09T09:29:30+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGcMJhIsoBj/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGcMJhIsoBj/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145663931755/mr-jones-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/740943923778965504/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154656335228912:1"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4n9u8a/june_9th_trilogy/d42genv/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/what-was-the-first-video-game/",
+            "url": "https://mirror.roytang.net/2016/06/what-was-the-first-video-game/",
+            "path": "/2016/06/what-was-the-first-video-game/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/What-was-the-first-video-game-to-have-a-real-story/answer/Roy-Tang\"\u003eWhat was the first video game to have a real story?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eI suppose it depends on what you mean by “real story” and where you want to draw that line\u003c/p\u003e\n\u003cp\u003eI mean, a plumber’s girlfriend is kidnapped by a giant ape and he has to climb some ladders to get to her, that’s a story. Donkey Kong (1981). It’s not particularly long or complicated, but it’s a story\u003c/p\u003e\n\u003cp\u003eThe first game in the Ultima series (1981), told a more complex story involving an evil sorcerer, a powerful artifact and a time travel twist\u003c/p\u003e\n\u003cp\u003eSuper Mario Bros (1985): Later they extended that concept to create an entire fantasy kingdom with a lineup of bad guys and castles, it was still a story then\u003c/p\u003e\n\u003cp\u003eThe Legend of Zelda (1986): How about a young boy who is given a sword by a mysterious old man and he has to wander lands filled with dangerous monsters cryptic npcs and recover powerful artifacts from deep dungeons?\u003c/p\u003e\n\u003cp\u003eDragon Quest (1986) and Final Fantasy (1987) introduced the epic fantasy tradition to consoles\u003c/p\u003e\n\u003cp\u003eManiac Mansion (1987) kicked off a whole new genre of adventure that focused entirely on story and puzzle-solving\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n What was the first video game to have a real story?\n I suppose it depends on what you mean by “real story” and where you want to draw that line\nI mean, a plumber’s girlfriend is kidnapped by a giant ape and he has to climb some ladders to get to her, that’s a story. Donkey Kong (1981). It’s not particularly long or complicated, but it’s a story",
+            "date_published": "2016-06-09T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/what-was-the-first-video-game.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/What-was-the-first-video-game-to-have-a-real-story/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/the-programming-application-process/",
+            "url": "https://mirror.roytang.net/2016/06/the-programming-application-process/",
+            "path": "/2016/06/the-programming-application-process/",
+            "title": "The Programming Application Process",
+            "content_html": "\u003cp\u003eMore stories from the early days. Evaluating someone\u0026rsquo;s programming ability is hard, especially someone fresh out of college. A student\u0026rsquo;s grades is in no way indicative of how well he can program after all. So most nontrivial programming jobs have some sort of complicated application process involved.\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI remember going in and taking an exam. Most application processes will have some sort of written exam to filter out people who look good on paper, but can’t actually do anything. People graduate college all the time without being able to do anything so it’s a fairly good idea\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI was expecting the written exam to be programming questions, but to my surprise it wasn’t. The questions were puzzle/problem solving type questions. I think there were 10 questions in all. I don’t remember all of them, but for sure one of them was the pirates puzzle described here: \u003c/span\u003e\u003ca href=\"http://www.mathsisfun.com/puzzles/5-pirates-solution.html\"\u003e\u003cspan style=\"font-weight: 400;\"\u003ehttp://www.mathsisfun.com/puzzles/5-pirates-solution.html\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-weight: 400;\"\u003e. I never did find out how many I got correct, although I felt pretty good about my answers for all of them\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAfter passing the written exam, I also had to take a second technical exam. It consisted of a few parts, the first part was they gave me some sort of string-manipulation problem and I had to write a program \u003cem\u003eon a whiteboard\u003c/em\u003e and explain and defend it. Nowadays if you asked someone to write a program on paper or on a whiteboard during an interview, it would kind of look ridiculous since it doesn’t reflect a realistic scenario of how programmers work these days (i.e. with the internet and IDEs and autocompletes and whatnot), but that was how things were done back in the day\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI hadn’t done much programming outside of using C, so that’s the language I used to provide my solution, but in theory I could have just used some sort of pseudocode since they don’t require you to use specific languages. As a programmer applying for a job, I would recommend prioritizing opportunities that don’t require you to know a specific language or set of languages. You’ll learn and grow a lot more as a programmer\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAfter leaving me in the room for thirty minutes, the interviewer came back and I had to explain the program I had written on the whiteboard. It was a typical string-manipulation problem designed to see how well coders think through the process. I don’t remember the details too much, but I remember getting into a debate with the interviewer about the expected behavior for the C function strcpy(). I didn’t want to appear too argumentative, so even though I believed I was right (and I confirmed it afterwards!) I just let it be after insisting a couple of times\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAfter the programming question, I got asked an \u0026ldquo;impossible question\u0026rdquo;. This is another type of interview question that has mostly fallen out of favor these days. The idea of an impossible question is basically the interviewee tries to approximate an answer to a question that would generally take a lot of research to answer. The interviewee has to explain his reasoning of how he would estimate the answer, and from there the interviewer can make a judgment of how well thought out the interviewee’s processes are. I didn’t know about this style of question ahead of time of course, this interview was the first time I’ve encountered it. I actually still remember the impossible question asked of me: I was asked how many people ride the Metrorail (MRT3) in Metro Manila on a daily basis. This was in 2002, so the MRT3 had only been out for around 3 years and wasn’t quite as congested as it was now, so I could make some reasonable assumptions like each train arrives at each station every 5 minutes, each car usually houses 300 people on average, etc, and I think I gave a pretty reasonable answer\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThis style of recruitment process was popular at the time, more than ten years ago. Companies like Microsoft were well-known for it. In fact many potential programming job applicants would be advised on internet forums to google \u0026ldquo;Microsoft interview questions\u0026rdquo;, and many of them became so well-known MS was forced to revamp its processes as well\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eWith the problem solving, the code walk-through and the impossible question, the focus was finding not necessarily people who were very good at coding per se, but rather people who exhibited a strong analytical approach to problem solving\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThese days the recruitment process is very, very different. In most, if not all companies, the written exam will focus on technical, coding questions. You’ll be given sample code and need to try to identify the problems with the code. A friend even had to answer questions over the phone about details of Java syntax (pretty useless questions if you ask me)\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAnd instead of a technical interview where you have to write code manually, most likely you’ll be given a workstation with an IDE and computer access and asked to implement so-and-so program. Some of the more progressive ones will do a pairing exam where you have to do pair programming with one of their existing developers; such pairing exams give insight on two fronts: your technical skill and how well you can work well with someone already on the team you’re applying for\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI kind of prefer the old style of recruitment processes because they give a better chance for people like me who had minimal formal programming education but can learn easily and quickly\u003c/span\u003e\u003c/p\u003e\n",
+            "summary": "More stories from the early days. Evaluating someone\u0026rsquo;s programming ability is hard, especially someone fresh out of college. A student\u0026rsquo;s grades is in no way indicative of how well he can program after all. So most nontrivial programming jobs have some sort of complicated application process involved.\nI remember going in and taking an exam. Most application processes will have some sort of written exam to filter out people who look good on paper, but can’t actually do anything.",
+            "date_published": "2016-06-08T22:30:10+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/the-programming-application-process/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/740673534859587585/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgzqetssoly/",
+            "url": "https://mirror.roytang.net/2016/06/bgzqetssoly/",
+            "path": "/2016/06/bgzqetssoly/",
+            "title": "",
+            "content_html": "\u003cp\u003eNatsu #sketchdaily #fairytail\u003c/p\u003e\n",
+            "summary": "Natsu #sketchdaily #fairytail",
+            "date_published": "2016-06-08T09:56:49+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGZqetSsoLY/index.md"
+            , "tags": ["sketchdaily","fairytail"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGZqetSsoLY/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145615298125/natsu-sketchdaily-fairytail"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/740588411216531456/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154656335228912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4n3xyx/june_8th_astrology/d412vvm/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/740337386001825792/",
+            "url": "https://mirror.roytang.net/2016/06/740337386001825792/",
+            "path": "/2016/06/740337386001825792/",
+            "title": "",
+            "content_html": "\u003cp\u003eThankfully I still know how to code\u0026hellip; or at least I think I do \u003ca href=\"https://www.payscale.com/career-news/2016/05/programmer-fired-after-6-years-realizes-he-doesnt-know-how-to-code\"\u003ehttps://www.payscale.com/career-news/2016/05/programmer-fired-after-6-years-realizes-he-doesnt-know-how-to-code\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Thankfully I still know how to code\u0026hellip; or at least I think I do https://www.payscale.com/career-news/2016/05/programmer-fired-after-6-years-realizes-he-doesnt-know-how-to-code",
+            "date_published": "2016-06-08T00:19:22+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/740337386001825792.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/740337386001825792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgyii3fsock/",
+            "url": "https://mirror.roytang.net/2016/06/bgyii3fsock/",
+            "path": "/2016/06/bgyii3fsock/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt has been a while #amici\u003c/p\u003e\n",
+            "summary": "It has been a while #amici",
+            "date_published": "2016-06-07T23:24:41+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGYiI3FsoCk/index.md"
+            , "tags": ["amici"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGYiI3FsoCk/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154653737623912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgw-qhcmonz/",
+            "url": "https://mirror.roytang.net/2016/06/bgw-qhcmonz/",
+            "path": "/2016/06/bgw-qhcmonz/",
+            "title": "",
+            "content_html": "\u003cp\u003eSnake, Frog, Toad #sketchdaily #metalgear #chronotrigger #nintendo\u003c/p\u003e\n",
+            "summary": "Snake, Frog, Toad #sketchdaily #metalgear #chronotrigger #nintendo",
+            "date_published": "2016-06-07T08:51:52+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGW-QHCMoNz/index.md"
+            , "tags": ["sketchdaily","nintendo","metalgear","chronotrigger"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGW-QHCMoNz/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145562113095/snake-frog-toad-sketchdaily-metalgear"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/740209678764769281/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154653737623912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4mxzue/june_7th_herpetology/d3zkc8b/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/immortality/",
+            "url": "https://mirror.roytang.net/2016/06/immortality/",
+            "path": "/2016/06/immortality/",
+            "title": "Immortality",
+            "content_html": "\u003cblockquote\u003e\n\u003cp\u003e\u0026ldquo;Do you know what\u0026rsquo;s there, waiting beyond that beach? \u003cem\u003eImmortality\u003c/em\u003e! \u003cem\u003eTake it! It\u0026rsquo;s yours\u003c/em\u003e!\u0026rdquo; \u0026ndash; Achilles, Troy\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eEach person has a different view of what their life\u0026rsquo;s purpose is, but I\u0026rsquo;ve found more often than not it relates to some form of immortality. Usually that means leaving something behind, some trace of yourself so that the world remembers you, something that says \u0026ldquo;I was here, I existed.\u0026rdquo; For many people that means offspring, for others it may mean some other legacy: children taught, people helped, ideas expounded, inventions created, companies founded, and so on\u003c/p\u003e\n\u003cp\u003eFor me, I wouldn\u0026rsquo;t mind actual immortality. Who knows, it may still happen in our lifetime. Medical science may yet find a way to extend our lifespans or even permanently remove aging (at which point we really need to expand beyond this planet). Or maybe we manage to survive until the singularity and live on as artificial constructs\u003c/p\u003e\n\u003cp\u003eLiterature and popular culture often portray immortality as some sort of curse. Sometimes a literal curse, as in vampires or highlanders needing to cut each other\u0026rsquo;s heads off. More often the implied of curse of eternal solitude \u0026ndash; Superman is often taunted by writers with the idea that everyone he loves will eventually grow old and die, and other immortals are often portrayed as not wanting to burden themselves with short-lived human connections\u003c/p\u003e\n\u003cp\u003eWhat interests me the most about the idea of immortality is the idea that we as a species have so much to look forward to. (Assuming we manage to bypass \u003ca href=\"https://en.wikipedia.org/wiki/Great_Filter\"\u003eThe Great Filter\u003c/a\u003e and avoid screwing things up for ourselves of course.) Even just the coming decades hold a lot of promise, with advances in space exploration, artificial intelligence, autonomous vehicles, and so on that may very well expand the horizons of the human experience. And who knows, immortality may actually help George R.R. Martin finish the \u003cem\u003eSong of Ice and Fire\u003c/em\u003e series!\u003c/p\u003e\n\u003cp\u003eI want to be immortal if only to be able to see where we are going and what comes next. The future, it comes. Perhaps sooner than many of us expect\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;Do you know what\u0026rsquo;s there, waiting beyond that beach? Immortality! Take it! It\u0026rsquo;s yours!\u0026rdquo; \u0026ndash; Achilles, Troy\n Each person has a different view of what their life\u0026rsquo;s purpose is, but I\u0026rsquo;ve found more often than not it relates to some form of immortality. Usually that means leaving something behind, some trace of yourself so that the world remembers you, something that says \u0026ldquo;I was here, I existed.\u0026rdquo; For many people that means offspring, for others it may mean some other legacy: children taught, people helped, ideas expounded, inventions created, companies founded, and so on",
+            "date_published": "2016-06-06T22:30:57+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/immortality/index.md"
+            , "tags": ["Opinions"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/739952883853086720/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bgud0qgsocs/",
+            "url": "https://mirror.roytang.net/2016/06/bgud0qgsocs/",
+            "path": "/2016/06/bgud0qgsocs/",
+            "title": "",
+            "content_html": "\u003cp\u003eSneaky Cat, Polite Owl and Clown Seal #pokemon #sketchdaily\u003c/p\u003e\n",
+            "summary": "Sneaky Cat, Polite Owl and Clown Seal #pokemon #sketchdaily",
+            "date_published": "2016-06-06T09:29:58+00:00",
+            "date_modified": "2020-05-22T20:39:37+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BGUd0QgsoCS/index.md"
+            , "tags": ["sketchdaily","pokemon"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGUd0QgsoCS/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145512502340/sneaky-cat-polite-owl-and-clown-seal-pokemon"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/739856876695748608/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154650125923912:2"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4mrvwv/june_6th_the_new_pokemon_starters/d3y7u8b/"}]
             
             
             }

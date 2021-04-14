@@ -17,6 +17,4 @@
 
 - [](/2014/07/ilbq2ibawvo/)
 
-- [](/2014/07/aymhaaacaadruqgho2fznq/)
-
 - [](/2014/07/aymhaaacaadruqgho3eapg/)

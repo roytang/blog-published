@@ -5,7 +5,31 @@
 
 - [](/2021/01/1350361902149324800/)
 
+- [Weeknotes 2020-09-27](/2020/09/weeknotes-2020-09-27/)
+
+- [Weeknotes 2020-08-30](/2020/08/weeknotes-2020-08-30/)
+
+- [Weeknotes 2020-07-19](/2020/07/weeknotes-07-19/)
+
+- [Weeknotes 2020-07-12: Media Shutdown Edition](/2020/07/weeknotes-07-12/)
+
+- [Weeknotes 2020-07-05: Anti-Error Edition](/2020/07/weeknotes-07-05/)
+
+- [Weeknotes 2020-06-28: Internet Outage Edition](/2020/06/weeknotes-06-28/)
+
+- [Weeknotes 2020-05-31](/2020/05/weeknotes-05-31/)
+
+- [Weeknotes 2020-05-17](/2020/05/weeknotes-2020-05-17/)
+
+- [Weeknotes 2020-05-10](/2020/05/weeknotes-2020-05-10/)
+
 - [](/2020/04/fog070h/)
+
+- [Weeknotes 2020-04-19](/2020/04/weeknotes-2020-04-19/)
+
+- [Weeknotes 2020-04-12 Easter Sunday Edition](/2020/04/weeknotes-2020-04-12/)
+
+- [Weeknotes 2020-03-29 Time Is Meaningless](/2020/03/weeknotes-2020-03-29/)
 
 - [Birds of Prey and the Fantabulous Emancipation of One Harley Quinn spoiler-free review!](/2020/03/birds-of-prey/)
 
@@ -175,6 +199,8 @@
 
 - [](/2012/08/236837291300118529/)
 
+- [](/2012/07/219385293214728192/)
+
 - [](/2012/06/219114954274512897/)
 
 - [](/2012/06/216081331837345794/)
@@ -196,6 +222,10 @@
 - [](/2010/06/17171475151/)
 
 - [](/2010/05/13253318934/)
+
+- [](/2010/04/12345518895/)
+
+- [](/2009/04/1462227779/)
 
 - [Watchmen](/2009/03/watchmen/)
 
@@ -242,6 +272,10 @@
 - [movie scripts: drew&#39;s meat and potatoes](/2005/02/movie-scripts-drew-s-meat-and-potatoes/)
 
 - [Movies: Spiderman 2](/2004/07/movies-spiderman-2/)
+
+- [KOTOR = Evil timesink](/2004/01/kotor-evil-timesink/)
+
+- [Revolutions](/2003/11/revolutions/)
 
 - [The Recruit](/2003/04/the-recruit/)
 

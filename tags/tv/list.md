@@ -3,6 +3,12 @@
 
 - [Perfect Strangers](/2020/12/perfect-strangers/)
 
+- [Weeknotes 2020-09-27](/2020/09/weeknotes-2020-09-27/)
+
+- [Weeknotes 2020-08-30](/2020/08/weeknotes-2020-08-30/)
+
+- [Weeknotes 2020-04-19](/2020/04/weeknotes-2020-04-19/)
+
 - [Watching Lately, Feb 2020 - Not Much Apparently](/2020/02/watching-lately/)
 
 - [Criminal Minds](/2020/02/criminal-minds/)

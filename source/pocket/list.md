@@ -465,7 +465,7 @@
 
 - [The death of truth: how we gave up on facts and ended up with Trump | Books | The Guardian](/2018/07/the-death-of-truth-how-we-gave-up-on-facts-and-ended-up-with-trump-books-the-guardian/)
 
-- [Is C   a &#39;Really Terrible Language&#39;? - Slashdot](/2018/07/is-c-a-really-terrible-language-slashdot/)
+- [Is C&#43;&#43; a &#39;Really Terrible Language&#39;? - Slashdot](/2018/07/is-c-a-really-terrible-language-slashdot/)
 
 - [Serverless apps: Architecture, patterns, and Azure implementation | Microsoft Docs](/2018/07/serverless-apps-architecture-patterns-and-azure-implementation-microsoft-docs/)
 
