@@ -11,23 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2016/12/generalists-and-specialists-in-dev-teams/",
-            "url": "https://mirror.roytang.net/2016/12/generalists-and-specialists-in-dev-teams/",
-            "path": "/2016/12/generalists-and-specialists-in-dev-teams/",
-            "title": "Generalists and Specialists in Dev Teams",
-            "content_html": "\u003cp\u003eIn any reasonably large software project, the system will be so large that no one developer will have a good grasp of the details of every function in the codebase.\u003c/p\u003e\n\u003cp\u003eThe tendency is for developers to specialize \u0026ndash; that is, developers tend to focus only on certain parts of the codebase and become more familiar with that part, while not having much knowledge about the other parts. This tendency is self-reinforcing \u0026ndash; once it becomes known that the developer is an \u0026ldquo;expert\u0026rdquo; in the given module, there is a tendency that he will be assigned the most difficult and urgent tasks or fixes related to that module, further cementing his expertise. Thus, the developer becomes a sort of specialist within the system.\u003c/p\u003e\n\u003cp\u003eIn contrast to a specialist, you will also sometimes have developers who prefer to be generalists. That is, they are comfortable working with any part of the system, although their familiarity and knowledge are probably not as deep as the specialist for any given module.\u003c/p\u003e\n\u003cp\u003eBoth generalists and specialists are valuable in different situations. If you need a complicated change done quickly on a particular module with minimum impact, it\u0026rsquo;s best to have a specialist who is very familiar with how everything works. On the other hand, generalists are very useful from a resource management perspective, since they can jump in to help at any time in any part of the codebase. Say, if your specialist is sick or out of town and you urgently need to do a small change, the generalist can probably take it on no problem.\u003c/p\u003e\n\u003cp\u003eIdeally, you train more than one specialist per module of interest in your system, through some sort of mentoring or maybe pair programming, but not all dev teams have that luxury (mostly due to schedule or resource constraints). It\u0026rsquo;s best for software dev teams to find the right mix of generalists and specialists that their particular development process entails.\u003c/p\u003e\n",
-            "summary": "In any reasonably large software project, the system will be so large that no one developer will have a good grasp of the details of every function in the codebase.\nThe tendency is for developers to specialize \u0026ndash; that is, developers tend to focus only on certain parts of the codebase and become more familiar with that part, while not having much knowledge about the other parts. This tendency is self-reinforcing \u0026ndash; once it becomes known that the developer is an \u0026ldquo;expert\u0026rdquo; in the given module, there is a tendency that he will be assigned the most difficult and urgent tasks or fixes related to that module, further cementing his expertise.",
-            "date_published": "2016-12-15T01:30:25+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2016/12/generalists-and-specialists-in-dev-teams/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/154487142465/generalists-and-specialists-in-dev-teams"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/809210001499820032/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2016/12/809082709284769793/",
             "url": "https://mirror.roytang.net/2016/12/809082709284769793/",
             "path": "/2016/12/809082709284769793/",
@@ -1074,6 +1057,31 @@
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BNo7o_4Bmg4/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/154077464535/new-friends-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/805787622215974912/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155146806878912:0"}]
             
             
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/12/40968519/",
+            "url": "https://mirror.roytang.net/2016/12/40968519/",
+            "path": "/2016/12/40968519/",
+            "title": "Marklogic Node.js API: How to get the document where an embedded triple lives?",
+            "content_html": "\u003cp\u003eI tried to insert the following test document:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edb.documents.write(\n    {\n        uri: \u0026quot;/test/doc1.json\u0026quot;,\n        contentType: \u0026quot;application/json\u0026quot;,\n        collections: \u0026quot;test\u0026quot;,\n        content: {\n            name : \u0026quot;Peter\u0026quot;,\n            hobby: \u0026quot;Sleeping\u0026quot;,\n            other: \u0026quot;Some other info\u0026quot;,\n            \u0026quot;triple\u0026quot;: {\n                \u0026quot;subject\u0026quot;: {   \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot;   \n                },   \n                \u0026quot;predicate\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot;   \n                },   \n                \u0026quot;object\u0026quot;: {     \n                    \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;,  \n                    \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot;   \n                }\n          \t}\n        }\n    }\n  ).\n  result(function(response){\n    console.log(\u0026quot;Done loading\u0026quot;);\n  }); \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen I queried as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar query = [\n  'SELECT ?s ?p ?o' ,\n  'WHERE { ?s ?p ?o }' ,\n];\ndb.graphs.sparql('application/sparql-results+json', query.join('\\n')\n).result(function (result) {\n  console.log(JSON.stringify(result, null, 2));\n}, function(error) {\n  console.log(JSON.stringify(error, null, 2));\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?\u003c/p\u003e\n",
+            "summary": "I tried to insert the following test document:\ndb.documents.write( { uri: \u0026quot;/test/doc1.json\u0026quot;, contentType: \u0026quot;application/json\u0026quot;, collections: \u0026quot;test\u0026quot;, content: { name : \u0026quot;Peter\u0026quot;, hobby: \u0026quot;Sleeping\u0026quot;, other: \u0026quot;Some other info\u0026quot;, \u0026quot;triple\u0026quot;: { \u0026quot;subject\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/name/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Peter\u0026quot; }, \u0026quot;predicate\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/relation/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;livesin\u0026quot; }, \u0026quot;object\u0026quot;: { \u0026quot;datatype\u0026quot;: \u0026quot;http://example.com/location/\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;Paris\u0026quot; } } } } ). result(function(response){ console.log(\u0026quot;Done loading\u0026quot;); });  Then I queried as follows:\nvar query = [ 'SELECT ?s ?",
+            "date_published": "2016-12-05T06:44:52+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/12/40968519/index.md"
+            , "tags": ["node.js","sparql","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T082757-40969974.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives",
+                    "source_file": "comment-20161205T153147-40977742.json"
+                }
+            ]
             }
         
     ]

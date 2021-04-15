@@ -1,4 +1,6 @@
 
+- [Ted Lasso Season 1 spoiler-free review](/2021/04/ted-lasso-season-1-spoiler-free-review/)
+
 - [Wandavision Spoiler-free Review](/2021/03/wandavision/)
 
 - [Perfect Strangers](/2020/12/perfect-strangers/)
