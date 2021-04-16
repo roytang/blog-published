@@ -1,4 +1,6 @@
 
+- [Google Chrome and FloC](/2021/04/google-chrome-and-floc/)
+
 - [Without Their Permission by Alexis Ohanian](/2021/04/without-their-permission-by-alexis-ohanian/)
 
 - [Blogs of Yesteryear](/2021/04/blogs-of-yesteryear/)

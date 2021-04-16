@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Google Chrome and FloC](https://mirror.roytang.net/2021/04/google-chrome-and-floc/)
 - [Ted Lasso Season 1 spoiler-free review](https://mirror.roytang.net/2021/04/ted-lasso-season-1-spoiler-free-review/)
 - [Programming is hard, but anyone can be a programmer](https://mirror.roytang.net/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/)
 - [Without Their Permission by Alexis Ohanian](https://mirror.roytang.net/2021/04/without-their-permission-by-alexis-ohanian/)
 - [Weeknotes 2021-04-11](https://mirror.roytang.net/2021/04/weeknotes-2021-04-11/)
-- [Got my first Sinovac dose in Quezon City](https://mirror.roytang.net/2021/04/got-my-first-sinovac-dose-in-quezon-city/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
@@ -29,14 +29,13 @@ Latest shared links:
 Latest notes:
     
 
+- [16 Apr 2021 4:14am](https://mirror.roytang.net/2021/04/1382910148306427907/): Friday afternoon Strixhaven sealed! https://www.twitch.tv/twitchyroy #mtg #magicarena #MTGStrixhaven #twitch
+- [16 Apr 2021 3:30am](https://mirror.roytang.net/2021/04/1382899175189221378/): @momblogger Even if we criticize the choice of sinovac as less efficient, its still our duty to get vaccinated to improve public health. The Duterte govt gave us no choice. Those who still get vaccinated with sinovac should even be commended for setting aside their misgivings
+- [15 Apr 2021 12:14pm](https://mirror.roytang.net/2021/04/1382668757248536581/): This looks amazing #gaming - GetsuFumaDen: Undying Moon Teaser Trailer https://www.youtube.com/watch?v=nXDcMVvtPh4
+- [15 Apr 2021 10:05am](https://mirror.roytang.net/2021/04/ced0a77eea2857ad31bd014fac3ded9a/): Bond film no. 8: Live and Let Die (1973).
+Moore feels a lot more &ldquo;generic white guy&rdquo; than Connery was. Maybe I just need to get used to him. Young Jane Seymour is here! There&rsquo;s a bayou chase scene here that goes on just a bit too long and had superfluous cop characters. All the voodoo stuff felt weirdly out of place. There&rsquo;s a character named Tee Hee! Most ridiculous villain death so far.
 - [15 Apr 2021 4:54am](https://mirror.roytang.net/2021/04/1382557908513161222/): Honestly I feel like people like this should be named and shamed publicly. If we can&rsquo;t catch them, we should at least make it socially unacceptable
 Quoted rodelalbert&#39;s tweet:   I saw an acquaintance on ig who recently posted he got vaccinated and I asked if he was in the group A category. Turns out nasa friends of the VIP category pala sya.  
-- [12 Apr 2021 11:21pm](https://mirror.roytang.net/2021/04/1381749447424495619/): This was great but sometimes I wonder how people know to video something before knowing how it&rsquo;s gonna turn out
-Quoted cheembeam&#39;s tweet:   The way I screamed after watching the end of this video! 😩😩😩😂
-Your browser does not support the video tag.   
-- [12 Apr 2021 7:28am](https://mirror.roytang.net/2021/04/1381509474259673090/): Needed something light to watch in the background, so I watched Airplane! (1980). It&rsquo;s the kind of movie where they just stuff in as many gags as possible, every throwaway line and even stuff happening in the background is a gag.
-- [12 Apr 2021 7:27am](https://mirror.roytang.net/2021/04/1381509157480591362/): People need to learn to stop sending scanned documents sideways. Your scanner software has a setting for the document orientation!
-- [12 Apr 2021 6:07am](https://mirror.roytang.net/2021/04/1381489041082736643/): Pwede ka sumingit sa pila. Pag may nagkwestyon sa yo sagutin mo ng &ldquo;that&rsquo;s an unchristian question&rdquo;
 
 [View all notes](https://mirror.roytang.net/notes)
 

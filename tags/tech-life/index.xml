@@ -7,12 +7,31 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Mon, 12 Apr 2021 04:55:06 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 15 Apr 2021 21:30:52 +0800</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/tech-life/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Google Chrome and FloC
+</title>
+            <link>https://mirror.roytang.net/2021/04/google-chrome-and-floc/</link>
+            <pubDate>Thu, 15 Apr 2021 21:30:52 +0800</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/04/google-chrome-and-floc/</guid>
+            <description>
+            
+            &lt;p&gt;Google Chrome is adding a new feature that lets their browser target you with ads without using third-party browser cookies.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s some more info: &lt;a href=&#34;https://plausible.io/blog/google-floc&#34;&gt;How to fight back against Google FLoC&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But basically it comes down to: if you&amp;rsquo;re a web user who doesn&amp;rsquo;t want your browsing history to be used to target you with advertisments, stop using Google Chrome. There are many alternatives. I&amp;rsquo;m a &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34;&gt;Firefox&lt;/a&gt; boy myself.&lt;/p&gt;
+&lt;p&gt;For site owners, you can add a &lt;code&gt;Permissions-Policy: interest-cohort=()&lt;/code&gt; response header to opt-out of your site being included in the data collected about your Chrome visitors. I&amp;rsquo;ve updated this site to add the header.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>Without Their Permission by Alexis Ohanian
 </title>
@@ -2554,33 +2573,6 @@ dataset on this graph though)
 &lt;p&gt;Three can keep a secret if two of them are dead.&lt;/p&gt;
 &lt;h3 id=&#34;black-mirror&#34;&gt;Black Mirror&lt;/h3&gt;
 &lt;p&gt;There&amp;rsquo;s a Black Mirror episode where the personality of a human who passed away is recreated based on his social media postings and what not. Because of the nature of humans, I don&amp;rsquo;t believe this process can ever be 100% accurate. What you will get is a shadow of the original human, an approximation of who he chose to present himself as. His true self will have been forever lost.&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Devnotes: Migrating Mercurial to Git
-</title>
-            <link>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
-            <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
-            <description>
-            
-            &lt;p&gt;Big news in online repositories this week is that &lt;a href=&#34;https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket&#34;&gt;Bitbucket is sunsetting support for Mercurial&lt;/a&gt;! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git). Now that Gitlab and Github both offer unlimited private repos, there&amp;rsquo;s no reason to stick with Bitbucket either. I had already migrated most of my private Git repos to Gitlab before, but hadn&amp;rsquo;t realized until now that I also had a couple of Mercurial repos there that needed to be migrated as well. I hadn&amp;rsquo;t touched those repos in so long that I didn&amp;rsquo;t even have Mercurial installed locally anymore! (Although I&amp;rsquo;m still using the code locally!)&lt;/p&gt;
-&lt;p&gt;Luckily, converting a mercurial repo to git turned out to be straightforward thanks to a project called &lt;a href=&#34;https://repo.or.cz/fast-export.git&#34;&gt;fast-export&lt;/a&gt;. Modified instructions from a convenient &lt;a href=&#34;https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository#&#34;&gt;stackoverflow post&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hg &lt;span style=&#34;color:#75715e&#34;&gt;# install hg on my mac first&lt;/span&gt;
-cd ~
-hg clone https://user@bitbucket.org/user/reponame
-git clone git://repo.or.cz/fast-export.git
-git init git_repo
-cd git_repo
-~/fast-export/hg-fast-export.sh -r ~/reponame
-git checkout HEAD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The process was fairly quick, and the commit history from the Mercurial side was even retained, I would have been happy just retaining HEAD! After that, I just create a new private repo on Gitlab, set that as the remote, then push to Gitlab as usual.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s a good thing I remembered to check my Bitbucket account, as apparently they will be deleting the old Mercurial repos when time is up!&lt;/p&gt;
 
 
 
