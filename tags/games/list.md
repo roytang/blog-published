@@ -9,6 +9,8 @@
 
 - [](/2020/08/1293051269129486337/)
 
+- [](/2018/08/1030779233100947456/)
+
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
 
 - [](/2014/11/10153371179008912/)

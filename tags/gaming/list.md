@@ -145,6 +145,8 @@
 
 - [](/2018/08/e4mhtuf/)
 
+- [](/2018/08/1030779233100947456/)
+
 - [July 2018: Gaming Update from 2011](/2018/07/july-2018-gaming-update-from-2011/)
 
 - [The Setup 2018 Edition](/2018/03/the-setup-2018-edition/)
@@ -250,10 +252,6 @@
 - [](/2014/08/aymhaaacaadmukl9jxppgq/)
 
 - [](/2014/08/aymhaaacaabnuyofkuzdpq/)
-
-- [](/2014/08/2dt259/)
-
-- [](/2014/08/2dt217/)
 
 - [](/2014/08/2dt1zd/)
 
