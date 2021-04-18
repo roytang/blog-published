@@ -269,6 +269,8 @@
 
 - [Invalid SSL certificate in Apache](/2015/09/32558234/)
 
+- [](/2015/08/10154050238233912/)
+
 - [Java windows app - is it possible to detect if the current device has touchscreen capability?](/2014/06/24115461/)
 
 - [How to convert an offset from GMT to the local timezone?](/2014/06/23992330/)

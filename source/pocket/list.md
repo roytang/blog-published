@@ -1,4 +1,6 @@
 
+- [Misinformation about Permissions Policy and FLoC](/2021/04/misinformation-about-permissions-policy-and-floc/)
+
 - [Everyone Is Still Terrible At Creating Software At Scale](/2021/04/everyone-is-still-terrible-at-creating-software-at-scale/)
 
 - [The U.S. Is One Step Closer to Establishing a Research Program to Block the Sun](/2021/04/the-us-is-one-step-closer-to-establishing-a-research-program-to-block-the-sun/)

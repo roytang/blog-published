@@ -22,3 +22,5 @@
 - [](/2010/06/16035828372/)
 
 - [](/2010/05/15068985285/)
+
+- [Grand Prix Manila Day One Report](/2008/09/grand-prix-manila-day-one-report/)

@@ -18,11 +18,11 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Misinformation about Permissions Policy and FLoC](https://mirror.roytang.net/2021/04/misinformation-about-permissions-policy-and-floc/)
 - [Everyone Is Still Terrible At Creating Software At Scale](https://mirror.roytang.net/2021/04/everyone-is-still-terrible-at-creating-software-at-scale/)
 - [The U.S. Is One Step Closer to Establishing a Research Program to Block the Sun](https://mirror.roytang.net/2021/04/the-us-is-one-step-closer-to-establishing-a-research-program-to-block-the-sun/)
 - [Yes, experts will lie to you sometimes](https://mirror.roytang.net/2021/04/yes-experts-will-lie-to-you-sometimes/)
 - [Ted Chiang: Fears of Technology Are Fears of Capitalism](https://mirror.roytang.net/2021/04/ted-chiang-fears-of-technology-are-fears-of-capitalism/)
-- [A categorized list of all Java and JVM features since JDK 8 to 16](https://mirror.roytang.net/2021/04/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-16/)
 
 [View all links](https://mirror.roytang.net/links)
 
@@ -30,6 +30,8 @@ Latest notes:
     
 
 - [17 Apr 2021 4:43am](https://mirror.roytang.net/2021/04/1383279982311399434/): Saturday afternoon Strixhaven draft(s?)! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgstrixhaven
+Managed to do 2 drafts today. First one with Witherbloom only went 3 wins, but I managed 4 wins with the second one using Quandrix before a matchmaking bug ended my draft prematurely (hopefully we get reimbursed!)
+YT: https://www.youtube.com/watch?v=8aX5MShR2fE
 - [16 Apr 2021 4:14am](https://mirror.roytang.net/2021/04/1382910148306427907/): Friday afternoon Strixhaven sealed! https://www.twitch.tv/twitchyroy #mtg #magicarena #MTGStrixhaven #twitch
 Ended up with a 3 hour stream doing 1 sealed and 1 draft. Didn&rsquo;t finish too well, only went 4-3 in sealed with silverquill and 3-1 in draft with lorehold, but it&rsquo;s a decent enough start. I like the set so far and looking forward to trying out the other houses!
 YT: https://www.youtube.com/watch?v=X5kKeD3qj2Q&amp;feature=youtu.be
