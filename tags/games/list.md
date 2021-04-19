@@ -7,9 +7,13 @@
 
 - [Digital Boardgames Review: Sentinels of the Multiverse](/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 
+- [Late Game Review: Uncharted 4: A Thief&#39;s End](/2020/09/uncharted4/)
+
 - [](/2020/09/1301222471568297984/)
 
 - [](/2020/08/1293051269129486337/)
+
+- [Late Game Review -- Ni No Kuni: Wrath of the White Witch (2013)](/2018/10/late-game-review-ni-no-kuni-wrath-of-the-white-witch-2013/)
 
 - [](/2018/08/1030779233100947456/)
 

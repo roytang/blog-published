@@ -319,6 +319,8 @@
 
 - [DaVinci Code](/2006/05/davinci-code/)
 
+- [Final Fantasy VII -- Advent Children](/2005/09/final-fantasy-vii-advent-children/)
+
 - [The Good, The Bad and the Ugly](/2005/09/the-good-the-bad-and-the-ugly/)
 
 - [Movies: Fantastic Four](/2005/07/movies-fantastic-four/)

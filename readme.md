@@ -7,22 +7,22 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-04-18](https://mirror.roytang.net/2021/04/weeknotes-2021-04-18/)
 - [Google Chrome and FloC](https://mirror.roytang.net/2021/04/google-chrome-and-floc/)
 - [Ted Lasso Season 1 spoiler-free review](https://mirror.roytang.net/2021/04/ted-lasso-season-1-spoiler-free-review/)
 - [Programming is hard, but anyone can be a programmer](https://mirror.roytang.net/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/)
 - [Without Their Permission by Alexis Ohanian](https://mirror.roytang.net/2021/04/without-their-permission-by-alexis-ohanian/)
-- [Weeknotes 2021-04-11](https://mirror.roytang.net/2021/04/weeknotes-2021-04-11/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
 Latest shared links:
     
 
+- [Simple CSS Pattern to Dynamically Abbreviate Text](https://mirror.roytang.net/2021/04/simple-css-pattern-to-dynamically-abbreviate-text/)
 - [Misinformation about Permissions Policy and FLoC](https://mirror.roytang.net/2021/04/misinformation-about-permissions-policy-and-floc/)
 - [Everyone Is Still Terrible At Creating Software At Scale](https://mirror.roytang.net/2021/04/everyone-is-still-terrible-at-creating-software-at-scale/)
 - [The U.S. Is One Step Closer to Establishing a Research Program to Block the Sun](https://mirror.roytang.net/2021/04/the-us-is-one-step-closer-to-establishing-a-research-program-to-block-the-sun/)
 - [Yes, experts will lie to you sometimes](https://mirror.roytang.net/2021/04/yes-experts-will-lie-to-you-sometimes/)
-- [Ted Chiang: Fears of Technology Are Fears of Capitalism](https://mirror.roytang.net/2021/04/ted-chiang-fears-of-technology-are-fears-of-capitalism/)
 
 [View all links](https://mirror.roytang.net/links)
 

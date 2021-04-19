@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-04-18](/2021/04/weeknotes-2021-04-18/)
+
 - [Weeknotes 2021-04-11](/2021/04/weeknotes-2021-04-11/)
 
 - [Got my first Sinovac dose in Quezon City](/2021/04/got-my-first-sinovac-dose-in-quezon-city/)

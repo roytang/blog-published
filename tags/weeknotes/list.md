@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-04-18](/2021/04/weeknotes-2021-04-18/)
+
 - [Weeknotes 2021-04-11](/2021/04/weeknotes-2021-04-11/)
 
 - [Weeknotes 2021-04-04](/2021/04/weeknotes-2021-04-04/)

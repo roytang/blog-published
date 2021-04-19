@@ -1,4 +1,6 @@
 
+- [Simple CSS Pattern to Dynamically Abbreviate Text](/2021/04/simple-css-pattern-to-dynamically-abbreviate-text/)
+
 - [Misinformation about Permissions Policy and FLoC](/2021/04/misinformation-about-permissions-policy-and-floc/)
 
 - [Everyone Is Still Terrible At Creating Software At Scale](/2021/04/everyone-is-still-terrible-at-creating-software-at-scale/)
