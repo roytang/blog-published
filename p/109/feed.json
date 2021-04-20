@@ -11,257 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2017/01/825112391104880640/",
-            "url": "https://mirror.roytang.net/2017/01/825112391104880640/",
-            "path": "/2017/01/825112391104880640/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;A Few Good Men\u0026rdquo; never gets old\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;A Few Good Men\u0026rdquo; never gets old",
-            "date_published": "2017-01-27T22:44:58+00:00",
-            "date_modified": "2021-01-17T09:45:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/825112391104880640/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/825112391104880640/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155317791313912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/aj.sahagun",
-                    "source_file": "comment-20170128-000000-aa60a71a-7355-419a-b918-a6a8cca4c329.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/bpxoln1lmjf/",
-            "url": "https://mirror.roytang.net/2017/01/bpxoln1lmjf/",
-            "path": "/2017/01/bpxoln1lmjf/",
-            "title": "",
-            "content_html": "\u003cp\u003eHelmet #sketchdaily\u003c/p\u003e\n",
-            "summary": "Helmet #sketchdaily",
-            "date_published": "2017-01-27T06:17:25+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/01/BPxOln1lmJf/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPxOln1lmJf/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/156442006285/helmet-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824969605873541120/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155316719363912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/problems-in-large-software-dev-teams/",
-            "url": "https://mirror.roytang.net/2017/01/problems-in-large-software-dev-teams/",
-            "path": "/2017/01/problems-in-large-software-dev-teams/",
-            "title": "Problems in Large Software Dev Teams",
-            "content_html": "\u003cp\u003eHopefully by now most developers and project managers are well aware \u003ca href=\"https://en.wikipedia.org/wiki/The_Mythical_Man-Month\"\u003eof the mythical man-month and Brooks\u0026rsquo; Law:\u003c/a\u003e\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAdding manpower to a late software project makes it later\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe idea is that communications overhead scales up quickly as you add more people to a project. Oftentimes it is counter-intuitively not worthwhile to keep adding more people to try to catch up. Some implications of larger team/project size may not be immediately obvious. Some problems scale up faster as team/project size grows:\u003c/p\u003e\n\u003cp\u003eLower productivity due to increased overhead as mentioned above.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMeetings will tend to involve more people and take longer\u003c/li\u003e\n\u003cli\u003eThere will be a lot more emails\u003c/li\u003e\n\u003cli\u003eProject management effort scales up quickly too\u003c/li\u003e\n\u003cli\u003eMore people need to be allocated to maintaining builds and servers\u003c/li\u003e\n\u003cli\u003eMore time needs to be spent on task prioritization, bug triage, etc\u003c/li\u003e\n\u003cli\u003eMore people asking WTF happened to their code (LOL)\u003c/li\u003e\n\u003cli\u003eAny decision making that requires consensus building takes longer\u003c/li\u003e\n\u003cli\u003eIt becomes more difficult to find the right person to ask things\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSimply due to the number of people, there are more things that could go wrong\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDevelopers breaking the build happens more often\u003c/li\u003e\n\u003cli\u003ePeople going on sick days will happen more often\u003c/li\u003e\n\u003cli\u003eServer performance becomes much more important since any delay or downtime affects more people\u003c/li\u003e\n\u003cli\u003eSchedule delays or others unexpected problems will be more likely\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMaintainability becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTechnical debt becomes more burdensome and poor code is more likely to come back and bite you in the ass in the future\u003c/li\u003e\n\u003cli\u003eThe need for good coding and development standards increases\u003c/li\u003e\n\u003cli\u003eHigher likelihood of code duplication (\u0026ldquo;I didn\u0026rsquo;t know that Developer R already wrote a function that does X!\u0026quot;)\u003c/li\u003e\n\u003cli\u003eMore important for code to be well-decoupled, to reduce the likelihood of one developer breaking a lot of things\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSource control gets harder to use, with so many people making so many changes.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe team needs to develop standards for commit messages and linking commits to bug reports. to make it easier to track and monitor changes\u003c/li\u003e\n\u003cli\u003eSource control commit comments need to be a lot more helpful or descriptive.\u003c/li\u003e\n\u003cli\u003eMore commits happening in the same amount of time, the more you need to be constantly updating from the repository.\u003c/li\u003e\n\u003cli\u003eMerging is more likely to become difficult and complicated (may be made easier by modern source control systems)\u003c/li\u003e\n\u003cli\u003eMore important to use more, smaller files instead of fewer large files (less likely to produce conflicts)\u003c/li\u003e\n\u003cli\u003eNeed better coding/programming standards. Otherwise you have the problem of changes/commits being difficult to track for example if one developer uses different autoformatting standard (his commits will have many small reformats)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHaving consistent rules for naming, UI,  and other things becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe more developers you have, the more likely that they will have different ways of thinking. There are far more likely conflicts among a team of 8-10 developers than between 2-3 developers.\u003c/li\u003e\n\u003cli\u003eIt becomes more important to have a standard or plan for where different kinds of files should be placed. Otherwise you run into problems like different developers using different folders for their css or different package naming conventions, etc.\u003c/li\u003e\n\u003cli\u003eConsistency and standards more difficult to enforce (since there are more devs)\u003c/li\u003e\n\u003cli\u003eNeed to keep things consistent on all levels: databases, code, UI, and so on.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDocumentation becomes more important\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTribal knowledge is often spread out among multiple developers\u003c/li\u003e\n\u003cli\u003eUndocumented things are less likely to be passed on to new developers\u003c/li\u003e\n\u003cli\u003eDevelopers unaware of undocumented things are more likely to have difficulties or to break things\u003c/li\u003e\n\u003cli\u003eBecomes a lot more difficult to absorb new developers into the team in times of urgentness\u003c/li\u003e\n\u003cli\u003eDocumentation more likely to quickly become out of date due to rapid pace of changes\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAnything you want to add?\u003c/p\u003e\n",
-            "summary": "Hopefully by now most developers and project managers are well aware of the mythical man-month and Brooks\u0026rsquo; Law:\n Adding manpower to a late software project makes it later\n The idea is that communications overhead scales up quickly as you add more people to a project. Oftentimes it is counter-intuitively not worthwhile to keep adding more people to try to catch up. Some implications of larger team/project size may not be immediately obvious.",
-            "date_published": "2017-01-26T01:30:20+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/01/problems-in-large-software-dev-teams/index.md"
-            , "tags": ["Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/156378509465/problems-in-large-software-dev-teams"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824431448748920836/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/danielrey.cimafranca",
-                    "source_file": "comment-20170126-000000-483cdeb2-8692-4515-8fe0-910abf032fa9.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/bptlcy6lzco/",
-            "url": "https://mirror.roytang.net/2017/01/bptlcy6lzco/",
-            "path": "/2017/01/bptlcy6lzco/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;Believe me, my heart is exceptionally pure\u0026hellip; pure evil!\u0026rdquo; #sketchdaily #dragonballz\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;Believe me, my heart is exceptionally pure\u0026hellip; pure evil!\u0026rdquo; #sketchdaily #dragonballz",
-            "date_published": "2017-01-25T20:20:13+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/01/BPtlcy6lzco/index.md"
-            , "tags": ["dragonballz","sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPtlcy6lzco/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/156382339820/believe-me-my-heart-is-exceptionally-pure-pure"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824456916567019520/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155310886053912:1"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/156344450610/",
-            "url": "https://mirror.roytang.net/2017/01/156344450610/",
-            "path": "/2017/01/156344450610/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"http://legit-writing-tips.tumblr.com/post/154745760940/fozmeadows-watching-my-toddler-figure-out-how-to\" class=\"tumblr_blog\"\u003elegit-writing-tips\u003c/a\u003e:\u003c/p\u003e\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"http://fozmeadows.tumblr.com/post/154742787111/watching-my-toddler-figure-out-how-to-language-is\" class=\"tumblr_blog\"\u003efozmeadows\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003eWatching my toddler figure out how to language is fascinating. Yesterday we were stumped when he kept insisting there was a “Lego winner” behind his bookshelf - it turned out to be a little Lego trophy cup. Not knowing the word for “trophy”, he’d extrapolated a word for “thing you can win”. And then, just now, he held up his empty milk container and said, “Mummy? It’s not rubbish. It’s allowed to be a bottle.” - meaning, effectively, “I want this. Don’t throw it away.” But to an adult ear, there’s something quite lovely about “it’s allowed to be a bottle,” as if we’re acknowledging that the object is entitled to keep its title even in the absence of the original function.\u003c/p\u003e\u003c/blockquote\u003e\n\u003cp\u003eAnother good post to read for those writing small human characters. \u003c/p\u003e\n\u003c/blockquote\u003e",
-            "summary": "legit-writing-tips:\n fozmeadows:\nWatching my toddler figure out how to language is fascinating. Yesterday we were stumped when he kept insisting there was a “Lego winner” behind his bookshelf - it turned out to be a little Lego trophy cup. Not knowing the word for “trophy”, he’d extrapolated a word for “thing you can win”. And then, just now, he held up his empty milk container and said, “Mummy? It’s not rubbish.",
-            "date_published": "2017-01-25T06:21:49+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/156344450610.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/156344450610/legit-writing-tips-fozmeadows-watching-my"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/156344378580/",
-            "url": "https://mirror.roytang.net/2017/01/156344378580/",
-            "path": "/2017/01/156344378580/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://wilwheaton.tumblr.com/post/156321126119/imathers-maxofs2d-sorry-about-this-being-in\" class=\"tumblr_blog\"\u003ewilwheaton\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003e\u003ca href=\"http://imathers.ca/post/156314382765/maxofs2d-sorry-about-this-being-in-twitter-format\" class=\"tumblr_blog\"\u003eimathers\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"http://tumblr.maxofs2d.net/post/156265354052\" class=\"tumblr_blog\"\u003emaxofs2d\u003c/a\u003e:\u003c/p\u003e\n\u003cblockquote\u003e\u003cp\u003eSorry about this being in Twitter format but it was too good not to share. (\u003ca href=\"https://twitter.com/meakoopa/status/823319604386791424\"\u003ex\u003c/a\u003e)\u003c/p\u003e\u003c/blockquote\u003e\n\u003cp\u003eBoy, I remember when all of this seemed* like a mostly abstract consideration and not something we’re going to have to take to the streets over and over again to combat.\u003c/p\u003e\n\u003cp\u003e*(rightly or wrongly [probably the latter], and I am fully aware this also speaks to how privileged my existence is)\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eGetting real sick of hearing from people who are fretting ABOUT PUNCHING MOTHERFUCKING NAZIS.\u003cbr/\u003e\u003cbr/\u003eRemember, when in doubt: Punch. More. Nazis.\u003c/p\u003e\u003c/blockquote\u003e",
-            "summary": "wilwheaton:\nimathers:\n maxofs2d:\nSorry about this being in Twitter format but it was too good not to share. (x)\n Boy, I remember when all of this seemed* like a mostly abstract consideration and not something we’re going to have to take to the streets over and over again to combat.\n*(rightly or wrongly [probably the latter], and I am fully aware this also speaks to how privileged my existence is)",
-            "date_published": "2017-01-25T06:19:32+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/156344378580/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/156344378580/wilwheaton-imathers-maxofs2d-sorry-about"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/824105628897394688/",
-            "url": "https://mirror.roytang.net/2017/01/824105628897394688/",
-            "path": "/2017/01/824105628897394688/",
-            "title": "",
-            "content_html": "\u003cp\u003e2009: Maybe we\u0026rsquo;ll pull off universal healthcare\u003c/p\u003e\n\u003cp\u003e2017: I hope the National Park Service employee who tweeted an objective fact is okay\u003c/p\u003e\n",
-            "summary": "2009: Maybe we\u0026rsquo;ll pull off universal healthcare\n2017: I hope the National Park Service employee who tweeted an objective fact is okay",
-            "date_published": "2017-01-25T04:04:27+00:00",
-            "date_modified": "2020-01-25T00:27:23+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/824105628897394688.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/824105628897394688/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/bpr1fnzl0gx/",
-            "url": "https://mirror.roytang.net/2017/01/bpr1fnzl0gx/",
-            "path": "/2017/01/bpr1fnzl0gx/",
-            "title": "",
-            "content_html": "\u003cp\u003eFU!\u003c/p\u003e\n",
-            "summary": "FU!",
-            "date_published": "2017-01-25T03:58:20+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/01/BPr1FNzl0Gx/index.md"
-            
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPr1FNzl0Gx/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/824209828906233856/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155310886053912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/824083999924441089/",
-            "url": "https://mirror.roytang.net/2017/01/824083999924441089/",
-            "path": "/2017/01/824083999924441089/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe point of modern propaganda isn\u0026rsquo;t only to misinform or push an agenda. It is to exhaust your critical thinking, to annihilate truth.\u003c/p\u003e\n",
-            "summary": "The point of modern propaganda isn\u0026rsquo;t only to misinform or push an agenda. It is to exhaust your critical thinking, to annihilate truth.",
-            "date_published": "2017-01-25T02:38:30+00:00",
-            "date_modified": "2020-01-25T00:27:23+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/824083999924441089.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/824083999924441089/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/824034981097811969/",
-            "url": "https://mirror.roytang.net/2017/01/824034981097811969/",
-            "path": "/2017/01/824034981097811969/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/passantino/\"\u003e@passantino\u003c/a\u003e their facts were probably too mainstream\u003c/p\u003e\n",
-            "summary": "@passantino their facts were probably too mainstream",
-            "date_published": "2017-01-24T23:23:43+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/824034981097811969.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/824034981097811969/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/10155307112053912-0/",
-            "url": "https://mirror.roytang.net/2017/01/10155307112053912-0/",
-            "path": "/2017/01/10155307112053912-0/",
-            "title": "",
-            "content_html": "\u003cp\u003ePlatinum next! #PS4share\u003c/p\u003e\n",
-            "summary": "Platinum next! #PS4share",
-            "date_published": "2017-01-24T20:13:00+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/01/10155307112053912-0/index.md"
-            , "tags": ["ps4","ps4share"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155307112053912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/824107040280674304/",
-            "url": "https://mirror.roytang.net/2017/01/824107040280674304/",
-            "path": "/2017/01/824107040280674304/",
-            "title": "",
-            "content_html": "\u003cp\u003eAnd here I thought the PNoy admin was the height of insensitivity\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ABSCBNNews/status/823865434994864128'\u003eABSCBNNews\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Cayetano: SAF 44 deaths not in vain because they led to Duterte victory \u003ca href=\"http://bit.ly/2knwoLw\"\u003ehttp://bit.ly/2knwoLw\u003c/a\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "And here I thought the PNoy admin was the height of insensitivity\nQuoted ABSCBNNews\u0026#39;s tweet:   Cayetano: SAF 44 deaths not in vain because they led to Duterte victory http://bit.ly/2knwoLw  ",
-            "date_published": "2017-01-25T04:10:04+08:00",
-            "date_modified": "2021-01-05T20:44:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/01/824107040280674304/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/824107040280674304/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155310061288912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/lissramgurl01",
-                    "source_file": "comment-20170125-000000-2c4b8709-d93b-4ea4-bc93-0e48c6ee7c25.json"
-                }, { 
-                    "url": "https://www.facebook.com/joyapreyes",
-                    "source_file": "comment-20170125-000001-93ba7421-8dc7-40b6-9f22-7bf5dd8d323b.json"
-                }, { 
-                    "url": "https://www.facebook.com/christine.rabe",
-                    "source_file": "comment-20170125-000002-a1404ecf-852e-41ab-bc4d-95e03071a3cc.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170125-000003-e225ab68-fca4-48bd-aae8-6bab40a3c20e.json"
-                }, { 
-                    "url": "https://www.facebook.com/romancoat",
-                    "source_file": "comment-20170125-000004-62bf28d9-e8dc-4a50-b7c5-881487b4a09e.json"
-                }, { 
-                    "url": "https://www.facebook.com/ritchie.tiongson",
-                    "source_file": "comment-20170125-000005-e650e00d-7016-4805-80c1-2f8387c2012b.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/01/bppogcjlv9y/",
-            "url": "https://mirror.roytang.net/2017/01/bppogcjlv9y/",
-            "path": "/2017/01/bppogcjlv9y/",
-            "title": "",
-            "content_html": "\u003cp\u003eBroken sword #sketchdaily\u003c/p\u003e\n",
-            "summary": "Broken sword #sketchdaily",
-            "date_published": "2017-01-24T07:26:22+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/01/BPpoGCjlv9y/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPpoGCjlv9y/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/823899792757682176/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2017/01/notes-on-decision-making/",
             "url": "https://mirror.roytang.net/2017/01/notes-on-decision-making/",
             "path": "/2017/01/notes-on-decision-making/",
@@ -993,6 +742,251 @@
             "source_path": "photos/2017/01/BPXfZ2glFG8/index.md"
             , "tags": ["sketchdaily"]
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPXfZ2glFG8/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155991136045/desperate-shot-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/821347399222358017/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155284945588912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/821202290799296512/",
+            "url": "https://mirror.roytang.net/2017/01/821202290799296512/",
+            "path": "/2017/01/821202290799296512/",
+            "title": "",
+            "content_html": "\u003cp\u003eIf you feel like you\u0026rsquo;re in the wrong universe, remember all this weird crap only started after they turned on the Large Hadron Collider.\u003c/p\u003e\n",
+            "summary": "If you feel like you\u0026rsquo;re in the wrong universe, remember all this weird crap only started after they turned on the Large Hadron Collider.",
+            "date_published": "2017-01-17T03:47:37+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/821202290799296512.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/821202290799296512/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/online-discussions-opposing-views-and-street-fighter/",
+            "url": "https://mirror.roytang.net/2017/01/online-discussions-opposing-views-and-street-fighter/",
+            "path": "/2017/01/online-discussions-opposing-views-and-street-fighter/",
+            "title": "Online Discussions, Opposing Views, and Street Fighter",
+            "content_html": "\u003cblockquote\u003e\n\u003cp\u003e\u0026ldquo;If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.\u0026rdquo;\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e― Sun Tzu, The Art of War\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eI was reading a forum thread recently about learning competitive Street Fighter. The poster was using a particular character (his \u0026ldquo;main\u0026rdquo;) and asking how he could learn to counter the attack strings of other characters. The answers from more experienced players were pretty much what I would have expected: you had to dedicate specific time and effort to each matchup you wanted to study. That meant going into training mode, looking at the opposing character\u0026rsquo;s attack strings and seeing where he could interrupt them or the proper way to answer them. It meant a lot of hard work too, since fighting games typically have a lot of characters. So reaching the top tiers meant understanding each opposing character in and out, knowing their strengths and weaknesses and so on.\u003c/p\u003e\n\u003cp\u003eI think it not only applies to competition, but also to any scenario where there is an opposing party or point of view. In order to make any progress or improvement, it is necessary to understand where the other side is coming from and study their motivations. Sadly, in online debates it often turns into the equivalent of a shouting match where everyone just screams out their POV hoping to brute force their opponent into some kind of \u0026ldquo;submission\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eBack to Street Fighter: When picking up a new fighting game, I typically try to sample all the available characters until I find one whose fighting style I like and am comfortable playing as \u0026ldquo;main\u0026rdquo; (hint: it\u0026rsquo;s often Ryu lol).\u003c/p\u003e\n\u003cp\u003eIn the same way, in any online discussion it\u0026rsquo;s important to expose yourself to a variety of opinions, and not limit your discussions only to people with similar views. Political discussion online can get toxic so it becomes tempting to block out those views that you disagree with, but this tends to create an echo chamber effect. It\u0026rsquo;s a good idea to keep a healthy amount of opposing views on your feeds. Although where you draw the line is of course your own decision; Personally I try to avoid blocking any friends and have not yet had occasion to do so, although I do block any sites that tend to promote misinformation or stuff like racism.\u003c/p\u003e\n\u003cp\u003eUnlike competition, the goal of an online discussion (especially for sensitive topics like politics) isn\u0026rsquo;t really winning. Discussion should lead to some sort of progress or learning, or in the worst case, \u0026ldquo;agreeing to disagree\u0026rdquo;. But regardless of the outcome, understanding opposing points of view should give you valuable insights into your own views, and maybe even convince you to reconsider them.\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.\u0026rdquo;\n  ― Sun Tzu, The Art of War\n I was reading a forum thread recently about learning competitive Street Fighter.",
+            "date_published": "2017-01-17T01:30:54+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2017/01/online-discussions-opposing-views-and-street-fighter/index.md"
+            , "tags": ["Opinions"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/155970854510/online-discussions-opposing-views-and-street"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/821169667309977600/"}]
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-20170117124558-wp-MrValdez.json"
+                }, { 
+                    "url": "https://roytang.net/",
+                    "source_file": "comment-20170117141425-wp-roy.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/5oagti/",
+            "url": "https://mirror.roytang.net/2017/01/5oagti/",
+            "path": "/2017/01/5oagti/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rgames-what-was-the-best-game-trailer-of-all-timehttpsredditcomrgamescomments5oagtiwhat_was_the_best_game_trailer_of_all_time\"\u003ePosted on r/Games: \u003ca href=\"https://reddit.com/r/Games/comments/5oagti/what_was_the_best_game_trailer_of_all_time/\"\u003eWhat was the best game trailer of all time?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e[removed]\u003c/p\u003e\n",
+            "summary": "Posted on r/Games: What was the best game trailer of all time? [removed]",
+            "date_published": "2017-01-16T19:59:02+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/5oagti/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Games/comments/5oagti/what_was_the_best_game_trailer_of_all_time/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/820978500685348866/",
+            "url": "https://mirror.roytang.net/2017/01/820978500685348866/",
+            "path": "/2017/01/820978500685348866/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e FrAgile\u003c/p\u003e\n",
+            "summary": "@rocketkeis FrAgile",
+            "date_published": "2017-01-16T12:58:22+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/820978500685348866.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/820978500685348866/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/10155281238988912/",
+            "url": "https://mirror.roytang.net/2017/01/10155281238988912/",
+            "path": "/2017/01/10155281238988912/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhy are facebook math problems always either MDAS related or thinly veiled systems of linear equations?\u003c/p\u003e\n",
+            "summary": "Why are facebook math problems always either MDAS related or thinly veiled systems of linear equations?",
+            "date_published": "2017-01-16T09:15:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/10155281238988912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155281238988912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20170116-000000-528d5240-c372-4297-95e8-d759f0a2d547.json"
+                }, { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20170116-000001-71048c4e-a1f3-4c81-a3c2-c3b602eeeabc.json"
+                }, { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20170116-000002-0973f015-63dc-40a6-a65a-59a3af0fe15d.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/bpvbqyglu_3/",
+            "url": "https://mirror.roytang.net/2017/01/bpvbqyglu_3/",
+            "path": "/2017/01/bpvbqyglu_3/",
+            "title": "",
+            "content_html": "\u003cp\u003eCloud computing #sketchdaily\u003c/p\u003e\n",
+            "summary": "Cloud computing #sketchdaily",
+            "date_published": "2017-01-16T07:25:47+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPVBqyglU_3/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPVBqyglU_3/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155945256225/cloud-computing-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/821000539165102080/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155280891923912:2"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/bpuz-_kl0uk/",
+            "url": "https://mirror.roytang.net/2017/01/bpuz-_kl0uk/",
+            "path": "/2017/01/bpuz-_kl0uk/",
+            "title": "",
+            "content_html": "\u003cp\u003eCloud racing #sketchdaily\u003c/p\u003e\n",
+            "summary": "Cloud racing #sketchdaily",
+            "date_published": "2017-01-16T05:26:13+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPUz-_Kl0uK/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPUz-_Kl0uK/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155942329315/cloud-racing-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/820970440768258048/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155280891923912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/820802860350738432/",
+            "url": "https://mirror.roytang.net/2017/01/820802860350738432/",
+            "path": "/2017/01/820802860350738432/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/tauriqmoosa/\"\u003e@tauriqmoosa\u003c/a\u003e: Since its MLK Weekend, remember what MLK said about white moderates who prioritize civility \u0026amp; amicability over justice htt…\u003c/p\u003e\n",
+            "summary": "RT @tauriqmoosa: Since its MLK Weekend, remember what MLK said about white moderates who prioritize civility \u0026amp; amicability over justice htt…",
+            "date_published": "2017-01-16T01:20:26+00:00",
+            "date_modified": "2020-01-23T05:24:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/820802860350738432.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/820802860350738432/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/what-does-mean-in-programmi/",
+            "url": "https://mirror.roytang.net/2017/01/what-does-mean-in-programmi/",
+            "path": "/2017/01/what-does-mean-in-programmi/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/What-does-mean-in-programming-2/answer/Roy-Tang\"\u003eWhat does // mean in programming?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eIn many programming languages (specifically C++ and all those who derive their syntax from C++), lines starting with // are single-line comments. Such lines are ignored by the compiler and have no effect.\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n What does // mean in programming?\n In many programming languages (specifically C++ and all those who derive their syntax from C++), lines starting with // are single-line comments. Such lines are ignored by the compiler and have no effect.",
+            "date_published": "2017-01-16T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/what-does-mean-in-programmi.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/What-does-mean-in-programming-2/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/820671533005742081/",
+            "url": "https://mirror.roytang.net/2017/01/820671533005742081/",
+            "path": "/2017/01/820671533005742081/",
+            "title": "",
+            "content_html": "\u003cp\u003eThere should be a separate circle of hell for uploaders who don\u0026rsquo;t make the video available in my country.\u003c/p\u003e\n",
+            "summary": "There should be a separate circle of hell for uploaders who don\u0026rsquo;t make the video available in my country.",
+            "date_published": "2017-01-15T16:38:35+00:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/820671533005742081/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/820671533005742081/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155280087508912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/phwraengck",
+                    "source_file": "comment-20170116-000000-b0ebf98f-4b83-418e-b2cb-1afd2c5a4aa4.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/bptu4jpfs__/",
+            "url": "https://mirror.roytang.net/2017/01/bptu4jpfs__/",
+            "path": "/2017/01/bptu4jpfs__/",
+            "title": "",
+            "content_html": "\u003cp\u003eKraken attack #sketchdaily\u003c/p\u003e\n",
+            "summary": "Kraken attack #sketchdaily",
+            "date_published": "2017-01-15T15:35:13+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/BPTU4jPFs__/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BPTU4jPFs__/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/155915563705/kraken-attack-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/820761325085356033/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155280891923912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/10155277305918912/",
+            "url": "https://mirror.roytang.net/2017/01/10155277305918912/",
+            "path": "/2017/01/10155277305918912/",
+            "title": "",
+            "content_html": "\u003cp\u003eHuh, a lot of this sounds very familiar.\u003c/p\u003e\n\u003cp\u003eSource: \u003ca href=\"https://np.reddit.com/r/AdviceAnimals/comments/5ntjh2/all_this_fake_news/dceozzo/\"\u003ehttps://np.reddit.com/r/AdviceAnimals/comments/5ntjh2/all_this_fake_news/dceozzo/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Huh, a lot of this sounds very familiar.\nSource: https://np.reddit.com/r/AdviceAnimals/comments/5ntjh2/all_this_fake_news/dceozzo/",
+            "date_published": "2017-01-15T01:45:00+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/01/10155277305918912/index.md"
+            , "tags": ["timeline-photos"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155277307543912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/01/dcft2p6/",
+            "url": "https://mirror.roytang.net/2017/01/dcft2p6/",
+            "path": "/2017/01/dcft2p6/",
+            "title": "",
+            "content_html": "\u003cp\u003eShoe: \u003ca href=\"http://imgur.com/RfPHs9L\"\u003ehttp://imgur.com/RfPHs9L\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Shoe: http://imgur.com/RfPHs9L",
+            "date_published": "2017-01-15T01:24:32+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/01/dcft2p6/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/5nwlay/january_14th_self_portrait/dcft2p6/"}]
             
             
             }
