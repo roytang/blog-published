@@ -1,4 +1,6 @@
 
+- [Blogs of Yesteryear Part 2](/2021/04/blogs-of-yesteryear-part-2/)
+
 - [Blogs of Yesteryear](/2021/04/blogs-of-yesteryear/)
 
 - [Sincere Blogging](/2021/02/sincere-blogging/)

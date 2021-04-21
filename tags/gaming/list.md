@@ -153,6 +153,8 @@
 
 - [The Setup 2018 Edition](/2018/03/the-setup-2018-edition/)
 
+- [](/2017/10/924546017281785859/)
+
 - [Hardware Review: Steam Link](/2017/07/hardware-review-steam-link/)
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
@@ -440,6 +442,8 @@
 - [](/2012/11/138o5q/)
 
 - [](/2012/11/c71ra1b/)
+
+- [](/2012/10/258215576680407041/)
 
 - [](/2012/09/249794730370686976/)
 

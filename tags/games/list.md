@@ -7,6 +7,10 @@
 
 - [Digital Boardgames Review: Sentinels of the Multiverse](/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 
+- [](/2020/10/1322214646221205504/)
+
+- [Game Review: Super Mario 3d All-stars](/2020/10/mario-3d-all-stars/)
+
 - [Late Game Review: Uncharted 4: A Thief&#39;s End](/2020/09/uncharted4/)
 
 - [](/2020/09/1301222471568297984/)
@@ -17,6 +21,8 @@
 
 - [](/2018/08/1030779233100947456/)
 
+- [](/2017/10/924546017281785859/)
+
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
 
 - [](/2015/10/8laqfkmoj3/)
@@ -24,6 +30,8 @@
 - [](/2014/11/10153371179008912/)
 
 - [](/2013/07/353690869481738241/)
+
+- [](/2012/10/258215576680407041/)
 
 - [](/2012/09/249794730370686976/)
 
