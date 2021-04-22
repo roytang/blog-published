@@ -18,29 +18,27 @@ Latest blog posts:
 Latest shared links:
     
 
+- [No Wrong Notes](https://mirror.roytang.net/2021/04/no-wrong-notes/)
 - [Make Everything Important](https://mirror.roytang.net/2021/04/make-everything-important/)
 - [The Conversation Has Never Been Wider](https://mirror.roytang.net/2021/04/the-conversation-has-never-been-wider/)
 - [Q: Why Blog? A: Blogs Are Great.](https://mirror.roytang.net/2021/04/q-why-blog-a-blogs-are-great/)
 - [How Fit Can You Get From Just Walking?](https://mirror.roytang.net/2021/04/how-fit-can-you-get-from-just-walking/)
-- [Simple CSS Pattern to Dynamically Abbreviate Text](https://mirror.roytang.net/2021/04/simple-css-pattern-to-dynamically-abbreviate-text/)
 
 [View all links](https://mirror.roytang.net/links)
 
 Latest notes:
     
 
+- [21 Apr 2021 11:57pm](https://mirror.roytang.net/2021/04/mvsss1/): Posted on r/GlobalTalk: [Question] What are the police like in your country? If you&rsquo;ve been following recent events in the US (disclaimer: I&rsquo;m not an American), police brutality is a big, controversial topic over there, leading to protests and calls to defund the police and such, popularizing the phrase ACAB (meaning &ldquo;all cops are bastards&rdquo;)
+In my own country (the Philippines), cops don&rsquo;t have a very good reputation either; they are often seen as corrupt extortionists and some may be complicit in extrajudicial killings in Duterte&rsquo;s drug war; recently they have done some bad moves such as attempting to interfere with community pantries that popped up to help the poor during the pandemic.
+- [21 Apr 2021 11:01pm](https://mirror.roytang.net/2021/04/1385005706646999044/): @wrongwaygoback I was wondering why I got that reply! IDK who this person is, thanks for the info. Reported and blocked.
+- [21 Apr 2021 2:26pm](https://mirror.roytang.net/2021/04/475d3f081e042d0a2b9beee29e4aa643/): Me: Been using Python since 2008
+Also me: Need to lookup how to use the filter function every time
+(Note for future me: list = filter(func, list)
+- [21 Apr 2021 9:28am](https://mirror.roytang.net/2021/04/1384801237372219392/): Wednesday afternoon Strixhaven draft(s?)! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #strixhaven
+Had a great draft! I went Quandrix+Prismari and managed to go 7-2. Very explosive. One of those losses was actually due to the server giving me a defeat without even going to a match, so I might even get reimbursement!
+YT: https://www.youtube.com/watch?v=gZh3aDWWcdQ
 - [20 Apr 2021 10:56am](https://mirror.roytang.net/2021/04/b178a1efcfc005930f062c7be447d7c1/): Today I decided to watch Rocky (1976) for some reason. The quintessential sports film, but I&rsquo;ve never seen it before. Stallone looks only a bit younger than I remember him from the 90s. Apollo Creed is that dude from the Mandalorian! Surprised at the ending.
-- [20 Apr 2021 8:58am](https://mirror.roytang.net/2021/04/1384431157677285378/): Thursday afternoon Strixhaven draft(s?)! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgstrixhaven
-Went Silverquill, only finished 4-3, mostly due to a really bad misplay on my part in the last game. Decent outcome, but could have been better. I did manage to rare-draft a lot though lol
-YT: https://www.youtube.com/watch?v=18weBrcCtyI
-- [20 Apr 2021 8:03am](https://mirror.roytang.net/2021/04/1384417483470163970/): When you are full of hate and bitterness every act of love and every move of a good-hearted person will look like virtue signaling
-- [19 Apr 2021 10:57pm](https://mirror.roytang.net/2021/04/1384280033351462912/): #MaginhawaCommunityPantry&rsquo;s operations will pause today, 20 Apr, for the safety of Patreng+volunteers. They&rsquo;ve been #RedTagged &amp; subjected to scare tactics by the police🤬
-Help, please, @QCGov &amp; Mayor Joy!
-Read full statement+zoom presscon invite here: https://www.facebook.com/PatrengNon/posts/2883888128535551
-- [19 Apr 2021 2:48pm](https://mirror.roytang.net/2021/04/1384157021847494662/): Wait so he&rsquo;s estranged from his dad? This is basically the same plot as Kim&rsquo;s Convenience
-Quoted MarvelStudios&#39;s tweet:   Happy Birthday @SimuLiu! We hope you enjoy your birthday present.
-Watch the brand-new teaser trailer for Marvel Studios’ #ShangChi and the Legend of the Ten Rings and experience it only in theaters September 3.
-Your browser does not support the video tag.   
 
 [View all notes](https://mirror.roytang.net/notes)
 

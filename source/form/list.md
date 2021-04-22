@@ -1,4 +1,6 @@
 
+- [Python&#39;s filter function](/2021/04/475d3f081e042d0a2b9beee29e4aa643/)
+
 - [Rocky (1976)](/2021/04/b178a1efcfc005930f062c7be447d7c1/)
 
 - [](/2021/04/ced0a77eea2857ad31bd014fac3ded9a/)

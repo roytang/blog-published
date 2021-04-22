@@ -1,4 +1,6 @@
 
+- [Python&#39;s filter function](/2021/04/475d3f081e042d0a2b9beee29e4aa643/)
+
 - [Programming is hard, but anyone can be a programmer](/2021/04/programming-is-hard-but-anyone-can-be-a-programmer/)
 
 - [HTML Tags Memory Test](/2020/12/html-tags-memory-test/)

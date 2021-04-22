@@ -11,6 +11,71 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/06/876865099708760064/",
+            "url": "https://mirror.roytang.net/2017/06/876865099708760064/",
+            "path": "/2017/06/876865099708760064/",
+            "title": "",
+            "content_html": "\u003cp\u003eHey, I can use the new reddit profile now! \u003ca href=\"https://www.reddit.com/user/hungryroy\"\u003ehttps://www.reddit.com/user/hungryroy\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Hey, I can use the new reddit profile now! https://www.reddit.com/user/hungryroy",
+            "date_published": "2017-06-19T18:11:45+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/06/876865099708760064.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/876865099708760064/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/06/876861645837877248/",
+            "url": "https://mirror.roytang.net/2017/06/876861645837877248/",
+            "path": "/2017/06/876861645837877248/",
+            "title": "",
+            "content_html": "\u003cp\u003etired but cannot sleep / glowing screen calls out to me / soon the dawn draws near #haiku \u003ca href=\"http://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near\"\u003ehttp://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "tired but cannot sleep / glowing screen calls out to me / soon the dawn draws near #haiku http://writeahaiku.com/#tired%20but%20cannot%20sleep%20/%20glowing%20screen%20calls%20out%20to%20me%20/%20soon%20the%20dawn%20draws%20near",
+            "date_published": "2017-06-19T17:58:02+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/06/876861645837877248.md"
+            , "tags": ["haiku"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/876861645837877248/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/06/44621849/",
+            "url": "https://mirror.roytang.net/2017/06/44621849/",
+            "path": "/2017/06/44621849/",
+            "title": "MarkLogic node.js api - group by sum",
+            "content_html": "\u003cp\u003eSomething similar to my question here: \u003ca href=\"https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\"\u003ehttps://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI have documents in Marklogic with fields \u003cem\u003ename\u003c/em\u003e and \u003cem\u003eamount\u003c/em\u003e. I want to get the total amount for each name. Basically in SQL it would be\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eselect name, sum(amount) from table group by name\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI have \u003cstrong\u003erange indexes\u003c/strong\u003e for both \u003cem\u003ename\u003c/em\u003e and \u003cem\u003eamount\u003c/em\u003e.\nFor getting sum aggregates, the documentation suggests something like \u003cstrong\u003evaluesBuilder.fromIndexes(\u0026lsquo;amount\u0026rsquo;).aggregates(\u0026lsquo;sum\u0026rsquo;)\u003c/strong\u003e, but this only gets the sum for all records, instead of per name like I want.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
+            "summary": "Something similar to my question here: https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count\nI have documents in Marklogic with fields name and amount. I want to get the total amount for each name. Basically in SQL it would be\nselect name, sum(amount) from table group by name  I have range indexes for both name and amount. For getting sum aggregates, the documentation suggests something like valuesBuilder.fromIndexes(\u0026lsquo;amount\u0026rsquo;).aggregates(\u0026lsquo;sum\u0026rsquo;), but this only gets the sum for all records, instead of per name like I want.",
+            "date_published": "2017-06-19T03:27:09+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/06/44621849/index.md"
+            , "tags": ["node.js","marklogic","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170619T095946-76240521.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170619T213653-44640360.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170620T082102-44647599.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum",
+                    "source_file": "comment-20170809T172048-45596982.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/06/10155766048823912/",
             "url": "https://mirror.roytang.net/2017/06/10155766048823912/",
             "path": "/2017/06/10155766048823912/",
@@ -1032,136 +1097,6 @@
                 }, { 
                     "url": "https://www.facebook.com/jonathanryan.ang",
                     "source_file": "comment-20170607-001141-5189c34f-257b-4dc1-89cf-f866480b28df.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/872102121973338112/",
-            "url": "https://mirror.roytang.net/2017/06/872102121973338112/",
-            "path": "/2017/06/872102121973338112/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/RyanBiddulph/\"\u003e@RyanBiddulph\u003c/a\u003e thanks!\u003c/p\u003e\n",
-            "summary": "@RyanBiddulph thanks!",
-            "date_published": "2017-06-06T14:45:23+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/872102121973338112.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/872102121973338112/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/871904756972756992/",
-            "url": "https://mirror.roytang.net/2017/06/871904756972756992/",
-            "path": "/2017/06/871904756972756992/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: Top 5 FAVORITE movies based on comic books (by request)\u003c/p\u003e\n",
-            "summary": "Survey: Top 5 FAVORITE movies based on comic books (by request)",
-            "date_published": "2017-06-06T01:41:07+00:00",
-            "date_modified": "2021-01-17T09:45:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/871904756972756992/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/871904756972756992/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155697816238912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/profile.php",
-                    "source_file": "comment-20170606-000000-b828ef53-1803-465c-b4c4-7f4ab277bff1.json"
-                }, { 
-                    "url": "https://www.facebook.com/tngmrc",
-                    "source_file": "comment-20170606-000001-da35537b-b29a-476f-852e-4a9026941f1a.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170606-000002-44ef3763-3dea-4054-b81b-075819b6f576.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000003-e3e671c8-70f1-4459-a44e-abce8373c2b6.json"
-                }, { 
-                    "url": "https://www.facebook.com/mark.paulino",
-                    "source_file": "comment-20170606-000004-a936bf2b-1005-4902-ad3b-11eaf8d9cef0.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000005-2d7de929-5f99-4b29-a6f9-f83c112acb72.json"
-                }, { 
-                    "url": "https://www.facebook.com/briantang25",
-                    "source_file": "comment-20170606-000006-5be6f840-8918-4e63-90e1-b85c18651413.json"
-                }, { 
-                    "url": "https://www.facebook.com/luis.formilleza",
-                    "source_file": "comment-20170607-000007-cc11f553-46d9-4ba5-a2e6-0199eadc9b3a.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/06/10155687817953912/",
-            "url": "https://mirror.roytang.net/2017/06/10155687817953912/",
-            "path": "/2017/06/10155687817953912/",
-            "title": "",
-            "content_html": "\u003cp\u003eWonder Woman spoiler-free review:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFirst act was best, second act was okay, third act/resolution a bit weak (and really kind of super obvious/predictable)\u003c/li\u003e\n\u003cli\u003eThe parallels with the first Captain American movie, especially in the 3rd act, are uncanny\u003c/li\u003e\n\u003cli\u003egreat battle/stunt choreography, especially in the first act\u003c/li\u003e\n\u003cli\u003eGal Gadot, Chris Pine, Robin Wright gave excellent performances\u003c/li\u003e\n\u003cli\u003eDefinitely better than Man of Steel/Dawn of Justice\u003c/li\u003e\n\u003cli\u003eNot better than TDK/Logan. Come on people!\u003c/li\u003e\n\u003cli\u003eMagugustuhan ba ni Mama: Possibly!\u003c/li\u003e\n\u003cli\u003ePost-credits scenes: None\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "Wonder Woman spoiler-free review:\n First act was best, second act was okay, third act/resolution a bit weak (and really kind of super obvious/predictable) The parallels with the first Captain American movie, especially in the 3rd act, are uncanny great battle/stunt choreography, especially in the first act Gal Gadot, Chris Pine, Robin Wright gave excellent performances Definitely better than Man of Steel/Dawn of Justice Not better than TDK/Logan. Come on people!",
-            "date_published": "2017-06-06T00:42:00+00:00",
-            "date_modified": "2021-04-02T10:05:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/06/10155687817953912/index.md"
-            , "tags": ["movies","spoiler-free-review"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155687817953912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000000-549c0c0c-0960-4a6e-a7e6-41c5a37d75d1.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170606-000001-1073b32a-5689-424e-a81d-b659a6a70cc2.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000002-5fb16816-5481-4fea-a16d-c9328e746a6f.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000003-23cb2c77-a5b7-417c-98af-a68776db2132.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000320-19ce6323-9cf1-4b58-8158-08ddbc04a2d9.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000321-4d8b4172-33c7-47c3-9c43-4630ee46ff79.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000322-d5af7d04-9619-4bbe-8501-5b74ce8ab27a.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170606-000323-092808b8-81bf-4f5c-b24a-813bdfa904d6.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170606-000324-c2686aea-9da0-4f7a-8106-aec26a645fc1.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000325-e31e6735-e4ef-4398-a49b-0bffbdb238bf.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000326-6d27b273-a921-4b53-b6c5-129292a7447e.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000327-4042b25a-aa2f-447c-b7fe-dea61ad2d357.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000328-4b914b23-2a9f-4229-ad2d-8559aef796a8.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20170606-000329-f2734acf-d22f-41f7-834a-4f8240a86be9.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20170606-000330-2e084a11-3dea-47ac-b754-6d071ecddaca.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20170606-000500-245cde6b-0c6c-42b4-bd14-f3c349279f65.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20170606-000501-efac8c42-2604-45fa-ad7a-d85450e326f9.json"
                 }
             ]
             }

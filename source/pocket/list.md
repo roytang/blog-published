@@ -1,4 +1,6 @@
 
+- [No Wrong Notes](/2021/04/no-wrong-notes/)
+
 - [Make Everything Important](/2021/04/make-everything-important/)
 
 - [The Conversation Has Never Been Wider](/2021/04/the-conversation-has-never-been-wider/)

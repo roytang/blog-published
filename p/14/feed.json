@@ -11,6 +11,129 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/09/g3yknfu/",
+            "url": "https://mirror.roytang.net/2020/09/g3yknfu/",
+            "path": "/2020/09/g3yknfu/",
+            "title": "",
+            "content_html": "\u003cp\u003eRight! My bad\u003c/p\u003e\n",
+            "summary": "Right! My bad",
+            "date_published": "2020-09-04T08:07:51+00:00",
+            "date_modified": "2020-09-04T09:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/g3yknfu/index.md"
+            , "tags": ["magicTCG"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/im6w16/what_did_all_the_knights_angels_and_heroes_of/g3yknfu/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/g3ye4n4/",
+            "url": "https://mirror.roytang.net/2020/09/g3ye4n4/",
+            "path": "/2020/09/g3ye4n4/",
+            "title": "",
+            "content_html": "\u003cp\u003eAs I recall, the artwork of Finest Hour portrayed a knight fighting some kind of zombie horde? So there\u0026rsquo;s probably some level of monsters on the shard\u003c/p\u003e\n",
+            "summary": "As I recall, the artwork of Finest Hour portrayed a knight fighting some kind of zombie horde? So there\u0026rsquo;s probably some level of monsters on the shard",
+            "date_published": "2020-09-04T06:23:12+00:00",
+            "date_modified": "2020-09-04T07:15:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/g3ye4n4/index.md"
+            , "tags": ["magicTCG"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/im6w16/what_did_all_the_knights_angels_and_heroes_of/g3ye4n4/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/mobile-app-dev/",
+            "url": "https://mirror.roytang.net/2020/09/mobile-app-dev/",
+            "path": "/2020/09/mobile-app-dev/",
+            "title": "On Mobile App Development",
+            "content_html": "\u003cp\u003eThis post is just quite a few thoughts on mobile apps and mobile app development, all mishmashed together. I don\u0026rsquo;t claim to be a mobile app specialist, at best I\u0026rsquo;ve \u003cem\u003edabbled\u003c/em\u003e in them, but enough to form some opinions I guess?\u003c/p\u003e\n\u003ch3 id=\"a-bit-of-history\"\u003eA Bit of History\u003c/h3\u003e\n\u003cp\u003eMy first exposure to mobile app development when I got pulled to help my then-company\u0026rsquo;s then-fledgling mobile team with cleaning up the codebase for their iOS app. This was back in maybe 2011? It was one of those projects where some devs built a quick proof-of-concept demo using new technology, then management liked it and asked for new features and they kept adding new features haphazardly until there was just this huge unmaintainable mess of code. This isn\u0026rsquo;t a knock against Objective-C or iOS development specifically or the dev team; the fact is they were new to the stack and were learning as they went while still trying to meet deadlines. I also spent some time reviewing the corresponding Android team\u0026rsquo;s code as well. This was the bulk of my exposure to native mobile dev on iOS/Android. (This was before Swift, so I never got to experience that. Language looks neat though.)\u003c/p\u003e\n\u003cp\u003eComing from a web dev background, I\u0026rsquo;ve always found the fragmentation of platforms annoying. Basically your effort gets multiplied by the number of platforms you have to support, and what would work well on iOS may not work well on Android and vice versa.\u003c/p\u003e\n\u003cp\u003eLater on, this concern was alleviated a bit with the rise of common frameworks that could publish to both iOS and Android. The first one I tried of these was React Native. I tried it for a small mobile project I did around 3-ish years ago. I wasn\u0026rsquo;t tremendously happy with the experience. My mistake was probably diving head-first into React Native, when this was my first experience with React and front-end frameworks in general (something new to someone with \u003ca href=\"/2020/02/old-web/\"\u003emy jQuery background\u003c/a\u003e!), so a lot of concepts were new to me.\u003c/p\u003e\n\u003cp\u003eTo make matters worse, the React Native docs at that time seemed to assume some familiarity already with React, or at least similar frameworks like Angular. I had a bit of confusion with whether I should be using Expo or not, and how to eject, and it resulted in having to restart the project a couple of times. It was also my first encounter with NPM\u0026rsquo;s dependency management, and that annoyed me a lot. A lot of the third-party dependencies I used back then were still immature too, so I often had problems with things like accessing the camera roll and so on.\u003c/p\u003e\n\u003cp\u003eNevertheless, it was experience, and the ability to publish cross-platform to iOS and Android was invaluable. I went on to use React Native as my go-to mobile framework I would recommend for other projects afterwards.\u003c/p\u003e\n\u003cp\u003eRecently, I had to do a UI revamp for that small mobile app I wrote three years ago, and I hadn\u0026rsquo;t touched it for a while so I had some trouble with NPM trying to get it to run. In frustration, I gave up on it and decided to rewrite it in Flutter, of which I\u0026rsquo;ve heard good things. Flutter turned out to be great, and it took me just a little over two weeks, part-time to rewrite the app, probably slightly less effort than it took me to write it in the first place. I don\u0026rsquo;t have enough experience yet to have a detailed review of Flutter, but I was generally much happier with the experience compared to React. Part of that may be I\u0026rsquo;m much more familiar with the mobile landscape now and have a better idea of what I\u0026rsquo;m doing, but I really did encounter much fewer points of friction and Flutter seems to have much better documentation. I believe it will be my first choice of frameworks moving forward.\u003c/p\u003e\n\u003ch3 id=\"not-everything-needs-to-be-a-native-app\"\u003eNot Everything Needs to Be a Native App\u003c/h3\u003e\n\u003cp\u003eOne of the things that annoys me about mobile apps is that people/companies unnecessarily want things to be native mobile apps when they would work perfectly fine as web apps. I can understand applications such as Uber may need numerous native functionality (GPS, timely notifications, offline functionality), so that\u0026rsquo;s fine (although many of those things are available using modern browser APIs as well!). Things like online newspapers, forums like Reddit, and so on, are perfectly fine as normal web apps, and should stop prompting me to install their native apps when they detect I am on mobile. Granted that you may get a much better UX experience with a native app, but you also have to install it locally and grant it more access than what the browser\u0026rsquo;s sandbox provides, and that feels like a tradeoff decision that the user needs to make, and not something to nag the user about constantly.\u003c/p\u003e\n\u003cp\u003eI guess part of it is that I grew up with the open web and have a significant bias towards it. In general, if I can just access an app via web, I will prefer that, unless the native app experience is vastly superior or otherwise necessary. And this focus on native apps can be bad for the web. This is apparent in apps like Instagram, which don\u0026rsquo;t allow you to use their primary function - uploading images - on a desktop browser. I also had a similar discussion with a freelance client a few years ago, when they wanted to make a mobile app, but not a corresponding web platform, when all of the app\u0026rsquo;s functionality was simple stuff that web could do easily.\u003c/p\u003e\n\u003ch3 id=\"different-platforms\"\u003eDifferent Platforms\u003c/h3\u003e\n\u003cp\u003eThe differences in iOS and Android are particularly annoying to me as a developer, especially since I\u0026rsquo;m used to web development. With web, everything is open and standards-based, so you generally write everything using a single stack, and any reasonably standards-compliant web browser will work with the web app in a reasonably consistent way. (Granted, there will be browser-specific issues, but nowadays those aren\u0026rsquo;t too common.) With iOS and Android, you have to test on both platforms extensively, and the build processes and distribution methods are different for each. Frameworks like React Native and Flutter lighten this load considerably, but you still really have to devote more time and resources to testing on the different platforms.\u003c/p\u003e\n\u003ch3 id=\"backward-compatibility\"\u003eBackward Compatibility\u003c/h3\u003e\n\u003cp\u003eOkay, this one may be an unfounded concern of mine since I don\u0026rsquo;t have much experience in the matter, but I have this worry that native mobile apps tend to \u003cem\u003erot\u003c/em\u003e more easily, and by \u003cem\u003erot\u003c/em\u003e I mean, get worse with time, as the mobile OSes upgrade themselves very rapidly. Unlike, say, Windows, which gets a new major version every few years, iOS and Android are constantly getting new versions and more importantly, deprecating APIs and adding new ones! Hence my worry that unmaintained, a perfectly functional app may become unworkable a few years down the line and no longer work on the latest mobile OSes. It\u0026rsquo;s my totally unfounded belief that this is a significant reason why \u003ca href=\"/2020/07/itunes-purchases/\"\u003emore than 50% of my lifetime App Store purchases are no longer listed on the App Store\u003c/a\u003e. (And also why I\u0026rsquo;ve pretty much disavowed making mobile purchases again.) Say what you will about Windows, but at least they have a pretty good record of backward compatibility when software I\u0026rsquo;ve written for Windows in the early 2000s is still very likely to run on Windows today.\u003c/p\u003e\n\u003ch3 id=\"closed-platforms\"\u003eClosed Platforms\u003c/h3\u003e\n\u003cp\u003eAnother issue I have with native apps is that I have been used to working on open platforms. Windows, for all its faults, is still an open platform, and anyone can write software for it and distribute it using whatever method they desire. And the web is even more open and standards-based (for now at least). For mobile, Android is mostly open, but iOS is mostly a closed platform.\u003c/p\u003e\n\u003cp\u003eApple\u0026rsquo;s tight control over the iOS platform has been in the tech news recently. First was \u003ca href=\"https://www.theverge.com/2020/6/18/21296180/apple-hey-email-app-basecamp-rejection-response-controversy-antitrust-regulation\"\u003ethe kerfuffle with hey.com\u003c/a\u003e a few months ago, and more recently, \u003ca href=\"https://www.macrumors.com/guide/epic-games-vs-apple/\"\u003etheir removal of Fortnite and battle with Epic\u003c/a\u003e due to Epic\u0026rsquo;s objection to Apple taking a cut of all purchases on iOS.\u003c/p\u003e\n\u003cp\u003eAs a mobile developer, the most annoying things about Apple\u0026rsquo;s tight control over iOS apps are:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ethat $100 annual fee for an Apple Developer account. If you\u0026rsquo;re a 1st world developer, that cost isn\u0026rsquo;t much, but if you\u0026rsquo;re a young hobbyist developer in a poorer country who just wants to try making an app, it can be a significant hurdle. Google also charges you some token amount for Play Store access, but at least it\u0026rsquo;s just a one-time fee.\u003c/li\u003e\n\u003cli\u003ethe fact that you need to use a Mac to publish apps to the App Store. This is another significant hurdle for hobbyist developers; Macs are typically very expensive computers. Granted Android development requires a beefy setup too, but at least you get a choice of platform for Android development.\u003c/li\u003e\n\u003cli\u003eApp store review can be unpredictable; sometimes things that were perfectly fine during a previous release are now flagged in the next review. It feels like you need to get lucky with the reviewer you get. And if the reviewer is unfair to your app, you may be out of luck unless you\u0026rsquo;re a big company like Epic or \u003ca href=\"https://www.digitaltrends.com/news/wordpress-developers-says-apple-wants-30-percent-of-its-profits-from-app-store/\"\u003eWordpress that can raise a stink about it\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMany of the issues that could be levied against Apple for their monopoly over the App Store could be largely addressed if the platform allowed users to install apps via alternative methods, the same way Android does. I fully understand that Apple\u0026rsquo;s tight controls enable a safer environment for naive end users (presumably, assuming they don\u0026rsquo;t screw up), and I actually approve some of their controls like their iOS14 plans to restrict targetted advertising. But more advanced users should be given the option to use alternative methods if they so choose. They can still flag apps installed via alternative methods as \u0026ldquo;potentially unsafe\u0026rdquo; and add hurdles to prevent less capable users from being easily tricked by malicious actors, (Android does this, I believe).\u003c/p\u003e\n\u003ch3 id=\"in-conclusion\"\u003eIn conclusion\u003c/h3\u003e\n\u003cp\u003eI don\u0026rsquo;t really have a point here. Maybe I just want everything to be open? I like open platforms lol.\u003c/p\u003e\n",
+            "summary": "This post is just quite a few thoughts on mobile apps and mobile app development, all mishmashed together. I don\u0026rsquo;t claim to be a mobile app specialist, at best I\u0026rsquo;ve dabbled in them, but enough to form some opinions I guess?\nA Bit of History My first exposure to mobile app development when I got pulled to help my then-company\u0026rsquo;s then-fledgling mobile team with cleaning up the codebase for their iOS app.",
+            "date_published": "2020-09-03T00:00:00+00:00",
+            "date_modified": "2020-09-03T04:45:03+00:00",
+            "section": "post",
+            "source_path": "post/2020/09/mobile-app-dev/index.md"
+            , "tags": ["software development","tech life"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104799142180634143"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1301379411577462784/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200903-072408-8f739068-ba59-4e7b-a1d5-681116ab6a74.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/1301224982463131649/",
+            "url": "https://mirror.roytang.net/2020/09/1301224982463131649/",
+            "path": "/2020/09/1301224982463131649/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e san ka nanggaling? diba may curfew lol\u003c/p\u003e\n",
+            "summary": "@jaymelynilao san ka nanggaling? diba may curfew lol",
+            "date_published": "2020-09-02T18:26:26+00:00",
+            "date_modified": "2020-09-02T18:30:14+00:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/1301224982463131649/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1301224982463131649/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/jaymelynilao",
+                    "source_file": "comment-20200902-183833-823d6ea4-cccd-4f78-a2ec-907e712a358e.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20200902-225005-5da98995-5885-41a6-a7a4-2f8e6fc6829e.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/1301222471568297984/",
+            "url": "https://mirror.roytang.net/2020/09/1301222471568297984/",
+            "path": "/2020/09/1301222471568297984/",
+            "title": "",
+            "content_html": "\u003cp\u003eJust finished Disco Elysium. This game is fantastic\u003c/p\u003e\n",
+            "summary": "Just finished Disco Elysium. This game is fantastic",
+            "date_published": "2020-09-02T18:16:27+00:00",
+            "date_modified": "2021-04-17T11:40:23+00:00",
+            "section": "photos",
+            "source_path": "photos/2020/09/1301222471568297984/index.md"
+            , "tags": ["gaming","games"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1301222471568297984/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1301558996415983616/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2020/09/1300880148518940672/",
+            "url": "https://mirror.roytang.net/2020/09/1300880148518940672/",
+            "path": "/2020/09/1300880148518940672/",
+            "title": "",
+            "content_html": "\u003cp\u003eDFCs have unlocked a lot of design space for Magic, but they are \u003cem\u003eso\u003c/em\u003e clunky on paper\u003c/p\u003e\n",
+            "summary": "DFCs have unlocked a lot of design space for Magic, but they are so clunky on paper",
+            "date_published": "2020-09-01T19:37:48+00:00",
+            "date_modified": "2021-04-17T19:36:05+08:00",
+            "section": "notes",
+            "source_path": "notes/2020/09/1300880148518940672/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1300880554594762752/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/jmcpatino",
+                    "source_file": "comment-20200903-132043-2e300eda-5e88-4ec3-80cc-0de604e52eab.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20200903-151625-85173957-828e-4606-b3de-93a28aa832e0.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/09/1300737200460632066/",
             "url": "https://mirror.roytang.net/2020/09/1300737200460632066/",
             "path": "/2020/09/1300737200460632066/",
@@ -807,113 +930,6 @@
             , "tags": ["mtgakr","twitch","magicarena","mtg"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294919994816462849/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294972627648303105/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1298223242327412736/"}]
             
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/g1plnbb/",
-            "url": "https://mirror.roytang.net/2020/08/g1plnbb/",
-            "path": "/2020/08/g1plnbb/",
-            "title": "",
-            "content_html": "\u003cp\u003eTIL the term “glottal stop”. That’s totally what I meant!\u003c/p\u003e\n",
-            "summary": "TIL the term “glottal stop”. That’s totally what I meant!",
-            "date_published": "2020-08-16T05:37:55+00:00",
-            "date_modified": "2020-08-16T06:15:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/08/g1plnbb/index.md"
-            , "tags": ["GlobalTalk"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GlobalTalk/comments/ia2x3b/question_whats_the_nickname_of_mcdonalds_in_your/g1plnbb/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/weeknotes-2020-08-16-the-sameyness-report/",
-            "url": "https://mirror.roytang.net/2020/08/weeknotes-2020-08-16-the-sameyness-report/",
-            "path": "/2020/08/weeknotes-2020-08-16-the-sameyness-report/",
-            "title": "Weeknotes 2020-08-16 The Sameyness Report",
-            "content_html": "\u003cp\u003eThese weeknotes are coming in late in the day because of reasons. (The reasons being laziness and procrastination.)\u003c/p\u003e\n\u003cp\u003eActually, I feel like I\u0026rsquo;ve been kind of phoning in the weeknotes over the past few weeks, they\u0026rsquo;ve mostly been \u0026ldquo;hey, I\u0026rsquo;ve been busy, so nothing of significance happened, but here are some things I watched/played.\u0026rdquo; Supposedly one of the side effects of writing regular updates is that you tend to look out for more interesting things to do so you have something to write about, even on an unconscious level. In the past few weeks, that has been problematic because (a) as mentioned, I\u0026rsquo;ve been busy with some things, so my excess time is devoted to less mentally taxing things like just watching movies/shows or destress with games; and (b) we are still in the middle of a pandemic!\u003c/p\u003e\n\u003cp\u003eSpeaking of the pandemic, I read this piece recently on the Financial Times: \u003ca href=\"https://www.ft.com/content/32d79c87-1ade-4b63-8d14-7af1a553d963\"\u003eWe won’t remember much of what we did in the pandemic\u003c/a\u003e, about how the sameyness of our days in quarantine means our brains compress that data since so little of it is meaningful, affecting our perception of time. When 99% of your activities take place in the same environment, in your room during a zoom call, everything just tends to blur together. And I guess that reflected in the weeknotes too! (For that reason, I\u0026rsquo;m switching up the weeknotes format today to be more freeform prose, we\u0026rsquo;ll see if it sticks.)\u003c/p\u003e\n\u003cp\u003eSpeaking of the pandemic part 2, one thing I have been doing since the pandemic started is writing a regular series of notes, first as \u003ca href=\"/2020/03/covid19/\"\u003eone long post that I kept updating every couple of days or so\u003c/a\u003e then later I transitioned to regular weekly update notes, on the same day as these weeknotes. The idea was that in the future I could just browse the \u003ca href=\"/tags/covid19/\"\u003ecovid19 tag\u003c/a\u003e on the site and I could recall what things were like during the days of quarantine and the quality of the government response. And this was fine during the start, since things happened and unfolded quickly. But these past few months, the updates have fallen in the quagmire of sameyness as well: I only went out once every 1 or 2 weeks, everything was always getting worse, cases were always going up, government response was always terrible, and so on. One thing the last few months has made clear for me is that the government has no clear plan on controlling this thing and so I am highly pessimistic that things will change anytime soon. For that reason, I\u0026rsquo;m just going to pause on doing the covid19 update notes for now, unless some drastic change happens.(I have no expectation of Russia\u0026rsquo;s vaccine having any effect on our status quo anytime soon!)\u003c/p\u003e\n\u003cp\u003eAnyway, so how was my week? I wrapped up the things causing my busy-ness towards the middle of the week, so I expect to be less busy/stressed during the coming weeks. At the very least, I should be able to write on the blog more, and maybe do some work on some of my other side projects. I actually thought about writing some posts already last week but I was like you know what, I\u0026rsquo;ll just relax and watch things and play things and leave the writing to next week.\u003c/p\u003e\n\u003cp\u003eHere are the things I\u0026rsquo;ve been watching and playing the past week:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMarvel\u0026rsquo;s Agents of SHIELD had their series finale last Thursday. I enjoyed the first half of this season, but the second half and the finale were just ok, maybe slightly meh. Still, the series finale was pretty good, wrapping things up nicely with a big bow. This series had a lot of haters, I think mostly because of mismatched expectations, because people wanted it to be more directly tied-in to the MCU movies, but that was never going to happen (maybe we\u0026rsquo;ll get that more with the coming Disney+ series). But I like it, it had a lot of fans, and it had a pretty good run. And it had Ghost Rider!\u003c/li\u003e\n\u003cli\u003eOne things I\u0026rsquo;ve been playing a bunch is Amonkhet Remastered, which came out on Magic Arena last Thursday. I\u0026rsquo;ve been doing drafts over on \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003ethe twitch channel\u003c/a\u003e, and archiving them to \u003ca href=\"https://www.youtube.com/watch?v=jsD8jNRlYkw\u0026amp;list=PLmU0vkKslGXg6Pdu3_kaKx5oumTwftUUe\"\u003ethis playlist on the Youtube channel\u003c/a\u003e. It\u0026rsquo;s fairly fun, though I need to play better. Watch me on Twitch/Youtube, or like and subscribe, all that jazz, if you like.\u003c/li\u003e\n\u003cli\u003eOh, I also finally finished \u003ca href=\"/2020/08/1293051269129486337/\"\u003eDivinity Original Sin 2\u003c/a\u003e! I really dragged out that last act for a few months, but I finally got there.\u003c/li\u003e\n\u003cli\u003eI also \u003ca href=\"/2020/08/1294146833359364097/\"\u003etried out Fall Guys on PS4\u003c/a\u003e (free on PS+!). It\u0026rsquo;s fun but kind of frustrating, I guess this is why I don\u0026rsquo;t really play these battle royale kind of things.\u003c/li\u003e\n\u003cli\u003ePlayed a little bit Street Fighter x Tekken because of a reddit thread and am once again disappointed that (a) it was such a missed opportunity; and (b) up to now it\u0026rsquo;s still not available on Steam in SEA.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOkay, so one of the reasons I\u0026rsquo;ve been doing these \u0026ldquo;watching/playing lately\u0026rdquo; posts and segments is because I want to track what I have been watching/playing at any particular point in the past. And maybe I can have like a widget on the site with things like \u0026ldquo;Recently played\u0026rdquo; or \u0026ldquo;Last movie watched\u0026rdquo;. I\u0026rsquo;d also want to be able to search/query for things like \u0026ldquo;what year did I watch so-and-so movie?\u0026rdquo; (Helps with trivia quizzes!) I feel like I need to be recording these detail in more of a machine-readable format or a database in order to do those kinds of things. Maybe some kind of Goodreads-like system? It\u0026rsquo;s something I\u0026rsquo;d need to figure out how to implement.\u003c/p\u003e\n\u003cp\u003eOk, this is already longer than I thought it would be. More things will be posted to the blog (hopefully!) later this week!\u003c/p\u003e\n",
-            "summary": "These weeknotes are coming in late in the day because of reasons. (The reasons being laziness and procrastination.)\nActually, I feel like I\u0026rsquo;ve been kind of phoning in the weeknotes over the past few weeks, they\u0026rsquo;ve mostly been \u0026ldquo;hey, I\u0026rsquo;ve been busy, so nothing of significance happened, but here are some things I watched/played.\u0026rdquo; Supposedly one of the side effects of writing regular updates is that you tend to look out for more interesting things to do so you have something to write about, even on an unconscious level.",
-            "date_published": "2020-08-16T00:00:00+00:00",
-            "date_modified": "2020-08-16T20:45:03+00:00",
-            "section": "post",
-            "source_path": "post/2020/08/weeknotes-08-16/index.md"
-            , "tags": ["weeknotes","current events","philippines"]
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104700995470019811"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1295098022720704512/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://floss.social/@alcinnz",
-                    "source_file": "repost-20200817-120722-bad30b4e-72b1-4923-bf23-daed7684fc13.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/google-and-the-nothing/",
-            "url": "https://mirror.roytang.net/2020/08/google-and-the-nothing/",
-            "path": "/2020/08/google-and-the-nothing/",
-            "title": "Google and the Nothing",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-08-15T17:57:47+00:00",
-            "date_modified": "2020-08-15T18:30:03+00:00",
-            "section": "links",
-            "source_path": "links/2020/08/google-and-the-nothing/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://vicki.substack.com/p/google-and-the-nothing?r=2l95i\u0026s=09"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104694801785871695"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294701627287326721/"}]
-            ,"link": "https://vicki.substack.com/p/google-and-the-nothing?r=2l95i\u0026s=09"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/g1kj9db/",
-            "url": "https://mirror.roytang.net/2020/08/g1kj9db/",
-            "path": "/2020/08/g1kj9db/",
-            "title": "",
-            "content_html": "\u003cp\u003ePhilippines: \u0026ldquo;McDo\u0026rdquo; with a very short O sound\u003c/p\u003e\n",
-            "summary": "Philippines: \u0026ldquo;McDo\u0026rdquo; with a very short O sound",
-            "date_published": "2020-08-15T11:14:58+00:00",
-            "date_modified": "2020-08-15T12:15:03+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/08/g1kj9db/index.md"
-            , "tags": ["GlobalTalk"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/GlobalTalk/comments/ia2x3b/question_whats_the_nickname_of_mcdonalds_in_your/g1kj9db/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/we-wont-remember-much-of-what-we-did-in-the-pandemic-free-to-read/",
-            "url": "https://mirror.roytang.net/2020/08/we-wont-remember-much-of-what-we-did-in-the-pandemic-free-to-read/",
-            "path": "/2020/08/we-wont-remember-much-of-what-we-did-in-the-pandemic-free-to-read/",
-            "title": "We won’t remember much of what we did in the pandemic | Free to read",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-08-15T08:53:37+00:00",
-            "date_modified": "2020-10-08T00:14:36+08:00",
-            "section": "links",
-            "source_path": "links/2020/08/we-wont-remember-much-of-what-we-did-in-the-pandemic-free-to-read/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://www.ft.com/content/32d79c87-1ade-4b63-8d14-7af1a553d963"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104692581596709662"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294559554051567617/"}]
-            ,"link": "https://www.ft.com/content/32d79c87-1ade-4b63-8d14-7af1a553d963"
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/08/eternal-2004-pp-by-olia/",
-            "url": "https://mirror.roytang.net/2020/08/eternal-2004-pp-by-olia/",
-            "path": "/2020/08/eternal-2004-pp-by-olia/",
-            "title": "Eternal 2004 ⁋ by olia",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2020-08-15T08:40:23+00:00",
-            "date_modified": "2020-08-15T09:00:44+00:00",
-            "section": "links",
-            "source_path": "links/2020/08/eternal-2004-pp-by-olia/index.md"
-            
-            , "syndicated": [{"type":"pocket","url":"https://blog.geocities.institute/archives/6694"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104692541993977121"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1294556999670087681/"}]
-            ,"link": "https://blog.geocities.institute/archives/6694"
             
             }
         
