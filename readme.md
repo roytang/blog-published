@@ -29,16 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [22 Apr 2021 2:29pm](https://mirror.roytang.net/2021/04/ea7eb9ef2a85d61d55d44918252a52d8/): &ldquo;Do not be dismayed by the brokenness of the world. All things break. And all things can be mended. Not with time, as they say, but with intention. So go. Love intentionally, extravagantly, unconditionally. The broken world waits in darkness for the light that is you.&ldquo;&ndash; L. R. Knost
+- [22 Apr 2021 9:14am](https://mirror.roytang.net/2021/04/1385160137925668868/): Thursday afternoon Strixhaven draft(s?)! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgsrixhaven
+Looks like I&rsquo;m finally paying for all the good luck I had over the past few days; I did two drafts today and both of them were terrible!
+YT: https://www.youtube.com/watch?v=BoJwfBCrx-U
+- [22 Apr 2021 6:34am](https://mirror.roytang.net/2021/04/1385119677320335360/): There&rsquo;s this guy in Hong Kong named Roy Tang who is &ldquo;Permanent Secretary for Constitutional and Mainland Affairs&rdquo;, which I suppose is some Beijing stooge. It&rsquo;s annoying because he always shows up in my Google alerts lol
 - [21 Apr 2021 11:57pm](https://mirror.roytang.net/2021/04/mvsss1/): Posted on r/GlobalTalk: [Question] What are the police like in your country? If you&rsquo;ve been following recent events in the US (disclaimer: I&rsquo;m not an American), police brutality is a big, controversial topic over there, leading to protests and calls to defund the police and such, popularizing the phrase ACAB (meaning &ldquo;all cops are bastards&rdquo;)
 In my own country (the Philippines), cops don&rsquo;t have a very good reputation either; they are often seen as corrupt extortionists and some may be complicit in extrajudicial killings in Duterte&rsquo;s drug war; recently they have done some bad moves such as attempting to interfere with community pantries that popped up to help the poor during the pandemic.
 - [21 Apr 2021 11:01pm](https://mirror.roytang.net/2021/04/1385005706646999044/): @wrongwaygoback I was wondering why I got that reply! IDK who this person is, thanks for the info. Reported and blocked.
-- [21 Apr 2021 2:26pm](https://mirror.roytang.net/2021/04/475d3f081e042d0a2b9beee29e4aa643/): Me: Been using Python since 2008
-Also me: Need to lookup how to use the filter function every time
-(Note for future me: list = filter(func, list)
-- [21 Apr 2021 9:28am](https://mirror.roytang.net/2021/04/1384801237372219392/): Wednesday afternoon Strixhaven draft(s?)! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #strixhaven
-Had a great draft! I went Quandrix+Prismari and managed to go 7-2. Very explosive. One of those losses was actually due to the server giving me a defeat without even going to a match, so I might even get reimbursement!
-YT: https://www.youtube.com/watch?v=gZh3aDWWcdQ
-- [20 Apr 2021 10:56am](https://mirror.roytang.net/2021/04/b178a1efcfc005930f062c7be447d7c1/): Today I decided to watch Rocky (1976) for some reason. The quintessential sports film, but I&rsquo;ve never seen it before. Stallone looks only a bit younger than I remember him from the 90s. Apollo Creed is that dude from the Mandalorian! Surprised at the ending.
 
 [View all notes](https://mirror.roytang.net/notes)
 
