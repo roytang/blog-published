@@ -1,4 +1,6 @@
 
+- [Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app&#39;s perspective](/2021/04/exploiting-vulnerabilities-in-cellebrite-ufed-and-physical-analyzer-from-an-apps-perspective/)
+
 - [No Wrong Notes](/2021/04/no-wrong-notes/)
 
 - [Make Everything Important](/2021/04/make-everything-important/)

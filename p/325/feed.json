@@ -11,6 +11,37 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/07/2429166758/",
+            "url": "https://mirror.roytang.net/2009/07/2429166758/",
+            "path": "/2009/07/2429166758/",
+            "title": "",
+            "content_html": "\u003cp\u003eyesterday\u0026rsquo;s bowling scores: 85-64-102 \u0026gt;.\u0026lt;\u003c/p\u003e\n",
+            "summary": "yesterday\u0026rsquo;s bowling scores: 85-64-102 \u0026gt;.\u0026lt;",
+            "date_published": "2009-07-02T00:47:05+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/07/2429166758/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2429166758/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/95293763167"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/kerwin.j.tang",
+                    "source_file": "comment-20090702-000000-059ff171-6de7-41bc-bb9e-fb471141767b.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20090702-000001-90bb7c2f-d51f-4b1b-b2e7-01ba2bf9e9f0.json"
+                }, { 
+                    "url": "https://www.facebook.com/kerwin.j.tang",
+                    "source_file": "comment-20090702-000002-7a632ec3-09a6-47f5-a024-c4f2930b8eaf.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20090702-000003-24ecc281-191d-4860-907f-001b4fcebb0b.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/07/2428339092/",
             "url": "https://mirror.roytang.net/2009/07/2428339092/",
             "path": "/2009/07/2428339092/",
@@ -994,43 +1025,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2192811818/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/06/1000028/",
-            "url": "https://mirror.roytang.net/2009/06/1000028/",
-            "path": "/2009/06/1000028/",
-            "title": "How to focus radio control using Javascript in IE?",
-            "content_html": "\u003cp\u003eGiven the code below:\u003c/p\u003e\n\u003c!-- begin snippet: js hide: false console: true babel: false --\u003e\n\u003c!-- language: lang-js --\u003e\n\u003cpre\u003e\u003ccode\u003efunction test() {\n    document.forms[0].TEST[0].focus();\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003c!-- language: lang-html --\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;form\u0026gt;\n    \u0026lt;input type=\u0026quot;button\u0026quot; value=\u0026quot;Test\u0026quot; onclick=\u0026quot;test()\u0026quot; /\u0026gt;\n    \u0026lt;input type=\u0026quot;radio\u0026quot; name=\u0026quot;TEST\u0026quot; value=\u0026quot;A\u0026quot;\u0026gt;A\n    \u0026lt;input type=\u0026quot;radio\u0026quot; name=\u0026quot;TEST\u0026quot; value=\u0026quot;B\u0026quot;\u0026gt;B\n\u0026lt;/form\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003c!-- end snippet --\u003e\n\u003cp\u003eIn IE6, clicking the button doesn\u0026rsquo;t focus the control, unless I\u0026rsquo;ve already tabbed through the radio at least once, in which case it works. =/\u003c/p\u003e\n\u003cp\u003eAny idea how I should be focusing the control? The above works perfectly fine in FF of course.\u003c/p\u003e\n\u003cp\u003eEdit: I found that the control is being focused, except the highlight box around the radio button is not being rendered. (I can hit space to activate the radio button, and also use arrow keys to change the active button). So the question becomes: how can I force the focus highlighting box to render?\u003c/p\u003e\n",
-            "summary": "Given the code below:\nfunction test() { document.forms[0].TEST[0].focus(); }  \u0026lt;form\u0026gt; \u0026lt;input type=\u0026quot;button\u0026quot; value=\u0026quot;Test\u0026quot; onclick=\u0026quot;test()\u0026quot; /\u0026gt; \u0026lt;input type=\u0026quot;radio\u0026quot; name=\u0026quot;TEST\u0026quot; value=\u0026quot;A\u0026quot;\u0026gt;A \u0026lt;input type=\u0026quot;radio\u0026quot; name=\u0026quot;TEST\u0026quot; value=\u0026quot;B\u0026quot;\u0026gt;B \u0026lt;/form\u0026gt;  In IE6, clicking the button doesn\u0026rsquo;t focus the control, unless I\u0026rsquo;ve already tabbed through the radio at least once, in which case it works. =/\nAny idea how I should be focusing the control? The above works perfectly fine in FF of course.\nEdit: I found that the control is being focused, except the highlight box around the radio button is not being rendered.",
-            "date_published": "2009-06-16T07:38:33+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/06/1000028/index.md"
-            , "tags": ["javascript","internet-explorer","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20090616T074107-1000039.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20090616T075925-808985.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20090616T081633-1000146.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20090616T085042-809147.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20161027T092604-40280898.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1000028/how-to-focus-radio-control-using-javascript-in-ie",
-                    "source_file": "comment-20161027T092859-67820438.json"
-                }
-            ]
             }
         
     ]
