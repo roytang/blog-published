@@ -1,4 +1,8 @@
 
+- [Yahoo, the Destroyer](/2021/04/yahoo-the-destroyer/)
+
+- [Cryptocurrency is an abject disaster](/2021/04/cryptocurrency-is-an-abject-disaster/)
+
 - [Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app&#39;s perspective](/2021/04/exploiting-vulnerabilities-in-cellebrite-ufed-and-physical-analyzer-from-an-apps-perspective/)
 
 - [No Wrong Notes](/2021/04/no-wrong-notes/)

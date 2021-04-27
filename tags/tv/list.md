@@ -1,7 +1,9 @@
 
+- [The Falcon and the Winter Soldier Review](/2021/04/the-falcon-and-the-winter-soldier-review/)
+
 - [Ted Lasso Season 1 spoiler-free review](/2021/04/ted-lasso-season-1-spoiler-free-review/)
 
-- [Wandavision Spoiler-free Review](/2021/03/wandavision/)
+- [Wandavision Spoiler-free Review](/2021/03/wandavision-spoiler-free-review/)
 
 - [Perfect Strangers](/2020/12/perfect-strangers/)
 

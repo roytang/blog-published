@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
+            "url": "https://mirror.roytang.net/2016/06/bhrs9-dbtpc/",
+            "path": "/2016/06/bhrs9-dbtpc/",
+            "title": "",
+            "content_html": "\u003cp\u003eHomemade chicken alfredo\u003c/p\u003e\n",
+            "summary": "Homemade chicken alfredo",
+            "date_published": "2016-06-30T04:16:02+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BHRs9-dBtPC/index.md"
+            
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHRs9-dBtPC/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154710562383912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
+            "url": "https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/",
+            "path": "/2016/06/performance-optimization-for-wordpress-blogs/",
+            "title": "Performance Optimization for WordPress Blogs",
+            "content_html": "\u003cp\u003eSome time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this \u003ca href=\"https://testmysite.thinkwithgoogle.com/\"\u003eSpeed Testing Tool\u003c/a\u003e. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#0c6ac79b772c7e82c9d4b481ecd82269-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"0c6ac79b772c7e82c9d4b481ecd82269-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eI also ran the site through \u003ca href=\"https://developers.google.com/speed/pagespeed/insights\"\u003eGoogle PageSpeed Insights\u003c/a\u003e. The results were mostly the same, but the Google site gave me results faster, so this was the one I referenced for subsequent testing. The most important problems to address were:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOptimizing image sizes\u003c/li\u003e\n\u003cli\u003eRemoving render-blocking JS and CSS in above-the fold content\u003c/li\u003e\n\u003cli\u003eLeverage browser caching (through the use of HTTP headers)\u003c/li\u003e\n\u003cli\u003eMinify CSS and Javascript\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAll of these are familiar to me since they are very common performance optimizations done in web applications. However, this blog is running on WordPress, which means I should try to look for existing WordPress-based solutions instead of hacking the code myself. (I used to run a custom-built Django-based blog system here, but I got tired of maintaining it myself so I went for tried-and-true WordPress). Here are the optimizations I ended up doing:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eUpgraded to the default WordPress Twenty-Sixteen Theme. Not strictly necessary for optimization, but I was previously using the Twenty-Twelve Theme, and the problem with using older themes is that they may not be using newer web development techniques to improve performance. Also, Twenty-Sixteen looked better haha. And yes, I do use the default WordPress themes. Too lazy (as of yet) to look for a nice custom theme, and I don\u0026rsquo;t have the design chops myself to build it, so it will do for now.\u003c/li\u003e\n\u003cli\u003eFor the image size problem, I found that the biggest offender was the \u003ca href=\"/2016/03/sketching-daily/\"\u003eSketching Daily post\u003c/a\u003e where I broke down how I do my daily sketches. The problem was that I was uploading full-size images of the drawings and they were being inlined into the post \u0026ndash; which meant the browser was loading the full-size image even though it was shown in a smaller size on the post itself. Instead, I manually changed the settings of each image in the post to use one of the smaller-size images generated by WordPress on upload. \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#5e6f8afbe11d06811d33a26b4c215b02-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"5e6f8afbe11d06811d33a26b4c215b02-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n Choosing \u0026ldquo;Large\u0026rdquo; here meant the Large one would be inlined, while I could still set the image to link to the full-size one on click. The full size image is a whole fifteen times larger than the \u0026ldquo;large\u0026rdquo; image! It\u0026rsquo;s something I need to remember in the future if I ever upload huge images again. I also found a link that described how to set the \u003ca href=\"https://made4wp.com/changing-default-attachment-display-setting-insert-image-post/\"\u003edefault image size\u003c/a\u003e (so that it doesn\u0026rsquo;t default to full size all the time), but I don\u0026rsquo;t think it\u0026rsquo;s necessary for now.\u003c/li\u003e\n\u003cli\u003eTo further help with image optimization, I installed the \u003ca href=\"https://wordpress.org/plugins/wp-smushit/\"\u003eWP Smush plugin\u003c/a\u003e, which automatically optimizes (\u0026ldquo;smushes\u0026rdquo;) uploaded images. I found that WP Smush reduces the uploaded image sizes by around 10-15% on average, it\u0026rsquo;s not too bad.\u003c/li\u003e\n\u003cli\u003eNext was render-blocking JavaScript. If you\u0026rsquo;re not familiar, any \u003ccode\u003e\u0026lt;script include=\u0026quot;... \u0026quot; /\u0026gt;\u003c/code\u003e tag in your HTML blocks the rendering of any content below the tag itself until the content of the JS has finished executing. The typical solutions are either to (a) move the script tags to below the content (\u0026ldquo;below the fold\u0026rdquo;) or (b) add an \u0026ldquo;async\u0026rdquo; or \u0026ldquo;defer\u0026rdquo; attribute to the script tag. It turns out that there was already a plugin that did (b), \u003ca href=\"https://wordpress.org/plugins/async-javascript/\"\u003eAsync Javascript\u003c/a\u003e. So I gave it a go, but for some reason it wasn\u0026rsquo;t working. After a bit of debugging, I found that there was an \u0026ldquo;aj_enabled\u0026rdquo; option that wasn\u0026rsquo;t being set. I couldn\u0026rsquo;t figure out any settings page to update it, so I went ahead and edited the plugin directly to set the value: \n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"36eed300f8d29100ff8ea1e3c36cd5ca-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n It\u0026rsquo;s generally a bad idea to hack the local copy of your WordPress plugins, since you have to check the impact every time the plugin has a new version, but I decided to live with it for now. After the update, sure enough the JS no longer blocked page rendering.\u003c/li\u003e\n\u003cli\u003eLastly, I installed the \u003ca href=\"https://wordpress.org/plugins/w3-total-cache/\"\u003eW3 Total Cache plugin\u003c/a\u003e. I disabled the WP Super Cache plugin I was using before since they would probably have some sort of conflict. In addition to page caching, this plugin addresses a couple of other issues: it supports HTML/JS/CSS minification (reduces file sizes and HTTP requests) and it allows adding the expiry headers to static content (to leverage browser caching). If you\u0026rsquo;ve done any work on website performance, the settings for the plugin are straightforward to understand, but I also referenced the guide at \u003ca href=\"https://gtmetrix.com/wordpress-optimization-guide.html\"\u003ethis link\u003c/a\u003e. The plugin looks okay, but there\u0026rsquo;s an unfortunate side effect: the minified JS created by the plugin does not respect Async Javascript, so it blocks above the fold content from rendering. It\u0026rsquo;s a problem I\u0026rsquo;ll have to try to resolve in the future.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eAfter the above changes, I retest the site:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\u003ca href=\"#21b8bf5fee6eb583237d7c9920559f3b-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"21b8bf5fee6eb583237d7c9920559f3b-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"30 Jun 2016 1:30am\"\u003e30 Jun 2016 1:30am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp\u003eMuch improvement indeed! There\u0026rsquo;s still a few issues to iron out, but for the most part I\u0026rsquo;m happy with the results (and my pride has been satisfied :p). I may revisit this issue at a future date to see if there\u0026rsquo;s anything else I can improve on.\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n",
+            "summary": "Some time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this Speed Testing Tool. Now, I\u0026rsquo;m of the opinion that for a personal blog such as this, web performance isn\u0026rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p",
+            "date_published": "2016-06-30T01:30:32+00:00",
+            "date_modified": "2021-01-25T07:34:22+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/performance-optimization-for-wordpress-blogs/index.md"
+            , "tags": ["wordpress","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/748331247005499392/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/fragile-things/",
+            "url": "https://mirror.roytang.net/2016/06/fragile-things/",
+            "path": "/2016/06/fragile-things/",
+            "title": "Book Review: Fragile Things: Short Fictions and Wonders by Gaiman, Neil",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://www.goodreads.com/book/show/16788.Fragile_Things\" style=\"float: left; padding-right: 20px\"\u003e\u003cimg border=\"0\" alt=\"Fragile Things: Short Fictions and Wonders\" src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386924550l/16788._SX98_.jpg\" /\u003e\u003c/a\u003e\u003ca href=\"https://www.goodreads.com/book/show/16788.Fragile_Things\"\u003eFragile Things: Short Fictions and Wonders\u003c/a\u003e by \u003ca href=\"https://www.goodreads.com/author/show/1221698.Neil_Gaiman\"\u003eNeil Gaiman\u003c/a\u003e\u003cbr/\u003e\nMy rating: \u003ca href=\"https://www.goodreads.com/review/show/1672855718\"\u003e5 of 5 stars\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e\nSome good stuff by Gaiman. Generally what you\u0026rsquo;d expect: ghosts and aliens and magic creatures and strange stories and such. There\u0026rsquo;s an American Gods-related novella at the end.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href=\"https://www.goodreads.com/review/list/18436248-roy-tang\"\u003eView all my reviews\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Fragile Things: Short Fictions and Wonders by Neil Gaiman My rating: 5 of 5 stars\nSome good stuff by Gaiman. Generally what you\u0026rsquo;d expect: ghosts and aliens and magic creatures and strange stories and such. There\u0026rsquo;s an American Gods-related novella at the end.  View all my reviews",
+            "date_published": "2016-06-30T00:00:00+00:00",
+            "date_modified": "2021-03-23T15:23:40+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/fragile-things/index.md"
+            , "tags": ["books"]
+            , "syndicated": [{"type":"goodreads","url":"https://www.goodreads.com/review/show/1672855718"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/10154707831253912/",
+            "url": "https://mirror.roytang.net/2016/06/10154707831253912/",
+            "path": "/2016/06/10154707831253912/",
+            "title": "",
+            "content_html": "\u003cp\u003eI managed to clear up the print quality by repeatedly running the HP cleaning tool. Wasted a bunch of ink and paper, but yay!\u003c/p\u003e\n",
+            "summary": "I managed to clear up the print quality by repeatedly running the HP cleaning tool. Wasted a bunch of ink and paper, but yay!",
+            "date_published": "2016-06-29T19:08:00+00:00",
+            "date_modified": "2019-09-28T20:21:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/10154707831253912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154707831253912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/bho1fi8boad/",
+            "url": "https://mirror.roytang.net/2016/06/bho1fi8boad/",
+            "path": "/2016/06/bho1fi8boad/",
+            "title": "",
+            "content_html": "\u003cp\u003eArche from Tales of Phantasia #sketchdaily\u003c/p\u003e\n",
+            "summary": "Arche from Tales of Phantasia #sketchdaily",
+            "date_published": "2016-06-29T01:32:48+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/06/BHO1fi8BOad/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHO1fi8BOad/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/146646893245/arche-from-tales-of-phantasia-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/748071716211986432/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154707619178912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4qeeo4/june_29th_ponytails/d4sbrqo/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/06/747942885400580096/",
             "url": "https://mirror.roytang.net/2016/06/747942885400580096/",
             "path": "/2016/06/747942885400580096/",
@@ -871,91 +956,6 @@
             "source_path": "notes/2016/06/d4jgza8/index.md"
             , "tags": ["WritingPrompts"]
             , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4opxyf/modpost_6_million_flashback_contest_round_1_voting/d4jgza8/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/745553553570205696/",
-            "url": "https://mirror.roytang.net/2016/06/745553553570205696/",
-            "path": "/2016/06/745553553570205696/",
-            "title": "",
-            "content_html": "\u003cp\u003eTIL about Singular They \u003ca href=\"https://en.wikipedia.org/wiki/Singular_they\"\u003ehttps://en.wikipedia.org/wiki/Singular_they\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "TIL about Singular They https://en.wikipedia.org/wiki/Singular_they",
-            "date_published": "2016-06-22T09:46:33+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/745553553570205696.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/745553553570205696/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/745481163385405441/",
-            "url": "https://mirror.roytang.net/2016/06/745481163385405441/",
-            "path": "/2016/06/745481163385405441/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Dr_Jeebus/\"\u003e@Dr_Jeebus\u003c/a\u003e Right. You can resolve all the Animate Dead and Worldgorger things first. Gotcha.\u003c/p\u003e\n",
-            "summary": "@Dr_Jeebus Right. You can resolve all the Animate Dead and Worldgorger things first. Gotcha.",
-            "date_published": "2016-06-22T04:58:54+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/745481163385405441.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/745481163385405441/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/745479644447531010/",
-            "url": "https://mirror.roytang.net/2016/06/745479644447531010/",
-            "path": "/2016/06/745479644447531010/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Dr_Jeebus/\"\u003e@Dr_Jeebus\u003c/a\u003e dont you die to the two phyrexian ragers?\u003c/p\u003e\n",
-            "summary": "@Dr_Jeebus dont you die to the two phyrexian ragers?",
-            "date_published": "2016-06-22T04:52:52+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/745479644447531010.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/745479644447531010/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bg8-zypsody/",
-            "url": "https://mirror.roytang.net/2016/06/bg8-zypsody/",
-            "path": "/2016/06/bg8-zypsody/",
-            "title": "",
-            "content_html": "\u003cp\u003eProfessor Layton and His Top Hat and Luke and the Case of the Poorly Drawn Hands #sketchdaily\u003c/p\u003e\n",
-            "summary": "Professor Layton and His Top Hat and Luke and the Case of the Poorly Drawn Hands #sketchdaily",
-            "date_published": "2016-06-22T03:04:16+00:00",
-            "date_modified": "2020-05-22T19:56:57+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BG8-ZYPsoDy/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BG8-ZYPsoDy/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/146300667745/professor-leyton-and-the-poorly-drawn-hands"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/745558021313433601/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4p9kbd/june_22nd_beyblades/d4j6w0t/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/how-does-a-single-game-program/",
-            "url": "https://mirror.roytang.net/2016/06/how-does-a-single-game-program/",
-            "path": "/2016/06/how-does-a-single-game-program/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-does-a-single-game-programmer-get-art-for-his-game/answer/Roy-Tang\"\u003eHow does a single game programmer get art for his game?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe options should be fairly obvious:\u003c/p\u003e\u003col\u003e\u003cli\u003eYou raise money; or\u003c/li\u003e\u003cli\u003eYou con one of your friends or some stranger to do the art for you either for free or in exchange for some part of future profits (which are unlikely to happen); or\u003c/li\u003e\u003cli\u003eYou do the art yourself\u003c/li\u003e\u003c/ol\u003e\u003c/span\u003e\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n How does a single game programmer get art for his game?\n The options should be fairly obvious:\nYou raise money; orYou con one of your friends or some stranger to do the art for you either for free or in exchange for some part of future profits (which are unlikely to happen); orYou do the art yourself",
-            "date_published": "2016-06-22T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/how-does-a-single-game-program.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-does-a-single-game-programmer-get-art-for-his-game/answer/Roy-Tang"}]
             
             
             }

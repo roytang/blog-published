@@ -1,7 +1,7 @@
 
 - [Ted Lasso Season 1 spoiler-free review](/2021/04/ted-lasso-season-1-spoiler-free-review/)
 
-- [Wandavision Spoiler-free Review](/2021/03/wandavision/)
+- [Wandavision Spoiler-free Review](/2021/03/wandavision-spoiler-free-review/)
 
 - [Birds of Prey and the Fantabulous Emancipation of One Harley Quinn spoiler-free review!](/2020/03/birds-of-prey/)
 
