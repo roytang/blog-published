@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Ludum Dare 48: Diver](https://mirror.roytang.net/2021/04/ludum-dare-48-diver/)
 - [The Falcon and the Winter Soldier Review](https://mirror.roytang.net/2021/04/the-falcon-and-the-winter-soldier-review/)
 - [Weeknotes 2021-04-25: Game Jammin&#39;](https://mirror.roytang.net/2021/04/weeknotes-2021-04-25/)
 - [Blogs of Yesteryear Part 2](https://mirror.roytang.net/2021/04/blogs-of-yesteryear-part-2/)
 - [Weeknotes 2021-04-18](https://mirror.roytang.net/2021/04/weeknotes-2021-04-18/)
-- [Google Chrome and FloC](https://mirror.roytang.net/2021/04/google-chrome-and-floc/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

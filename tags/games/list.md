@@ -17,6 +17,8 @@
 
 - [](/2020/08/1293051269129486337/)
 
+- [Review: The Outer Worlds](/2019/11/outer-worlds/)
+
 - [Game Review: Marvel&#39;s Spider-Man for PS4](/2018/11/game-review-marvels-spider-man-for-ps4/)
 
 - [Late Game Review -- Ni No Kuni: Wrath of the White Witch (2013)](/2018/10/late-game-review-ni-no-kuni-wrath-of-the-white-witch-2013/)
@@ -186,5 +188,7 @@
 - [Games: Naruto: Narutimate Hero](/2004/06/games-naruto-narutimate-hero/)
 
 - [KOTOR = Evil timesink](/2004/01/kotor-evil-timesink/)
+
+- [Final Fantasy X-2: First Impressions](/2003/11/final-fantasy-x-2-first-impressions/)
 
 - [Hoshigami: Ruining Blue Earth](/2002/05/hoshigami-ruining-blue-earth/)

@@ -13,6 +13,72 @@
           
       
         <item>
+            <title>Ludum Dare 48: Diver
+</title>
+            <link>https://mirror.roytang.net/2021/04/ludum-dare-48-diver/</link>
+            <pubDate>Tue, 27 Apr 2021 05:49:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/04/ludum-dare-48-diver/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;the-jam&#34;&gt;The jam&lt;/h3&gt;
+&lt;p&gt;A thing I did last weekend was to participate in &lt;a href=&#34;https://ldjam.com/events/ludum-dare/48&#34;&gt;the 48th LUDUM DARE game jam&lt;/a&gt;. Doing gamedev has been a long-time elusive dream of mine, all the way back to my college years. I&amp;rsquo;ve had a number of failed attempts to get into gamedev, both solo and with other people.I&amp;rsquo;ve also played around with things like PyGame, &lt;a href=&#34;https://roytang.net/2017/01/10155238560218912/&#34;&gt;Unity&lt;/a&gt;, &lt;a href=&#34;https://roytang.net/2020/11/1326919888472956928/&#34;&gt;DragonRuby&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;I read about the LD48 game jam this April and signed up to participate. My expectations weren&amp;rsquo;t very high and I was anxious going on; I was pretty sure I was not going to do well and doubted I could even put things together. I had never done a Ludum Dare or a game jam before, heck I haven&amp;rsquo;t even made anything I consider a &amp;ldquo;real game&amp;rdquo; before!&lt;/p&gt;
+&lt;p&gt;The game jam has two modes you can choose to submit to. The 72-hour version (called the &amp;ldquo;Jam&amp;rdquo;) was easier, as you could have a team of people working together, and you could use any assets you had legal access to. The 48-hour version, called the &amp;ldquo;Compo&amp;rdquo; (which I guess is short for competitive?), is much more challenging. You can only work solo, and all assets must be created within the 48 hour period (with a few exceptions like fonts etc).&lt;/p&gt;
+&lt;p&gt;I had no intention of working with a team; in fact I didn&amp;rsquo;t tell anyone I planned to participate until after the jam started last Saturday at 9AM local time. I figured I would try my best and if I finished within 48h, I would submit for the jam. If I didn&amp;rsquo;t, I had an extra 24h to try for the compo, and I could even ask for help!&lt;/p&gt;
+&lt;p&gt;That meant I would be working alone, which meant I would have to do things like art and sounds and music! I didn&amp;rsquo;t have any experience doing pixel art for games or anything like that, so I figured I could get by on &amp;ldquo;programmer art&amp;rdquo;. For sound effects, I knew there were online generators I could use, I&amp;rsquo;ve tried some before. Background music was the real challenge: I have no musical talent at all, so even if I could find tools to do it, I wouldn&amp;rsquo;t know how to put anything together. These were problems for me 48h into the future though. When the jam started, I just dove in to code.&lt;/p&gt;
+&lt;p&gt;Okay, not really. I woke up late and had to do some errands so I missed the start time by a couple of hours. Still, I dove right in as soon as I was free!&lt;/p&gt;
+&lt;h3 id=&#34;the-tools&#34;&gt;The tools&lt;/h3&gt;
+&lt;p&gt;For the gamedev/programming part, I decided to use the Godot Engine game development framework. I had been trying it out since earlier this year, and I was pretty happy with it compared to Unity. The IDE was a lot lighter, the APIs felt more intuitive, and basically it made it easier for me to get into the guts of a game. Unity is great, but it always seemed geared towards 3D gamedev. Godot makes 2D gamedev feel like a first class citizen. I prefer working on 2D because I feel like that&amp;rsquo;s something more achieveable for me as an indie. Doing sprites and such is more in my wheelhouse than 3D models.&lt;/p&gt;
+&lt;p&gt;For the art, I&amp;rsquo;ve never tried any pixel art creation tools before, so I just searched online. I settled on &lt;a href=&#34;https://www.piskelapp.com&#34;&gt;Piskel&lt;/a&gt; which had the advantages of (a) being free; and (b) running entirely in-browser, without needing me to create an account. Very low friction! I haven&amp;rsquo;t tried such tools before so I was impressed with how mature they were. There were functions similar to what you&amp;rsquo;d find in paint, plus support for layers and export to various formats, including into spritesheets. It was perfect for what I needed.&lt;/p&gt;
+&lt;p&gt;For sound effects, I used another free online site &lt;a href=&#34;https://sfxr.me/&#34;&gt;JSFXR&lt;/a&gt;. Basically just kept rolling one of the settings until I got a sound I like. Godot&amp;rsquo;s AudioStreamPlayer didn&amp;rsquo;t seem like it accepted WAVs, so I used &lt;a href=&#34;https://convertio.co/wav-ogg/&#34;&gt;convert.io&lt;/a&gt; to convert the files to OGG.&lt;/p&gt;
+&lt;p&gt;For background music, a friend suggested I tried &lt;a href=&#34;https://onlinesequencer.net/&#34;&gt;Online Sequencer&lt;/a&gt;. I tried it out for a while, banging out random notes since I knew nothing about how to compose music. I looked at a few interesting ones created by other people and tried to adjust the random notes I was banging out to better follow the patterns I saw. I still don&amp;rsquo;t understand, but I was able to create a couple of tracks I was fairly happy with (they sounded like music!) which I used as BGM in the game.&lt;/p&gt;
+&lt;p&gt;I also used one of my &lt;a href=&#34;https://mirror.roytang.net/tags/sketchdaily&#34;&gt;sketchdaily&lt;/a&gt; attempts to generate some &lt;a href=&#34;https://roytang.net/2021/04/1385956018509664263/&#34;&gt;splash screen/cover art&lt;/a&gt; for the game. The final game used a slightly cleaned up and modified version of that one.&lt;/p&gt;
+&lt;p&gt;I also needed a Dynamic font, since using Godot&amp;rsquo;s built-in fonts didn&amp;rsquo;t allow me to resize text. The Compo rules allow you to use fonts you didn&amp;rsquo;t make during the jam, so I just used Xolonium-Regular from one of the Godot tutorials.&lt;/p&gt;
+&lt;h3 id=&#34;the-game&#34;&gt;The game&lt;/h3&gt;
+&lt;p&gt;The theme of the jam was &lt;strong&gt;DEEPER and DEEPER&lt;/strong&gt;, so I figured I&amp;rsquo;d go the easy route and do something with digging or undersea exploration. I felt like digging would be the more common approach, so I went the other way, since I&amp;rsquo;m a contrarian. I decided to do something inspired by things like the underwater level in TMNT (NES) or the underwater level in Earthworm Jim (SNES). These were the frustrating underwater levels I grew up with, so I wanted to replicate that experience a bit. Basically moving around underwater, with a time limit and trying to avoid obstacles.&lt;/p&gt;
+&lt;p&gt;So the idea was to have a deep-sea diver exploring underwater. But for some reason the ocean is full of spikes, so he has to keep moving and swimming to avoid them. All the while trying to go deeper and deeper. I added in a few enemies like jellyfish that acted as moving obstacles, and seeker fish that actively tried to chase you.&lt;/p&gt;
+&lt;p&gt;I also added an oxygen tank mechanic to serve as the timer. The tank would be getting depleted constantly as you kept breathing and you had to avoid running out. There would be little things that generate air bubbles you can pick up to increase your oxygen level (this part was inspired by the 3d mario games). Initially the bubble generator was just a jar, but later I changed the sprite to a clam.&lt;/p&gt;
+&lt;p&gt;I also decided to add a collectible in the form of gems that you can pick up on your way down. Basically to add more things to do in each stage. And it added a bit of risk-reward mechanics: should I waste time trying to get this gem, when I might run out of air or get hit by enemies? When I added it I wasn&amp;rsquo;t sure how the gems would be relevant in the game. I eventually decided to have the player earn extra lives whenever he collects 5 gems. The initial gem sprite was a diamond but later changed to a pearl.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the basic gameplay: Avoid obstacles, collect gems, avoid running out of air, try to get as deep as possible.&lt;/p&gt;
+&lt;p&gt;The controls were simple:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;your diver is constantly sinking&lt;/li&gt;
+&lt;li&gt;you can move left or right using arrow keys&lt;/li&gt;
+&lt;li&gt;you can swim up (or bounce, in my internal terms) by pressing space bar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The bounce was kind of a flappy bird bounce: you hit spacebar and you go up by a fixed amount after which you begin sinking again. I wanted the controls to be not too smooth so that you needed to know the bounce distance really well to navigate tighter corridors.&lt;/p&gt;
+&lt;p&gt;Once I had something basic working, I showed it to some friends to get some feedback, and got some good ideas and bug reports from them. (I figured showing it to other people and getting suggestions was fine within the compo rules, as long as I did all the actual creation work myself!)&lt;/p&gt;
+&lt;p&gt;By the end of Saturday (around 16h after jam start, 32h before compo deadline), I was mostly done with all the mechanics and gameplay and such. But content was lacking: I only had five screens (&amp;ldquo;stages&amp;rdquo;) for the player to navigate through, which I felt was too short. Creating levels was fairly straightforward though once I had all the components ready. The feedback from my friends was also pretty good. By this point I was fairly confident I could finish in time, and probably wouldn&amp;rsquo;t lose too much sleep.&lt;/p&gt;
+&lt;p&gt;I spent Sunday working more on the game, in between a bunch of family errands. I added another five levels, and fixed a lot of bugs. By the end of day Sunday (around 9h before compo deadline), I was ready to submit. Godot lets me export both to web and to Windows binaries. I could have also exported to other OSes, but I didn&amp;rsquo;t have time to test them. I was originally planning to host the game here on this site, but I couldn&amp;rsquo;t decide how / where to put them in the site structure. Instead I went ahead and deployed the game to itch.io, as I already had an account there. This was a relatively easy and straightforward process (though I did have to answer some tax-related questions).&lt;/p&gt;
+&lt;p&gt;So the game is here on itch.io: &lt;a href=&#34;https://hungryroy.itch.io/diver&#34;&gt;https://hungryroy.itch.io/diver&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ludum Dare requires the source code be made available, I have it up here: &lt;a href=&#34;https://github.com/roytang/diver&#34;&gt;https://github.com/roytang/diver&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And finally, the page for my entry on the Ludum Dare site itself: &lt;a href=&#34;https://ldjam.com/events/ludum-dare/48/diver&#34;&gt;https://ldjam.com/events/ludum-dare/48/diver&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;aftermath&#34;&gt;Aftermath&lt;/h3&gt;
+&lt;p&gt;After submitting your game, you&amp;rsquo;re supposed to review and rate other people&amp;rsquo;s games, and you want to earn at least 20 ratings to get a &amp;ldquo;final score&amp;rdquo;. Coming in, I didn&amp;rsquo;t really aim to &amp;ldquo;win&amp;rdquo; the compo or anything like that, I just wanted to finish a game. But after submitting and checking out a few of the other submissions, I felt a bit more confident about my chances and am hoping for a decent finish. The &amp;ldquo;play, review, and rate&amp;rdquo; period lasts for 21 days after the jam ends, so it&amp;rsquo;ll be a while before I know the outcome of that! I am doing my part by playing through some of the entries and rating them and leaving helpful comments where I can.&lt;/p&gt;
+&lt;p&gt;Overall, very impressed with how Ludum Dare works. The more ratings and quality feedback you give, the higher your game appears in the listings. This makes it more likely for you to receive ratings and feedback yourself, thus incentivizing the same and creating a positive feedback loop!&lt;/p&gt;
+&lt;p&gt;My biggest takeaway is that I learned how to build something with as small a scope as possible. In many of my past attempts, scope creep was always one of the bigger problems. I was used to playing big, epic games like grand strategy or long RPGs or open world games, so I often wanted to make games like those. The 48h limit helped me narrow my focus and reject stuff that would endanger that deadline. I had to discard some other ideas for enemies and stage elements because they would make things more complicated.&lt;/p&gt;
+&lt;p&gt;I did enjoy the experience, no matter the outcome, I&amp;rsquo;ve already exceeded my own expectations. I expect to try my hand at game jams again moving forward. Building experience by making a series of small games might be a better way for me to find a path into &amp;ldquo;real&amp;rdquo; gamedev. That is, as opposed to &amp;ldquo;hobbyist&amp;rdquo; gamedev, which is the new level I consider myself at now that I&amp;rsquo;ve completed a Ludum Dare!&lt;/p&gt;
+&lt;p&gt;Some screenshots of the game attached below!&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen1_hu1ab9d90fcbe1b19cf3b3c266fb8605d9_88625_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen2_hu146bf70b25f0bdea8bc681809150f5c8_94323_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen3_hucc0d53084f7630bbd423b0d1b8233330_88341_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
             <title>The Falcon and the Winter Soldier Review
 </title>
             <link>https://mirror.roytang.net/2021/04/the-falcon-and-the-winter-soldier-review/</link>
@@ -2598,32 +2664,6 @@ dataset on this graph though)
     
     &lt;p&gt;2020 blog post word cloud&lt;/p&gt;
     
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Goodbye Flipboard
-</title>
-            <link>https://mirror.roytang.net/2021/01/goodbye-flipboard/</link>
-            <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2021/01/goodbye-flipboard/</guid>
-            <description>
-            
-            &lt;p&gt;I&amp;rsquo;ve been using the Flipboard iOS app as my daily morning news reader pretty much since &lt;a href=&#34;https://mirror.roytang.net/2010/10/ipad-first-impressions-and-snap-judgments/&#34;&gt;I first got an iPad&lt;/a&gt;. It offered a nice, magazine like UI where you can flip through pages full of images and short article blurbs until you can find something you want to read.&lt;/p&gt;
-&lt;p&gt;The past couple of years and iOS versions though, the app has been performing terribly. Crashes a lot, reader view often fails to load, or flickers and reloads continuously and so on. Just not a very good experience.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m sure it&amp;rsquo;s not entirely their fault; recent iOS versions (starting from 13 I think?) have become more agressive with their memory management and garbage collection, so app processes seemed to regularly get killed for some reason. It sometimes happens in other apps too, but by far Flipboard is the worst offender. Maybe their code is poorly optimized, IDK. Oh, and they&amp;rsquo;ve started to have a lot more ads! In any case, I&amp;rsquo;ve had enough.&lt;/p&gt;
-&lt;p&gt;My most relevant Flipboard reading consists of:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;latest world news/headlines (main)&lt;/li&gt;
-&lt;li&gt;tech news (secondary)&lt;/li&gt;
-&lt;li&gt;comics/gaming news (when I just feel like scrolling through Flipboard)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For a replacement, I assumed I could simply take their most common sources in each of the above categories and import them into my RSS reader of choice (right now that&amp;rsquo;s &lt;a href=&#34;https://www.inoreader.com&#34;&gt;Inoreader&lt;/a&gt;). But after doing that, I realized this won&amp;rsquo;t work, because I treat my mealtime news reading differently from feeds I follow via RSS. I don&amp;rsquo;t want to have unread counts for the news stuff, just see what&amp;rsquo;s the most recent stuff and move on. I decided instead to revive my &lt;a href=&#34;https://feedly.com/&#34;&gt;Feedly&lt;/a&gt; account, and import the news feeds there, and use the Feedly iOS app for my morning news reading.&lt;/p&gt;
-&lt;p&gt;Have been doing this for a few days already; not all of the feeds render well (particularly some websites that did not have RSS feeds, I had to do workarounds), but it seems acceptable for now. Maybe I&amp;rsquo;ll revisit Flipboard again in a future iOS version and hope they get their stability together.&lt;/p&gt;
 
 
 
