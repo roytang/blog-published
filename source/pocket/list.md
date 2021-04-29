@@ -1,4 +1,6 @@
 
+- [How To Live In Wonder](/2021/04/how-to-live-in-wonder/)
+
 - [Yahoo, the Destroyer](/2021/04/yahoo-the-destroyer/)
 
 - [Cryptocurrency is an abject disaster](/2021/04/cryptocurrency-is-an-abject-disaster/)

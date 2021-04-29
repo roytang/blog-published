@@ -11,432 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2012/07/c59asd7/",
-            "url": "https://mirror.roytang.net/2012/07/c59asd7/",
-            "path": "/2012/07/c59asd7/",
-            "title": "",
-            "content_html": "\u003cp\u003eUpdating it would probably break too many foreign key constraints\u003c/p\u003e\n",
-            "summary": "Updating it would probably break too many foreign key constraints",
-            "date_published": "2012-07-04T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/c59asd7/index.md"
-            , "tags": ["Steam"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Steam/comments/w10g3/we_all_know_the_steam_login_name_cannot_be/c59asd7/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/220305419380326400/",
-            "url": "https://mirror.roytang.net/2012/07/220305419380326400/",
-            "path": "/2012/07/220305419380326400/",
-            "title": "",
-            "content_html": "\u003cp\u003e@lizbethjane WTH pauwi ka pa lang!\u003c/p\u003e\n",
-            "summary": "@lizbethjane WTH pauwi ka pa lang!",
-            "date_published": "2012-07-03T23:57:59+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/220305419380326400.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/220305419380326400/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/11305956/",
-            "url": "https://mirror.roytang.net/2012/07/11305956/",
-            "path": "/2012/07/11305956/",
-            "title": "Capturing and replacing the JSP response in a Filter",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain. However, I\u0026rsquo;m getting an \u0026ldquo;IllegalStateException: getOutputStream() has already been called for this response.\u0026rdquo; It seems to happen whenever one of our taglibs tries to write using the writer returned by \u0026ldquo;this.pageContext.getOut()\u0026rdquo;, so I guess the response/writer/outputstream being used by Tomcat isn\u0026rsquo;t using the wrapper classes I passed via the filter.\u003c/p\u003e\n\u003cp\u003eAny suggestions? Or is there a better way to accomplish what I\u0026rsquo;m trying to do?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to write a servlet Filter that under certain conditions will read the HTML response returned by the JSP file and process it (using an XHTML parser) and make some modifications to it before finally returning it to the browser (basically I\u0026rsquo;m trying to implement a global change to avoid having to modify hundreds of JSPs individually)\nI\u0026rsquo;m using Tomcat. I started out by providing a wrapper for the HttpServletResponse and the ServletOutputStream before passing them back to the filter chain.",
-            "date_published": "2012-07-03T07:00:24+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/11305956/index.md"
-            , "tags": ["jsp","servlet-filters","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/11305956/capturing-and-replacing-the-jsp-response-in-a-filter",
-                    "source_file": "comment-20120703T071412-11306131.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219773806825320448/",
-            "url": "https://mirror.roytang.net/2012/07/219773806825320448/",
-            "path": "/2012/07/219773806825320448/",
-            "title": "",
-            "content_html": "\u003cp\u003eNo Llanowar, no BoP, no Noble Hierarch in #M13, all we get is\u0026hellip; Arbor Elf? =/\u003c/p\u003e\n",
-            "summary": "No Llanowar, no BoP, no Noble Hierarch in #M13, all we get is\u0026hellip; Arbor Elf? =/",
-            "date_published": "2012-07-02T12:45:33+00:00",
-            "date_modified": "2019-11-25T13:34:06+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219773806825320448.md"
-            , "tags": ["m13","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219773806825320448/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219768199779074048/",
-            "url": "https://mirror.roytang.net/2012/07/219768199779074048/",
-            "path": "/2012/07/219768199779074048/",
-            "title": "",
-            "content_html": "\u003cp\u003eAre you behaving like a protagonist right now?\u003c/p\u003e\n",
-            "summary": "Are you behaving like a protagonist right now?",
-            "date_published": "2012-07-02T12:23:16+00:00",
-            "date_modified": "2020-07-01T00:31:08+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219768199779074048/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219768199779074048/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219766981790941184/",
-            "url": "https://mirror.roytang.net/2012/07/219766981790941184/",
-            "path": "/2012/07/219766981790941184/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/barayantan/\"\u003e@barayantan\u003c/a\u003e may HD copy ka ng Batman Begins? Padala sa office :D\u003c/p\u003e\n",
-            "summary": "@barayantan may HD copy ka ng Batman Begins? Padala sa office :D",
-            "date_published": "2012-07-02T12:18:26+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219766981790941184.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219766981790941184/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219763742882271232/",
-            "url": "https://mirror.roytang.net/2012/07/219763742882271232/",
-            "path": "/2012/07/219763742882271232/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;Alam mo ung pagod na ham? Ham tired.\u0026rdquo; - kapatid ko\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;Alam mo ung pagod na ham? Ham tired.\u0026rdquo; - kapatid ko",
-            "date_published": "2012-07-02T12:05:33+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219763742882271232.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219763742882271232/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219758979302178816/",
-            "url": "https://mirror.roytang.net/2012/07/219758979302178816/",
-            "path": "/2012/07/219758979302178816/",
-            "title": "",
-            "content_html": "\u003cp\u003eI don\u0026rsquo;t know how they expect Peter Parker to be taken seriously as a tech guy when his default search engine is Bing\u003c/p\u003e\n",
-            "summary": "I don\u0026rsquo;t know how they expect Peter Parker to be taken seriously as a tech guy when his default search engine is Bing",
-            "date_published": "2012-07-02T11:46:38+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219758979302178816.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219758979302178816/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151704387308912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/c588zmy/",
-            "url": "https://mirror.roytang.net/2012/07/c588zmy/",
-            "path": "/2012/07/c588zmy/",
-            "title": "",
-            "content_html": "\u003cp\u003ePwede naman kausapin mo na lang kami ng Tagalog para masanay ka. Sigurado namang merong sasagot kahit dito sa Reddit.\u003c/p\u003e\n",
-            "summary": "Pwede naman kausapin mo na lang kami ng Tagalog para masanay ka. Sigurado namang merong sasagot kahit dito sa Reddit.",
-            "date_published": "2012-07-02T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/c588zmy/index.md"
-            , "tags": ["Philippines"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/Philippines/comments/vwd7p/learn_tagalog/c588zmy/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/vvpak/",
-            "url": "https://mirror.roytang.net/2012/07/vvpak/",
-            "path": "/2012/07/vvpak/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-rexplainlikeimfive-eli5-what-is-the-higgs-bosonhttpsredditcomrexplainlikeimfivecommentsvvpakeli5_what_is_the_higgsboson\"\u003ePosted on r/explainlikeimfive: \u003ca href=\"https://reddit.com/r/explainlikeimfive/comments/vvpak/eli5_what_is_the_higgsboson/\"\u003eELI5: What is the Higgs-Boson?\u003c/a\u003e\u003c/h4\u003e\n",
-            "summary": "Posted on r/explainlikeimfive: ELI5: What is the Higgs-Boson? ",
-            "date_published": "2012-07-01T23:03:05+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/vvpak/index.md"
-            , "tags": ["explainlikeimfive"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/explainlikeimfive/comments/vvpak/eli5_what_is_the_higgsboson/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219440197782347777/",
-            "url": "https://mirror.roytang.net/2012/07/219440197782347777/",
-            "path": "/2012/07/219440197782347777/",
-            "title": "",
-            "content_html": "\u003cp\u003eLeft 4 Dead 2: \u003ca href=\"http://i.imgur.com/Gb6kF.jpg\"\u003ehttp://i.imgur.com/Gb6kF.jpg\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Left 4 Dead 2: http://i.imgur.com/Gb6kF.jpg",
-            "date_published": "2012-07-01T14:39:54+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219440197782347777.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219440197782347777/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/219385293214728192/",
-            "url": "https://mirror.roytang.net/2012/07/219385293214728192/",
-            "path": "/2012/07/219385293214728192/",
-            "title": "",
-            "content_html": "\u003cp\u003eJust saw Amazing Spider-Man. It\u0026rsquo;s a completely different movie than Sam Raimi\u0026rsquo;s version (and better IMHO), much more serious and drama tho\u003c/p\u003e\n",
-            "summary": "Just saw Amazing Spider-Man. It\u0026rsquo;s a completely different movie than Sam Raimi\u0026rsquo;s version (and better IMHO), much more serious and drama tho",
-            "date_published": "2012-07-01T11:01:44+00:00",
-            "date_modified": "2021-04-13T17:23:46+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/07/219385293214728192/index.md"
-            , "tags": ["movies"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219385293214728192/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/lizbeth_baliw",
-                    "source_file": "comment-20120701-141451-a49ba5f9-d372-4b3c-b071-6495cb34eae4.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20120701-142637-2de86fff-e799-4bf1-97f3-9ce7a8fc1527.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/07/",
-            "url": "https://mirror.roytang.net/2012/07/",
-            "path": "/2012/07/",
-            "title": "Monthly Archives for 07 2012",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2012-07-01T00:00:00+00:00",
-            "date_modified": "2019-08-09T01:14:44+08:00",
-            "section": "archm",
-            "source_path": "archm/2012-07.md"
-            
-            
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/219116726175006720/",
-            "url": "https://mirror.roytang.net/2012/06/219116726175006720/",
-            "path": "/2012/06/219116726175006720/",
-            "title": "",
-            "content_html": "\u003cp\u003eJimmy Kimmel on the KFC Cheesetop Burger: \u003ca href=\"https://www.youtube.com/watch?v=B1eX_qtJhB0\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=B1eX_qtJhB0\u0026amp;feature=youtu.be\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Jimmy Kimmel on the KFC Cheesetop Burger: https://www.youtube.com/watch?v=B1eX_qtJhB0\u0026amp;feature=youtu.be",
-            "date_published": "2012-06-30T17:14:33+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/219116726175006720.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219116726175006720/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/219114954274512897/",
-            "url": "https://mirror.roytang.net/2012/06/219114954274512897/",
-            "path": "/2012/06/219114954274512897/",
-            "title": "",
-            "content_html": "\u003cp\u003eSpent the second half of the day watching the Lord of the Rings trilogy.\u003c/p\u003e\n",
-            "summary": "Spent the second half of the day watching the Lord of the Rings trilogy.",
-            "date_published": "2012-06-30T17:07:30+00:00",
-            "date_modified": "2021-04-02T11:01:07+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/219114954274512897/index.md"
-            , "tags": ["movies"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/219114954274512897/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151700975468912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jonathanryan.ang",
-                    "source_file": "comment-20120701-000000-6eb66008-ed79-43e2-9da5-da0775b0fc3e.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/218868195057078273/",
-            "url": "https://mirror.roytang.net/2012/06/218868195057078273/",
-            "path": "/2012/06/218868195057078273/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe temptation to lie down in bed all morning is strong\u003c/p\u003e\n",
-            "summary": "The temptation to lie down in bed all morning is strong",
-            "date_published": "2012-06-30T00:46:58+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/218868195057078273.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/218868195057078273/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/c57l6sa/",
-            "url": "https://mirror.roytang.net/2012/06/c57l6sa/",
-            "path": "/2012/06/c57l6sa/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe bad thing about being both a Steam and PSN user is that PSN sales look terrible compared to Steam ones =/\u003c/p\u003e\n",
-            "summary": "The bad thing about being both a Steam and PSN user is that PSN sales look terrible compared to Steam ones =/",
-            "date_published": "2012-06-30T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/c57l6sa/index.md"
-            , "tags": ["PS3"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/vt33k/psn_summer_sale_starts_tuesday_bonus_discounts/c57l6sa/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/218353676031504386/",
-            "url": "https://mirror.roytang.net/2012/06/218353676031504386/",
-            "path": "/2012/06/218353676031504386/",
-            "title": "",
-            "content_html": "\u003cp\u003e@lizbethjane kala ko ba matutulog na agad :p\u003c/p\u003e\n",
-            "summary": "@lizbethjane kala ko ba matutulog na agad :p",
-            "date_published": "2012-06-28T14:42:27+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/218353676031504386.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/218353676031504386/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/217656905420648449/",
-            "url": "https://mirror.roytang.net/2012/06/217656905420648449/",
-            "path": "/2012/06/217656905420648449/",
-            "title": "",
-            "content_html": "\u003cp\u003eTotally unplanned L4D2 session at a computer shop meant unexpectedly running from zombies all night.\u003c/p\u003e\n",
-            "summary": "Totally unplanned L4D2 session at a computer shop meant unexpectedly running from zombies all night.",
-            "date_published": "2012-06-26T16:33:44+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/217656905420648449.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/217656905420648449/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151692652653912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/217639890454724608/",
-            "url": "https://mirror.roytang.net/2012/06/217639890454724608/",
-            "path": "/2012/06/217639890454724608/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m at Jollibee Pearl Drive (Pasig, NCR) \u003ca href=\"http://4sq.com/LdrycF\"\u003ehttp://4sq.com/LdrycF\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m at Jollibee Pearl Drive (Pasig, NCR) http://4sq.com/LdrycF",
-            "date_published": "2012-06-26T15:26:08+00:00",
-            "date_modified": "2020-05-25T19:34:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/217639890454724608.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/217639890454724608/"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/4fe9d48fe4b0c278f927cd3e?s=h78m6ZDSaSPoqR7SwWUDZXSM-6c\u0026ref=tw"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/4fe9d48fe4b0c278f927cd3e?s=h78m6ZDSaSPoqR7SwWUDZXSM-6c\u0026ref=tw"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/217410669505556480/",
-            "url": "https://mirror.roytang.net/2012/06/217410669505556480/",
-            "path": "/2012/06/217410669505556480/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe MMDA traffic navigator predicts traffic no matter which route I take =/ Here goes nothing\u003c/p\u003e\n",
-            "summary": "The MMDA traffic navigator predicts traffic no matter which route I take =/ Here goes nothing",
-            "date_published": "2012-06-26T00:15:17+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/217410669505556480.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/217410669505556480/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/c55a0vq/",
-            "url": "https://mirror.roytang.net/2012/06/c55a0vq/",
-            "path": "/2012/06/c55a0vq/",
-            "title": "",
-            "content_html": "\u003cp\u003eIn such cases, the judge basically has to listen to each player\u0026rsquo;s explanation and make a judgment as to who is more likely to be telling the truth.\u003c/p\u003e\n\u003cp\u003eIn this case, the UW player is clearly caught with the Batterskull in hand which was sent to the bottom of the library just the last turn, with the only shuffle of his deck being the one where he scooped it into his hand. A judge would be easily able to determine it in this case.\u003c/p\u003e\n\u003cp\u003eIt reminds me of something that happened in GP Manila a couple of weekends ago. One guy had accused his opponent of drawing extra cards and the head judge had to intervene to straighten things out. The head judge basically managed to count every single card the guy had drawn since the start of the game and proved conclusively that the other guy had drawn at least one extra card. The onlookers were very impressed.\u003c/p\u003e\n",
-            "summary": "In such cases, the judge basically has to listen to each player\u0026rsquo;s explanation and make a judgment as to who is more likely to be telling the truth.\nIn this case, the UW player is clearly caught with the Batterskull in hand which was sent to the bottom of the library just the last turn, with the only shuffle of his deck being the one where he scooped it into his hand.",
-            "date_published": "2012-06-25T00:00:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/c55a0vq/index.md"
-            , "tags": ["magicTCG"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/vkdhq/cheating_at_scg_open_detroit_watch_jon_eldens_deck/c55a0vq/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/216894011942764545/",
-            "url": "https://mirror.roytang.net/2012/06/216894011942764545/",
-            "path": "/2012/06/216894011942764545/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m not sure why my ipad cable is in such terrible condition: \u003ca href=\"https://lh3.googleusercontent.com/-DM-_tVPtJ7g/T-cdm1D0v5I/AAAAAAAAAOs/nh3-56iYIcY/s1024/IMG_20120624_220104.jpg\"\u003ehttps://lh3.googleusercontent.com/-DM-_tVPtJ7g/T-cdm1D0v5I/AAAAAAAAAOs/nh3-56iYIcY/s1024/IMG_20120624_220104.jpg\u003c/a\u003e  If it was a rat I\u0026rsquo;d be seeing other cables being chewed\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m not sure why my ipad cable is in such terrible condition: https://lh3.googleusercontent.com/-DM-_tVPtJ7g/T-cdm1D0v5I/AAAAAAAAAOs/nh3-56iYIcY/s1024/IMG_20120624_220104.jpg If it was a rat I\u0026rsquo;d be seeing other cables being chewed",
-            "date_published": "2012-06-24T14:02:16+00:00",
-            "date_modified": "2019-09-26T19:28:00+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/216894011942764545.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/216894011942764545/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151688111213912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/06/216756920462225408/",
-            "url": "https://mirror.roytang.net/2012/06/216756920462225408/",
-            "path": "/2012/06/216756920462225408/",
-            "title": "",
-            "content_html": "\u003cp\u003eConsidering I spent half of it at home, this has been an expensive week =/\u003c/p\u003e\n",
-            "summary": "Considering I spent half of it at home, this has been an expensive week =/",
-            "date_published": "2012-06-24T04:57:31+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/06/216756920462225408.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/216756920462225408/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2012/06/216755586958753794/",
             "url": "https://mirror.roytang.net/2012/06/216755586958753794/",
             "path": "/2012/06/216755586958753794/",
@@ -923,6 +497,446 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213631958947860481/"}]
             
             
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/213626472764682240/",
+            "url": "https://mirror.roytang.net/2012/06/213626472764682240/",
+            "path": "/2012/06/213626472764682240/",
+            "title": "",
+            "content_html": "\u003cp\u003eTis the eve of battle. My weapons are ready. And I should probably sleep early. (Might not be likely lol) #GPMNL\u003c/p\u003e\n",
+            "summary": "Tis the eve of battle. My weapons are ready. And I should probably sleep early. (Might not be likely lol) #GPMNL",
+            "date_published": "2012-06-15T13:38:14+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/213626472764682240.md"
+            , "tags": ["GPMNL"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213626472764682240/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/213621977309655040/",
+            "url": "https://mirror.roytang.net/2012/06/213621977309655040/",
+            "path": "/2012/06/213621977309655040/",
+            "title": "",
+            "content_html": "\u003cp\u003e@lizbethjane anyare?\u003c/p\u003e\n",
+            "summary": "@lizbethjane anyare?",
+            "date_published": "2012-06-15T13:20:22+00:00",
+            "date_modified": "2021-04-12T12:54:32+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/213621977309655040/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213621977309655040/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/lizbeth_baliw",
+                    "source_file": "comment-20120615-132433-0d0365e1-f83f-46fa-81c0-7fddb6ee05a7.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20120615-132506-cd7bb011-fec2-44b5-9470-33f2ea1fafee.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/213616193502846976/",
+            "url": "https://mirror.roytang.net/2012/06/213616193502846976/",
+            "path": "/2012/06/213616193502846976/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/sephriano/\"\u003e@sephriano\u003c/a\u003e matanda na un, nde ko na nauuto\u003c/p\u003e\n",
+            "summary": "@sephriano matanda na un, nde ko na nauuto",
+            "date_published": "2012-06-15T12:57:23+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/213616193502846976.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213616193502846976/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/213609434436481024/",
+            "url": "https://mirror.roytang.net/2012/06/213609434436481024/",
+            "path": "/2012/06/213609434436481024/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis room needs cleaning. But my estimate is around 80mh of work =/\u003c/p\u003e\n",
+            "summary": "This room needs cleaning. But my estimate is around 80mh of work =/",
+            "date_published": "2012-06-15T12:30:32+00:00",
+            "date_modified": "2021-04-12T12:54:32+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/213609434436481024/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213609434436481024/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/lizbeth_baliw",
+                    "source_file": "comment-20120615-123619-8dcd2328-c524-47b4-bc47-9883d0518e85.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20120615-123647-eac2ba08-8daf-421e-96dd-df27c6352b78.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/213477453031669760/",
+            "url": "https://mirror.roytang.net/2012/06/213477453031669760/",
+            "path": "/2012/06/213477453031669760/",
+            "title": "",
+            "content_html": "\u003cp\u003eUng coach ng OKC kamukha ni liam neeson\u003c/p\u003e\n",
+            "summary": "Ung coach ng OKC kamukha ni liam neeson",
+            "date_published": "2012-06-15T03:46:05+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/213477453031669760.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/213477453031669760/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/c50st7z/",
+            "url": "https://mirror.roytang.net/2012/06/c50st7z/",
+            "path": "/2012/06/c50st7z/",
+            "title": "",
+            "content_html": "\u003cp\u003eI feel like starting a game then playing it for 10 years! Who\u0026rsquo;s with me?\u003c/p\u003e\n",
+            "summary": "I feel like starting a game then playing it for 10 years! Who\u0026rsquo;s with me?",
+            "date_published": "2012-06-15T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/c50st7z/index.md"
+            , "tags": ["civ"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/civ/comments/v2iuj/patch_notes_v_101674_614/c50st7z/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/212676683919147008/",
+            "url": "https://mirror.roytang.net/2012/06/212676683919147008/",
+            "path": "/2012/06/212676683919147008/",
+            "title": "",
+            "content_html": "\u003cp\u003eAre we in Gotham City now? \u003ca href=\"https://newsinfo.inquirer.net/211451/slay-suspect-sends-clues-to-police\"\u003ehttps://newsinfo.inquirer.net/211451/slay-suspect-sends-clues-to-police\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Are we in Gotham City now? https://newsinfo.inquirer.net/211451/slay-suspect-sends-clues-to-police",
+            "date_published": "2012-06-12T22:44:07+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/212676683919147008.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/212676683919147008/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/ux59u/",
+            "url": "https://mirror.roytang.net/2012/06/ux59u/",
+            "path": "/2012/06/ux59u/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rps3-anyone-here-tried-replacing-their-ps3-hdd-i-have-some-questionshttpsredditcomrps3commentsux59uanyone_here_tried_replacing_their_ps3_hdd_i_have\"\u003ePosted on r/PS3: \u003ca href=\"https://reddit.com/r/PS3/comments/ux59u/anyone_here_tried_replacing_their_ps3_hdd_i_have/\"\u003eAnyone here tried replacing their PS3 HDD? I have some questions\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eI have a 500 GB WD external HDD, and a friend told me I could take it out of it\u0026rsquo;s case and use it as the replacement HDD for the PS3. Can someone confirm that this will work? (I don\u0026rsquo;t want to take apart the drive just to find out it won\u0026rsquo;t work with the PS3).\u003c/p\u003e\n\u003cp\u003eAll the youtube guides I\u0026rsquo;ve seen are saying to get a laptop hard drive but those are more expensive and I already have this external available.\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
+            "summary": "Posted on r/PS3: Anyone here tried replacing their PS3 HDD? I have some questions I have a 500 GB WD external HDD, and a friend told me I could take it out of it\u0026rsquo;s case and use it as the replacement HDD for the PS3. Can someone confirm that this will work? (I don\u0026rsquo;t want to take apart the drive just to find out it won\u0026rsquo;t work with the PS3).",
+            "date_published": "2012-06-12T09:29:05+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/ux59u/index.md"
+            , "tags": ["ps3"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/PS3/comments/ux59u/anyone_here_tried_replacing_their_ps3_hdd_i_have/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/212348780882829312/",
+            "url": "https://mirror.roytang.net/2012/06/212348780882829312/",
+            "path": "/2012/06/212348780882829312/",
+            "title": "",
+            "content_html": "\u003cp\u003eToday\u0026rsquo;s Google Doodle: \u003ca href=\"http://i.imgur.com/tt1eR.png\"\u003ehttp://i.imgur.com/tt1eR.png\u003c/a\u003e #arawngkalayaan\u003c/p\u003e\n",
+            "summary": "Today\u0026rsquo;s Google Doodle: http://i.imgur.com/tt1eR.png #arawngkalayaan",
+            "date_published": "2012-06-12T01:01:09+00:00",
+            "date_modified": "2019-09-26T19:28:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/212348780882829312.md"
+            , "tags": ["arawngkalayaan"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/212348780882829312/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151663282668912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/c4z5fvj/",
+            "url": "https://mirror.roytang.net/2012/06/c4z5fvj/",
+            "path": "/2012/06/c4z5fvj/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt should be tied to the PSN account that purchases it. You\u0026rsquo;d have to have the same account available on both systems in order to download the game.\u003c/p\u003e\n\u003cp\u003eOnce you have downloaded the game to a system, any account on that system can play the game (as long as the original account used to download it is still on the system)\u003c/p\u003e\n",
+            "summary": "It should be tied to the PSN account that purchases it. You\u0026rsquo;d have to have the same account available on both systems in order to download the game.\nOnce you have downloaded the game to a system, any account on that system can play the game (as long as the original account used to download it is still on the system)",
+            "date_published": "2012-06-12T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/c4z5fvj/index.md"
+            , "tags": ["PS3"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/PS3/comments/uwebi/sharing_psn_purchase_between_two_accounts/c4z5fvj/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/uv5mu/",
+            "url": "https://mirror.roytang.net/2012/06/uv5mu/",
+            "path": "/2012/06/uv5mu/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2012-06-11T06:06:47+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "links",
+            "source_path": "links/2012/06/uv5mu/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/uv5mu/newsaramacom_dc_adds_four_to_new_52_including/"}]
+            ,"link": "http://www.newsarama.com/comics/dc-new-52-four-series-didio-phantom-stranger.html"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/c4yzcca/",
+            "url": "https://mirror.roytang.net/2012/06/c4yzcca/",
+            "path": "/2012/06/c4yzcca/",
+            "title": "",
+            "content_html": "\u003cp\u003eIf you have two sublime archangels, they grant each other an extra instance of exalted, i.e. the lone attacker gets +4/+4\u003c/p\u003e\n\u003cp\u003eWith three, it\u0026rsquo;s +9/+9, with four it\u0026rsquo;s +16/+16\u003c/p\u003e\n\u003cp\u003eThis is a standard of clones (Phantasmal Image/Phyrexian Metamorph). Sounds fun :D\u003c/p\u003e\n",
+            "summary": "If you have two sublime archangels, they grant each other an extra instance of exalted, i.e. the lone attacker gets +4/+4\nWith three, it\u0026rsquo;s +9/+9, with four it\u0026rsquo;s +16/+16\nThis is a standard of clones (Phantasmal Image/Phyrexian Metamorph). Sounds fun :D",
+            "date_published": "2012-06-11T00:00:00+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/c4yzcca/index.md"
+            , "tags": ["magicTCG"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/magicTCG/comments/uvmoq/m13_magic_2013_spoilers_for_june_11th/c4yzcca/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211826663154135040/",
+            "url": "https://mirror.roytang.net/2012/06/211826663154135040/",
+            "path": "/2012/06/211826663154135040/",
+            "title": "",
+            "content_html": "\u003cp\u003e@lizbethjane he can\u0026rsquo;t hear you!\u003c/p\u003e\n",
+            "summary": "@lizbethjane he can\u0026rsquo;t hear you!",
+            "date_published": "2012-06-10T14:26:26+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211826663154135040.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211826663154135040/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/uu9a4/",
+            "url": "https://mirror.roytang.net/2012/06/uu9a4/",
+            "path": "/2012/06/uu9a4/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rpsp-i-have-a-psp-with-cfw-will-i-have-problems-if-i-login-my-psn-accounthttpsredditcomrpspcommentsuu9a4i_have_a_psp_with_cfw_will_i_have_problems_if_i\"\u003ePosted on r/PSP: \u003ca href=\"https://reddit.com/r/PSP/comments/uu9a4/i_have_a_psp_with_cfw_will_i_have_problems_if_i/\"\u003eI have a PSP with CFW, will I have problems if I login my PSN account?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eI have some minis from PSN, I should be able to use them on the PSP right?\u003c/p\u003e\n",
+            "summary": "Posted on r/PSP: I have a PSP with CFW, will I have problems if I login my PSN account? I have some minis from PSN, I should be able to use them on the PSP right?",
+            "date_published": "2012-06-10T13:33:56+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/uu9a4/index.md"
+            , "tags": ["psp"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/PSP/comments/uu9a4/i_have_a_psp_with_cfw_will_i_have_problems_if_i/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211712530232516608/",
+            "url": "https://mirror.roytang.net/2012/06/211712530232516608/",
+            "path": "/2012/06/211712530232516608/",
+            "title": "",
+            "content_html": "\u003cp\u003eParang eleksyon lang, pag natalo, dinaya daw #notsayingtheyrewrong\u003c/p\u003e\n",
+            "summary": "Parang eleksyon lang, pag natalo, dinaya daw #notsayingtheyrewrong",
+            "date_published": "2012-06-10T06:52:55+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211712530232516608.md"
+            , "tags": ["notsayingtheyrewrong"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211712530232516608/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151659853718912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211709518747418624/",
+            "url": "https://mirror.roytang.net/2012/06/211709518747418624/",
+            "path": "/2012/06/211709518747418624/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TagoFabic/\"\u003e@TagoFabic\u003c/a\u003e zoolanderReferenceCounter++\u003c/p\u003e\n",
+            "summary": "@TagoFabic zoolanderReferenceCounter++",
+            "date_published": "2012-06-10T06:40:57+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211709518747418624.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211709518747418624/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211684924175040512/",
+            "url": "https://mirror.roytang.net/2012/06/211684924175040512/",
+            "path": "/2012/06/211684924175040512/",
+            "title": "",
+            "content_html": "\u003cp\u003eApparently something has happened with #PacBradley, but I don\u0026rsquo;t know what\u003c/p\u003e\n",
+            "summary": "Apparently something has happened with #PacBradley, but I don\u0026rsquo;t know what",
+            "date_published": "2012-06-10T05:03:13+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211684924175040512.md"
+            , "tags": ["PacBradley"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211684924175040512/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211457710636539904/",
+            "url": "https://mirror.roytang.net/2012/06/211457710636539904/",
+            "path": "/2012/06/211457710636539904/",
+            "title": "",
+            "content_html": "\u003cp\u003eAND NOW TO SLEEP FOR TWENTY HOURS\u003c/p\u003e\n",
+            "summary": "AND NOW TO SLEEP FOR TWENTY HOURS",
+            "date_published": "2012-06-09T14:00:21+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211457710636539904.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211457710636539904/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211447009691975680/",
+            "url": "https://mirror.roytang.net/2012/06/211447009691975680/",
+            "path": "/2012/06/211447009691975680/",
+            "title": "",
+            "content_html": "\u003cp\u003eWell i actually won a couple of packs this time but still #somanybadplays, went 4-3 at today\u0026rsquo;s ptq\u003c/p\u003e\n",
+            "summary": "Well i actually won a couple of packs this time but still #somanybadplays, went 4-3 at today\u0026rsquo;s ptq",
+            "date_published": "2012-06-09T13:17:50+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211447009691975680.md"
+            , "tags": ["somanybadplays"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211447009691975680/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/211234974844719104/",
+            "url": "https://mirror.roytang.net/2012/06/211234974844719104/",
+            "path": "/2012/06/211234974844719104/",
+            "title": "",
+            "content_html": "\u003cp\u003e@lizbethjane yup thanks :D\u003c/p\u003e\n",
+            "summary": "@lizbethjane yup thanks :D",
+            "date_published": "2012-06-08T23:15:17+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/211234974844719104.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/211234974844719104/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/210704314832928769/",
+            "url": "https://mirror.roytang.net/2012/06/210704314832928769/",
+            "path": "/2012/06/210704314832928769/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m at Amici (San Juan, Metro Manila) \u003ca href=\"http://4sq.com/KR1DtC\"\u003ehttp://4sq.com/KR1DtC\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m at Amici (San Juan, Metro Manila) http://4sq.com/KR1DtC",
+            "date_published": "2012-06-07T12:06:38+00:00",
+            "date_modified": "2020-05-25T19:34:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/210704314832928769.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/210704314832928769/"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/4fd0994de4b076aaae193a13?s=g4sMc_3aMVVJ_vDabd9MEEXKTJg\u0026ref=tw"},{"type":"foursquare","url":"https://www.swarmapp.com/user/405004/checkin/4fd0994de4b076aaae193a13?s=g4sMc_3aMVVJ_vDabd9MEEXKTJg\u0026ref=tw"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/210144393129242625/",
+            "url": "https://mirror.roytang.net/2012/06/210144393129242625/",
+            "path": "/2012/06/210144393129242625/",
+            "title": "",
+            "content_html": "\u003cp\u003eFeels good to be alive\u003c/p\u003e\n",
+            "summary": "Feels good to be alive",
+            "date_published": "2012-06-05T23:01:42+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/210144393129242625.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/210144393129242625/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10151651642198912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/210142491297595393/",
+            "url": "https://mirror.roytang.net/2012/06/210142491297595393/",
+            "path": "/2012/06/210142491297595393/",
+            "title": "",
+            "content_html": "\u003cp\u003eOnly had 3.5 hours of sleep; time to go to the office and be a spaz\u003c/p\u003e\n",
+            "summary": "Only had 3.5 hours of sleep; time to go to the office and be a spaz",
+            "date_published": "2012-06-05T22:54:08+00:00",
+            "date_modified": "2021-04-12T00:25:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/210142491297595393/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/210142491297595393/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/lizbeth_baliw",
+                    "source_file": "comment-20120605-225651-7d9a32bf-20f9-4d59-aba1-eb590db47fb8.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20120605-225949-72f9c750-b979-4414-9813-6b91cbd3a30c.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2012/06/210059513540247552/",
+            "url": "https://mirror.roytang.net/2012/06/210059513540247552/",
+            "path": "/2012/06/210059513540247552/",
+            "title": "",
+            "content_html": "\u003cp\u003eUgh not even remotely sleepy\u003c/p\u003e\n",
+            "summary": "Ugh not even remotely sleepy",
+            "date_published": "2012-06-05T17:24:25+00:00",
+            "date_modified": "2021-04-12T00:25:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/06/210059513540247552/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/210059513540247552/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/lizbeth_baliw",
+                    "source_file": "comment-20120605-173907-407ffdb0-3e48-4b1a-86f6-a005e2d37dfc.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20120605-173924-abdf5ab6-f1e2-49d5-81b3-53ff7d562ac7.json"
+                }
+            ]
             }
         
     ]
