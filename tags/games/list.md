@@ -45,7 +45,11 @@
 
 - [](/2012/04/188971847163977728/)
 
+- [](/2011/12/148286730351550469/)
+
 - [](/2011/07/97231680342986753/)
+
+- [](/2010/12/16438210175434752/)
 
 - [[Step by step modding-Guide]: Turn Baldur&#39;s Gate and its sequel into ...](/2010/09/step-by-step-modding-guide-turn-baldur-s-gate-and-its-sequel-into/)
 
