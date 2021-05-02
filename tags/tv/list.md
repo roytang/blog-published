@@ -1,4 +1,6 @@
 
+- [Tom Clancy&#39;s Jack Ryan season 2](/2021/05/99d3f5dffa9b1e1f2a4029f66c2b4f2a/)
+
 - [Invincible season 1](/2021/04/183ab94b6cb10f5db0431e715cde1945/)
 
 - [The Falcon and the Winter Soldier Review](/2021/04/the-falcon-and-the-winter-soldier-review/)
@@ -96,6 +98,8 @@
 - [](/2017/08/893056454671740928/)
 
 - [](/2016/12/10155222048823912/)
+
+- [](/2016/12/10155207359768912/)
 
 - [](/2016/10/10154956006193912/)
 

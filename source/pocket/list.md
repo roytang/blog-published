@@ -1,4 +1,6 @@
 
+- [My current HTML boilerplate](/2021/05/my-current-html-boilerplate/)
+
 - [How to have better arguments online](/2021/04/how-to-have-better-arguments-online/)
 
 - [Why Lichess will always be free.](/2021/04/why-lichess-will-always-be-free/)

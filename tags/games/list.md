@@ -73,6 +73,8 @@
 
 - [Birdmen and the Casual Fallacy](/2009/01/birdmen-and-the-casual-fallacy/)
 
+- [](/2008/12/1075638523/)
+
 - [The eyeballing game](/2008/10/the-eyeballing-game/)
 
 - [83 free D&amp;D adventures - Dungeon Mastering - Dungeons and Dragons blog - DM tips...](/2008/10/83-free-d-d-adventures-dungeon-mastering-dungeons-and-dragons-blog-dm-tips/)
