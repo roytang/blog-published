@@ -29,16 +29,17 @@ Latest shared links:
 Latest notes:
     
 
+- [2 May 2021 1:13pm](https://mirror.roytang.net/2021/05/gwnpfu2/): &gt; Hold the power button for 10 seconds and plug in the mag safe connector while you keep holding down the power button for another 10 seconds at least.
+Was I supposed to do this while the laptop was off? because of course it started turning on in the middle of the first 10 seconds.
+I also tried it while the laptop was on, in which case it shutdown during the first 10 seconds.
+- [2 May 2021 11:54am](https://mirror.roytang.net/2021/05/gwngjmo/): I think I&rsquo;ve tried this before; unsure as I&rsquo;ve had this problem for a while and have been looking around for solutions for a while. Regardless, I tried it again today a couple of times, it hasn&rsquo;t changed anything.
+- [2 May 2021 10:02am](https://mirror.roytang.net/2021/05/n33ad9/): Posted on r/applehelp: 2017 Macbook Air has trouble charging Hello,
+I have a 2017 Macbook Air. This one still has the Magsafe charger. My problem with it is that connecting the charger to the device via the Magsafe port is super finicky, most of the time if I just plug it in straight, the device won&rsquo;t charge (the battery status indicator will have the lightning bolt symbol, but if you click on it, the dropdown will say &ldquo;not charging&rdquo;) and the magsafe connector won&rsquo;t light up (if it&rsquo;s charging it will light up either red or green).
+- [2 May 2021 6:49am](https://mirror.roytang.net/2021/05/1388747508688424960/): I’m at 2. Feels like this number would be significantly lowere here in the PH
+Quoted PamelaApostolo1&#39;s tweet:   🏠 They say an average person lives in 11 homes in their lifetime.
+What’s your number? (I’m currently at 8🤪)
+ 
 - [1 May 2021 12:07pm](https://mirror.roytang.net/2021/05/99d3f5dffa9b1e1f2a4029f66c2b4f2a/): I binged season 2 of Tom Clancy&rsquo;s Jack Ryan this week (after watching season 1 back in 2018!). This season felt tighter than the first in terms of pacing and such.But I&rsquo;m not happy with the way it promotes American interventionism and their easy willingness to interfere in the affairs of a sovereign nation (however justified it may be)
-- [1 May 2021 9:27am](https://mirror.roytang.net/2021/05/1388424945730981890/): Saturday Strixhaven quick drafts! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgstrixhaven
-Rare-drafted a bunch (I think 6 in the deck and 4 in the board), but still got a decent enough deck. Didn&rsquo;t perform well though, had some bad keeps
-YT: https://www.youtube.com/watch?v=Zj5__bJDpkY
-- [1 May 2021 7:15am](https://mirror.roytang.net/2021/05/1388391582605316096/): @wrongwaygoback how are the bots in quick draft?
-- [30 Apr 2021 1:07pm](https://mirror.roytang.net/2021/04/183ab94b6cb10f5db0431e715cde1945/): Invincible season 1 finale was pretty great, the fight was intense and afterwards I couldn&rsquo;t believe there was still half an episode to go. It&rsquo;s been a while since I read the books so I&rsquo;m not sure, but I think they diverged a bit from the source material, but it&rsquo;s fine.The series was developed well enough, decent pacing and enough to portray the major characters well. Looking forward to season 2!
-- [30 Apr 2021 11:56am](https://mirror.roytang.net/2021/04/1388100027684331520/): Phrases like &ldquo;insufficient evidence&rdquo; and &ldquo;no proof&rdquo; does nothing to dissuade people whose arguments are along the lines of &ldquo;it can&rsquo;t hurt to try&rdquo; or &ldquo;maybe it will help&rdquo;.
-Quoted reportrdotworld&#39;s tweet:   The DOH and FDA reminded the public that they do not recommend the use of Ivermectin to treat #COVID19 due to insufficient scientific evidence.
-https://www.reportr.world/news/doh-fda-do-not-recommend-ivermectin-for-covid-a4736-20210430?utm_source=Twitter-reportr&amp;utm_medium=Ownshare&amp;utm_campaign=20210430-twnp-news-doh-fda-do-not-recommend-ivermectin-for-covid-a4736-20210430-twfirst
- The drug actively harming people would be more effective but the disadvantage of relying on science is that we can&rsquo;t just make claims like that without evidence.
 
 [View all notes](https://mirror.roytang.net/notes)
 

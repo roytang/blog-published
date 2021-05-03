@@ -27,9 +27,15 @@
 
 - [](/2018/08/1030779233100947456/)
 
+- [](/2017/12/bduzgkaacpp/)
+
 - [](/2017/10/924546017281785859/)
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
+
+- [](/2016/12/10155237324233912/)
+
+- [Review: Xenoblade Chronicles X](/2016/12/review-xenoblade-chronicles-x/)
 
 - [](/2015/10/8laqfkmoj3/)
 
@@ -124,6 +130,8 @@
 - [Gamasutra - Soapbox - &#34;World of Warcraft Teaches the Wrong Things&#34;](/2006/02/gamasutra-soapbox-world-of-warcraft-teaches-the-wrong-things/)
 
 - [Super Mario World (SNES) - 10:51 (US version, emulated run) - Alexis Neuhaus](/2006/01/super-mario-world-snes-10-51-us-version-emulated-run-alexis-neuhaus/)
+
+- [Games -- Civilization 4](/2005/12/games-civilization-4/)
 
 - [Civ4 - Improving Performance](/2005/12/civ4-improving-performance/)
 

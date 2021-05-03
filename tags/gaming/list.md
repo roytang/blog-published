@@ -153,6 +153,8 @@
 
 - [The Setup 2018 Edition](/2018/03/the-setup-2018-edition/)
 
+- [](/2017/12/bduzgkaacpp/)
+
 - [](/2017/10/924546017281785859/)
 
 - [Hardware Review: Steam Link](/2017/07/hardware-review-steam-link/)
@@ -298,8 +300,6 @@
 - [](/2014/05/25y082/)
 
 - [](/2014/05/25y02m/)
-
-- [](/2014/04/246pwp/)
 
 - [](/2014/04/246pv1/)
 
