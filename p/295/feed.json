@@ -11,91 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2010/08/3599669/",
-            "url": "https://mirror.roytang.net/2010/08/3599669/",
-            "path": "/2010/08/3599669/",
-            "title": "",
-            "content_html": "\u003cp\u003eYou already have the lines logging your values array, was it so hard to add lines logging the other vars?\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003ec1_arr = c1.split(';');  \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe array created here is [\u0026lsquo;font-color:#ff0000\u0026rsquo;, \u0026lsquo;'] - there is a blank second element since there\u0026rsquo;s nothing after the \u0026lsquo;;\u0026rsquo; in the input string.\u003c/p\u003e\n\u003cp\u003eThen when you call:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evalues[1][i]= c1_arr[i].split(':');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003ec1_arr[1] is empty string, so values[1][1] is an array with only one element, empty string.\u003c/p\u003e\n\u003cp\u003evalues[1][1][0] -\u0026gt; empty string\nvalues[1][1][1] -\u0026gt; undefined (no second element)\u003c/p\u003e\n",
-            "summary": "You already have the lines logging your values array, was it so hard to add lines logging the other vars?\nc1_arr = c1.split(';');  The array created here is [\u0026lsquo;font-color:#ff0000\u0026rsquo;, \u0026lsquo;'] - there is a blank second element since there\u0026rsquo;s nothing after the \u0026lsquo;;\u0026rsquo; in the input string.\nThen when you call:\nvalues[1][i]= c1_arr[i].split(':');  c1_arr[1] is empty string, so values[1][1] is an array with only one element, empty string.",
-            "date_published": "2010-08-30T10:50:08+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/08/3599669/index.md"
-            , "tags": ["javascript","jquery","arrays"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/3599620/jquery-split-arrays-with-only-one-match-undefined/3599669#3599669"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/08/22495398727/",
-            "url": "https://mirror.roytang.net/2010/08/22495398727/",
-            "path": "/2010/08/22495398727/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/pluish/\"\u003e@pluish\u003c/a\u003e congrats haha\u003c/p\u003e\n",
-            "summary": "@pluish congrats haha",
-            "date_published": "2010-08-30T04:09:37+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/08/22495398727.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/22495398727/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/08/22491971503/",
-            "url": "https://mirror.roytang.net/2010/08/22491971503/",
-            "path": "/2010/08/22491971503/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/maro254/\"\u003e@maro254\u003c/a\u003e is it the 3rd unset?\u003c/p\u003e\n",
-            "summary": "@maro254 is it the 3rd unset?",
-            "date_published": "2010-08-30T03:15:06+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/08/22491971503.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/22491971503/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/08/1032689962/",
-            "url": "https://mirror.roytang.net/2010/08/1032689962/",
-            "path": "/2010/08/1032689962/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy current wallpaper. Click for full-size.\u003c/p\u003e",
-            "summary": "My current wallpaper. Click for full-size.",
-            "date_published": "2010-08-29T20:13:00+00:00",
-            "date_modified": "2020-02-07T00:42:00+08:00",
-            "section": "photos",
-            "source_path": "photos/2010/08/1032689962/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/1032689962/my-current-wallpaper-click-for-full-size"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/22464226784/"},{"type":"plurk","url":"https://plurk.com/p/78slf6"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2010/08/22400925685/",
-            "url": "https://mirror.roytang.net/2010/08/22400925685/",
-            "path": "/2010/08/22400925685/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/iamcrystalene/\"\u003e@iamcrystalene\u003c/a\u003e kaya ba sa twitter ka lang nagpopost and hindi sa fb? baka may mahalata? joke :p\u003c/p\u003e\n",
-            "summary": "@iamcrystalene kaya ba sa twitter ka lang nagpopost and hindi sa fb? baka may mahalata? joke :p",
-            "date_published": "2010-08-29T02:01:42+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2010/08/22400925685.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/22400925685/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2010/08/22400097252/",
             "url": "https://mirror.roytang.net/2010/08/22400097252/",
             "path": "/2010/08/22400097252/",
@@ -930,6 +845,107 @@
             
             , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/936140820/4chans-founder-explains-rickroll-and-other"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/20867656951/"},{"type":"plurk","url":"https://plurk.com/p/6v7bfa"}]
             ,"link": "http://www.businessinsider.com/4chan-founder-moots-weird-testimony-in-sarah-palin-email-hacking-trial-2010-8"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/08/20866793967/",
+            "url": "https://mirror.roytang.net/2010/08/20866793967/",
+            "path": "/2010/08/20866793967/",
+            "title": "",
+            "content_html": "\u003cp\u003ePhoto: Racial discrimination in the Philippines? From a certain internet shop in Ortigas.\u003c/p\u003e\n",
+            "summary": "Photo: Racial discrimination in the Philippines? From a certain internet shop in Ortigas.",
+            "date_published": "2010-08-11T07:32:23+00:00",
+            "date_modified": "2021-04-15T23:35:33+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/08/20866793967/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/20866793967/"},{"type":"plurk","url":"https://plurk.com/p/6v7bda"},{"type":"plurk","url":"https://plurk.com/p/6v7bff"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/936151821/racial-descrimination-in-the-philippines"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/20867828125/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://plurk.com/p/6v7bda",
+                    "source_file": "comment-20100811T153503-1944014670.json"
+                }, { 
+                    "url": "https://plurk.com/p/6v7bda",
+                    "source_file": "comment-20100811T223741-1945220300.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/08/20818704678/",
+            "url": "https://mirror.roytang.net/2010/08/20818704678/",
+            "path": "/2010/08/20818704678/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/busterbenson/\"\u003e@busterbenson\u003c/a\u003e You have a chart on your website \u0026ldquo;What I\u0026rsquo;m often doing at 12pm\u0026rdquo; - How do you track your data for this?\u003c/p\u003e\n",
+            "summary": "@busterbenson You have a chart on your website \u0026ldquo;What I\u0026rsquo;m often doing at 12pm\u0026rdquo; - How do you track your data for this?",
+            "date_published": "2010-08-10T19:20:44+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/08/20818704678.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/20818704678/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/08/20803621725/",
+            "url": "https://mirror.roytang.net/2010/08/20803621725/",
+            "path": "/2010/08/20803621725/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e kahit nde na tayo magkita. I\u0026rsquo;ve settled on a Jund list, I have all the cards needed. Laro ka sa game day this weekend?\u003c/p\u003e\n",
+            "summary": "@aleksfelipe kahit nde na tayo magkita. I\u0026rsquo;ve settled on a Jund list, I have all the cards needed. Laro ka sa game day this weekend?",
+            "date_published": "2010-08-10T15:33:39+00:00",
+            "date_modified": "2021-04-15T23:35:33+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/08/20803621725/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/20803621725/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/aleksfelipe",
+                    "source_file": "comment-20100810-153819-b5bd0f48-bf49-4996-b8a6-f83ab8507d78.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20100810-153851-6ded816f-4711-4a51-80d2-27b322f5f7ad.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/08/932228905/",
+            "url": "https://mirror.roytang.net/2010/08/932228905/",
+            "path": "/2010/08/932228905/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2010-08-10T15:14:02+00:00",
+            "date_modified": "2019-08-26T17:23:46+08:00",
+            "section": "photos",
+            "source_path": "photos/2010/08/932228905/index.md"
+            
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/932228905"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/08/the-fifth-power/",
+            "url": "https://mirror.roytang.net/2010/08/the-fifth-power/",
+            "path": "/2010/08/the-fifth-power/",
+            "title": "The Fifth Power",
+            "content_html": "\u003cp\u003eI maybe getting older but as anyone can attest, I\u0026rsquo;m still a child at heart.\u003c/p\u003e\n\u003cp\u003eAs they say: life is a journey, not a destination. I still don\u0026rsquo;t know what my destination is, but I\u0026rsquo;ll keep moving forward one step at a time.\u003c/p\u003e\n\u003cp\u003eLooking forward to the next power of two.\u003c/p\u003e\n",
+            "summary": "I maybe getting older but as anyone can attest, I\u0026rsquo;m still a child at heart.\nAs they say: life is a journey, not a destination. I still don\u0026rsquo;t know what my destination is, but I\u0026rsquo;ll keep moving forward one step at a time.\nLooking forward to the next power of two.",
+            "date_published": "2010-08-09T16:41:10+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2010/08/the-fifth-power/index.md"
+            , "tags": ["birthday"]
+            
+            
             
             }
         
