@@ -9,6 +9,8 @@
 
 - [Digital Boardgames Review: Sentinels of the Multiverse](/2021/02/digital-boardgames-review-sentinels-of-the-multiverse/)
 
+- [](/2021/01/1349796416042856448/)
+
 - [Game Review: Super Mario Odyssey](/2020/12/game-review-super-mario-odyssey/)
 
 - [](/2020/10/1322214646221205504/)
@@ -28,6 +30,8 @@
 - [Late Game Review -- Ni No Kuni: Wrath of the White Witch (2013)](/2018/10/late-game-review-ni-no-kuni-wrath-of-the-white-witch-2013/)
 
 - [](/2018/08/1030779233100947456/)
+
+- [](/2018/01/949318192073121792/)
 
 - [](/2017/12/bduzgkaacpp/)
 
@@ -80,6 +84,8 @@
 - [](/2009/07/2560147227/)
 
 - [Birdmen and the Casual Fallacy](/2009/01/birdmen-and-the-casual-fallacy/)
+
+- [Valkyria Chronicles](/2009/01/valkyria-chronicles/)
 
 - [](/2009/01/1090436420/)
 

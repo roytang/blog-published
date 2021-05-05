@@ -1,4 +1,6 @@
 
+- [Book Review: Snow Crash by Neal Stephenson](/2021/05/book-review-snow-crash-by-neal-stephenson/)
+
 - [Without Their Permission by Alexis Ohanian](/2021/04/without-their-permission-by-alexis-ohanian/)
 
 - [Book Reviews: Guards! Guards! and Men at Arms by Terry Pratchett](/2021/04/book-reviews-guards-guards-and-men-at-arms-by-terry-pratchett/)
@@ -136,6 +138,10 @@
 - [](/2014/04/10152904609773912/)
 
 - [](/2014/03/cg2j7h8/)
+
+- [](/2014/01/420592683871006720/)
+
+- [](/2014/01/419728369807130624/)
 
 - [](/2014/01/cehqo9o/)
 
