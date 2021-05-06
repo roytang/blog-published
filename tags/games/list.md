@@ -39,6 +39,8 @@
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
 
+- [Review: Duelyst](/2017/02/review-duelyst/)
+
 - [](/2016/12/10155237324233912/)
 
 - [Review: Xenoblade Chronicles X](/2016/12/review-xenoblade-chronicles-x/)
@@ -102,6 +104,8 @@
 - [Kotaku - Work and Play: A Peek Inside the Lives of Gaming&#39;s Greatest](/2008/01/kotaku-work-and-play-a-peek-inside-the-lives-of-gaming-s-greatest/)
 
 - [Flash Preview of Apollo Justice: Ace Attorney](/2008/01/flash-preview-of-apollo-justice-ace-attorney/)
+
+- [Advance Wars: Dual Strike](/2008/01/advance-wars-dual-strike/)
 
 - [YouTube - 『Can&#39;t Beat Air Man』（「エアーマンが倒せない」英語版）](/2008/01/youtube-can-t-beat-air-man-eamangadao-senai-ying-yu-ban/)
 
@@ -174,6 +178,8 @@
 - [Battle for Wesnoth](/2005/02/battle-for-wesnoth/)
 
 - [Hackenslash by INQ7](/2005/01/hackenslash-by-inq7/)
+
+- [Games: Star Ocean -- Till the End of Time](/2005/01/games-star-ocean-till-the-end-of-time/)
 
 - [Star Ocean 3 Invention Calc](/2005/01/star-ocean-3-invention-calc/)
 

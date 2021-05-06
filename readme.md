@@ -29,14 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [6 May 2021 2:58am](https://mirror.roytang.net/2021/05/gx3wfyz/): This mindset reflects someone who doesn&rsquo;t respect institutions or the law or civilized agreements, and basically respects only one thing: power. That&rsquo;s why he thinks people who oppose China want war and why he doesn&rsquo;t want to offend China, power is all he sees and values, like the thug that he is. For this kind of person, you can&rsquo;t be right because of the law or because of principle, or because of justice, you can only be right if you had the ability to enforce that right.
+- [6 May 2021 2:39am](https://mirror.roytang.net/2021/05/1390134185222832132/): This mindset reflects someone who doesn&rsquo;t respect institutions or the law or civilized agreements, and basically respects only one thing: power. That&rsquo;s why he thinks people who oppose China wants war and why he doesn&rsquo;t want to offend them, power is all he sees, like thug he is
+Quoted gmanews&#39;s tweet:   President Rodrigo Duterte on Wednesday night said the Philippines&rsquo; arbitral victory in 2016 against China&rsquo;s massive claims in the West Philippine Sea before the United Nations is just paper fit to be thrown in the trash.
+- [5 May 2021 10:22am](https://mirror.roytang.net/2021/05/1389888129239339012/): Wednesday evening Strixhaven quick drafts! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgstrixhaven
+Two quick drafts today! Finally managed to get 7 wins in quick draft by forcing silverquill aggro! Well, maybe the Lightscribe helped a lot!
+YT: https://www.youtube.com/watch?v=GldXRNMt6Eg
 - [3 May 2021 10:42pm](https://mirror.roytang.net/2021/05/1389349579091365888/): Bill Gates separating from his wife right after Queen Elizabeth becomes single again. Coincidence?
 - [3 May 2021 3:20pm](https://mirror.roytang.net/2021/05/1389238548566462466/): Dan Harmon&rsquo;s amazing writers&rsquo; advice
-- [3 May 2021 1:46pm](https://mirror.roytang.net/2021/05/1389214746822385668/): The world may change and evolve, but the one thing that will never change: we’re all part of one big family.
-Your browser does not support the video tag.  
-- [3 May 2021 1:22pm](https://mirror.roytang.net/2021/05/1389208741283733508/): that cold open from brooklyn99 but as a japanese dub lol (b99 is on ntflxJP)
-Your browser does not support the video tag.  
-- [3 May 2021 1:20pm](https://mirror.roytang.net/2021/05/1389208170111799297/): Hashtag Pinoy Pride
-Quoted paulg&#39;s tweet:   Over 6% of the plastic in the ocean comes from a single river in the Philippines.  
 
 [View all notes](https://mirror.roytang.net/notes)
 

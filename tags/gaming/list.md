@@ -175,8 +175,6 @@
 
 - [Gaming Walkthroughs](/2017/02/gaming-walkthroughs/)
 
-- [](/2017/01/5oagti/)
-
 - [Review: Xenoblade Chronicles X](/2016/12/review-xenoblade-chronicles-x/)
 
 - [](/2016/11/5cog8l/)
