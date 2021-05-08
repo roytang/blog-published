@@ -3,6 +3,8 @@
 
 - [Quotes!](/2021/01/quotes/)
 
+- [](/2020/01/1223113973559521282/)
+
 - [Three Hearts](/2019/08/three-hearts/)
 
 - [In Search of Knowledge](/2019/05/in-search-of-knowledge/)
@@ -38,6 +40,8 @@
 - [Be excellent to each other, and party on, dudes](/2019/02/be-excellent-to-each-other-and-party-on-dudes/)
 
 - [Life Isn&#39;t Fair](/2019/01/life-isnt-fair/)
+
+- [](/2019/01/1088642083320139778/)
 
 - [The Price for Being the Best](/2018/11/the-price-for-being-the-best/)
 
@@ -240,6 +244,8 @@
 - [](/2011/05/5099301259/)
 
 - [](/2011/03/3583290532/)
+
+- [](/2011/01/32222716060762112/)
 
 - [](/2010/11/1637528817/)
 

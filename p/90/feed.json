@@ -11,577 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2017/10/924944351389663232/",
-            "url": "https://mirror.roytang.net/2017/10/924944351389663232/",
-            "path": "/2017/10/924944351389663232/",
-            "title": "",
-            "content_html": "\u003cp\u003eI think I\u0026rsquo;m skipping the  platinum for this one lol #KingdomHearts2 #Fb #PS4share \u003ca href=\"https://store.playstation.com/#!/en-us/tid=CUSA05933_00\"\u003ehttps://store.playstation.com/#!/en-us/tid=CUSA05933_00\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "I think I\u0026rsquo;m skipping the platinum for this one lol #KingdomHearts2 #Fb #PS4share https://store.playstation.com/#!/en-us/tid=CUSA05933_00",
-            "date_published": "2017-10-30T10:21:32+00:00",
-            "date_modified": "2020-09-07T14:21:52+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/10/924944351389663232/index.md"
-            , "tags": ["KingdomHearts2","Fb","PS4share"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924944351389663232/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/47009063/",
-            "url": "https://mirror.roytang.net/2017/10/47009063/",
-            "path": "/2017/10/47009063/",
-            "title": "Marklogic 9: MLCP fails when importing records with a transform",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\u003c/p\u003e\n\u003cp\u003eMy MLCP options file is as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport\n-host \n192.168.33.10\n-port \n8041\n-username \nadmin\n-password\nadmin\n-input_file_path \nd:\\maroon\\data\\mbastest.csv \n-mode \nlocal \n-input_file_type \ndelimited_text \n-uri_id \nClientId \n-output_uri_prefix\n/test/records/\n-output_uri_suffix \n.json \n-document_type \njson \n-transform_module \n/ingestion/transform.js\n-transform_function \ntestTransform\n-transform_param\ntest\n-content_encoding \nwindows-1252 \n-thread_count\n1\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHere\u0026rsquo;s the output of a test run with only 2 records in the test CSV file:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON\n17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1\n17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf I remove the transform params, the import works fine.\u003c/p\u003e\n\u003cp\u003eI thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// Add a property named \u0026quot;NEWPROP\u0026quot; to any JSON input document.\n// Otherwise, input passes through unchanged.\n\nfunction addProp(content, context)\n{\n  const propVal = (context.transform_param == undefined)\n                 ? \u0026quot;UNDEFINED\u0026quot; : context.transform_param;\n\n  if (xdmp.nodeKind(content.value) == 'document' \u0026amp;\u0026amp;\n      content.value.documentFormat == 'JSON') {\n    // Convert input to mutable object and add new property\n    const newDoc = content.value.toObject();\n    newDoc.NEWPROP = propVal;\n\n    // Convert result back into a document\n    content.value = xdmp.unquote(xdmp.quote(newDoc));\n  }\n  return content;\n};\n\nexports.addProp = addProp;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e(Of course I changed the params in the MLCP options file accordingly)\u003c/p\u003e\n\u003cp\u003eThe issue still persists even with just this test function.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\nMy MLCP options file is as follows:\nimport -host 192.168.33.10 -port 8041 -username admin -password admin -input_file_path d:\\maroon\\data\\mbastest.csv -mode local -input_file_type delimited_text -uri_id ClientId -output_uri_prefix /test/records/ -output_uri_suffix .",
-            "date_published": "2017-10-30T06:15:37+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/47009063/index.md"
-            , "tags": ["marklogic","mlcp","marklogic-9","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
-                    "source_file": "comment-20171030T115743-80975606.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
-                    "source_file": "comment-20171030T132641-47016456.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/924657274534076416/",
-            "url": "https://mirror.roytang.net/2017/10/924657274534076416/",
-            "path": "/2017/10/924657274534076416/",
-            "title": "",
-            "content_html": "\u003cp\u003eI giggled at this for some reason\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/iwritemonsters/status/924059787675029504'\u003eIWriteMonsters\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    My daughter insisted on this costume. All the other parents at daycare will think I\u0026rsquo;ve never read a comic book. #HalloweenWeekend\n\u003c/blockquote\u003e\n",
-            "summary": "I giggled at this for some reason\nQuoted IWriteMonsters\u0026#39;s tweet:   My daughter insisted on this costume. All the other parents at daycare will think I\u0026rsquo;ve never read a comic book. #HalloweenWeekend  ",
-            "date_published": "2017-10-29T15:20:48+00:00",
-            "date_modified": "2020-09-07T14:21:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/924657274534076416/index.md"
-            , "tags": ["halloweenweekend"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924657274534076416/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/924618013055131648/",
-            "url": "https://mirror.roytang.net/2017/10/924618013055131648/",
-            "path": "/2017/10/924618013055131648/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/EkaJade/\"\u003e@EkaJade\u003c/a\u003e you\u0026rsquo;re a staircase!\u003c/p\u003e\n",
-            "summary": "@EkaJade you\u0026rsquo;re a staircase!",
-            "date_published": "2017-10-29T12:44:47+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/924618013055131648.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924618013055131648/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/924546017281785859/",
-            "url": "https://mirror.roytang.net/2017/10/924546017281785859/",
-            "path": "/2017/10/924546017281785859/",
-            "title": "",
-            "content_html": "\u003cp\u003eI’m like 90% through Kingdom Hearts 2 Final Mix and I have no idea what’s going on\u003c/p\u003e\n",
-            "summary": "I’m like 90% through Kingdom Hearts 2 Final Mix and I have no idea what’s going on",
-            "date_published": "2017-10-29T07:58:42+00:00",
-            "date_modified": "2021-04-21T22:17:55+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/924546017281785859/index.md"
-            , "tags": ["gaming","games"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924546017281785859/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/924041440564355072/",
-            "url": "https://mirror.roytang.net/2017/10/924041440564355072/",
-            "path": "/2017/10/924041440564355072/",
-            "title": "",
-            "content_html": "\u003cp\u003eWow GJ \u003ca href=\"https://twitter.com/ZacharyLevi/\"\u003e@ZacharyLevi\u003c/a\u003e ! \u003ca href=\"https://www.newsarama.com/37136-zachary-levi-cast-as-shazam.html?utm_source=notification\"\u003ehttps://www.newsarama.com/37136-zachary-levi-cast-as-shazam.html?utm_source=notification\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Wow GJ @ZacharyLevi ! https://www.newsarama.com/37136-zachary-levi-cast-as-shazam.html?utm_source=notification",
-            "date_published": "2017-10-27T22:33:41+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/924041440564355072.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/924041440564355072/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/923721623651336192/",
-            "url": "https://mirror.roytang.net/2017/10/923721623651336192/",
-            "path": "/2017/10/923721623651336192/",
-            "title": "",
-            "content_html": "\u003cp\u003eMost of software development is just making a hundred thousand tiny decisions that would bore stakeholders if they had to do it themselves\u003c/p\u003e\n",
-            "summary": "Most of software development is just making a hundred thousand tiny decisions that would bore stakeholders if they had to do it themselves",
-            "date_published": "2017-10-27T01:22:51+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/923721623651336192.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/923721623651336192/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156139177513912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/923306468048216065/",
-            "url": "https://mirror.roytang.net/2017/10/923306468048216065/",
-            "path": "/2017/10/923306468048216065/",
-            "title": "",
-            "content_html": "\u003cp\u003eMy SFV crashed a couple of days ago but Steam still thinks it\u0026rsquo;s running I\u0026rsquo;ve gotten an extra 40 hours or so of playtime now lol\u003c/p\u003e\n",
-            "summary": "My SFV crashed a couple of days ago but Steam still thinks it\u0026rsquo;s running I\u0026rsquo;ve gotten an extra 40 hours or so of playtime now lol",
-            "date_published": "2017-10-25T21:53:10+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/923306468048216065.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/923306468048216065/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/923222165620539392/",
-            "url": "https://mirror.roytang.net/2017/10/923222165620539392/",
-            "path": "/2017/10/923222165620539392/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/saampahlavan/\"\u003e@saampahlavan\u003c/a\u003e I hope these were giveaways, since I totally took the second one. Thanks!\u003c/p\u003e\n",
-            "summary": "@saampahlavan I hope these were giveaways, since I totally took the second one. Thanks!",
-            "date_published": "2017-10-25T16:18:11+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/923222165620539392.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/923222165620539392/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/923170500674691073/",
-            "url": "https://mirror.roytang.net/2017/10/923170500674691073/",
-            "path": "/2017/10/923170500674691073/",
-            "title": "",
-            "content_html": "\u003cp\u003eAnd today I beat the world #1 on \u003ca href=\"https://twitter.com/PlayEternal/\"\u003e@PlayEternal\u003c/a\u003e lol\u003c/p\u003e\n",
-            "summary": "And today I beat the world #1 on @PlayEternal lol",
-            "date_published": "2017-10-25T12:52:53+00:00",
-            "date_modified": "2020-09-07T14:09:34+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/10/923170500674691073/index.md"
-            , "tags": ["1"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/923170500674691073/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/923132663887577088/",
-            "url": "https://mirror.roytang.net/2017/10/923132663887577088/",
-            "path": "/2017/10/923132663887577088/",
-            "title": "",
-            "content_html": "\u003cp\u003eSometimes tumblr comes up with shit like this and leaves me in tears\u003c/p\u003e\n",
-            "summary": "Sometimes tumblr comes up with shit like this and leaves me in tears",
-            "date_published": "2017-10-25T10:22:32+00:00",
-            "date_modified": "2020-09-07T14:09:34+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/923132663887577088/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/923132663887577088/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/10156133009878912/",
-            "url": "https://mirror.roytang.net/2017/10/10156133009878912/",
-            "path": "/2017/10/10156133009878912/",
-            "title": "",
-            "content_html": "\u003cp\u003eTHOR RAGNAROK spoiler-free review:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea fun, action-packed romp that shakes up the Thor status quo significantly\u003c/li\u003e\n\u003cli\u003eeasily the best of the three Thor movies\u003c/li\u003e\n\u003cli\u003ea number plot points are fairly predictable, yet still fun\u003c/li\u003e\n\u003cli\u003ethe Marvel formula is generally action mixed with witty banter here and there, and it\u0026rsquo;s what we get here, although some of the jokes feel like they\u0026rsquo;re stretched a bit too much\u003c/li\u003e\n\u003cli\u003esome great-looking cinematic scenes here and there. One particular flashback scene looked really great\u003c/li\u003e\n\u003cli\u003eI kind of like how the older franchises need to be some sort of team effort nowadays. Like Civil War, this felt a bit like some kind of mini-Avengers crossover \u0026ndash; in space!\u003c/li\u003e\n\u003cli\u003espeaking of space, one of the positive things about this installment is that they didn\u0026rsquo;t feel the need to tie Thor\u0026rsquo;s adventures to Earth anymore (not that the movie is 100% Earth-free), and they get to go a bit wild with space and aliens and all that\u003c/li\u003e\n\u003cli\u003eI understand the need to highlight Hulk\u0026rsquo;s involvement as part of the film\u0026rsquo;s marketing, but man, it would have been so awesome to just find out right then and there\u003c/li\u003e\n\u003cli\u003eThis movie had that Star Wars: Last Jedi trailer I was trying to avoid D:\u003c/li\u003e\n\u003cli\u003e1 mid-credits scene and 1 post-credits scene\u003c/li\u003e\n\u003cli\u003eI think Imax was good for this movie. The 3d wasn\u0026rsquo;t too much and it definitely made some scenes pop. The film is a visual delight so I think the larger screen is important too\u003c/li\u003e\n\u003cli\u003eMagugustuhan ba ni Mama: Probably not. Maybe I should stop including this section kasi parang same na parati ang answer. Unless for some reason I decide to watch some Tagalog romcom\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "THOR RAGNAROK spoiler-free review:\n a fun, action-packed romp that shakes up the Thor status quo significantly easily the best of the three Thor movies a number plot points are fairly predictable, yet still fun the Marvel formula is generally action mixed with witty banter here and there, and it\u0026rsquo;s what we get here, although some of the jokes feel like they\u0026rsquo;re stretched a bit too much some great-looking cinematic scenes here and there.",
-            "date_published": "2017-10-24T22:34:00+00:00",
-            "date_modified": "2021-04-02T10:05:21+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/10156133009878912/index.md"
-            , "tags": ["movies","spoiler-free-review"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156133009878912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/arthur.abon",
-                    "source_file": "comment-20171025-000000-826e4d8e-0d83-43bf-8b1d-0a7c7e6b7a0c.json"
-                }, { 
-                    "url": "https://www.facebook.com/aj.sahagun",
-                    "source_file": "comment-20171025-000001-1307a2ad-af65-47c8-820f-4f6f0ae4b675.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922758696311992321/",
-            "url": "https://mirror.roytang.net/2017/10/922758696311992321/",
-            "path": "/2017/10/922758696311992321/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/alvinjtang/\"\u003e@alvinjtang\u003c/a\u003e \u003ca href=\"https://twitter.com/MaroonStudiosPH/\"\u003e@MaroonStudiosPH\u003c/a\u003e may blockchain na category\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/rrhoover/status/922463706566467585'\u003errhoover\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eATTN: Makers 🚨\u003c/p\u003e\n\u003cp\u003eWe’re hosting a global, month-long hackathon. $250k+ in prizes, all online.\u003c/p\u003e\n\u003cp\u003eJoin us 👉🏼 \u003ca href=\"http://producthunt.com/hackathon\"\u003ehttp://producthunt.com/hackathon\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "@alvinjtang @MaroonStudiosPH may blockchain na category\nQuoted rrhoover\u0026#39;s tweet:   ATTN: Makers 🚨\nWe’re hosting a global, month-long hackathon. $250k+ in prizes, all online.\nJoin us 👉🏼 http://producthunt.com/hackathon\n ",
-            "date_published": "2017-10-24T09:36:31+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922758696311992321/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922758696311992321/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922748694788677632/",
-            "url": "https://mirror.roytang.net/2017/10/922748694788677632/",
-            "path": "/2017/10/922748694788677632/",
-            "title": "",
-            "content_html": "\u003cp\u003eI’m not sure, but I may have beaten an MTG HoFer in \u003ca href=\"https://twitter.com/PlayEternal/\"\u003e@PlayEternal\u003c/a\u003e ranked today\u003c/p\u003e\n",
-            "summary": "I’m not sure, but I may have beaten an MTG HoFer in @PlayEternal ranked today",
-            "date_published": "2017-10-24T08:56:47+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/10/922748694788677632/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922748694788677632/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922483832875388929/",
-            "url": "https://mirror.roytang.net/2017/10/922483832875388929/",
-            "path": "/2017/10/922483832875388929/",
-            "title": "",
-            "content_html": "\u003cp\u003eFor me \u0026ldquo;the average family would get X\u0026rdquo; is different from \u0026ldquo;each family would get X on average\u0026rdquo;. In conclusion, this is stupid.\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/PressSec/status/922245672409198597'\u003ePressSec\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    The average American family would get a $4,000 raise under the President’s tax cut plan. So how could any member of Congress be against it?\n\u003c/blockquote\u003e\n",
-            "summary": "For me \u0026ldquo;the average family would get X\u0026rdquo; is different from \u0026ldquo;each family would get X on average\u0026rdquo;. In conclusion, this is stupid.\nQuoted PressSec\u0026#39;s tweet:   The average American family would get a $4,000 raise under the President’s tax cut plan. So how could any member of Congress be against it?  ",
-            "date_published": "2017-10-23T15:24:19+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922483832875388929/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922483832875388929/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922482918114574337/",
-            "url": "https://mirror.roytang.net/2017/10/922482918114574337/",
-            "path": "/2017/10/922482918114574337/",
-            "title": "",
-            "content_html": "\u003cp\u003ePanawagan: meron ba akong pinahiram ng isang blue na seagate external HD?\u003c/p\u003e\n",
-            "summary": "Panawagan: meron ba akong pinahiram ng isang blue na seagate external HD?",
-            "date_published": "2017-10-23T15:20:41+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922482918114574337.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922482918114574337/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156130730643912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922448025183707136/",
-            "url": "https://mirror.roytang.net/2017/10/922448025183707136/",
-            "path": "/2017/10/922448025183707136/",
-            "title": "",
-            "content_html": "\u003cp\u003e“Some people might try to tell you that it’s a banana.” #FactsFirst\u003c/p\u003e\n\u003cvideo width='320' height='320' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/922402254124126208/pu/vid/720x720/Ct4Cp_eEsbLnyG24.mp4' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
-            "summary": "“Some people might try to tell you that it’s a banana.” #FactsFirst\nYour browser does not support the video tag.  ",
-            "date_published": "2017-10-23T13:02:02+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922448025183707136/index.md"
-            , "tags": ["FactsFirst"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922448025183707136/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922292372054011904/",
-            "url": "https://mirror.roytang.net/2017/10/922292372054011904/",
-            "path": "/2017/10/922292372054011904/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/lianne1023/\"\u003e@lianne1023\u003c/a\u003e happy birthday!\u003c/p\u003e\n",
-            "summary": "@lianne1023 happy birthday!",
-            "date_published": "2017-10-23T02:43:31+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922292372054011904.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922292372054011904/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/922267389697261568/",
-            "url": "https://mirror.roytang.net/2017/10/922267389697261568/",
-            "path": "/2017/10/922267389697261568/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026lt;hunter\u0026gt; let\u0026rsquo;s escape\u003c/p\u003e\n\u003cp\u003e\u0026lt;hunter\u0026gt; and never come back\u003c/p\u003e\n",
-            "summary": "\u0026lt;hunter\u0026gt; let\u0026rsquo;s escape\n\u0026lt;hunter\u0026gt; and never come back",
-            "date_published": "2017-10-23T01:04:15+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/922267389697261568/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/922267389697261568/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/921899347498876929/",
-            "url": "https://mirror.roytang.net/2017/10/921899347498876929/",
-            "path": "/2017/10/921899347498876929/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e is it in danger of dying?\u003c/p\u003e\n",
-            "summary": "@Westraid is it in danger of dying?",
-            "date_published": "2017-10-22T00:41:47+00:00",
-            "date_modified": "2021-04-20T16:03:07+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/921899347498876929/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921899347498876929/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/Westraid",
-                    "source_file": "comment-20171022-004331-a2e7670b-6069-4802-97c1-9301a9ebb08e.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20171023-024748-ea9f8b5b-c08e-4f88-a219-ee2e858036af.json"
-                }, { 
-                    "url": "https://twitter.com/Westraid",
-                    "source_file": "comment-20171023-050221-c97fa29c-7a34-45d2-8862-2c31c7cccaef.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/921815425112870912/",
-            "url": "https://mirror.roytang.net/2017/10/921815425112870912/",
-            "path": "/2017/10/921815425112870912/",
-            "title": "",
-            "content_html": "\u003cp\u003e“The world is chaos. Be kind.” - Patton Oswalt’s late wife\u003c/p\u003e\n",
-            "summary": "“The world is chaos. Be kind.” - Patton Oswalt’s late wife",
-            "date_published": "2017-10-21T19:08:18+00:00",
-            "date_modified": "2021-04-20T16:03:07+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/921815425112870912/index.md"
-            , "tags": ["quotes"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921815425112870912/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156126289998912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/921800293091856389/",
-            "url": "https://mirror.roytang.net/2017/10/921800293091856389/",
-            "path": "/2017/10/921800293091856389/",
-            "title": "",
-            "content_html": "\u003cp\u003eTFW you wake up from a nice long rest ready to challenge the new day and it\u0026rsquo;s only 2am\u003c/p\u003e\n",
-            "summary": "TFW you wake up from a nice long rest ready to challenge the new day and it\u0026rsquo;s only 2am",
-            "date_published": "2017-10-21T18:08:10+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/921800293091856389.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921800293091856389/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/10156124370273912/",
-            "url": "https://mirror.roytang.net/2017/10/10156124370273912/",
-            "path": "/2017/10/10156124370273912/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurvey: did you go to the UPCAT alone, or sinamahan ka ng parents/family?\u003c/p\u003e\n",
-            "summary": "Survey: did you go to the UPCAT alone, or sinamahan ka ng parents/family?",
-            "date_published": "2017-10-21T08:26:00+00:00",
-            "date_modified": "2019-09-28T20:48:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/10156124370273912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156124370273912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/solar.archpope",
-                    "source_file": "comment-20171021-000000-3af20357-4454-42a9-b7b4-222fa7992830.json"
-                }, { 
-                    "url": "https://www.facebook.com/roderick.manalo",
-                    "source_file": "comment-20171021-000001-92f79ca2-647e-4095-a892-9162b07b3fa6.json"
-                }, { 
-                    "url": "https://www.facebook.com/joyapreyes",
-                    "source_file": "comment-20171021-000002-68cd675e-6409-4835-b277-cfa85427e660.json"
-                }, { 
-                    "url": "https://www.facebook.com/mikong",
-                    "source_file": "comment-20171021-000003-ece9bd52-fc60-4692-a8a5-0a8238f8aec1.json"
-                }, { 
-                    "url": "https://www.facebook.com/phwraengck",
-                    "source_file": "comment-20171021-000004-f395d5d4-05d2-441b-8fe1-f141ea8ddc1a.json"
-                }, { 
-                    "url": "https://www.facebook.com/raymond.lirag",
-                    "source_file": "comment-20171021-000005-cc347bbb-57a8-4b84-9225-6392dcbb7dc4.json"
-                }, { 
-                    "url": "https://www.facebook.com/jonathan.tan.399041",
-                    "source_file": "comment-20171021-000006-a5f192ad-3ca7-4e2c-82ce-c971ba1addd0.json"
-                }, { 
-                    "url": "https://www.facebook.com/christine.rabe",
-                    "source_file": "comment-20171021-000007-43846740-f53c-451f-9164-cdc5a8bc6d73.json"
-                }, { 
-                    "url": "https://www.facebook.com/richardeden77",
-                    "source_file": "comment-20171021-000008-fed3830e-4e09-4b05-9d60-ab0be355ca8b.json"
-                }, { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20171021-000009-9c26653a-d93b-4ae6-8404-d7bbec2a7768.json"
-                }, { 
-                    "url": "https://www.facebook.com/marc.cengca",
-                    "source_file": "comment-20171021-000010-a604bc05-fd07-44d4-b8f0-70298a999913.json"
-                }, { 
-                    "url": "https://www.facebook.com/arthur.abon",
-                    "source_file": "comment-20171021-000011-fcd21a0e-0d50-417c-bb4b-46812efbe987.json"
-                }, { 
-                    "url": "https://www.facebook.com/xenia.p.david",
-                    "source_file": "comment-20171021-000012-255289c5-f63a-43cb-89ab-36c20f5d7238.json"
-                }, { 
-                    "url": "https://www.facebook.com/isah.pajarilloeumague",
-                    "source_file": "comment-20171021-000013-95ff1f57-09f6-4470-b451-bb4f126882d7.json"
-                }, { 
-                    "url": "https://www.facebook.com/karenkulit",
-                    "source_file": "comment-20171021-000014-c59123df-fa5e-4aa0-a488-02719a5b8c6b.json"
-                }, { 
-                    "url": "https://www.facebook.com/ging.lorenzostodomingo",
-                    "source_file": "comment-20171021-000015-bc8ca3f3-d579-49b9-8a72-4183aefcb59b.json"
-                }, { 
-                    "url": "https://www.facebook.com/chiko.tiongson",
-                    "source_file": "comment-20171021-000016-a70a124d-e95d-40ec-85e9-b15714bea39c.json"
-                }, { 
-                    "url": "https://www.facebook.com/jvee.veneracion",
-                    "source_file": "comment-20171021-000017-775c8087-d163-4fa6-a273-19a2eafaa583.json"
-                }, { 
-                    "url": "https://www.facebook.com/robert.kee.33",
-                    "source_file": "comment-20171021-000018-328dc657-c042-434b-a6e2-94a3288ced7b.json"
-                }, { 
-                    "url": "https://www.facebook.com/tsarskii.pamuurkan",
-                    "source_file": "comment-20171021-000019-8e00ec27-41a1-4f2e-9f0e-13d6945d5f7a.json"
-                }, { 
-                    "url": "https://www.facebook.com/JaguarSergio",
-                    "source_file": "comment-20171021-000020-0a39c698-cf80-419d-a0fc-b69803d2f68e.json"
-                }, { 
-                    "url": "https://www.facebook.com/digolo",
-                    "source_file": "comment-20171021-000021-2f6cf202-7c3b-4702-92c2-da8ecdf260c7.json"
-                }, { 
-                    "url": "https://www.facebook.com/jcdeoferio",
-                    "source_file": "comment-20171021-000022-42d5582f-1f11-490b-aa3b-72fe279851f8.json"
-                }, { 
-                    "url": "https://www.facebook.com/bryan.apostol",
-                    "source_file": "comment-20171021-000023-b7df14ba-53e4-47df-9a8c-6ead3193f436.json"
-                }, { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20171021-000024-c36c4c4c-9689-49b1-a9af-7a399db24b84.json"
-                }, { 
-                    "url": "https://www.facebook.com/leico30",
-                    "source_file": "comment-20171021-000025-19d5eef4-f862-4f36-9bee-0614937a8664.json"
-                }, { 
-                    "url": "https://www.facebook.com/erika.lim",
-                    "source_file": "comment-20171021-000026-a192d697-d38a-4402-b048-cca00be51311.json"
-                }, { 
-                    "url": "https://www.facebook.com/barayantan",
-                    "source_file": "comment-20171021-000027-d0c35d44-6f43-4cf8-b092-cd0c539434a5.json"
-                }, { 
-                    "url": "https://www.facebook.com/rocky.teodoro",
-                    "source_file": "comment-20171021-000028-0781cf1c-daf5-4bed-bc16-1c8592117aeb.json"
-                }, { 
-                    "url": "https://www.facebook.com/bernadette.galinato",
-                    "source_file": "comment-20171021-000029-11481e8f-70d6-4cbc-b467-005c541738d9.json"
-                }, { 
-                    "url": "https://www.facebook.com/greg.vargas",
-                    "source_file": "comment-20171021-000030-d7e3f1cd-97a7-4d34-9ff6-3b47f25fa69a.json"
-                }, { 
-                    "url": "https://www.facebook.com/jackngan",
-                    "source_file": "comment-20171021-000031-21f7b594-3068-4de5-9822-99239d352bdc.json"
-                }, { 
-                    "url": "https://www.facebook.com/modista",
-                    "source_file": "comment-20171021-000032-fc5299c8-437a-4762-a011-84dea4f78ec2.json"
-                }, { 
-                    "url": "https://www.facebook.com/aldwin.espiritu",
-                    "source_file": "comment-20171021-000033-4f3b2a2d-342f-4695-820d-c6025f0d960b.json"
-                }, { 
-                    "url": "https://www.facebook.com/elenore.uy",
-                    "source_file": "comment-20171021-000034-c125585c-67f8-4c0c-9bb0-8948036f66d2.json"
-                }, { 
-                    "url": "https://www.facebook.com/weng.santos.9",
-                    "source_file": "comment-20171021-000035-f4410ec3-846e-4a76-969b-5cc6ea6dd771.json"
-                }, { 
-                    "url": "https://www.facebook.com/shalombrian.mercader",
-                    "source_file": "comment-20171022-000036-5d46cdb2-c7e9-4cb7-b738-84c7aba9f9ae.json"
-                }, { 
-                    "url": "https://www.facebook.com/amielmalay",
-                    "source_file": "comment-20171022-000037-955a311d-6e93-4e4a-96a8-23d1cdfcbf44.json"
-                }, { 
-                    "url": "https://www.facebook.com/lponce",
-                    "source_file": "comment-20171022-000038-36fbafc8-f29e-46f9-9e36-67e0df4ddb25.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/921634930190249984/",
-            "url": "https://mirror.roytang.net/2017/10/921634930190249984/",
-            "path": "/2017/10/921634930190249984/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/unlawyer/\"\u003e@unlawyer\u003c/a\u003e it is only so if you think your country’s sovereignty includes the right to trample on your citizens’ human rights\u003c/p\u003e\n",
-            "summary": "@unlawyer it is only so if you think your country’s sovereignty includes the right to trample on your citizens’ human rights",
-            "date_published": "2017-10-21T07:11:05+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/921634930190249984.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921634930190249984/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/10/921531876451409920/",
-            "url": "https://mirror.roytang.net/2017/10/921531876451409920/",
-            "path": "/2017/10/921531876451409920/",
-            "title": "",
-            "content_html": "\u003cp\u003eBelieve it or not, this #Hulk doll is made out of recycled tsinelas (that\u0026rsquo;s tagalog for flip-flops). Elmer Padilla made this for me so I just wanted to give a nice shoutout. Not only is this inventively creative, but it\u0026rsquo;s sustainable and just pure awesome! Thank you Elmer!\u003c/p\u003e\n",
-            "summary": "Believe it or not, this #Hulk doll is made out of recycled tsinelas (that\u0026rsquo;s tagalog for flip-flops). Elmer Padilla made this for me so I just wanted to give a nice shoutout. Not only is this inventively creative, but it\u0026rsquo;s sustainable and just pure awesome! Thank you Elmer!",
-            "date_published": "2017-10-21T00:21:35+00:00",
-            "date_modified": "2020-09-07T05:20:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/921531876451409920/index.md"
-            , "tags": ["Hulk"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/921531876451409920/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2017/10/921410756108627969/",
             "url": "https://mirror.roytang.net/2017/10/921410756108627969/",
             "path": "/2017/10/921410756108627969/",
@@ -1046,6 +475,515 @@
             "source_path": "notes/2017/10/918408540015902721/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918408540015902721/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/918326248694095872/",
+            "url": "https://mirror.roytang.net/2017/10/918326248694095872/",
+            "path": "/2017/10/918326248694095872/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhen you want to watch Young Frankenstein but Netflix for some reason gives you the subtitles from Lilo \u0026amp; Stitch.\u003c/p\u003e\n",
+            "summary": "When you want to watch Young Frankenstein but Netflix for some reason gives you the subtitles from Lilo \u0026amp; Stitch.",
+            "date_published": "2017-10-12T04:03:34+00:00",
+            "date_modified": "2020-09-07T03:33:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/918326248694095872/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918326248694095872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/75m605/",
+            "url": "https://mirror.roytang.net/2017/10/75m605/",
+            "path": "/2017/10/75m605/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rjokes-today-was-a-great-day-1010httpsredditcomrjokescomments75m605today_was_a_great_day_1010\"\u003ePosted on r/Jokes: \u003ca href=\"https://reddit.com/r/Jokes/comments/75m605/today_was_a_great_day_1010/\"\u003eToday was a great day. 10/10!\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e[removed]\u003c/p\u003e\n",
+            "summary": "Posted on r/Jokes: Today was a great day. 10/10! [removed]",
+            "date_published": "2017-10-11T10:36:08+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/75m605/index.md"
+            , "tags": ["jokes"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Jokes/comments/75m605/today_was_a_great_day_1010/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/bahcewjf2gj/",
+            "url": "https://mirror.roytang.net/2017/10/bahcewjf2gj/",
+            "path": "/2017/10/bahcewjf2gj/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Inktober day 10: Gigantic #sketchdaily #transformers\u003c/p\u003e\n",
+            "summary": "#Inktober day 10: Gigantic #sketchdaily #transformers",
+            "date_published": "2017-10-11T10:32:26+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/BaHcEWjF2gj/index.md"
+            , "tags": ["transformers","sketchdaily","inktober"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BaHcEWjF2gj/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/166294360580/inktober-day-10-gigantic-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/918167470493634561/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156101286448912:2"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/bahxtcof8uc/",
+            "url": "https://mirror.roytang.net/2017/10/bahxtcof8uc/",
+            "path": "/2017/10/bahxtcof8uc/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Inktober day 9: Screech #sketchdaily\u003c/p\u003e\n",
+            "summary": "#Inktober day 9: Screech #sketchdaily",
+            "date_published": "2017-10-11T09:50:45+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/BaHXTCoF8uC/index.md"
+            , "tags": ["sketchdaily","inktober"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BaHXTCoF8uC/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/166293262225/inktober-day-9-screech-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/918156975489323009/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156101286448912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/bahiuwagont/",
+            "url": "https://mirror.roytang.net/2017/10/bahiuwagont/",
+            "path": "/2017/10/bahiuwagont/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Inktober day 7: shy. I regret going for those realistic style hands, the proportions are terrible #sketchdaily\u003c/p\u003e\n",
+            "summary": "#Inktober day 7: shy. I regret going for those realistic style hands, the proportions are terrible #sketchdaily",
+            "date_published": "2017-10-11T07:43:28+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/BaHIuwAgONt/index.md"
+            , "tags": ["sketchdaily","inktober"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BaHIuwAgONt/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/166290008820/inktober-day-7-shy-i-regret-going-for-those"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/918124953878323205/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156101286448912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917937185826803712/",
+            "url": "https://mirror.roytang.net/2017/10/917937185826803712/",
+            "path": "/2017/10/917937185826803712/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e gj! I remember the GBA castlevanias were quite tough! Haven\u0026rsquo;t played them in forever :D\u003c/p\u003e\n",
+            "summary": "@Westraid gj! I remember the GBA castlevanias were quite tough! Haven\u0026rsquo;t played them in forever :D",
+            "date_published": "2017-10-11T02:17:34+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917937185826803712.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917937185826803712/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917750246620381190/",
+            "url": "https://mirror.roytang.net/2017/10/917750246620381190/",
+            "path": "/2017/10/917750246620381190/",
+            "title": "",
+            "content_html": "\u003cp\u003eNew business opportunity: passenger for hire. Like reverse Uber, para makaEDSA ka pa din. Conversation costs extra.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://news.abs-cbn.com/news/10/10/17/coming-soon-cars-with-only-a-driver-may-be-banned-on-edsa\"\u003ehttps://news.abs-cbn.com/news/10/10/17/coming-soon-cars-with-only-a-driver-may-be-banned-on-edsa\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "New business opportunity: passenger for hire. Like reverse Uber, para makaEDSA ka pa din. Conversation costs extra.\nhttps://news.abs-cbn.com/news/10/10/17/coming-soon-cars-with-only-a-driver-may-be-banned-on-edsa",
+            "date_published": "2017-10-10T13:54:44+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917750246620381190.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917750246620381190/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917748283899965440/",
+            "url": "https://mirror.roytang.net/2017/10/917748283899965440/",
+            "path": "/2017/10/917748283899965440/",
+            "title": "",
+            "content_html": "\u003cp\u003eI might be watching too much standup on Netflix, it keeps recommending the new ones to me\u003c/p\u003e\n",
+            "summary": "I might be watching too much standup on Netflix, it keeps recommending the new ones to me",
+            "date_published": "2017-10-10T13:46:56+00:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917748283899965440/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917748283899965440/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156098503943912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/lizbethjanegarcia",
+                    "source_file": "comment-20171010-000000-3abb80b5-ec5e-4587-9058-b2b0425b0c98.json"
+                }, { 
+                    "url": "https://www.facebook.com/ryan.sylam.liwanag",
+                    "source_file": "comment-20171010-000001-6d769314-4445-4389-85fc-97576239f331.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20171010-000002-6856fb29-003e-4dd4-91e7-653e763eb1de.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171010-000140-60288fe0-418e-4a21-948f-bb0a7cb6c081.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171010-000500-aa64b16c-2f4f-4c09-8980-8b87df5667be.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917732874442358785/",
+            "url": "https://mirror.roytang.net/2017/10/917732874442358785/",
+            "path": "/2017/10/917732874442358785/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/RuthieRoble/\"\u003e@RuthieRoble\u003c/a\u003e: minsan\u0026hellip;. hindi naman corny yung joke, hindi lang talaga nila —\u003c/p\u003e\n",
+            "summary": "RT @RuthieRoble: minsan\u0026hellip;. hindi naman corny yung joke, hindi lang talaga nila —",
+            "date_published": "2017-10-10T12:45:42+00:00",
+            "date_modified": "2020-10-13T15:05:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917732874442358785/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917732874442358785/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917654966398967808/",
+            "url": "https://mirror.roytang.net/2017/10/917654966398967808/",
+            "path": "/2017/10/917654966398967808/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SeresaTagAraw/\"\u003e@SeresaTagAraw\u003c/a\u003e ano na bago mong career?\u003c/p\u003e\n",
+            "summary": "@SeresaTagAraw ano na bago mong career?",
+            "date_published": "2017-10-10T07:36:07+00:00",
+            "date_modified": "2021-04-20T00:41:04+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917654966398967808/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917654966398967808/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/SeresaTagAraw",
+                    "source_file": "comment-20171010-104652-51566c14-5c3e-477f-bf17-c72417ea2af9.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20171010-110444-8f9962c5-caef-4f51-a7c9-4ec063d795a8.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917632384299704322/",
+            "url": "https://mirror.roytang.net/2017/10/917632384299704322/",
+            "path": "/2017/10/917632384299704322/",
+            "title": "",
+            "content_html": "\u003cp\u003e(Watching Star Trek Discovery) Why are there no seat belts in the future?\u003c/p\u003e\n",
+            "summary": "(Watching Star Trek Discovery) Why are there no seat belts in the future?",
+            "date_published": "2017-10-10T06:06:23+00:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917632384299704322/index.md"
+            , "tags": ["tv"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917632384299704322/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156097518878912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20171010-000000-575f233d-b055-4a7e-9f92-117693356066.json"
+                }, { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20171010-000001-c9b06eb9-4b49-449d-9632-7e516c706ce4.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171010-000002-250270ad-ad68-477c-90fd-2a8789b5221c.json"
+                }, { 
+                    "url": "https://www.facebook.com/jackngan",
+                    "source_file": "comment-20171010-000003-102b64f5-f24f-40a6-94b8-4b0b14bf92da.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171010-000320-d9c33a83-626a-4542-b468-08c26b6025b5.json"
+                }, { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20171010-000321-6685caf6-2569-4653-aa41-75a2a8602e6d.json"
+                }, { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20171010-000322-cc4a97f6-7a79-41d1-8a01-3b306e0c344e.json"
+                }, { 
+                    "url": "https://www.facebook.com/LaTtEX",
+                    "source_file": "comment-20171010-000323-caa8d4c3-170e-4518-a21c-ba9323b9a127.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917611514655260672/",
+            "url": "https://mirror.roytang.net/2017/10/917611514655260672/",
+            "path": "/2017/10/917611514655260672/",
+            "title": "",
+            "content_html": "\u003cp\u003eIf you want to work in this government, apparently neither you nor family members are allowed to criticize it \u003ca href=\"https://twitter.com/1nutty_hazel/status/917605295353769984\"\u003ehttps://twitter.com/1nutty_hazel/status/917605295353769984\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "If you want to work in this government, apparently neither you nor family members are allowed to criticize it https://twitter.com/1nutty_hazel/status/917605295353769984",
+            "date_published": "2017-10-10T04:43:28+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917611514655260672.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917611514655260672/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917609838888206336/",
+            "url": "https://mirror.roytang.net/2017/10/917609838888206336/",
+            "path": "/2017/10/917609838888206336/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rocketkeis/\"\u003e@rocketkeis\u003c/a\u003e tanda mo na\u003c/p\u003e\n",
+            "summary": "@rocketkeis tanda mo na",
+            "date_published": "2017-10-10T04:36:48+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917609838888206336.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917609838888206336/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917595286288998400/",
+            "url": "https://mirror.roytang.net/2017/10/917595286288998400/",
+            "path": "/2017/10/917595286288998400/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis is a great day 10/10\u003c/p\u003e\n",
+            "summary": "This is a great day 10/10",
+            "date_published": "2017-10-10T03:38:59+00:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917595286288998400/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917595286288998400/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156097362853912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/barayantan",
+                    "source_file": "comment-20171010-000000-a1264da3-0f0f-4d98-8e51-1e5139e57ee2.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171010-000001-311d93b1-dbf7-40ae-a292-a8bcf4d27b9d.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20171010-000320-a09b7d0d-e981-4a02-90a4-4e5009ac0dc4.json"
+                }, { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20171011-000002-edf820bf-83d4-464b-8ac1-1c5c028abd6f.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/10156095916778912/",
+            "url": "https://mirror.roytang.net/2017/10/10156095916778912/",
+            "path": "/2017/10/10156095916778912/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m finding The Orville surprisingly good. It\u0026rsquo;s nice that Star Trek/scifi fans have two new choices this season: Discovery for serious stuff, and The Orville for something more light-hearted\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m finding The Orville surprisingly good. It\u0026rsquo;s nice that Star Trek/scifi fans have two new choices this season: Discovery for serious stuff, and The Orville for something more light-hearted",
+            "date_published": "2017-10-09T23:05:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/10156095916778912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156095916778912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/morristan",
+                    "source_file": "comment-20171009-000000-f8d87c06-7f32-4676-9231-fbbe3dc727fe.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171009-000140-3265e77a-463e-4f9e-b219-4c77cf7a8efc.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917286001759870977/",
+            "url": "https://mirror.roytang.net/2017/10/917286001759870977/",
+            "path": "/2017/10/917286001759870977/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m just going to avoid any additional trailers for Justice League, Thor Ragnarok or Star Wars Last Jedi. Thanks!\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m just going to avoid any additional trailers for Justice League, Thor Ragnarok or Star Wars Last Jedi. Thanks!",
+            "date_published": "2017-10-09T07:09:59+00:00",
+            "date_modified": "2021-01-17T09:45:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/917286001759870977/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917286001759870977/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156095174638912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/briantang25",
+                    "source_file": "comment-20171009-000000-b7ef5410-3363-4689-9c0b-1674baa04cf6.json"
+                }, { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20171009-000001-e9e8c2d5-f35c-4510-9133-2a92e26adeb1.json"
+                }, { 
+                    "url": "https://www.facebook.com/morristan",
+                    "source_file": "comment-20171009-000002-0ffb8fa9-f917-4f1c-9629-b4733d215a54.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/917039434855358464/",
+            "url": "https://mirror.roytang.net/2017/10/917039434855358464/",
+            "path": "/2017/10/917039434855358464/",
+            "title": "",
+            "content_html": "\u003cp\u003ePrize pack rares from today’s modern pptq. 4th place with GDS! (but i didnt get any Opt! lol) cc \u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Prize pack rares from today’s modern pptq. 4th place with GDS! (but i didnt get any Opt! lol) cc @aleksfelipe",
+            "date_published": "2017-10-08T14:50:13+00:00",
+            "date_modified": "2020-09-07T03:33:00+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/917039434855358464/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/917039434855358464/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/916881705700540417/",
+            "url": "https://mirror.roytang.net/2017/10/916881705700540417/",
+            "path": "/2017/10/916881705700540417/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/econcepcion/\"\u003e@econcepcion\u003c/a\u003e baja socmed engagements po kasi ang basis ng sweldo nila kaya un parati ang basis nila\u003c/p\u003e\n",
+            "summary": "@econcepcion baja socmed engagements po kasi ang basis ng sweldo nila kaya un parati ang basis nila",
+            "date_published": "2017-10-08T04:23:28+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/916881705700540417.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/916881705700540417/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/bz6mtqxad2p/",
+            "url": "https://mirror.roytang.net/2017/10/bz6mtqxad2p/",
+            "path": "/2017/10/bz6mtqxad2p/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Inktober day 6: sword #sketchdaily\u003c/p\u003e\n",
+            "summary": "#Inktober day 6: sword #sketchdaily",
+            "date_published": "2017-10-06T07:04:35+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/BZ6MTqXAd2p/index.md"
+            , "tags": ["sketchdaily","inktober"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BZ6MTqXAd2p/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/166109661720/inktober-day-6-sword-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/916303222045859842/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156088502058912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/bz6ml5japww/",
+            "url": "https://mirror.roytang.net/2017/10/bz6ml5japww/",
+            "path": "/2017/10/bz6ml5japww/",
+            "title": "",
+            "content_html": "\u003cp\u003eHound! #transformers\u003c/p\u003e\n",
+            "summary": "Hound! #transformers",
+            "date_published": "2017-10-06T07:03:32+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2017/10/BZ6ML5jApww/index.md"
+            , "tags": ["transformers"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BZ6ML5jApww/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/166109635000/hound-transformers"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/916302977501188096/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156088502058912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/10156087028053912/",
+            "url": "https://mirror.roytang.net/2017/10/10156087028053912/",
+            "path": "/2017/10/10156087028053912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone should tell the president that EJKs are looking into his unexplained wealth. Apparently that\u0026rsquo;s the fastest way to get him to investigate something\u003c/p\u003e\n",
+            "summary": "Someone should tell the president that EJKs are looking into his unexplained wealth. Apparently that\u0026rsquo;s the fastest way to get him to investigate something",
+            "date_published": "2017-10-06T06:54:00+08:00",
+            "date_modified": "2021-04-19T23:45:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/10156087028053912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156087028053912"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/916074276448387073/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/915974864762060800/",
+            "url": "https://mirror.roytang.net/2017/10/915974864762060800/",
+            "path": "/2017/10/915974864762060800/",
+            "title": "",
+            "content_html": "\u003cp\u003eI should use these as some kind of NPC generation logic\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/JahDuran/status/915706456908996618'\u003eJahDuran\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Laughed so hard reading this I had an asthma attack and was temporarily convinced I was going to die. All for the love of Sleve McDichael.\n\u003c/blockquote\u003e\n",
+            "summary": "I should use these as some kind of NPC generation logic\nQuoted JahDuran\u0026#39;s tweet:   Laughed so hard reading this I had an asthma attack and was temporarily convinced I was going to die. All for the love of Sleve McDichael.  ",
+            "date_published": "2017-10-05T16:20:00+00:00",
+            "date_modified": "2020-09-07T03:06:12+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/915974864762060800/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/915974864762060800/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/915974684868362240/",
+            "url": "https://mirror.roytang.net/2017/10/915974684868362240/",
+            "path": "/2017/10/915974684868362240/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;Self-praise is for losers. Be a winner. Stand for something. Always have class, and be humble.\u0026rdquo; - John Madden\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;Self-praise is for losers. Be a winner. Stand for something. Always have class, and be humble.\u0026rdquo; - John Madden",
+            "date_published": "2017-10-05T16:19:17+00:00",
+            "date_modified": "2021-04-19T23:45:23+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/915974684868362240/index.md"
+            , "tags": ["quotes"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/915974684868362240/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/915960649267556352/",
+            "url": "https://mirror.roytang.net/2017/10/915960649267556352/",
+            "path": "/2017/10/915960649267556352/",
+            "title": "",
+            "content_html": "\u003cp\u003eGetting React and ES6 Syntax Highlighting in Sublime Text \u003ca href=\"https://gunnariauvinen.com/getting-es6-syntax-highlighting-in-sublime-text/\"\u003ehttps://gunnariauvinen.com/getting-es6-syntax-highlighting-in-sublime-text/\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Getting React and ES6 Syntax Highlighting in Sublime Text https://gunnariauvinen.com/getting-es6-syntax-highlighting-in-sublime-text/",
+            "date_published": "2017-10-05T15:23:31+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/915960649267556352.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/915960649267556352/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/915916353579577344/",
+            "url": "https://mirror.roytang.net/2017/10/915916353579577344/",
+            "path": "/2017/10/915916353579577344/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;TODO: This is a temporary hack and will be removed.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eNarrator: It was not ever removed\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;TODO: This is a temporary hack and will be removed.\u0026rdquo;\nNarrator: It was not ever removed",
+            "date_published": "2017-10-05T12:27:30+00:00",
+            "date_modified": "2020-09-07T03:06:12+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/915916353579577344/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/915916353579577344/"}]
             
             
             }

@@ -25,11 +25,15 @@
 
 - [Review: The Outer Worlds](/2019/11/outer-worlds/)
 
+- [Game Review: Slay the Spire](/2019/02/game-review-slay-the-spire/)
+
 - [Game Review: Marvel&#39;s Spider-Man for PS4](/2018/11/game-review-marvels-spider-man-for-ps4/)
 
 - [Late Game Review -- Ni No Kuni: Wrath of the White Witch (2013)](/2018/10/late-game-review-ni-no-kuni-wrath-of-the-white-witch-2013/)
 
 - [](/2018/08/1030779233100947456/)
+
+- [](/2018/01/956354182767820805/)
 
 - [](/2018/01/949318192073121792/)
 
@@ -44,6 +48,8 @@
 - [](/2016/12/10155237324233912/)
 
 - [Review: Xenoblade Chronicles X](/2016/12/review-xenoblade-chronicles-x/)
+
+- [](/2016/02/10154348659503912/)
 
 - [](/2015/10/8laqfkmoj3/)
 
@@ -85,6 +91,8 @@
 
 - [](/2009/07/2560147227/)
 
+- [Star Ocean: Second Evolution](/2009/02/star-ocean-second-evolution/)
+
 - [Birdmen and the Casual Fallacy](/2009/01/birdmen-and-the-casual-fallacy/)
 
 - [Valkyria Chronicles](/2009/01/valkyria-chronicles/)
@@ -100,6 +108,8 @@
 - [Daily MTG : Magic: The Gathering](/2008/08/daily-mtg-magic-the-gathering/)
 
 - [Final Fantasy Crystal Chronicles: Ring of Fates](/2008/04/final-fantasy-crystal-chronicles-ring-of-fates/)
+
+- [Advance Wars: Days of Ruin](/2008/02/advance-wars-days-of-ruin/)
 
 - [Kotaku - Work and Play: A Peek Inside the Lives of Gaming&#39;s Greatest](/2008/01/kotaku-work-and-play-a-peek-inside-the-lives-of-gaming-s-greatest/)
 

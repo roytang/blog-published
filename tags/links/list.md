@@ -99,10 +99,6 @@
 
 - [links for 2007-02-05](/2007/02/links-for-2007-02-05/)
 
-- [links for 2007-02-01](/2007/01/links-for-2007-02-01/)
-
-- [links for 2007-01-29](/2007/01/links-for-2007-01-29/)
-
 - [links for 2007-01-21](/2007/01/links-for-2007-01-21/)
 
 - [Del.icio.us bookmarks for 2007-01-18](/2007/01/del-icio-us-bookmarks-for-2007-01-18/)

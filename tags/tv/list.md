@@ -25,6 +25,8 @@
 
 - [Watching Lately, Jan 2020: Arrow, The Good Place, The Witcher, Kim&#39;s Convenience, The Expanse](/2020/01/watching-lately/)
 
+- [](/2020/01/1222413618265804800/)
+
 - [Arrowverse: Crisis on Infinite Earths](/2020/01/arrowverse-crisis-on-infinite-earths/)
 
 - [](/2020/01/1217311777035366401/)

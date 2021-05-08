@@ -11,147 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2019/11/on-feed-readers/",
-            "url": "https://mirror.roytang.net/2019/11/on-feed-readers/",
-            "path": "/2019/11/on-feed-readers/",
-            "title": "On Feed Readers",
-            "content_html": "\u003cp\u003eI don\u0026rsquo;t use \u003ca href=\"https://www.inoreader.com/\"\u003eInoreader\u003c/a\u003e anymore, but a recent blog post of theirs recently appeared in my feeds that mentioned \u003ca href=\"https://blog.inoreader.com/2019/11/new-feature-sort-by-magic-and-article-popularity-indicators.html\"\u003ethey implemented \u0026ldquo;sort by magic\u0026rdquo;\u003c/a\u003e. This was a feature that \u003ca href=\"/2009/10/5149594629/\"\u003eGoogle reader had 10 YEARS AGO\u003c/a\u003e! There hasn\u0026rsquo;t been much innovation in the feed reader space in the last decade it seems, which is totally understandable given they are mostly tools used by internet \u0026ldquo;power users\u0026rdquo;, and mostly by older netheads, so the target market isn\u0026rsquo;t very large.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eWhen I talk about \u0026ldquo;feeds\u0026rdquo; and \u0026ldquo;feed readers\u0026rdquo;, I\u0026rsquo;m not talking only about RSS and the associated readers, but anything that lets me aggregate contents from a set of sources. This includes most social media streams (Twitter, etc), I guess Indieweb microformats readers (though I haven\u0026rsquo;t tried these a lot), and apps like \u003ca href=\"https://flipboard.com/\"\u003eFlipboard\u003c/a\u003e (which I typically use for my morning news).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eRecently I installed a self-hosted \u003ca href=\"https://tt-rss.org/\"\u003eTiny Tiny RSS\u003c/a\u003e to take the place of my primary RSS feed reader. I also previously tried Inoreader and Feedly. The jump to TTRSS was mostly to avoid the free account limitations on those services. TTRSS is fine and it\u0026rsquo;s serviceable, but there\u0026rsquo;s still a lot of improvement I would like. I think about feed reader features a lot because (a) I like reading content from a wide variety of sources and feed readers help me do that; and (b) even back when Google Reader was still around I was kicking around the idea of writing my own feed reader. It\u0026rsquo;s one of those side projects that I want to build for myself but never get around to it. I\u0026rsquo;ll note down a couple of features I\u0026rsquo;ve been thinking about in the past decade.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eThe first flaw I find in most readers (including social media feeds) is that they typically treat all feeds the same way. In reality, I would like to be able to treat some feeds differently. I can think of at least two categories:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efeeds where I don\u0026rsquo;t mind missing some of their content (since I don\u0026rsquo;t always have time to read), and don\u0026rsquo;t mind just browsing their latest content like a magazine. Flipboard is great for this. Most social media feeds on the other hand seem to want to pull you away from this model by having their feeds be \u0026ldquo;algorithmic\u0026rdquo;. And for traditional RSS readers, having unread counts for this type of feed doesn\u0026rsquo;t make sense, and only annoys me and my compulsive need for zero unread counts.\u003c/li\u003e\n\u003cli\u003efeeds where I don\u0026rsquo;t want to miss any of their content. Maybe because it\u0026rsquo;s a particular source that I enjoy reading, or because it\u0026rsquo;s a feed I set up for notification purposes or such, or maybe the source is an events page where I want to know all the events they set up. Basically feeds that have a high signal-to-noise ratio for me (although ideally all the feeds I follow have high S/N ratio.) For this kind of feed, the unread counts in traditional RSS readers make sense.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI imagine there could be some in-between categories as well, possibly customizable. Something like a feed where I have unread counts, but also automatically mark as read articles that are too old? IDK.\u003c/p\u003e\n\u003cp\u003eI remembered this when I realized I could import my \u003ca href=\"https://roytang.net/2019/08/1167000875090378752/\"\u003eYoutube subscriptions as RSS\u003c/a\u003e. That gave me a whole lot of new feeds to follow, but I realized it was kind of a waste of time because most of the channels I follow are there for me to browse through when I\u0026rsquo;m looking for entertainment, but usually not the kind of content I want to regularly appear in my feeds. (So they\u0026rsquo;re under the first type.) Importing them basically added a lot of noise to my feed reader.\u003c/p\u003e\n\u003cp\u003eFacebook actually had something like you could add friends to a \u0026ldquo;Close Friends\u0026rdquo; list, and their posts would be prioritized for you and appear in your notification bar. I don\u0026rsquo;t FB much anymore, so IDK if this feature is still around, but as I recall you can\u0026rsquo;t use it with Pages.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eAnother feature I\u0026rsquo;d like is grouping posts by topic, or the ability to highlight \u0026ldquo;related stories\u0026rdquo; for an article from other sources that I\u0026rsquo;m also following. For example, if there\u0026rsquo;s some breaking news story, and the article about this from NewsSourceA appears in my feed, I could maybe see a link to related articles about the same topic from NewsSourceB, NewsSourceC, and so on that I also follow. Or maybe choose to mark the topic as read or block further content about this topic.\u003c/p\u003e\n\u003cp\u003eThis is one of my major grips when using Flipboard, especially for the \u0026ldquo;Latest news\u0026rdquo; sections. There\u0026rsquo;ll be like 5 different articles about the latest Trump meltdown, and I encounter them at different points in the feed. I don\u0026rsquo;t mind reading about Trump meltdowns, but it would be more efficient if I could have each instance only appear in my feeds once. I understand this may be a bit challenging since it involves some automated content analysis though.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eI must admit I haven\u0026rsquo;t explored too much the paid features of services like Feedly or Inoreader, so maybe they support something similar to these features already. (I feel like it\u0026rsquo;s unlikely though. And I\u0026rsquo;m not really up for paying the monthly fees haha.) In addition to traditional RSS readers though, I\u0026rsquo;d also like my reader to be able to support following other kinds of sources like social media, ActivityStreams-compliant streams (Mastodon, etc), microformats feeds, and so on.\u003c/p\u003e\n\u003cp\u003eMaybe someday I\u0026rsquo;ll get around to finally building that feed reader I wanted for myself!\u003c/p\u003e\n",
-            "summary": "I don\u0026rsquo;t use Inoreader anymore, but a recent blog post of theirs recently appeared in my feeds that mentioned they implemented \u0026ldquo;sort by magic\u0026rdquo;. This was a feature that Google reader had 10 YEARS AGO! There hasn\u0026rsquo;t been much innovation in the feed reader space in the last decade it seems, which is totally understandable given they are mostly tools used by internet \u0026ldquo;power users\u0026rdquo;, and mostly by older netheads, so the target market isn\u0026rsquo;t very large.",
-            "date_published": "2019-11-17T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/11/on-feed-readers/index.md"
-            , "tags": ["tech life"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195916779861749760/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1195794038223294464/",
-            "url": "https://mirror.roytang.net/2019/11/1195794038223294464/",
-            "path": "/2019/11/1195794038223294464/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/visakanv/\"\u003e@visakanv\u003c/a\u003e ill look into it, but afaik searching via the twitter api doesnt have that filter\u003c/p\u003e\n",
-            "summary": "@visakanv ill look into it, but afaik searching via the twitter api doesnt have that filter",
-            "date_published": "2019-11-16T20:01:30+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/11/1195794038223294464/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195794038223294464/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1195700917636497411/",
-            "url": "https://mirror.roytang.net/2019/11/1195700917636497411/",
-            "path": "/2019/11/1195700917636497411/",
-            "title": "",
-            "content_html": "\u003cp\u003eI got free 10k gems on #MagicArena courtesy of \u003ca href=\"https://twitter.com/urlichmtg/\"\u003e@urlichmtg\u003c/a\u003e \u0026rsquo;s giveaway. Many thanks!! :D\u003c/p\u003e\n",
-            "summary": "I got free 10k gems on #MagicArena courtesy of @urlichmtg \u0026rsquo;s giveaway. Many thanks!! :D",
-            "date_published": "2019-11-16T13:51:28+00:00",
-            "date_modified": "2019-11-25T13:34:06+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/11/1195700917636497411/index.md"
-            , "tags": ["magicarena","mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195700917636497411/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1195700159666982912/",
-            "url": "https://mirror.roytang.net/2019/11/1195700159666982912/",
-            "path": "/2019/11/1195700159666982912/",
-            "title": "",
-            "content_html": "\u003cp\u003eOh wow! This is awesome! Thanks!! I’ve replied to your DM :)\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/urlichmtg/status/1195696467945631744'\u003eurlichmtg\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    \u003cp\u003eWe have a winner! \u003ca href=\"https://twitter.com/roytang/\"\u003e@roytang\u003c/a\u003e wins 10.000 gems in #MCVI giveaway edition! Congratulations to \u003ca href=\"https://twitter.com/roytang/\"\u003e@roytang\u003c/a\u003e, and big thank you to everyone who participated!\u003c/p\u003e\n\u003cp\u003eThe next edition of 10.000 gems giveaway for my lovely followers will be around #MythicChampionshipVII three weeks from this tweet! \u003ca href=\"https://twitter.com/urlichmtg/status/1191379585356709895\"\u003ehttps://twitter.com/urlichmtg/status/1191379585356709895\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n",
-            "summary": "Oh wow! This is awesome! Thanks!! I’ve replied to your DM :)\nQuoted urlichmtg\u0026#39;s tweet:   We have a winner! @roytang wins 10.000 gems in #MCVI giveaway edition! Congratulations to @roytang, and big thank you to everyone who participated!\nThe next edition of 10.000 gems giveaway for my lovely followers will be around #MythicChampionshipVII three weeks from this tweet! https://twitter.com/urlichmtg/status/1191379585356709895\n ",
-            "date_published": "2019-11-16T13:48:27+00:00",
-            "date_modified": "2020-09-08T01:29:52+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/11/1195700159666982912/index.md"
-            , "tags": ["mcvi","mythicchampionshipvii"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195700159666982912/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/an-offline-walk/",
-            "url": "https://mirror.roytang.net/2019/11/an-offline-walk/",
-            "path": "/2019/11/an-offline-walk/",
-            "title": "An Offline Walk",
-            "content_html": "\u003cp\u003eThe other day, a family member mistakenly took my phone with them to the office so I was without a phone all day. This meant my daily walk had to be offline, which was a weird thing I hadn\u0026rsquo;t experienced in a while. I couldn\u0026rsquo;t help but note my hand\u0026rsquo;s instinctively reaching for the mobile phone that wasn\u0026rsquo;t there. Mobile phones are so ubiquitous in our daily lives, but sometimes it feels like a crutch how we can be totally dependent on them.\u003c/p\u003e\n\u003cp\u003eThings I can\u0026rsquo;t do on my walk if don\u0026rsquo;t have a mobile phone:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ebe contacted in an emergency\u003c/li\u003e\n\u003cli\u003econtact someone in an emergency\u003c/li\u003e\n\u003cli\u003etake a picture of something I find interesting\u003c/li\u003e\n\u003cli\u003etake a quick note of something I think of and want to remember later\u003c/li\u003e\n\u003cli\u003euse Google Maps if I get lost\u003c/li\u003e\n\u003cli\u003enot be bored when I sit down for a few minutes to take a break\u003c/li\u003e\n\u003cli\u003echeck my feeds every 7 minutes\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThings I can do:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eappreciate my surroundings\u003c/li\u003e\n\u003cli\u003ebe more observant\u003c/li\u003e\n\u003cli\u003etry to commit more things to memory (maybe strengthening my memory?)\u003c/li\u003e\n\u003cli\u003ewean myself off the OC behavior of checking my feeds every 7 minutes\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOld man rant, only tangentially related: People used to be able to go places and do meetups even without mobile phones. I think the advent of mobile phones made it more acceptable for people to be late to meetings because you could always message them and say you\u0026rsquo;re running late. In the old days, if you weren\u0026rsquo;t at the meetup point at the appointed time, you knew the other party was standing there tapping their feet impatiently not knowing whether you were actually still coming, so it was much more of a big deal.\u003c/p\u003e\n",
-            "summary": "The other day, a family member mistakenly took my phone with them to the office so I was without a phone all day. This meant my daily walk had to be offline, which was a weird thing I hadn\u0026rsquo;t experienced in a while. I couldn\u0026rsquo;t help but note my hand\u0026rsquo;s instinctively reaching for the mobile phone that wasn\u0026rsquo;t there. Mobile phones are so ubiquitous in our daily lives, but sometimes it feels like a crutch how we can be totally dependent on them.",
-            "date_published": "2019-11-16T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/11/an-offline-walk/index.md"
-            , "tags": ["tech life"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195500391577915393/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1195449257219608576/",
-            "url": "https://mirror.roytang.net/2019/11/1195449257219608576/",
-            "path": "/2019/11/1195449257219608576/",
-            "title": "",
-            "content_html": "\u003cp\u003eHaving some fun this morning\u003c/p\u003e\n",
-            "summary": "Having some fun this morning",
-            "date_published": "2019-11-15T21:11:27+00:00",
-            "date_modified": "2019-11-19T07:20:58+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/11/1195449257219608576/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195449257219608576/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1195226530093232134/",
-            "url": "https://mirror.roytang.net/2019/11/1195226530093232134/",
-            "path": "/2019/11/1195226530093232134/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/gangbadoy/\"\u003e@gangbadoy\u003c/a\u003e problema sa pilipinas e, kailangan all or nothing ang suporta. pwede naman mag criticize ng ilang bagay habang aprub ka pa rin sa iba\u003c/p\u003e\n",
-            "summary": "@gangbadoy problema sa pilipinas e, kailangan all or nothing ang suporta. pwede naman mag criticize ng ilang bagay habang aprub ka pa rin sa iba",
-            "date_published": "2019-11-15T06:26:25+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/11/1195226530093232134/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195226530093232134/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/hong-kong-revolution-of-our-time/",
-            "url": "https://mirror.roytang.net/2019/11/hong-kong-revolution-of-our-time/",
-            "path": "/2019/11/hong-kong-revolution-of-our-time/",
-            "title": "Hong Kong: The Revolution of Our Time",
-            "content_html": "\u003cp\u003eHong Kong is on fire.\u003c/p\u003e\n\u003cp\u003eFor months now, protests and unrests, led mainly by university students, have \u003ca href=\"https://en.wikipedia.org/wiki/2019_Hong_Kong_protests\"\u003ewracked the city.\u003c/a\u003e Initially in response to a controversial China-backed extradition bill, it is also believed to be fueled by political and social inequality and interference by the Chinese government. As the months went on, the stakes have escalated in the wake of widespread anger at the way the police are brutally cracking down on protests. Many incidents of violence have been reported, mainly from the police, but some from the protestors as well.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m not from Hong Kong, but I admit some fondness for the British territory - I\u0026rsquo;ve \u003ca href=\"/tags/hong-kong\"\u003etravelled there a few times\u003c/a\u003e and I worked for a Hong-Kong based company for more than a decade, so I know quite a number of people working there even now. I was hesitant to write down my thoughts on the current crisis, as things were moving and escalating quickly, and there was a good chance that whatever I write might be overtaken by events.\u003c/p\u003e\n\u003cp\u003eI stand in support of the protestors, and I am hopeful that they succeed, although I am not optimistic. They are standing against China, the fascist juggernaut of the modern world, and the odds of victory are low. This week, the police have laid siege to university campuses, and recently the \u003ca href=\"https://www.smh.com.au/world/asia/hong-kong-university-campus-like-a-warzone-as-night-time-battle-breaks-out-20191113-p53a1f.html\"\u003epolice have evacuated mainland students\u003c/a\u003e from HK, which seems to me as an indication that we are nearing some kind of tipping point, something akin to 1989\u0026rsquo;s Tiananmen massacre.\u003c/p\u003e\n\u003cp\u003eThe international response has been tepid at best, although both houses of the US legislature have passed or are preparing resolutions condemning the police brutality. Private companies have been embroiled in controversy for censoring efforts to voice support for the protestors, in a blatant example of how capitalism will not stand in support of freedom if it contradicts the bottom line. The gamer-relevant example is of course Blizzard, who suspended and censored Hearthstone pro Blitzchung for delivering this post\u0026rsquo;s title during a livestream.\u003c/p\u003e\n\u003cp\u003eThe Hong Kong protests are perhaps a microcosm of many of the problems faced by modern society: inequality, authoritarianism, state surveillance, police brutality, the indifference of capitalism, and even China itself. As the decade winds to a close, perhaps the HK revolution and its eventual outcome (whether that be the successful repression of the protests by China or a full-blown rebellion) provide a stark preview of what to expect in the decade to come. Indeed, Hong Kong is the revolution of our time.\u003c/p\u003e\n",
-            "summary": "Hong Kong is on fire.\nFor months now, protests and unrests, led mainly by university students, have wracked the city. Initially in response to a controversial China-backed extradition bill, it is also believed to be fueled by political and social inequality and interference by the Chinese government. As the months went on, the stakes have escalated in the wake of widespread anger at the way the police are brutally cracking down on protests.",
-            "date_published": "2019-11-15T00:00:00+00:00",
-            "date_modified": "2019-11-23T05:46:16+08:00",
-            "section": "post",
-            "source_path": "post/2019/11/hong-kong-revolution-of-our-time/index.md"
-            , "tags": ["current events","hong kong"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1195160540429066241/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/roytang/status/1195160540429066241#favorited-by-825037256",
-                    "source_file": "like-20191115T032755-webmention-724458.json"
-                }
-            ]
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2019/11/tales-from-p2p/",
             "url": "https://mirror.roytang.net/2019/11/tales-from-p2p/",
             "path": "/2019/11/tales-from-p2p/",
@@ -963,6 +822,142 @@
             "source_path": "notes/2019/10/1189113868523425793/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1189113868523425793/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/1188862508800413696/",
+            "url": "https://mirror.roytang.net/2019/10/1188862508800413696/",
+            "path": "/2019/10/1188862508800413696/",
+            "title": "",
+            "content_html": "\u003cp\u003eThe most disappointing thing about this episode was learning how “Erdogan“ was pronounced and realizing it no longer works with the Etrigan chants\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/LastWeekTonight/status/1188820944325922816'\u003eLastWeekTonight\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Here’s our story from last night about the alarming decision to pull U.S. troops away from the border between Turkey and Syria: \u003ca href=\"https://www.youtube.com/watch?v=2u_pZ-SgACk\"\u003ehttps://www.youtube.com/watch?v=2u_pZ-SgACk\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "The most disappointing thing about this episode was learning how “Erdogan“ was pronounced and realizing it no longer works with the Etrigan chants\nQuoted LastWeekTonight\u0026#39;s tweet:   Here’s our story from last night about the alarming decision to pull U.S. troops away from the border between Turkey and Syria: https://www.youtube.com/watch?v=2u_pZ-SgACk  ",
+            "date_published": "2019-10-28T16:58:04+00:00",
+            "date_modified": "2020-09-07T14:09:34+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/10/1188862508800413696/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188862508800413696/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/b4k006ibl66/",
+            "url": "https://mirror.roytang.net/2019/10/b4k006ibl66/",
+            "path": "/2019/10/b4k006ibl66/",
+            "title": "",
+            "content_html": "\u003cp\u003e#inktober2019 day 29: injured #inktober #sketchdaily “These idiots got themselves injured and need healing.” “I’ll take you to town there’s a doctor there.” “Excuse me, these idiots didn’t get frozen by a trap.”\u003c/p\u003e\n",
+            "summary": "#inktober2019 day 29: injured #inktober #sketchdaily “These idiots got themselves injured and need healing.” “I’ll take you to town there’s a doctor there.” “Excuse me, these idiots didn’t get frozen by a trap.”",
+            "date_published": "2019-10-28T16:51:54+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/10/B4K006IBl66/index.md"
+            , "tags": ["inktober2019","inktober","sketchdaily"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188860957679869962/"},{"type":"instagram","url":"https://instagram.com/p/B4K006IBl66/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/don5jk/october_29th_storm/f5rcqmv/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/b4k0f3ghxld/",
+            "url": "https://mirror.roytang.net/2019/10/b4k0f3ghxld/",
+            "path": "/2019/10/b4k0f3ghxld/",
+            "title": "",
+            "content_html": "\u003cp\u003e#inktober2019 day 28: ride #inktober #sketchdaily\u003c/p\u003e\n",
+            "summary": "#inktober2019 day 28: ride #inktober #sketchdaily",
+            "date_published": "2019-10-28T16:51:53+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/10/B4K0f3ghXlD/index.md"
+            , "tags": ["sketchdaily","inktober","inktober2019"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188860953137471490/"},{"type":"instagram","url":"https://instagram.com/p/B4K0f3ghXlD/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/do8a1p/october_28th_tea_set/f5m9m1c/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/1188707470866145280/",
+            "url": "https://mirror.roytang.net/2019/10/1188707470866145280/",
+            "path": "/2019/10/1188707470866145280/",
+            "title": "",
+            "content_html": "\u003cp\u003eBy age 35 you should have:\u003c/p\u003e\n\u003cp\u003eIt doesn\u0026rsquo;t matter\u003c/p\u003e\n\u003cp\u003eIt literally doesn\u0026rsquo;t\u003c/p\u003e\n\u003cp\u003eComparison is the thief of joy\u003c/p\u003e\n\u003cp\u003eMay you always have enough\u003c/p\u003e\n\u003cp\u003eIf you don\u0026rsquo;t, may you have great support\u003c/p\u003e\n\u003cp\u003eBecause rising tides lift all ships\u003c/p\u003e\n\u003cp\u003eUnless you\u0026rsquo;re the worst, then I hope the tide takes you far away\u003c/p\u003e\n",
+            "summary": "By age 35 you should have:\nIt doesn\u0026rsquo;t matter\nIt literally doesn\u0026rsquo;t\nComparison is the thief of joy\nMay you always have enough\nIf you don\u0026rsquo;t, may you have great support\nBecause rising tides lift all ships\nUnless you\u0026rsquo;re the worst, then I hope the tide takes you far away",
+            "date_published": "2019-10-28T06:42:00+00:00",
+            "date_modified": "2020-09-07T14:09:34+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/10/1188707470866145280/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188707470866145280/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/1188704078202671104/",
+            "url": "https://mirror.roytang.net/2019/10/1188704078202671104/",
+            "path": "/2019/10/1188704078202671104/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m not sure whether charging blindly into fixing an unfamiliar system in an unfamiliar language/framework is a core skill for (senior) developers, or madness, or maybe a little bit of both\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m not sure whether charging blindly into fixing an unfamiliar system in an unfamiliar language/framework is a core skill for (senior) developers, or madness, or maybe a little bit of both",
+            "date_published": "2019-10-28T06:28:31+00:00",
+            "date_modified": "2019-10-28T09:30:02+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/10/1188704078202671104/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188704078202671104/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/1188671049027616768/",
+            "url": "https://mirror.roytang.net/2019/10/1188671049027616768/",
+            "path": "/2019/10/1188671049027616768/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/SeresaTagAraw/\"\u003e@SeresaTagAraw\u003c/a\u003e famous for being insatiable! lol\u003c/p\u003e\n",
+            "summary": "@SeresaTagAraw famous for being insatiable! lol",
+            "date_published": "2019-10-28T04:17:17+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/10/1188671049027616768/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188671049027616768/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/b4irirmh8uk/",
+            "url": "https://mirror.roytang.net/2019/10/b4irirmh8uk/",
+            "path": "/2019/10/b4irirmh8uk/",
+            "title": "",
+            "content_html": "\u003cp\u003e#inktober2019 day 27: coat #inktober #sketchdaily It was a magical wizard coat of healing all along! Also I somehow managed to catch up!\u003c/p\u003e\n",
+            "summary": "#inktober2019 day 27: coat #inktober #sketchdaily It was a magical wizard coat of healing all along! Also I somehow managed to catch up!",
+            "date_published": "2019-10-27T17:16:14+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/10/B4IRirMh8uK/index.md"
+            , "tags": ["sketchdaily","inktober","inktober2019"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188504689597472773/"},{"type":"instagram","url":"https://instagram.com/p/B4IRirMh8uK/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dnqw28/october_27th_inspector_gadget/f5gq2cb/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/10/b4hxn0dhuib/",
+            "url": "https://mirror.roytang.net/2019/10/b4hxn0dhuib/",
+            "path": "/2019/10/b4hxn0dhuib/",
+            "title": "",
+            "content_html": "\u003cp\u003e#inktober2019 day 26: dark #inktober #sketchdaily\u003c/p\u003e\n",
+            "summary": "#inktober2019 day 26: dark #inktober #sketchdaily",
+            "date_published": "2019-10-27T08:51:09+00:00",
+            "date_modified": "2020-03-28T03:38:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/10/B4HXN0dhuIB/index.md"
+            , "tags": ["sketchdaily","inktober","inktober2019"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1188377584083582976/"},{"type":"instagram","url":"https://instagram.com/p/B4HXN0dhuIB/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dnbedu/october_26th_false_chameleon/f5e5nof/"}]
             
             
             }
