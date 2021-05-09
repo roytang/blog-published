@@ -25,6 +25,8 @@
 
 - [Review: The Outer Worlds](/2019/11/outer-worlds/)
 
+- [Game Review: Hollow Knight](/2019/02/game-review-hollow-knight/)
+
 - [Game Review: Slay the Spire](/2019/02/game-review-slay-the-spire/)
 
 - [Game Review: Marvel&#39;s Spider-Man for PS4](/2018/11/game-review-marvels-spider-man-for-ps4/)
@@ -180,6 +182,8 @@
 - [Suikosource Forums](/2005/03/suikosource-forums/)
 
 - [Nanaca Crash](/2005/03/nanaca-crash/)
+
+- [Games: Legend of Zelda -- Minish Cap](/2005/02/games-legend-of-zelda-minish-cap/)
 
 - [Play Nintendo and Sega video games online for free!](/2005/02/play-nintendo-and-sega-video-games-online-for-free/)
 
