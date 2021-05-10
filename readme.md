@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-05-09](https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/)
 - [Book Review: Snow Crash by Neal Stephenson](https://mirror.roytang.net/2021/05/book-review-snow-crash-by-neal-stephenson/)
 - [Digital Boardgames Review: Root](https://mirror.roytang.net/2021/05/digital-boardgames-review-root/)
 - [Weeknotes 2021-05-02](https://mirror.roytang.net/2021/05/weeknotes-2021-05-02/)
 - [Math and Privilege](https://mirror.roytang.net/2021/04/math-and-privilege/)
-- [Ludum Dare 48: Diver](https://mirror.roytang.net/2021/04/ludum-dare-48-diver/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

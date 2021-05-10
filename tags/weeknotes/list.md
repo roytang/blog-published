@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-05-09](/2021/05/weeknotes-2021-05-09/)
+
 - [Weeknotes 2021-05-02](/2021/05/weeknotes-2021-05-02/)
 
 - [Weeknotes 2021-04-25: Game Jammin&#39;](/2021/04/weeknotes-2021-04-25/)
