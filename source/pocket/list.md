@@ -297,7 +297,7 @@
 
 - [](/2020/02/should-i-quit-my-job-take-this-quiz-to-just-kidding-you-should-quit/)
 
-- [](/2020/02/untitled/)
+- [](/2020/02/early-internet-activists/)
 
 - [](/2020/02/neal-fun/)
 

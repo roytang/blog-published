@@ -61,6 +61,8 @@
 
 - [](/2013/07/353690869481738241/)
 
+- [](/2013/02/305358880874057728/)
+
 - [](/2012/10/258215576680407041/)
 
 - [](/2012/09/249794730370686976/)
@@ -110,6 +112,8 @@
 - [Daily MTG : Magic: The Gathering](/2008/08/daily-mtg-magic-the-gathering/)
 
 - [Final Fantasy Crystal Chronicles: Ring of Fates](/2008/04/final-fantasy-crystal-chronicles-ring-of-fates/)
+
+- [Apollo Justice: Ace Attorney](/2008/02/apollo-justice-ace-attorney/)
 
 - [Advance Wars: Days of Ruin](/2008/02/advance-wars-days-of-ruin/)
 

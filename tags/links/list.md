@@ -41,8 +41,6 @@
 
 - [links for 2008-03-07](/2008/03/links-for-2008-03-07/)
 
-- [links for 2008-02-29](/2008/02/links-for-2008-02-29/)
-
 - [links for 2008-01-18](/2008/01/links-for-2008-01-18/)
 
 - [links for 2008-01-17](/2008/01/links-for-2008-01-17/)
@@ -90,12 +88,6 @@
 - [links for 2007-03-19](/2007/03/links-for-2007-03-19/)
 
 - [links for 2007-03-07](/2007/03/links-for-2007-03-07/)
-
-- [links for 2007-02-24](/2007/02/links-for-2007-02-24/)
-
-- [links for 2007-02-22](/2007/02/links-for-2007-02-22/)
-
-- [links for 2007-02-19](/2007/02/links-for-2007-02-19/)
 
 - [links for 2007-02-05](/2007/02/links-for-2007-02-05/)
 
@@ -155,11 +147,7 @@
 
 - [Del.icio.us bookmarks for 2006-03-04](/2006/03/del-icio-us-bookmarks-for-2006-03-04/)
 
-- [Del.icio.us bookmarks for 2006-02-26](/2006/02/del-icio-us-bookmarks-for-2006-02-26/)
-
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
-
-- [Today&#39;s del.icio.us bookmarks](/2006/02/today39s-del-icio-us-bookmarks/)
 
 - [Today&#39;s del.icio.us bookmarks](/2006/02/today39s-del-icio-us-bookmarks-2/)
 

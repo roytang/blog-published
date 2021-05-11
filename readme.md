@@ -29,14 +29,11 @@ Latest shared links:
 Latest notes:
     
 
+- [10 May 2021 12:21pm](https://mirror.roytang.net/2021/05/1391730047287922688/): @HerdImmunityPH Which rate is used to compute the estimated herd immunity date? The most recent 7 day rolling average?
+- [10 May 2021 9:50am](https://mirror.roytang.net/2021/05/ba2999c2cc9d8803ad982d24e52035e6/): Bond movie no. 9: The Man With The Golden Gun (1974). Christopher Lee was a Bond villain! Beirut, Macau, Hong Kong, Bangkok. An Asian girl is introduced just for the pun in her name. Comic relief southern sheriff dude is back from the previous film. Final fight scene with Nick Nack was ridiculous. As per usual, Bond gets captured and the bad guy explains everything. Still not used to Roger Moore in the role.
 - [6 May 2021 5:47pm](https://mirror.roytang.net/2021/05/1390362590501474304/): Every time I accidentally nap after dinner I have to pay for it by being unable to sleep until 3am then waking up late and missing my morning walk window D:
 - [6 May 2021 6:13am](https://mirror.roytang.net/2021/05/1390187986503954434/): @zaaaldehyde I&rsquo;ve walked most of the northbound side of EDSA from around Trinoma QAve and Araneta to Ortigas/Pioneer I don&rsquo;t recall having any trouble, but it&rsquo;s been a while. Have the sidewalks been repurposed in the last 2-3 years?
 - [6 May 2021 2:58am](https://mirror.roytang.net/2021/05/gx3wfyz/): This mindset reflects someone who doesn&rsquo;t respect institutions or the law or civilized agreements, and basically respects only one thing: power. That&rsquo;s why he thinks people who oppose China want war and why he doesn&rsquo;t want to offend China, power is all he sees and values, like the thug that he is. For this kind of person, you can&rsquo;t be right because of the law or because of principle, or because of justice, you can only be right if you had the ability to enforce that right.
-- [6 May 2021 2:39am](https://mirror.roytang.net/2021/05/1390134185222832132/): This mindset reflects someone who doesn&rsquo;t respect institutions or the law or civilized agreements, and basically respects only one thing: power. That&rsquo;s why he thinks people who oppose China wants war and why he doesn&rsquo;t want to offend them, power is all he sees, like thug he is
-Quoted gmanews&#39;s tweet:   President Rodrigo Duterte on Wednesday night said the Philippines&rsquo; arbitral victory in 2016 against China&rsquo;s massive claims in the West Philippine Sea before the United Nations is just paper fit to be thrown in the trash.
-- [5 May 2021 10:22am](https://mirror.roytang.net/2021/05/1389888129239339012/): Wednesday evening Strixhaven quick drafts! https://www.twitch.tv/twitchyroy #mtg #magicarena #twitch #mtgstrixhaven
-Two quick drafts today! Finally managed to get 7 wins in quick draft by forcing silverquill aggro! Well, maybe the Lightscribe helped a lot!
-YT: https://www.youtube.com/watch?v=GldXRNMt6Eg
 
 [View all notes](https://mirror.roytang.net/notes)
 
