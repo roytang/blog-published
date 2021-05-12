@@ -1,4 +1,6 @@
 
+- [One million people saw my dumbest tweet](/2021/05/one-million-people-saw-my-dumbest-tweet/)
+
 - [My current HTML boilerplate](/2021/05/my-current-html-boilerplate/)
 
 - [How to have better arguments online](/2021/04/how-to-have-better-arguments-online/)

@@ -11,6 +11,116 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/08/1166309740529344512/",
+            "url": "https://mirror.roytang.net/2019/08/1166309740529344512/",
+            "path": "/2019/08/1166309740529344512/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/newsycombinator/\"\u003e@newsycombinator\u003c/a\u003e Hi! Why did you stop posting a link to the news.yc comments for each link? I found it useful if i wanted to see discussion after reading the article. (Idk if you will reply to me coz youre probly a bot)\u003c/p\u003e\n",
+            "summary": "@newsycombinator Hi! Why did you stop posting a link to the news.yc comments for each link? I found it useful if i wanted to see discussion after reading the article. (Idk if you will reply to me coz youre probly a bot)",
+            "date_published": "2019-08-27T11:21:25+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1166309740529344512/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1166309740529344512/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/capnfabs",
+                    "source_file": "comment-20190827-115037-562d12f5-f25c-4558-9d44-c06941fa86c9.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20190827-124649-c266c2fd-992a-4a1a-94d3-976d4dd51c9b.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1166149784350027776/",
+            "url": "https://mirror.roytang.net/2019/08/1166149784350027776/",
+            "path": "/2019/08/1166149784350027776/",
+            "title": "",
+            "content_html": "\u003cp\u003eAs a digital pack rat, it always annoys me when I remember how much of my own pre-cloud data I am no longer able to recover\u003c/p\u003e\n",
+            "summary": "As a digital pack rat, it always annoys me when I remember how much of my own pre-cloud data I am no longer able to recover",
+            "date_published": "2019-08-27T00:45:49+00:00",
+            "date_modified": "2019-09-07T07:00:25+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/08/1166149784350027776/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1166149784350027776/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/devnotes-python-pathlib/",
+            "url": "https://mirror.roytang.net/2019/08/devnotes-python-pathlib/",
+            "path": "/2019/08/devnotes-python-pathlib/",
+            "title": "Devnotes: Python Pathlib",
+            "content_html": "\u003cp\u003eEver since I started learning Python back in 2008ish, I\u0026rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like \u003ccode\u003eos\u003c/code\u003e, \u003ccode\u003eshutil\u003c/code\u003e and \u003ccode\u003eglob\u003c/code\u003e. It can become a bit messy with so many imports, and I often can\u0026rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let\u0026rsquo;s not kid ourselves here).\u003c/p\u003e\n\u003cp\u003eWith Python 3, a new cleaner option is available to replace all of the above libraries: \u003ca href=\"https://docs.python.org/3/library/pathlib.html\"\u003ePathlib\u003c/a\u003e, introduced in Python 3.4, provides an object-oriented way of doing file operations, replacing many of the most common uses I had for the libraries above. Some sample usage:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#f92672\"\u003efrom\u003c/span\u003e pathlib \u003cspan style=\"color:#f92672\"\u003eimport\u003c/span\u003e path\n\n\u003cspan style=\"color:#75715e\"\u003e# Declaring a path object is just passing the path string\u003c/span\u003e\np \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e Path(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;/home/roytang/stuff\u0026#34;\u003c/span\u003e)\n\n\u003cspan style=\"color:#75715e\"\u003e# Other paths can be derived using the / operator\u003c/span\u003e\nsubdir \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e p \u003cspan style=\"color:#f92672\"\u003e/\u003c/span\u003e \u003cspan style=\"color:#e6db74\"\u003e\u0026#34;favorites\u0026#34;\u003c/span\u003e\n\n\u003cspan style=\"color:#75715e\"\u003e# p.glob replaces stuff like os.walk and glob.glob\u003c/span\u003e\n\u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e mdfile \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e p\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eglob(\u003cspan style=\"color:#e6db74\"\u003e\u0026#34;**/*.md\u0026#34;\u003c/span\u003e):\n    \u003cspan style=\"color:#66d9ef\"\u003eprint\u003c/span\u003e(str(mdfile))\n\n    \u003cspan style=\"color:#75715e\"\u003e# path objects have properties for individual path elements\u003c/span\u003e\n    filename \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e mdfile\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003ename\n    stem \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e mdfile\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003estem \u003cspan style=\"color:#75715e\"\u003e# filename without extension\u003c/span\u003e\n\n    \u003cspan style=\"color:#75715e\"\u003e# path.exists() replaces os.exists()\u003c/span\u003e\n    newdir \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e subdir \u003cspan style=\"color:#f92672\"\u003e/\u003c/span\u003e stem \n    \u003cspan style=\"color:#66d9ef\"\u003eif\u003c/span\u003e \u003cspan style=\"color:#f92672\"\u003enot\u003c/span\u003e newdir\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eexists():\n        \u003cspan style=\"color:#75715e\"\u003e# path.mkdir replaces os.makedirs\u003c/span\u003e\n        newdir\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003emkdir(parents\u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003eTrue)\n\n    newfile \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e newdir \u003cspan style=\"color:#f92672\"\u003e/\u003c/span\u003e newfile \u003cspan style=\"color:#75715e\"\u003e# path objects can be either files or dirs\u003c/span\u003e\n    \u003cspan style=\"color:#75715e\"\u003e# for file copying, you still need shutil!\u003c/span\u003e\n    \u003cspan style=\"color:#f92672\"\u003eimport\u003c/span\u003e shutil\n    shutil\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003ecopy(str(mdfile), str(newfile))\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eFor me it\u0026rsquo;s much cleaner to use than the old methods and require less imports (most of the time). I eventually hope to migrate all my older scripts to use Pathlib (the same way I migrated them away from Python 2 a while back), and moving forward I plan to use it primarily for filesystem operations.\u003c/p\u003e\n",
+            "summary": "Ever since I started learning Python back in 2008ish, I\u0026rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like os, shutil and glob. It can become a bit messy with so many imports, and I often can\u0026rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let\u0026rsquo;s not kid ourselves here).",
+            "date_published": "2019-08-27T00:00:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/devnotes-python-pathlib/index.md"
+            , "tags": ["software development","devnotes","python"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1166140339972952064/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1166005001304469506/",
+            "url": "https://mirror.roytang.net/2019/08/1166005001304469506/",
+            "path": "/2019/08/1166005001304469506/",
+            "title": "",
+            "content_html": "\u003cp\u003eWe\u0026rsquo;re finally free! #mtg #modern\u003c/p\u003e\n",
+            "summary": "We\u0026rsquo;re finally free! #mtg #modern",
+            "date_published": "2019-08-26T15:10:30+00:00",
+            "date_modified": "2019-09-07T07:00:25+00:00",
+            "section": "photos",
+            "source_path": "photos/2019/08/1166005001304469506/index.md"
+            , "tags": ["mtg","modern"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1166005001304469506/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/marketplace-ethics/",
+            "url": "https://mirror.roytang.net/2019/08/marketplace-ethics/",
+            "path": "/2019/08/marketplace-ethics/",
+            "title": "Marketplace Ethics",
+            "content_html": "\u003cp\u003eI brought up among one of my friend groups this Reddit thread where the poster says they were able to buy hundreds of dollars worth of \u003ca href=\"/tags/mtg/\"\u003eMagic\u003c/a\u003e cards from a garage sale for around $70. (Not gonna link to the original thread because it might seem like I\u0026rsquo;m shaming the OP.)\u003c/p\u003e\n\u003cp\u003eNot that there\u0026rsquo;s anything bad with such \u0026ldquo;garage sale finds\u0026rdquo;, as it were. These things are posted every so often on subreddits especially those dedicated to some sort of collectible. I mentioned that while I would be very excited to find something like this in the wild, I might have an attack of conscience because I\u0026rsquo;m potentially cheating someone out of fair market value and taking advantage of their ignorance. I\u0026rsquo;m probably more likely to feel this way if I was dealing with a seller personally (like at a garage sale), rather than some entity indirectly (like at a big store for example).\u003c/p\u003e\n\u003cp\u003eObviously, my ethical dilemma is only for the scenario where there is an information imbalance - where I as the buyer have information about the product\u0026rsquo;s fair market value that the seller is not aware of. If the seller knew full well the actual value of what he\u0026rsquo;s selling and he still sells at that price, then I will gladly buy it cheap with no concerns.\u003c/p\u003e\n\u003ch3 id=\"this-is-why-im-not-a-salesman\"\u003eThis is why I\u0026rsquo;m not a salesman\u003c/h3\u003e\n\u003cp\u003eIn such a case, the way to assuage my ethical concerns would be to bring up the possible imbalance. Something along the lines of \u0026ldquo;I think you\u0026rsquo;re selling this for much less than what it\u0026rsquo;s worth!\u0026rdquo;, and if he nods and still wants to sell at that price anyway, then both of you complete the transaction happily.\u003c/p\u003e\n\u003cp\u003eFriend O commented:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eI think people have a kind of \u0026ldquo;code of ethics\u0026rdquo; that applies to marketplaces\u003c/p\u003e\n\u003cp\u003ethat\u0026rsquo;s a bit different from everyday ethics\u003c/p\u003e\n\u003cp\u003ejust like how doctors/lawyers/priests have a code of ethics specific to their contexts\u003c/p\u003e\n\u003cp\u003ethe idea is that participants in the marketplace should assume that everyone else is doing their due dilligence when it comes to price/quality research\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eSo I guess I can satisfy my concerns as well by telling myself that \u0026ldquo;Caveat Emptor\u0026rdquo; applies in the opposite direction as well, so \u0026ldquo;Caveat Venditor\u0026rdquo;?\u003c/p\u003e\n\u003ch3 id=\"hold-yourself-to-a-higher-standard\"\u003eHold yourself to a higher standard\u003c/h3\u003e\n\u003cp\u003eI am only presenting an ethical dilemma here as it applies to myself when I am the buyer in the above scenario, or otherwise the one with information advantage in the situation.\u003c/p\u003e\n\u003cp\u003eI have been on the receiving end of bad trades before of course, numerous times. Such often happens when I foolishly decide to participate in a transaction without doing the necessary research, so I guess Caveat Venditor is accurate. I don\u0026rsquo;t lay blame on the other party for taking advantage of my ignorance either; after a bad trade I will most likely blame myself. Therefore, I don\u0026rsquo;t expect other people I am transacting with to treat me as fairly as I want to treat other people should I have the advantage.\u003c/p\u003e\n\u003cp\u003eFriend J pointed out that holding myself to a higher standard like this can be considered a bit elitist since it\u0026rsquo;s like considering yourself \u0026ldquo;better\u0026rdquo; than others. I think of it more like managing expectations of other people. Other people don\u0026rsquo;t have the same life experiences and values as I do, so some things are more important for me than for them. I would of course love it if everyone was conditioned to treat everyone else fairly in this manner - society would be much the better for it, but I understand the reality of human wants and needs enough to know that\u0026rsquo;s a pipe dream at best.\u003c/p\u003e\n\u003ch3 id=\"all-in-theory\"\u003eAll in theory\u003c/h3\u003e\n\u003cp\u003eAnyway, all of this is untested, because I haven\u0026rsquo;t been lucky enough to find a deal like I originally described. Maybe when I\u0026rsquo;m there at that point in time all my ethical questions give way to impulse or greed and I\u0026rsquo;m already at home gleefully counting my winnings before the dilemma comes to mind. But I like to think thought experiments like these help to flesh out one\u0026rsquo;s thought processes so that when the time comes, one is more likely to behave appropriately.\u003c/p\u003e\n",
+            "summary": "I brought up among one of my friend groups this Reddit thread where the poster says they were able to buy hundreds of dollars worth of Magic cards from a garage sale for around $70. (Not gonna link to the original thread because it might seem like I\u0026rsquo;m shaming the OP.)\nNot that there\u0026rsquo;s anything bad with such \u0026ldquo;garage sale finds\u0026rdquo;, as it were. These things are posted every so often on subreddits especially those dedicated to some sort of collectible.",
+            "date_published": "2019-08-26T00:00:00+00:00",
+            "date_modified": "2021-03-13T20:33:27+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/marketplace-ethics/index.md"
+            , "tags": ["philosophy"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1165777925502898176/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/08/1165583254763839488/",
+            "url": "https://mirror.roytang.net/2019/08/1165583254763839488/",
+            "path": "/2019/08/1165583254763839488/",
+            "title": "",
+            "content_html": "\u003cp\u003eChinese Agencies \u0026lsquo;Crack Telegram\u0026rsquo;: A Timely Warning For End-To-End Encryption\u003c/p\u003e\n",
+            "summary": "Chinese Agencies \u0026lsquo;Crack Telegram\u0026rsquo;: A Timely Warning For End-To-End Encryption",
+            "date_published": "2019-08-25T11:14:38+00:00",
+            "date_modified": "2021-04-17T04:27:03+08:00",
+            "section": "links",
+            "source_path": "links/2019/08/1165583254763839488/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1165583254763839488/"}]
+            ,"link": "https://www.forbes.com/sites/zakdoffman/2019/08/25/chinese-agencies-crack-telegram-a-timely-warning-for-end-to-end-encryption/"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/08/nothing-fails-like-success/",
             "url": "https://mirror.roytang.net/2019/08/nothing-fails-like-success/",
             "path": "/2019/08/nothing-fails-like-success/",
@@ -785,113 +895,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1160159147762913280/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1159896166277926912/",
-            "url": "https://mirror.roytang.net/2019/08/1159896166277926912/",
-            "path": "/2019/08/1159896166277926912/",
-            "title": "",
-            "content_html": "\u003cp\u003eTFW the coffee hasn’t kicked in, and you type “git status” in a chat window.\u003c/p\u003e\n\u003cp\u003eAnd they respond “nothing to commit, working tree clean”.\u003c/p\u003e\n",
-            "summary": "TFW the coffee hasn’t kicked in, and you type “git status” in a chat window.\nAnd they respond “nothing to commit, working tree clean”.",
-            "date_published": "2019-08-09T18:36:10+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1159896166277926912/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159896166277926912/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1159824134458626048/",
-            "url": "https://mirror.roytang.net/2019/08/1159824134458626048/",
-            "path": "/2019/08/1159824134458626048/",
-            "title": "",
-            "content_html": "\u003cp\u003eStrictly speaking, nothing we do is ever really necessary\u003c/p\u003e\n",
-            "summary": "Strictly speaking, nothing we do is ever really necessary",
-            "date_published": "2019-08-09T13:49:56+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1159824134458626048/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159824134458626048/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/b08rnuab8xi/",
-            "url": "https://mirror.roytang.net/2019/08/b08rnuab8xi/",
-            "path": "/2019/08/b08rnuab8xi/",
-            "title": "",
-            "content_html": "\u003cp\u003ePietro, whose head looks a bit too small. Cribbed the pose off a Jim Lee Flash sketch. Well, learn from the best amirite? Pencils only this time. #sketch #xmen #quicksilver\u003c/p\u003e\n",
-            "summary": "Pietro, whose head looks a bit too small. Cribbed the pose off a Jim Lee Flash sketch. Well, learn from the best amirite? Pencils only this time. #sketch #xmen #quicksilver",
-            "date_published": "2019-08-09T08:24:17+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/08/B08rnUAB8XI/index.md"
-            , "tags": ["sketch","xmen","quicksilver"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/B08rnUAB8XI/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159854582824153088/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1159717724215316480/",
-            "url": "https://mirror.roytang.net/2019/08/1159717724215316480/",
-            "path": "/2019/08/1159717724215316480/",
-            "title": "",
-            "content_html": "\u003cp\u003eThis is what I decided to do today\u003c/p\u003e\n",
-            "summary": "This is what I decided to do today",
-            "date_published": "2019-08-09T06:47:06+00:00",
-            "date_modified": "2019-09-07T07:00:25+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/08/1159717724215316480/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159717724215316480/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1159711399339147266/",
-            "url": "https://mirror.roytang.net/2019/08/1159711399339147266/",
-            "path": "/2019/08/1159711399339147266/",
-            "title": "",
-            "content_html": "\u003cp\u003eToni Morrison didn’t write her first novel until she was 40. So if you haven’t written yours yet, there’s still time.\u003c/p\u003e\n\u003cp\u003eOdds are it’ll be terrible. But, there’s still time.\u003c/p\u003e\n",
-            "summary": "Toni Morrison didn’t write her first novel until she was 40. So if you haven’t written yours yet, there’s still time.\nOdds are it’ll be terrible. But, there’s still time.",
-            "date_published": "2019-08-09T06:21:58+00:00",
-            "date_modified": "2020-01-23T05:24:41+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1159711399339147266/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159711399339147266/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/forty-one/",
-            "url": "https://mirror.roytang.net/2019/08/forty-one/",
-            "path": "/2019/08/forty-one/",
-            "title": "Forty One",
-            "content_html": "\u003cp\u003eSuch an uninteresting number. And it hasn\u0026rsquo;t really been an exceptional 365 days around the sun either, but this has become a bit of a yearly tradition now.\u003c/p\u003e\n\u003cp\u003eThings I considered doing today:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003espend the entire day offline (Hah! As if.)\u003c/li\u003e\n\u003cli\u003ego out for a walk at the old university (unlikely to push through, given the gloomy weather recently)\u003c/li\u003e\n\u003cli\u003ego to the mall and buy a new external hard drive and a new monitor and eat at Yabu (I like Yabu) and maybe watch a movie in the cinema (I don\u0026rsquo;t really feel like going to the mall on a Friday, and there aren\u0026rsquo;t any good movies to watch apparently)\u003c/li\u003e\n\u003cli\u003eplay through \u003ca href=\"https://store.steampowered.com/app/237630/DuckTales_Remastered/\"\u003eDucktales Remastered on Steam\u003c/a\u003e, which I bought last night because it was about to be removed from the store, and stream it live on \u003ca href=\"https://www.twitch.tv/twitchyroy\"\u003eTwitch\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003ebinge one of the shows on my TV backlog\u003c/li\u003e\n\u003cli\u003eread through a book. Or maybe books.\u003c/li\u003e\n\u003cli\u003espend the day drawing\u003c/li\u003e\n\u003cli\u003ework on some personal projects, some updates to this site even\u003c/li\u003e\n\u003cli\u003esleep all day (not likely I\u0026rsquo;ll be able to do this)\u003c/li\u003e\n\u003cli\u003eget some more dental work done (\u0026hellip; I think I\u0026rsquo;ll push this off to next week)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe other day a friend who has his birthday a couple of days away from mine told us he\u0026rsquo;d prefer not to celebrate and not to be greeted, as around this time of the year he always has certain troubles. Birthdays don\u0026rsquo;t mean as much to grownups. Pretty much just another year, and most years are not enough different from one another that they all kind of blend in together. I still like to do the blog post though, just as a marker of sorts. An increment to a counter. I don\u0026rsquo;t have any particular deep thoughts or reflections prepared for this one though.\u003c/p\u003e\n\u003cp\u003eNext year though! Next year is life, the universe and everything!\u003c/p\u003e\n",
-            "summary": "Such an uninteresting number. And it hasn\u0026rsquo;t really been an exceptional 365 days around the sun either, but this has become a bit of a yearly tradition now.\nThings I considered doing today:\n spend the entire day offline (Hah! As if.) go out for a walk at the old university (unlikely to push through, given the gloomy weather recently) go to the mall and buy a new external hard drive and a new monitor and eat at Yabu (I like Yabu) and maybe watch a movie in the cinema (I don\u0026rsquo;t really feel like going to the mall on a Friday, and there aren\u0026rsquo;t any good movies to watch apparently) play through Ducktales Remastered on Steam, which I bought last night because it was about to be removed from the store, and stream it live on Twitch binge one of the shows on my TV backlog read through a book.",
-            "date_published": "2019-08-09T00:00:00+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2019/08/forty-one/index.md"
-            , "tags": ["birthday"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1159618447531270144/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/roytang/status/1159618447531270144#favorited-by-12953232",
-                    "source_file": "like-20190813T043306-webmention-667317.json"
-                }
-            ]
             }
         
     ]
