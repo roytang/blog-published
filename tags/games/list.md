@@ -23,6 +23,8 @@
 
 - [](/2020/08/1293051269129486337/)
 
+- [Late Game Review: Tales of Berseria](/2020/03/tales-of-berseria/)
+
 - [Review: The Outer Worlds](/2019/11/outer-worlds/)
 
 - [Game Review: Hollow Knight](/2019/02/game-review-hollow-knight/)
@@ -45,11 +47,15 @@
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
 
+- [](/2017/03/841428616068001792/)
+
 - [Review: Duelyst](/2017/02/review-duelyst/)
 
 - [](/2016/12/10155237324233912/)
 
 - [Review: Xenoblade Chronicles X](/2016/12/review-xenoblade-chronicles-x/)
+
+- [](/2016/03/10154443128298912/)
 
 - [](/2016/02/10154348659503912/)
 
@@ -83,6 +89,8 @@
 
 - [Collectible Card Game Headquarters • View forum - ManaLink 2.0](/2010/03/collectible-card-game-headquarters-view-forum-manalink-2-0/)
 
+- [](/2010/03/10097278973/)
+
 - [List of open source video games - Wikipedia, the free encyclopedia](/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/)
 
 - [](/2009/09/3775823306/)
@@ -94,6 +102,8 @@
 - [](/2009/07/2577062665/)
 
 - [](/2009/07/2560147227/)
+
+- [Street Fighter IV: The Answer Lies in the Heart of Battle](/2009/03/street-fighter-iv-the-answer-lies-in-the-heart-of-battle/)
 
 - [Star Ocean: Second Evolution](/2009/02/star-ocean-second-evolution/)
 

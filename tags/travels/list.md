@@ -73,6 +73,10 @@
 
 - [Sometimes You Just Go Where Your Feet Take You](/2009/03/sometimes-you-just-go-where-your-feet-take-you/)
 
+- [](/2009/03/1324361922/)
+
+- [](/2009/03/1313077574/)
+
 - [Free Wi-fi @HK International Airport](/2008/03/free-wi-fi-hk-international-airport/)
 
 - [Legazpi, Albay](/2008/01/legazpi-albay/)

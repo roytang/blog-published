@@ -171,6 +171,8 @@
 
 - [Scary Movies and Games](/2017/03/scary-movies-and-games/)
 
+- [](/2017/03/841428616068001792/)
+
 - [Review: Duelyst](/2017/02/review-duelyst/)
 
 - [Gaming Walkthroughs](/2017/02/gaming-walkthroughs/)
@@ -194,6 +196,8 @@
 - [](/2016/05/d308o3d/)
 
 - [](/2016/05/d2s51z8/)
+
+- [](/2016/03/10154443128298912/)
 
 - [](/2016/03/aymhaaacaaadvhlaa3gmwg/)
 
