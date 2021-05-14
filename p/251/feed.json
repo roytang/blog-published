@@ -11,6 +11,46 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2012/08/12170462/",
+            "url": "https://mirror.roytang.net/2012/08/12170462/",
+            "path": "/2012/08/12170462/",
+            "title": "How to assess the risk of a java version upgrade?",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.\u003c/p\u003e\n\u003cp\u003eThe current suggested approach is to do a source compare of the JDK sources for each version and assess those changes to see which ones might have impact, but it seems there\u0026rsquo;s a lot of changes to go through (and as mentioned the codebase is kinda large). Is it safe and easier to just review the java version changes for each version? Or is there an easier way to conduct this assessment?\u003c/p\u003e\n\u003cp\u003eEdit: I forgot to mention the version upgrade being considered is a minor version upgrade, i.e. 1.6.10 to 1.6.33\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we\u0026rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.",
+            "date_published": "2012-08-29T03:24:13+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2012/08/12170462/index.md"
+            , "tags": ["java","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032701-16289981.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032750-16289987.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T032929-12170491.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T033007-16290007.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034524-16290156.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T034722-12170597.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/12170462/how-to-assess-the-risk-of-a-java-version-upgrade",
+                    "source_file": "comment-20120829T035906-16290285.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2012/08/c60g3ez/",
             "url": "https://mirror.roytang.net/2012/08/c60g3ez/",
             "path": "/2012/08/c60g3ez/",
@@ -882,23 +922,6 @@
             "source_path": "notes/2012/08/y9i12/index.md"
             , "tags": ["comics"]
             , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/y9i12/question_about_the_new_52_robins/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2012/08/y9ee7/",
-            "url": "https://mirror.roytang.net/2012/08/y9ee7/",
-            "path": "/2012/08/y9ee7/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-raskreddit-if-you-had-a-chance-to-relive-your-life-from-a-previous-point-in-time-retaining-all-your-current-knowledge-a-would-you-do-it-and-b-what-point-would-you-choose-to-go-back-to-httpsredditcomraskredditcommentsy9ee7if_you_had_a_chance_to_relive_your_life_from_a\"\u003ePosted on r/AskReddit: \u003ca href=\"https://reddit.com/r/AskReddit/comments/y9ee7/if_you_had_a_chance_to_relive_your_life_from_a/\"\u003eif you had a chance to relive your life from a previous point in time retaining all your current knowledge, (a) would you do it and (b) what point would you choose to go back to? \u003c/a\u003e\u003c/h4\u003e\n",
-            "summary": "Posted on r/AskReddit: if you had a chance to relive your life from a previous point in time retaining all your current knowledge, (a) would you do it and (b) what point would you choose to go back to?  ",
-            "date_published": "2012-08-15T21:49:25+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2012/08/y9ee7/index.md"
-            , "tags": ["askreddit"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/AskReddit/comments/y9ee7/if_you_had_a_chance_to_relive_your_life_from_a/"}]
             
             
             }
