@@ -11,74 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2017/12/bdsoclkatzo/",
-            "url": "https://mirror.roytang.net/2017/12/bdsoclkatzo/",
-            "path": "/2017/12/bdsoclkatzo/",
-            "title": "",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2017-12-29T08:22:50+00:00",
-            "date_modified": "2021-05-02T21:27:53+08:00",
-            "section": "photos",
-            "source_path": "photos/2017/12/BdSoCLkATzo/index.md"
-            
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BdSoCLkATzo/"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/946763541897531398/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156299120533912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/48011448/",
-            "url": "https://mirror.roytang.net/2017/12/48011448/",
-            "path": "/2017/12/48011448/",
-            "title": "MarkLogic node.js: stream end event doesn't fire for certain collections",
-            "content_html": "\u003cp\u003eI have a query using MarkLogic node.js that basically boils down to something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edb.documents.query(qb.where(qb.collection('test'))).stream()\n.on('data', function(row) {\n    console.log(\u0026quot;Stream on data\u0026quot;);\n})\n.on('end', function() {\n    console.log(\u0026quot;Stream on end\u0026quot;);\n})\n.on('error', function(error) {\n    console.log(error);\n})\n;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow, for a certain collection we have in our database, the \u0026lsquo;end\u0026rsquo; function doesn\u0026rsquo;t fire, i.e. I never see \u0026ldquo;Stream on end\u0026rdquo; appear in the log. There\u0026rsquo;s no error or anything, processing just stops. It\u0026rsquo;s only for this particular collection, other collections seem fine.\u003c/p\u003e\n\u003cp\u003eIf I query documents in that collection directly using other methods such as qb.value() without using qb.collection(), the end event fires correctly. But once I add qb.collection() into the mix (using qb.and), the end event doesn\u0026rsquo;t fire.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m unsure how to debug this, as this is my first time trying to use streams in the nodejs client library. Any advice as to what I can check?\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
-            "summary": "I have a query using MarkLogic node.js that basically boils down to something like this:\ndb.documents.query(qb.where(qb.collection('test'))).stream() .on('data', function(row) { console.log(\u0026quot;Stream on data\u0026quot;); }) .on('end', function() { console.log(\u0026quot;Stream on end\u0026quot;); }) .on('error', function(error) { console.log(error); }) ;  Now, for a certain collection we have in our database, the \u0026lsquo;end\u0026rsquo; function doesn\u0026rsquo;t fire, i.e. I never see \u0026ldquo;Stream on end\u0026rdquo; appear in the log. There\u0026rsquo;s no error or anything, processing just stops.",
-            "date_published": "2017-12-28T17:04:03+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/48011448/index.md"
-            , "tags": ["node.js","marklogic","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/48011448/marklogic-node-js-stream-end-event-doesnt-fire-for-certain-collections"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/946248604653465600/",
-            "url": "https://mirror.roytang.net/2017/12/946248604653465600/",
-            "path": "/2017/12/946248604653465600/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mcnr_b/\"\u003e@mcnr_b\u003c/a\u003e Poor air man!\u003c/p\u003e\n",
-            "summary": "@mcnr_b Poor air man!",
-            "date_published": "2017-12-28T05:17:02+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/946248604653465600.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/946248604653465600/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/12/10156294616568912/",
-            "url": "https://mirror.roytang.net/2017/12/10156294616568912/",
-            "path": "/2017/12/10156294616568912/",
-            "title": "",
-            "content_html": "\u003cp\u003e“Everything ends and it\u0026rsquo;s always sad, but everything begins again, too. And that\u0026rsquo;s always happy. Be happy.”\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eThe Doctor\u003c/li\u003e\n\u003c/ul\u003e\n",
-            "summary": "“Everything ends and it\u0026rsquo;s always sad, but everything begins again, too. And that\u0026rsquo;s always happy. Be happy.”\n The Doctor  ",
-            "date_published": "2017-12-28T02:55:00+00:00",
-            "date_modified": "2019-09-28T21:45:17+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/12/10156294616568912/index.md"
-            , "tags": ["quotes"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156294616568912"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2017/12/my-coding-approach/",
             "url": "https://mirror.roytang.net/2017/12/my-coding-approach/",
             "path": "/2017/12/my-coding-approach/",
@@ -1040,6 +972,103 @@
                 { 
                     "url": "https://www.facebook.com/ritchie.tiongson",
                     "source_file": "comment-20171212-000000-93b46fef-cff3-4a1a-8857-bf92259ec09b.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/940222255929335809/",
+            "url": "https://mirror.roytang.net/2017/12/940222255929335809/",
+            "path": "/2017/12/940222255929335809/",
+            "title": "",
+            "content_html": "\u003cp\u003e. \u003ca href=\"https://twitter.com/YouTube/\"\u003e@YouTube\u003c/a\u003e needs a \u0026ldquo;Add this video to the current queue\u0026rdquo; function\u003c/p\u003e\n",
+            "summary": ". @YouTube needs a \u0026ldquo;Add this video to the current queue\u0026rdquo; function",
+            "date_published": "2017-12-11T14:10:28+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/940222255929335809.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/940222255929335809/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/940206950679166976/",
+            "url": "https://mirror.roytang.net/2017/12/940206950679166976/",
+            "path": "/2017/12/940206950679166976/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;ve added so many games to my Steam wishlist because of \u003ca href=\"https://twitter.com/britishgaming/\"\u003e@britishgaming\u003c/a\u003e \u0026rsquo;s Game Maker Toolkit YT channel\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;ve added so many games to my Steam wishlist because of @britishgaming \u0026rsquo;s Game Maker Toolkit YT channel",
+            "date_published": "2017-12-11T13:09:39+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/940206950679166976.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/940206950679166976/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/939869836590510085/",
+            "url": "https://mirror.roytang.net/2017/12/939869836590510085/",
+            "path": "/2017/12/939869836590510085/",
+            "title": "",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m going to be out of the house for 5 days and I\u0026rsquo;m worried that my Fallout Shelter residents will die lol\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m going to be out of the house for 5 days and I\u0026rsquo;m worried that my Fallout Shelter residents will die lol",
+            "date_published": "2017-12-10T14:50:05+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/939869836590510085.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/939869836590510085/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/12/10156250383578912/",
+            "url": "https://mirror.roytang.net/2017/12/10156250383578912/",
+            "path": "/2017/12/10156250383578912/",
+            "title": "",
+            "content_html": "\u003cp\u003eBayantel switched to Globe successfully. Hopefully slightly less headaches now\u003c/p\u003e\n",
+            "summary": "Bayantel switched to Globe successfully. Hopefully slightly less headaches now",
+            "date_published": "2017-12-10T14:43:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/10156250383578912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156250383578912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jonathanryan.ang",
+                    "source_file": "comment-20171210-000000-fb88542a-e5ed-4972-bf39-01e102e5671a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171210-000001-4ca3a528-e9cc-472a-9c55-eb7afff04bab.json"
+                }, { 
+                    "url": "https://www.facebook.com/acmramos",
+                    "source_file": "comment-20171210-000002-a04eef23-17ef-4bf1-95e2-e06ae034df76.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171210-000320-50a53dab-8548-4a37-9f30-794b8f803128.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20171211-000003-25f018c3-4ac1-422a-a73c-79c8fb1d8e7a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171211-000004-1c8eb1a0-b76a-4f71-a3e8-8177a782e4a0.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171211-000321-258c1490-b6e1-41b8-921f-3c7d6fa4c666.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171211-000322-36c1d1d5-be3c-47fc-90e2-88314cb53f28.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171212-000820-d8c92082-c917-475d-832d-2e072e0d6b7c.json"
                 }
             ]
             }

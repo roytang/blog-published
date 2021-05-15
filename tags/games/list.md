@@ -27,6 +27,8 @@
 
 - [Review: The Outer Worlds](/2019/11/outer-worlds/)
 
+- [Zero Time Dilemma](/2019/03/zero-time-dilemma/)
+
 - [Game Review: Hollow Knight](/2019/02/game-review-hollow-knight/)
 
 - [Game Review: Slay the Spire](/2019/02/game-review-slay-the-spire/)
@@ -37,6 +39,8 @@
 
 - [](/2018/08/1030779233100947456/)
 
+- [](/2018/03/974999316036136960/)
+
 - [](/2018/01/956354182767820805/)
 
 - [](/2018/01/949318192073121792/)
@@ -46,6 +50,8 @@
 - [](/2017/10/924546017281785859/)
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
+
+- [Review: Final Fantasy XV](/2017/03/review-final-fantasy-xv/)
 
 - [](/2017/03/841428616068001792/)
 

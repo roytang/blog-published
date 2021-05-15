@@ -81,10 +81,6 @@
 
 - [links for 2007-03-25](/2007/03/links-for-2007-03-25/)
 
-- [links for 2007-03-21](/2007/03/links-for-2007-03-21/)
-
-- [links for 2007-03-19](/2007/03/links-for-2007-03-19/)
-
 - [links for 2007-02-05](/2007/02/links-for-2007-02-05/)
 
 - [links for 2007-01-21](/2007/01/links-for-2007-01-21/)
@@ -123,23 +119,9 @@
 
 - [Del.icio.us bookmarks for 2006-04-10](/2006/04/del-icio-us-bookmarks-for-2006-04-10/)
 
-- [Del.icio.us bookmarks for 2006-04-06](/2006/04/del-icio-us-bookmarks-for-2006-04-06/)
-
-- [Del.icio.us bookmarks for 2006-04-05](/2006/04/del-icio-us-bookmarks-for-2006-04-05/)
-
-- [Del.icio.us bookmarks for 2006-04-04](/2006/04/del-icio-us-bookmarks-for-2006-04-04/)
-
 - [Del.icio.us bookmarks for 2006-04-02](/2006/04/del-icio-us-bookmarks-for-2006-04-02/)
 
-- [Del.icio.us bookmarks for 2006-03-26](/2006/03/del-icio-us-bookmarks-for-2006-03-26/)
-
-- [Del.icio.us bookmarks for 2006-03-20](/2006/03/del-icio-us-bookmarks-for-2006-03-20/)
-
-- [Del.icio.us bookmarks for 2006-03-08](/2006/03/del-icio-us-bookmarks-for-2006-03-08/)
-
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
-
-- [Today&#39;s del.icio.us bookmarks](/2006/02/today39s-del-icio-us-bookmarks-2/)
 
 - [Today&#39;s del.icio.us bookmarks](/2006/02/today39s-del-icio-us-bookmarks-3/)
 

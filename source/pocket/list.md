@@ -1,4 +1,8 @@
 
+- [Why Bad CEOs Fear Remote Work](/2021/05/why-bad-ceos-fear-remote-work/)
+
+- [The Memex Method](/2021/05/the-memex-method/)
+
 - [One million people saw my dumbest tweet](/2021/05/one-million-people-saw-my-dumbest-tweet/)
 
 - [My current HTML boilerplate](/2021/05/my-current-html-boilerplate/)
