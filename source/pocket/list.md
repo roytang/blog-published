@@ -555,7 +555,7 @@
 
 - [Ask Slashdot: Is There a Good Alternative to Facebook? - Slashdot](/2018/03/ask-slashdot-is-there-a-good-alternative-to-facebook-slashdot/)
 
-- [Thread by @dylanbeattie: &#34;When npm was first released in 2010, the release cycle for typical nodeJS package was 4 months, and npm restore took 15-30 seconds on an ave […]&#34;](/2018/03/thread-by-dylanbeattie-when-npm-was-first-released-in-2010-the-release-cycle-for-typical-nodejs-package-was-4-months-and-npm-restore-took-15-30-seconds-on-an-ave/)
+- [Thread by @dylanbeattie: &#34;When npm was first released in 2010, the release cycle for typical nodeJS package was 4 months, and npm restore took 15-30 seconds on an ave […]&#34;](/2018/03/thread-by-dylanbeattie-on-npm/)
 
 - [Child abuse imagery found within bitcoin&#39;s blockchain | Technology | The Gu](/2018/03/child-abuse-imagery-found-within-bitcoin-s-blockchain-technology-the-gu/)
 

@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Saturday Afternoon Activity: Assembling a One Piece ship!](https://mirror.roytang.net/2021/05/saturday-afternoon-activity-assembling-a-one-piece-ship/)
 - [Weeknotes 2021-05-09](https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/)
 - [Book Review: Snow Crash by Neal Stephenson](https://mirror.roytang.net/2021/05/book-review-snow-crash-by-neal-stephenson/)
 - [Digital Boardgames Review: Root](https://mirror.roytang.net/2021/05/digital-boardgames-review-root/)
 - [Weeknotes 2021-05-02](https://mirror.roytang.net/2021/05/weeknotes-2021-05-02/)
-- [Math and Privilege](https://mirror.roytang.net/2021/04/math-and-privilege/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
