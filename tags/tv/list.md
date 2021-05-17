@@ -19,6 +19,8 @@
 
 - [Weeknotes 2020-04-19](/2020/04/weeknotes-2020-04-19/)
 
+- [](/2020/04/1246034687723593728/)
+
 - [Watching Lately, Feb 2020 - Not Much Apparently](/2020/02/watching-lately/)
 
 - [Criminal Minds](/2020/02/criminal-minds/)

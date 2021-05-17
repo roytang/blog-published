@@ -35,8 +35,6 @@
 
 - [links for 2008-05-26](/2008/05/links-for-2008-05-26/)
 
-- [links for 2008-05-16](/2008/05/links-for-2008-05-16/)
-
 - [links for 2008-04-28](/2008/04/links-for-2008-04-28/)
 
 - [links for 2008-01-18](/2008/01/links-for-2008-01-18/)
@@ -65,15 +63,11 @@
 
 - [links for 2007-05-25](/2007/05/links-for-2007-05-25/)
 
-- [links for 2007-05-15](/2007/05/links-for-2007-05-15/)
-
 - [links for 2007-05-02](/2007/05/links-for-2007-05-02/)
 
 - [links for 2007-04-16](/2007/04/links-for-2007-04-16/)
 
 - [links for 2007-04-15](/2007/04/links-for-2007-04-15/)
-
-- [links for 2007-04-03](/2007/04/links-for-2007-04-03/)
 
 - [links for 2007-02-05](/2007/02/links-for-2007-02-05/)
 
@@ -99,8 +93,6 @@
 
 - [Del.icio.us bookmarks for 2006-05-17](/2006/05/del-icio-us-bookmarks-for-2006-05-17/)
 
-- [Del.icio.us bookmarks for 2006-05-11](/2006/05/del-icio-us-bookmarks-for-2006-05-11/)
-
 - [Del.icio.us bookmarks for 2006-05-07](/2006/05/del-icio-us-bookmarks-for-2006-05-07/)
 
 - [Del.icio.us bookmarks for 2006-04-24](/2006/04/del-icio-us-bookmarks-for-2006-04-24/)
@@ -112,8 +104,6 @@
 - [Del.icio.us bookmarks for 2006-04-14](/2006/04/del-icio-us-bookmarks-for-2006-04-14/)
 
 - [Del.icio.us bookmarks for 2006-04-10](/2006/04/del-icio-us-bookmarks-for-2006-04-10/)
-
-- [Del.icio.us bookmarks for 2006-04-02](/2006/04/del-icio-us-bookmarks-for-2006-04-02/)
 
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
 

@@ -1,4 +1,6 @@
 
+- [The Open-Source Software bubble that is and the blogging bubble that was](/2021/05/the-open-source-software-bubble-that-is-and-the-blogging-bubble-that-was/)
+
 - [Why Bad CEOs Fear Remote Work](/2021/05/why-bad-ceos-fear-remote-work/)
 
 - [The Memex Method](/2021/05/the-memex-method/)

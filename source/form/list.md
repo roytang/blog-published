@@ -1,4 +1,6 @@
 
+- [What Matters Now by Seth Godin](/2021/05/c72ceb2e3748ccd8611baab1cbfdfe74/)
+
 - [The Man With The Golden Gun (1974)](/2021/05/ba2999c2cc9d8803ad982d24e52035e6/)
 
 - [Tom Clancy&#39;s Jack Ryan season 2](/2021/05/99d3f5dffa9b1e1f2a4029f66c2b4f2a/)

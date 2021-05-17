@@ -1,4 +1,6 @@
 
+- [What Matters Now by Seth Godin](/2021/05/c72ceb2e3748ccd8611baab1cbfdfe74/)
+
 - [Book Review: Snow Crash by Neal Stephenson](/2021/05/book-review-snow-crash-by-neal-stephenson/)
 
 - [Without Their Permission by Alexis Ohanian](/2021/04/without-their-permission-by-alexis-ohanian/)

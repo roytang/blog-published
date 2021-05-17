@@ -51,6 +51,8 @@
 
 - [Review: Persona 5 (You Never Saw It Coming)](/2017/06/review-persona-5-you-never-saw-it-coming/)
 
+- [](/2017/04/10155494022193912/)
+
 - [Review: Final Fantasy XV](/2017/03/review-final-fantasy-xv/)
 
 - [](/2017/03/841428616068001792/)
