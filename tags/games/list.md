@@ -73,6 +73,8 @@
 
 - [](/2014/11/528700287406469120/)
 
+- [](/2014/04/10152879455218912-0/)
+
 - [](/2013/07/353690869481738241/)
 
 - [](/2013/02/305358880874057728/)
@@ -155,6 +157,8 @@
 
 - [quixoticals: The Most Frustrating Super Mario Mod Ever](/2007/04/quixoticals-the-most-frustrating-super-mario-mod-ever/)
 
+- [Phoenix Wright: Ace Attorney (NDS)](/2007/04/phoenix-wright-ace-attorney-nds/)
+
 - [Desktop Tower Defense](/2007/03/desktop-tower-defense/)
 
 - [papafuji&#39;s DS Adventures Page](/2007/03/papafuji-s-ds-adventures-page/)
@@ -196,6 +200,8 @@
 - [Street Fighter Online](/2005/04/street-fighter-online/)
 
 - [Games: Suikoden IV](/2005/04/games-suikoden-iv/)
+
+- [Games: Timesplitters III](/2005/04/games-timesplitters-iii/)
 
 - [some guy&#39;s game room, with tons of systems/games](/2005/04/some-guy-s-game-room-with-tons-of-systems-games/)
 

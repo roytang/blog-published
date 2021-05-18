@@ -103,8 +103,6 @@
 
 - [Del.icio.us bookmarks for 2006-04-14](/2006/04/del-icio-us-bookmarks-for-2006-04-14/)
 
-- [Del.icio.us bookmarks for 2006-04-10](/2006/04/del-icio-us-bookmarks-for-2006-04-10/)
-
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
 
 - [Today&#39;s del.icio.us bookmarks](/2006/02/today39s-del-icio-us-bookmarks-3/)
