@@ -1,4 +1,8 @@
 
+- [The Strange Story of Dagobert, the “DuckTales” Bandit](/2021/05/the-strange-story-of-dagobert-the-ducktales-bandit/)
+
+- [Poor in Tech | Meg Elison](/2021/05/poor-in-tech-meg-elison/)
+
 - [The Open-Source Software bubble that is and the blogging bubble that was](/2021/05/the-open-source-software-bubble-that-is-and-the-blogging-bubble-that-was/)
 
 - [Why Bad CEOs Fear Remote Work](/2021/05/why-bad-ceos-fear-remote-work/)

@@ -35,8 +35,6 @@
 
 - [links for 2008-05-26](/2008/05/links-for-2008-05-26/)
 
-- [links for 2008-04-28](/2008/04/links-for-2008-04-28/)
-
 - [links for 2008-01-18](/2008/01/links-for-2008-01-18/)
 
 - [links for 2008-01-17](/2008/01/links-for-2008-01-17/)
@@ -90,10 +88,6 @@
 - [Del.icio.us bookmarks for 2006-05-17](/2006/05/del-icio-us-bookmarks-for-2006-05-17/)
 
 - [Del.icio.us bookmarks for 2006-05-07](/2006/05/del-icio-us-bookmarks-for-2006-05-07/)
-
-- [Del.icio.us bookmarks for 2006-04-24](/2006/04/del-icio-us-bookmarks-for-2006-04-24/)
-
-- [Del.icio.us bookmarks for 2006-04-23](/2006/04/del-icio-us-bookmarks-for-2006-04-23/)
 
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
 
