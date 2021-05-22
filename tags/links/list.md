@@ -25,47 +25,7 @@
 
 - [links for 2008-06-15](/2008/06/links-for-2008-06-15/)
 
-- [links for 2008-06-12](/2008/06/links-for-2008-06-12/)
-
-- [links for 2008-06-10](/2008/06/links-for-2008-06-10/)
-
-- [links for 2008-06-03](/2008/06/links-for-2008-06-03/)
-
-- [links for 2008-06-02](/2008/06/links-for-2008-06-02/)
-
-- [links for 2008-05-26](/2008/05/links-for-2008-05-26/)
-
-- [links for 2008-01-18](/2008/01/links-for-2008-01-18/)
-
-- [links for 2008-01-17](/2008/01/links-for-2008-01-17/)
-
-- [links for 2008-01-15](/2008/01/links-for-2008-01-15/)
-
-- [links for 2007-10-29](/2007/10/links-for-2007-10-29/)
-
-- [links for 2007-10-19](/2007/10/links-for-2007-10-19/)
-
-- [links for 2007-10-15](/2007/10/links-for-2007-10-15/)
-
-- [links for 2007-08-11](/2007/08/links-for-2007-08-11/)
-
 - [links for 2007-08-04](/2007/08/links-for-2007-08-04/)
-
-- [links for 2007-07-28](/2007/07/links-for-2007-07-28/)
-
-- [links for 2007-07-23](/2007/07/links-for-2007-07-23/)
-
-- [links for 2007-06-22](/2007/06/links-for-2007-06-22/)
-
-- [links for 2007-05-28](/2007/05/links-for-2007-05-28/)
-
-- [links for 2007-05-25](/2007/05/links-for-2007-05-25/)
-
-- [links for 2007-05-02](/2007/05/links-for-2007-05-02/)
-
-- [links for 2007-02-05](/2007/02/links-for-2007-02-05/)
-
-- [links for 2007-01-21](/2007/01/links-for-2007-01-21/)
 
 - [Del.icio.us bookmarks for 2007-01-18](/2007/01/del-icio-us-bookmarks-for-2007-01-18/)
 
@@ -86,8 +46,6 @@
 - [Del.icio.us bookmarks for 2006-05-25](/2006/05/del-icio-us-bookmarks-for-2006-05-25/)
 
 - [Del.icio.us bookmarks for 2006-05-17](/2006/05/del-icio-us-bookmarks-for-2006-05-17/)
-
-- [Del.icio.us bookmarks for 2006-05-07](/2006/05/del-icio-us-bookmarks-for-2006-05-07/)
 
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)
 

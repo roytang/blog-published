@@ -1,4 +1,8 @@
 
+- [Sending links to the internet archive](/2021/05/7053c993545123cbbd30100c4381b26f/)
+
+- [Mortal Kombat (2021)](/2021/05/09b5a24d69042602b9ac909e277987a6/)
+
 - [The Spy Who Loved Me (1977)](/2021/05/ea715fa4d23937c15e47022adf93e192/)
 
 - [What Matters Now by Seth Godin](/2021/05/c72ceb2e3748ccd8611baab1cbfdfe74/)

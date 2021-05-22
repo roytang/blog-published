@@ -29,12 +29,12 @@ Latest shared links:
 Latest notes:
     
 
+- [21 May 2021 10:11pm](https://mirror.roytang.net/2021/05/1395864858273349632/): THE LINDA LINDAS
+Your browser does not support the video tag.  
+- [21 May 2021 9:41pm](https://mirror.roytang.net/2021/05/7053c993545123cbbd30100c4381b26f/): Does the internet archive have an API for sending URLs/links to be indexed for archiving?
+- [21 May 2021 8:48am](https://mirror.roytang.net/2021/05/09b5a24d69042602b9ac909e277987a6/): Watched Mortal Kombat (2021). Some friends tried to tell me not to waste my time, but joke&rsquo;s on them I enjoyed it anyway! In hindsight, the plot was pretty flimsy, but I enjoyed the fights. It&rsquo;s basically what you&rsquo;d expect lol.
 - [21 May 2021 3:34am](https://mirror.roytang.net/2021/05/1395583876303523842/): @mlq3 I think some mobile apps like Unionbank allow to make check deposits online by submitting a photo of the check
 - [20 May 2021 3:24pm](https://mirror.roytang.net/2021/05/1395400051254382598/): @triviastorm teenage mutant ninja turtles
-- [20 May 2021 6:48am](https://mirror.roytang.net/2021/05/ea715fa4d23937c15e47022adf93e192/): Bond film no. 10: The Spy Who Loved Me (1977). The best Moore installment so far. Excellent opening sequence. Austria; Cairo, Egypt; Sardinia, Italy. 007 and Triple-X have great chemistry. Jaws has to be the most unstoppable Bond villain / henchman. Stromberg&rsquo;s Atlantis reminds me of the Legion of Doom&rsquo;s base in the old Superfriends cartoon. Actually, I think his evil plan might be the best one so far as well.
-- [19 May 2021 7:41am](https://mirror.roytang.net/2021/05/1394921108898422786/): @paulcatiang Anecdotally, I think jan sa Batasan talaga yung worst na vax site sa qc
-- [16 May 2021 5:33pm](https://mirror.roytang.net/2021/05/c72ceb2e3748ccd8611baab1cbfdfe74/): I finished reading What Matters Now by Seth Godin, a book that is basically a collection of short blog posts by &ldquo;big thinkers&rdquo;, released for free back in 2009. Interestingly, a lot of the ideas presented in the book still feel relevant today. I didn&rsquo;t think it needed a full review post.
-The funniest part for me is that one of the entries is by Jason Fried about how to apologize, advice he certainly could have used during the recent Bandcamp brouhaha
 
 [View all notes](https://mirror.roytang.net/notes)
 
