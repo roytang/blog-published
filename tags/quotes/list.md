@@ -15,6 +15,8 @@
 
 - [In Search of Knowledge](/2019/05/in-search-of-knowledge/)
 
+- [](/2019/05/1126767899782160385/)
+
 - [Langston Hughes: The Dream Keeper](/2019/05/langston-hughes-the-dream-keeper/)
 
 - [Churchill on Giving In](/2019/04/churchill-on-giving-in/)
@@ -58,6 +60,8 @@
 - [](/2018/08/e4bs9hp/)
 
 - [](/2018/05/10156668630063912/)
+
+- [](/2018/05/994805622066597888/)
 
 - [](/2018/03/972501941459693568/)
 

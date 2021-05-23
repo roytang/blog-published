@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/11/software-development-feedback-loops/",
+            "url": "https://mirror.roytang.net/2016/11/software-development-feedback-loops/",
+            "path": "/2016/11/software-development-feedback-loops/",
+            "title": "Software Development Feedback Loops",
+            "content_html": "\u003cp\u003eThe software development process is already difficult mainly because a lot of it so imprecise. Requirements are often only vague wishes that the client has, with no regard to the sheer number of instructions needed to implement those requirements. Throughout the entire process it\u0026rsquo;s important to use feedback loops to determine whether development is on the right path. And like all feedback loops, their effectiveness often hinges on how quickly we are able to turn around and give and incorporate feedback into future iterations\u003c/p\u003e\n\u003cp\u003eFeedback loops happen whenever someone gets to review something of course. Prototyping with the client is the most basic form of feedback loop. Building a quick prototype, then showing it to the client, seeing what works and what doesn\u0026rsquo;t and what the clients wants to change, then iterating into the next prototype \u0026ndash; all of these reduce the risk that we are not building the correct thing in the first place. Similar feedback loops appear whenever someone reviews your design or your code or your documentation\u003c/p\u003e\n\u003cp\u003eFor me personally, the more important feedback loop happens at the coding level. It is very rare for a dev to code to everything in a program (no matter what size) in one go. Instead, programs are almost always built incrementally, in a loop of code-\u0026gt;build-\u0026gt;test-\u0026gt;back to coding again. Thus it is very important to make sure that this build is as tight and as optimized as possible\u003c/p\u003e\n\u003cp\u003eOne of my major annoyances with working with Java and Eclipse over the past ten years is that even though Eclipse has that \u0026ldquo;build automatically\u0026rdquo; feature that should provide instant feedback, in practice there can be significant lag time while the application is built and for web applications, often your local server will need to be restarted to reflect the changes. Given how often devs iterate while coding, even a few seconds of lag time in each loop is already a minor annoyance. Build times of one minute or more will be deadly to productivity, often taking the dev out of the much-desired \u0026ldquo;flow zone\u0026rdquo;. Thus you have to optimize this cycle as much as possible \u0026ndash; with Java/Eclipse/Tomcat, that meant disabling all unnecessary build validations, reducing your application size by removing redundant code and dependencies, and so on. Hardware optimizations are also an option \u0026ndash; I was really happy when the company finally decided to spend money on SSDs for the devs (money well spent)\u003c/p\u003e\n\u003cp\u003eThis problem also happens in the bigger loop of devs coding -\u0026gt; build deployment -\u0026gt; verification by the testing team -\u0026gt; send bugs/comments back to devs for fixing. Often the main bottleneck is the build deployment, so you want this process as fast as possible as well. I\u0026rsquo;ve been on projects where we had the misfortune to have the build process go as long as 2 hours at a time. After some optimization, we were able to trim it to around 30-40 minutes, but this is still pretty bad. During hard deadlines when you have to deliver something the next day, this loop can cycle many, many times, and long build times will be the difference between whether your team merely does a bit of overtime or have to stay until morning. Unfortunately it can be a difficult problem to address, and the fact that the problems only become urgent during the times of greatest schedule pressure does not help. I believe that once you have a large enough system and dev team, having people dedicated to maintaining and optimizing the build system quickly becomes a necessary evil\u003c/p\u003e\n",
+            "summary": "The software development process is already difficult mainly because a lot of it so imprecise. Requirements are often only vague wishes that the client has, with no regard to the sheer number of instructions needed to implement those requirements. Throughout the entire process it\u0026rsquo;s important to use feedback loops to determine whether development is on the right path. And like all feedback loops, their effectiveness often hinges on how quickly we are able to turn around and give and incorporate feedback into future iterations",
+            "date_published": "2016-11-03T01:30:18+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/11/software-development-feedback-loops/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/152666290735/software-development-feedback-loops"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/793988761541611525/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/11/793985707228307456/",
+            "url": "https://mirror.roytang.net/2016/11/793985707228307456/",
+            "path": "/2016/11/793985707228307456/",
+            "title": "",
+            "content_html": "\u003cp\u003e#Nanowrimo2016 Day 3: +1508 words, 5206 total\u003c/p\u003e\n",
+            "summary": "#Nanowrimo2016 Day 3: +1508 words, 5206 total",
+            "date_published": "2016-11-03T01:18:38+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/11/793985707228307456.md"
+            , "tags": ["Nanowrimo2016"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/793985707228307456/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/11/793803298838945792/",
+            "url": "https://mirror.roytang.net/2016/11/793803298838945792/",
+            "path": "/2016/11/793803298838945792/",
+            "title": "",
+            "content_html": "\u003cp\u003e#NaNoWriMo2016 day 2: +2,065 words. 3,698 total\u003c/p\u003e\n",
+            "summary": "#NaNoWriMo2016 day 2: +2,065 words. 3,698 total",
+            "date_published": "2016-11-02T13:13:49+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/11/793803298838945792.md"
+            , "tags": ["NaNoWriMo2016"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/793803298838945792/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/11/bmt96rwhmbg/",
             "url": "https://mirror.roytang.net/2016/11/bmt96rwhmbg/",
             "path": "/2016/11/bmt96rwhmbg/",
@@ -900,74 +951,6 @@
                     "source_file": "comment-20161020-000000-f48a955f-2446-4004-a831-8e3474f9e66b.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/10155012713008912/",
-            "url": "https://mirror.roytang.net/2016/10/10155012713008912/",
-            "path": "/2016/10/10155012713008912/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u0026ldquo;I wish there was a way to know you\u0026rsquo;re in the good old days before you\u0026rsquo;ve actually left them\u0026rdquo; - Andy Bernard\u003c/p\u003e\n",
-            "summary": "\u0026ldquo;I wish there was a way to know you\u0026rsquo;re in the good old days before you\u0026rsquo;ve actually left them\u0026rdquo; - Andy Bernard",
-            "date_published": "2016-10-19T22:05:00+00:00",
-            "date_modified": "2019-09-28T20:36:05+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/10/10155012713008912/index.md"
-            , "tags": ["quotes"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155012713008912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/10155012564778912/",
-            "url": "https://mirror.roytang.net/2016/10/10155012564778912/",
-            "path": "/2016/10/10155012564778912/",
-            "title": "",
-            "content_html": "\u003cp\u003eTotally not hyped about new Civ game coming out in approximately 1 day and 9 hours\u003c/p\u003e\n",
-            "summary": "Totally not hyped about new Civ game coming out in approximately 1 day and 9 hours",
-            "date_published": "2016-10-19T20:52:00+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/10/10155012564778912/index.md"
-            , "tags": ["timeline-photos"]
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155012564778912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/alvinjtang",
-                    "source_file": "comment-20161019-000000-93e7cff7-106e-4d6f-a327-f2762fe2e4a1.json"
-                }, { 
-                    "url": "https://www.facebook.com/danniel.alcantara",
-                    "source_file": "comment-20161019-000001-ff405810-4f72-488a-85af-88a3ef83301e.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20161019-000140-7c73e952-aaa6-44d2-9fb8-c4baeebb2ccd.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20161019-000320-f7e8ce23-1669-4181-ba36-b528a44243bd.json"
-                }, { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20161020-000002-8cd05ea6-f870-484b-a665-22809b1c8ffc.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/10/blvrcxxhbqu/",
-            "url": "https://mirror.roytang.net/2016/10/blvrcxxhbqu/",
-            "path": "/2016/10/blvrcxxhbqu/",
-            "title": "",
-            "content_html": "\u003cp\u003eLeaves in the wind #sketchdaily #inktober\u003c/p\u003e\n",
-            "summary": "Leaves in the wind #sketchdaily #inktober",
-            "date_published": "2016-10-19T05:42:00+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/10/BLvrCxXhbQU/index.md"
-            , "tags": ["sketchdaily","inktober"]
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BLvrCxXhbQU/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/152022268235/leaves-in-the-wind-sketchdaily-inktober"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/788721899245371392/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10155012546283912:0"}]
-            
-            
             }
         
     ]
