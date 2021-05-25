@@ -13,6 +13,58 @@
         
     
         <item>
+            <title>Anticipation and Anxiety
+</title>
+            <link>https://mirror.roytang.net/2021/05/anticipation-and-anxiety/</link>
+            <pubDate>Tue, 25 May 2021 04:09:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/05/anticipation-and-anxiety/</guid>
+            <description>
+            
+            &lt;p&gt;Peter Rukavina &lt;a href=&#34;https://ruk.ca/content/anticipation-truth-real-thief-joy&#34;&gt;quotes the &lt;em&gt;New York Tribune&lt;/em&gt; about how Anticipation is the real thief of joy&lt;/a&gt; (as opposed to &lt;a href=&#34;https://mirror.roytang.net/2018/11/comparison-is-the-thief-of-joy/&#34;&gt;comparison&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anticipation is, in truth, the real thief of joy. The best times are always the unexpected ones. It is not the parties that you plan for weeks and look forward to that come off. There must be surprise and novelty and freshness to yield the last word in happiness and thrill. That we had on Thursday afternoon. The real thrill has passed, never to return.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While the piece is a musing on the pleasures of serendipity and random wandering, I&amp;rsquo;m reminded instead of anticipation&amp;rsquo;s opposite, something I feel often as well: &lt;a href=&#34;https://mirror.roytang.net/2018/10/anxiety/&#34;&gt;anxiety&lt;/a&gt;. Whereas anticipation is looking to the future awaiting something you are excited to happen, anxiety is looking to the future awaiting something you dread. And it robs you of joy as well, albeit in a different manner, consuming you with worry. The phrase &amp;ldquo;real thief of joy&amp;rdquo; implies that there can only be one such thief, but truthfully, there can be many, and among them, comparison, anticipation, and anxiety are probably the worst offenders.&lt;/p&gt;
+&lt;p&gt;It is of course human nature, and often prudent to look to the future, but it is best not to let either anticipation or anxiety overwhelm us. One should always remember to live in the present and not let the future overshadow what we have right in front of us.&lt;/p&gt;
+
+
+
+            </description>
+            <category>post</category>
+            
+        </item>
+    
+        <item>
+            <title>Thoughts on Vue.js
+</title>
+            <link>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</link>
+            <pubDate>Sun, 23 May 2021 23:27:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is &lt;a href=&#34;https://vuejs.org/&#34;&gt;Vue.js&lt;/a&gt;. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for &lt;a href=&#34;https://mirror.roytang.net/2020/09/mobile-app-dev/&#34;&gt;mobile app development&lt;/a&gt;, which I generally don&amp;rsquo;t like; and (b) I don&amp;rsquo;t like Facebook, which backs React. I have no opinion on Angular.&lt;/p&gt;
+&lt;p&gt;Despite being my frontend framework of choice, I don&amp;rsquo;t actually have that much experience with Vue beyond a few small projects each with a minimal number of screens / pages. That being said, I do have some thoughts, coming mostly from the POV of a developer &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;more used to the old-school ways of Javascript and web development in general&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The entry point of course, is the &lt;a href=&#34;https://vuejs.org/v2/guide/&#34;&gt;getting started guide on the Vue website itself&lt;/a&gt;, which walks you through most of the framework features. I have no concern about most of these; the features are explained well and I find most of the documentation quite good.&lt;/p&gt;
+&lt;p&gt;My issue is with how the site recommends to beginners to set up their Vue projects: via a script include from a CDN. When I first saw this guide, I assumed this was the standard, recommended way to build a Vue project, so this was how I did it for my first small project, a small demo site I needed to produce in a few days. Due to the short timeframe, I had decided to learn as I go. The component registration section of the guide also gives no guidance or recommendation on how to structure your components or projects, so I ended up with most of the components set up in a single JS file. (Admittedly, as a person with more than a decade of web dev experience, I should have at least split it up into several files, but time was short.) A technical person reviewing the code commented that I had implemented the frontend &amp;ldquo;in a very strange manner&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;It gets worse when you try to install third-party components, which is a big feature of the ecosystem of these frontend frameworks. In my experience, most third-party components will only give instructions for installation via &lt;code&gt;npm&lt;/code&gt; and a JS module system, neither of which are covered nor recommended by the beginner sections of the guide.&lt;/p&gt;
+&lt;p&gt;A few projects later, and I now know that I vastly prefer developing Vue projects as Node projects built using the scaffolding provided by &lt;a href=&#34;https://cli.vuejs.org/&#34;&gt;Vue CLI&lt;/a&gt;, with the components implemented as standalone &lt;code&gt;.vue&lt;/code&gt; files. The usage of these tools and methods are covered in the &lt;a href=&#34;https://vuejs.org/v2/guide/installation.html&#34;&gt;Installation section of the guide&lt;/a&gt; (which the &amp;ldquo;Get Started&amp;rdquo; link skips over) and the &lt;a href=&#34;https://vuejs.org/v2/guide/single-file-components.html&#34;&gt;Single File Components section under the Tooling section&lt;/a&gt; (which seemed like an advanced section a beginner is not likely to get into.) This method also makes installing third-party components much more straightforward. It&amp;rsquo;s not even necessary to cover what tools like Webpack or Babel are doing, since those are largely abstracted away by the scaffolding.&lt;/p&gt;
+&lt;p&gt;Basically my main complaint is that the guide doesn&amp;rsquo;t do a good job of transitioning from the introducing the beginner to the language specifics to introducing a recommended approach and tools for organizing more intermediate or complex projects. The method of using a script include seems suitable for little more than a single-page todo list webapp. I suppose the perceived shortcoming might be attributed to my background at least partially - I still tend to think like a developer using jQuery, and I don&amp;rsquo;t default to thinking about Node applications when doing webapps.&lt;/p&gt;
+&lt;p&gt;That being said, I am overall happy with Vue.js and it&amp;rsquo;s still my choice of frontend framework moving forward (should a frontend framework even be needed!) Although, maybe I should at least consider trying out / evaluating Angular so I can pretend to make a fair comparison?&lt;/p&gt;
+
+
+
+            </description>
+            <category>post</category>
+            
+                        
+            <category>software development</category>
+            
+            
+        </item>
+    
+        <item>
             <title>New photos
 </title>
             <link>https://mirror.roytang.net/2021/05/1396507070871003139/</link>
@@ -1628,134 +1680,6 @@ Repost from angryasianman https://twitter.com/angryasianman/status/1395490103913
             <category>movies</category>
                         
             <category>jamesbond</category>
-            
-            
-        </item>
-    
-        <item>
-            <title>Weeknotes 2021-05-09
-</title>
-            <link>https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/</link>
-            <pubDate>Mon, 10 May 2021 02:24:26 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/</guid>
-            <description>
-            
-            &lt;p&gt;This post is being published a day late. Things happen okay? Sometimes you get busy and things need to be pushed back.&lt;/p&gt;
-&lt;h3 id=&#34;the-world&#34;&gt;The world:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;like the thug that he is, our dear president &lt;a href=&#34;https://mirror.roytang.net/2021/05/1390134185222832132/&#34;&gt;claimed that the arbitral award ruling in the PH&amp;rsquo;s favor was nothing more than a sheet of paper he could easily discard&lt;/a&gt;. He also challenged former justice Antonio Carpio to a debate over the West Philippine Sea issue, a challenge the latter quickly accepted. As basically everyone expected, Duterte later chickened out, and offered his spokesman Roque as a distraction, er, proxy for the debate.&lt;/li&gt;
-&lt;li&gt;debris from a Chinese rocket was expected to crash back into Earth sometime this weekend, but no one could predict when or where. Some of my chat groups remarked that if it hits the PH, we are well and truly cursed. It finally landed in the Indian Ocean yesterday.&lt;/li&gt;
-&lt;li&gt;Controversial billionaire Elon Musk hosted SNL this weekend and for some reason, this caused Dogecoin to crash.&lt;/li&gt;
-&lt;li&gt;Bill and Melinda Gates announced they are divorcing. The &lt;a href=&#34;https://mirror.roytang.net/2021/05/1389349579091365888/&#34;&gt;timing is suspicious&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;links-of-interest&#34;&gt;Links of interest:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;In the tech world, enterprise software maker Basecamp got into a bit of brouhaha this past week after a policy announcement of &amp;ldquo;no politics discussion at work&amp;rdquo; eventually led to around a third of their workforce choosing to resign. Casey Newton has &lt;a href=&#34;https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy&#34;&gt;a great writeup about it&lt;/a&gt;. It&amp;rsquo;s a big disappointment because the founders of Basecamp have always had a reputation of promoting positive workplace practices, including a book titled &amp;ldquo;It Doesn&amp;rsquo;t Have to Be Crazy At Work&amp;rdquo;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;From &lt;a href=&#34;https://www.bloomberg.com/opinion/articles/2021-04-29/ignoring-the-rules-sometimes-works-for-elon-musk&#34;&gt;Money Stuff a while back&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;On the other hand, if you send out those cars to drive themselves everywhere and they all crash and kill a bunch of people, that will be bad! You will be in bad trouble. “It’s better to ask forgiveness than to ask permission,” you will say, but this is not quite right; maybe it is better to announce success and then smugly add “sorry we didn’t tell you first,” but it is strictly worse to fail catastrophically and apologize. If you are going to fail it is better to ask permission, because forgiveness will not be forthcoming. If you are going to succeed, sure, it is better to ask forgiveness. “There’s nothing to forgive, you’re perfect, you little scamp,” everyone will reply.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you are doing some bold novel thing, you probably do not know, ex ante, if you will succeed or fail. Therefore you do not know, ex ante, if you should ask permission or forgiveness, if you should follow the law or not. But if you are the founder and chief executive officer of a company whose goal is to do some bold novel thing, you have been selected and encouraged precisely for your borderline-crazy optimism and self-confidence. You can’t do impossible things unless you first believe that you can, etc.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you are certain that you will succeed brilliantly in all your endeavors, then often the optimal strategy will sometimes be to ignore the law, or at least the parts of the law that stand in the way of your vision. Not, like, the objectively optimal strategy, but the strategy that you consider optimal given your subjective certainty that everything will work out for you&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Signal &lt;a href=&#34;https://signal.org/blog/the-instagram-ads-you-will-never-see/&#34;&gt;tried to release instagram ads that highlighted how targetted advertising works&lt;/a&gt; but their account conveniently got disabled for &lt;a href=&#34;https://www.zdnet.com/article/facebook-accuses-signal-of-lying-about-its-attempt-to-run-transparent-instagram-ads/&#34;&gt;what Facebook claims was &amp;ldquo;an unrelated payments issue&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;From &lt;a href=&#34;https://www.garbageday.email/p/finally-a-weapon-to-surpass-groverhaus&#34;&gt;a recent Garbage Day&lt;/a&gt;, about Spotify&amp;rsquo;s algorithm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We&amp;rsquo;ve seen how Facebook&amp;rsquo;s algorithmic recommendation of content, based on an algorithm that&amp;rsquo;s maximized for engagement, has started to distort reality. It has started to undermine democracy and amplified really harmful ideologies like white supremacy and white nationalism. And you can already kind of start to see this.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Bands have kind of started to figure out like, “oh, all of our songs that sound kind of like this do super well with the Spotify algorithm, let&amp;rsquo;s just make more songs like that.” And you can&amp;rsquo;t fault the band for doing that. There&amp;rsquo;s so few opportunities for bands to make a living from their art at this point. But it terrifies me to think about a future where music is created to please some cold-blooded algorithm. And there&amp;rsquo;s just like something uniquely gross about that to me, when I think about how music is something that humans have been making for literally 1000s of years. It&amp;rsquo;s something that&amp;rsquo;s sacred, and, you know, not to pretend that it hasn&amp;rsquo;t been commodified in a variety of different ways for decades, or maybe even centuries. But this feels like a new frontier. That type of automated commodification of something that should be about humans and not robots.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Marvel released what is basically a sizzle reel for the MCU&amp;rsquo;s next 3 years worth of movies: &lt;a href=&#34;https://www.youtube.com/watch?v=QdpxoFcdORI&#34;&gt;https://www.youtube.com/watch?v=QdpxoFcdORI&lt;/a&gt;. I&amp;rsquo;m such a fanboy, I will gleefully admit that I got goosebumps when the video continued past the Shang-chi preview.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Rolling Stone lists the &lt;a href=&#34;https://www.rollingstone.com/tv/tv-lists/best-tv-sitcoms-1162237/&#34;&gt;best TV sitcoms of all time&lt;/a&gt;. The comments are full of complaints about notable omissions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;my-stuff&#34;&gt;My stuff:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;I got my &lt;a href=&#34;https://mirror.roytang.net/2021/05/1391294087064477699/&#34;&gt;second dose of the Sinovac vaccine yesterday&lt;/a&gt;! Supposedly it&amp;rsquo;s fully effective about two weeks after the second dose, although studies show the efficacy is rather low. But some protection is better than none. Some better vaccines are starting to come in, we are supposedly due to get (a small amount of) Pfizer soon. I reckon since I&amp;rsquo;m hunkered down at home most of the time anyway, I&amp;rsquo;m okay with the weaker Chinese vaccine and don&amp;rsquo;t mind if the more effective vaccines go to the masses that have to go out and mingle for work.&lt;/li&gt;
-&lt;li&gt;Still &lt;a href=&#34;https://mirror.roytang.net/albums/sketchbook/&#34;&gt;sketching&lt;/a&gt;, although I&amp;rsquo;m a couple of days behind due to the aforementioned alleged busyness. Should catch up soon.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Watching:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Movies: Didn&amp;rsquo;t watch any last week, should correct that soon. I&amp;rsquo;m not even a third of the way through my James Bond run!&lt;/li&gt;
-&lt;li&gt;Nothing too notable, now that Invincible is done and we don&amp;rsquo;t have any running MCU series at the moment. Well, I did enjoy the recent two-part story on Supergirl where two characters travelled back to the past to meet young Kara and Alex in school. The rest of the season has bit a bit meh, so this was the highlight for me so far. The young versions were so perfectly cast!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gaming&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Drafted a bit more &lt;a href=&#34;https://mirror.roytang.net/tags/mtgstrixhaven/&#34;&gt;Strixhaven&lt;/a&gt; on Arena, and finally ran the Sealed Open yesterday!&lt;/li&gt;
-&lt;li&gt;Still playing a bunch of &lt;strong&gt;Horizon Zero Dawn&lt;/strong&gt; on PS4 and &lt;strong&gt;Street Fighter V&lt;/strong&gt; on Steam. Hey, I got Balrog (Boxer) to bronze!&lt;/li&gt;
-&lt;li&gt;I finally finished the second run of Fire Emblem: Three Houses! There&amp;rsquo;s one more branch to explore (well, technically two, but I&amp;rsquo;m not too interested in the other one), but I might put the game aside for a while and find something else to play.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Books&lt;/strong&gt;: Finished reading &lt;a href=&#34;https://mirror.roytang.net/2021/05/snow-crash/&#34;&gt;&lt;strong&gt;Snow Crash&lt;/strong&gt; by Neal Stephenson&lt;/a&gt;, still looking around for what to read next.&lt;/li&gt;
-&lt;li&gt;We didn&amp;rsquo;t have any quiz nights this week! Instead, I started digging a bit into the &lt;a href=&#34;https://triviastorm.net/&#34;&gt;triviastorm&lt;/a&gt; back-end code and added some improvements I&amp;rsquo;ve been meaning to do for a while. When I&amp;rsquo;m done, I hope the answer checking becomes a bit more robust. Will also probably add a new batch of questions to the bot sometime this month.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;this-coming-week&#34;&gt;This coming week:&lt;/h3&gt;
-&lt;p&gt;Huh, nothing in particular I&amp;rsquo;m looking forward to this week. Anything I missed?&lt;/p&gt;
-
-
-
-            </description>
-            <category>post</category>
-            
-                        
-            <category>philippines</category>
-                        
-            <category>covid19</category>
-                        
-            <category>weeknotes</category>
-            
-            
-        </item>
-    
-        <item>
-            <title>New photos
-</title>
-            <link>https://mirror.roytang.net/2021/05/1391320419060183040/</link>
-            <pubDate>Sun, 09 May 2021 09:13:32 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2021/05/1391320419060183040/</guid>
-            <description>
-            
-            &lt;p&gt;Threw some gems away again on this month&amp;rsquo;s #magicarena #mtgstrixhaven sealed open, ended up playing Silverquill splashing red since I had Professor Onyx and Lukka.&lt;/p&gt;
-&lt;p&gt;See how it turned out: &lt;a href=&#34;https://www.youtube.com/watch?v=4B9Do6_8YME&#34;&gt;https://www.youtube.com/watch?v=4B9Do6_8YME&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;img src=&#34;https://mirror.roytang.net/2021/05/1391320419060183040/1_1391320419060183040_E072OLKVEAEihkQ_hufd723480ef8e6cd0292f2f45dbf042fc_217149_300x0_resize_q75_box.jpg&#34; /&gt;
-
-
-
-            </description>
-            <category>photos</category>
-            
-                        
-            <category>magicarena</category>
-                        
-            <category>mtgstrixhaven</category>
             
             
         </item>

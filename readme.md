@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Anticipation and Anxiety](https://mirror.roytang.net/2021/05/anticipation-and-anxiety/)
+- [Thoughts on Vue.js](https://mirror.roytang.net/2021/05/thoughts-on-vue.js/)
 - [Weeknotes 2021-05-23](https://mirror.roytang.net/2021/05/weeknotes-2021-05-23/)
 - [Weeknotes 2021-05-16](https://mirror.roytang.net/2021/05/weeknotes-2021-05-16/)
 - [Saturday Afternoon Activity: Assembling a One Piece ship!](https://mirror.roytang.net/2021/05/saturday-afternoon-activity-assembling-a-one-piece-ship/)
-- [Weeknotes 2021-05-09](https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/)
-- [Book Review: Snow Crash by Neal Stephenson](https://mirror.roytang.net/2021/05/book-review-snow-crash-by-neal-stephenson/)
 
 [View all posts](https://mirror.roytang.net/blog)
 

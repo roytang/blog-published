@@ -13,6 +13,50 @@
           
       
         <item>
+            <title>Anticipation and Anxiety
+</title>
+            <link>https://mirror.roytang.net/2021/05/anticipation-and-anxiety/</link>
+            <pubDate>Tue, 25 May 2021 04:09:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/05/anticipation-and-anxiety/</guid>
+            <description>
+            
+            &lt;p&gt;Peter Rukavina &lt;a href=&#34;https://ruk.ca/content/anticipation-truth-real-thief-joy&#34;&gt;quotes the &lt;em&gt;New York Tribune&lt;/em&gt; about how Anticipation is the real thief of joy&lt;/a&gt; (as opposed to &lt;a href=&#34;https://mirror.roytang.net/2018/11/comparison-is-the-thief-of-joy/&#34;&gt;comparison&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anticipation is, in truth, the real thief of joy. The best times are always the unexpected ones. It is not the parties that you plan for weeks and look forward to that come off. There must be surprise and novelty and freshness to yield the last word in happiness and thrill. That we had on Thursday afternoon. The real thrill has passed, never to return.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While the piece is a musing on the pleasures of serendipity and random wandering, I&amp;rsquo;m reminded instead of anticipation&amp;rsquo;s opposite, something I feel often as well: &lt;a href=&#34;https://mirror.roytang.net/2018/10/anxiety/&#34;&gt;anxiety&lt;/a&gt;. Whereas anticipation is looking to the future awaiting something you are excited to happen, anxiety is looking to the future awaiting something you dread. And it robs you of joy as well, albeit in a different manner, consuming you with worry. The phrase &amp;ldquo;real thief of joy&amp;rdquo; implies that there can only be one such thief, but truthfully, there can be many, and among them, comparison, anticipation, and anxiety are probably the worst offenders.&lt;/p&gt;
+&lt;p&gt;It is of course human nature, and often prudent to look to the future, but it is best not to let either anticipation or anxiety overwhelm us. One should always remember to live in the present and not let the future overshadow what we have right in front of us.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Thoughts on Vue.js
+</title>
+            <link>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</link>
+            <pubDate>Sun, 23 May 2021 23:27:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is &lt;a href=&#34;https://vuejs.org/&#34;&gt;Vue.js&lt;/a&gt;. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for &lt;a href=&#34;https://mirror.roytang.net/2020/09/mobile-app-dev/&#34;&gt;mobile app development&lt;/a&gt;, which I generally don&amp;rsquo;t like; and (b) I don&amp;rsquo;t like Facebook, which backs React. I have no opinion on Angular.&lt;/p&gt;
+&lt;p&gt;Despite being my frontend framework of choice, I don&amp;rsquo;t actually have that much experience with Vue beyond a few small projects each with a minimal number of screens / pages. That being said, I do have some thoughts, coming mostly from the POV of a developer &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;more used to the old-school ways of Javascript and web development in general&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The entry point of course, is the &lt;a href=&#34;https://vuejs.org/v2/guide/&#34;&gt;getting started guide on the Vue website itself&lt;/a&gt;, which walks you through most of the framework features. I have no concern about most of these; the features are explained well and I find most of the documentation quite good.&lt;/p&gt;
+&lt;p&gt;My issue is with how the site recommends to beginners to set up their Vue projects: via a script include from a CDN. When I first saw this guide, I assumed this was the standard, recommended way to build a Vue project, so this was how I did it for my first small project, a small demo site I needed to produce in a few days. Due to the short timeframe, I had decided to learn as I go. The component registration section of the guide also gives no guidance or recommendation on how to structure your components or projects, so I ended up with most of the components set up in a single JS file. (Admittedly, as a person with more than a decade of web dev experience, I should have at least split it up into several files, but time was short.) A technical person reviewing the code commented that I had implemented the frontend &amp;ldquo;in a very strange manner&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;It gets worse when you try to install third-party components, which is a big feature of the ecosystem of these frontend frameworks. In my experience, most third-party components will only give instructions for installation via &lt;code&gt;npm&lt;/code&gt; and a JS module system, neither of which are covered nor recommended by the beginner sections of the guide.&lt;/p&gt;
+&lt;p&gt;A few projects later, and I now know that I vastly prefer developing Vue projects as Node projects built using the scaffolding provided by &lt;a href=&#34;https://cli.vuejs.org/&#34;&gt;Vue CLI&lt;/a&gt;, with the components implemented as standalone &lt;code&gt;.vue&lt;/code&gt; files. The usage of these tools and methods are covered in the &lt;a href=&#34;https://vuejs.org/v2/guide/installation.html&#34;&gt;Installation section of the guide&lt;/a&gt; (which the &amp;ldquo;Get Started&amp;rdquo; link skips over) and the &lt;a href=&#34;https://vuejs.org/v2/guide/single-file-components.html&#34;&gt;Single File Components section under the Tooling section&lt;/a&gt; (which seemed like an advanced section a beginner is not likely to get into.) This method also makes installing third-party components much more straightforward. It&amp;rsquo;s not even necessary to cover what tools like Webpack or Babel are doing, since those are largely abstracted away by the scaffolding.&lt;/p&gt;
+&lt;p&gt;Basically my main complaint is that the guide doesn&amp;rsquo;t do a good job of transitioning from the introducing the beginner to the language specifics to introducing a recommended approach and tools for organizing more intermediate or complex projects. The method of using a script include seems suitable for little more than a single-page todo list webapp. I suppose the perceived shortcoming might be attributed to my background at least partially - I still tend to think like a developer using jQuery, and I don&amp;rsquo;t default to thinking about Node applications when doing webapps.&lt;/p&gt;
+&lt;p&gt;That being said, I am overall happy with Vue.js and it&amp;rsquo;s still my choice of frontend framework moving forward (should a frontend framework even be needed!) Although, maybe I should at least consider trying out / evaluating Angular so I can pretend to make a fair comparison?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
             <title>Weeknotes 2021-05-23
 </title>
             <link>https://mirror.roytang.net/2021/05/weeknotes-2021-05-23/</link>
@@ -2869,131 +2913,6 @@ dataset on this graph though)
 &lt;ul&gt;
 &lt;li&gt;as always (at least until March), more WandaVision&lt;/li&gt;
 &lt;li&gt;new One Piece later today&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Weeknotes 2021-01-31 Stonks!
-</title>
-            <link>https://mirror.roytang.net/2021/01/weeknotes-2021-01-31/</link>
-            <pubDate>Sun, 31 Jan 2021 02:37:11 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2021/01/weeknotes-2021-01-31/</guid>
-            <description>
-            
-            &lt;p&gt;It&amp;rsquo;s February tomorrow! Somehow, the world still turns.&lt;/p&gt;
-&lt;h3 id=&#34;the-world&#34;&gt;The world:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Somehow the most viral world news this week doesn&amp;rsquo;t seem to have been about any kind of politics, but rather about capitalism. The &lt;a href=&#34;https://mirror.roytang.net/2021/01/1354670019045584899/&#34;&gt;Gamestop/stock market brouhaha&lt;/a&gt; was a sage of retail investors on reddit going head-to-head with hedge funds over the stock price of a dying gaming company (among others) that dominated most of my feeds for the week. It&amp;rsquo;s actually a lot more compliced than that. If you want a more in-depth look, I recommend &lt;a href=&#34;https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine&#34;&gt;Matt Levine&amp;rsquo;s Money Stuff column over on Bloomberg&lt;/a&gt;, he covered the whole thing for most of the week. You can start &lt;a href=&#34;https://www.bloomberg.com/opinion/articles/2021-01-25/the-game-never-stops&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;links-of-interest&#34;&gt;Links of interest:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Tony Hawk, age 52, &lt;a href=&#34;https://twitter.com/tonyhawk/status/1354305117982400514&#34;&gt;can still hit a 720&lt;/a&gt;, probably his last one ever. I think it&amp;rsquo;d kind of a bittersweet blessing to be doing something you love and knowing that it&amp;rsquo;s going to be the last time you get to do it.&lt;/li&gt;
-&lt;li&gt;There was this &lt;a href=&#34;https://www.hillelwayne.com/post/crossover-project/are-we-really-engineers/&#34;&gt;excellent series of posts by Hillel Wayne&lt;/a&gt; comparing software engineering to other engineering disciplines by interviewing people who have crossed over from other fields into ours. It addresses interesting questions like whether what we do can really be called &amp;ldquo;engineering&amp;rdquo; and what can software engineering and other engineering fields learn from each other.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kottke.org/21/01/usa-downgraded-from-democracy-to-anocracy-part-democracy-and-part-dictatorship&#34;&gt;USA has been downgraded from a democracy to an anocracy&lt;/a&gt;. This was the first time I heard of this term, anocracy.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.engadget.com/facebook-political-content-news-feed-mark-zuckerberg-232846266.html&#34;&gt;Facebook says they want to deprioritize political content&lt;/a&gt;. We&amp;rsquo;ll see if that holds, given that generating political heat is good for their engagement metrics. But if such a thing were to happen (and applied to the PH), it would seriously reduce the reach of government propaganda.&lt;/li&gt;
-&lt;li&gt;Speaking of Facebook, they appear to have recently &lt;a href=&#34;https://lincoln.metacannon.net/2021/01/facebook-disabled-my-account-after-i-criticized-them.html&#34;&gt;banned someone for criticizing them.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I have yet to read through all of it, but there&amp;rsquo;s this metafilter thread full of all sorts of recommendations: &lt;a href=&#34;https://ask.metafilter.com/351766/What-do-you-always-recommend-to-people&#34;&gt;What do you always recommend to people&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;This set of Wikimedia &lt;a href=&#34;https://meta.wikimedia.org/wiki/So_you%27ve_made_a_mistake_and_it%27s_public...&#34;&gt;guidelines about how to handle mistakes&lt;/a&gt; is great and people should apply it liberally to most situations.&lt;/li&gt;
-&lt;li&gt;Chris Kiehl talks about &lt;a href=&#34;https://chriskiehl.com/article/thoughts-after-6-years&#34;&gt;software dev topics he&amp;rsquo;s changed his mind on after the last 6 years&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Rands talks about &lt;a href=&#34;https://randsinrepose.com/archives/doomscrolling-at-scale/&#34;&gt;doomscrolling at scale&lt;/a&gt; using Tweetdeck, an app &lt;a href=&#34;https://mirror.roytang.net/2020/06/why-twitter/&#34;&gt;I&amp;rsquo;ve always recommended&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://baileye.tumblr.com/post/640943200394231808/andrea-zittel-these-things-i-know-for-sure&#34;&gt;Andrea Zittel: These things I know for sure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The current US senate&amp;rsquo;s President pro tempore has &lt;a href=&#34;https://edition.cnn.com/2021/01/23/us/senator-patrick-leahy-batman-trnd/index.html&#34;&gt;appeared in multiple Batman movies&lt;/a&gt;!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://noahpinion.substack.com/p/how-homogeneous-is-japan&#34;&gt;How homogenous is Japan?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;my-stuff&#34;&gt;My stuff:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Daily sketches in &lt;a href=&#34;https://mirror.roytang.net/albums/sketchbook/&#34;&gt;the sketchbook album&lt;/a&gt;, somehow I still haven&amp;rsquo;t fallen behind.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Watching:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;I started watching the current NCIS season (TIL Fez from That 70s Show is a cast regular there now!) and also a bunch of Mike Birbiglia standup specials on Netflix. I do have other more interesting series on my backlog to watch, but somehow I found myself falling back to procedurals and standup comedy. The main reason is that these things don&amp;rsquo;t require a lot of attention, so I can leave them running in the background while I do other things.&lt;/li&gt;
-&lt;li&gt;I will admit I was a bit meh on &lt;strong&gt;WandaVision&lt;/strong&gt; episodes 1-3 (and even for the rest of the MCU offerings this year), but episode 4 was just fantastic and has renewed my MCU hype. If they manage to hit this level of quality for their other series, we have a lot to look forward to. It makes me a bit sad that the Netflix series/Agents of SHIELD never received the kind of MCU integration these series are getting, but what can you do?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gaming:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;A lot of gaming for me this week!&lt;/li&gt;
-&lt;li&gt;Played three whole games of &lt;strong&gt;Civilization VI&lt;/strong&gt; over the past week, two of them before the latest New Frontier Pass drop even. I won one game with the new Civ Vietnam. (I &lt;a href=&#34;https://www.youtube.com/watch?v=yJFiA4HBCi8&#34;&gt;streamed a bit of this game&lt;/a&gt; if you want to watch me be dumb.) I&amp;rsquo;m glad I got one already, because I&amp;rsquo;m not sure I&amp;rsquo;d play them again, as the terrain restrictions are very challenging. The Corporations mode is nice, but I feel like I haven&amp;rsquo;t yet maximized it too much. It does feel like I&amp;rsquo;ll be enabling this by default from now on.&lt;/li&gt;
-&lt;li&gt;Because of reasons, I purchased a copy of &lt;strong&gt;Princess Maker 2 Refine&lt;/strong&gt; on Steam. I played a bunch of the original game back in the day, and it was weird reading through the old guides on GameFAQs and some of them would have advice on configuring old-timey things like &lt;code&gt;config.sys&lt;/code&gt; and such. Anyway, I played almost 5 hours of this in one session, which was really bad for my eyestrain. This was one of the first calendar-based life sims I played, maybe it&amp;rsquo;s the reason I really enjoyed the Persona series? I&amp;rsquo;m not sure why I found this game in particular so engaging, as it&amp;rsquo;s kind of like watching spreadsheet numbers go up.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Kaldheim&lt;/strong&gt; is out on Magic Arena! I only had time to &lt;a href=&#34;https://mirror.roytang.net/2021/01/1355164547842248704/&#34;&gt;do a Sealed&lt;/a&gt; so far, but I expect to be drafting (and streaming on Twitch) a few times a week.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Books:&lt;/strong&gt; Still reading Scott Berkun&amp;rsquo;s &lt;a href=&#34;https://www.amazon.com/Year-Without-Pants-WordPress-com-Future/dp/1118660633&#34;&gt;The Year Without Pants&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Finances:&lt;/strong&gt; I don&amp;rsquo;t talk about my finances a lot in this space, but I will note that a couple of weeks ago I started investing in the US markets via an app called &lt;a href=&#34;https://www.etoro.com/&#34;&gt;eToro&lt;/a&gt;. I got lucky with an initial trade that had a bit too much leverage for my taste, because I wasn&amp;rsquo;t reading too carefully. Luckily the NASDAQ spiked that day so I made it out with a bit of profit. I used a bit of that profit to buy-in a minimal amount of Gamestop, trying to cash in on the trend, unfortunately I couldn&amp;rsquo;t get in on a low price. Well, I can afford to risk (and lose) this profit, so that&amp;rsquo;s fine. I just hope the Gamestop thing doesn&amp;rsquo;t crash the markets entirely, that would be just my luck for such a thing to happen just when I started.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Quiz:&lt;/strong&gt; We were still ahead in the AboutQuiz league going into this week&amp;rsquo;s Price is Right-themed game, but we only finished 5th this time, so IDK if that will still hold.&lt;/li&gt;
-&lt;li&gt;Had a lot of family errands during the week as well, mostly financial stuff and helping my folks with medical appointments and such. I think this was the week where I had the most trips out of the house since the pandemic lockdowns began.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;site-updates&#34;&gt;Site updates:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;if you follow this site via an RSS/feed reader (both of you), you may want to know that I&amp;rsquo;ve added a &lt;a href=&#34;https://mirror.roytang.net/daily/feed/&#34;&gt;daily feed&lt;/a&gt; to the site, it will cough up a single post per day with a summary of all the things I&amp;rsquo;ve posted for that day.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;looking-forward-to-this-coming-week&#34;&gt;Looking forward to this coming week:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;new WandaVision episode!&lt;/li&gt;
-&lt;li&gt;There&amp;rsquo;s a new thing I&amp;rsquo;ve been meaning to learn/get into, hoping to get started on it this week.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>Weeknotes 2021-01-24
-</title>
-            <link>https://mirror.roytang.net/2021/01/weeknotes-2021-01-24/</link>
-            <pubDate>Sun, 24 Jan 2021 05:19:34 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2021/01/weeknotes-2021-01-24/</guid>
-            <description>
-            
-            &lt;p&gt;Wow, January is almost done. Wouldn&amp;rsquo;t you know it.&lt;/p&gt;
-&lt;h3 id=&#34;the-world&#34;&gt;The world:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Biden inaugurated as US president, world celebrates US getting rid of Trump. Biden isn&amp;rsquo;t exactly unproblematic, but he is at least sane and boring. There will be time enough to criticize him later, for now let them be enjoy victory. My expectations of him are at least moderately higher than &lt;a href=&#34;https://mirror.roytang.net/2017/01/822558467265335297/&#34;&gt;the ones I had for Trump&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;the internet gets inundated with an inordinate amount of Bernie Sanders memes&lt;/li&gt;
-&lt;li&gt;locally: the govt continues to bombard us with controversies, this time stirring up a red-tagging hornests nest by &lt;a href=&#34;https://twitter.com/phkule/status/1351128229462028288&#34;&gt;abrogating the DND-UP accord&lt;/a&gt;, paving the way for militarization of campuses and stifling of free expression&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;links-of-interest&#34;&gt;Links of interest:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Someone made &lt;a href=&#34;https://www.youtube.com/watch?v=IJH_RbnrGUs&#34;&gt;a Mandalorian trailer in the style of old-school spaghetti westerns&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I like this &lt;a href=&#34;https://myk.ninja/loremen&#34;&gt;random lore generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I wrote a bunch of words about &lt;a href=&#34;https://mirror.roytang.net/2021/01/tech-censorship/&#34;&gt;my thoughts on tech censorship and social media&lt;/a&gt;; there are some relevant links in there, if that kind of thing interests you&lt;/li&gt;
-&lt;li&gt;This &lt;a href=&#34;https://www.idrlabs.com/difficult-person/test.php&#34;&gt;difficult person test&lt;/a&gt; did the rounds in some of my online groups this week (and sparked some silly discussions about gaming self-assessments)&lt;/li&gt;
-&lt;li&gt;Wow, did I not internet that much or was the internet just boring this week? Boring can be good though.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;my-stuff&#34;&gt;My stuff:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Daily sketches in &lt;a href=&#34;https://mirror.roytang.net/albums/sketchbook/&#34;&gt;the sketchbook album&lt;/a&gt;, ongoing, streak yet unbroken.&lt;/li&gt;
-&lt;li&gt;Watching:
-&lt;ul&gt;
-&lt;li&gt;Watched &lt;a href=&#34;https://mirror.roytang.net/2021/01/1352137686614564867/&#34;&gt;World War Z&lt;/a&gt;, though I kinda wish I had seen it back at the start of the pandemic, seemed like it would have been appropriate.&lt;/li&gt;
-&lt;li&gt;WandaVision ep 3: So weird! I don&amp;rsquo;t mind the sitcom stuff, though I&amp;rsquo;m mostly here for the Marvel plots. The pacing is fine, with just enough easter eggs and plot teasing to not be annoying.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Gaming:
-&lt;ul&gt;
-&lt;li&gt;Kicked off a second run of &lt;a href=&#34;https://mirror.roytang.net/2021/01/1349796416042856448/&#34;&gt;Fire Emblem Three Houses&lt;/a&gt;! Now in hard/classic, and going down the red/Black Eagle path.&lt;/li&gt;
-&lt;li&gt;MTG: &lt;strong&gt;Kaldheim&lt;/strong&gt; previews are done, and set is out on Arena next week!&lt;/li&gt;
-&lt;li&gt;Regular Saturday gaming group tried to do some Jackbox games via Discord, but we ran into audio issues, so we ended up just playing Sentinels and Root again&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Books: I finished reading Katie Mack&amp;rsquo;s &amp;ldquo;&lt;strong&gt;End of Everything&lt;/strong&gt;&amp;rdquo;, here&amp;rsquo;s &lt;a href=&#34;https://mirror.roytang.net/2021/01/end-of-everything/&#34;&gt;a short review&lt;/a&gt;. For the next book, I started on Scott Berkun&amp;rsquo;s &lt;a href=&#34;https://www.amazon.com/Year-Without-Pants-WordPress-com-Future/dp/1118660633&#34;&gt;The Year Without Pants&lt;/a&gt; of which I&amp;rsquo;ve had a copy forever. It&amp;rsquo;s about remote work back in the early 2010s, which is a fun contrast to our current remote work-heavy world.&lt;/li&gt;
-&lt;li&gt;Quiz: We actually won the online Wheel of Fortune-themed AboutQuiz the week before this (forgot to mention in last week&amp;rsquo;s notes), so we were defending champs in this week&amp;rsquo;s Weakest Link-themed quiz, but we were too conservative with our banks and only finished 3rd place.&lt;/li&gt;
-&lt;li&gt;Health: Still have muscle pains in my left upper bicep and shoulder, though they seem to be in different places compared to before? Am using this hand massager to massage the area occassionally while I&amp;rsquo;m at the computer, and still continuing the warm compress. Hoping this fixes it up soon, I don&amp;rsquo;t want to have to ask a stranger to come in and massage me or whatever.&lt;/li&gt;
-&lt;li&gt;For the first time since March, I put on pants! I had only been going out in shorts when going to the grocery or the nearby pharmacy, but this week I had to do an errand at a hospital a bit farther away, so I figured it would be a good time to figure out where my pants were. Hospital protocols were strict, as expected. We had to wait in like 3 different waiting areas before we could get to our appointment. This hospital was one of the hotspots back in the early days of the pandemic, so their vigilance is reassuring.&lt;/li&gt;
-&lt;li&gt;PC died unexpectedly today. As in, lost power while I was using it and wouldn&amp;rsquo;t turn back on, power light just blinking. This has happened once before, towards the end of 2020. Back then I had tried unplugging the power supply and opening it up, then reconnecting to see what happened, and it just miraculously fixed itself. This time, I just unplugged the PS, then left it alone for a while. When I came back later and reconnected everything and booted up, it was fine. So I guess there&amp;rsquo;s some issue with the power supply? I don&amp;rsquo;t want to have to upgrade just yet, although this rig is already more than 5 years old, I&amp;rsquo;m hoping I can get a couple more years out of it at least. (That and I don&amp;rsquo;t want to have to go to a shop to have one assembled during the pandemic, and I don&amp;rsquo;t wanna do the assembly myself.)&lt;/li&gt;
-&lt;li&gt;I filled up an online application form for Quezon City&amp;rsquo;s new QC id, we&amp;rsquo;ll see how this goes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;looking-forward-to-this-coming-week&#34;&gt;Looking forward to this coming week:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;new WandaVision episode!&lt;/li&gt;
-&lt;li&gt;Kaldheim releases on Magic Arena!&lt;/li&gt;
-&lt;li&gt;new drop in Civ6&amp;rsquo;s New Frontier pack!&lt;/li&gt;
 &lt;/ul&gt;
 
 

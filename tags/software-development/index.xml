@@ -7,12 +7,35 @@
       <language>en-us</language>
       <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
       <webMaster>hello@roytang.net (Roy Tang)</webMaster>
-      <lastBuildDate>Wed, 21 Apr 2021 14:26:20 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 23 May 2021 23:27:00 +0000</lastBuildDate>
       
           <atom:link href="https://mirror.roytang.net/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
       
           
       
+        <item>
+            <title>Thoughts on Vue.js
+</title>
+            <link>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</link>
+            <pubDate>Sun, 23 May 2021 23:27:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/05/thoughts-on-vue.js/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is &lt;a href=&#34;https://vuejs.org/&#34;&gt;Vue.js&lt;/a&gt;. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for &lt;a href=&#34;https://mirror.roytang.net/2020/09/mobile-app-dev/&#34;&gt;mobile app development&lt;/a&gt;, which I generally don&amp;rsquo;t like; and (b) I don&amp;rsquo;t like Facebook, which backs React. I have no opinion on Angular.&lt;/p&gt;
+&lt;p&gt;Despite being my frontend framework of choice, I don&amp;rsquo;t actually have that much experience with Vue beyond a few small projects each with a minimal number of screens / pages. That being said, I do have some thoughts, coming mostly from the POV of a developer &lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;more used to the old-school ways of Javascript and web development in general&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The entry point of course, is the &lt;a href=&#34;https://vuejs.org/v2/guide/&#34;&gt;getting started guide on the Vue website itself&lt;/a&gt;, which walks you through most of the framework features. I have no concern about most of these; the features are explained well and I find most of the documentation quite good.&lt;/p&gt;
+&lt;p&gt;My issue is with how the site recommends to beginners to set up their Vue projects: via a script include from a CDN. When I first saw this guide, I assumed this was the standard, recommended way to build a Vue project, so this was how I did it for my first small project, a small demo site I needed to produce in a few days. Due to the short timeframe, I had decided to learn as I go. The component registration section of the guide also gives no guidance or recommendation on how to structure your components or projects, so I ended up with most of the components set up in a single JS file. (Admittedly, as a person with more than a decade of web dev experience, I should have at least split it up into several files, but time was short.) A technical person reviewing the code commented that I had implemented the frontend &amp;ldquo;in a very strange manner&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;It gets worse when you try to install third-party components, which is a big feature of the ecosystem of these frontend frameworks. In my experience, most third-party components will only give instructions for installation via &lt;code&gt;npm&lt;/code&gt; and a JS module system, neither of which are covered nor recommended by the beginner sections of the guide.&lt;/p&gt;
+&lt;p&gt;A few projects later, and I now know that I vastly prefer developing Vue projects as Node projects built using the scaffolding provided by &lt;a href=&#34;https://cli.vuejs.org/&#34;&gt;Vue CLI&lt;/a&gt;, with the components implemented as standalone &lt;code&gt;.vue&lt;/code&gt; files. The usage of these tools and methods are covered in the &lt;a href=&#34;https://vuejs.org/v2/guide/installation.html&#34;&gt;Installation section of the guide&lt;/a&gt; (which the &amp;ldquo;Get Started&amp;rdquo; link skips over) and the &lt;a href=&#34;https://vuejs.org/v2/guide/single-file-components.html&#34;&gt;Single File Components section under the Tooling section&lt;/a&gt; (which seemed like an advanced section a beginner is not likely to get into.) This method also makes installing third-party components much more straightforward. It&amp;rsquo;s not even necessary to cover what tools like Webpack or Babel are doing, since those are largely abstracted away by the scaffolding.&lt;/p&gt;
+&lt;p&gt;Basically my main complaint is that the guide doesn&amp;rsquo;t do a good job of transitioning from the introducing the beginner to the language specifics to introducing a recommended approach and tools for organizing more intermediate or complex projects. The method of using a script include seems suitable for little more than a single-page todo list webapp. I suppose the perceived shortcoming might be attributed to my background at least partially - I still tend to think like a developer using jQuery, and I don&amp;rsquo;t default to thinking about Node applications when doing webapps.&lt;/p&gt;
+&lt;p&gt;That being said, I am overall happy with Vue.js and it&amp;rsquo;s still my choice of frontend framework moving forward (should a frontend framework even be needed!) Although, maybe I should at least consider trying out / evaluating Angular so I can pretend to make a fair comparison?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
         <item>
             <title>New note
 </title>
@@ -1983,51 +2006,6 @@ git checkout HEAD
 &lt;/ul&gt;
 &lt;p&gt;&amp;hellip; and probably a lot more I&amp;rsquo;m unable to recall anymore, and that&amp;rsquo;s not accounting for any comments that would be later logged by QA because I was unfamiliar with how other screens usually behaved.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re adding developers to a late project, you have to account for these onboarding costs, in addition to the increased communication overhead. That means sounding the alarm and asking for help earlier. If there&amp;rsquo;s a module that&amp;rsquo;s estimated by your devs to take say, one sprint, you can&amp;rsquo;t ask for help one sprint before the needed delivery - you need to look for help maybe one or two sprints earlier. (Of course, the best approach would be to avoid painting your project into this corner at all, but as we all know in this industry, sometimes things just happen!)&lt;/p&gt;
-
-
-
-            </description>
-        </item>
-    
-        <item>
-            <title>My history in text editors
-</title>
-            <link>https://mirror.roytang.net/2018/11/my-history-in-text-editors/</link>
-            <pubDate>Sat, 10 Nov 2018 05:07:22 +0000</pubDate>
-            <author>hello@roytang.net (Roy Tang)</author>
-            <guid>https://mirror.roytang.net/2018/11/my-history-in-text-editors/</guid>
-            <description>
-            
-            &lt;p&gt;Text editors (and by extension IDEs) are a programmer’s best friend. I thought I’d look back at a number of text editors I’ve used over the years. (I grew up with Windows, so I won’t list vim/emacs/nano here, even though I’m at least a bit proficient with vim by now. That is, I know how to exit vim.)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Notepad &amp;ndash; of course, the default editor in Windows. The one we turn to when all else fails. It used to be pretty bad at handling UTF-8 and probably just gives up on large files, but for quick and dirty work, it’s sufficient.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.crimsoneditor.com/&#34;&gt;Crimson Editor&lt;/a&gt; &amp;ndash; relatively useful. First editor I used with multiple tab support and find in files. The first team lead I worked with (who I affectionately call &amp;ldquo;boss&amp;rdquo; to this day), recommended this to me mostly because she thought the dog icon was cute.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ultraedit.com/&#34;&gt;UltraEdit&lt;/a&gt; &amp;ndash; a very powerful editor, lots of features. We mostly used it back then for the superior UTF-8 handling and for the ability to open very large files. However, it has one glaring flaw that prevented me from using it too much: It’s not free.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; &amp;ndash; I think this had roughly the same if not slightly larger feature set as Crimson Editor. But it was well-maintained and received regular updates, even up til now. (The latest update was a few weeks ago.)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.eclipse.org/&#34;&gt;Eclipse&lt;/a&gt; &amp;ndash; ok, I’ll include IDEs in this list. Most of my early career was in Java web development, and our IDE of choice was Eclipse. Slow-as-hell, always-compiling, unforgiving Eclipse. It had a rich features set, but again, hella slow, even among Java IDEs. Still, I spent enough hours with it to become fairly proficient with it and I even published a few internal blog posts on the most useful shortcuts and how to get the most out of the IDE.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Visual Studio .NET &amp;ndash; I actually had experience with the older Visual Studio versions, since we had a few legacy VC++ programs we had to maintain, but that was minimal at best so I don’t have much familiarity there. But then we had a C# project and I used VS.NET for a while. I didn’t care much for the C# language, but I did enjoy that VS.NET was way faster than Eclipse and especially enjoyed how good the Intellisense feature was.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; &amp;ndash; when I left my long-time job and started considering other directions to take my career, I considered using Atom because it was open source and I had long wanted to get into open source, and I figured what better way to get involved than to help improve your own tools right? Sadly, while I liked Atom’s feature set, I was turned off by its incredibly poor performance and loading times.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; &amp;ndash; Sublime is so good. Extensive feature set, good performance. Only downside is that it’s not free, although it was so good I considered actually paying for version 3 at one point. Luckily I didn’t before deciding to try out my current text editor of choice:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VS Code&lt;/a&gt; &amp;ndash; VS Code is great. It’s free and it’s open source and it’s cross-platform. It has a good feature set. It’s super extendable and it has a vibrant extensions ecosystem. It performs reasonably well. I’d say not as fast as Sublime on startup, but way more tolerable than Atom. Once it’s loaded it’s blazing fast. It also inherited my favorite feature from VS.NET, Intellisense! Microsoft did a good job with this one. And I was able to have my &lt;a href=&#34;https://github.com/Microsoft/vscode/pull/61206&#34;&gt;first pull request for VS code&lt;/a&gt; merged into the codebase a few weeks ago! (I can now officially claim to be an open source contributor? Lol) I’ve only been using VS Code for a short while (less than half a year) so I’m sure I have yet to tap into its full potential, but I feel it’s deep enough that it will greatly improve my workflows as I gain more mastery over it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 
 
 
