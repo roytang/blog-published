@@ -29,6 +29,10 @@ Latest shared links:
 Latest notes:
     
 
+- [25 May 2021 1:02pm](https://mirror.roytang.net/2021/05/1397176143820722180/): This kind of &ldquo;data massaging&rdquo; (ranking not normalized by pop) has harmful effects beyond simply propaganda. What if those DDS who see this become complacent because they think we have vaccinated more than even Singapore?
+Quoted pnagovph&#39;s tweet:   LOOK: The Philippines ranked second among the countries in Southeast Asia in terms of total doses of #Covid19 vaccines administered.
+FULL STORY: https://www.pna.gov.ph/articles/1141205
+ 
 - [23 May 2021 6:45am](https://mirror.roytang.net/2021/05/1396356641285566466/): This reminded me of the Rick and Morty episode “Get Schwifty” https://rickandmorty.fandom.com/wiki/Get_Schwifty
 https://www.youtube.com/watch?v=m1fZ7Ap6ebs&amp;feature=youtu.be
 Quoted johnayliff&#39;s tweet:   I don&rsquo;t have time to learn how to make mods for Stellaris, but if I did&hellip; Galactovision Song Contest  
@@ -38,7 +42,6 @@ he then breathed a sigh of relief and submitted his two weeks&rsquo; notice. wtf
 I actually started checking this because this reddit thread claimed that if your win% is at least 56% then the upcoming draft challenge should be profitable, so I just miss that threshold lol. Area for improvement!
 - [21 May 2021 10:11pm](https://mirror.roytang.net/2021/05/1395864858273349632/): THE LINDA LINDAS
 Your browser does not support the video tag.  
-- [21 May 2021 9:41pm](https://mirror.roytang.net/2021/05/7053c993545123cbbd30100c4381b26f/): Does the internet archive have an API for sending URLs/links to be indexed for archiving?
 
 [View all notes](https://mirror.roytang.net/notes)
 

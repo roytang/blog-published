@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/11/5328386992/",
+            "url": "https://mirror.roytang.net/2009/11/5328386992/",
+            "path": "/2009/11/5328386992/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/mashable/\"\u003e@mashable\u003c/a\u003e TIP: try going to Twitter.com today \u0026amp; tweeting either #trick or #treat , \u0026amp; nothing else. Hidden Twitter feature!\u003c/p\u003e\n",
+            "summary": "RT @mashable TIP: try going to Twitter.com today \u0026amp; tweeting either #trick or #treat , \u0026amp; nothing else. Hidden Twitter feature!",
+            "date_published": "2009-11-01T02:09:34+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5328386992.md"
+            , "tags": ["trick","treat"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5328386992/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/171341961337"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/5327379015/",
+            "url": "https://mirror.roytang.net/2009/11/5327379015/",
+            "path": "/2009/11/5327379015/",
+            "title": "",
+            "content_html": "\u003cp\u003e@magicprotour ob nix\u003c/p\u003e\n",
+            "summary": "@magicprotour ob nix",
+            "date_published": "2009-11-01T01:17:19+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/11/5327379015.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/5327379015/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/11/",
+            "url": "https://mirror.roytang.net/2009/11/",
+            "path": "/2009/11/",
+            "title": "Monthly Archives for 11 2009",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2009-11-01T00:00:00+00:00",
+            "date_modified": "2019-09-29T18:26:08+08:00",
+            "section": "archm",
+            "source_path": "archm/2009-11.md"
+            
+            
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/10/5325164839/",
             "url": "https://mirror.roytang.net/2009/10/5325164839/",
             "path": "/2009/10/5325164839/",
@@ -948,62 +999,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4894699767/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/192115291832"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/4797985472/",
-            "url": "https://mirror.roytang.net/2009/10/4797985472/",
-            "path": "/2009/10/4797985472/",
-            "title": "",
-            "content_html": "\u003cp\u003e@starcitygames your decklists still have zendikar as nonstandard legal!\u003c/p\u003e\n",
-            "summary": "@starcitygames your decklists still have zendikar as nonstandard legal!",
-            "date_published": "2009-10-12T01:38:17+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/4797985472.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4797985472/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/4787669227/",
-            "url": "https://mirror.roytang.net/2009/10/4787669227/",
-            "path": "/2009/10/4787669227/",
-            "title": "",
-            "content_html": "\u003cp\u003eyehey nakauwi ng maaga\u003c/p\u003e\n",
-            "summary": "yehey nakauwi ng maaga",
-            "date_published": "2009-10-11T17:05:52+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/4787669227.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/4787669227/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/155385357617"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/10/1550532/",
-            "url": "https://mirror.roytang.net/2009/10/1550532/",
-            "path": "/2009/10/1550532/",
-            "title": "Trimming whitespace from HTML content?",
-            "content_html": "\u003cp\u003eI have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous \u0026amp;nbsp; and \u0026lt;br\u0026gt; and such from the beginning and end of the HTML string.\u003c/p\u003e\n\u003cp\u003eI can opt to either do it on the client side (using Javascript) or on the server side (using Java) Is there an easy way to do this, using regular expressions or something? I\u0026rsquo;m not sure how complex it needs to be, I need to be able to remove stuff like:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;p\u0026gt;\u0026lt;br /\u0026gt; \u0026amp;nbsp;\u0026lt;/p\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eyet retain it if there\u0026rsquo;s any kind of meaningful text in between. (Above snippet is from actual HTML data saved by the tester)\u003c/p\u003e\n",
-            "summary": "I have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous \u0026amp;nbsp; and \u0026lt;br\u0026gt; and such from the beginning and end of the HTML string.",
-            "date_published": "2009-10-11T11:58:13+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/10/1550532/index.md"
-            , "tags": ["java","javascript","html","html-parsing","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1550532/trimming-whitespace-from-html-content"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1550532/trimming-whitespace-from-html-content",
-                    "source_file": "comment-20091011T123533-1550599.json"
-                }
-            ]
             }
         
     ]

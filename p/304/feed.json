@@ -11,6 +11,62 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2010/01/2032378/",
+            "url": "https://mirror.roytang.net/2010/01/2032378/",
+            "path": "/2010/01/2032378/",
+            "title": "",
+            "content_html": "\u003cpre\u003e\u003ccode\u003eurlpatterns = patterns('',     \n    (r'^salaries/employee/$', list_detail.object_list, 'employee_info'),\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe third item in the tuple needs to be a dictionary, not a string. Try removing the single quotes around employee_info:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eurlpatterns = patterns('',     \n    (r'^salaries/employee/$', list_detail.object_list, employee_info),\n)\u003c/code\u003e\u003c/pre\u003e\n",
+            "summary": "urlpatterns = patterns('', (r'^salaries/employee/$', list_detail.object_list, 'employee_info'), )  The third item in the tuple needs to be a dictionary, not a string. Try removing the single quotes around employee_info:\nurlpatterns = patterns('', (r'^salaries/employee/$', list_detail.object_list, employee_info), ) ",
+            "date_published": "2010-01-09T04:47:32+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/01/2032378/index.md"
+            , "tags": ["python","django"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2032360/valueerror-in-django/2032378#2032378"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/01/7520290963/",
+            "url": "https://mirror.roytang.net/2010/01/7520290963/",
+            "path": "/2010/01/7520290963/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mtgaaron/\"\u003e@mtgaaron\u003c/a\u003e blue used to be a lot stronger compared to the other colors, when things are relatively even it still feels like blue lost a lot\u003c/p\u003e\n",
+            "summary": "@mtgaaron blue used to be a lot stronger compared to the other colors, when things are relatively even it still feels like blue lost a lot",
+            "date_published": "2010-01-08T14:37:58+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/01/7520290963.md"
+            , "tags": ["mtg"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/7520290963/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2010/01/7518822599/",
+            "url": "https://mirror.roytang.net/2010/01/7518822599/",
+            "path": "/2010/01/7518822599/",
+            "title": "",
+            "content_html": "\u003cp\u003eAlways code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.\u003c/p\u003e\n",
+            "summary": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
+            "date_published": "2010-01-08T13:49:05+00:00",
+            "date_modified": "2021-01-11T14:30:01+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/01/7518822599/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/7518822599/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/241550448525"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20100109-000000-cd916b76-3027-4e35-8571-93be0d12036c.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2010/01/2027183/",
             "url": "https://mirror.roytang.net/2010/01/2027183/",
             "path": "/2010/01/2027183/",
@@ -978,62 +1034,6 @@
                 }, { 
                     "url": "https://twitter.com/roytang",
                     "source_file": "comment-20091229-075623-94d3189f-2983-46d3-b9b6-d63c1f8e0cfa.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/7151512684/",
-            "url": "https://mirror.roytang.net/2009/12/7151512684/",
-            "path": "/2009/12/7151512684/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg It sucks when you have an awesome sealed pool then lose a round because you didn\u0026rsquo;t draw one of your colors \u0026gt;.\u0026lt;\u003c/p\u003e\n",
-            "summary": "#mtg It sucks when you have an awesome sealed pool then lose a round because you didn\u0026rsquo;t draw one of your colors \u0026gt;.\u0026lt;",
-            "date_published": "2009-12-29T06:47:52+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/7151512684.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/7151512684/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/7150227747/",
-            "url": "https://mirror.roytang.net/2009/12/7150227747/",
-            "path": "/2009/12/7150227747/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/mturian/\"\u003e@mturian\u003c/a\u003e Molten Rain. No, wait, Pillage!\u003c/p\u003e\n",
-            "summary": "@mturian Molten Rain. No, wait, Pillage!",
-            "date_published": "2009-12-29T05:56:21+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/7150227747.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/7150227747/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/7142778474/",
-            "url": "https://mirror.roytang.net/2009/12/7142778474/",
-            "path": "/2009/12/7142778474/",
-            "title": "",
-            "content_html": "\u003cp\u003eI really should be cleaning up stuff in my room\u0026hellip;nakakatamad\u003c/p\u003e\n",
-            "summary": "I really should be cleaning up stuff in my room\u0026hellip;nakakatamad",
-            "date_published": "2009-12-29T01:47:39+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/7142778474/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/7142778474/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/225511986236"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/wesplaton",
-                    "source_file": "comment-20091229-000000-562c99a7-b2ca-4c3d-8cdf-8e7dd006ee1e.json"
                 }
             ]
             }

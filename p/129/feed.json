@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/08/763554120544366592/",
+            "url": "https://mirror.roytang.net/2016/08/763554120544366592/",
+            "path": "/2016/08/763554120544366592/",
+            "title": "",
+            "content_html": "\u003cp\u003eI wish I knew what context I said this in\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/tangincheek/status/763540447184564225'\u003etangincheek\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    that sentence sounds like i could put it in a dc comic book panel and it would still work\n\u003c/blockquote\u003e\n",
+            "summary": "I wish I knew what context I said this in\nQuoted tangincheek\u0026#39;s tweet:   that sentence sounds like i could put it in a dc comic book panel and it would still work  ",
+            "date_published": "2016-08-11T01:54:23+00:00",
+            "date_modified": "2020-07-14T18:07:32+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/08/763554120544366592/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/763554120544366592/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/08/living-with-development-standards/",
+            "url": "https://mirror.roytang.net/2016/08/living-with-development-standards/",
+            "path": "/2016/08/living-with-development-standards/",
+            "title": "Living With Development Standards",
+            "content_html": "\u003cp\u003eI was originally going to write a post about the problems development teams face as they get larger, but the section on development standards was long enough by itself so here we are.\u003c/p\u003e\n\u003cp\u003eHaving some sort of development standard in a project development team becomes a lot more important as project size goes up (for obvious reasons). There are different kinds of standards to consider, but generally I break them down into design standards and coding standards. Standards are important not only to ensure consistency among the development team, but to ease transitions both for new team members coming into the project late, or team members moving laterally to other positions or sub-teams within the same project\u003c/p\u003e\n\u003cp\u003eDesign standards are generally UI and functionality related. UI standards can refer to what kind of controls are preferred to be used, where screen elements are expected to be placed, how error messages are presented, that sort of thing.\u003c/p\u003e\n\u003cp\u003eFunctionality standards are more to establish similar user expectations as to how the program works. When I click Save, can I continue editing the same record or does it send me back to a listing screen? When I delete a record, is it reversible or will the system warn me that the deletion is permanent? When I enter a search criteria, is it case-sensitive? Having similar behavior throughout the system makes it more intuitive for users to navigate large, complex systems.\u003c/p\u003e\n\u003cp\u003eCoding standards refer to standards that developers follow, and will typically encompass:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eNaming conventions. Applicable to variables, files, database tables and fields, and so on. This can be difficult to enforce, as some part of it is subjective. But it\u0026rsquo;s important that the same things are always named the same way in different parts of the code. It can be more difficult in larger development teams that are split among different domains. A simple example is one sub-team might name their reference number database field REF_NO while another sub-team sues REF_NUM. At the very least having consistent naming will make it more intuitive for developers reaching across different domains to link fields to each other\u003c/li\u003e\n\u003cli\u003eSpeaking of database fields, another thing to consider is data types and field length. It can be unpleasant to find out later on in the development process that one sub-team has used VARCHAR(35) for all their email fields while another one has used VARCHAR(70). Or maybe some tables have a reference number field as an integer while others have it as a string. Such inconsistencies can lead to integration problems later on\u003c/li\u003e\n\u003cli\u003eCode formatting. Generally covers indentation, bracket placement, spacing, etc. This is generally only an aesthetic choice, but may cause religious wars with some developer groups (\u0026ldquo;tabs vs spaces!!!\u0026quot;), but generally someone should just choose a standard and the developers follow it. Luckily, modern IDEs support autoformatting options that can be exported and distributed for all the developers to use, eliminating most such issues. If not enforced in this manner, it may create some issues though if different developers have different autoformat settings. For example, in one project I was on a certain developer had an autoformat setting to automatically declare as final any function parameters in Java files. This was an ok practice on its own, but he was the only one with that setting, so when he would make a change to a Java file written by someone else, those \u0026ldquo;final\u0026rdquo; keywords would be added automatically. It wasn\u0026rsquo;t an issue most of the time, but when I had to check changes in source control, it would often be troublesome trying to isolate what change he had made in large files since there were all these other irrelevant changes found by the diff. Enforcing a standard formatting eliminates such issues\u003c/li\u003e\n\u003cli\u003eFile organisation \u0026ndash; a software project will typically have hundreds if not thousands of different files of varying types. Some sort of scheme is necessary for developers to follow to ensure order. For example in a web development project, HTML templates should be placed in a specific folder, CSS files in a different folder, JavaScript files in a different folder, and so on. Often there will also be subfolders either by domain or functionality\u003c/li\u003e\n\u003cli\u003eImplementation standards \u0026ndash; typically in my projects I\u0026rsquo;ve found a need to standardize the approach for similar types of functions. For example, all search screens should be implemented a certain way, etc. Can be enforced by either language constructs or code templates\u003c/li\u003e\n\u003cli\u003eBest practices \u0026ndash; many organisations will have their own set of coding best practices designed to help avoid common problems\u003c/li\u003e\n\u003cli\u003eOther, program-specific standards. For example, your Java project may require that all classes of a certain type use a particular form of constructor. If you\u0026rsquo;re lucky, such standards can be enforced using language constructs such as interfaces, but that is not always the case\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIdeally, all of the above standards are codified in some sort of standards document that the development team can reference on a regular basis. But due to the constantly evolving nature of software projects, most teams will find that the typical documentation problems arise for standards documentation:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eYou often won\u0026rsquo;t know ahead of time all the kinds of standards you need. Often later in the project new situations will arise that need standards but either the team may not recognize it or will not have time to document\u003c/li\u003e\n\u003cli\u003eStandards will often become out of date or irrelevant. Updating these documents will often not be a priority as schedule pressure mounts\u003c/li\u003e\n\u003cli\u003eAs the problems from 1 and 2 mount up, more and more knowledge that should be codified as standards instead become unwritten tribal wisdom that can only be learned by experience or consultation with the experts\u003c/li\u003e\n\u003cli\u003eAfter a certain point, adding new things to the standards document becomes counter-productive. When there are too many standards to follow, it becomes a challenge to even be aware of them all much less enforce them\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eIt is a difficult problem to solve, and probably impossible to solve completely. I believe we will have to live with all of the problems above to some degree. There are a few ways to mitigate the effects:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAutomate whenever possible. There are now many modern tools to automate checking for code formatting issues and so on\u003c/li\u003e\n\u003cli\u003ePrepare standards documents/bibles for the most common cases\u003c/li\u003e\n\u003cli\u003ePrepare step-by-step implementation guides and code templates for commonly-done tasks/functions. (Examples: \u0026ldquo;How to implement search screens\u0026rdquo;, \u0026ldquo;How to integrate our workflow library\u0026rdquo;, etc) \u0026ndash; guides and templates don\u0026rsquo;t guarantee adherence, but they should help reduce incidents of standards not being followed\u003c/li\u003e\n\u003cli\u003eMentoring for new team members or those transitioning to new roles\u003c/li\u003e\n\u003cli\u003eRecognize and accept that as project teams get larger, there will be a greater overhead spent on ensuring standards are followed and that the team is aware of them\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAll of the above are my own thoughts arising from my own project experience. I haven\u0026rsquo;t read much outside literature on this subject or other approaches within the industry at large, so I\u0026rsquo;d be happy to get more information on this matter\u003c/p\u003e\n",
+            "summary": "I was originally going to write a post about the problems development teams face as they get larger, but the section on development standards was long enough by itself so here we are.\nHaving some sort of development standard in a project development team becomes a lot more important as project size goes up (for obvious reasons). There are different kinds of standards to consider, but generally I break them down into design standards and coding standards.",
+            "date_published": "2016-08-11T01:30:02+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/08/living-with-development-standards/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"tumblr","url":"https://tumblr.roytang.net/post/148766447685/living-with-development-standards"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/763551342354989056/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/08/763545606677594112/",
+            "url": "https://mirror.roytang.net/2016/08/763545606677594112/",
+            "path": "/2016/08/763545606677594112/",
+            "title": "",
+            "content_html": "\u003cp\u003eAlso, I\u0026rsquo;m now worried since I haven\u0026rsquo;t played the first game, I may have spoiled that one by playing X first\u003c/p\u003e\n",
+            "summary": "Also, I\u0026rsquo;m now worried since I haven\u0026rsquo;t played the first game, I may have spoiled that one by playing X first",
+            "date_published": "2016-08-11T01:20:33+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/08/763545606677594112.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/763545606677594112/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/08/763545569738358785/",
             "url": "https://mirror.roytang.net/2016/08/763545569738358785/",
             "path": "/2016/08/763545569738358785/",
@@ -1043,57 +1094,6 @@
                     "source_file": "comment-20160804-000000-d1aa1fe2-6b16-4803-bd26-e6bdc8b9435c.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/08/4vzgts/",
-            "url": "https://mirror.roytang.net/2016/08/4vzgts/",
-            "path": "/2016/08/4vzgts/",
-            "title": "",
-            "content_html": "\u003ch4 id=\"posted-on-ripad-how-good-is-the-ipad-pro--apple-pencil-for-drawing-purposeshttpsredditcomripadcomments4vzgtshow_good_is_the_ipad_pro_apple_pencil_for_drawing\"\u003ePosted on r/ipad: \u003ca href=\"https://reddit.com/r/ipad/comments/4vzgts/how_good_is_the_ipad_pro_apple_pencil_for_drawing/\"\u003eHow good is the iPad Pro + Apple Pencil for drawing purposes?\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eI currently have the 4th generation iPad (the first one with retina display), and I\u0026rsquo;ve tried using third-party styluses with them but am never satisfied, it always feel imprecise. I\u0026rsquo;ve tried drawing with just my fingers and while it\u0026rsquo;s more precise it also feels a bit more tiring\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;m thinking of getting an iPad Pro next month. How much better would it be to use the Apple Pencil?\u003c/p\u003e\n",
-            "summary": "Posted on r/ipad: How good is the iPad Pro + Apple Pencil for drawing purposes? I currently have the 4th generation iPad (the first one with retina display), and I\u0026rsquo;ve tried using third-party styluses with them but am never satisfied, it always feel imprecise. I\u0026rsquo;ve tried drawing with just my fingers and while it\u0026rsquo;s more precise it also feels a bit more tiring\nI\u0026rsquo;m thinking of getting an iPad Pro next month.",
-            "date_published": "2016-08-04T00:48:08+00:00",
-            "date_modified": "2020-01-23T03:46:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/08/4vzgts/index.md"
-            , "tags": ["ipad"]
-            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/ipad/comments/4vzgts/how_good_is_the_ipad_pro_apple_pencil_for_drawing/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/08/10154794214468912/",
-            "url": "https://mirror.roytang.net/2016/08/10154794214468912/",
-            "path": "/2016/08/10154794214468912/",
-            "title": "",
-            "content_html": "\u003cp\u003eTFW you think of something you need to do as soon as you get back to your computer, but by the time you sit down you\u0026rsquo;ve already forgotten what it was @_@\u003c/p\u003e\n",
-            "summary": "TFW you think of something you need to do as soon as you get back to your computer, but by the time you sit down you\u0026rsquo;ve already forgotten what it was @_@",
-            "date_published": "2016-08-04T00:41:00+00:00",
-            "date_modified": "2019-09-28T20:36:05+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/08/10154794214468912/index.md"
-            
-            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154794214468912"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/08/760890892349681664/",
-            "url": "https://mirror.roytang.net/2016/08/760890892349681664/",
-            "path": "/2016/08/760890892349681664/",
-            "title": "",
-            "content_html": "\u003cp\u003eIt’s like Trump is taking campaign tips from The Onion.\u003c/p\u003e\n",
-            "summary": "It’s like Trump is taking campaign tips from The Onion.",
-            "date_published": "2016-08-03T17:31:40+00:00",
-            "date_modified": "2020-07-14T05:17:24+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/08/760890892349681664/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/760890892349681664/"}]
-            
-            
             }
         
     ]

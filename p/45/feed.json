@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "url": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "path": "/2019/04/initial-page-load/",
+            "title": "Initial Page Load",
+            "content_html": "\u003cp\u003eI read a recent \u003ca href=\"https://testkeis.wordpress.com/2019/03/21/wondering-how-much-it-matters-initial-load-of-page/\"\u003eblog post from a friend\u003c/a\u003e about the large page sizes on initial load of a web page. From there, I got to a link which said that the \u003ca href=\"https://speedcurve.com/blog/web-performance-page-bloat/\"\u003eaverage page size nowadays is at least 3MB\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since \u003ca href=\"/2018/11/site-migration-from-wordpress-to-hugo/\"\u003eI migrated to a static site using Hugo\u003c/a\u003e. The homepage of the old Wordpress version of the blog comes with 44 requests totalling a bit over 500KB. And the new homepage lists way more posts too.\u003c/p\u003e\n\u003cp\u003eThe page for individual posts leaves some room for improvement however, coming at 62 requests totalling more than 2MB. The main culprit is Disqus which I use for commenting. At least Disqus uses delayed loading, so the content renders immediately, but that\u0026rsquo;s still a lot of bandwidth that could be saved. Leaving aside the question of \u0026ldquo;Do I really need comments?\u0026rdquo;, I did a quick search if there were pre-existing solutions for optimizing Disqus loading on static sites.\u003c/p\u003e\n\u003cp\u003eThe best hit so far was \u003ca href=\"https://css-tricks.com/lazy-loading-disqus-comments/\"\u003edisqusLoader\u003c/a\u003e, which avoids loading Disqus until the comment area actually scrolls into view. It\u0026rsquo;s a neat idea, but I encountered some JS errors when I did a quick test with it. I\u0026rsquo;ll revisit this again later when I have more time.\u003c/p\u003e\n\u003cp\u003eAn alternative of course would be to write my own JS-based commenting engine to rival Disqus, which seems to have no competition in its particular niche. I like building things so this option naturally came to mind, but in all likelihood I don\u0026rsquo;t have time to do that, and there\u0026rsquo;s a good chance it may end up as heavy as Disqus anyway.\u003c/p\u003e\n\u003cp\u003eNeed to think about this some more.\u003c/p\u003e\n",
+            "summary": "I read a recent blog post from a friend about the large page sizes on initial load of a web page. From there, I got to a link which said that the average page size nowadays is at least 3MB.\nThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since I migrated to a static site using Hugo.",
+            "date_published": "2019-04-10T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/04/initial-page-load/index.md"
+            , "tags": ["Tech Life","Meta"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1115857589227655171/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/04/digging-through-time/",
+            "url": "https://mirror.roytang.net/2019/04/digging-through-time/",
+            "path": "/2019/04/digging-through-time/",
+            "title": "Digging Through Time",
+            "content_html": "\u003cp\u003eI recently found out about the \u003ca href=\"http://blog.geocities.institute/\"\u003eblog at geocities.institute\u003c/a\u003e where they dig through the Geocities archive torrent extracted by the internet archive and write about interesting things they find. That of course eventually led me to traipse through the internet archive\u0026rsquo;s wayback machine again, especially looking back at some of my older websites.\u003c/p\u003e\n\u003cp\u003eI like having the ability to dig through time and find old content I\u0026rsquo;ve written or created. (Which is only one of the reasons why I advocate \u003ca href=\"/2019/03/export-your-social-media-data/\"\u003ebacking up your social media content regularly\u003c/a\u003e). That\u0026rsquo;s why I like this blog, it means I can easily look through the past and figure out what I was doing, say, in 2011. In fact, I still have a lot of old files to dig through and organize and such. One of my goals is that any old material I find that can safely be made public would be made available through this blog/site. This content is probably of interest only to myself, but that alone is good enough reason to keep them around.\u003c/p\u003e\n\u003cp\u003eThere are, however, a bunch of things that regretably I can no longer access due to circumstances, such as:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efiles I had from my college days at EEE. I remember having backed up stuff to a CD before, but I cannot find that CD now\u003c/li\u003e\n\u003cli\u003eMy Geocities content from before 2002. I had written somewhere that I was on Geocities since 2000, but the only archive I have is from 2002 (and the wayback machine only goes back that far), and the 2002 archive is only a placeholder that links to other free hosting I had back then. I\u0026rsquo;m sure there was an older version of the site that was mostly a Final Fantasy and Rurouni Kenshin fansite that I probably got rid of because I wasn\u0026rsquo;t too happy with it. It\u0026rsquo;s possible that the older version was on one of the \u0026ldquo;neighborhood\u0026rdquo;-style Geocities URLs, as my wayback machine search is only for the \u0026ldquo;username\u0026rdquo;-style URL. I can\u0026rsquo;t recall if I did have a neighborhood-style URL, but if I did, I don\u0026rsquo;t remember it anymore.\u003c/li\u003e\n\u003cli\u003eYahoo Messenger chat archives. Yahoo Messenger was officially discontinued on July 2018. They provided an export tool that supposedly would have worked until November 2018, but \u003ca href=\"https://twitter.com/roytang/status/1048949973801267200\"\u003eI had no luck with it\u003c/a\u003e. I read somewhere that they actually lost the old database from before 2011 or such, so there was no way of recovering it at all. I was a bit active on YM back in the day, so that\u0026rsquo;s a big loss.\u003c/li\u003e\n\u003cli\u003eold emails from Edsamail and Softhome (basically before Yahoo Mail and Gmail). It is unlikely these still exist in the cloud somewhere, as the norm back then was to delete the emails from the server to save space. It\u0026rsquo;s possibly I have an old hard drive here somewhere that has MBOX files to be parsed though.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eNow that I have access to a scanner, I also wish I had kept old analog stuff like old school notebooks and such. Not because I was really good at notes, but I filled those things with off topic stuff like sketches, plans for building my own games, etc.\u003c/p\u003e\n\u003cp\u003eThinking about this reminds me of a recent \u003cem\u003eThe Orville\u003c/em\u003e episode where the starship\u0026rsquo;s 25th century computer is able to analyze a smartphone from 2015 and create a simulation of the life of the woman who owned the phone, based on her message history and all that. I doubt if such technology is truly feasible - the data stored in emails and messages and social media is only one aspect of modern life after all - but it\u0026rsquo;s nice to imagine that as long as we archive things successfully, some version of us can still exist in the far future.\u003c/p\u003e\n",
+            "summary": "I recently found out about the blog at geocities.institute where they dig through the Geocities archive torrent extracted by the internet archive and write about interesting things they find. That of course eventually led me to traipse through the internet archive\u0026rsquo;s wayback machine again, especially looking back at some of my older websites.\nI like having the ability to dig through time and find old content I\u0026rsquo;ve written or created. (Which is only one of the reasons why I advocate backing up your social media content regularly).",
+            "date_published": "2019-04-09T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/04/digging-thru-time/index.md"
+            , "tags": ["nostalgia","Tech Life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1115495273026002944/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/04/how-can-i-find-my-interests-in-life/",
+            "url": "https://mirror.roytang.net/2019/04/how-can-i-find-my-interests-in-life/",
+            "path": "/2019/04/how-can-i-find-my-interests-in-life/",
+            "title": "How can I find my interests in life?",
+            "content_html": "\u003cp\u003eAnother repost from my \u003ca href=\"/2018/12/quora/\"\u003eQuora\u003c/a\u003e answers. Back in 2016 when I was on a work hiatus, I answered a lot of \u0026ldquo;how to live\u0026rdquo; questions on Quora, this is one of them.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eHow can I find my interests in life?\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eLook everywhere. Try everything.\u003c/p\u003e\n\u003cp\u003eLife is varied and has a wider scope than you could possibly imagine. Step outside your comfort zone. Visit new places. Sign up for strange classes. Go down roads you don\u0026rsquo;t normally follow. Walk into new stores you\u0026rsquo;ve never visited. Eat at new restaurants with cuisine you\u0026rsquo;ve never tried before.\u003c/p\u003e\n\u003cp\u003eTalk to new people. Ask them about that cool thing they just did. Ask them what they do for a living. Ask them what interesting thing happened to them last week. Ask them how they met their SO. Ask them who was the coolest person they knew. Try to meet that person too.\u003c/p\u003e\n\u003cp\u003eLearn new skills. Develop new hobbies. Watch new tv shows. Read more books.\u003c/p\u003e\n\u003cp\u003eLive, live, live.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-can-I-find-my-interests-in-life/answer/Roy-Tang\"\u003eLink to the original answer on Quora.\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eEdit: Supplemental follow-up: The above advice doesn\u0026rsquo;t mean living a life of constant adventure (we can\u0026rsquo;t all be Scrooge McDuck). Heaven knows I\u0026rsquo;m not super adventurous myself so I can\u0026rsquo;t really give that advice. But I think we should always be consciously pushing our boundaries and stepping outside our comfort zones, to see what lies beyond. We don\u0026rsquo;t have to explore every corner of the world, but we can expand our own small corners of it, as much as we can.\u003c/p\u003e\n",
+            "summary": "Another repost from my Quora answers. Back in 2016 when I was on a work hiatus, I answered a lot of \u0026ldquo;how to live\u0026rdquo; questions on Quora, this is one of them.\n How can I find my interests in life?\n Look everywhere. Try everything.\nLife is varied and has a wider scope than you could possibly imagine. Step outside your comfort zone. Visit new places. Sign up for strange classes.",
+            "date_published": "2019-04-08T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/04/how-can-find-my-interests/index.md"
+            , "tags": ["quora"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1115133250240950272/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/04/7-web-development-practices-challenged/",
             "url": "https://mirror.roytang.net/2019/04/7-web-development-practices-challenged/",
             "path": "/2019/04/7-web-development-practices-challenged/",
@@ -854,57 +905,6 @@
             "source_path": "post/2019/03/meritocracy/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "url": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "path": "/2019/03/ej8tj5e/",
-            "title": "",
-            "content_html": "\u003cp\u003eYou are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well\u003c/p\u003e\n",
-            "summary": "You are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well",
-            "date_published": "2019-03-24T03:52:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/ej8tj5e/index.md"
-            , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/b4og0x/marvel_comics_announces_historic_xmen_milestone/ej8tj5e/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/183662443174/",
-            "url": "https://mirror.roytang.net/2019/03/183662443174/",
-            "path": "/2019/03/183662443174/",
-            "title": "",
-            "content_html": "\u003cp\u003eJustice League (2019) #20 Batman has a new favorite Robin. art by Jorge Jimenez, words by Scott Snyder\u003c/p\u003e\n",
-            "summary": "Justice League (2019) #20 Batman has a new favorite Robin. art by Jorge Jimenez, words by Scott Snyder",
-            "date_published": "2019-03-24T02:00:21+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2019/03/183662443174/index.md"
-            , "tags": ["dc","dc comics","comics","jarro","batman","robin","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/183662443174/justice-league-2019-20-batman-has-a-new"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109636036211159045/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1109449362600411137/",
-            "url": "https://mirror.roytang.net/2019/03/1109449362600411137/",
-            "path": "/2019/03/1109449362600411137/",
-            "title": "",
-            "content_html": "\u003cp\u003eSometimes Twitter doesnt show all my mentions in the notifications, IDK what\u0026rsquo;s up with that\u003c/p\u003e\n",
-            "summary": "Sometimes Twitter doesnt show all my mentions in the notifications, IDK what\u0026rsquo;s up with that",
-            "date_published": "2019-03-23T13:38:35+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1109449362600411137.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109449362600411137/"}]
             
             
             }
