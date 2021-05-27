@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/03/1110207728838836224/",
+            "url": "https://mirror.roytang.net/2019/03/1110207728838836224/",
+            "path": "/2019/03/1110207728838836224/",
+            "title": "",
+            "content_html": "\u003cp\u003eNot sure if it\u0026rsquo;s because of new iOS versions or what, but my 3rd iPad (2015 ipad pro)\u0026rsquo;s battery is performing much worse than my 1st 2 ones (1st gen and 4th gen). Was always happy with the battery life on the previous 2, but this one can barely last 1 hour of sustained use now :/\u003c/p\u003e\n",
+            "summary": "Not sure if it\u0026rsquo;s because of new iOS versions or what, but my 3rd iPad (2015 ipad pro)\u0026rsquo;s battery is performing much worse than my 1st 2 ones (1st gen and 4th gen). Was always happy with the battery life on the previous 2, but this one can barely last 1 hour of sustained use now :/",
+            "date_published": "2019-03-25T15:52:03+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/03/1110207728838836224.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110207728838836224/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/10157339985963912/",
+            "url": "https://mirror.roytang.net/2019/03/10157339985963912/",
+            "path": "/2019/03/10157339985963912/",
+            "title": "",
+            "content_html": "\u003cp\u003eCrowdsourcing with onting kapal ng mukha lol: Any friends in Seattle or LA who can let me crash at their place for a few days in June?\u003c/p\u003e\n",
+            "summary": "Crowdsourcing with onting kapal ng mukha lol: Any friends in Seattle or LA who can let me crash at their place for a few days in June?",
+            "date_published": "2019-03-25T13:51:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/03/10157339985963912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10157339985963912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/1110072615362674689/",
+            "url": "https://mirror.roytang.net/2019/03/1110072615362674689/",
+            "path": "/2019/03/1110072615362674689/",
+            "title": "",
+            "content_html": "\u003cp\u003eWoo, I\u0026rsquo;m still capable of cannibalizing parts from one pc and installing it into another without destroying the recipient pc lol\u003c/p\u003e\n",
+            "summary": "Woo, I\u0026rsquo;m still capable of cannibalizing parts from one pc and installing it into another without destroying the recipient pc lol",
+            "date_published": "2019-03-25T06:55:10+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/03/1110072615362674689.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110072615362674689/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
+            "url": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
+            "path": "/2019/03/a-quick-twitter-app-i-wrote/",
+            "title": "A Quick Twitter App I Wrote",
+            "content_html": "\u003cp\u003eI wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\u003c/p\u003e\n\u003cp\u003eSome time ago this guy I follow on Twitter, \u003ca href=\"https://twitter.com/visakanv/\"\u003evisakanv\u003c/a\u003e wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s \u003ca href=\"https://twitter.com/visakanv/status/1087316852663939072\"\u003ethe thread\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eAnyway, in a fit of \u0026ldquo;I\u0026rsquo;m a bit bored, anything interesting I could do?\u0026rdquo; I figured I could set up a quick webapp to do that. I did a quick PoC in Python/Flask, with \u003ca href=\"http://www.tweepy.org/\"\u003eTweepy\u003c/a\u003e for accessing the Twitter API. I normally prefer Django for my webapps, but since this was just a small, quick app, I figured Flask would be ideal. That worked out fine, except that I had to use my personal access tokens to for all the API calls. This means that if many people were using the app, it was likely to hit Twitter\u0026rsquo;s rate limits!\u003c/p\u003e\n\u003cp\u003eThat was a few months back. A couple of days ago, someone emailed me asking about an error he encountered using the app, and sure enough it was due to the rate limits. I had a couple of free hours last weekend, so I figured I\u0026rsquo;d update the app a bit. I decided to add a Twitter login requirement, that way we can use the individual user\u0026rsquo;s access token instead of using mine globally. This would allow the rate limits to be per user and thus less likely to be hit. Now, I\u0026rsquo;ve tried implementing OAuth login some years ago and it can be terribly complicated, but luckily I found out that there\u0026rsquo;s a nifty Python package called \u003ca href=\"https://github.com/singingwolfboy/flask-dance\"\u003eFlask-Dance\u003c/a\u003e that made it super easy to add Twitter OAuth to a Flask app. This also let me discard the Tweepy dependency, since the Twitter OAuth session let me query the API endpoints directly. I also did a bit of UI cleanup and error handling and deployed the changes quickly.\u003c/p\u003e\n\u003cp\u003eThe app is available online at \u003ca href=\"/apps/twitter\"\u003eroytang.net/apps/twitter\u003c/a\u003e. There\u0026rsquo;s a few other Twitter tools I\u0026rsquo;ve been meaning to build, so I\u0026rsquo;ll probably put them here too when I get around to them.\u003c/p\u003e\n",
+            "summary": "I wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\nSome time ago this guy I follow on Twitter, visakanv wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s the thread.",
+            "date_published": "2019-03-25T05:56:56+00:00",
+            "date_modified": "2021-01-25T07:34:22+08:00",
+            "section": "post",
+            "source_path": "post/2019/03/twitter-app/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110059423018430464/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/meritocracy/",
+            "url": "https://mirror.roytang.net/2019/03/meritocracy/",
+            "path": "/2019/03/meritocracy/",
+            "title": "Meritocracy",
+            "content_html": "\u003cp\u003eThe concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the \u003ca href=\"http://time.com/5549921/college-admissions-bribery-scandal/\"\u003erecent college admissions scandal\u003c/a\u003e in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money. Of course, it was always open knowledge before that one could get their kid admitted to such universities simply by making a huge donation. The recent events apparently crosses some line because the \u0026ldquo;donation\u0026rdquo; was in the form of bribe money to individuals instead of the school itself, but even without them there was no true meritocracy.\u003c/p\u003e\n\u003cp\u003eI went to a specialized high school (and college) that had supposedly merit-based entrance exams as well, such that one could simply not get in without passing the exams. (Athletics-based admissions aren\u0026rsquo;t very popular in this country.) Even in such a system, rich kids still have a significant leg up of course - aside from growing up in an environment that favored them, their parents could also afford to send them to expensive review centers to prep for the exams. I was reminded of this due to a recent thread among my HS batchmates discussing how their kids had to prep for the entrance exams years early because it was much more competitive these days.\u003c/p\u003e\n\u003cp\u003eI used to be a strong believer in meritocracy when I was young (probably due to my educational background), believing it to be an ideal for society to aspire to. The idea is certainly attractive - that we should give the jobs and positions to those who would be able to use them most effectively, for the betterment of society. I later learned that the term orignated in 1958 as a condemnatory word by Michael Young in his work \u0026ldquo;The Rise of the Meritocracy\u0026rdquo;. I realize now that while a pure meritocracy would be nice, it would disadvantage people who are already behind in life due to poverty, sickness or other such challenges. I think that like many things, some sort of balance is better struck, with a \u0026ldquo;meritocracy at large\u0026rdquo; in effect for the most part, but with opportunities promoted for marginalized groups. That is, a meritocracy that favors the poor instead of the rich.\u003c/p\u003e\n\u003cp\u003eAll this meritocract quote reminds me of a quote from the Simpsons\u0026rsquo; villainous Mr Burns who tries to justify cheating in a contest during a company retreat, which gives us a different perspective:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eMr. Burns: Tell me, Simpson, if an opportunity arose for taking a small short-cut, you wouldn\u0026rsquo;t be averse to taking it, would you?\u003c/p\u003e\n\u003cp\u003eHomer: Hmm, not as such.\u003c/p\u003e\n\u003cp\u003eMr. Burns: Neither would I. If you can take advantage of a situation in some way, it\u0026rsquo;s your duty as an American to do it. Why should the race always be to the swift, or the Jumble to the quick-witted? Should they be allowed to win merely because of the gifts God gave them? Well I say, \u0026ldquo;Cheating is the gift man gives himself.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHomer: Mr. Burns, I insist that we cheat!\u003c/p\u003e\n\u003cp\u003eMr. Burns: Excellent!\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "The concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the recent college admissions scandal in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money.",
+            "date_published": "2019-03-24T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/03/meritocracy/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/03/ej8tj5e/",
             "url": "https://mirror.roytang.net/2019/03/ej8tj5e/",
             "path": "/2019/03/ej8tj5e/",
@@ -857,99 +942,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106718876220321798/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106580266850516997/",
-            "url": "https://mirror.roytang.net/2019/03/1106580266850516997/",
-            "path": "/2019/03/1106580266850516997/",
-            "title": "",
-            "content_html": "\u003cp\u003eMaybe someday I’ll win something from these gleam contests\u003c/p\u003e\n",
-            "summary": "Maybe someday I’ll win something from these gleam contests",
-            "date_published": "2019-03-15T15:37:49+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106580266850516997.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106580266850516997/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106511845861408768/",
-            "url": "https://mirror.roytang.net/2019/03/1106511845861408768/",
-            "path": "/2019/03/1106511845861408768/",
-            "title": "",
-            "content_html": "\u003cp\u003eOMFGGGGGGGG IM DEAD AAAAAA #DioknoSaSenado #25ChelDiokno\u003c/p\u003e\n\u003cvideo width='320' height='240' controls\u003e\n    \u003csource src='https://video.twimg.com/ext_tw_video/1106453086363488257/pu/vid/640x480/73YAomBHvU5WMGWs.mp4?tag=8' type=\"video/mp4\"\u003e\n    Your browser does not support the video tag.\n    \u003c/video\u003e\n",
-            "summary": "OMFGGGGGGGG IM DEAD AAAAAA #DioknoSaSenado #25ChelDiokno\nYour browser does not support the video tag.  ",
-            "date_published": "2019-03-15T11:05:56+00:00",
-            "date_modified": "2020-03-15T00:53:15+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106511845861408768/index.md"
-            , "tags": ["DioknoSaSenado","25ChelDiokno"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106511845861408768/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106483116925829125/",
-            "url": "https://mirror.roytang.net/2019/03/1106483116925829125/",
-            "path": "/2019/03/1106483116925829125/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m old enough to remember that the power crisis of the early 90s led us to a regime of high electricity rates. Hopefully whatever solution we have for the current and impending water crisis doesnt have the same outcome\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m old enough to remember that the power crisis of the early 90s led us to a regime of high electricity rates. Hopefully whatever solution we have for the current and impending water crisis doesnt have the same outcome",
-            "date_published": "2019-03-15T09:11:47+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106483116925829125.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106483116925829125/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/rip-webfaction/",
-            "url": "https://mirror.roytang.net/2019/03/rip-webfaction/",
-            "path": "/2019/03/rip-webfaction/",
-            "title": "RIP Webfaction?",
-            "content_html": "\u003cp\u003eA few months back, my current web host \u003ca href=\"https://www.webfaction.com/\"\u003eWebFaction\u003c/a\u003e announced they had been purchased by \u003ca href=\"https://godaddy.com\"\u003eGoDaddy\u003c/a\u003e, which was worrying. Back then they hadn\u0026rsquo;t announced any details other than there would be some account migrations and single sign on, so it wasn\u0026rsquo;t a big deal yet.\u003c/p\u003e\n\u003cp\u003eI initially joined WebFaction \u003ca href=\"/roytang-net-site-update/\"\u003eback in 2008\u003c/a\u003e because they were a Python-friendly and developer-friendly host that had some reasonable budget options, allowing me some space to host this blog and any side projects I wanted to deploy. At that time I was learning Django, so I needed the Python support that normal hosts don\u0026rsquo;t provide. I didn\u0026rsquo;t know much about cloud servers back then and the WebFaction account let me try out so much stuff despite it being shared hosting. The news above is worrying because GoDaddy does not have a good reputation and is not especially known for being developer-friendly. They are a mass-market, \u0026ldquo;lowest common denominator\u0026rdquo; kind of host, so I would prefer not to have them as my web host.\u003c/p\u003e\n\u003cp\u003eThis week, they said in an announcement that they were moving forward with a technical evaluation of migrating everyone to GoDaddy, which kind of spells doom for the WebFaction services I\u0026rsquo;m using. Even though their email promised that \u0026ldquo;you won\u0026rsquo;t lose any of your current features or services\u0026rdquo;, but according to a \u003ca href=\"https://community.webfaction.com/questions/22148/webfaction-migration-6-months-later-and-still-no-answers\"\u003erecent thread\u003c/a\u003e on their support forums:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cpre\u003e\u003ccode\u003eOne again, zero information about exactly when WebFaction services will be completely shut down.\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe exact date hasn\u0026rsquo;t been defined yet but it is estimated to be on August 2019.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDoes this mean that WebFaction's current features and services will remain the same AFTER the migration?\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNo, WebFaction\u0026rsquo;s control panel, servers and other features and services will shut down after the migration is done. The plan is to stay up and running until then.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhile they say the technical evaluation is still ongoing, in all likelihood that\u0026rsquo;s it for WebFaction. For me, at least. And I\u0026rsquo;m not interested in migrating to GoDaddy. I still have a few months before I need to transition, but I guess I need to start prepping by:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003elooking for a new host. Any recommendations? I have a bit more experience this time with managing servers, so I\u0026rsquo;m open to a VPS instead of shared hosting, might be fun to try out for a while. Currently looking at just getting a cheap ($5/mo) droplet over at Digital Ocean. Alternatively, I could just move this blog over to netlify and any other apps I have (like \u003ca href=\"https://triviastorm.net/\"\u003eTriviaStorm\u003c/a\u003e) over to something like Heroku, but that seems like it would cost me more money.\u003c/li\u003e\n\u003cli\u003esee if I can refund my current balance with them, since I prepaid a bit last year. I already asked on the forums and they say we\u0026rsquo;ll have more info on refund options later after their technical evaluation, maybe around Mayish.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIn any case, I had a good run with WebFaction, a bit over 10 years now. But time moves on and things change and small businesses get eaten up by large businesses, such is the way of capitalism. They were very developer-friendly and had pretty good customer support in my opinion, so they will be missed. Hopefully I\u0026rsquo;m able to find a good alternative.\u003c/p\u003e\n",
-            "summary": "A few months back, my current web host WebFaction announced they had been purchased by GoDaddy, which was worrying. Back then they hadn\u0026rsquo;t announced any details other than there would be some account migrations and single sign on, so it wasn\u0026rsquo;t a big deal yet.\nI initially joined WebFaction back in 2008 because they were a Python-friendly and developer-friendly host that had some reasonable budget options, allowing me some space to host this blog and any side projects I wanted to deploy.",
-            "date_published": "2019-03-15T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/rip-webfaction/index.md"
-            , "tags": ["webfaction","Tech Life","Meta"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106435603107848192/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106185404892344320/",
-            "url": "https://mirror.roytang.net/2019/03/1106185404892344320/",
-            "path": "/2019/03/1106185404892344320/",
-            "title": "",
-            "content_html": "\u003cp\u003eMust resist watching new Avengers trailer\u003c/p\u003e\n",
-            "summary": "Must resist watching new Avengers trailer",
-            "date_published": "2019-03-14T13:28:47+00:00",
-            "date_modified": "2021-05-13T00:21:36+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106185404892344320/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106185404892344320/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/alvinjtang",
-                    "source_file": "comment-20190314-220513-0aad5c7e-d494-4c6e-ae98-31cabb8d7320.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20190314-223447-bb08af2f-2021-4769-90a0-d28d4c185620.json"
-                }
-            ]
             }
         
     ]

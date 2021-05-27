@@ -1,4 +1,6 @@
 
+- [Book Reviews: Murder on the Orient Express and Death on the Nile by Agatha Chrstie](/2021/05/book-reviews-murder-on-the-orient-express-and-death-on-the-nile-by-agatha-chrstie/)
+
 - [What Matters Now by Seth Godin](/2021/05/c72ceb2e3748ccd8611baab1cbfdfe74/)
 
 - [Book Review: Snow Crash by Neal Stephenson](/2021/05/book-review-snow-crash-by-neal-stephenson/)
