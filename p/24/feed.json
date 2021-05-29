@@ -11,6 +11,34 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2020/04/pure-html-toggles/",
+            "url": "https://mirror.roytang.net/2020/04/pure-html-toggles/",
+            "path": "/2020/04/pure-html-toggles/",
+            "title": "Pure HTML Toggles",
+            "content_html": "\u003cp\u003eJust last month, I wrote a method of implementing \u003ca href=\"/2020/03/pure-css-spoilers/\"\u003eelement toggles using a pure CSS approach\u003c/a\u003e. While that post was educational for me, it turns out there was an even simpler way of doing things. I found out about it when I read this \u003ca href=\"https://www.jvt.me/posts/2019/05/19/html-toggle/\"\u003epost by Jamie Tanna\u003c/a\u003e. Apparently the \u003ccode\u003edetails\u003c/code\u003e and \u003ccode\u003esummary\u003c/code\u003e tags already support HTML toggles, so we can do this with neither CSS or JS!\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve updated the spoiler tags on this site to use this new method. I also used this method for the Table of Contents on certain posts (currently only the \u003ca href=\"/2020/03/covid19/\"\u003eCovid19 diary\u003c/a\u003e). Sample here:\u003c/p\u003e\n\u003cdetails class=\"spoiler\"\u003e\n    \u003csummary\u003e(Spoilers)\u003c/summary\u003e\n    This is some text!\n\u003c/details\u003e\n\u003cp /\u003e\n\u003cp\u003eThe post I linked above covers most of the technical details. My only issue with this is that\u0026rsquo;s a relatively new feature. Even though browser support is near universal (minus the much-maligned and quite ancient Internet Explorer), I\u0026rsquo;m not sure if there will be issues or how it renders when viewed in an older browsers or in other contexts such as in a feed reader or a screen reader. I don\u0026rsquo;t want to accidentally show spoilers! I suppose that\u0026rsquo;s a minor concern at this point, and maybe I should just be confident that people who make those tools have taken the visibility toggle into account.\u003c/p\u003e\n\u003cp\u003e(I\u0026rsquo;ve also edited the CSS post to point to this one so anyone who sees it has better information!)\u003c/p\u003e\n",
+            "summary": "Just last month, I wrote a method of implementing element toggles using a pure CSS approach. While that post was educational for me, it turns out there was an even simpler way of doing things. I found out about it when I read this post by Jamie Tanna. Apparently the details and summary tags already support HTML toggles, so we can do this with neither CSS or JS!\nI\u0026rsquo;ve updated the spoiler tags on this site to use this new method.",
+            "date_published": "2020-04-17T00:00:00+00:00",
+            "date_modified": "2021-04-07T22:51:10+08:00",
+            "section": "post",
+            "source_path": "post/2020/04/pure-html-toggles/index.md"
+            , "tags": ["software development","html"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/104012199125124756"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1251015056147410945/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.jvt.me",
+                    "source_file": "like-20200417-095857-25b5dd9b-115e-43f3-b4ec-7f0573ed679d.json"
+                }, { 
+                    "url": "https://floss.social/@alcinnz",
+                    "source_file": "repost-20200417-060252-b43da0dc-3844-4cc8-8a03-fa1d5449a05c.json"
+                }, { 
+                    "url": "https://mastodon.social/@mvz",
+                    "source_file": "repost-20200417-064217-433e7cfa-d2cb-4279-a180-93181319c109.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2020/04/1250808121645314052/",
             "url": "https://mirror.roytang.net/2020/04/1250808121645314052/",
             "path": "/2020/04/1250808121645314052/",
@@ -1052,23 +1080,6 @@
             "source_path": "notes/2020/03/1243454963709173761/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243454963709173761/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2020/03/1243390590680592384/",
-            "url": "https://mirror.roytang.net/2020/03/1243390590680592384/",
-            "path": "/2020/03/1243390590680592384/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/bfintal/\"\u003e@bfintal\u003c/a\u003e \u003ca href=\"https://twitter.com/jutsine_/\"\u003e@jutsine_\u003c/a\u003e engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!\u003c/p\u003e\n",
-            "summary": "@bfintal @jutsine_ engineer jami! not sure if you remember me from azeus, glad to see you\u0026rsquo;re doing well and being good for society!",
-            "date_published": "2020-03-27T04:13:12+00:00",
-            "date_modified": "2020-03-27T04:30:04+00:00",
-            "section": "notes",
-            "source_path": "notes/2020/03/1243390590680592384/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1243390590680592384/"}]
             
             
             }

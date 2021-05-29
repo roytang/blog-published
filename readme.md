@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [28 May 2021 8:48am](https://mirror.roytang.net/2021/05/1398199368465850375/): Does anyone actually have a good experience transacting on fb marketplace? My mom was complaining about an item listed as P50 but when she PMed the seller it was like 1000+. I told her to just avoid fb marketplace, too many scammers
 - [26 May 2021 3:00pm](https://mirror.roytang.net/2021/05/1397568294383611906/): I should look for a map which highlights Taiwan and make a similar entry (as below) to the bot. #TaiwanIsACountry
 Quoted triviastorm&#39;s tweet:   #31163 Name the country in Europe: #trivia  
 - [25 May 2021 1:02pm](https://mirror.roytang.net/2021/05/1397176143820722180/): This kind of &ldquo;data massaging&rdquo; (ranking not normalized by pop) has harmful effects beyond simply propaganda. What if those DDS who see this become complacent because they think we have vaccinated more than even Singapore?
@@ -40,8 +41,6 @@ https://www.youtube.com/watch?v=m1fZ7Ap6ebs&amp;feature=youtu.be
 Quoted johnayliff&#39;s tweet:   I don&rsquo;t have time to learn how to make mods for Stellaris, but if I did&hellip; Galactovision Song Contest  
 - [23 May 2021 5:27am](https://mirror.roytang.net/2021/05/1396336876928126980/): the first thing our new hire did was fix a bug that&rsquo;s been bugging him forever as a user prior to joining.
 he then breathed a sigh of relief and submitted his two weeks&rsquo; notice. wtf??
-- [22 May 2021 11:34am](https://mirror.roytang.net/2021/05/1939416637ff87849789377e6867dfd6/): Just based on my public drafts, my Strixhaven limited win/loss record is at 54%
-I actually started checking this because this reddit thread claimed that if your win% is at least 56% then the upcoming draft challenge should be profitable, so I just miss that threshold lol. Area for improvement!
 
 [View all notes](https://mirror.roytang.net/notes)
 
