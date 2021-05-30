@@ -1,4 +1,12 @@
 
+- [Native English speakers are the world’s worst communicators](/2021/05/native-english-speakers-are-the-worlds-worst-communicators/)
+
+- [99 Additional Bits of Unsolicited Advice](/2021/05/99-additional-bits-of-unsolicited-advice/)
+
+- [Question time: my life as a quiz obsessive](/2021/05/question-time-my-life-as-a-quiz-obsessive/)
+
+- [A Rant About &amp;quot;Technology&amp;quot;](/2021/05/a-rant-about-quottechnologyquot/)
+
 - [TweetDeck](/2021/05/tweetdeck/)
 
 - [Apparently, Google is back in love with RSS. I wonder why? – Alan Ralph](/2021/05/apparently-google-is-back-in-love-with-rss-i-wonder-why-alan-ralph/)
