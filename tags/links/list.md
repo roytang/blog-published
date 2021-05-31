@@ -43,8 +43,6 @@
 
 - [Del.icio.us bookmarks for 2006-06-12](/2006/06/del-icio-us-bookmarks-for-2006-06-12/)
 
-- [Del.icio.us bookmarks for 2006-05-25](/2006/05/del-icio-us-bookmarks-for-2006-05-25/)
-
 - [Del.icio.us bookmarks for 2006-05-17](/2006/05/del-icio-us-bookmarks-for-2006-05-17/)
 
 - [Del.icio.us bookmarks for 2006-02-24](/2006/02/del-icio-us-bookmarks-for-2006-02-24/)

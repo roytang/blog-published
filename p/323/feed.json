@@ -11,40 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2008/12/1049016801/",
-            "url": "https://mirror.roytang.net/2008/12/1049016801/",
-            "path": "/2008/12/1049016801/",
-            "title": "",
-            "content_html": "\u003cp\u003eConio girl on living with Aetas: \u003ca href=\"http://tinyurl.com/5m5s6d\"\u003ehttp://tinyurl.com/5m5s6d\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Conio girl on living with Aetas: http://tinyurl.com/5m5s6d",
-            "date_published": "2008-12-10T12:21:19+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/12/1049016801.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1049016801/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/12/1048346593/",
-            "url": "https://mirror.roytang.net/2008/12/1048346593/",
-            "path": "/2008/12/1048346593/",
-            "title": "",
-            "content_html": "\u003cp\u003emoved to dining room table. using a laptop all day in bed seems bad for posture.\u003c/p\u003e\n",
-            "summary": "moved to dining room table. using a laptop all day in bed seems bad for posture.",
-            "date_published": "2008-12-10T02:14:27+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2008/12/1048346593.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1048346593/"}]
-            
-            
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2008/12/349997/",
             "url": "https://mirror.roytang.net/2008/12/349997/",
             "path": "/2008/12/349997/",
@@ -1042,6 +1008,56 @@
             , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/10/i-left-it-for-while.html"}]
             
             
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/10/228386/",
+            "url": "https://mirror.roytang.net/2008/10/228386/",
+            "path": "/2008/10/228386/",
+            "title": "How to get command line arguments for a running process",
+            "content_html": "\u003cp\u003eIn my program, I have been receiving an error when I use a\ncommand-line compile command for mxmlc. The error is related to an\nembedded font name not being correctly identified by flex in the\nsystem fonts list.\u003c/p\u003e\n\u003cp\u003eHowever, on a whim, I decided to copy the code to Flex Builder and\ncompile it there. To my surprise, it worked, and it found the proper\nfont using the same system name I had given (PMingLiU).\u003c/p\u003e\n\u003cp\u003eI suspected my problem may be a locale one, and that my system cannot\ncorrectly identify the font name because of locale considerations.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ve tried setting the locale of the compile code to en_US, to no\navail. So I would like to ask if anyone here knows how exactly Flex Builder invokes the MXML compiler and what differences there are compared to running mxmlc directly? We know it\u0026rsquo;s not using the mxmlc.exe directly, since we tried replacing mxmlc with our own executable to capture the command line parameters.\u003c/p\u003e\n\u003cp\u003eIf it matters, the OS used is Windows XP.\u003c/p\u003e\n",
+            "summary": "In my program, I have been receiving an error when I use a command-line compile command for mxmlc. The error is related to an embedded font name not being correctly identified by flex in the system fonts list.\nHowever, on a whim, I decided to copy the code to Flex Builder and compile it there. To my surprise, it worked, and it found the proper font using the same system name I had given (PMingLiU).",
+            "date_published": "2008-10-23T02:57:06+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/10/228386/index.md"
+            , "tags": ["apache-flex","flexbuilder","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/228386/how-to-get-command-line-arguments-for-a-running-process",
+                    "source_file": "comment-20081023T060511-228694.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2008/10/228382/",
+            "url": "https://mirror.roytang.net/2008/10/228382/",
+            "path": "/2008/10/228382/",
+            "title": "C# HTML Font Tag Parsing",
+            "content_html": "\u003cp\u003eI need to parse a large amount of text that uses HTML font tags for formatting,\u003c/p\u003e\n\u003cp\u003eFor example:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;font face=\u0026quot;fontname\u0026quot; ...\u0026gt;Some text\u0026lt;/font\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSpecifically, I need to determine which characters would be rendered using each font used in the text. I need to be able to handle stuff like font tags inside another font tag.\u003c/p\u003e\n\u003cp\u003eI need to use C# for this. Is there some sort of C# parser class to make this easier? Or would I have to write it myself?\u003c/p\u003e\n\u003cp\u003eThanks!\u003c/p\u003e\n",
+            "summary": "I need to parse a large amount of text that uses HTML font tags for formatting,\nFor example:\n\u0026lt;font face=\u0026quot;fontname\u0026quot; ...\u0026gt;Some text\u0026lt;/font\u0026gt;  Specifically, I need to determine which characters would be rendered using each font used in the text. I need to be able to handle stuff like font tags inside another font tag.\nI need to use C# for this. Is there some sort of C# parser class to make this easier?",
+            "date_published": "2008-10-23T02:54:03+00:00",
+            "date_modified": "2020-06-01T13:51:57+08:00",
+            "section": "notes",
+            "source_path": "notes/2008/10/228382/index.md"
+            , "tags": ["csharp","parsing","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/228382/c-html-font-tag-parsing"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/228382/c-html-font-tag-parsing",
+                    "source_file": "comment-20081023T025818-228391.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/228382/c-html-font-tag-parsing",
+                    "source_file": "comment-20081023T030528-228402.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/228382/c-html-font-tag-parsing",
+                    "source_file": "comment-20081023T082058-228933.json"
+                }
+            ]
             }
         
     ]

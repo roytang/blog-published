@@ -9,6 +9,8 @@
 
 - [Everything Old Isn’t New Again (Yet) – Mimix](/2018/11/everything-old-isnt-new-again-yet-mimix/)
 
+- [Self help — karigee.com](/2018/05/karigee-com/)
+
 - [Because of Instagram, this woman ended up with Php 500K debt | PEP.ph](/2018/03/because-of-instagram-this-woman-ended-up-with-php-500k-debt-pep-ph/)
 
 - [PH ranks 2nd most ‘unfriendly country’ to startups » Manila Bulletin Business](/2018/03/ph-ranks-2nd-most-unfriendly-country-to-startups-manila-bulletin-business/)

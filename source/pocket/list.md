@@ -527,7 +527,7 @@
 
 - [11 principles that help me write better code | Larder](/2018/06/11-principles-that-help-me-write-better-code-larder/)
 
-- [— karigee.com](/2018/05/karigee-com/)
+- [Self help — karigee.com](/2018/05/karigee-com/)
 
 - [vampiricyoshi:](/2018/05/vampiricyoshi/)
 

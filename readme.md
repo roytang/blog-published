@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-05-30](https://mirror.roytang.net/2021/05/weeknotes-2021-05-30/)
 - [Book Reviews: Murder on the Orient Express and Death on the Nile by Agatha Chrstie](https://mirror.roytang.net/2021/05/book-reviews-murder-on-the-orient-express-and-death-on-the-nile-by-agatha-chrstie/)
 - [Anticipation and Anxiety](https://mirror.roytang.net/2021/05/anticipation-and-anxiety/)
 - [Thoughts on Vue.js](https://mirror.roytang.net/2021/05/thoughts-on-vue.js/)
 - [Weeknotes 2021-05-23](https://mirror.roytang.net/2021/05/weeknotes-2021-05-23/)
-- [Weeknotes 2021-05-16](https://mirror.roytang.net/2021/05/weeknotes-2021-05-16/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
