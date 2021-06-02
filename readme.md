@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [1 Jun 2021 11:47am](https://mirror.roytang.net/2021/06/1399693989582835713/): Cops should just be banned from drinking while carrying weapons. Or from drinking altogether maybe. Either way is fine. (Enforcement would be tough)
+Quoted manilabulletin&#39;s tweet:   LOOK: A police officer lies dead after a fellow police shot him when the latter “lost in an arm wrestling” during a drinking session in Quezon City, police bared Tuesday, citing narrative of a witness. (📸: QCPD-PIO) | via @mbseppedrajas  
 - [28 May 2021 8:48am](https://mirror.roytang.net/2021/05/1398199368465850375/): Does anyone actually have a good experience transacting on fb marketplace? My mom was complaining about an item listed as P50 but when she PMed the seller it was like 1000+. I told her to just avoid fb marketplace, too many scammers
 - [26 May 2021 3:00pm](https://mirror.roytang.net/2021/05/1397568294383611906/): I should look for a map which highlights Taiwan and make a similar entry (as below) to the bot. #TaiwanIsACountry
 Quoted triviastorm&#39;s tweet:   #31163 Name the country in Europe: #trivia  
@@ -39,8 +41,6 @@ FULL STORY: https://www.pna.gov.ph/articles/1141205
 - [23 May 2021 6:45am](https://mirror.roytang.net/2021/05/1396356641285566466/): This reminded me of the Rick and Morty episode “Get Schwifty” https://rickandmorty.fandom.com/wiki/Get_Schwifty
 https://www.youtube.com/watch?v=m1fZ7Ap6ebs&amp;feature=youtu.be
 Quoted johnayliff&#39;s tweet:   I don&rsquo;t have time to learn how to make mods for Stellaris, but if I did&hellip; Galactovision Song Contest  
-- [23 May 2021 5:27am](https://mirror.roytang.net/2021/05/1396336876928126980/): the first thing our new hire did was fix a bug that&rsquo;s been bugging him forever as a user prior to joining.
-he then breathed a sigh of relief and submitted his two weeks&rsquo; notice. wtf??
 
 [View all notes](https://mirror.roytang.net/notes)
 
