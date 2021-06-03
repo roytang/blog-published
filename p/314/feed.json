@@ -11,6 +11,127 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/3138020514/",
+            "url": "https://mirror.roytang.net/2009/08/3138020514/",
+            "path": "/2009/08/3138020514/",
+            "title": "",
+            "content_html": "\u003cp\u003eparang may laban ni Pacquiao\u003c/p\u003e\n",
+            "summary": "parang may laban ni Pacquiao",
+            "date_published": "2009-08-05T03:11:10+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3138020514.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3138020514/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/132172087385"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3128001328/",
+            "url": "https://mirror.roytang.net/2009/08/3128001328/",
+            "path": "/2009/08/3128001328/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/bry_bibat/\"\u003e@bry_bibat\u003c/a\u003e I forgot I had firefox. I only tried with IE and Chrome\u003c/p\u003e\n",
+            "summary": "@bry_bibat I forgot I had firefox. I only tried with IE and Chrome",
+            "date_published": "2009-08-04T17:27:59+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3128001328.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3128001328/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3127861002/",
+            "url": "https://mirror.roytang.net/2009/08/3127861002/",
+            "path": "/2009/08/3127861002/",
+            "title": "",
+            "content_html": "\u003cp\u003etrying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating\u003c/p\u003e\n",
+            "summary": "trying to download Windows 7 RC, but Microsoft\u0026rsquo;s downloader ActiveX isn\u0026rsquo;t cooperating",
+            "date_published": "2009-08-04T17:19:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3127861002.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3127861002/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/114821597870"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/1225798/",
+            "url": "https://mirror.roytang.net/2009/08/1225798/",
+            "path": "/2009/08/1225798/",
+            "title": "Javascript - programmatically invoking events",
+            "content_html": "\u003cp\u003eSay I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\u003c/p\u003e\n\u003cp\u003eThe events handlers are added/removed using an object like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar Event = {\n    add: function(obj,type,fn) {\n        if (obj.attachEvent) {\n            obj.attachEvent('on'+type,fn);\n        } else {\n            obj.addEventListener(type,fn,false);\n        }\n    },\n    remove: function(obj,type,fn) {\n        if (obj.detachEvent) {\n            obj.detachEvent('on'+type,fn);\n        } else {\n            obj.removeEventListener(type,fn,false);\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOr do I need to store copies of each handler and just add an Event.invoke(\u0026hellip;) function?\u003c/p\u003e\n\u003cp\u003eEdit: Also, jQuery is not an option :D\u003c/p\u003e\n",
+            "summary": "Say I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\nThe events handlers are added/removed using an object like this:\nvar Event = { add: function(obj,type,fn) { if (obj.attachEvent) { obj.attachEvent('on'+type,fn); } else { obj.addEventListener(type,fn,false); } }, remove: function(obj,type,fn) { if (obj.detachEvent) { obj.detachEvent('on'+type,fn); } else { obj.removeEventListener(type,fn,false); } } }  Or do I need to store copies of each handler and just add an Event.",
+            "date_published": "2009-08-04T05:27:59+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/1225798/index.md"
+            , "tags": ["javascript","javascript-events","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T062116-1225925.json"
+                }, { 
+                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
+                    "source_file": "comment-20090804T101430-1226696.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3114739612/",
+            "url": "https://mirror.roytang.net/2009/08/3114739612/",
+            "path": "/2009/08/3114739612/",
+            "title": "",
+            "content_html": "\u003cp\u003ewhat\u0026rsquo;s up with the random 5-minute rainshowers? Oh crap, I\u0026rsquo;m gonna be late!\u003c/p\u003e\n",
+            "summary": "what\u0026rsquo;s up with the random 5-minute rainshowers? Oh crap, I\u0026rsquo;m gonna be late!",
+            "date_published": "2009-08-04T00:36:50+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3114739612.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3114739612/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/112021242874"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3106498671/",
+            "url": "https://mirror.roytang.net/2009/08/3106498671/",
+            "path": "/2009/08/3106498671/",
+            "title": "",
+            "content_html": "\u003cp\u003estill sucks at Blazblue\u003c/p\u003e\n",
+            "summary": "still sucks at Blazblue",
+            "date_published": "2009-08-03T16:12:22+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3106498671/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3106498671/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/259124095240"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20090804-000000-b0db64d5-8eb4-44d8-89e0-cb0b0063b1ce.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20090804-000001-f9c91de3-2a82-4fa7-a9dc-ff7eecb6768c.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20090805-000002-4317bbc5-5670-42ad-8646-dfc67edfcb37.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3106323110/",
             "url": "https://mirror.roytang.net/2009/08/3106323110/",
             "path": "/2009/08/3106323110/",
@@ -957,151 +1078,6 @@
                 }, { 
                     "url": "https://twitter.com/roytang",
                     "source_file": "comment-20090711-134117-f74de0d2-edd4-4586-b171-6f135cb0d5cf.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2582283906/",
-            "url": "https://mirror.roytang.net/2009/07/2582283906/",
-            "path": "/2009/07/2582283906/",
-            "title": "",
-            "content_html": "\u003cp\u003efinished Elder Scrolls IV: Oblivion\u003c/p\u003e\n",
-            "summary": "finished Elder Scrolls IV: Oblivion",
-            "date_published": "2009-07-11T10:22:43+00:00",
-            "date_modified": "2021-04-14T04:26:38+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2582283906/index.md"
-            , "tags": ["gaming","Games"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2582283906/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/120401326517"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/eric.debelen.7",
-                    "source_file": "comment-20090711-000000-86484163-f120-486a-996f-929effdd01f9.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20090711-000001-8e765264-9b90-4f2a-8bc5-81fb2b64ca95.json"
-                }, { 
-                    "url": "https://www.facebook.com/mdvsamson",
-                    "source_file": "comment-20090713-000002-50e8c607-6230-41eb-b6ec-a017124398df.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2577950715/",
-            "url": "https://mirror.roytang.net/2009/07/2577950715/",
-            "path": "/2009/07/2577950715/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/densdensdens/\"\u003e@densdensdens\u003c/a\u003e nde ka papasok?\u003c/p\u003e\n",
-            "summary": "@densdensdens nde ka papasok?",
-            "date_published": "2009-07-11T02:29:27+00:00",
-            "date_modified": "2021-04-14T00:44:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2577950715/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2577950715/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/densdensdens",
-                    "source_file": "comment-20090711-023341-09a506c9-786f-4cab-8745-f16bca5dc181.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20090711-023407-3a540098-69e0-41de-8487-1db7508993ae.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2577062665/",
-            "url": "https://mirror.roytang.net/2009/07/2577062665/",
-            "path": "/2009/07/2577062665/",
-            "title": "",
-            "content_html": "\u003cp\u003efinished Dragon Quest V!\u003c/p\u003e\n",
-            "summary": "finished Dragon Quest V!",
-            "date_published": "2009-07-11T01:18:47+00:00",
-            "date_modified": "2021-04-14T04:26:38+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2577062665/index.md"
-            , "tags": ["gaming","games"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2577062665/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/101183979130"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/lizbethjanegarcia",
-                    "source_file": "comment-20090711-000000-20f486e2-d26d-41a6-81f0-2b0b131bca99.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2568676870/",
-            "url": "https://mirror.roytang.net/2009/07/2568676870/",
-            "path": "/2009/07/2568676870/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e still have coughs/cold, don\u0026rsquo;t want to spread it to every magic player in ortigas. right now, good chance of me not playing tmr\u003c/p\u003e\n",
-            "summary": "@aleksfelipe still have coughs/cold, don\u0026rsquo;t want to spread it to every magic player in ortigas. right now, good chance of me not playing tmr",
-            "date_published": "2009-07-10T14:28:10+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2568676870.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2568676870/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2566887048/",
-            "url": "https://mirror.roytang.net/2009/07/2566887048/",
-            "path": "/2009/07/2566887048/",
-            "title": "",
-            "content_html": "\u003cp\u003enot sure if I should go to work tomorrow\u003c/p\u003e\n",
-            "summary": "not sure if I should go to work tomorrow",
-            "date_published": "2009-07-10T11:50:34+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2566887048/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2566887048/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/101583652317"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/rumz0rz",
-                    "source_file": "comment-20090710-000000-98a698a5-c74b-4661-bfeb-bb7585346c7e.json"
-                }, { 
-                    "url": "https://www.facebook.com/crystal.espinosa.9",
-                    "source_file": "comment-20090710-000001-fc63383a-039e-4398-bad5-a191bda4b25a.json"
-                }, { 
-                    "url": "https://www.facebook.com/stephen.roy.tang",
-                    "source_file": "comment-20090710-000002-f6e247a3-c58b-4203-9d09-14063acfd659.json"
-                }, { 
-                    "url": "https://www.facebook.com/crystal.espinosa.9",
-                    "source_file": "comment-20090710-000003-16212eaf-22bd-44c1-bef1-a1e00a5441c1.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/rip-wrath-of-god/",
-            "url": "https://mirror.roytang.net/2009/07/rip-wrath-of-god/",
-            "path": "/2009/07/rip-wrath-of-god/",
-            "title": "RIP Wrath of God",
-            "content_html": "",
-            "summary": "",
-            "date_published": "2009-07-10T09:02:39+00:00",
-            "date_modified": "2021-04-13T23:46:35+08:00",
-            "section": "post",
-            "source_path": "post/2009/07/rip-wrath-of-god/index.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"flickr","url":"https://www.flickr.com/photos/zroytang/3706034289/"}]
-            
-            , "comments": [
-                { 
-                    "url": null,
-                    "source_file": "photo_3706034289.json"
                 }
             ]
             }
