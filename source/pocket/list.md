@@ -1,4 +1,8 @@
 
+- [How to make an ineffective 404 page](/2021/06/how-to-make-an-ineffective-404-page/)
+
+- [The internet is flat.](/2021/06/the-internet-is-flat/)
+
 - [Native English speakers are the world’s worst communicators](/2021/05/native-english-speakers-are-the-worlds-worst-communicators/)
 
 - [99 Additional Bits of Unsolicited Advice](/2021/05/99-additional-bits-of-unsolicited-advice/)
