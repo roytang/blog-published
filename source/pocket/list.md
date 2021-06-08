@@ -1,4 +1,6 @@
 
+- [40 for 40](/2021/06/40-for-40/)
+
 - [25 Years of CSS](/2021/06/25-years-of-css/)
 
 - [How We Brought the Online Collections into the Modern Age using Web Technology of the Past](/2021/06/how-we-brought-the-online-collections-into-the-modern-age-using-web-technology-of-the-past/)

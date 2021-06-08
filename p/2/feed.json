@@ -11,6 +11,96 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2021/05/anticipation-and-anxiety/",
+            "url": "https://mirror.roytang.net/2021/05/anticipation-and-anxiety/",
+            "path": "/2021/05/anticipation-and-anxiety/",
+            "title": "Anticipation and Anxiety",
+            "content_html": "\u003cp\u003ePeter Rukavina \u003ca href=\"https://ruk.ca/content/anticipation-truth-real-thief-joy\"\u003equotes the \u003cem\u003eNew York Tribune\u003c/em\u003e about how Anticipation is the real thief of joy\u003c/a\u003e (as opposed to \u003ca href=\"/2018/11/comparison-is-the-thief-of-joy/\"\u003ecomparison\u003c/a\u003e):\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAnticipation is, in truth, the real thief of joy. The best times are always the unexpected ones. It is not the parties that you plan for weeks and look forward to that come off. There must be surprise and novelty and freshness to yield the last word in happiness and thrill. That we had on Thursday afternoon. The real thrill has passed, never to return.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhile the piece is a musing on the pleasures of serendipity and random wandering, I\u0026rsquo;m reminded instead of anticipation\u0026rsquo;s opposite, something I feel often as well: \u003ca href=\"/2018/10/anxiety/\"\u003eanxiety\u003c/a\u003e. Whereas anticipation is looking to the future awaiting something you are excited to happen, anxiety is looking to the future awaiting something you dread. And it robs you of joy as well, albeit in a different manner, consuming you with worry. The phrase \u0026ldquo;real thief of joy\u0026rdquo; implies that there can only be one such thief, but truthfully, there can be many, and among them, comparison, anticipation, and anxiety are probably the worst offenders.\u003c/p\u003e\n\u003cp\u003eIt is of course human nature, and often prudent to look to the future, but it is best not to let either anticipation or anxiety overwhelm us. One should always remember to live in the present and not let the future overshadow what we have right in front of us.\u003c/p\u003e\n",
+            "summary": "Peter Rukavina quotes the New York Tribune about how Anticipation is the real thief of joy (as opposed to comparison):\n Anticipation is, in truth, the real thief of joy. The best times are always the unexpected ones. It is not the parties that you plan for weeks and look forward to that come off. There must be surprise and novelty and freshness to yield the last word in happiness and thrill.",
+            "date_published": "2021-05-25T04:09:39+00:00",
+            "date_modified": "2021-05-25T04:20:34+00:00",
+            "section": "post",
+            "source_path": "post/2021/05/anticipation/index.md"
+            
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106293911509814453"},{"type":"twitter","url":"https://twitter.com/roytang/status/1397044651383607296/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/05/thoughts-on-vue.js/",
+            "url": "https://mirror.roytang.net/2021/05/thoughts-on-vue.js/",
+            "path": "/2021/05/thoughts-on-vue.js/",
+            "title": "Thoughts on Vue.js",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is \u003ca href=\"https://vuejs.org/\"\u003eVue.js\u003c/a\u003e. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for \u003ca href=\"/2020/09/mobile-app-dev/\"\u003emobile app development\u003c/a\u003e, which I generally don\u0026rsquo;t like; and (b) I don\u0026rsquo;t like Facebook, which backs React. I have no opinion on Angular.\u003c/p\u003e\n\u003cp\u003eDespite being my frontend framework of choice, I don\u0026rsquo;t actually have that much experience with Vue beyond a few small projects each with a minimal number of screens / pages. That being said, I do have some thoughts, coming mostly from the POV of a developer \u003ca href=\"/2020/02/old-web/\"\u003emore used to the old-school ways of Javascript and web development in general\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe entry point of course, is the \u003ca href=\"https://vuejs.org/v2/guide/\"\u003egetting started guide on the Vue website itself\u003c/a\u003e, which walks you through most of the framework features. I have no concern about most of these; the features are explained well and I find most of the documentation quite good.\u003c/p\u003e\n\u003cp\u003eMy issue is with how the site recommends to beginners to set up their Vue projects: via a script include from a CDN. When I first saw this guide, I assumed this was the standard, recommended way to build a Vue project, so this was how I did it for my first small project, a small demo site I needed to produce in a few days. Due to the short timeframe, I had decided to learn as I go. The component registration section of the guide also gives no guidance or recommendation on how to structure your components or projects, so I ended up with most of the components set up in a single JS file. (Admittedly, as a person with more than a decade of web dev experience, I should have at least split it up into several files, but time was short.) A technical person reviewing the code commented that I had implemented the frontend \u0026ldquo;in a very strange manner\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eIt gets worse when you try to install third-party components, which is a big feature of the ecosystem of these frontend frameworks. In my experience, most third-party components will only give instructions for installation via \u003ccode\u003enpm\u003c/code\u003e and a JS module system, neither of which are covered nor recommended by the beginner sections of the guide.\u003c/p\u003e\n\u003cp\u003eA few projects later, and I now know that I vastly prefer developing Vue projects as Node projects built using the scaffolding provided by \u003ca href=\"https://cli.vuejs.org/\"\u003eVue CLI\u003c/a\u003e, with the components implemented as standalone \u003ccode\u003e.vue\u003c/code\u003e files. The usage of these tools and methods are covered in the \u003ca href=\"https://vuejs.org/v2/guide/installation.html\"\u003eInstallation section of the guide\u003c/a\u003e (which the \u0026ldquo;Get Started\u0026rdquo; link skips over) and the \u003ca href=\"https://vuejs.org/v2/guide/single-file-components.html\"\u003eSingle File Components section under the Tooling section\u003c/a\u003e (which seemed like an advanced section a beginner is not likely to get into.) This method also makes installing third-party components much more straightforward. It\u0026rsquo;s not even necessary to cover what tools like Webpack or Babel are doing, since those are largely abstracted away by the scaffolding.\u003c/p\u003e\n\u003cp\u003eBasically my main complaint is that the guide doesn\u0026rsquo;t do a good job of transitioning from the introducing the beginner to the language specifics to introducing a recommended approach and tools for organizing more intermediate or complex projects. The method of using a script include seems suitable for little more than a single-page todo list webapp. I suppose the perceived shortcoming might be attributed to my background at least partially - I still tend to think like a developer using jQuery, and I don\u0026rsquo;t default to thinking about Node applications when doing webapps.\u003c/p\u003e\n\u003cp\u003eThat being said, I am overall happy with Vue.js and it\u0026rsquo;s still my choice of frontend framework moving forward (should a frontend framework even be needed!) Although, maybe I should at least consider trying out / evaluating Angular so I can pretend to make a fair comparison?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is Vue.js. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for mobile app development, which I generally don\u0026rsquo;t like; and (b) I don\u0026rsquo;t like Facebook, which backs React.",
+            "date_published": "2021-05-23T23:27:00+00:00",
+            "date_modified": "2021-05-24T14:40:36+00:00",
+            "section": "post",
+            "source_path": "post/2021/05/vuejs/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106290687020646217"},{"type":"twitter","url":"https://twitter.com/roytang/status/1396838282332303361/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/CrowdPowerHQ",
+                    "source_file": "like-20210524-195400-3c243379-7382-4cec-baba-0d41f8f7dfd7.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/05/1396507070871003139/",
+            "url": "https://mirror.roytang.net/2021/05/1396507070871003139/",
+            "path": "/2021/05/1396507070871003139/",
+            "title": "",
+            "content_html": "\u003cp\u003eMay 22 2021 #sketchdaily 141/365 (Correction: 142/365)\u003c/p\u003e\n",
+            "summary": "May 22 2021 #sketchdaily 141/365 (Correction: 142/365)",
+            "date_published": "2021-05-23T16:43:26+00:00",
+            "date_modified": "2021-06-02T21:19:16+08:00",
+            "section": "photos",
+            "source_path": "photos/2021/05/1396507070871003139/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1396507070871003139/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/niegcn/may_22nd_fraggle_rock/gz6exev/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/05/1396500401122250753/",
+            "url": "https://mirror.roytang.net/2021/05/1396500401122250753/",
+            "path": "/2021/05/1396500401122250753/",
+            "title": "",
+            "content_html": "\u003cp\u003eMay 21 2021 #sketchdaily 140/365 (Correction: 141/365)\u003c/p\u003e\n",
+            "summary": "May 21 2021 #sketchdaily 140/365 (Correction: 141/365)",
+            "date_published": "2021-05-23T16:16:56+00:00",
+            "date_modified": "2021-06-02T21:19:16+08:00",
+            "section": "photos",
+            "source_path": "photos/2021/05/1396500401122250753/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1396500401122250753/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/nhnyyn/may_21st_free_draw_friday/gz6dygt/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2021/05/apparently-google-is-back-in-love-with-rss-i-wonder-why-alan-ralph/",
+            "url": "https://mirror.roytang.net/2021/05/apparently-google-is-back-in-love-with-rss-i-wonder-why-alan-ralph/",
+            "path": "/2021/05/apparently-google-is-back-in-love-with-rss-i-wonder-why-alan-ralph/",
+            "title": "Apparently, Google is back in love with RSS. I wonder why? – Alan Ralph",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2021-05-23T06:52:18+00:00",
+            "date_modified": "2021-05-23T07:00:44+00:00",
+            "section": "links",
+            "source_path": "links/2021/05/apparently-google-is-back-in-love-with-rss-i-wonder-why-alan-ralph/index.md"
+            
+            , "syndicated": [{"type":"pocket","url":"https://alanralph.co.uk/apparently-google-is-back-in-love-with-rss-i-wonder-why/"},{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106283220220528130"},{"type":"twitter","url":"https://twitter.com/roytang/status/1396360411839041539/"}]
+            ,"link": "https://alanralph.co.uk/apparently-google-is-back-in-love-with-rss-i-wonder-why/"
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2021/05/1396356641285566466/",
             "url": "https://mirror.roytang.net/2021/05/1396356641285566466/",
             "path": "/2021/05/1396356641285566466/",
@@ -827,91 +917,6 @@
             "source_path": "notes/2021/05/ba2999c2cc9d8803ad982d24e52035e6/index.md"
             , "tags": ["movies","jamesbond"]
             , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106210278944980126"},{"type":"twitter","url":"https://twitter.com/roytang/status/1391692165642809348/"},{"type":"twitter","url":"https://twitter.com/roytang/status/1391692166938828802/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/",
-            "url": "https://mirror.roytang.net/2021/05/weeknotes-2021-05-09/",
-            "path": "/2021/05/weeknotes-2021-05-09/",
-            "title": "Weeknotes 2021-05-09",
-            "content_html": "\u003cp\u003eThis post is being published a day late. Things happen okay? Sometimes you get busy and things need to be pushed back.\u003c/p\u003e\n\u003ch3 id=\"the-world\"\u003eThe world:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003elike the thug that he is, our dear president \u003ca href=\"/2021/05/1390134185222832132/\"\u003eclaimed that the arbitral award ruling in the PH\u0026rsquo;s favor was nothing more than a sheet of paper he could easily discard\u003c/a\u003e. He also challenged former justice Antonio Carpio to a debate over the West Philippine Sea issue, a challenge the latter quickly accepted. As basically everyone expected, Duterte later chickened out, and offered his spokesman Roque as a distraction, er, proxy for the debate.\u003c/li\u003e\n\u003cli\u003edebris from a Chinese rocket was expected to crash back into Earth sometime this weekend, but no one could predict when or where. Some of my chat groups remarked that if it hits the PH, we are well and truly cursed. It finally landed in the Indian Ocean yesterday.\u003c/li\u003e\n\u003cli\u003eControversial billionaire Elon Musk hosted SNL this weekend and for some reason, this caused Dogecoin to crash.\u003c/li\u003e\n\u003cli\u003eBill and Melinda Gates announced they are divorcing. The \u003ca href=\"/2021/05/1389349579091365888/\"\u003etiming is suspicious\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"links-of-interest\"\u003eLinks of interest:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eIn the tech world, enterprise software maker Basecamp got into a bit of brouhaha this past week after a policy announcement of \u0026ldquo;no politics discussion at work\u0026rdquo; eventually led to around a third of their workforce choosing to resign. Casey Newton has \u003ca href=\"https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy\"\u003ea great writeup about it\u003c/a\u003e. It\u0026rsquo;s a big disappointment because the founders of Basecamp have always had a reputation of promoting positive workplace practices, including a book titled \u0026ldquo;It Doesn\u0026rsquo;t Have to Be Crazy At Work\u0026rdquo;.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eFrom \u003ca href=\"https://www.bloomberg.com/opinion/articles/2021-04-29/ignoring-the-rules-sometimes-works-for-elon-musk\"\u003eMoney Stuff a while back\u003c/a\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u0026ldquo;On the other hand, if you send out those cars to drive themselves everywhere and they all crash and kill a bunch of people, that will be bad! You will be in bad trouble. “It’s better to ask forgiveness than to ask permission,” you will say, but this is not quite right; maybe it is better to announce success and then smugly add “sorry we didn’t tell you first,” but it is strictly worse to fail catastrophically and apologize. If you are going to fail it is better to ask permission, because forgiveness will not be forthcoming. If you are going to succeed, sure, it is better to ask forgiveness. “There’s nothing to forgive, you’re perfect, you little scamp,” everyone will reply.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003eIf you are doing some bold novel thing, you probably do not know, ex ante, if you will succeed or fail. Therefore you do not know, ex ante, if you should ask permission or forgiveness, if you should follow the law or not. But if you are the founder and chief executive officer of a company whose goal is to do some bold novel thing, you have been selected and encouraged precisely for your borderline-crazy optimism and self-confidence. You can’t do impossible things unless you first believe that you can, etc.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003eIf you are certain that you will succeed brilliantly in all your endeavors, then often the optimal strategy will sometimes be to ignore the law, or at least the parts of the law that stand in the way of your vision. Not, like, the objectively optimal strategy, but the strategy that you consider optimal given your subjective certainty that everything will work out for you\u0026rdquo;\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSignal \u003ca href=\"https://signal.org/blog/the-instagram-ads-you-will-never-see/\"\u003etried to release instagram ads that highlighted how targetted advertising works\u003c/a\u003e but their account conveniently got disabled for \u003ca href=\"https://www.zdnet.com/article/facebook-accuses-signal-of-lying-about-its-attempt-to-run-transparent-instagram-ads/\"\u003ewhat Facebook claims was \u0026ldquo;an unrelated payments issue\u0026rdquo;\u003c/a\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eFrom \u003ca href=\"https://www.garbageday.email/p/finally-a-weapon-to-surpass-groverhaus\"\u003ea recent Garbage Day\u003c/a\u003e, about Spotify\u0026rsquo;s algorithm:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cblockquote\u003e\n\u003cp\u003eWe\u0026rsquo;ve seen how Facebook\u0026rsquo;s algorithmic recommendation of content, based on an algorithm that\u0026rsquo;s maximized for engagement, has started to distort reality. It has started to undermine democracy and amplified really harmful ideologies like white supremacy and white nationalism. And you can already kind of start to see this.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003eBands have kind of started to figure out like, “oh, all of our songs that sound kind of like this do super well with the Spotify algorithm, let\u0026rsquo;s just make more songs like that.” And you can\u0026rsquo;t fault the band for doing that. There\u0026rsquo;s so few opportunities for bands to make a living from their art at this point. But it terrifies me to think about a future where music is created to please some cold-blooded algorithm. And there\u0026rsquo;s just like something uniquely gross about that to me, when I think about how music is something that humans have been making for literally 1000s of years. It\u0026rsquo;s something that\u0026rsquo;s sacred, and, you know, not to pretend that it hasn\u0026rsquo;t been commodified in a variety of different ways for decades, or maybe even centuries. But this feels like a new frontier. That type of automated commodification of something that should be about humans and not robots.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eMarvel released what is basically a sizzle reel for the MCU\u0026rsquo;s next 3 years worth of movies: \u003ca href=\"https://www.youtube.com/watch?v=QdpxoFcdORI\"\u003ehttps://www.youtube.com/watch?v=QdpxoFcdORI\u003c/a\u003e. I\u0026rsquo;m such a fanboy, I will gleefully admit that I got goosebumps when the video continued past the Shang-chi preview.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eRolling Stone lists the \u003ca href=\"https://www.rollingstone.com/tv/tv-lists/best-tv-sitcoms-1162237/\"\u003ebest TV sitcoms of all time\u003c/a\u003e. The comments are full of complaints about notable omissions.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"my-stuff\"\u003eMy stuff:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eI got my \u003ca href=\"/2021/05/1391294087064477699/\"\u003esecond dose of the Sinovac vaccine yesterday\u003c/a\u003e! Supposedly it\u0026rsquo;s fully effective about two weeks after the second dose, although studies show the efficacy is rather low. But some protection is better than none. Some better vaccines are starting to come in, we are supposedly due to get (a small amount of) Pfizer soon. I reckon since I\u0026rsquo;m hunkered down at home most of the time anyway, I\u0026rsquo;m okay with the weaker Chinese vaccine and don\u0026rsquo;t mind if the more effective vaccines go to the masses that have to go out and mingle for work.\u003c/li\u003e\n\u003cli\u003eStill \u003ca href=\"/albums/sketchbook/\"\u003esketching\u003c/a\u003e, although I\u0026rsquo;m a couple of days behind due to the aforementioned alleged busyness. Should catch up soon.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWatching:\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eMovies: Didn\u0026rsquo;t watch any last week, should correct that soon. I\u0026rsquo;m not even a third of the way through my James Bond run!\u003c/li\u003e\n\u003cli\u003eNothing too notable, now that Invincible is done and we don\u0026rsquo;t have any running MCU series at the moment. Well, I did enjoy the recent two-part story on Supergirl where two characters travelled back to the past to meet young Kara and Alex in school. The rest of the season has bit a bit meh, so this was the highlight for me so far. The young versions were so perfectly cast!\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGaming\u003c/strong\u003e:\n\u003cul\u003e\n\u003cli\u003eDrafted a bit more \u003ca href=\"/tags/mtgstrixhaven/\"\u003eStrixhaven\u003c/a\u003e on Arena, and finally ran the Sealed Open yesterday!\u003c/li\u003e\n\u003cli\u003eStill playing a bunch of \u003cstrong\u003eHorizon Zero Dawn\u003c/strong\u003e on PS4 and \u003cstrong\u003eStreet Fighter V\u003c/strong\u003e on Steam. Hey, I got Balrog (Boxer) to bronze!\u003c/li\u003e\n\u003cli\u003eI finally finished the second run of Fire Emblem: Three Houses! There\u0026rsquo;s one more branch to explore (well, technically two, but I\u0026rsquo;m not too interested in the other one), but I might put the game aside for a while and find something else to play.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBooks\u003c/strong\u003e: Finished reading \u003ca href=\"/2021/05/snow-crash/\"\u003e\u003cstrong\u003eSnow Crash\u003c/strong\u003e by Neal Stephenson\u003c/a\u003e, still looking around for what to read next.\u003c/li\u003e\n\u003cli\u003eWe didn\u0026rsquo;t have any quiz nights this week! Instead, I started digging a bit into the \u003ca href=\"https://triviastorm.net/\"\u003etriviastorm\u003c/a\u003e back-end code and added some improvements I\u0026rsquo;ve been meaning to do for a while. When I\u0026rsquo;m done, I hope the answer checking becomes a bit more robust. Will also probably add a new batch of questions to the bot sometime this month.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"this-coming-week\"\u003eThis coming week:\u003c/h3\u003e\n\u003cp\u003eHuh, nothing in particular I\u0026rsquo;m looking forward to this week. Anything I missed?\u003c/p\u003e\n",
-            "summary": "This post is being published a day late. Things happen okay? Sometimes you get busy and things need to be pushed back.\nThe world:  like the thug that he is, our dear president claimed that the arbitral award ruling in the PH\u0026rsquo;s favor was nothing more than a sheet of paper he could easily discard. He also challenged former justice Antonio Carpio to a debate over the West Philippine Sea issue, a challenge the latter quickly accepted.",
-            "date_published": "2021-05-10T02:24:26+00:00",
-            "date_modified": "2021-05-10T07:00:23+00:00",
-            "section": "post",
-            "source_path": "post/2021/05/weeknotes-05-09/index.md"
-            , "tags": ["philippines","covid19","weeknotes"]
-            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106209588048279805"},{"type":"twitter","url":"https://twitter.com/roytang/status/1391647947478114308/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/1391320419060183040/",
-            "url": "https://mirror.roytang.net/2021/05/1391320419060183040/",
-            "path": "/2021/05/1391320419060183040/",
-            "title": "",
-            "content_html": "\u003cp\u003eThrew some gems away again on this month\u0026rsquo;s #magicarena #mtgstrixhaven sealed open, ended up playing Silverquill splashing red since I had Professor Onyx and Lukka.\u003c/p\u003e\n\u003cp\u003eSee how it turned out: \u003ca href=\"https://www.youtube.com/watch?v=4B9Do6_8YME\"\u003ehttps://www.youtube.com/watch?v=4B9Do6_8YME\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Threw some gems away again on this month\u0026rsquo;s #magicarena #mtgstrixhaven sealed open, ended up playing Silverquill splashing red since I had Professor Onyx and Lukka.\nSee how it turned out: https://www.youtube.com/watch?v=4B9Do6_8YME",
-            "date_published": "2021-05-09T09:13:32+00:00",
-            "date_modified": "2021-05-09T09:20:29+00:00",
-            "section": "photos",
-            "source_path": "photos/2021/05/1391320419060183040/index.md"
-            , "tags": ["magicarena","mtgstrixhaven"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1391320419060183040/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/1391294087064477699/",
-            "url": "https://mirror.roytang.net/2021/05/1391294087064477699/",
-            "path": "/2021/05/1391294087064477699/",
-            "title": "",
-            "content_html": "\u003cp\u003eGot my second shot today! Sinovac, but eh whatever that’s fine. Much quicker process this time, I got the shot less than twenty mins after arrival, done after fortyish minutes. No issues / adverse effects so far.\u003c/p\u003e\n",
-            "summary": "Got my second shot today! Sinovac, but eh whatever that’s fine. Much quicker process this time, I got the shot less than twenty mins after arrival, done after fortyish minutes. No issues / adverse effects so far.",
-            "date_published": "2021-05-09T07:28:54+00:00",
-            "date_modified": "2021-05-09T07:30:28+00:00",
-            "section": "photos",
-            "source_path": "photos/2021/05/1391294087064477699/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1391294087064477699/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/1390664993033445377/",
-            "url": "https://mirror.roytang.net/2021/05/1390664993033445377/",
-            "path": "/2021/05/1390664993033445377/",
-            "title": "",
-            "content_html": "\u003cp\u003eMagnus #sketchdaily 126/365 (Correction: 127/365)\u003c/p\u003e\n",
-            "summary": "Magnus #sketchdaily 126/365 (Correction: 127/365)",
-            "date_published": "2021-05-07T13:49:06+00:00",
-            "date_modified": "2021-06-02T21:19:16+08:00",
-            "section": "photos",
-            "source_path": "photos/2021/05/1390664993033445377/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1390664993033445377/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/n6u5ig/may_7th_merry_mongoose_makes_moaning_mallard/gx9ufop/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/1390367126305742848/",
-            "url": "https://mirror.roytang.net/2021/05/1390367126305742848/",
-            "path": "/2021/05/1390367126305742848/",
-            "title": "",
-            "content_html": "\u003cp\u003eLazy lemur #sketchdaily 125/365 (Correction: 126/365)\u003c/p\u003e\n",
-            "summary": "Lazy lemur #sketchdaily 125/365 (Correction: 126/365)",
-            "date_published": "2021-05-06T18:05:29+00:00",
-            "date_modified": "2021-06-02T21:19:16+08:00",
-            "section": "photos",
-            "source_path": "photos/2021/05/1390367126305742848/index.md"
-            , "tags": ["sketchdaily"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1390367126305742848/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/n62y6a/may_6th_loathsome_lemur_laughs_loads_lemming/gx6fedn/"}]
             
             
             }
