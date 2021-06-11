@@ -11,6 +11,96 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/1276714/",
+            "url": "https://mirror.roytang.net/2009/08/1276714/",
+            "path": "/2009/08/1276714/",
+            "title": "Invoking Java code across Application Server cluster nodes",
+            "content_html": "\u003cp\u003eLet\u0026rsquo;s say I have a Java webapp deployed on some Application Server with clustering across a few nodes.\u003c/p\u003e\n\u003cp\u003eIn the webapp, we maintain a cache of some values retrieved from the database, stored in-memory as static variables. Whenever a user performs an update in a particular screen, we clear the cache so that the cached values will be retrieved again the next time they are needed.\u003c/p\u003e\n\u003cp\u003eNow the problem: Since each node in the cluster is running on a separate JVM, how can I clear the cache across all nodes? Basically I want to call a static function on each cluster node. Is there some standard J2EE way to do this, or it depends on the Application Server software?\u003c/p\u003e\n",
+            "summary": "Let\u0026rsquo;s say I have a Java webapp deployed on some Application Server with clustering across a few nodes.\nIn the webapp, we maintain a cache of some values retrieved from the database, stored in-memory as static variables. Whenever a user performs an update in a particular screen, we clear the cache so that the cached values will be retrieved again the next time they are needed.\nNow the problem: Since each node in the cluster is running on a separate JVM, how can I clear the cache across all nodes?",
+            "date_published": "2009-08-14T08:40:06+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/1276714/index.md"
+            , "tags": ["java","java-ee","cluster-computing","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1276714/invoking-java-code-across-application-server-cluster-nodes"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1276714/invoking-java-code-across-application-server-cluster-nodes",
+                    "source_file": "comment-20090814T132043-1277809.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3267916426/",
+            "url": "https://mirror.roytang.net/2009/08/3267916426/",
+            "path": "/2009/08/3267916426/",
+            "title": "",
+            "content_html": "\u003cp\u003e@duddits138 iniinggit ka lang nya\u003c/p\u003e\n",
+            "summary": "@duddits138 iniinggit ka lang nya",
+            "date_published": "2009-08-12T16:25:49+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3267916426.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3267916426/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/114528894915/",
+            "url": "https://mirror.roytang.net/2009/08/114528894915/",
+            "path": "/2009/08/114528894915/",
+            "title": "",
+            "content_html": "\u003cp\u003e“If you’re not willing to risk, you cannot grow. If you cannot grow, you cannot be your best. If you cannot be your best, you cannot be happy. If you cannot be happy, what else is there?” – Les Brown\u003c/p\u003e\n",
+            "summary": "“If you’re not willing to risk, you cannot grow. If you cannot grow, you cannot be your best. If you cannot be your best, you cannot be happy. If you cannot be happy, what else is there?” – Les Brown",
+            "date_published": "2009-08-11T23:25:00+00:00",
+            "date_modified": "2019-09-28T14:51:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/114528894915/index.md"
+            , "tags": ["quotes"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/114528894915"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/101-most-inspiring-quotes-of-all-time/",
+            "url": "https://mirror.roytang.net/2009/08/101-most-inspiring-quotes-of-all-time/",
+            "path": "/2009/08/101-most-inspiring-quotes-of-all-time/",
+            "title": "101 Most Inspiring Quotes of All Time",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2009-08-11T15:49:00+00:00",
+            "date_modified": "2020-01-29T00:26:29+08:00",
+            "section": "links",
+            "source_path": "links/2009/08/101-most-inspiring-quotes-of-all-time/index.md"
+            , "tags": ["quotes"]
+            
+            ,"link": "http://celestinechua.com/blog/2009/06/101-most-inspiring-quotes-of-all-time/"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2009/08/3245609146/",
+            "url": "https://mirror.roytang.net/2009/08/3245609146/",
+            "path": "/2009/08/3245609146/",
+            "title": "",
+            "content_html": "\u003cp\u003einternets are slow\u003c/p\u003e\n",
+            "summary": "internets are slow",
+            "date_published": "2009-08-11T13:59:46+00:00",
+            "date_modified": "2019-09-12T04:21:53+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3245609146.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3245609146/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/155283871320"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3235581538/",
             "url": "https://mirror.roytang.net/2009/08/3235581538/",
             "path": "/2009/08/3235581538/",
@@ -1089,124 +1179,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2818274977/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/111939842810"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2818267621/",
-            "url": "https://mirror.roytang.net/2009/07/2818267621/",
-            "path": "/2009/07/2818267621/",
-            "title": "",
-            "content_html": "\u003cp\u003e#sf4: went 2-1 vs random ppl today @ Mega. The stick was easier to use than I expetced, although Guile opp complained of difficulty charging\u003c/p\u003e\n",
-            "summary": "#sf4: went 2-1 vs random ppl today @ Mega. The stick was easier to use than I expetced, although Guile opp complained of difficulty charging",
-            "date_published": "2009-07-24T13:30:19+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2818267621/index.md"
-            , "tags": ["sf4"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2818267621/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/138164857576"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/alvinjtang",
-                    "source_file": "comment-20090724-000000-f3e285da-ce78-47a3-9581-bdbda4606350.json"
-                }, { 
-                    "url": "https://www.facebook.com/raymond.lirag",
-                    "source_file": "comment-20090725-000001-e22fce4e-28a8-4c6f-bdcb-368b94cff18e.json"
-                }, { 
-                    "url": "https://www.facebook.com/Altealice",
-                    "source_file": "comment-20090725-000002-c3712450-7549-4928-aee5-8ddb06accf7f.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2780580621/",
-            "url": "https://mirror.roytang.net/2009/07/2780580621/",
-            "path": "/2009/07/2780580621/",
-            "title": "",
-            "content_html": "\u003cp\u003ealso today: sf4 arcade machines are finally available at Timezone Megamall\u003c/p\u003e\n",
-            "summary": "also today: sf4 arcade machines are finally available at Timezone Megamall",
-            "date_published": "2009-07-22T16:33:35+00:00",
-            "date_modified": "2019-09-12T04:21:53+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2780580621.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2780580621/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/125562766741"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2780278973/",
-            "url": "https://mirror.roytang.net/2009/07/2780278973/",
-            "path": "/2009/07/2780278973/",
-            "title": "",
-            "content_html": "\u003cp\u003ewinning may not be everything, but it sure feels good\u003c/p\u003e\n",
-            "summary": "winning may not be everything, but it sure feels good",
-            "date_published": "2009-07-22T16:15:38+00:00",
-            "date_modified": "2021-01-11T12:51:35+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2780278973/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2780278973/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/235916315450"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/jek.orila",
-                    "source_file": "comment-20090723-000000-def18abc-c20a-4651-bb61-75efc321a762.json"
-                }, { 
-                    "url": "https://www.facebook.com/raymond.lirag",
-                    "source_file": "comment-20090723-000001-f27bfb3d-8574-4774-95c6-d738d69db304.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2780251180/",
-            "url": "https://mirror.roytang.net/2009/07/2780251180/",
-            "path": "/2009/07/2780251180/",
-            "title": "",
-            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/pluish/\"\u003e@pluish\u003c/a\u003e wala kayong ref? que barbaridad!\u003c/p\u003e\n",
-            "summary": "@pluish wala kayong ref? que barbaridad!",
-            "date_published": "2009-07-22T16:14:00+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2780251180.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2780251180/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/07/2780091173/",
-            "url": "https://mirror.roytang.net/2009/07/2780091173/",
-            "path": "/2009/07/2780091173/",
-            "title": "",
-            "content_html": "\u003cp\u003ewe got the warcraft3 lan working at home. I won with Orcs!\u003c/p\u003e\n",
-            "summary": "we got the warcraft3 lan working at home. I won with Orcs!",
-            "date_published": "2009-07-22T16:04:34+00:00",
-            "date_modified": "2021-04-15T11:05:17+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/07/2780091173/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/2780091173/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/104719129838"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/habeo",
-                    "source_file": "comment-20090722-160654-64fbfad2-9be5-4121-a451-e88b8f894130.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20090722-161259-c5c0beac-69de-4c9f-92d4-e463b4755af8.json"
-                }, { 
-                    "url": "https://twitter.com/habeo",
-                    "source_file": "comment-20090722-163442-d07ad8ea-2226-4c91-97f1-22ffbeb145f5.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20090722-163542-718ae0d0-106a-45bf-8163-8693e093493b.json"
-                }
-            ]
             }
         
     ]

@@ -11,6 +11,91 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/03/1110072615362674689/",
+            "url": "https://mirror.roytang.net/2019/03/1110072615362674689/",
+            "path": "/2019/03/1110072615362674689/",
+            "title": "",
+            "content_html": "\u003cp\u003eWoo, I\u0026rsquo;m still capable of cannibalizing parts from one pc and installing it into another without destroying the recipient pc lol\u003c/p\u003e\n",
+            "summary": "Woo, I\u0026rsquo;m still capable of cannibalizing parts from one pc and installing it into another without destroying the recipient pc lol",
+            "date_published": "2019-03-25T06:55:10+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/03/1110072615362674689.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110072615362674689/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
+            "url": "https://mirror.roytang.net/2019/03/a-quick-twitter-app-i-wrote/",
+            "path": "/2019/03/a-quick-twitter-app-i-wrote/",
+            "title": "A Quick Twitter App I Wrote",
+            "content_html": "\u003cp\u003eI wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\u003c/p\u003e\n\u003cp\u003eSome time ago this guy I follow on Twitter, \u003ca href=\"https://twitter.com/visakanv/\"\u003evisakanv\u003c/a\u003e wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s \u003ca href=\"https://twitter.com/visakanv/status/1087316852663939072\"\u003ethe thread\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eAnyway, in a fit of \u0026ldquo;I\u0026rsquo;m a bit bored, anything interesting I could do?\u0026rdquo; I figured I could set up a quick webapp to do that. I did a quick PoC in Python/Flask, with \u003ca href=\"http://www.tweepy.org/\"\u003eTweepy\u003c/a\u003e for accessing the Twitter API. I normally prefer Django for my webapps, but since this was just a small, quick app, I figured Flask would be ideal. That worked out fine, except that I had to use my personal access tokens to for all the API calls. This means that if many people were using the app, it was likely to hit Twitter\u0026rsquo;s rate limits!\u003c/p\u003e\n\u003cp\u003eThat was a few months back. A couple of days ago, someone emailed me asking about an error he encountered using the app, and sure enough it was due to the rate limits. I had a couple of free hours last weekend, so I figured I\u0026rsquo;d update the app a bit. I decided to add a Twitter login requirement, that way we can use the individual user\u0026rsquo;s access token instead of using mine globally. This would allow the rate limits to be per user and thus less likely to be hit. Now, I\u0026rsquo;ve tried implementing OAuth login some years ago and it can be terribly complicated, but luckily I found out that there\u0026rsquo;s a nifty Python package called \u003ca href=\"https://github.com/singingwolfboy/flask-dance\"\u003eFlask-Dance\u003c/a\u003e that made it super easy to add Twitter OAuth to a Flask app. This also let me discard the Tweepy dependency, since the Twitter OAuth session let me query the API endpoints directly. I also did a bit of UI cleanup and error handling and deployed the changes quickly.\u003c/p\u003e\n\u003cp\u003eThe app is available online at \u003ca href=\"/apps/twitter\"\u003eroytang.net/apps/twitter\u003c/a\u003e. There\u0026rsquo;s a few other Twitter tools I\u0026rsquo;ve been meaning to build, so I\u0026rsquo;ll probably put them here too when I get around to them.\u003c/p\u003e\n",
+            "summary": "I wish I had a more concise way to describe it, but I really don\u0026rsquo;t.\nSome time ago this guy I follow on Twitter, visakanv wanted to know how to do a certain search: he wanted to know who a given famous person follows on Twitter, and among those, finds the one who follow him (visakanv), so he could network through them. I might not be explaining the concept too well, here\u0026rsquo;s the thread.",
+            "date_published": "2019-03-25T05:56:56+00:00",
+            "date_modified": "2021-01-25T07:34:22+08:00",
+            "section": "post",
+            "source_path": "post/2019/03/twitter-app/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1110059423018430464/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/meritocracy/",
+            "url": "https://mirror.roytang.net/2019/03/meritocracy/",
+            "path": "/2019/03/meritocracy/",
+            "title": "Meritocracy",
+            "content_html": "\u003cp\u003eThe concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the \u003ca href=\"http://time.com/5549921/college-admissions-bribery-scandal/\"\u003erecent college admissions scandal\u003c/a\u003e in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money. Of course, it was always open knowledge before that one could get their kid admitted to such universities simply by making a huge donation. The recent events apparently crosses some line because the \u0026ldquo;donation\u0026rdquo; was in the form of bribe money to individuals instead of the school itself, but even without them there was no true meritocracy.\u003c/p\u003e\n\u003cp\u003eI went to a specialized high school (and college) that had supposedly merit-based entrance exams as well, such that one could simply not get in without passing the exams. (Athletics-based admissions aren\u0026rsquo;t very popular in this country.) Even in such a system, rich kids still have a significant leg up of course - aside from growing up in an environment that favored them, their parents could also afford to send them to expensive review centers to prep for the exams. I was reminded of this due to a recent thread among my HS batchmates discussing how their kids had to prep for the entrance exams years early because it was much more competitive these days.\u003c/p\u003e\n\u003cp\u003eI used to be a strong believer in meritocracy when I was young (probably due to my educational background), believing it to be an ideal for society to aspire to. The idea is certainly attractive - that we should give the jobs and positions to those who would be able to use them most effectively, for the betterment of society. I later learned that the term orignated in 1958 as a condemnatory word by Michael Young in his work \u0026ldquo;The Rise of the Meritocracy\u0026rdquo;. I realize now that while a pure meritocracy would be nice, it would disadvantage people who are already behind in life due to poverty, sickness or other such challenges. I think that like many things, some sort of balance is better struck, with a \u0026ldquo;meritocracy at large\u0026rdquo; in effect for the most part, but with opportunities promoted for marginalized groups. That is, a meritocracy that favors the poor instead of the rich.\u003c/p\u003e\n\u003cp\u003eAll this meritocract quote reminds me of a quote from the Simpsons\u0026rsquo; villainous Mr Burns who tries to justify cheating in a contest during a company retreat, which gives us a different perspective:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eMr. Burns: Tell me, Simpson, if an opportunity arose for taking a small short-cut, you wouldn\u0026rsquo;t be averse to taking it, would you?\u003c/p\u003e\n\u003cp\u003eHomer: Hmm, not as such.\u003c/p\u003e\n\u003cp\u003eMr. Burns: Neither would I. If you can take advantage of a situation in some way, it\u0026rsquo;s your duty as an American to do it. Why should the race always be to the swift, or the Jumble to the quick-witted? Should they be allowed to win merely because of the gifts God gave them? Well I say, \u0026ldquo;Cheating is the gift man gives himself.\u0026rdquo;\u003c/p\u003e\n\u003cp\u003eHomer: Mr. Burns, I insist that we cheat!\u003c/p\u003e\n\u003cp\u003eMr. Burns: Excellent!\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "The concept of a \u0026ldquo;meritocracy\u0026rdquo; has come to the fore again with the recent college admissions scandal in the US, where wealthy parents bribed coaches and other professionals to get their kids into high-end universities with supposedly high standards. It\u0026rsquo;s put a lie to the idea that the students of these universities represent the \u0026ldquo;cream of the crop\u0026rdquo; or \u0026ldquo;the best of the best\u0026rdquo;, showing that kids can get in not only due to their own talent, but also due to money.",
+            "date_published": "2019-03-24T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/03/meritocracy/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/ej8tj5e/",
+            "url": "https://mirror.roytang.net/2019/03/ej8tj5e/",
+            "path": "/2019/03/ej8tj5e/",
+            "title": "",
+            "content_html": "\u003cp\u003eYou are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well\u003c/p\u003e\n",
+            "summary": "You are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well",
+            "date_published": "2019-03-24T03:52:45+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/03/ej8tj5e/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/b4og0x/marvel_comics_announces_historic_xmen_milestone/ej8tj5e/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/03/183662443174/",
+            "url": "https://mirror.roytang.net/2019/03/183662443174/",
+            "path": "/2019/03/183662443174/",
+            "title": "",
+            "content_html": "\u003cp\u003eJustice League (2019) #20 Batman has a new favorite Robin. art by Jorge Jimenez, words by Scott Snyder\u003c/p\u003e\n",
+            "summary": "Justice League (2019) #20 Batman has a new favorite Robin. art by Jorge Jimenez, words by Scott Snyder",
+            "date_published": "2019-03-24T02:00:21+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/03/183662443174/index.md"
+            , "tags": ["dc","dc comics","comics","jarro","batman","robin","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/183662443174/justice-league-2019-20-batman-has-a-new"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109636036211159045/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/03/1109449362600411137/",
             "url": "https://mirror.roytang.net/2019/03/1109449362600411137/",
             "path": "/2019/03/1109449362600411137/",
@@ -855,99 +940,6 @@
             "source_path": "notes/2019/03/1106511845861408768/index.md"
             , "tags": ["DioknoSaSenado","25ChelDiokno"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106511845861408768/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106483116925829125/",
-            "url": "https://mirror.roytang.net/2019/03/1106483116925829125/",
-            "path": "/2019/03/1106483116925829125/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m old enough to remember that the power crisis of the early 90s led us to a regime of high electricity rates. Hopefully whatever solution we have for the current and impending water crisis doesnt have the same outcome\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m old enough to remember that the power crisis of the early 90s led us to a regime of high electricity rates. Hopefully whatever solution we have for the current and impending water crisis doesnt have the same outcome",
-            "date_published": "2019-03-15T09:11:47+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106483116925829125.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106483116925829125/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/rip-webfaction/",
-            "url": "https://mirror.roytang.net/2019/03/rip-webfaction/",
-            "path": "/2019/03/rip-webfaction/",
-            "title": "RIP Webfaction?",
-            "content_html": "\u003cp\u003eA few months back, my current web host \u003ca href=\"https://www.webfaction.com/\"\u003eWebFaction\u003c/a\u003e announced they had been purchased by \u003ca href=\"https://godaddy.com\"\u003eGoDaddy\u003c/a\u003e, which was worrying. Back then they hadn\u0026rsquo;t announced any details other than there would be some account migrations and single sign on, so it wasn\u0026rsquo;t a big deal yet.\u003c/p\u003e\n\u003cp\u003eI initially joined WebFaction \u003ca href=\"/roytang-net-site-update/\"\u003eback in 2008\u003c/a\u003e because they were a Python-friendly and developer-friendly host that had some reasonable budget options, allowing me some space to host this blog and any side projects I wanted to deploy. At that time I was learning Django, so I needed the Python support that normal hosts don\u0026rsquo;t provide. I didn\u0026rsquo;t know much about cloud servers back then and the WebFaction account let me try out so much stuff despite it being shared hosting. The news above is worrying because GoDaddy does not have a good reputation and is not especially known for being developer-friendly. They are a mass-market, \u0026ldquo;lowest common denominator\u0026rdquo; kind of host, so I would prefer not to have them as my web host.\u003c/p\u003e\n\u003cp\u003eThis week, they said in an announcement that they were moving forward with a technical evaluation of migrating everyone to GoDaddy, which kind of spells doom for the WebFaction services I\u0026rsquo;m using. Even though their email promised that \u0026ldquo;you won\u0026rsquo;t lose any of your current features or services\u0026rdquo;, but according to a \u003ca href=\"https://community.webfaction.com/questions/22148/webfaction-migration-6-months-later-and-still-no-answers\"\u003erecent thread\u003c/a\u003e on their support forums:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cpre\u003e\u003ccode\u003eOne again, zero information about exactly when WebFaction services will be completely shut down.\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe exact date hasn\u0026rsquo;t been defined yet but it is estimated to be on August 2019.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDoes this mean that WebFaction's current features and services will remain the same AFTER the migration?\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNo, WebFaction\u0026rsquo;s control panel, servers and other features and services will shut down after the migration is done. The plan is to stay up and running until then.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhile they say the technical evaluation is still ongoing, in all likelihood that\u0026rsquo;s it for WebFaction. For me, at least. And I\u0026rsquo;m not interested in migrating to GoDaddy. I still have a few months before I need to transition, but I guess I need to start prepping by:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003elooking for a new host. Any recommendations? I have a bit more experience this time with managing servers, so I\u0026rsquo;m open to a VPS instead of shared hosting, might be fun to try out for a while. Currently looking at just getting a cheap ($5/mo) droplet over at Digital Ocean. Alternatively, I could just move this blog over to netlify and any other apps I have (like \u003ca href=\"https://triviastorm.net/\"\u003eTriviaStorm\u003c/a\u003e) over to something like Heroku, but that seems like it would cost me more money.\u003c/li\u003e\n\u003cli\u003esee if I can refund my current balance with them, since I prepaid a bit last year. I already asked on the forums and they say we\u0026rsquo;ll have more info on refund options later after their technical evaluation, maybe around Mayish.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIn any case, I had a good run with WebFaction, a bit over 10 years now. But time moves on and things change and small businesses get eaten up by large businesses, such is the way of capitalism. They were very developer-friendly and had pretty good customer support in my opinion, so they will be missed. Hopefully I\u0026rsquo;m able to find a good alternative.\u003c/p\u003e\n",
-            "summary": "A few months back, my current web host WebFaction announced they had been purchased by GoDaddy, which was worrying. Back then they hadn\u0026rsquo;t announced any details other than there would be some account migrations and single sign on, so it wasn\u0026rsquo;t a big deal yet.\nI initially joined WebFaction back in 2008 because they were a Python-friendly and developer-friendly host that had some reasonable budget options, allowing me some space to host this blog and any side projects I wanted to deploy.",
-            "date_published": "2019-03-15T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/rip-webfaction/index.md"
-            , "tags": ["webfaction","Tech Life","Meta"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106435603107848192/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/1106185404892344320/",
-            "url": "https://mirror.roytang.net/2019/03/1106185404892344320/",
-            "path": "/2019/03/1106185404892344320/",
-            "title": "",
-            "content_html": "\u003cp\u003eMust resist watching new Avengers trailer\u003c/p\u003e\n",
-            "summary": "Must resist watching new Avengers trailer",
-            "date_published": "2019-03-14T13:28:47+00:00",
-            "date_modified": "2021-05-13T00:21:36+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/1106185404892344320/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106185404892344320/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/alvinjtang",
-                    "source_file": "comment-20190314-220513-0aad5c7e-d494-4c6e-ae98-31cabb8d7320.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20190314-223447-bb08af2f-2021-4769-90a0-d28d4c185620.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/eihx0fw/",
-            "url": "https://mirror.roytang.net/2019/03/eihx0fw/",
-            "path": "/2019/03/eihx0fw/",
-            "title": "",
-            "content_html": "\u003cp\u003eI finally tried this out and got \u0026ldquo;only\u0026rdquo; six as well lol. But what\u0026rsquo;s your plan for playing Azurite Prixis from the bottom of the deck!\u003c/p\u003e\n",
-            "summary": "I finally tried this out and got \u0026ldquo;only\u0026rdquo; six as well lol. But what\u0026rsquo;s your plan for playing Azurite Prixis from the bottom of the deck!",
-            "date_published": "2019-03-14T09:27:51+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/eihx0fw/index.md"
-            , "tags": ["EternalCardGame"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/EternalCardGame/comments/azpxp8/if_you_want_to_go_achievement_hunting_you_got_to/eihx0fw/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/embarassment-office-christmas-parties-and-singing-off-key/",
-            "url": "https://mirror.roytang.net/2019/03/embarassment-office-christmas-parties-and-singing-off-key/",
-            "path": "/2019/03/embarassment-office-christmas-parties-and-singing-off-key/",
-            "title": "Embarassment, Office Christmas Parties, and Singing Off-Key",
-            "content_html": "\u003cp\u003eI read this \u003ca href=\"https://twitter.com/GaryGulman/status/1105136402092703744\"\u003etweet\u003c/a\u003e from \u003ca href=\"https://twitter.com/GaryGulman\"\u003e@GaryGulman\u003c/a\u003e, a standup comic who gives out tips for comedy writers:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eToday, put together a list of the most embarrassing moments in your life. Take one or two and write them out in detail. Next time you’re in front of a warm crowd, work on telling the story.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe idea being of course, that such an exercise trains you to be more vulnerable in front on an audience. I thought about this advice for a bit and found it difficult to remember any particular moments in my life that I feel particularly embarassed or ashamed about. All people have such moments of course, so there are two possibilities: (a) my embarassing moments are so terrible brain has blocked out such memories for my own sanity; or (b) I don\u0026rsquo;t remember them because I don\u0026rsquo;t care too much and I move on quickly from them.\u003c/p\u003e\n\u003cp\u003eI do remember being an insecure and self-conscious teenager growing up, so maybe I should have more embarassing memories from that era? But looking back now on any moments back then that I might have considered embarassing, they don\u0026rsquo;t seem so bad, at least not compared to other people\u0026rsquo;s embarassing stories. For all such moments that I can recall, I generally don\u0026rsquo;t feel a tinge of regret - I think they were things that contributed to my growth as a person and that I should have done anyway.\u003c/p\u003e\n\u003cp\u003eAs an example, the first possibly \u0026ldquo;embarassing\u0026rdquo; moment I could think was the first office Christmas party I went to as a working person. Now, if you\u0026rsquo;re from the Philippines, you know they have this thing where they expect new hires to give a \u0026ldquo;performance\u0026rdquo; during the office Christmas party, as portrayed in this comic:\u003c/p\u003e\n\u003ca href=\"#667dc6f6dc4c2f5315f780faa29ba199-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/03/embarassment-office-christmas-parties-and-singing-off-key/opismeyts_huc2e037c38fd8c0199ca1b958e53d8853_222769_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"667dc6f6dc4c2f5315f780faa29ba199-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/03/embarassment-office-christmas-parties-and-singing-off-key/opismeyts.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"14 Mar 2019 5:56am\"\u003e14 Mar 2019 5:56am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eImage credit: \u003ca href=\"https://www.facebook.com/opismeyts\"\u003eOpismeyts\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eNow back then I was fresh out of college and not a very social animal. And they wanted us to do this ridiculous looking dance that was popularized by local noontime shows of the era. Performing in public was not something I wanted to do, and I had a lot of anxiety leading up to it, as I recall I even considered skipping the event completely. But of course I went through it anyway, and though I cringed at myself the whole time, I think I did learn to laugh at myself a little bit. I credit this event for helping me \u0026ldquo;lighten up\u0026rdquo; as it were, be more willing to plow straight through my anxieties, and be more open to doing ridiculous things in public. (I would still be averse to say, volunteering for such a thing, but there should now be a decent possibility of convincing me\u0026hellip;)\u003c/p\u003e\n\u003cp\u003eThese days, it\u0026rsquo;s rare that I feel embarassed about anything. Sometimes there\u0026rsquo;ll be awkwardness somewhere when I don\u0026rsquo;t know what to do, but I think that wit can push me through it. I also used to be pretty self-conscious about something like singing in public, like at a videoke session or whatever. This might be understandable given that I\u0026rsquo;m just terrible at singing - the odds that I can carry a given tune are a bit low. I used to always refuse when offered the videoke mic. But these days I\u0026rsquo;m more willing - there was a realization at some point that if I sang in public, I wasn\u0026rsquo;t the one to suffer, it would be the people listening LOL.\u003c/p\u003e\n\u003cp\u003eThere is popular advice that goes \u0026ldquo;Don\u0026rsquo;t sweat the small stuff\u0026rdquo;, and in the grand scheme of things those small embarassing moments you have are pretty much always small stuff, even though in the moment they may feel like almost everything is falling apart. Be willing to laugh at your own embarassments, and move on. Life is too short to be embarassed.\u003c/p\u003e\n",
-            "summary": "I read this tweet from @GaryGulman, a standup comic who gives out tips for comedy writers:\n Today, put together a list of the most embarrassing moments in your life. Take one or two and write them out in detail. Next time you’re in front of a warm crowd, work on telling the story.\n The idea being of course, that such an exercise trains you to be more vulnerable in front on an audience.",
-            "date_published": "2019-03-14T05:56:56+00:00",
-            "date_modified": "2020-10-20T14:02:56+08:00",
-            "section": "post",
-            "source_path": "post/2019/03/embarassment/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1106073232011153408/"}]
             
             
             }

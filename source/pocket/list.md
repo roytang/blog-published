@@ -1,4 +1,6 @@
 
+- [An incomplete list of skills senior engineers need, beyond coding](/2021/06/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding/)
+
 - [40 for 40](/2021/06/40-for-40/)
 
 - [25 Years of CSS](/2021/06/25-years-of-css/)
