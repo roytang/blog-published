@@ -29,6 +29,9 @@ Latest shared links:
 Latest notes:
     
 
+- [12 Jun 2021 2:32pm](https://mirror.roytang.net/2021/06/1403721773514854404/): Well, another MTG/the Simpsons parody complete! You can find the full video at https://www.reddit.com/r/magicTCG/comments/nxtro7/the_mono_red_song_an_mtg_parody_song/
+Thank you @TolarianCollege @SaffronOlive @kaibudde @BasicMountain and @sandydogmtg for being inspiring creators and players, and I hope you don&rsquo;t mind your portrayal! &lt;3
+Your browser does not support the video tag.  
 - [11 Jun 2021 7:07am](https://mirror.roytang.net/2021/06/1403247589395296258/): In today&rsquo;s You Can&rsquo;t Invent This:
 Welcome to the world HTML Pascual.
 - [9 Jun 2021 10:33pm](https://mirror.roytang.net/2021/06/h17mkgy/): Ah, excellent. Kahit yung 1 and 3 lang siguro. I&rsquo;ll DM you my email address. Thanks!
@@ -36,7 +39,6 @@ Welcome to the world HTML Pascual.
 I would guess it&rsquo;s from the early books, kasi I remember medyo raw pa yung art style. Probably somewhere in books 1-3, kasi I have book 4 here, parang mas polished na yung art.
 - [8 Jun 2021 1:49am](https://mirror.roytang.net/2021/06/1402080413628071936/): Wait, what? Including the Philippines? What are our regulations here that would prevent this privacy-protecting feature?
 Quoted peard33&#39;s tweet:   Apple said a new &ldquo;private relay&rdquo; feature designed to obscure users&rsquo; web browsing behavior from internet service providers and advertisers will not be available in China for regulatory reasons. Same in Belarus, Saudi Arabia, South Africa, the Philippines &amp; more. via @StephenNellis  
-- [7 Jun 2021 4:50pm](https://mirror.roytang.net/2021/06/2641c1868d6ccb70715302ea340cae74/): For Your Eyes Only (1981): Bond film no. 12. After the sci-fi fantasy of Moonraker, this one is more grounded and down-to-Earth, a callback to early Connery adventures. No megamalomaniacs to defeat, just foreign agents and mercs. The opening sequence pays homage to the earlier pre-Moore films, acknowledging the death of Tracy Bond and killing off a villain that looks suspiciously like arch-nemesis Blofeld. The opening song is pretty good. The rest of the film was ok, if a bit forgettable.
 
 [View all notes](https://mirror.roytang.net/notes)
 

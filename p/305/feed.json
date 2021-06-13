@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2010/01/2032378/",
+            "url": "https://mirror.roytang.net/2010/01/2032378/",
+            "path": "/2010/01/2032378/",
+            "title": "",
+            "content_html": "\u003cpre\u003e\u003ccode\u003eurlpatterns = patterns('',     \n    (r'^salaries/employee/$', list_detail.object_list, 'employee_info'),\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe third item in the tuple needs to be a dictionary, not a string. Try removing the single quotes around employee_info:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eurlpatterns = patterns('',     \n    (r'^salaries/employee/$', list_detail.object_list, employee_info),\n)\u003c/code\u003e\u003c/pre\u003e\n",
+            "summary": "urlpatterns = patterns('', (r'^salaries/employee/$', list_detail.object_list, 'employee_info'), )  The third item in the tuple needs to be a dictionary, not a string. Try removing the single quotes around employee_info:\nurlpatterns = patterns('', (r'^salaries/employee/$', list_detail.object_list, employee_info), ) ",
+            "date_published": "2010-01-09T04:47:32+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2010/01/2032378/index.md"
+            , "tags": ["python","django"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/2032360/valueerror-in-django/2032378#2032378"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2010/01/7520290963/",
             "url": "https://mirror.roytang.net/2010/01/7520290963/",
             "path": "/2010/01/7520290963/",
@@ -1019,23 +1036,6 @@
                     "source_file": "comment-20091229-075623-94d3189f-2983-46d3-b9b6-d63c1f8e0cfa.json"
                 }
             ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/7151512684/",
-            "url": "https://mirror.roytang.net/2009/12/7151512684/",
-            "path": "/2009/12/7151512684/",
-            "title": "",
-            "content_html": "\u003cp\u003e#mtg It sucks when you have an awesome sealed pool then lose a round because you didn\u0026rsquo;t draw one of your colors \u0026gt;.\u0026lt;\u003c/p\u003e\n",
-            "summary": "#mtg It sucks when you have an awesome sealed pool then lose a round because you didn\u0026rsquo;t draw one of your colors \u0026gt;.\u0026lt;",
-            "date_published": "2009-12-29T06:47:52+00:00",
-            "date_modified": "2019-09-13T04:44:39+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/12/7151512684.md"
-            , "tags": ["mtg"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/7151512684/"}]
-            
-            
             }
         
     ]
