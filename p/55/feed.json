@@ -11,6 +11,57 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/01/1081488933807042560/",
+            "url": "https://mirror.roytang.net/2019/01/1081488933807042560/",
+            "path": "/2019/01/1081488933807042560/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/atlasobscura/\"\u003e@atlasobscura\u003c/a\u003e what was the justification for avoiding digitisation?\u003c/p\u003e\n",
+            "summary": "@atlasobscura what was the justification for avoiding digitisation?",
+            "date_published": "2019-01-05T09:53:49+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/01/1081488933807042560.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081488933807042560/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/",
+            "url": "https://mirror.roytang.net/2019/01/revisiting-c-after-a-decade/",
+            "path": "/2019/01/revisiting-c-after-a-decade/",
+            "title": "Revisiting C++ after a decade",
+            "content_html": "\u003cp\u003eThis year I had the dubious privilege of having to work with a C++ project again. Although my college education was in C, that was a completely different animal. I did self-study C++ for a bit back even before I was working, mostly because I was interested in game development even back then. I remember trying some OpenGL and/or DirectX stuff back with good old Borland Turbo-C++ during the DOS days and using the \u003ca href=\"https://www.bloodshed.net/dev/devcpp.html\"\u003eDev-C++ IDE\u003c/a\u003e when I shifted to Windows. Professionally, I think there was at least one project where I had to work on a Windows-based application using C++ on Visual Studio 6 (before all this .NET nonsense), but for the life of me I can\u0026rsquo;t even remember which project it was anymore. I do remember struggling more with the compiler and the IDE and the layouting of Windows components more than the language itself. And even then, I mostly used the language as an extension of C and not really taking advantage of the more advanced features.\u003c/p\u003e\n\u003cp\u003eAlthough I knew about the language features in theory, I didn\u0026rsquo;t have much experience back then with using features like templates, generic types, or the STL. That was remedied this year when we had a project that required us to adapt an existing open source C++ project and modify it for our needs. This was a full blown project, somewhere in the neighborhood of 175 kloc, and it involved complex stuff like cryptography, encryption, signing, networking, and so on. I didn\u0026rsquo;t even know about the Boost library back then. A huge challenge for me at that time, given my little to no C++ experience. Luckily it was a service process that we planned to compile and deploy on Linux, so at least we didn\u0026rsquo;t need to worry about Windows and UI shenanigans.\u003c/p\u003e\n\u003cp\u003eOne of our senior developers (who was not available full-time for the project) \u003cem\u003edid\u003c/em\u003e have C++ experience though, and he used to train new hires in C++ at his old company. So he dug out some of his old training slides and gave us a C++ refresher/crash course in the span of an afternoon. A bit too much info crammed into too little time, but still informative. Especially for me, since it\u0026rsquo;s been so long since I touched the language, the slides reminded me of a few things I had already forgotten.\u003c/p\u003e\n\n\n    On \n    \u003ca href=\"/2018/08/1035019095287189504/\"\u003e\u003ctime datetime=\"2018-08-30 04:19:16\"\u003e30 Aug 2018 4:19am\u003c/time\u003e\u003c/a\u003e\n    I wrote:\n    \u003cblockquote\u003e\n        \u003cp\u003epython expert: my code ran correctly on my first try! lucky!\u003c/p\u003e\n\u003cp\u003ec++ expert: my code compiled on my first try! lucky!\u003c/p\u003e\n\n        \n\n\n\n\n\n\n    \u003c/blockquote\u003e\n\n\u003cp\u003eSome notes:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ehaving worked almost exclusively with dynamic languages the past few years, I haven\u0026rsquo;t had the chance of use the \u003ca href=\"https://xkcd.com/303/\"\u003eold XKCD \u0026ldquo;compiling\u0026rdquo; excuse\u003c/a\u003e in a while. When we first tried compiling the project, we were seeing build times in the 10-15 minutes range, which was worrying for our coding cycles. And since we were \u0026ldquo;relearning\u0026rdquo; C++, as it were, we were bound to have more iterations than normal. Luckily we found that the build process tended to be a bit faster on succeeding builds, I guess it does some kind of incremental build? Later on, compiling would take around 2-3 minutes.\u003c/li\u003e\n\u003cli\u003emakefiles are something I\u0026rsquo;ve never had to deal with before (that sort of thing used to be handled by an IDE during my last go-around with C++). But I had to figure them out early on in this project, otherwise we couldn\u0026rsquo;t add our own new files to the codebase!\u003c/li\u003e\n\u003cli\u003eI still don\u0026rsquo;t fully understand linking, but we eventually figured out where to correctly place our files so that we wouldn\u0026rsquo;t have any referential errors during linking. (Figuring this out also sped up the build process a bit.)\u003c/li\u003e\n\u003cli\u003eAs I mentioned, I didn\u0026rsquo;t have much experience with C++ features like templates and generic types, so one of the challenges we faced early on was making heads or tails of the usage of this third party library called \u003ca href=\"https://www.codeproject.com/Articles/20027/JSON-Spirit-A-C-JSON-Parser-Generator-Implemented\"\u003eJSON Spirit\u003c/a\u003e, which was used for representing JSON objects. The library uses a lot of generics and templates and typedefs, so it took a bunch of code tracing and a bit of trial and error for us to get the hang of it.\u003c/li\u003e\n\u003cli\u003eone thing we discovered early on was that the use of deeply-nested templates and generic types led to a lot of quite obtuse error messages, a bit of a challenge for us who didn\u0026rsquo;t have much C++ experience. This problem is succinctly described in the following tweet:\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote class=\"twitter-tweet\"\u003e\u003cp lang=\"en\" dir=\"ltr\"\u003eIn C++ we don\u0026#39;t say \u0026quot;Missing asterisk\u0026quot; we say \u0026quot;error C2664: \u0026#39;void std::vector\u0026lt;block,std::allocator\u0026lt;_Ty\u0026gt;\u0026gt;::push_back(const block \u0026amp;)\u0026#39;: cannot convert argument 1 from \u0026#39;std::_Vector_iterator\u0026lt;std::_Vector_val\u0026lt;std::_Simple_types\u0026lt;block\u0026gt;\u0026gt;\u0026gt;\u0026#39; to \u0026#39;block \u0026amp;\u0026amp;\u0026#39;\u0026quot; and i think that\u0026#39;s beautiful\u003c/p\u003e\u0026mdash; mcc (@mcclure111) \u003ca href=\"https://twitter.com/mcclure111/status/1002648636516282368?ref_src=twsrc%5Etfw\"\u003eJune 1, 2018\u003c/a\u003e\u003c/blockquote\u003e \u003cscript async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"\u003e\u003c/script\u003e \n\u003cp\u003eSo there were a lot of challenges along the way, but this is fairly typical for developers coming into a project with an existing large codebase. And on the upside (my usual upside), I learned a lot, and I felt like a C++ genius a few weeks in. When you climb a learning curve quickly, it can make you feel amazing:\u003c/p\u003e\n\u003ca href=\"#01b435b3e3de1769b5c6064c7173280b-lightbox\"\u003e\n    \u003cfigure\u003e\n      \u003cimg src=\"/2019/01/revisiting-c-after-a-decade/hohohoidiit_hu10548764201c54e6af8f32553bbadfc8_4362_300x0_resize_q75_box.jpg\" alt=\"\" title=\"\" class=\"tn\" /\u003e\n      \u003cfigcaption\u003e (Click to view full-size)\u003c/figcaption\u003e\n    \u003c/figure\u003e\n\u003c/a\u003e\n\u003cdiv class=\"lightbox\" id=\"01b435b3e3de1769b5c6064c7173280b-lightbox\" style=\"display: none;\"\u003e\n  \u003ca href=\"#_\"\u003e\n    \u003cimg src=\"/2019/01/revisiting-c-after-a-decade/hohohoidiit.jpg\" /\u003e\n  \u003c/a\u003e\n  \u003cdiv class=\"lightbox_overlay\"\u003e\n    \u003cp\u003e\u003c/p\u003e\n    \u003ctime class=\"dt-published\" datetime=\"5 Jan 2019 5:58am\"\u003e5 Jan 2019 5:58am\u003c/time\u003e\u003ca href=\"#_\"\u003eClose\u003c/a\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003eIn the end I think we did pull it off and were able to implement and integrate the needed changes well, without any major issues. Given C\u0026rsquo;s challenges with memory management and so on, I was kind of expecting we would encounter things like crashes, memory leaks, and such, but it turns out using the STL and Boost largely alleviates that problem. The project is still ongoing and has a bunch of requirements-related issues, but I think the C++ side turned out relatively well. Unfortunately, I don\u0026rsquo;t think I\u0026rsquo;ll have much use for C++ knowledge outside of this project, the language isn\u0026rsquo;t really appropriate for the sort of personal projects I like to take on.\u003c/p\u003e\n",
+            "summary": "This year I had the dubious privilege of having to work with a C++ project again. Although my college education was in C, that was a completely different animal. I did self-study C++ for a bit back even before I was working, mostly because I was interested in game development even back then. I remember trying some OpenGL and/or DirectX stuff back with good old Borland Turbo-C++ during the DOS days and using the Dev-C++ IDE when I shifted to Windows.",
+            "date_published": "2019-01-05T05:58:22+00:00",
+            "date_modified": "2020-10-20T15:25:02+08:00",
+            "section": "post",
+            "source_path": "post/2019/01/revisiting-c++/index.md"
+            , "tags": ["c++","Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081599258204213249/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/01/181725307993/",
+            "url": "https://mirror.roytang.net/2019/01/181725307993/",
+            "path": "/2019/01/181725307993/",
+            "title": "",
+            "content_html": "\u003cp\u003eSpider-Men #1 cover by Jim Cheung\u003c/p\u003e\n",
+            "summary": "Spider-Men #1 cover by Jim Cheung",
+            "date_published": "2019-01-05T02:00:36+00:00",
+            "date_modified": "2020-03-27T12:43:21+08:00",
+            "section": "photos",
+            "source_path": "photos/2019/01/181725307993/index.md"
+            , "tags": ["marvel","comics","spider-man","ireadcomicbooks"]
+            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181725307993/spider-men-1-cover-by-jim-cheung"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1081369846858817541/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/01/1081450493551890432/",
             "url": "https://mirror.roytang.net/2019/01/1081450493551890432/",
             "path": "/2019/01/1081450493551890432/",
@@ -813,65 +864,6 @@
             "source_path": "notes/2018/12/1078496645904506880/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078496645904506880/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/12/181474196904/",
-            "url": "https://mirror.roytang.net/2018/12/181474196904/",
-            "path": "/2018/12/181474196904/",
-            "title": "",
-            "content_html": "\u003cp\u003eOld Man Hawkeye #1 cover by Marco Chechetto\u003c/p\u003e\n",
-            "summary": "Old Man Hawkeye #1 cover by Marco Chechetto",
-            "date_published": "2018-12-28T02:00:57+00:00",
-            "date_modified": "2020-03-27T12:43:21+08:00",
-            "section": "photos",
-            "source_path": "photos/2018/12/181474196904/index.md"
-            , "tags": ["marvel","comics","hawkeye","old man hawkeye","covers","ireadcomicbooks"]
-            , "syndicated": [{"type":"tumblr","url":"https://ireadcomicbooks.tumblr.com/post/181474196904/old-man-hawkeye-1-cover-by-marco-chechetto"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078470832513601536/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/art_abon",
-                    "source_file": "comment-20181228-024518-f8091622-d394-4ac6-9744-9993def8b828.json"
-                }, { 
-                    "url": "https://twitter.com/roytang",
-                    "source_file": "comment-20181228-033309-d810dc35-13f8-45ff-8a3a-9dd06eb46512.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/12/1078289304915341312/",
-            "url": "https://mirror.roytang.net/2018/12/1078289304915341312/",
-            "path": "/2018/12/1078289304915341312/",
-            "title": "",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m not sure I want a new black mirror when reality is already so effed up\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m not sure I want a new black mirror when reality is already so effed up",
-            "date_published": "2018-12-27T13:59:38+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2018/12/1078289304915341312.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078289304915341312/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2018/12/private-writing/",
-            "url": "https://mirror.roytang.net/2018/12/private-writing/",
-            "path": "/2018/12/private-writing/",
-            "title": "Private writing",
-            "content_html": "\u003cp\u003eTwo things I\u0026rsquo;ve learned over the past couple of months of \u003ca href=\"/2018/12/daily-blogging/\"\u003edaily blog posting\u003c/a\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eI have a lot to write about\u003c/li\u003e\n\u003cli\u003eI might have too much to write about\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSince I use this space to help myself think through some things, I found that I sometimes have a tendency to write about things that maybe I shouldn\u0026rsquo;t write about publicly, either for personal privacy reasons, or for professional courtesy reasons. Thankfully, I\u0026rsquo;ve been able to hold myself back so far.\u003c/p\u003e\n\u003cp\u003eTo help suppress such urges, I\u0026rsquo;ve also recently resumed private journalling, a practice I haven\u0026rsquo;t revisited for quite a while. Basically just a document where I can dump my own thoughts about things that are probably inappropriate for public consumption. So I get the benefits of writing my thoughts down without any possible privacy issues. So far the need for private journal entries has been few and far between. Between the blog and the private journal, it should be a lot easier for me to take a look back at what I was thinking at any given point in time, should the need arise.\u003c/p\u003e\n\u003cp\u003eThe last time I did the private journalling thing was with a service called \u003ca href=\"https://750words.com/\"\u003e750 words\u003c/a\u003e, which was pretty good. It inspired me into a daily writing habit for a bit more than a year. I should probably go through those sometime and see if I can\u0026rsquo;t mine them for blog posts.\u003c/p\u003e\n\u003cp\u003eAs for this blog and the daily posting thing, I have to admit the past week or so has been challenging. The week of Christmas is usually busy as there\u0026rsquo;s last minute gift buying and family visitors and holiday meetups and such so I don\u0026rsquo;t always have the time and/or energy to write posts. I thought about breaking the \u0026ldquo;daily posting\u0026rdquo; rule a few times, but somehow managed to keep it going. The problem with requiring myself to post every day is that it violates \u003ca href=\"/2018/10/you-dont-have-to-be-on-all-the-time/\"\u003e\u0026ldquo;You don\u0026rsquo;t have to be on all the time\u0026rdquo;\u003c/a\u003e. While writing this post, I considered loosening the commitment for the New Year, something like \u0026ldquo;post every day, unless you really don\u0026rsquo;t have time or energy\u0026rdquo;, but that\u0026rsquo;s pretty much how habits are broken. I do still find the practice fruitful, so I will continue it for the time being, as much as I can.\u003c/p\u003e\n",
-            "summary": "Two things I\u0026rsquo;ve learned over the past couple of months of daily blog posting:\n I have a lot to write about I might have too much to write about  Since I use this space to help myself think through some things, I found that I sometimes have a tendency to write about things that maybe I shouldn\u0026rsquo;t write about publicly, either for personal privacy reasons, or for professional courtesy reasons.",
-            "date_published": "2018-12-27T05:56:56+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2018/12/private-writing/index.md"
-            , "tags": ["Writing"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1078169381421629440/"}]
             
             
             }

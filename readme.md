@@ -29,16 +29,14 @@ Latest shared links:
 Latest notes:
     
 
+- [14 Jun 2021 5:38am](https://mirror.roytang.net/2021/06/1404312180720226305/): I did another game jam this past weekend and made a (very short) game featuring a manananggal. You can try it if you like: https://hungryroy.itch.io/manananggal (if you have an https://itch.io/ account you can also give it a rating for the game jam!)
+- [13 Jun 2021 9:45am](https://mirror.roytang.net/2021/06/1404011982135586824/): @Westraid what is that triangle thing in front of the couch? You can put your legs up on it?
 - [12 Jun 2021 2:32pm](https://mirror.roytang.net/2021/06/1403721773514854404/): Well, another MTG/the Simpsons parody complete! You can find the full video at https://www.reddit.com/r/magicTCG/comments/nxtro7/the_mono_red_song_an_mtg_parody_song/
 Thank you @TolarianCollege @SaffronOlive @kaibudde @BasicMountain and @sandydogmtg for being inspiring creators and players, and I hope you don&rsquo;t mind your portrayal! &lt;3
 Your browser does not support the video tag.  
 - [11 Jun 2021 7:07am](https://mirror.roytang.net/2021/06/1403247589395296258/): In today&rsquo;s You Can&rsquo;t Invent This:
 Welcome to the world HTML Pascual.
 - [9 Jun 2021 10:33pm](https://mirror.roytang.net/2021/06/h17mkgy/): Ah, excellent. Kahit yung 1 and 3 lang siguro. I&rsquo;ll DM you my email address. Thanks!
-- [9 Jun 2021 12:19pm](https://mirror.roytang.net/2021/06/nvukbz/): Posted on r/Philippines: I&rsquo;m looking for an old Pugad Baboy strip Baka merong may copy. In the strip, Patrolman Durugas has stopped Mang Dagul for a traffic violation, tapos pinilisopo sya ni Dagul, so binigyan sya ng ticket, nakasulat &ldquo;violation: pilosopo&rdquo;
-I would guess it&rsquo;s from the early books, kasi I remember medyo raw pa yung art style. Probably somewhere in books 1-3, kasi I have book 4 here, parang mas polished na yung art.
-- [8 Jun 2021 1:49am](https://mirror.roytang.net/2021/06/1402080413628071936/): Wait, what? Including the Philippines? What are our regulations here that would prevent this privacy-protecting feature?
-Quoted peard33&#39;s tweet:   Apple said a new &ldquo;private relay&rdquo; feature designed to obscure users&rsquo; web browsing behavior from internet service providers and advertisers will not be available in China for regulatory reasons. Same in Belarus, Saudi Arabia, South Africa, the Philippines &amp; more. via @StephenNellis  
 
 [View all notes](https://mirror.roytang.net/notes)
 
