@@ -11,6 +11,113 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
+            "url": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
+            "path": "/2016/06/password-security-for-application-developers/",
+            "title": "Password Security for Application Developers",
+            "content_html": "\u003cp\u003eIn the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eNever store passwords in plain text!\u003c/strong\u003e This is the most important rule. It means that if your database is ever compromised, the password information will not be exposed\u003c/p\u003e\n\u003cp\u003eThis is true even if your application doesn\u0026rsquo;t contain sensitive data or would not otherwise cause any problems if compromised. This is because many users will tend to re-use the same password across different services (although they really shouldn\u0026rsquo;t!)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eUse a strong one-way cryptographic hash function to store the passwords.\u003c/strong\u003e One-way hashes can still be brute-forced, but the idea is that the computational effort to do so will be so large to make it not worth the effort. The most commonly used/recommended algorithms are \u003ca href=\"http://security.stackexchange.com/questions/4781/do-any-security-experts-recommend-bcrypt-for-password-storage/6415#6415\"\u003ebcrypt and PBKDF2\u003c/a\u003e. One of these should suffice, but take note to check every few years or so if better cryptographic hash algorithms emerge; as technology and hardware evolves and computational power increases, at some point in the future stronger algorithms may be needed (it might take a while though, bcrypt has been good since 1999)\u003c/p\u003e\n\u003cp\u003eCryptographic hash functions are designed to be collision-resistant, meaning the result of the hash function will almost certainly be unique. When the user submits a password for authentication, you simply hash it using the same method and compare the hash against the one stored in the database\u003c/p\u003e\n\u003cp\u003e**Use a unique salt per password before hashing. **Salting means that you don\u0026rsquo;t hash the password by itself, you instead combine it with another string before hashing. Not only does this increase the length and complexity of the hashed string, but reduces vulnerability to so-called \u003ca href=\"https://en.wikipedia.org/wiki/Dictionary_attack\"\u003edictionary attacks\u003c/a\u003e and \u003ca href=\"https://en.wikipedia.org/wiki/Rainbow_table\"\u003erainbow table attacks\u003c/a\u003e. The salt should be different for each user, probably some combination of personal data like the username and a key like the user id stored in your system\u003c/p\u003e\n\u003cp\u003e**Never send passwords in plain text either. **You may be tempted to send out an email with the password in plain text on a password reset request. The common practice now is to just generate and send a unique user-specific link to allow the user to set his own password manually\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eForce good password practices on your users\u003c/strong\u003e. This means requiring sufficiently strong passwords. Many modern services provide quick feedback on how strong the input password is. Optionally you can also require that the password contains a varied amount of lower case letters, upper case letters, numbers, and other special characters, but this is not really necessary if the passwords are of sufficient length. Also consider requiring users to change their passwords after a set period\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eYou should disallow the most common passwords.\u003c/strong\u003e A list of the most commonly used passwords (such as \u0026ldquo;password\u0026rdquo; and \u0026ldquo;123456\u0026rdquo;) are available from previously leaked password hacks. Microsoft has recently started to roll out this sort of check now in their services. Actually, one good idea I\u0026rsquo;ve heard of before is to have a uniqueness check on the password field \u0026ndash; disallow users from having the same password as any other user, but this may not be feasible depending on how you hash the passwords\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eIf your application has a large number of users or is especially critical (anything involving money transactions is a good candidate), you should also consider implementing some sort of \u003cstrong\u003etwo-factor authentication\u003c/strong\u003e. Most common implementations these days use email, SMS or a mobile application as the second factor\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eThese practices won\u0026rsquo;t prevent your application from being hacked. In truth, probably nothing can really prevent hacks 100% especially against determined hackers. These are simply mitigation practices you need to be aware of as the application developer to protect your users in case your application does get hacked. Other methods of securing your system may be the responsibility of other roles such as system administrators/engineers or dev ops\u003c/p\u003e\n",
+            "summary": "In the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:",
+            "date_published": "2016-06-16T01:30:02+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2016/06/password-security-for-application-developers/index.md"
+            , "tags": ["Software Development","Tech Life"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743255093370290176/"}]
+            
+            , "comments": [
+                { 
+                    "url": "",
+                    "source_file": "comment-20160616094928-wp-joaquin.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/743238173598224385/",
+            "url": "https://mirror.roytang.net/2016/06/743238173598224385/",
+            "path": "/2016/06/743238173598224385/",
+            "title": "",
+            "content_html": "\u003cp\u003eBloodstained is looking sweet: \u003ca href=\"https://www.youtube.com/watch?v=lAL07Pbqx3c\"\u003ehttps://www.youtube.com/watch?v=lAL07Pbqx3c\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Bloodstained is looking sweet: https://www.youtube.com/watch?v=lAL07Pbqx3c",
+            "date_published": "2016-06-16T00:26:03+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/743238173598224385.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743238173598224385/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/where-can-i-find-the-best-web/",
+            "url": "https://mirror.roytang.net/2016/06/where-can-i-find-the-best-web/",
+            "path": "/2016/06/where-can-i-find-the-best-web/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Where-can-I-find-the-best-web-developers-in-the-Philippines/answer/Roy-Tang\"\u003eWhere can I find the best web developers in the Philippines?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThe best web developers are working for other people/firms and don’t need to advertise themselves. They always have work lined up so they don’t need to be camping oDesk, Freelancer, etc\u003c/p\u003e\n\u003cp\u003eWhat sort of work are you looking to provide?\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n Where can I find the best web developers in the Philippines?\n The best web developers are working for other people/firms and don’t need to advertise themselves. They always have work lined up so they don’t need to be camping oDesk, Freelancer, etc\nWhat sort of work are you looking to provide?",
+            "date_published": "2016-06-16T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/where-can-i-find-the-best-web.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Where-can-I-find-the-best-web-developers-in-the-Philippines/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/4o7ifq/",
+            "url": "https://mirror.roytang.net/2016/06/4o7ifq/",
+            "path": "/2016/06/4o7ifq/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rcomicbooks-question-about-flashpoint-and-rebirthhttpsredditcomrcomicbookscomments4o7ifqquestion_about_flashpoint_and_rebirth\"\u003ePosted on r/comicbooks: \u003ca href=\"https://reddit.com/r/comicbooks/comments/4o7ifq/question_about_flashpoint_and_rebirth/\"\u003eQuestion about Flashpoint and Rebirth\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eSo, the current surviving Clark Kent/Superman is supposedly pre-Flashpoint Superman, and New 52 Superman is dead right?\u003c/p\u003e\n\u003cp\u003eBut Pre-Flashpoint Wally West coming out of the speed force and restoring New 52 Barry\u0026rsquo;s memories implies that New 52 Barry is the same as Pre-Flashpoint Barry. Shouldn\u0026rsquo;t this also mean that New 52 Superman should be the same Superman from Pre-Flashpoint? Is this discrepancy something that\u0026rsquo;s been explained somewhere? Or we just accept that Barry and Superman transitioned differently and handwave it away. \u0026ldquo;Comics, everbody!\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "Posted on r/comicbooks: Question about Flashpoint and Rebirth So, the current surviving Clark Kent/Superman is supposedly pre-Flashpoint Superman, and New 52 Superman is dead right?\nBut Pre-Flashpoint Wally West coming out of the speed force and restoring New 52 Barry\u0026rsquo;s memories implies that New 52 Barry is the same as Pre-Flashpoint Barry. Shouldn\u0026rsquo;t this also mean that New 52 Superman should be the same Superman from Pre-Flashpoint? Is this discrepancy something that\u0026rsquo;s been explained somewhere?",
+            "date_published": "2016-06-15T22:15:53+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/4o7ifq/index.md"
+            , "tags": ["comics"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/comicbooks/comments/4o7ifq/question_about_flashpoint_and_rebirth/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/743154314139492354/",
+            "url": "https://mirror.roytang.net/2016/06/743154314139492354/",
+            "path": "/2016/06/743154314139492354/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/Westraid/\"\u003e@Westraid\u003c/a\u003e friends are a quality over quantity thing. When you click with the right people, it won\u0026rsquo;t be a pain. Well, not much at least :p\u003c/p\u003e\n",
+            "summary": "@Westraid friends are a quality over quantity thing. When you click with the right people, it won\u0026rsquo;t be a pain. Well, not much at least :p",
+            "date_published": "2016-06-15T18:52:50+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/743154314139492354.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743154314139492354/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/d4aj3md/",
+            "url": "https://mirror.roytang.net/2016/06/d4aj3md/",
+            "path": "/2016/06/d4aj3md/",
+            "title": "",
+            "content_html": "\u003cp\u003eI like interesting battle systems. Is there some place that documents what are the best things about the Pokemon battle system for someone who doesn\u0026rsquo;t play the games?\u003c/p\u003e\n",
+            "summary": "I like interesting battle systems. Is there some place that documents what are the best things about the Pokemon battle system for someone who doesn\u0026rsquo;t play the games?",
+            "date_published": "2016-06-15T18:43:04+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/d4aj3md/index.md"
+            , "tags": ["truegaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/truegaming/comments/4o62a8/why_hasnt_there_been_an_indie_clone_of_pokemon/d4aj3md/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/06/d49zkde/",
             "url": "https://mirror.roytang.net/2016/06/d49zkde/",
             "path": "/2016/06/d49zkde/",
@@ -729,15 +836,15 @@
             "url": "https://mirror.roytang.net/2016/06/742202063258406912/",
             "path": "/2016/06/742202063258406912/",
             "title": "",
-            "content_html": "\u003cp\u003eThe deadliest female sniper in history: \u003ca href=\"https://www.rejectedprincesses.com/princesses/lyudmila-pavlichenko\"\u003ehttps://www.rejectedprincesses.com/princesses/lyudmila-pavlichenko\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "The deadliest female sniper in history: https://www.rejectedprincesses.com/princesses/lyudmila-pavlichenko",
+            "content_html": "\u003cp\u003eThe deadliest female sniper in history:\u003c/p\u003e\n",
+            "summary": "The deadliest female sniper in history:",
             "date_published": "2016-06-13T03:48:55+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/742202063258406912.md"
+            "date_modified": "2021-06-14T13:27:17+08:00",
+            "section": "links",
+            "source_path": "links/2016/06/742202063258406912/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/742202063258406912/"}]
-            
+            ,"link": "https://www.rejectedprincesses.com/princesses/lyudmila-pavlichenko"
             
             }
         
@@ -870,113 +977,6 @@
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGi_lqFMoHF/"},{"type":"tumblr","url":"https://tumblr.roytang.net/post/145794483755/eating-ramen-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/741901466944708610/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154664371433912:2"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4npeoy/june_12th_ramen/d45skyl/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/how-do-i-improve-my-computer-k/",
-            "url": "https://mirror.roytang.net/2016/06/how-do-i-improve-my-computer-k/",
-            "path": "/2016/06/how-do-i-improve-my-computer-k/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-do-I-improve-my-computer-knowledge-as-a-programmer/answer/Roy-Tang\"\u003eHow do I improve my computer knowledge as a programmer?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eFirst, it isn’t necessary for you as a programmer to know these things\u003c/p\u003e\n\u003cp\u003eSecond, do you have a computer of your own? I’ve had and maintained my own computer for almost two decades now, so most of my knowledge of how computers work comes with that experience. I’ve encountered a lot of problems and researched how to fix each one so I have a good idea of how computers work and what fixes are available to common problems. Having your own computer for personal use (not just the one at work) will help a lot. Desktops are better than laptops, since they are more easily customisable\u003c/p\u003e\n\u003cp\u003eThird, if you don’t already have a computer, build one yourself. Or even if you already have one, either build a second one for yourself and help a friend build one. And by “build” I don’t mean buying one fully assembled already; I mean buying each part individually and putting it together yourself. That means researching what parts are needed and what will serve your needs best and what will be compatible and canvassing for the best prices and finally sitting down and opening all the boxes and putting it all together. I’ve put together five different desktop builds over the past twenty years myself\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n How do I improve my computer knowledge as a programmer?\n First, it isn’t necessary for you as a programmer to know these things\nSecond, do you have a computer of your own? I’ve had and maintained my own computer for almost two decades now, so most of my knowledge of how computers work comes with that experience. I’ve encountered a lot of problems and researched how to fix each one so I have a good idea of how computers work and what fixes are available to common problems.",
-            "date_published": "2016-06-12T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/how-do-i-improve-my-computer-k.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-do-I-improve-my-computer-knowledge-as-a-programmer/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/is-it-acceptable-for-the-menta/",
-            "url": "https://mirror.roytang.net/2016/06/is-it-acceptable-for-the-menta/",
-            "path": "/2016/06/is-it-acceptable-for-the-menta/",
-            "title": "",
-            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Is-it-acceptable-for-the-mentally-ill-to-take-a-little-time-after-a-psychotic-break-so-they-can-put-life-back-into-perspective/answer/Roy-Tang\"\u003eIs it acceptable for the mentally ill to take a little time after a psychotic break, so they can put life back into perspective?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eRegardless of being mentally ill or not, you \u003cem\u003eshould\u003c/em\u003e take a little time after a psychotic break to put your life back into perspective\u003c/p\u003e\n",
-            "summary": "Someone on quora asked:\n Is it acceptable for the mentally ill to take a little time after a psychotic break, so they can put life back into perspective?\n Regardless of being mentally ill or not, you should take a little time after a psychotic break to put your life back into perspective",
-            "date_published": "2016-06-12T00:00:00+00:00",
-            "date_modified": "2021-03-22T23:22:13+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/is-it-acceptable-for-the-menta.md"
-            , "tags": ["answers"]
-            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Is-it-acceptable-for-the-mentally-ill-to-take-a-little-time-after-a-psychotic-break-so-they-can-put-life-back-into-perspective/answer/Roy-Tang"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/741701723534692353/",
-            "url": "https://mirror.roytang.net/2016/06/741701723534692353/",
-            "path": "/2016/06/741701723534692353/",
-            "title": "",
-            "content_html": "\u003cp\u003eThe Laws of Simplicity: \u003ca href=\"http://lawsofsimplicity.com/los.html\"\u003ehttp://lawsofsimplicity.com/los.html\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "The Laws of Simplicity: http://lawsofsimplicity.com/los.html",
-            "date_published": "2016-06-11T18:40:45+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/741701723534692353.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741701723534692353/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/741664037520310273/",
-            "url": "https://mirror.roytang.net/2016/06/741664037520310273/",
-            "path": "/2016/06/741664037520310273/",
-            "title": "",
-            "content_html": "\u003cp\u003eToday\u0026rsquo;s Google doodle is a jeepney. I wonder if there\u0026rsquo;s this one guy at Google whose only job is to think up the next day\u0026rsquo;s Google doodle\u003c/p\u003e\n",
-            "summary": "Today\u0026rsquo;s Google doodle is a jeepney. I wonder if there\u0026rsquo;s this one guy at Google whose only job is to think up the next day\u0026rsquo;s Google doodle",
-            "date_published": "2016-06-11T16:11:00+00:00",
-            "date_modified": "2019-09-01T15:11:18+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/741664037520310273.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741664037520310273/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/bghdlqvsohy/",
-            "url": "https://mirror.roytang.net/2016/06/bghdlqvsohy/",
-            "path": "/2016/06/bghdlqvsohy/",
-            "title": "",
-            "content_html": "\u003cp\u003eSurprisingly spicy (not sure what I expected)\u003c/p\u003e\n",
-            "summary": "Surprisingly spicy (not sure what I expected)",
-            "date_published": "2016-06-11T10:38:06+00:00",
-            "date_modified": "2020-03-28T03:38:04+08:00",
-            "section": "photos",
-            "source_path": "photos/2016/06/BGhdlqvsoHy/index.md"
-            
-            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGhdlqvsoHy/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154664371433912:0"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/741544478746382336/",
-            "url": "https://mirror.roytang.net/2016/06/741544478746382336/",
-            "path": "/2016/06/741544478746382336/",
-            "title": "",
-            "content_html": "\u003cp\u003eWhen I see \u0026ldquo;Uberpool\u0026rdquo; I imagine an app that lets you call for a mutant mercenary on demand\u003c/p\u003e\n",
-            "summary": "When I see \u0026ldquo;Uberpool\u0026rdquo; I imagine an app that lets you call for a mutant mercenary on demand",
-            "date_published": "2016-06-11T08:15:55+00:00",
-            "date_modified": "2021-01-18T16:43:19+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/741544478746382336/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/741544478746382336/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154663321588912"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://www.facebook.com/SabrinaTri",
-                    "source_file": "comment-20160611-000000-4e331194-a1e8-4935-81f5-45533cad7994.json"
-                }
-            ]
             }
         
     ]

@@ -1,4 +1,10 @@
 
+- [The Shortcut](/2021/06/the-shortcut/)
+
+- [How &amp;quot;Tom&#39;s Diner&amp;quot; Tuned the MP3](/2021/06/how-quottoms-dinerquot-tuned-the-mp3/)
+
+- [A Project of One&#39;s Own](/2021/06/a-project-of-ones-own/)
+
 - [An incomplete list of skills senior engineers need, beyond coding](/2021/06/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding/)
 
 - [40 for 40](/2021/06/40-for-40/)

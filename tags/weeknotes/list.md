@@ -1,4 +1,6 @@
 
+- [Weeknotes 2021-06-13](/2021/06/weeknotes-2021-06-13/)
+
 - [Weeknotes 2021-06-06 Anything and Everything All Of The Time](/2021/06/weeknotes-2021-06-06/)
 
 - [Weeknotes 2021-05-30](/2021/05/weeknotes-2021-05-30/)

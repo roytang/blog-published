@@ -7,22 +7,22 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-06-13](https://mirror.roytang.net/2021/06/weeknotes-2021-06-13/)
 - [Weeknotes 2021-06-06 Anything and Everything All Of The Time](https://mirror.roytang.net/2021/06/weeknotes-2021-06-06/)
 - [Book Review: And Then There Were None by Agatha Chrstie](https://mirror.roytang.net/2021/06/book-review-and-then-there-were-none-by-agatha-chrstie/)
 - [Weeknotes 2021-05-30](https://mirror.roytang.net/2021/05/weeknotes-2021-05-30/)
 - [Book Reviews: Murder on the Orient Express and Death on the Nile by Agatha Chrstie](https://mirror.roytang.net/2021/05/book-reviews-murder-on-the-orient-express-and-death-on-the-nile-by-agatha-chrstie/)
-- [Anticipation and Anxiety](https://mirror.roytang.net/2021/05/anticipation-and-anxiety/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
 Latest shared links:
     
 
+- [The Shortcut](https://mirror.roytang.net/2021/06/the-shortcut/)
+- [How &amp;quot;Tom&#39;s Diner&amp;quot; Tuned the MP3](https://mirror.roytang.net/2021/06/how-quottoms-dinerquot-tuned-the-mp3/)
+- [A Project of One&#39;s Own](https://mirror.roytang.net/2021/06/a-project-of-ones-own/)
 - [An incomplete list of skills senior engineers need, beyond coding](https://mirror.roytang.net/2021/06/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding/)
 - [40 for 40](https://mirror.roytang.net/2021/06/40-for-40/)
-- [25 Years of CSS](https://mirror.roytang.net/2021/06/25-years-of-css/)
-- [How We Brought the Online Collections into the Modern Age using Web Technology of the Past](https://mirror.roytang.net/2021/06/how-we-brought-the-online-collections-into-the-modern-age-using-web-technology-of-the-past/)
-- [Why Emotionally Intelligent Minds Embrace the Rule of &#39;Writing in Reverse&#39;](https://mirror.roytang.net/2021/06/why-emotionally-intelligent-minds-embrace-the-rule-of-writing-in-reverse/)
 
 [View all links](https://mirror.roytang.net/links)
 
