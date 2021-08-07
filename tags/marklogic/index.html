@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>marklogic  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="marklogic  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/tags/marklogic/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href='https://mirror.roytang.net/tags/marklogic/index.xml' rel="alternate" type="application/rss+xml" title="marklogic" />
+<link href='' rel="alternate" type="application/json" title="marklogic JSON Feed" />
+<link href='' rel="feed" type="application/html" title="marklogic H-Feed" />
+
+<link rel="canonical" href="https://mirror.roytang.net/tags/marklogic/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="taxonomy">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+  <section class="h-feed">
+    <a class="u-url" href="https://mirror.roytang.net/tags/marklogic/"></a>
+    <p class="p-name">All entries tagged marklogic.</p>
+    <p>You can subscribe to an <a href="https://mirror.roytang.net/tags/marklogic/index.xml">RSS feed</a> of this list.</p>
+    
+<h3>Dec 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a query using MarkLogic node.js that basically boils down to something like this:</p>
+<pre><code>db.documents.query(qb.where(qb.collection('test'))).stream()
+.on('data', function(row) {
+    console.log(&quot;Stream on data&quot;);
+})
+.on('end', function() {
+    console.log(&quot;Stream on end&quot;);
+})
+.on('error', function(error) {
+    console.log(error);
+})
+;
+</code></pre>
+<p>Now, for a certain collection we have in our database, the &lsquo;end&rsquo; function doesn&rsquo;t fire, i.e. I never see &ldquo;Stream on end&rdquo; appear in the log. There&rsquo;s no error or anything, processing just stops. It&rsquo;s only for this particular collection, other collections seem fine.</p>
+<p>If I query documents in that collection directly using other methods such as qb.value() without using qb.collection(), the end event fires correctly. But once I add qb.collection() into the mix (using qb.and), the end event doesn&rsquo;t fire.</p>
+<p>I&rsquo;m unsure how to debug this, as this is my first time trying to use streams in the nodejs client library. Any advice as to what I can check?</p>
+<p>Thanks!</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/12/48011448/"><time class="dt-published" datetime="2017-12-28 17:04:03">28 Dec 2017 5:04pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/48011448/marklogic-node-js-stream-end-event-doesnt-fire-for-certain-collections" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/12/48011448/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>How to specify that a column in the schema should be nullable?</p>
+<p>I tried adding a nullable attribute:</p>
+<pre><code>var myFirstTDE = xdmp.toJSON(
+  {
+    &quot;template&quot;: {
+      &quot;context&quot;: &quot;/match&quot;,
+      &quot;collections&quot;: [&quot;source1&quot;],
+      &quot;rows&quot;: [
+        {
+          &quot;schemaName&quot;: &quot;soccer&quot;,
+          &quot;viewName&quot;: &quot;matches&quot;,
+          &quot;columns&quot;: [
+            {
+              &quot;name&quot;: &quot;id&quot;,
+              &quot;scalarType&quot;: &quot;long&quot;,
+              &quot;val&quot;: &quot;id&quot;,
+              &quot;nullable&quot;: 0
+            },
+            {
+              &quot;name&quot;: &quot;document&quot;,
+              &quot;scalarType&quot;: &quot;string&quot;,
+              &quot;val&quot;: &quot;docUri&quot;
+            },
+            {
+              &quot;name&quot;: &quot;date&quot;,
+              &quot;scalarType&quot;: &quot;date&quot;,
+              &quot;val&quot;: &quot;match-date&quot;
+            },
+            {
+              &quot;name&quot;: &quot;league&quot;,
+              &quot;scalarType&quot;: &quot;string&quot;,
+              &quot;val&quot;: &quot;league&quot;
+            }
+          ]
+        }
+      ]
+    }
+  }
+);
+
+tde.validate( 
+  [myFirstTDE]
+);
+</code></pre>
+<p>But this gave me a template error:</p>
+<pre><code>&quot;message&quot;: &quot;TDE-INVALIDTEMPLATENODE: Invalid extraction template node: fn:doc('')/template/array-node('rows')/object-node()/array-node('columns')/object-node()[1]/number-node('nullable')&quot;
+</code></pre>
+<p>For a template defined using XQuery, adding nullable to the column works:</p>
+<pre><code>&lt;column&gt;
+  &lt;name&gt;ISSN&lt;/name&gt;
+  &lt;scalar-type&gt;string&lt;/scalar-type&gt;
+  &lt;val&gt;Journal/ISSN&lt;/val&gt;
+  &lt;nullable&gt;true&lt;/nullable&gt;
+&lt;/column&gt;
+</code></pre>
+<p>How to do the same thing using JS/Json?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/12/47880549/"><time class="dt-published" datetime="2017-12-19 05:31:56">19 Dec 2017 5:31am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/javascript">#javascript</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47880549/marklogic-template-driven-extraction-how-to-define-nullable-in-javascript-templ" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/12/47880549/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>This is a follow-up to my question here: <a href="https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250">https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes/47459250#47459250</a></p>
+<p>So let&rsquo;s say I have a number of documents structured like this:</p>
+<pre><code>declareUpdate();
+
+xdmp.documentInsert(
+       '/test/tde.json',
+       {
+         content: {
+           name:'Joe Parent',
+           children: [
+             {
+               name: 'Bob Child'
+             },
+             {
+               name: 'Sue Child'
+             },
+             {
+               name: 'Guy Child'
+             }
+           ]
+         }
+       },
+       {permissions : xdmp.defaultPermissions(),
+        collections : ['test']})
+</code></pre>
+<p>I want to define a template that would extract triples from these documents defining sibling relationships between the children. For the above example, I would want to extract the following triples (the relationship is two-way):</p>
+<pre><code>Bob Child sibling-of Sue Child
+Bob Child sibling-of Guy Child
+Sue Child sibling-of Bob Child
+Sue Child sibling-of Guy Child
+Guy Child sibling-of Bob Child
+Guy Child sibling-of Sue Child
+</code></pre>
+<p>How can i set up my template to accomplish this?</p>
+<p>Thanks!</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/11/47513579/"><time class="dt-published" datetime="2017-11-27 14:42:48">27 Nov 2017 2:42pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47513579/marklogic-template-driven-extraction-and-triples-forming-triples-between-array" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/11/47513579/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;ve been studying the examples here: <a href="https://docs.marklogic.com/guide/semantics/tde#id_25531">https://docs.marklogic.com/guide/semantics/tde#id_25531</a></p>
+<p>I have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form &ldquo;name1 is-a-parent-of name2&rdquo;. Here&rsquo;s a test I tried, with a sample of the document structure:</p>
+<pre><code>declareUpdate();
+
+xdmp.documentInsert(
+       '/test/tde.json',
+       {
+         content: {
+           name:'Joe Parent',
+           children: [
+             {
+               name: 'Bob Child'
+             },
+             {
+               name: 'Sue Child'
+             }
+           ]
+         }
+       },
+       {permissions : xdmp.defaultPermissions(),
+        collections : ['test']})
+
+cts.doc('/test/tde.json')
+
+var tde = require(&quot;/MarkLogic/tde.xqy&quot;);
+// Load the user template for user profile rows
+var template = xdmp.toJSON(
+{
+  &quot;template&quot;:{
+    &quot;context&quot;:&quot;content&quot;,
+    &quot;collections&quot;: [
+      &quot;test&quot;
+    ],
+      &quot;triples&quot;:[
+      {
+        &quot;subject&quot;: {
+          &quot;val&quot;: &quot;xs:string(name)&quot;
+        },
+        &quot;predicate&quot;: {
+          &quot;val&quot;: &quot;sem:iri('is-parent-of')&quot;
+        },
+        &quot;object&quot;: {
+          &quot;val&quot;: &quot;xs:string(children/name)&quot;
+        }     
+      }
+    ]   
+  }
+}
+);
+//tde.validate([template]),
+tde.templateInsert(&quot;/templates/test.tde&quot;, template);
+tde.nodeDataExtract( 
+  [cts.doc( '/test/tde.json' )]
+)
+</code></pre>
+<p>However, the above throws an Exception:</p>
+<blockquote>
+<p>[javascript] TDE-EVALFAILED: tde.nodeDataExtract([cts.doc(&quot;/test/tde.json&rdquo;)]) &ndash; Eval for Object='xs:string(children/name)&rsquo; returns TDE-BADVALEXPRESSION: Invalid val expression: XDMP-CAST: (err:FORG0001) Invalid cast: (fn:doc(&quot;/test/tde.json&rdquo;)/content/array-node(&ldquo;children&rdquo;)/object-node()[1]/text(&ldquo;name&rdquo;), fn:doc(&quot;/test/tde.json&rdquo;)/content/array-node(&ldquo;children&rdquo;)/object-node()[2]/text(&ldquo;name&rdquo;)) cast as xs:string?</p>
+</blockquote>
+<p>What is the proper syntax for extracting array nodes into a triple?</p>
+<p>2nd somewhat related question: say I also wanted to have triples of the form &ldquo;child1 is-sibling-of child2&rdquo;. For the example above it would be &ldquo;Bob Child is-sibling-of Sue Child&rdquo;. What would be the proper syntax for this? I&rsquo;m not even sure how to begin with this one.</p>
+<p>Is TDE even the way to go here? Or is it better to do this programmatically? i.e. on document ingestion, generate those triples inside the document directly?</p>
+<p>(If it&rsquo;s relevant, the ML version being used is 9.)</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/11/47449002/"><time class="dt-published" datetime="2017-11-23 06:32:35">23 Nov 2017 6:32am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic-9">#marklogic-9</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/11/47449002/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.</p>
+<p>One of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:</p>
+<pre><code>var results = op.fromView('test', 'claims')
+  .groupBy(['member_id', 'member_name'], [
+         op.count('num_claims', 'claim_no'),
+         op.sum('total_amount', 'claim_amount')
+         ])
+  .orderBy(op.desc('total_amount'))
+  .limit(200)
+  .result()
+  .toArray();
+</code></pre>
+<p>Above works fine. The results are of the form</p>
+<pre><code>[
+  { 
+    member_id: 1, 
+    member_name: 'Bob', 
+    num_claims: 10, 
+    total_amount: 500
+  }, 
+  ...
+]
+</code></pre>
+<p>However, we also have a field &ldquo;company&rdquo;, where each claim is filed under a different company. Basically the relevant view columns are claim_no, member_id, member_name, company, claim_amount</p>
+<p>I would like to be able to show a column that list the different companies for which the member_id/member_name has filed claims, and how many claims for each company.</p>
+<p>i.e. I want my results to be something like:</p>
+<pre><code>[
+  { 
+    member_id: 1, 
+    member_name: 'Bob', 
+    num_claims: 10, 
+    total_amount: 500,
+    companies: [
+      {
+        company: 'Ajax Co',
+        num_claims: 8
+      },
+      {
+        company: 'Side Gig',
+        num_claims: 2
+      }
+    ]
+  }, 
+  ...
+]
+</code></pre>
+<p>I tried something like this:</p>
+<pre><code>results = results.map((member, index, array) =&gt; {
+  var companies = op.fromView('test', 'claims')
+    .where(op.eq(op.col('member_id'), member.member_id))
+    .groupBy('company', [
+      op.count('num_claims', 'claim_no')      
+    ])
+    .result()
+    .toArray();
+  member.companies = companies;
+  return member;
+});
+</code></pre>
+<p>And the output seems correct, but it also executes quite slowly - almost a minute (total number of claim documents is around 120k)</p>
+<p>In our previous ML8 implementation, we were pre-generating summary documents for each member - so retrieval was reasonably fast with the downside that whenever we got a bunch of new data, all of the summary documents had to be re-generated. I was hoping that ML9&rsquo;s optic API would make it easier to do the retrieval/grouping/aggregates on the fly so we wouldn&rsquo;t have to do that.</p>
+<p>In theory, I could just add company to the groupBy fields, then merge the rows in the result query as needed. But the problem with that approach is that I can&rsquo;t guarantee I&rsquo;ll get the top 200 by total amount (as was my original query)</p>
+<p>So, the question is: Is there a better way of doing this with a reasonable execution time? Or should I just stick to pre-generating the summary documents?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/11/47336545/"><time class="dt-published" datetime="2017-11-16 18:15:35">16 Nov 2017 6:15pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic-9">#marklogic-9</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47336545/marklogic-optic-api" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/11/47336545/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a Marklogic 9 project that I&rsquo;m configuring with Roxy.
+I&rsquo;ve been following these examples: <a href="https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps">https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps</a></p>
+<p>Basically, I have a server-side JS function that I want to call after deploy content. I have something like this:</p>
+<h1 id="then-you-would-define-your-new-method">then you would define your new method</h1>
+<pre><code>  def deploy_content
+    # you can optionally call the original
+    original_deploy_content
+
+    # do your stuff here
+    execute_query(%Q{
+      xquery version &quot;1.0-ml&quot;;
+      xdmp:javascript-eval('var process = require(&quot;/ingestion/process.sjs&quot;); process.postDeployContent();')
+    },
+    :db_name =&gt; @properties[&quot;ml.app-name&quot;] + &quot;-content&quot;)
+
+  end
+</code></pre>
+<p>The xquery being called here evaluates fine when executed via query console. But when I call ml local deploy content, I get the following error:</p>
+<pre><code>ERROR: 500 &quot;Internal Server Error&quot;
+ERROR: &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;500 Internal Server Error&lt;/title&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/error.css&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;span class=&quot;error&quot;&gt;
+      &lt;h1&gt;500 Internal Server Error&lt;/h1&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;XDMP-MODNOTFOUND: var process = require(&quot;/ingestion/process.sjs&quot;); process.postDeployContent(); -- Module /ingestion/process.sjs not found&lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+        &lt;dt&gt;in [anonymous], at 1:14 [javascript]&lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+        &lt;dt&gt;at 3:6,
+in xdmp:eval(&quot;var process = require(&amp;amp;quot;/ingestion/process.sjs&amp;amp;quot;); proce...&quot;) [javascript]&lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+        &lt;dt&gt;in /eval, at 3:6 [1.0-ml]&lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/span&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Why is the module not found when running via xquery from app_specific.rb?</p>
+<p>Or&hellip; is there a better way to call a JS module function from here. Sorry, I&rsquo;m not too familiar with the xquery side, so I just called a JS function instead.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/11/47333503/"><time class="dt-published" datetime="2017-11-16 15:31:08">16 Nov 2017 3:31pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/roxy">#roxy</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47333503/marklogic-roxy-calling-a-javascript-module-from-app-specific-rb" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/11/47333503/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Does Roxy have support for deploying templates for use with Marklogic 9&rsquo;s Template Driven Extraction?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/11/47129470/"><time class="dt-published" datetime="2017-11-06 03:48:06">6 Nov 2017 3:48am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/roxy">#roxy</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47129470/marklogic-roxy-and-template-driven-extraction" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/11/47129470/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Oct 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;m trying out the Roxy deployer. The Roxy app was created using the default app-type. I setup a new ML 9 database, and I ran &ldquo;ml local bootstrap&rdquo; using the default ports (8040 and 8041)</p>
+<p>Then I setup a node application. I tried the following (sample code from <a href="https://docs.marklogic.com/jsdoc/index.html">https://docs.marklogic.com/jsdoc/index.html</a>)</p>
+<pre><code>var marklogic = require('marklogic');
+var conn = {
+    host: '192.168.33.10',  
+    port: 8040,
+    user: 'admin',
+    password: 'admin',
+    authType: 'DIGEST'
+}
+
+var db = marklogic.createDatabaseClient(conn);
+
+db.createCollection(
+  '/books',
+  {author: 'Beryl Markham'},
+  {author: 'WG Sebald'}
+  )
+.result(function(response) {
+    console.log(JSON.stringify(response, null, 2));
+  }, function (error) {
+    console.log(JSON.stringify(error, null, 2));
+  });
+</code></pre>
+<p>Running the script gave me an error like:</p>
+<pre><code>$ node test.js
+{
+  &quot;message&quot;: &quot;write document list: cannot process response with 500 status&quot;,
+  &quot;statusCode&quot;: 500,
+  &quot;body&quot;: &quot;&lt;error:error xsi:schemaLocation=\&quot;http://marklogic.com/xdmp/error error.xsd\&quot; xmlns:error=\&quot;http://marklogic.com/xdmp/error\&quot; xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot;&gt;\n  &lt;error:code&gt;XDMP-IMPMODNS&lt;/error:code&gt;\n  &lt;error:name&gt;err:XQST0059&lt;/error:name&gt;\n  &lt;error:xquery-version&gt;1.0-ml&lt;/error:xquery-version&gt;\n  &lt;error:message&gt;Import module namespace mismatch&lt;/error:message&gt;\n  &lt;error:format-string&gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&lt;/error:format-string&gt;\n  &lt;error:retryable&gt;false&lt;/error:retryable&gt;\n  &lt;error:expr/&gt;\n  &lt;error:data&gt;\n    &lt;error:datum&gt;http://marklogic.com/rest-api/endpoints/config&lt;/error:datum&gt;\n    &lt;error:datum&gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&lt;/error:datum&gt;\n    &lt;error:datum&gt;/MarkLogic/rest-api/endpoints/config.xqy&lt;/error:datum&gt;\n  &lt;/error:data&gt;\n  &lt;error:stack&gt;\n    &lt;error:frame&gt;\n      &lt;error:uri&gt;/roxy/lib/rewriter-lib.xqy&lt;/error:uri&gt;\n      &lt;error:line&gt;5&lt;/error:line&gt;\n      &lt;error:column&gt;0&lt;/error:column&gt;\n      &lt;error:xquery-version&gt;1.0-ml&lt;/error:xquery-version&gt;\n    &lt;/error:frame&gt;\n  &lt;/error:stack&gt;\n&lt;/error:error&gt;\n&quot;
+}
+</code></pre>
+<p>If I change the port to 8000 (the default appserver that inserts into Documents), the node function executes correctly as expected. I&rsquo;m not sure if I need to configure anything else with the Roxy-created appserver so that it works with the node.js application.</p>
+<p>I&rsquo;m not sure where the &ldquo;DELETE_IF_UNUSED&rdquo; part in the error message is coming from either. There doesn&rsquo;t seem to be any such text in the configuration files generated by Roxy.</p>
+<p>Edit: When accessing 192.168.33.10:8040 via the browser, I get a an xml with a similar error:</p>
+<pre><code>&lt;error:error xsi:schemaLocation=&quot;http://marklogic.com/xdmp/error error.xsd&quot; xmlns:error=&quot;http://marklogic.com/xdmp/error&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;error:code&gt;XDMP-IMPMODNS&lt;/error:code&gt;
+  &lt;error:name&gt;err:XQST0059&lt;/error:name&gt;
+  &lt;error:xquery-version&gt;1.0-ml&lt;/error:xquery-version&gt;
+  &lt;error:message&gt;Import module namespace mismatch&lt;/error:message&gt;
+  &lt;error:format-string&gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&lt;/error:format-string&gt;
+  &lt;error:retryable&gt;false&lt;/error:retryable&gt;
+  &lt;error:expr/&gt;
+  &lt;error:data&gt;
+    &lt;error:datum&gt;http://marklogic.com/rest-api/endpoints/config&lt;/error:datum&gt;
+    &lt;error:datum&gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&lt;/error:datum&gt;
+    &lt;error:datum&gt;/MarkLogic/rest-api/endpoints/config.xqy&lt;/error:datum&gt;
+  &lt;/error:data&gt;
+  &lt;error:stack&gt;
+    &lt;error:frame&gt;
+      &lt;error:uri&gt;/roxy/lib/rewriter-lib.xqy&lt;/error:uri&gt;
+      &lt;error:line&gt;5&lt;/error:line&gt;
+      &lt;error:column&gt;0&lt;/error:column&gt;
+      &lt;error:xquery-version&gt;1.0-ml&lt;/error:xquery-version&gt;
+    &lt;/error:frame&gt;
+  &lt;/error:stack&gt;
+&lt;/error:error&gt;
+</code></pre>
+<p>If it matters, MarkLogic version is 9.0-3.1. It&rsquo;s a fresh install too.</p>
+<p>Any advice?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/10/47018820/"><time class="dt-published" datetime="2017-10-30 15:22:49">30 Oct 2017 3:22pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic-9">#marklogic-9</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/roxy">#roxy</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47018820/marklogic-9-roxy-cant-connect-to-created-database-using-node-js" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/10/47018820/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        3</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there&rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3</p>
+<p>My MLCP options file is as follows:</p>
+<pre><code>import
+-host 
+192.168.33.10
+-port 
+8041
+-username 
+admin
+-password
+admin
+-input_file_path 
+d:\maroon\data\mbastest.csv 
+-mode 
+local 
+-input_file_type 
+delimited_text 
+-uri_id 
+ClientId 
+-output_uri_prefix
+/test/records/
+-output_uri_suffix 
+.json 
+-document_type 
+json 
+-transform_module 
+/ingestion/transform.js
+-transform_function 
+testTransform
+-transform_param
+test
+-content_encoding 
+windows-1252 
+-thread_count
+1
+</code></pre>
+<p>Here&rsquo;s the output of a test run with only 2 records in the test CSV file:</p>
+<pre><code>17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON
+17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1
+17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &lt;error:format-string xmlns:error=&quot;http://marklogic.com/xdmp/error&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&lt;/error:format-string&gt;
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &lt;error:format-string xmlns:error=&quot;http://marklogic.com/xdmp/error&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&lt;/error:format-string&gt;
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec
+</code></pre>
+<p>If I remove the transform params, the import works fine.</p>
+<p>I thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:</p>
+<pre><code>// Add a property named &quot;NEWPROP&quot; to any JSON input document.
+// Otherwise, input passes through unchanged.
+
+function addProp(content, context)
+{
+  const propVal = (context.transform_param == undefined)
+                 ? &quot;UNDEFINED&quot; : context.transform_param;
+
+  if (xdmp.nodeKind(content.value) == 'document' &amp;&amp;
+      content.value.documentFormat == 'JSON') {
+    // Convert input to mutable object and add new property
+    const newDoc = content.value.toObject();
+    newDoc.NEWPROP = propVal;
+
+    // Convert result back into a document
+    content.value = xdmp.unquote(xdmp.quote(newDoc));
+  }
+  return content;
+};
+
+exports.addProp = addProp;
+</code></pre>
+<p>(Of course I changed the params in the MLCP options file accordingly)</p>
+<p>The issue still persists even with just this test function.</p>
+<p>Any advice?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/10/47009063/"><time class="dt-published" datetime="2017-10-30 06:15:37">30 Oct 2017 6:15am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/mlcp">#mlcp</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic-9">#marklogic-9</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/10/47009063/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Sep 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;m using ML8. I have a bunch of json documents in the database. Some documents have a certain property &ldquo;summaryData&rdquo;, something like:</p>
+<pre><code>{
+...(other stuff)...
+  summaryData: {
+    count: 100,
+    total: 10000,
+    summaryDate: (date value)
+  }
+}
+</code></pre>
+<p>However, not all documents have this property. I&rsquo;d like to construct an SJS query to retrieve those documents that don&rsquo;t have this property defined. If it was SQL, I guess the equivalent would be something like &ldquo;WHERE summaryData IS NULL&rdquo;</p>
+<p>I wasn&rsquo;t sure what to search for in the docs. Any advise would be helpful.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/09/46263980/"><time class="dt-published" datetime="2017-09-17 12:17:12">17 Sep 2017 12:17pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/javascript">#javascript</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/json">#json</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/sjs">#sjs</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/46263980/marklogic-query-for-documents-where-a-specific-json-property-is-not-defined" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/09/46263980/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;m using ML8 and Node.js. The documentation here: <a href="http://docs.marklogic.com/guide/node-dev/documents#id_68765">http://docs.marklogic.com/guide/node-dev/documents#id_68765</a> describes how to do conditional updates in ML using the versionId field.</p>
+<p>But for example if I want to do a conditional update on a different field, is it possible?</p>
+<p>My scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)</p>
+<p>Now, for my &ldquo;Assign&rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update. I don&rsquo;t care if other fields in the same document have been updated or not - if other fields have been updated, I can still proceed with the Assign operation (hence I cannot use the versionId approach, since that covers the whole document)</p>
+<p>How can this be done?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/09/46112486/"><time class="dt-published" datetime="2017-09-08 08:53:55">8 Sep 2017 8:53am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/46112486/marklogic-node-js-conditional-updates-using-fields-other-than-versionid" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/09/46112486/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Aug 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Sorry if the title is unclear, but I&rsquo;m finding my problem hard to explain concisely. I have a number of JSON documents with structure like this:</p>
+<pre><code>{
+  &quot;count&quot;: 100,
+  &quot;groups&quot;: [
+    {
+    &quot;name&quot;: &quot;group A&quot;,
+    &quot;count&quot;: 12
+    },
+    {
+    &quot;name&quot;: &quot;group B&quot;,
+    &quot;count&quot;: 22
+    },
+    {
+    &quot;name&quot;: &quot;group C&quot;,
+    &quot;count&quot;: 7
+    }
+  ]
+}
+</code></pre>
+<p>Basically, the document has an item count plus a breakdown of that count into smaller groups. So this record represents a collection of 100 items, of which 12 are from group A, 22 are from group B, 7 are from group C.</p>
+<p>Now, I have an element range index on &ldquo;count&rdquo; and a bunch of such documents. I&rsquo;d like to be able to sort by any of the options:</p>
+<ul>
+<li>sort by total count (descending or ascending)</li>
+<li>sort by group A count (descending or ascending)</li>
+<li>sort by group B count (descending or ascending)</li>
+<li>sort by group C count (descending or ascending)</li>
+</ul>
+<p>I&rsquo;ve tried</p>
+<pre><code>.orderBy(qb.sort(&quot;count&quot;, &quot;descending&quot;))
+</code></pre>
+<p>This seems to be sort by the total cost (the one in the document root), but I&rsquo;m not sure if that&rsquo;s always true or I need to specify something else to guarantee it always gets that particular one.</p>
+<p>For sorting by a specific group, I have no idea how to specify it.</p>
+<p>Any advice?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/45901868/"><time class="dt-published" datetime="2017-08-27 05:09:50">27 Aug 2017 5:09am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45901868/marklogic-node-js-sorting-by-the-value-of-a-json-element-with-multiple-instance" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/45901868/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>We&rsquo;ve been trying to set up flexible replication in our system which uses a MarkLogic database.
+We followed the instructions from <a href="https://docs.marklogic.com/8.0/guide/flexrep/quick_start">https://docs.marklogic.com/8.0/guide/flexrep/quick_start</a> and have been able to set up flexible replication between two MarkLogic servers. We have verified that new documents created in the master are copied over to the replica. However, the master database currently has more than 47 million records that were there before we configured the replication. Once the replication process was triggered, we observed that the documents are being replicated to the replica very slowly. Roughly 20,000 documents were replicated within the first two hours. The rate is very slow, it would take months for the old records to be fully replicated.</p>
+<p>Our questions are:</p>
+<ol>
+<li>
+<p>We are looking into increasing the hardware specs of the two servers, but aside from that would anyone have any advice or documentation as to how we could speed up the replication? I couldn&rsquo;t find any existing documentation regarding this?</p>
+</li>
+<li>
+<p>Failing that, would it be possible to set up flexible replication without needing to replicate the initial data set? FYI, we also tried to clone the master database and use the clone as the replica. (We thought this might mean that the older records don&rsquo;t have to be replicated.) However, in this case we encountered XDMP-NEWSTAMP and XDMP-EXTIME errors on the replica server, so we gave up on this approach. A sample of the errors encountered on the replica is below:</p>
+</li>
+</ol>
+<blockquote>
+<p>2017-08-03 18:45:04.376 Notice: exp-rest-content-flexrep:
+XDMP-NEWSTAMP: Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.376 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml] 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-EXTIME: try { let
+$raw-module-name := module-path($action-to-execute/p:module) let
+$module-kind := module-kind($raw-module-name) let $module-name := if
+($module-kind = &ldquo;xquery&rdquo; or $module-kind = &ldquo;javascript&rdquo;) then
+$raw-module-name else $cpfi:xslt-action return if ($module-name = &ldquo;&quot;)
+then fn:error((), &ldquo;CPF-ACTIONNOTFOUND&rdquo;, &ldquo;Default success&rdquo;) else if
+($module-kind = &ldquo;javascript&rdquo;) then (xdmp:trace(&ldquo;CPF Action Invoke&rdquo;,
+fn:string-join(($caller, xdmp:get-current-user(), $uri,
+$state-or-status, $raw-module-name), &quot; &ldquo;)), xdmp:invoke($module-name,
+(fn:QName(&quot;&rdquo;,&ldquo;uri&rdquo;), $uri, xs:QName(&ldquo;cpf:document-uri&rdquo;), $uri,
+fn:QName(&quot;&rdquo;,&ldquo;transition&rdquo;), $chosen-transition,
+options-var-js($action-to-execute)), $invoke-options)) else
+(xdmp:trace(&ldquo;CPF Action Invoke&rdquo;, fn:string-join(($caller,
+xdmp:get-current-user(), $uri, $state-or-status, $raw-module-name), &quot;
+&ldquo;)), xdmp:invoke($module-name, ($vars, xs:QName(&ldquo;cpf:transition&rdquo;),
+$chosen-transition, options-var($action-to-execute), if ($module-kind
+= &ldquo;xslt&rdquo;) then (xs:QName(&ldquo;cpf:stylesheet-uri&rdquo;), $raw-module-name) else ()), $invoke-options)) } catch ($e) { let $trace := let $context :=
+fn:concat($caller, &quot; &ldquo;, $uri, &quot; action failed&rdquo;) return
+(cpf:log(fn:string-join(($context, $e/err:format-string), &quot; &ldquo;),
+&ldquo;error&rdquo;), cpf:log(($context, $e), &ldquo;fine&rdquo;)) let $failure-action :=
+($pipelines/p:failure-action)[1] let $raw-failure-module :=
+module-path($failure-action/p:module) let $failure-kind :=
+module-kind($raw-failure-module) let $failure-module := if
+($failure-kind = &ldquo;xquery&rdquo; or $failure-kind = &ldquo;javascript&rdquo;) then
+$raw-failure-module else $cpfi:xslt-action return if ($failure-module
+= &ldquo;&quot;) then fn:error((), &ldquo;CPF-ACTIONNOTFOUND&rdquo;, &ldquo;Default failure action&rdquo;) else xdmp:invoke($failure-module, ($vars,
+xs:QName(&ldquo;cpf:transition&rdquo;), $chosen-transition,
+options-var($failure-action), xs:QName(&ldquo;cpf:exception&rdquo;), $e, if
+($failure-kind = &ldquo;xslt&rdquo;) then (xs:QName(&ldquo;cpf:stylesheet-uri&rdquo;),
+$raw-failure-module) else ()), $invoke-options) } &ndash; Time limit
+exceeded 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 213:4, 2017-08-03
+18:45:04.379 Notice: TaskServer: in execute-action(&ldquo;on-state-enter&rdquo;,
+&ldquo;<a href="http://marklogic.com/states/initial%22,">http://marklogic.com/states/initial&quot;,</a> &ldquo;/_smslogs/5849823.xml&rdquo;,
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), <options
+xmlns="xdmp:eval"><isolation>different-transaction</isolation><prevent-deadlocks>t&hellip;</options>,
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;),
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]/p:default-action,</a> fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3</a>])
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+&ldquo;on-state-enter&rdquo; 2017-08-03 18:45:04.379 Notice: TaskServer:<br>
+$state-or-status = &ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a> 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = &ldquo;/_smslogs/5849823.xml&rdquo;
+2017-08-03 18:45:04.379 Notice: TaskServer:   $vars =
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03 18:45:04.379 Notice:
+TaskServer:   $invoke-options = <options
+xmlns="xdmp:eval"><isolation>different-transaction</isolation><prevent-deadlocks>t&hellip;</options>
+2017-08-03 18:45:04.379 Notice: TaskServer:   $pipelines =
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;) 2017-08-03 18:45:04.379 Notice: TaskServer:   $action-to-execute
+= fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]/p:default-action</a> 2017-08-03 18:45:04.379 Notice: TaskServer:   $chosen-transition =
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]</a>
+2017-08-03 18:45:04.379 Notice: TaskServer:   $e = &lt;error:error
+xsi:schemaLocation=&quot;http://marklogic.com/xdmp/error error.xsd&rdquo;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&rdquo;
+xmlns:error=&quot;http://marklogic.com/xdmp/error&quot;&gt;<a href="error:code">error:code</a>XDMP-NEWSTAMP&lt;/error:code&gt;<a href="error:name/">error:name/</a>&lt;error:xquery&hellip;&lt;/error:error&gt; 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 342:6, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+execute-transition(&ldquo;on-state-enter&rdquo;,
+&ldquo;<a href="http://marklogic.com/states/initial%22,">http://marklogic.com/states/initial&quot;,</a> &ldquo;/_smslogs/5849823.xml&rdquo;,
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), &lt;trgr:trigger
+xmlns:trgr=&quot;http://marklogic.com/xdmp/triggers&quot;&gt;<a href="trgr:trigger-id">trgr:trigger-id</a>6551367241994447650&lt;/trgr:trigger-id&gt;&lt;trgr:trig&hellip;&lt;/trgr:trigger&gt;, (fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;),
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline/p:state-transition%5B2%5D,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline/p:state-transition[2],</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3],</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline/p:state-transition%5B1%5D,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline/p:state-transition[1],</a>
+&hellip;), &lt;p:null-transition
+xmlns:p=&quot;http://marklogic.com/cpf/pipelines&quot;&gt;&lt;p:state&gt;http://marklogic.com/states/initial&lt;/p:state&gt;&lt;/p:null-transition&gt;)
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state-or-status = () 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 358:3, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+int:execute-state-transition(&ldquo;on-state-enter&rdquo;,
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22),">http://marklogic.com/states/initial&quot;),</a>
+&ldquo;/_smslogs/5849823.xml&rdquo;, (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), &lt;trgr:trigger
+xmlns:trgr=&quot;http://marklogic.com/xdmp/triggers&quot;&gt;<a href="trgr:trigger-id">trgr:trigger-id</a>6551367241994447650&lt;/trgr:trigger-id&gt;&lt;trgr:trig&hellip;&lt;/trgr:trigger&gt;) [1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $uri = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/on-state-enter.xqy, at 41:6 [1.0-ml]
+2017-08-03 18:45:04.379 Notice: TaskServer:   $state =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $trace = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $vars = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-NEWSTAMP: Timestamp too new for
+forest exp-rest-content-001-1 (15017569242290900) 2017-08-03
+18:45:04.379 Notice: exp-rest-content-flexrep: XDMP-NEWSTAMP:
+Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.379 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml]</p>
+</blockquote>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/45623599/"><time class="dt-published" datetime="2017-08-10 21:19:20">10 Aug 2017 9:19pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45623599/marklogic-flexible-replication" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/45623599/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>We have a search application using MarkLogic node.js. We use parsedQuery like this:</p>
+<pre><code>            qb.parsedFrom(prop.search, 
+            qb.parseBindings(
+                qb.word('name', qb.bind('name')),
+                qb.word('birthdate', qb.bind('birthdate')),
+                qb.range('count', qb.datatype('float'), qb.bind('count'))
+            )
+        )
+</code></pre>
+<p>The above currently supports search syntax like &ldquo;count GT 50&rdquo;, etc. We would like to support searching using a derived value such as age. That is, we want to support a search syntax like &ldquo;age GT 10&rdquo;, where the age value is not stored in the documents in the database but rather needs to be computed from the birthdate on the fly. We can&rsquo;t store the age in the documents since the age changes depending on the current date.</p>
+<p>Is this possible and if so, how? If it matters, we are using ML8</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/45507423/"><time class="dt-published" datetime="2017-08-04 12:55:30">4 Aug 2017 12:55pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45507423/marklogic-node-js-is-it-possible-to-support-a-derived-value-in-parsebindings" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/45507423/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Is there an easy way to delete all the element range indexes on a given database?</p>
+<p>Thanks</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/45463003/"><time class="dt-published" datetime="2017-08-02 13:58:28">2 Aug 2017 1:58pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45463003/marklogic-delete-all-element-range-indexes-on-a-database" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/45463003/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jul 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a number of documents from different sources. Many of them reference a company name, but may have stored the information slightly differently. The name is a field in the documents.</p>
+<p>I&rsquo;d like to be able to detect variations on the same name, something like:</p>
+<ul>
+<li>Ajax Company Incorporated</li>
+<li>Ajax Co. Inc.</li>
+<li>Ajax Company Inc.</li>
+<li>Ajax Company</li>
+<li>Ajax Company (formerly Ajax Unlimited)</li>
+<li>etc</li>
+</ul>
+<p>Does MarkLogic have any facility to query documents that have &ldquo;similar&rdquo; name as above? I&rsquo;m not sure if there&rsquo;s a more technical term that I should be searching for. Preferably for either the node client API or server-side js.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/07/45093664/"><time class="dt-published" datetime="2017-07-14 02:27:11">14 Jul 2017 2:27am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45093664/marklogic-detecting-similar-duplicate-names" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/07/45093664/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jun 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Something similar to my question here: <a href="https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count">https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count</a></p>
+<p>I have documents in Marklogic with fields <em>name</em> and <em>amount</em>. I want to get the total amount for each name. Basically in SQL it would be</p>
+<pre><code>select name, sum(amount) from table group by name
+</code></pre>
+<p>I have <strong>range indexes</strong> for both <em>name</em> and <em>amount</em>.
+For getting sum aggregates, the documentation suggests something like <strong>valuesBuilder.fromIndexes(&lsquo;amount&rsquo;).aggregates(&lsquo;sum&rsquo;)</strong>, but this only gets the sum for all records, instead of per name like I want.</p>
+<p>Any advice?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/06/44621849/"><time class="dt-published" datetime="2017-06-19 03:27:09">19 Jun 2017 3:27am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/44621849/marklogic-node-js-api-group-by-sum" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/06/44621849/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        4</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Dec 2016</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I tried to insert the following test document:</p>
+<pre><code>db.documents.write(
+    {
+        uri: &quot;/test/doc1.json&quot;,
+        contentType: &quot;application/json&quot;,
+        collections: &quot;test&quot;,
+        content: {
+            name : &quot;Peter&quot;,
+            hobby: &quot;Sleeping&quot;,
+            other: &quot;Some other info&quot;,
+            &quot;triple&quot;: {
+                &quot;subject&quot;: {   
+                    &quot;datatype&quot;: &quot;http://example.com/name/&quot;,  
+                    &quot;value&quot;: &quot;Peter&quot;   
+                },   
+                &quot;predicate&quot;: {     
+                    &quot;datatype&quot;: &quot;http://example.com/relation/&quot;,  
+                    &quot;value&quot;: &quot;livesin&quot;   
+                },   
+                &quot;object&quot;: {     
+                    &quot;datatype&quot;: &quot;http://example.com/location/&quot;,  
+                    &quot;value&quot;: &quot;Paris&quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&quot;Done loading&quot;);
+  }); 
+</code></pre>
+<p>Then I queried as follows:</p>
+<pre><code>var query = [
+  'SELECT ?s ?p ?o' ,
+  'WHERE { ?s ?p ?o }' ,
+];
+db.graphs.sparql('application/sparql-results+json', query.join('\n')
+).result(function (result) {
+  console.log(JSON.stringify(result, null, 2));
+}, function(error) {
+  console.log(JSON.stringify(error, null, 2));
+});
+</code></pre>
+<p>The results showed me the values of the triple, but what if I also want to get the entire document where the triple was embedded? Is it also possible to filter by other fields in the document?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2016/12/40968519/"><time class="dt-published" datetime="2016-12-05 06:44:52">5 Dec 2016 6:44am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/sparql">#sparql</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/40968519/marklogic-node-js-api-how-to-get-the-document-where-an-embedded-triple-lives" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/12/40968519/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I inserted a test document using the Node.js API:</p>
+<pre><code>  db.documents.write(
+    {
+        uri: &quot;/test/doc1.json&quot;,
+        contentType: &quot;application/json&quot;,
+        collections: &quot;test&quot;,
+        content: {
+            name : &quot;Peter&quot;,
+            &quot;triple&quot;: {
+                &quot;subject&quot;: {   
+                    &quot;datatype&quot;: &quot;http://example.com/name/&quot;,  
+                    &quot;value&quot;: &quot;Peter&quot;   
+                },   
+                &quot;predicate&quot;: {     
+                    &quot;datatype&quot;: &quot;http://example.com/relation/&quot;,  
+                    &quot;value&quot;: &quot;livesin&quot;   
+                },   
+                &quot;object&quot;: {     
+                    &quot;datatype&quot;: &quot;http://example.com/location/&quot;,  
+                    &quot;value&quot;: &quot;Paris&quot;   
+                }
+          	}
+        }
+    }
+  ).
+  result(function(response){
+    console.log(&quot;Done loading&quot;);
+  }); 
+</code></pre>
+<p>Then I tried querying it via SPARQL on the Marklogic console webapp:</p>
+<pre><code>SELECT ?s ?p ?o
+  WHERE { ?s ?p ?o }
+</code></pre>
+<p>The query above works fine, it retrieves the test triple I inserted above</p>
+<p>However, if I want to filter by the literal value &ldquo;Paris&rdquo;, I tried the following:</p>
+<pre><code>PREFIX loc: &lt;http://example.com/location/&gt;
+
+SELECT ?s ?p 
+  WHERE { ?s ?p loc:Paris }
+</code></pre>
+<p>But in this case I got zero results. Is this syntax incorrect? I was just following how the queries looked in <a href="https://docs.marklogic.com/guide/semantics/semantic-searches">https://docs.marklogic.com/guide/semantics/semantic-searches</a></p>
+<p>What is the proper way to do it?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2016/12/40968002/"><time class="dt-published" datetime="2016-12-05 06:02:58">5 Dec 2016 6:02am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/sparql">#sparql</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/40968002/how-to-query-marklogic-triples-using-sparql" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/12/40968002/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2016</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I want to retrieve all documents in my MarkLogic db that have month=November and also group them by name, and get the count of records per name. I know I can get the frequency per name by using valuesBuilder with a range index on the name field, but how can I filter this result so that I only get the count of records for the month of November?</p>
+<p>Supposedly valuesBuilder.fromIndexes().where() can do the filtering, but I don&rsquo;t know what to pass here and examples online seem to be sparse.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2016/11/40720684/"><time class="dt-published" datetime="2016-11-21 12:52:39">21 Nov 2016 12:52pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/40720684/marklogic-node-api-how-to-filter-the-results-from-a-valuesbuilder" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/11/40720684/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>In a relational db you&rsquo;d have something like &ldquo;select name, count(1) as c from mytable group by name order by c desc&rdquo;. Basically I want to count how many records contain each name value and get the ones with highest counts first.</p>
+<p>Is there a way to do a similar thing in Marklogic using the Node.js API?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2016/11/40715822/"><time class="dt-published" datetime="2016-11-21 08:37:08">21 Nov 2016 8:37am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/node.js">#node.js</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/40715822/marklogic-node-js-api-group-by-and-sort-by-count" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/11/40715822/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+
+
+
+
+</section>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2019 10 23 15:09:29.
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

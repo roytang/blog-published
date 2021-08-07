@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Marklogic - flexible replication  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+    
+    <link rel="webmention" href="https://webmention.io/roytang.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/roytang.net/xmlrpc" />  
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="marklogic, questions, stackoverflow, software development, ">
+
+
+<meta property="og:title" content="Marklogic - flexible replication  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/2017/08/45623599/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-08-10T21:19:20Z" />
+<meta property="og:article:modified_time" content="2017-08-10T21:19:20Z" />
+
+  
+    
+<meta property="og:article:tag" content="marklogic">
+    
+<meta property="og:article:tag" content="questions">
+    
+<meta property="og:article:tag" content="stackoverflow">
+    
+<meta property="og:article:tag" content="software development">
+    
+  
+
+
+
+
+
+
+
+<meta property="og:image" content='https://roytang.net/img/profile.jpg'>
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roytang" />
+<meta name="twitter:creator" content="@roytang" />
+<meta name="twitter:title" content="Marklogic - flexible replication" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://mirror.roytang.net/2017/08/45623599/" />
+<meta name="twitter:domain" content="https://mirror.roytang.net">
+<meta name="twitter:image" content='https://roytang.net/img/profile.jpg'>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Marklogic - flexible replication",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-08-10",
+    "description": "",
+    "wordCount":  706 
+  }
+</script>
+
+
+
+<link href='https://mirror.roytang.net/index.xml' rel="alternate" type="application/rss+xml" title="Marklogic - flexible replication" />
+
+<link rel="canonical" href="https://mirror.roytang.net/2017/08/45623599/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+<article class="list_item notes h-entry">
+
+
+<div class="e-content">
+
+<p>We&rsquo;ve been trying to set up flexible replication in our system which uses a MarkLogic database.
+We followed the instructions from <a href="https://docs.marklogic.com/8.0/guide/flexrep/quick_start">https://docs.marklogic.com/8.0/guide/flexrep/quick_start</a> and have been able to set up flexible replication between two MarkLogic servers. We have verified that new documents created in the master are copied over to the replica. However, the master database currently has more than 47 million records that were there before we configured the replication. Once the replication process was triggered, we observed that the documents are being replicated to the replica very slowly. Roughly 20,000 documents were replicated within the first two hours. The rate is very slow, it would take months for the old records to be fully replicated.</p>
+<p>Our questions are:</p>
+<ol>
+<li>
+<p>We are looking into increasing the hardware specs of the two servers, but aside from that would anyone have any advice or documentation as to how we could speed up the replication? I couldn&rsquo;t find any existing documentation regarding this?</p>
+</li>
+<li>
+<p>Failing that, would it be possible to set up flexible replication without needing to replicate the initial data set? FYI, we also tried to clone the master database and use the clone as the replica. (We thought this might mean that the older records don&rsquo;t have to be replicated.) However, in this case we encountered XDMP-NEWSTAMP and XDMP-EXTIME errors on the replica server, so we gave up on this approach. A sample of the errors encountered on the replica is below:</p>
+</li>
+</ol>
+<blockquote>
+<p>2017-08-03 18:45:04.376 Notice: exp-rest-content-flexrep:
+XDMP-NEWSTAMP: Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.376 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml] 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-EXTIME: try { let
+$raw-module-name := module-path($action-to-execute/p:module) let
+$module-kind := module-kind($raw-module-name) let $module-name := if
+($module-kind = &ldquo;xquery&rdquo; or $module-kind = &ldquo;javascript&rdquo;) then
+$raw-module-name else $cpfi:xslt-action return if ($module-name = &ldquo;&quot;)
+then fn:error((), &ldquo;CPF-ACTIONNOTFOUND&rdquo;, &ldquo;Default success&rdquo;) else if
+($module-kind = &ldquo;javascript&rdquo;) then (xdmp:trace(&ldquo;CPF Action Invoke&rdquo;,
+fn:string-join(($caller, xdmp:get-current-user(), $uri,
+$state-or-status, $raw-module-name), &quot; &ldquo;)), xdmp:invoke($module-name,
+(fn:QName(&quot;&rdquo;,&ldquo;uri&rdquo;), $uri, xs:QName(&ldquo;cpf:document-uri&rdquo;), $uri,
+fn:QName(&quot;&rdquo;,&ldquo;transition&rdquo;), $chosen-transition,
+options-var-js($action-to-execute)), $invoke-options)) else
+(xdmp:trace(&ldquo;CPF Action Invoke&rdquo;, fn:string-join(($caller,
+xdmp:get-current-user(), $uri, $state-or-status, $raw-module-name), &quot;
+&ldquo;)), xdmp:invoke($module-name, ($vars, xs:QName(&ldquo;cpf:transition&rdquo;),
+$chosen-transition, options-var($action-to-execute), if ($module-kind
+= &ldquo;xslt&rdquo;) then (xs:QName(&ldquo;cpf:stylesheet-uri&rdquo;), $raw-module-name) else ()), $invoke-options)) } catch ($e) { let $trace := let $context :=
+fn:concat($caller, &quot; &ldquo;, $uri, &quot; action failed&rdquo;) return
+(cpf:log(fn:string-join(($context, $e/err:format-string), &quot; &ldquo;),
+&ldquo;error&rdquo;), cpf:log(($context, $e), &ldquo;fine&rdquo;)) let $failure-action :=
+($pipelines/p:failure-action)[1] let $raw-failure-module :=
+module-path($failure-action/p:module) let $failure-kind :=
+module-kind($raw-failure-module) let $failure-module := if
+($failure-kind = &ldquo;xquery&rdquo; or $failure-kind = &ldquo;javascript&rdquo;) then
+$raw-failure-module else $cpfi:xslt-action return if ($failure-module
+= &ldquo;&quot;) then fn:error((), &ldquo;CPF-ACTIONNOTFOUND&rdquo;, &ldquo;Default failure action&rdquo;) else xdmp:invoke($failure-module, ($vars,
+xs:QName(&ldquo;cpf:transition&rdquo;), $chosen-transition,
+options-var($failure-action), xs:QName(&ldquo;cpf:exception&rdquo;), $e, if
+($failure-kind = &ldquo;xslt&rdquo;) then (xs:QName(&ldquo;cpf:stylesheet-uri&rdquo;),
+$raw-failure-module) else ()), $invoke-options) } &ndash; Time limit
+exceeded 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 213:4, 2017-08-03
+18:45:04.379 Notice: TaskServer: in execute-action(&ldquo;on-state-enter&rdquo;,
+&ldquo;<a href="http://marklogic.com/states/initial%22,">http://marklogic.com/states/initial&quot;,</a> &ldquo;/_smslogs/5849823.xml&rdquo;,
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), <options
+xmlns="xdmp:eval"><isolation>different-transaction</isolation><prevent-deadlocks>t&hellip;</options>,
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;),
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]/p:default-action,</a> fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3</a>])
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+&ldquo;on-state-enter&rdquo; 2017-08-03 18:45:04.379 Notice: TaskServer:<br>
+$state-or-status = &ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a> 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = &ldquo;/_smslogs/5849823.xml&rdquo;
+2017-08-03 18:45:04.379 Notice: TaskServer:   $vars =
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03 18:45:04.379 Notice:
+TaskServer:   $invoke-options = <options
+xmlns="xdmp:eval"><isolation>different-transaction</isolation><prevent-deadlocks>t&hellip;</options>
+2017-08-03 18:45:04.379 Notice: TaskServer:   $pipelines =
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;) 2017-08-03 18:45:04.379 Notice: TaskServer:   $action-to-execute
+= fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D/p:default-action">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]/p:default-action</a> 2017-08-03 18:45:04.379 Notice: TaskServer:   $chosen-transition =
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3]</a>
+2017-08-03 18:45:04.379 Notice: TaskServer:   $e = &lt;error:error
+xsi:schemaLocation=&quot;http://marklogic.com/xdmp/error error.xsd&rdquo;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&rdquo;
+xmlns:error=&quot;http://marklogic.com/xdmp/error&quot;&gt;<a href="error:code">error:code</a>XDMP-NEWSTAMP&lt;/error:code&gt;<a href="error:name/">error:name/</a>&lt;error:xquery&hellip;&lt;/error:error&gt; 2017-08-03 18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 342:6, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+execute-transition(&ldquo;on-state-enter&rdquo;,
+&ldquo;<a href="http://marklogic.com/states/initial%22,">http://marklogic.com/states/initial&quot;,</a> &ldquo;/_smslogs/5849823.xml&rdquo;,
+(xs:QName(&ldquo;trgr:uri&rdquo;), &ldquo;/_smslogs/5849823.xml&rdquo;,
+xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), &lt;trgr:trigger
+xmlns:trgr=&quot;http://marklogic.com/xdmp/triggers&quot;&gt;<a href="trgr:trigger-id">trgr:trigger-id</a>6551367241994447650&lt;/trgr:trigger-id&gt;&lt;trgr:trig&hellip;&lt;/trgr:trigger&gt;, (fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline,</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline,</a>
+&hellip;),
+(fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/12349495875628658916.xml%22)/p:pipeline/p:state-transition%5B2%5D,">http://marklogic.com/cpf/pipelines/12349495875628658916.xml&quot;)/p:pipeline/p:state-transition[2],</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/3358424510998587926.xml%22)/p:pipeline/p:state-transition%5B3%5D,">http://marklogic.com/cpf/pipelines/3358424510998587926.xml&quot;)/p:pipeline/p:state-transition[3],</a>
+fn:doc(&ldquo;<a href="http://marklogic.com/cpf/pipelines/13179541037342910978.xml%22)/p:pipeline/p:state-transition%5B1%5D,">http://marklogic.com/cpf/pipelines/13179541037342910978.xml&quot;)/p:pipeline/p:state-transition[1],</a>
+&hellip;), &lt;p:null-transition
+xmlns:p=&quot;http://marklogic.com/cpf/pipelines&quot;&gt;&lt;p:state&gt;http://marklogic.com/states/initial&lt;/p:state&gt;&lt;/p:null-transition&gt;)
+[1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state-or-status = () 2017-08-03
+18:45:04.379 Notice: TaskServer:   $uri = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/internal-cpf.xqy, at 358:3, 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+int:execute-state-transition(&ldquo;on-state-enter&rdquo;,
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22),">http://marklogic.com/states/initial&quot;),</a>
+&ldquo;/_smslogs/5849823.xml&rdquo;, (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;), &lt;trgr:trigger
+xmlns:trgr=&quot;http://marklogic.com/xdmp/triggers&quot;&gt;<a href="trgr:trigger-id">trgr:trigger-id</a>6551367241994447650&lt;/trgr:trigger-id&gt;&lt;trgr:trig&hellip;&lt;/trgr:trigger&gt;) [1.0-ml] 2017-08-03 18:45:04.379 Notice: TaskServer:   $caller =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $state = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $uri = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: in
+/MarkLogic/cpf/triggers/on-state-enter.xqy, at 41:6 [1.0-ml]
+2017-08-03 18:45:04.379 Notice: TaskServer:   $state =
+cpf:state(&ldquo;<a href="http://marklogic.com/states/initial%22">http://marklogic.com/states/initial&quot;</a>) 2017-08-03
+18:45:04.379 Notice: TaskServer:   $trace = () 2017-08-03 18:45:04.379
+Notice: TaskServer:   $vars = (xs:QName(&ldquo;trgr:uri&rdquo;),
+&ldquo;/_smslogs/5849823.xml&rdquo;, xs:QName(&ldquo;trgr:trigger&rdquo;), &hellip;) 2017-08-03
+18:45:04.379 Notice: TaskServer: XDMP-NEWSTAMP: Timestamp too new for
+forest exp-rest-content-001-1 (15017569242290900) 2017-08-03
+18:45:04.379 Notice: exp-rest-content-flexrep: XDMP-NEWSTAMP:
+Timestamp too new for forest exp-rest-content-001-1
+(15017569242290900) 2017-08-03 18:45:04.379 Notice:
+exp-rest-content-flexrep: in /apply.xqy [1.0-ml]</p>
+</blockquote>
+
+
+
+
+
+<div class="image-list" id="resources">
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/45623599/"><time class="dt-published" datetime="2017-08-10 21:19:20">10 Aug 2017 9:19pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/marklogic">#marklogic</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/stackoverflow">#stackoverflow</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://stackoverflow.com/questions/45623599/marklogic-flexible-replication" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/45623599/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+
+<div class="comments">
+
+
+
+
+
+    
+
+
+<div id="header-comments" class="comments-title"><h3>Comments</h3></div>
+
+
+<div class="comment" id="comment-4.563338e&#43;07">
+    <div class="comment_meta">
+    
+    
+        
+    
+    <a href="https://stackoverflow.com/users/1630893/michael-gardner">
+        <img class="commenter-photo" src="https://i.stack.imgur.com/QENPz.jpg?s=128&amp;g=1" alt="Michael Gardner" />
+    </a>
+    <div class="commenter_name">
+    
+        <a href="https://stackoverflow.com/users/1630893/michael-gardner">Michael Gardner</a>
+    
+    </div>
+    <time><a href="https://stackoverflow.com/questions/45623599/marklogic-flexible-replication">2017-08-11 10:49:25</a><time>
+    </div>
+    <div class="comment_body">
+        <p>Based on the instructions you referenced, it looks like you are using immediate replication, which will replicate any new/updated records in your database, but will not replicate existing records.</p>
+<p>To enable replication of existing documents in the database (0 Day documents), you will need to change the replication setting from immediate push to scheduled task in the Flexible Replication Target configuration page ( <strong>Databases &gt; [database name] &gt; Flexible Replication &gt; Domain &gt; [domain name] &gt; [target name] : Summary</strong> )</p>
+<p>At the bottom of the page there you will see the <em><strong>immediate push</strong></em> option, which is <em>true</em> by default.  If you set it to <strong>false</strong>, then the replication will be handled by the push-local-forest process, and it will start to pickup the 0 Day documents.</p>
+<p>As for increasing the rate at which documents will replicate from the source to the target, the primary setting is <strong>Documents Per Batch</strong>.  The guidance I&rsquo;ve heard on this is to increase the value, while watching the execution time of the push-local-forest.xqy process ( <strong>Configure &gt; Groups &gt; [group name] &gt; Task Server: <em>Status</em></strong> and click <em>show more</em> button; or <em>http://servername:8002/dashboard</em> on the <em>Query Execution</em> tab).</p>
+<p>Typically the <em>push-local-forest</em> process runs every minute, so you want to make sure that your batch size is optimized to be able to complete within that minute, otherwise you can run into situations where the next <em>push-local-forest</em> process will start before the first has finished, and they have the potential to start stacking up and dead locking.</p>
+<p>Other tips for increasing the throughput is to reduce the number of indexes on the target (if possible), and/or use a VLAN with jumbo frames for the inter-cluster communication.</p>
+
+    </div>
+</div>
+
+
+
+
+<div class="feedback">If you enjoyed my content for some reason, I'd love to hear from you! Here are some options:
+<ul>
+    <li>You can <a href="https://ko-fi.com/roytang">buy me a coffee!</a></li>
+
+
+    
+
+
+
+    
+
+ 
+
+
+  
+<li>You can write a reply on your own site and submit the URL as a <a href="https://indieweb.org/webmention">webmention</a> via the form below.
+    <form id="webmention-form" action="https://webmention.io/roytang.net/webmention" method="POST">
+        <input name="target" value="https://mirror.roytang.net/2017/08/45623599/" type="hidden" />
+        <input name="source" placeholder="Your reply URL" style="width:90%" required />
+        <button type="submit" >Submit</button>
+    </form>
+</li>
+
+<li>Or you can just <a href="https://mirror.roytang.net/about/contact">contact me</a>!</li>
+</ul>
+</div>
+
+
+
+
+<div class="navigation">
+  
+
+    
+    <a class="prev" href="https://mirror.roytang.net/2017/08/895432195036200960/" title="">
+         Previous 
+    </a>
+    
+    
+    <a class="next" href="https://mirror.roytang.net/2017/08/896062009535455235/" title="">
+         Next  
+    </a>
+    
+  
+</div>  
+
+
+
+
+</article>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2019 10 23 15:09:29.
+        
+        <a href='https://github.com/roytang/blog/tree/master/content/notes/2017/08/45623599/index.md' title='source file'>Source file</a>
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

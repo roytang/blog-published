@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>database on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/database/</link>
+      <description>Recent content in database on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 24 Sep 2008 07:57:10 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/database/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Reply to &#39;Versioning Database Persisted Objects, How would you?&#39; on stackoverflow at https://stackoverflow.com/questions/125877/versioning-database-persisted-objects-how-would-you:
+</title>
+            <link>https://mirror.roytang.net/2008/09/125929/</link>
+            <pubDate>Wed, 24 Sep 2008 07:57:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/09/125929/</guid>
+            <description>
+            Reply to &amp;#39;Versioning Database Persisted Objects, How would you?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/125877/versioning-database-persisted-objects-how-would-you:
+
+            &lt;p&gt;You&amp;rsquo;ll need a master record in a master table that contains the information common among all versions.&lt;/p&gt;
+&lt;p&gt;Then each child table uses master record id + version no as part of the primary key.&lt;/p&gt;
+&lt;p&gt;It can be done without the master table, but in my experience it will tend to make the SQL statements a lot messier.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

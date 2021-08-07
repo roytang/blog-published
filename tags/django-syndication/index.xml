@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>django-syndication on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/django-syndication/</link>
+      <description>Recent content in django-syndication on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 01 Feb 2018 07:11:13 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/django-syndication/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2018/02/48557175/</link>
+            <pubDate>Thu, 01 Feb 2018 07:11:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/02/48557175/</guid>
+            <description>
+            
+
+            &lt;p&gt;According to the documentation here: &lt;a href=&#34;https://djangobook.com/syndication-feed-framework/&#34;&gt;https://djangobook.com/syndication-feed-framework/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If link doesn’t return the domain, the syndication framework will
+insert the domain of the current site, according to your SITE_ID
+setting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, I&amp;rsquo;m trying to generate a feed of magnet: links. The framework doesn&amp;rsquo;t recognize this and attempts to append the SITE_ID, such that the links end up like this (on localhost):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link&amp;gt;http://localhost:8000magnet:?xt=...&amp;lt;/link&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Is there a way to bypass this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,66 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>security on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/security/</link>
+      <description>Recent content in security on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 14 Oct 2010 07:49:44 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/security/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/10/3931119/</link>
+            <pubDate>Thu, 14 Oct 2010 07:49:44 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/10/3931119/</guid>
+            <description>
+            
+
+            &lt;p&gt;Anyone know of any guides for this? I&amp;rsquo;m a complete newbie to weblogic and to container-managed security. What I&amp;rsquo;ve done already is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;setup an LDAP authenticator in Weblogic&lt;/li&gt;
+&lt;li&gt;created a simple webapp in Eclipse&lt;/li&gt;
+&lt;li&gt;Configure web.xml: Added security-constraint, security-role and login-config elements. The realm name used is &amp;ldquo;myrealm&amp;rdquo; which already exists in Weblogic. The role name I used is &amp;ldquo;Admin&amp;rdquo; which is a global role in Weblogic&lt;/li&gt;
+&lt;li&gt;Create a simple jsp page &amp;ldquo;login.jsp&amp;rdquo;. It doesn&amp;rsquo;t actually do any logging in but just a Hello World type of thing. I set this page as form-login-page and form-error-page in login-config in web.xml&lt;/li&gt;
+&lt;li&gt;Export this webapp to a war file and deploy it in Weblogic&lt;/li&gt;
+&lt;li&gt;I test it by accessing http://weblogic-server/test/login.jsp, and I expect that I&amp;rsquo;ll be asked to login using an LDAP user first. This doesn&amp;rsquo;t happen, it just shows the Hello World jsp.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&amp;rsquo;ve also tried adding a weblogic.xml to map the &amp;ldquo;Admin&amp;rdquo; role to a specific LDAP user (didn&amp;rsquo;t work).&lt;/p&gt;
+&lt;p&gt;Any advice? It seems there&amp;rsquo;s a lack of online references for this sort of thing (or I don&amp;rsquo;t really know what I should be searching for)&lt;/p&gt;
+&lt;p&gt;Edit: I&amp;rsquo;ve also tried using BASIC auth instead of FORM (no luck)&lt;/p&gt;
+&lt;p&gt;My web.xml settings are below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;security-constraint&amp;gt;
+&amp;lt;display-name&amp;gt;Test SC&amp;lt;/display-name&amp;gt;
+&amp;lt;web-resource-collection&amp;gt;
+    &amp;lt;web-resource-name&amp;gt;Test WR&amp;lt;/web-resource-name&amp;gt;
+    &amp;lt;url-pattern&amp;gt;/hello.jsp&amp;lt;/url-pattern&amp;gt;
+    &amp;lt;http-method&amp;gt;*&amp;lt;/http-method&amp;gt;
+&amp;lt;/web-resource-collection&amp;gt;
+&amp;lt;auth-constraint&amp;gt;
+    &amp;lt;role-name&amp;gt;Admin&amp;lt;/role-name&amp;gt;
+&amp;lt;/auth-constraint&amp;gt;
+&amp;lt;/security-constraint&amp;gt;
+
+&amp;lt;security-role&amp;gt;
+&amp;lt;role-name&amp;gt;Admin&amp;lt;/role-name&amp;gt;
+&amp;lt;/security-role&amp;gt;
+
+  &amp;lt;login-config&amp;gt;
+    &amp;lt;auth-method&amp;gt;BASIC&amp;lt;/auth-method&amp;gt;
+    &amp;lt;realm-name&amp;gt;myrealm&amp;lt;/realm-name&amp;gt;
+&amp;lt;/login-config&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

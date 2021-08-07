@@ -1,0 +1,171 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>roxy on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/roxy/</link>
+      <description>Recent content in roxy on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 16 Nov 2017 15:31:08 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/roxy/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/11/47333503/</link>
+            <pubDate>Thu, 16 Nov 2017 15:31:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/11/47333503/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a Marklogic 9 project that I&amp;rsquo;m configuring with Roxy.
+I&amp;rsquo;ve been following these examples: &lt;a href=&#34;https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps&#34;&gt;https://github.com/marklogic-community/roxy/wiki/Adding-Custom-Build-Steps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Basically, I have a server-side JS function that I want to call after deploy content. I have something like this:&lt;/p&gt;
+&lt;h1 id=&#34;then-you-would-define-your-new-method&#34;&gt;then you would define your new method&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;  def deploy_content
+    # you can optionally call the original
+    original_deploy_content
+
+    # do your stuff here
+    execute_query(%Q{
+      xquery version &amp;quot;1.0-ml&amp;quot;;
+      xdmp:javascript-eval(&#39;var process = require(&amp;quot;/ingestion/process.sjs&amp;quot;); process.postDeployContent();&#39;)
+    },
+    :db_name =&amp;gt; @properties[&amp;quot;ml.app-name&amp;quot;] + &amp;quot;-content&amp;quot;)
+
+  end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The xquery being called here evaluates fine when executed via query console. But when I call ml local deploy content, I get the following error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ERROR: 500 &amp;quot;Internal Server Error&amp;quot;
+ERROR: &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;500 Internal Server Error&amp;lt;/title&amp;gt;
+    &amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex,nofollow&amp;quot;/&amp;gt;
+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/error.css&amp;quot;/&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;span class=&amp;quot;error&amp;quot;&amp;gt;
+      &amp;lt;h1&amp;gt;500 Internal Server Error&amp;lt;/h1&amp;gt;
+      &amp;lt;dl&amp;gt;
+        &amp;lt;dt&amp;gt;XDMP-MODNOTFOUND: var process = require(&amp;quot;/ingestion/process.sjs&amp;quot;); process.postDeployContent(); -- Module /ingestion/process.sjs not found&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;in [anonymous], at 1:14 [javascript]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;at 3:6,
+in xdmp:eval(&amp;quot;var process = require(&amp;amp;amp;quot;/ingestion/process.sjs&amp;amp;amp;quot;); proce...&amp;quot;) [javascript]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+        &amp;lt;dt&amp;gt;in /eval, at 3:6 [1.0-ml]&amp;lt;/dt&amp;gt;
+        &amp;lt;dd&amp;gt;&amp;lt;/dd&amp;gt;
+      &amp;lt;/dl&amp;gt;
+    &amp;lt;/span&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why is the module not found when running via xquery from app_specific.rb?&lt;/p&gt;
+&lt;p&gt;Or&amp;hellip; is there a better way to call a JS module function from here. Sorry, I&amp;rsquo;m not too familiar with the xquery side, so I just called a JS function instead.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/11/47129470/</link>
+            <pubDate>Mon, 06 Nov 2017 03:48:06 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/11/47129470/</guid>
+            <description>
+            
+
+            &lt;p&gt;Does Roxy have support for deploying templates for use with Marklogic 9&amp;rsquo;s Template Driven Extraction?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/10/47018820/</link>
+            <pubDate>Mon, 30 Oct 2017 15:22:49 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/10/47018820/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out the Roxy deployer. The Roxy app was created using the default app-type. I setup a new ML 9 database, and I ran &amp;ldquo;ml local bootstrap&amp;rdquo; using the default ports (8040 and 8041)&lt;/p&gt;
+&lt;p&gt;Then I setup a node application. I tried the following (sample code from &lt;a href=&#34;https://docs.marklogic.com/jsdoc/index.html&#34;&gt;https://docs.marklogic.com/jsdoc/index.html&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var marklogic = require(&#39;marklogic&#39;);
+var conn = {
+    host: &#39;192.168.33.10&#39;,  
+    port: 8040,
+    user: &#39;admin&#39;,
+    password: &#39;admin&#39;,
+    authType: &#39;DIGEST&#39;
+}
+
+var db = marklogic.createDatabaseClient(conn);
+
+db.createCollection(
+  &#39;/books&#39;,
+  {author: &#39;Beryl Markham&#39;},
+  {author: &#39;WG Sebald&#39;}
+  )
+.result(function(response) {
+    console.log(JSON.stringify(response, null, 2));
+  }, function (error) {
+    console.log(JSON.stringify(error, null, 2));
+  });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Running the script gave me an error like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ node test.js
+{
+  &amp;quot;message&amp;quot;: &amp;quot;write document list: cannot process response with 500 status&amp;quot;,
+  &amp;quot;statusCode&amp;quot;: 500,
+  &amp;quot;body&amp;quot;: &amp;quot;&amp;lt;error:error xsi:schemaLocation=\&amp;quot;http://marklogic.com/xdmp/error error.xsd\&amp;quot; xmlns:error=\&amp;quot;http://marklogic.com/xdmp/error\&amp;quot; xmlns:xsi=\&amp;quot;http://www.w3.org/2001/XMLSchema-instance\&amp;quot;&amp;gt;\n  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;\n  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;\n  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;\n  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;\n  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;\n  &amp;lt;error:expr/&amp;gt;\n  &amp;lt;error:data&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;\n  &amp;lt;/error:data&amp;gt;\n  &amp;lt;error:stack&amp;gt;\n    &amp;lt;error:frame&amp;gt;\n      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;\n      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;\n      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;\n      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n    &amp;lt;/error:frame&amp;gt;\n  &amp;lt;/error:stack&amp;gt;\n&amp;lt;/error:error&amp;gt;\n&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If I change the port to 8000 (the default appserver that inserts into Documents), the node function executes correctly as expected. I&amp;rsquo;m not sure if I need to configure anything else with the Roxy-created appserver so that it works with the node.js application.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure where the &amp;ldquo;DELETE_IF_UNUSED&amp;rdquo; part in the error message is coming from either. There doesn&amp;rsquo;t seem to be any such text in the configuration files generated by Roxy.&lt;/p&gt;
+&lt;p&gt;Edit: When accessing 192.168.33.10:8040 via the browser, I get a an xml with a similar error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;error:error xsi:schemaLocation=&amp;quot;http://marklogic.com/xdmp/error error.xsd&amp;quot; xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;
+  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;
+  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;
+  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;
+  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;
+  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;
+  &amp;lt;error:expr/&amp;gt;
+  &amp;lt;error:data&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;
+  &amp;lt;/error:data&amp;gt;
+  &amp;lt;error:stack&amp;gt;
+    &amp;lt;error:frame&amp;gt;
+      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;
+      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;
+      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;
+      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+    &amp;lt;/error:frame&amp;gt;
+  &amp;lt;/error:stack&amp;gt;
+&amp;lt;/error:error&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If it matters, MarkLogic version is 9.0-3.1. It&amp;rsquo;s a fresh install too.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

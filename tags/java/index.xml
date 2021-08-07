@@ -1,0 +1,693 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>java on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/java/</link>
+      <description>Recent content in java on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Mon, 09 Jun 2014 07:18:34 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2014/06/24115461/</link>
+            <pubDate>Mon, 09 Jun 2014 07:18:34 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/06/24115461/</guid>
+            <description>
+            
+
+            &lt;p&gt;As it says in the title, I have a Java app that runs on Windows (using SWT). How can the java app detect if the machine has touch screen capability?&lt;/p&gt;
+&lt;p&gt;The purpose is to present different UI elements if touch screen is available.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2014/06/23992330/</link>
+            <pubDate>Mon, 02 Jun 2014 10:24:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/06/23992330/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have two inputs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a date value&lt;/li&gt;
+&lt;li&gt;an integer (+8 or -3 or such) that represents the offset from GMT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Java, how can I convert the given date value into the corresponding date/time in the local timezone? There doesn&amp;rsquo;t seem to be any timezone offset function in the Date class.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2014/05/23645265/</link>
+            <pubDate>Wed, 14 May 2014 03:44:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/05/23645265/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an existing AWT Java desktop application. Is there a library or something I can use to have it respond to multitouch gestures (in Windows 7/8)? I see there&amp;rsquo;s frameworks like MT4J or JavaFX that have multitouch support, but it seems these are separate UI frameworks that I can&amp;rsquo;t use with my existing app?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2014/05/23622915/</link>
+            <pubDate>Tue, 13 May 2014 04:39:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/05/23622915/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a working Java SWING-based desktop application, and I&amp;rsquo;m being asked if it can be run on the Microsoft Surface Pro or Pro 2. As I understand it, these are using stock Windows 8/8.1 and will be able to run any Windows app normally, is this correct?&lt;/p&gt;
+&lt;p&gt;Are there any caveats or special considerations when running my app on these devices?&lt;/p&gt;
+&lt;p&gt;Edit: If it matters, the JRE would be distributed together with the application, so installing Java isnt an issue.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2013/03/15611653/</link>
+            <pubDate>Mon, 25 Mar 2013 09:37:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2013/03/15611653/</guid>
+            <description>
+            
+
+            &lt;p&gt;I want to write a servlet that wraps around a set of resources and needs to protect them with basic HTTP auth; the submitted username/pass will be checked against the backend database before serving the file.&lt;/p&gt;
+&lt;p&gt;Does anyone have any working examples of this? I tried the sample at &lt;a href=&#34;http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications&#34;&gt;http://www.coderanch.com/t/352345/Servlets/java/HTTP-basic-authentication-Web-Applications&lt;/a&gt; but it kept returning an &lt;code&gt;IllegalStateException&lt;/code&gt; in the &lt;code&gt;sendError&lt;/code&gt; call.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2012/08/12170462/</link>
+            <pubDate>Wed, 29 Aug 2012 03:24:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2012/08/12170462/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m being asked to assess whether we can safely upgrade the java version on one of our production-deployed webapps. The codebase is fairly large and we want to avoid having to regression test everything (no automated tests sadly), but we&amp;rsquo;ve already encountered at least one problem during some manual testing (XmlStringReader.getLocalName now throws an IllegalStateExeption when it just used to return null) and higher-ups are pretty nervous about the upgrade.&lt;/p&gt;
+&lt;p&gt;The current suggested approach is to do a source compare of the JDK sources for each version and assess those changes to see which ones might have impact, but it seems there&amp;rsquo;s a lot of changes to go through (and as mentioned the codebase is kinda large). Is it safe and easier to just review the java version changes for each version? Or is there an easier way to conduct this assessment?&lt;/p&gt;
+&lt;p&gt;Edit: I forgot to mention the version upgrade being considered is a minor version upgrade, i.e. 1.6.10 to 1.6.33&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2012/01/8720536/</link>
+            <pubDate>Wed, 04 Jan 2012 00:16:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2012/01/8720536/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to get a sense of what are the most commonly-used Java web frameworks, with a focus on large, enterprisey projects. I&amp;rsquo;m interested in which one is most favored by companies/enterprises (which may not be the same as the one most favored by developers or the open source community I guess). I&amp;rsquo;d also like to be able to cite specific projects used by each framework, preferably big-ticket or well-known ones.&lt;/p&gt;
+&lt;p&gt;Anyone have any idea about this stuff or can point me in the right direction?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to redirect to specified page after session timeout&#39; on stackoverflow at https://stackoverflow.com/questions/8483809/how-to-redirect-to-specified-page-after-session-timeout:
+</title>
+            <link>https://mirror.roytang.net/2011/12/8483836/</link>
+            <pubDate>Tue, 13 Dec 2011 03:03:22 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2011/12/8483836/</guid>
+            <description>
+            Reply to &amp;#39;How to redirect to specified page after session timeout&amp;#39; on stackoverflow at https://stackoverflow.com/questions/8483809/how-to-redirect-to-specified-page-after-session-timeout:
+
+            &lt;p&gt;How are you redirecting to the login page? At that point you should store the originally requested URL somewhere (can be in session, or request param that you pass around) such that you can redirect back there after he logs in again&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;how to reference an oracle pl/sql out parameter of table%rowtype as an object in java&#39; on stackoverflow at https://stackoverflow.com/questions/8483352/how-to-reference-an-oracle-pl-sql-out-parameter-of-tablerowtype-as-an-object-in:
+</title>
+            <link>https://mirror.roytang.net/2011/12/8483644/</link>
+            <pubDate>Tue, 13 Dec 2011 02:31:45 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2011/12/8483644/</guid>
+            <description>
+            Reply to &amp;#39;how to reference an oracle pl/sql out parameter of table%rowtype as an object in java&amp;#39; on stackoverflow at https://stackoverflow.com/questions/8483352/how-to-reference-an-oracle-pl-sql-out-parameter-of-tablerowtype-as-an-object-in:
+
+            &lt;p&gt;&amp;ldquo;rowtype&amp;rdquo; here is an Oracle PL/SQL-specific type, I don&amp;rsquo;t think it would be supported by JDBC. A quick search of the oracle forums (google &amp;ldquo;jdbc rowtype site:oracle.com&amp;rdquo;) suggests the same. You&amp;rsquo;re probably better off returning a cursor, or just execute the SQL from JDBC directly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Inheritance of Object Class in Java&#39; on stackoverflow at https://stackoverflow.com/questions/8470535/inheritance-of-object-class-in-java:
+</title>
+            <link>https://mirror.roytang.net/2011/12/8470567/</link>
+            <pubDate>Mon, 12 Dec 2011 06:15:06 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2011/12/8470567/</guid>
+            <description>
+            Reply to &amp;#39;Inheritance of Object Class in Java&amp;#39; on stackoverflow at https://stackoverflow.com/questions/8470535/inheritance-of-object-class-in-java:
+
+            &lt;p&gt;ClassB extends from ClassA which also extends from Object. Therefore ClassB extends Object indirectly, through classA&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Every class extends class Object&amp;rdquo; just means if you don&amp;rsquo;t specify the parent class, it takes on Object as the parent class&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How do I include java stuff in .jar files?&#39; on stackoverflow at https://stackoverflow.com/questions/2121670/how-do-i-include-java-stuff-in-jar-files:
+</title>
+            <link>https://mirror.roytang.net/2010/01/2121687/</link>
+            <pubDate>Sat, 23 Jan 2010 01:29:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2121687/</guid>
+            <description>
+            Reply to &amp;#39;How do I include java stuff in .jar files?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2121670/how-do-i-include-java-stuff-in-jar-files:
+
+            &lt;p&gt;Not sure how clojure is run, but don&amp;rsquo;t you just add the jar file to the classpath?&lt;/p&gt;
+&lt;p&gt;i.e.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/usr/share/java:/home/user/myjarfile.jar&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/01/2084133/</link>
+            <pubDate>Mon, 18 Jan 2010 05:52:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2084133/</guid>
+            <description>
+            
+
+            &lt;p&gt;I know the oci driver can perform transparent failover of the database, but does the thin driver have the same capability?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;point of having an instance variable as final?&#39; on stackoverflow at https://stackoverflow.com/questions/2054327/point-of-having-an-instance-variable-as-final:
+</title>
+            <link>https://mirror.roytang.net/2010/01/2054343/</link>
+            <pubDate>Wed, 13 Jan 2010 04:11:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2054343/</guid>
+            <description>
+            Reply to &amp;#39;point of having an instance variable as final?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2054327/point-of-having-an-instance-variable-as-final:
+
+            &lt;p&gt;You can assign it a value that is specific to the object instance, which you can&amp;rsquo;t do with a static class variable.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/01/2053919/</link>
+            <pubDate>Wed, 13 Jan 2010 02:06:47 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2053919/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m looking into screen sharing functionality - i.e. allowing remote users to view your desktop in real time, possibly control it and write annotations (text/drawings) on the shared screen. Something similar to what webex allows in its conferencing software. Preferably a Java-based api, possibly to run from an applet.&lt;/p&gt;
+&lt;p&gt;Any recommendations on a library/api to use?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to express &amp;quot;never&amp;quot; with java.util.Date?&#39; on stackoverflow at https://stackoverflow.com/questions/2027171/how-to-express-never-with-java-util-date:
+</title>
+            <link>https://mirror.roytang.net/2010/01/2027183/</link>
+            <pubDate>Fri, 08 Jan 2010 11:21:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2027183/</guid>
+            <description>
+            Reply to &amp;#39;How to express &amp;amp;quot;never&amp;amp;quot; with java.util.Date?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2027171/how-to-express-never-with-java-util-date:
+
+            &lt;p&gt;I would just choose a far-future date as the value for the constant NEVER. Then to check for deletion/expiry, just compare against NEVER.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/01/2004096/</link>
+            <pubDate>Tue, 05 Jan 2010 03:59:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2004096/</guid>
+            <description>
+            
+
+            &lt;p&gt;We&amp;rsquo;ve always used the BouncyCastle library, I&amp;rsquo;m being asked if there are other viable alternatives, either open source or not. Or is the BouncyCastle library already the best one to use?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/12/1845277/</link>
+            <pubDate>Fri, 04 Dec 2009 06:49:54 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/1845277/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an applet that is crashing Firefox on Linux.&lt;/p&gt;
+&lt;p&gt;Can anyone tell me how I can enable the java core dump log file for this applet and where the file would be generated?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How do I change the location of index.jsp in a war file&#39; on stackoverflow at https://stackoverflow.com/questions/1801787/how-do-i-change-the-location-of-index-jsp-in-a-war-file:
+</title>
+            <link>https://mirror.roytang.net/2009/11/1801815/</link>
+            <pubDate>Thu, 26 Nov 2009 06:07:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/11/1801815/</guid>
+            <description>
+            Reply to &amp;#39;How do I change the location of index.jsp in a war file&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1801787/how-do-i-change-the-location-of-index-jsp-in-a-war-file:
+
+            &lt;p&gt;The contents of WEB-INF aren&amp;rsquo;t publicly accessible resources, why are you putting the other jsps there? Are those other jsps accessible?&lt;/p&gt;
+&lt;p&gt;If you want to hide the index.jsp, create a servlet mapped to the root path and have it forward to index.jsp.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/11/1801804/</link>
+            <pubDate>Thu, 26 Nov 2009 06:01:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/11/1801804/</guid>
+            <description>
+            
+
+            &lt;p&gt;While testing our setup for user acceptance testing, we got some reports that java applets in our web application would occasionally fail to load. The envt where it was reported was WinXP/IE6, and there were no errors found in the java console.&lt;/p&gt;
+&lt;p&gt;Obviously we&amp;rsquo;d like to avoid it. What sort of things should we be checking for here? On our local servers, everything seems fine. There&amp;rsquo;s some turnaround time when sending questions to the on-site guy, so I&amp;rsquo;d look to cover as many possible causes as possible.&lt;/p&gt;
+&lt;p&gt;Some more info:
+We have multiple applets, in the instance that they fail loading, all of them fail loading. The applet jar files vary in size from 2MB to 8MB. I&amp;rsquo;m told it seems more likely to happen if the applet isn&amp;rsquo;t cached yet, i.e. if they&amp;rsquo;ve been able to load the applets once on a given machine, further runs on that machine go smoothly. I&amp;rsquo;m wondering if there&amp;rsquo;s some sort of network transfer error when downloading the applets, but I don&amp;rsquo;t know how to verify that.&lt;/p&gt;
+&lt;p&gt;Any advise is welcome!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/11/1754697/</link>
+            <pubDate>Wed, 18 Nov 2009 09:21:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/11/1754697/</guid>
+            <description>
+            
+
+            &lt;p&gt;We have an Applet that can possibly display Chinese text. We are specifying a font for it (Arial), it works fine under both Windows and Mac OSX.&lt;/p&gt;
+&lt;p&gt;But in Firefox on Linux the Chinese characters are rendered as squares. Is there a way to work around this? Note that we can&amp;rsquo;t assume the existence of a particular font file on the client.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/11/1754135/</link>
+            <pubDate>Wed, 18 Nov 2009 06:58:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/11/1754135/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have an applet that calls a JDialog that contains a JProgressBar component. I subclass the JDialog to expose a method to update the JProgressBar, something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class ProgressDialog extends javax.swing.JDialog {
+    public void setProgress(double progress) {
+        jProgressBar1.setValue(jProgressBar1.getMinimum() + (int) (progress * jProgressBar1.getMaximum()));
+    }
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use this dialog in the following manner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public void test() throws Exception {
+    progressDialog = new ProgressDialog(null, true);
+
+    try {
+        progressDialog.setLocationRelativeTo(null);
+
+        // show the dialog
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                progressDialog.setVisible(true);
+            }
+        });
+
+        // business logic code that calls progressDialog.setProgress along the way
+        doStuff();
+        
+    } finally {
+        progressDialog.setVisible(false);
+        progressDialog.dispose();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It works fine on Windows/any browser. However, when invoking the above function on Firefox 2/3/3.5 on a Mac, the progressDialog is displayed indefinitely, i.e. it doesn&amp;rsquo;t close.&lt;/p&gt;
+&lt;p&gt;I suspected that calling setVisible(true) inside the EventQueue was causing the problem, since it&amp;rsquo;s a blocking call and might block the queue completely, so I tried changing it to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        // show the dialog
+        new Thread() {
+            public void run() {
+                progressDialog.setVisible(true);
+            }
+        }.start();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With this change, the progressDialog now closes correctly, but a new problem emerged - the contents of the dialog (which included the progressbar, an icon and a JLabel used to show a message string) were no longer shown inside the dialog. It was still a problem only on Mac Firefox.&lt;/p&gt;
+&lt;p&gt;Any ideas? I realize it&amp;rsquo;s probably some AWT threading issue, but I&amp;rsquo;ve been at this for a couple of days and can&amp;rsquo;t find a good solution. Wrapping the doStuff() business logic in a separate new Thread seems to work, but it&amp;rsquo;s not easy to refactor the actual business logic code into a separate thread, so I&amp;rsquo;m hoping there&amp;rsquo;s a simpler solution.&lt;/p&gt;
+&lt;p&gt;The envt is:
+Mac OSX 10.5
+Java 1.5
+Firefox 2/3/3.5&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Play framework ★ Home
+</title>
+            <link>https://mirror.roytang.net/2009/10/play-framework-home/</link>
+            <pubDate>Mon, 26 Oct 2009 02:58:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/10/play-framework-home/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play framework ★ Home&lt;/a&gt;
+
+            &lt;p&gt;Web framework for Java&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to stop a running *.JAR file with a batch script?&#39; on stackoverflow at https://stackoverflow.com/questions/1563029/how-to-stop-a-running-jar-file-with-a-batch-script:
+</title>
+            <link>https://mirror.roytang.net/2009/10/1613755/</link>
+            <pubDate>Fri, 23 Oct 2009 14:14:22 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/10/1613755/</guid>
+            <description>
+            Reply to &amp;#39;How to stop a running *.JAR file with a batch script?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1563029/how-to-stop-a-running-jar-file-with-a-batch-script:
+
+            &lt;p&gt;Have your app create a temp file on startup and periodically check if it still exists. Your batch script can just delete that file to terminate the app.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/10/1550532/</link>
+            <pubDate>Sun, 11 Oct 2009 11:58:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/10/1550532/</guid>
+            <description>
+            
+
+            &lt;p&gt;I have a CRUD maintenance screen with a custom rich text editor control (FCKEditor actually) and the program extracts the formatted text as HTML from the control for saving to the database. However, part of our standards is that leading and trailing whitespace needs to be stripped from the content before saving, so I have to remove extraneous &amp;amp;nbsp; and &amp;lt;br&amp;gt; and such from the beginning and end of the HTML string.&lt;/p&gt;
+&lt;p&gt;I can opt to either do it on the client side (using Javascript) or on the server side (using Java) Is there an easy way to do this, using regular expressions or something? I&amp;rsquo;m not sure how complex it needs to be, I need to be able to remove stuff like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;br /&amp;gt; &amp;amp;nbsp;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;yet retain it if there&amp;rsquo;s any kind of meaningful text in between. (Above snippet is from actual HTML data saved by the tester)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2009/08/1276714/</link>
+            <pubDate>Fri, 14 Aug 2009 08:40:06 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/08/1276714/</guid>
+            <description>
+            
+
+            &lt;p&gt;Let&amp;rsquo;s say I have a Java webapp deployed on some Application Server with clustering across a few nodes.&lt;/p&gt;
+&lt;p&gt;In the webapp, we maintain a cache of some values retrieved from the database, stored in-memory as static variables. Whenever a user performs an update in a particular screen, we clear the cache so that the cached values will be retrieved again the next time they are needed.&lt;/p&gt;
+&lt;p&gt;Now the problem: Since each node in the cluster is running on a separate JVM, how can I clear the cache across all nodes? Basically I want to call a static function on each cluster node. Is there some standard J2EE way to do this, or it depends on the Application Server software?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Would it be useful to include the class name and variable name in any NullPointerException message?&#39; on stackoverflow at https://stackoverflow.com/questions/99302/would-it-be-useful-to-include-the-class-name-and-variable-name-in-any-nullpointe:
+</title>
+            <link>https://mirror.roytang.net/2008/09/99512/</link>
+            <pubDate>Fri, 19 Sep 2008 04:02:11 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/09/99512/</guid>
+            <description>
+            Reply to &amp;#39;Would it be useful to include the class name and variable name in any NullPointerException message?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/99302/would-it-be-useful-to-include-the-class-name-and-variable-name-in-any-nullpointe:
+
+            &lt;p&gt;Yes, that would be useful. Especially if you have a mechanism where the error message (&lt;code&gt;exception.getMessage()&lt;/code&gt;) is displayed on-screen but the actual stacktrace gets hidden away in log files which you can&amp;rsquo;t access immediately.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>jmonkeyengine.com - About
+</title>
+            <link>https://mirror.roytang.net/2007/05/jmonkeyengine-com-about/</link>
+            <pubDate>Sun, 27 May 2007 16:14:47 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2007/05/jmonkeyengine-com-about/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.jmonkeyengine.com/index.php?option=com_content&amp;amp;task=view&amp;amp;id=21&amp;amp;Itemid=72&#34;&gt;jmonkeyengine.com - About&lt;/a&gt;
+
+            &lt;p&gt;Java game engine&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Maverick
+</title>
+            <link>https://mirror.roytang.net/2006/02/maverick/</link>
+            <pubDate>Fri, 24 Feb 2006 11:57:18 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2006/02/maverick/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://mav.sourceforge.net/maverick-manual.html#faq&#34;&gt;Maverick&lt;/a&gt;
+
+            &lt;p&gt;Lightweight open-source java web framework&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Install &amp; Configure Apache, PHP, JSP, &amp; MySQL on Windows XP/2000
+</title>
+            <link>https://mirror.roytang.net/2005/10/install-configure-apache-php-jsp-mysql-on-windows-xp-2000/</link>
+            <pubDate>Fri, 07 Oct 2005 13:11:02 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/10/install-configure-apache-php-jsp-mysql-on-windows-xp-2000/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://mpcon.org/apacheguide/index.php&#34;&gt;Install &amp;amp; Configure Apache, PHP, JSP, &amp;amp; MySQL on Windows XP/2000&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Selenium
+</title>
+            <link>https://mirror.roytang.net/2005/09/selenium/</link>
+            <pubDate>Fri, 23 Sep 2005 15:45:10 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/09/selenium/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://selenium.thoughtworks.com/index.html&#34;&gt;Selenium&lt;/a&gt;
+
+            &lt;p&gt;Browser-based webapp test suite&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>MtG Lair - MtG Editor
+</title>
+            <link>https://mirror.roytang.net/2005/09/mtg-lair-mtg-editor/</link>
+            <pubDate>Sat, 17 Sep 2005 16:35:18 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/09/mtg-lair-mtg-editor/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://mtglair.de/editor.shtml&#34;&gt;MtG Lair - MtG Editor&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>www.KickJava.com: Free Java Books
+</title>
+            <link>https://mirror.roytang.net/2005/06/www-kickjava-com-free-java-books/</link>
+            <pubDate>Sun, 26 Jun 2005 11:23:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/06/www-kickjava-com-free-java-books/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.kickjava.com/freeBooks.html&#34;&gt;www.KickJava.com: Free Java Books&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>O&#39;Reilly CodeZoo
+</title>
+            <link>https://mirror.roytang.net/2005/04/o-reilly-codezoo/</link>
+            <pubDate>Thu, 07 Apr 2005 14:29:07 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/04/o-reilly-codezoo/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.codezoo.net/&#34;&gt;O&amp;#39;Reilly CodeZoo&lt;/a&gt;
+
+            &lt;p&gt;java resources for developers&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Java Games Programming Techniques
+</title>
+            <link>https://mirror.roytang.net/2004/11/java-games-programming-techniques/</link>
+            <pubDate>Sun, 28 Nov 2004 18:38:59 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/java-games-programming-techniques/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://fivedots.coe.psu.ac.th/~ad/jg/index.html&#34;&gt;Java Games Programming Techniques&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Java(TM) Boutique - The Java Game Development Tutorial
+</title>
+            <link>https://mirror.roytang.net/2004/11/java-tm-boutique-the-java-game-development-tutorial/</link>
+            <pubDate>Sun, 28 Nov 2004 17:42:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/java-tm-boutique-the-java-game-development-tutorial/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://javaboutique.internet.com/tutorials/Java_Game_Programming/&#34;&gt;Java(TM) Boutique - The Java Game Development Tutorial&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

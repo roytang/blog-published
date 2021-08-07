@@ -1,0 +1,856 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>wordpress on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/wordpress/</link>
+      <description>Recent content in wordpress on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 14 Nov 2018 03:06:26 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Site Migration from Wordpress to Hugo
+</title>
+            <link>https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</link>
+            <pubDate>Wed, 14 Nov 2018 03:06:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;leaving-wordpress&#34;&gt;Leaving Wordpress&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been using Wordpress for this blog since circa 2006 I believe, but as I mentioned in an &lt;a href=&#34;https://roytang.net/2018/10/django-blog-application/&#34;&gt;earlier blog post&lt;/a&gt; that I was not 100% happy with using Wordpress for this blog. I have a few issues with Wordpress, none of them a major dealbreaker, but collectively enough to make me consider something else:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the new &lt;a href=&#34;https://wordpress.org/gutenberg/&#34;&gt;Gutenberg editor&lt;/a&gt; set to become standard in 5.0 was in my experience, very clunky and kinda annoying&lt;/li&gt;
+&lt;li&gt;the code structure of Wordpress is very deep and complex, sometimes making it difficult for me to make changes I want. I can usually figure it out, but it feels like things are unnecessarily more complicated than they need to be&lt;/li&gt;
+&lt;li&gt;Wordpress&amp;rsquo;s rich plugin library is a plus, but it also means having to figure out how to have multiple plugins interoperate with each other. An easy example is that I was using a queueing plugin that didn&amp;rsquo;t work great with the Gutenberg editor&lt;/li&gt;
+&lt;li&gt;Wordpress requires a lot of maintenance, including needing to regularly update plugins for security purposes, and comment moderation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;static-site-generators&#34;&gt;Static Site Generators&lt;/h3&gt;
+&lt;p&gt;At the same time, while reading across some blogs over the past few months, I had ran into the idea of static site generators, which intrigued me as a Wordpress alternative. SSGs offered several advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I could compose my posts offline and using any &lt;a href=&#34;https://roytang.net/2018/11/my-history-in-text-editors/&#34;&gt;text editor&lt;/a&gt; I wanted, using a simple format like Markdown&lt;/li&gt;
+&lt;li&gt;Page load performance is better since Apache will simply serve up the static files, no processing or database hits of any kind&lt;/li&gt;
+&lt;li&gt;Static sites don&amp;rsquo;t require security updates of any sort - there&amp;rsquo;s no database or admin backend to be hacked&lt;/li&gt;
+&lt;li&gt;Easy backups. In WP I was using a custom plugin for backups. With an SSG, I can simply have the raw content stored in Github, then the static content &amp;ldquo;built&amp;rdquo; from there. The content always exists in at least three places - the actual site, Github, and my local computer I use for posting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-hugo&#34;&gt;Why Hugo&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s quite a lot of static site generators available right now actually. The most popular one seems to be &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; which is ruby-based. I first decided to try &lt;a href=&#34;https://blog.getpelican.com/&#34;&gt;Pelican&lt;/a&gt; because I preferred Python over Ruby. However, it turned out problematic on my Windows machine, I encountered some interoperability problems with pandoc for the WP migration. I didn&amp;rsquo;t want to have too many dependencies and issues with dependencies because I would later want to deploy the generator itself to my hosting on Webfaction for automated deployments, so I wanted the setup to be as easy as possible.&lt;/p&gt;
+&lt;p&gt;Then I stumbled upon &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, which offered two main advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the MSP was performance. I wanted to migrate over the entire history of the blog, which was almost 900 posts at this point.&lt;/li&gt;
+&lt;li&gt;no external dependencies - all I needed was to download the hugo executable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After reading up and testing a bit of Hugo, I had a fit of &amp;ldquo;I couldn&amp;rsquo;t sleep, I&amp;rsquo;ll just go ahead and do the site migration now&amp;rdquo; that I would later regret since it completely screwed up my sleep schedule.&lt;/p&gt;
+&lt;h3 id=&#34;wordpress-export&#34;&gt;Wordpress Export&lt;/h3&gt;
+&lt;p&gt;I used the &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;Wordpress to Hugo plugin&lt;/a&gt; to convert my Wordpress content for Hugo. Many posts had reported problems with this plugin, but I didn&amp;rsquo;t have any issues with its basic operation. I had a two problems with it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when exporting existing Wordpress comments, it didn&amp;rsquo;t include the commenter&amp;rsquo;s URL, which I felt I should include&lt;/li&gt;
+&lt;li&gt;all the posts were exported into a single &lt;code&gt;posts&lt;/code&gt; folder. While this didn&amp;rsquo;t create any permalinks issues due to each post having the &lt;code&gt;url&lt;/code&gt; attribute in the frontmatter, it made the entire folder look very unorganized since I had almost 900+ posts. I preferred that the posts be grouped by year and month, matching the &lt;code&gt;/yyyy/mm/slug/&lt;/code&gt; format of the permalink&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I had the source for the plugin, it was straightforward to fix both issues myself.&lt;/p&gt;
+&lt;p&gt;After getting the export from the plugin, I still had a bit of post-processing and cleaning up of the posts to do.&lt;/p&gt;
+&lt;p&gt;For one thing, all the single-quotes in the exported posts seem to have been converted to HTML entities for that smart quote thing, so I had to reverse that. Luckily, it was a simple find and replace across text files. The format for embedding posts such as Twitter, Youtube, etc was different as well, I had to correct those files one by one.&lt;/p&gt;
+&lt;h3 id=&#34;cleaning-up-the-taxonomies&#34;&gt;Cleaning up the taxonomies&lt;/h3&gt;
+&lt;p&gt;I had always wanted to clean up the categories in the blog, but I never got around to it with Wordpress because I didn&amp;rsquo;t feel like figuring out the SQL I would have needed to do it. (I&amp;rsquo;ve never liked Wordpress&amp;rsquo;s table structure.). With Hugo, all I had to do was update a bunch of text files, which I was much more comfortable with. This involved simply importing a Python library to &lt;a href=&#34;https://elbauldelprogramador.com/en/how-to-parse-frontmatter-with-python/&#34;&gt;parse frontmatter&lt;/a&gt;, and a &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/clean_categories.py&#34;&gt;script&lt;/a&gt; to do the conversion.&lt;/p&gt;
+&lt;h3 id=&#34;generating-the-archive-pages&#34;&gt;Generating the archive pages&lt;/h3&gt;
+&lt;p&gt;Hugo doesn&amp;rsquo;t have built-in support for archive pages, so I had to create them myself. I followed the setup described in &lt;a href=&#34;https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/&#34;&gt;this blog post&lt;/a&gt; and wrote a python &lt;a href=&#34;https://github.com/roytang/blog/blob/master/utils/create-archives.py&#34;&gt;script&lt;/a&gt; to generate the individual year/month archive pages.&lt;/p&gt;
+&lt;p&gt;A bigger problem was the archive listing (the page that would link to the individual archive pages). Because the blog has been running for 15 years, there&amp;rsquo;s a whole lot, so I preferred to organize them in a table like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;bc6ffeab2c0e919e9cfc9edeb1084a63-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Nov 2018 3:06am&#34;&gt;14 Nov 2018 3:06am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I actually couldn&amp;rsquo;t find a decent Wordpress plugin that did this for me exactly, so I wrote my &lt;a href=&#34;https://github.com/roytang/wp_grid_archive/&#34;&gt;own plugin&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;For Hugo, I struggled with this a while and was close to figure out when I finally got the approach right. CHeck &lt;a href=&#34;https://mirror.roytang.net/archives&#34;&gt;my archives page&lt;/a&gt; for how it turned out. The upside is I got to become a bit familiar with &lt;a href=&#34;https://golang.org/,&#34;&gt;https://golang.org/,&lt;/a&gt; particularly the way content is parsed and processed in Hugo templates.&lt;/p&gt;
+&lt;h3 id=&#34;custom-shortcodes&#34;&gt;Custom shortcodes&lt;/h3&gt;
+&lt;p&gt;I had some custom-formatted code in Wordpress that wasn&amp;rsquo;t exported properly by the plugin. This required I create some new shortcodes for Hugo and replace the corresponding calls.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spoilers. I had only recently added this WP plugin, and only one post was using it so this was straightforward. I created the spoiler shortcode and added some simple jQuery-backed code to toggle the spoiler content. I would have preferred doing this with vanilla JS so as to avoid the jQuery dependency, but I decided to put off learning how to do that for another day.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirror.roytang.net/categories/magic-the-gathering&#34;&gt;MTG&lt;/a&gt; Decklists and card links. Individual card links wasn&amp;rsquo;t an issue - I just generated an anchor as needed, and had to clean up some of the pages that used it. The decklist part was more challenging, as it involved a lot of text parsing. I managed to get it working to a point where the decklists were formatted correctly, but individual cards weren&amp;rsquo;t linked, before deciding to give up. The main issue is I haven&amp;rsquo;t figured out how to parse each line to split the card count and the card name, if the card count exists, i.e. &amp;ldquo;3 Lightning Bolt&amp;rdquo;. I considered just adding JavaScript to format the contents post-load, but the current behavior will do for now. Maybe I&amp;rsquo;ll even revisit the Hugo parsing issue later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;redirects&#34;&gt;Redirects&lt;/h3&gt;
+&lt;p&gt;I wanted to minimize changes in the URLs of older content, so the permalinks for the old posts were kept in place. Another issue was the RSS feed, generated at &lt;code&gt;/index.xml&lt;/code&gt; by Hugo, which I wanted at &lt;code&gt;/feed/&lt;/code&gt; so that feed readers don&amp;rsquo;t need to be updated. A simple redirect in .htaccess was enough to get this done. I&amp;rsquo;m not much good at regexes, so I had to reference another &lt;a href=&#34;https://blog.philipphauer.de/moving-wordpress-hugo/&#34;&gt;blog post&lt;/a&gt; for this one. The RSS feeds for categories/tags has changed, I think that&amp;rsquo;s fine.&lt;/p&gt;
+&lt;h3 id=&#34;automatic-deployment&#34;&gt;Automatic Deployment&lt;/h3&gt;
+&lt;p&gt;I referenced another &lt;a href=&#34;https://gomakethings.com/automating-the-deployment-of-your-static-site-with-hugo-and-github/&#34;&gt;blog post&lt;/a&gt; for setting up automatic deployment. The main difference was my host was Webfaction while his was Digital Ocean, which did cause me a bit of trouble when I was trying to set up a Github webhook to automatically deploy on every push. It turns out Webfaction doesn&amp;rsquo;t allow me to set an env variable in .htaccess to be read by the PHP script (as was in the blog post linked above). It took me a while to figure out this was the issue, so I just gave up on the Github webhook for now and just set a cron job to periodically pull and redeploy the site. I needed the cron job anyway, if I wanted to support future publishing and possibly some form of queueing later on.&lt;/p&gt;
+&lt;h3 id=&#34;comments&#34;&gt;Comments&lt;/h3&gt;
+&lt;p&gt;Legacy comments from WP are imported directly into the markdown of each page. Future comments are now handled using Disqus. I already had a Disqus account before, I forgot why I stopped using it. That being said, outsourcing the comments makes a lot of sense.&lt;/p&gt;
+&lt;h3 id=&#34;limitations&#34;&gt;Limitations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;we lose the site search for now. There are some workarounds, including Google SiteSearch (I believe it has ads) or building a JSON index and searching on the client-side (seems impractical given the number of posts). I believe I&amp;rsquo;m the only one using the site search anyway, I&amp;rsquo;ll revisit this at another time.&lt;/li&gt;
+&lt;li&gt;the markdown engine allows raw HTML in the content, but if you have any line breaks in between, your structure breaks, so that required some cleanup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;theme&#34;&gt;Theme&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m not much of a CSS/site design guy, I&amp;rsquo;m more a &amp;ldquo;find an existing theme and tweak it to your liking&amp;rdquo; guy, so I browsed Hugo&amp;rsquo;s available themes for a while and settled on &lt;a href=&#34;https://github.com/enten/hyde-y&#34;&gt;Hyde-Y&lt;/a&gt;, which I proceeded to modify a bit, adding a picture to the sidebar and so on. It&amp;rsquo;s simple and clean and straightforward, nothing too fancy. Maybe I&amp;rsquo;ll revisit the theme later.&lt;/p&gt;
+&lt;p&gt;For posterity&amp;rsquo;s sake, a screenshot of the new layout/theme:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#860b271077bc60f75bc0ebe8bec296c9-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;860b271077bc60f75bc0ebe8bec296c9-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;14 Nov 2018 3:06am&#34;&gt;14 Nov 2018 3:06am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;At the end of it, it turned out a bit more effort than I expected. I&amp;rsquo;ll probably be cleaning up the exported older posts every so often because I&amp;rsquo;m OC that well. The theming/templating turned out to be a bit more complicated than I expected, but I think it was easier to manage than Wordpress. The last time I tried to use a custom blog engine, I got tired of maintaining and upating it so I switched back to Wordpress, hopefully that doesn&amp;rsquo;t happen here. Not having to maintain a web interface is a pretty good indicator.&lt;/p&gt;
+&lt;p&gt;Despite the effort, the great thing is that I did learn a few things, so at the minimum it&amp;rsquo;s already a win:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a bit of GoLang&lt;/li&gt;
+&lt;li&gt;how to create Github Webhooks&lt;/li&gt;
+&lt;li&gt;more .htaccess stuff&lt;/li&gt;
+&lt;li&gt;usage of pathlib.Path in Python3 (no more os.glob for me!)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/archive-grid_hue4b4a2fae19a0f11e617fa08057e7adf_25861_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2018/11/site-migration-from-wordpress-to-hugo/blog-hugo-2018_hu3440e873d4f85fe686378e137aba5439_180987_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Performance Optimization for WordPress Blogs
+</title>
+            <link>https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</link>
+            <pubDate>Thu, 30 Jun 2016 01:30:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/</guid>
+            <description>
+            
+            &lt;p&gt;Some time ago, one of my many intrepid followers pointed out that this blog tested poorly on web page performance according to this &lt;a href=&#34;https://testmysite.thinkwithgoogle.com/&#34;&gt;Speed Testing Tool&lt;/a&gt;. Now, I&amp;rsquo;m of the opinion that for a personal blog such as this, web performance isn&amp;rsquo;t really a mission-critical sort of thing, but as a software developer who has often had to work hard to optimize the web applications we delivered to our clients, it kind of became a matter of pride :p&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#0c6ac79b772c7e82c9d4b481ecd82269-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;0c6ac79b772c7e82c9d4b481ecd82269-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;30 Jun 2016 1:30am&#34;&gt;30 Jun 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also ran the site through &lt;a href=&#34;https://developers.google.com/speed/pagespeed/insights&#34;&gt;Google PageSpeed Insights&lt;/a&gt;. The results were mostly the same, but the Google site gave me results faster, so this was the one I referenced for subsequent testing. The most important problems to address were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimizing image sizes&lt;/li&gt;
+&lt;li&gt;Removing render-blocking JS and CSS in above-the fold content&lt;/li&gt;
+&lt;li&gt;Leverage browser caching (through the use of HTTP headers)&lt;/li&gt;
+&lt;li&gt;Minify CSS and Javascript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these are familiar to me since they are very common performance optimizations done in web applications. However, this blog is running on WordPress, which means I should try to look for existing WordPress-based solutions instead of hacking the code myself. (I used to run a custom-built Django-based blog system here, but I got tired of maintaining it myself so I went for tried-and-true WordPress). Here are the optimizations I ended up doing:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Upgraded to the default WordPress Twenty-Sixteen Theme. Not strictly necessary for optimization, but I was previously using the Twenty-Twelve Theme, and the problem with using older themes is that they may not be using newer web development techniques to improve performance. Also, Twenty-Sixteen looked better haha. And yes, I do use the default WordPress themes. Too lazy (as of yet) to look for a nice custom theme, and I don&amp;rsquo;t have the design chops myself to build it, so it will do for now.&lt;/li&gt;
+&lt;li&gt;For the image size problem, I found that the biggest offender was the &lt;a href=&#34;https://mirror.roytang.net/2016/03/sketching-daily/&#34;&gt;Sketching Daily post&lt;/a&gt; where I broke down how I do my daily sketches. The problem was that I was uploading full-size images of the drawings and they were being inlined into the post &amp;ndash; which meant the browser was loading the full-size image even though it was shown in a smaller size on the post itself. Instead, I manually changed the settings of each image in the post to use one of the smaller-size images generated by WordPress on upload. 
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#5e6f8afbe11d06811d33a26b4c215b02-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;5e6f8afbe11d06811d33a26b4c215b02-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;30 Jun 2016 1:30am&#34;&gt;30 Jun 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+ Choosing &amp;ldquo;Large&amp;rdquo; here meant the Large one would be inlined, while I could still set the image to link to the full-size one on click. The full size image is a whole fifteen times larger than the &amp;ldquo;large&amp;rdquo; image! It&amp;rsquo;s something I need to remember in the future if I ever upload huge images again. I also found a link that described how to set the &lt;a href=&#34;https://made4wp.com/changing-default-attachment-display-setting-insert-image-post/&#34;&gt;default image size&lt;/a&gt; (so that it doesn&amp;rsquo;t default to full size all the time), but I don&amp;rsquo;t think it&amp;rsquo;s necessary for now.&lt;/li&gt;
+&lt;li&gt;To further help with image optimization, I installed the &lt;a href=&#34;https://wordpress.org/plugins/wp-smushit/&#34;&gt;WP Smush plugin&lt;/a&gt;, which automatically optimizes (&amp;ldquo;smushes&amp;rdquo;) uploaded images. I found that WP Smush reduces the uploaded image sizes by around 10-15% on average, it&amp;rsquo;s not too bad.&lt;/li&gt;
+&lt;li&gt;Next was render-blocking JavaScript. If you&amp;rsquo;re not familiar, any &lt;code&gt;&amp;lt;script include=&amp;quot;... &amp;quot; /&amp;gt;&lt;/code&gt; tag in your HTML blocks the rendering of any content below the tag itself until the content of the JS has finished executing. The typical solutions are either to (a) move the script tags to below the content (&amp;ldquo;below the fold&amp;rdquo;) or (b) add an &amp;ldquo;async&amp;rdquo; or &amp;ldquo;defer&amp;rdquo; attribute to the script tag. It turns out that there was already a plugin that did (b), &lt;a href=&#34;https://wordpress.org/plugins/async-javascript/&#34;&gt;Async Javascript&lt;/a&gt;. So I gave it a go, but for some reason it wasn&amp;rsquo;t working. After a bit of debugging, I found that there was an &amp;ldquo;aj_enabled&amp;rdquo; option that wasn&amp;rsquo;t being set. I couldn&amp;rsquo;t figure out any settings page to update it, so I went ahead and edited the plugin directly to set the value: 
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#36eed300f8d29100ff8ea1e3c36cd5ca-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;36eed300f8d29100ff8ea1e3c36cd5ca-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;30 Jun 2016 1:30am&#34;&gt;30 Jun 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+ It&amp;rsquo;s generally a bad idea to hack the local copy of your WordPress plugins, since you have to check the impact every time the plugin has a new version, but I decided to live with it for now. After the update, sure enough the JS no longer blocked page rendering.&lt;/li&gt;
+&lt;li&gt;Lastly, I installed the &lt;a href=&#34;https://wordpress.org/plugins/w3-total-cache/&#34;&gt;W3 Total Cache plugin&lt;/a&gt;. I disabled the WP Super Cache plugin I was using before since they would probably have some sort of conflict. In addition to page caching, this plugin addresses a couple of other issues: it supports HTML/JS/CSS minification (reduces file sizes and HTTP requests) and it allows adding the expiry headers to static content (to leverage browser caching). If you&amp;rsquo;ve done any work on website performance, the settings for the plugin are straightforward to understand, but I also referenced the guide at &lt;a href=&#34;https://gtmetrix.com/wordpress-optimization-guide.html&#34;&gt;this link&lt;/a&gt;. The plugin looks okay, but there&amp;rsquo;s an unfortunate side effect: the minified JS created by the plugin does not respect Async Javascript, so it blocks above the fold content from rendering. It&amp;rsquo;s a problem I&amp;rsquo;ll have to try to resolve in the future.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After the above changes, I retest the site:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#21b8bf5fee6eb583237d7c9920559f3b-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;21b8bf5fee6eb583237d7c9920559f3b-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;30 Jun 2016 1:30am&#34;&gt;30 Jun 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Much improvement indeed! There&amp;rsquo;s still a few issues to iron out, but for the most part I&amp;rsquo;m happy with the results (and my pride has been satisfied :p). I may revisit this issue at a future date to see if there&amp;rsquo;s anything else I can improve on.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/report_hu878ea8cd0476dbccd5edc1783b05d8c8_6920_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-async-js_hu70554058f9d4537be00e9490b1341641_41959_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-image-settings_huc3ccc93e8d0116ad5b05ed14c6c422a1_16871_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/06/performance-optimization-for-wordpress-blogs/wp-report_hu9a07672283dc6dda715aae2184dde23f_16606_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2008/12/349997/</link>
+            <pubDate>Mon, 08 Dec 2008 16:08:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/12/349997/</guid>
+            <description>
+            
+
+            &lt;pre&gt;&lt;code&gt;$pee = preg_replace( &#39;|&amp;lt;p&amp;gt;|&#39;, &amp;quot;$1&amp;lt;p&amp;gt;&amp;quot;, $pee );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This regular expression is from the Wordpress source code (formatting.php, wpautop function); I&amp;rsquo;m not sure what it does, can anyone help?&lt;/p&gt;
+&lt;p&gt;Actually I&amp;rsquo;m trying to port this function to Python&amp;hellip;if anyone knows of an existing port already, that would be much better as I&amp;rsquo;m really bad with regex.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Django Update -- WordPress Import and More
+</title>
+            <link>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</link>
+            <pubDate>Sun, 23 Nov 2008 00:04:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/11/django-update-wordpress-import-and-more/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve been busy at work so fell a bit behind with Django. Last night I worked on a WordPress importer, so that I could migrate posts from my current blog(s) into the Django-powered blog that I&amp;rsquo;m coding. I&amp;rsquo;m using BeautifulSoup to parse the WordPress export file and insert them as Django objects.&lt;/p&gt;
+&lt;p&gt;Since I was running the script repeatedly, I had to figure out how to easily run it from the command line, without having to run it from inside manage.py shell. After some searching, I found that what I needed to do was set an environment variable DJANGO_SETTINGS_FILE to point to my settings file. After that, the importer script could be run repeatedly.&lt;/p&gt;
+&lt;p&gt;Also made a few tweaks to my dev copy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Modified URL mapping to follow the permalinks of the old blog (so that people linking to me don&amp;rsquo;t suddenly have broken links)&lt;/li&gt;
+&lt;li&gt;Added a tag cloud (Still using django-tagging)&lt;/li&gt;
+&lt;li&gt;Added markdown support to the admin maintenance screen. I used to think I would need to code my own form for posting, but I think I can live with just using the admin-provided one (initially at least)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I plan to migrate my main blog over once I take my Christmas break (hopefully 2nd week of December)&lt;/p&gt;
+&lt;p&gt;Stuff to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use clean, non-hardcoded urls (url template tag and reverse())&lt;/li&gt;
+&lt;li&gt;Customize the admin screen for posting&lt;/li&gt;
+&lt;li&gt;Clean up the layout and templates&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New WordPress Theme -- Thematic
+</title>
+            <link>https://mirror.roytang.net/2008/07/new-wordpress-theme-thematic/</link>
+            <pubDate>Sun, 06 Jul 2008 04:55:46 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/07/new-wordpress-theme-thematic/</guid>
+            <description>
+            
+            &lt;p&gt;Changed to &lt;a href=&#34;http://themeshaper.com/thematic/&#34;&gt;Thematic &lt;/a&gt;&lt;/p&gt;
+&lt;!-- [if gte mso 9]&gt;&lt;xml&gt; &lt;w:LatentStyles DefLockedState=&#34;false&#34; DefUnhideWhenUsed=&#34;true&#34; DefSemiHidden=&#34;true&#34; DefQFormat=&#34;false&#34; DefPriority=&#34;99&#34; LatentStyleCount=&#34;267&#34;&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;0&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Normal&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;heading 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 7&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 8&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;9&#34; QFormat=&#34;true&#34; Name=&#34;heading 9&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 7&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 8&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; Name=&#34;toc 9&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;35&#34; QFormat=&#34;true&#34; Name=&#34;caption&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;10&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Title&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;1&#34; Name=&#34;Default Paragraph Font&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;11&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtitle&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;22&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Strong&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;20&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;59&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Table Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Placeholder Text&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;1&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;No Spacing&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Revision&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;34&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;List Paragraph&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;29&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Quote&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;30&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Quote&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 1&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 2&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 3&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 4&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 5&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;60&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Shading Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;61&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;62&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Light Grid Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;63&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;64&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Shading 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;65&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;66&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium List 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;67&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 1 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;68&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 2 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;69&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Medium Grid 3 Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;70&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Dark List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;71&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Shading Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;72&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful List Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;73&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; Name=&#34;Colorful Grid Accent 6&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;19&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtle Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;21&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Emphasis&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;31&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Subtle Reference&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;32&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Intense Reference&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;33&#34; SemiHidden=&#34;false&#34; UnhideWhenUsed=&#34;false&#34; QFormat=&#34;true&#34; Name=&#34;Book Title&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;37&#34; Name=&#34;Bibliography&#34; /&gt;  &lt;w:LsdException Locked=&#34;false&#34; Priority=&#34;39&#34; QFormat=&#34;true&#34; Name=&#34;TOC Heading&#34; /&gt; &lt;/w:LatentStyles&gt; &lt;/xml&gt;&lt;![endif]--&gt;
+&lt;!-- [if gte mso 10]&gt;
+
+
+
+
+
+ &lt;![endif]--&gt;
+&lt;p class=&#34;MsoNormal&#34;&gt;
+  &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: yung current na wordpress theme ko parang ang crowded&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: baka it&#39;s the font...  or less ugn spacing&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: papagalitan mo ko pag pinalitan ko e&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: haha&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: haha hindi naman a&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: sabihin ko lang na you&#39;re fickle like a girl&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: haha&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: tsk!&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: it&#39;s nice to be female.. if magpaka-fickle ako, i&#39;ve an excuse&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: if magsungit ako, i&#39;ve an excuse din&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: if i get irrational, meron ulit excuse&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: and you can make sexist remarks freely!&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: yup&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: cool nuh&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;br /&gt; (Anonymous) &lt;/span&gt;: and pag ako sabihan ng sexist remarks...  i can freely take offense din bigla&lt;br /&gt; &lt;span style=&#34;color: #3366ff;&#34;&gt;&lt;br /&gt; zroytang &lt;/span&gt;: women :p
+&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;flockcredit&#34; style=&#34;text-align: right; color: #ccc; font-size: x-small;&#34;&gt;
+  Blogged with the&lt;br /&gt; &lt;a style=&#34;color: #999; font-weight: bold;&#34; title=&#34;Flock Browser&#34; href=&#34;http://www.flock.com/blogged-with-flock&#34; target=&#34;_new&#34;&gt;&lt;br /&gt; Flock Browser&lt;br /&gt; &lt;/a&gt;
+&lt;/div&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>YUI: Rich Text Editor for Wordpress Plugin
+</title>
+            <link>https://mirror.roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</link>
+            <pubDate>Mon, 02 Jun 2008 22:18:09 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/06/yui-rich-text-editor-for-wordpress-plugin/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://blog.davglass.com/files/yui/wp-yui-rte/&#34;&gt;YUI: Rich Text Editor for Wordpress Plugin&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Creating a WordPress Template Part 3
+</title>
+            <link>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-3/</link>
+            <pubDate>Mon, 12 May 2008 20:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-3/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;Part 1&lt;/a&gt;. &lt;a href=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/&#34;&gt;Part 2&lt;/a&gt;. Moonglove Winnower template is currently live on &lt;a href=&#34;https://mirror.roytang.net/tags/magic/&#34;&gt;Roy on Magic&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I made several color and formatting changes since the last update. Relatively easy due to the stylesheet. I also had to scrap the CSS hack for implementing equal height columns, it was causing problems with anchors in the URL. I went with a 1-pixel high background image instead.&lt;/p&gt;
+&lt;p&gt;Currently most of the PHP logic/heavy lifting is done in sidebar.php while most of the formatting stuff is handled in the stylesheet. Since I&amp;rsquo;m copying from an existing template and not creating one from scratch, I didn&amp;rsquo;t actually need to learn much PHP. Most of it was moving code around.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not releasing this source yet because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The code is still very messy&lt;/li&gt;
+&lt;li&gt;It still doesn&amp;rsquo;t work properly with WordPress Widgets&lt;/li&gt;
+&lt;li&gt;I still have some improvements I want to make. The search box is missing for instance.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like to release some variations (featuring other Magic card art) at the same time.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s not yet XHTML-valid. The autocard plugin in particular is causing problems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Still, the current one is functional enough that I don&amp;rsquo;t mind using it on the site.&lt;/p&gt;
+&lt;p&gt;Most of the difficulty so far has been the design part: thinking about colors, how things should be arranged, etc. As an engineer, it&amp;rsquo;s not one of the things I&amp;rsquo;m used to doing. I can&amp;rsquo;t imagine I would be able to do some of the fancy, complicated layouts anytime soon, though I might be able to create simpler, minimalistic ones first.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Creating A WordPress Template Part 2
+</title>
+            <link>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/</link>
+            <pubDate>Sun, 04 May 2008 08:21:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/</guid>
+            <description>
+            
+            &lt;p&gt;Part 1 of this series is &lt;a href=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Creating a WordPress template is harder than I thought. Luckily I&amp;rsquo;m modifying the default template instead of starting from scratch. The one I&amp;rsquo;m creating is rather simple but after spending almost 8 hours on it so far, I&amp;rsquo;m still far away from completing it. I&amp;rsquo;m guessing the more complicated layouts take more than two weeks of full-time work.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my current WIP:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#e41ccc6e936570fd7b1d470acefcdd7d-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;e41ccc6e936570fd7b1d470acefcdd7d-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;4 May 2008 8:21am&#34;&gt;4 May 2008 8:21am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Changes since the last part:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I moved the blog title and blog name into the header image. For this I had to darken the image a bit using the Gimp so that the white text isn&amp;rsquo;t difficult to read against the header image.&lt;/li&gt;
+&lt;li&gt;Changed the layout to use CSS and divs instead of the previous table-based layout. I solved the &amp;ldquo;columns with equal heights&amp;rdquo; problem using a hack I found from several websites. Basically: for each column you add a large amount of padding to the bottom of each column, then apply a negative margin so that the padding isn&amp;rsquo;t actually visible on-screen. This will create a scrollbar in the containing div though, so you need to hide the overflow. Sample CSS for this is:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;```css
+.content {
+overflow: hidden; /* Part of equal heights column hack */
+}
+.column {
+margin-bottom: -20000px; /* Part of equal heights column hack */
+padding-bottom: 20000px; /* Part of equal heights column hack */
+}      
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Centering the main div was something I didn&amp;rsquo;t know how to do either. The solution was to set left and right margin to auto in the divs. But this is ignored by IE6 so in addition to that, you need to set text-align: center in the body.&lt;/li&gt;
+&lt;li&gt;Set the background color of the page to be the same as rightmost column.&lt;/li&gt;
+&lt;li&gt;Modified index.php by removing the while loop to iterate over the posts. This is so that only the latest post appears in the leftmost column.&lt;/li&gt;
+&lt;li&gt;Added the &amp;ldquo;recent posts&amp;rdquo; listing in the center column. Relevant code inserted into sidebar.php:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;table&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;recent-posts&amp;#34;&lt;/span&gt; &amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;global&lt;/span&gt; $post;
+  $recentposts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;get_posts&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;numberposts=5&amp;amp;amp;offset=2&amp;#39;&lt;/span&gt;);
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt;($recentposts &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; $post) {
+  &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rowspan&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date-cell&amp;#34;&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_time&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;d M Y&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;recent-title&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_permalink&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_title&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt; &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;recent-cats&amp;#34;&lt;/span&gt;&amp;gt;Filed under &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_category&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt;
+  }
+  &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;table&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;I don&amp;rsquo;t want the about info hardcoded into the right column, so I modify it instead to display the contents of any page titled &amp;ldquo;about&amp;rdquo;. The code shown below is cribbed from Hemingway Reloaded WordPress theme:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;query_posts&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pagename=about&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;have_posts&lt;/span&gt;()) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;have_posts&lt;/span&gt;()) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_post&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_content&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;endwhile&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;endif&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Changed the standard font used to Arial 12px&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The above changes took me around half the day today (well, there were naps and videogames in between, et cetera) and the theme is starting to look decent, but there&amp;rsquo;s still a lot to do: navigation links, search pages, category lists, archive page, single post page, page template are the ones I can name off the top of my head right now.&lt;/p&gt;
+&lt;p&gt;Still, WordPress has turned out remarkably easy to customize, the PHP functions exposed as template tags are usually enough for whatever you plan to do, and the documentation on &lt;a href=&#34;http://codex.wordpress.com&#34;&gt;codex.wordpress.com&lt;/a&gt; is pretty thorough as well.&lt;/p&gt;
+&lt;p&gt;The hard part turned out to be figuring out CSS-related problems. Luckily, CSS and browser-specific issues are well-discussed problems online so I could easily find the solution to the problems via the internet.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll continue working on this whenever I have time, and hopefully can have the theme live on the Roy on Magic blog soon.&lt;/p&gt;
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/05/creating-a-wordpress-template-part-2/screenshot_hu4a9a2df4caa20bf4f1ddce91d4c7bb90_584653_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Creating a WordPress Template (Part 1 of N)
+</title>
+            <link>https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</link>
+            <pubDate>Tue, 29 Apr 2008 06:58:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/</guid>
+            <description>
+            
+            &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Web design has never been one of my strong points, and it&amp;rsquo;s something I&amp;rsquo;d like to improve on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href=&#34;https://mirror.roytang.net/tags/mtg&#34;&gt;Roy on Magic&lt;/a&gt; blog has been using the default WordPress Template since forever, and I&amp;rsquo;ve been trying to find a good WP Template that fits the &amp;ldquo;Magic the Gathering&amp;rdquo; theme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Put the above points together, and I have a new personal project. Just for fun, I&amp;rsquo;ll log my progress here.&lt;/p&gt;
+&lt;p&gt;Where do I start? I&amp;rsquo;m actually pretty clueless about web design in general, but I figure I can rough it out. I decide that I need to start by choosing colors. Yes, websites have colors, and despite the fact that I couldn&amp;rsquo;t figure out matching shirts and pants to save my life, I&amp;rsquo;m going to try to pick a decent color scheme for a website.&lt;/p&gt;
+&lt;p&gt;Except I didn&amp;rsquo;t. I cheated instead. I knew that Excel 2007 came with predefined sets of color themes, so I fired up Excel and chose from one of the available color schemes.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#f8e59ec3f5f89a421a41c8369c8232b0-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;f8e59ec3f5f89a421a41c8369c8232b0-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077.jpg&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;29 Apr 2008 6:58am&#34;&gt;29 Apr 2008 6:58am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I figure it&amp;rsquo;s okay to cheat here and there because I&amp;rsquo;m a newb. Excel 2007 offers me several color schemes; since my favorite color in Magic is green, I decide it&amp;rsquo;s going to be a green-themed website layout and choose the colors from the default green-type theme.&lt;/p&gt;
+&lt;p&gt;I think about how I would layout the page. I could open up an HTML editor and draft a few sample layouts, but instead I do something a bit easier. I already have Excel open, so I draft the layout using Excel. We sometimes use Excel at work for prototyping web forms; using it to prototype layouts isn&amp;rsquo;t so far a stretch. I decide on a 3-column layout with varying shades of green and put in some sample text of what I imagine each column would contain.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#8145d625cc6d861741d91c6590043790-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;8145d625cc6d861741d91c6590043790-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078.jpg&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;29 Apr 2008 6:58am&#34;&gt;29 Apr 2008 6:58am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;When a reader comes to the site, I want him to read the most recent article first, so I place the latest post content in the leftmost column. I imagine that I can figure out later how to make only one post appear there. After the most recent article, I want the user to see a list of the recent posts, so I put in the second column where he can quickly scan it. In the last column I&amp;rsquo;ll place the &amp;ldquo;About&amp;rdquo; stuff, etc.&lt;/p&gt;
+&lt;p&gt;Next, I open up a text editor. I know that most &amp;ldquo;pro&amp;rdquo; web designers recommend the use of CSS for layouts so I try out the 3-column layout, using 3 floating divs inside a container div. It looks fine in Firefox, but it doesn&amp;rsquo;t look so hot in IE. &lt;em&gt;(See screenshot for details)&lt;/em&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#6b79938abd17e975085e53c00c0f5cc8-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;6b79938abd17e975085e53c00c0f5cc8-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076.jpg&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;29 Apr 2008 6:58am&#34;&gt;29 Apr 2008 6:58am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If I had more time, I would&amp;rsquo;ve looked up how to fix this using CSS, but I was impatient and still had the &amp;ldquo;newb&amp;rdquo; excuse so I just made a mockup page using a table layout instead. [TODO: Screenshot]&lt;/p&gt;
+&lt;p&gt;Next I need an image to place in the header area, preferably artwork from a green Magic card. The best place to look is the official website, so I browse over to MagicTheGathering.com and look over the recent entries in the &amp;ldquo;Wallpaper of the Week&amp;rdquo; feature. I settle on the card art for &lt;a href=&#34;http://www.wizards.com/default.asp?x=mtgcom/arcana/1517&#34;&gt;Winnower Patrol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I download the 1280×1024 version of the wallpaper and open it up in the Gimp Image Editor. I crop a smaller area that matches the header size and paste it unto an image of my mockup to get a feel of what it looks like.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#afb67861dbbcb1cc28a8fb4f3240217c-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;afb67861dbbcb1cc28a8fb4f3240217c-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;29 Apr 2008 6:58am&#34;&gt;29 Apr 2008 6:58am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The Winnower Patrol image fits surprisingly well, at least it looks that way to me.&lt;/p&gt;
+&lt;p&gt;Now that I have a rough layout, I want to start working on the WordPress side. I already have a local WordPress installation, so to make things easier I export the content of the Roy on Magic site and import it into my local test installation.&lt;/p&gt;
+&lt;p&gt;Next I go into my local wordpress folder and create a copy of the default theme. I name the new folder &amp;ldquo;green&amp;rdquo; &amp;ndash; I&amp;rsquo;ll think of a creative name for the theme later.&lt;/p&gt;
+&lt;p&gt;I go into the folder and wonder where I should start. I&amp;rsquo;m a bit familiar already with the files so I know that to create the basic layout I have to modify the ff:&lt;/p&gt;
+&lt;p&gt;a. styles.css &amp;ndash; I delete the contents and paste in the styles from my HTML mockup&lt;/p&gt;
+&lt;p&gt;b. header.php &amp;ndash; similarly, I copy-paste the header code from my HTML mockup into the header file. Additionally, I have to change the hardcoded &amp;ldquo;Roy on Magic&amp;rdquo; to &lt;?php bloginfo(&amp;#8216;name&#39;); ?&gt; and the description to &lt;?php bloginfo(&amp;#8216;description&#39;); ?&gt;&lt;/p&gt;
+&lt;p&gt;c. index.php &amp;ndash; this is the page that renders the posts. I&amp;rsquo;m not yet too familiar with how WP does the post retrieval, so I just copy the table row from the HTML mockup and then put in the default post generation code.&lt;/p&gt;
+&lt;p&gt;d. sidebar.php &amp;ndash; similar to index, I just copy the default sidebar content first and place it inside the HTML mockup tags. I also paste the third column contents from the mockup into the currently empty third column.&lt;/p&gt;
+&lt;p&gt;e. footer.php &amp;ndash; similarly merged from mockup and the default template.&lt;/p&gt;
+&lt;p&gt;I login to WordPress and change the theme to &amp;ldquo;green&amp;rdquo; and check it out in the browser:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#48b47e9f06acd8c4260ba016f42c0e4e-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;48b47e9f06acd8c4260ba016f42c0e4e-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;29 Apr 2008 6:58am&#34;&gt;29 Apr 2008 6:58am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It now looks like the layout I planned! (Surprise!) Now I need to cleanup the content so that only the parts I want are displayed in each column. This is going to take a lot more delving into the innards of WordPress and PHP though, so I&amp;rsquo;ll continue this next time.&lt;/p&gt;
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screen5_hu57b468bf269184357982b254f7dd5a43_629201_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot_hud07770933f05cd801bd5db04e04f988d_582824_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot076_hu8251b81a65a949f56839e0c69aadace9_246966_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot077_huf7bc9f4cab028773aa9e47ea59e4cfb9_9837_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2008/04/creating-a-wordpress-template-part-1-of-n/screenshot078_hu7b24fe45d666c5a372c225a855f61fcc_148443_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>MTG Autocard WordPress Plugin
+</title>
+            <link>https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/</link>
+            <pubDate>Sun, 10 Feb 2008 15:18:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/02/mtg-autocard-wordpress-plugin/</guid>
+            <description>
+            
+            &lt;p&gt;I had been planning to do this for a while: it&amp;rsquo;s my first WordPress Plugin! Over at &lt;a href=&#34;https://mirror.roytang.net/tags/mtg&#34;&gt;Roy on Magic&lt;/a&gt;, I often have to write out decklists and such, so I wanted to have an autocard feature similar to the one used at MTGSalvation. After a quick five-minute search I couldn&amp;rsquo;t figure out how they did it, so I just wrote the plugin myself. Actual effort was around 3.5 hours, most of it struggling with PHP and Regular Expressions. :p&lt;/p&gt;
+&lt;p&gt;Details and download are at &lt;a href=&#34;http://roytang.pbworks.com/w/page/7977432/MTG-Autocard-WP&#34;&gt;http://roytang.pbworks.com/w/page/7977432/MTG-Autocard-WP&lt;/a&gt;. Hopefully someone else will find it useful.&lt;/p&gt;
+&lt;p&gt;Update Jan 2021: Since the wiki link above is obsolete, I&amp;rsquo;ve rescued the text below for archival purposes. &lt;em&gt;This is not an active project!&lt;/em&gt; The download link below should be working, but I make no guarantees as to whether it will still work with current wordpress versions.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;MTG Autocard for Wordpress&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What: Wordpress Plugin&lt;/p&gt;
+&lt;p&gt;Plugin Name: MTG Autocard for Wordpress&lt;/p&gt;
+&lt;p&gt;URI: &lt;a href=&#34;http://www.roytang.net/wiki/index.php/MTG_Autocard_WP&#34;&gt;http://www.roytang.net/wiki/index.php/MTG_Autocard_WP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Description: For Magic: The Gathering bloggers, a plugin that will automatically convert [CARD] and [DECK] tags to autocard links.&lt;/p&gt;
+&lt;p&gt;Author: Roy Tang&lt;/p&gt;
+&lt;p&gt;Version: 1.1&lt;/p&gt;
+&lt;p&gt;Author URI: &lt;a href=&#34;http://roytang.net&#34;&gt;http://roytang.net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Revision 12-Oct-2008 (v1.1): Changed the algorithm that splits the card list into columns; can now potentially split into more than two columns.&lt;/p&gt;
+&lt;p&gt;Revision 13-Apr-2008: Fixed a bug where two [CARD] tag pairs in the same line/paragraph won&amp;rsquo;t be converted correctly.&lt;/p&gt;
+&lt;h4 id=&#34;installation-notes&#34;&gt;Installation Notes&lt;/h4&gt;
+&lt;p&gt;Download the latest version file from /files/autocard.1.1.zip&lt;/p&gt;
+&lt;p&gt;Extract autocard.php&lt;/p&gt;
+&lt;p&gt;Upload autocard.php into your wp-content/plugins folder&lt;/p&gt;
+&lt;p&gt;Activate the plugin in the Wordpress Admin interface&lt;/p&gt;
+&lt;h4 id=&#34;usage-notes&#34;&gt;Usage Notes&lt;/h4&gt;
+&lt;p&gt;When posting, use &lt;code&gt;[CARD](cardname)[/CARD]&lt;/code&gt; to generate an autocard link to a single card.&lt;/p&gt;
+&lt;p&gt;When posting a decklist, use a format like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[DECK]
+Header1
+4 Cardname1
+4 Cardname2
+
+Header2
+12 Cardname3
+8 Cardname4
+[/DECK]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The above will generate a two-column table with autocard links. The program will try to break the list into two columns at the first header that exists after the midpoint.&lt;/p&gt;
+&lt;p&gt;To change the style of the decklist table, add a CSS definition for &amp;ldquo;autocard_table&amp;rdquo; in your style.css, for example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.autocard_table {border: 1px red solid; background-color: yellow;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Todo list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a settings page to allow the user to select the URL opened by the autocard links. (Currently always uses &lt;a href=&#34;http://magiccards.info/autocard.php&#34;&gt;http://magiccards.info/autocard.php&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;More options for formatting the autocard_table, i.e. more columns, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>001-your-first-wp-plugin.mov (video/quicktime Object)
+</title>
+            <link>https://mirror.roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</link>
+            <pubDate>Sun, 07 May 2006 08:26:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2006/05/001-your-first-wp-plugin-mov-video-quicktime-object/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://txfx.net/files/wp-movies/001-your-first-wp-plugin.mov&#34;&gt;001-your-first-wp-plugin.mov (video/quicktime Object)&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>WordPress - USB
+</title>
+            <link>https://mirror.roytang.net/2006/03/wordpress-usb/</link>
+            <pubDate>Sun, 12 Mar 2006 16:00:27 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2006/03/wordpress-usb/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.tamba2.org.uk/wordpress/usb/&#34;&gt;WordPress - USB&lt;/a&gt;
+
+            &lt;p&gt;Wordpress on a stick&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Free WordPress Hosting
+</title>
+            <link>https://mirror.roytang.net/2005/04/free-wordpress-hosting/</link>
+            <pubDate>Mon, 11 Apr 2005 14:31:13 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/04/free-wordpress-hosting/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;http://www.blogsome.com/&#34;&gt;Wordpress host &amp;ndash; free blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve wanted to try WordPress for a while now, but not having easy access to a PHP-enabled server of my own, I haven&amp;rsquo;t had the chance.&lt;/p&gt;
+&lt;p&gt;Blogsome is a new, free service that provides WordPress for blogging. I signed up, and roy.blogsome.com was still available (nothing there, don&amp;rsquo;t bother looking)&lt;/p&gt;
+&lt;p&gt;Am I going to leave blogger? I don&amp;rsquo;t know, really, I&amp;rsquo;m already pretty comfortable with it already, and moving to WordPress means learning a while new templating language (I know it would take all of an hour to get it down, but still&amp;hellip; inertia).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m definitely not moving to Blogsome right now though, as there is currently no way to use WordPress&amp;rsquo; import from Blogger feature with Blogsome since they do not provide FTP uploads for you. My other issue is that since everything would be hosted on Blogsome servers, there&amp;rsquo;s a lot less control than with Blogger.&lt;/p&gt;
+&lt;p&gt;As far as I&amp;rsquo;m concerned, WordPress has only one thing which Blogger still does not have: categories. If you&amp;rsquo;re anything like me and you like to pretend to be organized, categories are a big step towards that. I have no doubt that Blogger will eventually have categories sometime in the feature, but right now they&amp;rsquo;re having trouble keeping their existing features from the hiccups.&lt;/p&gt;
+&lt;p&gt;Ah, if only I got could get some free/cheap webhosting with a significant amount of space and JSP/Tomcat support. Since I use mostly JSP/Java at work, this is best for me&amp;hellip; PHP means having to learn a whole new language, and we&amp;rsquo;ve been over that.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>A Tale of Two Backups  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+    
+    <link rel="webmention" href="https://webmention.io/roytang.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/roytang.net/xmlrpc" />  
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="tech life, gaming, ">
+
+
+<meta property="og:title" content="A Tale of Two Backups  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/2019/09/two-backups/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-09-20T12:00:00Z" />
+<meta property="og:article:modified_time" content="2019-09-20T12:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="tech life">
+    
+<meta property="og:article:tag" content="gaming">
+    
+  
+
+
+
+
+
+
+
+<meta property="og:image" content='https://roytang.net/img/profile.jpg'>
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roytang" />
+<meta name="twitter:creator" content="@roytang" />
+<meta name="twitter:title" content="A Tale of Two Backups" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://mirror.roytang.net/2019/09/two-backups/" />
+<meta name="twitter:domain" content="https://mirror.roytang.net">
+<meta name="twitter:image" content='https://roytang.net/img/profile.jpg'>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "A Tale of Two Backups",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2019-09-20",
+    "description": "",
+    "wordCount":  1530 
+  }
+</script>
+
+
+
+<link href='https://mirror.roytang.net/index.xml' rel="alternate" type="application/rss+xml" title="A Tale of Two Backups" />
+
+<link rel="canonical" href="https://mirror.roytang.net/2019/09/two-backups/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+<article class="list_item post h-entry">
+<div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2019/09/two-backups/"><h3 class="p-name">A Tale of Two Backups</h3></a>
+    <time class="dt-published" datetime="2019-09-20 12:00:00">20 Sep 2019 12:00pm</time>
+
+</div>
+
+<div class="e-content">
+
+<p>Despite my desktop PC being generally more stable after the events of the <a href="https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/">Great Memory Scare of 2019</a>, I was still encountering occasionally crashes when playing games. And by crash I mean the displays dying although the PC continues to run for a short while thereafter and after which they proceed to apparently stop operating completely. It only happens when playing games, and most often when playing Magic Arena and sometimes (rarely) when playing Starcraft 2 or Borderlands 2.</p>
+<p>Given that I didn&rsquo;t want to try swapping out the video card just yet, and I had already tried doing all the driver updates during the previous episode, I decided it was time to try a more extreme approach. I was going to re-install Windows 10.</p>
+<p>I say &ldquo;extreme&rdquo; even though reinstalling my OS is not something I wasn&rsquo;t used to. Back in the days of <a href="https://mirror.roytang.net/2007/12/today-is-a-good-day-to-nuke-your-xp-install/">Windows XP</a> I used to reinstall my OS multiple times in a year, if not in a month. It&rsquo;s only unusual now because Windows 10 managed to go four whole years without giving me even a hint of a bluescreen or any sort of issue like this, so props to MS for improving the stability of their OS. That being said, running an OS over such a long period means a significant amount of cruft has probably been installed and uninstalled and reinstalled over the years, with most of the details long forgotten which leads to a sort of OS rot. So in any case, I figured a reset was due anyway.</p>
+<p>I did the research first, and apparently Windows 10 provides the reset option itself, I didn&rsquo;t need to make an install USB or anything like that. And the reset happens &ldquo;in place&rdquo;, theoretically without needing to reformat your partitions or displacing your user files, which was good. But I didn&rsquo;t put much stock in theory, so of course for safety, I had to make a backup first. If I had needed to reset Windows 10 two weeks ago I would have been out of luck because I wouldn&rsquo;t have had any space to backup critical stuff. Luckily, there was a bit of coincidental foresight.</p>
+
+
+    On 
+    <a href="https://mirror.roytang.net/2019/09/1172359392714358784/"><time datetime="2019-09-13 04:00:35">13 Sep 2019 4:00am</time></a>
+    I wrote:
+    <blockquote>
+        <p>I had been waffling on getting a new external HD for a while, but a couple of days ago one of my friends posted about her backup drive failing at 6yo and I was like &ldquo;all my drives are older than that&rdquo; lol</p>
+
+        
+
+
+
+
+
+
+    </blockquote>
+
+<p>So around last week I purchased a 2TB Seagate Backup Plus, so I had a bunch of space available for backups. Now, there is a generally recognized backup rule where any critical data should be backed up using a &ldquo;3-2-1&rdquo; rule; that is: 3 different places, 2 different media types, and 1 offsite. This is a bit too much for a home-based setup where my critical backups consist mostly of documents, family photos, mail archives, old chat logs and such, so I figured having two copies of the stuff I wanted backed up would be sufficient. One copy would remain on my secondary HDD on the desktop, and a second copy on my new Backup Plus. (And yes, that means I was living without the second copy before, which spoiler alert for the end of this story, was very dangerous.) In theory for anything that I didn&rsquo;t mind backing up to the cloud for privacy reasons, I already had a third copy there via Google Drive and/or Dropbox, but I haven&rsquo;t been too religious with that.</p>
+<p>So, backups created, we proceed with Operation Fresh Start:</p>
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+    
+        
+            
+            
+            
+            
+              
+            
+            
+            <a href="#4a83c7ac30ee244d164999938df27714-lightbox">
+                <figure>
+                  <img src="https://mirror.roytang.net/2019/09/1174123501470408704/EEtTGYIUwAAu1jV_hu370031b005503e42e8d76ab384a1fb83_19213_300x0_resize_box_2.png" alt="I am almost certainly going to regret this lol" title="I am almost certainly going to regret this lol" class="tn" />
+                  <figcaption>I am almost certainly going to regret this lol (Click to view full-size)</figcaption>
+                </figure>
+            </a>
+            <div  class="lightbox" id="4a83c7ac30ee244d164999938df27714-lightbox" style="display: none;">
+              <a href="#_">
+                <img src="https://mirror.roytang.net/2019/09/1174123501470408704/EEtTGYIUwAAu1jV.png" />
+              </a>
+              <div class="lightbox_overlay">
+                <p>I am almost certainly going to regret this lol</p>
+                <time class="dt-published" datetime="20 Sep 2019 12:00pm">20 Sep 2019 12:00pm</time><a href="https://mirror.roytang.net/2019/09/1174123501470408704/">View post</a><a href="#_">Close</a>
+              </div>
+            </div>            
+        
+    
+
+<p>&ldquo;20 minutes or longer&rdquo; was pretty much a lie (or a programmer&rsquo;s estimate, as you will), and it took more like half a day. But it went smoothly more or less. Afterwards I had to reinstall a bunch of software (more on that in the next post!). And then I tried using the PC for a while.</p>
+<p>Since my main purpose was to avoid the crashing, the first test was running Magic Arena. Sure enough, no crashes since the reset, all the games finished smoothly etc. Pretty good!</p>
+<p>Now for the bad news: I was getting terribly slow read/write times on my secondary 2TB HDD. At first I thought there was some ridiculousness with Windows Explorer or other background processes gumming up the worst, so I booted into Ubuntu (using a USB boot drive) to see if copying from the disk would be better there. (Side note: I miss having an Ubuntu desktop, but discretion is the better part of valor, so maybe I won&rsquo;t try to dual-boot it just yet). Sadly, Ubuntu told me there were some 40,000+ bad sectors on the 2TB drive (!) which meant it was almost certainly failing.</p>
+<p>Luckily I had the foresight to do backups beforehand and got all the critical stuff. Or not. It turns out I forgot to archives a whole 20+ gigs of photos from my Mom&rsquo;s old PC after that PC&rsquo;s hard drive had died. And violating the backup rule, there was no other copy of those photos anywhere else!</p>
+<p>The secondary drive was still there, so my first instinct was to power through and try to copy them off that drive but this turned out to be impractical as it was taking forever. Then I remembered that before using the old PC (which she inherited from me after I bought this current one), my Mom had been using a small ASUS netbook whose display had died. I confirmed with her that all the photos from the PC had come from that netbook, and happily I was able to boot it up and connect it to an old VGA monitor so I could copy her files from there. It took the better part of a day, but I was able to save most of her files. Whew! I&rsquo;m backing these up to her Google Photos account as soon as she remembers to give me her creds.</p>
+<p>Now, the next problemw as what to do with my current desktop&rsquo;s 2TB drive. A couple of consecutive chkdsk runs (both of which took more than a workday to finish) confirmed the worst: many bad sectors and many unreadable segments. It would certainly not be prudent to continue to use it, it had to be replaced. I considered just replacing with a 500GB SSD, but I needed the 2TB capacity. Not just for the critical stuff, but mostly for game installations as well and also I had been running a Plex media server off this desktop so there were a bunch of movies and TV series eps there. It was ok to lose them to a reformat, since most of them could be re-downloaded, but I couldn&rsquo;t go to a smaller capacity.</p>
+<p>I really liked the idea of getting a second SSD though (to help with load times), so I considered getting both a 500GB SSD <strong>and</strong> a new 2TB HDD but this was a bit of an expensive option. Then I learned about the existence of so-called SSHDs or Solid State Hybrid Drives. Basically they&rsquo;re normal HDDs except they come with a small SSD cache to boost read/write speeds for commonly-used files. Basically you&rsquo;re getting something a bit faster than a normal HDD, but not with the capacity costs of a full-blown SSD. Not a bad idea, and I convinced myself to try it out. The 2TB Seagate Firecuda looked like a good SSHD to try out, and it was a quite a bit less expensive than my previous option of an SSD+an HD. I wanted to get one today!</p>
+<p>Unfortunately, all the shops I called didn&rsquo;t have any in stock, so I went ahead and ordered one from Lazada (slightly pricier). I&rsquo;m a bit wary about ordering electronics online, because of warranty issues and such. But what the heck, I should risk my money every so often. Purchased! Ordering online meant I&rsquo;d have to wait a few days for the delivery, so until then I have to live only with my primary 250GB SSD. Luckily this is sufficent to play Magic Arena and SC2 and write on this blog and SSH to work servers etc. I won&rsquo;t be able to install most Steam games or download videos and such until the new drive gets here though.</p>
+<p>I am hopeful that the failing hard drive was the cause of my recent gaming crashes and that replacing it solves the issue. All of the offending games were previously installed on the 2TB secondary so it&rsquo;s a decent hypotheses. Both Arena and SC2 have been behaving since I moved them to the SSD, so signs are good. That being said, this HDD failure combined with the previous episode is pretty much an indication that my PC is getting on with age. I&rsquo;m hoping it will last me a few more years still, but that is more the optimist in me than anything else.</p>
+<p>In summary:</p>
+<ul>
+<li>backups good</li>
+<li>gonna try out an SSHD</li>
+<li>pc might be dying. Well, we&rsquo;re all dying I guess</li>
+</ul>
+
+
+
+
+
+<div class="image-list" id="resources">
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2019/09/two-backups/"><time class="dt-published" datetime="2019-09-20 12:00:00">20 Sep 2019 12:00pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/gaming">#gaming</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/1175052600951103491/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2019/09/two-backups/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 1530 words
+    
+</div>
+
+<div class="comments">
+
+
+
+
+<h3>See Also</h3>
+<ul>
+    
+    <li><a href="https://mirror.roytang.net/2019/08/the-great-memory-scare-of-2019/">The Great Memory Scare of 2019</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/09/mtg-arena-thoughts-on-historic/">MTG Arena: Thoughts on Historic</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/08/ephemeral-social-media/">Ephemeral social media</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/08/three-hearts/">Three Hearts</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/">Devnotes: Migrating Mercurial to Git</a></li>
+    
+</ul>
+
+
+
+
+
+    
+
+
+
+
+<div class="feedback">If you enjoyed my content for some reason, I'd love to hear from you! Here are some options:
+<ul>
+    <li>You can <a href="https://ko-fi.com/roytang">buy me a coffee!</a></li>
+
+
+    
+    <li>You can <a href="https://twitter.com/roytang/statuses/1175052600951103491/">share or reply to this post on Twitter</a>. </li>
+    
+    
+
+
+
+    
+
+ 
+
+
+  
+<li>You can write a reply on your own site and submit the URL as a <a href="https://indieweb.org/webmention">webmention</a> via the form below.
+    <form id="webmention-form" action="https://webmention.io/roytang.net/webmention" method="POST">
+        <input name="target" value="https://mirror.roytang.net/2019/09/two-backups/" type="hidden" />
+        <input name="source" placeholder="Your reply URL" style="width:90%" required />
+        <button type="submit" >Submit</button>
+    </form>
+</li>
+
+<li>Or you can just <a href="https://mirror.roytang.net/about/contact">contact me</a>!</li>
+</ul>
+</div>
+
+
+
+
+<div class="navigation">
+  
+
+    
+    <a class="prev" href="https://mirror.roytang.net/2019/09/social-media-hsra-envy/" title="Social Media, High School Reunion Anxiety, and Envy">
+        Previous: Social Media, High School Reunion Anxiety, and Envy
+    </a>
+    
+    
+    <a class="next" href="https://mirror.roytang.net/2019/09/2019-windows-install-list/" title="2019 Windows Installation List">
+        Next: 2019 Windows Installation List 
+    </a>
+    
+  
+</div>  
+
+
+
+
+</article>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2020 09 26 17:21:30.
+        
+        <a href='https://github.com/roytang/blog/tree/master/content/post/2019/09/two-backups/index.md' title='source file'>Source file</a>
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

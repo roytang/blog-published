@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Web Application Security  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+    
+    <link rel="webmention" href="https://webmention.io/roytang.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/roytang.net/xmlrpc" />  
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="software development, ">
+
+
+<meta property="og:title" content="Web Application Security  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/2020/04/web-application-security/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2020-04-16T00:00:00Z" />
+<meta property="og:article:modified_time" content="2020-04-16T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="software development">
+    
+  
+
+
+
+
+
+
+
+<meta property="og:image" content='https://roytang.net/img/profile.jpg'>
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roytang" />
+<meta name="twitter:creator" content="@roytang" />
+<meta name="twitter:title" content="Web Application Security" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://mirror.roytang.net/2020/04/web-application-security/" />
+<meta name="twitter:domain" content="https://mirror.roytang.net">
+<meta name="twitter:image" content='https://roytang.net/img/profile.jpg'>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Web Application Security",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2020-04-16",
+    "description": "",
+    "wordCount":  1352 
+  }
+</script>
+
+
+
+<link href='https://mirror.roytang.net/index.xml' rel="alternate" type="application/rss+xml" title="Web Application Security" />
+
+<link rel="canonical" href="https://mirror.roytang.net/2020/04/web-application-security/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+<article class="list_item post h-entry">
+<div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2020/04/web-application-security/"><h3 class="p-name">Web Application Security</h3></a>
+    <time class="dt-published" datetime="2020-04-16 00:00:00">16 Apr 2020 12:00am</time>
+
+</div>
+
+<div class="e-content">
+
+<p>A while back one of the biggest leaks of personal information in history was made by hackers accessing the Commission on Elections database here in the Philippines. More than 50 million voter registration records, including information such as full names, date of birth, address, among others. A small percentage of the data leaked also included email addresses and even passport numbers. The hack exposed more than half of the country’s population to the possibility of social engineering and other exploits.
+It was certainly a national embarrassment, especially for those of us working in software development. But the truth of the matter is that securing publicly accessible sites against determined bad actors is difficult, very difficult. It’s something that needs to be taken into account on all levels of the system.</p>
+<p>I don&rsquo;t consider myself any kind of security specialist, but I think it&rsquo;s something that software developers of all levels need to at least have a passing knowledge of, especially in this modern age where many tech companies store personal/private data for large numbers of users. I tend to classify the security practices and vulnerabilities under several levels:</p>
+<ul>
+<li>Physical / hardware layer - this means controlling the physical access of unauthorized personnel to hardware that contains private information. It would take serious levels of screw-ups for a system to be compromised in this manner, or perhaps a well-placed bribe. It is however, comparatively easy to detect any breaches in this layer. In any case, this is not really a concern for the software engineer.</li>
+<li>Server OS and local network level - this means that controlling the access to the actual OS running on the machine and the corresponding local network the server is on. Practically as bad (sometimes worse) than compromising the hardware layer, a compromise on this layer means the bad actor can access everything, possibly remotely, making it much more difficult to detect. Securing your system on this layer involves among other things making sure known vulnerabilities on your OS are patched or worked around and network access is restricted as needed. This is often the concern of people like network engineers or devops people who are setting up and securing your servers.</li>
+<li>Application container level - this doesn’t necessarily mean your application itself, but typically websites and web applications will be running inside a container software such as a webserver like Apache, Tomcat, ISS, etc. Securing this layer is often just a matter of making sure the latest security patches are applied and known vulnerabilities are closed and access is restricted as needed. If this layer is compromised, the bad actors will typically have access to any files deployed in the container (which may contain other information that will facilitate further leaks). I also include here securing vulnerabilities in the database software used as your backend.</li>
+<li>Application level - this refers to your security in the design of your application itself. Typically, problems in the first three layers above will be the responsibility of people setting up the servers and the server software, who are probably a different set of people than the development team. Concerns from this layer onwards are more applicable to the actual application developers.  Application-level security can be further broken down into several levels:
+<ul>
+<li>User authentication - this refers to your application’s implementation of user login and session control, and management of things like passwords, password reset requests, two-party authentication, etc. If the implementation is poor, your application may have vulnerabilities like bad actors being able to identify your users’ usernames by enumerating login requests or being able to brute force their passwords.</li>
+<li>Functional security - this refers to how your application grants rights to each user as to which functions in the system he is able to access. As an example, in a typical system, normal users should not be able to access functions restricted to administrator users.</li>
+<li>User-specific Data security - this ensures that only relevant data for each user can be accessed by each user. For example, if I’m logged in as User ID = 1, I shouldn’t be able to view the data for User ID = 2 simply by changing a parameter such as USER_ID=2 in the URL.</li>
+<li>Domain-specific security - this refers to additional security rules specific to the domain your application is involved in. For example, your security rules may demand that sensitive information can only be viewed by users with specific privileges and would need to be masked for other users. This may introduce some special logic in your program development.</li>
+<li>Logging - applications typically log a lot of information to log files and audit trails, to facilitate debugging of problems and often also for statutory purposes. Security restrictions may require making sure that sensitive data is not included in the logs and audit trails.</li>
+<li>Code level - this refers to security in coding practices in both the code used to write your application and also any third-party libraries or frameworks used by the application. This is highly experience-based and requires knowledge of the most common vulnerabilities as a result of coding practices. Organizations such as OWASP regularly publish lists of the most common vulnerabilities, many of them resulting from poor coding decisions such as SQL injection, cross-site scripting, cross-site request forgery, etc. Modern frameworks will typically provide standard ways for developers to minimize the chance of introducing the most well-known vulnerabilities.</li>
+<li>Database level - this refers to security in the design of the database itself. Examples of concerns on this level are whether sensitive information is encrypted or hashed or whether financial data such as credit card information is stored in the database and secured appropriately (for credit card information specifically, there are standards laid out for managing credit card data that you have to comply with in order to be certified to handle credit card transactions). I guess I would also include in this layer how database backups and purged data are handled - are they backed up and encrypted separated from the main database? - although the protection of such backups may be outside the scope of the application developer.</li>
+<li>Third party code - modern day applications use a lot of third party libraries and packages, not to mention code that developers are copying from StackOverflow. And rightly so - since using these dependencies means savings in effort and more productivity. But developers need to be aware of the cost every time we add a new dependency; not only are we dependent on that third party library working correctly, but also that it is generally secure. And if a security issue is found, will it be fixed in a timely manner? And this kind of thing can be difficult to track. There have been stories of websites being exposed to security breaches or even things like embedded crypto miners simply because they added a node.js dependency that had another dependency that had another dependency that was compromised. It&rsquo;s the kind of thing more senior developers on the team should be aware of and on the lookout for.</li>
+</ul>
+</li>
+</ul>
+<p>In modern settings, developers often specialize into roles like frontend and backend. And one might think that security concerns are limited only to the backend side, but one should not neglect security on the front end either. There are security concerns on the browser/JavaScript level as well, and you have to make sure that your frontend is aligned with the backend&rsquo;s security paradigms.</p>
+<p>Often times many clients will require that a third-party security audit will be done near the end of the project, and the development team will need to address any security concerns that come up during the audit. I’ve been on the receiving end of these a few times and I’ve found the companies doing them to be fairly thorough.</p>
+<p>It&rsquo;s better for your dev team to be generally aware of security best practices from the very beginning, as it may be more costly to correct security problems towards the end of a project. It&rsquo;s the kind of valuable tribal knowledge among developers that you can carry easily across projects and companies and tech stacks.</p>
+
+
+
+
+
+<div class="image-list" id="resources">
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2020/04/web-application-security/"><time class="dt-published" datetime="2020-04-16 00:00:00">16 Apr 2020 12:00am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on mastodon" class='u-syndication' href="https://mastodon.technology/users/roytang/statuses/104006104133566935" title="View on mastodon">mastodon</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/1250624976618549249/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    <a href="https://mirror.roytang.net/2020/04/web-application-security/#likes">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+        </svg>
+        1</a>
+    
+    
+    <a href="https://mirror.roytang.net/2020/04/web-application-security/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 1352 words
+    
+</div>
+
+<div class="comments">
+
+
+
+
+<h3>See Also</h3>
+<ul>
+    
+    <li><a href="https://mirror.roytang.net/2020/04/bespoke-vs-product-development/">Bespoke vs Product Development</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2020/04/naked-css-day/">Naked CSS Day</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2020/03/browsers-and-http/">Browsers and HTTP</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2020/03/pure-css-spoilers/">Pure CSS Spoilers</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2020/02/burnout/">Burnout</a></li>
+    
+</ul>
+
+
+
+
+<div id="likes" class="likes-title"><h3>Likes</h3></div>
+
+
+<a href="https://social.matej-lach.me/@MatejLach">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+    </svg>    
+    Matej Ľach ✅</a>
+
+
+
+    
+
+
+
+
+<div class="feedback">If you enjoyed my content for some reason, I'd love to hear from you! Here are some options:
+<ul>
+    <li>You can <a href="https://ko-fi.com/roytang">buy me a coffee!</a></li>
+
+
+    
+
+    
+    <li>You can <a href="https://twitter.com/roytang/statuses/1250624976618549249/">share or reply to this post on Twitter</a>. </li>
+    
+    
+
+
+
+    
+    <li>You can <a href="https://mastodon.technology/users/roytang/statuses/104006104133566935">share or reply to this post on Mastodon</a>. </li>
+    
+    
+
+    
+
+ 
+
+
+  
+<li>You can write a reply on your own site and submit the URL as a <a href="https://indieweb.org/webmention">webmention</a> via the form below.
+    <form id="webmention-form" action="https://webmention.io/roytang.net/webmention" method="POST">
+        <input name="target" value="https://mirror.roytang.net/2020/04/web-application-security/" type="hidden" />
+        <input name="source" placeholder="Your reply URL" style="width:90%" required />
+        <button type="submit" >Submit</button>
+    </form>
+</li>
+
+<li>Or you can just <a href="https://mirror.roytang.net/about/contact">contact me</a>!</li>
+</ul>
+</div>
+
+
+
+
+<div class="navigation">
+  
+
+    
+    <a class="prev" href="https://mirror.roytang.net/2020/04/bespoke-vs-product-development/" title="Bespoke vs Product Development">
+        Previous: Bespoke vs Product Development
+    </a>
+    
+    
+    <a class="next" href="https://mirror.roytang.net/2020/04/pure-html-toggles/" title="Pure HTML Toggles">
+        Next: Pure HTML Toggles 
+    </a>
+    
+  
+</div>  
+
+
+
+
+</article>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2020 04 16 03:30:04.
+        
+        <a href='https://github.com/roytang/blog/tree/master/content/post/2020/04/web-application-security/index.md' title='source file'>Source file</a>
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

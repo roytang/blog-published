@@ -1,0 +1,643 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>gamedev on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/gamedev/</link>
+      <description>Recent content in gamedev on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Tue, 15 Jun 2021 16:30:14 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>GMTK Game Jam 2021: Manananggal
+</title>
+            <link>https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/</link>
+            <pubDate>Tue, 15 Jun 2021 16:30:14 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;the-jam&#34;&gt;The jam&lt;/h3&gt;
+&lt;p&gt;A thing I did last weekend was to participate in &lt;a href=&#34;https://itch.io/jam/gmtk-2021&#34;&gt;the 2021 GMTK Game Jam&lt;/a&gt;. This is my second game jam, after &lt;a href=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/&#34;&gt;my Ludum Dare 48 entry back in April&lt;/a&gt;. I was a lot more anxious about this one, especially after rewatching the &lt;a href=&#34;https://www.youtube.com/watch?v=RGeAkU2wu4o&#34;&gt;video of the winners from the last year&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This post is mostly about how the game jam unfolded for me. If you just want to view the game I made &lt;a href=&#34;https://hungryroy.itch.io/manananggal&#34;&gt;here&amp;rsquo;s the link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The theme for the jam was &lt;strong&gt;&amp;ldquo;JOINED TOGETHER&amp;rdquo;&lt;/strong&gt;. The theme was announced 2am Saturday my time here, but I had stuff to do up to lunch time so I couldn&amp;rsquo;t start on any actual jam work until after then. I did spend try to brainstorm game ideas before then, but I really struggled with this theme.&lt;/p&gt;
+&lt;p&gt;I went through some number of ideas, though many of them were variants of &amp;ldquo;tandem side-scrolling platformer where you have to bring two characters to the end&amp;rdquo;, but most of them felt pretty meh theme-wise. I also thought about things like, a guy with a ball and chain that limited his movements, but I didn&amp;rsquo;t think I knew enough about Godot physics to implement the linked bodies correctly.&lt;/p&gt;
+&lt;p&gt;I finally decided to do a game based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Manananggal&#34;&gt;the local Manananggal myth&lt;/a&gt;, since the whole detaching half of the body and rejoining fit the theme really well. I was imagining a puzzle platformer, but I was worried that mechanically I might not have enough for anything more than a couple of levels. I had a few ideas, but I was pretty sure I wouldn&amp;rsquo;t have something close the 10 levels I had for Diver. The initial discussion from my support group suggested I play into the lore that manananggals ate babies, but I didn&amp;rsquo;t want to make a baby-eating game!&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#947dad2787cdcbf00b928fb7c64cd0a3-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/manang1_hu6f80a53b383b582c5587308196d6b324_89241_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;947dad2787cdcbf00b928fb7c64cd0a3-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/manang1.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;15 Jun 2021 4:30pm&#34;&gt;15 Jun 2021 4:30pm&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;the-tools&#34;&gt;The tools&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m basically using the same tech stack as last time: Godot Engine for the all the coding, &lt;a href=&#34;https://www.piskelapp.com&#34;&gt;Piskel&lt;/a&gt; for the pixel art and so on. I also decided to reuse a tileset I got from an &lt;a href=&#34;https://www.codingkaiju.com/tutorials/beginner-godot-2d-platformer/&#34;&gt;online platformer tutorial&lt;/a&gt; I was playing around with the previous week (with some modifications). I still had to do the character sprites and animation myself though.&lt;/p&gt;
+&lt;h3 id=&#34;saturday&#34;&gt;Saturday&lt;/h3&gt;
+&lt;p&gt;Saturday was challenging, since I only had half the day to work with. I used up most of the time just doing spritework and implementing the basic detach / rejoin mechanic, implementing switches and gates. All of this was only good enough for an introductory level by the end of the day so I didn&amp;rsquo;t feel like I had much progress done, especially compared to my progress with Diver at around the same mark. I was tired so I just went to sleep and hoped for a better Sunday.&lt;/p&gt;
+&lt;p&gt;One thing that helped me was being on the Discord for the jam, which was super active, and full of a lot of other people also having trouble with ideas and levels and coding. Ludum Dare had posts from the devs on their page, but that was nowhere near as active or interactive as this one. I found myself going through the Discord chat when I felt stressed or tired, reassured by the presence of my fellow game jammers.&lt;/p&gt;
+&lt;h3 id=&#34;sunday&#34;&gt;Sunday&lt;/h3&gt;
+&lt;p&gt;Managed to start early Sunday. I started out by implementing a simple framework for easily transitioning between stages, which would allow me to easily add stages and change the order (great for debugging!).&lt;/p&gt;
+&lt;p&gt;Then I needed to do the second stage. I implemented an enemy that I would need, a human villager out on patrol for monsters (which meant more sprite work). Basically adds a stealth component to the game - you could walk past the humans while joined together, but you can&amp;rsquo;t let them catch you while detached. I also added a Pick Up / Drop mechanic where you can pick up items while flying in detached mode and drop them for different effects. In the second stage I made, one of the obstacles was you needed to drop a rock on a human in order to stun and get past him.&lt;/p&gt;
+&lt;p&gt;After the second stage, I worked on the last stage. I had decided early on to have an ending that subverts some elements of the manananggal myth, so I already knew what the last stage needed to be. And that included a bit more sprite work.&lt;/p&gt;
+&lt;p&gt;At this point, I had around half a day remaining, and I wanted to submit early to avoid any possible rush on itch.io during the submission time, so time was short. Aside from the actual stages, I still had a bunch of polish stuff to do. I originally had an idea for a third stage that involved a new dog enemy that could detect you even while merged. I didn&amp;rsquo;t have time to do more sprite work though, so I decided to reuse some sprites and movement patterns from Diver to make a challenging spike level instead. (I would later get a lot of complaints about my playtester friends about how difficult the spike level was lol.)&lt;/p&gt;
+&lt;p&gt;After that, I needed to do all the polish stuff I was planning. Luckily my friend Jaime told me he had time to help me with BGM and SFX, so I asked him to provide some tracks and help me source some sound effects. This freed me up to do things like intro and ending dialogs, splash screen, add decorations and polish to the stages, add key input hints, etc. For the splash screen, same as for Diver, I used up one of my &lt;a href=&#34;https://mirror.roytang.net/tags/sketchdaily&#34;&gt;sketchdaily&lt;/a&gt; slots to draw the cover art / splash screen art for the game:&lt;/p&gt;
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+    
+        
+            
+            
+            
+            
+              
+            
+            
+            &lt;a href=&#34;#3402fdb7d2dd54393a3bd983f02915c5-lightbox&#34;&gt;
+                &lt;figure&gt;
+                  &lt;img src=&#34;https://mirror.roytang.net/2021/06/1404039267685261332/1_1404039267685261332_E3wmRC2VoAoDYao_hubdff7498a5e79872d31686045612719b_103145_300x0_resize_q75_box.jpg&#34; alt=&#34;Manananggal #sketchdaily 162/365&#34; title=&#34;Manananggal #sketchdaily 162/365&#34; class=&#34;tn&#34; /&gt;
+                  &lt;figcaption&gt;Manananggal #sketchdaily 162/365 (Click to view full-size)&lt;/figcaption&gt;
+                &lt;/figure&gt;
+            &lt;/a&gt;
+            &lt;div  class=&#34;lightbox&#34; id=&#34;3402fdb7d2dd54393a3bd983f02915c5-lightbox&#34; style=&#34;display: none;&#34;&gt;
+              &lt;a href=&#34;#_&#34;&gt;
+                &lt;img src=&#34;https://mirror.roytang.net/2021/06/1404039267685261332/1_1404039267685261332_E3wmRC2VoAoDYao.jpg&#34; /&gt;
+              &lt;/a&gt;
+              &lt;div class=&#34;lightbox_overlay&#34;&gt;
+                &lt;p&gt;Manananggal #sketchdaily 162/365&lt;/p&gt;
+                &lt;time class=&#34;dt-published&#34; datetime=&#34;15 Jun 2021 4:30pm&#34;&gt;15 Jun 2021 4:30pm&lt;/time&gt;&lt;a href=&#34;https://mirror.roytang.net/2021/06/1404039267685261332/&#34;&gt;View post&lt;/a&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;            
+        
+    
+
+&lt;h3 id=&#34;submission-and-aftermath&#34;&gt;Submission and aftermath&lt;/h3&gt;
+&lt;p&gt;I made my submission around 4 hours before the deadline (since I also had other stuff to do). The game is here on itch.io: &lt;a href=&#34;https://hungryroy.itch.io/manananggal&#34;&gt;https://hungryroy.itch.io/manananggal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the end, I was happy I was able to finish and submit, despite all my doubts along the way. The game actually ended up more polished than I thought it would, though it is still very short (only 4 playable levels), but that&amp;rsquo;s fine, as I was practically new to platformers anyway. Most importantly, I learned a lot of things along the way; among them: how to structure stages and transitions in Godot, making objects interact with a linked object, patrolling mobs with ledge/wall detection and sight radius, etc. This game is my documentation of those things I learned, although I&amp;rsquo;m thinking maybe I should log some of those lessons here on the blog so I have a set of notes online for Godot. We&amp;rsquo;ll see!&lt;/p&gt;
+&lt;p&gt;After the submission time, there&amp;rsquo;s a one week period for the games to be rated. I believe you only need an itch.io account to rate the games, but if you aren&amp;rsquo;t a participant, you need to rate 25 randomly-selected games before you can rate specific games. You can rate my submission &lt;a href=&#34;https://itch.io/jam/gmtk-2021/rate/1082887&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Not that I&amp;rsquo;m expecting to make the top 20 or even the top 100 mind you, as the game is very short and I feel very basic. My explanations are low and really I should just be satisfied with having finished. I have already received some encouraging comments on itch.io though, so that&amp;rsquo;s a nice boost.&lt;/p&gt;
+&lt;p&gt;I actually haven&amp;rsquo;t touched the game itself or looked at the code or anything like that since submitting. All I&amp;rsquo;ve done was look at comments and get some feedback from friends. At that point I had played through it so many times I was kind of sick of it, so I stayed away from it since then. I really should rate some games though, just as a way to give back to the community. I&amp;rsquo;ll try to get some reviews and ratings and comments in over the week.&lt;/p&gt;
+&lt;p&gt;This makes 2 out of 2 game jams where I&amp;rsquo;ve successfully been able to finish and submit. The discussions on the Discord chat seem to be implying it&amp;rsquo;s not uncommon to fail to complete your game. I will happily take this as a testament to my ability to manage scope and keep it small. Although, it might also be an indication of playing it safe and not being willing to push the envelope - I might consider to be more aggressive in future jams.&lt;/p&gt;
+&lt;p&gt;OTOH, I&amp;rsquo;m a lot older than many of the participants, so I need a lot more sleep. Some of them were talking about working on their submission for like 20-30 hours straight, and I&amp;rsquo;m like I can&amp;rsquo;t even sit in my chair for more than two hours without needing to lie down for an hour afterwards. So I gotta work smarter to keep up with the young&amp;rsquo;uns.&lt;/p&gt;
+&lt;p&gt;For future jams, I&amp;rsquo;ll probably also try to do some other genres instead of side-scrollers which I did for the first 2 jams. Maybe some kind of shooter thingy? Or a match 3? Or maybe I&amp;rsquo;ll study how to do some of the ideas I passed over this time? We&amp;rsquo;ll see! Looking forward to doing more game jams! I think the major one is the next Ludum Dare in October, though I&amp;rsquo;ll also be looking out for other game jam opportunities before then.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[2021-06-23]&lt;/strong&gt; The GMTK game jam results are out; my Manananggal game ended up ranked 717 overall out of 5800+ entries. Looks like my programmer art pulled me down in the presentation criteria lol&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/E4iYJc4VgAE4JgD_hu2fd685a39ed61dbcd6953845def83346_55686_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/06/gmtk-game-jam-2021-manananggal/manang1_hu6f80a53b383b582c5587308196d6b324_89241_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Ludum Dare 48: Diver
+</title>
+            <link>https://mirror.roytang.net/2021/04/ludum-dare-48-diver/</link>
+            <pubDate>Tue, 27 Apr 2021 05:49:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2021/04/ludum-dare-48-diver/</guid>
+            <description>
+            
+            &lt;h3 id=&#34;the-jam&#34;&gt;The jam&lt;/h3&gt;
+&lt;p&gt;A thing I did last weekend was to participate in &lt;a href=&#34;https://ldjam.com/events/ludum-dare/48&#34;&gt;the 48th LUDUM DARE game jam&lt;/a&gt;. Doing gamedev has been a long-time elusive dream of mine, all the way back to my college years. I&amp;rsquo;ve had a number of failed attempts to get into gamedev, both solo and with other people.I&amp;rsquo;ve also played around with things like PyGame, &lt;a href=&#34;https://roytang.net/2017/01/10155238560218912/&#34;&gt;Unity&lt;/a&gt;, &lt;a href=&#34;https://roytang.net/2020/11/1326919888472956928/&#34;&gt;DragonRuby&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;I read about the LD48 game jam this April and signed up to participate. My expectations weren&amp;rsquo;t very high and I was anxious going on; I was pretty sure I was not going to do well and doubted I could even put things together. I had never done a Ludum Dare or a game jam before, heck I haven&amp;rsquo;t even made anything I consider a &amp;ldquo;real game&amp;rdquo; before!&lt;/p&gt;
+&lt;p&gt;The game jam has two modes you can choose to submit to. The 72-hour version (called the &amp;ldquo;Jam&amp;rdquo;) was easier, as you could have a team of people working together, and you could use any assets you had legal access to. The 48-hour version, called the &amp;ldquo;Compo&amp;rdquo; (which I guess is short for competitive?), is much more challenging. You can only work solo, and all assets must be created within the 48 hour period (with a few exceptions like fonts etc).&lt;/p&gt;
+&lt;p&gt;I had no intention of working with a team; in fact I didn&amp;rsquo;t tell anyone I planned to participate until after the jam started last Saturday at 9AM local time. I figured I would try my best and if I finished within 48h, I would submit for the jam. If I didn&amp;rsquo;t, I had an extra 24h to try for the compo, and I could even ask for help!&lt;/p&gt;
+&lt;p&gt;That meant I would be working alone, which meant I would have to do things like art and sounds and music! I didn&amp;rsquo;t have any experience doing pixel art for games or anything like that, so I figured I could get by on &amp;ldquo;programmer art&amp;rdquo;. For sound effects, I knew there were online generators I could use, I&amp;rsquo;ve tried some before. Background music was the real challenge: I have no musical talent at all, so even if I could find tools to do it, I wouldn&amp;rsquo;t know how to put anything together. These were problems for me 48h into the future though. When the jam started, I just dove in to code.&lt;/p&gt;
+&lt;p&gt;Okay, not really. I woke up late and had to do some errands so I missed the start time by a couple of hours. Still, I dove right in as soon as I was free!&lt;/p&gt;
+&lt;h3 id=&#34;the-tools&#34;&gt;The tools&lt;/h3&gt;
+&lt;p&gt;For the gamedev/programming part, I decided to use the Godot Engine game development framework. I had been trying it out since earlier this year, and I was pretty happy with it compared to Unity. The IDE was a lot lighter, the APIs felt more intuitive, and basically it made it easier for me to get into the guts of a game. Unity is great, but it always seemed geared towards 3D gamedev. Godot makes 2D gamedev feel like a first class citizen. I prefer working on 2D because I feel like that&amp;rsquo;s something more achieveable for me as an indie. Doing sprites and such is more in my wheelhouse than 3D models.&lt;/p&gt;
+&lt;p&gt;For the art, I&amp;rsquo;ve never tried any pixel art creation tools before, so I just searched online. I settled on &lt;a href=&#34;https://www.piskelapp.com&#34;&gt;Piskel&lt;/a&gt; which had the advantages of (a) being free; and (b) running entirely in-browser, without needing me to create an account. Very low friction! I haven&amp;rsquo;t tried such tools before so I was impressed with how mature they were. There were functions similar to what you&amp;rsquo;d find in paint, plus support for layers and export to various formats, including into spritesheets. It was perfect for what I needed.&lt;/p&gt;
+&lt;p&gt;For sound effects, I used another free online site &lt;a href=&#34;https://sfxr.me/&#34;&gt;JSFXR&lt;/a&gt;. Basically just kept rolling one of the settings until I got a sound I like. Godot&amp;rsquo;s AudioStreamPlayer didn&amp;rsquo;t seem like it accepted WAVs, so I used &lt;a href=&#34;https://convertio.co/wav-ogg/&#34;&gt;convert.io&lt;/a&gt; to convert the files to OGG.&lt;/p&gt;
+&lt;p&gt;For background music, a friend suggested I tried &lt;a href=&#34;https://onlinesequencer.net/&#34;&gt;Online Sequencer&lt;/a&gt;. I tried it out for a while, banging out random notes since I knew nothing about how to compose music. I looked at a few interesting ones created by other people and tried to adjust the random notes I was banging out to better follow the patterns I saw. I still don&amp;rsquo;t understand, but I was able to create a couple of tracks I was fairly happy with (they sounded like music!) which I used as BGM in the game.&lt;/p&gt;
+&lt;p&gt;I also used one of my &lt;a href=&#34;https://mirror.roytang.net/tags/sketchdaily&#34;&gt;sketchdaily&lt;/a&gt; attempts to generate some &lt;a href=&#34;https://roytang.net/2021/04/1385956018509664263/&#34;&gt;splash screen/cover art&lt;/a&gt; for the game. The final game used a slightly cleaned up and modified version of that one.&lt;/p&gt;
+&lt;p&gt;I also needed a Dynamic font, since using Godot&amp;rsquo;s built-in fonts didn&amp;rsquo;t allow me to resize text. The Compo rules allow you to use fonts you didn&amp;rsquo;t make during the jam, so I just used Xolonium-Regular from one of the Godot tutorials.&lt;/p&gt;
+&lt;h3 id=&#34;the-game&#34;&gt;The game&lt;/h3&gt;
+&lt;p&gt;The theme of the jam was &lt;strong&gt;DEEPER and DEEPER&lt;/strong&gt;, so I figured I&amp;rsquo;d go the easy route and do something with digging or undersea exploration. I felt like digging would be the more common approach, so I went the other way, since I&amp;rsquo;m a contrarian. I decided to do something inspired by things like the underwater level in TMNT (NES) or the underwater level in Earthworm Jim (SNES). These were the frustrating underwater levels I grew up with, so I wanted to replicate that experience a bit. Basically moving around underwater, with a time limit and trying to avoid obstacles.&lt;/p&gt;
+&lt;p&gt;So the idea was to have a deep-sea diver exploring underwater. But for some reason the ocean is full of spikes, so he has to keep moving and swimming to avoid them. All the while trying to go deeper and deeper. I added in a few enemies like jellyfish that acted as moving obstacles, and seeker fish that actively tried to chase you.&lt;/p&gt;
+&lt;p&gt;I also added an oxygen tank mechanic to serve as the timer. The tank would be getting depleted constantly as you kept breathing and you had to avoid running out. There would be little things that generate air bubbles you can pick up to increase your oxygen level (this part was inspired by the 3d mario games). Initially the bubble generator was just a jar, but later I changed the sprite to a clam.&lt;/p&gt;
+&lt;p&gt;I also decided to add a collectible in the form of gems that you can pick up on your way down. Basically to add more things to do in each stage. And it added a bit of risk-reward mechanics: should I waste time trying to get this gem, when I might run out of air or get hit by enemies? When I added it I wasn&amp;rsquo;t sure how the gems would be relevant in the game. I eventually decided to have the player earn extra lives whenever he collects 5 gems. The initial gem sprite was a diamond but later changed to a pearl.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the basic gameplay: Avoid obstacles, collect gems, avoid running out of air, try to get as deep as possible.&lt;/p&gt;
+&lt;p&gt;The controls were simple:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;your diver is constantly sinking&lt;/li&gt;
+&lt;li&gt;you can move left or right using arrow keys&lt;/li&gt;
+&lt;li&gt;you can swim up (or bounce, in my internal terms) by pressing space bar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The bounce was kind of a flappy bird bounce: you hit spacebar and you go up by a fixed amount after which you begin sinking again. I wanted the controls to be not too smooth so that you needed to know the bounce distance really well to navigate tighter corridors.&lt;/p&gt;
+&lt;p&gt;Once I had something basic working, I showed it to some friends to get some feedback, and got some good ideas and bug reports from them. (I figured showing it to other people and getting suggestions was fine within the compo rules, as long as I did all the actual creation work myself!)&lt;/p&gt;
+&lt;p&gt;By the end of Saturday (around 16h after jam start, 32h before compo deadline), I was mostly done with all the mechanics and gameplay and such. But content was lacking: I only had five screens (&amp;ldquo;stages&amp;rdquo;) for the player to navigate through, which I felt was too short. Creating levels was fairly straightforward though once I had all the components ready. The feedback from my friends was also pretty good. By this point I was fairly confident I could finish in time, and probably wouldn&amp;rsquo;t lose too much sleep.&lt;/p&gt;
+&lt;p&gt;I spent Sunday working more on the game, in between a bunch of family errands. I added another five levels, and fixed a lot of bugs. By the end of day Sunday (around 9h before compo deadline), I was ready to submit. Godot lets me export both to web and to Windows binaries. I could have also exported to other OSes, but I didn&amp;rsquo;t have time to test them. I was originally planning to host the game here on this site, but I couldn&amp;rsquo;t decide how / where to put them in the site structure. Instead I went ahead and deployed the game to itch.io, as I already had an account there. This was a relatively easy and straightforward process (though I did have to answer some tax-related questions).&lt;/p&gt;
+&lt;p&gt;So the game is here on itch.io: &lt;a href=&#34;https://hungryroy.itch.io/diver&#34;&gt;https://hungryroy.itch.io/diver&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ludum Dare requires the source code be made available, I have it up here: &lt;a href=&#34;https://github.com/roytang/diver&#34;&gt;https://github.com/roytang/diver&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And finally, the page for my entry on the Ludum Dare site itself: &lt;a href=&#34;https://ldjam.com/events/ludum-dare/48/diver&#34;&gt;https://ldjam.com/events/ludum-dare/48/diver&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;aftermath&#34;&gt;Aftermath&lt;/h3&gt;
+&lt;p&gt;After submitting your game, you&amp;rsquo;re supposed to review and rate other people&amp;rsquo;s games, and you want to earn at least 20 ratings to get a &amp;ldquo;final score&amp;rdquo;. Coming in, I didn&amp;rsquo;t really aim to &amp;ldquo;win&amp;rdquo; the compo or anything like that, I just wanted to finish a game. But after submitting and checking out a few of the other submissions, I felt a bit more confident about my chances and am hoping for a decent finish. The &amp;ldquo;play, review, and rate&amp;rdquo; period lasts for 21 days after the jam ends, so it&amp;rsquo;ll be a while before I know the outcome of that! I am doing my part by playing through some of the entries and rating them and leaving helpful comments where I can.&lt;/p&gt;
+&lt;p&gt;Overall, very impressed with how Ludum Dare works. The more ratings and quality feedback you give, the higher your game appears in the listings. This makes it more likely for you to receive ratings and feedback yourself, thus incentivizing the same and creating a positive feedback loop!&lt;/p&gt;
+&lt;p&gt;My biggest takeaway is that I learned how to build something with as small a scope as possible. In many of my past attempts, scope creep was always one of the bigger problems. I was used to playing big, epic games like grand strategy or long RPGs or open world games, so I often wanted to make games like those. The 48h limit helped me narrow my focus and reject stuff that would endanger that deadline. I had to discard some other ideas for enemies and stage elements because they would make things more complicated.&lt;/p&gt;
+&lt;p&gt;I did enjoy the experience, no matter the outcome, I&amp;rsquo;ve already exceeded my own expectations. I expect to try my hand at game jams again moving forward. Building experience by making a series of small games might be a better way for me to find a path into &amp;ldquo;real&amp;rdquo; gamedev. That is, as opposed to &amp;ldquo;hobbyist&amp;rdquo; gamedev, which is the new level I consider myself at now that I&amp;rsquo;ve completed a Ludum Dare!&lt;/p&gt;
+&lt;p&gt;Some screenshots of the game attached below!&lt;/p&gt;
+&lt;p&gt;May 20th: The results from the Ludum Dare came out yesterday! Unfortunately, I didn&amp;rsquo;t even crack the top 10 lol. Still, pretty decent finish (out of like 800+ participants) considering it was my first game jam and I had very little experience. Looking forward to the next one!&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/E10ORD0UYAId3-r_hu923c1f34e3bf05ef48f3a69372e6a3b6_36940_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen1_hu1ab9d90fcbe1b19cf3b3c266fb8605d9_88625_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen2_hu146bf70b25f0bdea8bc681809150f5c8_94323_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2021/04/ludum-dare-48-diver/screen3_hucc0d53084f7630bbd423b0d1b8233330_88341_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2020/11/1326919888472956928/</link>
+            <pubDate>Thu, 12 Nov 2020 08:08:49 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/11/1326919888472956928/</guid>
+            <description>
+            
+
+            &lt;p&gt;Past few days I&amp;rsquo;ve been playing around with this thing called Dragonruby Game Toolkit + some Kenney assets I got from the itch Racial Justice bundle. &lt;a href=&#34;https://www.youtube.com/watch?v=MDRShB4psyU&amp;amp;feature=youtu.be&#34;&gt;https://www.youtube.com/watch?v=MDRShB4psyU&amp;amp;feature=youtu.be&lt;/a&gt;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to a comment by sgxadhith on &#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7ybonm/:
+</title>
+            <link>https://mirror.roytang.net/2019/11/f7yj706/</link>
+            <pubDate>Mon, 18 Nov 2019 16:54:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/11/f7yj706/</guid>
+            <description>
+            Reply to a comment by sgxadhith on &amp;#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7ybonm/:
+
+            &lt;p&gt;Decision trees like &amp;ldquo;which starter pokemon do you pick&amp;rdquo; aren&amp;rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.&lt;/p&gt;
+&lt;p&gt;For this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it&amp;rsquo;s easier for me:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;starters: [&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I choose Charmander!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0001&amp;quot;},&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I want Bulbasaur!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0002&amp;quot;},&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{ &amp;quot;dialog&amp;quot;: &amp;quot;I want Pikachu!&amp;quot;, &amp;quot;pokemon_id&amp;quot;: &amp;quot;0003&amp;quot;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(I forgot who the 3rd starter was supposed to be, I&amp;rsquo;m not big on Pokemon. Also I&amp;rsquo;m guessing those aren&amp;rsquo;t the actual pokedex IDs)&lt;/p&gt;
+&lt;p&gt;Each item on the list could also contain some other info. For example in dialogue trees, you might have NPCs react differently depending on what you say, so in that case each node would have an id pointing to the specific NPC response.&lt;/p&gt;
+&lt;p&gt;The idea is to separate the data from your code, since those are totally separate concerns. This is a general programming principle not specific to game development. In this way, you make it easier to modify your data (like decision trees) without necessarily having to rebuild your code. For example, you could change the dialog message for each pokemon starter choice, or maybe you could add more choices, or make the starter pokemon be Snorlax, MewTwo and Ekans for some reason (those are pokemon right? Lol). Bigger game studios will have separate tools to maintain those data files so that even nonprogrammers can help change those kinds of things in the game.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/:
+</title>
+            <link>https://mirror.roytang.net/2019/11/f7ybksk/</link>
+            <pubDate>Mon, 18 Nov 2019 15:37:07 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/11/f7ybksk/</guid>
+            <description>
+            Reply to &amp;#39;How to you prevent a RPG from ending up into a mess of copy pasted if else statements?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/:
+
+            &lt;p&gt;extract your decision trees into data files outside of the code.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Repost from bayaniph https://twitter.com/bayaniph/statuses/1067014723986587648/:
+</title>
+            <link>https://mirror.roytang.net/2018/11/1067074898185482240/</link>
+            <pubDate>Mon, 26 Nov 2018 15:17:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/11/1067074898185482240/</guid>
+            <description>
+            
+Repost from bayaniph https://twitter.com/bayaniph/statuses/1067014723986587648/:
+            &lt;p&gt;2 days left until BAYANI – Fighting Game’s Kickstarter launch! Support us &amp;amp; get the chance to play BAYANI’s playable demo before it gets released anywhere else! Let’s make BAYANI even more awesome! #Nov28 #PleaseRT #bayaniPH #indiegame #gamedev KS Preview: &lt;a href=&#34;https://kck.st/2BwHzwU&#34;&gt;https://kck.st/2BwHzwU&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2018/11/1067074898185482240/1_1067074898185482240_Ds7Lr6sV4AAnBLp_hu9384cc8c469ff5623c5c4e0204639dde_110741_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Repost from AlmostBearded https://twitter.com/AlmostBearded/statuses/867466773452529664/:
+</title>
+            <link>https://mirror.roytang.net/2017/05/867803677171392512/</link>
+            <pubDate>Thu, 25 May 2017 18:04:54 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/05/867803677171392512/</guid>
+            <description>
+            
+Repost from AlmostBearded https://twitter.com/AlmostBearded/statuses/867466773452529664/:
+            &lt;p&gt;Protip: Game development is 100% more intense if you add particles and screenshake to your code editor. #gamedev #indiedev&lt;/p&gt;
+&lt;video width=&#39;320&#39; height=&#39;179&#39; controls&gt;
+    &lt;source src=&#39;https://video.twimg.com/tweet_video/DAncLklW0AEuSvy.mp4&#39; type=&#34;video/mp4&#34;&gt;
+    Your browser does not support the video tag.
+    &lt;/video&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Repost from studioanisa https://twitter.com/studioanisa/statuses/838225351385862145/:
+</title>
+            <link>https://mirror.roytang.net/2017/03/838772907262160896/</link>
+            <pubDate>Mon, 06 Mar 2017 15:26:59 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/03/838772907262160896/</guid>
+            <description>
+            
+Repost from studioanisa https://twitter.com/studioanisa/statuses/838225351385862145/:
+            &lt;p&gt;Say what you want about the switch but stories like these encourages us #gamedev to create diverse games!#accessibility #ux #nintendoswitch&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2017/03/838772907262160896/C6H5gwBU8AEX4KE_hu18b867398ffce912efe1e4b585785fb1_164299_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2017/03/838772907262160896/C6H5gwBUwAEy39P_hu965dced84efa828bffed73a5eb70907c_205561_300x0_resize_q75_box.jpg&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;One year ago I quit my day job and launched a Kickstarter. I&#39;ve been developing a game full time ever since. AMA.&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/28l37c/one_year_ago_i_quit_my_day_job_and_launched_a/:
+</title>
+            <link>https://mirror.roytang.net/2014/06/cibzq1z/</link>
+            <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/06/cibzq1z/</guid>
+            <description>
+            Reply to &amp;#39;One year ago I quit my day job and launched a Kickstarter. I&amp;#39;ve been developing a game full time ever since. AMA.&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/28l37c/one_year_ago_i_quit_my_day_job_and_launched_a/:
+
+            &lt;p&gt;For developing using Unity, what IDE is used?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How can I get into developing with little code knowledge?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1va021/how_can_i_get_into_developing_with_little_code/:
+</title>
+            <link>https://mirror.roytang.net/2014/01/ceq7566/</link>
+            <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2014/01/ceq7566/</guid>
+            <description>
+            Reply to &amp;#39;How can I get into developing with little code knowledge?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1va021/how_can_i_get_into_developing_with_little_code/:
+
+            &lt;p&gt;Hire someone else to code. Honestly, if you say you hate coding, then don&amp;rsquo;t do it.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;[LEGAL] Can I continue a franchise?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1szp3s/legal_can_i_continue_a_franchise/:
+</title>
+            <link>https://mirror.roytang.net/2013/12/ce2vcec/</link>
+            <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2013/12/ce2vcec/</guid>
+            <description>
+            Reply to &amp;#39;[LEGAL] Can I continue a franchise?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1szp3s/legal_can_i_continue_a_franchise/:
+
+            &lt;p&gt;The fact that you knew you needed to contact EA means you already know the answer - you need permission from the current rightsholder&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to a comment by [deleted] on &#39;[LEGAL] Can I continue a franchise?&#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1szp3s/legal_can_i_continue_a_franchise/ce2vh7t/:
+</title>
+            <link>https://mirror.roytang.net/2013/12/ce2vqok/</link>
+            <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2013/12/ce2vqok/</guid>
+            <description>
+            Reply to a comment by [deleted] on &amp;#39;[LEGAL] Can I continue a franchise?&amp;#39; on /r/gamedev at https://reddit.com/r/gamedev/comments/1szp3s/legal_can_i_continue_a_franchise/ce2vh7t/:
+
+            &lt;p&gt;Yeap. Well, you could always just try making a fan project and hope and pray that they don&amp;rsquo;t shut it down.&lt;/p&gt;
+&lt;p&gt;For contacting someone at EA, going through the regular channels like customer support or marketing/sales isn&amp;rsquo;t going to cut it; that&amp;rsquo;s not how deals are made, with their staff entertaining random proposals from people on the internet. The only way to get traction is to find someone on the inside who will listen to you - probably through game dev industry contacts or such. If you already have the capacity, I would suggest just making your own game first (maybe &amp;ldquo;inspired&amp;rdquo; by lands of lore, but not ripping it off directly) and hope that leads into a future path that might eventually get you where you want.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>AndEngine - Android Game Engine
+</title>
+            <link>https://mirror.roytang.net/2010/08/andengine-android-game-engine/</link>
+            <pubDate>Wed, 04 Aug 2010 03:07:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/08/andengine-android-game-engine/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.andengine.org/blog/&#34;&gt;AndEngine - Android Game Engine&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Diggy: open source JavaScript game engine (with example game) - Lost ...
+</title>
+            <link>https://mirror.roytang.net/2010/07/diggy-open-source-javascript-game-engine-with-example-game-lost/</link>
+            <pubDate>Thu, 08 Jul 2010 11:02:57 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/07/diggy-open-source-javascript-game-engine-with-example-game-lost/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://blog.lostdecadegames.com/diggy-open-source-javascript-game-engine-with&#34;&gt;Diggy: open source JavaScript game engine (with example game) - Lost ...&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>List of open source video games - Wikipedia, the free encyclopedia
+</title>
+            <link>https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/</link>
+            <pubDate>Thu, 10 Dec 2009 03:58:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/list-of-open-source-video-games-wikipedia-the-free-encyclopedia/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://en.wikipedia.org/wiki/List_of_open_source_video_games&#34;&gt;List of open source video games - Wikipedia, the free encyclopedia&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Gamasutra - An Achievement-Centered Online CCG? Designing Kongai
+</title>
+            <link>https://mirror.roytang.net/2008/05/gamasutra-an-achievement-centered-online-ccg-designing-kongai/</link>
+            <pubDate>Sun, 25 May 2008 16:20:19 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/05/gamasutra-an-achievement-centered-online-ccg-designing-kongai/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.gamasutra.com/view/feature/3673/an_achievementcentered_online_.php&#34;&gt;Gamasutra - An Achievement-Centered Online CCG? Designing Kongai&lt;/a&gt;
+
+            &lt;p&gt;Nice game design article by David Sirlin.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>jmonkeyengine.com - About
+</title>
+            <link>https://mirror.roytang.net/2007/05/jmonkeyengine-com-about/</link>
+            <pubDate>Sun, 27 May 2007 16:14:47 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2007/05/jmonkeyengine-com-about/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.jmonkeyengine.com/index.php?option=com_content&amp;amp;task=view&amp;amp;id=21&amp;amp;Itemid=72&#34;&gt;jmonkeyengine.com - About&lt;/a&gt;
+
+            &lt;p&gt;Java game engine&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>GameProducer.Net » Carnival of Game Production - Second Edition
+</title>
+            <link>https://mirror.roytang.net/2007/02/gameproducer-net-carnival-of-game-production-second-edition/</link>
+            <pubDate>Sun, 18 Feb 2007 15:04:17 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2007/02/gameproducer-net-carnival-of-game-production-second-edition/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.gameproducer.net/2007/02/15/carnival-of-game-production-second-edition/&#34;&gt;GameProducer.Net » Carnival of Game Production - Second Edition&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>GameDev.net - How To Build a Game In A Week From Scratch With No Budget
+</title>
+            <link>https://mirror.roytang.net/2006/04/gamedev-net-how-to-build-a-game-in-a-week-from-scratch-with-no-budget/</link>
+            <pubDate>Mon, 10 Apr 2006 14:09:04 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2006/04/gamedev-net-how-to-build-a-game-in-a-week-from-scratch-with-no-budget/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.gamedev.net/reference/articles/article2259.asp&#34;&gt;GameDev.net - How To Build a Game In A Week From Scratch With No Budget&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Slycesoft Games &gt;&gt; { Games &gt;&gt; About &gt;&gt; Away Agila }
+</title>
+            <link>https://mirror.roytang.net/2005/05/slycesoft-games-games-about-away-agila/</link>
+            <pubDate>Thu, 12 May 2005 16:02:14 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/05/slycesoft-games-games-about-away-agila/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://slycesoft.com/aa_about.php&#34;&gt;Slycesoft Games &amp;gt;&amp;gt; { Games &amp;gt;&amp;gt; About &amp;gt;&amp;gt; Away Agila }&lt;/a&gt;
+
+            &lt;p&gt;first Philippine-made 3d fighting game&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Java Games Programming Techniques
+</title>
+            <link>https://mirror.roytang.net/2004/11/java-games-programming-techniques/</link>
+            <pubDate>Sun, 28 Nov 2004 18:38:59 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/java-games-programming-techniques/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://fivedots.coe.psu.ac.th/~ad/jg/index.html&#34;&gt;Java Games Programming Techniques&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Java(TM) Boutique - The Java Game Development Tutorial
+</title>
+            <link>https://mirror.roytang.net/2004/11/java-tm-boutique-the-java-game-development-tutorial/</link>
+            <pubDate>Sun, 28 Nov 2004 17:42:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/java-tm-boutique-the-java-game-development-tutorial/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://javaboutique.internet.com/tutorials/Java_Game_Programming/&#34;&gt;Java(TM) Boutique - The Java Game Development Tutorial&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Do It Now by Steve Pavlina
+</title>
+            <link>https://mirror.roytang.net/2004/11/do-it-now-by-steve-pavlina/</link>
+            <pubDate>Sun, 28 Nov 2004 16:03:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/do-it-now-by-steve-pavlina/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.dexterity.com/articles/do-it-now.htm&#34;&gt;Do It Now by Steve Pavlina&lt;/a&gt;
+
+            &lt;p&gt;Dexterity.com article&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Sirlin&#39;s World of Gaming
+</title>
+            <link>https://mirror.roytang.net/2004/11/sirlin-s-world-of-gaming/</link>
+            <pubDate>Wed, 24 Nov 2004 15:44:23 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/sirlin-s-world-of-gaming/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.sirlin.net/.blog/blog.html&#34;&gt;Sirlin&amp;#39;s World of Gaming&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Sirlin.net -- Your source of shocking insights on game design
+</title>
+            <link>https://mirror.roytang.net/2004/11/sirlin-net-your-source-of-shocking-insights-on-game-design/</link>
+            <pubDate>Wed, 24 Nov 2004 15:44:01 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/sirlin-net-your-source-of-shocking-insights-on-game-design/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.sirlin.net/&#34;&gt;Sirlin.net -- Your source of shocking insights on game design&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>GameDevBlog
+</title>
+            <link>https://mirror.roytang.net/2004/11/gamedevblog/</link>
+            <pubDate>Mon, 08 Nov 2004 15:48:43 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2004/11/gamedevblog/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.gamedevblog.com/&#34;&gt;GameDevBlog&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

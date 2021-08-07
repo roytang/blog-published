@@ -1,0 +1,346 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>marklogic-9 on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/marklogic-9/</link>
+      <description>Recent content in marklogic-9 on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 23 Nov 2017 06:32:35 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/marklogic-9/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/11/47449002/</link>
+            <pubDate>Thu, 23 Nov 2017 06:32:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/11/47449002/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;ve been studying the examples here: &lt;a href=&#34;https://docs.marklogic.com/guide/semantics/tde#id_25531&#34;&gt;https://docs.marklogic.com/guide/semantics/tde#id_25531&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form &amp;ldquo;name1 is-a-parent-of name2&amp;rdquo;. Here&amp;rsquo;s a test I tried, with a sample of the document structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;declareUpdate();
+
+xdmp.documentInsert(
+       &#39;/test/tde.json&#39;,
+       {
+         content: {
+           name:&#39;Joe Parent&#39;,
+           children: [
+             {
+               name: &#39;Bob Child&#39;
+             },
+             {
+               name: &#39;Sue Child&#39;
+             }
+           ]
+         }
+       },
+       {permissions : xdmp.defaultPermissions(),
+        collections : [&#39;test&#39;]})
+
+cts.doc(&#39;/test/tde.json&#39;)
+
+var tde = require(&amp;quot;/MarkLogic/tde.xqy&amp;quot;);
+// Load the user template for user profile rows
+var template = xdmp.toJSON(
+{
+  &amp;quot;template&amp;quot;:{
+    &amp;quot;context&amp;quot;:&amp;quot;content&amp;quot;,
+    &amp;quot;collections&amp;quot;: [
+      &amp;quot;test&amp;quot;
+    ],
+      &amp;quot;triples&amp;quot;:[
+      {
+        &amp;quot;subject&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;xs:string(name)&amp;quot;
+        },
+        &amp;quot;predicate&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;sem:iri(&#39;is-parent-of&#39;)&amp;quot;
+        },
+        &amp;quot;object&amp;quot;: {
+          &amp;quot;val&amp;quot;: &amp;quot;xs:string(children/name)&amp;quot;
+        }     
+      }
+    ]   
+  }
+}
+);
+//tde.validate([template]),
+tde.templateInsert(&amp;quot;/templates/test.tde&amp;quot;, template);
+tde.nodeDataExtract( 
+  [cts.doc( &#39;/test/tde.json&#39; )]
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, the above throws an Exception:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[javascript] TDE-EVALFAILED: tde.nodeDataExtract([cts.doc(&amp;quot;/test/tde.json&amp;rdquo;)]) &amp;ndash; Eval for Object=&#39;xs:string(children/name)&amp;rsquo; returns TDE-BADVALEXPRESSION: Invalid val expression: XDMP-CAST: (err:FORG0001) Invalid cast: (fn:doc(&amp;quot;/test/tde.json&amp;rdquo;)/content/array-node(&amp;ldquo;children&amp;rdquo;)/object-node()[1]/text(&amp;ldquo;name&amp;rdquo;), fn:doc(&amp;quot;/test/tde.json&amp;rdquo;)/content/array-node(&amp;ldquo;children&amp;rdquo;)/object-node()[2]/text(&amp;ldquo;name&amp;rdquo;)) cast as xs:string?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What is the proper syntax for extracting array nodes into a triple?&lt;/p&gt;
+&lt;p&gt;2nd somewhat related question: say I also wanted to have triples of the form &amp;ldquo;child1 is-sibling-of child2&amp;rdquo;. For the example above it would be &amp;ldquo;Bob Child is-sibling-of Sue Child&amp;rdquo;. What would be the proper syntax for this? I&amp;rsquo;m not even sure how to begin with this one.&lt;/p&gt;
+&lt;p&gt;Is TDE even the way to go here? Or is it better to do this programmatically? i.e. on document ingestion, generate those triples inside the document directly?&lt;/p&gt;
+&lt;p&gt;(If it&amp;rsquo;s relevant, the ML version being used is 9.)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/11/47336545/</link>
+            <pubDate>Thu, 16 Nov 2017 18:15:35 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/11/47336545/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;ve been testing migrating one of our systems to Marklogic 9 and using the Optics API.&lt;/p&gt;
+&lt;p&gt;One of our functions involves grouping claims by member_id, member_name and getting the sums and counts, so I did something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var results = op.fromView(&#39;test&#39;, &#39;claims&#39;)
+  .groupBy([&#39;member_id&#39;, &#39;member_name&#39;], [
+         op.count(&#39;num_claims&#39;, &#39;claim_no&#39;),
+         op.sum(&#39;total_amount&#39;, &#39;claim_amount&#39;)
+         ])
+  .orderBy(op.desc(&#39;total_amount&#39;))
+  .limit(200)
+  .result()
+  .toArray();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above works fine. The results are of the form&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  { 
+    member_id: 1, 
+    member_name: &#39;Bob&#39;, 
+    num_claims: 10, 
+    total_amount: 500
+  }, 
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, we also have a field &amp;ldquo;company&amp;rdquo;, where each claim is filed under a different company. Basically the relevant view columns are claim_no, member_id, member_name, company, claim_amount&lt;/p&gt;
+&lt;p&gt;I would like to be able to show a column that list the different companies for which the member_id/member_name has filed claims, and how many claims for each company.&lt;/p&gt;
+&lt;p&gt;i.e. I want my results to be something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  { 
+    member_id: 1, 
+    member_name: &#39;Bob&#39;, 
+    num_claims: 10, 
+    total_amount: 500,
+    companies: [
+      {
+        company: &#39;Ajax Co&#39;,
+        num_claims: 8
+      },
+      {
+        company: &#39;Side Gig&#39;,
+        num_claims: 2
+      }
+    ]
+  }, 
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I tried something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;results = results.map((member, index, array) =&amp;gt; {
+  var companies = op.fromView(&#39;test&#39;, &#39;claims&#39;)
+    .where(op.eq(op.col(&#39;member_id&#39;), member.member_id))
+    .groupBy(&#39;company&#39;, [
+      op.count(&#39;num_claims&#39;, &#39;claim_no&#39;)      
+    ])
+    .result()
+    .toArray();
+  member.companies = companies;
+  return member;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the output seems correct, but it also executes quite slowly - almost a minute (total number of claim documents is around 120k)&lt;/p&gt;
+&lt;p&gt;In our previous ML8 implementation, we were pre-generating summary documents for each member - so retrieval was reasonably fast with the downside that whenever we got a bunch of new data, all of the summary documents had to be re-generated. I was hoping that ML9&amp;rsquo;s optic API would make it easier to do the retrieval/grouping/aggregates on the fly so we wouldn&amp;rsquo;t have to do that.&lt;/p&gt;
+&lt;p&gt;In theory, I could just add company to the groupBy fields, then merge the rows in the result query as needed. But the problem with that approach is that I can&amp;rsquo;t guarantee I&amp;rsquo;ll get the top 200 by total amount (as was my original query)&lt;/p&gt;
+&lt;p&gt;So, the question is: Is there a better way of doing this with a reasonable execution time? Or should I just stick to pre-generating the summary documents?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/10/47018820/</link>
+            <pubDate>Mon, 30 Oct 2017 15:22:49 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/10/47018820/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying out the Roxy deployer. The Roxy app was created using the default app-type. I setup a new ML 9 database, and I ran &amp;ldquo;ml local bootstrap&amp;rdquo; using the default ports (8040 and 8041)&lt;/p&gt;
+&lt;p&gt;Then I setup a node application. I tried the following (sample code from &lt;a href=&#34;https://docs.marklogic.com/jsdoc/index.html&#34;&gt;https://docs.marklogic.com/jsdoc/index.html&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var marklogic = require(&#39;marklogic&#39;);
+var conn = {
+    host: &#39;192.168.33.10&#39;,  
+    port: 8040,
+    user: &#39;admin&#39;,
+    password: &#39;admin&#39;,
+    authType: &#39;DIGEST&#39;
+}
+
+var db = marklogic.createDatabaseClient(conn);
+
+db.createCollection(
+  &#39;/books&#39;,
+  {author: &#39;Beryl Markham&#39;},
+  {author: &#39;WG Sebald&#39;}
+  )
+.result(function(response) {
+    console.log(JSON.stringify(response, null, 2));
+  }, function (error) {
+    console.log(JSON.stringify(error, null, 2));
+  });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Running the script gave me an error like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ node test.js
+{
+  &amp;quot;message&amp;quot;: &amp;quot;write document list: cannot process response with 500 status&amp;quot;,
+  &amp;quot;statusCode&amp;quot;: 500,
+  &amp;quot;body&amp;quot;: &amp;quot;&amp;lt;error:error xsi:schemaLocation=\&amp;quot;http://marklogic.com/xdmp/error error.xsd\&amp;quot; xmlns:error=\&amp;quot;http://marklogic.com/xdmp/error\&amp;quot; xmlns:xsi=\&amp;quot;http://www.w3.org/2001/XMLSchema-instance\&amp;quot;&amp;gt;\n  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;\n  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;\n  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;\n  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;\n  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;\n  &amp;lt;error:expr/&amp;gt;\n  &amp;lt;error:data&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;\n    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;\n  &amp;lt;/error:data&amp;gt;\n  &amp;lt;error:stack&amp;gt;\n    &amp;lt;error:frame&amp;gt;\n      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;\n      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;\n      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;\n      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;\n    &amp;lt;/error:frame&amp;gt;\n  &amp;lt;/error:stack&amp;gt;\n&amp;lt;/error:error&amp;gt;\n&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If I change the port to 8000 (the default appserver that inserts into Documents), the node function executes correctly as expected. I&amp;rsquo;m not sure if I need to configure anything else with the Roxy-created appserver so that it works with the node.js application.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure where the &amp;ldquo;DELETE_IF_UNUSED&amp;rdquo; part in the error message is coming from either. There doesn&amp;rsquo;t seem to be any such text in the configuration files generated by Roxy.&lt;/p&gt;
+&lt;p&gt;Edit: When accessing 192.168.33.10:8040 via the browser, I get a an xml with a similar error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;error:error xsi:schemaLocation=&amp;quot;http://marklogic.com/xdmp/error error.xsd&amp;quot; xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;
+  &amp;lt;error:code&amp;gt;XDMP-IMPMODNS&amp;lt;/error:code&amp;gt;
+  &amp;lt;error:name&amp;gt;err:XQST0059&amp;lt;/error:name&amp;gt;
+  &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+  &amp;lt;error:message&amp;gt;Import module namespace mismatch&amp;lt;/error:message&amp;gt;
+  &amp;lt;error:format-string&amp;gt;XDMP-IMPMODNS: (err:XQST0059) Import module namespace http://marklogic.com/rest-api/endpoints/config does not match target namespace http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED of imported module /MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:format-string&amp;gt;
+  &amp;lt;error:retryable&amp;gt;false&amp;lt;/error:retryable&amp;gt;
+  &amp;lt;error:expr/&amp;gt;
+  &amp;lt;error:data&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;http://marklogic.com/rest-api/endpoints/config_DELETE_IF_UNUSED&amp;lt;/error:datum&amp;gt;
+    &amp;lt;error:datum&amp;gt;/MarkLogic/rest-api/endpoints/config.xqy&amp;lt;/error:datum&amp;gt;
+  &amp;lt;/error:data&amp;gt;
+  &amp;lt;error:stack&amp;gt;
+    &amp;lt;error:frame&amp;gt;
+      &amp;lt;error:uri&amp;gt;/roxy/lib/rewriter-lib.xqy&amp;lt;/error:uri&amp;gt;
+      &amp;lt;error:line&amp;gt;5&amp;lt;/error:line&amp;gt;
+      &amp;lt;error:column&amp;gt;0&amp;lt;/error:column&amp;gt;
+      &amp;lt;error:xquery-version&amp;gt;1.0-ml&amp;lt;/error:xquery-version&amp;gt;
+    &amp;lt;/error:frame&amp;gt;
+  &amp;lt;/error:stack&amp;gt;
+&amp;lt;/error:error&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If it matters, MarkLogic version is 9.0-3.1. It&amp;rsquo;s a fresh install too.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2017/10/47009063/</link>
+            <pubDate>Mon, 30 Oct 2017 06:15:37 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/10/47009063/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there&amp;rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3&lt;/p&gt;
+&lt;p&gt;My MLCP options file is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import
+-host 
+192.168.33.10
+-port 
+8041
+-username 
+admin
+-password
+admin
+-input_file_path 
+d:\maroon\data\mbastest.csv 
+-mode 
+local 
+-input_file_type 
+delimited_text 
+-uri_id 
+ClientId 
+-output_uri_prefix
+/test/records/
+-output_uri_suffix 
+.json 
+-document_type 
+json 
+-transform_module 
+/ingestion/transform.js
+-transform_function 
+testTransform
+-transform_param
+test
+-content_encoding 
+windows-1252 
+-thread_count
+1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s the output of a test run with only 2 records in the test CSV file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON
+17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1
+17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &amp;lt;error:format-string xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&amp;lt;/error:format-string&amp;gt;
+17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json
+17/10/30 14:07:38 WARN contentpump.TransformWriter: &amp;lt;error:format-string xmlns:error=&amp;quot;http://marklogic.com/xdmp/error&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_&amp;lt;/error:format-string&amp;gt;
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2
+17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If I remove the transform params, the import works fine.&lt;/p&gt;
+&lt;p&gt;I thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Add a property named &amp;quot;NEWPROP&amp;quot; to any JSON input document.
+// Otherwise, input passes through unchanged.
+
+function addProp(content, context)
+{
+  const propVal = (context.transform_param == undefined)
+                 ? &amp;quot;UNDEFINED&amp;quot; : context.transform_param;
+
+  if (xdmp.nodeKind(content.value) == &#39;document&#39; &amp;amp;&amp;amp;
+      content.value.documentFormat == &#39;JSON&#39;) {
+    // Convert input to mutable object and add new property
+    const newDoc = content.value.toObject();
+    newDoc.NEWPROP = propVal;
+
+    // Convert result back into a document
+    content.value = xdmp.unquote(xdmp.quote(newDoc));
+  }
+  return content;
+};
+
+exports.addProp = addProp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Of course I changed the params in the MLCP options file accordingly)&lt;/p&gt;
+&lt;p&gt;The issue still persists even with just this test function.&lt;/p&gt;
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,824 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>writing on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/writing/</link>
+      <description>Recent content in writing on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Thoughts on Blogging, 2020 Edition, Vol 2
+</title>
+            <link>https://mirror.roytang.net/2020/05/thoughts-on-blogging-2020-v2/</link>
+            <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/05/thoughts-on-blogging-2020-v2/</guid>
+            <description>
+            
+            &lt;p&gt;&lt;a href=&#34;https://mirror.roytang.net/2020/02/thoughts-on-blogging-2020-edition/&#34;&gt;Previously&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://mirror.roytang.net/2020/05/weeknotes-2020-05-17/&#34;&gt;most recent weeknotes&lt;/a&gt;, I mentioned this &lt;a href=&#34;http://tttthis.com/blog/if-i-could-bring-one-thing-back-to-the-internet-it-would-be-blogs&#34;&gt;post about bringing blogs back to the internet&lt;/a&gt; and the &lt;a href=&#34;https://news.ycombinator.com/item?id=23205588&#34;&gt;ensuing discussion on Hacker News&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some further thoughts on blogging based on the HN discussion:&lt;/p&gt;
+&lt;h3 id=&#34;on-traffic-and-engagement&#34;&gt;On Traffic and Engagement&lt;/h3&gt;
+&lt;p&gt;Someone mentioned that one of the reasons most people stop blogging is that it feels like there&amp;rsquo;s nobody reading their work. This reminds me of a convo I had with a friend a couple of years back when he saw one of my blog posts. He was getting into content creation himself via a Youtube channel and he asked me what kind of traffic or how many visitors I see on my blog, and I was like &amp;ldquo;You know what, I have no idea!&amp;rdquo; because I never really got into that.&lt;/p&gt;
+&lt;p&gt;I used to have Google Analytics on the site back when I first migrated to Hugo, because the initial theme I used supported it and why not right? But I got rid of it when I did the redesign because I didn&amp;rsquo;t really use it and didn&amp;rsquo;t care for the additional JavaScript and tracking and so on.&lt;/p&gt;
+&lt;p&gt;What I do have are server-side stats via AWStats, which I do look at maybe once every couple or years or so. For the purposes of this post I decided to pull the server-side stats into a &lt;a href=&#34;https://mirror.roytang.net/page/stats/awstats/&#34;&gt;page on this site&lt;/a&gt;. So if you check that page, I had 29292 unique visitors for the entirety of 2019. That&amp;rsquo;s around 80 visitors per day. The peak was in 2017, when I had around 135 visitors per day. These are pretty weak numbers I guess? I don&amp;rsquo;t really know, but obviously I haven&amp;rsquo;t gone viral or gotten on the frontpage of HN/reddit or anything.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s fine! Traffic isn&amp;rsquo;t why I write, and any visitors above 0 are kind of a bonus, since I write mostly for myself! I feel like optimizing for traffic or SEO or whatever would be a bit like selling your soul. I think the whole point of the original post was a nostalgia for the old-style blogs that were writing for the sake of writing, and not to cater to the whims of the search engine.&lt;/p&gt;
+&lt;p&gt;I do like engagement though, mostly in the form of comments, which is something I have &lt;a href=&#34;https://mirror.roytang.net/page/stats/site/&#34;&gt;been tracking before&lt;/a&gt;. (Other than the comments, you can see that most of the stats that I track are &lt;em&gt;my&lt;/em&gt; stats, i.e. how much I post and so on.) Again, it&amp;rsquo;s not a whole lot, but it&amp;rsquo;s enough to feel a bit rewarding every time a new comment comes in. I recently disabled the comment form for the site (been getting too much spam), but this site can still get new comments via webmention.&lt;/p&gt;
+&lt;p&gt;It is nice to know that there are actually people out there reading my words. I do know some friends of mine follow the blog somehow (or maybe they just pick up the posts when I syndicate to Twitter), but it&amp;rsquo;s actually more fun when a stranger leaves a good comment!&lt;/p&gt;
+&lt;h3 id=&#34;on-self-censorship&#34;&gt;On Self-Censorship&lt;/h3&gt;
+&lt;p&gt;Someone on HN mentioned:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Well, this is why I don’t have a blog. I have a lot of strong opinions that might be interesting to some people, but I don’t want to miss opportunities because some HR person googled my name and found a post they disagreed with. Or, in the future, not a real person but an algorithm.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I guess this is a result of the current climate, where people can get &amp;ldquo;cancelled&amp;rdquo; for things they&amp;rsquo;ve said in the past etc. And I guess that&amp;rsquo;s a valid concern, if you want to live your life that way. But really, how strong are your opinions if you can&amp;rsquo;t stand for them in public?&lt;/p&gt;
+&lt;p&gt;If I write something, on this blog or elsewhere on the internet, it&amp;rsquo;s because I believe it to be true, at that time. (Or I may also be shitposting, but it should be obvious when I&amp;rsquo;m shitposting.) I&amp;rsquo;ve written some political stuff on the blog and elsewhere on the internet before, and I often criticize my country&amp;rsquo;s government when the opportunity arises. This might become problematic recently, as Duterte&amp;rsquo;s administration has started harassing critics by filing charges against them and so on. But even if it comes to that, I like to think that I would be willing to stand by what I write.&lt;/p&gt;
+&lt;p&gt;I like to think it&amp;rsquo;s because I tend to be right all the time (LOL), but also if I&amp;rsquo;ve said or done or posted something before that would later turn out to be inaccurate or offensive or whatnot, I have no concerns about walking that back and saying &amp;ldquo;Hey, I made a mistake!&amp;rdquo;. That&amp;rsquo;s another advantage running your own blog has over something like Twitter. On Twitter you can only delete your past mistakes. Here I can preserve them, but add a note saying something like &amp;ldquo;My opinion on this has changed&amp;rdquo; or such. I have not yet had a reason to do so.&lt;/p&gt;
+&lt;p&gt;(I think it helps that I largely hold non-controversial opinions and generally try to avoid being an asshole to people, but that&amp;rsquo;s probably the topic of another post entirely.)&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also the idea that you may want to write things that you don&amp;rsquo;t want associated with you IRL. I can understand that. For those kinds of things, you can make one-off posts using throwaway accounts I guess? For me, from the very beginning of my internet presence, I haven&amp;rsquo;t considered anonymizing or protecting my content. My geocities URL had my full name in it for example (and so does this domain!). But I have made some throwaway posts that aren&amp;rsquo;t tied to me, for example when talking about sensitive information or such. But I think for a large majority of the content a regular person would post, this isn&amp;rsquo;t really necessary.&lt;/p&gt;
+&lt;h3 id=&#34;on-originality&#34;&gt;On Originality&lt;/h3&gt;
+&lt;p&gt;Someone said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I often notice when I start writing on a particular topic, I learn more about my thoughts and opinions of it and realize my thoughts are wrong or not really novel. Halfway in I give up since I feel like, &amp;ldquo;oh, this actually isn&amp;rsquo;t really adding anything new to the conversation&amp;rdquo;. Then I leave with a new humbleness about my beliefs but also a sense of &amp;ldquo;when am I actually going to know enough to warrant writing about it?&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I was in a blogging lull around 2010-2015 (as seen on &lt;a href=&#34;https://mirror.roytang.net/page/stats/site/&#34;&gt;the stats page&lt;/a&gt;!) and thinking of getting back into it and writing more software-related content, but I mentioned to a friend that I was worried that the internet was already oversaturated with such writers/bloggers and I would not have anything original to contribute. I don&amp;rsquo;t remember his exact words, but it was one of the best pieces of writing advice I had ever gotten, something along the lines of: &amp;ldquo;No one else is going to be writing with your perspective and your point of view, so no matter what, you are bringing something to the table.&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;on-discoverability&#34;&gt;On Discoverability&lt;/h3&gt;
+&lt;p&gt;Some people on the HN thread said that Google no longer surfaces older blog content. I anecdotally know this to be not true, because a Google search for the terms &lt;a href=&#34;https://www.google.com/search?hl=en&amp;amp;q=killer%20killer&#34;&gt;&amp;ldquo;killer-killer&amp;rdquo;&lt;/a&gt; or &lt;a href=&#34;https://www.google.com/search?hl=en&amp;amp;q=pasmado&#34;&gt;&amp;ldquo;pasmado&amp;rdquo;&lt;/a&gt; still shows posts from my blog from 2008 on the first page. I suspect this is because my blog has been continuously updated since 2002, hence my posts never fall &amp;ldquo;out of rotation&amp;rdquo;? Is that a thing? Who knows! SEO, right?&lt;/p&gt;
+&lt;p&gt;The original post was correct however in that it is difficult to find old-school blog content if you are searching specifically for that kind of thing. I&amp;rsquo;ve mentioned &lt;a href=&#34;https://mirror.roytang.net/2020/04/fe45adb8c24e654605b9906dea2df749/&#34;&gt;before&lt;/a&gt; that I want some kind of indieweb federated search focused on searching content from &amp;ldquo;indie&amp;rdquo; blogs (for lack of a better term. We need a better term?). Maybe someday I&amp;rsquo;d write down how I imagine that would work. And implement it maybe? IDK.&lt;/p&gt;
+&lt;p&gt;Until then, there are still a lot of blogs around, if you know where to look. One of my favorite avenues is Kicks Condors&amp;rsquo; &lt;a href=&#34;https://www.kickscondor.com/hrefhunt/&#34;&gt;monthly HrefHunt updates&lt;/a&gt;. And I&amp;rsquo;ve mentioned before, but whenever anyone posts anything remotely nostalgic about old-school blogging on Hacker News, the comments are always full of links to blogs. There&amp;rsquo;s specialized subreddits like &lt;a href=&#34;https://www.reddit.com/r/SpartanWeb/&#34;&gt;r/SpartanWeb&lt;/a&gt; (not many users!).&lt;/p&gt;
+&lt;p&gt;If you run a blog, you can help by having a page where you list other blogs you like! Some kind of roll call, but for blogs. Like&amp;hellip; a &lt;a href=&#34;https://mirror.roytang.net/page/blogroll/&#34;&gt;blogroll&lt;/a&gt;? And if they make a post you like, share it on your blog, and maybe on other social media channels too! Us indie and old-school bloggers need to have each other backs!&lt;/p&gt;
+&lt;h3 id=&#34;more-to-come&#34;&gt;More To Come&lt;/h3&gt;
+&lt;p&gt;I am 99.9999% sure this is not the last time I&amp;rsquo;m going to blog about blogging.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Thoughts on Blogging, 2020 Edition
+</title>
+            <link>https://mirror.roytang.net/2020/02/thoughts-on-blogging-2020-edition/</link>
+            <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2020/02/thoughts-on-blogging-2020-edition/</guid>
+            <description>
+            
+            &lt;p&gt;I found this great article the other week about &lt;a href=&#34;https://guzey.com/personal/why-have-a-blog/&#34;&gt;Why You Should Start A Blog Right Now&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The whole thing is absolutely worth a read, but my favorite part is at the start where he enumerates a list of reasons why he wrote particular posts, and it sent me down a rabbit hole again of evaluating why I write on this blog, and whether it was an endeavor worth continuing.&lt;/p&gt;
+&lt;p&gt;Presumably, having a blog has a lot of possible benefits, but the one important for me personally are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it helps me clarify step through my own thoughts and understand my own thinking&lt;/li&gt;
+&lt;li&gt;it serves as an archive of my state of mind at the time&lt;/li&gt;
+&lt;li&gt;it helps me improve my own writing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Presumably, you can also use a blog to advance your career, build a brand/reputation, finding an audience, etc. And those are fine, but for me they are only incidentals, nice-to-haves. Fundamentally, I still always write for myself first.&lt;/p&gt;
+&lt;p&gt;If that&amp;rsquo;s the case, I said to myself, why write in public at all? If those three reasons are the most important, then something like &lt;a href=&#34;https://mirror.roytang.net/2018/12/private-writing/&#34;&gt;private writing&lt;/a&gt; should already suffice. I even asked my self the very same question back in 2005 at the end of &lt;a href=&#34;https://mirror.roytang.net/2005/11/why-do-i-blog/&#34;&gt;this post&lt;/a&gt;, and at that time I had no answer. Today I do.&lt;/p&gt;
+&lt;p&gt;I write in public because we as humans have so much in common, even if we aren&amp;rsquo;t aware of it. And while writing down one&amp;rsquo;s own thoughts or opinions or everyday happenings may seem like it would be entirely uninteresting to the average reader, there will always be some aspect of your stories that will resonate with someone else, somewhere, because of that shared human experience.&lt;/p&gt;
+&lt;p&gt;These days, everyone can have a platform for writing, whether it&amp;rsquo;s in one of the social media silos or your own site like this one, so the whole &amp;ldquo;writing in public&amp;rdquo; thing isn&amp;rsquo;t so novel anymore. But even in this age, not everyone chooses to participate in social media, not everyone tweets or posts all the time, and that&amp;rsquo;s fine. I can accept that writing in public isn&amp;rsquo;t for everyone. But to have that voice, that ability to express yourself and share your human experience with others, to have stories to share and advice to dispense and objections to raise - to have it and not to exercise it in a meaningful way? For me that seems a waste. And so I write.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Well, I actually haven&amp;rsquo;t been writing much the past couple of weeks, aside from the &lt;a href=&#34;https://mirror.roytang.net/tags/weeknotes&#34;&gt;weeknotes&lt;/a&gt;. I pumped out a couple of longish and in my mind pretty good posts early in the month (&lt;a href=&#34;https://mirror.roytang.net/2020/02/old-web/&#34;&gt;Tales of the Old Web&lt;/a&gt;, &lt;a href=&#34;https://mirror.roytang.net/2020/02/burnout/&#34;&gt;Burnout&lt;/a&gt;), but after that I found myself struggling to put some new ones together. Somehow in my mind I became trapped in the idea that I needed to have these long, profound, well-researched essays as posts. Browsing blogs like Alexey Guzey&amp;rsquo;s (author of the post linked at the start of this one) certainly hasn&amp;rsquo;t helped - on his &lt;a href=&#34;https://guzey.com/notes/&#34;&gt;notes page&lt;/a&gt; he mentions that some of his better posts take upwards of 100+ hours to write.&lt;/p&gt;
+&lt;p&gt;I guess I kind of fell into the &lt;a href=&#34;https://mirror.roytang.net/2018/11/comparison-is-the-thief-of-joy/&#34;&gt;trap of comparison&lt;/a&gt; and wanted to be writing thesis papers? Except that&amp;rsquo;s not really my style. I can probably churn out some longer pieces if they&amp;rsquo;ve been formulating in my head for a while, but for the most part, my regular blogging consists of thoughts-in-the-moment, a snapshot of where my thinking is at that time, to be built upon and to be evolved later on. And I think that&amp;rsquo;s fine, I think everyone has their own unique writing/blogging style and voice that they need to develop to see what works best for them. Maybe as time goes on, I will tend more towards longer-form posts, but for now I have to listen to my own advice and remember that &lt;a href=&#34;https://mirror.roytang.net/2019/01/not-all-posts-have-to-be-profound/&#34;&gt;not all posts have to be profound&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;For the past few years or so, and especially since I got interested in this &lt;a href=&#34;https://mirror.roytang.net/2019/11/indieweb/&#34;&gt;Indieweb stuff&lt;/a&gt; I&amp;rsquo;ve also been more on the lookout for interesting blogs to read. Personal blogs, none of that &amp;ldquo;professional blogger&amp;rdquo; crap. There&amp;rsquo;s still a lot of interesting sites out there, a lot of them long-running ones even. With the rise of social media silos, having personal websites and blogs hasn&amp;rsquo;t really gotten mainstream attention, but there&amp;rsquo;s still plenty of people writing out there. I think I&amp;rsquo;ve added more blogs to my RSS reader over the past 12 months than I have over the preceding 5ish years or so.&lt;/p&gt;
+&lt;p&gt;It saddens me a bit that among people of my cohort I am one among very few who are (still) actively blogging. I have a large folder of RSS feeds named &amp;ldquo;people I know&amp;rdquo;, many of them have tried blogging at some point or another, and all of those links are inactive or even inaccessible. Friends: please write more! You can revive your old sites if you like, you don&amp;rsquo;t even have to explain!&lt;/p&gt;
+&lt;p&gt;I still have a bunch of reorganizing my RSS feeds to do, but I&amp;rsquo;ve managed to put enough feeds into a folder called &amp;ldquo;blogroll&amp;rdquo; that seems suitable for sharing, so I created a new &lt;a href=&#34;https://mirror.roytang.net/page/blogroll&#34;&gt;Blogroll page&lt;/a&gt; where you can see some of the blogs I follow. Very few of these are people I know IRL, mostly I just stumbled upon their blogs via some method or other. Many of them are tech-related though not all of them are. All are reasonably active. I thought about tagging or categorizing them somehow, but it&amp;rsquo;s rude to put people into boxes, so maybe it&amp;rsquo;s rude to do that for their websites too, just let people be people and let blogs be blogs.&lt;/p&gt;
+&lt;p&gt;I used to maintain an older blogroll back in the day, but it seems that has already been lost to the dustbin of history, so this one is brand new and built from scratch. (If I find the older one, I might put it on that page too as a record of history.) As with many other things on the site, the blogroll is perpetually under renovation, so if you find (or have) a personal blog that you think I might find interesting, feel free to tell me about it and maybe I&amp;rsquo;ll add it there!&lt;/p&gt;
+&lt;p&gt;(Technical note: The blogroll listing is automatically imported from a JSON-formatted OPML file. I got the idea from &lt;a href=&#34;https://jlelse.blog/dev/auto-blogroll-hugo/&#34;&gt;this post by jlelse&lt;/a&gt;, and coincidentally he is also on the blogroll.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Me: I&amp;rsquo;m having trouble writing long-form posts recently.&lt;/p&gt;
+&lt;p&gt;Also me: Hey, I wrote a thousand words on blogging without thinking about it!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>NaBloPoMo Epilogue
+</title>
+            <link>https://mirror.roytang.net/2019/11/nablopomo-epilogue/</link>
+            <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/11/nablopomo-epilogue/</guid>
+            <description>
+            
+            &lt;p&gt;So NaBloPoMo complete, no big deal. It wasn&amp;rsquo;t much of a challenge since blogging every day for a month is something that I&amp;rsquo;ve done multiple times over the past couple of years. It comes out to around 15,900 words written in November, not counting this post. Definitely not as big a thing as completing nanowrimo for instance.&lt;/p&gt;
+&lt;p&gt;Writing on a regular basis is great, and generally a reasonable use of your time. But the thing about writing daily though is that like any activity that you want to do on a regular basis, you don&amp;rsquo;t always have the energy for it. I could probably keep up the daily posting indefinitely, if blogging were the only thing I was wanted to be doing, but alas that is not true.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m going to stop posting regularly of course, just that I don&amp;rsquo;t commit myself to doing it every day. The decade&amp;rsquo;s end is coming up, and for sure there&amp;rsquo;s going to be something to be said about that. There are also some longer posts I&amp;rsquo;ve been meaning to write, but those are more likely to come after the turn of the year, depending on how my own musings turn out. So chances are that posts still come out on a semi-regular basis.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>NaBloPoMo: Just Write
+</title>
+            <link>https://mirror.roytang.net/2019/11/nablopomo/</link>
+            <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/11/nablopomo/</guid>
+            <description>
+            
+            &lt;p&gt;Apparently, &lt;a href=&#34;http://nablopomoguideunofficial.blogspot.com/&#34;&gt;NaBloPoMo&lt;/a&gt; (or &lt;em&gt;National Blog Posting Month&lt;/em&gt;) is a thing. It doesn&amp;rsquo;t quite roll off the tongue as the original &lt;em&gt;Nanowrimo&lt;/em&gt; (which was already a tough sell), but I think it&amp;rsquo;s a worthy endeavor nonetheless. Some friends were inviting me to do Nanowrimo again this year, but due to general life and busyness and other things, I wasn&amp;rsquo;t able to prep. I could just wing it (maybe I still will!), but that likely leads to disaster! Let&amp;rsquo;s do this easier challenge instead. Easier because I&amp;rsquo;ve already done daily posting on multiple months this year, and also in comparison to &lt;a href=&#34;https://mirror.roytang.net/2019/11/inktober-2019/&#34;&gt;last month&amp;rsquo;s challenge&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Some helpful tips and reminders for those who want to bring blogging back (did it ever really leave?):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A &lt;em&gt;blog&lt;/em&gt; (noun) is series of entries, called &lt;em&gt;blog posts&lt;/em&gt;, often primarily presented in reverse chronological order. A &lt;em&gt;blog post&lt;/em&gt; (noun) or simply a post is a single entry in a blog, usually consisting of a title, a date, and some content in either text or some other media. To &lt;em&gt;blog&lt;/em&gt; (verb) is to write one or more posts on a blog.&lt;/li&gt;
+&lt;li&gt;Blog posts can be anything you want them to be. They can be short or long. They can be focused on a particular topic, or discuss multiple topics, or be about no one topic in particular. They can have a title or have no title. They can be posted in the past, in the present or in the future. The sky&amp;rsquo;s the limit.&lt;/li&gt;
+&lt;li&gt;Just write. Some may struggle with putting their thoughts into words because they&amp;rsquo;re always looking for the perfect words or structure. Your posts don&amp;rsquo;t have to be the best, impeccable writing. They can written first and then improved upon. The goal of an exercise like this one or Nanowrimo is to force you into the habit of writing freely and without filter, to learn to embrace the imperfect. So just write.&lt;/li&gt;
+&lt;li&gt;Struggling to find something to write about? Here are some prompts, choose one:
+&lt;ul&gt;
+&lt;li&gt;what have you been watching/reading lately?&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s something you tried recently?&lt;/li&gt;
+&lt;li&gt;what recent accomplishments are you proud of?&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s a recent failure you experienced and what did you learn from it?&lt;/li&gt;
+&lt;li&gt;when was the last time a friend asked you for advice, and what did you tell him?&lt;/li&gt;
+&lt;li&gt;when was the last time someone exceeded your expectations?&lt;/li&gt;
+&lt;li&gt;what happened the last time you went to a government office to get something done?&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s something you do or enjoy that none of your friends do?&lt;/li&gt;
+&lt;li&gt;what always annoys you when people ask about it?&lt;/li&gt;
+&lt;li&gt;what recent unexpected find made you happy?&lt;/li&gt;
+&lt;li&gt;try to draw a horse. then, mock your drawing&lt;/li&gt;
+&lt;li&gt;what recent article did you read that really impressed you?&lt;/li&gt;
+&lt;li&gt;what new blogs or social media accounts have you recently discovered and found interesting?&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s your strategy for saving money?&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s a recent restaurant meal you really liked? write a review!&lt;/li&gt;
+&lt;li&gt;what&amp;rsquo;s a recent government decision you think was really good or really bad? discuss!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Enjoy blogging!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Writing brings clarity
+</title>
+            <link>https://mirror.roytang.net/2019/08/writing-brings-clarity/</link>
+            <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/08/writing-brings-clarity/</guid>
+            <description>
+            
+            &lt;p&gt;I don&amp;rsquo;t remember where I read it online, but I have this in my notes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;we write to discover truths about ourselves (paraphrased)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The basic idea being that the mere act of writing down our thoughts can bring clarity and help us identify some truths about ourselves we never knew existed.&lt;/p&gt;
+&lt;p&gt;I think it works similarly to the programmer practice of &lt;a href=&#34;https://en.wikipedia.org/wiki/Rubber_duck_debugging&#34;&gt;rubber ducking&lt;/a&gt;, where the mere act of describing something helps you gain a better understanding of it.&lt;/p&gt;
+&lt;p&gt;This clarity can also allow you to more easily process a large scope that can otherwise seem overwhelming.&lt;/p&gt;
+&lt;p&gt;I remember this in the context of &lt;a href=&#34;https://mirror.roytang.net/2019/07/travel-anxiety-part-2/&#34;&gt;my travel anxiety&lt;/a&gt; during the recent trip, particularly during the Seattle leg when I was travelling alone. I was worried I would be missing something or that I would forget something.&lt;/p&gt;
+&lt;p&gt;To calm myself, I sat down and wrote a list of all the things I had to do before I considered myself back in a comfortable situation. The list included things like what to pack, what transportation methods I would take, what steps I had to do at the airport, and so on. Having this list to look at reminded me of the bigger picture and what I had imagined in my head as a large number of things to worry about turned out to be a lot more manageable once I was looking at a list, and not so worrying as I expected.&lt;/p&gt;
+&lt;p&gt;So, if you ever needed an additional reason to be writing, there you go.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Grammar Nazi
+</title>
+            <link>https://mirror.roytang.net/2019/05/grammar-nazi/</link>
+            <pubDate>Mon, 06 May 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/05/grammar-nazi/</guid>
+            <description>
+            
+            &lt;p&gt;I am, admittedly, a grammar nazi.&lt;/p&gt;
+&lt;p&gt;I think it&amp;rsquo;s something that comes with being a voracious reader, especially as a child.  When you have been reading (and speaking) English so much from an early age, you come to have an instinctive grasp of what is and what is not proper sentence construction. Some sentences just look right and some just look wrong. I&amp;rsquo;m not saying I have perfect mastery of the English language or anything. But I am for the most part capable of proper sentence construction. I like to think that being a programmer (or at least, a good programmer) correlates with a tendency towards good grammar as well, given how the syntax rules of programming languages are even stricter than the rules of English grammar.&lt;/p&gt;
+&lt;p&gt;I used to be pretty anal about it too. I would correct most people given any opportunity, especially online in forums and social media and what not. These days I&amp;rsquo;m less inclined to do so, at least for strangers on the internet whose first language may or may not be English, unless the grammar is especially atrocious or the poster was asking for it in some way. I guess the advice in the following tweet mostly applies for me these days:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Here&amp;#39;s what I was taught about manners: Correcting someone&amp;#39;s &lt;a href=&#34;https://twitter.com/hashtag/grammar?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#grammar&lt;/a&gt; in public is rude. Here&amp;#39;s what I was taught about intellectual priorities: Focusing on grammar and ignoring content is petty and pedantic. But that&amp;#39;s just me... &lt;a href=&#34;https://t.co/R1A6wPqFPI&#34;&gt;https://t.co/R1A6wPqFPI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Diana B. Henriques (@dianabhenriques) &lt;a href=&#34;https://twitter.com/dianabhenriques/status/1125066018768945152?ref_src=twsrc%5Etfw&#34;&gt;May 5, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt; 
+&lt;p&gt;Even if don&amp;rsquo;t speak up, I reserve the right to silently judge someone for poor grammar. Filipinos are notorious for judging others based on how good their English is:&lt;/p&gt;
+&lt;a href=&#34;#e6c00b4f60a06727b26d23f83fe53f5a-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2019/05/grammar-nazi/english_hucf9601aaec0eac40dc18c58cf1664663_886462_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;e6c00b4f60a06727b26d23f83fe53f5a-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2019/05/grammar-nazi/english.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;6 May 2019 5:56am&#34;&gt;6 May 2019 5:56am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;It is mostly an elitist thing - English grammar isn&amp;rsquo;t something the poorer or less educated citizens will be super familiar with (although most Filipinos will still understand rudimentary English of course&amp;hellip; I think&amp;hellip; ). Speaking good English is often seen as a sign of privilege. I imagine even foreigners make some judgments based on how good your English is; I imagine that my &lt;a href=&#34;https://mirror.roytang.net/2019/04/i-got-a-us-visa/&#34;&gt;US Visa interview&lt;/a&gt; might have been a bit more difficult if I wasn&amp;rsquo;t fluent. That being said, it may be a thing that&amp;rsquo;s on the downturn, given the recent rise of anti-intellectualism locally (or is it really recent?)&lt;/p&gt;
+&lt;p&gt;I will still often correct friends and family though. The people who know me well know that it doesn&amp;rsquo;t signify any ill will or malice on my part, just a lingering obsessive desire for correct grammar. It&amp;rsquo;s the same way a slightly misaligned painting hanging from the wall would bother other people (okay, that would bother me too).&lt;/p&gt;
+&lt;p&gt;In conclusion: I had to review this post a few times to make sure I made no grammatical errors, that would be embarrassing.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2019/05/grammar-nazi/english_hucf9601aaec0eac40dc18c58cf1664663_886462_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>750 Words
+</title>
+            <link>https://mirror.roytang.net/2019/03/750-words/</link>
+            <pubDate>Sun, 10 Mar 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/03/750-words/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve mentioned &lt;a href=&#34;https://750words.com/&#34;&gt;750 Words&lt;/a&gt; &lt;a href=&#34;https://mirror.roytang.net/2018/12/private-writing/&#34;&gt;before&lt;/a&gt;. It&amp;rsquo;s a pretty neat service that allows you to write privately online. It&amp;rsquo;s not public like blogging is, so if you&amp;rsquo;d like to develop a daily writing habit but don&amp;rsquo;t want things to be available to the world, it&amp;rsquo;s a pretty good option. You can of course, just write on paper or on local files and just not upload anything to the cloud at all. But there&amp;rsquo;s some benefits to an online service like this one too - the most obvious one is that you can write anywhere, with any internet connected device, but they also have a few other nifty features like tracking streaks (which can be great for &lt;a href=&#34;https://mirror.roytang.net/2019/01/dont-break-the-chain/&#34;&gt;building habits&lt;/a&gt;), and 750words even allows you to attach daily metadata to your posts (such as a number indicating your mood for the day or how many hours you slept) and it can later show you a chart of how that metadata changes over time. They also have stats like how fast you type, or what mood your writing indicates and so on.&lt;/p&gt;
+&lt;p&gt;I was reminded of this service because I found the export files I got from them a while back. More than a year&amp;rsquo;s worth of daily posts, 365 entries apparently according to the site. I&amp;rsquo;ve been thinking about writing a python script to parse the export files and mass-import the posts into this blog (back filling 2011-2012 when I wasn&amp;rsquo;t blogging much), but there&amp;rsquo;s a few issues with that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;generally, the style of entries is more &amp;ldquo;what I was doing this day&amp;rdquo; than the kind of stuff I write now, which can be fine, as it still provides a good window into what was happening with me in the past&lt;/li&gt;
+&lt;li&gt;some entries may contain information I wouldn&amp;rsquo;t normally write in a public post. I may name names, talk about people I&amp;rsquo;m annoyed with, and so on&lt;/li&gt;
+&lt;li&gt;it was not uncommon back then for me to have a mental block and not knowing what to type that often led me to just typing words at random until I either hit the target goal or subconsciously hit upon a topic I&amp;rsquo;d like to talk about&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I guess the privacy is the real issue. The best option is probably to export them as Hugo drafts, then review each draft one by one before having them go live on the site. I&amp;rsquo;ll add this to the list of small side projects I may never get around to finding time to do (this list may be growing too quickly!)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Four Hundred Thousand Words
+</title>
+            <link>https://mirror.roytang.net/2019/03/four-hundred-thousand-words/</link>
+            <pubDate>Sat, 02 Mar 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/03/four-hundred-thousand-words/</guid>
+            <description>
+            
+            &lt;p&gt;Sometime in the last week, I broke past four hundred thousand words total on this blog, as noted on the &lt;a href=&#34;https://mirror.roytang.net/archives/&#34;&gt;archive page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Four hundred thousand words! That number sounds insane for some reason. Over 17 years of blogging, that&amp;rsquo;s an average of 23,500+ words a year. I could have written like 17 short stories or 8ish novelettes or 3-4 decently sized novels.&lt;/p&gt;
+&lt;p&gt;This post is just me navel-gazing over that number. Four hundred thousand! In mid-March, there&amp;rsquo;s gonna be another milestone too - we&amp;rsquo;re gonna hit 1,000 posts total (assuming I don&amp;rsquo;t quit blogging daily before then). I should get an achievement somehow!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Broken Streak
+</title>
+            <link>https://mirror.roytang.net/2019/02/broken-streak/</link>
+            <pubDate>Sat, 09 Feb 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/02/broken-streak/</guid>
+            <description>
+            
+            &lt;p&gt;I thought I had a post scheduled yesterday, but I didn&amp;rsquo;t. That broke a continuous streak of 124 days of &lt;a href=&#34;https://mirror.roytang.net/2018/12/daily-blogging/&#34;&gt;daily blogging&lt;/a&gt;. I thought about writing a post and publishing it retroactively, but that seems like the kind of BS Type A behavior I kind of want to avoid these days. At least I did a lot better than the last time I tried daily blogging in October 2006, when I only managed &lt;a href=&#34;https://mirror.roytang.net/2006/10/&#34;&gt;23 posts for the month&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On the bright side, that gave me something easy to write about today. And now that I&amp;rsquo;ve broken the streak I thought, &amp;ldquo;Does this mean I can go back to an irregular blogging schedule?&amp;rdquo; It&amp;rsquo;s like the way Kenshin was wondering if he had to return to the vagabond life after he thought he was forced to kill Chou using a regular blade.&lt;/p&gt;
+&lt;p&gt;Of course, as I mentioned in &lt;a href=&#34;https://mirror.roytang.net/2019/01/dont-break-the-chain/&#34;&gt;Don&amp;rsquo;t Break the Chain&lt;/a&gt;, breaking streaks are inevitable, but that doesn&amp;rsquo;t mean you stop. I feel like the daily blogging has generally been a net positive so far, so it&amp;rsquo;s something that&amp;rsquo;s gonna go on, as much as possible. Here&amp;rsquo;s to hoping I don&amp;rsquo;t screw up and immediately miss tomorrow&amp;rsquo;s post as well.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Finishing Posts
+</title>
+            <link>https://mirror.roytang.net/2019/02/finishing-posts/</link>
+            <pubDate>Mon, 04 Feb 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/02/finishing-posts/</guid>
+            <description>
+            
+            &lt;p&gt;I saw the &lt;a href=&#34;https://twitter.com/andreasklinger/status/1091555027053772800&#34;&gt;following question on Twitter&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;People who write a lot of blogposts&amp;hellip; How do you know when a post is done?&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Having written daily posts since October, I feel like I already qualify for &amp;ldquo;People who write a lot of blogposts&amp;rdquo;, but I realized I don&amp;rsquo;t have a straight answer aside from &amp;ldquo;When I run out of things to say&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I do worry sometimes that my posts don&amp;rsquo;t often reach a logical conclusion. Maybe I&amp;rsquo;m just bad at ending blog posts and need to do better. Sometimes I&amp;rsquo;ll keep writing until I run out of thoughts and just stop there instead of creating a summary paragraph or statement or conclusion or whatever. Well, maybe that isn&amp;rsquo;t always needed? There should be value in committing your thoughts to the web either way.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Not all posts have to be profound
+</title>
+            <link>https://mirror.roytang.net/2019/01/not-all-posts-have-to-be-profound/</link>
+            <pubDate>Thu, 10 Jan 2019 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/01/not-all-posts-have-to-be-profound/</guid>
+            <description>
+            
+            &lt;p&gt;I think that&amp;rsquo;s one of the reasons why it&amp;rsquo;s difficult to keep up a blog. Blogs feel a bit like they have to be long-form, highly profound, useful or informative pieces or prose that a wide audience can appreciate. We don&amp;rsquo;t have this same pressure when posting to other social media like Twitter or Facebook.&lt;/p&gt;
+&lt;p&gt;I like to think of a blog (or this blog at least, at this moment) as a living, evolving thing, with each post capturing a single moment in a timeline, building upon previous thoughts, helping us see how the author&amp;rsquo;s thinking changes with time. There is no need for each post to be perfect, only that they be honest.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Private writing
+</title>
+            <link>https://mirror.roytang.net/2018/12/private-writing/</link>
+            <pubDate>Thu, 27 Dec 2018 05:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/12/private-writing/</guid>
+            <description>
+            
+            &lt;p&gt;Two things I&amp;rsquo;ve learned over the past couple of months of &lt;a href=&#34;https://mirror.roytang.net/2018/12/daily-blogging/&#34;&gt;daily blog posting&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I have a lot to write about&lt;/li&gt;
+&lt;li&gt;I might have too much to write about&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I use this space to help myself think through some things, I found that I sometimes have a tendency to write about things that maybe I shouldn&amp;rsquo;t write about publicly, either for personal privacy reasons, or for professional courtesy reasons. Thankfully, I&amp;rsquo;ve been able to hold myself back so far.&lt;/p&gt;
+&lt;p&gt;To help suppress such urges, I&amp;rsquo;ve also recently resumed private journalling, a practice I haven&amp;rsquo;t revisited for quite a while. Basically just a document where I can dump my own thoughts about things that are probably inappropriate for public consumption. So I get the benefits of writing my thoughts down without any possible privacy issues. So far the need for private journal entries has been few and far between. Between the blog and the private journal, it should be a lot easier for me to take a look back at what I was thinking at any given point in time, should the need arise.&lt;/p&gt;
+&lt;p&gt;The last time I did the private journalling thing was with a service called &lt;a href=&#34;https://750words.com/&#34;&gt;750 words&lt;/a&gt;, which was pretty good. It inspired me into a daily writing habit for a bit more than a year. I should probably go through those sometime and see if I can&amp;rsquo;t mine them for blog posts.&lt;/p&gt;
+&lt;p&gt;As for this blog and the daily posting thing, I have to admit the past week or so has been challenging. The week of Christmas is usually busy as there&amp;rsquo;s last minute gift buying and family visitors and holiday meetups and such so I don&amp;rsquo;t always have the time and/or energy to write posts. I thought about breaking the &amp;ldquo;daily posting&amp;rdquo; rule a few times, but somehow managed to keep it going. The problem with requiring myself to post every day is that it violates &lt;a href=&#34;https://mirror.roytang.net/2018/10/you-dont-have-to-be-on-all-the-time/&#34;&gt;&amp;ldquo;You don&amp;rsquo;t have to be on all the time&amp;rdquo;&lt;/a&gt;. While writing this post, I considered loosening the commitment for the New Year, something like &amp;ldquo;post every day, unless you really don&amp;rsquo;t have time or energy&amp;rdquo;, but that&amp;rsquo;s pretty much how habits are broken. I do still find the practice fruitful, so I will continue it for the time being, as much as I can.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Fanfiction
+</title>
+            <link>https://mirror.roytang.net/2018/12/fanfiction/</link>
+            <pubDate>Wed, 12 Dec 2018 01:56:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/12/fanfiction/</guid>
+            <description>
+            
+            &lt;p&gt;This might surprise you, but I tried my hand at writing fanfiction back in the day. Most of it was Final Fantasy-related (as that was what I was really into back then) and the odd Ranma 1/2 one (mainly because I was a member of an anime-focused fanfic collective, called the &amp;ldquo;Nikholas F Toledo Zu&amp;rdquo; for inside joke reasons, writing under the name &amp;ldquo;Vector&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;Anyway, I&amp;rsquo;m not exceptionally proud of the writings, but I like having all my work available on this blog/website/whatever, so I&amp;rsquo;ve added them at this link: &lt;a href=&#34;https://mirror.roytang.net/tags/fanfiction/&#34;&gt;Fanfiction&lt;/a&gt;. Give them a read, if you&amp;rsquo;d like. The Final Fantasy ones are also available at &lt;a href=&#34;https://www.fanfiction.net/u/107111/roytang&#34;&gt;my user page on Fanfiction.net&lt;/a&gt;. The Ranma one I can&amp;rsquo;t find anywhere else on the web, for some reason.&lt;/p&gt;
+&lt;p&gt;It was kind of fun going through these again. Hmm, since I&amp;rsquo;ve been having trouble finishing original fiction projects, maybe I should try my hand at Fanfiction again, might be easier? I&amp;rsquo;ll think about it.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Daily Blogging
+</title>
+            <link>https://mirror.roytang.net/2018/12/daily-blogging/</link>
+            <pubDate>Mon, 03 Dec 2018 02:06:56 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/12/daily-blogging/</guid>
+            <description>
+            
+            &lt;p&gt;Looking at my &lt;a href=&#34;https://mirror.roytang.net/archives&#34;&gt;archives&lt;/a&gt;, I was blogging regularly from 2005-2009, mostly because I was really active in competitive &lt;a href=&#34;https://mirror.roytang.net/categories/magic-the-gathering/&#34;&gt;MTG&lt;/a&gt; during that time. Starting 2010, my blogging activity started to taper off, with less than 60 posts until 2015. I tried to revive the habit around mid-2016, posting at least once a week, but the writing slowed down again around April this year (coinciding with one of the more busy periods for me work-wise). Starting in October I had a bit more free time so I decided to fire on all cylinders again. Instead of the previous 1-2 posts per week I was going for in 2016, this time I would go for posting every day. Not even every weekday, but seven days a week.&lt;/p&gt;
+&lt;p&gt;I tried this, as an experiment, back in &lt;a href=&#34;https://mirror.roytang.net/2006/10/i-will-blog-every-day/&#34;&gt;October of 2006&lt;/a&gt;, but I didn&amp;rsquo;t last the month with the habit (though I did continue to post regularly for the next few years).&lt;/p&gt;
+&lt;p&gt;This is kind of secondhand-blog-linking, but the post [Seth Godin Explains Why You Should Blog Daily] (&lt;a href=&#34;https://www.cjchilvers.com/blog/seth-godin-explains-why-you-should-blog-daily&#34;&gt;https://www.cjchilvers.com/blog/seth-godin-explains-why-you-should-blog-daily&lt;/a&gt;) explains well the advantages of posting daily:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Everyone should write a blog, every day, even if no one reads it. There’s countless reasons why it’s a good idea and I can’t think of one reason it’s a bad idea.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;If you know you have to write a blog post tomorrow, something in writing, something that will be around 6 months from now, about something in the world, you will start looking for something in the world to to write about. You will seek to notice something interesting and to say something creative about it. Well, isn’t that all we’re looking for? The best practice of generously sharing what you notice about the world is exactly the antidote for your fear.&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Seth Godin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first fear of course, is: do I actually have enough material, enough stuff to write about on a daily basis? The article above mentions that the mere act of committing to daily writing means you will naturally tend towards notcing more things and having more opinions and thus more things to write about. But I was skeptical, since I had tried the regular writing before and it didn&amp;rsquo;t really stick. One thing that helped however was that since 2016 I&amp;rsquo;ve been regularly listing down blog post ideas. I got this idea from &lt;a href=&#34;https://jamesaltucher.com/2014/05/the-ultimate-guide-for-becoming-an-idea-machine/&#34;&gt;James Altucher&amp;rsquo;s post about becoming an idea machine&lt;/a&gt; where he recommend&amp;rsquo;s thinking of 10 ideas daily. I did start out writing 10 blog post ideas every day, but that tapered off after a while because I was only posting a couple of times I week, I had far too many ideas!&lt;/p&gt;
+&lt;p&gt;Not all of those ideas would be good enough to be posts of course. I wrote up a few posts first, creating a buffer of posts that could be scheduled in advance. I started posting daily on the second week of October, and have kept it up since, I&amp;rsquo;m at more than 60 posts now, so the habit has already stuck longer than the last attempt. I find that between the long list of post ideas I already had (some 600+ in total), &lt;a href=&#34;https://mirror.roytang.net/2018/12/benefits-of-walking/&#34;&gt;my daily walks&lt;/a&gt; and the fact that &lt;a href=&#34;https://mirror.roytang.net/2018/11/expanding-horizons/&#34;&gt;I&amp;rsquo;m a voracious internet reader&lt;/a&gt;, it was actually quite easy to maintain a continuous stream of posts to write.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t spend too much time on each post, maybe 30 minutes at most, sometimes much less. On a good day I can knock off up to five posts. I find that most of my recent posts clock in under 1,000 words, which I think is perfectly reasonable. I think my increased participation in internet debates back during the 2016 election period also made me more willing to post opinions online.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re writing to become a &amp;ldquo;professional blogger&amp;rdquo; of some sort, or otherwise trying to optimize for engagement or such, &lt;a href=&#34;https://smartblogger.com/posting-every-day/&#34;&gt;daily posting might not be such a good idea&lt;/a&gt;. The front page of this blog changes every day, and I don&amp;rsquo;t have a search function at the moment, so it&amp;rsquo;s not straightforward to find something you miss.&lt;/p&gt;
+&lt;p&gt;I of course write mostly for myself, though I do appreciate it when I find out people are reading the blog. I prefer posts that I can look back to in a few years to remember what was going on with me at the time. I try to write about things I&amp;rsquo;m doing, shows I&amp;rsquo;m watching, projects I&amp;rsquo;m trying out, games I&amp;rsquo;m playing, opinions on current events, and generally random thoughts going through my head and so on. I find that the daily writing, like the daily walking, helps improve my thinking processes. And it often encourages me to be a bit more experimental - I can try things out and even if I fail, the floor is that I have a story for a blog post. There is also less pressure for new posts to be super deep or meaningful or otherwise with my daily blogging, there is no room for perfectionism to get in the way.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know how long I can keep this up on a daily basis. I&amp;rsquo;ll try to revisit this after a year maybe to see how far I&amp;rsquo;ve gone.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2018/11/9u47nt/</link>
+            <pubDate>Sun, 04 Nov 2018 23:34:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/11/9u47nt/</guid>
+            <description>
+            
+
+            &lt;h4 id=&#34;posted-on-rwriting-would-it-make-sense-to-practice-writing-short-stories-first-before-trying-for-a-novelhttpsredditcomrwritingcomments9u47ntwould_it_make_sense_to_practice_writing_short&#34;&gt;Posted on r/writing: &lt;a href=&#34;https://reddit.com/r/writing/comments/9u47nt/would_it_make_sense_to_practice_writing_short/&#34;&gt;Would it make sense to practice writing short stories first before trying for a novel?&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Or are they completely different skillsets?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Written a novel and want to &#34;get rid&#34; of it...&#39; on /r/writing at https://reddit.com/r/writing/comments/9gurja/written_a_novel_and_want_to_get_rid_of_it/:
+</title>
+            <link>https://mirror.roytang.net/2018/09/e67aq1c/</link>
+            <pubDate>Tue, 18 Sep 2018 16:48:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/09/e67aq1c/</guid>
+            <description>
+            Reply to &amp;#39;Written a novel and want to &amp;#34;get rid&amp;#34; of it...&amp;#39; on /r/writing at https://reddit.com/r/writing/comments/9gurja/written_a_novel_and_want_to_get_rid_of_it/:
+
+            &lt;p&gt;Save it to Google Drive and forget about it.&lt;/p&gt;
+&lt;p&gt;Side note: Do writers really just only have their drafts on their hard drive and not stored on the cloud?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Blogging and the Decentralized Internet
+</title>
+            <link>https://mirror.roytang.net/2018/08/blogging-and-the-decentralized-internet/</link>
+            <pubDate>Tue, 14 Aug 2018 15:36:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2018/08/blogging-and-the-decentralized-internet/</guid>
+            <description>
+            
+            &lt;p&gt;(Somehow I now have a series of posts about blogging in 2018. Here&amp;rsquo;s &lt;a href=&#34;https://roytang.net/2017/06/blogging-and-social-media/&#34;&gt;the first one&lt;/a&gt;. Two is a series, right?)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://np.reddit.com/r/technology/comments/96ug3n/vimeo_just_decided_to_remove_content_from/e43gtq8/?context=1&#34;&gt;Great comment&lt;/a&gt; the other day on reddit (found via r/bestof), in response to &lt;a href=&#34;https://www.theverge.com/2018/8/9/17669144/twitter-alex-jones-jack-dorsey-del-harvey&#34;&gt;Twitter&amp;rsquo;s inaction vs Alex Jones&lt;/a&gt;. Quoting part of the comment:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;
+  &lt;p&gt;
+    How can the OG generation of web users possibly hope to maintain the Internet as a free and decentralized medium when a growing majority &lt;em&gt;of the current userbase&lt;/em&gt; accept centralization of content and audience, as not only the status quo but as the way things &lt;em&gt;should be&lt;/em&gt;? To such an extent that they make the perverse argument that YouTube shouldn&#39;t be able to ban people for inciting violence?
+  &lt;/p&gt;
+  &lt;p&gt;
+    2007 (or possibly earlier) was the end of the personal Internet and the beginning of the corporate silo Internet. People from 1997 would be totally confused that everyone visits ONE SITE to participate in forum discussions. The 1997 way of doing things would be two hundred different forums for subject interests and if you wanted to find another one you would have to Ask Jeeves or use a web ring. People from 1997 would be &lt;em&gt;appalled&lt;/em&gt; that Reddit not only doesn&#39;t ban Stormfront, we let them run communities &lt;em&gt;under our noses&lt;/em&gt; like redpill and the D (or gradually take them over, like tumblrinaction and cringepics). But the bitterness in our cup, we mixed for ourselves: this is the logical consequence of &#34;wouldn&#39;t it be great if all forums were just a click away from each other?&#34; Why have forums when you can have THE forum? And then let&#39;s put a corporation in charge of it, a corporation that&#39;s too much of a fucking pussy to actually take action against evil that&#39;s happening on their watch -- except sporadically, hypocritically and only when the media spotlight burns too bright.
+  &lt;/p&gt;
+  &lt;p&gt;
+    So, sure, the Jones defenders are half right in that the modern internet is a corruption of the original Dream of the Web: far from a decentralized &#34;web&#34; of users, everything now is a natural monopoly, and the corporations rent the actual function of the Internet back to us, piecemeal. We are no longer a web, but a series of watering holes.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I miss the decentralized internet of 2007 that the comment above alludes to. A few weeks ago I was cleaning up some old files and found a list of blogs I used to follow. Most of them are dead now, either unavailable or no updates in years. Probably the owners thought &amp;ldquo;what&amp;rsquo;s the point&amp;rdquo; and started hanging out in one of the corporate silos instead. Some of them were people I knew IRL, while others were strangers I met or online or whose blogs I stumbled upon and found interesting enough to follow.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Slight tangent 1: Hill I am willing to die on: a &lt;em&gt;blog&lt;/em&gt; is a website with a series of posts, often reverse chronological nature. A &lt;em&gt;blog post&lt;/em&gt; is a single post on a blog.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Understandably, running and maintaining your own blog isn&amp;rsquo;t for everybody; it&amp;rsquo;s much easier to set up a Facebook page or a Twitter account or a subreddit and just post everything there, and that&amp;rsquo;s fine. But what&amp;rsquo;s disappointing is the lack of open interoperability between these channels that makes it difficult for smaller sites to operate independently of the large behemonths.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slight tangent 2: I miss RSS, I really wish it took off. I mean, fundamentally, sites like Facebook and Twitter aren&amp;rsquo;t that much different from feedreaders of yore (Okay, I still use a feedreader, it&amp;rsquo;s &lt;a href=&#34;https://feedly.com/&#34;&gt;Feedly&lt;/a&gt;), except we&amp;rsquo;d probably need to expand the protocol to standardize on reply/commenting systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;4.5. If you want to give RSS a slight boost, &lt;a href=&#34;https://opml.glitch.me/&#34;&gt;there&amp;rsquo;s a tool&lt;/a&gt; I found recently that lets you export URLs from your twitter follows to an OPML that you can import to an RSS reader. It&amp;rsquo;s net!&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;With Twitter&amp;rsquo;s current Alex Jones problem and the recent troubles at Facebook, I&amp;rsquo;ve been looking into some interesting approaches to decentralized/federated social media. One that I found interesting is &lt;a href=&#34;https://joinmastodon.org/&#34;&gt;Mastodon&lt;/a&gt;. I currently have an account, &lt;a href=&#34;https://mastodon.social/@roytang&#34;&gt;@roytang@mastodon.social&lt;/a&gt;, not sure if I&amp;rsquo;ll migrate to a different server at some point. It&amp;rsquo;s much less toxic than Twitter, and I&amp;rsquo;m especially fond of their &lt;a href=&#34;https://blog.joinmastodon.org/2018/07/cage-the-mastodon/&#34;&gt;declared philosophy re: abuse and harassment&lt;/a&gt;. However, there isn&amp;rsquo;t that much interesting content yet, at least as far as I can tell. If you know of someone interesting to follow on Mastodon, tell me about it!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;5.5. Andy Baio of &lt;a href=&#34;https://waxy.org/&#34;&gt;waxy.org&lt;/a&gt; recently posted an interesting &lt;a href=&#34;https://twitter.com/waxpancake/status/1027793032676962305&#34;&gt;tweetstorm talking about how it was in the early days of Twitter and how Mastodon feels by comparison&lt;/a&gt;.&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;I run a personal blog with very few readers (I&amp;rsquo;m fine with that), and I use social media cross-posting to notify Twitter followers and Facebook friends when I have new posts. Or at least I used to, until Facebook recently pulled the plug on their APIs that now make it impossible to autopost from Twitter. I&amp;rsquo;m tempted to stop crossposting altogether lol. (At the very least I know there&amp;rsquo;s at least one person that reads my blog without me posting the link to Facebook, so that&amp;rsquo;s nice.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There&amp;rsquo;s a kind of relevant Oatmeal comic about this &lt;a href=&#34;http://theoatmeal.com/comics/reaching_people&#34;&gt;here&lt;/a&gt;. (Not that I produce anywhere near as good content as Oatmeal does but w/e)&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;All hope is not lost though, there are still people out there blogging tirelessly. A while back I found quite a few interesting blogs from a &lt;a href=&#34;https://mailchi.mp/kottke/blogging-is-not-dead-edition-2575912502&#34;&gt;Kottke post&lt;/a&gt;. One of the ones I like best is &lt;a href=&#34;https://karigee.com/&#34;&gt;karigee.com&lt;/a&gt;, and she puts it quite well as to why she still blogs (this quote also conveniently quoted in the same Kottke post above):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;
+  &lt;p&gt;
+    I also keep it out of spite, because I refuse to let social media take everything. Those shapeless, formless platforms haven&#39;t earned it and don&#39;t deserve it. I&#39;ve blogged about this many times, but I still believe it: When I log into Facebook, I see Facebook. When I visit your blog, I see you.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think it&amp;rsquo;s highly unlikely that we get anything close to the decentralized internet back. The internet trend of megacorps and centralization and consolidation is reflective of real-life trends after all (capitalism and economics of scale and mass consumerism and all that seem to point in this direction.) But that doesn&amp;rsquo;t mean we can&amp;rsquo;t keep writing our blogs.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Blogging and Social Media
+</title>
+            <link>https://mirror.roytang.net/2017/06/blogging-and-social-media/</link>
+            <pubDate>Mon, 05 Jun 2017 01:30:42 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/06/blogging-and-social-media/</guid>
+            <description>
+            
+            &lt;p&gt;I haven&amp;rsquo;t been blogging too much recently. I got busy for a while and had to skip a few weeks, and then general laziness prevented me from resuming a regular posting schedule. (Hopefully that ends now.) Most of the time my ranting was on social media, which got me thinking: Is writing on your own blog still useful in this day and age of social media?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been blogging for a long time &amp;ndash; my archives say 2002 &amp;ndash; waaay before Facebook or even Twitter came around. If for some reason you felt like digging through my older posts you&amp;rsquo;d find that I kind of used the blog like Twitter or FB: I&amp;rsquo;d have some short posts, updates about what&amp;rsquo;s going on, share some links, and so on. These days we have social media for that, so why blog at all?&lt;/p&gt;
+&lt;p&gt;Well, social media is a perfectly valid channel to post your thoughts obviously. But I feel like blogging serves a different purpose. And when I say blogging, I mean on a platform dedicated to blogging, preferably on your own server.&lt;/p&gt;
+&lt;p&gt;Here are the obvious differences/advantages of blogging:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Blogs are publicly accessible commentary. Contrast this with Facebook, which I use mostly for interacting only with family and friends. I sometimes make some FB posts public, but mostly on request because people want to share it. It would make more sense for me to have such content on the blog so that people can share it directly without me having to fiddle with post privacy settings on FB.&lt;/li&gt;
+&lt;li&gt;Blogs are long-form. Contrast this with Twitter&amp;rsquo;s post-length limitation and even Facebook where I also tend to spout out one-liners or short paragraphs. I like a blog post for longer, more detailed content. Twitter users use workarounds like the &amp;ldquo;1/N&amp;rdquo; format to post longer text content, but I&amp;rsquo;m not really a big fan of that.&lt;/li&gt;
+&lt;li&gt;A blog should contain your own content. Contrast this with almost all social media where your own content is interspersed with retweets, shares, reblogs, and so on.&lt;/li&gt;
+&lt;li&gt;Blogs are searchable, either using your internal search form (I have one on the sidebar!) or via Google search. It&amp;rsquo;s a bit annoying sometimes trying to scroll through your FB or Twitter timeline trying to find something.&lt;/li&gt;
+&lt;li&gt;The above point means social media posts feel a lot more&amp;hellip;  ephemeral, maybe? I consider blog posts a lot more &amp;ldquo;permanent&amp;rdquo;, while social media are more of &amp;ldquo;at this point in time.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Blogs are under your control. You&amp;rsquo;re not subject to someone else&amp;rsquo;s moderation. Of course that also means you&amp;rsquo;re on your own if you get DDOS&amp;rsquo;ed or such hehe. Well, there&amp;rsquo;s pros and cons of course.&lt;/li&gt;
+&lt;li&gt;You can still push your blog content to your other social media channels. I have systems set up to push my blog posts to Twitter, Facebook and Tumblr.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That being said, the various social media channels have their pros too, so I still use them for various purposes. &lt;em&gt;(I thought about splitting this blog post into two, but I literally just wrote about long-form content, so let&amp;rsquo;s try to justify that a bit!)&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Facebook &amp;ndash; I use this mainly to interact with friends and family and for sharing family pictures. There was a thread on reddit a while back about how a lot of people recommend quitting FB (or even social media altogether) since it&amp;rsquo;s not good for your self-esteem to be always checking how other people are doing. I find that this is really only an issue for people who already have low self-esteem and feel a need to compare themselves to other people (I guess teenagers mostly?). I don&amp;rsquo;t have any such issues. I like seeing how my friends are doing even if they&amp;rsquo;re people I don&amp;rsquo;t see often anymore and it gives you good convo material when you randomly run into them. I also tend to share on FB things I know will interest my friends and family, or at least some subgroup of them: family pictures, tech stuff, hobby stuff (gaming/MTG/comics), cat pictures, puns, memes, etc. I try not to dive into public groups too much, since FB has a low barrier of entry, the content/discussion is not that good IMO. My public Facebook profile is &lt;a href=&#34;https://www.facebook.com/stephen.roy.tang&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Twitter &amp;ndash; my twitter stream is public. I use it for interacting with strangers. (Sophie Turner never replied to me that one time!). Twitter has a higher barrier of entry compared to FB, so the discussion is a bit higher quality. When posting to Twitter, it&amp;rsquo;s typically a stream of consciousness thing for me &amp;ndash; I just randomly decide to post things. On FB I tend to filter myself a bit as I don&amp;rsquo;t want to be too spammy, but on Twitter, I spam away about what I&amp;rsquo;m doing. If I&amp;rsquo;m playing in a big Magic tournament I&amp;rsquo;ll probably be tweeting every round about my horrible misplays. I will oft tweet about games I&amp;rsquo;m playing, books I&amp;rsquo;m reading, and so on. Same philosophy applies to sharing/retweeting: it&amp;rsquo;s a lot more impulsive, I&amp;rsquo;ll just share anything that looks interesting. My twitter feed is basically my FB feed except with less pics of people I know and more random thoughts throughout the day. If that sounds like your kind of thing, my twitter profile is &lt;a href=&#34;https://twitter.com/roytang&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Instagram &amp;ndash; quick story about how I got an instagram account. I tried to create one but found out that someone had already registered an account using my email. Of course I went ahead and used password recovery to take control of the account. It wasn&amp;rsquo;t very active so he probably didn&amp;rsquo;t mind, although I think some of his followers still follow me lol. I mostly post pics of food, board games, sketches, or random things I buy. You can view my instagram &lt;a href=&#34;https://www.instagram.com/roytang0400&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Reddit &amp;ndash; I use reddit more for content consumption. It can be shallow sometimes, but you can also find some good/witty/insightful convos. If I want to find some discussion about recent events or tv shows or movies, reddit is always a good place to look. The barrier to entry here is very high, so discussion tends to be higher quality than either FB or Twitter. &lt;em&gt;(Still lots of shitposting though, that&amp;rsquo;s the internet for you.)&lt;/em&gt; I don&amp;rsquo;t publicly acknowledge my reddit profile, but it&amp;rsquo;s very easy to find haha.&lt;/li&gt;
+&lt;li&gt;Tumblr &amp;ndash; just random odds and ends. It&amp;rsquo;s not very important, but I do have it. I used to use it only to reshare tumblr content I found amusing, but these days I also push sketches and blog posts to &lt;a href=&#34;http://tumblr.roytang.net/&#34;&gt;my tumblr&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;LinkedIn &amp;ndash; terrible! I&amp;rsquo;m not a fan of LinkedIn, as it seems to be mainly a way to get harassed by recruiters who didn&amp;rsquo;t even bother reading my profile. Still, it occasionally has a use so I keep it around and update &lt;a href=&#34;https://www.linkedin.com/in/roytang/&#34;&gt;my profile&lt;/a&gt; sometimes.&lt;/li&gt;
+&lt;li&gt;Quora &amp;ndash; I&amp;rsquo;ve been reading Quora for a while now but recently also started answering questions every so often as a bit of writing practice.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Takeaways: Blogging is great, even if you&amp;rsquo;re already using social media. Try it out! Social media has its place too, but don&amp;rsquo;t let it control your life!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Write Smarter, Not Harder
+</title>
+            <link>https://mirror.roytang.net/2017/02/write-smarter-not-harder/</link>
+            <pubDate>Tue, 21 Feb 2017 01:30:57 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/02/write-smarter-not-harder/</guid>
+            <description>
+            
+            &lt;p&gt;There&amp;rsquo;s this well-known idea that it takes ten thousand hours of practice to become an expert in something. But of course, it has to be ten thousand &lt;em&gt;meaningful&lt;/em&gt; hours of practice. Meaningful here means that you are actually learning something from your practice. If you are repeating the same hour ten thousand times, that&amp;rsquo;s not worth very much.&lt;/p&gt;
+&lt;p&gt;Instead, we should be actively learning while we practice. This means identifying our weak points and learning how we can improve. It requires that we have a feedback loop that tells us whether we are doing well or not. It also means taking on bigger and more challenging tasks. Only then can we walk the path to expertise.&lt;/p&gt;
+&lt;p&gt;As an example, I&amp;rsquo;ve been posting on this blog on a regular basis since 2016. Aside from that, I&amp;rsquo;ve also been trying to write fiction in my spare time. So I figure I&amp;rsquo;m getting a lot of writing practice and I&amp;rsquo;m doing well, right?&lt;/p&gt;
+&lt;p&gt;I recently took an online exam about how well I would do in editing work. Now, I&amp;rsquo;m pretty confident in my grammar and spelling, so it was no surprise that I got perfect scores in those categories. Yet I got poor scores in diction and sentence parallelism and style and such things. My overall score was still above average, but the test highlighted some weaknesses that I can work on.&lt;/p&gt;
+&lt;p&gt;To help with those, I&amp;rsquo;ve started going through the &lt;em&gt;Chicago Manual of Style&lt;/em&gt;. It&amp;rsquo;s a bit boring, especially near the start, but I&amp;rsquo;m learning a lot. I also found out about this &lt;a href=&#34;http://www.hemingwayapp.com/&#34;&gt;webapp Hemingway&lt;/a&gt; which scores your writing for readability issues. I&amp;rsquo;ve found it pretty useful &amp;ndash; already I can see that my blog posts use way too many adverbs and have a lot of hard-to-read sentences.  My &lt;a href=&#34;https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/&#34;&gt;2016 Nanowrimo&lt;/a&gt; manuscript got a higher score on this app compared to my posts though. (But I&amp;rsquo;m not proud of that work for nontechnical reasons haha). I&amp;rsquo;m also looking into a few other tools that can give me some feedback on how good my writing is.&lt;/p&gt;
+&lt;p&gt;The best feedback of course, would be from those of you who for some reason deign to read my posts. I already corrected my tendency to not end paragraphs with punctuation since someone called me out on it. So I would appreciate any further feedback about how I write and where I can improve.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Nine Ways to Work Around Mental Blocks
+</title>
+            <link>https://mirror.roytang.net/2016/12/nine-ways-to-work-around-mental-blocks/</link>
+            <pubDate>Tue, 13 Dec 2016 01:30:25 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2016/12/nine-ways-to-work-around-mental-blocks/</guid>
+            <description>
+            
+            &lt;p&gt;Often I have these days where I&amp;rsquo;m supposed to be writing something or drawing something or coding something and I just can&amp;rsquo;t get to it. Some kind of mental block makes it difficult. And you try to focus your mind and clear your thoughts, but it just doesn&amp;rsquo;t help. Here are some ideas for how to get past mental blocks.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#e7d6428a7cf3316cfd66c49ae41ea69c-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/12/nine-ways-to-work-around-mental-blocks/mentalblock_hu9ec32a0be2623f4d80d121a3b855ad83_757392_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;e7d6428a7cf3316cfd66c49ae41ea69c-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/12/nine-ways-to-work-around-mental-blocks/mentalblock.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;13 Dec 2016 1:30am&#34;&gt;13 Dec 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Toss out ideas that weren&amp;rsquo;t working and start over.&lt;/strong&gt; One example is today&amp;rsquo;s blog post. I promised myself I would be posting regularly, so I had to have one today. But after a couple of failed attempts that just couldn&amp;rsquo;t come together, I had to stop and ask myself what was wrong. I just wasn&amp;rsquo;t in the mood for any of the other serious topics I wanted to write about so I said screw it, I&amp;rsquo;ll just write about mental blocks!&lt;/li&gt;
+&lt;li&gt;**Phone it in. **If you&amp;rsquo;re unfamiliar, the expression means &amp;ldquo;just do the bare minimum you&amp;rsquo;re allowed to do.&amp;rdquo; Just power through the work with as little effort as possible. You can always go back and edit it later if you want! I often do this with the daily sketches &amp;ndash; I try to stay on theme and at the same time find something interesting or clever to draw. But I&amp;rsquo;m not always successful, and I sometimes don&amp;rsquo;t have enough time. So I&amp;rsquo;ll just draw whatever that barely makes the theme and send it in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If you have some time, step away from the work for a bit.&lt;/strong&gt; Take a shower. Poop. Argue with people over the internet. Watch some &lt;em&gt;Brooklyn Nine Nine&lt;/em&gt;. Play some _Skyrim. _Just get your mind off the work. It gives your subconscious mind a chance to work on the problems in the background and later you can come back to the work with fresh eyes and hopefully better ideas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cheat.&lt;/strong&gt; Find someone who&amp;rsquo;s done something similar before and copy, er I mean, draw inspiration from her work!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make a long list of ideas&lt;/strong&gt;. Just random, stupid, ideas, as many as you can think of, as soon as they pop into your head. You&amp;rsquo;re throwing spaghetti at the wall and trying to see what sticks!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do the easy stuff first, then get back to the hard stuff later&lt;/strong&gt;. I did this during &lt;a href=&#34;https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/&#34;&gt;my Nanowrimo this year&lt;/a&gt;! Whenever I had too much difficulty writing a scene, I would set it aside for a while and choose some other scene that I had already mostly plotted out in my head. You might think &amp;ldquo;Doesn&amp;rsquo;t that just mean I&amp;rsquo;ll have more hard stuff to do later?&amp;rdquo; Yes, yes it does, but also means that hard stuff will have a whole lot of easy stuff already written to support it, which can make things easier.&lt;/li&gt;
+&lt;li&gt;**Use random content generators. **There&amp;rsquo;s a bunch of them on the internet! For writing, I sometimes use random name generators to help me out. There&amp;rsquo;s also random plot generators and random dialogue generators and so on. Most of the time you&amp;rsquo;ll get nonsense, but just clicking through those nonsense options can give you an inspiration for your own creative needs.&lt;/li&gt;
+&lt;li&gt;**Change it up. **If you&amp;rsquo;re drawing, try drawing in a different style than you usually do. If you&amp;rsquo;re writing a story, try to throw in a random scene that&amp;rsquo;s a completely different style and makes no sense. If you&amp;rsquo;re blogging, write a post about something you&amp;rsquo;ve never written about before, or in a style you&amp;rsquo;ve never used. Like a listicle!&lt;/li&gt;
+&lt;li&gt;**Ask for help. **In software development, there&amp;rsquo;s a concept called &lt;a href=&#34;https://en.wikipedia.org/wiki/Rubber_duck_debugging&#34;&gt;&amp;ldquo;Rubber Duck Debugging&amp;rdquo;&lt;/a&gt;, or sometimes simply &amp;ldquo;Rubber Ducking&amp;rdquo;. The idea is that by asking other people for help, even if the other person is completely useless, the mere act of describing your problem helps you think through it and unlocks new ideas. As a bonus, sometimes the other person can actually be helpful!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/12/nine-ways-to-work-around-mental-blocks/mentalblock_hu9ec32a0be2623f4d80d121a3b855ad83_757392_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Nanowrimo 2016 Post-Mortem
+</title>
+            <link>https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/</link>
+            <pubDate>Tue, 06 Dec 2016 01:30:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/</guid>
+            <description>
+            
+            &lt;p&gt;As I recall, today was at least my fifth &lt;a href=&#34;http://nanowrimo.org&#34;&gt;Nanowrimo&lt;/a&gt; attempt; the first one was sometime before 2003 (I would guess it was in 2000 or 2001 before I graduated from college), the second one was in 2003, then 2006, then 2011, then finally the fifth one this year. My best prior attempt was back in 2011, when I made it up to 22,000+ words.&lt;/p&gt;
+&lt;p&gt;At just around 1am on the early morning of November 30th this year, I beat that record and have won Nanowrimo for the first time. I wrote more than 3,000 words from the last hours of the 29th up to the early hour of the 30th to push across the target count. According to the official word count tool on the site, I am at 50,135 words. The novel is terrible and it will never see the light of day as it is, but it has a start, it has a plot that it follows to the end, and it has an ending which while I&amp;rsquo;m not totally happy with, is good enough for a first draft.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://d1lj9l30x2igqs.cloudfront.net/nano-2013/files/2016/11/NaNoWriMo_2016_WebBanner_Winner.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Getting the obvious question out of the way first: no, I&amp;rsquo;m not going to release or publish the draft as it is. Way too many problems (more on that below), even though I tried to resolve things and tie them together best as I can. The nature of nanowrimo itself means that novels written for this purpose tend to be all kinds of messy, since you are not encouraged to rewrite previously written parts. At some point I will revisit this story and attempt to rework it into something better, but for now, I&amp;rsquo;m just happy to be done and will set it aside for now.&lt;/p&gt;
+&lt;p&gt;I think there are two reasons that this attempt succeeded where previous attempts had failed: First is that I came in significantly more prepared this time than my last attempts since I actually had a story idea and an outline for what I had in my head. Granted, I had to expand and add upon that outline multiple times, but at least I had something decent to start with. Second reason is that I believe I have significantly more self-discipline this time around, as a result of all of the daily habits I&amp;rsquo;ve taken up this year. I&amp;rsquo;m less likely to skip writing for a day due to laziness or being sad about world events or whatever, and more likely to drag myself out of bed to force myself to write some number of words for the day.&lt;/p&gt;
+&lt;p&gt;What struck me about the process is the number of parallels I could draw to software development:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In software development, you need some sort of specifications or requirements to get going, and work proceeds smoothly the more detailed those specs are. When writing, having your outline and a vision of what happens in the story makes writing go by faster and more smoothly; when I get to parts that I have not planned out in detail I tend to flounder about until I can figure it out.&lt;/li&gt;
+&lt;li&gt;Scope creep happens in writing too! My initial story idea was about a wandering sell-sword who passes by a small rural village and gets caught up in trying to resolve a &amp;ldquo;curse&amp;rdquo; that the villagers believe they are under. But at the outline stage I already knew it was too short (I couldn&amp;rsquo;t list enough scenes), so I expanded it a bit with a backstory that the protagonist was actually a fugitive and although he stops to help the villagers with good intentions, he draws them into his troubles when his pursuers chance upon him. As I wrote, I realized I needed even more details so I found myself weaving a more detailed plot about how he became a fugitive because he had unwittingly uncovered a political plot and had to escape with a certain artifact, which led to me detailing the back story of that artifact that turned into a mythos and history for the world the story was set in. Yup, it escalated pretty quickly.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a famous quote in software development that mentions one of the difficult problems as naming, and in writing, the same applies! I made liberal use of online random name generators for characters, cities, continents, etc. Midway through, I had to rename a couple of the main characters (lots of find and replace) and three timesI even renamed the main continent on which the story takes place, and I&amp;rsquo;m still not happy with what I have now.&lt;/li&gt;
+&lt;li&gt;When writing large programs, I have a tendency to code the interesting bits first, then I&amp;rsquo;m left with a whole lot of drudgery such as boilerplate code or CRUD screens to do. Writing turns out to be the same, I wrote a lot of the interesting scenes first then deferred those I had trouble with or hadn&amp;rsquo;t figured out too well. It led to some problems; if you saw my draft you would notice some points where the story jumps forward abruptly leaving the reader to infer what had happened in between. Those were points where I had difficulty deciding how to get from point A to point B and just decided to write the other end first and try to work backwards, but never did figure it out completely.&lt;/li&gt;
+&lt;li&gt;When programming, you can get too engrossed in a particular part of the program such that you put too much work into it which turns out to be unnecessary. In this draft, I enjoyed writing the world&amp;rsquo;s mythos and back story a bit too much, I kind of set the framework for a series of stories in the same world, and some of the back story parts are better off told in succeeding books since they are not especially relevant to the plot of this one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some other non-programming related notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Towards the start, I felt like I was writing too much dialogue (might have been a result of reading too many Brian Michael Bendis comics) and later on I adjusted by writing more prose. This also helped for some difficult moments, for example I had two characters where I wanted to get them into a shouting match but had trouble writing the dialogue to develop it, so instead I just used prose to describe the increasing tension of their discussion.&lt;/li&gt;
+&lt;li&gt;I made a silly decision early on to give the main character a speech affectation &amp;ndash; he spoke in an archaic formal speech that was unusual for people in that region. It wasn&amp;rsquo;t a big deal and there was a story reason for it and it made him feel more distinctive, but it also meant I had to be more careful later on when writing dialogue for the character.&lt;/li&gt;
+&lt;li&gt;Making up some elements on the fly kind of got in my way; about 70% through I suddenly had the bright idea that a &amp;ldquo;good&amp;rdquo; character I had alluded to in an earlier flashback would actually be the &amp;ldquo;big bad&amp;rdquo; who was behind the conspiracy all along. This was fine, but it led to some plot acrobatics where I had to engineer some complicated scenarios to justify my decision, and it meant my ending had to be a bit different from what I had previously wanted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Having the daily quota was a strange experience. I was over quota most days, but also had some days where I was under quota. I found myself preferring to write in scenes, such that I won&amp;rsquo;t switch scenes within the same day, so some scenes felt like they were a bit too long because I was stretching them to fit in the writing quota for that day. And the quota also meant that whenever I was already over quota for a certain day but still had a clear idea of what to write, I had the option to stop and just &amp;ldquo;bank&amp;rdquo; those thoughts and continue the scene the next day. I never tried to pull too far ahead (except for the last two days); I figured I needed to get used to the rhythm of writing a set amount per day, instead of in bursts as I might have done in previous attempts.&lt;/p&gt;
+&lt;p&gt;I tracked my daily progress via a spreadsheet (word counts are using Google Docs&amp;rsquo; built-in word count tool. The nano site&amp;rsquo;s word count tool had a different final count for some reason.)&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href=&#34;#8692cb36eda5dd1826778cba76f36d8a-lightbox&#34;&gt;
+    &lt;figure&gt;
+      &lt;img src=&#34;https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/dailynano_hu9017eac2b6e8b6500207504aad84fccf_40655_300x0_resize_box_2.png&#34; alt=&#34;&#34; title=&#34;&#34; class=&#34;tn&#34; /&gt;
+      &lt;figcaption&gt; (Click to view full-size)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/a&gt;
+&lt;div class=&#34;lightbox&#34; id=&#34;8692cb36eda5dd1826778cba76f36d8a-lightbox&#34; style=&#34;display: none;&#34;&gt;
+  &lt;a href=&#34;#_&#34;&gt;
+    &lt;img src=&#34;https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/dailynano.png&#34; /&gt;
+  &lt;/a&gt;
+  &lt;div class=&#34;lightbox_overlay&#34;&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;time class=&#34;dt-published&#34; datetime=&#34;6 Dec 2016 1:30am&#34;&gt;6 Dec 2016 1:30am&lt;/time&gt;&lt;a href=&#34;#_&#34;&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;All in all, I&amp;rsquo;m happy with the experience, despite not being entirely happy with my own output. I learned a lot and now have a better sense of how long fifty thousand words actually is and what size a novel-size story really should be. I now have some idea of how quickly I can write, and how much &amp;ldquo;writing energy&amp;rdquo; I can spare for a day (I was actually in danger of falling behind on regular blogging at one point because I spent all my &amp;ldquo;writing energy&amp;rdquo; on nanowrimo.) I say &amp;ldquo;writing energy&amp;rdquo; because I find that I draw from a different pool of energy as compared to say, when I&amp;rsquo;m sketching. It&amp;rsquo;s probably not super indicative &amp;ndash; I could probably have been writing more each day if I spend more time in preparation and outlining.&lt;/p&gt;
+&lt;p&gt;I &lt;strong&gt;will&lt;/strong&gt; attempt to write more in 2017, but maybe not yet on revising this particular work. I have some other ideas I&amp;rsquo;m thinking of visiting, not necessarily for nanowrimo. I don&amp;rsquo;t know if this will lead anywhere &amp;ndash; I still have no idea if I could really write fiction for a living for example &amp;ndash; but I think at least trying to write more will be a worthy endeavor to explore.&lt;/p&gt;
+
+
+
+&lt;img src=&#34;https://mirror.roytang.net/2016/12/nanowrimo-2016-post-mortem/dailynano_hu9017eac2b6e8b6500207504aad84fccf_40655_300x0_resize_box_2.png&#34; /&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>On writing regularly and reading comic books
+</title>
+            <link>https://mirror.roytang.net/2012/11/on-writing-regularly-and-reading-comic-books/</link>
+            <pubDate>Sat, 24 Nov 2012 10:58:34 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2012/11/on-writing-regularly-and-reading-comic-books/</guid>
+            <description>
+            
+            &lt;p&gt;Writing regularly is something I&amp;rsquo;ve always wanted to be able to do but like most things I have trouble with, it&amp;rsquo;s the lack of discipline that gets me.&lt;/p&gt;
+&lt;p&gt;Take this blog for instance. I randomly think of things to write about while I&amp;rsquo;m idling or commuting or waiting in line or any of the dozen or so other opportunities during the day when my mind wanders, but because of laziness and/or lack of discipline, these ideas never get very far. I think one of the problems is that because this is a personal blog, I don&amp;rsquo;t have any focus. That is, in this space I can literally write about anything I want so I end up not writing anything. Does that make sense?&lt;/p&gt;
+&lt;p&gt;Anyway what I decided was: I&amp;rsquo;ll just start a new blog. What the hell right? But this time, I&amp;rsquo;ll focus on a topic for the blog. Restrictions breed creativity, or something. I needed to choose a topic that (a) I was fairly knowledgeable and passionate about; and (b) I would have something regarding that topic to write about on a regular basis. I&amp;rsquo;ve actually tried this before for Magic the Gathering, since I pretty much enjoy that game a lot, but the problem with MTG was that I was an irregular player and rarely had something new to write about. So I&amp;rsquo;m going to choose something else right now.&lt;/p&gt;
+&lt;p&gt;The easiest area that covers the above requirements for me right now is easily reading comic books. I read a ton of them and I enjoy them and I follow the regular weekly releases and am usually excited for the next week of releases. So it seems like something I would be able to write regularly about. So, here we go: &lt;a href=&#34;https://mirror.roytang.net/source/ireadcomicbooks&#34;&gt;I Read Comic Books&lt;/a&gt; (originally I was just going to go with a wordpress.com site, but I was like aw what the hell, domains are cheap)&lt;/p&gt;
+&lt;p&gt;Hopefully it helps me get into the groove of regular writing, and somehow that groove propagates back to this blog.&lt;/p&gt;
+&lt;p&gt;(Edit 2020: I no longer have the ireadcomicbooks.com domain, but all posts from that blog have been imported into this one. The link above has been updated as well.)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Coming Back to Writing
+</title>
+            <link>https://mirror.roytang.net/2010/06/coming-back-to-writing/</link>
+            <pubDate>Mon, 07 Jun 2010 00:03:21 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/06/coming-back-to-writing/</guid>
+            <description>
+            
+            &lt;p&gt;So the other day I was watching a video of &lt;a href=&#34;http://scottberkun.com&#34;&gt;Scott Berkun&lt;/a&gt;‘s talk about the future of WordPress:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Lost flash embed)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Go ahead, watch it first if you like, this blog post will still be here when you get back)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I loved how he delved into the history of writing itself, not just of WordPress &amp;ndash; harking back to the days of the printing press, etc. We live in such a world of privilege where anyone with an internet connection can easily publish his thoughts and words unto a worldwide audience, and yet for many people writing is a lost art that they don&amp;rsquo;t partake in on a regular basis.&lt;/p&gt;
+&lt;p&gt;For the past few months, I&amp;rsquo;ve been one of those people, as I&amp;rsquo;ve neglected to update this blog (aside from a short spurt during the elections). I&amp;rsquo;m still actively posting bite-sized snippets of my brain on &lt;a href=&#34;http://twitter.com/roytang&#34;&gt;twitter&lt;/a&gt; and I even added a new outlet for random internet nonsense on my tumblr account &lt;a href=&#34;http://tumblr.roytang.net&#34;&gt;Easily Distracted&lt;/a&gt; but I&amp;rsquo;ve been lazily avoiding the elaborate writing of long prose.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to find excuses not to write; for the longest time I was considering switching this blog back to WordPress (I&amp;rsquo;m currently running a custom Django-based blog engine of my own creation) and changing the theme, et cetera &amp;ndash; the sort of busy work one gets into when avoiding something else.&lt;/p&gt;
+&lt;p&gt;Have I been avoiding writing? Maybe I&amp;rsquo;d fallen into the trap a lot of people fall into &amp;ndash; thinking that I have nothing useful to say, so I better not just say anything. There&amp;rsquo;s something about staring at a blank text box that you need to fill up that triggers a primitive part of our brains that thinks we should avoid pushing out our thoughts or opinions into the world for fear of being questioned or ridiculed. Maybe it&amp;rsquo;s a holdover from the days that elementary school English teachers would force us to write reaction papers and essays with a required number of words or pages. (Few teachers ask for an N-page paper, they know students will just cheat by using double-space or large fonts.)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also been worried about the sort of things that I write; like a lot of bloggers I somehow fell into the mindset that I should limit myself to a specific set of topics such as software development or Philippine politics or whatever. It&amp;rsquo;s a bit ridiculous, this isn&amp;rsquo;t a topical blog, it&amp;rsquo;s a personal website and I can (and should) write about whatever I damn well please.&lt;/p&gt;
+&lt;p&gt;Sidebar: If you&amp;rsquo;re wondering &amp;ldquo;Why write a blog at all?&amp;rdquo;, try reading &lt;a href=&#34;http://sites.google.com/site/steveyegge2/you-should-write-blogs&#34;&gt;&amp;ldquo;You should write blogs&amp;rdquo; by Steve Yegge.&lt;/a&gt;. Looking over his reasons why not to blog, I don&amp;rsquo;t even have the luxury of claiming I don&amp;rsquo;t have enough time, not since I quit my job. (Hmm, I should probably write about that in a future post&amp;hellip; )&lt;/p&gt;
+&lt;p&gt;So anyway, let&amp;rsquo;s put this ramble to an end. I&amp;rsquo;ll be writing regularly again for now, probably five times a week. Wish me luck!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>A checklist for improving the writing style of technical blog posts ...
+</title>
+            <link>https://mirror.roytang.net/2010/04/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/</link>
+            <pubDate>Thu, 01 Apr 2010 07:58:27 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/04/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://pietro.open-lab.com/2010/02/23/a-checklist-for-improving-the-writing-style-of-technical-blog-posts/&#34;&gt;A checklist for improving the writing style of technical blog posts ...&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>50 Tools that can Increase your Writing Skills &gt;&gt; Dumb Little Man
+</title>
+            <link>https://mirror.roytang.net/2007/04/50-tools-that-can-increase-your-writing-skills-dumb-little-man/</link>
+            <pubDate>Sun, 15 Apr 2007 12:07:30 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2007/04/50-tools-that-can-increase-your-writing-skills-dumb-little-man/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.dumblittleman.com/2006/10/50-tools-that-can-increase-your-writing.html&#34;&gt;50 Tools that can Increase your Writing Skills &amp;gt;&amp;gt; Dumb Little Man&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>On Journalling, or How Hard It Is to Keep Up a Blog
+</title>
+            <link>https://mirror.roytang.net/2005/10/on-journalling-or-how-hard-it-is-to-keep-up-a-blog/</link>
+            <pubDate>Sat, 22 Oct 2005 10:22:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/10/on-journalling-or-how-hard-it-is-to-keep-up-a-blog/</guid>
+            <description>
+            
+            &lt;p&gt;In my line of work, which is to say &amp;ldquo;large-scale database systems&amp;rdquo;, there&amp;rsquo;s always the idea of &amp;ldquo;journalling&amp;rdquo; or the &amp;ldquo;audit trail.&amp;rdquo; Basically, it means that for every transaction of significance, a record is kept of that transaction, stored in a log somewhere, so that should something malefic happen, the logs can be parsed and the trail can be followed, blame can be assigned and countermeasures can be taken.&lt;/p&gt;
+&lt;p&gt;Okay, that&amp;rsquo;s not really limited to large-scale database systems. Any nontrivial software system should have some sort of journalling scheme involved, as printlogging is usually part and parcel of the development process.&lt;/p&gt;
+&lt;p&gt;Ideally, I would wish that life too had a journalling system, one more reliable and less arcane than that gift humans call memory. I sometimes have trouble remembering what I had for breakfast this morning. Okay, that&amp;rsquo;s a lie, I seldom forget about meals less than a week old.&lt;/p&gt;
+&lt;p&gt;But I do have a tendency to forget other things. Tasks to do, people I&amp;rsquo;ve met, appointments I&amp;rsquo;ve set. A Saturday or so (I forget when), I had set a training meeting at 10am. Of course, my job does not require me to be in the office before noon on Saturdays, so I conveniently forgot about the meeting while playing &lt;a href=&#34;http://www.worldofwarcraft.com/&#34;&gt;World of Warcraft&lt;/a&gt;, recalling such appointment only while taking a bath at 10:30am. (Luckily they didn&amp;rsquo;t mide me re-scheding to 11:30)&lt;/p&gt;
+&lt;p&gt;So, frail as our memories are, we resort to other things to keep us on track. Paper, notebooks, to-do-lists, organizers, calendars, cellphones, PDAs, sticky notes and every so often, the proverbial rubber-band-around-the-finger. (Yes, I have done that, and yes I did forget what the rubber band stood for.)&lt;/p&gt;
+&lt;p&gt;Blogging, is of course, one of those outlets, one of those forms of introspection so commonplace on the web nowadays. I started quite some time ago, on another server, and have kept up, a bit sporadically if I might add. I&amp;rsquo;ve never been entirely too sure of my own reasons for blogging. Some parts ego, some parts experimentation, some parts therapy, perhaps some part exhibitionism? In any case, though I have considered several times to abandon this practice, especially when I have been too lazy to pursue it for months on end, I find myself giving it another go eventually. Because life should have an audit trail.&lt;/p&gt;
+&lt;p&gt;Shall I offer some excuse of why I have been so long without an entry? Some vague representations of WoW addiction, business at work or general laziness? I just did.&lt;/p&gt;
+&lt;p&gt;In any case, our story continues&amp;hellip;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Juicy Studio: Readability Test
+</title>
+            <link>https://mirror.roytang.net/2005/04/juicy-studio-readability-test/</link>
+            <pubDate>Tue, 26 Apr 2005 20:44:20 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/04/juicy-studio-readability-test/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.juicystudio.com/fog/index.asp&#34;&gt;Juicy Studio: Readability Test&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Self publishers : Lifehacker
+</title>
+            <link>https://mirror.roytang.net/2005/04/self-publishers-lifehacker/</link>
+            <pubDate>Tue, 26 Apr 2005 20:44:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2005/04/self-publishers-lifehacker/</guid>
+            <description>
+            Shared via delicious:
+    &lt;a href=&#34;http://www.lifehacker.com/software/productivity/self-publishers-100221.php&#34;&gt;Self publishers : Lifehacker&lt;/a&gt;
+
+            
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

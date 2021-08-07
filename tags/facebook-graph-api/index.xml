@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>facebook-graph-api on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/facebook-graph-api/</link>
+      <description>Recent content in facebook-graph-api on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Mon, 29 May 2017 16:07:16 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/facebook-graph-api/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Reply to &#39;Extending a long-lived (60 day) user access token&#39; on stackoverflow at https://stackoverflow.com/questions/39882930/extending-a-long-lived-60-day-user-access-token:
+</title>
+            <link>https://mirror.roytang.net/2017/05/44246624/</link>
+            <pubDate>Mon, 29 May 2017 16:07:16 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2017/05/44246624/</guid>
+            <description>
+            Reply to &amp;#39;Extending a long-lived (60 day) user access token&amp;#39; on stackoverflow at https://stackoverflow.com/questions/39882930/extending-a-long-lived-60-day-user-access-token:
+
+            &lt;p&gt;From &lt;a href=&#34;https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension:&#34;&gt;https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension:&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Refreshing Long-Lived Tokens&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even the long-lived access token will eventually expire. At any point, you can generate a new long-lived token by sending the person back to the login flow used by your web app - note that the person will not actually need to login again, they have already authorized your app, so they will immediately redirect back to your app from the login flow with a refreshed token - how this appears to the person will vary based on the type of login flow that you are using, for example if you are using the JavaScript SDK, this will take place in the background, if you are using a server-side flow, the browser will quickly redirect to the Login Dialog and then automatically and immediately back to your app again.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After doing the above you will obtain a new short-lived token and then you need to perform the same exchange for a long-lived token as above.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So it looks like it&amp;rsquo;s not possible to renew the long-lived token without getting a new short-lived one (which requires user interaction)&lt;/p&gt;
+&lt;p&gt;Auto-renewal on request is only available for native mobile apps (Android/iOS):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Native mobile apps using Facebook&amp;rsquo;s SDKs will get long-lived access tokens, good for about 60 days. These tokens will be refreshed once per day when the person using your app makes a request to Facebook&amp;rsquo;s servers. If no requests are made, the token will expire after about 60 days and the person will have to go through the login flow again to get a new token.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,100 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>csharp on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/csharp/</link>
+      <description>Recent content in csharp on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 23 Oct 2008 02:54:03 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2008/10/228382/</link>
+            <pubDate>Thu, 23 Oct 2008 02:54:03 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/10/228382/</guid>
+            <description>
+            
+
+            &lt;p&gt;I need to parse a large amount of text that uses HTML font tags for formatting,&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;font face=&amp;quot;fontname&amp;quot; ...&amp;gt;Some text&amp;lt;/font&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Specifically, I need to determine which characters would be rendered using each font used in the text. I need to be able to handle stuff like font tags inside another font tag.&lt;/p&gt;
+&lt;p&gt;I need to use C# for this. Is there some sort of C# parser class to make this easier? Or would I have to write it myself?&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2008/10/217801/</link>
+            <pubDate>Mon, 20 Oct 2008 08:42:26 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/10/217801/</guid>
+            <description>
+            
+
+            &lt;p&gt;Anyone have any idea how to get the value of &amp;ldquo;Language for Non-Unicode Programs&amp;rdquo; in Control Panel Regional Settings programmatically using c#?&lt;/p&gt;
+&lt;p&gt;Already tried CultureInfo, RegionInfo and getting the default encoding using the Encoding object, but I can only get the Standards and Formats value or the main code page.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2008/09/100247/</link>
+            <pubDate>Fri, 19 Sep 2008 07:28:27 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/09/100247/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m using C# in .Net 2.0, and I want to read in a PNG image file and check for the first row and first column that has non-transparent pixels.&lt;/p&gt;
+&lt;p&gt;What assembly and/or class should I use?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2008/09/99271/</link>
+            <pubDate>Fri, 19 Sep 2008 03:24:15 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2008/09/99271/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m writing a C# program that acts as a PowerPoint 2007 plugin. On some machines, some calls to the PowerPoint object model throw a &lt;code&gt;COMException&lt;/code&gt; with the message &lt;code&gt;RPC_E_SYS_CALL_FAILED&lt;/code&gt;. I couldn&amp;rsquo;t find any specific advice on what to do regarding this error, or how to avoid it. From Googling it looks like something to do with the message queue or Single-Threaded Apartments. Or am I way off?&lt;/p&gt;
+&lt;p&gt;Example of the error message is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED))&lt;br&gt;
+at Microsoft.Office.Interop.PowerPoint._Presentation.get_FullName()&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Unfortunately, the problem is occurring on a client&amp;rsquo;s machine, so I have no easy way to debug it! Should I just retry the calls whenever I get this error?&lt;/p&gt;
+&lt;p&gt;Any advice to help me resolve this problem would be greatly appreciated!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

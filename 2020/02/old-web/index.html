@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Tales from the Old Web (Development)  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+    
+    <link rel="webmention" href="https://webmention.io/roytang.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/roytang.net/xmlrpc" />  
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="software development, favorites, ">
+
+
+<meta property="og:title" content="Tales from the Old Web (Development)  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/2020/02/old-web/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2020-02-04T00:00:00Z" />
+<meta property="og:article:modified_time" content="2020-02-04T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="software development">
+    
+<meta property="og:article:tag" content="favorites">
+    
+  
+
+
+
+
+
+
+
+<meta property="og:image" content='https://roytang.net/img/profile.jpg'>
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@roytang" />
+<meta name="twitter:creator" content="@roytang" />
+<meta name="twitter:title" content="Tales from the Old Web (Development)" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://mirror.roytang.net/2020/02/old-web/" />
+<meta name="twitter:domain" content="https://mirror.roytang.net">
+<meta name="twitter:image" content='https://roytang.net/img/profile.jpg'>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Tales from the Old Web (Development)",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2020-02-04",
+    "description": "",
+    "wordCount":  1814 
+  }
+</script>
+
+
+
+<link href='https://mirror.roytang.net/index.xml' rel="alternate" type="application/rss+xml" title="Tales from the Old Web (Development)" />
+
+<link rel="canonical" href="https://mirror.roytang.net/2020/02/old-web/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+<article class="list_item post h-entry">
+<div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2020/02/old-web/"><h3 class="p-name">Tales from the Old Web (Development)</h3></a>
+    <time class="dt-published" datetime="2020-02-04 00:00:00">4 Feb 2020 12:00am</time>
+
+</div>
+
+<div class="e-content">
+
+<p>There was this great (and long!) <a href="https://eev.ee/blog/2020/02/01/old-css-new-css/">article that came out recently about the history of CSS</a>. It reminded me a lot of the old days when I started out in web development. So join me in a walk down memory lane as I reminisce about the trials and tribulations of early web development. (This one isn&rsquo;t about CSS as much as that linked article.)</p>
+<p>I started out with web applications during the heyday of the much-maligned Internet Explorer 6, and pretty much the start of the age of webapps. Most of our projects during this time involved government agencies wanting to upgrade from their old existing client-server style systems. Those were often written in programming languages/tools like Delphi, Oracle Forms, PowerBuilder and such. That meant there was a lot of pressure on the web applications we developed to be able to match most of the client-side functionality available in those kinds of programs, which was often a challenge due to the limitations of the HTTP model.</p>
+<h3 id="activex">ActiveX</h3>
+<p>Typically, the government agencies at that time used only Internet Explorer in their workstations, so we could write our web applications to target just IE specifically. This meant we could use things like ActiveX to attempt to do things browsers normally can&rsquo;t do. Some of it was for security purposes, like confirming the user&rsquo;s authentication matches the current workstation user, or for Single-Sign On purposes, things like that. There were also some for interfacing with things outside the web browser, like document scanners.</p>
+<p>We also had to use some ActiveX to get around browser quirks. For example, IE6 had this problem with combo boxes/select elements where the width of the drop window would always match the width of the <code>select</code> element, but this means if the <code>option</code> text was longer than that width, they would not be readable. We had to make an ActiveX component just to fix this, by making the drop window wider on document load! Sample screenshot recovered from the vaults:</p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="#f47a745a95a668a6f94a9b0ba34a768e-lightbox">
+    <figure>
+      <img src="https://mirror.roytang.net/2020/02/old-web/Combo_hu3c773b5aac8489cf2c66b31c0ac0d078_147716_300x0_resize_q75_box.jpg" alt="" title="" class="tn" />
+      <figcaption> (Click to view full-size)</figcaption>
+    </figure>
+</a>
+<div class="lightbox" id="f47a745a95a668a6f94a9b0ba34a768e-lightbox" style="display: none;">
+  <a href="#_">
+    <img src="https://mirror.roytang.net/2020/02/old-web/Combo.jpg" />
+  </a>
+  <div class="lightbox_overlay">
+    <p></p>
+    <time class="dt-published" datetime="4 Feb 2020 12:00am">4 Feb 2020 12:00am</time><a href="#_">Close</a>
+  </div>
+</div>
+
+<p>Some other ActiveX uses were to do things that would later on become standard features in browsers. Some other examples I can recall:</p>
+<ul>
+<li>spellchecking. We used an ActiveX component from a company called <a href="https://www.wintertree-software.com/dev/wspell/info.html">WinterTree software</a>. I was surprised to find this particular product of theirs is still available, when practically all modern browsers have spellcheck support! I suppose it&rsquo;s still useful for legacy environments maybe?</li>
+<li>we had this one project that needed a complicated graphing diagram. Think about those pinboards with pictures and documents connected by wires that conspiracy theorists use in memes, something like that. These days that kind of thing can be done using modern HTML+Javascript only, but during the IE6 days we were still pretty limited. We used another third-party ActiveX (can no longer recall the component name), that we wrapped in our own Delphi program for customization purposes.</li>
+</ul>
+<p>As far as I can tell, we ended up using ActiveX in some projects up to the early 2010s.</p>
+<h3 id="gmail-and-ajax">GMail and Ajax</h3>
+<p>Our initial webapps also did the thing where we would reload the page whenever doing something like going to the next page of results. This was pretty bad user experience-wise, especially compared to the client-server programs of old, which felt a lot more snappy since they were only loading the database results via the database driver, instead of an entire HTML page. By 2005, we were already using Ajax/XMLHttpRequest to get around these limitations in IE6. (<a href="https://en.wikipedia.org/wiki/XMLHttpRequest">The wikipedia entry</a> says XHR didn&rsquo;t officially exist in IE6, so I&rsquo;m not sure how we did that, but I&rsquo;m pretty sure we did). Our main use was for paging search result grids, but we weren&rsquo;t even fetching XML or JSON back then, the XHR response would be the grid HTML itself, which we just plop right where the previous page was.</p>
+<p>I remember I was talking to the SA for the project about ajax, he asked what it was and why we were using it, my explanations was:</p>
+<blockquote>
+<p>Ajax is &ldquo;Asynchronous Javascript and XML&rdquo;; it&rsquo;s a method of using
+Javascript and XML data that allows us to make server-side (database)
+calls without having to resubmit the entire page.</p>
+<p>We use it because it&rsquo;s cool =p With Ajax, we can do something like allow
+the user to re-sort a grid of records without reloading the rest of the
+page. It is easier for us to meet the performance reqt.</p>
+<p>If you&rsquo;ve seen the Google Maps or GMail webapps, they both use Ajax.</p>
+</blockquote>
+<p>The response was (unedited):</p>
+<blockquote>
+<p>I&rsquo;ve used Gmail.  AJas is client side library??? Seems they process very
+fast.</p>
+</blockquote>
+<p>(I would later kind of <a href="https://mirror.roytang.net/2006/05/gmail-raises-the-bar-for-everyone/">regret using Gmail as a comparison</a>!)</p>
+<h3 id="cross-browser-development">Cross-browser development</h3>
+<p>Most of our projects were for internal systems where the workstations had controlled environments so we were free to target a single browser only (usually IE). Some projects also had a public-facing portal though, and that required we do some cross-browser frontend stuff. Early on, the typical targets other than IE where Netscape and Firefox. This is where the IE6 compatibility headaches come in. It was usually a game of write the code for IE first, then let the testers find any NS/FF issues, then quash accordingly.</p>
+<p>We started checking in Firefox around the quirks mode era, as described in the article linked at the start of this post. The biggest challenge really was getting everything pixel-perfectly the same between browsers. The typical problems were:</p>
+<ul>
+<li>browser differences in CSS models (the famous box model issue)</li>
+<li>differences in native controls (typically the <code>select</code> and <code>input type='file'</code> controls were the more problematic ones)</li>
+<li>for cases where we needed ActiveX plugins for IE6, we would also need to develop corresponding FF add-ins, usually targeting Firefox 2.x (It&rsquo;s fun to think about how the current version of Firefox is 70 major versions ahead of that!)</li>
+</ul>
+<p>We did very little cross-browser work at the start, with the proportion accelerating in tune with Firefox/Chrome&rsquo;s rise in marketshare. By around 2010, it was common for projects to be testing across at least 2 versions of IE (6 and 7), 2 versions of Firefox (2 and 3), Google Chrome, and often Safari as well. (We didn&rsquo;t really start thinking about Mac users until around 2007ish).</p>
+<p>Google Chrome came out in 2008, I found some old comments I made to our internal tech team when it came out:</p>
+<blockquote>
+<p>I have an installer in t:\roy</p>
+<p>It&rsquo;s not an OS, but it runs browser tabs in separate processes (literally&hellip;each one has a different PID), such that a single webapp won&rsquo;t crash everything else.</p>
+<p>More info here: t:\keis\Google_Chrome.pdf</p>
+<p>If it gets widespread adoption, it may affect the webapps we develop - it uses Webkit as a rendering engine (used by Safari), so it&rsquo;s different from Firefox and IE. Haven&rsquo;t encountered any problems yet though.</p>
+</blockquote>
+<p>I also tested the memory usage of Chrome vs FF back then:</p>
+<blockquote>
+<p>Try this:</p>
+<p>Firefox - open 9 tabs. Check the memory consumption. Close 8 tabs. Check
+the memory consumption. (Remains around the same as previous one)</p>
+<p>In Chrome, the memory usage of closed tabs is 0.</p>
+</blockquote>
+<p>This is a far cry from Chrome&rsquo;s modern reputation as a memory hog! (Although I guess that reputation is probably related to people keeping too many tabs open.)</p>
+<p>Side story: while looking up old files for this post, I came upon a thread where we were discussing printing issues across browsers, and there was a problem in printing some pages from the browser because of limitations in IE6, and some management higher-up chimed in with a suggestion to &ldquo;just tell the client to use IE7&rdquo; as if the client will magically upgrade all their workstations for that one problem. :shrug:</p>
+<h3 id="jquery">jQuery</h3>
+<p>As the linked article mentioned, jQuery raised the bar when it came out, allowing developers to easily paper over cross-browser JavaScript concerns and providing an API that became so prevalent, years later parts of it would become built-in to modern browsers (i.e. <code>document.querySelector</code>).</p>
+<p>I shared the link to <a href="https://mirror.roytang.net/2006/01/jquery-new-wave-javascript/">jQuery via delicious</a> in 2006, but for sure we weren&rsquo;t using it yet in our projects at that time. Based on my own CV, the first time I used it in a project was in 2009. It quickly became part of our standard libraries. I still remember in one particular project I spent some time thrashing out a bunch of issues because we needed to upgrade from like jQuery 1.3 to 1.4? Or something like that. Normally we&rsquo;d fix to a certain version, but I think we needed to upgrade because of a jQuery plugin we needed. This was before the modern frontend development frameworks where you already have dependency management tools, so we had to make sure none of our other third-party JS components would break with the upgrade. The company ended up using jQuery as a standard in projects up to the time I left in 2015. (I&rsquo;m told they later on switched to Vue.js, so more power to them.)</p>
+<p>I identify as a &ldquo;full stack developer&rdquo;, but these days the &ldquo;frontend&rdquo; half of that usually implies usage of one of the modern frontend frameworks: Angular, React, or Vue. While I am cognizant of those frameworks and have tried them all in some form or another over the past few years, my frontend development experience is still largely defined by the jQuery era. So when setting up personal projects or quick prototypes that&rsquo;s still what I default to.</p>
+<h3 id="css">CSS</h3>
+<p>The linked article was about CSS, so I figured I should have some CSS stories too, but I find that I don&rsquo;t have much, other than the cross-browser compat above. My main issue with CSS back then was that in a large project with a nontrivial amount of developers each working on separate screens, the CSS style sheets tended to get longer and denser with time. And with bug fixes and whatnot, it would tend to be full of hacks and workarounds like randomly placing <code>!important</code> in so many places. I just assumed we had a whole bunch of CSS selectors that were no longer necessary but no one would bother cleaning up the style sheets because who knows what you&rsquo;ll break? Basically a whole chaotic mess. IDK if modern tooling handles this because I haven&rsquo;t been on larger projects since leaving the company, but I suppose the stronger delineation/specialization between frontend and backend dev work means less people to mess up the stylesheets, and those who do handle the styles are more aware of such pitfalls.</p>
+<h3 id="thats-it-for-now">That&rsquo;s it (for now)</h3>
+<p>Well, this was a fun trip down memory lane. This post is already longer than I thought it would be, but those are all the old-timey stories I can recall right now. There&rsquo;s a good chance there&rsquo;s some more of them lodged in my brain somewhere that will come out sooner or later, so maybe there&rsquo;s a part 2 sometime in the future.</p>
+
+
+
+
+
+
+</div>
+
+
+<div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2020/02/old-web/"><time class="dt-published" datetime="2020-02-04 00:00:00">4 Feb 2020 12:00am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#software development</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/favorites">#favorites</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/1224490625556533250/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on devto" class='u-syndication' href="https://dev.to/roytang/tales-from-the-old-web-development-3jh" title="View on devto">devto</a>
+
+
+
+    /
+    
+    
+    <a href="https://mirror.roytang.net/2020/02/old-web/#likes">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+        </svg>
+        3</a>
+    
+    
+    <a href="https://mirror.roytang.net/2020/02/old-web/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        3</a>
+
+    
+    
+    / 1814 words
+    
+</div>
+
+<div class="comments">
+
+
+
+
+<h3>See Also</h3>
+<ul>
+    
+    <li><a href="https://mirror.roytang.net/2020/01/flask-vs-django/">Flask vs Django</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/11/sql-dying-art/">Is SQL a dying art?</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/11/prod-crisis/">What to do in a production crisis</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/11/python-yield/">DevNotes: Python&#39;s yield</a></li>
+    
+    <li><a href="https://mirror.roytang.net/2019/11/handover-documentation/">The Perils of Handover Documentation</a></li>
+    
+</ul>
+
+
+
+
+<div id="likes" class="likes-title"><h3>Likes</h3></div>
+
+
+<a href="https://fosstodon.org/@eatingbrb">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+    </svg>    
+    eric 🦇</a>
+
+
+<a href="https://mastodon.social/@gabek">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+    </svg>    
+    Gabe Kangas</a>
+
+
+<a href="https://retro.social/@68km">
+    <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+        <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+    </svg>    
+    68k mentat &gt;B)</a>
+
+
+
+    
+
+
+<div id="header-comments" class="comments-title"><h3>Comments</h3></div>
+
+
+<div class="comment" id="comment-webmention-752408">
+    <div class="comment_meta">
+    
+    
+        
+    
+    <a href="https://fosstodon.org/@eatingbrb">
+        <img class="commenter-photo" src="https://webmention.io/avatar/cdn.mastodon.technology/87a73e5e02a92c76803ec1e5c6980819c1c27ae4e6432fcc8059bb539e1ff5d0.jpg" alt="eric 🦇" />
+    </a>
+    <div class="commenter_name">
+    
+        <a href="https://fosstodon.org/@eatingbrb">eric 🦇</a>
+    
+    </div>
+    <time><a href="https://fosstodon.org/@eatingbrb/103601744793021121">2020-02-05 00:31:15</a><time>
+    </div>
+    <div class="comment_body">
+        <span class="h-card"><a href="https://mastodon.technology/@roytang" class="u-url">@<span>roytang</span></a></span> great post! I wish my IE6-8 skills were still useful now in 2020, because it was great job security! I'm also still defaulting to jQuery instead of the modern tools.
+    </div>
+</div>
+
+
+<div class="comment" id="comment-webmention-752409">
+    <div class="comment_meta">
+    
+    
+        
+    
+    <a href="https://mastodon.technology/@roytang">
+        <img class="commenter-photo" src="https://webmention.io/avatar/cdn.mastodon.technology/6ff5726f9a6dfeb42b12211a9ffdfa71a8c0197fc8fb9764f6759cf902ec6e9c.jpg" alt="Roy Tang" />
+    </a>
+    <div class="commenter_name">
+    
+        <a href="https://mastodon.technology/@roytang">Roy Tang</a>
+    
+    </div>
+    <time><a href="https://mastodon.technology/@roytang/103602985919777152">2020-02-05 00:31:20</a><time>
+    </div>
+    <div class="comment_body">
+        <span class="h-card"><a href="https://fosstodon.org/@eatingbrb" class="u-url">@<span>eatingbrb</span></a></span> thank you for the kind words! Glad to see I'm not alone :D
+    </div>
+</div>
+
+
+<div class="comment" id="comment-webmention-753340">
+    <div class="comment_meta">
+    
+    
+    <a href="">
+        <img class="commenter-photo" src="https://mirror.roytang.net/img/icons/anon.png" alt="" />
+    </a>
+    <div class="commenter_name">
+    
+        <span class='linkless-commenter'> </span>
+    
+    </div>
+    <time><a href="http://paulcapewell.com/2020/02/07/stuff-ive-seen-and-read-recently-january-2020/">2020-02-07 15:01:14</a><time>
+    </div>
+    <div class="comment_body">
+        Mentioned by <a href="http://paulcapewell.com/2020/02/07/stuff-ive-seen-and-read-recently-january-2020/">http://paulcapewell.com/2020/02/07/stuff-ive-seen-and-read-recently-january-2020/</a>
+    </div>
+</div>
+
+
+
+
+<div class="feedback">If you enjoyed my content for some reason, I'd love to hear from you! Here are some options:
+<ul>
+    <li>You can <a href="https://ko-fi.com/roytang">buy me a coffee!</a></li>
+
+
+    
+    <li>You can <a href="https://twitter.com/roytang/statuses/1224490625556533250/">share or reply to this post on Twitter</a>. </li>
+    
+    
+
+    
+
+
+
+    
+
+    
+
+ 
+
+
+  
+<li>You can write a reply on your own site and submit the URL as a <a href="https://indieweb.org/webmention">webmention</a> via the form below.
+    <form id="webmention-form" action="https://webmention.io/roytang.net/webmention" method="POST">
+        <input name="target" value="https://mirror.roytang.net/2020/02/old-web/" type="hidden" />
+        <input name="source" placeholder="Your reply URL" style="width:90%" required />
+        <button type="submit" >Submit</button>
+    </form>
+</li>
+
+<li>Or you can just <a href="https://mirror.roytang.net/about/contact">contact me</a>!</li>
+</ul>
+</div>
+
+
+
+
+<div class="navigation">
+  
+
+    
+    <a class="prev" href="https://mirror.roytang.net/2020/02/weeknotes-2020-02-02/" title="Weeknotes 2020-02-02. Happy palindrome day!">
+        Previous: Weeknotes 2020-02-02. Happy palindrome day!
+    </a>
+    
+    
+    <a class="next" href="https://mirror.roytang.net/2020/02/burnout/" title="Burnout">
+        Next: Burnout 
+    </a>
+    
+  
+</div>  
+
+
+
+
+</article>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2020 02 27 00:19:05.
+        
+        <a href='https://github.com/roytang/blog/tree/master/content/post/2020/02/old-web/index.md' title='source file'>Source file</a>
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

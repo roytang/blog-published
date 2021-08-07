@@ -1,0 +1,173 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>devnotes on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/devnotes/</link>
+      <description>Recent content in devnotes on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/devnotes/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>DevNotes: Python&#39;s yield
+</title>
+            <link>https://mirror.roytang.net/2019/11/python-yield/</link>
+            <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/11/python-yield/</guid>
+            <description>
+            
+            &lt;p&gt;I&amp;rsquo;ve been using Python for well over 10 years, and I still don&amp;rsquo;t have an intuitive mastery of one of its keywords: &lt;code&gt;yield&lt;/code&gt;. Everytime I see it in someone&amp;rsquo;s code I need to stop and mentally remind myself what it does. I figured I&amp;rsquo;d write a devnote to help improve my recall.&lt;/p&gt;
+&lt;p&gt;Typically, &lt;code&gt;yield&lt;/code&gt; is used in a function with a loop, like so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;some_func&lt;/span&gt;(lim):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, lim):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;yield&lt;/span&gt; i
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;yield&lt;/code&gt; means the function returns a &amp;ldquo;generator&amp;rdquo; that can be used as an iterable in a loop:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; val &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; some_func(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(val)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also straight up convert the generator into a list via something like &lt;code&gt;list(some_func(5))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The equivalent function, without using &lt;code&gt;yield&lt;/code&gt; would be something like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;some_func&lt;/span&gt;(lim):
+    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, lim):
+        result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(i)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; result
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is definitely the kind of function I&amp;rsquo;ve written often! Now that I&amp;rsquo;ve actually written it down, &lt;code&gt;yield&lt;/code&gt; is rather straightforward, and hopefully it can help me shorten some of the python code I&amp;rsquo;ll be writing in the future!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Devnotes: Python Pathlib
+</title>
+            <link>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</link>
+            <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-python-pathlib/</guid>
+            <description>
+            
+            &lt;p&gt;Ever since I started learning Python back in 2008ish, I&amp;rsquo;ve been using it as my primary scripting language for various tasks such as processing log files, organizing my own file system, processing stuff on this blog, and so on. A lot of it is basically moving files around. In the days of Python 2, that involved a lot of imports of different libraries like &lt;code&gt;os&lt;/code&gt;, &lt;code&gt;shutil&lt;/code&gt; and &lt;code&gt;glob&lt;/code&gt;. It can become a bit messy with so many imports, and I often can&amp;rsquo;t remember which import I need for a particular case and end up having to search for the documentation (or stackoverflow, let&amp;rsquo;s not kid ourselves here).&lt;/p&gt;
+&lt;p&gt;With Python 3, a new cleaner option is available to replace all of the above libraries: &lt;a href=&#34;https://docs.python.org/3/library/pathlib.html&#34;&gt;Pathlib&lt;/a&gt;, introduced in Python 3.4, provides an object-oriented way of doing file operations, replacing many of the most common uses I had for the libraries above. Some sample usage:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; pathlib &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; path
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Declaring a path object is just passing the path string&lt;/span&gt;
+p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Path(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/home/roytang/stuff&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Other paths can be derived using the / operator&lt;/span&gt;
+subdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;favorites&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# p.glob replaces stuff like os.walk and glob.glob&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mdfile &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;glob(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**/*.md&amp;#34;&lt;/span&gt;):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str(mdfile))
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;# path objects have properties for individual path elements&lt;/span&gt;
+    filename &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mdfile&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name
+    stem &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mdfile&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;stem &lt;span style=&#34;color:#75715e&#34;&gt;# filename without extension&lt;/span&gt;
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;# path.exists() replaces os.exists()&lt;/span&gt;
+    newdir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; subdir &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; stem 
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; newdir&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exists():
+        &lt;span style=&#34;color:#75715e&#34;&gt;# path.mkdir replaces os.makedirs&lt;/span&gt;
+        newdir&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mkdir(parents&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True)
+
+    newfile &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; newdir &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; newfile &lt;span style=&#34;color:#75715e&#34;&gt;# path objects can be either files or dirs&lt;/span&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;# for file copying, you still need shutil!&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; shutil
+    shutil&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;copy(str(mdfile), str(newfile))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For me it&amp;rsquo;s much cleaner to use than the old methods and require less imports (most of the time). I eventually hope to migrate all my older scripts to use Pathlib (the same way I migrated them away from Python 2 a while back), and moving forward I plan to use it primarily for filesystem operations.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Devnotes: Migrating Mercurial to Git
+</title>
+            <link>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</link>
+            <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-migrating-mercurial-to-git/</guid>
+            <description>
+            
+            &lt;p&gt;Big news in online repositories this week is that &lt;a href=&#34;https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket&#34;&gt;Bitbucket is sunsetting support for Mercurial&lt;/a&gt;! This might be the death knell for Mercurial, although Git was already the super popular choice before. Back when I started using online source control for my personal coding projects I started out with Bitbucket over Github because they offered unlimited private repos and Mercurial (which I had already tried out before at work, so at first I preferred it over git). Now that Gitlab and Github both offer unlimited private repos, there&amp;rsquo;s no reason to stick with Bitbucket either. I had already migrated most of my private Git repos to Gitlab before, but hadn&amp;rsquo;t realized until now that I also had a couple of Mercurial repos there that needed to be migrated as well. I hadn&amp;rsquo;t touched those repos in so long that I didn&amp;rsquo;t even have Mercurial installed locally anymore! (Although I&amp;rsquo;m still using the code locally!)&lt;/p&gt;
+&lt;p&gt;Luckily, converting a mercurial repo to git turned out to be straightforward thanks to a project called &lt;a href=&#34;https://repo.or.cz/fast-export.git&#34;&gt;fast-export&lt;/a&gt;. Modified instructions from a convenient &lt;a href=&#34;https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository#&#34;&gt;stackoverflow post&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hg &lt;span style=&#34;color:#75715e&#34;&gt;# install hg on my mac first&lt;/span&gt;
+cd ~
+hg clone https://user@bitbucket.org/user/reponame
+git clone git://repo.or.cz/fast-export.git
+git init git_repo
+cd git_repo
+~/fast-export/hg-fast-export.sh -r ~/reponame
+git checkout HEAD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The process was fairly quick, and the commit history from the Mercurial side was even retained, I would have been happy just retaining HEAD! After that, I just create a new private repo on Gitlab, set that as the remote, then push to Gitlab as usual.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a good thing I remembered to check my Bitbucket account, as apparently they will be deleting the old Mercurial repos when time is up!&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Devnotes: TT Miniproject (Django Rest Framework, Unit Testing, VueJS, Geocoding, Nightwatch e2e Testing)
+</title>
+            <link>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</link>
+            <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/</guid>
+            <description>
+            
+            &lt;p&gt;I recently found myself doing a really small project as sort of a proof of concept/demo for a potential client. It often seems that it might be a waste of time to do something like this since you don&amp;rsquo;t know if the project will actually push through or maybe the client will want something else. To kind of hedge my bets a bit, I decided to take the opportunity to try out some new technologies so that no matter what I at least learned something from all of this. (What is life if not learning?)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Django Rest Framework&lt;/strong&gt;. I&amp;rsquo;ve been on projects using DRF before, but it&amp;rsquo;s my first time building a full CRUD-style API from scratch using it. There is a little bit of a learning curve when it comes to views and serializers, but for the most part it&amp;rsquo;s straightforward. I did enjoy how the framework has out of the box support for the most common REST API scenarios, and there are available backends for different authentication methods. I used JWT Authentication, which isn&amp;rsquo;t part of the library by default, but already had a pretty good implementation available elsewhere.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python Unit Testing&lt;/strong&gt;. I have dabbled &lt;a href=&#34;https://mirror.roytang.net/2019/02/triviastorm-text-and-answer-parsing/&#34;&gt;a little bit with Django&amp;rsquo;s Unit Test framework before&lt;/a&gt;, but not having worked with any company that does TDD I&amp;rsquo;ve never tried doing it the &amp;ldquo;test first&amp;rdquo; way. For reference I used an online book: &lt;a href=&#34;https://www.obeythetestinggoat.com/book/part1.harry.html&#34;&gt;Test Driven Development with DJango&lt;/a&gt;. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python Social Auth&lt;/strong&gt;. The proof-of-concept needed some social media logins. I used &lt;a href=&#34;https://github.com/python-social-auth/social-core&#34;&gt;Python Social Auth&lt;/a&gt; for this, really straightforward library with good documentation and supports a lot of backends. I ended up using Twitter and Github OAuth as those were the simplest to implement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VueJS&lt;/strong&gt;. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I&amp;rsquo;m still behind with the latest web frontend frameworks and trends. In my head I&amp;rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out &lt;a href=&#34;https://mirror.roytang.net/2019/07/upgrading-a-react-native-project/&#34;&gt;React Native&lt;/a&gt;, but I wasn&amp;rsquo;t fond of it. For this project I decided to use &lt;a href=&#34;https://vuejs.org&#34;&gt;VueJS&lt;/a&gt; since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn&amp;rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was &amp;ldquo;very strange&amp;rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Google Maps API and Geocoding&lt;/strong&gt;. The miniproject had some components that required me to show stuff on a map and do some geocoding, so I had to set up the API for that. Google&amp;rsquo;s documentation is fairly good here. One thing I didn&amp;rsquo;t expect is that you need a Google Cloud account with a billing method in order to access the API. My understanding is I wouldn&amp;rsquo;t be charged for anything since I was just using the free tier, I hope that was accurate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nightwatch e2e Testing&lt;/strong&gt;. I&amp;rsquo;ve had some projects with end to end testing before, mostly via scripts or Selenium, but it&amp;rsquo;s my first time trying out one of these end to end testing frameworks by writing the scripts myself. I chose to go with Nightwatch, it was reasonably strightforward and worked on Mac and Windows. One thing I will note that initially gave me problems during set up is that using the ChromeDriver can be a bit finnicky on Windows. You have to specify the actual location of the executable in your nightwatch.json, like so: &lt;code&gt;&amp;quot;server_path&amp;quot;: &amp;quot;node_modules/chromedriver/lib/chromedriver/chromedriver.exe&amp;quot;,&lt;/code&gt; instead of just the &lt;code&gt;node_modules/.bin/chromedriver&lt;/code&gt; the documentation implies.&lt;/p&gt;
+&lt;p&gt;All in all the mini-project didn&amp;rsquo;t take much work - maybe 2-3 mandays of effort at most, and I did learn a lot from it, so no matter the outcome it was already a win.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Devnotes: PostgreSQL on the command line
+</title>
+            <link>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</link>
+            <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2019/08/devnotes-postgresql-on-the-command-line/</guid>
+            <description>
+            
+            &lt;p&gt;I decided to start doing small &amp;ldquo;devnotes&amp;rdquo; on developer stuff I&amp;rsquo;m doing so I can refer to them later (and also because I feel like I could use more technical content on this blog)&lt;/p&gt;
+&lt;p&gt;Today is about PostgreSQL. I haven&amp;rsquo;t used it much beyond standard ANSI sql stuff. You won&amp;rsquo;t always have a graphical interface to access your database, sometimes you need to ssh to prod and query the database from the shell.&lt;/p&gt;
+&lt;p&gt;The command line for PostgreSQL is &lt;code&gt;psql&lt;/code&gt;. You can do:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;psql [database-user-name] -d [database-name]&lt;/code&gt; and it should prompt you for your password.&lt;/p&gt;
+&lt;p&gt;But when I tried this today, I got:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;psql: FATAL:  Peer authentication failed for user &amp;quot;[database-user-name]&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The problem had something to do with the permissions available to my ssh user. The workaround was to tell psql I was doing this from the local machine:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;psql: FATAL:  Peer authentication failed for user &amp;quot;[database-user-name]&amp;quot; -h 127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Worked fine.&lt;/p&gt;
+&lt;p&gt;After connecting, you get a prompt that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[database-name]=# &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now, when I connected today, I had to do some queries, but I wasn&amp;rsquo;t superfamiliar with the project&amp;rsquo;s schema, and would have to muck around to find table names and field names. The psql shell provides some handy shortcuts for that:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\dt&lt;/code&gt; - outputs a list of tables&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\d [table-name]&lt;/code&gt; - describes a specific table, showing field names&lt;/p&gt;
+&lt;p&gt;You can also just directly run an SQL query, just make sure to end it with a semicolon.&lt;/p&gt;
+&lt;p&gt;If the command outputs a lot of records, it will show them to you in a page-able vim-like format. You can recognize it when it stops with a &lt;code&gt;:&lt;/code&gt; after each page and you can hit spacebar to proceed, and at the end it shows &lt;code&gt;(END)&lt;/code&gt;. And like vim, you might not know how to get out of this view. I had to google it myself, you just have to hit &lt;code&gt;q&lt;/code&gt; to go back to the psql shell.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

@@ -1,0 +1,3687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>tech-life  &middot; Roy Tang</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    
+  <link rel="micropub" href="https://apps.roytang.net/blog/micropub">   
+  
+    
+  <link rel="microsub" href="https://aperture.p3k.io/microsub/521">   
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Roy Tang&#39;s blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed." />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="tech-life  &middot; Roy Tang ">
+<meta property="og:site_name" content="Roy Tang"/>
+<meta property="og:url" content="https://mirror.roytang.net/tags/tech-life/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href='https://mirror.roytang.net/tags/tech-life/index.xml' rel="alternate" type="application/rss+xml" title="tech-life" />
+<link href='' rel="alternate" type="application/json" title="tech-life JSON Feed" />
+<link href='' rel="feed" type="application/html" title="tech-life H-Feed" />
+
+<link rel="canonical" href="https://mirror.roytang.net/tags/tech-life/" />
+
+<link href="https://mirror.roytang.net/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.72.0" />
+
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/shared.css" type="text/css" />
+  <link rel="stylesheet" href="https://mirror.roytang.net/css/main.css" type="text/css" title="Default" />
+  <link rel="alternate stylesheet" href="https://mirror.roytang.net/css/plain.css" type="text/css" title="Plain" />
+</head>
+<body class="taxonomy">
+    <div class="wrapper">
+        <header class="mainheader h-card vcard about-author">
+    <img class="u-photo" src="https://roytang.net/img/profile.jpg" alt="" />
+    <div>
+        <a style="display: none" href=https://mirror.roytang.net class="p-name u-url url author metatag" rel="me">
+            Roy Tang
+        </a>
+        <p class="u-email" style="display:none">hello@roytang.net</p>
+        <h1><a class="baselink" href="https://mirror.roytang.net">
+        Roy Tang
+        </a></h1>
+        <p class="p-note">Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart.</p>
+    </div>
+</header>
+<div class="secondheader">
+    <form class="searchform" action="https://apps.roytang.net/blog/search" role="search" _lpchecked="1">
+    <div class="searchflex">
+        <input id="searchterm" name="q" class="searchbox" size="15" aria-label="search this site" placeholder="search">
+        <input id="submit" type="image" title="Search" alt="Search" src="https://mirror.roytang.net/img/search.png">
+    </div>
+</form>
+
+</div>
+<div class="panel">
+    
+    <a href="https://mirror.roytang.net/blog/">Blog</a>
+    
+    <a href="https://mirror.roytang.net/notes/">Notes</a>
+    
+    <a href="https://mirror.roytang.net/photos/">Photos</a>
+    
+    <a href="https://mirror.roytang.net/links/">Links</a>
+    
+    <a href="https://mirror.roytang.net/archives/">Archives</a>
+    
+    <a href="https://mirror.roytang.net/about/">About</a>
+    
+</div>
+
+        <div class="main_content">
+
+<div class="main">
+
+  <section class="h-feed">
+    <a class="u-url" href="https://mirror.roytang.net/tags/tech-life/"></a>
+    <p class="p-name">All entries tagged tech-life.</p>
+    <p>You can subscribe to an <a href="https://mirror.roytang.net/tags/tech-life/index.xml">RSS feed</a> of this list.</p>
+    
+<h3>Jan 2018</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>A client updated their EC2 CentOS 6.4 instance to 6.9 using yum update. After the update and a reboot, the instance wouldn&rsquo;t start up anymore (became unreachable)</p>
+<p>The system log (recovered from the AWS console) goes something like this:</p>
+<pre><code>Xen Minimal OS!
+
+  start_info: 0x10d3000(VA)
+
+    nr_pages: 0xe4f53
+
+  shared_inf: 0xeea31000(MA)
+
+     pt_base: 0x10d6000(VA)
+
+nr_pt_frames: 0xd
+
+    mfn_list: 0x9ab000(VA)
+
+   mod_start: 0x0(VA)
+
+     mod_len: 0
+
+       flags: 0x300
+
+    cmd_line: root=/dev/sda1 ro console=hvc0 4
+
+  stack:      0x96a100-0x98a100
+
+MM: Init
+
+      _text: 0x0(VA)
+
+     _etext: 0x7b824(VA)
+
+   _erodata: 0x97000(VA)
+
+     _edata: 0x9cce0(VA)
+
+stack start: 0x96a100(VA)
+
+       _end: 0x9aa700(VA)
+
+  start_pfn: 10e6
+
+    max_pfn: e4f53
+
+Mapping memory range 0x1400000 - 0xe4f53000
+
+setting 0x0-0x97000 readonly
+
+skipped 0x1000
+
+MM: Initialise page allocator for 1807000(1807000)-e4f53000(e4f53000)
+
+MM: done
+
+Demand map pfns at e4f54000-20e4f54000.
+
+Heap resides at 20e4f55000-40e4f55000.
+
+Initialising timer interface
+
+Initialising console ... done.
+
+gnttab_table mapped at 0xe4f54000.
+
+Initialising scheduler
+
+Thread &quot;Idle&quot;: pointer: 0x20e4f55050, stack: 0xe4810000
+
+Thread &quot;xenstore&quot;: pointer: 0x20e4f55800, stack: 0xe4820000
+
+xenbus initialised on irq 3 mfn 0xfeffc
+
+Thread &quot;shutdown&quot;: pointer: 0x20e4f55fb0, stack: 0xe4830000
+
+Dummy main: start_info=0x98a200
+
+Thread &quot;main&quot;: pointer: 0x20e4f56760, stack: 0xe4840000
+
+&quot;main&quot; &quot;root=/dev/sda1&quot; &quot;ro&quot; &quot;console=hvc0&quot; &quot;4&quot; 
+
+vbd 2048 is hd0
+
+******************* BLKFRONT for device/vbd/2048 **********
+
+
+
+
+
+backend at /local/domain/0/backend/vbd/2334/2048
+
+629145600 sectors of 512 bytes
+
+**************************
+
+vbd 2128 is hd1
+
+******************* BLKFRONT for device/vbd/2128 **********
+
+
+
+
+
+backend at /local/domain/0/backend/vbd/2334/2128
+
+314572800 sectors of 512 bytes
+
+**************************
+
+[H[J
+
+
+    GNU GRUB  version 0.97  (3751244K lower / 0K upper memory)
+
+
+
+
+
+[m[4;2H+-------------------------------------------------------------------------+[5;2H|[5;76H|[6;2H|[6;76H|[7;2H|[7;76H|[8;2H|[8;76H|[9;2H|[9;76H|[10;2H|[10;76H|[11;2H|[11;76H|[12;2H|[12;76H|[13;2H|[13;76H|[14;2H|[14;76H|[15;2H|[15;76H|[16;2H|[16;76H|[17;2H+-------------------------------------------------------------------------+[m
+
+
+    Use the ^ and v keys to select which entry is highlighted.
+
+
+    Press enter to boot the selected OS, 'e' to edit the
+
+
+    commands before booting, or 'c' for a command-line.[5;78H [m[7m[5;3H CentOS (2.6.32-696.18.7.el6.x86_64)                                     [5;75H[m[m[6;3H CentOS (2.6.32-573.el6.x86_64)                                          [6;75H[m[m[7;3H CentOS (2.6.32-358.18.1.el6.x86_64)                                     [7;75H[m[m[8;3H CentOS-6.4-x86_64-GA-03 2.6.32-358.el6.x86_64                           [8;75H[m[m[9;3H                                                                         [9;75H[m[m[10;3H                                                                         [10;75H[m[m[11;3H                                                                         [11;75H[m[m[12;3H                                                                         [12;75H[m[m[13;3H                                                                         [13;75H[m[m[14;3H                                                                         [14;75H[m[m[15;3H                                                                         [15;75H[m[m[16;3H                                                                         [16;75H[m[16;78H [5;75H[23;4H The highlighted entry will be booted automatically in 1 seconds.   [5;75H[H[J  Booting 'CentOS (2.6.32-696.18.7.el6.x86_64)'
+
+
+
+
+
+root (hd0)
+
+
+ Filesystem type is ext2fs, using whole disk
+
+
+kernel /boot/vmlinuz-2.6.32-696.18.7.el6.x86_64 root=/dev/xvde ro crashkernel=a
+
+
+uto LANG=en_US.UTF-8 KEYTABLE=us
+
+
+initrd /boot/initramfs-2.6.32-696.18.7.el6.x86_64.img
+
+
+
+
+
+============= Init TPM Front ================
+
+Tpmfront:Error Unable to read device/vtpm/0/backend-id during tpmfront initialization! error = ENOENT
+
+Tpmfront:Info Shutting down tpmfront
+
+close blk: backend=/local/domain/0/backend/vbd/2334/2048 node=device/vbd/2048
+
+close blk: backend=/local/domain/0/backend/vbd/2334/2128 node=device/vbd/2128
+</code></pre>
+<p>We&rsquo;re all not too experienced with AWS so we don&rsquo;t have much clue what to do. Any idea what we should be looking at or anything to point us in the right direction? The instance was actually a clone of production that we tested the upgrade on before doing it on actual production, so we have a chance to try it again and adjust any settings or whatever before or after the update.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2018/01/415767/"><time class="dt-published" datetime="2018-01-09 09:23:53">9 Jan 2018 9:23am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/centos">#centos</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/amazon-ec2">#amazon-ec2</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/aws">#aws</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/unix">#unix</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://unix.stackexchange.com/questions/415767/centos-amazon-ec2-instance-wont-boot-after-upgrading-to-centos-6-9-via-yum" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2018/01/415767/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Aug 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>For the past 2 weeks or so now, I&rsquo;ve been having issues with my ISP (I&rsquo;m not in the US, so it&rsquo;s not Comcast or whatever).</p>
+<p>Specifically, I often lose access to Google-related sites/services: the search engine itself, Gmail, Google Docs/Drive, Youtube, Google Keep are the ones I use most often. I&rsquo;ve restarted my router multiple times already over the past couple of weeks. Same issue is encountered on my desktop (wired), laptop, iPad, phone (when connected over wifi) etc.</p>
+<p>I know it&rsquo;s related to my ISP because (a) I&rsquo;ve read some other users experiencing similar issues on social media; (b) if I tether to my phone&rsquo;s data connection, the problem isn&rsquo;t encountered.</p>
+<p>I don&rsquo;t have a proxy server configured. I used to be using Google DNS but I&rsquo;ve also tried switching back to my ISP&rsquo;s default DNS with no luck.</p>
+<p>What&rsquo;s the best way for me to figure out what the issue is? (Preferably in a way that I can bring it up to my ISP so that they know specifically what they need to fix - talking to their customer service is a tedious experience so I&rsquo;ve decided to figure out as much as possible before going back to them)</p>
+<p>Screenshot of the error from the browser:
+<a href="https://i.stack.imgur.com/cin58.png"><img src="https://i.stack.imgur.com/cin58.png" alt="enter image description here"></a></p>
+<p>Sample tracert:
+<a href="https://i.stack.imgur.com/PB5zP.png"><img src="https://i.stack.imgur.com/PB5zP.png" alt="enter image description here"></a></p>
+<p>Pings seem ok right now (although if I leave ping -t running for a while, there&rsquo;s an occasional &ldquo;Request timed out&rdquo;):
+<a href="https://i.stack.imgur.com/VxB92.png"><img src="https://i.stack.imgur.com/VxB92.png" alt="enter image description here"></a></p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2017/08/1242765/"><time class="dt-published" datetime="2017-08-20 17:28:32">20 Aug 2017 5:28pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/networking">#networking</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/router">#router</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/1242765/unable-to-access-google-services-sporadically" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/08/1242765/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jul 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2017/07/hardware-review-steam-link/"><h3 class="p-name">Hardware Review: Steam Link</h3></a>
+    <time class="dt-published" datetime="2017-07-06 01:30:43">6 Jul 2017 1:30am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Last week the local gaming shop had the Steam Link on 70% discount so I figured I&rsquo;d give it a try. We recently got a new TV at home, so I was eager to try out some Steam games on the big screen. If you&rsquo;re too lazy to click the link above, the Steam Link is basically a set-top box that streams your gameplay to a TV via HDMI, allowing you to enjoy your steam games from the comfort of a couch.
+
+<p><a href="https://mirror.roytang.net/2017/07/hardware-review-steam-link/">read more (672 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2017/07/hardware-review-steam-link/"><time class="dt-published" datetime="2017-07-06 01:30:43">6 Jul 2017 1:30am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/hardware">#Hardware</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/gaming">#Gaming</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on tumblr" class='u-syndication' href="https://roytang.tumblr.com/post/162650311295/hardware-review-steam-link" title="View on tumblr">tumblr</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/882775461666988032/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/07/hardware-review-steam-link/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        6</a>
+
+    
+    
+    / 672 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Mar 2017</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2017/03/sony-4k-hdr-bravia-x8000d/"><h3 class="p-name">Sony 4K HDR Bravia X8000D</h3></a>
+    <time class="dt-published" datetime="2017-03-08 15:59:10">8 Mar 2017 3:59pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+4k XLocal tech blog YugaTech is doing a giveaway of a Sony X8000D Bravia 4K TV. To be honest I wasn&rsquo;t sure about using this blog to participate in a promo, but I was already in the market for a new TV since our living room TV is already starting to have some problems.
+I checked out the product features of the Sony X8000D Bravia on their website. Some of the features stood out for me specifically:
+
+<p><a href="https://mirror.roytang.net/2017/03/sony-4k-hdr-bravia-x8000d/">read more (455 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2017/03/sony-4k-hdr-bravia-x8000d/"><time class="dt-published" datetime="2017-03-08 15:59:10">8 Mar 2017 3:59pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/hardware">#Hardware</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/review">#Review</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on tumblr" class='u-syndication' href="https://roytang.tumblr.com/post/158153649870/sony-4k-hdr-bravia-x8000d" title="View on tumblr">tumblr</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/839508602750701570/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2017/03/sony-4k-hdr-bravia-x8000d/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 455 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Aug 2016</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2016/08/internet-history/"><h3 class="p-name">Internet History</h3></a>
+    <time class="dt-published" datetime="2016-08-16 01:30:24">16 Aug 2016 1:30am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+No, not that kind of history, don&rsquo;t worry.
+Twenty-five years ago this month, the first website went up on the world wide web. That was 1991. It took a few years for the Philippines to catch on, the first internet connection in the country was only set up in 1994.
+My personal experience with the internet came a bit later, during our freshman year in University, sometime in the schoolyear 1995-1996.
+
+<p><a href="https://mirror.roytang.net/2016/08/internet-history/">read more (505 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2016/08/internet-history/"><time class="dt-published" datetime="2016-08-16 01:30:24">16 Aug 2016 1:30am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/nostalgia">#Nostalgia</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/philippines">#Philippines</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on tumblr" class='u-syndication' href="https://roytang.tumblr.com/post/149008100535/internet-history" title="View on tumblr">tumblr</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/765363759812599808/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/08/internet-history/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 505 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jun 2016</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2016/06/password-security-for-application-developers/"><h3 class="p-name">Password Security for Application Developers</h3></a>
+    <time class="dt-published" datetime="2016-06-16 01:30:02">16 Jun 2016 1:30am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+In the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user&rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:
+
+<p><a href="https://mirror.roytang.net/2016/06/password-security-for-application-developers/">read more (695 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2016/06/password-security-for-application-developers/"><time class="dt-published" datetime="2016-06-16 01:30:02">16 Jun 2016 1:30am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/software-development">#Software Development</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/743255093370290176/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/06/password-security-for-application-developers/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+    / 695 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2016/06/password-security-for-dummies/"><h3 class="p-name">Password Security for Dummies</h3></a>
+    <time class="dt-published" datetime="2016-06-14 01:30:08">14 Jun 2016 1:30am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Around the first week of June 2016, Mark Zuckerberg, well-known nerd and founder of Facebook, was hacked. If even the founder of the world&rsquo;s largest social network can be hacked, anybody can! So it might be a good idea to review how you manage and secure your online passwords
+   **Avoid using short, simple, or commonly-used passwords! **These are subject to so-called &ldquo;brute force&rdquo; attacks where bad actors just try a whole lot of passwords until they find one that works.
+
+<p><a href="https://mirror.roytang.net/2016/06/password-security-for-dummies/">read more (1311 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2016/06/password-security-for-dummies/"><time class="dt-published" datetime="2016-06-14 01:30:08">14 Jun 2016 1:30am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/742536346351370241/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/06/password-security-for-dummies/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+    / 1311 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Mar 2016</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I basically never want to use the feature. How to? There&rsquo;s another question here that answers how to disable it in Linux via a command-line option in .bashrc, but I don&rsquo;t think that can be done in Windows?</p>
+<p>Edit: Additional information:</p>
+<ul>
+<li>
+<p>I am on Windows 10</p>
+</li>
+<li>
+<p>No Recovery.xcu anywhere on my C drive.</p>
+</li>
+<li>
+<p>even if I discard recovery data, then the next time I open the same file there is no recovery prompt. But when I shutdown Windows without shutting down LibreOffice first, then I get the prompt the next time I open the file.</p>
+</li>
+</ul>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2016/03/1049085/"><time class="dt-published" datetime="2016-03-05 15:54:28">5 Mar 2016 3:54pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/libreoffice">#libreoffice</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/1049085/on-windows-can-i-prevent-libreoffice-from-prompting-for-document-recovery-when" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2016/03/1049085/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Dec 2012</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>When I came home today, my video card started displaying graphic artifacts, and logging in to windows 7 would cause the computer to reboot. The computer was working fine when i last shut it down last night.</p>
+<p>Here&rsquo;s <a href="http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;feature=g-crec-u">a video of what&rsquo;s happening</a>. I have two monitors, in the middle of the video I pan to the second monitor. At about 0:24, I attempt to login and the machine reboots. My video card is an NVidia GeForce GTX 460.</p>
+<p><a href="http://www.youtube.com/watch?v=KP4tIKvtZ_Q&amp;feature=g-crec-u"><img src="https://i.stack.imgur.com/yWYGp.png" alt=""></a></p>
+<p>Some more symptoms I&rsquo;ve encountered and stuff I&rsquo;ve tried over the course of several reboots:</p>
+<ul>
+<li>was able to login normally once, but after launching a few apps (chrome, tweetdeck), graphic artifacts started appearing again and the machine eventually froze</li>
+<li>am able to login successfully in safe mode</li>
+<li>sometimes the display is fine during the start up, and only starts getting wonky a few seconds after I go to the login screen by selecting a user to login with</li>
+<li>have encountered Windows failing to start up at all a couple of times (blue screen during startup)</li>
+<li>have tried System restore/repair a few times. i&rsquo;ve already tried all the restore points available</li>
+<li>have tried uninstalling the vid card driver; machine boots and lets me login and use apps as normal but of course i&rsquo;m at a low resolution (and won&rsquo;t be able to play games). tried to reinstall the vid card driver using automatic update; after the reinstall, same problem occurred</li>
+</ul>
+<p>Now I&rsquo;m not sure how to proceed; all signs point to the video card being damaged and probably in need of replacement; my question is are there any other things I can try first?</p>
+<p>Like, is it possible there&rsquo;s just something loose in the connections internally and I can try to remove and reconnect the card first? Or some alternative video driver to try? Or would a shop tech be able to do something to save the card?</p>
+<p>I don&rsquo;t have time to take apart the computer at the moment, probably I&rsquo;ll do it this weekend, but I&rsquo;d like to know my options ahead of time.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2012/12/518306/"><time class="dt-published" datetime="2012-12-12 12:29:11">12 Dec 2012 12:29pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/graphics-card">#graphics-card</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/display-driver">#display-driver</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/visual-artifacts">#visual-artifacts</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/518306/video-card-displays-graphic-artefacts" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2012/12/518306/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2012</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>It&rsquo;s happened a few times, I&rsquo;m not sure how to diagnose/debug, so any advise would be appreciated.</p>
+<p>Symptons:</p>
+<ul>
+<li>sometimes the router will randomly disconnect; the connection icon on my desktop (wired to the router) gets that yellow &ldquo;!&rdquo; symbol that tells me my connection just went down. At this point I&rsquo;m unable to ping the router.</li>
+<li>afterwards I try to reset the router by removing then reconnecting the power jack on the router side (this is the fastest way as I can&rsquo;t reset the power strip it&rsquo;s connected to without rebooting my desktop. the router has a reset thingy, but it&rsquo;s one of those things where i have to find a pin to stick into the hole, and when I get disconnected I usually need to get reconnected immediately so I just pull and put back the power jack), but even after that the connection has the same state.</li>
+<li>after the router reboots, if I try to connect to it using a wifi device like my ipad, the ipad prompts me for the wifi password even though it had already &ldquo;remembered&rdquo; all the settings for this router forever</li>
+<li>after i finally decide to reboot the power strip, and my desktop and the router boot up again, the connection returns to its normal state somewhat and i&rsquo;m able to connect to it as normal using the desktop and wifi devices.</li>
+</ul>
+<p>What do I need to check the next time this happens so I can figure out the problem? Is it possibly because we&rsquo;ve been using the power jack on the router as an easier way to reboot it? Should I be shopping around for a new router?</p>
+<p>If it helps, the router is a DLink DIR-300</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2012/11/503769/"><time class="dt-published" datetime="2012-11-10 11:03:05">10 Nov 2012 11:03am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/router">#router</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/503769/my-home-router-randomly-disconnects-me-and-im-unable-to-reconnect-to-it" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2012/11/503769/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        4</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>May 2011</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>We have a wifi router set up at home connected to our DSL router. And a lot of computers using it&hellip;there&rsquo;s a desktop (connected to the router via a wired connection), 6 laptops, an ipad and a few internet-capable cellphones (yeah, there are a lot of us at home)</p>
+<p>Sometimes our internet will &ldquo;act up&rdquo;, meaning some of the wireless devices will register as being connected to the access point but unable to access any sites. In such a case the other devices seem to be access the internet just fine.</p>
+<p>I&rsquo;m wondering if there&rsquo;s some sort of limit or anything to the number of wireless devices we should be allowing to access the router that causes this problem? What things do I need to check?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2011/05/286528/"><time class="dt-published" datetime="2011-05-21 04:10:51">21 May 2011 4:10am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/wireless-networking">#wireless-networking</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/286528/some-wireless-devices-occasionally-cant-connect-to-the-internet-via-our-wireles" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2011/05/286528/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        4</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jan 2011</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>So I came home and stumbled upon a bit of a mystery. When I got home my brother was using my desktop PC that was running Windows 7 (I have accounts for my 2 brothers and my mom on the machine, but mine is the only admin account). After he finished his game he logged out and I logged in to my account, but found only strangeness.</p>
+<p>My windows account seems to have been somewhat &ldquo;reset&rdquo;, meaning:</p>
+<ul>
+<li>my quick launch shortcuts were gone</li>
+<li>my dropbox account did not automatically login</li>
+<li>my pidgin accounts were no longer there</li>
+<li>I had to relogin Steam</li>
+<li>iTunes could not launch (I had hooked up my iDevice before logging in)</li>
+<li>The Documents/Pictures/Music shortcuts in the start menu no longer work</li>
+</ul>
+<p>However, despite that:</p>
+<ul>
+<li>my desktop wallpaper was still correct</li>
+<li>my documents folder was still there in c:\Users\my account name\My Documents as expected</li>
+<li>Google Chrome settings seem to have been retained</li>
+<li>other accounts on the same machine seem to be fine</li>
+</ul>
+<p>I asked my brother if he had installed anything strange during the day, he only installed Yahoo Messenger. I last used the machine around 24 hours ago and it was fine then.</p>
+<p>I&rsquo;m not sure what else has been affected. I&rsquo;m inclined to just create a new admin user for me to use, but I&rsquo;d like to have some idea of what actually happened.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2011/01/233276/"><time class="dt-published" datetime="2011-01-14 16:17:55">14 Jan 2011 4:17pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/windows-7">#windows-7</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/233276/windows-7-account-settings-vanished" title="View on stackexchange">stackexchange</a>
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/25949896687222785/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2011/01/233276/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2010</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I&rsquo;m using Google Chrome, is there a way (extension or whatever) to set a separate download folder according to file type? i.e. exe files into one folder, image files into a different one, etc.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2010/11/212994/"><time class="dt-published" datetime="2010-11-20 03:15:46">20 Nov 2010 3:15am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/google-chrome">#google-chrome</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/212994/organizing-downloads-in-google-chrome" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2010/11/212994/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Oct 2010</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2010/10/ipad-first-impressions-and-snap-judgments/"><h3 class="p-name">iPad: First Impressions and Snap Judgments</h3></a>
+    <time class="dt-published" datetime="2010-10-24 04:28:52">24 Oct 2010 4:28am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+So, through a complicated series of circumstances where I initiated the process but actually managed to get myself surprised, I now own an iPad Wifi+3g 64GB (yes, it&rsquo;s the most expensive model, don&rsquo;t worry it did not break the piggy bank). It was purchased from Singapore and brought to me by a friend last Friday. I&rsquo;ve used an iPad before (during the CCS trip Baguio), but this is the first time I&rsquo;ve had the chance to customize the applications and content, and have it exclusive for my own use.
+
+<p><a href="https://mirror.roytang.net/2010/10/ipad-first-impressions-and-snap-judgments/">read more (999 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2010/10/ipad-first-impressions-and-snap-judgments/"><time class="dt-published" datetime="2010-10-24 04:28:52">24 Oct 2010 4:28am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/28571035582/" title="View on twitter">twitter</a>
+
+    <a rel="syndication" title="View on plurk" class='u-syndication' href="https://plurk.com/p/8frcw6" title="View on plurk">plurk</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2010/10/ipad-first-impressions-and-snap-judgments/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        7</a>
+
+    
+    
+    / 999 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jul 2010</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have an Acer Aspire 4920G that I&rsquo;ve had for a couple of years, running Windows/Ubuntu.</p>
+<p>I have temperature monitors set up so i can see that with time my CPU temps go as high as 85C, sometimes even spiking to 90C. On startup, the temps are around 65C-75C.</p>
+<p>How bad is this, and anything I can do to avoid it/reduce the temp? I&rsquo;ve already tried to open up the laptop to clean away any dust, but unfortunately some of the screws are really hard to remove. I don&rsquo;t want to take it to a shop before trying stuff out myself as I&rsquo;m no longer under warranty.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2010/07/165946/"><time class="dt-published" datetime="2010-07-21 03:02:08">21 Jul 2010 3:02am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/laptop">#laptop</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/cooling">#cooling</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/165946/is-75-85c-temperature-too-much-for-a-laptop" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2010/07/165946/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jun 2010</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2010/06/the-setup/"><h3 class="p-name">The Setup</h3></a>
+    <time class="dt-published" datetime="2010-06-08 23:20:52">8 Jun 2010 11:20pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+A while back I started reading The Setup, which is basically a collection of interviews with various tech/creative guys about what sort of hardware and software they use. I always enjoy this sort of thing &ndash; it feeds my tech envy when they describe cool setups or gadgets I don&rsquo;t have. (A lot of them have Macs!)
+I actually purchased a new desktop computer a while back without posting any details, so I thought I&rsquo;d something similar to The Setup so that I have a record of what I&rsquo;m using now.
+
+<p><a href="https://mirror.roytang.net/2010/06/the-setup/">read more (595 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2010/06/the-setup/"><time class="dt-published" datetime="2010-06-08 23:20:52">8 Jun 2010 11:20pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on twitter" class='u-syndication' href="https://twitter.com/roytang/statuses/15748539403/" title="View on twitter">twitter</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2010/06/the-setup/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+    / 595 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Apr 2010</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a laptop dual booting to Windows 7 and Opensuse 11.2. However, I&rsquo;d like to switch to a different Linux distro (probably Ubuntu, that&rsquo;s what I&rsquo;m used to)</p>
+<p>Is there a way for me to do it without losing the Windows 7 setup/data?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2010/04/129821/"><time class="dt-published" datetime="2010-04-11 14:55:45">11 Apr 2010 2:55pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/linux">#linux</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/multi-boot">#multi-boot</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/129821/how-to-install-a-new-linux-distro-and-remove-the-old-one" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2010/04/129821/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Dec 2009</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Is there any way to have my Yahoo Mail forwarded to another email address, without getting Yahoo Mail plus?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/12/80761/"><time class="dt-published" datetime="2009-12-09 04:47:22">9 Dec 2009 4:47am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/email">#email</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/forwarding">#forwarding</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/yahoo-mail">#yahoo-mail</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/80761/yahoo-mail-forwarding" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/12/80761/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2009</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>I have a 320GB western digital external HDD that was working fine a couple of days ago.</p>
+<p>I plugged it into my Windows XP machine at work, and it detects the USB device (it is listed in the Safely Remove Hardware dialog), but it doesn&rsquo;t detect the disk, not even under Disk Management in Control Panel. I&rsquo;ve successfully used this ext HD on this machine before, so I suspect it is busted. I tried it on a couple of other machines none of them could detect the disk.</p>
+<p>The only possible reason I could think of is that the bag I was carrying it in fell to the floor off a table a couple of days ago, it might have been damaged then.</p>
+<p>Obviously I would like to have the device working again, but failing that I would like to be able tor recover all the data on the disk.</p>
+<p>What are my options?</p>
+<p>Edit: In case it&rsquo;s relevant, the product page for the ext HD is <a href="http://www.wdc.com/en/products/products.asp?driveid=698">here</a>.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/11/76254/"><time class="dt-published" datetime="2009-11-28 04:41:09">28 Nov 2009 4:41am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/external-hard-drive">#external-hard-drive</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/76254/wd-external-hd-no-longer-working" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/11/76254/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Oct 2009</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Can anyone make recommendations? I used to use Launchy back in the XP days, but I don&rsquo;t know if there are better alternatives now.</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/10/63436/"><time class="dt-published" datetime="2009-10-31 04:00:14">31 Oct 2009 4:00am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/windows-7">#windows-7</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/launcher">#launcher</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/63436/spotlight-equivalent-for-windows-7" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/10/63436/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        5</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Sep 2009</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item notes h-entry">
+    
+
+    
+<div class="content e-content">
+
+<p>Here&rsquo;s our home setup: we have a wireless router, connected are 2 desktop PCs (let&rsquo;s call them A and B), plus we also have a laptop that connects to the router via wi-fi. Desktops A and B are connected via LAN wires.</p>
+<p>Given that, the problem is that every time desktop A starts up or shuts down (it seems to be simply on power up or power down, the OS it&rsquo;s booting into doesn&rsquo;t matter), the wireless connection is reset, i.e. the laptop literally loses the connection and has to reconnect. No such problem happens when restarting desktop B. It&rsquo;s a bit of a pain when I&rsquo;m playing online games or something over the laptop and desktop A reboots.</p>
+<p>I&rsquo;m not sure what to check for here&hellip;would it be a problem with the router, with the way the network is set up, or something else?</p>
+
+
+
+<div class="image-list">
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/notes">notes</a> at 
+    <a href="https://mirror.roytang.net/2009/09/36263/"><time class="dt-published" datetime="2009-09-05 14:31:49">5 Sep 2009 2:31pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/wireless-networking">#wireless-networking</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/questions">#questions</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/superuser">#superuser</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on stackexchange" class='u-syndication' href="https://superuser.com/questions/36263/desktop-rebooting-restarts-wireless-connection" title="View on stackexchange">stackexchange</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2009/09/36263/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        6</a>
+
+    
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Dec 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/12/can-anyone-recommend-a-phone/"><h3 class="p-name">Can Anyone Recommend a Phone</h3></a>
+    <time class="dt-published" datetime="2008-12-28 00:07:00">28 Dec 2008 12:07am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+ 3.2MP or better camera good/easy to use music player at least 2 GB storage more is better prefer easy to use keypad / d-pad (ayaw ko ng may joystick) the larger the display the better (at least 2.4&rdquo; is preferred - same size display as my last phone) Internet/HTML browsing is a plus - able to view PDFs or office docs easily mura lang. j/k, bahala na ung budget but please don&rsquo;t tell me to get an IPhone, N96 or Xperia X1 unless you&rsquo;re willing to sponsor it :D  
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/12/can-anyone-recommend-a-phone/"><time class="dt-published" datetime="2008-12-28 00:07:00">28 Dec 2008 12:07am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#tech life</a>
+
+
+
+
+    <br />
+    
+Also on: 
+
+    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/42328031798" title="View on facebook">facebook</a>
+
+    <a rel="syndication" title="View on facebook" class='u-syndication' href="https://www.facebook.com/stephen.roy.tang/posts/46243732390" title="View on facebook">facebook</a>
+
+
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/12/can-anyone-recommend-a-phone/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        8</a>
+
+    
+    
+    / 89 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Oct 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/10/imeem/"><h3 class="p-name">Imeem</h3></a>
+    <time class="dt-published" datetime="2008-10-21 05:29:54">21 Oct 2008 5:29am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+My brother pointed me to a new (to me at least) online music service called imeem. The website caught my interest for two reasons.
+ It uses Adobe Flex, a technology which I&rsquo;ve been using for the past year or so. Any Flex developer knows it&rsquo;s Flex just by looking at the widgets. (Click to enlarge the screenshot!)    (Click to view full-size)    
+21 Oct 2008 5:29amClose   The service allowed me to find an mp3 which I&rsquo;ve never found before and have used as a benchmark for how good an mp3 search service is.
+
+<p><a href="https://mirror.roytang.net/2008/10/imeem/">read more (108 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/10/imeem/"><time class="dt-published" datetime="2008-10-21 05:29:54">21 Oct 2008 5:29am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/10/imeem/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 108 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/10/bayan-dsl-proxy/"><h3 class="p-name">Bayan DSL Proxy</h3></a>
+    <time class="dt-published" datetime="2008-10-05 15:45:04">5 Oct 2008 3:45pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+If you&rsquo;ve been having trouble with Bayan DSL web connections to some websites (which we have for the past few weeks or so), you may be surprised to know that they have an HTTP proxy server you can use. Strange, considering that when reporting such problems to their trunkline, they never ask whether you&rsquo;re using that proxy server or not. I don&rsquo;t recall ever being told about it by the Bayan DSL staff.
+
+<p><a href="https://mirror.roytang.net/2008/10/bayan-dsl-proxy/">read more (139 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/10/bayan-dsl-proxy/"><time class="dt-published" datetime="2008-10-05 15:45:04">5 Oct 2008 3:45pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/10/bayan-dsl-proxy/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        3</a>
+
+    
+    
+    / 139 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Aug 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/08/transferring-files-to-n73-from-vista-using-bluetooth/"><h3 class="p-name">Transferring Files to N73 from Vista Using Bluetooth</h3></a>
+    <time class="dt-published" datetime="2008-08-22 07:46:38">22 Aug 2008 7:46am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I needed to transfer a file to my phone today, but could not find my USB cable. I figured I&rsquo;d try out the Bluetooth with the laptop.
+After around 30 minutes of struggling with the unintuitiveness and some helpful googling I finally was able to transfer my file using the ff steps, for future reference:
+  Turn on Bluetooth on the Acer Aspire using the Bluetooth button.
+  Right-click the Bluetooth icon on the systray -&gt; Show Bluetooth Devices -&gt; Options -&gt; tick &ldquo;Allow Bluetooth devices to find this computer&rdquo;
+
+<p><a href="https://mirror.roytang.net/2008/08/transferring-files-to-n73-from-vista-using-bluetooth/">read more (267 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/08/transferring-files-to-n73-from-vista-using-bluetooth/"><time class="dt-published" datetime="2008-08-22 07:46:38">22 Aug 2008 7:46am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/08/transferring-files-to-n73-from-vista-using-bluetooth/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 267 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jul 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/07/gmail-redesigned/"><h3 class="p-name">GMail Redesigned</h3></a>
+    <time class="dt-published" datetime="2008-07-21 07:27:37">21 Jul 2008 7:27am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I came across the Stylish Firefox Extension, and the GMail Redesigned project, which gives the GMail user interface a sleek facelift.
+(I&rsquo;m not sure if it was necessary to blot out the names of contacts!)
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/07/gmail-redesigned/"><time class="dt-published" datetime="2008-07-21 07:27:37">21 Jul 2008 7:27am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/07/gmail-redesigned/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 35 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/07/flocking/"><h3 class="p-name">Flocking</h3></a>
+    <time class="dt-published" datetime="2008-07-03 07:27:13">3 Jul 2008 7:27am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I&rsquo;m not sure why but I decided to try out the Flock 2 web browser beta, the &ldquo;social web browser&rdquo; built on top of Firefox.
+This is a test actually. Flock&rsquo;s blog post dialog doesn&rsquo;t seem to provide any category support (it supports tags instead), so I want to see what category this post would go under.
+(Update: Flock let me choose a category after I try to publish the post.
+
+<p><a href="https://mirror.roytang.net/2008/07/flocking/">read more (108 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/07/flocking/"><time class="dt-published" datetime="2008-07-03 07:27:13">3 Jul 2008 7:27am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/07/flocking/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 108 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jun 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/06/a-week-so-far-with-vista/"><h3 class="p-name">A Week So Far With Vista</h3></a>
+    <time class="dt-published" datetime="2008-06-28 19:34:58">28 Jun 2008 7:34pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+The gist of it is: it wasn&rsquo;t as annoying as I had been led to expect.
+Frankly, I think it&rsquo;s better than XP, but I might be blinded by the fact that it&rsquo;s very pretty. Visually it&rsquo;s a step up from XP the same way XP was a step up from &lsquo;95. The XP box at work seems so bland to me now.
+The file manager (Explorer) is very nice, I like the functionality of being able to navigate the address bar by mouse click (though I never used this back in Ubuntu) and the ability to sort files even in thumbnail view.
+
+<p><a href="https://mirror.roytang.net/2008/06/a-week-so-far-with-vista/">read more (327 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/06/a-week-so-far-with-vista/"><time class="dt-published" datetime="2008-06-28 19:34:58">28 Jun 2008 7:34pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/06/a-week-so-far-with-vista/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+    / 327 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/06/new-laptop/"><h3 class="p-name">New Laptop!</h3></a>
+    <time class="dt-published" datetime="2008-06-21 21:46:54">21 Jun 2008 9:46pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Just a bit of an indulgence.
+There was a warehouse sale at the office building from Tuesday to Friday. Like every single time I would make a big purchase I waffled undecisively between buying and not buying a laptop for the first four days, only to succumb at the very last minute when a model with an insane price became available.
+On 7:30pm of the last day of the sale, I picked up an Acer Aspire 4920 unit with the following specs:
+
+<p><a href="https://mirror.roytang.net/2008/06/new-laptop/">read more (367 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/06/new-laptop/"><time class="dt-published" datetime="2008-06-21 21:46:54">21 Jun 2008 9:46pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/06/new-laptop/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 367 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/06/opera-9-5/"><h3 class="p-name">Opera 9.5</h3></a>
+    <time class="dt-published" datetime="2008-06-17 06:29:28">17 Jun 2008 6:29am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Because I&rsquo;m a sucker for trying out alternative software, I installed and tried out the latest release of the Opera web browser, Opera 9.5, for a bit more than a week. Opera is neat and all, but I don&rsquo;t see any features that are so awesome that they can&rsquo;t be done in Firefox (with some extensions maybe).
+My favorite feature is I guess the Speed Dial page; where opening a new tab displays a customizable table of common websites you visit.
+
+<p><a href="https://mirror.roytang.net/2008/06/opera-9-5/">read more (226 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/06/opera-9-5/"><time class="dt-published" datetime="2008-06-17 06:29:28">17 Jun 2008 6:29am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/06/opera-9-5/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 226 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/06/posting-from-an-igoogle-gadget/"><h3 class="p-name">Posting from an iGoogle Gadget</h3></a>
+    <time class="dt-published" datetime="2008-06-02 18:03:39">2 Jun 2008 6:03pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I added an iGoogle Gadget that allows me to post from iGoogle. Neat huh?
+But I&rsquo;m not sure if it&rsquo;s okay to trust the gadget with my blog account details&hellip;
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/06/posting-from-an-igoogle-gadget/"><time class="dt-published" datetime="2008-06-02 18:03:39">2 Jun 2008 6:03pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/meta">#Meta</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/06/posting-from-an-igoogle-gadget/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 30 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>May 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/05/openoffice-calc-2-4-vs-microsoft-excel/"><h3 class="p-name">OpenOffice Calc 2.4 vs Microsoft Excel</h3></a>
+    <time class="dt-published" datetime="2008-05-14 20:00:33">14 May 2008 8:00pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+<p>An alpha release was just announced for Open Office 3. Being an Ubuntu user, Open Office is really the only sane choice I have for an office suite. At work I&rsquo;m using Microsoft Office 2007. Among the office suite applications, I&rsquo;m most of a power user for the spreadsheet applications. Here&rsquo;s my side-by-side comparison of Excel and oOo Calc:</p>
+<p>Microsoft Excel 2007 on Windows XP:</p>
+<ul>
+<li>Looks really pretty.</li>
+<li>Loads up quickly.</li>
+<li>Proprietary and expensive.</li>
+<li>Not available for Linux.</li>
+</ul>
+<p>OpenOffice Calc 2.4.1 on Ubuntu:</p>
+<ul>
+<li>Feature-rich &ndash; has some features that excel does not.</li>
+<li>I can have a sandwich in the time it&rsquo;s loading.</li>
+<li>Free as in speech, and as in beer too!</li>
+<li>Usability issues, such as inconveniently prompting a dialog box on every delete. (This is logged in their database as <a href="http://qa.openoffice.org/issues/show_bug.cgi?id=9392">bug # 9392</a>. There&rsquo;s a workaround, but hopefully it will be fixed by default in Open Office 3)</li>
+<li>Autofilter feature is immature compared to Excel, not enough options for filtering.</li>
+<li>It can open a password-protected XLS correctly (prompting me for the password), but it can&rsquo;t save it back with the password.</li>
+<li>I was going to complain about the UI, but now that I&rsquo;ve thought better of it, it&rsquo;s no worse than other GTK/Linux apps.</li>
+</ul>
+
+<p><a href="https://mirror.roytang.net/2008/05/openoffice-calc-2-4-vs-microsoft-excel/">read more (380 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/05/openoffice-calc-2-4-vs-microsoft-excel/"><time class="dt-published" datetime="2008-05-14 20:00:33">14 May 2008 8:00pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/05/openoffice-calc-2-4-vs-microsoft-excel/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 380 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Mar 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/03/laptop-keyboards-suck/"><h3 class="p-name">Laptop Keyboards Suck</h3></a>
+    <time class="dt-published" datetime="2008-03-19 03:36:26">19 Mar 2008 3:36am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Seriously. Having to hit an extra key just to use &ldquo;Home&rdquo; or &ldquo;End&rdquo;? For some reason, PrintScreen and CapsLock keys are higher priority than Home and End, meaning you don&rsquo;t need to use &ldquo;Fn&rdquo; to access them. Do people not use Ctrl+Shift+Home and Ctrl+Shift+End all the time? I&rsquo;m sure a lot of developers do. Whenever I&rsquo;m on this laptop and need to use Home or End, I mentally pronounce &ldquo;Fn&rdquo; as a seven-letter word starting with &ldquo;F&rdquo; and ending with &ldquo;ing&rdquo;.
+
+<p><a href="https://mirror.roytang.net/2008/03/laptop-keyboards-suck/">read more (151 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/03/laptop-keyboards-suck/"><time class="dt-published" datetime="2008-03-19 03:36:26">19 Mar 2008 3:36am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/03/laptop-keyboards-suck/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        1</a>
+
+    
+    
+    / 151 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Feb 2008</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/02/a-few-pictures-from-kerwin-and-joy39s-wedding/"><h3 class="p-name">A Few Pictures from Kerwin and Joy&#39;s Wedding</h3></a>
+    <time class="dt-published" datetime="2008-02-13 15:51:57">13 Feb 2008 3:51pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I wanted to test out multiply&rsquo;s uploader, so here you go
+Edit 9 years later: Sadly, Multiply is no longer up. Also, weird how back then Facebook wasn&rsquo;t popular yet for photo sharing.
+.
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/02/a-few-pictures-from-kerwin-and-joy39s-wedding/"><time class="dt-published" datetime="2008-02-13 15:51:57">13 Feb 2008 3:51pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/02/a-few-pictures-from-kerwin-and-joy39s-wedding/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 34 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2008/02/trying-out-kde4/"><h3 class="p-name">Trying out KDE4</h3></a>
+    <time class="dt-published" datetime="2008-02-03 07:45:28">3 Feb 2008 7:45am</time>
+
+</div>
+
+    
+<div class="featured_image_wrapper">
+
+
+
+
+    
+    
+    <div class="featured_image">
+        
+            
+                
+
+
+
+  
+
+
+
+<a href="#aa960e7cb9ae4a178b9b055f67b57d31-lightbox">
+    <figure>
+      <img src="https://mirror.roytang.net/2008/02/trying-out-kde4/screenshot_hu79973130af8830dcf4c3c4b5a55ec1c6_999222_300x0_resize_box_2.png" alt="KDE4 Screenshot" title="KDE4 Screenshot" class="tn" />
+    </figure>
+</a>
+<div  class="lightbox" id="aa960e7cb9ae4a178b9b055f67b57d31-lightbox" style="display: none;">
+  <a href="#_">
+    <img src="https://mirror.roytang.net/2008/02/trying-out-kde4/screenshot.png" />
+  </a>
+  <div class="lightbox_overlay">
+    <p>KDE4 Screenshot</p>
+    <time class="dt-published" datetime=""></time><a href="https://mirror.roytang.net/2008/02/trying-out-kde4/">View post</a><a href="#_">Close</a>
+  </div>
+</div>
+
+
+            
+        
+    </div>
+
+    
+<div>
+
+
+<div class="content p-summary">
+<p>After finding out that KDE4 was already available for Kubuntu 7.10, the nice screenshots of the new Oxygen theme and hints of a revamped panel and widget system appealed to my inner geek envy, so I decided to install and give it a whirl.</p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a href="#aa960e7cb9ae4a178b9b055f67b57d31-lightbox">
+    <figure>
+      <img src="https://mirror.roytang.net/2008/02/trying-out-kde4/screenshot_hu79973130af8830dcf4c3c4b5a55ec1c6_999222_300x0_resize_box_2.png" alt="KDE4 Screenshot" title="KDE4 Screenshot" class="tn" />
+      <figcaption>KDE4 Screenshot (Click to view full-size)</figcaption>
+    </figure>
+</a>
+<div class="lightbox" id="aa960e7cb9ae4a178b9b055f67b57d31-lightbox" style="display: none;">
+  <a href="#_">
+    <img src="https://mirror.roytang.net/2008/02/trying-out-kde4/screenshot.png" />
+  </a>
+  <div class="lightbox_overlay">
+    <p>KDE4 Screenshot</p>
+    <time class="dt-published" datetime="3 Feb 2008 7:45am">3 Feb 2008 7:45am</time><a href="#_">Close</a>
+  </div>
+</div>
+
+<p>My quick impression, after 15 minutes of usage:</p>
+
+<p><a href="https://mirror.roytang.net/2008/02/trying-out-kde4/">read more (418 words)</a></p>
+
+</div>
+
+
+</div>
+</div>
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2008/02/trying-out-kde4/"><time class="dt-published" datetime="2008-02-03 07:45:28">3 Feb 2008 7:45am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2008/02/trying-out-kde4/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 418 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Dec 2007</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/12/today-is-a-good-day-to-nuke-your-xp-install/"><h3 class="p-name">Today is a good day to nuke your XP install</h3></a>
+    <time class="dt-published" datetime="2007-12-29 08:40:16">29 Dec 2007 8:40am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I&rsquo;m not sure why I keep trying to get the Ubuntu + XP dual boot thing working. I don&rsquo;t really need it, I can do most of the things I want to do in XP. And I can&rsquo;t really play games in Ubuntu (I don&rsquo;t really want to bother with all the crap Wine puts you through). Still, every so often I&rsquo;m hit with some sort of geek envy where I just want to have an Ubuntu installation handy so I can try out some cool stuff like Compiz or whatnot.
+
+<p><a href="https://mirror.roytang.net/2007/12/today-is-a-good-day-to-nuke-your-xp-install/">read more (166 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/12/today-is-a-good-day-to-nuke-your-xp-install/"><time class="dt-published" datetime="2007-12-29 08:40:16">29 Dec 2007 8:40am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/12/today-is-a-good-day-to-nuke-your-xp-install/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 166 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Nov 2007</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/11/social-networking/"><h3 class="p-name">Social Networking</h3></a>
+    <time class="dt-published" datetime="2007-11-30 04:52:24">30 Nov 2007 4:52am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+&ldquo;Robert suggested we create Facebook accounts, I think in an effort to establish that we were &ldquo;down&rdquo; with whatever &ldquo;new jives&rdquo; the kids were flexing on the mean streets. I refused. Gabriel buckled, and the bullshit that ensued verified my initial assessment: that maintaining Facebook would quickly constitute another job. Of which I already have several.&quot;
+— Tycho, Penny-Arcade
+I never really bought into social networking (because I am of course antisocial) But lo and behold!
+
+<p><a href="https://mirror.roytang.net/2007/11/social-networking/">read more (267 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/11/social-networking/"><time class="dt-published" datetime="2007-11-30 04:52:24">30 Nov 2007 4:52am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/11/social-networking/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 267 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>May 2007</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/05/back-into-the-fold-or-revenge-of-the-xp/"><h3 class="p-name">Back into the Fold (or Revenge of the XP)</h3></a>
+    <time class="dt-published" datetime="2007-05-28 04:58:02">28 May 2007 4:58am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Amazingly, I went more than two whole months using only Ubuntu at home since one of my RAM sticks got busted and Windows refused to boot. Luckily, I have a dual boot computer, with Ubuntu as my alternative OS.
+Ubuntu is pretty awesome. As a Windows replacement, it does most of the things you need without much problem. It has two distinct advantages over Windows:
+  The Debian package distribution mechanism is just great.
+
+<p><a href="https://mirror.roytang.net/2007/05/back-into-the-fold-or-revenge-of-the-xp/">read more (297 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/05/back-into-the-fold-or-revenge-of-the-xp/"><time class="dt-published" datetime="2007-05-28 04:58:02">28 May 2007 4:58am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/05/back-into-the-fold-or-revenge-of-the-xp/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 297 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/05/indulgence-the-nokia-n73/"><h3 class="p-name">Indulgence -- the Nokia N73</h3></a>
+    <time class="dt-published" datetime="2007-05-10 04:52:24">10 May 2007 4:52am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I bought a new phone yesterday.
+At the recommendation of my brother, I got one from the Nokia N-series, the Nokia N73. As a relatively recent smartphone release, it cost quite a chunk of cash. I was having second thoughts for a while, because I&rsquo;m almost never comfortable parting with a significant amount of cash. If I&rsquo;m going to spend more than a week&rsquo;s salary on something, it better provide me with a decent amount of entertainment
+
+<p><a href="https://mirror.roytang.net/2007/05/indulgence-the-nokia-n73/">read more (241 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/05/indulgence-the-nokia-n73/"><time class="dt-published" datetime="2007-05-10 04:52:24">10 May 2007 4:52am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/hardware">#Hardware</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/05/indulgence-the-nokia-n73/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 241 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Mar 2007</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/03/the-miracle-pc/"><h3 class="p-name">The Miracle PC</h3></a>
+    <time class="dt-published" datetime="2007-03-13 04:49:48">13 Mar 2007 4:49am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+My computer died last night, refusing to boot. Ubuntu would complain of being unable to read the root filesystem. Windows XP would say that there&rsquo;s a corrupted DLL. I immediately arranged to borrow both an Ubuntu LiveCD and a Windows XP install disk the next day to help check the problem.
+When I got home today, the computer had been miraculously fixed. My brother said he&rsquo;d been using it no problem.
+
+<p><a href="https://mirror.roytang.net/2007/03/the-miracle-pc/">read more (106 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/03/the-miracle-pc/"><time class="dt-published" datetime="2007-03-13 04:49:48">13 Mar 2007 4:49am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/03/the-miracle-pc/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+    / 106 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jan 2007</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/01/newshutch-feed-aggregator/"><h3 class="p-name">NewsHutch -- feed aggregator</h3></a>
+    <time class="dt-published" datetime="2007-01-18 00:31:27">18 Jan 2007 12:31am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I&rsquo;m going to try out a new feed aggregator for a while &ndash; NewsHutch. Don&rsquo;t get me wrong, Bloglines is nice and all, but one gets tired of the UI after a while. NewsHutch looks&hellip; nice.
+And don&rsquo;t get me started on Google Reader&hellip; that one is slow as molasses. (I added it to my Google Customized Homepage though, maybe that makes it better)
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/01/newshutch-feed-aggregator/"><time class="dt-published" datetime="2007-01-18 00:31:27">18 Jan 2007 12:31am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/01/newshutch-feed-aggregator/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 64 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/01/personal-productivity/"><h3 class="p-name">Personal Productivity</h3></a>
+    <time class="dt-published" datetime="2007-01-17 23:33:00">17 Jan 2007 11:33pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Since I&rsquo;m going back to work starting on Saturday, I thought I&rsquo;d try to look for ways to improve my productivity at work.
+I&rsquo;ve downloaded a few utilities that I can try at work to see if it can improve my workflow.
+The first one is SlickRun. Basically it&rsquo;s a Start -&gt; Run replacement &ndash; press a predefined hotkey and a small command line tool appears where I can type shortcut-like commands.
+
+<p><a href="https://mirror.roytang.net/2007/01/personal-productivity/">read more (385 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/01/personal-productivity/"><time class="dt-published" datetime="2007-01-17 23:33:00">17 Jan 2007 11:33pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/01/personal-productivity/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 385 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2007/01/adventures-in-linux-land-part-4/"><h3 class="p-name">Adventures in Linux Land, part 4</h3></a>
+    <time class="dt-published" datetime="2007-01-03 04:21:34">3 Jan 2007 4:21am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I upgraded my Kubuntu Linux installation to Edgy Eft during the Christmas break. Some notes:
+  Why can&rsquo;t there be a one-click install? You know, some pop-up alert bubble in the corner saying &ldquo;A new version of Kubuntu is available.&rdquo; I don&rsquo;t see why the user needs to edit the sources.list file, do the apt-get stuff, etc., when all of this can basically be automated away.
+  Except for one thing, I can do everything I need to do using Kubuntu instead of using Windows.
+
+<p><a href="https://mirror.roytang.net/2007/01/adventures-in-linux-land-part-4/">read more (209 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2007/01/adventures-in-linux-land-part-4/"><time class="dt-published" datetime="2007-01-03 04:21:34">3 Jan 2007 4:21am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2007/01/adventures-in-linux-land-part-4/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 209 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Oct 2006</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/10/new-monitor/"><h3 class="p-name">new monitor</h3></a>
+    <time class="dt-published" datetime="2006-10-30 08:28:38">30 Oct 2006 8:28am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+New monitor - 19” widescreen LCD. That whole desk used to hold a monitor! (Click to view full-size)    New monitor - 19&rdquo; widescreen LCD. That whole desk used to hold a monitor!
+30 Oct 2006 8:28amView postClose    As promised, a picture.  That desk used to hold an entire monitor! Now it has my wallet, a watch, a couple of flash drives, a landline, a cellphone and a whole bunch of wires!
+
+<p><a href="https://mirror.roytang.net/2006/10/new-monitor/">read more (71 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/10/new-monitor/"><time class="dt-published" datetime="2006-10-30 08:28:38">30 Oct 2006 8:28am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/hardware">#Hardware</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/10/new-monitor/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 71 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/10/19-inches-of-widescreen-lcd-sweetness/"><h3 class="p-name">19-inches of Widescreen LCD Sweetness</h3></a>
+    <time class="dt-published" datetime="2006-10-29 04:08:49">29 Oct 2006 4:08am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I wish I had a camera right now so I could post a picture of it, but yeah, I now have a brand-new 19-inch widescreen LCD monitor on my desk. Wow, I have so much space! Both physical space and desktop space!
+I came home at past 12 midnight last night and was so sleepy I would have immediately went into a catatonic sleep had my brother not brought home and installed this new monitor.
+
+<p><a href="https://mirror.roytang.net/2006/10/19-inches-of-widescreen-lcd-sweetness/">read more (106 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/10/19-inches-of-widescreen-lcd-sweetness/"><time class="dt-published" datetime="2006-10-29 04:08:49">29 Oct 2006 4:08am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/hardware">#Hardware</a>
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/10/19-inches-of-widescreen-lcd-sweetness/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 106 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/10/eudora-to-become-open-source/"><h3 class="p-name">Eudora to Become Open Source</h3></a>
+    <time class="dt-published" datetime="2006-10-12 07:37:30">12 Oct 2006 7:37am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+QUALCOMM Press Center &ndash; QUALCOMM Launches Project in Collaboration with Mozilla Foundation to Develop Open Source Version of Eudora Email Program &ndash;link
+Wow.
+Eudora was my email client of choice back in the day, when webapps were still so much crappier. I suppose they realized so many people had switched to using either GMail or Thunderbird, that they had to do something to make their product relevant.
+My favorite thing about Eudora was that their client would have a stats page; it literally tracks the amount of time you spend reading and writing email, the average amount of mail you get daily, etc.
+
+<p><a href="https://mirror.roytang.net/2006/10/eudora-to-become-open-source/">read more (127 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/10/eudora-to-become-open-source/"><time class="dt-published" datetime="2006-10-12 07:37:30">12 Oct 2006 7:37am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/10/eudora-to-become-open-source/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 127 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Jun 2006</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/06/quicktime-plugin-doesn39t-support-linux/"><h3 class="p-name">Quicktime plugin doesn&#39;t support linux?</h3></a>
+    <time class="dt-published" datetime="2006-06-19 16:52:22">19 Jun 2006 4:52pm</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Wtf? The apple website only lets me choose between Mac and Windows versions of the plugin?
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/06/quicktime-plugin-doesn39t-support-linux/"><time class="dt-published" datetime="2006-06-19 16:52:22">19 Jun 2006 4:52pm</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/06/quicktime-plugin-doesn39t-support-linux/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 16 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+<h3>Apr 2006</h3>
+<ul class="entry_list">
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/04/yahoo-mail-beta/"><h3 class="p-name">Yahoo Mail Beta</h3></a>
+    <time class="dt-published" datetime="2006-04-28 05:21:35">28 Apr 2006 5:21am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+I tried the new Yahoo Mail Beta for a while, but I decided to switch back just now.
+Short review: it&rsquo;s nice looking, but feels a tad sluggish. Well, sluggish compared to gmail at least. The biggest problem is that scrollbar in the message list. It&rsquo;s like promising that you can scroll through all your messages, but when you try to scroll to a far away part of the list, you just get a lot of &ldquo;Loading&hellip; &quot; text.
+
+<p><a href="https://mirror.roytang.net/2006/04/yahoo-mail-beta/">read more (128 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/04/yahoo-mail-beta/"><time class="dt-published" datetime="2006-04-28 05:21:35">28 Apr 2006 5:21am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/04/yahoo-mail-beta/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        2</a>
+
+    
+    
+    / 128 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/04/recording-industry-vs-the-people/"><h3 class="p-name">Recording Industry vs The People</h3></a>
+    <time class="dt-published" datetime="2006-04-19 08:27:28">19 Apr 2006 8:27am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+There are a handful of issues that would influence the general direction of the human race in years to come. Terrorism, oil scarcity, trade imbalances and worldwide poverty come to mind, and these are the ones most commonly discussed in mainstream media. There is however, another important battle being waged that is far removed from the minds of the everyday person. That battle is Recording Industry vs The People.
+Some of the posts at the above blog are awesome reads and point to an alarming pattern of abuse of the United States&rsquo; judicial system by large corporations with armies of lawyers at their disposal waging a war against ordinary American citizens.
+
+<p><a href="https://mirror.roytang.net/2006/04/recording-industry-vs-the-people/">read more (318 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/04/recording-industry-vs-the-people/"><time class="dt-published" datetime="2006-04-19 08:27:28">19 Apr 2006 8:27am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/04/recording-industry-vs-the-people/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 318 words
+    
+</div>
+</article>
+</li>
+
+    <li>
+<article class="list_item post h-entry">
+    <div class="title">
+
+    <a class="u-url post-title" href="https://mirror.roytang.net/2006/04/ubuntu-desktop-01-apr-2006/"><h3 class="p-name">Ubuntu Desktop 01-Apr-2006</h3></a>
+    <time class="dt-published" datetime="2006-04-02 07:01:41">2 Apr 2006 7:01am</time>
+
+</div>
+
+    
+
+<div class="content p-summary">
+Screenshot 01-Apr-2006 (Click to view full-size)    Screenshot 01-Apr-2006
+2 Apr 2006 7:01amView postClose   I&rsquo;m getting a lot more comfortable with Ubuntu&hellip; I spent about half an hour today customizing the environment and setting up some stuff. I can do my downloading in Ubuntu now; I just need to set up some sort of shared FAT32 partition that both WinXP and Ubuntu can access for easy transfer between the two OS.
+
+<p><a href="https://mirror.roytang.net/2006/04/ubuntu-desktop-01-apr-2006/">read more (189 words)</a></p>
+
+</div>
+
+
+
+    <div class="meta">
+    Posted by <a rel="author" class="p-author h-card" href="https://roytang.net">Roy Tang</a> under <a href="https://mirror.roytang.net/post">post</a> at 
+    <a href="https://mirror.roytang.net/2006/04/ubuntu-desktop-01-apr-2006/"><time class="dt-published" datetime="2006-04-02 07:01:41">2 Apr 2006 7:01am</time></a>
+
+    
+
+<a class="tag p-category" href="https://mirror.roytang.net/tags/tech-life">#Tech Life</a>
+
+
+
+
+    <br />
+    
+
+    /
+    
+    
+    
+    <a href="https://mirror.roytang.net/2006/04/ubuntu-desktop-01-apr-2006/#header-comments">
+        <svg class="svg-icon" viewBox="0 0 20 20" width="12" height="12">
+            <path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+        </svg>
+        0</a>
+
+    
+    
+    / 189 words
+    
+</div>
+</article>
+</li>
+
+</ul>
+
+
+
+
+
+<div class="pagination">
+
+  <div class="page_numbers">
+    <span>Page 3 of 4</span>
+  
+    <select onchange="if (this.value.length > 0) window.location=this.value;">
+      <option>Jump to page</option>
+    
+    <option value="https://mirror.roytang.net/tags/tech-life/">
+        1
+    </option>
+    
+    <option value="https://mirror.roytang.net/tags/tech-life/p/2/">
+        2
+    </option>
+    
+    <option value="https://mirror.roytang.net/tags/tech-life/p/3/">
+        3 (current)
+    </option>
+    
+    <option value="https://mirror.roytang.net/tags/tech-life/p/4/">
+        4
+    </option>
+    
+    </select>
+  </div>
+  
+  <div class="arrows">
+    
+    <a aria-label="&lt;&lt;" href="https://mirror.roytang.net/tags/tech-life/">
+      <span aria-hidden="true">&lt;&lt;</span>
+    </a>
+    
+
+    
+    <a aria-label="&lt;" href="https://mirror.roytang.net/tags/tech-life/p/2/">
+      <span aria-hidden="true">&lt;</span>
+    </a>
+    
+
+    
+    <a aria-label="&gt;" href="https://mirror.roytang.net/tags/tech-life/p/4/">
+      <span aria-hidden="true">&gt;</span>
+    </a>
+    
+
+    
+  </div>
+
+</div>
+
+
+</section>
+
+</div>
+<div class="sidebar">
+    <div class="menu">On This Site
+    <ul>
+
+    <li><a href="https://roytang.net/search">Search</a></li>
+
+    <li><a href="https://roytang.net/random">Random</a></li>
+
+    <li><a href="https://mirror.roytang.net/onthisday/">On This Day</a></li>
+
+    <li><a href="https://mirror.roytang.net/albums/sketchbook/">Sketchbook</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/lists/reading/">Reading List</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/blogroll">Blogroll</a></li>
+
+    <li><a href="https://mirror.roytang.net/quotes/">Quotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/stats/site/">Stats</a></li>
+
+    <li><a href="https://mirror.roytang.net/page/about/contact">Contact</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Things I Write About
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/tags/favorites/">Featured Posts</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/weeknotes/">Weeknotes</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/software-development/">Software Development</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/mtg/">Magic the Gathering</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/gaming/">Gaming</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/movies/">Movies</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tv/">TV</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/tech-life/">Tech Life</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/philippines/">Philippines</a></li>
+
+    <li><a href="https://mirror.roytang.net/tags/">View All</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Elsewhere
+    <ul>
+
+    <li><a href="https://twitter.com/roytang" rel="me">Twitter</a></li>
+
+    <li><a href="https://mastodon.technology/@roytang" rel="me">Mastodon</a></li>
+
+    <li><a href="https://twitch.tv/twitchyroy" rel="me">Twitch</a></li>
+
+    <li><a href="https://www.linkedin.com/in/roytang" rel="me">LinkedIn</a></li>
+
+    <li><a href="https://instagram.com/roytang0400" rel="me">Instagram</a></li>
+
+    <li><a href="https://github.com/roytang" rel="me">Github</a></li>
+
+    <li><a href="https://reddit.com/u/hungryroy" rel="me">Reddit</a></li>
+
+    <li><a href="https://ko-fi.com/roytang" rel="me">Ko-fi</a></li>
+
+</ul>
+    </div>
+    <div class="menu">Subscribe
+    <ul>
+
+    <li><a href="https://mirror.roytang.net/index.xml">Everything (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/blog/index.xml">Blog (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/notes/index.xml">Notes (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/photos/index.xml">Photos (RSS)</a></li>
+
+    <li><a href="https://mirror.roytang.net/links/index.xml">Links (RSS)</a></li>
+
+</ul>
+    </div>
+</div>
+</div>
+<footer class="mainfooter">
+    
+        <p><p>Webrings:</p>
+<ul>
+<li><a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/previous">←</a>🕸💍<a href="https://xn--sr8hvo.ws/%F0%9F%8D%B3%F0%9F%91%AB%E2%9E%95/next">→</a></li>
+<li><a href='https://webring.xxiivv.com/#random' target='_blank'><img class='link' src='https://webring.xxiivv.com/icon.black.svg'/></a></li>
+<li><strong>Geekring:</strong> <a href='http://geekring.net/site/91/previous'>Previous</a> :: <a href='http://geekring.net/site/91/random'>Random</a> :: <a href='http://geekring.net/site/91/next'>Next</a></li>
+</ul>
+</p>
+    
+    (c) 2002-2021 Roy Tang unless otherwise indicated.
+    
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+    
+    <p><small>Powered by <a href="https://github.com/roytang/blog/tree/master/themes/exhale">Exhale Hugo Theme</a></small>. 
+        Last modified at: 2021 07 12 20:59:28.
+        
+    </p>
+</footer>      
+
+
+</div>
+<script src="https://mirror.roytang.net/js/exhale.js"></script>
+</body>
+</html>
+

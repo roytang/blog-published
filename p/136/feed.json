@@ -1,0 +1,1050 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Roy Tang",
+	"description": "Roy Tang's blog. Programmer, engineer, scientist, critic, gamer, dreamer, and kid-at-heart. Randomly amazed.",
+    "home_page_url": "https://mirror.roytang.net/",
+    "feed_url": "https://mirror.roytang.net/feed.json",
+	"author": {
+		"name": "Roy Tang",
+		"url": "https://roytang.net"
+    },
+    "items": [
+        
+        {
+            "id": "https://mirror.roytang.net/2016/07/learning-to-sql/",
+            "url": "https://mirror.roytang.net/2016/07/learning-to-sql/",
+            "path": "/2016/07/learning-to-sql/",
+            "title": "Learning to SQL",
+            "content_html": "\u003cp\u003e****\u003cspan style=\"font-weight: 400;\"\u003eSince I wasn’t a graduate of computer science, there were many concepts of software development I really only got exposed to when I started working. One of those was the concept of a relational database, and hence SQL. The company I worked at gave all new hires a training regimen that started with about a week of SQL. Despite not knowing anything about it beforehand, I took to it like a mouse takes to cheese. At the end of the week, they give you an exam to see how well you understood the material, and my batchmate who I took the course with likes to tell people that halfway through the allocated time for the exam, I was already taking a nap.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe fact that in my first project I had to port a lot of reports meant I was able to apply what I learned and learn even more easily. I would find as time went on that these bespoke projects typically included hundreds of different reports. The users would always want to see so-and-so data over time or compared with other sets of data, or summary reports of data over weeks, months, years, and so on. And when these systems are being developed, the reports are typically among the last to be finalized, which means that the database structure is almost always optimized towards the needs of the functions needed to maintain the data, and not towards reporting on that data. This typically led to reports that had really long and complicated SQL statements that would look intimidating to newbies. I didn’t mind, I treated each large SQL as a puzzle to be solved and understood.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAbout a year and a half later, I got tapped to be a trainer in the company for the first time, and I would be training people on SQL. Training other people gave me a better appreciation of how hard SQL was for other people. When I was in college, I understood that certain subjects could be considered as \u0026ldquo;filters\u0026rdquo; that many people will not pass and should take as a sign that the course of study was not for them. An example was the Introduction to Computer Science class that most engineering students have to take. Programming is hard and needs a certain mindset, so many people would fail or do poorly in that course, and if you were a Computer Science major it was a clear sign as to whether you should continue that course or not. SQL had that same property \u0026ndash; I found out that it was a pretty good indicator of whether certain developers would do well in the company or not. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAs I mentioned, the company’s SQL training course was a week long. You could typically tell which trainees would be having trouble by the third day \u0026ndash; that was the day that joins would start to be discussed. Joins where were the men got separated from the boys as it were. SQL joins could not be treated the same way as other programming problems, they were not best solved in an iterative or procedural matter, but rather should be approached by an understanding of set theory. You had to figure out the particular set of results you wanted to retrieve and what set operations needed to be done on the data in order to get those results. Most of the trainees having trouble with SQL would find it difficult to wrap their heads around this concept.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003eOur SQL training was decidedly Oracle-specific, instead of adhering strictly to the ANSI syntax. We preferred teaching Oracle-specific syntax: DECODE instead of CASE, joining by saying \u0026ldquo;from TABLE1, TABLE2\u0026rdquo; instead of the more modern \u0026ldquo;from TABLE1 join TABLE2 on \u0026hellip; \u0026ldquo;. I am not even sure if at that time Oracle already supported the more modern/standardized syntax.\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAnother thing about the SQL course was that we had to teach SQL performance tuning. It was a subject matter that was hard to teach because providing examples was so difficult. SQL that has a performance problem is typically long, complicated, and involves a number of tables that would require a certain level of domain knowledge. So we would end up providing simple examples and a list of tips for writing SQL (avoid sorts, full scans, distincts, etc) and we had to hope that the trainees would remember these tips when they start writing their own SQL for their projects. Even after a decade later, I would find myself glaring at developers who never learned to avoid using UNION instead of UNION ALL where possible. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eFor projects with a lot of reports, SQL performance was a big deal, especially when reports were expected to be generated interactively by the user online (as opposed to in the background by batch)\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eSQL performance tuning involved a relatively straightforward procedure: review the execution plan for the SQL (can be extracted from the database), and try to minimize the number of full table scans and unnecessary sorts. Oracle execution plans typically will even give you a cost for each operation, making it easy to identify which operations are more important to optimize. You also needed some idea of the volume of data on each table. It was more important to minimize full scans and sorts for larger data sets.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eTo remove full table scans, you typically had to introduce new indexes. You had to identify which WHERE conditions could benefit the most from an index. Some WHERE conditions could not use an index, and you would need to figure out if there was a way to rewrite the conditions that would allow an index to be used. Minimizing sorts means removing unnecessary set operations that require sorting (typically UNION, INTERSECT, MINUS, DISTINCT, that kind of thing). Sometimes the order in which tables in the SQL were evaluated would also matter, so you had to rewrite the SQL such that the faster operations would be done first in order to reduce the data volume before the more expensive operations come in.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eSometimes all of these tips and tricks wouldn’t work and you would spend hours on end trying to figure out how to get an SQL performing better. I once spent more than a day in my first project trying to figure out how to tune a report that was taking more than one day to execute. The usual tricks weren’t working, but I eventually figured out that it would be faster to separate the data into two subsets and perform different filtering conditions on each set, then combine using a UNION ALL. (In Oracle a UNION ALL performed no sorting, so it was relatively safe). It was the first real SQL tuning I was proud of, my team leader was amazed when the succeeding runs of the report took a matter of seconds.\u003c/span\u003e\u003c/p\u003e\n",
+            "summary": "****Since I wasn’t a graduate of computer science, there were many concepts of software development I really only got exposed to when I started working. One of those was the concept of a relational database, and hence SQL. The company I worked at gave all new hires a training regimen that started with about a week of SQL. Despite not knowing anything about it beforehand, I took to it like a mouse takes to cheese.",
+            "date_published": "2016-07-21T01:30:37+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/07/learning-to-sql/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755941238457729028/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bihdtg_jrav/",
+            "url": "https://mirror.roytang.net/2016/07/bihdtg_jrav/",
+            "path": "/2016/07/bihdtg_jrav/",
+            "title": "",
+            "content_html": "\u003cp\u003eI tried drawing some of the Star Trek Voyager crew. It was\u0026hellip; difficult #sketchdaily\u003c/p\u003e\n",
+            "summary": "I tried drawing some of the Star Trek Voyager crew. It was\u0026hellip; difficult #sketchdaily",
+            "date_published": "2016-07-21T01:18:06+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BIHdTG_jRAv/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BIHdTG_jRAv/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147740235060/i-tried-drawing-some-of-the-star-trek-voyager"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/756040588894560256/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154760696408912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/10154759411248912/",
+            "url": "https://mirror.roytang.net/2016/07/10154759411248912/",
+            "path": "/2016/07/10154759411248912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurvey: what would you do if you had the Death Note?\u003c/p\u003e\n",
+            "summary": "Survey: what would you do if you had the Death Note?",
+            "date_published": "2016-07-20T22:16:00+00:00",
+            "date_modified": "2021-07-05T11:46:04+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/10154759411248912/index.md"
+            , "tags": ["survey"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154759411248912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20160720-000000-471b823c-5e36-41c3-86f2-92174504afae.json"
+                }, { 
+                    "url": "https://www.facebook.com/amielmalay",
+                    "source_file": "comment-20160720-000001-654607c2-cac5-49e7-b229-e7d178eb7577.json"
+                }, { 
+                    "url": "https://www.facebook.com/JaguarSergio",
+                    "source_file": "comment-20160720-000002-758eb167-abe9-4149-b94c-03e9885d92db.json"
+                }, { 
+                    "url": "https://www.facebook.com/jhaydreamer",
+                    "source_file": "comment-20160720-000140-7113616c-a79d-4bc8-81ef-903d054d0c39.json"
+                }, { 
+                    "url": "https://www.facebook.com/jaime.l.garcia.779",
+                    "source_file": "comment-20160720-000141-d76cd510-df52-48fe-8d53-6a2166d07571.json"
+                }, { 
+                    "url": "https://www.facebook.com/marco.sancho",
+                    "source_file": "comment-20160720-000142-6be48033-5b2f-4944-a197-6316ec92361c.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160720-000320-2085913a-0d42-4325-bf24-87cfe7bdd737.json"
+                }, { 
+                    "url": "https://www.facebook.com/solar.archpope",
+                    "source_file": "comment-20160721-000003-488097fa-aa8a-4a7b-9afe-acb16259f041.json"
+                }, { 
+                    "url": "https://www.facebook.com/lissramgurl01",
+                    "source_file": "comment-20160721-000004-7be02f07-6610-47b6-8b58-f83d2d0c8ea7.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160721-000005-c1bcf548-89c4-4e2a-94e2-8932b7aadf96.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bigjaw-dmvm/",
+            "url": "https://mirror.roytang.net/2016/07/bigjaw-dmvm/",
+            "path": "/2016/07/bigjaw-dmvm/",
+            "title": "",
+            "content_html": "\u003cp\u003eAn agile and toasty warm knight #sketchdaily (random prompt via \u003ca href=\"http://www.ineedaprompt.com\"\u003ewww.ineedaprompt.com\u003c/a\u003e)\u003c/p\u003e\n",
+            "summary": "An agile and toasty warm knight #sketchdaily (random prompt via www.ineedaprompt.com)",
+            "date_published": "2016-07-20T16:52:20+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BIGjaw-Dmvm/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BIGjaw-Dmvm/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147721413315/an-agile-and-toasty-warm-knight-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/755913311422644224/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154760696408912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/10154758817438912/",
+            "url": "https://mirror.roytang.net/2016/07/10154758817438912/",
+            "path": "/2016/07/10154758817438912/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u0026ldquo;If you are neutral in situations of injustice, you have chosen the side of the oppressor. If an elephant has its foot on the tail of a mouse and you say that you are neutral, the mouse will not appreciate your neutrality.\u0026rdquo; - Desmond Tutu\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;If you are neutral in situations of injustice, you have chosen the side of the oppressor. If an elephant has its foot on the tail of a mouse and you say that you are neutral, the mouse will not appreciate your neutrality.\u0026rdquo; - Desmond Tutu",
+            "date_published": "2016-07-20T15:45:00+00:00",
+            "date_modified": "2019-09-28T20:21:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/10154758817438912/index.md"
+            , "tags": ["quotes"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154758817438912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755691942843813889/",
+            "url": "https://mirror.roytang.net/2016/07/755691942843813889/",
+            "path": "/2016/07/755691942843813889/",
+            "title": "",
+            "content_html": "\u003cp\u003eRT \u003ca href=\"https://twitter.com/ngelodelro/\"\u003e@ngelodelro\u003c/a\u003e: Reuploading this with the poster\u0026rsquo;s name censored bc he\u0026rsquo;s been receiving hate messages from D*30 fanatics. Pathetic https://…\u003c/p\u003e\n",
+            "summary": "RT @ngelodelro: Reuploading this with the poster\u0026rsquo;s name censored bc he\u0026rsquo;s been receiving hate messages from D*30 fanatics. Pathetic https://…",
+            "date_published": "2016-07-20T09:12:53+00:00",
+            "date_modified": "2021-07-05T11:46:04+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/755691942843813889/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755691942843813889/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755685721915043840/",
+            "url": "https://mirror.roytang.net/2016/07/755685721915043840/",
+            "path": "/2016/07/755685721915043840/",
+            "title": "",
+            "content_html": "\u003cp\u003eWhenever someone suggest using fear to impose order, I can\u0026rsquo;t help but think of Grand Moff Tarkin\u003c/p\u003e\n\u003cp\u003e*suggests. Damnit\u003c/p\u003e\n",
+            "summary": "Whenever someone suggest using fear to impose order, I can\u0026rsquo;t help but think of Grand Moff Tarkin\n*suggests. Damnit",
+            "date_published": "2016-07-20T08:48:10+00:00",
+            "date_modified": "2021-07-05T11:46:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/755685721915043840/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755685721915043840/"},{"type":"twitter","url":"https://twitter.com/roytang/status/755685934302171136/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755678690722193408/",
+            "url": "https://mirror.roytang.net/2016/07/755678690722193408/",
+            "path": "/2016/07/755678690722193408/",
+            "title": "",
+            "content_html": "\u003cp\u003e#KorteDiKalsada\u003c/p\u003e\n",
+            "summary": "#KorteDiKalsada",
+            "date_published": "2016-07-20T08:20:14+00:00",
+            "date_modified": "2021-04-14T11:16:41+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/755678690722193408/index.md"
+            , "tags": ["KorteDiKalsada"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755678690722193408/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755420282056085505/",
+            "url": "https://mirror.roytang.net/2016/07/755420282056085505/",
+            "path": "/2016/07/755420282056085505/",
+            "title": "",
+            "content_html": "\u003cp\u003eNHK on China: \u003ca href=\"https://i.redd.it/8me6jm91aw9x.jpg\"\u003ehttps://i.redd.it/8me6jm91aw9x.jpg\u003c/a\u003e lol\u003c/p\u003e\n",
+            "summary": "NHK on China: https://i.redd.it/8me6jm91aw9x.jpg lol",
+            "date_published": "2016-07-19T15:13:24+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/755420282056085505/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755420282056085505/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154756888013912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/christine.rabe",
+                    "source_file": "comment-20160720-000000-b388cfa9-71a1-41c8-8dc4-5e09d9f9701e.json"
+                }, { 
+                    "url": "https://www.facebook.com/ritchie.tiongson",
+                    "source_file": "comment-20160721-000001-8099c5c7-cf9b-433f-8709-204ea3eb0170.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bidbka1baqf/",
+            "url": "https://mirror.roytang.net/2016/07/bidbka1baqf/",
+            "path": "/2016/07/bidbka1baqf/",
+            "title": "",
+            "content_html": "\u003cp\u003eEyes! #sketchdaily\u003c/p\u003e\n",
+            "summary": "Eyes! #sketchdaily",
+            "date_published": "2016-07-19T07:58:50+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BIDBka1BAQf/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BIDBka1BAQf/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147646886135/eyes-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/755416644831309825/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154756868043912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755287629445238784/",
+            "url": "https://mirror.roytang.net/2016/07/755287629445238784/",
+            "path": "/2016/07/755287629445238784/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis world is terrible, let\u0026rsquo;s just play video games instead\u003c/p\u003e\n",
+            "summary": "This world is terrible, let\u0026rsquo;s just play video games instead",
+            "date_published": "2016-07-19T06:26:18+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/755287629445238784/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755287629445238784/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154756073568912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/josiah.habana",
+                    "source_file": "comment-20160719-000000-a5d17164-78c9-489b-9313-b458b91599c9.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20160719-000140-8c8fc636-c970-47a4-afef-939c9eb0a065.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/evolution-of-society/",
+            "url": "https://mirror.roytang.net/2016/07/evolution-of-society/",
+            "path": "/2016/07/evolution-of-society/",
+            "title": "Evolution of Society",
+            "content_html": "\u003cp\u003eI found this draft blog post that I had written back in 2010. I\u0026rsquo;m not sure why I never published it, though it does end on a dire note and seems a bit incomplete. Perhaps I had some further thoughts percolating in my brain back then that never came forward. I am also not sure if I wrote this before reading about \u003ca href=\"https://en.wikipedia.org/wiki/Great_Filter\"\u003eThe Great Filter\u003c/a\u003e. I figured I\u0026rsquo;d just publish it now without further comment:\u003c/p\u003e\n\u003cp\u003eI was thinking about all the stupid things humans do, and the fact that there are still so many stupid humans about, and because of the stupid things human do like not focusing on education, we are creating even more stupid humans. It seemed to me like some sort of failure of evolution that we have not yet got it through our thick skulls how important stuff like education and critical thinking are.\u003c/p\u003e\n\u003cp\u003eBut at some level, we\u0026rsquo;re experiencing a different form of evolution, one that is applied to our society as a whole.\u003c/p\u003e\n\u003cp\u003eConsider that in some other part of the universe, maybe at a nearby star or somewhere so far we have no way to imagine the distance, there probably exists an earthlike-planet. Maybe it has differences in terrain or weather, but for the most part it has seas and oceans, continents and archipelagos and glacial poles and all that jazz that makes earth interesting. And maybe on this other earth, life has evolved similar to the way it has here. Maybe some species are different, maybe some survived there that did not survive here, but for the most part there are plants and animals and insects and fungi and of course, there are humans.\u003c/p\u003e\n\u003cp\u003eOf course these humans won\u0026rsquo;t be exactly like us. Maybe they were spawned in different weather conditions, making the dominant skin tones different. Maybe they evolved slightly better or slightly worse eyesight or sense of smell. Maybe their superstitions were slightly different. Though in most ways this other human society on this other earth is similar with our own, all the slight differences are going to add up and the fate of their society may be vastly different with our own.\u003c/p\u003e\n\u003cp\u003eMaybe because of their different superstitions, they are unable to survive massive plagues and disease in their middle ages. Maybe because of their differences they are unable to resist the temptation to devolve into thermonuclear war. Maybe they lack focus on technological advances and are unable to bridge the gap to the stars before their ever-growing population outgrows the resources their earth provides for them.\u003c/p\u003e\n\u003cp\u003eIf the nature of humans on this other earth is close to what we have here \u0026ndash; selfish, bickering, superstitious, xenophobic then the odds of these humans able to evolve past their world and into the stars is pretty low.\u003c/p\u003e\n",
+            "summary": "I found this draft blog post that I had written back in 2010. I\u0026rsquo;m not sure why I never published it, though it does end on a dire note and seems a bit incomplete. Perhaps I had some further thoughts percolating in my brain back then that never came forward. I am also not sure if I wrote this before reading about The Great Filter. I figured I\u0026rsquo;d just publish it now without further comment:",
+            "date_published": "2016-07-19T01:30:19+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/07/evolution-of-society/index.md"
+            , "tags": ["Opinions"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/755213535005794304/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/should-i-go-by-a-more-masculin/",
+            "url": "https://mirror.roytang.net/2016/07/should-i-go-by-a-more-masculin/",
+            "path": "/2016/07/should-i-go-by-a-more-masculin/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/Should-I-go-by-a-more-masculine-name-as-a-programmer/answer/Roy-Tang\"\u003eShould I go by a more masculine name as a programmer?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eNo, use whatever name you are comfortable with. If there’s anyone who would judge your competence by either your name or your gender, you are better off not working with such people.\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n Should I go by a more masculine name as a programmer?\n No, use whatever name you are comfortable with. If there’s anyone who would judge your competence by either your name or your gender, you are better off not working with such people.",
+            "date_published": "2016-07-19T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/should-i-go-by-a-more-masculin.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/Should-I-go-by-a-more-masculine-name-as-a-programmer/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/755021235864514561/",
+            "url": "https://mirror.roytang.net/2016/07/755021235864514561/",
+            "path": "/2016/07/755021235864514561/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/TheDragonforge/\"\u003e@TheDragonforge\u003c/a\u003e do you have a MTG modern GPT this Saturday, July 23? cc: \u003ca href=\"https://twitter.com/aleksfelipe/\"\u003e@aleksfelipe\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "@TheDragonforge do you have a MTG modern GPT this Saturday, July 23? cc: @aleksfelipe",
+            "date_published": "2016-07-18T12:47:44+00:00",
+            "date_modified": "2021-07-18T15:28:36+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/755021235864514561/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/755021235864514561/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/TheDragonforge/",
+                    "source_file": "comment-20160718-124917-755021425216323584.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160718-124918-42622350-d14b-4cd3-b7d0-7a8978cf41dd.json"
+                }, { 
+                    "url": "https://twitter.com/TheDragonforge/",
+                    "source_file": "comment-20160718-124919-755022082543464448.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160718-125315-b4f3e2f3-27b6-416e-908a-b9524916d511.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh_shsfhpdv/",
+            "url": "https://mirror.roytang.net/2016/07/bh_shsfhpdv/",
+            "path": "/2016/07/bh_shsfhpdv/",
+            "title": "",
+            "content_html": "\u003cp\u003eYou must pay the troll toll #sketchdaily\u003c/p\u003e\n",
+            "summary": "You must pay the troll toll #sketchdaily",
+            "date_published": "2016-07-18T00:57:14+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH_shsFhpdV/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH_shsFhpdV/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147584511685/you-must-pay-the-troll-toll-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/754948156874432512/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154753206213912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/how-can-i-stop-shoplifting/",
+            "url": "https://mirror.roytang.net/2016/07/how-can-i-stop-shoplifting/",
+            "path": "/2016/07/how-can-i-stop-shoplifting/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/How-can-I-stop-shoplifting/answer/Roy-Tang\"\u003eHow can I stop shoplifting?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWell, people might say simply don’t do it. But for some people it might not be that straightforward. Maybe you’re bad at impulse control or something. But regardless you have to take responsibility for it, and get it into your head that you have to stop\u003c/p\u003e\n\u003cp\u003eTrain yourself not to shoplift. When you go to a store, keep repeating it in your head (“I won’t steal anything. I won’t steal anything. I won’t steal anything.”). If that’s not sufficient, get someone to come with you to the store, someone who won’t tolerate you shoplifting. In fact, tell your family and friends about your problem and tell them all to keep an eye on you.\u003c/p\u003e\n\u003cp\u003eDon’t make it easy for yourself. If you really have to go to the store and don’t have anyone who can go and keep watch over you, don’t bring a bag, don’t wear baggy clothes or clothes with large pockets. Make it difficult to shoplift.\u003c/p\u003e\n\u003cp\u003eHumans are weak so despite our best efforts we sometimes slip back into poor habits. If you shoplift again, go back to the store and ask to talk to the manager and explain to him that you’re sorry and want to give the item back or pay for it. Or just tell the cashier “last time I was here, I accidentally walked out with a [thing] without paying for it, can I just pay for it now?”\u003c/p\u003e\n\u003cp\u003eAlso, raise your standards. Develop a sense of honesty and integrity. Make it an important part of your character and your daily life. Do not tolerate stealing or dishonesty elsewhere in your life or with other people you know.\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n How can I stop shoplifting?\n Well, people might say simply don’t do it. But for some people it might not be that straightforward. Maybe you’re bad at impulse control or something. But regardless you have to take responsibility for it, and get it into your head that you have to stop\nTrain yourself not to shoplift. When you go to a store, keep repeating it in your head (“I won’t steal anything.",
+            "date_published": "2016-07-18T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/how-can-i-stop-shoplifting.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/How-can-I-stop-shoplifting/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh_j_gxh4fb/",
+            "url": "https://mirror.roytang.net/2016/07/bh_j_gxh4fb/",
+            "path": "/2016/07/bh_j_gxh4fb/",
+            "title": "",
+            "content_html": "\u003cp\u003eTwo Face #sketchdaily\u003c/p\u003e\n",
+            "summary": "Two Face #sketchdaily",
+            "date_published": "2016-07-17T19:55:28+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH_J_gXh4FB/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH_J_gXh4FB/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147572926380/two-face-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/754872213745102849/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154753206213912:0"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/10154750297553912/",
+            "url": "https://mirror.roytang.net/2016/07/10154750297553912/",
+            "path": "/2016/07/10154750297553912/",
+            "title": "",
+            "content_html": "\u003cp\u003eSurvey: What cloud services do you use for storing documents/writings? Google Docs/Evernote/Dropbox? Something else?\u003c/p\u003e\n",
+            "summary": "Survey: What cloud services do you use for storing documents/writings? Google Docs/Evernote/Dropbox? Something else?",
+            "date_published": "2016-07-17T07:14:00+00:00",
+            "date_modified": "2021-07-05T11:46:04+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/10154750297553912/index.md"
+            , "tags": ["survey"]
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154750297553912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/tngmrc",
+                    "source_file": "comment-20160717-000000-ba84e6d1-7957-4c6b-83a1-f93c49f02e2b.json"
+                }, { 
+                    "url": "https://www.facebook.com/aj.sahagun",
+                    "source_file": "comment-20160717-000001-24745e71-bdce-47f9-8357-c7e8be41cf43.json"
+                }, { 
+                    "url": "https://www.facebook.com/ChardAgbay",
+                    "source_file": "comment-20160717-000002-ca31ec79-59c2-448e-94f0-5053a2abf1c9.json"
+                }, { 
+                    "url": "https://www.facebook.com/joyapreyes",
+                    "source_file": "comment-20160717-000003-950d7e19-8953-46f9-8c8f-d509301a246d.json"
+                }, { 
+                    "url": "https://www.facebook.com/areej.munar",
+                    "source_file": "comment-20160717-000004-af310eab-c584-4f54-b67a-22d95ff8e364.json"
+                }, { 
+                    "url": "https://www.facebook.com/jaysonne.pacurib",
+                    "source_file": "comment-20160717-000005-7e8aa428-7ac4-4883-ac21-292c5b800f6b.json"
+                }, { 
+                    "url": "https://www.facebook.com/timothycgtang",
+                    "source_file": "comment-20160717-000006-d82d9b63-d443-4f11-ab36-91d571dd1316.json"
+                }, { 
+                    "url": "https://www.facebook.com/marco.padillo",
+                    "source_file": "comment-20160717-000007-c8a87055-ff78-4d96-857e-08df75e827c8.json"
+                }, { 
+                    "url": "https://www.facebook.com/owlreplica",
+                    "source_file": "comment-20160717-000008-b904f81f-6ff9-4623-a457-64385793879c.json"
+                }, { 
+                    "url": "https://www.facebook.com/elridge.gammad",
+                    "source_file": "comment-20160717-000009-31660914-11bd-4f08-8318-05e94df72969.json"
+                }, { 
+                    "url": "https://www.facebook.com/niawdeleon",
+                    "source_file": "comment-20160717-000010-8186d342-ae07-4b12-8c02-238630d11d62.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160717-000011-d0196d26-fee3-4119-8010-01e83928ede1.json"
+                }, { 
+                    "url": "https://www.facebook.com/erika.lim",
+                    "source_file": "comment-20160717-000012-7d10cd84-5dd4-4476-b9aa-3f05391d346b.json"
+                }, { 
+                    "url": "https://www.facebook.com/jcdeoferio",
+                    "source_file": "comment-20160717-000013-9d96da45-8046-4f06-8a41-a7f8b1b0d3c6.json"
+                }, { 
+                    "url": "https://www.facebook.com/profile.php",
+                    "source_file": "comment-20160717-000014-70903136-936b-4a60-9f54-6dd255b0a559.json"
+                }, { 
+                    "url": "https://www.facebook.com/elenore.uy",
+                    "source_file": "comment-20160717-000015-893b272f-9d9d-4507-be3b-0d0a467e55c3.json"
+                }, { 
+                    "url": "https://www.facebook.com/kimosalen",
+                    "source_file": "comment-20160718-000016-af0e84ca-7db1-451c-b69b-91aee4955ac5.json"
+                }, { 
+                    "url": "https://www.facebook.com/gina.arnaldomilarion",
+                    "source_file": "comment-20160718-000017-084f7b23-a4ad-4fd4-82e4-d08da3254150.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/4t5mkn/",
+            "url": "https://mirror.roytang.net/2016/07/4t5mkn/",
+            "path": "/2016/07/4t5mkn/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rphilippines-any-color-me-badd-fans-here-need-some-helphttpsredditcomrphilippinescomments4t5mknany_color_me_badd_fans_here_need_some_help\"\u003ePosted on r/Philippines: \u003ca href=\"https://reddit.com/r/Philippines/comments/4t5mkn/any_color_me_badd_fans_here_need_some_help/\"\u003eAny Color Me Badd fans here? Need some help\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eI\u0026rsquo;m looking for anyone who has a physical CD copy of their album \u0026ldquo;Time and Chance\u0026rdquo;, specifically the Philippine release. This version has an extra track at the end titled \u0026ldquo;I Remember\u0026rdquo;, which does not appear in most releases in other countries. I am not sure which countries\u0026rsquo; releases had this track, but for sure it is in the Ph version. I would like to get a digital copy of this track. It is not on iTunes, Spotify, torrents, etc, so the best chance is if someone could rip it from the actual CD. Any help is appreciated. Thanks!\u003c/p\u003e\n",
+            "summary": "Posted on r/Philippines: Any Color Me Badd fans here? Need some help I\u0026rsquo;m looking for anyone who has a physical CD copy of their album \u0026ldquo;Time and Chance\u0026rdquo;, specifically the Philippine release. This version has an extra track at the end titled \u0026ldquo;I Remember\u0026rdquo;, which does not appear in most releases in other countries. I am not sure which countries\u0026rsquo; releases had this track, but for sure it is in the Ph version.",
+            "date_published": "2016-07-17T01:50:41+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/4t5mkn/index.md"
+            , "tags": ["philippines"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Philippines/comments/4t5mkn/any_color_me_badd_fans_here_need_some_help/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/10154749510703912/",
+            "url": "https://mirror.roytang.net/2016/07/10154749510703912/",
+            "path": "/2016/07/10154749510703912/",
+            "title": "",
+            "content_html": "\u003cp\u003eBRING ME time: Do any of my friends have a physical copy (preferably CD) of the Color Me Badd album \u0026ldquo;Time and Chance\u0026rdquo;, it should be the version released specifically in the Philippines. Thanks!\u003c/p\u003e\n",
+            "summary": "BRING ME time: Do any of my friends have a physical copy (preferably CD) of the Color Me Badd album \u0026ldquo;Time and Chance\u0026rdquo;, it should be the version released specifically in the Philippines. Thanks!",
+            "date_published": "2016-07-17T00:31:00+00:00",
+            "date_modified": "2019-09-28T20:21:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/10154749510703912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154749510703912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/754363238880382976/",
+            "url": "https://mirror.roytang.net/2016/07/754363238880382976/",
+            "path": "/2016/07/754363238880382976/",
+            "title": "",
+            "content_html": "\u003cp\u003eNew record! #wordswithfriends\u003c/p\u003e\n",
+            "summary": "New record! #wordswithfriends",
+            "date_published": "2016-07-16T17:13:06+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/754363238880382976/index.md"
+            , "tags": ["wordswithfriends"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/754363238880382976/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154749608153912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/754356890268635136/",
+            "url": "https://mirror.roytang.net/2016/07/754356890268635136/",
+            "path": "/2016/07/754356890268635136/",
+            "title": "",
+            "content_html": "\u003cp\u003eThat last achievement took forever #CitiesSkylines \u003ca href=\"https://twitter.com/habeo/\"\u003e@habeo\u003c/a\u003e \u003ca href=\"https://twitter.com/barayantan/\"\u003e@barayantan\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "That last achievement took forever #CitiesSkylines @habeo @barayantan",
+            "date_published": "2016-07-16T16:47:52+00:00",
+            "date_modified": "2021-07-05T11:46:04+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/754356890268635136/index.md"
+            , "tags": ["CitiesSkylines","games"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/754356890268635136/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/754259208191692800/",
+            "url": "https://mirror.roytang.net/2016/07/754259208191692800/",
+            "path": "/2016/07/754259208191692800/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/secretGeek/\"\u003e@secretGeek\u003c/a\u003e *are\u003c/p\u003e\n",
+            "summary": "@secretGeek *are",
+            "date_published": "2016-07-16T10:19:43+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/754259208191692800.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/754259208191692800/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh7gjzah8el/",
+            "url": "https://mirror.roytang.net/2016/07/bh7gjzah8el/",
+            "path": "/2016/07/bh7gjzah8el/",
+            "title": "",
+            "content_html": "\u003cp\u003eQuick and lazy flamingo #sketchdaily #birdweek\u003c/p\u003e\n",
+            "summary": "Quick and lazy flamingo #sketchdaily #birdweek",
+            "date_published": "2016-07-16T09:55:39+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH7gjZah8el/index.md"
+            , "tags": ["sketchdaily","birdweek"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH7gjZah8el/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147500105420/quick-and-lazy-flamingo-sketchdaily-birdweek"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/754358874640117762/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154748206723912:2"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh6cbsihsyh/",
+            "url": "https://mirror.roytang.net/2016/07/bh6cbsihsyh/",
+            "path": "/2016/07/bh6cbsihsyh/",
+            "title": "",
+            "content_html": "\u003cp\u003eLets go #mtgemn\u003c/p\u003e\n\u003cp\u003e[14:30] Went 3-0 in the #mtgemn prerelease. Boo for only 3 rds\u003c/p\u003e\n\u003cp\u003e[16:02] 2nd pod actually had better pulls! #mtgemn\u003c/p\u003e\n\u003cp\u003e[21:29] bah 2nd pod only went 2-2 #mtgemn\u003c/p\u003e\n",
+            "summary": "Lets go #mtgemn\n[14:30] Went 3-0 in the #mtgemn prerelease. Boo for only 3 rds\n[16:02] 2nd pod actually had better pulls! #mtgemn\n[21:29] bah 2nd pod only went 2-2 #mtgemn",
+            "date_published": "2016-07-16T03:09:36+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH6CBSIhSyh/index.md"
+            , "tags": ["mtgemn","mtg"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH6CBSIhSyh/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147475390760/lets-go-mtgemn"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/754151021090316288/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154748206723912:0"},{"type":"twitter","url":"https://twitter.com/roytang/status/754201441003114496/"},{"type":"instagram","url":"https://instagram.com/p/BH6jhe6BKaq/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147485625990/2nd-pod-actually-had-better-pulls-mtgemn"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/754224664738689024/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154748206723912:1"},{"type":"twitter","url":"https://twitter.com/roytang/status/754306967984713728/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/aleksfelipe",
+                    "source_file": "comment-20160716-161819-dcff317a-091c-4edc-a836-8537a4fc3b9f.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160716-165703-2217de8a-5ba3-4baf-a6fd-b302c217d210.json"
+                }, { 
+                    "url": "https://twitter.com/aleksfelipe",
+                    "source_file": "comment-20160717-020123-bfaa5f66-8d24-45f8-b950-5c5f778ac152.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160717-103703-6583946c-ce65-461f-8841-6a2c308195db.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/754031987627700224/",
+            "url": "https://mirror.roytang.net/2016/07/754031987627700224/",
+            "path": "/2016/07/754031987627700224/",
+            "title": "",
+            "content_html": "\u003cp\u003eRemember how we used to talk, about bustin\u0026rsquo; out, we\u0026rsquo;d break their hearts \u003ca href=\"https://www.youtube.com/watch?v=ifm00JEjSeo\u0026amp;feature=youtu.be\"\u003ehttps://www.youtube.com/watch?v=ifm00JEjSeo\u0026amp;feature=youtu.be\u003c/a\u003e via \u003ca href=\"https://twitter.com/YouTube/\"\u003e@YouTube\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Remember how we used to talk, about bustin\u0026rsquo; out, we\u0026rsquo;d break their hearts https://www.youtube.com/watch?v=ifm00JEjSeo\u0026amp;feature=youtu.be via @YouTube",
+            "date_published": "2016-07-15T19:16:49+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/754031987627700224.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/754031987627700224/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753892497210810368/",
+            "url": "https://mirror.roytang.net/2016/07/753892497210810368/",
+            "path": "/2016/07/753892497210810368/",
+            "title": "",
+            "content_html": "\u003cp\u003eI feel like I already heard this last week\u003c/p\u003e\n\u003ccite class=\"u-quotation-of h-cite\"\u003e\n    Quoted \u003ca  href='https://twitter.com/ancalerts/status/753884393177948160'\u003eANCALERTS\u0026#39;s tweet\u003c/a\u003e:\n\u003c/cite\u003e\n\u003cblockquote\u003e\n    Duterte to sign FOI EO next week: spokesman \u003ca href=\"http://bit.ly/29TqgJj\"\u003ehttp://bit.ly/29TqgJj\u003c/a\u003e\n\u003c/blockquote\u003e\n",
+            "summary": "I feel like I already heard this last week\nQuoted ANCALERTS\u0026#39;s tweet:   Duterte to sign FOI EO next week: spokesman http://bit.ly/29TqgJj  ",
+            "date_published": "2016-07-15T10:02:32+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753892497210810368/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753892497210810368/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753892380193849344/",
+            "url": "https://mirror.roytang.net/2016/07/753892380193849344/",
+            "path": "/2016/07/753892380193849344/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/iamsuperbianca/\"\u003e@iamsuperbianca\u003c/a\u003e \u003ca href=\"https://twitter.com/ANCALERTS/\"\u003e@ANCALERTS\u003c/a\u003e parang sinabi din yan last week\u003c/p\u003e\n",
+            "summary": "@iamsuperbianca @ANCALERTS parang sinabi din yan last week",
+            "date_published": "2016-07-15T10:02:04+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753892380193849344.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753892380193849344/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753809873972801537/",
+            "url": "https://mirror.roytang.net/2016/07/753809873972801537/",
+            "path": "/2016/07/753809873972801537/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/rovietoosin/\"\u003e@rovietoosin\u003c/a\u003e uwi na! ako bahala\u003c/p\u003e\n",
+            "summary": "@rovietoosin uwi na! ako bahala",
+            "date_published": "2016-07-15T04:34:13+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753809873972801537.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753809873972801537/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753767337006772225/",
+            "url": "https://mirror.roytang.net/2016/07/753767337006772225/",
+            "path": "/2016/07/753767337006772225/",
+            "title": "",
+            "content_html": "\u003cp\u003e#iLoveSF since the days of SF2 in the arcades with me and my brother mashing the controls to figure stuff out! Looking forward to EVO!\u003c/p\u003e\n",
+            "summary": "#iLoveSF since the days of SF2 in the arcades with me and my brother mashing the controls to figure stuff out! Looking forward to EVO!",
+            "date_published": "2016-07-15T01:45:12+00:00",
+            "date_modified": "2021-04-14T09:02:45+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753767337006772225/index.md"
+            , "tags": ["iLoveSF"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753767337006772225/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/alvinjtang",
+                    "source_file": "comment-20160715-031312-7a30c703-f2bc-4c52-be32-52c35ca700b2.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160715-191107-aca6a5ab-f67b-40c1-b44f-c83f17fa205a.json"
+                }, { 
+                    "url": "https://twitter.com/alvinjtang",
+                    "source_file": "comment-20160715-211138-7f7c9c28-5429-40bf-b18a-423600bcd292.json"
+                }, { 
+                    "url": "https://twitter.com/roytang",
+                    "source_file": "comment-20160715-223316-a1826840-8294-4113-a448-dac3f28c7f63.json"
+                }, { 
+                    "url": "https://twitter.com/alvinjtang",
+                    "source_file": "comment-20160716-000335-34c7d8de-199d-411a-b39d-99712466d6d1.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh4drnvh1dq/",
+            "url": "https://mirror.roytang.net/2016/07/bh4drnvh1dq/",
+            "path": "/2016/07/bh4drnvh1dq/",
+            "title": "",
+            "content_html": "\u003cp\u003eHawkman #sketchdaily (capping off bird week)\u003c/p\u003e\n",
+            "summary": "Hawkman #sketchdaily (capping off bird week)",
+            "date_published": "2016-07-15T01:42:02+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH4DRNVh1dq/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH4DRNVh1dq/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147438157720/hawkman-sketchdaily-capping-off-bird-week"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/753872266778308609/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154743791843912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/4stcdy/",
+            "url": "https://mirror.roytang.net/2016/07/4stcdy/",
+            "path": "/2016/07/4stcdy/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rtipofmyjoystick-famicom1990-1992-some-sort-of-metroidvaniahttpsredditcomrtipofmyjoystickcomments4stcdyfamicom19901992_some_sort_of_metroidvania\"\u003ePosted on r/tipofmyjoystick: \u003ca href=\"https://reddit.com/r/tipofmyjoystick/comments/4stcdy/famicom19901992_some_sort_of_metroidvania/\"\u003e[Famicom][1990-1992] Some sort of metroidvania\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cstrong\u003ePlatform(s):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eFamicom (probably no NES version)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGenre:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eRPG/Platformer/Metroidvania\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eEstimated year of release:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e1990-1992\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGraphics/art style:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotable characters:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotable gameplay mechanics:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eOther details:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eA friend and I played it back in the Famicom days, we had to study katakana/hiragana to figure out how to advance. It was some sort of primitive metroidvania-style 2d platformer with exploratory elements. The character was I think some kind of bluish knight kind of person with a sword. This is all I have to go on unfortunately. Any help would be greatly appreciated!\u003c/p\u003e\n",
+            "summary": "Posted on r/tipofmyjoystick: [Famicom][1990-1992] Some sort of metroidvania Platform(s):\nFamicom (probably no NES version)\nGenre:\nRPG/Platformer/Metroidvania\nEstimated year of release:\n1990-1992\nGraphics/art style:\nNotable characters:\nNotable gameplay mechanics:\nOther details:\nA friend and I played it back in the Famicom days, we had to study katakana/hiragana to figure out how to advance. It was some sort of primitive metroidvania-style 2d platformer with exploratory elements. The character was I think some kind of bluish knight kind of person with a sword.",
+            "date_published": "2016-07-14T21:50:54+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/4stcdy/index.md"
+            , "tags": ["tipofmyjoystick"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/tipofmyjoystick/comments/4stcdy/famicom19901992_some_sort_of_metroidvania/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/4staxl/",
+            "url": "https://mirror.roytang.net/2016/07/4staxl/",
+            "path": "/2016/07/4staxl/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rgaming-reddit-help-me-remember-an-old-famicom-gamehttpsredditcomrgamingcomments4staxlreddit_help_me_remember_an_old_famicom_game\"\u003ePosted on r/gaming: \u003ca href=\"https://reddit.com/r/gaming/comments/4staxl/reddit_help_me_remember_an_old_famicom_game/\"\u003eReddit, help me remember an old Famicom game\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eA friend and I played it back in the Famicom days, we had to study katakana/hiragana to figure out how to advance. It was some sort of primitive metroidvania-style 2d platformer with exploratory elements. The character was I think some kind of bluish knight kind of person with a sword. This is all I have to go on unfortunately. Any help would be greatly appreciated!\u003c/p\u003e\n",
+            "summary": "Posted on r/gaming: Reddit, help me remember an old Famicom game A friend and I played it back in the Famicom days, we had to study katakana/hiragana to figure out how to advance. It was some sort of primitive metroidvania-style 2d platformer with exploratory elements. The character was I think some kind of bluish knight kind of person with a sword. This is all I have to go on unfortunately. Any help would be greatly appreciated!",
+            "date_published": "2016-07-14T21:41:31+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/4staxl/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/gaming/comments/4staxl/reddit_help_me_remember_an_old_famicom_game/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753649940383961088/",
+            "url": "https://mirror.roytang.net/2016/07/753649940383961088/",
+            "path": "/2016/07/753649940383961088/",
+            "title": "",
+            "content_html": "\u003cp\u003eTomorrow we\u0026rsquo;ll do better\u003c/p\u003e\n",
+            "summary": "Tomorrow we\u0026rsquo;ll do better",
+            "date_published": "2016-07-14T17:58:42+00:00",
+            "date_modified": "2019-09-26T19:12:59+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753649940383961088.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753649940383961088/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154744729378912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/d5bx9jk/",
+            "url": "https://mirror.roytang.net/2016/07/d5bx9jk/",
+            "path": "/2016/07/d5bx9jk/",
+            "title": "",
+            "content_html": "\u003cp\u003eThanks!\u003c/p\u003e\n",
+            "summary": "Thanks!",
+            "date_published": "2016-07-14T13:49:33+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/d5bx9jk/index.md"
+            , "tags": ["gaming"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/gaming/comments/4staxl/reddit_help_me_remember_an_old_famicom_game/d5bx9jk/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bh1otpahvnf/",
+            "url": "https://mirror.roytang.net/2016/07/bh1otpahvnf/",
+            "path": "/2016/07/bh1otpahvnf/",
+            "title": "",
+            "content_html": "\u003cp\u003eShoebill #sketchdaily this bird looks nefarious\u003c/p\u003e\n",
+            "summary": "Shoebill #sketchdaily this bird looks nefarious",
+            "date_published": "2016-07-14T03:07:58+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BH1oTpahVnf/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BH1oTpahVnf/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147388369845/shoebill-sketchdaily-this-bird-looks-nefarious"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/753531507843530752/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154743791843912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4ss55p/july_14th_bird_week_day_5_shoebill/d5brr11/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/certifications/",
+            "url": "https://mirror.roytang.net/2016/07/certifications/",
+            "path": "/2016/07/certifications/",
+            "title": "Certifications",
+            "content_html": "\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eI never really put much stock in certifications. I felt that they were no guarantee of knowledge or expertise, and that many people who did have knowledge or expertise wouldn’t necessarily have a certification to say so. Add to that it often seem overpriced to even apply for the certifications, so I didn’t have a high opinion of them. That being said, I have had the opportunity to take professional certification exams twice in my life (both luckily paid for by my employer at that time).\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe first was the JITSE \u0026ndash; the Japanese IT Standards Examinations. This was back in 2004 when our company was planning to undertake some projects based in Japan. Luckily, the exam did not require us to learn Japanese. The exam mostly covered programming and computer science concepts. The scope was largely academic in nature, not really related to the actual practice of software development. At first I thought it might be a problem for me since I had no formal computer science schooling, but it turns out I need not have worried. We were able to find ample review materials / sample exams that gave us a good coverage of the scope of the exams. We even had like five thick textbooks full of review material to cover, which typically I didn’t end up going through (seemed like a bother), I felt like the sample exams were more than enough. And to add even further to my disdain of certification exams, a significant percentage of the questions during the actual certification were already in the sample exams we reviewed. So yes, easily passed.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eOf course I should probably note ever since high school I have considered myself to be a fiend when taking multiple-choice exams. I am supremely confident when taking any sort of multiple choice exam, no matter the actual level of knowledge I possess. During the JITSE for example, I finished it very early. If I didn’t have any kind of shame, I would have submitted the AM exam a whole hour-and-a-half early just so I could get some sleep before the PM part. (Some people later told me they noticed me dozing off). Multiple choice exams are really easy to go through quickly, especially if there’s minimal problems solving involved. There’s no reason to linger at each question: you either know the answer or you don’t, and if you don’t you quickly decide on a candidate that looks the most likely. (If there’s some sort of problem solving or math involved then you go into that weird fuzzy logic where you try to figure out which choice is mathematically closest to the answer you got. Or yes, you could just redo your work, but don’t be afraid to assume that the exam itself can be wrong if you come up with the same answer three times)\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe second time I took a professional certification exam was when I was asked to take a Java 6 certification exam for reasons I now cannot remember. This one I was more confident in \u0026ndash; by this point I had already been using Java for \u003cem\u003ethe better part of a decade\u003c/em\u003e and was pretty sure I knew it inside and out. That being said, you always find out about obscure language quirks when preparing for these exams. For example, I never had to use the keyword volatile so I really only learned what it was for while reviewing for the certification exam. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eBeing the exam-taking fiend I was, I took and easily passed the Java 6 certification exam, which of course led to jokes along the lines of \u0026ldquo;Hey, we don’t need a compiler anymore, Roy is now a valid JVM\u0026rdquo;. I never did get to use that certification for anything though. I took the exam and passed it (finally earning my Java certification) in Oct 2012, after 8 years of being a Java programmer.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eOver the years as I’ve dealt with a wider range of people across society, my disdain for certifications has dimmed a bit. The most important bit I have learned is that it’s very hard to evaluate software developers in terms of skill (a topic itself worthy of an entire series of blog posts), so certifications allow people in hiring capabilities (or any other capability that requires an assessment of a developer’s skill) to cheat a little bit. They save a little bit of effort because a certification basically says \u0026ldquo;this guy knows his stuff well enough to pass a certification exam\u0026rdquo;, which can be good enough depending on your specific purposes. Sure, it’s possible to pass a certification exam and have no real idea how to apply the topics covered in practice, but at least the certification gives them a bit more confidence in you, even if unjustified. It’s a bit like school diplomas and driver’s licenses: it doesn’t really guarantee that you know what you’re doing, but at least you were good enough to fool other people who evaluated you, so even if you turn out to be not so good, at least the evaluator is not alone in making that mistake. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAnd if you’re the sort of developer who’s all about the money, having certain certifications can be very good for your bank account. I’m pretty sure getting an in-demand certification like Oracle DBA or Cisco Networking stuff can get you a significant bump in pay grade. This also means that it can cost a significant amount of money to even apply for taking those certification exams \u0026ndash; it might be best to try to find a way to fool \u0026ndash; er, I mean persuade \u0026ndash; your current employer into paying for it.\u003c/span\u003e\u003c/p\u003e\n",
+            "summary": "I never really put much stock in certifications. I felt that they were no guarantee of knowledge or expertise, and that many people who did have knowledge or expertise wouldn’t necessarily have a certification to say so. Add to that it often seem overpriced to even apply for the certifications, so I didn’t have a high opinion of them. That being said, I have had the opportunity to take professional certification exams twice in my life (both luckily paid for by my employer at that time).",
+            "date_published": "2016-07-14T01:30:07+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2016/07/certifications/index.md"
+            , "tags": ["Software Development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753402994813759488/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/10154740692198912/",
+            "url": "https://mirror.roytang.net/2016/07/10154740692198912/",
+            "path": "/2016/07/10154740692198912/",
+            "title": "",
+            "content_html": "\u003cp\u003eThis administration will need to carefully weigh and balance their statements between two conflicting objectives: they need to both reinforce our strong position and avoid provoking armed conflict with China. It will be a delicate balancing act requiring carefully nuanced statements\u0026hellip; we might be doomed\u003c/p\u003e\n",
+            "summary": "This administration will need to carefully weigh and balance their statements between two conflicting objectives: they need to both reinforce our strong position and avoid provoking armed conflict with China. It will be a delicate balancing act requiring carefully nuanced statements\u0026hellip; we might be doomed",
+            "date_published": "2016-07-13T13:08:00+00:00",
+            "date_modified": "2019-09-28T20:21:17+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/10154740692198912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154740692198912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753192149403873280/",
+            "url": "https://mirror.roytang.net/2016/07/753192149403873280/",
+            "path": "/2016/07/753192149403873280/",
+            "title": "",
+            "content_html": "\u003cp\u003ePinakasikat na Grab service sa Pinas ngayon\u0026hellip; GrabGun. Kahit di na magpaliwanag sa presinto.\u003c/p\u003e\n",
+            "summary": "Pinakasikat na Grab service sa Pinas ngayon\u0026hellip; GrabGun. Kahit di na magpaliwanag sa presinto.",
+            "date_published": "2016-07-13T11:39:36+00:00",
+            "date_modified": "2020-07-11T02:32:48+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753192149403873280/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753192149403873280/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154741286573912"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753147974759227392/",
+            "url": "https://mirror.roytang.net/2016/07/753147974759227392/",
+            "path": "/2016/07/753147974759227392/",
+            "title": "",
+            "content_html": "\u003cp\u003e@COLFinancial what do you think of BPI and BDO?\u003c/p\u003e\n",
+            "summary": "@COLFinancial what do you think of BPI and BDO?",
+            "date_published": "2016-07-13T08:44:04+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753147974759227392.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753147974759227392/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753049987613806592/",
+            "url": "https://mirror.roytang.net/2016/07/753049987613806592/",
+            "path": "/2016/07/753049987613806592/",
+            "title": "",
+            "content_html": "\u003cp\u003e50 Of The Most Beautiful Sentences In Literature \u003ca href=\"http://ideaspots.com/50-beautiful-sentences-literature/\"\u003ehttp://ideaspots.com/50-beautiful-sentences-literature/\u003c/a\u003e via @\u003c/p\u003e\n",
+            "summary": "50 Of The Most Beautiful Sentences In Literature http://ideaspots.com/50-beautiful-sentences-literature/ via @",
+            "date_published": "2016-07-13T02:14:42+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753049987613806592.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753049987613806592/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/753040154936225792/",
+            "url": "https://mirror.roytang.net/2016/07/753040154936225792/",
+            "path": "/2016/07/753040154936225792/",
+            "title": "",
+            "content_html": "\u003cp\u003eUse my link to start playing Hearthstone and get a free pack! \u003ca href=\"https://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc\"\u003ehttps://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Use my link to start playing Hearthstone and get a free pack! https://us.battle.net/account/creation/en/recruit.html?rid=8JGVHFXLBF\u0026amp;blzcmp=raf-hs\u0026amp;s=HS\u0026amp;m=pc",
+            "date_published": "2016-07-13T01:35:38+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/753040154936225792.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/753040154936225792/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bhyz91jhcoc/",
+            "url": "https://mirror.roytang.net/2016/07/bhyz91jhcoc/",
+            "path": "/2016/07/bhyz91jhcoc/",
+            "title": "",
+            "content_html": "\u003cp\u003ePeacock #sketchdaily\u003c/p\u003e\n",
+            "summary": "Peacock #sketchdaily",
+            "date_published": "2016-07-13T00:52:07+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BHyz91jhCoC/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHyz91jhCoC/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147332490550/peacock-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/753134928217464832/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154738681063912:1"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/what-is-a-good-way-to-measure/",
+            "url": "https://mirror.roytang.net/2016/07/what-is-a-good-way-to-measure/",
+            "path": "/2016/07/what-is-a-good-way-to-measure/",
+            "title": "",
+            "content_html": "\u003cp\u003eSomeone on \u003ca href=\"https://quora.com\"\u003equora\u003c/a\u003e asked:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://www.quora.com/What-is-a-good-way-to-measure-how-good-a-software-engineer-is/answer/Roy-Tang\"\u003eWhat is a good way to measure how good a software engineer is?\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eEvaluation of programmer performance is notoriously hard. There are no good, objective, universally accepted standard metrics.\u003c/p\u003e\n\u003cp\u003eIt follows from the fact that there are no good, objective, universally accepted standard metrics for program size. Typically each programmer in a team will not be doing the same task or even the same type of task, so in order to produce fair evaluations you will need some standard metric of program size to normalize any evaluation. For example, you could choose to use code quality (bugs) as a metric for programmer performance, but not every programmer is assigned to do the same complexity of programs and some modules may be more poorly designed than others resulting in more bugs.\u003c/p\u003e\n\u003cp\u003eLines of code is nice, until you realize that more lines of code does not necessarily mean a larger program or system, it may just mean your programmers don’t write particularly concise code. Often, different programmers will write the same program with different lines of code equally well. There are other possible metrics, but they all have different flaws and none of them capture the complexities of program size particularly well. Function points for example are meant to determine program size based on functional complexity but does not take into account technical complexity. Agile teams will often used a fuzzy metric called story points formed by team consensus but these are notoriously inaccurate and may change in relative size from sprint to sprint and definitely change in relative size across teams.\u003c/p\u003e\n\u003cp\u003eWhat complicates things even more is that even the best, most senior programmers can slip into poor program quality due to schedule pressure, unreasonable clients or requirements, and so on.\u003c/p\u003e\n\u003cp\u003eWhat I would suggest (and probably is unavoidable) is instead a more subjective approach, combining multiple heuristics to get as fair an evaluation as possible. I would suggest something like the following combination:\u003c/p\u003e\u003cul\u003e\u003cli\u003eHave the programmer define his own goals/targets for the evaluation period. At the end of the period, go over the goals with him and discuss how closely he came to meeting them. These may be quantitative targets or qualitative (“I feel like my code has been of reasonably good quality”). You can compare against the other feedback in this list if there’s any disagreement\u003c/li\u003e\u003cli\u003eGet feedback from a technical perspective from a mentor or senior developer who has worked closely with the programmer. The feedback can answer some simple questions like “Is his technical skill adequate?”, “Can he be assigned more complex functions?”, “Has he been assigned the appropriate amount of work?”, ““Has he created any problems that someone of his skill level should not be expected to do?”, “How has he contributed to the overall team?”, etc.\u003c/li\u003e\u003cli\u003eGet feedback from other people he has worked with. For people who haven’t worked that closely with him, the feedback will be leaning more towards soft skills rather than technical, i.e. how well he works with other people, how manageable he is, how helpful he is, and so on.\u003c/li\u003e\u003c/ul\u003e\u003cp class=\"ui_qtext_para u-ltr u-text-align--start\"\u003eAll of the above are subjective, but in combination should give you a relatively good picture of how well the programmer is performing relative to his peers. You can combine it with whatever corporate-sanctioned metrics you need as well.\u003c/p\u003e\n",
+            "summary": "Someone on quora asked:\n What is a good way to measure how good a software engineer is?\n Evaluation of programmer performance is notoriously hard. There are no good, objective, universally accepted standard metrics.\nIt follows from the fact that there are no good, objective, universally accepted standard metrics for program size. Typically each programmer in a team will not be doing the same task or even the same type of task, so in order to produce fair evaluations you will need some standard metric of program size to normalize any evaluation.",
+            "date_published": "2016-07-13T00:00:00+00:00",
+            "date_modified": "2021-03-22T23:22:13+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/what-is-a-good-way-to-measure.md"
+            , "tags": ["answers"]
+            , "syndicated": [{"type":"quora","url":"https://www.quora.com/What-is-a-good-way-to-measure-how-good-a-software-engineer-is/answer/Roy-Tang"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/4sg1al/",
+            "url": "https://mirror.roytang.net/2016/07/4sg1al/",
+            "path": "/2016/07/4sg1al/",
+            "title": "",
+            "content_html": "",
+            "summary": "",
+            "date_published": "2016-07-12T16:48:12+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "links",
+            "source_path": "links/2016/07/4sg1al/index.md"
+            , "tags": ["mtgpilipinas"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/mtgpilipinas/comments/4sg1al/pyromancer_ascension_tournament_report_upcoming/"}]
+            ,"link": "http://deartiyopaeng.blogspot.com/2016/07/july-pyromancer-ascension.html?m=1"
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/d59490f/",
+            "url": "https://mirror.roytang.net/2016/07/d59490f/",
+            "path": "/2016/07/d59490f/",
+            "title": "",
+            "content_html": "\u003cp\u003eWe serve a McSpaghetti. The first time I tried a McDonald\u0026rsquo;s overseas I tried to order a McSpaghetti and the Chinese lady behind the counter looked at me like I was a madman\u003c/p\u003e\n\u003cp\u003eAlso they are consistently #2 behind a local Bee-themed franchise\u003c/p\u003e\n",
+            "summary": "We serve a McSpaghetti. The first time I tried a McDonald\u0026rsquo;s overseas I tried to order a McSpaghetti and the Chinese lady behind the counter looked at me like I was a madman\nAlso they are consistently #2 behind a local Bee-themed franchise",
+            "date_published": "2016-07-12T12:47:17+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/d59490f/index.md"
+            , "tags": ["askreddit"]
+            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/AskReddit/comments/4sg8n2/reddit_whats_something_special_about_your/d59490f/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/752829326282797057/",
+            "url": "https://mirror.roytang.net/2016/07/752829326282797057/",
+            "path": "/2016/07/752829326282797057/",
+            "title": "",
+            "content_html": "\u003cp\u003eStreet Fighter homages to classic comic covers. These are great! \u003ca href=\"https://imgur.com/gallery/s0Jes\"\u003ehttps://imgur.com/gallery/s0Jes\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "Street Fighter homages to classic comic covers. These are great! https://imgur.com/gallery/s0Jes",
+            "date_published": "2016-07-12T11:37:52+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/752829326282797057.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/752829326282797057/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/752825794347474946/",
+            "url": "https://mirror.roytang.net/2016/07/752825794347474946/",
+            "path": "/2016/07/752825794347474946/",
+            "title": "",
+            "content_html": "\u003cp\u003eI want to tweet about #CHexit just to see if Chinese trolls will harass me\u003c/p\u003e\n",
+            "summary": "I want to tweet about #CHexit just to see if Chinese trolls will harass me",
+            "date_published": "2016-07-12T11:23:50+00:00",
+            "date_modified": "2019-09-07T03:37:00+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/752825794347474946.md"
+            , "tags": ["CHexit"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/752825794347474946/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/752699347167354880/",
+            "url": "https://mirror.roytang.net/2016/07/752699347167354880/",
+            "path": "/2016/07/752699347167354880/",
+            "title": "",
+            "content_html": "\u003cp\u003eConfession: I still always have to say to myself \u0026ldquo;righty-tighty, lefty-loosy\u0026rdquo;\u003c/p\u003e\n",
+            "summary": "Confession: I still always have to say to myself \u0026ldquo;righty-tighty, lefty-loosy\u0026rdquo;",
+            "date_published": "2016-07-12T03:01:23+00:00",
+            "date_modified": "2021-01-18T16:43:19+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/07/752699347167354880/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/752699347167354880/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154738274178912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/catherine.calunsod",
+                    "source_file": "comment-20160712-000000-3af7d5bb-0f04-4d8e-9442-c7ed0447b556.json"
+                }, { 
+                    "url": "https://www.facebook.com/romancoat",
+                    "source_file": "comment-20160712-000001-e93896d3-9925-47d5-bf38-8da153e0e2c1.json"
+                }, { 
+                    "url": "https://www.facebook.com/amielmalay",
+                    "source_file": "comment-20160713-000002-1c3375b7-0098-48ba-841f-38b6f748ac37.json"
+                }, { 
+                    "url": "https://www.facebook.com/amielmalay",
+                    "source_file": "comment-20160713-000003-d2e70f1d-be56-49b9-b719-e8cf458e43ab.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160713-000004-eef45ae0-e364-4e4a-ad39-abbe2616745c.json"
+                }, { 
+                    "url": "https://www.facebook.com/romancoat",
+                    "source_file": "comment-20160713-000005-d2bfbebd-4461-48fe-93d4-ceb9b5b02f7a.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20160713-000640-af0e21fd-b70d-41a7-ab6b-32b9428db087.json"
+                }, { 
+                    "url": "https://www.facebook.com/amielmalay",
+                    "source_file": "comment-20160713-000641-1b4f2ecd-c409-4f52-8dd3-3271d4ac65df.json"
+                }, { 
+                    "url": "https://www.facebook.com/wesplaton",
+                    "source_file": "comment-20160713-000642-d911487c-07cd-456e-a1e1-7a5825ac3ebe.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20160713-000643-c82fb1a9-9183-4abc-bf44-15c2b36b6063.json"
+                }, { 
+                    "url": "https://www.facebook.com/SabrinaTri",
+                    "source_file": "comment-20160713-001000-f1e20db0-8164-4c45-aa28-8ee2ad1361b8.json"
+                }
+            ]
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/07/bhwvndahz_b/",
+            "url": "https://mirror.roytang.net/2016/07/bhwvndahz_b/",
+            "path": "/2016/07/bhwvndahz_b/",
+            "title": "",
+            "content_html": "\u003cp\u003eSecretary bird #sketchdaily\u003c/p\u003e\n",
+            "summary": "Secretary bird #sketchdaily",
+            "date_published": "2016-07-12T01:44:50+00:00",
+            "date_modified": "2021-07-12T20:59:28+08:00",
+            "section": "photos",
+            "source_path": "photos/2016/07/BHwVNDAhZ_b/index.md"
+            , "tags": ["sketchdaily"]
+            , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BHwVNDAhZ_b/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/147281820095/secretary-bird-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/752785821527334912/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154738681063912:0"}]
+            
+            
+            }
+        
+    ]
+     , "prev": "/p/135/feed.json" 
+     , "next": "/p/137/feed.json" 
+}

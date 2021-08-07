@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>insert on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/insert/</link>
+      <description>Recent content in insert on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Wed, 14 Jul 2010 03:29:29 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/insert/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Reply to &#39;Oracle Insert with mutli-valued column&#39; on stackoverflow at https://stackoverflow.com/questions/3243055/oracle-insert-with-mutli-valued-column:
+</title>
+            <link>https://mirror.roytang.net/2010/07/3243222/</link>
+            <pubDate>Wed, 14 Jul 2010 03:29:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/07/3243222/</guid>
+            <description>
+            Reply to &amp;#39;Oracle Insert with mutli-valued column&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3243055/oracle-insert-with-mutli-valued-column:
+
+            &lt;p&gt;Try something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;insert into onTeam(date, player, teamName) 
+select &#39;newDate&#39;,&#39;Matt Holliday&#39;, teamName 
+from onTeam where player = &#39;Matt Holliday&#39;&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

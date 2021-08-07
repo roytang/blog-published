@@ -1,0 +1,135 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>oracle on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/oracle/</link>
+      <description>Recent content in oracle on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Tue, 13 Dec 2011 02:31:45 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>Reply to &#39;how to reference an oracle pl/sql out parameter of table%rowtype as an object in java&#39; on stackoverflow at https://stackoverflow.com/questions/8483352/how-to-reference-an-oracle-pl-sql-out-parameter-of-tablerowtype-as-an-object-in:
+</title>
+            <link>https://mirror.roytang.net/2011/12/8483644/</link>
+            <pubDate>Tue, 13 Dec 2011 02:31:45 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2011/12/8483644/</guid>
+            <description>
+            Reply to &amp;#39;how to reference an oracle pl/sql out parameter of table%rowtype as an object in java&amp;#39; on stackoverflow at https://stackoverflow.com/questions/8483352/how-to-reference-an-oracle-pl-sql-out-parameter-of-tablerowtype-as-an-object-in:
+
+            &lt;p&gt;&amp;ldquo;rowtype&amp;rdquo; here is an Oracle PL/SQL-specific type, I don&amp;rsquo;t think it would be supported by JDBC. A quick search of the oracle forums (google &amp;ldquo;jdbc rowtype site:oracle.com&amp;rdquo;) suggests the same. You&amp;rsquo;re probably better off returning a cursor, or just execute the SQL from JDBC directly.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Oracle Insert with mutli-valued column&#39; on stackoverflow at https://stackoverflow.com/questions/3243055/oracle-insert-with-mutli-valued-column:
+</title>
+            <link>https://mirror.roytang.net/2010/07/3243222/</link>
+            <pubDate>Wed, 14 Jul 2010 03:29:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/07/3243222/</guid>
+            <description>
+            Reply to &amp;#39;Oracle Insert with mutli-valued column&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3243055/oracle-insert-with-mutli-valued-column:
+
+            &lt;p&gt;Try something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;insert into onTeam(date, player, teamName) 
+select &#39;newDate&#39;,&#39;Matt Holliday&#39;, teamName 
+from onTeam where player = &#39;Matt Holliday&#39;&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;comparing two cursors in oracle instead of using MINUS&#39; on stackoverflow at https://stackoverflow.com/questions/2496360/comparing-two-cursors-in-oracle-instead-of-using-minus:
+</title>
+            <link>https://mirror.roytang.net/2010/03/2496418/</link>
+            <pubDate>Mon, 22 Mar 2010 23:12:29 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/03/2496418/</guid>
+            <description>
+            Reply to &amp;#39;comparing two cursors in oracle instead of using MINUS&amp;#39; on stackoverflow at https://stackoverflow.com/questions/2496360/comparing-two-cursors-in-oracle-instead-of-using-minus:
+
+            &lt;p&gt;MINUS is the same as saying &amp;ldquo;get all the rows of the first query, then from that set remove the rows that are also in the second query&amp;rdquo;, so you could like load the results from the first query into an array in-memory, then loop through the second query results and check them one-by-one against the first query results and remove them if they exist.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure that will actually perform better though (depends on a lot of things). You might also want to consider using NOT EXISTS instead and check that performance, i.e.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT  RTRIM(LTRIM(A.HEAD)),
+  A.EFFECTIVE_DATE,
+FROM   TABLE_1 A
+WHERE  A.TYPE_OF_ACTION=&#39;6&#39;
+AND    A.EFFECTIVE_DATE &amp;gt;= ADD_MONTHS(SYSDATE,-15)  
+AND NOT EXISTS (
+  SELECT 1 fFROM TABLE_2 B
+  WHERE RTRIM(LTRIM(A.HEAD)) = RTRIM(LTRIM(B.HEAD))
+  AND A.EFFECTIVE_DATE = B.EFFECTIVE_DATE
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some functional indexing may also be needed on RTRIM(LTRIM(A.HEAD))&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/01/2084133/</link>
+            <pubDate>Mon, 18 Jan 2010 05:52:53 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/01/2084133/</guid>
+            <description>
+            
+
+            &lt;p&gt;I know the oci driver can perform transparent failover of the database, but does the thin driver have the same capability?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;triggers statement level atomicity&#39; on stackoverflow at https://stackoverflow.com/questions/1859411/triggers-statement-level-atomicity:
+</title>
+            <link>https://mirror.roytang.net/2009/12/1859425/</link>
+            <pubDate>Mon, 07 Dec 2009 11:27:02 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/1859425/</guid>
+            <description>
+            Reply to &amp;#39;triggers statement level atomicity&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1859411/triggers-statement-level-atomicity:
+
+            &lt;p&gt;It means that any single SQL statement you run is atomic in nature - it will either succeed completely or fail completely. If your SQL statement fails, and triggers that would have run as a result of that SQL statement will fail as well.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Detect chinese (multibyte) character in a string in a column in oracle database&#39; on stackoverflow at https://stackoverflow.com/questions/1831114/detect-chinese-multibyte-character-in-a-string-in-a-column-in-oracle-database:
+</title>
+            <link>https://mirror.roytang.net/2009/12/1831128/</link>
+            <pubDate>Wed, 02 Dec 2009 07:04:31 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/1831128/</guid>
+            <description>
+            Reply to &amp;#39;Detect chinese (multibyte) character in a string in a column in oracle database&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1831114/detect-chinese-multibyte-character-in-a-string-in-a-column-in-oracle-database:
+
+            &lt;p&gt;Try &amp;ldquo;where length(column) &amp;lt; lengthb(column)&amp;rdquo;&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>

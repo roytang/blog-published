@@ -1,0 +1,204 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>jquery on Roy Tang</title>
+      <link>https://mirror.roytang.net/tags/jquery/</link>
+      <description>Recent content in jquery on Roy Tang</description>
+      <generator>Hugo -- gohugo.io</generator>
+      <language>en-us</language>
+      <managingEditor>hello@roytang.net (Roy Tang)</managingEditor>
+      <webMaster>hello@roytang.net (Roy Tang)</webMaster>
+      <lastBuildDate>Mon, 18 Mar 2013 10:35:55 +0000</lastBuildDate>
+      
+          <atom:link href="https://mirror.roytang.net/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+      
+          
+      
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2013/03/15474727/</link>
+            <pubDate>Mon, 18 Mar 2013 10:35:55 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2013/03/15474727/</guid>
+            <description>
+            
+
+            &lt;p&gt;I&amp;rsquo;m trying to trace a slowdown on load of a web page in our application and there&amp;rsquo;s a ton of JavaScript to go through so I&amp;rsquo;d rather not process them individually.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m trying to see if there&amp;rsquo;s a way to list out all the event handlers added to &lt;code&gt;$(document).ready()&lt;/code&gt; so that I would just look through those handlers to see what might be causing the problem.&lt;/p&gt;
+&lt;p&gt;Is there a way to do this?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;Loop through string of dropdown options and select&#39; on stackoverflow at https://stackoverflow.com/questions/11465807/loop-through-string-of-dropdown-options-and-select:
+</title>
+            <link>https://mirror.roytang.net/2012/07/11465882/</link>
+            <pubDate>Fri, 13 Jul 2012 07:20:40 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2012/07/11465882/</guid>
+            <description>
+            Reply to &amp;#39;Loop through string of dropdown options and select&amp;#39; on stackoverflow at https://stackoverflow.com/questions/11465807/loop-through-string-of-dropdown-options-and-select:
+
+            &lt;p&gt;Is this in an HTML page? If yes, why not just use something like $(&amp;ldquo;option&amp;rdquo;).each()?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to generate an random 8 character string that won&amp;#39;t occur twice in jQuery?&#39; on stackoverflow at https://stackoverflow.com/questions/8470859/how-to-generate-an-random-8-character-string-that-wont-occur-twice-in-jquery:
+</title>
+            <link>https://mirror.roytang.net/2011/12/8470875/</link>
+            <pubDate>Mon, 12 Dec 2011 06:55:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2011/12/8470875/</guid>
+            <description>
+            Reply to &amp;#39;How to generate an random 8 character string that won&amp;amp;#39;t occur twice in jQuery?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/8470859/how-to-generate-an-random-8-character-string-that-wont-occur-twice-in-jquery:
+
+            &lt;p&gt;Why not just use the current time (as an integer)?&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How many times can I have jQuery&amp;#39;s document ready function declared on a page?&#39; on stackoverflow at https://stackoverflow.com/questions/4471349/how-many-times-can-i-have-jquerys-document-ready-function-declared-on-a-page:
+</title>
+            <link>https://mirror.roytang.net/2010/12/4471375/</link>
+            <pubDate>Fri, 17 Dec 2010 14:25:54 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/12/4471375/</guid>
+            <description>
+            Reply to &amp;#39;How many times can I have jQuery&amp;amp;#39;s document ready function declared on a page?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/4471349/how-many-times-can-i-have-jquerys-document-ready-function-declared-on-a-page:
+
+            &lt;p&gt;As many times as you like. They fire in order of declaration.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$(document).ready()&lt;/code&gt; will fire when the document is ready (when it&amp;rsquo;s all loaded by the browser). The other one will fire as soon as that part of the script executes.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;how to use jquery UI autocomplete 1.8.4?&#39; on stackoverflow at https://stackoverflow.com/questions/3695414/how-to-use-jquery-ui-autocomplete-1-8-4:
+</title>
+            <link>https://mirror.roytang.net/2010/09/3695558/</link>
+            <pubDate>Sun, 12 Sep 2010 16:14:28 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/09/3695558/</guid>
+            <description>
+            Reply to &amp;#39;how to use jquery UI autocomplete 1.8.4?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3695414/how-to-use-jquery-ui-autocomplete-1-8-4:
+
+            &lt;p&gt;If you want to use jquery ui autocomplete, your data must be &amp;ldquo;a simple Array of Strings, or it contains Objects for each item in the array, with either a label or value property or both&amp;rdquo;. This is from the documentation at &lt;a href=&#34;http://jqueryui.com/demos/autocomplete/&#34;&gt;http://jqueryui.com/demos/autocomplete/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Your server response does not follow the expected data type, you should modify suggest.php to post-process the data into label-value pairs.&lt;/p&gt;
+&lt;p&gt;As I understand it, you also want to perform a custom action when an item is selected from the autocomplete, so you should also add a handler for the &amp;lsquo;select&amp;rsquo; event.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;jQuery - split() arrays with only one match = undefined&#39; on stackoverflow at https://stackoverflow.com/questions/3599620/jquery-split-arrays-with-only-one-match-undefined:
+</title>
+            <link>https://mirror.roytang.net/2010/08/3599669/</link>
+            <pubDate>Mon, 30 Aug 2010 10:50:08 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/08/3599669/</guid>
+            <description>
+            Reply to &amp;#39;jQuery - split() arrays with only one match = undefined&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3599620/jquery-split-arrays-with-only-one-match-undefined:
+
+            &lt;p&gt;You already have the lines logging your values array, was it so hard to add lines logging the other vars?&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;c1_arr = c1.split(&#39;;&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The array created here is [&amp;lsquo;font-color:#ff0000&amp;rsquo;, &amp;lsquo;&#39;] - there is a blank second element since there&amp;rsquo;s nothing after the &amp;lsquo;;&amp;rsquo; in the input string.&lt;/p&gt;
+&lt;p&gt;Then when you call:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;values[1][i]= c1_arr[i].split(&#39;:&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c1_arr[1] is empty string, so values[1][1] is an array with only one element, empty string.&lt;/p&gt;
+&lt;p&gt;values[1][1][0] -&amp;gt; empty string
+values[1][1][1] -&amp;gt; undefined (no second element)&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How do I set a radio button value using jQuery?&#39; on stackoverflow at https://stackoverflow.com/questions/3243206/how-do-i-set-a-radio-button-value-using-jquery:
+</title>
+            <link>https://mirror.roytang.net/2010/07/3243230/</link>
+            <pubDate>Wed, 14 Jul 2010 03:33:39 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/07/3243230/</guid>
+            <description>
+            Reply to &amp;#39;How do I set a radio button value using jQuery?&amp;#39; on stackoverflow at https://stackoverflow.com/questions/3243206/how-do-i-set-a-radio-button-value-using-jquery:
+
+            &lt;p&gt;You can give each radio element an id then $(&amp;quot;#id&amp;rdquo;).attr(&amp;ldquo;value&amp;rdquo;, &amp;ldquo;thevalueyouwant&amp;rdquo;) for each one.&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>New note
+</title>
+            <link>https://mirror.roytang.net/2010/06/3051295/</link>
+            <pubDate>Wed, 16 Jun 2010 07:12:12 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2010/06/3051295/</guid>
+            <description>
+            
+
+            &lt;p&gt;Is there any Python library that allows me to parse an HTML document similar to what jQuery does?&lt;/p&gt;
+&lt;p&gt;i.e. I&amp;rsquo;d like to be able to use CSS selector syntax to grab an arbitrary set of nodes from the document, read their content/attributes, etc.&lt;/p&gt;
+&lt;p&gt;The only Python HTML parsing lib I&amp;rsquo;ve used before was BeautifulSoup, and even though it&amp;rsquo;s fine I keep thinking it would be faster to do my parsing if I had jQuery syntax available. :D&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;How to stop &amp;quot;setInterval&amp;quot;&#39; on stackoverflow at https://stackoverflow.com/questions/1831152/how-to-stop-setinterval:
+</title>
+            <link>https://mirror.roytang.net/2009/12/1831172/</link>
+            <pubDate>Wed, 02 Dec 2009 07:17:58 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/1831172/</guid>
+            <description>
+            Reply to &amp;#39;How to stop &amp;amp;quot;setInterval&amp;amp;quot;&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1831152/how-to-stop-setinterval:
+
+            &lt;p&gt;setInterval returns an id that you can use to cancel the interval with clearInterval()&lt;/p&gt;
+
+
+
+            </description>
+        </item>
+    
+        <item>
+            <title>Reply to &#39;jQuery, how to call a function while passing a variable&#39; on stackoverflow at https://stackoverflow.com/questions/1831116/jquery-how-to-call-a-function-while-passing-a-variable:
+</title>
+            <link>https://mirror.roytang.net/2009/12/1831132/</link>
+            <pubDate>Wed, 02 Dec 2009 07:05:32 +0000</pubDate>
+            <author>hello@roytang.net (Roy Tang)</author>
+            <guid>https://mirror.roytang.net/2009/12/1831132/</guid>
+            <description>
+            Reply to &amp;#39;jQuery, how to call a function while passing a variable&amp;#39; on stackoverflow at https://stackoverflow.com/questions/1831116/jquery-how-to-call-a-function-while-passing-a-variable:
+
+            &lt;p&gt;Try wrapping it in a new function object:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$.get(&amp;quot;InfoRetrieve&amp;quot;, { },function() { addContent(data) });&lt;/code&gt;&lt;/pre&gt;
+
+
+
+            </description>
+        </item>
+    
+    </channel>
+  </rss>
