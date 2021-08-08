@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/12/1927273/",
+            "url": "https://mirror.roytang.net/2009/12/1927273/",
+            "path": "/2009/12/1927273/",
+            "title": "Applet freezes page on initial load (Mac Firefox)",
+            "content_html": "\u003cp\u003eWe have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\u003c/p\u003e\n\u003cp\u003eThe problem is encountered on the user site.\nOn initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets.\nAfter refreshing the page, it loads normally.\nIf the cache is cleared, same problem happens again.\u003c/p\u003e\n\u003cp\u003eUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)\u003c/p\u003e\n\u003cp\u003eWe were able to get a jstack thread dump, see below:\n\u003ca href=\"http://pastebin.com/m527e05dd\"\u003ehttp://pastebin.com/m527e05dd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eHowever, we\u0026rsquo;re not sure how to interpret it. Any suggestions or advice?\u003c/p\u003e\n\u003cp\u003eEdit:\nWe were able to replicate in our testing machine by creating a new user (clean Firefox profile). If we clear the java cache then visit the problematic pages, the edit controls are disabled (we can\u0026rsquo;t click them to focus them), the Firefox address bar and search box have the same behavior. The edit box controls only \u0026ldquo;unfreeze\u0026rdquo; when we access the \u0026ldquo;Help\u0026rdquo; menu entry, which has a Search edit box that \u003cem\u003eis\u003c/em\u003e active.\u003c/p\u003e\n",
+            "summary": "We have a web screen with a number of applets that has a problem on Mac OSX 10.5.7, Firefox 3.0.15, java 1.5.0_19.\nThe problem is encountered on the user site. On initial load of applets (with an empty applet cache), the screen locks up/hangs while loading the applets. After refreshing the page, it loads normally. If the cache is cleared, same problem happens again.\nUnfortunately, we\u0026rsquo;re not encountering this on our local test machine (same OS, java and Firefox versions)",
+            "date_published": "2009-12-18T09:48:12+00:00",
+            "date_modified": "2019-10-23T15:09:29+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/12/1927273/index.md"
+            , "tags": ["firefox","macos","applet","questions","stackoverflow","software development"]
+            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://stackoverflow.com/questions/1927273/applet-freezes-page-on-initial-load-mac-firefox",
+                    "source_file": "comment-20091228T192007-1971063.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/12/6779222709/",
             "url": "https://mirror.roytang.net/2009/12/6779222709/",
             "path": "/2009/12/6779222709/",
@@ -919,23 +941,6 @@
             "source_path": "notes/2009/12/6497105491.md"
             , "tags": ["mtg"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roy_mtg/statuses/6497105491/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/12/276124344/",
-            "url": "https://mirror.roytang.net/2009/12/276124344/",
-            "path": "/2009/12/276124344/",
-            "title": "",
-            "content_html": "\u003cp\u003eIf I had one hour to live\u0026hellip;via \u003ca href=\"http://i.imgur.com/NWqCz.jpg\"\u003ei.imgur.com\u003c/a\u003e\u003c/p\u003e",
-            "summary": "If I had one hour to live\u0026hellip;via i.imgur.com",
-            "date_published": "2009-12-09T14:06:20+00:00",
-            "date_modified": "2021-07-07T20:58:23+08:00",
-            "section": "photos",
-            "source_path": "photos/2009/12/276124344/index.md"
-            
-            , "syndicated": [{"type":"tumblr","url":"https://roytang.tumblr.com/post/276124344/if-i-had-one-hour-to-livevia-iimgurcom"}]
             
             
             }

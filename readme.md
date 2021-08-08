@@ -18,11 +18,11 @@ Latest blog posts:
 Latest shared links:
     
 
+- [Scammers sell griefers](https://mirror.roytang.net/2021/08/0ef548f1624894edda4350ba01704d4f/)
 - [Foundations](https://mirror.roytang.net/2021/08/foundations/)
 - [The most unbelievable things about life before smartphones](https://mirror.roytang.net/2021/08/the-most-unbelievable-things-about-life-before-smartphones/)
 - [Duterte restores Philippines as ‘sick man of Asia’](https://mirror.roytang.net/2021/08/duterte-restores-philippines-as-sick-man-of-asia/)
 - [What is a diamond dependency conflict?](https://mirror.roytang.net/2021/08/what-is-a-diamond-dependency-conflict/)
-- [700,000 lines of code, 20 years, and one developer: How Dwarf Fortress is built](https://mirror.roytang.net/2021/08/700000-lines-of-code-20-years-and-one-developer-how-dwarf-fortress-is-built/)
 
 [View all links](https://mirror.roytang.net/links)
 
