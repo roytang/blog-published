@@ -1,4 +1,6 @@
 
+- [Foundations](/2021/08/foundations/)
+
 - [The most unbelievable things about life before smartphones](/2021/08/the-most-unbelievable-things-about-life-before-smartphones/)
 
 - [Duterte restores Philippines as ‘sick man of Asia’](/2021/08/duterte-restores-philippines-as-sick-man-of-asia/)
