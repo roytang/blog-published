@@ -11,31 +11,6 @@
     "items": [
         
         {
-            "id": "https://mirror.roytang.net/2017/10/47009063/",
-            "url": "https://mirror.roytang.net/2017/10/47009063/",
-            "path": "/2017/10/47009063/",
-            "title": "Marklogic 9: MLCP fails when importing records with a transform",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\u003c/p\u003e\n\u003cp\u003eMy MLCP options file is as follows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport\n-host \n192.168.33.10\n-port \n8041\n-username \nadmin\n-password\nadmin\n-input_file_path \nd:\\maroon\\data\\mbastest.csv \n-mode \nlocal \n-input_file_type \ndelimited_text \n-uri_id \nClientId \n-output_uri_prefix\n/test/records/\n-output_uri_suffix \n.json \n-document_type \njson \n-transform_module \n/ingestion/transform.js\n-transform_function \ntestTransform\n-transform_param\ntest\n-content_encoding \nwindows-1252 \n-thread_count\n1\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHere\u0026rsquo;s the output of a test run with only 2 records in the test CSV file:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e17/10/30 14:07:33 INFO contentpump.LocalJobRunner: Content type: JSON\n17/10/30 14:07:33 INFO contentpump.ContentPump: Job name: local_455168344_1\n17/10/30 14:07:33 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 1\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/31.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 WARN contentpump.TransformWriter: Failed document /test/records/32.json\n17/10/30 14:07:38 WARN contentpump.TransformWriter: \u0026lt;error:format-string xmlns:error=\u0026quot;http://marklogic.com/xdmp/error\u0026quot; xmlns:xsi=\u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt;XDMP-UNEXPECTED: (err:XPST0003) Unexpected token syntax error, unexpected QName_, expecting $end or SemiColon_\u0026lt;/error:format-string\u0026gt;\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner:  completed 100%\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter:\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 0\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 2\n17/10/30 14:07:38 INFO contentpump.LocalJobRunner: Total execution time: 5 sec\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf I remove the transform params, the import works fine.\u003c/p\u003e\n\u003cp\u003eI thought it might be a parsing issue with my transform module itself, so I tried replacing it with the following example from the documentation:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// Add a property named \u0026quot;NEWPROP\u0026quot; to any JSON input document.\n// Otherwise, input passes through unchanged.\n\nfunction addProp(content, context)\n{\n  const propVal = (context.transform_param == undefined)\n                 ? \u0026quot;UNDEFINED\u0026quot; : context.transform_param;\n\n  if (xdmp.nodeKind(content.value) == 'document' \u0026amp;\u0026amp;\n      content.value.documentFormat == 'JSON') {\n    // Convert input to mutable object and add new property\n    const newDoc = content.value.toObject();\n    newDoc.NEWPROP = propVal;\n\n    // Convert result back into a document\n    content.value = xdmp.unquote(xdmp.quote(newDoc));\n  }\n  return content;\n};\n\nexports.addProp = addProp;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e(Of course I changed the params in the MLCP options file accordingly)\u003c/p\u003e\n\u003cp\u003eThe issue still persists even with just this test function.\u003c/p\u003e\n\u003cp\u003eAny advice?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m trying to migrate one of my dev envts from ML8 to ML9. I have an import script that successfully works on the ML8 version, but there\u0026rsquo;s an error when I try running it against the ML9 database. The ML9 version is 9.0.3.1. The MLCP version is 9.0.3\nMy MLCP options file is as follows:\nimport -host 192.168.33.10 -port 8041 -username admin -password admin -input_file_path d:\\maroon\\data\\mbastest.csv -mode local -input_file_type delimited_text -uri_id ClientId -output_uri_prefix /test/records/ -output_uri_suffix .",
-            "date_published": "2017-10-30T06:15:37+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/10/47009063/index.md"
-            , "tags": ["marklogic","mlcp","marklogic-9","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
-                    "source_file": "comment-20171030T115743-80975606.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/47009063/marklogic-9-mlcp-fails-when-importing-records-with-a-transform",
-                    "source_file": "comment-20171030T132641-47016456.json"
-                }
-            ]
-            }
-        
-        , {
             "id": "https://mirror.roytang.net/2017/10/924657274534076416/",
             "url": "https://mirror.roytang.net/2017/10/924657274534076416/",
             "path": "/2017/10/924657274534076416/",
@@ -1046,6 +1021,23 @@
             "source_path": "notes/2017/10/918326248694095872/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/918326248694095872/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2017/10/75m605/",
+            "url": "https://mirror.roytang.net/2017/10/75m605/",
+            "path": "/2017/10/75m605/",
+            "title": "",
+            "content_html": "\u003ch4 id=\"posted-on-rjokes-today-was-a-great-day-1010httpsredditcomrjokescomments75m605today_was_a_great_day_1010\"\u003ePosted on r/Jokes: \u003ca href=\"https://reddit.com/r/Jokes/comments/75m605/today_was_a_great_day_1010/\"\u003eToday was a great day. 10/10!\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e[removed]\u003c/p\u003e\n",
+            "summary": "Posted on r/Jokes: Today was a great day. 10/10! [removed]",
+            "date_published": "2017-10-11T10:36:08+00:00",
+            "date_modified": "2020-01-23T03:46:15+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/10/75m605/index.md"
+            , "tags": ["jokes"]
+            , "syndicated": [{"type":"reddit","url":"https://reddit.com/r/Jokes/comments/75m605/today_was_a_great_day_1010/"}]
             
             
             }
