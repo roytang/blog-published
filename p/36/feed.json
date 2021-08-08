@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/12/1203233107203088384/",
+            "url": "https://mirror.roytang.net/2019/12/1203233107203088384/",
+            "path": "/2019/12/1203233107203088384/",
+            "title": "",
+            "content_html": "\u003cp\u003eFACT: Buying games on Steam and playing games are two different hobbies. I do the former and one day, the latter. \u003ca href=\"https://twitter.com/HeatherAntos/status/1203126933346754561\"\u003ehttps://twitter.com/HeatherAntos/status/1203126933346754561\u003c/a\u003e\u003c/p\u003e\n",
+            "summary": "FACT: Buying games on Steam and playing games are two different hobbies. I do the former and one day, the latter. https://twitter.com/HeatherAntos/status/1203126933346754561",
+            "date_published": "2019-12-07T08:41:42+00:00",
+            "date_modified": "2020-09-11T16:08:14+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/12/1203233107203088384/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1203233107203088384/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2019/12/1203220912419434496/",
+            "url": "https://mirror.roytang.net/2019/12/1203220912419434496/",
+            "path": "/2019/12/1203220912419434496/",
+            "title": "",
+            "content_html": "\u003cp\u003eIt\u0026rsquo;s always great when I\u0026rsquo;m coding something and I find out that past me already implemented a function for it and I\u0026rsquo;m like \u0026ldquo;good job past me!\u0026rdquo; :self-five:\u003c/p\u003e\n",
+            "summary": "It\u0026rsquo;s always great when I\u0026rsquo;m coding something and I find out that past me already implemented a function for it and I\u0026rsquo;m like \u0026ldquo;good job past me!\u0026rdquo; :self-five:",
+            "date_published": "2019-12-07T07:53:14+00:00",
+            "date_modified": "2019-12-07T09:30:04+00:00",
+            "section": "notes",
+            "source_path": "notes/2019/12/1203220912419434496/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1203220912419434496/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/12/1203195984949309440/",
             "url": "https://mirror.roytang.net/2019/12/1203195984949309440/",
             "path": "/2019/12/1203195984949309440/",
@@ -859,40 +893,6 @@
             "source_path": "notes/2019/11/1196545389823848448/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1196545389823848448/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/f7yj706/",
-            "url": "https://mirror.roytang.net/2019/11/f7yj706/",
-            "path": "/2019/11/f7yj706/",
-            "title": "",
-            "content_html": "\u003cp\u003eDecision trees like \u0026ldquo;which starter pokemon do you pick\u0026rdquo; aren\u0026rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.\u003c/p\u003e\n\u003cp\u003eFor this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it\u0026rsquo;s easier for me:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003estarters: [\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I choose Charmander!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0001\u0026quot;},\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I want Bulbasaur!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0002\u0026quot;},\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e{ \u0026quot;dialog\u0026quot;: \u0026quot;I want Pikachu!\u0026quot;, \u0026quot;pokemon_id\u0026quot;: \u0026quot;0003\u0026quot;}\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003e]\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e(I forgot who the 3rd starter was supposed to be, I\u0026rsquo;m not big on Pokemon. Also I\u0026rsquo;m guessing those aren\u0026rsquo;t the actual pokedex IDs)\u003c/p\u003e\n\u003cp\u003eEach item on the list could also contain some other info. For example in dialogue trees, you might have NPCs react differently depending on what you say, so in that case each node would have an id pointing to the specific NPC response.\u003c/p\u003e\n\u003cp\u003eThe idea is to separate the data from your code, since those are totally separate concerns. This is a general programming principle not specific to game development. In this way, you make it easier to modify your data (like decision trees) without necessarily having to rebuild your code. For example, you could change the dialog message for each pokemon starter choice, or maybe you could add more choices, or make the starter pokemon be Snorlax, MewTwo and Ekans for some reason (those are pokemon right? Lol). Bigger game studios will have separate tools to maintain those data files so that even nonprogrammers can help change those kinds of things in the game.\u003c/p\u003e\n",
-            "summary": "Decision trees like \u0026ldquo;which starter pokemon do you pick\u0026rdquo; aren\u0026rsquo;t things that should be embedded into your code as if/else statements. These should be data that your code loads.\nFor this specific example, you could have a data file that has a list of all the available starter pokemon. How many are available to choose from? Your code will read these data files and present them as choices. The data files could include the dialog text and say, an ID string to indicate which pokemon would then be added into your party, something like this (JSON format, because it\u0026rsquo;s easier for me:",
-            "date_published": "2019-11-18T16:54:16+00:00",
-            "date_modified": "2020-10-19T18:08:02+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/11/f7yj706/index.md"
-            , "tags": ["gamedev"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/gamedev/comments/dy4omz/how_to_you_prevent_a_rpg_from_ending_up_into_a/f7yj706/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/1196464077268086784/",
-            "url": "https://mirror.roytang.net/2019/11/1196464077268086784/",
-            "path": "/2019/11/1196464077268086784/",
-            "title": "",
-            "content_html": "\u003cp\u003e2010/2019 lol\u003c/p\u003e\n",
-            "summary": "2010/2019 lol",
-            "date_published": "2019-11-18T16:23:59+00:00",
-            "date_modified": "2019-11-19T07:20:58+00:00",
-            "section": "photos",
-            "source_path": "photos/2019/11/1196464077268086784/index.md"
-            
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1196464077268086784/"}]
             
             
             }

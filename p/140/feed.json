@@ -11,6 +11,40 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2016/06/745025117395156993/",
+            "url": "https://mirror.roytang.net/2016/06/745025117395156993/",
+            "path": "/2016/06/745025117395156993/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/NorrYtt/\"\u003e@NorrYtt\u003c/a\u003e if he\u0026rsquo;s the uncontested alpha, why doesnt he want to fight other werewolves?\u003c/p\u003e\n",
+            "summary": "@NorrYtt if he\u0026rsquo;s the uncontested alpha, why doesnt he want to fight other werewolves?",
+            "date_published": "2016-06-20T22:46:44+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/745025117395156993.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/745025117395156993/"}]
+            
+            
+            }
+        
+        , {
+            "id": "https://mirror.roytang.net/2016/06/745015662154649600/",
+            "url": "https://mirror.roytang.net/2016/06/745015662154649600/",
+            "path": "/2016/06/745015662154649600/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/iamcrystalene/\"\u003e@iamcrystalene\u003c/a\u003e the most important thing is to both read a lot (para masanay ka sa what looks correct) and to write a lot. Good luck~\u003c/p\u003e\n",
+            "summary": "@iamcrystalene the most important thing is to both read a lot (para masanay ka sa what looks correct) and to write a lot. Good luck~",
+            "date_published": "2016-06-20T22:09:10+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2016/06/745015662154649600.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/745015662154649600/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2016/06/745015434013900800/",
             "url": "https://mirror.roytang.net/2016/06/745015434013900800/",
             "path": "/2016/06/745015434013900800/",
@@ -849,45 +883,6 @@
             , "syndicated": [{"type":"instagram","url":"https://instagram.com/p/BGt2BqfMoFB/"},{"type":"tumblr","url":"https://roytang.tumblr.com/post/146009754295/cola-sketchdaily"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/743428550271766528/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10154675363318912:0"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/4oc94z/june_16th_carbonated_beverage/d4bhg51/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/d4b68ts/",
-            "url": "https://mirror.roytang.net/2016/06/d4b68ts/",
-            "path": "/2016/06/d4b68ts/",
-            "title": "",
-            "content_html": "\u003cp\u003eThank you for the kind words. I have something rolling about in my head about how Alex and Harry\u0026rsquo;s relationship devolve into what it\u0026rsquo;s going to be. I may write it up someday.\u003c/p\u003e\n",
-            "summary": "Thank you for the kind words. I have something rolling about in my head about how Alex and Harry\u0026rsquo;s relationship devolve into what it\u0026rsquo;s going to be. I may write it up someday.",
-            "date_published": "2016-06-16T04:01:33+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2016/06/d4b68ts/index.md"
-            , "tags": ["WritingPrompts"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/WritingPrompts/comments/4o4qr5/wp_the_day_after_a_man_invents_the_worlds_first/d4b68ts/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
-            "url": "https://mirror.roytang.net/2016/06/password-security-for-application-developers/",
-            "path": "/2016/06/password-security-for-application-developers/",
-            "title": "Password Security for Application Developers",
-            "content_html": "\u003cp\u003eIn the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eNever store passwords in plain text!\u003c/strong\u003e This is the most important rule. It means that if your database is ever compromised, the password information will not be exposed\u003c/p\u003e\n\u003cp\u003eThis is true even if your application doesn\u0026rsquo;t contain sensitive data or would not otherwise cause any problems if compromised. This is because many users will tend to re-use the same password across different services (although they really shouldn\u0026rsquo;t!)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eUse a strong one-way cryptographic hash function to store the passwords.\u003c/strong\u003e One-way hashes can still be brute-forced, but the idea is that the computational effort to do so will be so large to make it not worth the effort. The most commonly used/recommended algorithms are \u003ca href=\"http://security.stackexchange.com/questions/4781/do-any-security-experts-recommend-bcrypt-for-password-storage/6415#6415\"\u003ebcrypt and PBKDF2\u003c/a\u003e. One of these should suffice, but take note to check every few years or so if better cryptographic hash algorithms emerge; as technology and hardware evolves and computational power increases, at some point in the future stronger algorithms may be needed (it might take a while though, bcrypt has been good since 1999)\u003c/p\u003e\n\u003cp\u003eCryptographic hash functions are designed to be collision-resistant, meaning the result of the hash function will almost certainly be unique. When the user submits a password for authentication, you simply hash it using the same method and compare the hash against the one stored in the database\u003c/p\u003e\n\u003cp\u003e**Use a unique salt per password before hashing. **Salting means that you don\u0026rsquo;t hash the password by itself, you instead combine it with another string before hashing. Not only does this increase the length and complexity of the hashed string, but reduces vulnerability to so-called \u003ca href=\"https://en.wikipedia.org/wiki/Dictionary_attack\"\u003edictionary attacks\u003c/a\u003e and \u003ca href=\"https://en.wikipedia.org/wiki/Rainbow_table\"\u003erainbow table attacks\u003c/a\u003e. The salt should be different for each user, probably some combination of personal data like the username and a key like the user id stored in your system\u003c/p\u003e\n\u003cp\u003e**Never send passwords in plain text either. **You may be tempted to send out an email with the password in plain text on a password reset request. The common practice now is to just generate and send a unique user-specific link to allow the user to set his own password manually\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eForce good password practices on your users\u003c/strong\u003e. This means requiring sufficiently strong passwords. Many modern services provide quick feedback on how strong the input password is. Optionally you can also require that the password contains a varied amount of lower case letters, upper case letters, numbers, and other special characters, but this is not really necessary if the passwords are of sufficient length. Also consider requiring users to change their passwords after a set period\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eYou should disallow the most common passwords.\u003c/strong\u003e A list of the most commonly used passwords (such as \u0026ldquo;password\u0026rdquo; and \u0026ldquo;123456\u0026rdquo;) are available from previously leaked password hacks. Microsoft has recently started to roll out this sort of check now in their services. Actually, one good idea I\u0026rsquo;ve heard of before is to have a uniqueness check on the password field \u0026ndash; disallow users from having the same password as any other user, but this may not be feasible depending on how you hash the passwords\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eIf your application has a large number of users or is especially critical (anything involving money transactions is a good candidate), you should also consider implementing some sort of \u003cstrong\u003etwo-factor authentication\u003c/strong\u003e. Most common implementations these days use email, SMS or a mobile application as the second factor\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eThese practices won\u0026rsquo;t prevent your application from being hacked. In truth, probably nothing can really prevent hacks 100% especially against determined hackers. These are simply mitigation practices you need to be aware of as the application developer to protect your users in case your application does get hacked. Other methods of securing your system may be the responsibility of other roles such as system administrators/engineers or dev ops\u003c/p\u003e\n",
-            "summary": "In the modern era of online services and applications, it is getting more and more common to hear of databases and systems being hacked and user data being exposed. The most dangerous of this data is the user\u0026rsquo;s password since it may allow access not only to your own service but to other services as well. As an application developer, the below is probably the bare minimum you need to know when handling user passwords:",
-            "date_published": "2016-06-16T01:30:02+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2016/06/password-security-for-application-developers/index.md"
-            , "tags": ["Software Development","Tech Life"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/743255093370290176/"}]
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20160616094928-wp-joaquin.json"
-                }
-            ]
             }
         
     ]

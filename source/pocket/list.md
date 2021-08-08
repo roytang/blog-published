@@ -1,4 +1,8 @@
 
+- [In praise of PostgreSQL](/2021/08/in-praise-of-postgresql/)
+
+- [Why medieval city-builder video games are historically inaccurate](/2021/08/why-medieval-city-builder-video-games-are-historically-inaccurate/)
+
 - [Foundations](/2021/08/foundations/)
 
 - [The most unbelievable things about life before smartphones](/2021/08/the-most-unbelievable-things-about-life-before-smartphones/)
