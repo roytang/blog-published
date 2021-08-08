@@ -29,6 +29,8 @@ Latest shared links:
 Latest notes:
     
 
+- [8 Aug 2021 4:51pm](https://mirror.roytang.net/2021/08/1424412880116453377/): Bespin Cloud City #sketchdaily 219/365
+PHOTOS PLACEHOLDER 
 - [7 Aug 2021 8:59am](https://mirror.roytang.net/2021/08/eadcdf2ad2ac11d0a9314a65ab108d4e/): Paint Everything Everywhere: https://www.puzzlescript.net/play.html?p=6a412035f6f1999cc773ddcb071de6e6
 A nice short puzzle game
 - [7 Aug 2021 12:32am](https://mirror.roytang.net/2021/08/1423804243601879042/): Nanaue #sketchdaily 218/365 #TheSuicideSquad
@@ -39,8 +41,6 @@ PHOTOS PLACEHOLDER
 [22:42] Tonight&rsquo;s extra long final AFR stream featured FOUR DRAFTS. Look at these piles and try to guess whether I made it out of Gold rank?
 YT: https://www.youtube.com/watch?v=3B7kTTuQGgM
 PHOTOS PLACEHOLDER 
-- [6 Aug 2021 10:27am](https://mirror.roytang.net/2021/08/12cbfc5fe2bf124a832da481095c364b/): THE SUICIDE SQUAD spoiler-free review:
- great, fun, violent, hilarious, possibly best of DCEU so far trailers have spoiled waaaay too much of this movie first act was ok, second act felt a bit meh, third act was great    hard to comment on actor performances without spoiling things, but Daniela Melchior was great and Idris Elba took the role seriously there is a post-credits scene  Full review on the blog later
 
 [View all notes](https://mirror.roytang.net/notes)
 
