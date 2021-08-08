@@ -1,4 +1,6 @@
 
+- [Eternal Change for No Energy: A Time Crystal Finally Made Real](/2021/08/eternal-change-for-no-energy-a-time-crystal-finally-made-real/)
+
 - [In praise of PostgreSQL](/2021/08/in-praise-of-postgresql/)
 
 - [Why medieval city-builder video games are historically inaccurate](/2021/08/why-medieval-city-builder-video-games-are-historically-inaccurate/)
