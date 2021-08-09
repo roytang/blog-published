@@ -1,4 +1,6 @@
 
+- [Forty Three](/2021/08/forty-three/)
+
 - [Forty Two](/2020/08/forty-two/)
 
 - [Forty One](/2019/08/forty-one/)
