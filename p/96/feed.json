@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/09/911810298381611008/",
+            "url": "https://mirror.roytang.net/2017/09/911810298381611008/",
+            "path": "/2017/09/911810298381611008/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/antuk1ng/\"\u003e@antuk1ng\u003c/a\u003e happy birthday!\u003c/p\u003e\n",
+            "summary": "@antuk1ng happy birthday!",
+            "date_published": "2017-09-24T04:31:30+00:00",
+            "date_modified": "2019-09-01T15:11:18+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/09/911810298381611008.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/911810298381611008/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/09/911730049534930944/",
             "url": "https://mirror.roytang.net/2017/09/911730049534930944/",
             "path": "/2017/09/911730049534930944/",
@@ -945,28 +962,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/906079933318873089/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/09/46112486/",
-            "url": "https://mirror.roytang.net/2017/09/46112486/",
-            "path": "/2017/09/46112486/",
-            "title": "MarkLogic node.js - conditional updates using fields other than versionId",
-            "content_html": "\u003cp\u003eI\u0026rsquo;m using ML8 and Node.js. The documentation here: \u003ca href=\"http://docs.marklogic.com/guide/node-dev/documents#id_68765\"\u003ehttp://docs.marklogic.com/guide/node-dev/documents#id_68765\u003c/a\u003e describes how to do conditional updates in ML using the versionId field.\u003c/p\u003e\n\u003cp\u003eBut for example if I want to do a conditional update on a different field, is it possible?\u003c/p\u003e\n\u003cp\u003eMy scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)\u003c/p\u003e\n\u003cp\u003eNow, for my \u0026ldquo;Assign\u0026rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update. I don\u0026rsquo;t care if other fields in the same document have been updated or not - if other fields have been updated, I can still proceed with the Assign operation (hence I cannot use the versionId approach, since that covers the whole document)\u003c/p\u003e\n\u003cp\u003eHow can this be done?\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;m using ML8 and Node.js. The documentation here: http://docs.marklogic.com/guide/node-dev/documents#id_68765 describes how to do conditional updates in ML using the versionId field.\nBut for example if I want to do a conditional update on a different field, is it possible?\nMy scenario is: I have JSON documents with elements assignedTo and assignDate (where assignDate is set to current date every time a new value is set to assignedTo)\nNow, for my \u0026ldquo;Assign\u0026rdquo; operation, I would like to make sure that no one else has changed the assignedTo/assignDate fields between the time I read the document and when I perform the update.",
-            "date_published": "2017-09-08T08:53:55+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/09/46112486/index.md"
-            , "tags": ["marklogic","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/46112486/marklogic-node-js-conditional-updates-using-fields-other-than-versionid"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/46112486/marklogic-node-js-conditional-updates-using-fields-other-than-versionid",
-                    "source_file": "comment-20170908T175024-46122057.json"
-                }
-            ]
             }
         
     ]
