@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/",
+            "url": "https://mirror.roytang.net/2008/10/playing-with-generic-views-and-urls/",
+            "path": "/2008/10/playing-with-generic-views-and-urls/",
+            "title": "Playing with Generic Views and URLs",
+            "content_html": "\u003cp\u003e\u0026ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\u0026rdquo;\u003c/p\u003e\n\u003cp\u003e-\u0026gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003ereturn HttpResponseRedirect(\u0026quot;../\u0026quot; + str(post.id) + \u0026quot;/\u0026quot;)\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eI got the basic posting structure up.\u003c/p\u003e\n\u003cp\u003e/post/new/ -\u0026gt; To make new posts\u003c/p\u003e\n\u003cp\u003e/post// -\u0026gt; To view a single post\u003c/p\u003e\n\u003cp\u003e/post/all/ -\u0026gt; To view all posts\u003c/p\u003e\n\u003cp\u003eI should probably start thinking of a better url scheme. Ideally, I\u0026rsquo;d want the @login_required views to be indicated as such in the urls. Something like \u0026ldquo;/admin/post/\u0026rdquo; for new posts \u0026ldquo;/admin/manage/\u0026rdquo; for a screen to manage posts to differentiate it from a screen just to list them out.\u003c/p\u003e\n\u003cp\u003eNext I think I\u0026rsquo;ll try to CSS-ify the blog; I\u0026rsquo;ll probably just reuse stuff from one of the blogger templates as I\u0026rsquo;m still not very good with the HTML/CSS.\u003c/p\u003e\n\u003cp\u003eI\u0026rsquo;ll also look into using some of the date-based generic views to get an archive view. I\u0026rsquo;ll need more data though. Will consider importing from the WordPress blog.\u003c/p\u003e\n",
+            "summary": "\u0026ldquo;when redirecting, how can I make the redirect URL decoupled from the urls.py of the parent app?\u0026rdquo;\n-\u0026gt; It turns out that HttpResponseRedirect supports relative paths, so this was fine.\nreturn HttpResponseRedirect(\u0026quot;../\u0026quot; + str(post.id) + \u0026quot;/\u0026quot;)\nI got the basic posting structure up.\n/post/new/ -\u0026gt; To make new posts\n/post// -\u0026gt; To view a single post\n/post/all/ -\u0026gt; To view all posts\nI should probably start thinking of a better url scheme.",
+            "date_published": "2008-10-20T13:44:00+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2008/10/playing-with-generic-views-and-urls/index.md"
+            , "tags": ["royondjango","django","python","software development"]
+            , "syndicated": [{"type":"blogger","url":"https://royondjango.blogspot.com/2008/10/when-redirecting-how-can-i-make.html"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2008/10/217801/",
             "url": "https://mirror.roytang.net/2008/10/217801/",
             "path": "/2008/10/217801/",
@@ -962,40 +979,6 @@
             
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2008/08/barcamp-manila/",
-            "url": "https://mirror.roytang.net/2008/08/barcamp-manila/",
-            "path": "/2008/08/barcamp-manila/",
-            "title": "Barcamp Manila",
-            "content_html": "\u003cp\u003eUpon the prodding of \u003ca href=\"http://devblog.michaelgalero.com/\"\u003eMikong\u003c/a\u003e, I attended the recent \u003ca href=\"http://barcamp.org/BarCampManila\"\u003eBarcamp Manila\u003c/a\u003e held in Ortigas last Thursday. I wasn\u0026rsquo;t really sure what to expect, as I\u0026rsquo;ve never attended any such conference before, and I\u0026rsquo;ve never been particularly involved with the local developer community, but I said I\u0026rsquo;d go anyway, I figured it\u0026rsquo;d probably be fun.\u003c/p\u003e\n\u003cp\u003eThe event was held at the Orient Square building at the offices of \u003ca href=\"http://\" title=\"http://www.exist.com/\"\u003eExist Global\u003c/a\u003e and \u003ca href=\"http://www.mor.ph/\"\u003eMorph Labs\u003c/a\u003e, who sponsored the event. I was a bit worried since I\u0026rsquo;m going in without having a presentation, although everyone is encouraged to present. Turns out I needn\u0026rsquo;t have worried \u0026ndash; over 80 people attended the event, there wouldn\u0026rsquo;t have been enough time for everyone to present!\u003c/p\u003e\n\u003cp\u003eAll in all, the talks were interesting, with a wide range of technical topics discussed involving multiple programming languages including C++, Java, Ruby and Python (with much playful jeering between the many Ruby advocates and the few Java developers). There was even a short comedy sketch by \u003ca href=\"http://mayhemtoledo.blogspot.com/\"\u003eMario Carreon\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eIt felt good getting to know the community and meet some new people and see the cool (and geeky) things local developers are doing. Although I code day in and day out for work, I could probably still learn a lot from the development community. The uptake of newer technologies is a lot faster in the community than at work, so somehow it\u0026rsquo;s a refreshing change of pace.\u003c/p\u003e\n\u003cp\u003eHmm\u0026hellip; I wonder if I would be able to rustle up something to present at the next Barcamp?\u003c/p\u003e\n",
-            "summary": "Upon the prodding of Mikong, I attended the recent Barcamp Manila held in Ortigas last Thursday. I wasn\u0026rsquo;t really sure what to expect, as I\u0026rsquo;ve never attended any such conference before, and I\u0026rsquo;ve never been particularly involved with the local developer community, but I said I\u0026rsquo;d go anyway, I figured it\u0026rsquo;d probably be fun.\nThe event was held at the Orient Square building at the offices of Exist Global and Morph Labs, who sponsored the event.",
-            "date_published": "2008-08-22T05:07:43+00:00",
-            "date_modified": "2019-09-08T08:33:49+08:00",
-            "section": "post",
-            "source_path": "post/2008/08/barcamp-manila/index.md"
-            , "tags": ["Software Development"]
-            
-            
-            , "comments": [
-                { 
-                    "url": "",
-                    "source_file": "comment-20080822233121-wp-Bry.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20080822235101-wp-Roy.json"
-                }, { 
-                    "url": "",
-                    "source_file": "comment-20080823215432-wp-Bry.json"
-                }, { 
-                    "url": "http://www.mor.ph",
-                    "source_file": "comment-20080901161408-wp-haellopez.json"
-                }, { 
-                    "url": "https://roytang.net/",
-                    "source_file": "comment-20080907234037-wp-Roy.json"
-                }
-            ]
             }
         
     ]

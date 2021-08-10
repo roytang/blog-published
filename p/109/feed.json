@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/03/838772907262160896/",
+            "url": "https://mirror.roytang.net/2017/03/838772907262160896/",
+            "path": "/2017/03/838772907262160896/",
+            "title": "",
+            "content_html": "\u003cp\u003eSay what you want about the switch but stories like these encourages us #gamedev to create diverse games!#accessibility #ux #nintendoswitch\u003c/p\u003e\n",
+            "summary": "Say what you want about the switch but stories like these encourages us #gamedev to create diverse games!#accessibility #ux #nintendoswitch",
+            "date_published": "2017-03-06T15:26:59+00:00",
+            "date_modified": "2020-03-06T00:09:49+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/03/838772907262160896/index.md"
+            , "tags": ["gamedev","accessibility","ux","nintendoswitch"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/838772907262160896/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/03/838768327883378688/",
             "url": "https://mirror.roytang.net/2017/03/838768327883378688/",
             "path": "/2017/03/838768327883378688/",
@@ -1024,23 +1041,6 @@
             "source_path": "notes/2017/02/834645299243130880.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/834645299243130880/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/",
-            "url": "https://mirror.roytang.net/2017/02/weekend-project-twitter-trivia-bot/",
-            "path": "/2017/02/weekend-project-twitter-trivia-bot/",
-            "title": "Weekend Project: Twitter Trivia Bot",
-            "content_html": "\u003cp\u003eI had been meaning to try writing a Twitter bot for a while now. I figured a trivia bot would be pretty easy to implement, so I spent some time a couple of weekends to rig one together.\u003c/p\u003e\n\u003cp\u003eIt\u0026rsquo;s (mostly) working now, the bot is active as \u003ca href=\"https://twitter.com/triviastorm/\"\u003etriviastorm on Twitter\u003c/a\u003e, with a supporting webapp deployed on \u003ca href=\"https://triviastorm.net/\"\u003ehttps://triviastorm.net/\u003c/a\u003e. The bot tweets out a trivia question once every hour. It will then award points to the first five people who gave the correct answer. The bot will only recognize answers given as a direct reply to the tweet with the question, and only those submitted within the one hour period.\u003c/p\u003e\n\u003cp\u003eSome technical details:\u003c/p\u003e\n\u003cp\u003eMy scripting language of choice for the past few years has been Python 2.7. I\u0026rsquo;m using \u003ca href=\"http://www.tweepy.org/\"\u003eTweepy\u003c/a\u003e to interact with the Twitter API, \u003ca href=\"https://github.com/PyMySQL/PyMySQL\"\u003ePyMySQL\u003c/a\u003e to connect to the database, and \u003ca href=\"http://flask.pocoo.org/\"\u003eFlask\u003c/a\u003e to run the webapp. I haven\u0026rsquo;t used Flask in some time, but it\u0026rsquo;s still very straightforward. I actually had a harder time configuring the webapp with mod_wsgi on my host.\u003c/p\u003e\n\u003cp\u003eThe main problem with a trivia system is that you need a large and high-quality set of questions. Right now the bot is using a small trivia set \u0026ndash;around a thousand questions I got from a variety of sources. If I want to leave this bot running for a while, I\u0026rsquo;m going to need a much larger trivia set. However, reviewing and collating the questions is a nontrivial task. Hopefully I can add new questions every so often.\u003c/p\u003e\n\u003cp\u003eFeel free to follow the bot and help test it out. I\u0026rsquo;d be grateful!\u003c/p\u003e\n",
-            "summary": "I had been meaning to try writing a Twitter bot for a while now. I figured a trivia bot would be pretty easy to implement, so I spent some time a couple of weekends to rig one together.\nIt\u0026rsquo;s (mostly) working now, the bot is active as triviastorm on Twitter, with a supporting webapp deployed on https://triviastorm.net/. The bot tweets out a trivia question once every hour. It will then award points to the first five people who gave the correct answer.",
-            "date_published": "2017-02-23T01:30:00+00:00",
-            "date_modified": "2021-07-11T16:14:30+08:00",
-            "section": "post",
-            "source_path": "post/2017/02/weekend-project-twitter-trivia-bot/index.md"
-            , "tags": ["projects","python","triviastorm","Software Development"]
-            , "syndicated": [{"type":"tumblr","url":"https://roytang.tumblr.com/post/157591662160/weekend-project-twitter-trivia-bot"},{"type":"twitter","url":"https://twitter.com/roytang/statuses/834578301146562565/"}]
             
             
             }
