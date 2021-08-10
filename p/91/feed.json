@@ -11,6 +11,52 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2017/12/10156250383578912/",
+            "url": "https://mirror.roytang.net/2017/12/10156250383578912/",
+            "path": "/2017/12/10156250383578912/",
+            "title": "",
+            "content_html": "\u003cp\u003eBayantel switched to Globe successfully. Hopefully slightly less headaches now\u003c/p\u003e\n",
+            "summary": "Bayantel switched to Globe successfully. Hopefully slightly less headaches now",
+            "date_published": "2017-12-10T14:43:00+00:00",
+            "date_modified": "2019-09-28T20:48:02+08:00",
+            "section": "notes",
+            "source_path": "notes/2017/12/10156250383578912/index.md"
+            
+            , "syndicated": [{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/10156250383578912"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/jonathanryan.ang",
+                    "source_file": "comment-20171210-000000-fb88542a-e5ed-4972-bf39-01e102e5671a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171210-000001-4ca3a528-e9cc-472a-9c55-eb7afff04bab.json"
+                }, { 
+                    "url": "https://www.facebook.com/acmramos",
+                    "source_file": "comment-20171210-000002-a04eef23-17ef-4bf1-95e2-e06ae034df76.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171210-000320-50a53dab-8548-4a37-9f30-794b8f803128.json"
+                }, { 
+                    "url": "https://www.facebook.com/arthur.abon",
+                    "source_file": "comment-20171211-000003-25f018c3-4ac1-422a-a73c-79c8fb1d8e7a.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171211-000004-1c8eb1a0-b76a-4f71-a3e8-8177a782e4a0.json"
+                }, { 
+                    "url": "https://www.facebook.com/jvee.veneracion",
+                    "source_file": "comment-20171211-000321-258c1490-b6e1-41b8-921f-3c7d6fa4c666.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171211-000322-36c1d1d5-be3c-47fc-90e2-88314cb53f28.json"
+                }, { 
+                    "url": "https://www.facebook.com/stephen.roy.tang",
+                    "source_file": "comment-20171212-000820-d8c92082-c917-475d-832d-2e072e0d6b7c.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2017/12/939862989816999936/",
             "url": "https://mirror.roytang.net/2017/12/939862989816999936/",
             "path": "/2017/12/939862989816999936/",
@@ -948,28 +994,6 @@
                 { 
                     "url": "https://www.facebook.com/mark.paulino",
                     "source_file": "comment-20171123-000000-d8e4e7a6-23d1-4b0e-b511-208a20b0f966.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2017/11/47449002/",
-            "url": "https://mirror.roytang.net/2017/11/47449002/",
-            "path": "/2017/11/47449002/",
-            "title": "MarkLogic template driven extraction and triples: dealing with array nodes",
-            "content_html": "\u003cp\u003eI\u0026rsquo;ve been studying the examples here: \u003ca href=\"https://docs.marklogic.com/guide/semantics/tde#id_25531\"\u003ehttps://docs.marklogic.com/guide/semantics/tde#id_25531\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form \u0026ldquo;name1 is-a-parent-of name2\u0026rdquo;. Here\u0026rsquo;s a test I tried, with a sample of the document structure:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edeclareUpdate();\n\nxdmp.documentInsert(\n       '/test/tde.json',\n       {\n         content: {\n           name:'Joe Parent',\n           children: [\n             {\n               name: 'Bob Child'\n             },\n             {\n               name: 'Sue Child'\n             }\n           ]\n         }\n       },\n       {permissions : xdmp.defaultPermissions(),\n        collections : ['test']})\n\ncts.doc('/test/tde.json')\n\nvar tde = require(\u0026quot;/MarkLogic/tde.xqy\u0026quot;);\n// Load the user template for user profile rows\nvar template = xdmp.toJSON(\n{\n  \u0026quot;template\u0026quot;:{\n    \u0026quot;context\u0026quot;:\u0026quot;content\u0026quot;,\n    \u0026quot;collections\u0026quot;: [\n      \u0026quot;test\u0026quot;\n    ],\n      \u0026quot;triples\u0026quot;:[\n      {\n        \u0026quot;subject\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;xs:string(name)\u0026quot;\n        },\n        \u0026quot;predicate\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;sem:iri('is-parent-of')\u0026quot;\n        },\n        \u0026quot;object\u0026quot;: {\n          \u0026quot;val\u0026quot;: \u0026quot;xs:string(children/name)\u0026quot;\n        }     \n      }\n    ]   \n  }\n}\n);\n//tde.validate([template]),\ntde.templateInsert(\u0026quot;/templates/test.tde\u0026quot;, template);\ntde.nodeDataExtract( \n  [cts.doc( '/test/tde.json' )]\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHowever, the above throws an Exception:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[javascript] TDE-EVALFAILED: tde.nodeDataExtract([cts.doc(\u0026quot;/test/tde.json\u0026rdquo;)]) \u0026ndash; Eval for Object='xs:string(children/name)\u0026rsquo; returns TDE-BADVALEXPRESSION: Invalid val expression: XDMP-CAST: (err:FORG0001) Invalid cast: (fn:doc(\u0026quot;/test/tde.json\u0026rdquo;)/content/array-node(\u0026ldquo;children\u0026rdquo;)/object-node()[1]/text(\u0026ldquo;name\u0026rdquo;), fn:doc(\u0026quot;/test/tde.json\u0026rdquo;)/content/array-node(\u0026ldquo;children\u0026rdquo;)/object-node()[2]/text(\u0026ldquo;name\u0026rdquo;)) cast as xs:string?\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eWhat is the proper syntax for extracting array nodes into a triple?\u003c/p\u003e\n\u003cp\u003e2nd somewhat related question: say I also wanted to have triples of the form \u0026ldquo;child1 is-sibling-of child2\u0026rdquo;. For the example above it would be \u0026ldquo;Bob Child is-sibling-of Sue Child\u0026rdquo;. What would be the proper syntax for this? I\u0026rsquo;m not even sure how to begin with this one.\u003c/p\u003e\n\u003cp\u003eIs TDE even the way to go here? Or is it better to do this programmatically? i.e. on document ingestion, generate those triples inside the document directly?\u003c/p\u003e\n\u003cp\u003e(If it\u0026rsquo;s relevant, the ML version being used is 9.)\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;ve been studying the examples here: https://docs.marklogic.com/guide/semantics/tde#id_25531\nI have a set of documents that are structured with a parent name and an array of children nodes with their own names. I want to create a template that generates triples of the form \u0026ldquo;name1 is-a-parent-of name2\u0026rdquo;. Here\u0026rsquo;s a test I tried, with a sample of the document structure:\ndeclareUpdate(); xdmp.documentInsert( '/test/tde.json', { content: { name:'Joe Parent', children: [ { name: 'Bob Child' }, { name: 'Sue Child' } ] } }, {permissions : xdmp.",
-            "date_published": "2017-11-23T06:32:35+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2017/11/47449002/index.md"
-            , "tags": ["marklogic","marklogic-9","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/47449002/marklogic-template-driven-extraction-and-triples-dealing-with-array-nodes",
-                    "source_file": "comment-20171123T155014-47459250.json"
                 }
             ]
             }

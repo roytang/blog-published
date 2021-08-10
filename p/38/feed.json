@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/1191545502161985537/",
+            "url": "https://mirror.roytang.net/2019/11/1191545502161985537/",
+            "path": "/2019/11/1191545502161985537/",
+            "title": "",
+            "content_html": "\u003cp\u003e\u003ca href=\"https://twitter.com/jaymelynilao/\"\u003e@jaymelynilao\u003c/a\u003e happy birthday!\u003c/p\u003e\n",
+            "summary": "@jaymelynilao happy birthday!",
+            "date_published": "2019-11-05T02:39:20+00:00",
+            "date_modified": "2020-01-23T05:14:22+08:00",
+            "section": "notes",
+            "source_path": "notes/2019/11/1191545502161985537/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1191545502161985537/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/1191492068440326144/",
             "url": "https://mirror.roytang.net/2019/11/1191492068440326144/",
             "path": "/2019/11/1191492068440326144/",
@@ -863,23 +880,6 @@
             "source_path": "photos/2019/10/B31KcIAhxO0/index.md"
             , "tags": ["sketchdaily","inktober","inktober2019"]
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1185839702395572224/"},{"type":"instagram","url":"https://instagram.com/p/B31KcIAhxO0/"},{"type":"reddit","url":"https://www.reddit.com/r/SketchDaily/comments/dk176j/october_19th_shoes/f4e9u5h/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/10/archiving-yahoo-groups/",
-            "url": "https://mirror.roytang.net/2019/10/archiving-yahoo-groups/",
-            "path": "/2019/10/archiving-yahoo-groups/",
-            "title": "Archiving Yahoo Groups",
-            "content_html": "\u003cp\u003eSo a couple of days ago, Yahoo announced that it was shutting down \u003ca href=\"https://www.vice.com/en_us/article/8xwe9p/yahoo-groups-is-winding-down-and-all-content-will-be-permanently-removed\"\u003eYahoo Groups\u003c/a\u003e. I was a big user of Yahoo Groups back in the day. I was a member of several active mailing lists in the early 2000s, including some fandom groups (see: \u003ca href=\"https://roytang.net/2018/10/the-rise-and-fall-of-the-final-fantasy-forum/\"\u003eThe Rise and Fall of the Final Fantasy Forum\u003c/a\u003e) and a few alumni groups and some \u003ca href=\"https://roytang.net/tags/mtg/\"\u003eMTG\u003c/a\u003e-related ones. Now all of that content is vanishing!\u003c/p\u003e\n\u003cp\u003eSince I hate losing content to the sands of time, I immediately looked at my options for archiving my Yahoo Groups content. Groups like archive.org are working to archive publicly-accessible groups, but most of the relevant ones for me were private groups, so I had to do things myself. Yahoo itself provided a link to a \u003ca href=\"https://help.yahoo.com/kb/groups/download-data-privacy-dashboard-sln28671.html\"\u003e\u0026ldquo;data privacy dashboard\u0026rdquo;\u003c/a\u003e which could supposedly export your data, but it\u0026rsquo;s ridiculously useless. It only exports your subscribed groups and your preferences for each group. None of the relevant things like messages, files, photos, etc. Yahoo also provides a page with instructions on how to \u0026ldquo;download your files and photos\u0026rdquo;, but it basically only says to go to the web interface and download them one by one, also ridiculous.\u003c/p\u003e\n\u003cp\u003eI looked instead to an open source \u003ca href=\"https://github.com/andrewferguson/YahooGroups-Archiver\"\u003earchive script written in Python\u003c/a\u003e that I could easily modify for my own needs. I made a \u003ca href=\"https://github.com/roytang/YahooGroups-Archiver\"\u003efork with my own changes\u003c/a\u003e. The only change to the main script was to continue processing when an error 500 was encountered. The original script terminated processing at this time, assuming you had been rate-limited. But manual checking revealed that Yahoo Groups was throwing the error because there were some messages it simply could not retrieve for whatever reason. I simply removed the script-ending line so that the processing could continue after an error 500. I also added a separate script to download group photos, since the original only downloaded messages. (More on that later.)\u003c/p\u003e\n\u003ch3 id=\"what-to-archive\"\u003eWhat to Archive?\u003c/h3\u003e\n\u003cp\u003eI decided to only archive groups where I had actively sent messages myself for a period of time. I was a member of some public developer-oriented groups that I never really participated in, so those were out. I also decided to archive messages, files and attachments for the relevant groups. There\u0026rsquo;s this one group where I was only active for maybe a few months in the early 2000s, but the group itself stayed semi-active for up to a decade, so I ended up archiving more than a 100k messages from that group, most of which were not personally relevant to me. Well, it\u0026rsquo;s not like these archives take a whole lot of space, so I\u0026rsquo;ll keep them for now.\u003c/p\u003e\n\u003ch3 id=\"files-and-photos\"\u003eFiles and Photos\u003c/h3\u003e\n\u003cp\u003eAs mentioned, the original python script only exported messages but I wanted files and photos too. I was a bit more selective for the files and photos and only chose to archive from those groups that were more personally relevant to me. (i.e. I didn\u0026rsquo;t get the files/photos for that 100k-message group mentioned above). Luckily, the relevant groups didn\u0026rsquo;t have many files. It would have taken longer to write a script to do it, so I just manually downloaded files one by one.\u003c/p\u003e\n\u003cp\u003ePhotos were a different matter. A couple of the relevant groups had too many photos to bother downloading one at a time, so I ended up doing the method of\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026ldquo;load the webpage and scroll down until you have all the photos\u0026rdquo;\u003c/li\u003e\n\u003cli\u003esave the html\u003c/li\u003e\n\u003cli\u003erun a \u003ca href=\"https://github.com/roytang/YahooGroups-Archiver/blob/master/archive_photos.py\"\u003epython script\u003c/a\u003e to parse the HTML, store the metadata and download the full-res photo\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"wrapping-up\"\u003eWrapping up\u003c/h3\u003e\n\u003cp\u003eI didn\u0026rsquo;t have that many groups so I only ended up with around 300MB (compressed) total worth of messages, files and photos archived. I stored them in my usual archive places (cloud storage, a couple of external HDs). Most of that (maybe 80%) is that really big group too, so if needed I can dump most of those messages later. Someday I may do a further deep dive or analytics of all this archived YG data, who knows what I\u0026rsquo;ll find! (Spoken like a true digital pack rat.)\u003c/p\u003e\n",
-            "summary": "So a couple of days ago, Yahoo announced that it was shutting down Yahoo Groups. I was a big user of Yahoo Groups back in the day. I was a member of several active mailing lists in the early 2000s, including some fandom groups (see: The Rise and Fall of the Final Fantasy Forum) and a few alumni groups and some MTG-related ones. Now all of that content is vanishing!",
-            "date_published": "2019-10-20T00:00:00+00:00",
-            "date_modified": "2020-09-26T17:21:30+08:00",
-            "section": "post",
-            "source_path": "post/2019/10/archiving-yahoo-groups/index.md"
-            , "tags": ["tech life"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1185854214645407746/"}]
             
             
             }
