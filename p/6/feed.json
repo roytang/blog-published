@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2021/05/thoughts-on-vue.js/",
+            "url": "https://mirror.roytang.net/2021/05/thoughts-on-vue.js/",
+            "path": "/2021/05/thoughts-on-vue.js/",
+            "title": "Thoughts on Vue.js",
+            "content_html": "\u003cp\u003eI\u0026rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is \u003ca href=\"https://vuejs.org/\"\u003eVue.js\u003c/a\u003e. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for \u003ca href=\"/2020/09/mobile-app-dev/\"\u003emobile app development\u003c/a\u003e, which I generally don\u0026rsquo;t like; and (b) I don\u0026rsquo;t like Facebook, which backs React. I have no opinion on Angular.\u003c/p\u003e\n\u003cp\u003eDespite being my frontend framework of choice, I don\u0026rsquo;t actually have that much experience with Vue beyond a few small projects each with a minimal number of screens / pages. That being said, I do have some thoughts, coming mostly from the POV of a developer \u003ca href=\"/2020/02/old-web/\"\u003emore used to the old-school ways of Javascript and web development in general\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe entry point of course, is the \u003ca href=\"https://vuejs.org/v2/guide/\"\u003egetting started guide on the Vue website itself\u003c/a\u003e, which walks you through most of the framework features. I have no concern about most of these; the features are explained well and I find most of the documentation quite good.\u003c/p\u003e\n\u003cp\u003eMy issue is with how the site recommends to beginners to set up their Vue projects: via a script include from a CDN. When I first saw this guide, I assumed this was the standard, recommended way to build a Vue project, so this was how I did it for my first small project, a small demo site I needed to produce in a few days. Due to the short timeframe, I had decided to learn as I go. The component registration section of the guide also gives no guidance or recommendation on how to structure your components or projects, so I ended up with most of the components set up in a single JS file. (Admittedly, as a person with more than a decade of web dev experience, I should have at least split it up into several files, but time was short.) A technical person reviewing the code commented that I had implemented the frontend \u0026ldquo;in a very strange manner\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eIt gets worse when you try to install third-party components, which is a big feature of the ecosystem of these frontend frameworks. In my experience, most third-party components will only give instructions for installation via \u003ccode\u003enpm\u003c/code\u003e and a JS module system, neither of which are covered nor recommended by the beginner sections of the guide.\u003c/p\u003e\n\u003cp\u003eA few projects later, and I now know that I vastly prefer developing Vue projects as Node projects built using the scaffolding provided by \u003ca href=\"https://cli.vuejs.org/\"\u003eVue CLI\u003c/a\u003e, with the components implemented as standalone \u003ccode\u003e.vue\u003c/code\u003e files. The usage of these tools and methods are covered in the \u003ca href=\"https://vuejs.org/v2/guide/installation.html\"\u003eInstallation section of the guide\u003c/a\u003e (which the \u0026ldquo;Get Started\u0026rdquo; link skips over) and the \u003ca href=\"https://vuejs.org/v2/guide/single-file-components.html\"\u003eSingle File Components section under the Tooling section\u003c/a\u003e (which seemed like an advanced section a beginner is not likely to get into.) This method also makes installing third-party components much more straightforward. It\u0026rsquo;s not even necessary to cover what tools like Webpack or Babel are doing, since those are largely abstracted away by the scaffolding.\u003c/p\u003e\n\u003cp\u003eBasically my main complaint is that the guide doesn\u0026rsquo;t do a good job of transitioning from the introducing the beginner to the language specifics to introducing a recommended approach and tools for organizing more intermediate or complex projects. The method of using a script include seems suitable for little more than a single-page todo list webapp. I suppose the perceived shortcoming might be attributed to my background at least partially - I still tend to think like a developer using jQuery, and I don\u0026rsquo;t default to thinking about Node applications when doing webapps.\u003c/p\u003e\n\u003cp\u003eThat being said, I am overall happy with Vue.js and it\u0026rsquo;s still my choice of frontend framework moving forward (should a frontend framework even be needed!) Although, maybe I should at least consider trying out / evaluating Angular so I can pretend to make a fair comparison?\u003c/p\u003e\n",
+            "summary": "I\u0026rsquo;m not big on modern frontend JavaScript frameworks (mostly because I think web pages should use as little JS as possible), but when I do find the need to use one, my weapon of choice is Vue.js. I dislike React, but mostly because (a) my first experience with React was with mobile development using React Native for mobile app development, which I generally don\u0026rsquo;t like; and (b) I don\u0026rsquo;t like Facebook, which backs React.",
+            "date_published": "2021-05-23T23:27:00+00:00",
+            "date_modified": "2021-05-24T14:40:36+00:00",
+            "section": "post",
+            "source_path": "post/2021/05/vuejs/index.md"
+            , "tags": ["software development"]
+            , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106290687020646217"},{"type":"twitter","url":"https://twitter.com/roytang/status/1396838282332303361/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/CrowdPowerHQ",
+                    "source_file": "like-20210524-195400-3c243379-7382-4cec-baba-0d41f8f7dfd7.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2021/05/1396507070871003139/",
             "url": "https://mirror.roytang.net/2021/05/1396507070871003139/",
             "path": "/2021/05/1396507070871003139/",
@@ -900,23 +922,6 @@
             "source_path": "post/2021/05/weeknotes-05-09/index.md"
             , "tags": ["philippines","covid19","weeknotes"]
             , "syndicated": [{"type":"mastodon","url":"https://mastodon.technology/users/roytang/statuses/106209588048279805"},{"type":"twitter","url":"https://twitter.com/roytang/status/1391647947478114308/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2021/05/1391320419060183040/",
-            "url": "https://mirror.roytang.net/2021/05/1391320419060183040/",
-            "path": "/2021/05/1391320419060183040/",
-            "title": "",
-            "content_html": "\u003cp\u003eThrew some gems away again on this month\u0026rsquo;s #magicarena #mtgstrixhaven sealed open, ended up playing Silverquill splashing red since I had Professor Onyx and Lukka.\u003c/p\u003e\n\u003cp\u003eSee how it turned out: \u003ca href=\"https://www.youtube.com/watch?v=4B9Do6_8YME\"\u003ehttps://www.youtube.com/watch?v=4B9Do6_8YME\u003c/a\u003e\u003c/p\u003e\n",
-            "summary": "Threw some gems away again on this month\u0026rsquo;s #magicarena #mtgstrixhaven sealed open, ended up playing Silverquill splashing red since I had Professor Onyx and Lukka.\nSee how it turned out: https://www.youtube.com/watch?v=4B9Do6_8YME",
-            "date_published": "2021-05-09T09:13:32+00:00",
-            "date_modified": "2021-05-09T09:20:29+00:00",
-            "section": "photos",
-            "source_path": "photos/2021/05/1391320419060183040/index.md"
-            , "tags": ["magicarena","mtgstrixhaven"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/status/1391320419060183040/"}]
             
             
             }
