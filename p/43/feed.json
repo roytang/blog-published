@@ -11,6 +11,28 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/",
+            "url": "https://mirror.roytang.net/2019/08/devnotes-tt-miniproject/",
+            "path": "/2019/08/devnotes-tt-miniproject/",
+            "title": "Devnotes: TT Miniproject (Django Rest Framework, Unit Testing, VueJS, Geocoding, Nightwatch e2e Testing)",
+            "content_html": "\u003cp\u003eI recently found myself doing a really small project as sort of a proof of concept/demo for a potential client. It often seems that it might be a waste of time to do something like this since you don\u0026rsquo;t know if the project will actually push through or maybe the client will want something else. To kind of hedge my bets a bit, I decided to take the opportunity to try out some new technologies so that no matter what I at least learned something from all of this. (What is life if not learning?)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDjango Rest Framework\u003c/strong\u003e. I\u0026rsquo;ve been on projects using DRF before, but it\u0026rsquo;s my first time building a full CRUD-style API from scratch using it. There is a little bit of a learning curve when it comes to views and serializers, but for the most part it\u0026rsquo;s straightforward. I did enjoy how the framework has out of the box support for the most common REST API scenarios, and there are available backends for different authentication methods. I used JWT Authentication, which isn\u0026rsquo;t part of the library by default, but already had a pretty good implementation available elsewhere.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePython Unit Testing\u003c/strong\u003e. I have dabbled \u003ca href=\"/2019/02/triviastorm-text-and-answer-parsing/\"\u003ea little bit with Django\u0026rsquo;s Unit Test framework before\u003c/a\u003e, but not having worked with any company that does TDD I\u0026rsquo;ve never tried doing it the \u0026ldquo;test first\u0026rdquo; way. For reference I used an online book: \u003ca href=\"https://www.obeythetestinggoat.com/book/part1.harry.html\"\u003eTest Driven Development with DJango\u003c/a\u003e. I actually enjoyed the exercise, perhaps a little too much. My impression of TDD has always been that the value lies in how much courage it can give the developer - the courage to try new things without worrying about whether you have broken something that was working before. This support came in handy while I was trying to figure out some issues with DRF especially around permissions etc. Really helpful for backend APIs like this.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePython Social Auth\u003c/strong\u003e. The proof-of-concept needed some social media logins. I used \u003ca href=\"https://github.com/python-social-auth/social-core\"\u003ePython Social Auth\u003c/a\u003e for this, really straightforward library with good documentation and supports a lot of backends. I ended up using Twitter and Github OAuth as those were the simplest to implement.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eVueJS\u003c/strong\u003e. The proof-of-concept needed to be a single-page app, so that meant a bunch of Javascript was needed. I willingly admit I\u0026rsquo;m still behind with the latest web frontend frameworks and trends. In my head I\u0026rsquo;m still living in a jQuery world. I dabbled a bit with React when trying out \u003ca href=\"/2019/07/upgrading-a-react-native-project/\"\u003eReact Native\u003c/a\u003e, but I wasn\u0026rsquo;t fond of it. For this project I decided to use \u003ca href=\"https://vuejs.org\"\u003eVueJS\u003c/a\u003e since I had skimmed through their documentation before and things seemed cool. I used it mostly for the dynamic parts and the data binding. I didn\u0026rsquo;t get too far into using components, my VueJS app was a huge monolith, which is apparently is frowned upon when using these frameworks lol. (Someone familiar with VueJS who looked at the code said it was \u0026ldquo;very strange\u0026rdquo;). I have barely scratched the surface of this framework, I will probably need to build something a bit more involved with it to get a better grasp. I will say that I enjoyed the VueJS syntax/structure better than React.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGoogle Maps API and Geocoding\u003c/strong\u003e. The miniproject had some components that required me to show stuff on a map and do some geocoding, so I had to set up the API for that. Google\u0026rsquo;s documentation is fairly good here. One thing I didn\u0026rsquo;t expect is that you need a Google Cloud account with a billing method in order to access the API. My understanding is I wouldn\u0026rsquo;t be charged for anything since I was just using the free tier, I hope that was accurate.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNightwatch e2e Testing\u003c/strong\u003e. I\u0026rsquo;ve had some projects with end to end testing before, mostly via scripts or Selenium, but it\u0026rsquo;s my first time trying out one of these end to end testing frameworks by writing the scripts myself. I chose to go with Nightwatch, it was reasonably strightforward and worked on Mac and Windows. One thing I will note that initially gave me problems during set up is that using the ChromeDriver can be a bit finnicky on Windows. You have to specify the actual location of the executable in your nightwatch.json, like so: \u003ccode\u003e\u0026quot;server_path\u0026quot;: \u0026quot;node_modules/chromedriver/lib/chromedriver/chromedriver.exe\u0026quot;,\u003c/code\u003e instead of just the \u003ccode\u003enode_modules/.bin/chromedriver\u003c/code\u003e the documentation implies.\u003c/p\u003e\n\u003cp\u003eAll in all the mini-project didn\u0026rsquo;t take much work - maybe 2-3 mandays of effort at most, and I did learn a lot from it, so no matter the outcome it was already a win.\u003c/p\u003e\n",
+            "summary": "I recently found myself doing a really small project as sort of a proof of concept/demo for a potential client. It often seems that it might be a waste of time to do something like this since you don\u0026rsquo;t know if the project will actually push through or maybe the client will want something else. To kind of hedge my bets a bit, I decided to take the opportunity to try out some new technologies so that no matter what I at least learned something from all of this.",
+            "date_published": "2019-08-20T00:00:00+00:00",
+            "date_modified": "2019-09-08T08:33:49+08:00",
+            "section": "post",
+            "source_path": "post/2019/08/devnotes-miniproject-tt/index.md"
+            , "tags": ["devnotes","software development"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1164173034338639872/"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://twitter.com/roytang/status/1164173034338639872#favorited-by-35668033",
+                    "source_file": "like-20190821T143609-webmention-672522.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/08/exe5sq3/",
             "url": "https://mirror.roytang.net/2019/08/exe5sq3/",
             "path": "/2019/08/exe5sq3/",
@@ -862,23 +884,6 @@
             "source_path": "notes/2019/08/1156918372526768132/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1156918372526768132/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/08/1156907284938625025/",
-            "url": "https://mirror.roytang.net/2019/08/1156907284938625025/",
-            "path": "/2019/08/1156907284938625025/",
-            "title": "",
-            "content_html": "\u003cp\u003eI am bummed at how sad Ono was about the #StreetFighterV leak though. I\u0026rsquo;m actually still hoping this is a fake-out and they have more stuff to announce after the Evo finals!\u003c/p\u003e\n",
-            "summary": "I am bummed at how sad Ono was about the #StreetFighterV leak though. I\u0026rsquo;m actually still hoping this is a fake-out and they have more stuff to announce after the Evo finals!",
-            "date_published": "2019-08-01T12:39:25+00:00",
-            "date_modified": "2021-08-01T07:20:33+00:00",
-            "section": "notes",
-            "source_path": "notes/2019/08/1156907284938625025/index.md"
-            , "tags": ["StreetFighterV","gaming"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1156907284938625025/"}]
             
             
             }
