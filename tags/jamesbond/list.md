@@ -1,4 +1,6 @@
 
+- [Reviews: Skyfall, Jumanji: Welcome to the Jungle, Police Story](/2021/08/reviews-skyfall-jumanji-welcome-to-the-jungle-police-story/)
+
 - [Quantum of Solace](/2021/08/quantum-of-solace/)
 
 - [Reviews: Casino Royale, Gunpowder Milkshake, The Long Halloween, Masters of the Universe Revelation](/2021/07/reviews-casino-royale-gunpowder-milkshake-the-long-halloween-masters-of-the-universe-revelation/)

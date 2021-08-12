@@ -1,4 +1,6 @@
 
+- [Reviews: Skyfall, Jumanji: Welcome to the Jungle, Police Story](/2021/08/reviews-skyfall-jumanji-welcome-to-the-jungle-police-story/)
+
 - [The Suicide Squad](/2021/08/the-suicide-squad/)
 
 - [THE SUICIDE SQUAD spoiler-free review](/2021/08/12cbfc5fe2bf124a832da481095c364b/)
