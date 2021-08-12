@@ -11,6 +11,31 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2009/08/3559080121/",
+            "url": "https://mirror.roytang.net/2009/08/3559080121/",
+            "path": "/2009/08/3559080121/",
+            "title": "",
+            "content_html": "\u003cp\u003ethere\u0026rsquo;s a new professor layton! I haven\u0026rsquo;t even finished the first one!\u003c/p\u003e\n",
+            "summary": "there\u0026rsquo;s a new professor layton! I haven\u0026rsquo;t even finished the first one!",
+            "date_published": "2009-08-26T16:13:35+00:00",
+            "date_modified": "2021-01-11T12:51:35+08:00",
+            "section": "notes",
+            "source_path": "notes/2009/08/3559080121/index.md"
+            
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/3559080121/"},{"type":"facebook","url":"https://www.facebook.com/stephen.roy.tang/posts/122546959634"}]
+            
+            , "comments": [
+                { 
+                    "url": "https://www.facebook.com/cecile.monina",
+                    "source_file": "comment-20090827-000000-2a268d9e-052e-4ee8-8fdd-aba68fca8503.json"
+                }, { 
+                    "url": "https://www.facebook.com/raymond.lirag",
+                    "source_file": "comment-20090827-000001-bc7cbffd-f0fe-4e33-a27f-f0b2d08dc0d9.json"
+                }
+            ]
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2009/08/3533672131/",
             "url": "https://mirror.roytang.net/2009/08/3533672131/",
             "path": "/2009/08/3533672131/",
@@ -1181,31 +1206,6 @@
                 }, { 
                     "url": "https://twitter.com/roytang",
                     "source_file": "comment-20090805-112051-d7c500da-a381-419e-9561-de17c9a2d834.json"
-                }
-            ]
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2009/08/1225798/",
-            "url": "https://mirror.roytang.net/2009/08/1225798/",
-            "path": "/2009/08/1225798/",
-            "title": "Javascript - programmatically invoking events",
-            "content_html": "\u003cp\u003eSay I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\u003c/p\u003e\n\u003cp\u003eThe events handlers are added/removed using an object like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003evar Event = {\n    add: function(obj,type,fn) {\n        if (obj.attachEvent) {\n            obj.attachEvent('on'+type,fn);\n        } else {\n            obj.addEventListener(type,fn,false);\n        }\n    },\n    remove: function(obj,type,fn) {\n        if (obj.detachEvent) {\n            obj.detachEvent('on'+type,fn);\n        } else {\n            obj.removeEventListener(type,fn,false);\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOr do I need to store copies of each handler and just add an Event.invoke(\u0026hellip;) function?\u003c/p\u003e\n\u003cp\u003eEdit: Also, jQuery is not an option :D\u003c/p\u003e\n",
-            "summary": "Say I add events to an object using either addEventListener or attachEvent (depending on the browser); is it possible to later invoke those events programmatically?\nThe events handlers are added/removed using an object like this:\nvar Event = { add: function(obj,type,fn) { if (obj.attachEvent) { obj.attachEvent('on'+type,fn); } else { obj.addEventListener(type,fn,false); } }, remove: function(obj,type,fn) { if (obj.detachEvent) { obj.detachEvent('on'+type,fn); } else { obj.removeEventListener(type,fn,false); } } }  Or do I need to store copies of each handler and just add an Event.",
-            "date_published": "2009-08-04T05:27:59+00:00",
-            "date_modified": "2019-10-23T15:09:29+08:00",
-            "section": "notes",
-            "source_path": "notes/2009/08/1225798/index.md"
-            , "tags": ["javascript","javascript-events","questions","stackoverflow","software development"]
-            , "syndicated": [{"type":"stackexchange","url":"https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
-                    "source_file": "comment-20090804T062116-1225925.json"
-                }, { 
-                    "url": "https://stackoverflow.com/questions/1225798/javascript-programmatically-invoking-events",
-                    "source_file": "comment-20090804T101430-1226696.json"
                 }
             ]
             }

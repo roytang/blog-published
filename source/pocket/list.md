@@ -1,4 +1,6 @@
 
+- [Welcome to Nestflix](/2021/08/welcome-to-nestflix/)
+
 - [💡 Kevin Kelly: The Case for Optimism](/2021/08/kevin-kelly-the-case-for-optimism/)
 
 - [Eternal Change for No Energy: A Time Crystal Finally Made Real](/2021/08/eternal-change-for-no-energy-a-time-crystal-finally-made-real/)
