@@ -29,6 +29,7 @@ Latest shared links:
 Latest notes:
     
 
+- [14 Aug 2021 1:03pm](https://mirror.roytang.net/2021/08/1426529886261239808/): I just solved @AmuseLabs&rsquo;s crossword in 26 minutes, 9 seconds. Can you beat my time? https://www.newsday.com/?id=Creators_WEB_20210814&amp;set=creatorsweb&amp;puzzleType=crossword
 - [12 Aug 2021 3:23pm](https://mirror.roytang.net/2021/08/1425840354574553089/): Brewmaster #sketchdaily 224/365
 PHOTOS PLACEHOLDER 
 - [12 Aug 2021 4:21am](https://mirror.roytang.net/2021/08/1425673745612435457/): I don&rsquo;t pay a lot of attention to fonts, so I might not have noticed the Twitter font change if so many people weren&rsquo;t talking about it
@@ -36,7 +37,6 @@ PHOTOS PLACEHOLDER
 PHOTOS PLACEHOLDER 
 - [10 Aug 2021 12:26pm](https://mirror.roytang.net/2021/08/1425071072802525195/): Old school gaming #sketchdaily 222/365
 PHOTOS PLACEHOLDER 
-- [10 Aug 2021 10:01am](https://mirror.roytang.net/2021/08/1425034630760079363/): @monday_demos @rowheyourboat thanks pala for the responses
 
 [View all notes](https://mirror.roytang.net/notes)
 
