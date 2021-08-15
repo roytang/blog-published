@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "url": "https://mirror.roytang.net/2019/04/initial-page-load/",
+            "path": "/2019/04/initial-page-load/",
+            "title": "Initial Page Load",
+            "content_html": "\u003cp\u003eI read a recent \u003ca href=\"https://testkeis.wordpress.com/2019/03/21/wondering-how-much-it-matters-initial-load-of-page/\"\u003eblog post from a friend\u003c/a\u003e about the large page sizes on initial load of a web page. From there, I got to a link which said that the \u003ca href=\"https://speedcurve.com/blog/web-performance-page-bloat/\"\u003eaverage page size nowadays is at least 3MB\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since \u003ca href=\"/2018/11/site-migration-from-wordpress-to-hugo/\"\u003eI migrated to a static site using Hugo\u003c/a\u003e. The homepage of the old Wordpress version of the blog comes with 44 requests totalling a bit over 500KB. And the new homepage lists way more posts too.\u003c/p\u003e\n\u003cp\u003eThe page for individual posts leaves some room for improvement however, coming at 62 requests totalling more than 2MB. The main culprit is Disqus which I use for commenting. At least Disqus uses delayed loading, so the content renders immediately, but that\u0026rsquo;s still a lot of bandwidth that could be saved. Leaving aside the question of \u0026ldquo;Do I really need comments?\u0026rdquo;, I did a quick search if there were pre-existing solutions for optimizing Disqus loading on static sites.\u003c/p\u003e\n\u003cp\u003eThe best hit so far was \u003ca href=\"https://css-tricks.com/lazy-loading-disqus-comments/\"\u003edisqusLoader\u003c/a\u003e, which avoids loading Disqus until the comment area actually scrolls into view. It\u0026rsquo;s a neat idea, but I encountered some JS errors when I did a quick test with it. I\u0026rsquo;ll revisit this again later when I have more time.\u003c/p\u003e\n\u003cp\u003eAn alternative of course would be to write my own JS-based commenting engine to rival Disqus, which seems to have no competition in its particular niche. I like building things so this option naturally came to mind, but in all likelihood I don\u0026rsquo;t have time to do that, and there\u0026rsquo;s a good chance it may end up as heavy as Disqus anyway.\u003c/p\u003e\n\u003cp\u003eNeed to think about this some more.\u003c/p\u003e\n",
+            "summary": "I read a recent blog post from a friend about the large page sizes on initial load of a web page. From there, I got to a link which said that the average page size nowadays is at least 3MB.\nThis led me to check the performance of this very blog/site. Initial load of the home page clocks in with 13 requests weighing around 140KB total. This is not bad, in fact it would be a significant improvmenet since I migrated to a static site using Hugo.",
+            "date_published": "2019-04-10T05:56:56+00:00",
+            "date_modified": "2020-09-26T17:21:30+08:00",
+            "section": "post",
+            "source_path": "post/2019/04/initial-page-load/index.md"
+            , "tags": ["Tech Life","Meta"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1115857589227655171/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/04/digging-through-time/",
             "url": "https://mirror.roytang.net/2019/04/digging-through-time/",
             "path": "/2019/04/digging-through-time/",
@@ -888,23 +905,6 @@
             "source_path": "post/2019/03/meritocracy/index.md"
             
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1109698164339150848/"}]
-            
-            
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "url": "https://mirror.roytang.net/2019/03/ej8tj5e/",
-            "path": "/2019/03/ej8tj5e/",
-            "title": "",
-            "content_html": "\u003cp\u003eYou are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well\u003c/p\u003e\n",
-            "summary": "You are missing out. AOA is one of the best xmen alternate universe stories and it holds up pretty well",
-            "date_published": "2019-03-24T03:52:45+00:00",
-            "date_modified": "2020-01-23T05:14:22+08:00",
-            "section": "notes",
-            "source_path": "notes/2019/03/ej8tj5e/index.md"
-            , "tags": ["comics"]
-            , "syndicated": [{"type":"reddit","url":"https://www.reddit.com/r/comicbooks/comments/b4og0x/marvel_comics_announces_historic_xmen_milestone/ej8tj5e/"}]
             
             
             }

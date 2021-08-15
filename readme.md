@@ -7,11 +7,11 @@ Visit the site: ![https://mirror.roytang.net](.Permalink)
 Latest blog posts:
     
 
+- [Weeknotes 2021-08-15](https://mirror.roytang.net/2021/08/weeknotes-2021-08-15/)
 - [Reviews: Skyfall, Jumanji: Welcome to the Jungle, Police Story](https://mirror.roytang.net/2021/08/reviews-skyfall-jumanji-welcome-to-the-jungle-police-story/)
 - [Forty Three](https://mirror.roytang.net/2021/08/forty-three/)
 - [Weeknotes 2021-08-08](https://mirror.roytang.net/2021/08/weeknotes-2021-08-08/)
 - [The Suicide Squad](https://mirror.roytang.net/2021/08/the-suicide-squad/)
-- [&#34;Async read access to your brain&#34;](https://mirror.roytang.net/2021/08/async-read-access-to-your-brain/)
 
 [View all posts](https://mirror.roytang.net/blog)
 
