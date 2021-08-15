@@ -11,6 +11,23 @@
     "items": [
         
         {
+            "id": "https://mirror.roytang.net/2019/11/watching-lately-nov-2019/",
+            "url": "https://mirror.roytang.net/2019/11/watching-lately-nov-2019/",
+            "path": "/2019/11/watching-lately-nov-2019/",
+            "title": "Watching Lately: November 2019: Broly, Justice League, Arrowverse, Mandalorian",
+            "content_html": "\u003cp\u003eNothing in the cinema this month (going to the cinema is expensive!). I did watch a couple of animated movies this month:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDragonball Super: Broly. I have some vague recollection of watching the original Broly movie, and I believe this one is much better. DBS Broly is a slightly more nuanced character than just \u0026ldquo;random raging monster\u0026rdquo; from the previous non-canon movie. The animation was okay, you could tell the animators were having fun with some of the battle parts. Also, I watched the English dub, and I just realized Goku\u0026rsquo;s voice is super annoying, so I pity the Americans who had to grow up with that voice.\u003c/li\u003e\n\u003cli\u003eJustice League vs the Fatal Five. I\u0026rsquo;m still a bit behind on the DC animated stuff. I liked this one because I think it handled Jessica Cruz fairly well, and it got me backreading Justice League Odyssey for more Cruz.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTV-wise, since I got a \u003ca href=\"/2019/11/new-video-card/\"\u003enew video card\u003c/a\u003e and have a second monitor again, side-watching is back on the menu, so I was able to catch up with some of the ongoing series: Modern Family (meh), Simpsons (meh), Rick and Morty (ok so far, only 3 eps in).\u003c/p\u003e\n\u003cp\u003eI caught Season 3 of The Toys That Made Us on Netflix. Not as fun as S2 for me since that one had Transformers, and I only have secondary interest at best in the toylines for S4, but some of the stories here were pretty interesting, like they say that the giant robot from Japanese Spider-Man was the one that inspired sentai robots! What! The TMNT ep was also pretty good.\u003c/p\u003e\n\u003cp\u003eArrowverse is still going on (somehow), with their upcoming big-deal Crisis crossover kicking off in mid December. Surprisingly, Arrow itself has been pretty good this season (perhaps because no Felicity? lol), followed by Flash, with Supergirl dead last. I am not fond of Lena\u0026rsquo;s heel turn in Supergirl, I felt like it was a disservice to the character who when introduced was desperate to get out of her brother\u0026rsquo;s shadow. I haven\u0026rsquo;t been watching Batwoman, even though it\u0026rsquo;s part of the crossover, we\u0026rsquo;ll see what happens.\u003c/p\u003e\n\u003cp\u003eI managed to watch the first ep of Mandalorian, but haven\u0026rsquo;t had time yet for the most recent eps. It\u0026rsquo;s not the sort of thing I\u0026rsquo;d side-watch, so I have to dedicate time for it. I better do that before the spoilers catch up with me!\u003c/p\u003e\n\u003cp\u003eNext month I\u0026rsquo;m looking forward to:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCrisis on Infinite Earths\u003c/li\u003e\n\u003cli\u003eStar Wars: Rise of the Skywalker\u003c/li\u003e\n\u003c/ul\u003e\n",
+            "summary": "Nothing in the cinema this month (going to the cinema is expensive!). I did watch a couple of animated movies this month:\n Dragonball Super: Broly. I have some vague recollection of watching the original Broly movie, and I believe this one is much better. DBS Broly is a slightly more nuanced character than just \u0026ldquo;random raging monster\u0026rdquo; from the previous non-canon movie. The animation was okay, you could tell the animators were having fun with some of the battle parts.",
+            "date_published": "2019-11-28T00:00:00+00:00",
+            "date_modified": "2021-04-02T11:01:07+08:00",
+            "section": "post",
+            "source_path": "post/2019/11/watching-lately-nov-2019/index.md"
+            , "tags": ["Pop Culture","Movies","TV","watching lately"]
+            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1199916391597559808/"}]
+            
+            
+            }
+        
+        , {
             "id": "https://mirror.roytang.net/2019/11/1199638364938334208/",
             "url": "https://mirror.roytang.net/2019/11/1199638364938334208/",
             "path": "/2019/11/1199638364938334208/",
@@ -975,28 +992,6 @@
             , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192676847038992390/"}]
             
             
-            }
-        
-        , {
-            "id": "https://mirror.roytang.net/2019/11/python-yield/",
-            "url": "https://mirror.roytang.net/2019/11/python-yield/",
-            "path": "/2019/11/python-yield/",
-            "title": "DevNotes: Python's yield",
-            "content_html": "\u003cp\u003eI\u0026rsquo;ve been using Python for well over 10 years, and I still don\u0026rsquo;t have an intuitive mastery of one of its keywords: \u003ccode\u003eyield\u003c/code\u003e. Everytime I see it in someone\u0026rsquo;s code I need to stop and mentally remind myself what it does. I figured I\u0026rsquo;d write a devnote to help improve my recall.\u003c/p\u003e\n\u003cp\u003eTypically, \u003ccode\u003eyield\u003c/code\u003e is used in a function with a loop, like so:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esome_func\u003c/span\u003e(lim):\n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e i \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e range(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e, lim):\n        \u003cspan style=\"color:#66d9ef\"\u003eyield\u003c/span\u003e i\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e\u003ccode\u003eyield\u003c/code\u003e means the function returns a \u0026ldquo;generator\u0026rdquo; that can be used as an iterable in a loop:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e val \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e some_func(\u003cspan style=\"color:#ae81ff\"\u003e5\u003c/span\u003e):\n    \u003cspan style=\"color:#66d9ef\"\u003eprint\u003c/span\u003e(val)\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eYou can also straight up convert the generator into a list via something like \u003ccode\u003elist(some_func(5))\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eThe equivalent function, without using \u003ccode\u003eyield\u003c/code\u003e would be something like:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\"\u003e\u003ccode class=\"language-python\" data-lang=\"python\"\u003e\u003cspan style=\"color:#66d9ef\"\u003edef\u003c/span\u003e \u003cspan style=\"color:#a6e22e\"\u003esome_func\u003c/span\u003e(lim):\n    result \u003cspan style=\"color:#f92672\"\u003e=\u003c/span\u003e []\n    \u003cspan style=\"color:#66d9ef\"\u003efor\u003c/span\u003e i \u003cspan style=\"color:#f92672\"\u003ein\u003c/span\u003e range(\u003cspan style=\"color:#ae81ff\"\u003e0\u003c/span\u003e, lim):\n        result\u003cspan style=\"color:#f92672\"\u003e.\u003c/span\u003eappend(i)\n    \u003cspan style=\"color:#66d9ef\"\u003ereturn\u003c/span\u003e result\n\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003eThis is definitely the kind of function I\u0026rsquo;ve written often! Now that I\u0026rsquo;ve actually written it down, \u003ccode\u003eyield\u003c/code\u003e is rather straightforward, and hopefully it can help me shorten some of the python code I\u0026rsquo;ll be writing in the future!\u003c/p\u003e\n",
-            "summary": "I\u0026rsquo;ve been using Python for well over 10 years, and I still don\u0026rsquo;t have an intuitive mastery of one of its keywords: yield. Everytime I see it in someone\u0026rsquo;s code I need to stop and mentally remind myself what it does. I figured I\u0026rsquo;d write a devnote to help improve my recall.\nTypically, yield is used in a function with a loop, like so:\ndef some_func(lim): for i in range(0, lim): yield i yield means the function returns a \u0026ldquo;generator\u0026rdquo; that can be used as an iterable in a loop:",
-            "date_published": "2019-11-07T00:00:00+00:00",
-            "date_modified": "2020-09-16T14:57:40+08:00",
-            "section": "post",
-            "source_path": "post/2019/11/python-yield/index.md"
-            , "tags": ["software development","devnotes"]
-            , "syndicated": [{"type":"twitter","url":"https://twitter.com/roytang/statuses/1192280118468792321/"}]
-            
-            , "comments": [
-                { 
-                    "url": "https://twitter.com/roytang/status/1192280118468792321#favorited-by-1000529293171150849",
-                    "source_file": "like-20191107T233128-webmention-722387.json"
-                }
-            ]
             }
         
     ]
